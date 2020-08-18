@@ -1,0 +1,48 @@
+<div class="td-content">
+<div class="td-page-top">
+	<h1>{{ .Title }}</h1>
+	{{ partial "page-meta-actions.html" .}}
+</div>
+	<div class="page-meta-lastmod text-muted ">{{ partial "page-meta-lastmod.html" . }}</div>
+
+	<!-- {{ partial "page-meta-actions.html" .}} -->
+    {{ with .Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}
+	{{ if (and (not .Params.hide_readingtime) (.Site.Params.ui.readingtime.enable)) }}
+        {{ partial "reading-time.html" . }}
+    {{ end }}
+	{{ .Content }}
+	<!-- {{ if (and (not .Params.hide_feedback) (.Site.Params.ui.feedback.enable) (.Site.GoogleAnalytics)) }}
+		{{ partial "feedback.html" .Site.Params.ui.feedback }}
+		<br />
+	{{ end }} -->
+	{{ if (.Site.DisqusShortname) }}
+		<br />
+		{{ partial "disqus-comment.html" . }}
+	{{ end }}
+	<div class="page-meta-pagination border-top">
+		{{with .NextInSection}}
+			<a href="{{.Permalink }}" class="prev pl1" title="{{.Title }} ">
+				上一篇: {{.Title}}
+			</a>
+		{{end}}
+
+		{{with .PrevInSection}}
+			<a href="{{.Permalink }}" class="next pr1" title="{{.Title }}">
+			下一篇: {{.Title}}
+			</a>
+		{{end}}
+	</div>
+	<div class="page-meta-pagination_word">
+		本文档解决你的问题了吗?
+		<div class="doc_fix_click" data-flag='1'>
+			<img src="/images/icons/like.svg">
+			<span>0</span>
+		</div>
+		<div class="doc_fix_click" data-flag='0'>
+			<img src="/images/icons/Point-out.svg" >
+			<span>0</span>
+		</div>
+		<input type="hidden" id="doc_fix_flag" value="0">
+	</div>
+</div>
+<script src="/js/content.js"></script>

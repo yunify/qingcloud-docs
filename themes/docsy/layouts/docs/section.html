@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}" class="no-js">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body class="td-{{ .Kind }}">
+    <header>
+      {{ partial "navbar.html" . }}
+    </header>
+    
+            
+          <main class="td-main" role="main">
+            {{ partial "toc.html" . }}
+          </main>
+      {{ partial "footer.html" . }}
+     
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

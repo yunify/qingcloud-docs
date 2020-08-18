@@ -1,0 +1,95 @@
++++
+title = "搜索"
+linkTitle = "Document"
+
++++
+<link rel="stylesheet"  href="/css/search.css" >
+<script src="/js/search.js"></script>
+
+    <section id='search-category' class='section is-small' style="    margin-top: 30px;">
+        <div class="container">
+            <div class='columns'>
+                <div class='column is-8'>   
+                    <nav class="tabs is-centered">
+                        <ul class='directory' style='justify-content: space-between;'>
+                            <li class='all-websites'><a>全部<span></span></a></li>
+                            <li class='products'><a>产品<span></span></a></li>
+                            <li class='solutions'><a>解决方案<span></span></a></li>
+                            <li class='docs'><a>帮助文档<span></span></a></li>
+                            <li class='cases'><a>客户案例<span></span></a></li>
+                            <li class='news'><a>新闻资讯<span></span></a></li>         
+                            <li class='others'><a>其他<span></span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class='column is-3'>
+                    <div class='container'>
+
+                    </div>
+                </div>
+            </div>
+			<div class="field" style="display: none;">
+			  <div class="control">
+				<div class="select">
+				  <select>
+					<option>Select dropdown</option>
+					<option>With options</option>
+				  </select>
+				</div>
+			  </div>
+			</div>
+        </div>
+    </section>
+        
+    <section id='search-result' class='section is-small'>
+        <div class='container'>
+            <div class='columns'>
+                <div class="column is-8" style="position:relative;">
+                    <div class = 'search-result'></div>
+                    <div id="loading-mask">
+                        <div class="loader"></div>
+                    </div>
+                </div>
+                <div class='column is-3'>
+                    <div class='container'>
+                        <div class='product-recommendation-title'>
+                            产品推荐
+                        </div>
+                        <div class='product-recommendation'>
+                            <ul>
+                                <li><a href="https://www.qingcloud.com/products/instances">虚拟主机</a></li>
+                                <li><a href="https://www.qingcloud.com/products/mysql-plus">MySQL Plus</a></li>
+                                <li><a href="https://www.qingcloud.com/products/volume">块存储</a></li>
+                            </ul>
+                        </div>
+                        <div class='solutions-recommendation-title'>
+                            热门解决方案
+                        </div>
+                        <div class='solutions-recommendation'>
+                            <ul>
+                                <li><a href="https://www.qingcloud.com/solutions/hybridcloud">混合云</a></li>
+                                <li><a href="https://www.qingcloud.com/solutions/datalake">数据湖</a></li>
+                                <li><a href="https://www.qingcloud.com/solutions/cbec">跨境电商</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section id='paginations'>
+        <div class='container'>
+            <div class="search-pagination">
+
+            </div>
+        </div>
+    </section>
+<style>
+.ui-widget.ui-widget-content{
+    border: 0;
+}
+.ui-menu .ui-menu-item{
+    padding-left: 44px;
+}
+</style>

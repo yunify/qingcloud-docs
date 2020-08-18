@@ -1,0 +1,127 @@
+{
+	"1": {
+		"name": "\u8BA1\u7B97",
+		"icon": "compute-icon-storage.svg",
+		"category": {
+			"1": {
+				"name": "\u865A\u62DF\u4E3B\u673A",
+				"main_path":"qingstor",
+				"user_doc": [{
+						"example_title": "\u5F88\u865A\u62DF",
+						"example_content": "\u5F88\u865A\u62DF\u5F88\u865A\u62DF\u5F88\u865A\u62DF\u5F88\u865A\u62DF\u5F88\u865A\u62DF\u5F88\u865A\u62DF",
+						"doc_url": "/qingstor/guide/object_manage/"
+					},
+					{
+						"example_title": "\u5F88\u771F\u5B9E",
+						"example_content": "\u5F88\u771F\u5B9E\u5F88\u771F\u5B9E\u5F88\u771F\u5B9E\u5F88\u771F\u5B9E\u5F88\u771F\u5B9E\u5F88\u771F\u5B9E",
+						"doc_url": "/test/guide/object_manage/"
+					},
+					{
+						"example_title": "\u771F\u771F\u5047\u5047",
+						"example_content": "\u771F\u771F\u5047\u5047\u771F\u771F\u5047\u5047\u771F\u771F\u5047\u5047\u771F\u771F\u5047\u5047\u771F\u771F\u5047\u5047\u771F\u771F\u5047\u5047\u771F\u771F\u5047\u5047\u771F\u771F\u5047\u5047\u771F\u771F\u5047\u5047",
+						"doc_url": "/qingstor/guide/object_manage/"
+					}
+				],
+				"development_doc": [{
+						"example_title": "phpphphphphpp",
+						"example_content": "phpphphphphppphpphphphphppphpphphphphpp",
+						"doc_url": ""
+					},
+					{
+						"example_title": "python",
+						"example_content": "pythonpythonpythonpythonpython",
+						"doc_url": ""
+					},
+					{
+						"example_title": "html",
+						"example_content": "htmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtmlhtml",
+						"doc_url": ""
+					}
+				],
+				"learn_path": [{
+						"title": "\u4E86\u89E3",
+						"content": "QingStor \u5BF9\u8C61\u5B58\u50A8\u4E3A\u7528\u6237\u63D0\u4F9B\u53EF\u65E0\u9650\u6269\u5C55\u7684\u901A\u7528\u6570\u636E\u5B58\u50A8\u670D\u52A1\u3002",
+						"category_title": "QingStor\u5BF9\u8C61\u5B58\u50A8\u4ECB\u7ECD",
+						"category": [{
+								"doc_title": "\u4EC0\u4E48\u662F QingStor \u5BF9\u8C61\u5B58\u50A8",
+								"doc_url": "XXXX"
+							},
+							{
+								"doc_title": "\u4EC0\u4E48\u662F QingStor \u5BF9\u8C61\u5B58\u50A8",
+								"doc_url": "XXXX"
+							},
+							{
+								"doc_title": "\u4EC0\u4E48\u662F QingStor \u5BF9\u8C61\u5B58\u50A8",
+								"doc_url": "XXXX"
+							},
+							{
+								"doc_title": "\u4EC0\u4E48\u662F QingStor \u5BF9\u8C61\u5B58\u50A8",
+								"doc_url": "XXXX"
+							}
+						]
+					},
+					{
+						"title": "\u4E0A\u624B",
+						"content": "QingStor \u5BF9\u8C61\u5B58\u50A8\u4E3A\u7528\u6237\u63D0\u4F9B\u53EF\u65E0\u9650\u6269\u5C55\u7684\u901A\u7528\u6570\u636E\u5B58\u50A8\u670D\u52A1\u3002",
+						"category_title": "QingStor\u5BF9\u8C61\u5B58\u50A8\u4ECB\u7ECD",
+						"category": [{
+								"doc_title": "\u4EC0\u4E48\u662F QingStor \u5BF9\u8C61\u5B58\u50A8",
+								"doc_url": "XXXX"
+							},
+							{
+								"doc_title": "\u4EC0\u4E48\u662F QingStor \u5BF9\u8C61\u5B58\u50A8",
+								"doc_url": "XXXX"
+							},
+							{
+								"doc_title": "\u4EC0\u4E48\u662F QingStor \u5BF9\u8C61\u5B58\u50A8",
+								"doc_url": "XXXX"
+							}
+						]
+					}
+				]
+			},
+			"2": {
+				"name": "\u7269\u7406\u4E3B\u673A",
+				"development_doc": 0,
+				"main_path":"qingstor"
+			},
+			"3": {
+				"name": "GPU\u4E3B\u673A",
+				"development_doc": 0,
+				"main_path":"qingstor"
+			},
+			"4": {
+				"name": "\u4E13\u5C5E\u5BBF\u4E3B\u673A",
+				"development_doc": 1,
+				"main_path":"qingstor"
+			},
+			"5": {
+				"name": "\u6620\u50CF",
+				"development_doc": 1,
+				"main_path":"qingstor"
+			}
+		}
+	},
+	"2": {
+		"name": "\u5B58\u50A8",
+		"icon": "product-icon-storage.svg",
+		"category": {
+			"1": {
+				"name": "\u5757\u5B58\u50A8",
+				"development_doc": 1
+			},
+			"2": {
+				"name": "\u5171\u4EAB\u5B58\u50A8",
+				"development_doc": 0
+			},
+			"3": {
+				"name": "\u5BF9\u8C61\u5B58\u50A8",
+				"development_doc": 0
+			},
+			"4": {
+				"name": "\u5907\u4EFD",
+				"development_doc": 0
+			}
+		}
+	}
+}

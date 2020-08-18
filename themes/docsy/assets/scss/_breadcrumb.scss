@@ -1,0 +1,20 @@
+// Breadcrumb
+
+.breadcrumb {
+	background: none;
+	padding-left: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-bottom: 8px;
+
+	a {
+		color: #8493a2;
+		font-size: 12px;
+		font-weight: normal;
+		line-height: 2;
+	}
+	li.active a {
+		color: #00a971;
+	}
+}
+

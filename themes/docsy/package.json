@@ -1,0 +1,15 @@
+{
+  "name": "docsy",
+  "version": "1.0.0",
+  "description": "Docsy is a [Hugo](https://gohugo.io/) theme for technical documentation sets, providing simple navigation, site structure, and more.",
+  "main": "postcss.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.5",
+    "postcss-cli": "^7.1.1"
+  }
+}

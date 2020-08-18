@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="760" height="257" viewBox="0 0 760 257">
+    <defs>
+        <rect id="prefix__a" width="760" height="257" x="0" y="0" rx="3"/>
+        <path id="prefix__c" d="M0 125.9C0 56.366 55.964 0 125 0s125 56.367 125 125.9c0 47.632-30 90.647-65 125.582-9.047 9.03-15.713 32.636-20 70.82C158.333 340.767 145 350 125 350s-33.333-9.233-40-27.698c-2.237-36.824-8.904-60.43-20-70.82-40-37.453-65-77.95-65-125.583z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="prefix__b" fill="#fff">
+            <use xlink:href="#prefix__a"/>
+        </mask>
+        <use fill="#F5F9FA" xlink:href="#prefix__a"/>
+        <g mask="url(#prefix__b)">
+            <g>
+                <path d="M0 48H760V305H0z" transform="translate(0 -48)"/>
+                <g opacity=".306" transform="translate(0 -48) translate(562)">
+                    <mask id="prefix__d" fill="#fff">
+                        <use xlink:href="#prefix__c"/>
+                    </mask>
+                    <use fill="#3D3E49" xlink:href="#prefix__c"/>
+                    <path fill="#86DBA2" fill-rule="nonzero" d="M0 0H250V290H0z" mask="url(#prefix__d)"/>
+                    <path fill="#ADEBB5" fill-rule="nonzero" d="M0 0H130V290H0z" mask="url(#prefix__d)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
