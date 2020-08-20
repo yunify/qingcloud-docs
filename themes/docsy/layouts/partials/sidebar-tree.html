@@ -2,14 +2,14 @@
 {{ $shouldDelayActive := ge (len .Site.Pages) 2000 }}
 <div class="td-sidebar-section-title" style="padding-bottom: 5px;display: flex;">
 			<img class="is-40x40" src="/images/icons/book-open.svg">
-			<h2 id="doc_vice_title" style="padding-left: 10px;"></h2>
+			<h3 id="doc_vice_title" style="padding-left: 10px;"></h3>
 		</div>
 <div id="td-sidebar-menu" class="td-sidebar__inner{{ if $shouldDelayActive }} d-none{{ end }}">
-	<div class="field has-addons has-addons-centered select-field" style="padding-top:1rem;margin-bottom:0">
+	<div class="field has-addons has-addons-centered select-field">
 	  <div class="control">
-		<div class="select">
+		<div class="select is-small">
 		  <select>
-			<option>With options</option>
+			<option></option>
 		  </select>
 		</div>
 	  </div>

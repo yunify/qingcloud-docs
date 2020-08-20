@@ -20,8 +20,12 @@ $(function(){
 	}else{
 		//剩下的就是文档页
 		var url_path_split = url_path.split('/');
+		var stop_flag = false;
 		$.getJSON("/category.json", function (data){
 			$.each(data,function(i,j){
+				if(stop_flag){
+					return false;
+				}
 				$.each(j.category,function(m,n){
 					if(n.main_path==url_path_split[1]){
 						var path_parent_id = i+'_'+m;
@@ -30,6 +34,7 @@ $(function(){
 						insert_content_path(path_parent_id,path_parent_name);
 						//select
 						get_select_content(i,m,url_path);
+						stop_flag = true;
 						return false;
 					}
 				})

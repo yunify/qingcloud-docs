@@ -8,6 +8,8 @@ $(function(){
 		$.each(data_child['user_doc'],function(k,v){
 			user_content += '<div class="col-sm-4"><div class="card"><div class="card-body"><h5 class="card-title">QingStor '+v.example_title+'</h5><p class="card-text">'+v.example_content+'</p><a target="_blank" href="'+v.doc_url+'" class="card-link">了解更多 →</a></div><a href="#" class="pdf-download-btn"><i class="fa fa-download"></i>PDF</a></div></div>';
 		});
+		$('#main_name').html(data_child['name']);
+		$('#main_content').html(data_child['content']);
 		$('#user_content').append(user_content);
 		$('#user_doc_title').html('QingStor '+data_child['name']+'用户文档');
 		//开发者文档插入数据
