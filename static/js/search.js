@@ -39,7 +39,7 @@ $(document).ready(function(){
             $.ajax({
                 url: serach_href+'/search.php',
                 type: 'POST',
-                dataType: 'jsonp',
+                dataType: 'json',
                 data: {q:keywords, count:true},
             }).done(function(data){
                 gio('track', 'search', { 'searchterms': keywords });
@@ -136,7 +136,7 @@ $(document).ready(function(){
                 $.ajax({
                     url: serach_href+'/search.php',
                     method: 'POST',
-                    dataType: 'jsonp',
+                    dataType: 'json',
                     data: {q:keywords.replace(/\+/g, ' '), pager, cate:doc_cate,size_flag:false},
                 }).done(function(data){
                     //console.log(data);
@@ -191,7 +191,7 @@ $(document).ready(function(){
             $.ajax({
                 url: serach_href+'/search.php',
                 method: 'POST',
-                dataType: 'jsonp',
+                dataType: 'json',
                 data: {q:keywords, pager, cate:'all',size_flag:false},
             }).done(function(data){
                 $("#loading-mask").hide();
@@ -250,7 +250,7 @@ $(document).ready(function(){
             $.ajax({
                 url: serach_href+'/search.php',
                 method: 'POST',
-                dataType: 'jsonp',
+                dataType: 'json',
                 data: {q:keywords, pager, cate:doc_cate,size_flag:false},
             }).done(function(data){
                 $("#loading-mask").hide();

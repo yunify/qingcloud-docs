@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 class search_api
 {
     const URL_ROOT = 'http://192.168.65.245:9200/official_website_test/_search';
@@ -10,18 +11,31 @@ class search_api
     function __construct()
     {
         $query_str = $this->getGET();
-		$callback = $_REQUEST['callback'];
+		$auto = $_REQUEST['auto']?:'false';
+		//$callback = $_REQUEST['callback'];
         if($this->msGets != '')
         {
             if(count($this->msGets) > 0)
                 $sUrl = self::URL_ROOT .'?'. $this->msGets;
             else
                 $sUrl = self::URL_ROOT;
-            echo $callback. "(" .$this->getContent($sUrl, $query_str). ")";
+            //echo $callback. "(" .$this->getContent($sUrl, $query_str). ")";
+			$result = $this->getContent($sUrl, $query_str);
+			if($auto=='true'){
+				echo $this->get_auto_result($result);exit();
+			}else{
+				echo $result;exit();
+			}
         }
         else
         {
-            echo $callback. "(" .$this->getContent(self::URL_ROOT, $query_str). ")";
+            //echo $callback. "(" .$this->getContent(self::URL_ROOT, $query_str). ")";
+			$result = $this->getContent(self::URL_ROOT, $query_str);
+			if($auto=='true'){
+				echo $this->get_auto_result($result);exit();
+			}else{
+				echo $result;exit();
+			}
         }
     }
 
@@ -40,11 +54,11 @@ class search_api
         // to: currentPage  * itemsPerPage
         $search_category = $_REQUEST['cate'];
         $search_keywords = $_REQUEST['q'];
-        $count = $_REQUEST['count'];
-        $size_flag = $_REQUEST['size_flag'];
+        $count = $_REQUEST['count']?:false;
+        $size_flag = $_REQUEST['size_flag']?:false;
         $size = 10;
         if ($size_flag!="false") $size = 1000;
-        $pager = $_REQUEST['pager'];
+        $pager = $_REQUEST['pager']?:1;
         $from = (($pager - 1) * 10) ;
         if ($pager == 1) $from = 0;
         if($count) {
@@ -314,6 +328,22 @@ class search_api
         // unset($ch);
         return $sData;
     }
+
+	private function get_auto_result($json){
+		$json_result = json_decode($json,TRUE);
+		$return['suggestions'] = array(); 
+		if(!empty($json_result['hits']['hits'])){
+			foreach($json_result['hits']['hits'] as $value){
+				if(!empty($value['_source']['title']) && !empty($value['_source']['content'])){
+					$return['suggestions'][] = array(
+						'value'=>$value['_source']['title'],
+						'data'=>$value['_source']['content']
+					);
+				}
+			}
+		}
+		return json_encode($return);
+	}
 }
 
 $o = new search_api();

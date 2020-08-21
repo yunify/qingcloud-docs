@@ -61,10 +61,7 @@ contentDir = "content"
 weight = 1
 time_format_default = "2006.02.01"
 time_format_blog = "2006.02.01"
-[languages.en]
-title = "Goldydocs"
-description = "A Docsy example site"
-languageName ="English"
+
 
 
 
