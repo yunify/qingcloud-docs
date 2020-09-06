@@ -463,8 +463,5 @@ $(document).ready(function(){
 			gio('app.set', appLevelVariables);
 		}
 	}, 1000);
-	gio('send');
-	gio('evar.set', 'pageView_evar', location.href);
-	gio('evar.set', 'pageTitle_evar', document.title);
 });
 
