@@ -10,6 +10,11 @@
     }, 250);
   }
 
+  if(menuTitle.length == 0){
+	$('#td-sidebar-menu').prev('div').remove();
+	$('#td-sidebar-menu').remove();
+  }
+
   menuTitle ? 
   menuTitle.forEach(function(elem) {
     elem.onclick = function() {

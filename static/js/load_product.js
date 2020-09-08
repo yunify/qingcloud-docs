@@ -40,36 +40,8 @@ $(function(){
 			$('#study-center').remove();
 		}
 	});
+});
 
-
-	//视屏弹出
-}); 
-
-function dialogInit(){
-  var $html = $('<div><ul><li><span>这是弹框里面的内容</span></li></ul></div>')
-  var dialog = new BootstrapDialog({　　　　 
-	    size: BootstrapDialog.SIZE_LARGE,//弹框大小
-        title: '弹框标题',　　　　 
-		cssClass:'dialogBig',//给弹框添加class名
-        message: $html,//弹框中间的内容
-        buttons: [{
-            label: '取消',
-            action: function(newCatalogue){
-                newCatalogue.close();
-            }
-        },{
-            label: '创建',
-            cssClass: 'btn btn-primary',//给按钮加样式，btn、btn-primary为定义好的class
-            action: function(newCatalogue){
-                addDialog(newCatalogue);//点击创建触发函数
-            }
-        }],
-        onshow: function(){
-            shown()//弹框显示前触发函数
-        },
-        onshown: function(){
-            shown()//弹框显示后触发函数　　　　　　　 alert($html.find('span').text());　
-        }
-	})
-	dialog.open();
+function show_video(){
+	$('#myModal').modal();
 }

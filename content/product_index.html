@@ -11,7 +11,9 @@ type = "product"
 				<h3 id="main_content"></h3>
 			</div>
 			<div class="col-sm-3">
-				<video class="product-video" controls="controls" loop preload src="https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"></video>
+			<a href="javascript:;" data-toggle="modal" data-target="#myModal">
+				<img src="/images/video.png">
+			</a>
 			</div>
 		</div>
 	</div>
@@ -51,4 +53,12 @@ type = "product"
 		</div>
 	</div>
 </section>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" style="max-width: 800px;">
+			<div class="modal-content">
+				<video width="800" autoplay="true" height="400" class="product-video" controls="controls" src="https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"></video>
+			</div>
+		</div>
+    </div>
 <script src="/js/load_product.js"></script>
