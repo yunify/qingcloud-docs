@@ -49,9 +49,9 @@ $(function(){
 	$('#search-bar').autocomplete({
 		serviceUrl: '/search.php?cate=all&auto=true&size_flag=false',
 		paramName:'q',
-		autoSelectFirst:true,
+		minChars: 2,
 		onSelect: function (suggestion) {
-			$('form').submit();	
+			$('form').submit();
 		}
 	});
 })

@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     function renderResult(category, pager){
         $("#loading-mask").show();
-        var doc_cate = "all";
+        var doc_cate = "文档";
 
         $('.directory li').removeClass('is-active')
         $('.directory li.all-websites').addClass('is-active')
@@ -42,7 +42,7 @@ $(document).ready(function(){
                 dataType: 'json',
                 data: {q:keywords, count:true},
             }).done(function(data){
-                gio('track', 'search', { 'searchterms': keywords });
+                //gio('track', 'search', { 'searchterms': keywords });
                 $("#loading-mask").hide();
                 if (data.hits.total == 0){
                     $('.search-result').html('<div class="no-result">没有找到您期望的内容，请尝试其他搜索词，请拨打我们的咨询电话 4008576886，或发邮件至 contactus@yunify.com。</div>');
@@ -139,8 +139,15 @@ $(document).ready(function(){
                     dataType: 'json',
                     data: {q:keywords.replace(/\+/g, ' '), pager, cate:doc_cate,size_flag:false},
                 }).done(function(data){
-                    //console.log(data);
+                    $('.directory li').removeClass('is-active')
+					$('.directory li.docs').addClass('is-active')
                     $("#loading-mask").hide();
+					if (data.hits.total.value == 0){
+						$('.search-result').html('<div class="no-result">没有找到您期望的内容，请尝试其他搜索词，请拨打我们的咨询电话 4008576886，或发邮件至 contactus@yunify.com。</div>');
+						$('.directory li.is-active a span').html('');
+						$('.search-pagination').empty();
+						return;
+					}
                     $('.directory li.is-active a span').html('('+data.hits.total+')')
                     var results = '';
                     $.each(data.hits.hits, function(index, item){
@@ -176,6 +183,7 @@ $(document).ready(function(){
                     $(".search-pagination").html(pagination(data.hits.total, pager));
                 })
             }).fail(function(request, error){
+				$("#loading-mask").hide();
                 $('.search-result').html('<div class="no-result">没有找到您期望的内容，请尝试其他搜索词，请拨打我们的咨询电话 4008576886，或发邮件至 contactus@yunify.com。</div>');
                 $('.search-pagination').empty();
             });
@@ -235,6 +243,7 @@ $(document).ready(function(){
                 $('.search-result').html(results);
                 $(".search-pagination").html(pagination(data.hits.total, pager));
             }).fail(function(request, error){
+				$("#loading-mask").hide();
                 $('.search-result').html('<div class="no-result">没有找到您期望的内容，请尝试其他搜索词，请拨打我们的咨询电话 4008576886，或发邮件至 contactus@yunify.com。</div>');
                 $('.search-pagination').empty();
             });
@@ -294,6 +303,7 @@ $(document).ready(function(){
                 $('.search-result').html(results);
                 $(".search-pagination").html(pagination(data.hits.total, pager));
             }).fail(function(request, error){
+				$("#loading-mask").hide();
                 $('.search-result').html('<div class="no-result">没有找到您期望的内容，请尝试其他搜索词，请拨打我们的咨询电话 4008576886，或发邮件至 contactus@yunify.com。</div>');      
             });
         }  
@@ -439,7 +449,7 @@ $(document).ready(function(){
         $('.no-results').show();
     }
 
-
+	/*
 	const ANALYTICS_ACCOUNT = {
 		google: 'UA-136833840-1',
 		baidu: '17a3a88cbe9f9c8808943e8ed1c7155a',
@@ -463,5 +473,6 @@ $(document).ready(function(){
 			gio('app.set', appLevelVariables);
 		}
 	}, 1000);
+	*/
 });
 
