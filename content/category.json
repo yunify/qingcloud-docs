@@ -124,5 +124,56 @@
 				"development_doc": 0
 			}
 		}
+	},
+	"3": {
+		"name": "访问与授权",
+		"icon": "product-icon-storage.svg",
+		"category": {
+			"1": {
+				"name": "IAM",
+				"main_path":"iam",
+				"user_doc": [
+					{
+						"example_title": "IAM 策略",
+						"example_content": "什么是 IAM 策略",
+						"doc_url": "/iam/guide/policy/"
+					},
+					{
+						"example_title": "IAM 身份",
+						"example_content": "什么是 IAM 身份",
+						"doc_url": "/iam/guide/role/"
+					},
+					{
+						"example_title": "信任载体",
+						"example_content": "什么是信任载体",
+						"doc_url": "/iam/guide/principal/"
+					},
+					{
+						"example_title": "qrn",
+						"example_content": "什么是 qrn",
+						"doc_url": "/iam/guide/qrn/"
+					},
+					{
+						"example_title": "服务类别",
+						"example_content": "IAM 已支持的服务",
+						"doc_url": "/iam/guide/supported_services/"
+					}
+				],
+				"development_doc": [
+					{
+						"example_title": "共享访问",
+						"example_content": "您可以通过配置 IAM ，向您的 QingCloud 资源或其他 QingCloud 账户授予权限来管理和使用您账户中的资源，而不必共享您的账户密码或 API Access Key。",
+						"doc_url": "/iam/guide/scenarios/#场景演练免密钥应用开发"
+					},
+					{
+						"example_title": "精细权限",
+						"example_content": "您可以通过配置 IAM ，向不同的身份实体授予不同的资源访问权限。",
+						"doc_url": "/iam/guide/scenarios/#场景演练跨账号管理协作"
+					}
+
+				],
+				"content": "访问鉴权管理（Identity and Access Management，IAM）是一款在 QingCloud 平台上提供身份识别和访问控制的 Web 服务。通过使用 IAM 来统一管理和控制接入实体的认证和授权，能更安全地自主管控本账户下的任意资源访问权限。"
+			}
+		}
 	}
 }
