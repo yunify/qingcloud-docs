@@ -1,15 +1,19 @@
-<div class="td-page-top">
-	{{ define "breadcrumbnav" }}
-	{{ if .p1.Parent }}
-	{{ if not .p1.Parent.IsHome }}
-	{{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
-	{{ end }}
-	{{ else if not .p1.IsHome }}
-	{{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
-	{{ end }}
-	{{ $isActive :=  eq .p1 .p2  }}
-	<li class="breadcrumb-item{{ if $isActive }} active{{ end }}" {{ if $isActive }}aria-current="page"{{ end }}>
-		<a href="{{ .p1.Permalink }}">{{ .p1.LinkTitle }}</a>
-	</li>
-	{{ end }}
+<div class="container is-size-7" style="justify-content: end;min-height: 25px;">
+{{ if ne .CurrentSection.LinkTitle "Document"}}
+  {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+{{ end }}
 </div>
+
+{{ define "breadcrumbnav" }}
+{{ if .p1.Parent }}
+  {{ if not .p1.Parent.IsHome }}
+  {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+  {{ end }}
+{{ end }}
+{{ if eq .p1 .p2 }}
+<span class="has-text-grey">{{ .p1.LinkTitle }}</span>
+{{ else}}
+<a href="{{ .p1.RelPermalink }}" class="has-text-primary">{{ .p1.LinkTitle }}</a><span class="has-text-white container_span_space"> > </span>
+{{ end }}
+
+{{ end }}

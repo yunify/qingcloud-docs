@@ -12,18 +12,22 @@ Hugo(至少 `0.70` ) [gohugo版本](https://github.com/gohugoio/hugo/releases)
 
 2.安装项目依赖(项目根路径下)
 更新站点 CSS文件需要安装PostCSS，请按照下面命令本地安装PostCSS。
-```bash
-sudo npm install -D --save autoprefixer
-sudo npm install -D --save postcss-cli
+请于站点根目录下运行，windows 在cmd中执行
+npm install -D --save autoprefixer
+npm install -D --save postcss-cli
 ```
 
 
 ## 本地调试
 1. 执行下面的指令
 ```
-hugo server
+hugo server -w
 ```
 如果无法启动，并得到 "too many open files" 的错误代码，请运行sysctl -w kern.maxfiles=20480指令。
+```
+hugo -D
+```
+此命令可以生成项目静态网站，用于发布至服务器
 
 2.通过浏览器输入 url:  http://127.0.0.1:1313/ 预览文档，可以看到与线上文档相同的效果。
 

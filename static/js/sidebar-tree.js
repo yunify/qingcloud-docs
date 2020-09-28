@@ -58,3 +58,5 @@
         }
       });
     });
+
+$('.menu__title--collapse.active').trigger('click');
