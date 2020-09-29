@@ -1,4 +1,4 @@
-# 文档项目说明
+# QingCloud 新版文档项目说明
 
 QingCloud 官方文档使用了 [Hugo](https://gohugo.io/getting-started/installing/) 来构建网站，Hugo 是一个静态博客网站生成器，可将 Markdown 格式的文本构建为可发布的静态网站。因此需要在本地安装 Hugo。
 
@@ -6,6 +6,7 @@ QingCloud 官方文档使用了 [Hugo](https://gohugo.io/getting-started/install
 
 - [Git](https://www.git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git)（请熟悉 Git 常用的几条基本命令）
 - Hugo (至少 `v0.70` 以上) [请安装 hugo_extended 版本](https://github.com/gohugoio/hugo/releases)
+
 
 ## 第二步：Fork 与 Clone 仓库
 
@@ -17,7 +18,7 @@ git clone https://github.com/<YOUR-GITHUB-ID>/qingcloud-docs.git
 
 ## 第三步：本地调试
 
-1. 进入上一步克隆到本地的 qingcloud-docs 文件目录，然后执行下面的指令
+1. 进入上一步克隆到本地的 `qingcloud-docs` 文件目录，然后执行下面的命令在本地编译。
 
 ```
 hugo server -w
