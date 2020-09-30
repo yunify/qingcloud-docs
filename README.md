@@ -1,37 +1,35 @@
-# 文档项目说明
-QingCloud 官方文档使用了 [gohugo](https://gohugo.io/getting-started/installing/) 来构建网站，Hugo 是一个静态博客网站生成器，可将 Markdown 格式的文本构建为可发布的静态网站。因此需要在本地安装 Hugo。
+# QingCloud 新版文档项目说明
 
-# 第一步 安装前置工具 
-Git
+QingCloud 官方文档使用了 [Hugo](https://gohugo.io/getting-started/installing/) 来构建网站，Hugo 是一个静态博客网站生成器，可将 Markdown 格式的文本构建为可发布的静态网站。因此需要在本地安装 Hugo。
 
-Hugo(至少 `0.70` ) [gohugo版本](https://github.com/gohugoio/hugo/releases)
+## 第一步：安装前置工具 
 
-## 第二步 安装Node
-1.官网下载并本地安装 Node https://nodejs.org/zh-cn/
+- [Git](https://www.git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git)（请熟悉 Git 常用的几条基本命令）
+- Hugo (至少 `v0.70` 以上) [请安装 hugo_extended 版本](https://github.com/gohugoio/hugo/releases)
 
-2.安装项目依赖(项目根路径下)
-更新站点 CSS 文件需要安装 PostCSS，请按照下面命令本地安装 PostCSS。
-请于站点根目录下运行，windows 在 cmd 中执行
+
+## 第二步：Fork 与 Clone 仓库
+
+请点击右上角 **Fork** 将 qingcloud-docs 仓库 Folk 至自己的　GitHub，然后将自己账号下的 Git 仓库地址 Clone 到本地，如：
 
 ```
-npm install -D --save autoprefixer
-npm install -D --save postcss-cli
+git clone https://github.com/<YOUR-GITHUB-ID>/qingcloud-docs.git
 ```
 
-## 本地调试
-1. 执行下面的指令
+## 第三步：本地调试
+
+1. 进入上一步克隆到本地的 `qingcloud-docs` 文件目录，然后执行下面的命令在本地编译。
+
 ```
 hugo server -w
 ```
-如果无法启动，并得到 "too many open files" 的错误代码，请运行 `sysctl -w kern.maxfiles=20480` 指令。
-```
-hugo -D
-```
-此命令可以生成项目静态网站，用于发布至服务器。
 
-2.通过浏览器输入 url: http://127.0.0.1:1313/ 预览文档，可以看到与线上文档相同的效果。
+2. 通过浏览器输入 `http://127.0.0.1:1313/` 预览文档，可以看到与线上文档相同的效果。
+
+> 说明：接下来只需要在 [qingcloud/content/](https://github.com/yunify/qingcloud-docs/tree/master/content) 目录下在本地编辑内容，可参考该目录下 3 个示例目录结构。编辑完成后，在本地使用 git 命令提交，最后提交一个 Pull Request 到上游的 [qingcloud-docs 仓库](https://github.com/yunify/qingcloud-docs)。
+
+## FAQ
+
+如果无法启动，并得到 "too many open files" 的错误代码，请运行 `sysctl -w kern.maxfiles=20480` 命令。
 
 
-## 目录结构说明
-
-`/content/zh/category.json` 内编写目录, 可用 json 编辑器编辑后保存于文件中。
