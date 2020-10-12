@@ -6,40 +6,10 @@ collapsible: true
 type: "product"
 
 section1:
-  title: 虚拟主机
+  title: 主机
   vice_title: QingCloud 为您提供秒级响应、性能卓越、安全稳定的云计算服务
   video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
   video_img: "/images/video.png"
-
-section2:
-  title: QingStor 虚拟主机用户文档
-  children:
-    - title: QingStor 很虚拟
-      content: 很虚拟很虚拟很虚拟很虚拟很虚拟很虚拟
-      url: "/qingstor/test1/test1_1"
-
-    - title: QingStor 很真实
-      content: 很真实很真实很真实很真实很真实很真实
-      url: "/qingstor/test1/test1_2"
-
-    - title: QingStor 真真假假
-      content: 真真假假真真假假真真假假真真假假真真假假真真假假真真假假真真假假真真假假
-      url: "/qingstor/test1/test1_3/test1_3_1"
-
-section3:
-  title: QingStor 虚拟主机开发者文档
-  children:
-    - title: QingStor 111
-      content: 2222222
-      url: "/qingstor/test1/test1_1"
-
-    - title: QingStor 333
-      content: 44444444444
-      url: "/test/guide/object_manage"
-
-    - title: QingStor 5555
-      content: 5555555555555555555555555555555的法国人过生日
-      url: "/qingstor/test1/test1_3/test1_3_2"
 
 section4:
   children:
@@ -47,8 +17,8 @@ section4:
       content: QingStor 对象存储为用户提供可无限扩展的通用数据存储服务。
       vice_title: 了解的第一步
       children:
-        - title: 什么是 QingStor 对象存储
-          url: "/qingstor/test1/test1_3/test1_3_2"
+        - title: 什么是主机
+          url: "/qingstor/test1/intro/introduction"
 
         - title: 什么是 QingStor 对象存储
           url: "/qingstor/test1/test1_3/test1_3_2"

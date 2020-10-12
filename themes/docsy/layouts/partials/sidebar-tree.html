@@ -41,14 +41,14 @@
   {{ $active = or $active (in $currentURL $sectionName1) }}
   
   {{ if $ctx.Params.Collapsible }}
-  <span class="menu__title--collapse {{ if $active }}active{{ end }}" data-depth="{{ $depth }}">
+  <span class="menu__title--collapse {{ if $active }}active {{ else }} display-hide {{ end }}" data-depth="{{ $depth }}">
     {{ $ctx.Title }}
     <span
       class="menu__title--icon {{ if $active }}{{ if eq ($root.Param "languagedir") "rtl" }}downrtl{{ else }}down{{ end }}{{ else }}right{{ end }}">
       
     </span>
   </span>
-  <ul class="menu__list {{ if $active }}active{{ else if (in $ctx.Permalink (print "/" $sectionName1 "/")) }}{{ end }}"
+  <ul class="menu__list {{ if $active }}active{{ else if (in $ctx.Permalink (print "/" $sectionName1 "/")) }}{{ else }} display-hide  {{ end }}"
     data-data={{ print "/" $sectionName1 "/"}} data-link={{ .root.Permalink }}>
     {{ range $ctx.Pages.ByWeight }}
     {{ if .Params.Collapsible }}
