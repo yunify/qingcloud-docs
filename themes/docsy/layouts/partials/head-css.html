@@ -1,5 +1,9 @@
 <link href="https://s3.qingcloud.com/static/assets/css/bulma.css" rel="stylesheet">
+<link href="/css/autocomplete.css" rel="stylesheet" />
 {{ $scssMain := "scss/main.scss"}}
+{{ if .Site.Params.IsConsole }}
+    {{ $scssMain = "scss/console.scss"}}
+{{ end }}
 {{ if .Site.IsServer }}
 {{/* Note the missing postCSS. This makes it snappier to develop in Chrome, but makes it look sub-optimal in other browsers. */}}
 {{ $css := resources.Get $scssMain | toCSS (dict "enableSourceMap" true) }}

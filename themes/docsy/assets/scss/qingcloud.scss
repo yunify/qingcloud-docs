@@ -184,6 +184,9 @@ ul.timeline > li:before {
                 }
             }
         }
+        .icon-arrow{
+            display: none;
+        }
     }
 }
 
@@ -715,4 +718,9 @@ ul.product_dynamics_ul{
 
 .display-hide{
     display:none;
+}
+
+.product-video{
+    display: block;
+    width: 100%;
 }
