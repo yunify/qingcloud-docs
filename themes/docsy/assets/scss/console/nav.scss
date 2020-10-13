@@ -1,0 +1,26 @@
+.nav-wrapper {
+    background: #fff;
+
+    .navbar:first-child {
+        display: none;
+    }
+    .navmenu{
+        background-color: #fff;
+        padding: 16px 24px;
+        border-bottom: solid 1px #e4ebf1;
+    }
+    .container_span_space{
+        color: #c6c8cf!important;
+        margin: 0 4px;
+    }
+
+}
+.navbar > .container{
+    justify-content: flex-start;
+    min-height: auto;
+}
+#index_url_path{
+    .has-text-primary{
+        color: #263546!important;
+    }
+}
