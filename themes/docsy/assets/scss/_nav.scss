@@ -16,7 +16,15 @@
 nav.navbar {
     background-color: rgba(48, 48, 58, .2);
     border-bottom: 1px solid rgba(255, 255, 255, .1);
-    min-height: 58px;
+    min-height: 25px;
+
+    .container {
+        justify-content: end;
+        min-height: 25px;
+    }
+    &:last-child{
+        border-bottom: none;
+    }
 }
 
 .navbar .navbar-menu a.navbar-item {
@@ -36,7 +44,7 @@ nav.navbar {
     font-weight: 500;
 }
 
-.navbar .field a:hover{
+.navbar .field a:hover {
     color: #00a971;
 }
 
@@ -44,7 +52,7 @@ nav.navbar {
     height: 36px;
 }
 
-.navbar .field .button:hover{
+.navbar .field .button:hover {
     color: #fff;
 }
 
@@ -1033,6 +1041,7 @@ nav.navbar {
     .navmenu .menu-logo .logo-iot {
         background: url(/static/assets/images/menu/iot.svg) left center no-repeat;
     }
+
     .navmenu .menu-logo .logo-ai {
         background: url(/static/assets/images/menu/ai.svg?v=1) left center no-repeat;
     }
@@ -1061,7 +1070,8 @@ nav.navbar {
         background: url(/static/assets/images/menu/security.svg?v=1) left center no-repeat;
     }
 
-    .navmenu .menu-logo .icon-hot, .navmenu .menu-list .icon-hot {
+    .navmenu .menu-logo .icon-hot,
+    .navmenu .menu-list .icon-hot {
         width: 28px;
         height: 13px;
         background: url(/static/assets/images/menu/hot.svg?v=2) left center no-repeat;
@@ -1069,7 +1079,8 @@ nav.navbar {
         display: inline-block;
     }
 
-    .navmenu .menu-logo .icon-new, .navmenu .menu-list .icon-new {
+    .navmenu .menu-logo .icon-new,
+    .navmenu .menu-list .icon-new {
         width: 28px;
         height: 13px;
         background: url(/static/assets/images/menu/new.svg?v=2) left center no-repeat;
@@ -1178,6 +1189,6 @@ nav.navbar {
     }
 }
 
-#search-bar{
-    border-radius:4px;
+#search-bar {
+    border-radius: 4px;
 }
