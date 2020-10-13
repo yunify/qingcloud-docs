@@ -15,7 +15,7 @@ weight: 29
 
 QingCloud 为您提供了一系列系统预置策略以满足日常管理需要，您也可以通过 IAM 管理控制台可视化配置策略以满足您的特定权限管理需求。
 
-如何创建策略，请参阅：[IAM 策略](/iam/introduction/policy)
+如何创建策略，请参阅：[IAM 策略](../../manual/policy)
 
 ### 身份
 
@@ -27,7 +27,7 @@ QingCloud 为您提供了一系列系统预置策略以满足日常管理需要�
 
 QingCloud 为 IAM 身份接入提供专属 SDK ，以辅助提高您的云平台应用开发效率。
 
-如何创建和使用身份，请参阅：[IAM 身份](/iam/introduction/role)
+如何创建和使用身份，请参阅：[IAM 身份](../../manual/role)
 
 ### 信任载体
 
@@ -37,7 +37,7 @@ QingCloud 为 IAM 身份接入提供专属 SDK ，以辅助提高您的云平台
 
 > 注：若您在创建身份时指定的信任载体为产品资源，您需要继续在身份上关联指定具体的载体资源它才能代入使用此身份。
 
-更多“信任载体”相关信息，请参阅：[信任载体](/iam/introduction/principal)
+更多“信任载体”相关信息，请参阅：[信任载体](../../faq/principal)
 
 ### 会话有效期
 
@@ -49,7 +49,7 @@ QingCloud 为 IAM 身份接入提供专属 SDK ，以辅助提高您的云平台
 >
 > 您可以参考身份对账户可操作的敏感程度来定义身份的安全级别，我们推荐您为更高安全级别的身份使用更短的会话有效期。
 
-更多“会话有效期”相关信息，请参阅：[IAM 身份](/iam/introduction/role)
+更多“会话有效期”相关信息，请参阅：[IAM 身份](../../manual/role)
 
 ### 服务类别
 
@@ -57,13 +57,13 @@ QingCloud 为 IAM 身份接入提供专属 SDK ，以辅助提高您的云平台
 
 若您决定针对性的创建策略以定义某些操作或资源的访问权限，您需要先选择对应的服务类别，然后勾选需要限定的操作，最后根据操作来指定权限范围。
 
-如何创建策略，请参阅：[IAM 策略](/iam/introduction/policy)
+如何创建策略，请参阅：[IAM 策略](../../manual/policy)
 
 > 只有经过 IAM 集成的服务才可以创建自定义策略，暂未集成的服务将会默认被 IAM 评估拒绝。
 >
 > 目前并非所有的 QingCloud 服务都可以通过 IAM 来控制访问权限。
 
-QingCloud IAM 已支持的服务列表，请参阅：[IAM 支持的服务列表](/iam/manual/supported_services)
+QingCloud IAM 已支持的服务列表，请参阅：[IAM 支持的服务列表](../../faq/supported_services)
 
 ### QRN（资源标识符）
 
@@ -71,9 +71,9 @@ QingCloud IAM 已支持的服务列表，请参阅：[IAM 支持的服务列表]
 
 我们为整个 QingCloud 平台统一了所有不同类别的资源标识方法，在 IAM 策略使用过程中均需遵循此方法。
 
-请参阅：[QRN（资源标识符）](/iam/introduction/qrn)
+请参阅：[QRN（资源标识符）](../../faq/qrn)
 
 为了帮助 QingCloud 客户更快的理解和上手使用 QRN ，我们在每个需要输入 QRN 的地方提供了`QRN 生成器`小工具。
 
-如何使用 QRN 生成器，请参阅：[QRN 生成器](/iam/introduction/qrn#qrn生成器)
+如何使用 QRN 生成器，请参阅：[QRN 生成器](../../faq/qrn#qrn生成器)
 
