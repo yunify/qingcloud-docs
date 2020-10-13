@@ -16,17 +16,17 @@ weight: 31
 
 1.向您需要授权的人获取到他的 QingCloud 账户 ID 。例如对方账户为 `tester@yunify.com` ，ID 为 `usr-ZBeoYtYw`
 
-![demo2_AnotherAccount](/iam/_images/demo2_AnotherAccount.png)
+![demo2_AnotherAccount](../../_images/demo2_AnotherAccount.png)
 
 > 注：此 ID 需要他人自行查看并主动发送给您，否则您将无法为对方设置访问权。
 
 2.创建一个青云账户类的身份，信任载体填写为对方发送给您的这个 ID ，并关联具备指定权限范围的策略（本例中将使用支持完全访问虚拟专用网服务的预置策略）
 
-![demo2_CreateRole](/iam/_images/demo2_CreateRole.png)
+![demo2_CreateRole](../../_images/demo2_CreateRole.png)
 
 3.在身份上备注对方信息，并为其配置访问控制台时的可操作模块
 
-![demo2_ConfigRole](/iam/_images/demo2_ConfigRole.png)
+![demo2_ConfigRole](../../_images/demo2_ConfigRole.png)
 
 > 注：设置访问模块是为了让对方更聚焦操作，是对对方可操作权限的双重保险设定。
 
@@ -36,12 +36,12 @@ weight: 31
 
 `tester@yunify.com`的前提操作：**切换身份**
 
-![demo2_SwitchRole](/iam/_images/demo2_SwitchRole.png)
+![demo2_SwitchRole](../../_images/demo2_SwitchRole.png)
 
 1.导航栏有路由器和私有网络入口，不再有其他入口
 
-![demo2_Dashboard](/iam/_images/demo2_Dashboard.png)
+![demo2_Dashboard](../../_images/demo2_Dashboard.png)
 
 2.能成功查看和创建 VPC
 
-![demo2_CreateVPC](/iam/_images/demo2_CreateVPC.png)
+![demo2_CreateVPC](../../_images/demo2_CreateVPC.png)

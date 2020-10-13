@@ -16,15 +16,15 @@ weight: 30
 
 1.创建一个信任载体为主机的身份，并关联具备指定权限范围的策略（本例中将使用支持完全访问弹性云主机服务的预置策略）
 
-![demo1_CreateRole](/iam/_images/demo1_CreateRole.png)
+![demo1_CreateRole](../../_images/demo1_CreateRole.png)
 
 2.将您准备用来部署和执行您开发的这款应用的云主机，关联到新创建的身份上
 
-![demo1_AssociateRole](/iam/_images/demo1_AssociateRole.png)
+![demo1_AssociateRole](../../_images/demo1_AssociateRole.png)
 
 3.将 QingCloud 官方 SDK 引用到这款应用的身份鉴权代码中（本例中为 Python SDK）
 
-![demo1_ConnectSDK](/iam/_images/demo1_ConnectSDK.png)
+![demo1_ConnectSDK](../../_images/demo1_ConnectSDK.png)
 
 ### 验证演示
 
@@ -32,10 +32,10 @@ weight: 30
 
 1.能操作停止主机 StopInstances ：
 
-![demo1_ExcuteSDK1](/iam/_images/demo1_ExcuteSDK1.png)
+![demo1_ExcuteSDK1](../../_images/demo1_ExcuteSDK1.png)
 
-![demo1_ExcuteCallback](/iam/_images/demo1_ExcuteCallback.png)
+![demo1_ExcuteCallback](../../_images/demo1_ExcuteCallback.png)
 
 2.不能操作删除私有网络 DeleteVxnets ：
 
-![demo1_ExcuteSDK2](/iam/_images/demo1_ExcuteSDK2.png)
+![demo1_ExcuteSDK2](../../_images/demo1_ExcuteSDK2.png)

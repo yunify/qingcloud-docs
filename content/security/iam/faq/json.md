@@ -3,16 +3,16 @@ title: "JSON 编辑格式及参数说明"
 date: 2020-02-28T10:08:56+09:00
 description: 
 draft: false
-weight: 32
+weight: 4
 ---
 
 # JSON 编辑格式及参数说明
 
 创建或编辑策略时，您可以选择 JSON 选项卡进入 JSON 编辑模式，以便在 JSON 编辑器中键入或粘贴策略。
 
-这种方法一般适用于复制[示例策略](/iam/introduction/policy#policies)以方便在您的账户中使用，如果您对下文描述中的 QingCloud IAM 语法元素比较熟悉，也可以直接在 JSON 编辑器中键入自己的 JSON 策略文档。
+这种方法一般适用于复制[示例策略](../../introduction/policy#policies)以方便在您的账户中使用，如果您对下文描述中的 QingCloud IAM 语法元素比较熟悉，也可以直接在 JSON 编辑器中键入自己的 JSON 策略文档。
 
-![demo1_JsonEditor](/iam/_images/demo1_JsonEditor.png)
+![demo1_JsonEditor](../../_images/demo1_JsonEditor.png)
 
 ## 策略构成
 
@@ -42,7 +42,7 @@ weight: 32
 
     描述允许或拒绝的操作，该元素是必填项。
 
-    操作可以是某个或某些服务下的 [API](/iam/manual/supported_services#服务操作列表) 或者功能集。
+    操作可以是某个或某些服务下的 [API](../../manual/supported_services#服务操作列表) 或者功能集。
 
     填写时以冒号分隔前者为服务类别后者为操作 API ，可以使用一个 `*` 作为通配符。
 
@@ -58,7 +58,7 @@ weight: 32
 
     描述授权的具体数据范围，该元素是必填项。
 
-    资源是用六段式 qrn 描述，每款产品的资源定义详情会有所区别。具体描述方式请参阅：[资源标识符 QRN](/iam/introduction/qrn) 。
+    资源是用六段式 qrn 描述，每款产品的资源定义详情会有所区别。具体描述方式请参阅：[资源标识符 QRN](../../introduction/qrn) 。
 
     ```json
     "resource": "qrn:qingcloud:ecm:test:usr-XXXXX:instance/i-123456"
