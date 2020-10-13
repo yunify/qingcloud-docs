@@ -2,12 +2,12 @@
 title: "资源标识符"
 description: QRN
 draft: false
-weight: 35
+weight: 2
 ---
 
 # 资源标识符 QRN
 
-QingCloud 资源名称 (QRN) 被用来作为 QingCloud 资源的唯一标识。当您需要在全局环境（比如 [IAM 策略](/iam/introduction/policy)）中明确指定一项资源时，我们要求使用 QRN 。
+QingCloud 资源名称 (QRN) 被用来作为 QingCloud 资源的唯一标识。当您需要在全局环境（比如 [IAM 策略](../../introduction/policy)）中明确指定一项资源时，我们要求使用 QRN 。
 
 ## 格式
 
@@ -25,9 +25,9 @@ QingCloud 资源名称 (QRN) 被用来作为 QingCloud 资源的唯一标识。�
   
 - **平台分区(partition)**：目前作为保留字段。该字段是必填项，且固定为"qingcloud"。
 
-- **服务(service)**：QingCloud（例如：弹性云主机[ecm]、虚机私有云[vpc] 等）的产品命名空间。该字段是必填项，相关服务列表请参阅[QingCloud 服务类别](/iam/manual/supported_services#服务类别)。
+- **服务(service)**：QingCloud（例如：弹性云主机[ecm]、虚机私有云[vpc] 等）的产品命名空间。该字段是必填项，相关服务列表请参阅[QingCloud 服务类别](../../manual/supported_services#服务类别)。
 
-- **区域(region)**：资源所在的区域或可用区（例如：北京3区[pek3]、亚太2区-A[ap2a]等）。一些全局资源的 QRN 不需要指定区域，因此该字段可能会被省略。相关区域列表请参阅[区域列表](/iam/manual/supported_services#区域和可用区)
+- **区域(region)**：资源所在的区域或可用区（例如：北京3区[pek3]、亚太2区-A[ap2a]等）。一些全局资源的 QRN 不需要指定区域，因此该字段可能会被省略。相关区域列表请参阅[区域列表](../../manual/supported_services#区域和可用区)
 
 - **账号标识符(account-id)**：该资源的所属 QingCloud 账号 id（例如：usr-xxxxxx）。该字段是必填项。
 
@@ -79,12 +79,12 @@ qrn:qingcloud:iam::usr-xxxxxx:role/iamr-xxxxxx
 
 我们在每个需要填写 qrn 的地方提供了 qrn 生成器小工具，当您不知如何填写 qrn 时便可根据 qrn 生成器来生成。
 
-![图片](/iam/_images/qrntool1.png)
+![图片](../../_images/qrntool1.png)
 
 根据工具指引依次选择下拉框中的参数，或者勾选“任意”以定位到多个同类资源。
 
 点击“生成”按钮，将自动填写对应的 qrn 到输入框：
 
-![图片](/iam/_images/qrntool2.png)
+![图片](../../_images/qrntool2.png)
 
 通过工具生成 qrn 后，您还可以继续在该内容中按上方的格式来编辑修改指定资源。

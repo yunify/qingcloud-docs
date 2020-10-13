@@ -3,7 +3,7 @@ title: "支持的服务列表"
 date: 2020-02-28T10:08:56+09:00
 description: 
 draft: false
-weight: 31
+weight: 5
 ---
 
 # QingCloud 服务
@@ -12,7 +12,7 @@ weight: 31
 
 若您决定针对性的创建策略以定义某些操作或资源的访问权限，您需要先选择对应的服务类别，然后勾选需要限定的操作，最后根据操作来指定权限范围。
 
-在您编辑[策略](/iam/introduction/policy)或指定[资源标识符 QRN](/iam/introduction/qrn)时，您可能需要了解 QingCloud 平台上的服务类别、区域、操作指令，以及它们与 QingCloud 资源类型之间的关系。
+在您编辑[策略](../../introduction/policy)或指定[资源标识符 QRN](../../introduction/qrn)时，您可能需要了解 QingCloud 平台上的服务类别、区域、操作指令，以及它们与 QingCloud 资源类型之间的关系。
 
 > 只有经过 IAM 集成的服务才可以创建自定义策略，暂未集成的服务将会默认被 IAM 评估拒绝。
 >
@@ -29,9 +29,9 @@ weight: 31
 
 > 注：对服务类别的支持将在后续逐步完善，目前暂未支持的云计算服务默认将采取拒绝策略。
 >
-> 有些全局服务（例如财务、通知、工单、发票等）暂未提供 API 级别的策略配置，您需要到账户类身份详情页[配置控制台可见模块](/iam/introduction/role#为账户类身份配置可见模块)来控制页面级访问。
+> 有些全局服务（例如财务、通知、工单、发票等）暂未提供 API 级别的策略配置，您需要到账户类身份详情页[配置控制台可见模块](../../introduction/role#为账户类身份配置可见模块)来控制页面级访问。
 >
-> ![demo1_ConfigModule](/iam/_images/demo1_ConfigModule.png)
+> ![demo1_ConfigModule](../../_images/demo1_ConfigModule.png)
 >
 > 您可能在使用过程中发现一些服务暂不支持或使用报错，可随时与我们联系。
 
