@@ -5,9 +5,9 @@ draft: false
 weight: 2
 ---
 
-QingCloud 资源名称 (QRN) 被用来作为 QingCloud 资源的唯一标识。当您需要在全局环境（比如 [IAM 策略](../../introduction/policy)）中明确指定一项资源时，我们要求使用 QRN 。
+QingCloud 资源名称 (QRN) 被用来作为 QingCloud 资源的唯一标识。当您需要在全局环境（比如 [IAM 策略](../../manual/policy)）中明确指定一项资源时，我们要求使用 QRN 。
 
-## 格式
+## 格式说明
 
 所有资源均可采用六段式描述方式：
 
@@ -31,23 +31,23 @@ QingCloud 资源名称 (QRN) 被用来作为 QingCloud 资源的唯一标识。�
 
 - **资源(resource)**：描述该资源的具体详情。该字段是必填项。它通常有以下几种描述方式：
 
-1. `<resource_type>/<resource_id>`
+> 1. `<resource_type>/<resource_id>`
+>
+> 表示某个资源类型下的某个具体资源。例如资源 ID 为 i-xxxxxx 的主机：instance/i-xxxxxx
+>
+> 2. `<resource_type>/*`  
+>
+> 表示某个资源类型下的所有资源。例如所有公网 IP ：eip/*
+>
+> 3. `*`
+>
+> 表示某产品下的所有资源。
+>
+> 4. `特殊情况`  
+>
+> 如 `qrn:qingcloud:iam::usr-xxxxxx:root` 用来表示该账号。
 
-      > 表示某个资源类型下的某个具体资源。例如资源 ID 为 i-xxxxxx 的主机：instance/i-xxxxxx
-
-2. `<resource_type>/*`  
-
-      > 表示某个资源类型下的所有资源。例如所有公网 IP ：eip/*
-
-3. `*`
-
-      > 表示某产品下的所有资源。
-
-4. `特殊情况`  
-
-      > 如 `qrn:qingcloud:iam::usr-xxxxxx:root` 用来表示该账号。
-
-## 示例
+### 示例
 
 账户 id 为`usr-xxxxxx`的账户：
 

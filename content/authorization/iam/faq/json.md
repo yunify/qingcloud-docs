@@ -8,7 +8,7 @@ weight: 4
 
 创建或编辑策略时，您可以选择 JSON 选项卡进入 JSON 编辑模式，以便在 JSON 编辑器中键入或粘贴策略。
 
-这种方法一般适用于复制[示例策略](../../introduction/policy#policies)以方便在您的账户中使用，如果您对下文描述中的 QingCloud IAM 语法元素比较熟悉，也可以直接在 JSON 编辑器中键入自己的 JSON 策略文档。
+这种方法一般适用于复制[示例策略](../../faq/json/#策略示例)以方便在您的账户中使用，如果您对下文描述中的 QingCloud IAM 语法元素比较熟悉，也可以直接在 JSON 编辑器中键入自己的 JSON 策略文档。
 
 ![demo1_JsonEditor](../../_images/demo1_JsonEditor.png)
 
@@ -40,7 +40,7 @@ weight: 4
 
     描述允许或拒绝的操作，该元素是必填项。
 
-    操作可以是某个或某些服务下的 [API](../../manual/supported_services#服务操作列表) 或者功能集。
+    操作可以是某个或某些服务下的 [API](../../faq/supported_services#服务操作列表) 或者功能集。
 
     填写时以冒号分隔前者为服务类别后者为操作 API ，可以使用一个 `*` 作为通配符。
 
@@ -56,7 +56,7 @@ weight: 4
 
     描述授权的具体数据范围，该元素是必填项。
 
-    资源是用六段式 qrn 描述，每款产品的资源定义详情会有所区别。具体描述方式请参阅：[资源标识符 QRN](../../introduction/qrn) 。
+    资源是用六段式 qrn 描述，每款产品的资源定义详情会有所区别。具体描述方式请参阅：[资源标识符 QRN](../../faq/qrn) 。
 
     ```json
     "resource": "qrn:qingcloud:ecm:test:usr-XXXXX:instance/i-123456"
