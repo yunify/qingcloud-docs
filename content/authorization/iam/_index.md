@@ -34,17 +34,6 @@ section4:
           
         - title: 资源标识符
           url: "introduction/glossary#qrn资源标识符"
-                  
-
-    - title: 上手
-      content: 创建并使用您的第一个身份
-      vice_title: 上手的第一步
-      children: 
-        - title: 创建身份
-          url: "quick-start/create-role"
-
-        - title: 创建策略
-          url: "quick-start/create-policy"
 
 ---
 
