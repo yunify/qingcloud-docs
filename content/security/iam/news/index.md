@@ -2,7 +2,7 @@
 title: "产品动态"
 date: 2020-02-28T10:08:56+09:00
 collapsible: false
-weight: 10
+weight: 2
 
 product:
     - time: 2019-10-24 17:50:47

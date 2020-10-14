@@ -5,8 +5,6 @@ draft: false
 weight: 29
 ---
 
-## IAM 名词解释
-
 ### 策略
 
 **策略**是一系列 QingCloud 云服务自定义权限的集合。

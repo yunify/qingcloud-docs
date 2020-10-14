@@ -6,8 +6,6 @@ draft: false
 weight: 4
 ---
 
-# JSON 编辑格式及参数说明
-
 创建或编辑策略时，您可以选择 JSON 选项卡进入 JSON 编辑模式，以便在 JSON 编辑器中键入或粘贴策略。
 
 这种方法一般适用于复制[示例策略](../../introduction/policy#policies)以方便在您的账户中使用，如果您对下文描述中的 QingCloud IAM 语法元素比较熟悉，也可以直接在 JSON 编辑器中键入自己的 JSON 策略文档。

@@ -6,8 +6,6 @@ draft: false
 weight: 3
 ---
 
-# 如何使用身份
-
 ## 代入使用的前提
 
 代入身份的实体，必须是该身份的[信任载体](../../introduction/principal)。
