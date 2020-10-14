@@ -539,7 +539,9 @@ nav.navbar {
         text-align: center;
         background-color: #3d3e49;
     }
-
+    .nav-wrapper-index{
+        background-color: transparent;
+    }
     .navmenu::before {
         content: "desktop";
     }
