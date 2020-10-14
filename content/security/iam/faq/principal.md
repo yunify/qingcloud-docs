@@ -1,6 +1,6 @@
 ---
 title: "信任载体"
-description: IAM 信任载体
+description:
 draft: false
 weight: 1
 ---
