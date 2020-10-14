@@ -1,11 +1,9 @@
 ---
-title: "资源标识符"
-description: QRN
+title: "资源标识符 QRN"
+description: 
 draft: false
 weight: 2
 ---
-
-# 资源标识符 QRN
 
 QingCloud 资源名称 (QRN) 被用来作为 QingCloud 资源的唯一标识。当您需要在全局环境（比如 [IAM 策略](../../introduction/policy)）中明确指定一项资源时，我们要求使用 QRN 。
 

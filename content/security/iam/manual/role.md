@@ -1,11 +1,9 @@
 ---
-title: "身份"
-description: IAM 身份
+title: "身份管理"
+description: 
 draft: false
 weight: 2
 ---
-
-# 身份管理
 
 为了控制可以接入云平台访问客户资源的实体，您可以通过创建 IAM 身份向应用程序或他人来委派您名下 QingCloud 服务和资源的访问权限。
 
