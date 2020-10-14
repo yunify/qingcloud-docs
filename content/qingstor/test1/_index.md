@@ -1,7 +1,7 @@
 ---
-title: "test1"
-linkTitle: "test1"
-weight: 3
+title: "虚拟主机"
+linkTitle: "虚拟主机"
+weight: 1
 collapsible: true
 type: "product"
 
@@ -11,62 +11,32 @@ section1:
   video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
   video_img: "/images/video.png"
 
-section2:
-  title: QingStor 虚拟主机用户文档
-  children:
-    - title: QingStor 很虚拟
-      content: 很虚拟很虚拟很虚拟很虚拟很虚拟很虚拟
-      url: "/qingstor/test1/test1_1"
-
-    - title: QingStor 很真实
-      content: 很真实很真实很真实很真实很真实很真实
-      url: "/qingstor/test1/test1_2"
-
-    - title: QingStor 真真假假
-      content: 真真假假真真假假真真假假真真假假真真假假真真假假真真假假真真假假真真假假
-      url: "/qingstor/test1/test1_3/test1_3_1"
-
-section3:
-  title: QingStor 虚拟主机开发者文档
-  children:
-    - title: QingStor 111
-      content: 2222222
-      url: "/qingstor/test1/test1_1"
-
-    - title: QingStor 333
-      content: 44444444444
-      url: "/test/guide/object_manage"
-
-    - title: QingStor 5555
-      content: 5555555555555555555555555555555的法国人过生日
-      url: "/qingstor/test1/test1_3/test1_3_2"
-
 section4:
   children:
     - title: 了解
-      content: QingStor 对象存储为用户提供可无限扩展的通用数据存储服务。
+      content: 虚拟主机为用户提供可无限扩展的通用数据存储服务。
       vice_title: 了解的第一步
       children:
-        - title: 什么是 QingStor 对象存储
+        - title: 主机（从这里进入示例目录）
+          url: "/qingstor/test1/intro/introduction"
+
+        - title: 什么是虚拟主机
           url: "/qingstor/test1/test1_3/test1_3_2"
 
-        - title: 什么是 QingStor 对象存储
-          url: "/qingstor/test1/test1_3/test1_3_2"
-
-        - title: 什么是 QingStor 对象存储
+        - title: 什么是虚拟主机
           url: "/qingstor/test1/test1_3/test1_3_2"
 
     - title: 上手
-      content: QingStor 对象存储为用户提供可无限扩展的通用数据存储服务。
+      content: 虚拟主机为用户提供可无限扩展的通用数据存储服务。
       vice_title: 上手的第一步
       children: 
-        - title: 什么是 QingStor 对象存储
+        - title: 什么是虚拟主机
           url: "/qingstor/test1/test1_3/test1_3_2"
 
-        - title: 什么是 QingStor 对象存储
+        - title: 什么是虚拟主机
           url: "/qingstor/test1/test1_3/test1_3_2"
 
-        - title: 什么是 QingStor 对象存储
+        - title: 什么是虚拟主机
           url: "/qingstor/test1/test1_3/test1_3_2"
 ---
 

@@ -271,7 +271,9 @@
             $(that.suggestionsContainer).css({
                 'max-height': options.maxHeight + 'px',
                 'width': options.width + 'px',
-                'z-index': options.zIndex
+                'z-index': options.zIndex,
+				'margin-top': '2px',
+				'border-radius': '4px'
             });
 
             this.options = options;
