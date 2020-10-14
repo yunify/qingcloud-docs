@@ -5,20 +5,25 @@ collapsible: false
 weight: 2
 
 product:
-    - time: 2019-10-24 17:50:47
-      title: 上线集群身份
-      content: 为了满足用户对高性能计算、视频处理或图形渲染的需求，青云特推出GPU主机给有需求的用户使用，用户可以在青云控制台上进行GPU主机的创建和使用。。
-      url: /computing/manual/gpu_instance/
+    - time: 2020-09-11
+      title: 访问鉴权管理（IAM）功能新增：集群身份
+      content: 为了完善 IAM 产品资源类的信任载体身份，以服务于更多未来的使用场景，我们新增支持集群作为身份信任载体。
+      url: ../faq/principal/
       
-    - time: 2019-10-24 17:50:47
-      title: 上线亚太2区
-      content: 青云 QingCloud 物理主机服务，提供高性能、资源独享、安全隔离的专属物理主机群组，满足各类核心应用对高性能及稳定性的需求，同时提供完整的设备管理权限及运维服务。 用户可以像使用其他云资源一样，快速、灵活的部署及管理物理主机，并可按需弹性购买。。
-      url: /computing/manual/bm_instance/
+    - time: 2020-07-07
+      title: 访问鉴权管理产品新增操作日志模块
+      content: 作为一款以安全角度出发的产品，当客户数据发生变动时记录操作轨迹以供审查和回溯将尤为重要。为了明确告知客户的账户身份何时被创建、修改和代入使用，我们为 IAM 产品新增了操作日志模块。
+      url: ../manual/portal
 
-    - time: 2019-10-24 17:50:47
-      title: 支持将 ECS 迁移到青云QingCloud
-      content:
-      url: /computing/best-practices/ecs2qing/
+    - time: 2019-06-16
+      title: QingCloud IAM 访问鉴权管理服务 V1.0 发布
+      content: 日前，青云 QingCloud IAM 服务 V1.0 版（qingcloud.com/products/iam/）已发布至公有云平台供广大客户试用。
+      url: ../introduction/product_features
+      
+    - time: 2019-06-02
+      title: 青云QingCloud 推出 IAM 服务 打造零信任安全架构
+      content: 青云QingCloud 日前推出统一认证与访问鉴权管理服务 (简称IAM )（详情：qingcloud.com/products/IAM），使用者可以统一管理和控制接入实体的认证和授权，更安全地自主管控账户下的任意资源访问权限，实现企业零信任安全架构的构建。
+      url: ../introduction/product_features
 ---
 
 <!-- 设置上述参数可生成产品动态页  -->
