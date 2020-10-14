@@ -1,4 +1,4 @@
-<div class="nav-wrapper">
+<div class="nav-wrapper {{ if eq .CurrentSection.LinkTitle "Document"}}nav-wrapper-index {{ end }}">
             <nav class="navbar navmenu">
                 <div class="container with-no-position">
                     <div class="navbar-brand">
@@ -39,8 +39,9 @@
                     </div>
                 </div>
             </nav>
-
+			{{ if ne .CurrentSection.LinkTitle "Document"}}
 			<nav class="navbar navmenu" style="min-height: 25px;border-bottom: 0;">
 				{{ partial "breadcrumb.html" . }}	
 			</nav>
+			{{ end }}
         </div>
