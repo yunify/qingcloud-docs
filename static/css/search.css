@@ -68,7 +68,9 @@ i.icon-search {
     font-weight: 500;
     line-height: 2.14;
 }
-
+.search-category{
+    margin-top: 30px;
+}
 #search-category .directory li{
     font-size: 14px;
     color: #3e464c;

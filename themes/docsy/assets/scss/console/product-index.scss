@@ -1,0 +1,38 @@
+.hero-body {
+    padding: 24px;
+    border-bottom:  solid 1px #e4ebf1;
+    .title {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 12px;
+    }
+}
+
+#main_content {
+    color: #324558;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: normal;
+}
+#user_section,#development_section{
+    display: none;
+}
+.main_right{
+    display: inline-block;
+    img{
+        max-height: 136px;
+    }
+}
+.product-video{
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .hero-body {
+        .main-right{
+            float: right;
+        }
+    }
+}
+

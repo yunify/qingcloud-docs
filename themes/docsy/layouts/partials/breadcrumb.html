@@ -13,7 +13,13 @@
 {{ if eq .p1 .p2 }}
 <span class="has-text-grey">{{ .p1.LinkTitle }}</span>
 {{ else}}
-<a href="{{ .p1.RelPermalink }}" class="has-text-primary">{{ .p1.LinkTitle }}</a><span class="has-text-white container_span_space"> > </span>
+
+	{{if eq .p1.LinkTitle "Document"}}
+	<a href="/" class="has-text-primary">{{ .p1.LinkTitle }}</a><img class="container_span_space" src="/images/icons/path.svg">
+	{{ else}}
+	<a href="{{ .p1.RelPermalink }}" class="has-text-primary">{{ .p1.LinkTitle }}</a><img class="container_span_space" src="/images/icons/path.svg">
+	{{ end }}
+
 {{ end }}
 
 {{ end }}

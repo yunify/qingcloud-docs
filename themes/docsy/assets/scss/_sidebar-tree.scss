@@ -181,3 +181,15 @@
         }
     }
 }
+.td-sidebar-section-title {
+    display: flex;
+    align-items: center;
+    .doc_vice_title{
+        margin-bottom: 0;
+        padding-left: 10px;
+    }
+}
+.doc_vice_title{
+    padding-left: 10px;
+    margin-bottom:0;
+}

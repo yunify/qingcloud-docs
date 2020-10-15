@@ -29,10 +29,10 @@ $(function(){
 			$.each(data_child['learn_path'],function(k,v){
 				var learn_category_content = '';
 				$.each(v.category,function(j,i){
-					learn_category_content += '<li><a href='+i.doc_url+'>'+i.doc_title+'</a></li>';
+					learn_category_content += '<li><a href="'+i.doc_url+'">'+i.doc_title+'</a></li>';
 				});
 
-				learn_content += '<li class="row"><div class="col-sm-4 timeline-outer"><h2>'+v.title+'</h2><p>'+v.content+'</p></div><div class="col-sm-8 timeline-content"><div class="timeline-list"><h3 class="">'+v.category_title+'</h3><ul class="">'+learn_category_content+'</ul></div></div></li>';
+				learn_content += '<li class="row"><div class="col-md-4 col-sm-12"><div class="timeline-outer"><h2>'+v.title+'</h2><p>'+v.content+'</p></div></div><div class="col-sm-8 timeline-content"><div class="timeline-list"><h3 class=""><span class="icon-arrow down"></span>'+v.category_title+'</h3><ul class="">'+learn_category_content+'</ul></div></div></li>';
 
 			});
 			$('#learn_content').append(learn_content);
@@ -40,6 +40,18 @@ $(function(){
 			$('#study-center').remove();
 		}
 	});
+
+	$(document).on('click','.timeline-list .icon-arrow', function(){
+		console.log(111);
+		if($(this).hasClass('down')){
+			$(this).removeClass('down').addClass('right');
+			$(this).parent().next('ul').slideUp();
+		} else {
+			$(this).removeClass('right').addClass('down');
+			$(this).parent().next('ul').slideDown();
+		}
+	})
+
 });
 
 function show_video(){

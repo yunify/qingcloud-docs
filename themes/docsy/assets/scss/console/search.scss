@@ -1,0 +1,26 @@
+.section.search-category{
+    display: none;
+}
+.search-result-wrapper{
+    width: 100%;
+}
+.search-result{
+    .result-title{
+        margin-bottom: 8px;
+    }
+    .result-item{
+        padding-top: 24px;
+    }
+    .result-content{
+        margin-bottom: 0!important;
+    }
+    .result-thumbnail{
+        padding-top: 8px;
+    }
+} 
+.product-recommendation{
+    display: none;
+}
+#paginations{
+    padding: 0px 24px;
+}
