@@ -11,6 +11,9 @@
     .result-item{
         padding-top: 24px;
     }
+    .result-item:first-child{
+        padding-top: 0;
+    }
     .result-content{
         margin-bottom: 0!important;
     }

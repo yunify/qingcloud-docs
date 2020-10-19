@@ -173,7 +173,7 @@ $(document).ready(function(){
                         results += 
                             '<div class="result-item">'+
                                 '<h5 class="result-title">'+
-                                    '<a href=" '+item._source.url+' " target="_blank">'+title + '</a>'+
+                                    '<a href=" '+item._source.url+' ">'+title + '</a>'+
                                 '</h5>'+
                                 '<p class="result-content">'+ content + '</p>'+item_from+
                             '</div>';
@@ -233,7 +233,7 @@ $(document).ready(function(){
                     results += 
                         '<div class="result-item">'+
                             '<h5 class="result-title">'+
-                                '<a href=" ' + item._source.url+' " target="_blank">'+title + '</a>'+
+                                '<a href=" ' + item._source.url+' ">'+title + '</a>'+
                             '</h5>'+
                             '<p class="result-content">'+ content + '</p>'+item_from+
                         '</div>';
@@ -292,7 +292,7 @@ $(document).ready(function(){
                     results += 
                         '<div class="result-item">'+
                             '<h5 class="result-title">'+
-                                '<a href=" ' + item._source.url+' " target="_blank">'+title + '</a>'+
+                                '<a href=" ' + item._source.url+' ">'+title + '</a>'+
                             '</h5>'+
                             '<p class="result-content">'+ content + '</p>'+item_from+
                         '</div>';
