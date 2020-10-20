@@ -168,15 +168,14 @@ $(document).ready(function(){
 									category_item += ' > <a href="/'+href+'" class="has-text-grey">'+doc_level[i]+'</a>';
 								}
 							}
-							item_from = '<div class="result-thumbnail is-size-7" style="margin-bottom: 40px;"><span class="has-text-grey">来自:</span>' + category_item +'</div>';
-							p_style_for_doc = 'style="margin-bottom: 10px;"';
+							item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + category_item +'</div>';
 						}
                         results += 
                             '<div class="result-item">'+
                                 '<h5 class="result-title">'+
-                                    '<a href=" '+item._source.url+' " target="_blank">'+title + '</a>'+
+                                    '<a href=" '+item._source.url+' ">'+title + '</a>'+
                                 '</h5>'+
-                                '<p class="result-content" '+p_style_for_doc+'>'+ content + '</p>'+item_from+
+                                '<p class="result-content">'+ content + '</p>'+item_from+
                             '</div>';
                     });
                     $('.search-result').html(results);
@@ -229,15 +228,14 @@ $(document).ready(function(){
 								category_item += ' > <a href="/'+href+'" class="has-text-grey">'+doc_level[i]+'</a>';
 							}
 						}
-						item_from = '<div class="result-thumbnail is-size-7" style="margin-bottom: 40px;"><span class="has-text-grey">来自:</span>' + category_item +'</div>';
-						p_style_for_doc = 'style="margin-bottom: 10px;"';
+						item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + category_item +'</div>';
 					}
                     results += 
                         '<div class="result-item">'+
                             '<h5 class="result-title">'+
-                                '<a href=" ' + item._source.url+' " target="_blank">'+title + '</a>'+
+                                '<a href=" ' + item._source.url+' ">'+title + '</a>'+
                             '</h5>'+
-                            '<p class="result-content" '+p_style_for_doc+'>'+ content + '</p>'+item_from+
+                            '<p class="result-content">'+ content + '</p>'+item_from+
                         '</div>';
                 });
                 $('.search-result').html(results);
@@ -279,7 +277,7 @@ $(document).ready(function(){
 					if(category=='docs'){
 						//doc_level 层级目录
 						var doc_level = item._source.doc_level;
-						var category_item = '<a href="/" class="has-text-grey">文档</a>';
+						var category_item = '<a href="/" class="has-text-primary">文档</a>';
 						var objKeys=Object.keys(doc_level);
 						if(doc_level && objKeys.length >0){
 							var href = '';
@@ -288,16 +286,15 @@ $(document).ready(function(){
 								category_item += ' > <a href="/'+href+'" class="has-text-grey">'+doc_level[i]+'</a>';
 							}
 						}
-						item_from = '<div class="result-thumbnail is-size-7" style="margin-bottom: 40px;"><span class="has-text-grey">来自:</span>' + category_item +'</div>';
-						p_style_for_doc = 'style="margin-bottom: 10px;"';
+						item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + category_item +'</div>';
 					}
 
                     results += 
                         '<div class="result-item">'+
                             '<h5 class="result-title">'+
-                                '<a href=" ' + item._source.url+' " target="_blank">'+title + '</a>'+
+                                '<a href=" ' + item._source.url+' ">'+title + '</a>'+
                             '</h5>'+
-                            '<p class="result-content" '+p_style_for_doc+'>'+ content + '</p>'+item_from+
+                            '<p class="result-content">'+ content + '</p>'+item_from+
                         '</div>';
                     }); 
                 $('.search-result').html(results);

@@ -31,4 +31,12 @@
 
         padding-bottom: 2rem;
     }
+    .td-main-section-title{
+        display: flex;
+        align-items: center;
+        h3{
+            margin-bottom: 0;
+            padding-left: 10px;
+        }
+    }
 }

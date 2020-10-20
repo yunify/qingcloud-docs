@@ -5,3 +5,11 @@ Nothing defined here. The Hugo project that uses this theme can override Bootstr
 assets/scss/_styles_project.scss
 
 */
+.modal-content, .modal-card{
+    margin: 0;
+}
+@media (min-width:768px) {
+    .modal-dialog {
+        max-width: 60%;
+    }
+}

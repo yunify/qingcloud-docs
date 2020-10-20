@@ -6,11 +6,12 @@
   <body class="td-{{ .Kind }}">
     <header>
       {{ partial "navbar.html" . }}
-    </header>
-    
-      <main role="main" class="td-main">
-	  {{ with .Params.section1 }}
-		<div class="hero-body">
+	  	{{ with .Params.section1 }}
+		<section class="hero is-dark home-body">
+		<div class="slider-bg">
+			<div class="home-banner-slider"></div>
+		</div>
+		<div class="hero-body hero-body-index">
 			<div class="container">
 				<div class="row justify-content-between">
 					<div class="col-sm-6">
@@ -20,8 +21,12 @@
 				</div>
 			</div>
 		</div>
+		<section>
 		{{ end }}
-		<section class="section is-grey-background" style="padding-top: 0;margin-top: -2rem;">
+    </header>
+    
+      <main role="main" class="td-main">
+		<section class="section is-grey-background section-out">
 			<div class="container  td-outer">
 				<div class="row" id="content">
 					{{ $sections := .Sections.ByWeight }}
@@ -29,7 +34,7 @@
 					<div class="col-md-3">
 						<div class="card">
 							<div class="card-body">
-							<h5 class="card-title"><img src="{{ .Params.icon }}">{{ .Params.title }}</h5>
+							<div class="card-title"><img src="{{ .Params.icon }}" class="card-title-img">{{ .Params.title }}</div>
 							{{ $page_list := (union (where .Pages ".Params._build.render" "!=" false) .Sections).ByWeight }}
 							{{ $length := len $page_list}}
 							{{ range first 5 $page_list }}

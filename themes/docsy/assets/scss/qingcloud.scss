@@ -57,13 +57,12 @@ header {
 .card {
     border-radius: 3px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05), 0 10px 20px 0 rgba(76, 94, 112, 0.05);
-    background-color: #ffffff;
     border: none;
     position: relative;
 
 
     .card-body {
-        padding: 54px 40px 30px;
+        padding: 0;
         min-height: 200px;
 
         .card-title {
@@ -79,8 +78,12 @@ header {
             margin-bottom: 13px;
         }
         .card-link {
+            margin-left: 2rem;
             font-size: 14px;
-
+            color: #68747f;
+            &:hover {
+                color: #00a870;
+            }
         }
     }
     .pdf-download-btn {
@@ -89,7 +92,9 @@ header {
         right: 1rem;
         font-size: 14px;
         color: #68747f;
-
+        &:hover {
+            color: #00a870;
+        }
         i {
             padding-right: 6px;
         }
@@ -106,7 +111,7 @@ ul.timeline:before {
     position: absolute;
     left: 29px;
     top: 1.5rem;
-    width: 2px;
+    width: 1px;
     height: 100%;
     // z-index: 400;
 }
@@ -119,7 +124,7 @@ ul.timeline > li:before {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 0.8px solid #00a971;
+    border: 2px solid #00a971;
     background-color: #86dba2;
     left: 25px;
     width: 10px;
@@ -184,6 +189,9 @@ ul.timeline > li:before {
                 }
             }
         }
+        .icon-arrow{
+            display: none;
+        }
     }
 }
 
@@ -208,7 +216,9 @@ ul.timeline > li:before {
                     color: #3f5264;
                     line-height: 1.71;
                     margin-left: 12px;
-
+                    &:hover{
+                        color: #00a870;
+                    }
                     i {
                         font-size: 11px;
                         color: #68747f;
@@ -438,8 +448,14 @@ span.menu__title[data-depth="0"] {
 
 
 .menu__title[data-depth="1"] {
-    font-size: .925rem;
-    margin-left: 1.25rem
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: #3e464c;
+    margin-left: 0.35rem
 }
 
 .menu__title[data-depth="2"] {
@@ -490,7 +506,13 @@ span.menu__title--collapse[data-depth="0"] {
 }
 
 .menu__title--collapse[data-depth="1"] {
-    font-size: .925rem;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #3e464c;
 }
 
 .menu__title--collapse[data-depth="2"] {
@@ -630,7 +652,7 @@ span.menu__title--collapse[data-depth="0"] {
 }
 
 .menu__list li {
-    margin-left: 1.25rem;
+    margin-left: 0;
     list-style: none;
 
     a {
@@ -715,4 +737,87 @@ ul.product_dynamics_ul{
 
 .display-hide{
     display:none;
+}
+
+.product-video{
+    display: block;
+    width: 100%;
+}
+
+section.hero.home-body {
+    padding-top: 0;
+    height: 300px;
+}
+.slider-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1;
+}
+.home-banner-slider {
+    background-image: url(/images/hero.svg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: overlay;
+}
+.hero-body-index{
+    z-index: 1;
+    background-color: transparent;
+    margin-top: 76px;
+}
+.section.is-grey-background.section-out{
+    padding-top: 0;
+    margin-top: -2rem;
+}
+.container.td-outer{
+    z-index: 1;
+}
+.card-body .card-title{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    padding: 1rem;
+}
+.card-title-img{
+    margin-right: 10px;
+}
+
+.card-body-product {
+    padding: 54px 40px 30px;
+    min-height: 200px;
+
+    .card-title {
+        font-size: 18px;
+        font-weight: 500;
+        color: #3e464c;
+    }
+    .card-text {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.71;
+        color: #68747f;
+        margin-bottom: 13px;
+    }
+    .card-link {
+        font-size: 14px;
+        color: #00a870;
+    }
+}
+
+.timeline-list-a{
+    color: #68747f;
+    &:hover{
+        color: #00a870;
+    }
+}
+.td-page-top h1{
+    width:85%;
 }

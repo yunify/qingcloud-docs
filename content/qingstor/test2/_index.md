@@ -1,7 +1,7 @@
 ---
 title: "test2"
 linkTitle: "test2"
-weight: 3
+weight: 2
 collapsible: true
 type: "product"
 
