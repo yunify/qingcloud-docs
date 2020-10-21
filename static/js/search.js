@@ -159,13 +159,13 @@ $(document).ready(function(){
 						if(category=='文档'){
 							//doc_level 层级目录
 							var doc_level = item._source.doc_level;
-							var category_item = '<a href="/" class="has-text-grey">文档</a>';
+							var category_item = '<a href="/">文档</a>';
 							var objKeys=Object.keys(doc_level);
 							if(doc_level && objKeys.length >0){
 								var href = '';
 								for(var i=1;i<=objKeys.length;i++){
 									href += doc_level[i]+'/';
-									category_item += ' > <a href="/'+href+'" class="has-text-grey">'+doc_level[i]+'</a>';
+									category_item += ' > <a href="/'+href+'">'+doc_level[i]+'</a>';
 								}
 							}
 							item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + category_item +'</div>';
@@ -219,13 +219,13 @@ $(document).ready(function(){
 					if(category=='文档'){
 						//doc_level 层级目录
 						var doc_level = item._source.doc_level;
-						var category_item = '<a href="/" class="has-text-grey">文档</a>';
+						var category_item = '<a href="/">文档</a>';
 						var objKeys=Object.keys(doc_level);
 						if(doc_level && objKeys.length >0){
 							var href = '';
 							for(var i=1;i<=objKeys.length;i++){
 								href += doc_level[i]+'/';
-								category_item += ' > <a href="/'+href+'" class="has-text-grey">'+doc_level[i]+'</a>';
+								category_item += ' > <a href="/'+href+'" >'+doc_level[i]+'</a>';
 							}
 						}
 						item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + category_item +'</div>';
@@ -283,7 +283,7 @@ $(document).ready(function(){
 							var href = '';
 							for(var i=1;i<=objKeys.length;i++){
 								href += doc_level[i]+'/';
-								category_item += ' > <a href="/'+href+'" class="has-text-grey">'+doc_level[i]+'</a>';
+								category_item += ' > <a href="/'+href+'" >'+doc_level[i]+'</a>';
 							}
 						}
 						item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + category_item +'</div>';

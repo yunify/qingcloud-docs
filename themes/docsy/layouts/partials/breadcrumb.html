@@ -1,5 +1,5 @@
 <div class="container is-size-7" style="justify-content: end;min-height: 25px;">
-{{ if ne .CurrentSection.LinkTitle "Document"}}
+{{ if ne .Params.LinkTitle "Document"}}
   {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
 {{ end }}
 </div>
@@ -11,6 +11,9 @@
   {{ end }}
 {{ end }}
 {{ if eq .p1 .p2 }}
+	{{if eq .p1.LinkTitle "搜索"}}
+	<a href="/" class="has-text-primary">Document</a><img class="container_span_space" src="/images/icons/path.svg">
+	{{ end }}
 <span class="has-text-grey">{{ .p1.LinkTitle }}</span>
 {{ else}}
 	
