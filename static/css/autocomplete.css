@@ -19,7 +19,7 @@
 	line-height: 2;
 	letter-spacing: normal;
 	color: #4a535c;
-	margin-left: 1rem;
+	padding-left: 1rem;
 }
 .autocomplete-no-suggestion { 
 	padding: 2px 5px;
