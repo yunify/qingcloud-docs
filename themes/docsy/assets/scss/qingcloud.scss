@@ -29,6 +29,7 @@ main section {
     &:first-of-type {
         padding-top: 60px;
     }
+    min-height: 400px;
     padding-top: 30px;
     padding-bottom: 60px;
 }
@@ -829,4 +830,8 @@ section.hero.home-body {
 }
 .row .col-sm-7 h3{
     font-weight: 400;
+}
+
+.section-out .container .row .col-md-3{
+    padding-bottom: 2rem;
 }
