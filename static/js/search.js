@@ -159,7 +159,7 @@ $(document).ready(function(){
 						if(category=='文档'){
 							//doc_level 层级目录
 							var doc_level = item._source.doc_level;
-							doc_level = doc_level.replace(/"has-text-primary"/g,'');
+							doc_level = doc_level.replace(/has-text-primary/g,'');
 							
 							item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + doc_level +'</div>';
 						}
@@ -212,7 +212,7 @@ $(document).ready(function(){
 					if(category=='文档'){
 						//doc_level 层级目录
 						var doc_level = item._source.doc_level;
-						doc_level = doc_level.replace(/"has-text-primary"/g,'');
+						doc_level = doc_level.replace(/has-text-primary/g,'');
 						item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + doc_level +'</div>';
 					}
                     results += 
@@ -262,7 +262,7 @@ $(document).ready(function(){
 					if(category=='docs'){
 						//doc_level 层级目录
 						var doc_level = item._source.doc_level;
-						doc_level = doc_level.replace(/"has-text-primary"/g,'');
+						doc_level = doc_level.replace(/has-text-primary/g,'');
 						item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + doc_level +'</div>';
 					}
 
