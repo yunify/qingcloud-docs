@@ -115,6 +115,10 @@ ul.timeline {
     height: calc(100% + 2rem);
     // z-index: 400;
 }
+.timeline-outer-line.timeline-product{
+    left: 0;
+}
+
 ul.timeline > li:last-child .timeline-outer-line {
     display:none;
 }
@@ -456,7 +460,7 @@ span.menu__title[data-depth="0"] {
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1;
+    line-height: 1.2;
     letter-spacing: normal;
     color: #3e464c;
     margin-left: 0.35rem
@@ -656,7 +660,7 @@ span.menu__title--collapse[data-depth="0"] {
 }
 
 .menu__list li {
-    margin-left: 1.1rem;
+    //margin-left: 1.1rem;
     list-style: none;
 
     a {
