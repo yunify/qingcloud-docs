@@ -19,7 +19,7 @@
 			 <ul class="timeline product_dynamics_ul" id="learn_content"> 
 			 {{ range . }}
 			  <li class="row">
-			   <div class="timeline-outer-line"></div>
+			   <div class="timeline-outer-line timeline-product"></div>
 			   <div class="col-sm-12 timeline-outer">
 				<p>{{ .time }}</p>
 				<h2>{{ .title }}</h2>
@@ -69,3 +69,10 @@
 	</div>
 </div>
 <script src="/js/content.js"></script>
+<script src="/js/viewer.min.js"></script>
+<link rel="stylesheet" href="/css/viewer.min.css">
+<script>
+	var viewer = new Viewer(document.querySelector('.td-content'), {
+		url: 'src'
+	})
+</script>
