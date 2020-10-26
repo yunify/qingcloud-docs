@@ -8,7 +8,7 @@ product:
     - time: 2020-09-11
       title: 访问鉴权管理（IAM）功能新增：集群身份
       content: 为了完善 IAM 产品资源类的信任载体身份，以服务于更多未来的使用场景，我们新增支持集群作为身份信任载体。
-      url: ../faq/principal
+      url: ../manual/role
       
     - time: 2020-07-07
       title: 访问鉴权管理产品新增操作日志模块
