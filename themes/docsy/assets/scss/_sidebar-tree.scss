@@ -141,6 +141,9 @@
         //padding-top: 1rem;
         padding-right: 1rem;
         margin-top: 4rem;
+        position: sticky;
+        top: 0;
+        height: calc(100% - 6rem);
     }
 
     &__toggle {
@@ -160,12 +163,12 @@
 
         @include media-breakpoint-up(md) {
             @supports (position: sticky) {
-                position: sticky;
+                //position: sticky;
                 top: 4rem;
                 z-index: 10;
-                height: calc(100vh - 6rem);
+                //height: calc(100vh - 6rem);
                 background-color: rgba(237, 242, 244, 0.69);
-                height: auto;
+                //height: auto;
                 padding-bottom: 30px;
             }
         }

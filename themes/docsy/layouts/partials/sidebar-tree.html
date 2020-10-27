@@ -1,9 +1,11 @@
 {{/* We cache this partial for bigger sites and set the active class client side. */}}
 {{ $shouldDelayActive := ge (len .Site.Pages) 2000 }}
-<div class="td-sidebar-section-title" style="padding-bottom: 5px;display: flex;">
-			<img class="is-40x40" src="/images/icons/book-open.svg">
-			<h3 class="doc_vice_title">{{ .CurrentSection.LinkTitle }}</h3>
-		</div>
+{{ if not .Site.Params.IsConsole }}
+	<div class="td-sidebar-section-title" style="padding-bottom: 5px;display: flex;">
+		<img class="is-40x40" src="/images/icons/book-open.svg">
+		<h3 class="doc_vice_title">{{ .CurrentSection.LinkTitle }}</h3>
+	</div>
+{{ end }}
 <div id="td-sidebar-menu" class="td-sidebar__inner{{ if $shouldDelayActive }} d-none{{ end }}">
 	{{ with .Params.section }}
 	<div class="field has-addons has-addons-centered select-field">

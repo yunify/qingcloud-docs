@@ -128,7 +128,7 @@ i.icon-search {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     line-height: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: -0.18px;
@@ -286,10 +286,21 @@ h3.all-results-title{
 
 .section.is-small {
     padding-top: 3.125rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 0.5rem;
 }
 
 ul {
   margin-top: 0;
   margin-bottom: 0rem;
+}
+
+.search-result .result-item .result-thumbnail{
+	margin-bottom: 20px;
+}
+
+.search-result .result-item .result-thumbnail a{
+    color: #7a7a7a;
+}
+.search-result .result-item .result-thumbnail a:hover{
+    color: #00a971;
 }
