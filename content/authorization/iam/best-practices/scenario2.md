@@ -36,10 +36,13 @@ weight: 31
 
 ![demo2_SwitchRole](../../_images/demo2_SwitchRole.png)
 
-1.工作台处产品资源有路由器和私有网络入口，不再有其他入口
+1.导航栏处显示全部模块入口，已配置了访问权限的VPC和路由表可能成功查看和创建，未配置访问权限的模块则没有权限执行操作（如主机）
 
 ![demo2_Dashboard](../../_images/demo2_Dashboard.png)
+
+![demo2_Dashboard](../../_images/demo2_Dashboard1.png)
 
 2.能成功查看和创建 VPC
 
 ![demo2_CreateVPC](../../_images/demo2_CreateVPC.png)
+
