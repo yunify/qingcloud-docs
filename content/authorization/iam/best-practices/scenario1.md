@@ -3,7 +3,7 @@ title: "免密钥应用开发"
 date: 2020-02-28T10:08:56+09:00
 description: 
 draft: false
-weight: 30
+weight: 51
 ---
 
 当您准备自己在云上开发一款应用，需要在该应用中调用 QingCloud API/CLI （例如： StopInstances 停止主机）以完成某些功能时，过去您可能需要利用自己的账户 API 密钥作为该应用配置项在有需要时连接使用。

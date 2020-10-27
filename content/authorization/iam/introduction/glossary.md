@@ -2,7 +2,7 @@
 title: "名词解释"
 description: 
 draft: false
-weight: 29
+weight: 22
 ---
 
 ### 策略
@@ -74,4 +74,3 @@ QingCloud IAM 已支持的服务列表，请参阅：[IAM 支持的服务列表]
 为了帮助 QingCloud 客户更快的理解和上手使用 QRN ，我们在每个需要输入 QRN 的地方提供了`QRN 生成器`小工具。
 
 如何使用 QRN 生成器，请参阅：[QRN 生成器](../../faq/qrn#qrn生成器)
-

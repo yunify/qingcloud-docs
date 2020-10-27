@@ -3,7 +3,7 @@ title: "如何使用身份"
 date: 2020-02-28T10:08:56+09:00
 description: 
 draft: false
-weight: 3
+weight: 45
 ---
 
 ## 代入使用的前提
@@ -109,6 +109,6 @@ Windows 主机上配置好路由后，代入身份开发应用的方法与前文
 
     ![demo1_EvaluationDeny](../../_images/demo1_EvaluationDeny.png)
 
-5. 如需要退出身份代入，您可以在“总览”页点击“返回到账户”链接，或点击头像处个人菜单的“返回到账户”按钮。
+5. 如需要退出身份代入，您可以在“工作台”页点击“返回到账户”链接，或点击头像处个人菜单的“回到账户”按钮。
 
     ![demo1_BackToAccount](../../_images/demo1_BackToAccount.png)

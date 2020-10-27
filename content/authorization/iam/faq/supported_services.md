@@ -3,7 +3,7 @@ title: "支持的服务类别列表"
 date: 2020-02-28T10:08:56+09:00
 description: 
 draft: false
-weight: 5
+weight: 44
 ---
 
 **服务类别**指的是 QingCloud 平台为客户提供的一系列云服务，如弹性云主机服务、虚拟专用网服务等。
