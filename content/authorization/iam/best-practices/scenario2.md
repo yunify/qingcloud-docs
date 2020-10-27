@@ -12,7 +12,7 @@ weight: 31
 
 ### 操作步骤
 
-1.向您需要授权的人获取到他的 QingCloud 账户 ID 。例如对方账户为 `tester@yunify.com` ，ID 为 `usr-ZBeoYtYw`
+1.向您需要授权的人获取到他的 QingCloud 账户 ID 。例如对方账户为 `claudiawang@yunify.com` ，ID 为 `usr-2Ly2c31J`
 
 ![demo2_AnotherAccount](../../_images/demo2_AnotherAccount.png)
 
@@ -32,14 +32,17 @@ weight: 31
 
 根据上述操作步骤，由于您给他人赋予的身份具备虚拟专用网服务的完全权限，则他人登陆 QingCloud 控制台后可通过切换身份成功帮您创建私有网络，但不可访问您的其他服务例如主机。
 
-`tester@yunify.com`的前提操作：**切换身份**
+`claudiawang@yunify.com`的前提操作：**切换身份**
 
 ![demo2_SwitchRole](../../_images/demo2_SwitchRole.png)
 
-1.导航栏有路由器和私有网络入口，不再有其他入口
+1.导航栏处显示全部模块入口，已配置了访问权限的VPC和路由表可能成功查看和创建，未配置访问权限的模块则没有权限执行操作（如主机）
 
 ![demo2_Dashboard](../../_images/demo2_Dashboard.png)
+
+![demo2_Dashboard](../../_images/demo2_Dashboard1.png)
 
 2.能成功查看和创建 VPC
 
 ![demo2_CreateVPC](../../_images/demo2_CreateVPC.png)
+
