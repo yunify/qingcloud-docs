@@ -8,7 +8,7 @@
 	overflow: auto;
 	-webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); 
 	-moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); 
-	box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); 
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05), 0 10px 20px 0 rgba(76, 94, 112, 0.05); 
 }
 .autocomplete-suggestion { 
 	font-family: PingFangSC;
@@ -19,13 +19,14 @@
 	line-height: 2;
 	letter-spacing: normal;
 	color: #4a535c;
-	margin-left: 1rem;
+	padding-left: 1rem;
 }
+
 .autocomplete-no-suggestion { 
 	padding: 2px 5px;
 }
 .autocomplete-selected { 
-	background: #F0F0F0; 
+	background: #f5f9fa; 
 }
 .autocomplete-suggestions strong { 
 	font-weight: bold; color: #000; 

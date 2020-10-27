@@ -19,7 +19,7 @@ enableMissingTranslationPlaceholders = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 # Highlighting config
-pygmentsCodeFences = true
+pygmentsCodeFences = false
 pygmentsUseClasses = false
 # Use the new Chroma Go highlighter in Hugo.
 pygmentsUseClassic = false
