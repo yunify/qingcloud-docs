@@ -8,7 +8,7 @@ type: "product"
 section1:
   title: 访问鉴权管理
   vice_title: 访问鉴权管理（Identity and Access Management，IAM）是一款在 QingCloud 平台上提供身份识别和访问控制的 Web 服务。通过使用 IAM 来统一管理和控制接入实体的认证和授权，能更安全地自主管控本账户下的任意资源访问权限。
-  video: "https://api.anybox.qingcloud.com/v1/downloads/9pK7l5MidzPWRhX8RnCW3vROIFqT8pZ79ezmcfWXcZE04MRpBSDpfYwjFFrdxP2nJSK0nm5DFAnSkQD5l28HvoH2TN6iJzb5EqdjJ9hNsrdJz8py2WqTGZl45wbvBG6D/IAM_100P001C202009_IAM%E6%98%AF%E4%BB%80%E4%B9%88.mp4"
+  video: ""
   video_img: "_images/video.png"
 
 section2:
@@ -16,7 +16,7 @@ section2:
   children:
     - title: 最新动态
       content: 2020-09-11 功能新增：集群身份
-      url: "news"
+      url: "news/product_news"
 
     - title: 操作指南
       content: 身份管理、策略管理、策略模拟器

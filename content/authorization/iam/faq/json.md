@@ -3,7 +3,7 @@ title: "JSON 编辑格式及参数说明"
 date: 2020-02-28T10:08:56+09:00
 description: 
 draft: false
-weight: 4
+weight: 43
 ---
 
 创建或编辑策略时，您可以选择 JSON 选项卡进入 JSON 编辑模式，以便在 JSON 编辑器中键入或粘贴策略。
