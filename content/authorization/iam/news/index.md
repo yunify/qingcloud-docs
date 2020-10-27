@@ -10,6 +10,7 @@ product:
       content: 为了完善 IAM 产品资源类的信任载体身份，以服务于更多未来的使用场景，我们新增支持集群作为身份信任载体。
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       url: ../manual/role
 =======
       url: ../faq/principal
@@ -17,6 +18,9 @@ product:
 =======
       url: ../manual/role
 >>>>>>> update cluster
+=======
+      url: ../manual/role
+>>>>>>> dbb216147c541c75c436f394a2ae54349ae4ce04
       
     - time: 2020-07-07
       title: 访问鉴权管理产品新增操作日志模块
