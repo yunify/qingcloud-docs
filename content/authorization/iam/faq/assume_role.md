@@ -29,13 +29,14 @@ weight: 45
 3. 访问该主机终端，可使用 pip 安装 SDK: （[点此了解更多 SDK 文档信息](https://docs.qingcloud.com/product/sdk/)）
 
    ```bash
-   $ pip install qingcloud-sdk
-   ```
-   如果你已安装 qingcloud-sdk 并需要更新到最新版本，则可以:
-   ```bash
-   $ pip install --upgrade qingcloud-sdk
+   pip install qingcloud-sdk
    ```
 
+   如果你已安装 qingcloud-sdk 并需要更新到最新版本，则可以:
+
+   ```bash
+   pip install --upgrade qingcloud-sdk
+   ```
 
 4. 使用 SDK ，以 Python 语言为例 (无需提供 access key id 和 secret access key)：
 
@@ -103,7 +104,7 @@ Windows 主机上配置好路由后，代入身份开发应用的方法与前文
 
     ![demo1_ConfigModule](../../_images/demo1_ConfigModule.png)
 
-   > 注：您可能注意到可供您操作的模块有限，这是因为该身份属主在身份上配置了可见模块，您只能被允许访问这些可见模块。
+    > 注：您可能注意到可供您操作的模块有限，这是因为该身份属主在身份上配置了可见模块，您只能被允许访问这些可见模块。
 
 4. 如果在代入身份后的的操作过程中界面出现错误提示 [`访问被拒绝...`] ，则代表您当前代入的身份没有权限执行该操作，当前操作`失败`。如需要执行该操作的权限，可联系身份拥有者授予相应权限。
 
