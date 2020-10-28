@@ -10,7 +10,7 @@
     
 <main role="main" class="td-main">
 {{ with .Params.section1 }}
-<div class="hero-body">
+<div class="hero-body hero-body-product">
 	<div class="container">
 		<div class="row justify-content-between">
 			<div class="col-sm-7">
@@ -40,8 +40,14 @@
 				<div class="card">
 					<div class="card-body-product">
 						<h5 class="card-title">{{ .title }}</h5>
-						<p class="card-text">{{ .content }}</p>
-						<a target="_blank" href="{{ .url }}" class="card-link">了解更多 →</a>
+						{{ if .content }}
+							<p class="card-text">{{ .content | markdownify }}</p>
+						{{ else if .content_child }}
+							{{ range .content_child }}
+								<p class="card-text">{{ . }}</p>
+							{{ end }}
+						{{ end }}
+						<a href="{{ .url }}" class="card-link">了解更多 →</a>
 					</div>
 					<a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}');"><i class="fa fa-download"></i>PDF</a>
 				</div>
@@ -65,8 +71,8 @@
 				<div class="card">
 					<div class="card-body-product">
 						<h5 class="card-title">{{ .title }}</h5>
-						<p class="card-text">{{ .content }}</p>
-						<a target="_blank" href="{{ .url }}" class="card-link">了解更多 →</a>
+						<p class="card-text">{{ .content | markdownify }}</p>
+						<a href="{{ .url }}" class="card-link">了解更多 →</a>
 					</div>
 					<a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}');"><i class="fa fa-download"></i>PDF</a>
 				</div>
