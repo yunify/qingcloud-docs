@@ -38,7 +38,7 @@
 							{{ $page_list := (union (where .Pages ".Params._build.render" "!=" false) .Sections).ByWeight }}
 							{{ $length := len $page_list}}
 							{{ range first 5 $page_list }}
-							<p class="card-text"><a target="_blank" href="{{ .RelPermalink }}" class="card-link">{{ .Params.title }}</a></p>
+							<p class="card-text"><a href="{{ .RelPermalink }}" class="card-link">{{ .Params.title }}</a></p>
 							{{ end }}
 							</div>
 						</div>

@@ -140,9 +140,9 @@
     @include media-breakpoint-up(md) {
         //padding-top: 1rem;
         padding-right: 1rem;
-        margin-top: 4rem;
+        margin-top: 4px;
         position: sticky;
-        top: 0;
+        top: 4px;
         height: calc(100% - 6rem);
     }
 
