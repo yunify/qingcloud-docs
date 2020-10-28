@@ -2,7 +2,7 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	border: 1px solid #999;
+	border: 1px solid #d5dee7;
 	background: #FFF;
 	cursor: default;
 	overflow: auto;
@@ -16,10 +16,14 @@
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
-	line-height: 2;
+	line-height: 2.2;
 	letter-spacing: normal;
 	color: #4a535c;
 	padding-left: 1rem;
+}
+
+.autocomplete-suggestion:first-child{
+	margin-top: 3px;
 }
 
 .autocomplete-no-suggestion { 
