@@ -6,10 +6,10 @@
 
     @supports (position: sticky) {
         position: sticky;
-        top: 0rem;
+        top: 20px;
         height: fit-content;
         overflow-y: auto;
-        margin-top: 4rem;
+        margin-top: 2.1rem;
     }
 
     order: 2;
@@ -62,5 +62,9 @@
 
     ul {
         padding-left: 0;
+    }
+
+    .nav-title{
+        font-size: 14px;
     }
 }

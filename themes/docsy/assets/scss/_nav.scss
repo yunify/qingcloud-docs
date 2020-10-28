@@ -1193,8 +1193,14 @@ nav.navbar {
 
 #search-bar {
     border-radius: 4px;
+    font-size: 14px;
+    padding-left: 1rem;
 }
 
 nav.navbar .container .media-content{
     margin-left: auto;
+}
+
+.crumb-last-color{
+    color: #c6c8cf;
 }
