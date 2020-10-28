@@ -10,7 +10,6 @@
     background-color: #3d3e49;
     border-top: 1px solid rgba(255, 255, 255, .1);
     color: #fff;
-    margin-top: 50px;
     h1 {
         font-size: 2rem;
         color: #fff;
@@ -33,7 +32,7 @@ main section {
     padding-bottom: 60px;
 }
 header {
-    min-height: 64px;
+    min-height: 120px;
     nav {
         min-height: 64px;
     }
@@ -209,7 +208,7 @@ ul.timeline > li:before {
         padding-left: 42px;
         padding-top: 1rem;
         padding-right: 1rem;
-        margin-top: 4rem;
+        margin-top: 1rem;
 
         .td-page-top {
             position: relative;
@@ -831,6 +830,10 @@ section.hero.home-body {
 .row .col-sm-6 h3{
     font-weight: 400;
 }
+.row .col-sm-7 h1{
+    margin-top: 20px;
+    margin-bottom: 1rem;
+}
 .row .col-sm-7 h3{
     font-weight: 400;
 }
@@ -841,4 +844,17 @@ section.hero.home-body {
 
 .section.is-grey-background.section-out{
     min-height: 400px;
+}
+
+#myModal{
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+#myModal .modal-dialog{
+    top: 25%;
+}
+
+.hero-body-product {
+    height: 180px;
 }
