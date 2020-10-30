@@ -1,6 +1,6 @@
 ---
 title: "DDOS高防"
 linkTitle: "DDOS高防"
-weight: 30
+weight: 2
 collapsible: true
 ---
