@@ -19,7 +19,7 @@ nav.navbar {
     min-height: 25px;
 
     .container {
-        justify-content: end;
+        justify-content: flex-start;
         min-height: 25px;
     }
     &:last-child{
@@ -1203,4 +1203,7 @@ nav.navbar .container .media-content{
 
 .crumb-last-color{
     color: #c6c8cf;
+}
+.control.has-icons-right .icon.is-right{
+    height: 1.969em;
 }

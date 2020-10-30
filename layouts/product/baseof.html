@@ -92,14 +92,14 @@
 		</div>
 		<div>
 			<ul class="timeline">
-			{{ range .children }}
+			{{ range $i, $v := .children }}
 				<li class="row">
 					<div class="timeline-outer-line"></div>
 					<div class="col-sm-4 timeline-outer">
-						<h2>{{ .title }}</h2>
-						<p>{{ .content }}</p>
+						<h2>{{ $v.title }}</h2>
+						<p>{{ $v.content }}</p>
 					</div>
-					<div class="col-sm-8 timeline-content">
+					<div class="col-sm-8 timeline-content timeline-back-img-{{add $i 1}}">
 						<div class="timeline-list">
 							<h3>{{ .vice_title }}</h3>
 							<ul>
