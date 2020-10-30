@@ -2,11 +2,6 @@
 // Left side navigation
 //
 .td-sidebar-nav {
-    padding-right: 0.5rem;
-    margin-right: -15px;
-    margin-left: -15px;
-    overflow-x: hidden;
-    padding-left: 34px;
 
     @include media-breakpoint-up(md) {
         @supports (position: sticky) {
@@ -182,6 +177,11 @@
         .td-search-box {
             width: 100%;
         }
+    }
+
+    .more-space{
+       margin-bottom: 15px;
+       height: auto;
     }
 }
 .td-sidebar-section-title {

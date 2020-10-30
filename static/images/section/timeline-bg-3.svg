@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="238px" height="238px" viewBox="0 0 238 238" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>使用</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="240" height="240"></rect>
+    </defs>
+    <g id="文档" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="使用" transform="translate(-2.000000, -2.000000)">
+            <g>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="蒙版"></g>
+                <g id="编组" opacity="0.1" mask="url(#mask-2)">
+                    <g transform="translate(-40.000000, 2.000000)">
+                        <polygon id="Shape" fill="#3D3E49" points="-6.39488462e-14 310.418228 85.4487982 310.418228 179.969889 139.462973 140.697281 68.0340575"></polygon>
+                        <polygon id="Shape-Copy" fill="#86DBA2" points="140.657487 68.0687808 274.39974 310.418228 360 310.418228 180 -4.79616347e-14"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
