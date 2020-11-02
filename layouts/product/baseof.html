@@ -41,7 +41,7 @@
 					<div class="card-body-product">
 						<h5 class="card-title">{{ .title }}</h5>
 						{{ if .content }}
-							<p class="card-text">{{ .content }}</p>
+							<p class="card-text">{{ .content | markdownify }}</p>
 						{{ else if .content_child }}
 							{{ range .content_child }}
 								<p class="card-text">{{ . }}</p>
@@ -71,7 +71,7 @@
 				<div class="card">
 					<div class="card-body-product">
 						<h5 class="card-title">{{ .title }}</h5>
-						<p class="card-text">{{ .content }}</p>
+						<p class="card-text">{{ .content | markdownify }}</p>
 						<a href="{{ .url }}" class="card-link">了解更多 →</a>
 					</div>
 					<a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}');"><i class="fa fa-download"></i>PDF</a>
@@ -92,14 +92,14 @@
 		</div>
 		<div>
 			<ul class="timeline">
-			{{ range .children }}
+			{{ range $i, $v := .children }}
 				<li class="row">
 					<div class="timeline-outer-line"></div>
 					<div class="col-sm-4 timeline-outer">
-						<h2>{{ .title }}</h2>
-						<p>{{ .content }}</p>
+						<h2>{{ $v.title }}</h2>
+						<p>{{ $v.content }}</p>
 					</div>
-					<div class="col-sm-8 timeline-content">
+					<div class="col-sm-8 timeline-content timeline-back-img-{{add $i 1}}">
 						<div class="timeline-list">
 							<h3>{{ .vice_title }}</h3>
 							<ul>
