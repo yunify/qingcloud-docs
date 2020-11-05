@@ -1,6 +1,9 @@
 <div class="container is-size-7 {{ if and (ne .Params.LinkTitle "Document") (ne .Params.type "product")}}doc-container-width {{ end }}" data-path="1">
 {{ if ne .Params.LinkTitle "Document"}}
-  {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+	<!-- console嵌入时产品页不要面包屑导航 -->
+	{{ if or (ne .Params.type "product") (ne .Site.Params.IsConsole true) }}
+		{{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+	{{ end }}
 {{ end }}
 </div>
 
