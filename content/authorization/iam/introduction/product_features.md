@@ -2,7 +2,7 @@
 title: "概述"
 description:   
 draft: false
-weight: 1
+weight: 21
 ---
 
 **访问鉴权管理（Identity and Access Management，IAM）** 是一款在 QingCloud 平台上提供身份识别和访问控制的 Web 服务。通过使用 IAM 来统一管理和控制接入实体的认证和授权，能更安全地自主管控本账户下的任意资源访问权限。

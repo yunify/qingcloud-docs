@@ -1,9 +1,11 @@
 {{/* We cache this partial for bigger sites and set the active class client side. */}}
 {{ $shouldDelayActive := ge (len .Site.Pages) 2000 }}
-<div class="td-sidebar-section-title" style="padding-bottom: 5px;display: flex;">
-			<img class="is-40x40" src="/images/icons/book-open.svg">
-			<h3 class="doc_vice_title">{{ .CurrentSection.LinkTitle }}</h3>
-		</div>
+{{ if not .Site.Params.IsConsole }}
+	<div class="td-sidebar-section-title" style="padding-bottom: 5px;display: flex;">
+		<img class="is-40x40" src="/images/icons/book-open.svg">
+		<h3 class="doc_vice_title">{{ .CurrentSection.LinkTitle }}</h3>
+	</div>
+{{ end }}
 <div id="td-sidebar-menu" class="td-sidebar__inner{{ if $shouldDelayActive }} d-none{{ end }}">
 	{{ with .Params.section }}
 	<div class="field has-addons has-addons-centered select-field">
@@ -56,9 +58,10 @@
     {{ else }}
     {{ $lastUrlElement1 := index (last 1 (split (delimit (split .Permalink "/") "," "") ",")) 0 }}
     {{ $lastUrlElement2 := index (last 1 (split (delimit (split $currentURL "/") "," "") ",")) 0 }}
+	{{ $length := len .Title}}
     <li>
       <a href="{{ .Permalink }}"
-        class="menu__title {{ if and (eq $lastUrlElement1 $lastUrlElement2) (eq $sectionName1 $sectionName2) }}active{{ end }}"
+        class="menu__title {{ if and (eq $lastUrlElement1 $lastUrlElement2) (eq $sectionName1 $sectionName2) }}active{{ end }} {{ if ge $length 50 }}more-space{{end}}"
         data-depth="{{ $depth }}">{{ .Title }}</a>
     </li>
     {{ end }}
