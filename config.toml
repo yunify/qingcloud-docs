@@ -62,7 +62,9 @@ weight = 1
 time_format_default = "2006.02.01"
 time_format_blog = "2006.02.01"
 
-
+[module]
+  [module.hugoVersion]
+    extended = true
 
 
 [markup]
