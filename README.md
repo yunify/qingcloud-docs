@@ -10,7 +10,7 @@ QingCloud 官方文档使用了 [Hugo](https://gohugo.io/getting-started/install
 
 ## 第二步：Fork 与 Clone 仓库
 
-请点击右上角 **Fork** 将 qingcloud-docs 仓库 Folk 至自己的　GitHub，然后将自己账号下的 Git 仓库地址 Clone 到本地，如：
+请点击右上角 **Fork** 将 qingcloud-docs 仓库 Fork 至自己的　GitHub，然后将自己账号下的 Git 仓库地址 Clone 到本地，如：
 
 ```
 git clone https://github.com/<YOUR-GITHUB-ID>/qingcloud-docs.git
