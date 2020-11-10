@@ -99,7 +99,7 @@ ul.timeline>li:before {
         flex: 1;
 
         h3 {
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
             line-height: 1.5;
             color: #3e464c;
@@ -170,4 +170,9 @@ ul.timeline>li:before {
     .timeline-list+.timeline-list {
         margin-top: 10px;
     }
+}
+
+.container .row .col-sm-7 h3{
+    font-size: 14px;
+    font-weight: 400;
 }
