@@ -36,7 +36,7 @@ weight: 52
 
 ![demo2_SwitchRole](../../_images/demo2_SwitchRole.png)
 
-1. 导航栏处显示全部模块入口，已配置了访问权限的VPC和路由表可能成功查看和创建，未配置访问权限的模块则没有权限执行操作（如主机）
+1. 导航栏处显示全部模块入口，已配置了访问权限的VPC和路由表可成功查看和创建，未配置访问权限的模块则没有权限执行操作（如主机）
 
     ![demo2_Dashboard](../../_images/demo2_Dashboard.png)
 
