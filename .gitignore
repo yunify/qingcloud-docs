@@ -3,5 +3,6 @@ public/
 resources/
 node_modules/
 tech-doc-hugo
-
+.vscode/
+debug.log
 /package-lock.json
