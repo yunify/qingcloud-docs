@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="214px" height="224px" viewBox="0 0 214 224" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>实践</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="240" height="240"></rect>
+    </defs>
+    <g id="文档" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="实践" transform="translate(-26.000000, -16.000000)">
+            <g>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="蒙版"></g>
+                <g id="编组" opacity="0.100818452" mask="url(#mask-2)">
+                    <g transform="translate(26.000000, 16.000000)">
+                        <path d="M64.9275362,0 L223.072464,0 C258.999034,0 288,28.14 288,63 C288,97.86 258.999034,126 223.072464,126 L64.9275362,126 C29.0009662,126 0,97.86 0,63 C0,28.14 29.0009662,0 64.9275362,0 Z" id="Shape" fill="#3D3E49"></path>
+                        <circle id="Oval" fill="#FFFFFF" cx="225" cy="63" r="36"></circle>
+                        <path d="M64.9275362,162 L223.072464,162 C258.999034,162 288,190.14 288,225 C288,259.86 258.999034,288 223.072464,288 L64.9275362,288 C29.0009662,288 0,259.86 0,225 C0,190.14 29.0009662,162 64.9275362,162 Z" id="Shape" fill="#86DBA2"></path>
+                        <path d="M63,261 C82.882251,261 99,244.882251 99,225 C99,205.117749 82.882251,189 63,189 C43.117749,189 27,205.117749 27,225 C27,244.882251 43.117749,261 63,261 Z" id="Oval" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
