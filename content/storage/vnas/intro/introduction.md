@@ -1,5 +1,5 @@
 ---
-title: "计算"
+title: "文件存储 Virtual NAS"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
@@ -7,8 +7,6 @@ enableToc: false
 keyword: 青云
 ---
 
-# 计算
+# 文件存储 Virtual NAS
 
-云计算的核心能力之一，就是提供计算能力。与传统的计算机不同，云计算提供的是一种弹性的计算，用户可以随时获取，并且弹性扩展。
-
-青云QingCloud IaaS平台提供了多种获取计算资源的途径，其中最为主要的是主机和映像两种方式。物理主机是即将推出的一款全新产品。
+QingCloud 为您提供的 NAS 服务是基于标准的 NFS 和 Samba（CIFS）网络协议实现的数据传输，通过创建一个 NAS 服务器，您可以在多个主机客户端以及不同的操作系统间进行数据共享。同时提供权限组和账号配置功能，便于您对主机客户端进行访问控制和管理配置。
