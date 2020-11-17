@@ -2,11 +2,6 @@
 // Left side navigation
 //
 .td-sidebar-nav {
-    padding-right: 0.5rem;
-    margin-right: -15px;
-    margin-left: -15px;
-    overflow-x: hidden;
-    padding-left: 34px;
 
     @include media-breakpoint-up(md) {
         @supports (position: sticky) {
@@ -140,7 +135,10 @@
     @include media-breakpoint-up(md) {
         //padding-top: 1rem;
         padding-right: 1rem;
-        margin-top: 4rem;
+        margin-top: 4px;
+        position: sticky;
+        top: 4px;
+        height: calc(100% - 6rem);
     }
 
     &__toggle {
@@ -160,12 +158,12 @@
 
         @include media-breakpoint-up(md) {
             @supports (position: sticky) {
-                position: sticky;
+                //position: sticky;
                 top: 4rem;
                 z-index: 10;
-                height: calc(100vh - 6rem);
+                //height: calc(100vh - 6rem);
                 background-color: rgba(237, 242, 244, 0.69);
-                height: auto;
+                //height: auto;
                 padding-bottom: 30px;
             }
         }
@@ -179,6 +177,11 @@
         .td-search-box {
             width: 100%;
         }
+    }
+
+    .more-space{
+       margin-bottom: 15px;
+       height: auto;
     }
 }
 .td-sidebar-section-title {
