@@ -5,3 +5,5 @@ node_modules/
 tech-doc-hugo
 
 /package-lock.json
+/package.json
+/package-lock.json

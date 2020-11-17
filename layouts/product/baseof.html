@@ -10,7 +10,7 @@
     
 <main role="main" class="td-main">
 {{ with .Params.section1 }}
-<div class="hero-body">
+<div class="hero-body hero-body-product">
 	<div class="container">
 		<div class="row justify-content-between">
 			<div class="col-sm-7">
@@ -26,55 +26,63 @@
 	</div>
 </div>
 {{ end }}
-<!-- 用户文档-->
-{{ with .Params.section2 }}
-<section class="section is-grey-background">
-	<div class="container  td-outer">
-		<div class="title-wrapper">
-			<img class="is-40x40" src="/images/icons/users.svg">
-			<h1 class="title">{{ .title }}</h1>
-		</div>
-		<div class="row">
-		{{ range .children }}
-			<div class="col-sm-4">
-				<div class="card">
-					<div class="card-body-product">
-						<h5 class="card-title">{{ .title }}</h5>
-						<p class="card-text">{{ .content }}</p>
-						<a target="_blank" href="{{ .url }}" class="card-link">了解更多 →</a>
-					</div>
-					<a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}');"><i class="fa fa-download"></i>PDF</a>
-				</div>
+{{ if not .Site.Params.IsConsole }}
+	<!-- 用户文档-->
+	{{ with .Params.section2 }}
+	<section class="section is-grey-background">
+		<div class="container  td-outer">
+			<div class="title-wrapper">
+				<img class="is-40x40" src="/images/icons/users.svg">
+				<h1 class="title">{{ .title }}</h1>
 			</div>
-		{{ end }}
-		</div>
-	</div>
-</section>
-{{ end }}
-<!-- 开发者文档-->
-{{ with .Params.section3 }}
-<section class="section is-grey-background">
-	<div class="container  td-outer">
-		<div class="title-wrapper">
-			<img class="is-40x40" src="/images/icons/icon-lego-copy-2.svg">
-			<h1 class="title">{{ .title }}</h1>
-		</div>
-		<div class="row">
-		{{ range .children }}
-			<div class="col-sm-4">
-				<div class="card">
-					<div class="card-body-product">
-						<h5 class="card-title">{{ .title }}</h5>
-						<p class="card-text">{{ .content }}</p>
-						<a target="_blank" href="{{ .url }}" class="card-link">了解更多 →</a>
+			<div class="row">
+			{{ range .children }}
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-body-product">
+							<h5 class="card-title">{{ .title }}</h5>
+							{{ if .content }}
+								<p class="card-text">{{ .content | markdownify }}</p>
+							{{ else if .content_child }}
+								{{ range .content_child }}
+									<p class="card-text">{{ . }}</p>
+								{{ end }}
+							{{ end }}
+							<a href="{{ .url }}" class="card-link">了解更多 →</a>
+						</div>
+						<a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}');"><i class="fa fa-download"></i>PDF</a>
 					</div>
-					<a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}');"><i class="fa fa-download"></i>PDF</a>
 				</div>
+			{{ end }}
 			</div>
-		{{ end }}
 		</div>
-	</div>
-</section>
+	</section>
+	{{ end }}
+	<!-- 开发者文档-->
+	{{ with .Params.section3 }}
+	<section class="section is-grey-background">
+		<div class="container  td-outer">
+			<div class="title-wrapper">
+				<img class="is-40x40" src="/images/icons/icon-lego-copy-2.svg">
+				<h1 class="title">{{ .title }}</h1>
+			</div>
+			<div class="row">
+			{{ range .children }}
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-body-product">
+							<h5 class="card-title">{{ .title }}</h5>
+							<p class="card-text">{{ .content | markdownify }}</p>
+							<a href="{{ .url }}" class="card-link">了解更多 →</a>
+						</div>
+						<a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}');"><i class="fa fa-download"></i>PDF</a>
+					</div>
+				</div>
+			{{ end }}
+			</div>
+		</div>
+	</section>
+	{{ end }}
 {{ end }}
 <!-- 学习路径-->
 {{ with .Params.section4 }}
@@ -86,14 +94,14 @@
 		</div>
 		<div>
 			<ul class="timeline">
-			{{ range .children }}
+			{{ range $i, $v := .children }}
 				<li class="row">
 					<div class="timeline-outer-line"></div>
 					<div class="col-sm-4 timeline-outer">
-						<h2>{{ .title }}</h2>
-						<p>{{ .content }}</p>
+						<h2>{{ $v.title }}</h2>
+						<p>{{ $v.content }}</p>
 					</div>
-					<div class="col-sm-8 timeline-content">
+					<div class="col-sm-8 timeline-content timeline-back-img-{{add $i 1}}">
 						<div class="timeline-list">
 							<h3>{{ .vice_title }}</h3>
 							<ul>

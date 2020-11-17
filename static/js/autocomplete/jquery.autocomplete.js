@@ -271,7 +271,7 @@
                 'max-height': options.maxHeight + 'px',
                 'width': options.width + 'px',
                 'z-index': options.zIndex,
-				'margin-top': '2px',
+				'margin-top': '4px',
 				'border-radius': '4px'
             });
 
