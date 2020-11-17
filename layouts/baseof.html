@@ -26,7 +26,7 @@
     </header>
     
       <main role="main" class="td-main">
-		<section class="section is-grey-background section-out">
+		<section class="section is-grey-background section-out container-min-height">
 			<div class="container  td-outer">
 				<div class="row" id="content">
 					{{ $sections := .Sections.ByWeight }}
@@ -37,8 +37,8 @@
 							<div class="card-title"><img src="{{ .Params.icon }}" class="card-title-img">{{ .Params.title }}</div>
 							{{ $page_list := (union (where .Pages ".Params._build.render" "!=" false) .Sections).ByWeight }}
 							{{ $length := len $page_list}}
-							{{ range first 5 $page_list }}
-							<p class="card-text"><a target="_blank" href="{{ .RelPermalink }}" class="card-link">{{ .Params.title }}</a></p>
+							{{ range $page_list }}
+							<p class="card-text"><a href="{{ .RelPermalink }}" class="card-link">{{ .Params.title }}</a></p>
 							{{ end }}
 							</div>
 						</div>
