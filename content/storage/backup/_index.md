@@ -15,16 +15,8 @@ Section2:
   title: 用户指南
   children:
     - title: 备份
-      content: 备份产品用户使用文档
-      url: "/compute/vm/intro/introduction"
-
-    - title: 映像
-      content: 映像使用文档
-      url: "/test/guide/object_manage"
-
-    - title: SSH 密钥
-      content: 如何使用 SSH 密钥
-      url: "/qingstor/guide/object_manage/"
+      content: 备份与恢复指南
+      url: "/storage/backup/intro/introduction"
 
 section3:
   title: 开发者指南
@@ -61,13 +53,13 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 创建与使用青云备份
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: "/storage/backup/manual/snapshot"
 
         - title: 基于备份搭建 Wordpress 网站
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: "/storage/backup/manual/snapshot"
 
         - title: 基于备份创建镜像
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: "/storage/backup/manual/snapshot"
 ---
 
 

@@ -14,32 +14,28 @@ section1:
 Section2:
   title: 用户指南
   children:
-    - title: 共享存储
-      content: 共享存储产品用户使用文档
-      url: "/compute/vm/intro/introduction"
+    - title: vSAN
+      content: Virtual SAN 共享存储产品用户使用文档
+      url: "/storage/vnas/manual/vnas"
 
-    - title: 映像
-      content: 映像使用文档
-      url: "/test/guide/object_manage"
-
-    - title: SSH 密钥
-      content: 如何使用 SSH 密钥
-      url: "/qingstor/guide/object_manage/"
+    - title: NeonSAN
+      content: 企业级分布式 SAN (NeonSAN)使用文档
+      url: "/storage/disk/manual/neonsan_volume"
 
 section3:
   title: 开发者指南
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/qingstor/guide/object_manage"
+      url: ""
 
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: "/test/guide/object_manage"
+      url: ""
 
     - title: CLI 文档
       content: 如何使用 CLI 文档
-      url: "/qingstor/guide/object_manage/"
+      url: ""
 
 section4:
   children:
@@ -48,13 +44,13 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品概述（从这里进入示例目录）
-          url: "/compute/vm/intro/introduction"
+          url: "/storage/share/intro/introduction"
 
         - title: 产品优势
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: ""
 
         - title: 应用场景
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: ""
 
     - title: 上手：创建共享存储与部署应用
       content: 虚拟共享存储为用户提供可无限扩展的通用数据存储服务。
