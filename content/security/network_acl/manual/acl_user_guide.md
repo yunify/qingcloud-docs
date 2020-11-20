@@ -4,17 +4,17 @@ description: manual
 draft: false
 ---
 
-## 创建[¶](#create)
+## 创建
 
 **第一步：购买服务**
 
 点击 **CDN／防D服务** 中的 **DDoS 攻击防护** 进入如下界面
 
-[![](../../../_images/main_page.png)](../../../_images/main_page.png)
+![](../../../_images/main_page.png)
 
 点击 **购买** 进入如下界面
 
-[![](../../../_images/create.png)](../../../_images/create.png)
+![](../../../_images/create.png)
 
 在创建的对话框中，点击 **添加域名** ，输入自己的主域名，如果已经添加过，可以跳过。
 
@@ -22,7 +22,7 @@ draft: false
 
 该域名是主域名 如：我们为 ddos.qingcloud.com 添加防护，他的主域名是 qingcloud.com 。
 
-[![](../../../_images/create_cdn_2.png)](../../../_images/create_cdn_2.png)
+![](../../../_images/create_cdn_2.png)
 
 请根据需要选择合适的基础防护带宽和最大防护带宽，DDoS 攻击防护服务收费规则如下：
 
@@ -35,7 +35,7 @@ draft: false
 
 点击“提交”后，确认您需要付费的金额。
 
-[![](../../../_images/buy.png)](../../../_images/buy.png)
+![](../../../_images/buy.png)
 
 **第二步：配置服务**
 
@@ -45,7 +45,7 @@ draft: false
 
 子域名指除去主域名的部分 如: ddos.qingcloud.com 中的 ddos
 
-[![](../../../_images/add_record.png)](../../../_images/add_record.png)
+![](../../../_images/add_record.png)
 
 注解
 
@@ -55,7 +55,7 @@ draft: false
 
 如需开启 HTTPS 则点击 “开启 HTTPS 服务”，在证书列表选择一个要使用的证书， 点击创建证书可上传自己网站的证书和密钥。
 
-[![](../../../_images/create_cdn_4.png)](../../../_images/create_cdn_4.png)
+![](../../../_images/create_cdn_4.png)
 
 **第三步：配置 DNS 解析**
 
@@ -63,15 +63,14 @@ draft: false
 
 登录 DNSPod，可查看到原来的域名记录，www 记录已在添加到青云中，因此删除（或暂停）www 的 A 记录。
 
-[![](../../../_images/dnspod_main.png)](../../../_images/dnspod_main.png)
+![](../../../_images/dnspod_main.png)
 
 如下图，www 的 A 记录已经暂停：
 
-[![](../../../_images/dnspod_stopped.png)](../../../_images/dnspod_stopped.png)
+![](../../../_images/dnspod_stopped.png)
 
 在 DNSPod 重新配置 www 的 CNAME 记录，记录值则指向青云提供的 CNAME 值。如下图：
-
-[![](../../../_images/dnspod_add.png)](../../../_images/dnspod_add.png)
+![](../../../_images/dnspod_add.png)
 
 保存，并耐心等待生效。CNAME修改生效一般需要1-2个小时。
 
@@ -85,13 +84,13 @@ draft: false
 
 连接数监控
 
-[![](../../../_images/monitor_connection_number.png)](../../../_images/monitor_connection_number.png)
+![](../../../_images/monitor_connection_number.png)
 
 流量监控
 
-[![](../../../_images/monitor_bandwidth.png)](../../../_images/monitor_bandwidth.png)
+![](../../../_images/monitor_bandwidth.png)
 
-## FAQ[¶](#faq)
+## FAQ
 
 **为什么采用CNAME接入**
 
