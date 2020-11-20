@@ -1,5 +1,6 @@
 public/
 resources/
 node_modules/
-
+.vscode/
+debug.log
 .DS_Store
