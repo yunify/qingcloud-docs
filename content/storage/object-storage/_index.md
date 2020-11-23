@@ -17,11 +17,11 @@ Section2:
   children:
     - title: 动态与公告
       content: 产品动态和公告
-      url: "/storage/object-storage/news"
+      url: "/storage/object-storage/news/history"
 
     - title: 产品简介
       content: 产品简介
-      url: "/storage/object-storage/intro"
+      url: "/storage/object-storage/intro/object-storage"
 
     - title: 计费指南
       content: 计费指南
