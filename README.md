@@ -6,15 +6,17 @@ QingCloud 官方文档使用了 [Hugo](https://gohugo.io/getting-started/install
 
 - [Git](https://www.git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git)（请熟悉 Git 常用的几条基本命令）
 - Hugo (至少 `v0.70` 以上) [请安装 hugo_extended 版本](https://github.com/gohugoio/hugo/releases)
-
+- Windows下需要配置环境变量，打开编辑环境变量-->高级-->环境变量，在“系统变量”下双击“Path”这个变量，点击新建
+将你的Git地址和Hugo安装地址黏贴到编辑区域，例如“C:\Users\jobding\Downloads\hugo_extended_0.76.2_Windows-64bit”，点击“确定”保存。
 
 ## 第二步：Fork 与 Clone 仓库
 
-请点击右上角 **Fork** 将 qingcloud-docs 仓库 Folk 至自己的　GitHub，然后将自己账号下的 Git 仓库地址 Clone 到本地，如：
+请点击右上角 **Fork** 将 qingcloud-docs 仓库 Fork 至自己的　GitHub，然后将自己账号下的 Git 仓库地址 Clone 到本地，如：
 
 ```
 git clone https://github.com/<YOUR-GITHUB-ID>/qingcloud-docs.git
 ```
+
 
 ## 第三步：本地调试
 
