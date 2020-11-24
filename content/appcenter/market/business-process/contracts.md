@@ -20,7 +20,7 @@ draft: false
 
 对于要在 AppCenter 应用中心发布应用的用户来说，需要在上架之前完成企业资质的审核和相关合约的签署。
 
-![申请入驻](C:/Users/qing/qingcloud/qingcloud-docs/content/images/apply.png)
+![申请入驻](/appcenter/market/business-process/_image/apply.png)
 
 #### 企业资质
 
@@ -56,9 +56,3 @@ draft: false
 - 签署应用相关的《服务商产品清单》
 
 注：合约当中会涉及“保证金”和“基础服务费”，其中，”保证金”需要在合约生效之后5个工作日内缴纳，“基础服务费”会在名下第一个应用通过审核之后由青云系统自动扣除，并且会自动开具对应发票。所有合约详情可在 [合约管理](../business-process/contracts.html) 中进行查看和操作。
-
-### 合约管理
-
-所有服务商与青云签署的合约都可在此查看，包括合约的生成申请、签署以及未来的终止等操作。
-
-注：此功能将在AppCenter 2.1 发布时提供。

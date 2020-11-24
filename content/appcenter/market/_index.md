@@ -16,15 +16,15 @@ Section2:
   children:
     - title: 应用购买
       content: AppCenter 应用使用文档
-      url: ""
+      url: "/appcenter/market/business-process/user-operation"
     
     - title: 合作计划
       content: 合作伙伴，合作计划
-      url: ""
+      url: "/appcenter/market/business-process/partner-plan"
 
     - title: 服务商入驻
       content: 服务商入驻
-      url: ""
+      url: "/appcenter/market/business-process/contracts"
 
 section3:
   title: 开发者指南
