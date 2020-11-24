@@ -1,0 +1,145 @@
+{
+    "type": "array",
+    "properties": [{
+        "key": "cluster",
+        "description": "cluster properties",
+        "type": "array",
+        "properties": [{
+            "key": "name",
+            "label": "Name",
+            "description": "The name of the application",
+            "type": "string",
+            "default": "",
+            "required": "no"
+        }, {
+            "key": "resource_group",
+            "label": "Resource Configuration",
+            "description": "The resource configuration of the service",
+            "type": "string",
+            "default": "Standard",
+            "range": ["Standard", "Enterprise", "Enterprise Plus"]
+        }, {
+            "key": "description",
+            "label": "Description",
+            "description": "The description of the application",
+            "type": "string",
+            "default": "",
+            "required": "no"
+        }, {
+            "key": "vxnet",
+            "label": "VxNet",
+            "description": "The vxnet that the application will join",
+            "type": "string",
+            "default": "",
+            "required": "yes"
+        }, {
+            "key": "external_service",
+            "label": "External Service",
+            "description": "Choose an external service to use",
+            "type": "service",
+            "limits": {
+                "app-id": ["app-version"]
+            },
+            "allowed_operations": ["add", "modify", "delete"],
+            "default": "",
+            "required": "yes"
+        }, {
+            "key": "role_name",
+            "description": "role-based node properties",
+            "label": "Role Name",
+            "type": "array",
+            "properties": [{
+                "key": "loadbalancer",
+                "label": "Loadbalancer Service",
+                "description": "Choose a loadbalancer service to use",
+                "type": "loadbalancer",
+                "port": 80,
+                "default": [],
+                "required": "yes"
+            }, {
+                "key": "instance_type",
+                "label": "Instance Type",
+                "description": "The instance type for each instance",
+                "type": "string",
+                "default": "",
+                "required": "yes"
+            },  {
+                "key": "count",
+                "label": "Count",
+                "description": "Number of nodes for the cluster to create",
+                "type": "integer",
+                "default": 3,
+                "max": 100,
+                "min": 1,
+                "required": "yes",
+                "resource_group": [3, 5, 7]
+            }, {
+                "key": "replica",
+                "label": "Replica",
+                "description": "The replica number for each node with this role",
+                "type": "integer",
+                "default": 1,
+                "required": "yes"
+            }]
+        }]
+    }, {
+        "key": "env",
+        "description": "application configuration properties",
+        "type": "array",
+        "properties": [{
+            "key": "common.param",
+            "label": "Common Param",
+            "description": "The common.param1 for all nodes",
+            "type": "string",
+            "changeable": true,
+            "default": "value1,value11",
+            "separator": ",",
+            "range": ["value1", "value11", "value111"],
+            "multichoice": true,
+            "required": "yes"
+        }, {
+            "key": "role_name",
+            "description": "The role configuration properties of the application",
+            "type": "array",
+            "properties": [{
+                "key": "param",
+                "label": "Role Param",
+                "description": "The param for all slave nodes",
+                "type": "string",
+                "changeable": true,
+                "default": "value1",
+                "range": ["value1", "value11"],
+                "required": "yes"
+            }]
+        }]
+    }, {
+        "key": "service_params",
+        "description": "Custom service configuration properties",
+        "type": "array",
+        "properties": [{
+            "key": "common.param",
+            "label": "Common Param",
+            "description": "The common.param1 for all nodes",
+            "type": "string",
+            "default": "value1,value11",
+            "separator": ",",
+            "range": ["value1", "value11", "value111"],
+            "multichoice": true,
+            "required": "yes"
+        }, {
+            "key": "role_name",
+            "description": "Custom service the role (role_name) configuration properties",
+            "type": "array",
+            "properties": [{
+                "key": "param",
+                "label": "Role Param",
+                "description": "The param for all slave nodes",
+                "type": "string",
+                "pattern": "^value.+",
+                "default": "value1",
+                "range": ["value1", "value11"],
+                "required": "yes"
+            }]
+        }]
+    }]
+}

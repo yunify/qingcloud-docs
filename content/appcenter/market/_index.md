@@ -17,29 +17,16 @@ Section2:
     - title: 应用购买
       content: AppCenter 应用使用文档
       url: "/appcenter/market/business-process/user-operation"
-    
-    - title: 合作计划
-      content: 合作伙伴，合作计划
-      url: "/appcenter/market/business-process/partner-plan"
-
     - title: 服务商入驻
       content: 服务商入驻
       url: "/appcenter/market/business-process/contracts"
 
 section3:
-  title: 开发者指南
+  title: API 文档
   children:
-    - title: 云应用开发
-      content: 如何开发云应用
-      url: "/appcenter/market/join-up/cluster"
-
-    - title: SaaS 应用开发
-      content: 如何开发 SaaS 应用
-      url: "/appcenter/market/join-up/saas"
-
-    - title: API 文档
-      content: 如何使用 API
-      url: "/appcenter/market/api/"
+    - title: 应用市场
+      content: 应用市场 API
+      url: "/appcenter/dev-platform/cluster"
 
 section4:
   children:
@@ -49,23 +36,18 @@ section4:
       children:
         - title: 产品概述（从这里进入示例目录）
           url: "/storage/share/intro/introduction"
-
         - title: 产品优势
           url: ""
-
         - title: 应用场景
           url: ""
-
     - title: 上手：购买应用
       content: XXXXXXXXX。
       vice_title: 上手的第一步
       children: 
         - title: XXXX
           url: "/compute/vm/test1_3/test1_3_2"
-
         - title: XXXX
           url: "/compute/vm/test1_3/test1_3_2"
-
         - title: XXXXXXXXX
           url: "/compute/vm/test1_3/test1_3_2"
 ---
