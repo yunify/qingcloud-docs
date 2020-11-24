@@ -19,7 +19,7 @@ weight: 1
 - 权限：该 Bucket 的可访问性，控制台中可以设为私有、公开只读、公开读写。
 - url：Bucket 通过 RESTful API 访问时的 uri，调用 Object 相关 API 时的 uri 前缀。
 
-[![](_images/bucket_listview.png)](_images/bucket_listview.png)
+![](bucket_listview.png)
 
 > Bucket 列表和文件页提供“列表”和“文件”两种视图，缺省为列表视图，您可以根据习惯选择浏览方式。
 
@@ -27,7 +27,7 @@ weight: 1
 
 用户可以在 Bucket 列表页点击“新建 Bucket”按钮，创建一个新的 Bucket。由于 Bucket 名称是 url 域名的一部分，因此需要遵循标准 url 域名规范：只包含字母、数字、中划线，以字母开始，以字母或数字结尾。创建时请注意长度范围是 3 - 63，另外 Bucket 是全局唯一的，因此如果提交已存在的名称，则提示创建失败。
 
-[![](_images/create_bucket.png)](_images/create_bucket.png)
+![](create_bucket.png)
 
 > 新建的 Bucket 是私有的，如果想公开这个 Bucket 的权限，可以在创建后设置。
 
@@ -39,7 +39,7 @@ weight: 1
 - 公开只读：所有人都可以访问 Bucket 及其文件相关的 GET/HEAD 等类型 API 接口。
 - 公开读写：所有人都可以访问 Bucket 及其文件相关的所有 API 接口。
 
-[![](_images/modify_acl.png)](_images/modify_acl.png)
+![](modify_acl.png)
 
 > 如果想指定特定用户的访问权限，可以调用 acl 的 POST API 来设置。
 
@@ -47,19 +47,19 @@ weight: 1
 
 如果一个 Bucket 不再需要，用户可以删除 Bucket。请注意，如果删除了 Bucket，文件和文件夹也会被删除，无法恢复，操作前需要谨慎。
 
-[![](_images/delete_bucket.png)](_images/delete_bucket.png)
+![](delete_bucket.png)
 
 ### Bucket 文件视图
 
 修改权限、删除 Bucket 等操作在文件视图中，可以在 Bucket 信息卡右键进入。
 
-[![](_images/bucket_fileview.png)](_images/bucket_fileview.png)
+![](bucket_fileview.png)
 
 ## Bucket 详情
 
 从 Bucket 列表（列表视图或文件视图）点击可进入 Bucket 详情页。Bucket 是独立的文件存储、监控、计费单元，详情页分为 3 个 标签页，分别提供按文件查看和操作、监控和消费记录的查看。
 
-[![](_images/object_listview.png)](_images/object_listview.png)
+![](object_listview.png)
 
 ## 分段管理
 
@@ -69,19 +69,19 @@ weight: 1
 
 在分段列表中可以查看分段上传文件的名称，上传 ID 和创建时间等信息。
 
-[![](_images/bucket_multipart_uploads.png)](_images/bucket_multipart_uploads.png)
+![](bucket_multipart_uploads.png)
 
 ### 完成分段上传
 
 点击分段列表右侧的查看分段按钮，在弹出的对话框中可以看到此次上传包含的分段，选择此文件需要的分段，点击下方的完成上传按钮就可以完成此次分段上传，未被选中的分段将在完成上传后删除。
 
-[![](_images/bucket_multipart_complete.png)](_images/bucket_multipart_complete.png)
+![](bucket_multipart_complete.png)
 
 ### 取消上传
 
 在分段列表勾选需要取消上传的文件，点击上方工具栏的取消上传按钮，在弹出的对话框中点击确认按钮就可以取消选中的分段上传。右键点击分段列表也可以看到取消上传的快捷方式。
 
-[![](_images/bucket_multipart_abort.png)](_images/bucket_multipart_abort.png)
+![](bucket_multipart_abort.png)
 
 ## Bucket 设置
 
@@ -101,13 +101,13 @@ weight: 1
 
 其中 “允许请求源” 和 “允许 HTTP 方法” 必填，其他项选填。
 
-[![](_images/bucket_cors_add.png)](_images/bucket_cors_add.png)
+![](bucket_cors_add.png)
 
 #### 导入请求源
 
 通过导入其他 Bucket 的 CORS 规则可以很方便的完成当前 Bucket 的规则设置，避免了重复输入的麻烦。点击 “导入请求源” 按钮，在 “源 Bucket” 下拉框中选择导入 CORS 规则所属的 Bucket。如果要导入的规则中有相同的请求源，可以选择覆盖或者保留当前 CORS 规则中的请求源。
 
-[![](_images/bucket_cors_import.png)](_images/bucket_cors_import.png)
+![](bucket_cors_import.png)
 
 ### 设置存储空间策略
 
@@ -124,7 +124,7 @@ weight: 1
 - 用户： 策略所应用到的用户，必须为青云用户 ID 或邮件地址。长度不能超过300个字符，多个值使用英文逗号分隔。如果要匹配所有用户，可设置值为 ‘*’。
 - Referer： 存储空间策略生效的条件。
 
-[![](_images/bucket_policy_add.png)](_images/bucket_policy_add.png)
+![](bucket_policy_add.png)
 
 ### 自定义域名和静态网站托管
 
@@ -141,17 +141,17 @@ weight: 1
 - 节点类型： CDN 加速的服务类型，可以选择”网页”，“下载”或者“点播”。
 - 服务区域： CDN 加速的服务区域
 
-[![](_images/bucket_cdn_add.png)](_images/bucket_cdn_add.png)
+![](bucket_cdn_add.png)
 
 然后按照界面上提示的, 到域名注册商修改域名记录，为 appcenter-docs.qingcloud.com 添加指向我们分配的 CNAME 域名的记录。
 
 查看域名修改是否生效, linux 平台下可以在终端下使用 dig 命令
 
-[![](_images/bucket_cdn_check.png)](_images/bucket_cdn_check.png)
+![](bucket_cdn_check.png)
 
 查看域名修改是否生效, Windows 平台下可以打开命令提示符界面，使用 nslookup 命令
 
-[![](_images/bucket_cdn_check_win.png)](_images/bucket_cdn_check_win.png)
+![](bucket_cdn_check_win.png)
 
 > NOTE:
 >
@@ -167,7 +167,7 @@ weight: 1
 以 download.hashdata.cn 绑定到 hashdata-download.pek3a.qingstor.com 为例, 首先添加域名 CNAME记录，
 这个步骤用于检查用户是否拥有真实的域名。配置成功后，Linux 平台的 dig 命令效果如下图:
 
-[![](_images/bucket_cname_check.png)](_images/bucket_cname_check.png)
+![](bucket_cname_check.png)
 
 添加域名绑定，与上边启用 CDN 的界面类似，区别仅为不勾选 "启用CDN" 选框。提交后理论上立即能访问。
 
@@ -202,11 +202,11 @@ weight: 1
 
 	例如，设置索引页面为 “index.html”，设置错误页面为 “error.html”。 访问根路径时，将返回 “index.html”，访问 “about/” 时，将返回 “about/index.html”。 访问 “test/hello.mp4” 时，如果 “test/hello.mp4” 对象不存在，将返回 “error.html”。
 
-	[![](_images/bucket_web_hosting_start.png)](_images/bucket_web_hosting_start.png)
+	![](bucket_web_hosting_start.png)
 
 	开启静态网站托管后，支持修改网站所使用的索引页面和错误页面，点击 “停止静态网站托管” 可关闭托管服务。
 
-	[![](_images/bucket_web_hosting_stop.png)](_images/bucket_web_hosting_stop.png)
+	![](bucket_web_hosting_stop.png)
 
 ### 设置外部镜像源站
 
@@ -218,7 +218,7 @@ weight: 1
 
 - 源站点：外部镜像回源的源站，其形式为 “://[:port]/[path]”。
 
-[![](_images/bucket_external_mirror_source_site_add.png)](_images/bucket_external_mirror_source_site_add.png)
+![](bucket_external_mirror_source_site_add.png)
 
 ### 设置生命周期
 
@@ -234,7 +234,7 @@ weight: 1
 - 存储级别： “变更存储级别”所支持的类型。
 - 天数： 在对象创建或修改指定天数后执行操作，当操作为“取消未完成的分段上传”时，表示在初始化分段上传的指定天数后执行操作。
 
-[![](_images/bucket_lifecycle_add.png)](_images/bucket_lifecycle_add.png)
+![](bucket_lifecycle_add.png)
 
 ### 设置日志功能
 
@@ -243,7 +243,7 @@ weight: 1
 #### 设置目标bucket
 
 可以设置当前bucket的日志存放在哪个bucket中。源bucket与目标bucket只能在同一区。
-[![](_images/bucket_logger_add.png)](_images/bucket_logger_add.png)
+![](bucket_logger_add.png)
 
 #### 设置日志前缀
 
@@ -252,4 +252,4 @@ weight: 1
 例：如果希望存在某以文件夹下同时设置前缀可填写：logs/demo-。此设置表示日志要放在logs/文件夹下。日志命名要添加demo-作为开头。日志一般会延迟1-2个小时输出到设定位置。
 
 查看日志参数详细信息点击描述中的”点击这里“或阅读 QingStor API 文档。
-[![](_images/bucket_logger_params.png)](_images/bucket_logger_params.png)
+![](bucket_logger_params.png)
