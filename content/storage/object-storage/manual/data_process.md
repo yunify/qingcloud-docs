@@ -25,7 +25,7 @@ QingStor™ 对象存储通过无缝对接图谱科技的图像智能审核能�
 
 其中 “接收结果地址” 必填，“文件名匹配规则” 具有缺省值。
 
-![](_images/data_process_tupu_open.jpg)
+![](data_process_tupu_open.jpg)
 
 ### 查看详情
 
@@ -37,7 +37,7 @@ QingStor™ 对象存储通过无缝对接图谱科技的图像智能审核能�
 - 复审部分调用：鉴黄结果中需要人工复审的部分的 API 调用次数。
 - 确定部分调用：鉴黄结果中不需要人工复审的部分的 API 调用次数。
 
-![](_images/data_process_tupu_monitor.jpg)
+![](data_process_tupu_monitor.jpg)
 
 可以查询最近一天、最近一个月、最近 6 个月的监控信息。用曲线图来展示时间区间内的变化值，并将监控点的具体数值呈现在表格中。
 
@@ -45,7 +45,7 @@ QingStor™ 对象存储通过无缝对接图谱科技的图像智能审核能�
 
 通过选择查询时间段查看各个月份对应的消费记录。
 
-![](_images/data_process_tupu_consumption.jpg)
+![](data_process_tupu_consumption.jpg)
 
 通过改变时间段查询不同时间内的消费记录，结果用堆叠条形图表示，并将监控点的数据呈现在表格中。
 
@@ -60,7 +60,7 @@ QingStor™ 对象存储图片处理提供了包括格式转换、旋转、添�
 - 处理参数：图片处理最终将生成一段处理参数代码，将该代码拼接到图片 URL 后以获得经过处理的图片。同时可以将处理参数保存在浏览器本地，方便再次编辑使用。
 - 参数记录：显示最近保存的处理参数（最多 10 条）用户可根据需要对任意记录进行编辑、复制、删除操作。
 
-![](_images/data_process_magick_detail.jpg)
+![](data_process_magick_detail.jpg)
 
 > *当前暂不支持对加密图片进行处理，单张图片最大尺寸为 10MB。*
 
@@ -72,4 +72,4 @@ QingStor™ 对象存储图片处理提供了包括格式转换、旋转、添�
 - 水印：增加文字或图片水印。
 - 格式：将图片转换成指定格式。
 
-![](_images/data_process_magick_operate.jpg)
+![](data_process_magick_operate.jpg)
