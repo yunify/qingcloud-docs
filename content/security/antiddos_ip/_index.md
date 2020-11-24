@@ -3,9 +3,42 @@ title: "高防IP"
 linkTitle: "高防IP"
 weight: 1
 collapsible: true
+type: "product"
+
+section1:
+  title: 高防IP
+  vice_title: 高防 IP 是青云 QingCloud 提供的 DDoS 攻击防护及代理转发服务。高防 IP 可以保护用户的应用服务在被 DDoS 攻击时仍持续可用。您通过 DNS 解析调度流量到高防 IP，就可以接入青云 DDoS 防护系统，抵御多种类型的 DDoS 攻击。
+  video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
+  video_img: "/images/video.png"
+
+Section2:
+  title: 用户指南
+  children:
+    - title: 计费模式
+      content: 高防IP产品计费模式文档
+      url: "/security/antiddos_ip/billing/price"
+
+    - title: 使用指南
+      content: 高防IP使用文档
+      url: "/security/antiddos_ip/intro/introduction"
+
+
+section3:
+  title: 开发者指南
+  children:
+    - title: API 文档
+      content: 如何使用 API 文档
+      url: "/qingstor/guide/object_manage"
+
+
+section4:
+  children:
+    - title: 了解：什么是高防IP
+      content: 海量带宽防护资源与AI智能攻击识别能力。
+      vice_title: 了解的第一步
+      children:
+        - title: 产品概述（从这里进入示例目录）
+          url: "/security/antiddos_ip/intro/introduction"
+
 ---
 
-# 高防IP
-
-
-高防 IP 是青云 QingCloud 提供的 DDoS 攻击防护及代理转发服务。高防 IP 可以保护用户的应用服务在被 DDoS 攻击时仍持续可用。您通过 DNS 解析调度流量到高防 IP，就可以接入青云 DDoS 防护系统，抵御多种类型的 DDoS 攻击。
