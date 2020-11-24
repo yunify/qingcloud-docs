@@ -30,14 +30,14 @@ Bucket 的监控项分为 3 大类：流量、存储、API，每一类的监控�
 
 每类监控项可分别查询最近一天、最近一个月、最近 6 个月的监控信息。用曲线图来展示时间区间内的变化值，并将监控点的具体数值呈现在表格中。监控项可以在页面右侧选择切换。
 
-[![](_images/bucket_monitor.png)](_images/bucket_monitor.png)
+![](bucket_monitor.png)
 
 ## Bucket 消费记录
 
 Bucket 的计费项有 5 项，分别是：存储空间、外网出流量、外网进流量、zone内出流量、zone内进流量，即监控项中对应的内容。
 
-[![](_images/bucket_consumption_overview.png)](_images/bucket_consumption_overview.png)
+![](bucket_consumption_overview.png)
 
 控制台提供 Bucket 最近一年的消费查询，在查询时间范围内提供以计费项分组的整体消费视图，以及按日期每日消费的折线图和明细表。
 
-[![](_images/bucket_consumption_daily.png)](_images/bucket_consumption_daily.png)
+![](bucket_consumption_daily.png)
