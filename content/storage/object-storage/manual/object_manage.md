@@ -10,7 +10,7 @@ weight: 2
 
 Bucket 的文件和文件夹按字母序混合排列，控制台提供文件的名称、类型、大小等信息，并按文件类型展示对应的图标。与 Bucket 列表页相同，这里可以选择列表视图或文件视图。
 
-![](_images/object_fileview.png)
+![](object_fileview.png)
 
 在文件标签页，可以查看、创建和删除文件夹，上传、下载、删除文件，也可以将公开读权限的 Bucket 内文件分享 url 供其他用户下载。
 
@@ -18,13 +18,13 @@ Bucket 的文件和文件夹按字母序混合排列，控制台提供文件的�
 
 文件夹是特殊的文件，它的名称也是 API 中 uri 的一部分，因此需要遵循 url 的 pathname 部分的命名规范。
 
-![](_images/create_folder.png)
+![](create_folder.png)
 
 ### 删除文件夹
 
 用户勾选需要删除的文件或文件夹，点击"更多操作"内的"删除"或右键菜单中的"删除"，在弹出列表中确认需要删除的文件或文件夹，点击"删除"即可。
 
-![](_images/delete_folder.png)
+![](delete_folder.png)
 
 
 ### 上传文件
@@ -33,7 +33,7 @@ Bucket 的文件和文件夹按字母序混合排列，控制台提供文件的�
 
 上传中的文件显示上传的速度、进度，用户可以取消一个上传中的文件。文件上传完成之后，在列表中保持一段时间后消失。可以上传列表中右键删除一个文件记录，或者清空所有文件记录。文件上传的过程中，可以关闭上传窗口，再次点击上传文件按钮时，会打开当前上传的文件进度。
 
-[![](_images/upload_files.png)](_images/upload_files.png)
+![](upload_files.png)
 
 注解
 
@@ -43,13 +43,13 @@ Bucket 的文件和文件夹按字母序混合排列，控制台提供文件的�
 
 用户可以在控制台下载文件，无论文件所属的 Bucket 是私有还是公开访问的。如果 Bucket 公开了读权限，用户可以从控制台得到文件可访问的 url，并将 url 分享给其他人。如果在控制台下载文件，完成下载后，文件保存在浏览器设置的下载保存目录。用户也可以通过 API 或 SDK 下载文件，具体办法请参考 API 文档。
 
-[![](_images/share_file.png)](_images/share_file.png)
+![](share_file.png)
 
 ### 删除文件
 
 与删除文件夹类似，删除文件后无法恢复，因此需要谨慎执行该操作。文件可以批量删除，选择多个文件，在更多操作中选择删除即可。
 
-[![](_images/delete_files.png)](_images/delete_files.png)
+![](delete_files.png)
 
 ### 复制和剪切文件
 
@@ -60,13 +60,13 @@ Bucket 的文件和文件夹按字母序混合排列，控制台提供文件的�
 
 暂时不支持文件夹的复制和剪切。复制操作可以执行多次，剪切操作只能执行一次。复制和剪切都会覆盖目标路径下的同名文件。
 
-[![](_images/object_copy.png)](_images/object_copy.png)
+![](object_copy.png)
 
 ### 重命名文件
 
 右键点击要重命名的文件，点击重命名，输入新的文件名。文件名由字母、数字或中文等字符组成，第一个字符不能为斜杠(/)，编码后长度在 1 - 1023 之间。
 
-[![](_images/rename_file.png)](_images/rename_file.png)
+![](rename_file.png)
 
 ### 变更存储级别
 
@@ -81,4 +81,4 @@ Bucket 的文件和文件夹按字母序混合排列，控制台提供文件的�
 
 变更存储级别需要一定的时间来完成存储转换，时间长短与文件大小相关，暂不提供文件夹变更存储级别。
 
-[![](_images/alter_storage_class.png)](_images/alter_storage_class.png)
+![](alter_storage_class.png)
