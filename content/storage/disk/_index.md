@@ -7,39 +7,43 @@ type: "product"
 
 section1:
   title: 硬盘
-  vice_title: QingCloud 为您提供秒级响应、性能卓越、安全稳定的云计算服务
+  vice_title: 青云 QingCloud 平台支持多种块存储类型，包括：基础型、 SSD 企业型、性能型、超高性能型、超高性能容量型 (NeonSAN) 、容量型。
   video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
   video_img: "/images/video.png"
 
 Section2:
   title: 用户指南
   children:
-    - title: 硬盘
-      content: 硬盘产品用户使用文档
-      url: "/compute/vm/intro/introduction"
+    - title: 基础型硬盘
+      content: 基础型硬盘用户使用文档
+      url: "/storage/disk/manual/basic_volume"
 
-    - title: 映像
-      content: 映像使用文档
-      url: "/test/guide/object_manage"
+    - title: SSD 企业型硬盘
+      content: SSD企业型硬盘用户使用文档
+      url: "/storage/disk/manual/ssd_enterprise_volume"
 
-    - title: SSH 密钥
-      content: 如何使用 SSH 密钥
-      url: "/qingstor/guide/object_manage/"
+    - title: 容量型硬盘
+      content: 容量型硬盘用户使用文档
+      url: "/storage/disk/manual/capacity_volume"
+
+    - title: 企业级分布式SAN（NeonSAN）
+      content: 企业级分布式SAN（NeonSAN）硬盘用户使用文档
+      url: "/storage/disk/manual/neonsan_volume"
 
 section3:
   title: 开发者指南
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/qingstor/guide/object_manage"
+      url: ""
 
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: "/test/guide/object_manage"
+      url: ""
 
     - title: CLI 文档
       content: 如何使用 CLI 文档
-      url: "/qingstor/guide/object_manage/"
+      url: ""
 
 section4:
   children:
@@ -48,26 +52,29 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品概述（从这里进入示例目录）
-          url: "/compute/vm/intro/introduction"
+          url: ""
 
         - title: 产品优势
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: ""
 
         - title: 应用场景
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: ""
 
     - title: 上手：创建硬盘与部署应用
       content: 虚拟硬盘为用户提供可无限扩展的通用数据存储服务。
       vice_title: 上手的第一步
       children: 
         - title: 创建与使用青云硬盘
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: "/storage/disk/quickstart/quick_start"
+
+        - title: 主机系统盘扩容
+          url: "/storage/disk/quickstart/system_volume_resize"
 
         - title: 基于硬盘搭建 Wordpress 网站
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: ""
 
         - title: 基于硬盘创建镜像
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: ""
 ---
 
 

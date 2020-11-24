@@ -1,28 +1,23 @@
-<div class="nav-wrapper {{ if eq .CurrentSection.LinkTitle "Document"}}nav-wrapper-index {{ end }}">
+<div class="nav-wrapper {{ if eq .Params.LinkTitle "Document"}}nav-wrapper-index {{ end }}">
             <nav class="navbar navmenu">
-                <div class="container with-no-position">
+                <div class="container with-no-position {{ if and (ne .Params.LinkTitle "Document") (ne .Params.type "product")}}doc-container-width {{ end }}">
                     <div class="navbar-brand">
                         <a class="navbar-item logo" href="https://www.qingcloud.com">
-                                                        <img src="https://s3.qingcloud.com/static/assets/images/icons/common/nav_logo_white.svg?v=1510299508" alt="logo" width="auto" height="32">
-                                                    </a>
+                            <img src="https://s3.qingcloud.com/static/assets/images/icons/common/nav_logo_white.svg?v=1510299508" alt="logo" width="auto" height="32">
+                        </a>
                         <a href="javascript:;" class="nav-trigger">&nbsp;<span aria-hidden="true"></span></a>
                     </div>
 					<div class="media-content column is-centered is-6">
 						<form action="/search" method="GET">
 							<div class="control has-icons-right docs-search-input">
 								<input class="input" id="search-bar" name="q" type="search" placeholder="搜索" autocomplete="off">
-								<span class="icon is-small is-right">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-									<g fill="#68747F" fill-rule="evenodd">
-									<path d="M14.968 14.192l2.874 2.874-.776.776-2.874-2.874c.294-.22.556-.482.776-.776z"></path>
-									<path d="M17.776 17l2.874 2.874-.776.776L17 17.776c.294-.22.556-.482.776-.776zM10 17a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-1a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path>
-									</g>
-								</svg>
+								<span class="icon is-right">
+								<img src="/images/icons/search.svg">
 								</span>
 							</div>
 						</form>
 					</div>
-                    <div class="navbar-end is-hidden-mobile header-account" style="margin-left:0;">
+                    <div class="navbar-end is-hidden-mobile header-account">
                         <div class="navbar-item">
                             <div class="field is-grouped">
                                 <p class="control">
@@ -39,7 +34,7 @@
                     </div>
                 </div>
             </nav>
-			{{ if ne .CurrentSection.LinkTitle "Document"}}
+			{{ if ne .Params.LinkTitle "Document"}}
 			<nav class="navbar navmenu" style="min-height: 25px;border-bottom: 0;">
 				{{ partial "breadcrumb.html" . }}	
 			</nav>

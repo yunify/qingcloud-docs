@@ -158,6 +158,10 @@
 
 }
 
+.console-tree-title{
+    display:none;
+}
+
 @media (min-width: 768px) {
     .td-sidebar__inner {
         top: 0;
@@ -171,5 +175,15 @@
     .td-main main {
         padding-top: 0;
         padding-right: 40px;
+    }
+
+    .row.flex-xl-nowrap{
+        border-top:solid 1px #e4ebf1;
+    }
+
+    .console-tree-title{
+        display:block;
+        padding: 0.5rem 0 0.5rem 2rem;
+        border-top: solid 1px #e4ebf1;
     }
 }
