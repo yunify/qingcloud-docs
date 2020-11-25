@@ -259,5 +259,3 @@ abrtOutput, err := bucket.AbortMultipartUpload(
 // Example: QingStor Error: StatusCode 400, Code...
 fmt.Println(err)
 ```
-
-
