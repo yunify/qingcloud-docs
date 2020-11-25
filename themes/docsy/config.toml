@@ -5,8 +5,8 @@
 # outputformats and mediatypes
 
 [params]
-time_format_blog = "Monday, January 02, 2006"
-time_format_default = "January 2, 2006"
+# time_format_blog = "2020.11.23"
+time_format_default = "2020-11-23"
 # Sections to publish in the main RSS feed.
 rss_sections = ["blog"]
 #IsConsole = true

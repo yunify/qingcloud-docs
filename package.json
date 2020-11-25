@@ -1,5 +1,5 @@
 {
-  "name": "tech-doc-hugo",
+  "name": "qingcloud-docs",
   "version": "0.0.1",
   "description": "QingCloud documentation 2.0.",
   "main": "none.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bep/tech-doc-hugo.git"
+    "url": "git+https://github.com/yunify/qingcloud-docs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bep/tech-doc-hugo/issues"
+    "url": "https://github.com/yunify/qingcloud-docs/issues"
   },
-  "homepage": "https://github.com/bep/tech-doc-hugo#readme",
+  "homepage": "https://github.com/yunify/qingcloud-docs#readme",
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.8.6",
