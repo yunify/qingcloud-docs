@@ -29,12 +29,6 @@ QingStor™ 对象存储提供了多种命令行和 GUI 工具，便于用户高
 
 使用 Qingstor Bucket 提供 Ftp 服务
 
-## CLI 
-
-[文档](./qingcloud-cli)
-
-实现 API 调用的命令行工具
-
 ## Mountain Duck
 
 [文档](./mountain-duck)
