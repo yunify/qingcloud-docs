@@ -6,9 +6,9 @@ draft: false
 weight: 9
 ---
 
-QingStor 对象存储支持由用户提供密钥的加密方式，服务端用用户提供的密钥对上传的 对象进行加密处理。一般来说, 用户可以通过 sdk 来指定密钥等信息。加密解密在服务端完成。
+QingStor 对象存储支持由用户提供密钥的加密方式，服务端用用户提供的密钥对上传的对象进行加密处理。一般来说, 用户可以通过 sdk 来指定密钥等信息。加密解密在服务端完成。
 
-具体内容, 请参考 [加密相关的 API 列表](api/common/encryption.html)
+具体内容, 请参考 [加密相关的 API 列表](/storage/object-storage/api/common/encryption)
 
 > QingStor 对象存储服务端不保存用户的密钥。
 
