@@ -118,5 +118,3 @@ bytes start_offset-stop_offset/file_size
 bytes start_offset-stop_offset/file_size
 ```
 如一个长度为500字节的文件，在请求中有 `x-qs-copy-range: bytes=0-0` 的时候，返回中附带 `x-qs-content-copy-range`: `bytes 0-0/500`
-
-
