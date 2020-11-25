@@ -15,7 +15,7 @@ QingStor™ 对象存储提供了多种命令行和 GUI 工具，便于用户高
 
 [文档](./qsctl)
 
-实现文件上传下载的命令行工具
+青云对象存储服务的高级命令行工具
 
 ## qscamel 
 
@@ -27,7 +27,7 @@ QingStor™ 对象存储提供了多种命令行和 GUI 工具，便于用户高
 
 [文档](./qsftpd)
 
-使用 Qingstor Bucket 提供 Ftp 服务
+使用 Qingstor Bucket 提供 FTP 服务
 
 ## Mountain Duck
 
