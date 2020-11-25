@@ -29,14 +29,6 @@ QingStor™ 对象存储提供了多种命令行和 GUI 工具，便于用户高
 
 使用 Qingstor Bucket 提供 Ftp 服务
 
-## 本地盘工具
-
-[文档](local_fs_tools/index.html)
-
-支持 Linux 和 Windows 平台的本地挂载盘
-
-> 本地盘工具只适合对象存储的运维管理，不能用于服务器生产环境下.
-
 ## CLI 
 
 [文档](./qingcloud-cli)
