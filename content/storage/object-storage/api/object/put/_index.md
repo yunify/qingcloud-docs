@@ -1,7 +1,6 @@
 ---
 title: "Put Object"
 date: 2020-11-26T10:08:56+09:00
-description:
 collapsible: false
 draft: false
 weight: 3
