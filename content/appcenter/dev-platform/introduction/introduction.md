@@ -6,6 +6,7 @@ collapsible: false
 weight: 1
 ---
 
+<<<<<<< HEAD
 ## AppCenter 应用开发平台
 AppCenter 应用开发平台目前支持云应用、SaaS 应用接入，服务商可根据其产品类型通过应用开发平台接入后发布到 AppCente 应用市场。
 
