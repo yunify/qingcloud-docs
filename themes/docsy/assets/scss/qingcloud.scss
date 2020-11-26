@@ -486,8 +486,14 @@ span.menu__title[data-depth="0"] {
 }
 
 .menu__title[data-depth="2"] {
-    font-size: .925rem;
-    margin-left: 2.5rem
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #3e464c;
+    margin-left: 1rem
 }
 
 .menu__title[data-depth="3"] {
@@ -543,8 +549,7 @@ span.menu__title--collapse[data-depth="0"] {
 }
 
 .menu__title--collapse[data-depth="2"] {
-    font-size: .925rem;
-    margin-left: 2.5rem
+    margin-left: 1rem
 }
 
 .menu__title--collapse[data-depth="3"] {
