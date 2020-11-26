@@ -6,10 +6,10 @@ collapsible: true
 type: "product"
 
 section1:
-  title: 应用市场
-  vice_title: QingCloud 为您提供秒级响应、性能卓越、安全稳定的云计算服务
-  video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
-  video_img: "/images/video.png"
+  title: AppCenter 应用市场
+  vice_title: AppCenter 应用市场为您提供丰富的多类型如数据库、大数据、容器、安全等多应用服务。
+  video: 
+  video_img: 
 
 Section2:
   title: 用户指南
@@ -34,21 +34,18 @@ section4:
       content: AppCenter 即应用市场，为用户提供各类丰富应用。
       vice_title: 了解的第一步
       children:
-        - title: 产品概述（从这里进入示例目录）
-          url: "/storage/share/intro/introduction"
-        - title: 产品优势
-          url: ""
-        - title: 应用场景
-          url: ""
-    - title: 上手：购买应用
-      content: XXXXXXXXX。
-      vice_title: 上手的第一步
+        - title: 产品概述
+          url: "/appcenter/market/intro/introduction"
+        - title: 产品动态
+          url: "/appcenter/market/intro/product_dynamics"
+      
+    - title: 上手：使用应用
+      content: 您可获取到开通、购买、使用 AppCenter 应用市场的应用。
+      vice_title: 使用指南
       children: 
-        - title: XXXX
+        - title: 购买部署使用云应用
           url: "/compute/vm/test1_3/test1_3_2"
-        - title: XXXX
-          url: "/compute/vm/test1_3/test1_3_2"
-        - title: XXXXXXXXX
+        - title: 开通 SaaS 应用
           url: "/compute/vm/test1_3/test1_3_2"
 ---
 

@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: 应用开发平台
-  vice_title: QingCloud 为您提供秒级响应、性能卓越、安全稳定的云计算服务
+  vice_title: AppCenter 应用开发平台是一个企业应用标准化开发平台，该平台对青云的合作伙伴及个人都开放，但个人用户不能发布应用到商店供公众使用。
 
 section2:
   title: 应用开发指南
@@ -17,45 +17,55 @@ section2:
       url: "/appcenter/dev-platform/quick-start/cluster"
     - title: SaaS 应用开发
       content: 如何开发 SaaS 应用
-      url: "/appcenter/dev-platform/cluster/introduction/introduction"
+      url: "/appcenter/dev-platform/quick-start/quick_start_saas"
 
 section3:
   title: API 文档
   children:
     - title: 云应用
       content: 云应用使用 API
-      url: "/appcenter/market/api/"
+      url: "/appcenter/dev-platform/api-doc/cloud"
     - title: SaaS 应用
       content: SaaS 应用使用 API
-      url: "/appcenter/market/api/"
+      url: "/appcenter/dev-platform/api-doc/saas"
 
 section4:
   children:
-    - title: 了解：什么是AppCenter
-      content: AppCenter 即应用市场，为用户提供各类丰富应用。
+    - title: 了解：AppCenter 应用开发平台
+      content: AppCenter 应用开发平台可帮助应用服务商将其业务应用发布到 AppCenter 应用市场。
       vice_title: 了解的第一步
       children:
-        - title: 产品概述（从这里进入示例目录）
-          url: "/storage/share/intro/introduction"
+        - title: 产品概述
+          url: "/appcenter/dev-platform/introduction/introduction"
 
-        - title: 产品优势
-          url: ""
+        - title: 云应用架构
+          url: "/appcenter/dev-platform/introduction/architechure/"
 
-        - title: 应用场景
-          url: ""
-
-    - title: 上手：购买应用
-      content: XXXXXXXXX。
-      vice_title: 上手的第一步
+    - title: 开发：如何开发云应用
+      content: 
+      vice_title: 开发云应用快速入门
       children: 
-        - title: XXXX
-          url: "/compute/vm/test1_3/test1_3_2"
+        - title: 创建应用及版本
+          url: "/appcenter/dev-platform/cluster-developer-guide/app/management/#创建应用"
 
-        - title: XXXX
-          url: "/compute/vm/test1_3/test1_3_2"
+        - title: 制作镜像
+          url: "/appcenter/dev-platform/cluster-developer-guide/image-build/build/"
 
-        - title: XXXXXXXXX
-          url: "/compute/vm/test1_3/test1_3_2"
+        - title: 提交应用版本审核
+          url: "/dev-platform/cluster-developer-guide/app-version/management/#提交应用版本"
+
+    - title: 开发：如何开发 SaaS 应用
+      content: 
+      vice_title: 开发 SaaS 应用快速入门
+      children: 
+        - title: SaaS 应用与平台账户对接
+          url: "/appcenter/dev-platform/saas-developer-guide/account/"
+
+        - title: 创建应用
+          url: "/appcenter/dev-platform/saas-developer-guide/release/#创建应用"
+
+        - title: 应用上架
+          url: "/appcenter/dev-platform/saas-developer-guide/release/"
 ---
 
 
