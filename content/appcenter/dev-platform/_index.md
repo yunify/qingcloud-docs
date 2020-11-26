@@ -15,9 +15,14 @@ section2:
     - title: 云应用开发
       content: 如何开发云应用
       url: "/appcenter/dev-platform/quick-start/cluster"
+
     - title: SaaS 应用开发
       content: 如何开发 SaaS 应用
       url: "/appcenter/dev-platform/quick-start/quick_start_saas"
+
+    - title: 平台管理
+      content: 开发者财务管理、工单管理、通知管理
+      url: "/appcenter/dev-platform/platform-manage"
 
 
 section3:
