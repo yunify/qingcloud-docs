@@ -45,9 +45,9 @@ section4:
       vice_title: 使用指南
       children: 
         - title: 购买部署使用云应用
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: "/appcenter/market/business-process/user-operation"
         - title: 开通 SaaS 应用
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: "/appcenter/market/business-process/user-operation-saas"
 ---
 
 
