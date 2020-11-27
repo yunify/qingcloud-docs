@@ -117,7 +117,7 @@ title: "使用示例"
    > chmod 600 /etc/passwd-s3fs
    ```
 
-   > 注解 假定 ACCESS_KEY_ID 的值为 PLLZOBTTZXGBNOWUFHZZ
+   > 假定 ACCESS_KEY_ID 的值为 PLLZOBTTZXGBNOWUFHZZ
    >
    > ACCESS_KEY_SECRET 的值为 MnIjI58zC8AX07xotHXcm6grwFgOXhaJQHkTCX2X
 
