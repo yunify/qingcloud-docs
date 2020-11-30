@@ -7,8 +7,6 @@ collapsible: true
 weight: 21
 ---
 
-# 客户端工具
-
 QingStor™ 对象存储提供了多种命令行和 GUI 工具，便于用户高效操作、管理对象存储资源，迁移数据到对象存储。
 
 ## qsctl 
