@@ -1,12 +1,11 @@
 ---
-title: "用户指南"
-description: manual
+title: "CDN 操作指南"
+description: test
 draft: false
-weight: 2
 ---
 
 
-# CDN 用户指南
+# CDN 操作指南
 
 
 ## 创建
