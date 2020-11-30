@@ -18,11 +18,11 @@ draft: false
 
 点击域名服务中的 CDN 进入如下界面
 
-![](../../_images/create_cdn_0.png)
+![](/network&cdn/cdn/_images/create_cdn_0.png)
 
 点击创建进入如下界面
 
-![](../../_images/create_cdn_1.png)
+![](/network&cdn/cdn/_images/create_cdn_1.png)
 
 在创建的对话框中，点击添加域名，输入自己的主域名。
 
@@ -30,7 +30,7 @@ draft: false
 
 该域名是主域名 如：我们要为 cdnexample.qingcloud.com 加速，他的主域名是 qingcloud.com 。
 
-[![](_images/create_cdn_2.png)](_images/create_cdn_2.png)
+![](/network&cdn/cdn/_images/create_cdn_2.png)
 
 **第二步：创建域名记录(子域名)**
 
@@ -47,25 +47,25 @@ draft: false
 *   使用 IP 回源时只能填写一个IP
 *   如果使用域名回源则只能使用一个域名 如 resource.qingcache.com
 
-[![](_images/create_cdn_3.png)](_images/create_cdn_3.png)
+![](/network&cdn/cdn/_images/create_cdn_3.png)
 
 开启 HTTPS (可选)
 
 如需开启 HTTPS 则点击 “同时支持 HTTP/HTTPS 服务” 或 “只支持 HTTPS 服务”，在证书列表选择一个要使用的证书， 点击创建证书可上传自己网站的证书和秘钥， 注意使用HTTPS只支持网页类型加速，不支持下载和点播。另外，使用 “只支持 HTTPS 服务” 会让 HTTP 访问的用户跳转成 HTTPS 访问。
 
-[![](_images/create_cdn_4.png)](_images/create_cdn_4.png)
+![](/network&cdn/cdn/_images/create_cdn_4.png)
 
 **第三步：选择节点类型**
 
 不同类型的节点背后对应不同的资源池，通常情况下，选择网页即可。点击确定后即可创建成功。
 
-[![](_images/create_cdn_5.png)](_images/create_cdn_5.png)
+![](/network&cdn/cdn/_images/create_cdn_5.png)
 
 **缓存规则**
 
 在 CDN 列表页点击域名记录进入 CDN 详情页，在缓存策略一栏点击创建
 
-[![](_images/create_cache_rule_0.png)](_images/create_cache_rule_0.png)
+![](/network&cdn/cdn/_images/create_cache_rule_0.png)
 
 常见的缓存规则书写
 
@@ -73,7 +73,7 @@ draft: false
 *   如果要缓存 cdnexample.qingcloud.com 下的所有 mp4 js png jpg html 可以使用 /.*\(png\|jpg\|gif\|mp4\|js\|html\)
 *   只允许一个 最多只允许一个 *
 
-[![](_images/create_cache_rule_1.png)](_images/create_cache_rule_1.png)
+![](/network&cdn/cdn/_images/create_cache_rule_1.png)
 
 *   **名称:** 名称是用帮助记忆该条规则的
 *   **路径:** 对哪些路径下的哪些文件应用该缓存规则
@@ -86,7 +86,7 @@ draft: false
 
 在 CDN 列表页点击域名记录进入 CDN 详情页，在访问控制一栏点击创建
 
-[![](_images/create_cache_rule_0.png)](_images/create_cache_rule_0.png)
+![](/network&cdn/cdn/_images/create_cache_rule_0.png)
 
 注解
 
@@ -94,7 +94,7 @@ draft: false
 
 以下图为例 该条规则的含义是 referer 主域名为 baidu.com ，google.com 以及 www.example.com 发起的请求，都无法访问 png jpg gif 文件。
 
-[![](_images/create_access_rule_1.png)](_images/create_access_rule_1.png)
+![](/network&cdn/cdn/_images/create_access_rule_1.png)
 
 *   **名称:** 名称是用帮助记忆该条规则的
 *   **路径:** 对哪些路径下的哪些文件应用该访问控制
@@ -108,7 +108,7 @@ draft: false
 
 以下图为例 该条规则表示 referer 中主域名 qingcloud.com 或 www.qingcache.com 者空 referer 可以访问该文件
 
-[![](_images/create_access_rule_2.png)](_images/create_access_rule_2.png)
+![](/network&cdn/cdn/_images/create_access_rule_2.png)
 
 *   **名称:** 名称是用帮助记忆该条规则的
 *   **路径:** 对哪些路径下的哪些文件应用该访问控制
@@ -121,7 +121,7 @@ draft: false
 
 在自己的使用的 DNS 服务商处配置 CNAME 以本域名为例，需要将 cdnexample.qingcloud.com CNAME 配置为 c6ae6ff50806c.cname.qingcache.com 至此您的域名就已经可以使用 CDN 进行加速了。
 
-[![](_images/use_cdn.png)](_images/use_cdn.png)
+![](/network&cdn/cdn/_images/use_cdn.png)
 
 **修改加速节点类型**
 
@@ -131,7 +131,7 @@ draft: false
 
 修改加速节点类型可能会造成大量回源，请谨慎使用。
 
-[![](_images/change_service_type.png)](_images/change_service_type.png)
+![](/network&cdn/cdn/_images/change_service_type.png)
 
 **HTTPS/HTTP切换**
 
@@ -141,11 +141,11 @@ draft: false
 
 如果想切换当前的协议到另外一种协议可以使在 CDN 详情页点击域名图中的为 qingcloud.com 切换到域名记录列表页进行操作
 
-[![](_images/use_cdn.png)](_images/use_cdn.png)
+![](/network&cdn/cdn/_images/use_cdn.png)
 
 可以选择解绑
 
-[![](_images/bind_unbind_cert.png)](_images/bind_unbind_cert.png)
+![](/network&cdn/cdn/_images/bind_unbind_cert.png)
 
 **监控**
 
@@ -157,39 +157,39 @@ draft: false
 
 带宽监控
 
-[![](_images/bandwidth.png)](_images/bandwidth.png)
+![](/network&cdn/cdn/_images/bandwidth.png)
 
 流量监控
 
-[![](_images/flow.png)](_images/flow.png)
+![](/network&cdn/cdn/_images/flow.png)
 
 访问次数监控
 
-[![](_images/access.png)](_images/access.png)
+![](/network&cdn/cdn/_images/access.png)
 
 访问地区监控
 
-[![](_images/top_area.png)](_images/top_area.png)
+![](/network&cdn/cdn/_images/top_area.png)
 
 热门访问资源监控
 
-[![](_images/top_url.png)](_images/top_url.png)
+![](/network&cdn/cdn/_images/top_url.png)
 
 **日志**
 
 该日志是从 CDN 缓存服务器中得到的原始访问数据，默认提供的分析维度比较少，可以下载原始日志进行更多维度的分析。默认保存10天的日志
 
-[![](_images/log.png)](_images/log.png)
+![](/network&cdn/cdn/_images/log.png)
 
 **清除 CDN 缓存**
 
 当您更新了文件但是该文件的旧的版本可能已经被 CDN 缓存需要手动清除 CDN 的缓存重新回源去拿最新的文件。 点击清除 CDN 缓存
 
-[![](_images/refresh_1.png)](_images/refresh_1.png)
+![](/network&cdn/cdn/_images/refresh_1.png)
 
 点击创建
 
-[![](_images/refresh_2.png)](_images/refresh_2.png)
+![](/network&cdn/cdn/_images/refresh_2.png)
 
 填写需要刷新的文件或者目录的url 需要以 [http://](http://) 或 [https://](https://) 开头
 
@@ -197,11 +197,11 @@ draft: false
 
 当您有较大的文件需要提前缓存到 CDN 的节点上的时候可以使用预取功能，该功能会模拟用户请求使文件提前缓存到 CDN 中。
 
-[![](_images/purge_1.png)](_images/purge_1.png)
+![](/network&cdn/cdn/_images/purge_1.png)
 
 点击创建
 
-[![](_images/purge_2.png)](_images/purge_2.png)
+![](/network&cdn/cdn/_images/purge_2.png)
 
 填写需要预取的文件 url 需要以 [http://](http://) 或 [https://](https://) 开头
 
