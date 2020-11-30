@@ -19,4 +19,3 @@ CDN 的全称是 Content Delivery Network，即内容分发网络。通过在网
 
 ![](cdn_principle.png)
 
-
