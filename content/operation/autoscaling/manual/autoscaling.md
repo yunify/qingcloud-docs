@@ -81,7 +81,7 @@ weight: 5
 *   UserData：
     即用户自定义数据，可让用户在创建主机时通过上传一些自定义的参数或脚本。更多请见 [User Data 指南](../computing/userdata.html#guide-userdata)
 
-[![](/autoscaling/autoscaling/manual/_images/create-launch-configuration.png)](/autoscaling/autoscaling/manual/_images/create-launch-configuration.png)
+[![](../_images/create-launch-configuration.png)](../_images/create-launch-configuration.png)
 
 4. 设置好后点击『提交』。
 
@@ -91,11 +91,11 @@ weight: 5
 
 在自动伸缩页点击**创建**按钮。选择操作类型、资源类型、资源ID 以及资源发生自动伸缩操作后接收通知的列表等信息。
 
-[![](/autoscaling/autoscaling/manual/_images/create-autoscaling-policy.png)](/autoscaling/autoscaling/manual/_images/create-autoscaling-policy.png)
+[![](../_images/create-autoscaling-policy.png)](../_images/create-autoscaling-policy.png)
 
 提交后会进入自动伸缩策略的详情页，页面中左侧是刚才设置的信息和关联的资源，右侧是伸缩规则。 其中，数据库服务与应用存储空间的自动伸缩只支持扩容规则（硬盘不支持缩小容量）。 公网IP带宽、负载均衡器和应用节点数量都支持扩大和减少两种规则。
 
-[![](/autoscaling/autoscaling/manual/_images/autoscaling-policy-detail-page-empty.png)](/autoscaling/autoscaling/manual/_images/autoscaling-policy-detail-page-empty.png)
+[![](../_images/autoscaling-policy-detail-page-empty.png)](../_images/autoscaling-policy-detail-page-empty.png)
 
 ### 触发条件
 
@@ -106,7 +106,7 @@ weight: 5
 
 这里我们设置若响应延迟时间大于2秒，且请求数和并发数都超出一定值的话， 则触发自动伸缩为负载均衡器增加后端。 (关于监控告警策略的更多介绍可参考 [监控告警](alarm.html#guide-alarm))
 
-[![](/autoscaling/autoscaling/manual/_images/autoscaling-increase-trigger.png)](/autoscaling/autoscaling/manual/_images/autoscaling-increase-trigger.png)
+[![](../_images/autoscaling-increase-trigger.png)](../_images/autoscaling-increase-trigger.png)
 
 ### 操作参数
 
@@ -114,7 +114,7 @@ weight: 5
 
 这里我们设置为增加2个后端服务器，启动配置选择刚才准备好的配置，新建的主机名称设为 “website” （创建后主机名称将会是 “website [controlled by asp-xxxx]”）， 并且后端的数量最多不超过10个。
 
-[![](/autoscaling/autoscaling/manual/_images/autoscaling-increase-params.png)](/autoscaling/autoscaling/manual/_images/autoscaling-increase-params.png)
+[![](../_images/autoscaling-increase-params.png)](../_images/autoscaling-increase-params.png)
 
 注意
 
@@ -122,7 +122,7 @@ weight: 5
 
 减少的规则也是类似。 此例中若连续3个监控周期，请求数和并发数都比较低的话， 就自动减少1个负载均衡器后端，且后端数量不少于3个。
 
-[![](/autoscaling/autoscaling/manual/_images/autoscaling-decrease-trigger.png)](/autoscaling/autoscaling/manual/_images/autoscaling-decrease-trigger.png) [![](/autoscaling/autoscaling/manual/_images/autoscaling-decrease-params.png)](/autoscaling/autoscaling/manual/_images/autoscaling-decrease-params.png)
+[![](../_images/autoscaling-decrease-trigger.png)](../_images/autoscaling-decrease-trigger.png) [![](../_images/autoscaling-decrease-params.png)](../_images/autoscaling-decrease-params.png)
 
 说明
 
@@ -130,7 +130,7 @@ weight: 5
 
 至此自动伸缩策略创建完成。如果之后需要修改或调整，都可在自动伸缩策略详情页中操作。自动伸缩策略一旦创建完成，其『操作类型』和关联的资源便不可改变了。 如果需要对其他资源做自动伸缩，请另行创建相应的策略。下图为创建完成后的自动伸缩详情页。
 
-[![](/autoscaling/autoscaling/manual/_images/autoscaling-policy-detail-page.png)](/autoscaling/autoscaling/manual/_images/autoscaling-policy-detail-page.png)
+[![](../_images/autoscaling-policy-detail-page.png)](../_images/autoscaling-policy-detail-page.png)
 
 说明
 
@@ -154,7 +154,7 @@ weight: 5
 
 未来考虑将脚本的编写功能开放，让用户可以根据自己的需要自行编写脚本， 这样自动伸缩功能就可支持更丰富、自定义的资源调度行为，满足有复杂需求的用户。
 
-[![](/autoscaling/autoscaling/manual/_images/autoscaling-script.png)](/autoscaling/autoscaling/manual/_images/autoscaling-script.png)
+[![](../_images/autoscaling-script.png)](../_images/autoscaling-script.png)
 
 ## 查看自动伸缩历史记录
 
@@ -163,6 +163,6 @@ weight: 5
 *   自动伸缩的执行记录，即执行过程中的所有API调用情况，以及脚本中的输出信息。
 *   发送通知给通知列表的记录，
 
-[![](/autoscaling/autoscaling/manual/_images/autoscaling-history.png)](/autoscaling/autoscaling/manual/_images/autoscaling-history.png)
+[![](../_images/autoscaling-history.png)](../_images/autoscaling-history.png)
 
 历史记录会保留最近 50 条，更早的记录会定期删除。
