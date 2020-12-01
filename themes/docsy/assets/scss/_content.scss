@@ -67,6 +67,25 @@
 
     > ul li, > ol li {
         margin-bottom: .25rem;
+        list-style: disc;
+        margin-left: 1em;
+        > blockquote {
+            padding: 10px 24px;
+            margin-bottom: $spacer;
+            color: $gray-600;
+            border-radius: 4px;
+            background-color: #f6f8fa;
+            border-left: 3px solid #00a971;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+
+            > p {
+                font-size: 14px;
+                color: #a1a6ab;
+                line-height: 1.71;
+                margin-bottom:0;
+            }
+        }
     }
 
     strong {

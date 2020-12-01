@@ -159,21 +159,14 @@ $(document).ready(function(){
 						if(category=='文档'){
 							//doc_level 层级目录
 							var doc_level = item._source.doc_level;
-							var category_item = '<a href="/" class="has-text-grey">文档</a>';
-							var objKeys=Object.keys(doc_level);
-							if(doc_level && objKeys.length >0){
-								var href = '';
-								for(var i=1;i<=objKeys.length;i++){
-									href += doc_level[i]+'/';
-									category_item += ' > <a href="/'+href+'" class="has-text-grey">'+doc_level[i]+'</a>';
-								}
-							}
-							item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + category_item +'</div>';
+							doc_level = doc_level.replace(/has-text-primary/g,'');
+							
+							item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + doc_level +'</div>';
 						}
                         results += 
                             '<div class="result-item">'+
                                 '<h5 class="result-title">'+
-                                    '<a href=" '+item._source.url+' " target="_blank">'+title + '</a>'+
+                                    '<a href=" '+item._source.url+' ">'+title + '</a>'+
                                 '</h5>'+
                                 '<p class="result-content">'+ content + '</p>'+item_from+
                             '</div>';
@@ -219,21 +212,13 @@ $(document).ready(function(){
 					if(category=='文档'){
 						//doc_level 层级目录
 						var doc_level = item._source.doc_level;
-						var category_item = '<a href="/" class="has-text-grey">文档</a>';
-						var objKeys=Object.keys(doc_level);
-						if(doc_level && objKeys.length >0){
-							var href = '';
-							for(var i=1;i<=objKeys.length;i++){
-								href += doc_level[i]+'/';
-								category_item += ' > <a href="/'+href+'" class="has-text-grey">'+doc_level[i]+'</a>';
-							}
-						}
-						item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + category_item +'</div>';
+						doc_level = doc_level.replace(/has-text-primary/g,'');
+						item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + doc_level +'</div>';
 					}
                     results += 
                         '<div class="result-item">'+
                             '<h5 class="result-title">'+
-                                '<a href=" ' + item._source.url+' " target="_blank">'+title + '</a>'+
+                                '<a href=" ' + item._source.url+' ">'+title + '</a>'+
                             '</h5>'+
                             '<p class="result-content">'+ content + '</p>'+item_from+
                         '</div>';
@@ -277,22 +262,14 @@ $(document).ready(function(){
 					if(category=='docs'){
 						//doc_level 层级目录
 						var doc_level = item._source.doc_level;
-						var category_item = '<a href="/" class="has-text-primary">文档</a>';
-						var objKeys=Object.keys(doc_level);
-						if(doc_level && objKeys.length >0){
-							var href = '';
-							for(var i=1;i<=objKeys.length;i++){
-								href += doc_level[i]+'/';
-								category_item += ' > <a href="/'+href+'" class="has-text-grey">'+doc_level[i]+'</a>';
-							}
-						}
-						item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + category_item +'</div>';
+						doc_level = doc_level.replace(/has-text-primary/g,'');
+						item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + doc_level +'</div>';
 					}
 
                     results += 
                         '<div class="result-item">'+
                             '<h5 class="result-title">'+
-                                '<a href=" ' + item._source.url+' " target="_blank">'+title + '</a>'+
+                                '<a href=" ' + item._source.url+' ">'+title + '</a>'+
                             '</h5>'+
                             '<p class="result-content">'+ content + '</p>'+item_from+
                         '</div>';
