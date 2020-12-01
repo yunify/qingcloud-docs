@@ -6,18 +6,17 @@ collapsible: true
 type: "product"
 
 section2:
-  title: 自动伸缩用户文档
+  title: 用户指南
   children:
-    - title: 最新动态
+    <!-- - title: 最新动态
       content: 2020-09-13 产品资源类身份支持亚太2区-A<br>2020-09-01 功能新增：集群身份
-      url: "news/product_news"
+      url: "news/product_news"-->
 
     - title: 操作指南
-      content: 学习上手如何创建自动伸缩策略，如何设置主机启动配置，以及查看自动伸缩历史记录等。
+      content: 学习上手如何创建自动伸缩策略，如何设置主机启动配置，以及查看历史记录等。
       url: "manual/autoscaling"
 
 ---
-
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->
 <!-- section1 为产品index页面 主标题 副标题 video  video_img为视频图片  -->
