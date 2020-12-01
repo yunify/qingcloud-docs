@@ -8,9 +8,6 @@ type: "product"
 section2:
   title: 用户指南
   children:
-    <!-- - title: 最新动态
-      content: 2020-09-13 产品资源类身份支持亚太2区-A<br>2020-09-01 功能新增：集群身份
-      url: "news/product_news"-->
 
     - title: 操作指南
       content: 学习上手如何创建自动伸缩策略，如何设置主机启动配置，以及查看历史记录等。
