@@ -1,163 +1,597 @@
 ---
-title: "快速入门"
-description: test
+title: "云硬盘的使用"
+date: 2020-01-30T00:38:25+09:00
+description: Test description
 draft: false
+enableToc: false
+keyword: 青云
 ---
 
-## 概述
+# 云硬盘的使用指南
 
-为了使您能够尽快了解在 `青云 QingCloud 云平台` 如何使用主机，快速入门部分将会向您介绍远程连接主机、启动和关闭主机、删除主机以及回收站、批量操作、查找主机、自定义列等内容。
+硬盘挂载至虚拟主机以后，需要登录到虚拟主机初始化硬盘(即格式化云硬盘)，之后才可以正常使用。
 
-在此之前，您需要先完成 [准备工作](../computing/purchase/price) 并已经 [创建了主机](../computing/purchase/basic_operation)。
+**系统盘**
 
-## 连接主机
+系统盘不需要初始化，创建虚拟主机时会自带系统盘并且自动初始化，默认磁盘分区形式为主启动记录分区（MBR）。
 
-### Web 终端连接
+**数据盘**
 
-1. 登录 [QingCloud 控制台](https://console.qingcloud.com)
+通过青云控制台单独创建硬盘以后，加载到主机，需要初始化硬盘以后才能使用。
 
-2. 切换到主机所在的区域或可用区
-![选择区](/computing/_images/20190914-155102.png)
+请您根据业务的实际规划选择合适的分区方式。
 
-3. 点击 “计算” - “主机”，进入主机列表
-![主机列表](/computing/_images/20190914-155516.png)
+| 分区形式 |           支持最大磁盘容量           | 支持分区数量                      |                           分区工具                           |
+| :------- | :----------------------------------: | :-------------------------------- | :----------------------------------------------------------: |
+| MBR      |                 2TB                  | 4 个主分区  3 个主分区和 1 个扩展分区 | Windows 操作系统：磁盘管理  Linux 操作系统：  fdisk 工具  parted 工具 |
+| GPT      | 18EB  目前云硬盘支持的最大容量为 50TB | 不限制分区数量                    | Windows 操作系统：磁盘管理  Linux 操作系统：parted 工具  gdisk工具 |
 
-4. 点击主机ID(名称)旁的 “Web 终端” 小图标即可打开 “Web 终端”连接窗口
-![Web终端](/computing/_images/20190914-160104.png)
+## Windows 操作系统
+### 初始化云硬盘
+#### 硬盘容量小于 2TB 的操作办法
 
-5. 输入主机的登录用户名和密码，验证通过后即可进入 “Web 终端” 连接
-![VNC窗口](/computing/_images/20190914-161141.png)
+**1、打开磁盘管理器**
+开始---运行--`diskmgmt.msc`
 
->Web 终端连接不依赖于主机的网络，无需为主机绑定公网 IP
->如果通过Web 终端连接，屏幕为黑屏，则按任意键可激活屏幕显示
+![图片](/storage/disk/quickstart/_images/image.png)
 
-### 连接 Linux 主机
+![图片](/storage/disk/quickstart/_images/image-1568774733057.png)
 
-对于 Linux 主机，更多的场景下，您需要通过 SSH 进行远程连接。在连接之前，您需要为主机[绑定公网 IP ](https://docs.qingcloud.com/product/network/eip#使用外部绑定公网-ip)并确认主机绑定的[防火墙](https://docs.qingcloud.com/product/security/security_group)已放行 22 端口。
+**2、选择磁盘分区类型，默认为 MBR**
 
->您在每个可用区下都会有一个系统生成的缺省防火墙，该防火墙已默认打开 22 端口。
+![图片](/storage/disk/quickstart/_images/image-1568774741667.png)
 
-* **通过 SSH 密钥连接**
+**3、如果磁盘是脱机状态，通过以下办法联机，联机以后才能对磁盘进行操作**
 
-如果您在创建主机时选择了`SSH密钥`登录方式并且指定了密钥，则您可以使用该密钥的私钥进行 SSH 远程连接。
+![图片](/storage/disk/quickstart/_images/image-1568774749595.png)
 
-	ssh -i <private_key.file> <user>@<EIP>
+**4、右键单击磁盘上未分配的区域，选择【新建简单卷】，然后按照提示操作即可**
 
-* **通过用户名和密码连接**
+![图片](/storage/disk/quickstart/_images/image-1568774761495.png)
 
-如果您在创建主机时选择了`密码`登录方式并且设定了密码，则您可以使用该密码进行 SSH 远程连接。
+![图片](/storage/disk/quickstart/_images/image-1568774795226.png)
 
->我们强烈建议您使用 `SSH 密钥`的方式登录主机并禁用密码登录，相对于用户名密码，密钥方式拥有更强的安全性，也可以极大程度阻止暴力破解的发生。
+![图片](/storage/disk/quickstart/_images/image-1568774821627.png)
 
-### 连接 Windows 主机
+**5、分配驱动器编号**
 
-对于 Windows 主机，除了 Web 终端连接外，您还可以通过远程桌面连接对主机进行远程控制。
+![图片](/storage/disk/quickstart/_images/image-1568774827510.png)
 
-在连接 Windows 主机之前，您也需要为主机[绑定公网 IP ](https://docs.qingcloud.com/product/network/eip#使用外部绑定公网-ip)并在主机绑定的[防火墙](https://docs.qingcloud.com/product/security/security_group)上开启 TCP 协议接受 3389 端口的下行规则。
+**6、勾选快速格式化硬盘**
 
-1. 通过 Web 终端连接 Windows 主机，开启[远程登录](https://docs.qingcloud.com/product/faq/#windows)
-2. 使用本地远程桌面连接工具对 Windows 主机进行连接
+![图片](/storage/disk/quickstart/_images/image-1568774847721.png)
 
-## 关机、启动和重启
+![图片](/storage/disk/quickstart/_images/image-1568774852147.png)
 
-您可以方便的通过 [QingCloud 控制台](https://console.qingcloud.com) 来对主机进行各种操作。
+![图片](/storage/disk/quickstart/_images/image-1568774858166.png)
 
-**关闭主机**
+#### 硬盘容量大于 2TB 的操作办法
 
-使用云计算的一大好处就是弹性灵活，按量付费，当主机无需运行时，可将主机关闭以节省成本。
+**1、打开磁盘管理器**
 
->当主机关机时，只收取系统盘占用存储空间的费用，CPU/内存不再收费。
+开始---运行--`diskmgmt.msc`
 
-1. 在运行中的主机上右键，在弹出菜单中点击“关机”。
-![关闭主机](/computing/_images/20190914-165959.png)
+![图片](/storage/disk/quickstart/_images/image-1568774865290.png)
 
-2. 您还可以勾选运行中的主机，在表格上方的快捷操作中点击“关机”。
-![快捷关机](/computing/_images/20190914-170352.png)
+**2、选择 GPT 分区**
 
-**启动主机**
+![图片](/storage/disk/quickstart/_images/image-1568774869266.png)
 
-当您需要对已关闭的主机再次启动时，只需点击几下鼠标即可实现。
+**3、右键单击磁盘上未分配的区域，选择【新建简单卷】，然后按照提示操作即可**
 
-1. 在已关机的主机上右键，在弹出菜单中点击“启动”。
-![启动主机](/computing/_images/20190914-174325.png)
+![图片](/storage/disk/quickstart/_images/image-1568774875330.png)
 
-2. 您还可以勾选已关机的主机，在快捷操作中点击“启动”。
-![快捷启动](/computing/_images/20190914-174524.png)
+![图片](/storage/disk/quickstart/_images/image-1568774880424.png)
 
-**重启主机**
+![图片](/storage/disk/quickstart/_images/image-1568774886315.png)
 
-当您需要对运行中的主机进行重启时，您只需在主机上右键，在弹出菜单中点击“重启”即可。
+![图片](/storage/disk/quickstart/_images/image-1568774891106.png)
 
-![重启主机](/computing/_images/20190914-175015.png)
+**4、选择磁盘分区编号**
 
-## 删除主机
+![图片](/storage/disk/quickstart/_images/image-1568774896383.png)
 
-当您不再需要保留主机时，您可以将主机删除。
+**5、勾选快速格式化硬盘（请注意，此操作会清空磁盘所有数据）**
 
-在主机上右键，在弹出菜单中点击“删除”。
+![图片](/storage/disk/quickstart/_images/image-1568774901733.png)
 
-![删除主机](/computing/_images/20190914-175226.png)
+![图片](/storage/disk/quickstart/_images/image-1568774905575.png)
 
-为了防止您的误操作，删除后的主机会在[回收站](https://docs.qingcloud.com/product/operation/recycle_bin)中保留 2 个小时。您可以在回收站中将主机彻底删除或者恢复。
+![图片](/storage/disk/quickstart/_images/image-1568774912493.png)
 
-![回收站](/computing/_images/20190917-110851.png)
+![图片](/storage/disk/quickstart/_images/image-1568774917148.png)
 
->回收站中恢复的只是主机系统盘的数据，不包括主机与网络、防火墙、SSH 密钥、硬盘等相关资源的绑定关系。
+### 扩容云硬盘
 
-## 批量操作
+**1、打开磁盘管理器**
 
-对于一些操作来说，您可以选中多台主机一次性的批量执行，极大的简化了您的工作量。这些操作包括：启动、关机、重启、克隆主机、创建备份、迁移到专属宿主机、加载 SSH 密钥、加载防火墙规则、绑定告警策略、添加到项目、绑定标签、重置系统、删除。
+开始---运行--`diskmgmt.msc`
 
-具体的操作方法是：勾选多台主机，点击表格上方的“更多操作”按钮，在下拉菜单中，上述允许批量操作的功能按钮会高亮显示，点击要执行的操作。
+**2、将磁盘的状态设置为脱机**
 
-![批量操作](/computing/_images/20190917-104811.png)
+![图片](/storage/disk/quickstart/_images/image-1568774923025.png)
 
-## 查找主机
+**3、登录控制台，从主机上卸载硬盘，直至硬盘状态为可用**
 
-* 按照状态筛选主机
+![图片](/storage/disk/quickstart/_images/image-1568774930715.png)
 
-点击主机列表表头中“状态”旁的小三角，展开状态下拉菜单，可按状态进行筛选。
+**4、右键磁盘资源 id ，扩容磁盘容量并提交修改**
 
-![状态筛选](/computing/_images/20190917-105004.png)
+![图片](/storage/disk/quickstart/_images/image-1568774933959.png)
 
->关于主机各种状态的说明，请参见[名词解释](../computing/intro/definitions#主机状态)
+![图片](/storage/disk/quickstart/_images/image-1568774937515.png)
 
-* 按照区域筛选主机
+**5、将扩容后的磁盘加载到主机**
 
-点击主机列表表头中“区域”旁的小三角，展开区域下拉菜单，可按区域进行筛选。
+**6、打开磁盘管理器，可以看到有未分配的磁盘容量**
 
-![区域筛选](/computing/_images/20190917-105158.png)
+![图片](/storage/disk/quickstart/_images/image-1568774941054.png)
 
-* 按照类型筛选主机
+### 扩展卷
 
-点击主机列表表头中“类型”旁的小三角，展开类型下拉菜单，可按类型进行筛选。
+右键单击磁盘分区，选择【扩展卷】；根据扩展卷向导的指引完成扩展卷操作。完成后新增的数据盘空间将会合入原有卷中。
 
-![类型筛选](/computing/_images/20190917-105526.png)
+![图片](/storage/disk/quickstart/_images/image-1568774945196.png)
 
-* 按照告警状态筛选主机
+![图片](/storage/disk/quickstart/_images/image-1568774955296.png)
 
-点击主机列表表头中“告警状态”旁的小三角，展开告警状态下拉菜单，可按告警状态对主机进行筛选。
+![图片](/storage/disk/quickstart/_images/image-1568774960724.png)
 
-![告警筛选](/computing/_images/20190917-105652.png)
+![图片](/storage/disk/quickstart/_images/image-1568774966465.png)
 
->选择“无监控”，可以筛选未绑定告警策略的主机。
+![图片](/storage/disk/quickstart/_images/image-1568774974045.png)
 
-* 按照关键字搜索主机
+## linux操作系统
 
-您可以按照主机的 ID、名称、IP 地址、公网 IPv4 地址等关键字对主机进行搜索。
+**请根据您实际使用场景选择初始化方式**
 
-![关键字搜索](/computing/_images/20190917-110539.png)
+1、若整块硬盘只呈现为一个独立的分区，推荐直接对磁盘进行初始化 
 
-* 按照标签筛选主机
+2、若整块硬盘需要呈现为多个逻辑分区（即存在多个逻辑盘），则您需要先进行分区操作，然后对相应的分区创建文件系统
 
-您还可以按照主机绑定的标签对主机进行筛选。
+### 磁盘裸设备直接初始化指南
 
-![标签筛选](/computing/_images/20190917-110637.png)
+**1、登录到云主机**
 
->当选择多个标签进行筛选时，筛选结果为多个标签的交集。
+**2、使用 lsblk 命令查看磁盘设备名**
 
-## 自定义列
+[root@i-oemhrgx8 ~]# `lsblk -l`
 
-主机是所有云计算产品中使用率最高的产品，与其相关的各种资源繁多，各类属性众多。因此为了 UI 显示更为合理，主机的列表提供了自定义列的功能，您可以通过该功能将您不关注的属性隐藏。
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 
-![自定义列](/computing/_images/20190917-110736.png)
+sdb    8:16   0  10G  0 disk 
+
+sda    8:0    0  20G  0 disk 
+
+sda1   8:1    0  20G  0 part /
+
+sdd    8:48   0   1G  0 disk [SWAP]
+
+**3、使用 lsblk 命令查看磁盘设备名**
+
+**4、使用 mkfs 命令对磁盘进行格式化**
+
+[root@i-oemhrgx8 ~]# `mkfs.ext4 /dev/sdb`
+
+![图片](/storage/disk/quickstart/_images/image-1568774979615.png)
+
+**5、使用 lsblk 命令查看格式化后的分区的信息**
+
+![图片](/storage/disk/quickstart/_images/image-1568774983933.png)
+
+**6、使用 mount 命令将磁盘挂载到主机**
+
+[root@i-oemhrgx8 ~]# `mount /dev/sdb /mnt`
+
+**7、使用 df 命令查看磁盘是否挂载成功**
+
+[root@i-oemhrgx8 ~]# `df -h`
+
+Filesystem      Size  Used Avail Use% Mounted on
+
+/dev/sda1        20G  859M   18G   5% /
+
+tmpfs           499M     0  499M   0% /dev/shm
+
+/dev/sdb        9.8G   23M  9.2G   1% /mnt
+
+### 配置自动挂载的指南（推荐使用 uuid 的方式）
+
+**1、配置自动挂载（推荐使用 uuid 的方式），使用 blkid 命令获取磁盘的 uuid**
+
+[root@i-oemhrgx8 ~]# `blkid /dev/sdb`
+
+/dev/sdb: UUID="70fc59fe-d388-49ba-be56-b06cfbcc01ed" TYPE="ext4" 
+
+**2、先备份一下 fstab 配置文件，使用以下命令**
+
+[root@i-oemhrgx8 ~]# `cp /etc/fstab /etc/fstab.bak`
+
+**3、执行以下命令，将配置内容写入到 fstab 文件**
+
+[root@i-oemhrgx8 ~]# `echo "UUID=70fc59fe-d388-49ba-be56-b06cfbcc01ed /mnt  ext4 defaults     0   0" >>/etc/fstab`
+
+![图片](_images/image-1568774988226.png)
+
+**4、使用 umount 命令将挂载的磁盘卸载；然后使用 mount -a 命令测试一下是否能自动挂载成功**
+
+[root@i-oemhrgx8 ~]# `mount -a`
+
+[root@i-oemhrgx8 ~]# `df -h`
+
+Filesystem      Size  Used Avail Use% Mounted on
+
+/dev/sda1        20G  859M   18G   5% /
+
+tmpfs           499M     0  499M   0% /dev/shm
+
+/dev/sdb        9.8G   23M  9.2G   1% /mnt
+
+### 配置自动挂载的指南（推荐使用磁盘id的方式）
+
+**1、使用以下命令获取磁盘设备 id**
+
+[root@i-oemhrgx8 ~]# `ls -l /dev/disk/by-id`
+
+![图片](/storage/disk/quickstart/_images/image-1568774991827.png)
+
+**2、先备份一下 fstab 配置文件，使用以下命令**
+
+`cp /etc/fstab /etc/fstab.bak`
+
+**3、执行以下命令，将配置内容写入到 fstab 文件**
+
+[root@i-oemhrgx8 ~]# `echo "/dev/disk/by-id/scsi-0QEMU_QEMU_HARDDISK_vol-186vl7uk  /mnt  xfs   defaults 0  0" >>/etc/fstab`
+
+![图片](/storage/disk/quickstart/_images/image-1568774996736.png)
+
+**4、使用 mount -a 命令测试一下是否能自动挂载成功**
+
+![图片](/storage/disk/quickstart/_images/image-1568779069613.png)
+
+### 硬盘容量小于2tb的初始化办法
+
+#### 使用fdisk工具分区
+
+**1、使用 `fdisk -l` 命令列出所有磁盘分区**
+
+![图片](/storage/disk/quickstart/_images/image-1568775005129.png)
+
+**2、使用 `fdisk /dev/sdd` 命令对磁盘进行分区，回显信息类似如下图**
+
+![图片](/storage/disk/quickstart/_images/image-1568775009154.png)
+
+**3、输入 `n`， 按 Enter，开始新建分区。回车显示如图**
+
+![图片](/storage/disk/quickstart/_images/image-1568775012633.png)
+
+表示磁盘有两种分区类型：
+
+【p】表示主分区
+
+【e】表示扩展分区
+
+**4、以创建一个主分区为例，输入 `p`，按 Enter，开始创建一个主分区，回车显示**
+
+![图片](/storage/disk/quickstart/_images/image-1568775017438.png)
+
+【Partition number】表示主分区编号，可以选择1-4，选择1号分区，回车显示
+
+![图片](/storage/disk/quickstart/_images/image-1568775021385.png)
+
+【First cylinder】表示初始柱面区域，可以选择1 - 13054，默认为1。
+
+**5、以选择默认初始磁面值 1 为例，表示从第一个柱面开始划分，按 Enter。**
+
+![图片](/storage/disk/quickstart/_images/image-1568775025430.png)
+
+【Last cylinder】表示截止柱面区域， +cylinders or +size{K，M，G} （1 - 13054， default 13054）： +后面单位可以接M，G，K（记得要大写）表示划分您所加的空间，也可以是柱面数，不管怎样都不能超过该磁盘剩余的空间否则无效。
+
+**6、以选择默认截止磁面为例，按 Enter**
+
+![图片](/storage/disk/quickstart/_images/image-1568775030738.png)
+
+**7、输入 p，按 Enter，查看新建分区的详细信息**
+
+![图片](/storage/disk/quickstart/_images/image-1568775036420.png)
+
+**8、确认分区的信息无误，输入 wq 保存并退出**
+
+![图片](/storage/disk/quickstart/_images/image-1568775040323.png)
+
+**9、使用 partprobe 同步分区表至操作系统**
+
+[root@i-oemhrgx8 ~]# `partprobe /dev/sdd`
+
+**10、使用 mkfs 命令格式化分区并创建所需的文件系统**
+
+[root@i-oemhrgx8 ~]# `mkfs.ext4 /dev/sdd1`
+
+![图片](/storage/disk/quickstart/_images/image-1568775044404.png)
+
+**11、使用 mount 命令挂载到目录**
+
+![图片](/storage/disk/quickstart/_images/image-1568775049276.png)
+
+### 硬盘容量大于2tb的初始化办法
+
+#### 使用parted工具分区
+
+**1、使用 lsblk 命令列出所有磁盘分区**
+
+[root@i-oemhrgx8 ~]# `lsblk`
+
+![图片](/storage/disk/quickstart/_images/image-1568775054733.png)
+
+sdc是新增的硬盘
+
+**2、使用 parted 命令对磁盘进行分区，回显信息类似如下图**
+
+以/dev/sdc为例：命令格式如下
+
+`parted /dev/vdc`
+
+![图片](/storage/disk/quickstart/_images/image-1568775061556.png)
+
+**3、输入 `p`，按 Enter，查看当前磁盘分区形式**
+
+![图片](/storage/disk/quickstart/_images/Irm6z9nYCsEbWSda.png)
+
+“Partition Table”为“unknown”表示磁盘分区形式未知，新的数据盘还未设置分区形式。
+
+**4、输入以下命令，设置磁盘分区形式。mklabel 磁盘分区形式**
+
+磁盘分区形式有 MBR 和 GPT 两种，大于 2 TB的磁盘容量，请采用 GPT 分区方式：
+
+**`mklabel gpt`**
+**输入p回车显示**
+
+![图片](/storage/disk/quickstart/_images/image-1568775068945.png)
+
+**请务必注意：**
+
+- **MBR 支持的磁盘最大容量为 2 TB，如果您需要使用大于 2 TB的磁盘容量，分区形式请采用 GPT 。**
+- **当磁盘已经投入使用后，此时切换磁盘分区形式时，磁盘上的原有数据将会清除，因此请在磁盘初始化时谨慎选择磁盘分区形式。**
+
+**5、输入 “unit s”, 按 “Enter”, 设置磁盘的计量单位为磁柱**
+
+**6、以为整个磁盘创建一个分区为例，执行以下命令，按 “Enter” 。**
+
+**mkpart ***磁盘分区名称 起始磁柱值 截止磁柱值*
+命令示例：
+**mkpart data 2048s 100%**
+“2048s”表示磁盘起始磁柱值，“100%” 表示磁盘截止磁柱值，此处仅供参考，您可以根据业务需要自行规划磁盘分区数量及容量。
+
+**7、输入 p，按 Enter，查看新建分区的详细信息**
+
+![图片](/storage/disk/quickstart/_images/image-1568775076476.png)
+
+**8、确认分区的信息无误，输入 q 退出 parted 工具**
+
+![图片](/storage/disk/quickstart/_images/image-1568775080498.png)
+
+**9、使用 lsblk 查看分区信息**
+
+![图片](/storage/disk/quickstart/_images/image-1568775084337.png)
+
+**10、使用 partprobe 同步分区表至操作系统**
+
+[root@i-oemhrgx8 ~]# `partprobe /dev/sdc1`
+
+**11、使用 mkfs 命令格式化分区并创建所需的文件系统**
+
+[root@i-oemhrgx8 ~]# `mkfs.ext4 /dev/sdc1`
+
+![图片](/storage/disk/quickstart/_images/image-1568775088216.png)
+
+#### 使用 parted 工具分区的时候，提示不是最好的模式
+
+Warning: The resulting partition is not properly aligned for best performance.
+
+这个是因为没有对齐的原因，在默认情况下都是
+
+mkpart primary 1 100%
+
+或者
+
+mkpart primary 1049k 100%
+
+或者
+
+mkpart primary 2048s 100%
+
+这个一般都是对齐的，如图
+
+![图片](/storage/disk/quickstart/_images/image-1568775092672.png)
+
+![图片](/storage/disk/quickstart/_images/image-1568778444918.png)
+
+![图片](/storage/disk/quickstart/_images/image-1568778455111.png)
+
+比如我 start 设置为 1024k, 结束值为 100%, 就会出现这个报警提示
+
+![图片](/storage/disk/quickstart/_images/image-1568775097514.png)
+
+这个时候可以输入 Ignore
+
+![图片](/storage/disk/quickstart/_images/image-1568775100805.png)
+
+### 扩容云硬盘
+
+#### 扩容场景介绍
+
+**扩容类型为系统盘**
+
+扩容时，需要先关闭云主机，右键主机的资源 id---更多操作---更改配置
+
+![图片](/storage/disk/quickstart/_images/image-1568775104738.png)
+
+**注意：系统盘最大支持扩容至 300GB ，另外扩容以后不支持缩容操作**
+
+#### 扩容类型为数据盘
+
+1、需要先登录到服务器，执行 umount 命令将挂载的目录卸载，然后登录到控制台，将主机与硬盘解除绑定，直至硬盘状态为可用
+
+2、右键硬盘的资源 id--- 扩容，调整业务所需要的容量并提交
+
+3、重新加载到主机
+
+根据扩容的文件系统类型，扩容的办法如下
+
+#### EXT 文件系统扩容介绍
+
+#### **磁盘裸设备直接初始化的扩容方法 (ext)**
+
+**1、扩容前的磁盘容量**
+
+![图片](/storage/disk/quickstart/_images/image-1568775109191.png)
+
+**2、查看磁盘文件系统类型**
+
+![图片](/storage/disk/quickstart/_images/image-1568775112136.png)
+
+**3、使用 umount 命令将扩容的磁盘从系统的目录卸载**
+
+**4、执行以下命令，检查扩容后的分区**
+
+![图片](/storage/disk/quickstart/_images/image-1568775116295.png)
+
+**5、执行 resize2fs 命令扩容文件系统**
+
+![图片](/storage/disk/quickstart/_images/image-1568775120838.png)
+
+**6、使用 mount 命令将扩容后的磁盘挂载到系统目录，并检查容量变化**
+
+![图片](/storage/disk/quickstart/_images/image-1568775127021.png)
+
+#### **磁盘设备存在分区，需要扩容到原有分区的方法 (ext)**
+
+**1、查看扩容前的磁盘容量**
+
+![图片](/storage/disk/quickstart/_images/image-1568775131616.png)
+
+**2、使用 umount 命令将扩容的磁盘从系统的目录卸载**
+
+**3、使用 parted 工具查看磁盘分区的信息**
+
+![图片](/storage/disk/quickstart/_images/image-1568775135401.png)
+
+**4、输入 “unit s” ，按 “Enter” ，设置磁盘的计量单位为磁柱**
+
+**5、输入 p，并回车，查看并记录分区的 Start 值**
+
+请务必注意：删除分区并新建后，Start 值必须保持不变，否则将会引起数据丢失。
+![图片](/storage/disk/quickstart/_images/image-1568775141798.png)
+
+**6、执行以下命令，删除原有分区**
+
+![图片](/storage/disk/quickstart/_images/image-1568775146683.png)
+
+**7、执行以下命令，新建一个主分区，Start 值与原来一致，结束值 100%**
+
+mkpart primary 63s 100%
+
+**如果出现如下图所示的状态，请输入 Ignore**
+
+![图片](/storage/disk/quickstart/_images/image-1568775150955.png)
+
+**8、输入 p 查看现有分区信息**
+
+![图片](/storage/disk/quickstart/_images/image-1568775153978.png)
+
+**9、输入 q 退出 parted 分区工具**
+
+**10、执行 partprobe 命令将分区表同步至文件系统**
+
+**11、执行以下命令，检查扩容后的分区**
+
+![图片](/storage/disk/quickstart/_images/image-1568775166562.png)
+
+**12、执行 resize2fs 命令扩容文件系统**
+
+![图片](/storage/disk/quickstart/_images/image-1568775181049.png)
+
+**13、使用 mount 命令将扩容后的磁盘挂载到系统目录，并检查容量变化**
+
+![图片](/storage/disk/quickstart/_images/image-1568775184210.png)
+
+### XFS 文件系统扩容介绍
+
+#### **磁盘裸设备直接初始化的扩容方法 (xfs)**
+
+**1、扩容前的容量**
+
+![图片](/storage/disk/quickstart/_images/fnLwIaSkDeorbjtM.png)
+
+**2、使用 umount 命令将扩容的磁盘从系统的目录卸载**
+
+**3、执行以下命令，检查扩容后的分区**
+
+![图片](/storage/disk/quickstart/_images/image-1568775189304.png)
+输入结果为 0，说明正常
+
+**4、使用 mount 命令将扩容后的磁盘挂载到系统目录**
+
+**5、使用 xfs_growfs 命令扩容**
+
+![图片](/storage/disk/quickstart/_images/image-1568775190952.png)
+
+**6、检查扩容后的容量**
+
+![图片](/storage/disk/quickstart/_images/image-1568775196249.png)
+
+#### **磁盘设备存在分区，需要扩容到原有分区的方法 (xfs)**
+
+**1、查看扩容前的磁盘容量**
+
+![图片](/storage/disk/quickstart/_images/image-1568775199434.png)
+
+**2、使用 umount 命令将扩容的磁盘从系统的目录卸载**
+
+**3、使用 parted 工具查看磁盘分区的信息**
+
+![图片](/storage/disk/quickstart/_images/image-1568775201575.png)
+
+**4、输入 “unit s”，按 “Enter”，设置磁盘的计量单位为磁柱**
+
+**5、输入 p，并回车，查看并记录分区的 Start 值**
+
+请务必注意：删除分区并新建后，Start 值必须保持不变，否则将会引起数据丢失。
+![图片](/storage/disk/quickstart/_images/image-1568775203109.png)
+
+**6、执行以下命令，删除原有分区**
+
+![图片](/storage/disk/quickstart/_images/image-1568775204602.png)
+
+**7、执行以下命令，新建一个主分区，Start 值与原来一致，结束值 100%**
+
+mkpart primary 63s 100%
+
+**如果出现如下图所示的状态，请输入 Ignore**
+
+![图片](/storage/disk/quickstart/_images/image-1568775206304.png)
+
+**8、输入 p 查看现有分区信息**
+
+![图片](/storage/disk/quickstart/_images/image-1568775207418.png)
+
+**9、输入 q 退出 parted 分区工具**
+
+**10、执行 partprobe 命令将分区表同步至文件系统**
+
+**11、执行以下命令，检查扩容后的分区**
+
+![图片](/storage/disk/quickstart/_images/image-1568775209585.png)
+
+**12、执行 mount 命令将分区挂载到系统目录**
+
+[root@i-oemhrgx8 ~]# mount /dev/sdb1 /opt
+
+**13、执行 xfs_growfs 命令扩容文件系统**
+
+![图片](/storage/disk/quickstart/_images/image-1568775211498.png)
+
+**14、使用 df 命令检查容量变化**
+
+![图片](/storage/disk/quickstart/_images/image-1568775213026.png)
+
