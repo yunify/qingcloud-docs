@@ -101,9 +101,9 @@ version = "0.0"
 url_latest_version = "https://example.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/yunify/qingcloud_doc2.0"
+github_repo = "https://github.com/yunify/qingcloud-docs"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/yunify/qingcloud_doc2.0"
+github_project_repo = "https://github.com/yunify/qingcloud-docs"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
