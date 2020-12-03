@@ -27,9 +27,9 @@ Section2:
       content: 计费指南
       url: "/storage/object-storage/billing"
 
-    - title: 快速入门
-      content: 快速入门
-      url: "/storage/object-storage/quickstart"
+    # - title: 快速入门
+    #   content: 快速入门
+    #   url: "/storage/object-storage/quickstart"
 
     - title: 操作指南
       content: 操作指南
