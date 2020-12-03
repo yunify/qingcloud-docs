@@ -8,66 +8,58 @@ type: "product"
 section1:
   title: 专属宿主机
   vice_title: QingCloud 为您提供秒级响应、性能卓越、安全稳定的云计算服务
-  video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
-  video_img: "/images/video.png"
 
-section2:
-  title: QingStor 专属宿主机用户文档
+Section2:
+  title: 用户指南
   children:
-    - title: QingStor 很虚拟
-      content: 很虚拟很虚拟很虚拟很虚拟很虚拟很虚拟
-      url: "/compute/dedicated-host/test1_1/introduction"
+    - title: 专属宿主机
+      content: 专属宿主机用户使用文档
+      url: "/compute/dedicated-host/intro/dedicated-host"
 
-    - title: QingStor 很真实
-      content: 很真实很真实很真实很真实很真实很真实
-      url: "/test/guide/object_manage"
-
-    - title: QingStor 真真假假
-      content: 真真假假真真假假真真假假真真假假真真假假真真假假真真假假真真假假真真假假
-      url: "/compute/dedicated-host/object_manage/"
+    
 
 section3:
-  title: QingStor 专属宿主机开发者文档
+  title: 开发者指南
   children:
-    - title: QingStor 111
-      content: 2222222
-      url: "/compute/dedicated-host/object_manage"
+    - title: API 文档
+      content: 如何使用 API 文档
+      url: "/qingstor/guide/object_manage"
 
-    - title: QingStor 333
-      content: 44444444444
+    - title: SDK 文档
+      content: 如何使用 SDK 文档
       url: "/test/guide/object_manage"
 
-    - title: QingStor 5555
-      content: 5555555555555555555555555555555的法国人过生日
-      url: "/compute/dedicated-host/object_manage/"
+    - title: CLI 文档
+      content: 如何使用 CLI 文档
+      url: "/qingstor/guide/object_manage/"
 
 section4:
   children:
-    - title: 了解
-      content: QingStor 对象存储为用户提供可无限扩展的通用数据存储服务。
+    - title: 了解：什么是专属宿主机
+      content: 专属宿主机为用户提供开箱即用的操作系统与工具。
       vice_title: 了解的第一步
       children:
-        - title: 什么是 QingStor 对象存储
-          url: "/compute/dedicated-host/object_manage/"
+        - title: 产品概述（从这里进入示例目录）
+          url: "/compute/dedicated-host/intro/dedicated-host"
 
-        - title: 什么是 QingStor 对象存储
-          url: "/compute/dedicated-host/object_manage/"
+        - title: 产品优势
+          url: "/compute/dedicated-host/intro/dedicated-host"
 
-        - title: 什么是 QingStor 对象存储
-          url: "/compute/dedicated-host/object_manage/"
+        - title: 应用场景
+          url: "/compute/dedicated-host/intro/dedicated-host"
 
-    - title: 上手
-      content: QingStor 对象存储为用户提供可无限扩展的通用数据存储服务。
+    - title: 上手：创建专属宿主机与部署应用
+      content: 专属宿主机功能为用户提供专属物理服务器服务。
       vice_title: 上手的第一步
       children: 
-        - title: 什么是 QingStor 对象存储
-          url: "/compute/dedicated-host/object_manage/"
+        - title: 创建与使用专属宿主机组
+          url: "/compute/dedicated-host/manual/dedicated-host"
 
-        - title: 什么是 QingStor 对象存储
-          url: "/compute/dedicated-host/object_manage/"
+        - title: 创建专属型实例
+          url: "/compute/dedicated-host/manual/dedicated-host"
 
-        - title: 什么是 QingStor 对象存储
-          url: "/compute/dedicated-host/object_manage/"
+        - title: 专属宿主机迁移
+          url: "/compute/dedicated-host/manual/dedicated-host"
 ---
 
 

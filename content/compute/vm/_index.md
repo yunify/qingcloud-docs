@@ -16,15 +16,23 @@ Section2:
   children:
     - title: 主机
       content: 主机产品用户使用文档
-      url: "/compute/vm/intro/introduction"
+      url: "/compute/vm/intro/instance"
 
     - title: 映像
       content: 映像使用文档
-      url: "/test/guide/object_manage"
+      url: "/compute/vm/intro/image"
 
     - title: SSH 密钥
       content: 如何使用 SSH 密钥
-      url: "/qingstor/guide/object_manage/"
+      url: "/compute/vm/intro/ssh"
+    
+    - title: 设备
+      content: 设备使用方式
+      url: "/compute/vm/intro/device"
+
+    - title: 安置策略组
+      content: 如何使用安置策略组
+      url: "/compute/vm/intro/instance_group"
 
 section3:
   title: 开发者指南
@@ -48,26 +56,26 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品概述（从这里进入示例目录）
-          url: "/compute/vm/intro/introduction"
+          url: "/compute/vm/intro/instance"
 
         - title: 产品优势
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: "/compute/vm/intro/instance"
 
         - title: 应用场景
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: "/compute/vm/intro/instance"
 
     - title: 上手：创建主机与部署应用
       content: 虚拟主机为用户提供可无限扩展的通用数据存储服务。
       vice_title: 上手的第一步
       children: 
         - title: 创建与使用青云主机
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: "/compute/vm/manual/vm_instance"
 
         - title: 基于主机搭建 Wordpress 网站
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: "/compute/vm/best-practices/wordpress"
 
         - title: 基于主机创建镜像
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: "/compute/vm/manual/image"
 ---
 
 
