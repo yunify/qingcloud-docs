@@ -19,8 +19,8 @@ class doc_fix_count{
 		fwrite($file, json_encode($data));
 		fclose($file);
 		//返回数据
-		$count['fixed'] = $data[$url_path]['fixed']?:0;
-		$count['unfixed'] = $data[$url_path]['unfixed']?:0;
+		$count['fixed'] = !empty($data[$url_path]['fixed'])?$data[$url_path]['fixed']:0;
+		$count['unfixed'] = !empty($data[$url_path]['unfixed'])?$data[$url_path]['unfixed']:0;
 		echo json_encode($count);exit();
 	}
 }

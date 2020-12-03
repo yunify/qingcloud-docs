@@ -726,7 +726,7 @@ span.menu__title--collapse[data-depth="0"] {
 }
 
 .doc_fix_click{
-	padding-left: 2rem;
+	padding-left: 1.75rem;
 	cursor :pointer;
 }
 
@@ -900,4 +900,18 @@ section.hero.home-body {
 main.col-12.col-md-7.col-xl-7{
     max-width: 63.33333333%;
     flex: 0 0 63.33333333%;
+}
+
+.fix-background-like{
+    background-image: url(/images/icons/like.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fix-background-unlike{
+    background-image: url(/images/icons/Point-out.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 65%;
+    margin-left: 1.5rem;
 }
