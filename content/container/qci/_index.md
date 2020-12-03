@@ -38,20 +38,20 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品概述（从这里进入示例目录）
-          url: ""
+          url: "/container/qci/intro/introduction"
 
         - title: 产品优势
-          url: ""
+          url: "/container/qci/manual/operation#简介"
 
         - title: 应用场景
-          url: ""
+          url: "/container/qci/best-practices/jenkins"
 
     - title: 上手：创建弹性实例与部署应用
       content: 虚拟硬盘为用户提供灵活的Serverless 容器运行服务。
       vice_title: 上手的第一步
       children: 
-        - title: 基于弹性容器实例搭建Nginx网站
-          url: ""
+        - title: 使用青云弹性容器 (QCI) 实例搭建一个Jenkins服务器
+          url: "/container/qci/best-practices/jenkins"
 ---
 
 
