@@ -165,7 +165,7 @@ QKE 集群创建完成之后可以进行验证，创建集群一般在 6〜12 �
 
 执行  
 
-```shell
+```
 kubectl get pods --all-namespaces
 ```
 
@@ -213,7 +213,7 @@ Events:
 ```
 
 - 找到未挂载上的存储卷 `nginx-neonsan-pvc-nginx-perf-7`
-```yaml
+```
 # kubectl get po -n demo-project nginx-perf-7 -oyaml
 ...
 spec:
@@ -232,7 +232,7 @@ nginx-neonsan-pvc-nginx-perf-7   Bound    pvc-93e24c1d88d711e9   100Gi      RWO 
 ```
 
 - 找到 PV `pvc-93e24c1d88d711e9` 对应的 volumeattachment 对象名 `csi-8b2ed050e78ad6f3a5491af35c9351358856ae15cc874262ca0b78a1c332b883`
-```yaml
+```
 # kubectl get volumeattachment -oyaml|grep pvc-93e24c1d88d711e9 -B 16
     apiVersion: storage.k8s.io/v1
     kind: VolumeAttachment
@@ -254,7 +254,7 @@ nginx-neonsan-pvc-nginx-perf-7   Bound    pvc-93e24c1d88d711e9   100Gi      RWO 
 ```
 
 - 查看未被正常清理的 volumeattachment 对象, status.detachError 显示 `node "XXX" not found`
-```yaml
+```
 # kubectl get volumeattachment csi-8b2ed050e78ad6f3a5491af35c9351358856ae15cc874262ca0b78a1c332b883 -oyaml
     apiVersion: storage.k8s.io/v1
     kind: VolumeAttachment
@@ -281,7 +281,7 @@ nginx-neonsan-pvc-nginx-perf-7   Bound    pvc-93e24c1d88d711e9   100Gi      RWO 
 ```
 
 - 编辑 volumeattachment 对象，删去 `finalizers` 部分
-```yaml
+```
 # kubectl edit volumeattachment csi-8b2ed050e78ad6f3a5491af35c9351358856ae15cc874262ca0b78a1c332b883 -oyaml
     apiVersion: storage.k8s.io/v1
     kind: VolumeAttachment
