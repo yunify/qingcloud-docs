@@ -15,7 +15,7 @@ section2:
   title: IAM 用户文档
   children:
     - title: 最新动态
-      content: 2020-09-13 产品资源类身份支持亚太2区-A<br>2020-09-01 功能新增：集群身份
+      content: 2020-11-12 产品资源类身份支持[上海1区]<br>2020-09-13 产品资源类身份支持[亚太2区-A]
       url: "news/product_news"
 
     - title: 操作指南
