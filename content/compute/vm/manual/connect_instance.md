@@ -4,7 +4,7 @@ description: test
 draft: false
 ---
 
-# 连接实例
+
 在连接实例前，请确保您的主机已经绑定了弹性公网 IP 或者采用NAT转发了相应的端口，并且您的`防火墙`放行了相应端口。
 ## 浏览器web连接
 ### 1. 登录 QingCloud 控制台

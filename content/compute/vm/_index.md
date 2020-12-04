@@ -55,14 +55,10 @@ section4:
       content: 主机为用户提供开箱即用的操作系统与工具。
       vice_title: 了解的第一步
       children:
-        - title: 产品概述（从这里进入示例目录）
+        - title: 产品介绍
           url: "/compute/vm/intro/instance"
 
-        - title: 产品优势
-          url: "/compute/vm/intro/instance"
-
-        - title: 应用场景
-          url: "/compute/vm/intro/instance"
+        
 
     - title: 上手：创建主机与部署应用
       content: 虚拟主机为用户提供可无限扩展的通用数据存储服务。

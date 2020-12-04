@@ -12,9 +12,17 @@ section1:
 Section2:
   title: 用户指南
   children:
-    - title: 专属宿主机
-      content: 专属宿主机用户使用文档
+    - title: 产品简介
+      content: 专属宿主机产品简介
       url: "/compute/dedicated-host/intro/dedicated-host"
+
+    - title: 计费指南
+      content: 专属宿主机计费指南
+      url: "/compute/dedicated-host/billing/price"
+
+    - title: 操作指南
+      content: 专属宿主机操作指南
+      url: "/compute/dedicated-host/manual/dedicated-host"
 
     
 
@@ -39,27 +47,17 @@ section4:
       content: 专属宿主机为用户提供开箱即用的操作系统与工具。
       vice_title: 了解的第一步
       children:
-        - title: 产品概述（从这里进入示例目录）
+        - title: 产品概述
           url: "/compute/dedicated-host/intro/dedicated-host"
 
-        - title: 产品优势
-          url: "/compute/dedicated-host/intro/dedicated-host"
-
-        - title: 应用场景
-          url: "/compute/dedicated-host/intro/dedicated-host"
 
     - title: 上手：创建专属宿主机与部署应用
       content: 专属宿主机功能为用户提供专属物理服务器服务。
       vice_title: 上手的第一步
       children: 
-        - title: 创建与使用专属宿主机组
+        - title: 创建与使用专属宿主机
           url: "/compute/dedicated-host/manual/dedicated-host"
 
-        - title: 创建专属型实例
-          url: "/compute/dedicated-host/manual/dedicated-host"
-
-        - title: 专属宿主机迁移
-          url: "/compute/dedicated-host/manual/dedicated-host"
 ---
 
 
