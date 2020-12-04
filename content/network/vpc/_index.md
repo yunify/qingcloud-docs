@@ -29,7 +29,7 @@ Section2:
 
     - title: 快速入门
       content: 快速入门
-      url: "/network/vpc/quickstart/"
+      url: "/network/vpc/quick-start/base"
 
     - title: 操作指南
       content: 操作指南

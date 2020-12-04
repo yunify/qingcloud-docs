@@ -16,7 +16,7 @@ weight: 1
 
 如本文开头所说，在 VPC 网络内，您可以自定义 IP 地址范围，且由管理路由器来负责 VPN /隧道/ DNS /端口转发等管理功能，所以在创建 VPC 时，需要设置这两部分属性。
 
-[![](_images/create_vpc.png)](_images/create_vpc.png)
+[![](../_images/create_vpc.png)](../_images/create_vpc.png)
 
 其中：
 
@@ -28,7 +28,7 @@ weight: 1
 
 设置完成后点击“提交”，创建完成的 VPC 网络属性显示如下：
 
-[![](_images/vpc_list.png)](_images/vpc_list.png)
+[![](../_images/vpc_list.png)](../_images/vpc_list.png)
 
 ## 管理路由器
 
@@ -52,7 +52,7 @@ weight: 1
 
 VPC 网络的私有网络指的是一个二层子网网段，通常是一个 C 段地址；你可以根据需要将一个 VPC 网络划分成多个子网，主机必须加入到子网里面使用。
 
-[![_images/vpc_vxnets.png](_images/vpc_vxnets.png)](_images/vpc_vxnets.png)
+[![../_images/vpc_vxnets.png](../_images/vpc_vxnets.png)](../_images/vpc_vxnets.png)
 
 *   VPC 网络中的子网可以是当前主账户名下的私有网络，也可以是子帐户名下的私有网络。
 *   在私有网络的资源列表中可以直接添加主机、数据库和大数据资源。
@@ -62,7 +62,7 @@ VPC 网络的私有网络指的是一个二层子网网段，通常是一个 C �
 
 VPC 网络管理路由器功能主要包含端口转发、隧道服务([GRE 隧道](tunnel/gre) 、[IPSec 隧道](tunnel/ipsec) )、[VPN 服务](vpn)、网关过滤控制(ACL)、DNS 服务以及边界路由器等。
 
-[![](_images/vpc_settings.png)](_images/vpc_settings.png)
+[![](../_images/vpc_settings.png)](../_images/vpc_settings.png)
 
 
     
@@ -70,7 +70,7 @@ VPC 网络管理路由器功能主要包含端口转发、隧道服务([GRE 隧�
 
 VPC网络支持图形化查看和编辑网络拓扑，让用户可以对整体网络可以一目了然，形成形象认知。
 
-![](_images/vpc_topo.png)
+![](../_images/vpc_topo.png)
 
 VPC拓扑中可以进行多种操作：
 *  1.连接私有网络
@@ -83,44 +83,44 @@ VPC拓扑中可以进行多种操作：
 
 消费记录会统计当前VPC的历史消费信息
 
-![](_images/vpc_charge.png)
+![](../_images/vpc_charge.png)
 
 
 ## 操作日志
 
 操作日志会记录VPC的历史操作日志，当出现网络问题时可以通过操作日志排查是否与操作有关
 
-![](_images/vpc_log.png)
+![](../_images/vpc_log.png)
 
 
 ## 监控
 
 监控页面记录当前VPC的历史流量监控，包括双向的带宽和PPS
 
-![](_images/vpc_monitor.png)
+![](../_images/vpc_monitor.png)
 
 通过选择私有网络，可以看到单个私有网络的监控。切换到网卡监控页面，可以看到当前时刻的网卡的流量情况
 
-![](_images/vpc_monitor2.png)
+![](../_images/vpc_monitor2.png)
 
 
 ## 配置备份
 
 VPC默认开启了自动配置备份功能，网络配置在修改时都将自动备份，用户可以在配置备份页面查看，也可以手动创建/删除备份。
 
-![](_images/vpc_config_backup.png)
+![](../_images/vpc_config_backup.png)
 
 
 ## 告警
 
 用户可以在运维管理创建针对VPC的告警规则，并绑定给VPC，告警页面显示VPC绑定的告警规则及告警历史记录。
 
-![](_images/vpc_alarm.png)
+![](../_images/vpc_alarm.png)
 
 
 ## 健康探测
 
 用户可以在`更多操作`开启和关闭健康探测，开启后将定期刷新VPC内所有主机的网络情况，包括丢包率和延迟。
 
-![](_images/vpc_healthcheck.png)
+![](../_images/vpc_healthcheck.png)
 
