@@ -8,7 +8,6 @@ weight: 3
 
 ---
 
-# 虚拟 IP 
 
 虚拟 IP（Virtul_IP）是 VPC 网络中的一种 IP 地址，通常用于不同主机之间的切换，例如主从切换。
 
@@ -68,7 +67,7 @@ service keepalived start
 
 此时可以通过 ip a 命令查看到 VM 的 eth0 网卡多了一个 IP 地址
 
-![](_images/vip_1.png)
+![](../_images/vip_1.png)
 
 此时说明此主机已经占用了虚拟 IP 地址172.16.0.247
 
@@ -81,12 +80,12 @@ service keepalived start
 
 可以展示出当前虚拟 IP 被哪台主机占用，并且点击跳转到主机详情页
 
-![](_images/vip_3.png)
+![](../_images/vip_3.png)
 
-![](_images/vip_4.png)
+![](../_images/vip_4.png)
 
-![](_images/vip_2.png)
+![](../_images/vip_2.png)
 
 可以随时删除虚拟 IP 而不会影响网络转发，即便当前虚拟 IP 被占用
 
-![](_images/vip_5.png)
+![](../_images/vip_5.png)

@@ -7,7 +7,6 @@ draft: false
 weight: 4
 ---
 
-# 路由表 用户指南
 
 [路由表 ( Routing Table )](https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E8%A1%A8) 可以为资源提供 IP 网络的[路由](https://www.ietf.org/rfc/rfc1812.txt)选择，通过配置`目标网络`及其`下一跳`，指定网络的路由方向，从而实现网络的连通和优化。
 
@@ -21,11 +20,11 @@ weight: 4
 
 ### 创建路由表
 
-![](_images/index_route_table.jpg)
+![](../_images/index_route_table.jpg)
 
 路由表只需设置名称即可
 
-[![](./_images/create_route_table.jpg)](./_images/create_route_table.jpg)
+![](../_images/create_route_table.jpg)
 
 ### 添加路由表规则
 
@@ -38,7 +37,7 @@ weight: 4
 下一跳：本示例中，网络的下一跳为 nat-00001 
 
 
-![](_images/add_routetable_default.png)
+![](../_images/add_routetable_default.png)
 
 
 然后执行应用修改
@@ -64,9 +63,9 @@ weight: 4
 ```
 
 
-[![](./_images/ping_vpn_instance.jpg)](./_images/ping_vpn_instance.jpg)
+![](../_images/ping_vpn_instance.jpg)
 
-[![](./_images/ping_vpn_instance2.jpg)](./_images/ping_vpn_instance2.jpg)
+![](../_images/ping_vpn_instance2.jpg)
 
 #### 添加 LB 监听器和后端
 
@@ -78,17 +77,17 @@ weight: 4
     [root@route-table ~]# ping 172.16.10.253
 ```
 
-[![](./_images/ping_vpn_lb1.jpg)](./_images/ping_vpn_lb1.jpg)
+![](../_images/ping_vpn_lb1.jpg)
 
 ### 配置路由表
 
 #### 创建路由表
 
-[![](./_images/index_route_table.jpg)](./_images/index_route_table.jpg)
+![](../_images/index_route_table.jpg)
 
 路由表只需设置名称即可
 
-[![](./_images/create_route_table.jpg)](./_images/create_route_table.jpg)
+![](../_images/create_route_table.jpg)
 
 #### 添加路由表规则
 
@@ -96,9 +95,9 @@ weight: 4
 
 下一跳： IP 网络的下一跳路由即 LB 所在网络的网关，在本示例中为 172.16.10.1 。
 
-[![](./_images/add_route_table_rules.jpg)](./_images/add_route_table_rules.jpg)
+![](../_images/add_route_table_rules.jpg)
 
-[![](./_images/route_table_details2.jpg)](./_images/route_table_details2.jpg)
+![](../_images/route_table_details2.jpg)
 
 #### 绑定/解绑路由表
 
@@ -108,9 +107,9 @@ weight: 4
 
 或者在 LB 详情页面，网络栏单击 LB 绑定/解绑路由表。
 
-[![](./_images/crm_service_loadbalancer.jpg)](./_images/crm_service_loadbalancer.jpg)
+![](../_images/crm_service_loadbalancer.jpg)
 
-[![](./_images/lb_associate_route_table.jpg)](./_images/lb_associate_route_table.jpg)
+![](../_images/lb_associate_route_table.jpg)
 
 #### 客户端 ping 公私网混合 LB
 
@@ -118,7 +117,7 @@ weight: 4
     [root@route-table ~]# ping 172.16.10.253
 ```
 
-[![](./_images/ping_vpn_lb2.jpg)](./_images/ping_vpn_lb2.jpg)
+![](../_images/ping_vpn_lb2.jpg)
 
 
 ## 路由表使用限制

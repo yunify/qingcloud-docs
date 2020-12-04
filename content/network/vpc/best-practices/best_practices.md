@@ -7,7 +7,6 @@ draft: false
 weight: 1
 ---
 
-# 跨越 VPC，大规模安全自由组网
 
 
 当企业业务本身非常复杂时，VPC 内主机数量的增长会导致`防火墙规则`数量指数级爆炸增长，将严重消耗网络性能。
@@ -42,13 +41,13 @@ NAT ( Network Address Translation )是将一个公网IP转换为很多个内网I
 
 VPC 内`所有机器`可以使用 VPC 的公网地址去访问公网，就不再需要每台机器绑定公网IP地址。
 
-![](_images/best_1.jpg)
+![](../_images/best_1.jpg)
 
 通过端口转发，VPC内被连接的主机IP地址将被重写，使得外网主机发出的数据包能够到达内网主机
 
 端口转发通过转发公网 IP 的不同端口给不同主机，VPC 内的不同机器可以使用 VPC 的公网地址的`不同端口`来对外提供服务。
 
-![](_images/best_2.jpg)
+![](../_images/best_2.jpg)
 
 但是，例如常见的HTTP 和 HTTPS 服务需要用 80 端口和 443 端口对公网提供服务，由于端口转发一个端口只能对应后端一台服务器，所以 NAT 网关不适用大规模的 Web 服务。
 所以，VPC 的 NAT 网关对于单一端口的应用和服务不具备广泛`适用性`，并不是很适用构建大量的跨 VPC 服务。
@@ -59,11 +58,11 @@ VPN ( Virtual Private Network )是基于加密技术，在公网上构建加密�
 
 在 VPC 内还可以使用隧道服务，基于 Internet，通过加密通道将企业数据中心、企业办公网络、或 Internet 终端、VPC 和 VPC 安全连接起来。
 
-![](_images/best_3.jpg)
+![](../_images/best_3.jpg)
 
 VPN 服务也是基于 Internet 的传输加密方式，在单台机器而非整个网络连接 VPC 内网时可以通过输入登录名密码的方式简单实现。
 
-![](_images/best_4.jpg)
+![](../_images/best_4.jpg)
 
 然而，虽然隧道和 VPN 对数据进行了加密，但是仍然完全依赖公网链路，所以无法避免公网的波动导致的网络不稳定。
 
@@ -78,7 +77,7 @@ VPN 服务也是基于 Internet 的传输加密方式，在单台机器而非整
 
 如开篇所述，为了满足业务和安全的要求，网络规模非常庞大，安全策略异常复杂的情况，青云 QingCloud 还设计开发了[内网路由器](https://docs.qingcloud.com/product/network/intranet_router)。
 
-![](_images/best_5.jpg)
+![](../_images/best_5.jpg)
 
 内网路由器可以将企业内网从单一路由的 VPC 网络，扩展为一个虚拟的自治系统[( Autonomous Systems )](https://en.wikipedia.org/wiki/Autonomous_system_(Internet))。
 在这个架构图中，我们做了两个重要的改进，以便真正去适用大规模复杂的网络：
@@ -90,26 +89,26 @@ VPN 服务也是基于 Internet 的传输加密方式，在单台机器而非整
 
 所以青云 QingCloud 的网络，在逻辑上和物理网络基本已经没有区别，而且完全摆脱了命令行，一样管理您的 “自治网络” 。
 
-![](_images/best_6.jpg)
+![](../_images/best_6.jpg)
 
 在青云控制台中，您可以选择需要关联内网路由器的私有网络 Vxnet
 内网路由器在三层转发的性能远远超过普通的 VPC ，所以也可以将内网路由器`绑定到 VPC `加强 VPC 的内网PPS和带宽性能。
 
 和物理网络类似的是，在内网路由器里加入私有网络 Vxnet 后，您需要在私有网络所在的 VPC 配置`内网路由策略`，将对目标网络的`下一跳`指向内网路由器。
 
-![](_images/best_7.jpg)
+![](../_images/best_7.jpg)
 
 >青云内网路由器可以作为核心路由器用于组建自治系统级别的网络，还也可以打通不同区域的 VPC，利用青云的骨干网在公有云上构建真正的“两地三中心”网络。
 ## 三、巧用核心路由，云上构建“两地三中心”的网络
 
 对 IT 企业来说，传统的单数据中心，已不足以保护企业数据的安全。为此，青云 QingCloud 专门在 PEK3a / PEK3 / SH1A / GD2 区域之间搭建了物理专线，方便大型企业打造容灾的网络架构。
 
-![](_images/best_8.jpg)
+![](../_images/best_8.jpg)
 
 通过内网路由器+网关（+青云专线）的方式，可以直接利用青云机房间的专线，从物理链路层实现高可靠，打通不同可用区之间的 VPC ,在公有云上实现“两地三中心”的网络架构。
 构建“两地三中心”的网络，与上一节中搭建“自治网络”的操作一致，只需要额外在每个业务可用区部署一个网关
 
-![](_images/best_9.jpg)
+![](../_images/best_9.jpg)
 
 完整的操作步骤请见[详情](https://docs.qingcloud.com/product/sd_wan/quick_start/vpc_connect_vpc)
 
@@ -121,13 +120,13 @@ VPN 服务也是基于 Internet 的传输加密方式，在单台机器而非整
 
 [SD -WAN](https://docs.qingcloud.com/product/sd_wan/quick_start/cpe_connect_vpc)接入不受地域限制，只需要盒子连接公网；[专线接入](https://docs.qingcloud.com/product/sd_wan/quick_start/line_connect_vpc)目前覆盖北上广一线城市，提供物理链路支持。
 
-![](_images/best_10.jpg)
+![](../_images/best_10.jpg)
 
 青云的城域网产品天生为了打造企业级 `WAN` 网，为数据中心的双活和多活提供网络助力。
 
 企业 `WAN` 网采用最新的 SD-WAN 方案，接入方式可以选择普通`宽带接入`或者`物理专线接入`，还支持 `MPLS/VPN` 和 `4G LTE` 等多种接入方式。
 
-![](_images/best_11.jpg)
+![](../_images/best_11.jpg)
 
 青云的企业“WAN”网可以让您轻松摆脱运营商网络抖动、丢包问题，具备实时监控隧道质量, 动态链路切换的功能。同时可以即插即用，无需二次部署和配置。
 

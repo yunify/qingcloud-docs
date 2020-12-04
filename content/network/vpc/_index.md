@@ -63,7 +63,7 @@ section4:
           url: "/network/vpc/intro/intro"
 
         - title: 产品优势
-          url: "/network/vpc/intro/intro/#VPC 产品优势"
+          url: "/network/vpc/intro/intro/#vpc-产品优势"
     - title: 上手：创建和管理 VPC网络
       content: 创建VPC网络，查看VPC属性，管理配置，图形化页面。
       vice_title: 上手的第一步
