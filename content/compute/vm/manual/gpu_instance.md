@@ -33,7 +33,7 @@ draft: false
 
 创建GPU主机和创建普通主机的步骤是相同的，选择 GPU 主机，根据需要选择 GPU 的类型和数量，按照页面向导完善其他信息后即可创建 GPU 主机。
 
-![](_images/create_gpu_instance.png)
+![](/compute/vm/manual/_images/create_gpu_instance.png)
 
 GPU主机用户可以根据需要选择使用的操作系统，推荐使用Ubuntu Server 16.04.4 LTS 64bit。
 
@@ -64,11 +64,11 @@ CUDA 9.1 下载地址： [https://developer.nvidia.com/cuda-91-download-archive]
 
 CUDA 8.0 下载界面：
 
-![](_images/cuda_8_0.png)
+![](/compute/vm/manual/_images/cuda_8_0.png)
 
 CUDA 9.1 下载界面：
 
-![](_images/cuda_9_1.png)
+![](/compute/vm/manual/_images/cuda_9_1.png)
 
 按照下载页面的说明，依次 sudo sh 对应的 run 文件进行安装。
 (3) 验证安装
