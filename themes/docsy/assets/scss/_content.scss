@@ -67,6 +67,8 @@
 
     > ul li, > ol li {
         margin-bottom: .25rem;
+        list-style: disc;
+        margin-left: 1em;
         > blockquote {
             padding: 10px 24px;
             margin-bottom: $spacer;
@@ -86,6 +88,10 @@
         }
     }
 
+    > ul li {
+        list-style: disc;
+        margin-left: 1em;
+    }
     strong {
         font-weight: $font-weight-bold;
     }

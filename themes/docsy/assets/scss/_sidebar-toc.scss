@@ -45,6 +45,9 @@
             font-size: 12px;
             color: #999;
         }
+        
+        overflow-y: auto;
+        max-height: calc(100vh - 10rem);
 
         a {
             color: #68747f;

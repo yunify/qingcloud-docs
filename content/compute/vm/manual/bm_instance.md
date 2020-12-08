@@ -26,19 +26,19 @@ VPC 直连，提供与虚拟主机（VM）一致的使用方式，支持弹性�
 
 在"网络与 CDN"下的"边界路由器"页面中, 点击"创建"即可创建边界路由器。
 
-![](_images/intranet_router.png)
+![](/compute/vm/manual/_images/intranet_router.png)
 
 二、绑定 VPC 网络
 
 在边界路由器详情页, 点击"绑定 VPC 网络", 选择需要绑定的VPC。
 
-![](_images/intranet_router_vpc_detail.jpg)
+![](/compute/vm/manual/_images/intranet_router_vpc_detail.jpg)
 
 三、创建物理主机网络
 
 进入刚绑定 VPC 的详情页面，在私有网络界面下点击创建按钮，将工作模式设为物理机即可创建物理主机网络。
 
-![](_images/bm_vxnet.png)
+![](/compute/vm/manual/_images/bm_vxnet.png)
 
 四、创建物理主机
 
@@ -46,22 +46,22 @@ VPC 直连，提供与虚拟主机（VM）一致的使用方式，支持弹性�
 
 第一步：选择支持物理主机的镜像。
 
-![](_images/bm_select_img.png)
+![](/compute/vm/manual/_images/bm_select_img.png)
 
 >注解
 有些镜像因系统太老，无法支持新硬件，所以无法运行在物理主机上。不含NIC组合功能的Windows镜像，也无法运行在物理主机上。
 
 第二步：选择物理机类型。
 
-![](_images/bm_select_type.png)
+![](/compute/vm/manual/_images/bm_select_type.png)
 
 第三步：选择物理主机网络。
 
-![](_images/bm_select_vxnet.png)
+![](/compute/vm/manual/_images/bm_select_vxnet.png)
 
 第四步：设置主机名称、登录方式等信息，然后点击创建。
 
-![](_images/bm_set_login.png)
+![](/compute/vm/manual/_images/bm_set_login.png)
 
 注解
 
@@ -134,41 +134,41 @@ Windows 系统
 
 1、	首先打开服务器管理器，选择"添加角色和功能"。
 
- ![image](_images/1.png)
+ ![image](/compute/vm/manual/_images/1.png)
 
 
 
 2、	点击“下一步”。
 
- ![image](_images/2.png)
+ ![image](/compute/vm/manual/_images/2.png)
 
 
 
 3、	点击“下一步”。
 
- ![image](_images/3.png)
+ ![image](/compute/vm/manual/_images/3.png)
 
 4、	点击“下一步”。
 
- ![image](_images/4.png)
+ ![image](/compute/vm/manual/_images/4.png)
 
 
 
 5、	点击“下一步”。
 
- ![image](_images/5.png)
+ ![image](/compute/vm/manual/_images/5.png)
 
 6、	重点：勾选“多路径 I/O” ，点击下一步。
-![image](_images/6.png)
+![image](/compute/vm/manual/_images/6.png)
 
 7、	勾选“如果需要，自动重新启动目标服务器”，安装 MPIO 是需要重启的。然后点击安装。
-![image](_images/7.png)
+![image](/compute/vm/manual/_images/7.png)
 
 8、	等待重启安装完成。
 
 9、	MPIO 设置 （服务器管理-工具-MPIO），MPIO 属性页面，单击发现多路径，勾选“增加对 iSCSI 设备的支持”。
 
-![image](_images/8.png)
+![image](/compute/vm/manual/_images/8.png)
 
 （2）配置 Windows iSCSI 客户端，请参考文档 [Virtual SAN（vSAN）](https://docs.qingcloud.com/product/storage/shared/vsan)
 
