@@ -15,20 +15,13 @@ Section2:
   title: 用户指南
   children:
     - title: 防火墙
-      content: 防火墙产品文档
-      url: "/security/security_group/manual/sg_user_guide"
+      content: 防火墙产品简介
+      url: "/security/security_group/intro/introduction"
 
     - title: 防火墙使用指南
       content: 防火墙使用文档
       url: "/security/security_group/manual/sg_user_guide"
 
-
-section3:
-  title: 开发者指南
-  children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/qingstor/guide/object_manage"
 
 
 section4:
@@ -38,7 +31,7 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品概述（从这里进入示例目录）
-          url: "/security/ddos_defense/manual/antiddos_user_guide"
+          url: "/security/security_group/intro/introduction"
 
 ---
 

@@ -14,20 +14,12 @@ section1:
 Section2:
   title: 用户指南
   children:
-    - title: 计费模式
-      content: Web应用防火墙 用户指南
-      url: "/security/waf/manual/waf_user_guide"
+    - title: 产品简介
+      content: Web应用防火墙介绍
+      url: "/security/waf/intro/introduction"
 
-    - title: 使用指南
-      content: Web应用防火墙 使用文档
-      url: "/security/waf/manual/waf_user_guide"
-
-
-section3:
-  title: 开发者指南
-  children:
-    - title: API 文档
-      content: 如何使用 API 文档
+    - title: 操作指南
+      content: Web应用防火墙操作指南
       url: "/security/waf/manual/waf_user_guide"
 
 
