@@ -79,7 +79,7 @@ weight: 5
     主机使用的防火墙
 
 *   UserData：
-    即用户自定义数据，可让用户在创建主机时通过上传一些自定义的参数或脚本。更多请见 [User Data 指南](../computing/userdata.html#guide-userdata)
+    即用户自定义数据，可让用户在创建主机时通过上传一些自定义的参数或脚本。更多请见 [User Data 指南](../../../../../compute/vm/manual/userdata/)
 
 [![](../_images/create-launch-configuration.png)](../_images/create-launch-configuration.png)
 
