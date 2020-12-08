@@ -14,21 +14,14 @@ section1:
 Section2:
   title: 用户指南
   children:
-    - title: 计费模式
+    - title: 产品简介
       content: DDoS 攻击防护产品文档
+      url: "/security/ddos_defense/intro/introduction"
+
+    - title: 操作指南
+      content: DDoS 攻击防护操作文档
       url: "/security/ddos_defense/manual/antiddos_user_guide"
 
-    - title: 使用指南
-      content: 高防IP使用文档
-      url: "/security/ddos_defense/manual/antiddos_user_guide"
-
-
-section3:
-  title: 开发者指南
-  children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/qingstor/guide/object_manage"
 
 
 section4:

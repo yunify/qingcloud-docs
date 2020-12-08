@@ -18,17 +18,10 @@ Section2:
       content: 高防IP产品计费模式文档
       url: "/security/antiddos_ip/billing/price"
 
-    - title: 使用指南
-      content: 高防IP使用文档
-      url: "/security/antiddos_ip/intro/introduction"
+    - title: 操作指南
+      content: 高防IP操作文档
+      url: "/security/antiddos_ip/manual/antiddos_user_guide/"
 
-
-section3:
-  title: 开发者指南
-  children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/qingstor/guide/object_manage"
 
 
 section4:
