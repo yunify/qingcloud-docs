@@ -6,8 +6,8 @@ collapsible: true
 type: "product"
 
 section1:
-  title: 文件存储
-  vice_title: QingCloud 为您提供的 NAS 服务是基于标准的 NFS 和 Samba（CIFS）网络协议实现的数据传输，通过创建一个 NAS 服务器，您可以在多个主机客户端以及不同的操作系统间进行数据共享。同时提供权限组和账号配置功能，便于您对主机客户端进行访问控制和管理配置。
+  title: Virtual NAS
+  vice_title: QingCloud 为您提供的 Virtual NAS 服务是基于标准的 NFS 和 Samba（CIFS）网络协议实现的数据传输，通过创建一个 NAS 服务器，您可以在多个主机客户端以及不同的操作系统间进行数据共享。同时提供权限组和账号配置功能，便于您对主机客户端进行访问控制和管理配置。
   video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
   video_img: "/images/video.png"
 
@@ -15,22 +15,36 @@ Section2:
   title: 用户指南
   children:
     - title: Virtual NAS
-      content: Virtual NAS 文件存储产品使用文档
+      content: Virtual NAS 产品使用文档
       url: "/storage/vnas/manual/vnas"
 
-section3:
+section4:
   children:
     - title: 了解：什么是 Virtual NAS
       content: Virtual NAS 是为用户提供的基于标准的 NFS 和 Samba（CIFS）网络协议实现的 NAS 服务。
-      url: "/storage/vnas/intro/introduction"
+      vice_title: 了解的第一步
+      children:
+        - title: 产品概述
+          url: "/storage/vnas/intro/introduction"
 
-    - title: 上手：如何创建 NAS 服务器和共享存储目标
-      content: 在控制台进行创建 NAS 服务器和创建共享存储目标，操作简单明了。
-      url: "/storage/vnas/manual/vnas"
+        - title: 产品优势
+          url: "/storage/vnas/intro/introduction"
 
-    - title: 使用：如何在不同的操作系统上使用共享存储目标
-      content: 通过在不同客户端挂载同一共享存储目标实现数据共享的目的。
-      url: "/storage/vnas/manual/vnas"
+        - title: 应用场景
+          url: "/storage/vnas/best-practices/最佳实践"
+
+    - title: 上手：创建 Virtual NAS 与使用共享存储目标
+      content: 在控制台进行 Virtual NAS 服务器以及共享存储目标的创建及销毁操作。
+      vice_title: 上手的第一步
+      children: 
+        - title: 如何创建 Virtual NAS 服务器
+          url: "/storage/vnas/manual/vnas/#创建-virtual-nas-服务器"
+
+        - title: 如何创建共享存储目标
+          url: "/storage/vnas/manual/vnas/#创建共享存储目标"          
+
+        - title: 如何在不同的操作系统上使用共享存储目标
+          url: "/storage/vnas/manual/vnas/#linux-客户端配置及访问"
 ---
 
 
