@@ -11,16 +11,40 @@ weight: 2
 1. SaaS 应用与SSO(Account)系统交互，用于云平台与SaaS 账户打通，如不需要账户打通则可不对接。
 2. SaaS 应用与计费系统(NewBilling)系统交互，SaaS 应用内如涉及到服务项收费，需要对接newBilling 接口及SSO系统。
 
-### 第一步: 校验access_token
+### 第一步: 使用授权码获取access_token
 
-开发者拿到access_token, 对access_token进行校验, 并换取id_token, access_key和secret_key。
+在应用需要使用云平台 SSO 场景下, 用户登录云平台 SSO 成功后, 系统会重定向到应用配置的 URL, 并在URL中以?code=xxxx的方式附带上授权码.
 
-在应用需要使用云平台 SSO 场景下, 用户登录云平台 SSO 成功后, 系统会重定向到应用配置的 URL, 并在URL中以?access_token=xxxxx&refresh_token=xxxx的方式带上access_token和refresh_token.
+调用POST **/sso/token/**(SSO域) 使用授权码获取access_token
 
-例如：http://sample_app/sample?refresh_token=xxxxx&access_token=xxxx
+**Request Parameters**
 
+| **Parameter name** | **Type** | **Description**     | **Required** |
+| ------------------ | -------- | ------------------- | ------------ |
+| grant_type         | string   | 授权模式，固定值：authorization_code | Yes |
+| code               | string   | 授权码 | Yes |
+| redirect_uri | integer | 重定向的URI | Yes |
+| client_id | string | 客户端ID | Yes |
+| client_secret | string | 客户端密钥 | Yes |
+| token_issuer | string | 指定令牌颁发者（不传，默认为SSO颁发token）参数可选值：iam、iam_jwt | No |
+
+**Response Parameters**
+
+| **Parameter name** | **Type** | **Description**     | **Required** |
+| ------------------ | -------- | ------------------- | ------------ |
+| access_token | string | 访问令牌 | Yes |
+| expires_in | int | 过期时间，单位（秒） | Yes |
+| token_type | string | 令牌类型(Bearer/JWT) | Yes |
+| refresh_token | string | 更新令牌(token_issuer为iam_jwt，不返回此值) | No |
+
+
+### 第二步: 校验access_token
+
+开发者拿到access_token后, 需要对access_token进行校验, 并换取id_token, access_key和secret_key。
 
 调用POST **/sso/check_token/**(SSO域) 校验access_token
+
+例如：http://sample_app/sample?refresh_token=xxxxx&access_token=xxxx
 
 **Header: {'Authorization': 'Bearer ${access_token}'}** 
 
@@ -51,7 +75,7 @@ weight: 2
 
 从返回值中拿到access_key, secret_key, token和user信息保存起来, 在后面的请求中会用到
 
-### 第二步: SaaS 应用收费项计费需要构建请求
+### 第三步: SaaS 应用收费项计费需要构建请求
 
 ### 构建请求到IAM
 
