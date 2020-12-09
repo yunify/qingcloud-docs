@@ -14,6 +14,10 @@ section1:
 Section2:
   title: 用户指南
   children:
+    - title: 产品简介
+      content: SSL 证书产品文档
+      url: "/security/ssl/intro/introduction"
+
     - title: 计费模式
       content: SSL 产品价格
       url: "/security/ssl/billing/price"
@@ -29,7 +33,7 @@ section4:
       content: SSL 证书即安全套接层（SSL）数字证书，数字证书是一种用于电脑的身份识别机制。。
       vice_title: 了解的第一步
       children:
-        - title: 产品概述（从这里进入示例目录）
+        - title: 产品描述（从这里进入示例目录）
           url: "/security/ssl/intro/introduction"
 
 ---

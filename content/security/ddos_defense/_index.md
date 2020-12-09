@@ -30,7 +30,7 @@ section4:
       content: DDoS 攻击防护提供对域名的DDOS攻击防护能力。
       vice_title: 了解的第一步
       children:
-        - title: 产品概述（从这里进入示例目录）
+        - title: 产品描述（从这里进入示例目录）
           url: "/security/ddos_defense/manual/antiddos_user_guide"
 
 ---

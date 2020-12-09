@@ -14,6 +14,10 @@ section1:
 Section2:
   title: 用户指南
   children:
+    - title: 产品简介
+      content: 高防IP产品文档
+      url: "/security/antiddos_ip/intro/introduction"
+
     - title: 计费模式
       content: 高防IP产品计费模式文档
       url: "/security/antiddos_ip/billing/price"
@@ -30,7 +34,7 @@ section4:
       content: 海量带宽防护资源与AI智能攻击识别能力。
       vice_title: 了解的第一步
       children:
-        - title: 产品概述（从这里进入示例目录）
+        - title: 产品描述（从这里进入示例目录）
           url: "/security/antiddos_ip/intro/introduction"
 
 ---
