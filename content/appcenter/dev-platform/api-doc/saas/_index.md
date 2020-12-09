@@ -16,9 +16,9 @@ weight: 2
 
 开发者开发Saas应用时需要用到以下几种API:
 
-- [SSO API](./account_api.md)对应用户单点登录时所需要用到的接口.
+- [SSO API](./account_api)对应用户单点登录时所需要用到的接口.
 
-- [IAM API](../../../../authorization/iam/faq/supported_services.md)和[用户计费API](./new_billing_api.md), 其中, IAM API对应青云所提供的计算、存储、网络等资源, 这些接口的使用权限由开发者在注册青云集成应用时开放.
+- [IAM API](../../../../authorization/iam/faq/supported_services)和[用户计费API](./new_billing_api), 其中, IAM API对应青云所提供的计算、存储、网络等资源, 这些接口的使用权限由开发者在注册青云集成应用时开放.
 
 
 
