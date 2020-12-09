@@ -1,16 +1,14 @@
 ---
-title: "常见问题"
+title: "其他问题"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
 enableToc: false
 ---
 
-# 常见问题及解决方案
 
-## Windows 篇
 
-### 如何开启远程桌面
+## 如何开启远程桌面
 
  1、登陆到青云控制台，在主机列表里找到这台主机，如图
 
@@ -48,7 +46,7 @@ enableToc: false
 
 ![图片](/compute/vm/_images/image-1568884121368.png)
 
-### 如何关闭IE增强的安全配置
+## 如何关闭IE增强的安全配置
 
 通过服务器管理器---本地服务器---IE增强的安全配置----管理员----关闭----确定
 
@@ -56,7 +54,7 @@ enableToc: false
 
 ![图片](/compute/vm/_images/image-1568884124128.png)
 
-### 如何搭建一个ftp服务
+## 如何搭建一个ftp服务
 
 ftp server下载地址
 
@@ -140,7 +138,7 @@ https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
 ![图片](/compute/vm/_images/image-1568884245469.png)
 
-### 如何安装NFS客户端
+## 如何安装NFS客户端
 
 可以通过以下路径安装，服务器管理器---本地服务器---管理----添加角色和功能---功能---NFS客户端---安装
 
@@ -156,7 +154,7 @@ https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
 ![图片](/compute/vm/_images/image-1568884253180.png)
 
-### 如何安装及部署IIS web服务
+## 如何安装及部署IIS web服务
 
 可以通过以下路径安装，服务器管理器---本地服务器---管理----添加角色和功能---服务器角色---web服务器（IIS）---添加功能---选择角色服务---安装
 
@@ -182,7 +180,7 @@ https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
 ![图片](/compute/vm/_images/image-1568884267693.png)
 
-### 如何配置静态ip地址
+## 如何配置静态ip地址
 
 登陆到windows主机---网络和共享中心---更改适配器设置----右键以太网卡---属性---Internet版本协议4---使用下面的ip地址---确定
 
@@ -200,7 +198,7 @@ https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
 ![图片](/computing/_images/image-1568884277992.png)
 
-### 如何手动激活windows
+## 如何手动激活windows
 
 开始----运行----cmd命令行（以管理员身份）----slmgr /ato---回车
 
@@ -212,7 +210,7 @@ https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
 ![图片](/compute/vm/_images/image-1568884283005.png)
 
-### 服务器命名符合通用命名规则
+## 服务器命名符合通用命名规则
 
 右键这台电脑-属性-高级系统设置-计算机名-更改
 
@@ -241,7 +239,7 @@ https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
 ![图片](/compute/vm/_images/image-1568884300827.png)
 
-### 修改操作系统密码为长密码
+## 修改操作系统密码为长密码
 右键这台电脑---管理---服务器管理器---工具--本地安全策略---账户策略---密码策略
 
 “密码必须符合复杂性要求”配置为“已启用”，
@@ -272,46 +270,29 @@ windows设置——安全设置——帐户策略——帐户锁定策略：
 
 ![图片](/compute/vm/_images/image-1568884307326.png)
 
-### 关闭windows系统自带防火墙
+## 关闭windows系统自带防火墙
 控制面板 -Windows防火墙-启用或关闭windows防火墙， “专用网络设置”和“公用网络设置”均勾选“关闭windows防火墙”
 
-### 关闭网卡自动休眠
+## 关闭网卡自动休眠
 
 右键本地连接-属性-配置-电源管理，将“允许计算机关闭此设备以节省电源”勾选去掉，针对每个网卡均需做此配置
 
-### 修改时区为北京时区
+## 修改时区为北京时区
 
 双击时间-更改日期和时间设置-更改时区，修改时区为“（UTC+08:00）北京，重庆，香港特别行政区，乌鲁木齐”
 
-### 修改组策略“登录时不显示上次的用户名”
+## 修改组策略“登录时不显示上次的用户名”
 
 开始-运行-gpedit.msc-计算机配置-Windows设置-安全设置-本地策略-安全选项，将“交互式登录-不显示最后的用户名”改为“已启用”
 
-### 修改组策略“会话锁定时显示用户信息”设置为“不显示用户信息”
+## 修改组策略“会话锁定时显示用户信息”设置为“不显示用户信息”
 
 开始-运行-gpedit.msc-计算机配置-Windows设置-安全设置-本地策略-安全选项，将“交互式登录-锁定会话时显示用户信息”改为“不显示用户信息”
 
-### 修改组策略设置终端服务会话的空闲超时时间
+## 修改组策略设置终端服务会话的空闲超时时间
 
 开始-运行-gpedit.msc-计算机配置-管理模板-windows组件-远程桌面服务-远程桌面会话主机-会话时间限制，将“设置活动但空闲的远程桌面服务会话的时间限制”改为“已启用”，并在“空闲会话限制”下拉框中选择“10分钟”
 
-### 修改组策略的“审核策略”为全部
+## 修改组策略的“审核策略”为全部
 
 开始-运行-gpedit.msc-计算机配置-windows设置-安全设置-本地策略-审核策略，将所有属性页的“审核这些操作”项勾选“成功”和“失败”
-
-### 主机关机后主机是否收费
-
-
-
-### 如何通过ssh秘钥方式访问主机
-
-
-
-### 连接青云远程终端时的默认登录用户名和密码
-
-
-
-### 80端口被禁用
-
-
-
