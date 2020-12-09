@@ -11,27 +11,27 @@ weight: 4
 
 首先登录应用管理平台，点击“应用”部分的“+”号按钮，开始创建第一个应用：
 
-![创建应用](/appcenter/market/join-up/_images/create-saas-app.png)
+![创建应用](/appcenter/dev-platform/saas-developer-guide/_image/create-saas-app.png)
 
 输入应用名称, 应用类型选择“集成应用”, 点击创建应用。
 
-![应用类型](/appcenter/market/join-up/_images/saas-app-type.png)
+![应用类型](/appcenter/dev-platform/saas-developer-guide/_image/saas-app-type.png)
 
 在【应用设置】页面输入应用的基本信息：
 
 应用URL： 您的Web应用URL，**必须是HTTPS地址**。
 
-![HTTS 地址](/appcenter/market/join-up/_images/saas-app-url.png)
+![HTTS 地址](/appcenter/dev-platform/saas-developer-guide/_image/saas-app-url.png)
 
 ### 设置应用信息
 
 在【应用信息】页面输入应用的详细信息：
 
-![应用信息](/appcenter/market/join-up/_images/saas-app-info.png)
+![应用信息](/appcenter/dev-platform/saas-developer-guide/_image/saas-app-info.png)
 
-![应用信息](/appcenter/market/join-up/_images/saas-app-info2.png)
+![应用信息](/appcenter/dev-platform/saas-developer-guide/_image/saas-app-info2.png)
 
-![应用信息](/appcenter/market/join-up/_images/saas-app-info3.png)
+![应用信息](/appcenter/dev-platform/saas-developer-guide/_image/saas-app-info3.png)
 
 概述：应用的概述会出现在AppCenter首页，字数请勿超过 30 字
 
@@ -63,7 +63,7 @@ weight: 4
 
 若该应用无需获取用户的权限，则无需设置，可跳过此步骤。
 
-![创建应用](/appcenter/market/join-up/_images/saas-app-permission.png)
+![创建应用](/appcenter/dev-platform/saas-developer-guide/_image/saas-app-permission.png)
 
 开发者使用应用权限接口的方法如下：
 
@@ -103,13 +103,13 @@ params: {"owner":"appCenter","action":"DescribeIAMApiActionsByTag"}
 
 计费系统如下图：
 
-![创建应用](/appcenter/market/join-up/_images/saas-app-nb.png)
+![创建应用](/appcenter/dev-platform/saas-developer-guide/_image/saas-app-nb.png)
 
 ## 测试开通
 
 完成应用信息设置、应用权限设置、应用价格计费以及账户对接开发后，应用已完成跟云平台的接入。此时，可点击【测试开通】该应用是否接入成功。
 
-![创建应用](/appcenter/market/join-up/_images/saas-app-test-open.png)
+![创建应用](/appcenter/dev-platform/saas-developer-guide/_image/saas-app-test-open.png)
 
 如该应用有设置应用权限，则会提示先授权应用权限，才能访问该应用。
 
@@ -118,7 +118,7 @@ params: {"owner":"appCenter","action":"DescribeIAMApiActionsByTag"}
 
 若当前应用测试已通过，可以将此应用提交审核。但需要注意的是，提交审核之前请完善必要的应用信息，否则会影响审核结果。此情况下页面上也会有相应提示。
 
-![创建应用](/appcenter/market/join-up/_images/saas-app-audit.png) 
+![创建应用](/appcenter/dev-platform/saas-developer-guide/_image/saas-app-audit.png) 
 
 ## 发布/上架应用
 
