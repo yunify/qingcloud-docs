@@ -1,8 +1,13 @@
 <div class="td-content">
-<div class="td-page-top">
-	<h1>{{ .Title }}</h1>
-	{{ partial "page-meta-actions.html" .}}
-</div>
+	<div class="td-sidebar-section-title content-index">
+		<img class="is-40x40" src="/images/icons/book-open.svg">
+		<h3 class="doc_vice_title">{{ .CurrentSection.LinkTitle }}</h3>
+		<a href="javascript:;" class="nav-trigger">&nbsp;<span aria-hidden="true"></span></a>
+	</div>
+	<div class="td-page-top">
+		<h1>{{ .Title }}</h1>
+		{{ partial "page-meta-actions.html" .}}
+	</div>
 	<div class="page-meta-lastmod text-muted ">{{ partial "page-meta-lastmod.html" . }}</div>
 
 	<!-- {{ partial "page-meta-actions.html" .}} -->

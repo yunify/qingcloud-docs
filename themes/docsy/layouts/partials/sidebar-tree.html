@@ -1,7 +1,7 @@
 {{/* We cache this partial for bigger sites and set the active class client side. */}}
 {{ $shouldDelayActive := ge (len .Site.Pages) 2000 }}
 {{ if not .Site.Params.IsConsole }}
-	<div class="td-sidebar-section-title" style="padding-bottom: 5px;display: flex;">
+	<div class="td-sidebar-section-title">
 		<img class="is-40x40" src="/images/icons/book-open.svg">
 		<h3 class="doc_vice_title">{{ .CurrentSection.LinkTitle }}</h3>
 	</div>

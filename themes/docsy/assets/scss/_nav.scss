@@ -256,11 +256,18 @@ nav.navbar {
     word-break: break-all;
 }
 
+.navbar .search-mobile .search-mobile-icon{
+    display:none;
+}
 
 @media only screen and (max-width: 1023px) {
     nav.navbar {
         background: transparent;
         border-bottom: none;
+    }
+    
+    header{
+        background-color: #3d3e49;
     }
 
     .navbar .search {
@@ -268,6 +275,29 @@ nav.navbar {
         background-color: rgb(246, 248, 250);
         width: 100%;
         margin: 30px 0px 20px;
+    }
+    
+    nav.navbar.navmenu{
+        padding-left: 0;
+    }
+
+    .navbar-item.logo{
+        padding-left: 0;
+    }
+
+    .navbar .search-mobile{
+        z-index: 10;
+    }
+    .navbar .search-mobile .search-mobile-icon{
+        display:block;
+        text-align: right;
+    }
+    .navbar .search-mobile form{
+        display:none;
+    }
+
+    .control.has-icons-left .icon, .control.has-icons-right .icon{
+        z-index: 0;
     }
 
     .navbar .search input {
@@ -307,10 +337,9 @@ nav.navbar {
     }
 
     .navmenu {
-        position: absolute;
         left: 0;
         right: 0;
-        top: 16px;
+        top: 5px;
         border-bottom: none;
         background: transparent;
     }
@@ -1206,4 +1235,13 @@ nav.navbar .container .media-content{
 }
 .control.has-icons-right .icon.is-right{
     height: 1.969em;
+}
+
+.navbar-item.logo{
+    z-index: 1000;
+}
+
+.navbar.navmenu.navbar-index{
+    min-height: 25px;
+    border-bottom: 0;
 }

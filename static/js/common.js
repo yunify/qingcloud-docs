@@ -23,3 +23,33 @@ function download_pdf(url=''){
 	}
 	window.location.href='/download.php?url='+url;
 }
+$(function(){
+	$('.product-learn-icon').click(function(){
+		if($(this).attr('src')=='/images/icons/caret-down.svg'){
+			$(this).attr('src','/images/icons/caret-up.svg');
+		}else{
+			$(this).attr('src','/images/icons/caret-down.svg');
+		}
+		$(this).parent().next('ul').toggle("normal");
+	})
+
+	var max_width = window.screen.width;
+	$('.search-mobile-icon').click(function(){
+		if(max_width<1023){
+			$('#search-mobile-logo').hide();
+			$(this).hide();
+			$(this).prev('form').show();
+		}
+	})
+	document.onmousedown = function(e){
+	　　var ev = document.all ? window.event : e;
+	　　var _con = $(".search-mobile-icon").prev('form'); // 设置目标区域
+	　　if(!_con.is(e.target) && _con.has(e.target).length === 0){ // Mark 1
+	　　　　if(!_con.is(":hidden") && max_width<1023){
+	　　　　　　$('#search-mobile-logo').show();
+				$('.search-mobile-icon').show();
+				_con.hide();
+	　　　　}
+	　　}
+	}
+})
