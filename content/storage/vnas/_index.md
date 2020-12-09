@@ -27,12 +27,6 @@ section4:
         - title: 产品概述
           url: "/storage/vnas/intro/introduction"
 
-        - title: 产品优势
-          url: "/storage/vnas/intro/introduction"
-
-        - title: 应用场景
-          url: "/storage/vnas/best-practices/最佳实践"
-
     - title: 上手：创建 Virtual NAS 与使用共享存储目标
       content: 在控制台进行 Virtual NAS 服务器以及共享存储目标的创建及销毁操作。
       vice_title: 上手的第一步
