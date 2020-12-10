@@ -6,16 +6,35 @@ collapsible: false
 weight: 2
 ---
 
-## 工单系统
+## 工单管理
 
-工单系统在应用中心做了全面升级，在原来支持开发者或用户向青云提交工单的同时，也支持用户直接向开发者提交工单。另外，当开发者在回复用户问题需要青云工程师协助时可以提出“协助申请”，青云工程师将第一时间收到提醒一起回复用户工单，从而快速有效的为用户服务。
+工单系统在应用开发平台做了全面升级，开发者或用户可向青云提交工单的同时，也支持用户直接向开发者提交工单。开发者既可以做为用户向青云提交工单，同时也能够接收用户针对开发者所开发的应用接收用户提交的工单。
 
-![提交工单给青云管理员](/appcenter/dev-platform/platform-manage/_image/open_ticket.png)
+![工单菜单](/appcenter/dev-platform/platform-manage/_image/ticket-menu.png)
 
-![查看用户工单](/appcenter/dev-platform/platform-manage/_image/tickets.png)
+### 创建工单
 
-### 工单通知
+应用开发平台提供创建工单入口，开发者用户可以提交工单。
 
-开发者可以利用青云控制台提供的通知列表功能以实现工单动态自动推送， 详情可以参考[通知列表文档](https://docs.qingcloud.com/product/operation/notification_list)。目前青云的通知列表功能已经支持绑定微信号，只需要关注 QingCloud 服务号，有新的工单即可自动推送到微信号上：
+1.在页面右上角，点击【工单】，选择【创建工单】。
 
-![QingCloud 服务号](/appcenter/dev-platform/platform-manage/_image/qingcloud_service.png)
+2.填写工单内容，包括：工单类型、标题、描述、问题的影响类型、相关产品以及文件。
+
+3.提交工单后，可在【我的工单】中查看该工单处理详情。
+
+![创建工单](/appcenter/dev-platform/platform-manage/_image/ticket-create.png)
+
+### 我的工单
+
+可查看我创建的工单、共享给我的工单、企业内工单，其中共享给我的工单需要用户在【新邀请】中确定接受后才确认同意接收共享给我的工单。
+
+![我的工单](/appcenter/dev-platform/platform-manage/_image/tickets-my.png)
+
+### 处理工单
+
+开发者接收到用户提交给开发者的全部工单，可查看到待处理、处理中、待确认、已解决的工单。开发者可在【工单回复】窗口直接与用户直接回复工单。
+
+每个工单均有处理超时期限，开发者应尽快在超时期限内处理工单，以免影响用户对应用的使用体验。
+
+![处理工单](/appcenter/dev-platform/platform-manage/_image/tickets-pending.png)
+
