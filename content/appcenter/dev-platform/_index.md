@@ -22,7 +22,7 @@ section2:
 
     - title: 平台管理
       content: 开发者财务管理、工单管理、通知管理
-      url: "/appcenter/dev-platform/platform-manage"
+      url: "/appcenter/dev-platform/platform-manage/finance/finance/"
 
 
 section3:
