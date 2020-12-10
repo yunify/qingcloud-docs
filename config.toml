@@ -19,7 +19,7 @@ enableMissingTranslationPlaceholders = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [markup.highlight]
-style = "friendly"
+style = "monokai"
 
 # Configure how URLs look like per section.
 [permalinks]
