@@ -34,7 +34,7 @@ section4:
       content: 海量带宽防护资源与AI智能攻击识别能力。
       vice_title: 了解的第一步
       children:
-        - title: 产品描述（从这里进入示例目录）
+        - title: 产品描述
           url: "/security/antiddos_ip/intro/introduction"
 
 ---

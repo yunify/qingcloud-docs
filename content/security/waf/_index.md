@@ -29,7 +29,7 @@ section4:
       content: Web应用防火墙可以防止针对 Web 应用程序漏洞的攻击，如 SQL 注入、跨站点脚本（XSS）、文件包含漏洞以及安全配置错误等。
       vice_title: 了解的第一步
       children:
-        - title: 产品描述（从这里进入示例目录）
+        - title: 产品描述
           url: "/security/waf/intro/introduction"
 
 ---

@@ -30,7 +30,7 @@ section4:
       content: 防火墙。
       vice_title: 了解的第一步
       children:
-        - title: 产品描述（从这里进入示例目录）
+        - title: 产品描述
           url: "/security/security_group/intro/introduction"
 
 ---

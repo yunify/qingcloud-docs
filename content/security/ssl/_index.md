@@ -33,7 +33,7 @@ section4:
       content: SSL 证书即安全套接层（SSL）数字证书，数字证书是一种用于电脑的身份识别机制。。
       vice_title: 了解的第一步
       children:
-        - title: 产品描述（从这里进入示例目录）
+        - title: 产品描述
           url: "/security/ssl/intro/introduction"
 
 ---
