@@ -4,9 +4,11 @@
     {{ partial "head.html" . }}
   </head>
   <body class="td-{{ .Kind }}">
+	{{if ne .Site.Params.IsConsole true}}
     <header>
       {{ partial "navbar.html" . }}
     </header>
+	{{end}}
     <div class="container td-outer doc-container-width container-min-height">
       <div class="td-main">
 		{{ if .Site.Params.IsConsole }}

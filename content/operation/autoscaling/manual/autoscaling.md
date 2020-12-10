@@ -5,47 +5,7 @@ draft: false
 weight: 5
 ---
 
-自动伸缩（AutoScaling）功能可以帮助用户基于监控数据动态地调节资源配置或集群规模， 及时应对突增的系统压力，充分利用云计算的弹性特点调节系统的处理能力，且有效降低维护成本。 比如 IP 带宽、数据库存储空间、负载均衡器的后端数量，都可以自动调节，无需人工介入。 自动调节后会发出通知到用户指定的通知列表，并保留近期的操作历史以备随时查看。
 
-注意
-
-自动伸缩的资源操作是基于 API 实现，而 API 的调用是有限制的： 默认情况下每个用户每小时最多调用 2000 次。
-
-## 支持的资源类型
-
-目前支持自动伸缩的资源包括：
-
-**公网IP带宽**
-
-可根据公网 IP 的监控数据（进流量、出流量），自动提高或降低 IP 带宽， 并支持设置带宽的最大最小值，在可控的范围内自动调节。
-
-注意
-
-每天每个公网 IP 带宽调整次数最多 100 次。
-
-**负载均衡器**
-
-负载均衡器的自动伸缩支持两种模式：
-
-*   固定的后端数量
-
-    基于负载均衡器监听器的健康检查机制，维持一个固定数量的后端集群。 当健康的后端数量不等于所设置的值时，会自动创建或删除后端服务器。
-
-*   动态浮动的后端数量
-
-    基于负载均衡器监听器的多种压力监控项，自动增加或减少其下的后端服务器。 并支持设置后端服务器集群的最大、最小数，在可控的范围内自动调节。。
-
-**关系型数据库**
-
-当数据库磁盘使用量超过监控阈值后，会自动按照设定的数值扩大磁盘空间。 (由于磁盘空间不支持缩小操作，所以自动伸缩对数据库服务的支持仅限自动扩容)
-
-**应用存储空间**
-
-当应用集群任意节点磁盘使用量超过监控阈值后，会自动按照设定的数值扩大磁盘空间。 (由于磁盘空间不支持缩小操作，所以自动伸缩对该监控项的支持仅限自动扩容)
-
-**应用节点数量**
-
-根据应用集群的某类角色节点设置的监控项数据，会自动按照设定的数值增加或减少该类角色节点的数量，即横向扩容与收缩。
 
 ## 创建自动伸缩
 
@@ -79,9 +39,9 @@ weight: 5
     主机使用的防火墙
 
 *   UserData：
-    即用户自定义数据，可让用户在创建主机时通过上传一些自定义的参数或脚本。更多请见 [User Data 指南](../computing/userdata.html#guide-userdata)
+    即用户自定义数据，可让用户在创建主机时通过上传一些自定义的参数或脚本。更多请见 [User Data 指南](../../../../../compute/vm/manual/userdata/)
 
-[![](../_images/create-launch-configuration.png)](../_images/create-launch-configuration.png)
+![](../_images/create-launch-configuration.png)
 
 4. 设置好后点击『提交』。
 
@@ -91,11 +51,11 @@ weight: 5
 
 在自动伸缩页点击**创建**按钮。选择操作类型、资源类型、资源ID 以及资源发生自动伸缩操作后接收通知的列表等信息。
 
-[![](../_images/create-autoscaling-policy.png)](../_images/create-autoscaling-policy.png)
+![](../_images/create-autoscaling-policy.png)
 
 提交后会进入自动伸缩策略的详情页，页面中左侧是刚才设置的信息和关联的资源，右侧是伸缩规则。 其中，数据库服务与应用存储空间的自动伸缩只支持扩容规则（硬盘不支持缩小容量）。 公网IP带宽、负载均衡器和应用节点数量都支持扩大和减少两种规则。
 
-[![](../_images/autoscaling-policy-detail-page-empty.png)](../_images/autoscaling-policy-detail-page-empty.png)
+![](../_images/autoscaling-policy-detail-page-empty.png)
 
 ### 触发条件
 
@@ -104,17 +64,17 @@ weight: 5
 *   如果是『所有』关系，则每个告警规则都满足时，才能触发自动伸缩。
 *   如果是『任意』关系，则一旦有一条告警规则满足，就会触发自动伸缩。
 
-这里我们设置若响应延迟时间大于2秒，且请求数和并发数都超出一定值的话， 则触发自动伸缩为负载均衡器增加后端。 (关于监控告警策略的更多介绍可参考 [监控告警](alarm.html#guide-alarm))
+这里我们设置若响应延迟时间大于2秒，且请求数和并发数都超出一定值的话， 则触发自动伸缩为负载均衡器增加后端。 (关于监控告警策略的更多介绍可参考 [监控告警](../../../../../cloudsat/alarm-service/manual/alarm_service))
 
-[![](../_images/autoscaling-increase-trigger.png)](../_images/autoscaling-increase-trigger.png)
+![](../_images/autoscaling-increase-trigger.png)
 
 ### 操作参数
 
-第二步是设置具体的操作参数，也是 AutoScaling 在执行时会参考和判断的数值。 如下面图中所示，负载均衡器在增加后端服务时，需要指定一次增加几台主机，以及最大数量是多少， 还有创建主机所需的启动配置，负载均衡服务端口号等参数。 服务端口、转发策略、权重含义可参见 [负载均衡器](https://docs.qingcloud.com/product/network/loadbalancer) 。
+第二步是设置具体的操作参数，也是 AutoScaling 在执行时会参考和判断的数值。 如下面图中所示，负载均衡器在增加后端服务时，需要指定一次增加几台主机，以及最大数量是多少， 还有创建主机所需的启动配置，负载均衡服务端口号等参数。 服务端口、转发策略、权重含义可参见 [负载均衡器](../../../../../network/loadbalancer/manual/lb_user_guide) 。
 
 这里我们设置为增加2个后端服务器，启动配置选择刚才准备好的配置，新建的主机名称设为 “website” （创建后主机名称将会是 “website [controlled by asp-xxxx]”）， 并且后端的数量最多不超过10个。
 
-[![](../_images/autoscaling-increase-params.png)](../_images/autoscaling-increase-params.png)
+![](../_images/autoscaling-increase-params.png)
 
 注意
 
@@ -122,7 +82,8 @@ weight: 5
 
 减少的规则也是类似。 此例中若连续3个监控周期，请求数和并发数都比较低的话， 就自动减少1个负载均衡器后端，且后端数量不少于3个。
 
-[![](../_images/autoscaling-decrease-trigger.png)](../_images/autoscaling-decrease-trigger.png) [![](../_images/autoscaling-decrease-params.png)](../_images/autoscaling-decrease-params.png)
+![](../_images/autoscaling-decrease-trigger.png) 
+![](../_images/autoscaling-decrease-params.png)
 
 说明
 
@@ -130,7 +91,7 @@ weight: 5
 
 至此自动伸缩策略创建完成。如果之后需要修改或调整，都可在自动伸缩策略详情页中操作。自动伸缩策略一旦创建完成，其『操作类型』和关联的资源便不可改变了。 如果需要对其他资源做自动伸缩，请另行创建相应的策略。下图为创建完成后的自动伸缩详情页。
 
-[![](../_images/autoscaling-policy-detail-page.png)](../_images/autoscaling-policy-detail-page.png)
+![](../_images/autoscaling-policy-detail-page.png)
 
 说明
 
@@ -154,7 +115,7 @@ weight: 5
 
 未来考虑将脚本的编写功能开放，让用户可以根据自己的需要自行编写脚本， 这样自动伸缩功能就可支持更丰富、自定义的资源调度行为，满足有复杂需求的用户。
 
-[![](../_images/autoscaling-script.png)](../_images/autoscaling-script.png)
+![](../_images/autoscaling-script.png)
 
 ## 查看自动伸缩历史记录
 
@@ -163,6 +124,6 @@ weight: 5
 *   自动伸缩的执行记录，即执行过程中的所有API调用情况，以及脚本中的输出信息。
 *   发送通知给通知列表的记录，
 
-[![](../_images/autoscaling-history.png)](../_images/autoscaling-history.png)
+![](../_images/autoscaling-history.png)
 
 历史记录会保留最近 50 条，更早的记录会定期删除。

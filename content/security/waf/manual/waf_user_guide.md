@@ -1,5 +1,5 @@
 ---
-title: "WAF配置"
+title: "Web应用防火墙操作指南"
 description: test
 draft: false
 ---
@@ -7,7 +7,7 @@ draft: false
 
 ## 新建 WAF
 
-WAF 是跟负载均衡器（LoadBalancer）一起部署的，所以新建 WAF 需要新建负载均衡器并对其配置。 WAF 的策略配置项在这里可以修改，下面会分别讲到。
+WAF(Web 应用防火墙) 是跟负载均衡器（LoadBalancer）一起部署的，所以新建 WAF 需要新建负载均衡器并对其配置。 WAF 的策略配置项在这里可以修改，下面会分别讲到。
 
  [![../_images/security_tab_waf.png](../_images/security_tab_waf.png)](../_images/security_tab_waf.png)
 
