@@ -12,9 +12,29 @@ section1:
 Section2:
   title: 用户指南
   children:
-    - title: 弹性容器实例
-      content: 弹性容器实例用户使用文档
+    - title: 产品简介
+      content: 产品简介
+      url: "/container/qci/intro/introduction"
+
+    - title: 计费指南
+      content: 计费指南
+      url: "/container/qci/billing/price"
+
+    - title: 快速入门
+      content: 快速入门
+      url: "/container/qci/quickstart/quick_start"
+
+    - title: 操作指南
+      content: 操作指南
       url: "/container/qci/manual/operation"
+
+    - title: 最佳实践
+      content: 最佳实践
+      url: "/container/qci/best-practices/jenkins"
+
+    - title: 常见问题
+      content: 常见问题
+      url: "/container/qci/faq/faq"
 
 section4:
   children:
