@@ -12,23 +12,42 @@ section1:
 section2:
   title: 用户手册
   children:
-  - title: 简介
-    content: 介绍 QKE 集群
-    url: "/container/qke/manual/intro"
-  - title: 管理
-    content: 介绍如何创建、删除、恢复 QKE 集群，以及如何进行扩缩容等维护操作
-    url: "/container/qke/manual/manage"
-  - title: 使用
-    content: 介绍如何使用 QKE 集群
-    url: "/container/qke/manual/use"
-  - title: 价格
+  - title: 最新动态
+    content: 版本历史
+    url: "/container/qke/history/main"
+  - title: 计费指南
     content: 介绍 QKE 集群价格
-    url: "/container/qke/manual/pricing"
+    url: "/container/qke/pricing/main"
+  - title: 产品简介
+    content: 介绍 QKE 集群
+    url: "/container/qke/intro/main"
+  - title: 快速入门
+    content: 介绍如何创建、删除、恢复 QKE 集群，以及如何进行扩缩容等维护操作
+    url: "/container/qke/admin/main"
+  - title: 操作指南
+    content: 介绍如何使用 QKE 集群
+    url: "/container/qke/manual/main"
   - title: 常见问题
     content: 介绍 QKE 集群的常见问题与解决办法
-    url: "/container/qke/manual/faq"
-  - title: 版本历史
-    content: 版本历史
-    url: "/container/qke/manual/history"
+    url: "/container/qke/faq/main"
 
+section4:
+  children:
+  - title: 了解：什么是 KubeSphere®️（QKE）
+    content: QKE 服务集成了云平台的主机、存储、网络等资源，可以在青云平台一键部署高可用的 KubeSphere 集群，具有简单易用、自动运维、一键扩容等特点。
+    vice_title: 了解的第一步
+    children:
+    - title: 产品简介
+      url: "/container/qke/intro/main/"
+    - title: 产品主页
+      url: "https://www.qingcloud.com/products/kubesphereqke/"
+
+  - title: 上手：使用 KubeSphere®️（QKE）
+    content: 通过易用的 KubeSphere 浏览器界面进行容器创建与管理。
+    vice_title: 上手的第一步
+    children:
+    - title: 访问 KubeSphere
+      url: "/container/qke/manual/main/#%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AE%BF%E9%97%AE-kubesphere"
+    - title: 创建公网服务
+      url: "/container/qke/manual/main/#%E6%8C%87%E5%AE%9A%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E5%99%A8%E6%9C%8D%E5%8A%A1%E7%B1%BB%E5%9E%8B"
 ---

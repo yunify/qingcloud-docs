@@ -3,7 +3,7 @@ title: "版本历史"
 description: "版本历史"
 draft: false
 enableToc: false
-weight: 60
+weight: 10
 ---
 
 ## 3.0.0

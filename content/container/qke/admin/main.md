@@ -1,9 +1,9 @@
 ---
-title: "管理"
-description: "管理"
+title: "管理员手册"
+description: "管理员手册"
 draft: false
 enableToc: false
-weight: 20
+weight: 10
 ---
 
 ## 创建

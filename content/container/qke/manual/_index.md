@@ -1,6 +1,6 @@
 ---
-title: "用户手册"
-linkTitle: "用户手册"
-weight: 20
+title: "操作指南"
+linkTitle: "操作指南"
+weight: 50
 collapsible: true
 ---

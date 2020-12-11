@@ -1,9 +1,9 @@
 ---
-title: "使用"
-description: "使用"
+title: "使用手册"
+description: "使用手册"
 draft: false
 enableToc: false
-weight: 30
+weight: 10
 ---
 
 ## 登录节点
