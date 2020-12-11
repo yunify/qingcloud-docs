@@ -1,4 +1,5 @@
 ---
+
 title: "如何通过ssh秘钥方式访问主机？"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
@@ -7,7 +8,9 @@ draft: false
 enableToc: false
 ---
 
-你需要在控制台的“计算” -> “SSH 密钥”里面创建一个 SSH 密钥， 然后加载到你的主机上并下载私钥文件（例如 ``kp-1234abcd`` ）。
+
+
+在青云控制台的“计算” -> “SSH 密钥”里面创建一个 SSH 密钥， 然后加载到你的主机上并下载私钥文件（例如 ``kp-1234abcd`` ）。
 
 >注解
 在进行 SSH 连接之前，请确保在主机对应的防火墙下行规则中打开 TCP 22 号端口的访问。
@@ -77,3 +80,4 @@ enableToc: false
 *   左侧标签中切换到 用户身份验证(Authentication)，右侧表单中 方法(Method) 选择 Public Key ，用户名(Username) 为 root ，点击 用户密钥(User Key) 左侧 浏览(Browse) 按钮；
 *   选择并 导入(Import) 刚才下载的私钥文件 kp-12345678；
 *   连接即可。
+
