@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="72" viewBox="0 0 62 72">
+    <defs>
+        <path id="fvpbh2hmua" d="M32.506.406l28 16.258C61.431 17.2 62 18.189 62 19.258v32.546c0 1.069-.569 2.057-1.494 2.594l-28 16.258c-.931.541-2.081.541-3.012 0l-28-16.258C.569 53.861 0 52.873 0 51.804V19.258c0-1.07.569-2.057 1.494-2.594l28-16.258c.931-.541 2.081-.541 3.012 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-164 -258) translate(140 246) translate(24 12)">
+                    <mask id="msr7h3w4zb" fill="#fff">
+                        <use xlink:href="#fvpbh2hmua"/>
+                    </mask>
+                    <g>
+                        <use fill="#6DC99F" xlink:href="#fvpbh2hmua"/>
+                        <use fill="#F5F8FA" xlink:href="#fvpbh2hmua"/>
+                    </g>
+                    <g mask="url(#msr7h3w4zb)">
+                        <g>
+                            <path d="M0 0H48V48H0z" transform="translate(7 12)"/>
+                            <path fill="#D0D0D8" d="M11.368 8h25.264C38.484 8 40 9.516 40 11.368v25.264C40 38.484 38.484 40 36.632 40H11.368C9.516 40 8 38.484 8 36.632V11.368C8 9.516 9.516 8 11.368 8z" transform="translate(7 12)"/>
+                            <path fill="#3D3E49" d="M18 18H30V30H18z" transform="translate(7 12)"/>
+                            <path fill="#3D3E49" fill-rule="nonzero" d="M4 17L8 17 8 15 4 15zM4 25L8 25 8 23 4 23zM4 33L8 33 8 31 4 31zM40 17L44 17 44 15 40 15zM40 25L44 25 44 23 40 23zM40 33L44 33 44 31 40 31z" transform="translate(7 12)"/>
+                            <path fill="#3D3E49" fill-rule="nonzero" d="M30 7L34 7 34 5 30 5z" transform="translate(7 12) rotate(90 32 6)"/>
+                            <path fill="#3D3E49" fill-rule="nonzero" d="M22 7L26 7 26 5 22 5z" transform="translate(7 12) rotate(90 24 6)"/>
+                            <path fill="#3D3E49" fill-rule="nonzero" d="M14 7L18 7 18 5 14 5z" transform="translate(7 12) rotate(90 16 6)"/>
+                            <path fill="#3D3E49" fill-rule="nonzero" d="M30 43L34 43 34 41 30 41z" transform="translate(7 12) rotate(90 32 42)"/>
+                            <path fill="#3D3E49" fill-rule="nonzero" d="M22 43L26 43 26 41 22 41z" transform="translate(7 12) rotate(90 24 42)"/>
+                            <path fill="#3D3E49" fill-rule="nonzero" d="M14 43L18 43 18 41 14 41z" transform="translate(7 12) rotate(90 16 42)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
