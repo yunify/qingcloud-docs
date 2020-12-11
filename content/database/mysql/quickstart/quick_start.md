@@ -12,7 +12,7 @@ draft: false
 
 这里可以填写集群的描述等信息并选择应用系列，应用版本，数据库内核以及计费方式。
 
-![基本设置](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/base_step_1.png)
+![](../../_images/base_step_1.png)
 
 若开启自动备份，则在每天指定时间段都会创建一次备份。
 
@@ -24,7 +24,7 @@ draft: false
 
 可以选择数据库的硬件配置，磁盘大小。磁盘大小决定了数据库最大容量以及 IOPS 能力，您的数据和日志会共享这块磁盘。
 
-![主实例设置](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/base_step_2.png)
+![](../../_images/base_step_2.png)
 
 ### 网络设置
 
@@ -32,14 +32,14 @@ draft: false
 
 **注解**：此处展示的私有网络，其部署方式与[基本设置](#基本设置)中选择的部署方式是一致的。也就是说，如果您选择的集群部署方式是多可用区部署，则只能看到多可用区的私有网络。关于如何在region创建VPC、私有网络，请参考[区域(region)与可用区(zone)](https://docs.qingcloud.com/product/region)。
 
-![网络设置](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/base_step_3.png)
+![](../../_images/base_step_3.png)
 
 
 ### 服务环境参数设置
 
 设置数据库服务的配置参数。
 
-![参数设置](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/base_step_4.png)
+![](../../_images/base_step_4.png)
 
 ### 用户协议
 

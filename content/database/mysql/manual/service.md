@@ -10,7 +10,7 @@ draft: false
 
 要创建新账号时，需要指定账号密码和授权访问的数据库，创建成功后可查看 [账号列表](#账号列表)。
 
-![添加账号](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/add_user.png)
+![](../../_images/add_user.png)
 
 **注解**：
 
@@ -23,13 +23,13 @@ draft: false
 
 这里填写要删除的账号名。
 
-![删除账号](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/del_user.png)
+![](../../_images/del_user.png)
 
 ### SSL传输加密
 
 可选择是否开启 SSL传输加密，默认关闭。更多详细信息参考 [MySQL SSL](https://dev.mysql.com/doc/refman/5.7/en/creating-ssl-rsa-files.html)
 
-![SSL 传输加密](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/SSL_cert.png)
+![](../../_images/SSL_cert.png)
 
 **注解**：开启该服务后，获取 SSL 证书参考 [启动日志服务端](#启动日志服务端) 中 wget `下载单个目录`（mysql-cert）的方法下载。
 
@@ -37,7 +37,7 @@ draft: false
 
 可以根据需要增加集群节点。仅可以修改 只读实例 和 Proxy 实例 节点数量。添加只读实例节点的任务执行时间跟集群主实例的数据量有关系，数据量大时，任务执行时间会久一些，添加节点不影响集群的读写。
 
-![添加节点](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/add_nodes.png)
+![](../../_images/add_nodes.png)
 
 **注解**：
 
@@ -48,7 +48,7 @@ draft: false
 
 可以对一个运行中的数据库服务进行在线扩容，调整CPU/内存/磁盘空间大小。
 
-![扩容集群](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/scale.png)
+![](../../_images/scale.png)
 
 **注解**：
 
@@ -57,7 +57,7 @@ draft: false
 
 支持自动扩容,通过点击控制台的`运维与管理`下的`自动伸缩`点击创建。
 
-![扩容集群](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/auto_scale.png)
+![](../../_images/auto_scale.png)
 
 
 ### 启动日志服务端
@@ -68,19 +68,19 @@ MySQL Plus 支持通过 HTTP 服务预览和下载日志，HTTP 服务端口为 
 
 日志服务支持下载 mysql 错误日志 `mysql-error` 和 mysql 慢日志 `mysql-slow`（二者都保留六个日志文件），同时支持下载 mysql 审计日志 `mysql-audit` ， mysql binlog 文件 `mysql-bin` 和 SSL 证书文件 `mysql-cert` 。
 
-![启动日志服务端](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/start_caddy_server.png)
+![](../../_images/start_caddy_server.png)
 
 **注解**：点选运行服务的角色，并勾选需要预览和下载的 MySQL 日志，输入 HTTP 用户名和密码点击提交即可启动日志服务。
 
 **预览日志**
 
-![登陆web](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/preview_logs_log-in.png)
+![](../../_images/preview_logs_log-in.png)
 
 **注解**：通过浏览器输入需要下载日志节点的 IP 和 HTTP 服务端口 18801，如 `http://192.168.0.18:18801`，输入 HTTP 用户名和密码即可登录预览日志。（需要在同一 VPC 下主机上的浏览器来访问，或者通过青云 VPN 服务来访问。不要通过端口转发的方式将服务暴露到公网，避免对数据库服务造成重大影响！）
 
-![预览日志](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/preview_logs.png)
+![](../../_images/preview_logs.png)
 
-![下载日志](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/caddy_log_download.png)
+![](../../_images/caddy_log_download.png)
 
 **注解**：可以通过鼠标点击下载日志。
 
@@ -106,7 +106,7 @@ wget -r http://192.168.0.18:18801/mysql-bin/mysql-bin.000003 --http-user=admin -
 
 ### 关闭日志服务端
 
-![关闭日志服务端](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/stop_caddy_server.png)
+![](../../_images/stop_caddy_server.png)
 
 **注解**：关闭日志服务可以勾选是否清理日志，如果选则 `YES`，会将 `mysql-error` ，`mysql-slow` 和 `mysql-audit` 的归档日志清理掉，如 `mysql-error.log.*` ， `mysql-slow.log.*`　，`mysql-audit.log.*`　。
 
@@ -186,7 +186,7 @@ wget -r http://192.168.0.18:18801/mysql-bin/mysql-bin.000003 --http-user=admin -
 > 
 > ```
 
-![在线迁移](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/migrate_data.png)
+![](../../_images/migrate_data.png)
 
 
 ### 交换预留IP
@@ -207,19 +207,19 @@ wget -r http://192.168.0.18:18801/mysql-bin/mysql-bin.000003 --http-user=admin -
 >
 > 3、等待「 在线迁移 」任务执行完成，在当前新创建的集群点击「 交换预留IP 」，如下图所示选择需要交换的集群ID后提交，执行完成后业务便切换到当前集群。
 
-![交换预留IP](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/exchange_reserved_ips.png)
+![](../../_images/exchange_reserved_ips.png)
 
 
 ### 监控
 
 这里提供了每台主机的资源监控和服务监控。服务监控统计了SHOW GLOBAL STATUS中的信息，可用于定位分析数据库的性能。资源监控统计了主机的资源信息，如CPU使用率、硬盘IOPS情况等，可用于查看系统性能是否到达瓶颈。
 
-![提交事务数](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/commit_monitor.png)
+![](../../_images/commit_monitor.png)
 
-![写入查询](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/write_monitor.png)
+![](../../_images/write_monitor.png)
 
-![行锁定](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/lock_monitor.png)
+![](../../_images/lock_monitor.png)
 
-![CPU利用率](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/cpu_monitor.png)
+![](../../_images/cpu_monitor.png)
 
-![硬盘 IOPS](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/iops_monitor.png)
+![](../../_images/iops_monitor.png)
