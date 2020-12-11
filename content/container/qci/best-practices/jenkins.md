@@ -1,5 +1,5 @@
 ---
-title: "使用青云弹性容器 (QCI) 实例搭建一个Jenkins服务器"
+title: "使用青云弹性容器实例 (QCI) 搭建一个Jenkins服务器"
 description: test
 draft: false
 ---
@@ -26,7 +26,7 @@ Jenkins 的前身是 Hudson 是一个可扩展的持续集成引擎。Jenkins �
 
 ## 具体操作
 
-借助于青云云平台，可以方便地将弹性容器实例部署在青云私有网络当中，而私有网络本身需要提前接入青云 VPC 网络当中。在青云云平台产品与服务下拉菜单中选择容器服务中地弹性容器实例 (QCI) 。
+借助于青云云平台，可以方便地将弹性容器实例部署在青云私有网络当中，而私有网络本身需要提前接入青云 VPC 网络当中。在青云云平台产品与服务下拉菜单中选择容器服务中的弹性容器实例 (QCI) 。
 
 ![img](../Build-Jenkins.assets/ksnip_20201122-152209.png)
 
@@ -59,7 +59,7 @@ Jenkins 的前身是 Hudson 是一个可扩展的持续集成引擎。Jenkins �
 
 ### 3. 创建私有网络
 
-在次回到弹性容器实例页面中，点击关联服务中的私有网络，进入私有网络服务页面。
+再次回到弹性容器实例页面中，点击关联服务中的私有网络，进入私有网络服务页面。
 
 ![img](../Build-Jenkins.assets/ksnip_20201122-161214.png)
 
@@ -101,7 +101,7 @@ Jenkins 的前身是 Hudson 是一个可扩展的持续集成引擎。Jenkins �
 
 点击下一步。
 
-![img](../Build-Jenkins.assets/ksnip_20201122-163431.png)
+![img](../Build-Jenkins.assets/ksnip_20201211-135657.png)
 
 如果需要挂载外部硬盘，可以在卷挂载页面指定，这里直接点击下一步。
 
@@ -131,7 +131,7 @@ Jenkins 的前身是 Hudson 是一个可扩展的持续集成引擎。Jenkins �
 
 ![img](../Build-Jenkins.assets/ksnip_20201122-171740.png)
 
-### 8. 外网访问并接锁Jenkins
+### 8. 外网访问并解锁 Jenkins
 
 因为上面已经设置好了相应的端口转发规则，这里可以通过 EIP + 8080 端口的方式直接访问Jenkins。
 
