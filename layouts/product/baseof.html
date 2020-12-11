@@ -4,11 +4,9 @@
     {{ partial "head.html" . }}
   </head>
   <body class="td-{{ .Kind }}">
-    {{if ne .Site.Params.IsConsole true}}
-    <header>
+    <header {{if eq .Site.Params.IsConsole true}} style="display:none;"  {{end}}>
       {{ partial "navbar.html" . }}
-    </header>
-    {{end}} 
+    </header> 
 <main role="main" class="td-main">
 {{ with .Params.section1 }}
 <div class="hero-body hero-body-product">
@@ -126,7 +124,7 @@
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" style="max-width: 800px;">
 			<div class="modal-content">
-				<video width="800" height="400" class="product-video" controls="controls" src="{{ .video }}"></video>
+				<video id="video" width="800" height="400" class="product-video" controls="controls" src="{{ .video }}"></video>
 			</div>
 		</div>
 </div>
