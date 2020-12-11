@@ -7,7 +7,6 @@ weight: 81
 ---
 
 
-# FAQ 常见问题
 
 **创建CDN服务后用户在DNS服务器设置CNAME不生效:**
 

@@ -1,12 +1,10 @@
 ---
 title: "CDN 操作指南"
-date: 2020-01-30T00:38:25+09:00
+date: 2020-12-01T00:38:25+09:00
 draft: false
 weight: 2
 ---
 
-
-# CDN 操作指南
 
 
 ## 创建
@@ -147,6 +145,9 @@ weight: 2
 可以选择解绑
 
 ![](/network&cdn/cdn/_images/bind_unbind_cert.png)
+
+
+## 服务管理设置
 
 **监控**
 
