@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: 运维工具
-  vice_title: 运维工具看可以有效的帮助客户管理云平台资源，提高运维人员的工作效率。
+  vice_title: 运维工具可以有效的帮助客户管理云平台资源，提高运维人员的工作效率。
 
 
 section2:
