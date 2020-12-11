@@ -4,10 +4,11 @@
     {{ partial "head.html" . }}
   </head>
   <body class="td-{{ .Kind }}">
+    {{if ne .Site.Params.IsConsole true}}
     <header>
       {{ partial "navbar.html" . }}
     </header>
-    
+    {{end}} 
 <main role="main" class="td-main">
 {{ with .Params.section1 }}
 <div class="hero-body hero-body-product">

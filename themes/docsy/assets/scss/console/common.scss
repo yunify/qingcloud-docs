@@ -141,6 +141,9 @@ ul.timeline>li:before {
 
                 a {
                     color: #272b2f;
+                    &:hover{
+                        color: #15a675;
+                    }
                 }
             }
         }
