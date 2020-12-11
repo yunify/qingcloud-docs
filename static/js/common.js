@@ -17,9 +17,9 @@ function getQueryString(name) {
 	return null; 
 }
 
-function download_pdf(url=''){
+function download_pdf(url='',pdf_name=''){
 	if(url==''){
 		url = window.location.pathname;
 	}
-	window.location.href='/download.php?url='+url;
+	window.location.href='/download.php?url='+url+'&pdf_name='+pdf_name;
 }
