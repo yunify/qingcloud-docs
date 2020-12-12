@@ -1,9 +1,9 @@
 ---
 title: "安全"
 linkTitle: "Document"
-weight: 3
+weight: 22
 collapsible: true
-icon: "/images/icons/compute-icon-storage.svg"
+icon: "/images/icons/index/product-icon-safety.svg"
 ---
 
 

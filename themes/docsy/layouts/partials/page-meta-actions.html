@@ -13,7 +13,7 @@
 {{ $editURL = printf "%s/edit/%s/%s/content/%s" $gh_repo $gh_branch $gh_subdir $pathFormatted }}
 {{ end }}
 {{ $issuesURL := printf "%s/issues/new?title=%s" $gh_repo (htmlEscape $.Title )}}
-<a class="icon-download" onclick="download_pdf();"><i class="fa fa-download fa-fw"></i> {{ T "post_download_this" }}</a>
+<a class="icon-download" onclick="download_pdf('','{{ .Title }}');"><i class="fa fa-download fa-fw"></i> {{ T "post_download_this" }}</a>
 <a class="icon-edit" href="{{ $editURL }}" target="_blank"><i class="fa fa-edit fa-fw"></i> {{ T "post_edit_this" }}</a>
 {{ if $gh_project_repo }}
 {{ $project_issueURL := printf "%s/issues/new" $gh_project_repo }}

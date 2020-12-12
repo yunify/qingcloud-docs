@@ -141,6 +141,8 @@ span.menu__title--collapse[data-depth="0"] {
     margin-left: 0.35rem;
 }
 
-.td-sidebar__inner {
-    height: 100vh;
+@media (min-width:768px) {
+    .td-sidebar__inner {
+        height: 100vh;
+    }
 }
