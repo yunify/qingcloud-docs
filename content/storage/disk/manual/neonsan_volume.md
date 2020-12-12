@@ -16,15 +16,15 @@ keyword: 青云
 
 ### 第一步：创建企业级分布式 SAN (NeonSAN)
 
-点击 **存储** 中的 **硬盘** 进入如下界面
+进在控制台导航中点击『产品与服务』-『存储服务』-『硬盘 』进入如下界面。
 
 ![企业级分布式NeonSAN](/storage/disk/manual/_images/create_NeonSAN_1.png)
 
-点击 **创建** 跳出如下界面
+点击 **创建** 进入如下界面
 
-![创建NeonSAN](/storage/disk/manual/_images/creat_NeonSAN_2new.png)
+![创建NeonSAN](/storage/disk/manual/_images/create_NeonSAN_2.png)
 
-在名称框里输入创建的硬盘名称，在数量框里输入需要创建的硬盘数量，在类型中选择企业级分布式 SAN (NeonSAN), 拖动滑动按钮选择容量大小，或者在右边的输入框中输入容量大小，副本策略可选择 2-3 ，点击 **提交** ，进入如下界面
+在名称框里输入创建的硬盘名称，在数量框里输入需要创建的硬盘数量，在类型中选择企业级分布式 SAN (NeonSAN), 拖动滑动按钮选择容量大小，或者在右边的输入框中输入容量大小，点击 **提交** ，进入如下界面
 
 ![完成NeonSAN创建](/storage/disk/manual/_images/create_NeonSAN_3.png)
 
@@ -45,7 +45,7 @@ keyword: 青云
 
 ### 第二步：配置服务
 
-鼠标右键点击硬盘条目，或选中硬盘条目鼠标左键点击更多操作，跳出如下界面
+鼠标右键点击硬盘条目，或选中硬盘条目鼠标左键点击更多操作，进入如下界面
 
 ![备份NeonSAN](/storage/disk/manual/_images/create_NeonSAN_4.png)
 
@@ -53,13 +53,13 @@ keyword: 青云
 
 **加载企业级分布式 SAN (NeonSAN) 到主机**
 
-点击 **加载硬盘到主机** ，跳出如下界面
+点击 **加载硬盘到主机** ，进入如下界面
 
 ![加载neonSAN到主机](/storage/disk/manual/_images/create_NeonSAN_6.png)
 
 选择需要加载该企业级分布式 SAN (NeonSAN) 的主机，点击 **提交**，即可挂载到指定主机。
 
-> 注解：企业级分布式 SAN(NeonSAN) 支持被挂载至基础型、企业型 e1 、企业型 e2 、专业增强型、性能型、超高性能型和 GPU 主机上，且一块 NeonSAN 硬盘可以同时挂载到多台主机。如果您将一块 NeonSAN 硬盘绑定到多个主机上， 请确保使用集群文件系统，例如 OCFS2, 否则磁盘可能会损坏
+> 注解：企业级分布式 SAN(NeonSAN) 支持被挂载至基础型、企业型 e2 和 GPU 主机上，且一块 NeonSAN 硬盘可以同时挂载到多台主机。如果您将一块 NeonSAN 硬盘绑定到多个主机上， 请确保使用集群文件系统，例如 OCFS2, 否则磁盘可能会损坏
 
 还可以从 **计算-主机** 页面，鼠标右键点击主机条目，来选择 **硬盘**，进行硬盘加载，界面如下
 
@@ -67,7 +67,7 @@ keyword: 青云
 
 **修改企业级分布式 SAN (NeonSAN) 名称或属性**
 
-点击 **修改**，跳出如下界面
+点击 **修改**，进入如下界面
 
 ![修改NeonSAN](/storage/disk/manual/_images/create_NeonSAN_8.png)
 
@@ -75,7 +75,7 @@ keyword: 青云
 
 **克隆企业级分布式 SAN (NeonSAN)**
 
-点击 **克隆硬盘** ，跳出如下界面
+点击 **克隆硬盘** ，进入如下界面
 
 ![克隆NeonSAN](/storage/disk/manual/_images/create_NeonSAN_9.png)
 
@@ -87,13 +87,13 @@ keyword: 青云
 
 **扩容**
 
-点击 **扩容** ，跳出如下界面
+点击 **扩容** ，进入如下界面
 
 ![扩容NeonSAN](/storage/disk/manual/_images/create_NeonSAN_11.png)
 
 **备份**
 
-点击 **备份** ，跳出如下界面
+点击 **备份** ，进入如下界面
 
 ![备份NeonSAN](/storage/disk/manual/_images/create_NeonSAN_12.png)
 
@@ -109,7 +109,7 @@ keyword: 青云
 
 **标签**
 
-点击 **标签** ，为已经创建的企业级分布式 SAN (NeonSAN) 绑定标签，跳出如下界面
+点击 **标签** ，为已经创建的企业级分布式 SAN (NeonSAN) 绑定标签，进入如下界面
 
 ![为NeonSAN绑定标签](/storage/disk/manual/_images/create_NeonSAN_15.png)
 
@@ -119,7 +119,7 @@ keyword: 青云
 
 **添加到项目**
 
-点击 **项目-加入**，跳出如下界面
+点击 **项目-加入**，进入如下界面
 
 ![将NeonSAN加入到项目](/storage/disk/manual/_images/create_NeonSAN_project.png)
 
@@ -133,13 +133,13 @@ keyword: 青云
 
 ![NeonSAN备份配置](/storage/disk/manual/_images/create_NeonSAN_17.png)
 
-鼠标右键点击备份链ID，跳出如下界面
+鼠标右键点击备份链ID，进入如下界面
 
 ![NeonSAN备份链修改](/storage/disk/manual/_images/create_NeonSAN_18.png)
 
 **修改备份名称或描述**
 
-点击 **修改** ，跳出如下界面
+点击 **修改** ，进入如下界面
 
 ![修改备份链](/storage/disk/manual/_images/create_NeonSAN_19.png)
 
@@ -147,11 +147,11 @@ keyword: 青云
 
 **基于备份新建硬盘**
 
-点击 **创建硬盘** ，跳出如下界面
+点击 **创建硬盘** ，进入如下界面
 
 ![基于备份创建硬盘](/storage/disk/manual/_images/create_NeonSAN_20.png)
 
-在名称框里填入新硬盘的名称，点解 **提交** ，可以硬盘首页看到
+在名称框里填入新硬盘的名称，点击 **提交** ，可以硬盘首页看到
 
 ![完成备份硬盘创建](/storage/disk/manual/_images/create_NeonSAN_21.png)
 
@@ -159,7 +159,7 @@ keyword: 青云
 
 **共享备份**
 
-点击 **共享备份** ，跳出如下界面
+点击 **共享备份** ，进入如下界面
 
 ![共享NeonSAN备份](/storage/disk/manual/_images/create_NeonSAN_22.png)
 
@@ -167,7 +167,7 @@ keyword: 青云
 
 **跨区复制备份**
 
-点击 **跨区复制备份** ，跳出如下界面
+点击 **跨区复制备份** ，进入如下界面
 
 ![快去复制NeonSAN备份](/storage/disk/manual/_images/create_NeonSAN_23.png)
 
