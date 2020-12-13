@@ -1,5 +1,5 @@
 ---
-title: "SSD 企业级"
+title: "SSD 企业级硬盘"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
@@ -15,7 +15,8 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 ### 第一步：创建 SSD 企业级硬盘
 
-点击 **存储** 中的 **硬盘**，进入如下界面。
+
+进在控制台导航中点击『产品与服务』-『存储服务』-『硬盘 』进入如下界面。入如下界面。
 
 ![SSD企业级硬盘](/storage/disk/manual/_images/create_ssd_1.png)
 
@@ -23,7 +24,7 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 ![创建SSD企业级硬盘](/storage/disk/manual/_images/create_ssd_2.png) 
 
-在名称框里输入创建的硬盘名称，在数量框里输入需要创建的硬盘数量，在类型中选择 **SSD 企业级**，拖动滑动按钮选择容量大小，或者在右边的输入框中输入容量大小，副本策略可选择同数据中心多副本，或同数据中心单副本，点击 **提交**，进入如下界面。
+在名称框里输入创建的硬盘名称，在数量框里输入需要创建的硬盘数量，在类型中选择 **SSD 企业级**，拖动滑动按钮选择容量大小，或者在右边的输入框中输入容量大小，点击 **提交**，进入如下界面。
  
 ![完成SSD企业级硬盘创建](/storage/disk/manual/_images/create_ssd_3.png)
 
@@ -55,7 +56,7 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 选择需要加载该 SSD 企业级硬盘的主机，点击 **提交**，即可挂载到指定主机。
 
-> 注解： SSD 企业级硬盘支持被挂载到企业型 e1 、企业型 e2 和专业增强型主机上，且一块 SSD 企业级硬盘不可以同时挂载到多台主机
+> 注解： SSD 企业级硬盘支持被挂载到企业型 e2 主机上，且一块 SSD 企业级硬盘不可以同时挂载到多台主机
 
 还可以从主机页面，鼠标右键点击主机条目，来选择 **硬盘**，进行硬盘加载，界面如下：
 
@@ -117,11 +118,11 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 点击 **项目-加入**，跳出如下界面
 
-![SSD加入到项目](/storage/disk/manual/_images/create_SSD_project.png)
+![SSD加入到项目](/storage/disk/manual/_images/create_basic_project.png)
 
 选择需要添加到的项目，点击 **提交** 将硬盘添加到项目，回到硬盘列表可以查看硬盘所属的项目，如下图
 
-![SSD完成加入到项目](/storage/disk/manual/_images/create_SSD_project2.png)
+![SSD完成加入到项目](/storage/disk/manual/_images/create_basic_project2.png)
 
 ## 备份配置
 
@@ -147,7 +148,7 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
  
 ![基于备份创建SSD](/storage/disk/manual/_images/create_ssd_18.png)
 
-在名称框里填入新硬盘的名称，选择副本策略，点解 **提交**，可以硬盘首页看到如何界面
+在名称框里填入新硬盘的名称，选择硬盘类型，点击 **提交**，可以硬盘首页看到如下界面
  
 ![基于备份创建SSD](/storage/disk/manual/_images/create_ssd_19.png)
 
@@ -181,8 +182,8 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 ## 监控
 
-在超高性能型硬盘挂载到主机时，可以点击硬盘条目，查看监控情况，界面如下。
+在SSD企业级硬盘挂载到主机时，可以点击硬盘条目，查看监控情况，界面如下。
  
-![SSD硬盘监控](/storage/disk/manual/_images/create_ssd_23.png)
+![SSD硬盘监控](/storage/disk/manual/_images/create_basic_22.png)
 
 在硬盘 IOPS 和硬盘吞吐量打开时，可以看到硬盘 IOPS 和硬盘吞吐量数据展示。还可以点击硬盘使用率右侧的 查看监控图来查看硬盘使用率。

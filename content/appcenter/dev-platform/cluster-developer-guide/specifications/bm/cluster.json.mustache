@@ -1,0 +1,192 @@
+{
+    "name": {{cluster.name}},
+    "description": {{cluster.description}},
+    "vxnet": {{cluster.vxnet}},
+    "links": {
+        "external_service": {{cluster.external_service}}
+    },
+    "backup_policy": "device",
+    "incremental_backup_supported": false,
+    "upgrade_policy": [
+            "appv-xxxxxxxx",
+            "appv-yyyyyyyy"
+    ],
+    "upgrading_policy": "parallel",
+    "nodes": [{
+        "role": "role_name",
+        "loadbalancer": {{cluster.role_name.loadbalancer}},
+        "container": {
+            "type": "kvm",
+            "image": "img-skhdp16m",
+            "zone": "pek3a"
+        },
+        "instance_class": {{cluster.role_name.instance_class}},
+        "volume": {
+            "mount_point": "/data",
+            "mount_options": "defaults,noatime",
+            "filesystem": "ext4",
+        },
+        "replica": {{cluster.role_name.replica}},
+        "passphraseless": "ssh-dsa",
+        "vertical_scaling_policy": "parallel",
+        "user_access": false,
+        "services": {
+            "init": {
+                "nodes_to_execute_on": 1,
+                "post_start_service": false,
+                "cmd": "mkdir -p /bigdata1/myapp;/opt/myapp/bin/init-cluster.sh"
+            },
+            "start": {
+                "order": 1,
+                "cmd": "/opt/myapp/bin/start-server.sh"
+            },
+            "stop": {
+                "cmd": "/opt/myapp/bin/stop-server.sh"
+            },
+            "scale_out": {
+                "pre_check": "/opt/myapp/sbin/scale-out-pre-check.sh",
+                "cmd": "/opt/myapp/sbin/scale-out.sh"
+            },
+            "scale_in": {
+                "pre_check": "/opt/myapp/sbin/scale-in-pre-check.sh",
+                "cmd": "/opt/myapp/sbin/scale-in.sh",
+                "timeout": 86400
+            },
+            "restart": {
+                "cmd": "/opt/myapp/sbin/restart-server.sh"
+            },
+            "destroy": {
+                "allow_force": true,
+                "nodes_to_execute_on": 1,
+                "post_stop_service": true,
+                "cmd": "/opt/myapp/sbin/destroy-server.sh"
+            },
+            "upgrade": {
+                "cmd": "/opt/myapp/sbin/upgrade.sh"
+            },
+            "backup": {
+                "cmd": "/opt/myapp/sbin/backup.sh",
+                "nodes_to_execute_on": 1,
+                "order": 1,
+                "service_params": {
+                    "service_param": {{service_params.role_name.param}}
+                },
+                "timeout": 86400
+            },
+            "restore": {
+                "cmd": "/opt/myapp/sbin/restore.sh",
+                "nodes_to_execute_on": 1,
+                "order": 1,
+                "service_params": {
+                    "service_param": {{service_params.role_name.param}}
+                },
+                "timeout": 86400,
+            },
+            "delete_snapshot": {
+                "cmd": "/opt/myapp/sbin/delete_snapshot.sh",
+                "nodes_to_execute_on": 1,
+                "order": 1,
+                "service_params": {
+                    "service_param": {{service_params.role_name.param}}
+                },
+                "timeout": 86400
+            },
+            "custom_service": {
+                "type": "custom",
+                "cmd": "/opt/myapp/sbin/custom_service.sh",
+                "timeout": 86400,
+                "service_params": {
+                    "service_param": {{service_params.role_name.param}}
+                }
+            }
+        },
+        "server_id_upper_bound": 255,
+        "env": {
+            "param": {{env.role_name.param}}
+        },
+        "agent_installed": true,
+        "custom_metadata": {
+            "cmd": "/opt/myapp/sbin/get_token.sh"
+        },
+        "health_check": {
+            "enable": true,
+            "interval_sec": 60,
+            "timeout_sec": 10,
+            "action_timeout_sec": 30,
+            "healthy_threshold": 3,
+            "unhealthy_threshold": 3,
+            "check_cmd": "/opt/myapp/bin/check.sh",
+            "action_cmd": "/opt/myapp/bin/action.sh"
+        },
+        "monitor": {
+            "enable": true,
+            "cmd": "/opt/myapp/bin/monitor.sh",
+            "items": {
+                "item_name_x"***: {
+                    "unit": "",
+                    "value_type": "str",
+                    "statistics_type": "avg",
+                    "scale_factor_when_display": 1,
+                    "enums": ["value_y"***]
+                }
+            },
+            "groups": {
+                "group_name_z"***: ["item_name_x"***]
+            },
+            "display": ["group_name_z"***, "item_name_x"***],
+            "alarm": ["item_name_x"***]
+        }
+    }],
+    "env": {
+        "common.param": {{env.common_param}}
+    },
+    "advanced_actions": ["change_vxnet", "scale_horizontal", "associate_eip"],
+    "endpoints": {
+        "client": {
+            "port": 2181,
+            "protocol": "tcp"
+        },
+        "reserved_ips": {
+            "vip": {
+                "value": ""
+            }
+        }
+    },
+    "metadata_root_access": false,
+    "health_check": {
+        "enable": true,
+        "interval_sec": 60,
+        "timeout_sec": 10,
+        "action_timeout_sec": 30,
+        "healthy_threshold": 3,
+        "unhealthy_threshold": 3,
+        "check_cmd": "/opt/myapp/bin/check.sh",
+        "action_cmd": "/opt/myapp/bin/action.sh"
+    },
+    "monitor": {
+        "enable": true,
+        "cmd": "/opt/myapp/bin/monitor.sh",
+        "items": {
+            "item_name_x": {
+                "unit": "",
+                "value_type": "str",
+                "statistics_type": "avg",
+                "scale_factor_when_display": 1,
+                "enums": ["value_y"]
+            }
+        },
+        "groups": {
+            "group_name_z": ["item_name_x"]
+        },
+        "display": ["group_name_z", "item_name_x"],
+        "alarm": ["item_name_x"]
+    },
+    "display_tabs": {
+        "node_details_tab": {
+            "cmd": "/opt/myapp/bin/node_details_tab.sh",
+            "roles_to_execute_on": ["master", "slave"],
+            "description": "More infomation about nodes",
+            "timeout": 10
+        }
+	}
+}

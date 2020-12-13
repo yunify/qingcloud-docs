@@ -169,7 +169,7 @@
 
     .td-sidebar {
         padding-right: 1rem;
-        margin-top: 0;
+        margin-top: -1px;
     }
 
     .td-main main {
@@ -186,4 +186,18 @@
         padding: 0.5rem 0 0.5rem 2rem;
         border-top: solid 1px #e4ebf1;
     }
+}
+
+.fix-background-like{
+    background-image: url(/images/icons/like.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fix-background-unlike{
+    background-image: url(/images/icons/Point-out.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 65%;
+    margin-left: 1.5rem;
 }

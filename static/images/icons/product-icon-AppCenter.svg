@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="72px" viewBox="0 0 62 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>product_icon_AppCenter</title>
+    <desc>Created with Sketch.</desc>
+    <g id="文档" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="文档-目录1" transform="translate(-754.000000, -1058.000000)">
+            <g id="分组复制备份-11" transform="translate(730.000000, 1046.000000)">
+                <g id="product_icon_AppCenter" transform="translate(24.000000, 12.000000)">
+                    <path d="M32.5064066,0.40563316 L60.5064066,16.6636977 C61.4309977,17.2005571 62,18.1889121 62,19.2580645 L62,51.8038265 C62,52.8729788 61.4309977,53.8613339 60.5064066,54.3981933 L32.5064066,70.6562578 C31.5749526,71.197102 30.4250474,71.197102 29.4935934,70.6562578 L1.49359345,54.3981933 C0.569002275,53.8613339 1.46320104e-15,52.8729788 0,51.8038265 L0,19.2580645 C1.73755293e-15,18.1889121 0.569002275,17.2005571 1.49359345,16.6636977 L29.4935934,0.40563316 C30.4250474,-0.135211053 31.5749526,-0.135211053 32.5064066,0.40563316 Z" id="Polygon-2" fill="#F5F8FA"></path>
+                    <g id="编组" transform="translate(13.000000, 18.000000)">
+                        <polygon id="Shape" fill="#3D3E49" points="-2.91322522e-13 31.0418228 8.54487982 31.0418228 17.9969889 13.9462973 14.0697281 6.80340575"></polygon>
+                        <polygon id="Shape-Copy" fill="#D0D0D8" points="14.0657487 6.80687808 27.439974 31.0418228 36 31.0418228 18 5.20472554e-13"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,7 +1,8 @@
 ---
-title: "数据库"
+title: "数据库与缓存"
 linkTitle: "Document"
-weight: 2
+weight: 6
 collapsible: true
-icon: "/images/icons/compute-icon-storage.svg"
+icon: "/images/icons/index/product-icon-database.svg"
 ---
+
