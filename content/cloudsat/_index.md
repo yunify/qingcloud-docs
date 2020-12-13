@@ -5,5 +5,5 @@ _build:
  render: false 
 weight: 18
 collapsible: true
-icon: "/images/icons/compute-icon-storage.svg"
+icon: "/images/icons/index/product-icon-monitor.svg"
 ---
