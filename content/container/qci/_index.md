@@ -36,6 +36,21 @@ Section2:
       content: 常见问题
       url: "/container/qci/faq/faq"
 
+section3:
+  title: 开发者指南
+  children:
+    - title: API 文档
+      content: 如何使用 API 文档
+      url: "/development_docs/api/"
+
+    - title: SDK 文档
+      content: 如何使用 SDK 文档
+      url: "/development_docs/sdk/"
+
+    - title: CLI 文档
+      content: 如何使用 CLI 文档
+      url: "/development_docs/cli/"
+
 section4:
   children:
     - title: 了解：什么是弹性容器实例
