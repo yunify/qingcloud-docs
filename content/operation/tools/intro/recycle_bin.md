@@ -1,6 +1,5 @@
 ---
 title: "回收站"
-date: 2020-01-30T00:36:25+09:00
 description: Test description
 draft: false
 enableToc: false

@@ -1,6 +1,5 @@
 ---
 title: "定时器"
-date: 2020-01-30T00:39:25+09:00
 description: Test description
 draft: false
 enableToc: false
@@ -14,11 +13,11 @@ keyword: 定时器, QingCloud
 
 例如每周一、周四、周六执行，可如下图设置：
 
-[![](../../_images/create-scheduler-weekly.png)](../../_images/create-scheduler-weekly.png)
+![](../../_images/create-scheduler-weekly.png)
 
 例如每月的10日、20日、月末执行，可如下图设置：
 
-[![](../../_images/create-scheduler-monthly.png)](../../_images/create-scheduler-monthly.png)
+![](../../_images/create-scheduler-monthly.png)
 
 如果设置为『每月』执行，在选择日期时除了数字的日期外，还有一个『月末』 选项，选择它则表示会在每月的最后一天执行，无论那天是几号。假如既选择了『28』号和『月末』， 且当年的2月也是28天，在这一天也只会执行一次。
 
@@ -26,18 +25,23 @@ keyword: 定时器, QingCloud
 
 定时器目前支持的定时任务有：
 
+*   开启主机
 *   关闭主机
-*   启动主机
-*   关闭路由器
-*   启动路由器
-*   关闭负载均衡器
+*   重启主机
+*   创建备份
+*   跨区复制备份
+*   调整公网 IP 带宽上限（每天每个公网 IP 带宽调整次数最多 100 次）
+*   调整公网 IP计费模式
+*   开启VPC网络
+*   关闭VPC网络
 *   启动负载均衡器
-*   为主机和硬盘创建备份
-*   调整公网 IP 带宽（每天每个公网 IP 带宽调整次数最多 100 次）
+*   关闭负载均衡器
+*   启用防火墙规则
+*   禁用防火墙规则
 
-每种任务都可支持最多10个资源批量操作，还可通过多个任务将资源分组执行。每个定时器可创建5个任务，任务类型可以重复，每个任务都支持对资源的批量操作。
+每种任务都可支持最多5个资源批量操作，还可通过多个任务将资源分组执行。每个定时器可创建5个任务，任务类型可以重复，每个任务都支持对资源的批量操作。
 
-[![](../../_images/add-scheduler-task.png)](../../_images/add-scheduler-task.png)
+![](../../_images/add-scheduler-task.png)
 
 当到达设定好的执行时间时，多个任务会同时开始执行。每个任务在执行后都会保留执行结果到历史记录中。
 
@@ -45,7 +49,7 @@ keyword: 定时器, QingCloud
 
 下面是一张创建完任务的页面：
 
-[![](../../_images/scheduler-detail-page.png)](../../_images/scheduler-detail-page.png)
+![](../../_images/scheduler-detail-page.png)
 
 ## 立即执行任务
 
@@ -59,7 +63,7 @@ keyword: 定时器, QingCloud
 
 未来我们考虑将脚本的编写功能开放，让用户可以根据自己的需要自行编写脚本， 让定时器支持更丰富、自定义的资源调度行为，满足有复杂需求的用户。
 
-[![](../../_images/scheduler-task-script.png)](../../_images/scheduler-task-script.png)
+![](../../_images/scheduler-task-script.png)
 
 ## 查看历史记录
 
@@ -68,4 +72,4 @@ keyword: 定时器, QingCloud
 *   每个任务执行后，会有相应的执行记录，包括执行过程中的所有API调用情况，以及脚本中的输出信息。
 *   发送通知给通知列表后，也会有相应的记录，
 
-[![](../../_images/scheduler-history.png)](../../_images/scheduler-history.png)
+![](../../_images/scheduler-history.png)

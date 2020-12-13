@@ -1,7 +1,10 @@
 ---
-title: "运维与监控"
+title: "运维与管理"
 linkTitle: "Document"
-weight: 45
+_build:
+ render: false 
+weight: 15
 collapsible: true
-icon: "/images/icons/compute-icon-storage.svg"
+icon: "/images/icons/index/product-icon-operations.svg"
 ---
+
