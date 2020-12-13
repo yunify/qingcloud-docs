@@ -25,6 +25,7 @@ Section2:
       content: 主机产品操作指南
       url: "/compute/vm/manual/connect_instance"
     
+
     - title: 最佳实践
       content: 主机产品最佳实践
       url: "/compute/vm/best-practices/wordpress"
@@ -32,6 +33,7 @@ Section2:
     - title: 常见问题
       content: 主机产品常见问题
       url: "/compute/vm/faq/faq"
+
 
 
 section4:
