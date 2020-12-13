@@ -26,6 +26,21 @@ section2:
       content: 场景一：免密钥应用开发<br>场景二：跨账号管理协作
       url: "best-practices/"
 
+section3:
+  title: 开发者指南
+  children:
+    - title: API 文档
+      content: 如何使用 API 文档
+      url: "/development_docs/api/"
+
+    - title: SDK 文档
+      content: 如何使用 SDK 文档
+      url: "/development_docs/sdk/"
+
+    - title: CLI 文档
+      content: 如何使用 CLI 文档
+      url: "/development_docs/cli/"
+
 section4:
   children:
     - title: 了解
