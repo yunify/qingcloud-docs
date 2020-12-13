@@ -27,15 +27,15 @@ section3:
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: ""
+      url: "/development_docs/api/"
 
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: ""
+      url: "/development_docs/sdk/"
 
     - title: CLI 文档
       content: 如何使用 CLI 文档
-      url: ""
+      url: "/development_docs/cli/"
 
 section4:
   children:
