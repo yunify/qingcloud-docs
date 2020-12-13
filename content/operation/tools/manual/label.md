@@ -1,6 +1,5 @@
 ---
 title: "标签"
-date: 2020-12-10T00:40:25+09:00
 description: Test description
 draft: false
 enableToc: false
