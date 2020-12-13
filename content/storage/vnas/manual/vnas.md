@@ -74,7 +74,6 @@ QingCloud 为您提供的 NAS 服务是基于标准的 NFS 和 Samba（CIFS）�
 
 在完成共享存储目标的创建之后，你需要点击『应用修改』按钮，使得我们创建的共享存储目标应用到共享存储服务器上。
 
-
 >应用修改后，NAS 服务器会检查硬盘是否可用，多个分区和无法识别的文件系统都会导致更新失败。失败的原因会在共享存储目标硬盘栏进行提示。
 
 ![](/storage/vnas/manual/_images/shared_targets.png)
@@ -141,7 +140,6 @@ QingCloud 为您提供的 NAS 服务是基于标准的 NFS 和 Samba（CIFS）�
 
 对 NAS 服务器扩容需要先关闭服务器，然后点击右键，选择『更改配置』，选择你需要的服务器类型，点击确定，然后启动服务器即可。
 
-
 >
 >当关闭服务器进行扩容时，务必在客户端停止对共享目标的访问，并执行 umount 操作。
 
@@ -194,7 +192,6 @@ mount -t nfs 192.168.100.2:/mnt/nas /mnt/nasdata
 mkdir /mnt/nasdata
 mount -t cifs -o username=smbtest,password=test123 //192.168.100.2/nas_smb /mnt/nasdata
 ```
-
 
 >
 >如果要关闭或终止 NAS 服务，以及修改共享存储目标硬盘，需要在客户端停止对共享存储目标的访问，并执行 umount 操作。
@@ -286,7 +283,6 @@ dd bs=64k count=40k if=/dev/zero of=testdata conv=fdatasync
 2684354560 bytes (2.7 GB) copied, 180.095 s, 14.9 MB/s
 2684354560 bytes (2.7 GB) copied, 192.331 s, 14.0 MB/s
 ```
-
 
 >
 >由于网络状况和客户端处理能力都会影响到NAS的IO性能，不同客户端的测试结果会有差异，对于IO性能和稳定性要求较高的业务，可先评估客户端的IO性能是否能满足需要。
