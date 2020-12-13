@@ -34,20 +34,6 @@ Section2:
       content: 
       url: "best-practices/data_transfer"
 
-section3:
-  title: 开发者指南
-  children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/qingstor/guide/object_manage"
-
-    - title: SDK 文档
-      content: 如何使用 SDK 文档
-      url: "/test/guide/object_manage"
-
-    - title: CLI 文档
-      content: 如何使用 CLI 文档
-      url: "/qingstor/guide/object_manage/"
 
 section4:
   children:

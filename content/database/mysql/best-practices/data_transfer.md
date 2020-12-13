@@ -6,9 +6,6 @@ draft: false
 
 「QingCloud MySQL Plus」的MySQL版本为8.0.19 & 5.7.29 & 5.6.42，且开启了 GTID 复制模式，因此从其他MySQL迁移数据时，需要通过导数据或者 QingCloud MySQL Plus 支持的数据导入服务的方式来进行。
 
-### 在线数据迁移
-
-参考[在线迁移服务](#在线迁移)。
 
 ### 数据导出
 
