@@ -8,8 +8,7 @@ type: "product"
 section1:
   title: Virtual NAS
   vice_title: QingCloud 为您提供的 Virtual NAS 服务是基于标准的 NFS 和 Samba（CIFS）网络协议实现的数据传输，通过创建一个 NAS 服务器，您可以在多个主机客户端以及不同的操作系统间进行数据共享。同时提供权限组和账号配置功能，便于您对主机客户端进行访问控制和管理配置。
-  video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
-  video_img: "/images/video.png"
+
 
 Section2:
   title: 用户指南
@@ -17,6 +16,21 @@ Section2:
     - title: Virtual NAS
       content: Virtual NAS 产品使用文档
       url: "/storage/vnas/manual/vnas"
+
+section3:
+  title: 开发者指南
+  children:
+    - title: API 文档
+      content: 如何使用 API 文档
+      url: "/development_docs/api/"
+
+    - title: SDK 文档
+      content: 如何使用 SDK 文档
+      url: "/development_docs/sdk/"
+
+    - title: CLI 文档
+      content: 如何使用 CLI 文档
+      url: "/development_docs/cli/"
 
 section4:
   children:
