@@ -35,15 +35,14 @@
 
 	function get_fix_count(){
 		var url_path = GetUrlRelativePath();
-		$.getJSON("/doc_fix_count.json", function (data){
-			if(!data || !data.hasOwnProperty(url_path)){
-				return false
+		$.ajax({
+			url: '/doc.php',
+			method: 'POST',
+			dataType: 'json',
+			data: {url_path:url_path},
+			success:function(data){
+				$('.doc_fix_click[data-flag="1"]').children('span').html(data.fixed);
+				$('.doc_fix_click[data-flag="0"]').children('span').html(data.unfixed);
 			}
-			if(data[url_path].hasOwnProperty('fixed')){
-				$('.doc_fix_click[data-flag="1"]').children('span').html(data[url_path]['fixed']);
-			}
-			if(data[url_path].hasOwnProperty('unfixed')){
-				$('.doc_fix_click[data-flag="0"]').children('span').html(data[url_path]['unfixed']);
-			}
-		})
+		});
 	}

@@ -8,7 +8,7 @@ draft: false
 
 这里显示了集群的基本信息。
 
-![基本属性](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/basic_info.png)
+![](../../_images/basic_info.png)
 
 
 ## 服务端口信息
@@ -21,7 +21,7 @@ draft: false
 
 - 高可用 Proxy IP：始终指向 Proxy 实例的 Master 节点。
 
-![端口信息](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/port_info.png)
+![](../../_images/port_info.png)
 
 **注解**:
 
@@ -32,19 +32,19 @@ draft: false
 
 点开基本属性旁边的下拉按钮，可以看到提供的服务功能。
 
-![服务功能](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/service_list.png)
+![](../../_images/service_list.png)
 
 ## 节点列表
 
 显示了每个节点的服务状态。如果需要下载日志，需要点击标志，展示 IP 后进行下载。
 
-![节点列表](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/node_list.png)
+![](../../_images/node_list.png)
 
 ## 配置参数
 
 这里列出了可以修改并持久化的配置参数。没有标注会重启服务的参数，都可以运行时修改，对服务没有影响。
 
-![配置参数](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/env.png)
+![](../../_images/env.png)
 
 **注解**：会自动重启服务的参数已经在描述中说明，请在业务低峰时进行修改。
 
@@ -60,26 +60,26 @@ draft: false
 
 可以对集群节点配置告警策略，及时掌握集群的资源和服务状况。
 
-![监控告警](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/alarm.png)
+![](../../_images/alarm.png)
 
 ## 备份恢复
 
 可以对集群进行手动备份，也可以在集群列表页面右键选择备份时间进行自动备份。
 
-![手动备份](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/backup.png)
-![自动备份](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/auto_backup.png)
+![手动备份](../../_images/backup.png)
+![自动备份](../../_images/auto_backup.png)
 
 如果需要从备份创建出一个独立于原有数据库服务的新数据库服务， 可以在详情页的『备份』标签下右键相应的备份点，再选择『从备份创建集群』即可。
 
-![恢复集群](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/restore.png)
+![恢复集群](../../_images/restore.png)
 
 **注解**：仅备份主实例的主节点。恢复集群时会保留原集群的数据库账号密码。
 
-###节点状态
+## 节点状态
 
 展示主实例的角色信息。
 
-![节点状态](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/display_nodeinfo.png)
+![节点状态](../../_images/display_nodeinfo.png)
 
 **注解**：基础版集群不具备该功能。
 
@@ -87,4 +87,4 @@ draft: false
 
 展示除运维账号外的 MySQL 账号。
 
-![账号](C:/Original_qingcloud_doc/qingcloud-iaas-docs-master/database_cache/app_mysql_plus/_images/display_userlist.png)
+![账号](../../_images/display_userlist.png)
