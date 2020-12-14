@@ -249,7 +249,7 @@ tmpfs           499M     0  499M   0% /dev/shm
 
 ![图片](/storage/disk/quickstart/_images/image-1568779069613.png)
 
-### 硬盘容量小于2tb的初始化办法
+### 硬盘容量小于2TB的初始化办法
 
 #### 使用fdisk工具分区
 
@@ -313,7 +313,7 @@ tmpfs           499M     0  499M   0% /dev/shm
 
 ![图片](/storage/disk/quickstart/_images/image-1568775049276.png)
 
-### 硬盘容量大于2tb的初始化办法
+### 硬盘容量大于2TB的初始化办法
 
 #### 使用parted工具分区
 
