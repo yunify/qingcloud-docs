@@ -40,19 +40,19 @@ draft: false
 
 1、登录青云[终端控制台](https://console.qingcloud.com/)，切换至“计算”--“主机”。在要克隆的主机上点击鼠标右键，在弹出的菜单中选择“克隆主机”。
 
-![](/compute/vm/manual/_images/20190922-223750.png)
+![](/compute/vm/manual/_images/clone-01.png)
 
 或者勾选要克隆的主机，点击“更多操作”，在下拉菜单中点击“克隆主机”。
 
-![](/compute/vm/manual/_images/20190922-224131.png)
+![](/compute/vm/manual/_images/clone-02.png)
 
 2、在弹出的提示框中，您可选择克隆主机的目标网络，之后点击“确定”，触发克隆主机任务。
 
-![](/compute/vm/manual/_images/20190922-224847.png)
+![](/compute/vm/manual/_images/clone-03.png)
 
-默认目标网络是原主机的网络，点击“编辑”可以选择新主机要加入的网络并指定 IP 地址，如果不指定 IP 地址则由系统分配。
+默认目标网络是原主机的网络，点击“编辑”可以选择新主机要加入的网络。
 
-![](/compute/vm/manual/_images/20190922-225258.png)
+![](/compute/vm/manual/_images/clone-04.png)
 
 >注解
 克隆原主机需要原主机使用的镜像是可用状态。如果原主机启动的镜像被删除了的话，克隆会失败。

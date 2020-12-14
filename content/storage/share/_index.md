@@ -16,26 +16,11 @@ Section2:
   children:
     - title: vSAN
       content: Virtual SAN 共享存储产品用户使用文档
-      url: "/storage/vnas/manual/vnas"
+      url: "/storage/share/manual/vsan"
 
     - title: NeonSAN
       content: 企业级分布式 SAN (NeonSAN)使用文档
       url: "/storage/disk/manual/neonsan_volume"
-
-section3:
-  title: 开发者指南
-  children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/development_docs/api/"
-
-    - title: SDK 文档
-      content: 如何使用 SDK 文档
-      url: "/development_docs/sdk/"
-
-    - title: CLI 文档
-      content: 如何使用 CLI 文档
-      url: "/development_docs/cli/"
 
 section4:
   children:
@@ -47,23 +32,10 @@ section4:
           url: "/storage/share/intro/introduction"
 
         - title: 产品优势
-          url: ""
+          url: "https://www.qingcloud.com/products/neon-san-and-virtual-san/"
 
         - title: 应用场景
-          url: ""
-
-    - title: 上手：创建共享存储与部署应用
-      content: 虚拟共享存储为用户提供可无限扩展的通用数据存储服务。
-      vice_title: 上手的第一步
-      children: 
-        - title: 创建与使用青云共享存储
-          url: "/compute/vm/test1_3/test1_3_2"
-
-        - title: 基于共享存储搭建 Wordpress 网站
-          url: "/compute/vm/test1_3/test1_3_2"
-
-        - title: 基于共享存储创建镜像
-          url: "/compute/vm/test1_3/test1_3_2"
+          url: "https://www.qingcloud.com/products/neon-san-and-virtual-san/"
 ---
 
 
