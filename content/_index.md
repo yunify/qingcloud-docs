@@ -1,5 +1,5 @@
 ---
-title: "Document"
+title: "文档"
 linkTitle: "Document"
 
 section1:

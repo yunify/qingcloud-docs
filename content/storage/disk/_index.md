@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: 硬盘
-  vice_title: 青云 QingCloud 平台支持多种块存储类型，包括：基础型、 SSD 企业型、性能型、超高性能型、超高性能容量型 (NeonSAN) 、容量型。
+  vice_title: 青云 QingCloud 平台支持多种块存储类型，包括：基础型、 SSD 企业型、企业级分布式 SAN 、容量型。
   video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
   video_img: "/images/video.png"
 
@@ -35,15 +35,11 @@ section3:
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: ""
+      url: "/development_docs/api/"
 
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: ""
-
-    - title: CLI 文档
-      content: 如何使用 CLI 文档
-      url: ""
+      url: "/development_docs/sdk/"
 
 section4:
   children:
@@ -52,13 +48,13 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品概述（从这里进入示例目录）
-          url: ""
+          url: "/storage/disk/intro/introduction"
 
         - title: 产品优势
-          url: ""
+          url: "https://www.qingcloud.com/products/volume/"
 
         - title: 应用场景
-          url: ""
+          url: "https://www.qingcloud.com/products/volume/"
 
     - title: 上手：创建硬盘与部署应用
       content: 虚拟硬盘为用户提供可无限扩展的通用数据存储服务。
@@ -70,11 +66,6 @@ section4:
         - title: 主机系统盘扩容
           url: "/storage/disk/quickstart/system_volume_resize"
 
-        - title: 基于硬盘搭建 Wordpress 网站
-          url: ""
-
-        - title: 基于硬盘创建镜像
-          url: ""
 ---
 
 

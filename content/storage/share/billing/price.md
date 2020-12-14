@@ -43,7 +43,7 @@ draft: false
 
 ### 预留合约
 
-![](_images/reserved_contract.png)
+![](/storage/share/billing/_images/reserved_contract.png)
 
 首先用户需要与青云QingCloud 签署一份“预留合约”，在申请合约时主要涉及以下几个概念：
 
@@ -67,10 +67,10 @@ draft: false
 
 与合约关联的实例被称为“预留资源”。合约生效期间用户可以手动将符合实例配置条件的资源进行绑定或解绑的操作。
 
-![](_images/reserved_resources.png)
+![](/storage/share/billing/_images/reserved_resources.png)
 
 绑定成功之后该实例将不再使用“按需计费”的模式，解绑成功之后则恢复“按需计费”。
 
 另外，合约详情页面也支持直接创建相应配置的新实例（主机）并直接与合约绑定。
 
-![](_images/create_reserved_resources.png)
+![](/storage/share/billing/_images/create_reserved_resources.png)

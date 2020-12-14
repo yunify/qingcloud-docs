@@ -8,34 +8,46 @@ type: "product"
 section1:
   title: MySQL Plus
   vice_title: 基于 MySQL 提供的数据库服务，支持一主多从高可用架构，集成 InnoDB + TokuDB 双存储引擎，支持自动备份、监控告警等管理功能
-  video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
+  video: "https://pek3a.qingstor.com/workshop/CloudOperation_100P003C201908_MySQLPlus%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8.mp4"
   video_img: "/images/video.png"
 
 Section2:
   title: 用户指南
   children:
+    - title: 产品简介
+      content: 产品简介
+      url: "intro/introduction"
+
+    - title: 计费指南
+      content: 计费指南
+      url: "billing/price"
+
+    - title: 快速入门
+      content: 快速入门
+      url: "quickstart/quick_start"
+
     - title: 操作指南
       content: 学习上手如何管理MySQL Plus集群，以及如何使用MySQL Plus提供的相关服务等。
       url: "manual/cluster_info"
 
     - title: 最佳实践
       content: 
-      url: "best-practices/"
+      url: "best-practices/data_transfer"
 
 section3:
   title: 开发者指南
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/qingstor/guide/object_manage"
+      url: "/development_docs/api/"
 
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: "/test/guide/object_manage"
+      url: "/development_docs/sdk/"
 
     - title: CLI 文档
       content: 如何使用 CLI 文档
-      url: "/qingstor/guide/object_manage/"
+      url: "/development_docs/cli/"
 
 section4:
   children:
@@ -48,7 +60,7 @@ section4:
         - title: 产品系列
           url: "/database/mysql/intro/list"
 
-        - title: 产品优势
+        - title: 产品特性
           url: "/database/mysql/intro/superiority"
 
     - title: 进阶

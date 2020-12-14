@@ -8,46 +8,57 @@ type: "product"
 section1:
   title: 主机
   vice_title: QingCloud 为您提供秒级响应、性能卓越、安全稳定的云计算服务
-  video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
-  video_img: "/images/video.png"
+
 
 Section2:
   title: 用户指南
   children:
-    - title: 主机
-      content: 主机产品用户使用文档
+    - title: 产品简介
+      content: 主机产品简介
       url: "/compute/vm/intro/instance"
 
-    - title: 映像
-      content: 映像使用文档
-      url: "/compute/vm/intro/image"
+    - title: 计费指南
+      content: 主机产品计费指南
+      url: "/compute/vm/billing/price"
 
-    - title: SSH 密钥
-      content: 如何使用 SSH 密钥
-      url: "/compute/vm/intro/ssh"
+    - title: 操作指南
+      content: 主机产品操作指南
+      url: "/compute/vm/manual/connect_instance"
     
-    - title: 设备
-      content: 设备使用方式
-      url: "/compute/vm/intro/device"
 
-    - title: 安置策略组
-      content: 如何使用安置策略组
-      url: "/compute/vm/intro/instance_group"
+    - title: 最佳实践
+      content: 主机产品最佳实践
+      url: "/compute/vm/best-practices/wordpress"
+
+    - title: 常见问题
+      content: 主机产品常见问题
+      url: "/compute/vm/faq/faq"
+
 
 section3:
   title: 开发者指南
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/qingstor/guide/object_manage"
+      url: "/development_docs/api/"
 
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: "/test/guide/object_manage"
+      url: "/development_docs/sdk/"
 
-    - title: CLI 文档
-      content: 如何使用 CLI 文档
-      url: "/qingstor/guide/object_manage/"
+
+section3:
+  title: 开发者指南
+  children:
+    - title: API 文档
+      content: 如何使用 API 文档
+      url: "/development_docs/api/"
+
+    - title: SDK 文档
+      content: 如何使用 SDK 文档
+      url: "/development_docs/sdk/"
+
+
 
 section4:
   children:

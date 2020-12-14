@@ -7,29 +7,49 @@ type: "product"
 
 section1:
   title: 弹性容器实例
-  vice_title: 弹性容器实例集成了云平台主机，存储以及网络等资源，在云平台上只需要完成指定容器镜像，指定存储卷，配置网络和指定基本信息四步，便可快速地创建弹性容器实例 ，以容器为单位支持容器地自动巡检和修复。
+  vice_title: 弹性容器实例集成了云平台主机，存储以及网络等资源，在云平台上只需要完成指定容器镜像，指定存储卷，配置网络和指定基本信息四步，便可快速地创建弹性容器实例 ，以容器为单位支持容器自动巡检和修复。
 
 Section2:
   title: 用户指南
   children:
-    - title: 弹性容器实例
-      content: 弹性容器实例用户使用文档
+    - title: 产品简介
+      content: 产品简介
+      url: "/container/qci/intro/introduction"
+
+    - title: 计费指南
+      content: 计费指南
+      url: "/container/qci/billing/price"
+
+    - title: 快速入门
+      content: 快速入门
+      url: "/container/qci/quickstart/quick_start"
+
+    - title: 操作指南
+      content: 操作指南
       url: "/container/qci/manual/operation"
+
+    - title: 最佳实践
+      content: 最佳实践
+      url: "/container/qci/best-practices/jenkins"
+
+    - title: 常见问题
+      content: 常见问题
+      url: "/container/qci/faq/faq"
 
 section3:
   title: 开发者指南
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: ""
+      url: "/development_docs/api/"
 
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: ""
+      url: "/development_docs/sdk/"
 
     - title: CLI 文档
       content: 如何使用 CLI 文档
-      url: ""
+      url: "/development_docs/cli/"
 
 section4:
   children:
@@ -40,14 +60,8 @@ section4:
         - title: 产品概述（从这里进入示例目录）
           url: "/container/qci/intro/introduction"
 
-        - title: 产品优势
-          url: "/container/qci/manual/operation#简介"
-
-        - title: 应用场景
-          url: "/container/qci/best-practices/jenkins"
-
     - title: 上手：创建弹性实例与部署应用
-      content: 虚拟硬盘为用户提供灵活的Serverless 容器运行服务。
+      content: 弹性容器实例为用户提供灵活的Serverless 容器运行服务。
       vice_title: 上手的第一步
       children: 
         - title: 使用青云弹性容器 (QCI) 实例搭建一个Jenkins服务器

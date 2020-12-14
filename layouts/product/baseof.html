@@ -4,10 +4,9 @@
     {{ partial "head.html" . }}
   </head>
   <body class="td-{{ .Kind }}">
-    <header>
+    <header {{if eq .Site.Params.IsConsole true}} style="display:none;"  {{end}}>
       {{ partial "navbar.html" . }}
-    </header>
-    
+    </header> 
 <main role="main" class="td-main">
 {{ with .Params.section1 }}
 <div class="hero-body hero-body-product">
@@ -50,7 +49,7 @@
 							{{ end }}
 							<a href="{{ .url }}" class="card-link">了解更多 →</a>
 						</div>
-						<a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}');"><i class="fa fa-download"></i>PDF</a>
+						<a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}','{{ .title }}');"><i class="fa fa-download"></i>PDF</a>
 					</div>
 				</div>
 			{{ end }}
@@ -75,7 +74,7 @@
 							<p class="card-text">{{ .content | markdownify }}</p>
 							<a href="{{ .url }}" class="card-link">了解更多 →</a>
 						</div>
-						<a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}');"><i class="fa fa-download"></i>PDF</a>
+						<a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}','{{ .title }}');"><i class="fa fa-download"></i>PDF</a>
 					</div>
 				</div>
 			{{ end }}
@@ -125,7 +124,7 @@
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" style="max-width: 800px;">
 			<div class="modal-content">
-				<video width="800" height="400" class="product-video" controls="controls" src="{{ .video }}"></video>
+				<video id="video" width="800" height="400" class="product-video" controls="controls" src="{{ .video }}"></video>
 			</div>
 		</div>
 </div>

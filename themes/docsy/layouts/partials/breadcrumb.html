@@ -1,4 +1,5 @@
 <div class="container is-size-7 {{ if and (ne .Params.LinkTitle "Document") (ne .Params.type "product")}}doc-container-width {{ end }}" data-path="1">
+<a href="/" class="has-text-primary">文档</a><img class="container_span_space" src="/images/icons/path.svg">
 {{ if ne .Params.LinkTitle "Document"}}
 	<!-- console嵌入时产品页不要面包屑导航 -->
 	{{ if or (ne .Params.type "product") (ne .Site.Params.IsConsole true) }}
@@ -14,17 +15,10 @@
   {{ end }}
 {{ end }}
 {{ if eq .p1 .p2 }}
-	{{if eq .p1.LinkTitle "搜索"}}
-	<a href="/" class="has-text-primary">Document</a><img class="container_span_space" src="/images/icons/path.svg">
-	{{ end }}
 <span class="crumb-last-color">{{ .p1.LinkTitle }}</span>
 {{ else}}
 	
-	{{if eq .p1.LinkTitle "Document"}}
-		{{if ne .p1.Site.Params.IsConsole true}}
-			<a href="/" class="has-text-primary">{{ .p1.LinkTitle }}</a><img class="container_span_space" src="/images/icons/path.svg">
-		{{ end }}
-	{{ else}}
+	{{if ne .p1.LinkTitle "Document"}}
 	<a href="{{ .p1.RelPermalink }}" class="has-text-primary">{{ .p1.LinkTitle }}</a><img class="container_span_space" src="/images/icons/path.svg">
 	{{ end }}
 
