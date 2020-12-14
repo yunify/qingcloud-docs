@@ -18,9 +18,9 @@ Section2:
       content: 防火墙产品简介
       url: "/security/security_group/intro/introduction"
 
-    - title: 防火墙使用指南
-      content: 防火墙使用文档
-      url: "/security/security_group/manual/sg_user_guide"
+    - title: 操作指南
+      content: 防火墙操作文档
+      url: "/security/security_group/manual/sg_create"
 
 section3:
   title: 开发者指南
