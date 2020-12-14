@@ -22,7 +22,6 @@ Section2:
       content: 企业级分布式 SAN (NeonSAN)使用文档
       url: "/storage/disk/manual/neonsan_volume"
 
-
 section4:
   children:
     - title: 了解：什么是共享存储
