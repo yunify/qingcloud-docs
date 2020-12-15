@@ -20,7 +20,7 @@ draft: false
 | val3 | String | 静态路由是否发布 | No |
 | disabled | Integer | 是否禁用静态路由 | No |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

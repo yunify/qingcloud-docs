@@ -28,7 +28,7 @@ draft: false
 | offset | Integer | 数据偏移量, 默认为0 | No |
 | limit | Integer | 返回数据长度，默认为20，最大100 | No |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

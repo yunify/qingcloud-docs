@@ -16,7 +16,7 @@ draft: false
 | parameters | List of dictionary | 配置项，例如 [{“long_query_time”: 5, {“back_log”: 1024}}] | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

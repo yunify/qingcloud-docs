@@ -15,7 +15,7 @@ draft: false
 | clusters.n | String | 待恢复的集群ID | Yes |
 | zone | String | 区域ID，注意id需要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

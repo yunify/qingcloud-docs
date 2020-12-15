@@ -16,7 +16,7 @@ draft: false
 | rtables.n | String | 一个或多个路由表的ID | No |
 | resources.n | String | 一个或多个资源的ID，比如路由器ID，NAT网关的ID，负载均衡器的ID | No |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

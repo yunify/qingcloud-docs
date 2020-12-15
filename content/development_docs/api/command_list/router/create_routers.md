@@ -24,7 +24,7 @@ draft: false
 | zone | String | 区域 ID，注意要小写 | Yes |
 | target_user | String | 目标用户 ID ，可用于主账号为其子账号创建资源。 | No |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

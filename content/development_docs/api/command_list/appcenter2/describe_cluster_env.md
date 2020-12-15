@@ -15,7 +15,7 @@ draft: false
 | cluster | String | 集群ID | Yes |
 | role | String | 将要获取环境变量的角色，可留空 | No |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 
