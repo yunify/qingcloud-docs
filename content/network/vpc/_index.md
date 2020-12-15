@@ -41,7 +41,7 @@ Section2:
 
     - title: 常见问题
       content: 常见问题
-      url: "/network/vpc/faq/faq"
+      url: "/network/vpc/faq/vpc_faq"
 
 section3:
   title: 开发者指南
