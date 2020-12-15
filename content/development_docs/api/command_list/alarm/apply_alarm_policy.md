@@ -17,7 +17,7 @@ draft: false
 | alarm_policy | String | 要应用生效的监控告警策略 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

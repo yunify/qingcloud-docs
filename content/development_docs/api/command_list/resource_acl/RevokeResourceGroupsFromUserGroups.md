@@ -18,7 +18,7 @@ draft: false
 | user_groups.n | String | 用户组ID。如果传参，会将该用户组的所有授权关系取消。 | No |
 | group_roles.n | String | 角色ID。如果传参，会将该角色的所有授权关系取消。 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Example**
 

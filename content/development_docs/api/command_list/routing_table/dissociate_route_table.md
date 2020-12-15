@@ -16,7 +16,7 @@ draft: false
 | resource | String | 资源ID, 可以是负载均衡器ID，也可以是私有网络ID | Yes |
 | routing_table | String | 路由表ID | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

@@ -15,7 +15,7 @@ draft: false
 | cluster | String | 集群ID | Yes |
 | display_tabs | String | display tabs的名称 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

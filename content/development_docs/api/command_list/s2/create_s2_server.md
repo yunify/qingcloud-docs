@@ -23,7 +23,7 @@ draft: false
 | s2_class | Integer | 性能型和高性能型共享服务，性能型：0，高性能型：1 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

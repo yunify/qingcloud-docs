@@ -16,7 +16,7 @@ draft: false
 | routing_table | String | 路由表的ID | Yes |
 | routing_table_name | String | 路由表的名称 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

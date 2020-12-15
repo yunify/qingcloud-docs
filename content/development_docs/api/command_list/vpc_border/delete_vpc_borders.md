@@ -15,7 +15,7 @@ draft: false
 | --- | --- | --- | --- |
 | vpc_borders | List | 需要删除的边界路由器 ID | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 
