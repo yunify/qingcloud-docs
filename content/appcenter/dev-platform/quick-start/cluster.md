@@ -1,6 +1,6 @@
 ---
 title: "云应用入门指南"
-date: 2020-11-11T00:00:00+09:00
+date: 2020.11.11T00:00:00+09:00
 draft: false
 collapsible: false
 weight: 2
