@@ -17,7 +17,7 @@ draft: false
 | description | String | 描述 | No |
 | status | String | 用户组状态 | No |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Example**
 

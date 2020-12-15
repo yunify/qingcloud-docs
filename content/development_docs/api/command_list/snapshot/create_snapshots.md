@@ -17,7 +17,7 @@ draft: false
 | is_full | Integer | 是否创建全量备份，1表示创建新的全量备份点，0表示由系统决定创建全量备份点还是增量备份点 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

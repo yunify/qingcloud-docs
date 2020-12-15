@@ -16,7 +16,7 @@ weight: 7
 | instances.n | String | 一个或多个主机ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

@@ -14,7 +14,7 @@ weight: 16
 | instance_groups.n | String | 虚拟主机分组 ID 列表 | Yes |
 | zone | String | 区域 ID | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

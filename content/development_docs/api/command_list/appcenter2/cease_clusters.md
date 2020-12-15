@@ -16,7 +16,7 @@ draft: false
 | --- | --- | --- | --- |
 | clusters.n | String | 将要启动的集群ID | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

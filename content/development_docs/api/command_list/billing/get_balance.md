@@ -12,7 +12,7 @@ draft: false
 
 没有特殊的参数
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

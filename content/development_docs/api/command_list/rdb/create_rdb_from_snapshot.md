@@ -23,7 +23,7 @@ draft: false
 | auto_backup_time | Integer | 自动备份时间，有效值0-23，任何大于23的整型值均表示关闭自动备份，忽略的话会随机选择一个自动备份时间 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

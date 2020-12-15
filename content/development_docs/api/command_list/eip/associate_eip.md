@@ -22,7 +22,7 @@ draft: false
 | force | Boolean | 是否强制绑定 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

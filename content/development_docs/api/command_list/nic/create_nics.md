@@ -18,7 +18,7 @@ draft: false
 | private_ips.n | String | 网卡对应的IP地址， 默认会为每个网卡分配一个地址 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

@@ -16,7 +16,7 @@ draft: false
 | resource_group | String | 资源组ID | Yes |
 | resources.n | String | 资源 ID | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Example**
 

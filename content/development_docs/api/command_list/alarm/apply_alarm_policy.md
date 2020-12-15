@@ -8,7 +8,7 @@ draft: false
 
 应用监控告警策略。当告警策略的属性、规则或告警行为发生改变后， 新规则不会即刻生效需要调用本 API 才会生效。
 
-某个告警策略是否被应用过，可通过 [_DescribeAlarmPolicies_](describe_alarm_policies.html#api-describe-alarm-policies) 返回的 is_applied 属性判断，
+某个告警策略是否被应用过，可通过 [_DescribeAlarmPolicies_](../describe_alarm_policies) 返回的 is_applied 属性判断，
 
 **Request Parameters**
 
@@ -17,7 +17,7 @@ draft: false
 | alarm_policy | String | 要应用生效的监控告警策略 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

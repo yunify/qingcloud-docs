@@ -21,7 +21,7 @@ draft: false
 | s2_servers.n | String | 共享存储服务器ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 
