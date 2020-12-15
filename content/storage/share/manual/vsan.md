@@ -13,15 +13,14 @@ keyword: 青云
 
 本指南旨在介绍如何配置 Virtual SAN 和目标，以及如何设置客户端来访问 Virtual SAN。
 
-注解
-
-如果将一块硬盘通过 Virtual SAN 服务挂载到多台主机上，那么必须通过分布式文件系统（Distributed File System）的支持才可以并行读写，可以使用青云已经推出的 [_NAS 服务_](https://docs.qingcloud.com/product/storage/shared/vsan#guide-vnas) 。
+> 注解
+> 
+> 如果将一块硬盘通过 Virtual SAN 服务挂载到多台主机上，那么必须通过分布式文件系统（Distributed File System）的支持才可以并行读写，可以使用青云已经推出的 [_NAS 服务_](https://docsv3.qingcloud.com/storage/vnas/manual/vnas) 。
 
 ## 创建 Virtual SAN 服务器
 
 在本例中，我们会创建一台提供 Virtual SAN 的服务器。
-
-在控制台导航中点击『存储』-『Virtual SAN』进入列表页面，然后点击『创建』按钮开始创建。
+在控制台导航中点击『产品与服务』-『存储服务』-『共享存储 』-『Virtual SAN』进入列表页面，然后点击『创建』按钮开始创建。
 
 Virtual SAN 服务提供两种主机类型：基础型和企业型：
 
@@ -41,15 +40,13 @@ Virtual SAN 服务提供两种主机类型：基础型和企业型：
 
 接下来我们要为之前创建的 Virtual SAN 添加目标。
 
-在控制台导航中点击『存储』-『Virtual SAN』进入列表页面，然后点击之前我们创建的 Virtual SAN 服务器。 进入到 Virtual SAN 服务器的详细信息后，点击『创建目标门户组』。
+在控制台导航中点击『产品与服务』-『存储服务』-『共享存储 』-『Virtual SAN』进入列表页面，然后点击之前我们创建的 Virtual SAN 服务器。 进入到 Virtual SAN 服务器的详细信息后，点击『创建目标门户组』。
 
 **第一步：选择基本配置**
 
 在创建对话框中，你需要为目标指定 iSCSI 标识，你也可以输入一个短名（中间不允许有空格，下划线等），青云会自动帮你生成合法的 iSCSI 标识。
 
 格式是：“iqn” + “.” + “年月” + “.” + “域名的颠倒” + “:” + “设备的具体名称”，之所以颠倒域名是为了避免可能的冲突。
-
-/storage/share/manual/_images
 
 ![](/storage/share/manual/_images/create_s2_server_target.png)
 
@@ -87,7 +84,7 @@ Debian/Ubuntu: apt-get install open-iscsi
 
 **配置 initiator name**
 
-编辑 ``/etc/iscsi/initiatorname.iscs``i，加入 ``InitiatorName``。 如果你在配置目标时设置了 iSCSI 客户端的 initiator name，请保证这两个名称一致，否则后面的登录操作会失败。
+编辑 ``/etc/iscsi/initiatorname.iscsi``，加入 ``InitiatorName``。 如果你在配置目标时设置了 iSCSI 客户端的 initiator name，请保证这两个名称一致，否则后面的登录操作会失败。
 
 ```
 InitiatorName=iqn.1993-08.org.debian:01:967eaffe29d7
@@ -174,7 +171,7 @@ iscsiadm -m node --logout
 >注解
 默认勾选“将此连接添加到收藏目标列表”，意思就是，系统启动会自动连接存储设备。
 
-点击确定，就能够连接，然后我们就可以向操作普通磁盘一样，对其格式化，分区等等。
+点击确定，就能够连接，然后我们就可以像操作普通磁盘一样，对其格式化，分区等等。
 
 ## 公网访问 Virtual SAN
 
