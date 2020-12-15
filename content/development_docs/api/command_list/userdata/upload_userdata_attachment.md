@@ -8,7 +8,7 @@ draft: false
 
 上传一个压缩包型的 User Data，此 API 需使用 POST 方法。
 
-若上传成功，会返回一个 attachment_id，用于之后的 [_RunInstances_](../instance/run_instances.html#api-run-instances) 调用；若上传失败，则返回错误信息。
+若上传成功，会返回一个 attachment_id，用于之后的 [_RunInstances_](../../instance/run_instances) 调用；若上传失败，则返回错误信息。
 
 支持的上传压缩包种类为 zip，tar，tgz，tbz，最大尺寸为 2M。用户读取该压缩包的内容后，需将其 Base64 编码后的内容作为 API 的参数。
 
@@ -20,7 +20,7 @@ draft: false
 | attachment_name | String | 文件名称 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

@@ -16,7 +16,7 @@ weight: 14
 | instances.n | String | 主机 ID 列表 | Yes |
 | zone | String | 区域 ID | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

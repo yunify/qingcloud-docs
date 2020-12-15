@@ -18,7 +18,7 @@ draft: false
 | private_ips.n.private_ip | String | 为该缓存节点指定的IP，例如 “192.168.1.21”。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

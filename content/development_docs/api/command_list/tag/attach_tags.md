@@ -23,7 +23,7 @@ draft: false
 | resource_type | String | 资源类型, 见下面 [支持的资源列表](#id1) |
 | resource_id | String | 资源 ID |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

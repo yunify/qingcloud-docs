@@ -15,6 +15,6 @@ CDN 的全称是 Content Delivery Network，即内容分发网络。通过在网
 *   **智能DNS:** 他的作用是根据用户的网络状况，把用户的请求指向最适合用户的缓存服务器。
 
 
-![](/network&cdn/cdn/_images/cdn_principle.png)
+![](/network/cdn/_images/cdn_principle.png)
 
 

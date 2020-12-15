@@ -18,7 +18,7 @@ draft: false
 | private_ips.n.private_ips | String | 为该角色缓存节点指定的IP列表, 如果该角色存在多个节点，IP之间”,” 号分隔，例如 “192.168.1.21,192.168.1.22”。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 
