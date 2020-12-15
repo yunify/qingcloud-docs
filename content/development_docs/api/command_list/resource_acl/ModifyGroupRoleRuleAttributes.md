@@ -16,7 +16,7 @@ draft: false
 | description | String | 描述 | No |
 | policy | String | 策略，参考 AddGroupRoleRules 里的描述。 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Example**
 

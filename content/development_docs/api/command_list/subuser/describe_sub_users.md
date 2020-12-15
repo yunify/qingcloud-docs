@@ -17,7 +17,7 @@ draft: false
 | offset | Integer | 结果集偏移量，默认为0 | No |
 | limit | Integer | 结果集长度，默认为20 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

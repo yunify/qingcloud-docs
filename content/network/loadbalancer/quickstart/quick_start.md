@@ -73,7 +73,7 @@ draft: false
 
 
 
-[![](../../manual/_images/create_lb_server_cert.png)](../_images/create_lb_server_cert.png)
+![](../../manual/_images/create_lb_server_cert.png)
 
 第二步：创建一个负载均衡器
 
@@ -90,7 +90,7 @@ draft: false
 
 
 
-[![](../../manual/_images/create_https_listener.png)](../_images/create_https_listener.png)
+![](../../manual/_images/create_https_listener.png)
 
 第四步：添加后端服务器
 

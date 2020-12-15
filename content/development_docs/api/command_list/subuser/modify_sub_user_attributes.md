@@ -17,7 +17,7 @@ draft: false
 | nologin | Integer | 是否允许子帐户通过控制台登录，0 可能登录，1 不能登录。默认为 0。 | No |
 | notify_email | String | 通知邮箱。 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

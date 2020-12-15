@@ -21,7 +21,7 @@ draft: false
 | cipher_alg | String | 加密使用的算法类型:<br/>目前仅支持 aes256，默认 aes256 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

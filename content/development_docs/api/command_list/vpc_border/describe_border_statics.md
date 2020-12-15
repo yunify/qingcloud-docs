@@ -21,7 +21,7 @@ draft: false
 | limit | Integer | 返回数据长度，默认为20 | No |
 | verbose | Integer | verbose等级，数值越大，返回的信息越多 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

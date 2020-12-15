@@ -14,7 +14,7 @@ draft: false
 | --- | --- | --- | --- |
 | eips.n | String | 将要解绑的公网IP的ID，可以通过_DescribeClusterNodes_获取节点绑定的公网IP的ID | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

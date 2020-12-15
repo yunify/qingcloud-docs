@@ -16,7 +16,7 @@ draft: false
 | resource_group | String | 资源组ID | Yes |
 | resources.n | String | 资源ID | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Example**
 
