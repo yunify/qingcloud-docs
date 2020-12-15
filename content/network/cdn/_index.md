@@ -37,9 +37,9 @@ section4:
         - title: CDN 产品概述
           url: "intro/cdn"
     - title: 进阶
-      content: 如何配置及管理 CDN 服务
+      content: 熟悉 CDN 服务的创建流程
       children:
-        - title: 如何创建 CDN 服务？如何管理 CDN 服务策略？
+        - title: 如何创建 CDN 服务？
           url: "manual/cdn_user_guide"
 
 ---
