@@ -12,7 +12,7 @@ draft: false
 
 如果需要发票，请到 [发票管理](https://console.qingcloud.com/finance/invoices/) 提出申请。
 
-青云执行按用量收费原则，即，您只需要为您使用了的资源付费，并且计费是按秒进行的，并且不设最低消费指标。
+青云执行按用量收费原则，即您只需要为您使用了的资源付费，并且计费是按秒进行的，并且不设最低消费指标。
 
 您随时可以在 WEB 控制台中查询消费情况 [消费统计](https://console.qingcloud.com/finance/statistic/) 。
 
