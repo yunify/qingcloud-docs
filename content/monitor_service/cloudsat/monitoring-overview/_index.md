@@ -18,16 +18,16 @@ Section2:
  
     - title: 功能概述
       content: 功能概述
-      url: "/cloudsat/cloudsat/monitoring-overview/intro/intro/"
+      url: "/monitor_service/cloudsat/monitoring-overview/intro/intro/"
     
     
     - title: 操作指南
       content: 操作指南
-      url: "/cloudsat/cloudsat/monitoring-overview/manual/overview/"
+      url: "/monitor_service/cloudsat/monitoring-overview/manual/overview/"
     
     - title: 最佳实践
       content: 最佳实践
-      url: "/cloudsat/cloudsat/monitoring-overview/best-practices/resourceusagerank"
+      url: "/monitor_service/cloudsat/monitoring-overview/best-practices/resourceusagerank"
 
 
 ---

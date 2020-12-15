@@ -31,7 +31,7 @@ MetaData 是青云定义的一组关于主机运行参数的字段，主要包�
 | --- | --- | --- |
 | instance_id | String | 主机 ID |
 | instance_name | String | 主机名称 |
-| instance_type | String | 主机类型，为青云预定义的一些配置类型，可参考 [_Instance Types_](../api/common/includes/instance_type.html#instance-type) |
+| instance_type | String | 主机类型，为青云预定义的一些配置类型，可参考 [_Instance Types_](/development_docs/api/common/instance_type) |
 | vcpus_current | Integer | CPU 核数，有效值为 1, 2, 4 等 |
 | memory_current | Integer | 内存大小，单位 MB，有效值为 1024, 2048, 4096 等 |
 | image_id | String | 映像 ID |
