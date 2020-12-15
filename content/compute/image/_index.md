@@ -16,9 +16,6 @@ Section2:
       content: 映像产品简介
       url: "/compute/image/intro/image"
 
-    - title: 计费指南
-      content: 映像计费指南
-      url: "/compute/image/billing/price"
 
     - title: 操作指南
       content: 映像操作指南

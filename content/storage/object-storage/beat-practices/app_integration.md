@@ -6,7 +6,7 @@ draft: false
 weight: 3
 ---
 
-# 移动 App 接入方案
+
 
 伴随着移动互联网的浪潮，移动应用 App 的开发需求越来越多样化，无论何种功能都离不开文件存储。在以前，应用开发者需要自行开发构建文件服务器，用于保存数据文件，并面向互联网提供访问，例如社交网络中的用户照片，视频网站中的影音内容，电商平台中的商品图片。
 
@@ -301,7 +301,7 @@ QingStor 官方提供了一个签名服务器的 [样例](https://github.com/yun
 
 如果要自己开发签名服务，需要注意：
 
-1) 签名服务需要考虑 [JavaScript 客户端的特例](../api/common//signature.html#针对-javascript-客户端的特殊考虑)
+1) 签名服务需要考虑 [JavaScript 客户端的特例](/storage/object-storage/api/common/signature)
 
 2) 签名服务需要把计算签名时所有的时间戳，返回给客户端，客户端根据这个时间戳设置 ```Date``` 头字段（一般的客户端）或 ```x-qs-date``` 头字段（JavaScript客户端）
 
@@ -360,9 +360,9 @@ Date: Mon, 14 Nov 2016 14:05:00 GMT
 
 SDK 参考例子:
 
-[Java 使用服务端签名](../sdk/java/index.html#使用服务端签名)
+[Java 使用服务端签名](/storage/object-storage/sdk/java/)
 
-[Swift 应用服务端签名](../sdk/swift/index.html#使用服务端签名)
+[Swift 应用服务端签名](/storage/object-storage/sdk/swift/)
 
 
 ## 表单 POST 上传
