@@ -6,7 +6,6 @@ draft: false
 weight: 2
 ---
 
-# 图普科技鉴黄服务
 
 图普科技鉴黄服务帮助用户判断存储在 QingStor 对象存储中的图片是否为色情。 服务由广州图普网络科技有限公司提供。
 
@@ -14,7 +13,7 @@ weight: 2
 
 > 用户的 notify_url 需要能响应如下的 HTTP POST 请求，并返回 HTTP 200 状态码。如果请求超时，会重试 `3` 次，超时时间为 `5s` ，重试间隔为 `500ms` ，之后将放弃此次请求。
 >
-> QingStor 对象存储数据处理服务不会对图普科技鉴黄的结果进行修改，结果将会放到字段 result 。 可参考 [图普科技的鉴黄服务文档](https://www.tuputech.com/api/response#image) 的接口描述。
+> QingStor 对象存储数据处理服务不会对图普科技鉴黄的结果进行修改，结果将会放到字段 result 。 可参考 [图普科技的鉴黄服务文档](http://cloud.doc.tuputech.com/API/image/) 的接口描述。
 
 ## 鉴黄结果
 
@@ -94,3 +93,5 @@ weight: 2
     }
 }
 ```
+
+
