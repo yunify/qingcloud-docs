@@ -8,8 +8,8 @@ type: "product"
 section1:
   title: 硬盘
   vice_title: 青云 QingCloud 平台支持多种块存储类型，包括：基础型、 SSD 企业型、企业级分布式 SAN 、容量型。
-  video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
-  video_img: "/images/video.png"
+  video: "https://workshop.pek3a.qingstor.com/CloudOperation_100P002C201908_%E8%99%9A%E6%8B%9F%E7%A1%AC%E7%9B%98%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8.mp4"
+  video_img: "/storage/disk/_images/video.png"
 
 Section2:
   title: 用户指南
@@ -30,16 +30,7 @@ Section2:
       content: 企业级分布式SAN（NeonSAN）硬盘用户使用文档
       url: "/storage/disk/manual/neonsan_volume"
 
-section3:
-  title: 开发者指南
-  children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/development_docs/api/"
 
-    - title: SDK 文档
-      content: 如何使用 SDK 文档
-      url: "/development_docs/sdk/"
 
 section4:
   children:
