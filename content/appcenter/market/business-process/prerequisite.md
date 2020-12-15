@@ -1,7 +1,7 @@
 ---
 title: "入驻须知"
 description: test
-weight: 2
+weight: 4
 draft: false
 
 ---
@@ -10,7 +10,7 @@ draft: false
 
 对于要在 AppCenter 应用中心发布应用的用户来说，需要在上架之前完成企业资质的审核和相关合约的签署。
 
-[![申请入驻](/appcenter/market/business-process/_image/apply.png)]
+![申请入驻](/appcenter/market/business-process/_image/apply.png)
 
 #### 企业资质
 

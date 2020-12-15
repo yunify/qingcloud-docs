@@ -18,16 +18,16 @@ Section2:
 
     - title: 功能概述
       content: 功能概述
-      url: "/cloudsat/cloudsat/event-monitor/intro/intro/"
+      url: "/monitor_service/cloudsat/event-monitor/intro/intro/"
     
     
     - title: 操作指南
       content: 操作指南
-      url: "/cloudsat/cloudsat/event-monitor/manual/event_monitor/"
+      url: "/monitor_service/cloudsat/event-monitor/manual/event_monitor/"
     
     - title: 最佳实践
       content: 最佳实践
-      url: "/cloudsat/cloudsat/event-monitor/best-practices/exceptionhandle"
+      url: "/monitor_service/cloudsat/event-monitor/best-practices/exceptionhandle"
 
 
 section3:
@@ -35,15 +35,15 @@ section3:
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/qingstor/guide/object_manage"
+      url: "/development_docs/api/"
 
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: "/test/guide/object_manage"
+      url: "/development_docs/sdk/"
 
     - title: CLI 文档
       content: 如何使用 CLI 文档
-      url: "/qingstor/guide/object_manage/"
+      url: "/development_docs/cli/"
 
 section4:
   children:
@@ -52,7 +52,7 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 事件监控概述
-          url: "/cloudsat/event-monitor/intro/intro/"
+          url: "/monitor_service/cloudsat/event-monitor/intro/intro/"
 
 
     - title: 上手：查看事件监控
@@ -60,7 +60,7 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 查看事件监控
-          url: "/cloudsat/cloudsat/event-monitor/manual/event_monitor/"
+          url: "/monitor_service/cloudsat/event-monitor/manual/event_monitor/"
 ---
 
 
