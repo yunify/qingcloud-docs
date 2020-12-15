@@ -22,7 +22,7 @@ draft: false
 | rules.n.alarm_level_id | String | 告警级别，level-00000000 表示高，level-00000001表示低 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

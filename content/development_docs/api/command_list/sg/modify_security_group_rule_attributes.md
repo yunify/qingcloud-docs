@@ -27,7 +27,7 @@ draft: false
 | val3 | String | 目标 IP，如果填写，则这条防火墙规则只对此IP（或IP段）有效。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

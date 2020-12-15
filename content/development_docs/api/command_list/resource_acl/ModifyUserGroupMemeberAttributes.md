@@ -17,7 +17,7 @@ draft: false
 | remarks | String | 备注 | No |
 | status | String | 状态 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Example**
 

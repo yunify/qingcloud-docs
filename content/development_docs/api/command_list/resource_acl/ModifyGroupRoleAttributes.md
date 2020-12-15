@@ -18,7 +18,7 @@ draft: false
 | description | String | 角色描述 | No |
 | status | String | 角色状态，可以为 “disabled” 或 “enabled” | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Example**
 

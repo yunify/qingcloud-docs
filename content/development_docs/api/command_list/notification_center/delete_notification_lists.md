@@ -18,7 +18,7 @@ draft: false
 | --- | --- | --- | --- |
 | notification_lists | Array | 要删除的通知列表 ID | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

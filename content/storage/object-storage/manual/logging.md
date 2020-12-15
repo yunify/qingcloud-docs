@@ -1,5 +1,5 @@
 ---
-title: "访问日志归档"
+title: "日志归档"
 date: 2020-02-28T10:08:56+09:00
 description:
 draft: false
@@ -19,15 +19,15 @@ weight: 6
 
 日志服务(Bucket Logging) API 见 API 文档:
 
-- [PUT Bucket Logging](/qingstor/api/bucket/logging/put_logging.html)
+- [PUT Bucket Logging](/storage/object-storage/api/bucket/logging/put_logging)
 
-- [GET Bucket Logging](/qingstor/api/bucket/logging/get_logging.html)
+- [GET Bucket Logging](/storage/object-storage/api/bucket/logging/get_logging)
 
-- [DELETE Bucket Logging](/qingstor/api/bucket/logging/delete_logging.html)
+- [DELETE Bucket Logging](/storage/object-storage/api/bucket/logging/delete_logging)
 
 ### 用控制台来配置日志服务
 
-请参见[控制台指南文档](/qingstor/guide/bucket_manage.html#设置日志功能)
+可在青云控制台对象存储 Bucket 设置项中进行配置。
 
 ## 日志文件命名规则
 
@@ -69,3 +69,5 @@ weight: 6
 - 目标Bucket必须处于正常状态。
 - 如果日志量比较大，一个小时可能会有多个日志文件，文件按照OrderString唯一序列号区分。
 - 正常情况下，日志会以对象 (Object) 的形式延迟1-2小时归档到指定位置。对象存储生成的日志文件，会对存储收费。日志生成后您可以按照普通的Object来操作这些文件。
+
+

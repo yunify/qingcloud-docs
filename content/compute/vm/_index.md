@@ -7,8 +7,9 @@ type: "product"
 
 section1:
   title: 主机
-  vice_title: QingCloud 为您提供秒级响应、性能卓越、安全稳定的云计算服务
-
+  vice_title: 主机服务是云计算的核心服务，是承载用户业务的核心模块
+  video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
+  video_img: "/images/video.png"
 
 Section2:
   title: 用户指南
@@ -19,7 +20,7 @@ Section2:
 
     - title: 计费指南
       content: 主机产品计费指南
-      url: "/compute/vm/billing/price"
+      url: "/compute/vm/billing/reserved_contract"
 
     - title: 操作指南
       content: 主机产品操作指南
@@ -40,23 +41,8 @@ section3:
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/development_docs/api/"
+      url: "/development_docs/api/command_list/instance/"
 
-    - title: SDK 文档
-      content: 如何使用 SDK 文档
-      url: "/development_docs/sdk/"
-
-
-section3:
-  title: 开发者指南
-  children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/development_docs/api/"
-
-    - title: SDK 文档
-      content: 如何使用 SDK 文档
-      url: "/development_docs/sdk/"
 
 
 
@@ -71,18 +57,18 @@ section4:
 
         
 
-    - title: 上手：创建主机与部署应用
+    - title: 上手：主机的常用操作
       content: 虚拟主机为用户提供可无限扩展的通用数据存储服务。
       vice_title: 上手的第一步
       children: 
-        - title: 创建与使用青云主机
+        - title: 虚拟主机操作
           url: "/compute/vm/manual/vm_instance"
 
-        - title: 基于主机搭建 Wordpress 网站
-          url: "/compute/vm/best-practices/wordpress"
+        - title: 连接实例
+          url: "/compute/vm/manual/connect_instance"
 
-        - title: 基于主机创建镜像
-          url: "/compute/image/manual/image"
+        - title: 基于主机搭建博客
+          url: "/compute/vm/best-practices/wordpress"
 ---
 
 

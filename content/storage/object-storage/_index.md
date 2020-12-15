@@ -25,11 +25,7 @@ Section2:
 
     - title: 计费指南
       content: 计费指南
-      url: "/storage/object-storage/billing"
-
-    # - title: 快速入门
-    #   content: 快速入门
-    #   url: "/storage/object-storage/quickstart"
+      url: "/storage/object-storage/billing/price"
 
     - title: 操作指南
       content: 操作指南
@@ -37,11 +33,11 @@ Section2:
 
     - title: 最佳实践
       content: 最佳实践
-      url: "/storage/object-storage/beat-practices"
+      url: "/storage/object-storage/beat-practices/"
 
     - title: 常见问题
       content: 常见问题
-      url: "/storage/object-storage/faq"
+      url: "/storage/object-storage/faq/object-faq"
 
 section3:
   title: 开发者指南
@@ -94,3 +90,5 @@ section4:
 <!-- section2 为产品index页面 第一个大块的用户文档配置  -->
 <!-- section3 为产品index页面 第二个大块的开发者文档配置  -->
 <!-- section4 为产品index页面 第三个大块的学习路径配置  -->
+
+

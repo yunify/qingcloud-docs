@@ -15,7 +15,7 @@ draft: false
 | related_resource | String | 当解绑公网负载均衡器时，related_resource 需指定此负载均衡器关联的公网 IP ID 。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

@@ -15,7 +15,7 @@ weight: 12
 | instance_types | Array | 指定查询的主机类型 | No |
 | baremetal | Integer | 是否返回物理机的主机类型，”1” 则返回物理机支持的类型，默认 “0” | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

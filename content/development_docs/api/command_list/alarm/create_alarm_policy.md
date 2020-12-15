@@ -31,7 +31,7 @@ draft: false
 | actions.n.trigger_action | String | 通知列表 ID ， | No |
 | actions.n.trigger_status | String | 当监控告警变成什么状态时，发消息给此通知列表。有效值是 “ok”, “alarm”, “insufficient” | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 
