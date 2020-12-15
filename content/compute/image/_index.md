@@ -28,7 +28,7 @@ section3:
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/development_docs/api/command_list/image/"
+      url: "/development_docs/api/command_list/image/capture_image_from_snapshot"
 
 
 section4:

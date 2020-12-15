@@ -18,6 +18,12 @@ Section2:
       url: "/storage/backup/intro/introduction"
 
 
+section3:
+  title: 开发者指南
+  children:
+    - title: API 文档
+      content: 如何使用 API 文档
+      url: "/development_docs/api/command_list/snapshot/apply_snapshots"
 
 
 section4:

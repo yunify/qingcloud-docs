@@ -28,7 +28,7 @@ section3:
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/development_docs/api/command_list/keypair/"
+      url: "/development_docs/api/command_list/keypair//attach_key_pairs"
 
 
 
