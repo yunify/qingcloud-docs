@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: 映像
-  vice_title: QingCloud 为您提供秒级响应、性能卓越、安全稳定的云计算服务
+  vice_title: 映像（Image）是一个包含了软件及必要配置的机器模版
 
 Section2:
   title: 用户指南
@@ -31,15 +31,8 @@ section3:
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/development_docs/api/"
+      url: "/development_docs/api/command_list/image/"
 
-    - title: SDK 文档
-      content: 如何使用 SDK 文档
-      url: "/development_docs/sdk/"
-
-    - title: CLI 文档
-      content: 如何使用 CLI 文档
-      url: "/development_docs/cli/"
 
 section4:
   children:
