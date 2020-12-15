@@ -7,9 +7,8 @@ type: "product"
 
 section1:
   title: 备份
-  vice_title: QingCloud 为您提供秒级响应、性能卓越、安全稳定的云计算服务
-  video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
-  video_img: "/images/video.png"
+  vice_title: 备份 (Snapshot) 用于在块设备级别上进行硬盘的备份与恢复
+
 
 Section2:
   title: 用户指南
@@ -18,20 +17,8 @@ Section2:
       content: 备份与恢复指南
       url: "/storage/backup/intro/introduction"
 
-section3:
-  title: 开发者指南
-  children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/development_docs/api/"
 
-    - title: SDK 文档
-      content: 如何使用 SDK 文档
-      url: "/development_docs/sdk/"
 
-    - title: CLI 文档
-      content: 如何使用 CLI 文档
-      url: "/development_docs/cli/"
 
 section4:
   children:
