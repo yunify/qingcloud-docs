@@ -20,20 +20,6 @@ Section2:
       content: DDoS 攻击防护操作文档
       url: "/security/ddos_defense/manual/antiddos_user_guide"
 
-section3:
-  title: 开发者指南
-  children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/development_docs/api/"
-
-    - title: SDK 文档
-      content: 如何使用 SDK 文档
-      url: "/development_docs/sdk/"
-
-    - title: CLI 文档
-      content: 如何使用 CLI 文档
-      url: "/development_docs/cli/"
 
 section4:
   children:
