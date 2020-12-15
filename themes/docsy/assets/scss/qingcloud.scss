@@ -226,7 +226,7 @@ ul.timeline > li:before {
         padding-left: 10px;
         padding-top: 1rem;
         padding-right: 1rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
 
         .td-page-top {
             position: relative;
@@ -474,7 +474,7 @@ span.menu__title[data-depth="0"] {
 
 
 .menu__title[data-depth="1"] {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -483,6 +483,7 @@ span.menu__title[data-depth="0"] {
     color: #3e464c;
     margin-left: 0.35rem;
     margin-right: 5px;
+    margin-bottom: 8px;
 }
 
 .menu__title[data-depth="2"] {
@@ -492,7 +493,7 @@ span.menu__title[data-depth="0"] {
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
-    color: #3e464c;
+    color:#939ea9;
     margin-left: 1rem
 }
 
@@ -749,10 +750,9 @@ ul.product_dynamics_ul > li {
 }
 .timeline-outer > a {
     font-size: 14px;
-    color:#00a971;
 }
 ul.product_dynamics_ul{
-    margin-top: -1rem;
+    margin-top: -2rem;
 }
 .timeline .timeline-outer .product_dynamics_p{
     font-size: 14px;
@@ -861,6 +861,8 @@ section.hero.home-body {
 }
 .row .col-sm-7 h3{
     font-weight: 400;
+    line-height: 1.4;
+    font-size: 15px;
 }
 
 .section-out .container .row .col-md-3{

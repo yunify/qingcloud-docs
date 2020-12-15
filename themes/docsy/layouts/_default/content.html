@@ -1,39 +1,39 @@
 <div class="td-content">
-<div class="td-page-top">
-	<h1>{{ .Title }}</h1>
-	{{ partial "page-meta-actions.html" .}}
-</div>
+	<div class="td-page-top">
+		<h1>{{ .Title }}</h1>
+		{{ partial "page-meta-actions.html" .}}
+	</div>
 	<div class="page-meta-lastmod text-muted ">{{ partial "page-meta-lastmod.html" . }}</div>
 
 	<!-- {{ partial "page-meta-actions.html" .}} -->
-    <!--{{ with .Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}-->
+	<!--{{ with .Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}-->
 	{{ with .Params.description }}<div class="lead"></div>{{ end }}
 	{{ if (and (not .Params.hide_readingtime) (.Site.Params.ui.readingtime.enable)) }}
-        {{ partial "reading-time.html" . }}
-    {{ end }}
+	{{ partial "reading-time.html" . }}
+	{{ end }}
 
 	{{with .Params.product}}
-		<section class="product_dynamics"> 
-		   <div class="container  td-outer product_dynamics"> 
-			<div class=""> 
-			 <ul class="timeline product_dynamics_ul" id="learn_content"> 
-			 {{ range . }}
-			  <li class="row">
-			   <div class="timeline-outer-line timeline-product"></div>
-			   <div class="col-sm-12 timeline-outer">
-				<p>{{ .time }}</p>
-				<h2>{{ .title }}</h2>
-				<p class="product_dynamics_p">{{ .content | markdownify  }}</p>
-				{{ if .url}}
-				<a href="{{ .url }}">查看相关文档 <img src="/images/icons/black.svg"></a>
-				{{ end }}
-			   </div>
-			   </li>
-			   {{ end }}
-			 </ul> 
-			</div> 
-		   </div> 
-		</section>
+	<section class="product_dynamics">
+		<div class="container  td-outer product_dynamics">
+			<div class="">
+				<ul class="timeline product_dynamics_ul" id="learn_content">
+					{{ range . }}
+					<li class="row">
+						<div class="timeline-outer-line timeline-product"></div>
+						<div class="col-sm-12 timeline-outer">
+							<p>{{ .time }}</p>
+							<h2>{{ .title }}</h2>
+							<p class="product_dynamics_p">{{ .content | markdownify  }}</p>
+							{{ if .url}}
+							<a href="{{ .url }}">查看相关文档 <img src="/images/icons/black.svg"></a>
+							{{ end }}
+						</div>
+					</li>
+					{{ end }}
+				</ul>
+			</div>
+		</div>
+	</section>
 	{{ end }}
 	{{ .Content }}
 	<!-- {{ if (and (not .Params.hide_feedback) (.Site.Params.ui.feedback.enable) (.Site.GoogleAnalytics)) }}
@@ -41,20 +41,20 @@
 		<br />
 	{{ end }} -->
 	{{ if (.Site.DisqusShortname) }}
-		<br />
-		{{ partial "disqus-comment.html" . }}
+	<br />
+	{{ partial "disqus-comment.html" . }}
 	{{ end }}
 	<div class="page-meta-pagination border-top">
 		{{with .NextInSection}}
-			<a href="{{.Permalink }}" class="prev pl1" title="{{.Title }} ">
-				Prev: {{.Title}}
-			</a>
+		<a href="{{.Permalink }}" class="prev pl1" title="{{.Title }} ">
+			Prev: {{.Title}}
+		</a>
 		{{end}}
 
 		{{with .PrevInSection}}
-			<a href="{{.Permalink }}" class="next pr1" title="{{.Title }}">
-			Next: {{.Title}}
-			</a>
+		<a href="{{.Permalink }}" class="next pr1" title="{{.Title }}">
+			下一页: {{.Title}}
+		</a>
 		{{end}}
 	</div>
 	<div class="page-meta-pagination_word">
