@@ -83,7 +83,7 @@ keyword: 青云
 
 **备份**
 
-点击 **备份** ，进入如下界面
+点击 **创建备份** ，进入如下界面
 
 ![备份容量型硬盘](/storage/disk/manual/_images/create_容量型_12.png)
 

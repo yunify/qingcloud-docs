@@ -84,7 +84,7 @@ draft: false
 
 ![](../../_images/antiddos_ip7.png)
 
-如果您使用了青云的 DNS 服务，则参考[DNS配置子域名](https://docs.qingcloud.com/product/network/dns_rw/dns_subzone#%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E6%9C%8D%E5%8A%A1%E5%99%A8)进行配置。
+如果您使用了青云的 DNS 服务，则参考青云DNS配置子域名进行配置。
 
 
 
