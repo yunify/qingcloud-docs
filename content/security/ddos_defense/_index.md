@@ -1,6 +1,6 @@
 ---
-title: "DDOS高防"
-linkTitle: "DDOS高防"
+title: "DDoS攻击防护"
+linkTitle: "DDoS攻击防护"
 weight: 2
 collapsible: true
 type: "product"
