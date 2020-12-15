@@ -6,7 +6,6 @@ draft: false
 weight: 1
 ---
 
-# 数据迁移方案
 
 QingStor 推出了无缝数据迁移方案，帮助用户将业务数据从自建平台或者其他对象存储平台高效完整地迁移到 QingStor 对象存储服务。
 
@@ -19,7 +18,7 @@ QingStor 推出了无缝数据迁移方案，帮助用户将业务数据从自�
 
 ## 被动触发迁移 - 外部镜像
 
-对于已经设置了外部镜像的 Bucket ，当请求的对象在 Bucket 中不存在时，服务端把对象名称拼接在外部镜像源站后作为抓取的源链接，然后自动从源站抓取（回源），并写入到 Bucket 当中。 在回源过程中，请求这个对象的客户端，有可能会下载到源站文件，也有可能收到重定向到源站相应路径的 302 请求。 在回源完成后，客户端能够直接从 Bucket 中获取这个对象。 可用 [Head Object](../api/object/head.html) 返回 200 成功来确认文件存在。
+对于已经设置了外部镜像的 Bucket ，当请求的对象在 Bucket 中不存在时，服务端把对象名称拼接在外部镜像源站后作为抓取的源链接，然后自动从源站抓取（回源），并写入到 Bucket 当中。 在回源过程中，请求这个对象的客户端，有可能会下载到源站文件，也有可能收到重定向到源站相应路径的 302 请求。 在回源完成后，客户端能够直接从 Bucket 中获取这个对象。 可用 [Head Object](/storage/object-storage/api/object/head/) 返回 200 成功来确认文件存在。
 
 ![](bucket_external_mirror_diagram.png)
 
@@ -48,11 +47,11 @@ QingStor 推出了无缝数据迁移方案，帮助用户将业务数据从自�
 
 该接口通过请求头 `x-qs-fetch-source` 附带源链接。QingStor 会从该链接抓取资源，保存到指定的对象中， 并且在抓取时能够自动处理源链接服务器返回的 301/302/307 等重定向请求。该接口同步下载文件, 完成后才会返回结果口。
 
-如果在同一时间相同源链接的 Fetch 请求正在进行，或者被动触发的外部镜像功能正在抓取该源链接对应的文件，服务端将返回 409 fetch_in_process。 除此之外，服务端根据源链接错误情况还可能返回 404 object_not_exists, 503 upstream_failed 等错误，[参见错误信息](../api/common/error_code.html#object-storage-error-code)
+如果在同一时间相同源链接的 Fetch 请求正在进行，或者被动触发的外部镜像功能正在抓取该源链接对应的文件，服务端将返回 409 fetch_in_process。 除此之外，服务端根据源链接错误情况还可能返回 404 object_not_exists, 503 upstream_failed 等错误，[参见错误信息](/storage/object-storage/api/common/error_code)
 
 注意当对象特别大或源站下载速度比较慢, 有可能该 API 请求会导致客户端 tcp 超时。可以 Head Object 获得并比较源站文件和 Bucket 中文件大小和时间戳, 如果 Head Object 返回 404 (文件还没有下载), 重复调用一次 fetch object 请求若返回 409 fetch_in_process 则说明抓取已经开始。(建议用户使用下边介绍的 qscamel 工具来实现便捷的迁移)
 
-> Fetch API 请参考文档 [PUT Object - Fetch](../api/object/fetch.html)
+> Fetch API 请参考文档 [PUT Object - Fetch](/storage/object-storage/api/object/fetch)
 >
 > 外部镜像或 Fetch 功能，需要源站在提供下载文件时能返回 Content-Length 头，否则回源失败。
 
@@ -69,7 +68,7 @@ qscamel 是把 HTTP(s) 形式的数据高效地批量迁移到 QingStor 的命�
 
 注解
 
-更多介绍请参考文档 [qscamel](../developer_tools/qscamel.html)
+更多介绍请参考文档 [qscamel](/storage/object-storage/manual/developer_tools/qscamel)
 
 ## 推荐迁移步骤
 
