@@ -12,17 +12,17 @@ draft: false
 
 点击 **安全** 中的 **安全组** 进入如下界面
 
-![](../../../_images/create_sg_1.png)
+![](../../_images/create_sg_1.png)
 
 > 注解：QingCloud 系统为每个用户提供了一个缺省安全组(ID 之后带有星标)，默认打开22端口。也可以创建更多的安全组
 
 点击 **创建** 跳出如下界面
 
-![](../../../_images/create_sg_2.png)
+![](../../_images/create_sg_2.png)
 
 在名称框里输入创建的安全组名称，点击 **提交** ，进入如下界面
 
-![](../../../_images/create_sg_3.png)
+![](../../_images/create_sg_3.png)
 
 左侧操作日志记录了安全组ID、安全组名称、标签、描述、资源以及创建时间。
 
