@@ -23,7 +23,7 @@ draft: false
 | end_time | TimeStamp | 监控数据的结束 UTC 时间，格式为 2011-07-11T11:07:00Z 或 2011-07-11T11:07:00.520Z | Yes |
 | meters.n | String | 监控数据的类型，<br> stats 表示获取开发者定义的监控数据 <br> cpu 表示节点CPU使用率 <br> memory 表示节点内存使用率 <br> disk-us-volume 表示节点硬盘使用率 <br> disk-iops-volume 表示节点硬盘IOPS <br> disk-volume 表示节点硬盘吞吐量  | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

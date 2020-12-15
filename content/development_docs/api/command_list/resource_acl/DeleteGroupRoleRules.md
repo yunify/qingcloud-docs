@@ -15,7 +15,7 @@ draft: false
 | group_role_rules.n | String | 规则ID | No |
 | group_roles.n | String | 角色ID | No |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Example**
 

@@ -14,19 +14,19 @@ section2:
   children:
     - title: 概述
       content: API概述
-      url: "overview"
+      url: "overview/"
 
     - title: 公共参数
       content: 公共参数是所有 API 请求都必需的参数。
-      url: "parameters"
+      url: "parameters/"
 
     - title: 签名方法
       content: API请求中签名(signature)的生成方法。
-      url: "signature"
+      url: "signature/"
 
     - title: 错误码
       content: 服务器返回的错误码(ret_code)和错误信息(message)。
-      url: "error_code"
+      url: "error_code/"
 
     - title: API指令列表
       content: 列出了所有的API请求指令。
@@ -57,13 +57,13 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 公共参数
-          url: "parameters"
+          url: "parameters/"
 
         - title: 签名方法
-          url: "signature"
+          url: "signature/"
 
         - title: 错误码
-          url: "error_code"
+          url: "error_code/"
 
         - title: API指令列表
           url: "command_list/"

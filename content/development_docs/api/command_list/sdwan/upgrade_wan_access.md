@@ -16,7 +16,7 @@ draft: false
 | wan_accesss.n | String | 接入点 ID | Yes |
 | bandwidth | Integer | 带宽值 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

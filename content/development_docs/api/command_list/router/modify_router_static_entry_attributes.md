@@ -18,7 +18,7 @@ draft: false
 | val2 | String | 规则条目的 val2 值，会根据规则类型的不同，代表不同含义：<br/>*   PPTP 账户信息：val2 表示密码<br/>*   三层 IPsec 隧道：val2 表示目标网络 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

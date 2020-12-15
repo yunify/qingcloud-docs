@@ -21,7 +21,7 @@ weight: 20
 | vxnets.n | String | 一个或多个主机克隆生成的新主机的vxnet或ip地址<br/>格式是: 'instance_id\|vxnet_id\|ip_addr'  | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

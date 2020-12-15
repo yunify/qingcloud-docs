@@ -22,7 +22,7 @@ draft: false
 | export_name | String | 共享存储目标名称，（仅支持vnas服务类型） | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

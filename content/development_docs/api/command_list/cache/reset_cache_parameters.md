@@ -16,7 +16,7 @@ draft: false
 | cache_parameter_names.n | String | 需要重置的缓存服务配置项名称，如果不指定，则会重置整个配置组的配置项为默认值。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

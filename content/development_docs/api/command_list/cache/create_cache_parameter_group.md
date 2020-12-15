@@ -16,7 +16,7 @@ draft: false
 | cache_parameter_group_name | String | 缓存服务配置组名称 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

@@ -17,7 +17,7 @@ IP/端口集合须在没有资源（防火墙）使用的情况下才能被删�
 | security_group_ipsets.n | String | ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 
