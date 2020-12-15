@@ -197,7 +197,7 @@ https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
 可以使用开始----运行----cmd命令行（以管理员身份）----ipconfig /all---回车，查看配置的ip地址
 
-![图片](/computing/_images/image-1568884277992.png)
+![图片](/compute/vm/_images/image-1568884277992.png)
 
 ## 如何手动激活windows
 

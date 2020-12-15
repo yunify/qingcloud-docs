@@ -18,15 +18,15 @@ Section2:
     
     - title: 功能概述
       content: 功能概述
-      url: "/cloudsat/cloudsat/dashboard/intro/intro/"
+      url: "/monitor_service/cloudsat/dashboard/intro/intro/"
     
     - title: 操作指南
       content: 操作指南
-      url: "/cloudsat/cloudsat/dashboard/manual/dashboard/"
+      url: "/monitor_service/cloudsat/dashboard/manual/dashboard/"
     
     - title: 最佳实践
       content: 最佳实践
-      url: "/cloudsat/cloudsat/dashboard/best-practices/showallresource"
+      url: "/monitor_service/cloudsat/dashboard/best-practices/showallresource"
 
 ---
 
