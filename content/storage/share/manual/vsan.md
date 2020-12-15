@@ -15,7 +15,7 @@ keyword: 青云
 
 注解
 
-如果将一块硬盘通过 Virtual SAN 服务挂载到多台主机上，那么必须通过分布式文件系统（Distributed File System）的支持才可以并行读写，可以使用青云已经推出的 [_NAS 服务_](https://docs.qingcloud.com/product/storage/shared/vsan#guide-vnas) 。
+如果将一块硬盘通过 Virtual SAN 服务挂载到多台主机上，那么必须通过分布式文件系统（Distributed File System）的支持才可以并行读写，可以使用青云已经推出的 [_NAS 服务_](https://docsv3.qingcloud.com/storage/vnas/manual/vnas) 。
 
 ## 创建 Virtual SAN 服务器
 
@@ -49,7 +49,6 @@ Virtual SAN 服务提供两种主机类型：基础型和企业型：
 
 格式是：“iqn” + “.” + “年月” + “.” + “域名的颠倒” + “:” + “设备的具体名称”，之所以颠倒域名是为了避免可能的冲突。
 
-/storage/share/manual/_images
 
 ![](/storage/share/manual/_images/create_s2_server_target.png)
 
@@ -174,7 +173,7 @@ iscsiadm -m node --logout
 >注解
 默认勾选“将此连接添加到收藏目标列表”，意思就是，系统启动会自动连接存储设备。
 
-点击确定，就能够连接，然后我们就可以向操作普通磁盘一样，对其格式化，分区等等。
+点击确定，就能够连接，然后我们就可以像操作普通磁盘一样，对其格式化，分区等等。
 
 ## 公网访问 Virtual SAN
 
