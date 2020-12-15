@@ -31,15 +31,17 @@ section2:
 
 section4:
   children:
-    - title: 了解
-      content: 了解 CDN 的概念及专业术语，学习 CDN 的工作模式
+    - title: 了解：什么是CDN
+      content: 了解 CDN 的概念，和其工作原理
+      vice_title: 了解的第一步
       children:
         - title: CDN 产品概述
           url: "intro/cdn"
-    - title: 进阶
-      content: 如何配置及管理 CDN 服务
+    - title: 进阶：CDN 服务的创建
+      content: 创建和配置 CDN 服务
+      vice_title: 使用指南
       children:
-        - title: 如何创建 CDN 服务？如何管理 CDN 服务策略？
+        - title: 如何创建和配置 CDN 服务？
           url: "manual/cdn_user_guide"
 
 ---
