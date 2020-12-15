@@ -28,9 +28,6 @@
 @import "pageinfo";
 @import "qingcloud";
 
-@if $td-enable-google-fonts {
-    @import url($web-font-path);
-}
 
 footer {
     min-height: 150px;
