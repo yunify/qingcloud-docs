@@ -11,11 +11,11 @@ draft: false
 
 点击 **CDN／防D服务** 中的 **DDoS 攻击防护** 进入如下界面
 
-![](../../../_images/main_page.png)
+![](../../_images/main_page.png)
 
 点击 **购买** 进入如下界面
 
-![](../../../_images/create.png)
+![](../../_images/create.png)
 
 在创建的对话框中，点击 **添加域名** ，输入自己的主域名，如果已经添加过，可以跳过。
 
@@ -23,7 +23,7 @@ draft: false
 
 该域名是主域名 如：我们为 ddos.qingcloud.com 添加防护，他的主域名是 qingcloud.com 。
 
-![](../../../_images/create_cdn_2.png)
+![](../../_images/create_cdn_2.png)
 
 请根据需要选择合适的基础防护带宽和最大防护带宽，DDoS 攻击防护服务收费规则如下：
 
@@ -36,7 +36,7 @@ draft: false
 
 点击“提交”后，确认您需要付费的金额。
 
-![](../../../_images/buy.png)
+![](../../_images/buy.png)
 
 **第二步：配置服务**
 
