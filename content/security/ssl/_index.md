@@ -8,8 +8,6 @@ type: "product"
 section1:
   title: SSL证书
   vice_title: QingCloud SSL 证书提供了安全套接层证书的一站式服务，包括证书申请,管理及部署功能,与亚洲诚信合作，提供完整的证书解决方案。
-  video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
-  video_img: "/images/video.png"
 
 Section2:
   title: 用户指南
