@@ -18,7 +18,7 @@ Section2:
 
     - title: 计费指南
       content: 专属宿主机计费指南
-      url: "/compute/dedicated-host/billing/price"
+      url: "/compute/dedicated-host/billing/reserved_contract"
 
     - title: 操作指南
       content: 专属宿主机操作指南

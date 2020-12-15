@@ -20,7 +20,7 @@ Section2:
 
     - title: 计费指南
       content: 主机产品计费指南
-      url: "/compute/vm/billing/price"
+      url: "/compute/vm/billing/reserved_contract"
 
     - title: 操作指南
       content: 主机产品操作指南
@@ -68,7 +68,7 @@ section4:
           url: "/compute/vm/manual/connect_instance"
 
         - title: 基于主机搭建博客
-          url: "/compute/image/best-practices/wordpress"
+          url: "/compute/vm/best-practices/wordpress"
 ---
 
 

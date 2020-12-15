@@ -26,7 +26,7 @@ section4:
       content: 共享存储为用户提供开箱即用的操作系统与工具。
       vice_title: 了解的第一步
       children:
-        - title: 产品概述（从这里进入示例目录）
+        - title: 产品概述
           url: "/storage/share/intro/introduction"
 
         - title: 产品优势
