@@ -16,7 +16,7 @@ draft: false
 | resources.n | String | 资源 ID<br/>如果获取光盒移动接入信息（例如，4G 卡信息)，使用接入点 ID，类似 wacc-fub9b1eo | Yes |
 | info_type | String | 信息类型<br/>如果获取光盒移动接入信息，info_type 为 cpe_mobile_info | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

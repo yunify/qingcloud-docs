@@ -82,7 +82,7 @@ section4:
           url: "/compute/vm/best-practices/wordpress"
 
         - title: 基于主机创建镜像
-          url: "/compute/vm/manual/image"
+          url: "/compute/image/manual/image"
 ---
 
 

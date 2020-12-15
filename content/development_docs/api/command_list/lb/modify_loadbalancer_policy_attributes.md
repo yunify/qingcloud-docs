@@ -19,7 +19,7 @@ draft: false
 | priority | Integer | 转发策略的优先级,默认是0,可用范围0-99 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

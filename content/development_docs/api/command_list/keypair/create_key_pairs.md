@@ -27,7 +27,7 @@ draft: false
 | public_key | String | SSH 公钥内容。只有当 mode = user 的时候才需要提供。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

@@ -17,7 +17,7 @@ draft: false
 | image_name | String | 映像名称<br/>注解<br/>如果不指定，则和原始映像名称一致 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

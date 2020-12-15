@@ -18,7 +18,7 @@ draft: false
 | rtable_rtype | Integer | 路由表对应的资源类型，可选值：1,2 <br> 1 - 负载均衡器 <br> 2 - 私有网络 | No |
 | verbose | Integer | 是否返回冗长的信息，如果为1，则返回路由表相关的详细信息 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

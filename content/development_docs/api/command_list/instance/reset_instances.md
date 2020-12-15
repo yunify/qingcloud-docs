@@ -20,7 +20,7 @@ weight: 8
 | need_newsid | Integer | 1: 生成新的SID，0: 不生成新的SID, 默认为0；只对Windows类型主机有效。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

@@ -16,7 +16,7 @@ VPC 路由器关联边界路由器。
 | router | String | 关联的VPC路由 ID | Yes |
 | border | String | 关联的边界路由器 ID | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

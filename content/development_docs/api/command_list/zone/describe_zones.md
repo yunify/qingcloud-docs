@@ -15,7 +15,7 @@ draft: false
 | zones.n | String | 区域ID | No |
 | status.n | String | 区域状态，有效值为 active, faulty, defunct。 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

@@ -14,7 +14,7 @@ draft: false
 | --- | --- | --- | --- |
 | users.n | String | 子帐户 ID。 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 

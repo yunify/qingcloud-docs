@@ -22,7 +22,7 @@ draft: false
 | sort_key | String | 排序字段，默认为 create_time | No |
 | reverse | Integer | 0 为增序排列；1 为降序排列 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Example**
 

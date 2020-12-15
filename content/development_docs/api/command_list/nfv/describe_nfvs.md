@@ -26,7 +26,7 @@ draft: false
 | sort_key | String | 网络组件的 ID 。 | No |
 | zone | String | 区域 ID，注意要小写。 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters)
 
 **Response Elements**
 
