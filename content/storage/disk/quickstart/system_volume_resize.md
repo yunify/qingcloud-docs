@@ -7,7 +7,7 @@ enableToc: false
 keyword: 青云
 ---
 
-# 主机系统盘扩容
+## 主机系统盘扩容
 
 一直以来，青云 QingCloud 都秉承云计算的理念，主机的系统是临时的，随时可以关闭和销毁，而并不影响业务可用性的，所以并不建议用户将数据放在系统盘（即操作系统启动程序所在磁盘）。
 
@@ -32,25 +32,25 @@ keyword: 青云
 
 >警告: 请务必做好备份工作。以防万一。
 
-## 使用步骤：
+### 使用步骤：
 
 一、新创建主机时指定系统盘大小，如下图所示：
 
-![创建主机](../../_images/create_instance_custom_disk.png)
+![创建主机](/storage/disk/quickstart/_images/create_instance_custom_disk.png)
 
 **二、在已有的主机扩容步骤(以一台安装有 CentOS7.3 操作系统的主机为例）**
 
 1、确认当前系统的大小
 
-![确认系统盘大小](../../_images/system_disk.png)
+![确认系统盘大小](/storage/disk/quickstart/_images/system_disk.png)
 
 2、关闭操作系统，选择要扩容系统盘的主机，在“更多操作”中选择“更改配置”，并按照下图所示，扩展系统磁盘：
 
-![更改操作系统](../../_images/resize_system_instance.png)
+![更改操作系统](/storage/disk/quickstart/_images/resize_system_instance.png)
 
 3、启动主机，并查看更改后的结果：
 
-![启动主机](../../_images/after_resize.png)
+![启动主机](/storage/disk/quickstart/_images/_images/after_resize.png)
 
 确认修改成功。
 
