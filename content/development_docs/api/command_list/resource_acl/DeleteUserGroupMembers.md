@@ -15,7 +15,7 @@ draft: false
 | user_group | String | 用户组ID | Yes |
 | users.n | String | 用户ID。 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Example**
 

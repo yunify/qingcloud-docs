@@ -17,7 +17,7 @@ draft: false
 | offset | Integer | 数据偏移量，默认为 0 | No |
 | limit | Integer | 返回数据长度，默认为 20 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

@@ -33,15 +33,15 @@ QingStor 生命周期配置规则（Lifecycle Rules) 作为存储空间的子资
 
 Bucket Lifecycle API 见 API 文档:
 
-- [PUT Bucket Lifecycle](/qingstor/api/bucket/lifecycle/put_lifecycle.html)
+- [PUT Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/put_lifecycle)
 
-- [GET Bucket Lifecycle](/qingstor/api/bucket/lifecycle/get_lifecycle.html)
+- [GET Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/get_lifecycle)
 
-- [DELETE Bucket Lifecycle](/qingstor/api/bucket/lifecycle/delete_lifecycle.html)
+- [DELETE Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/delete_lifecycle)
 
 ### 用控制台来配置生命周期规则
 
-参见[控制台文档](/qingstor/guide/bucket_manage.html#设置生命周期)
+可在控制台对象存储服务设置选项中进行配置。
 
 ## 注意事项
 
@@ -79,3 +79,5 @@ c. 限制用户输入的情况：
 - 当用户添加或修改删除对象的规则时，若存在某变更低频存储规则的前缀和其前缀有重叠，且删除对象规则的生命周期小于或等于变更低频存储规则的生命周期，由于同时匹配到这两个规则的对象的变更低频规则无法执行，判定用户误操作，不允许添加或修改此删除对象的规则，返回 400 invalid_request 及 冲突信息。
 
 另外，在控制台添加或修改生命周期规则时，若存在规则和其前缀重叠，则会警告用户有重叠的规则的信息，用户可以检查对应的规则。如果确认改规则不是误操作，用户可以忽略警告点击提交。
+
+

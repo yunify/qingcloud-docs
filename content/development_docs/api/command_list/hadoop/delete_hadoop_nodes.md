@@ -20,7 +20,7 @@ draft: false
 | hadoop_nodes.n | String | 需要删除的 Hadoop slave 节点ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

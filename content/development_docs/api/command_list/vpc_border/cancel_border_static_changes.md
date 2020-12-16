@@ -16,7 +16,7 @@ draft: false
 | border_statics | List | 边界路由器的静态路由规则 ID | No |
 | border | String | 关联的边界路由器 ID | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

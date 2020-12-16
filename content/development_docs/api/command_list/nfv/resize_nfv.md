@@ -16,7 +16,7 @@ draft: false
 | nfv_spec | Integer | 网络组件的规则，可以是 1-3 。 | Yes |
 | zone | String | 区域 ID，注意要小写。 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

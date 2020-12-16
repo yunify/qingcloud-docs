@@ -10,7 +10,7 @@ Section2:
   children:
     - title: SDK文档简介
       content: SDK文档简介
-      url: "intro/intro"
+      url: "intro/intro/"
 
     - title: Python
       content: SDK在Python中的安装和使用。

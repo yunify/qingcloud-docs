@@ -31,7 +31,7 @@ MetaData 是青云定义的一组关于主机运行参数的字段，主要包�
 | --- | --- | --- |
 | instance_id | String | 主机 ID |
 | instance_name | String | 主机名称 |
-| instance_type | String | 主机类型，为青云预定义的一些配置类型，可参考 [_Instance Types_](../api/common/includes/instance_type.html#instance-type) |
+| instance_type | String | 主机类型，为青云预定义的一些配置类型，可参考 [_Instance Types_](/development_docs/api/common/instance_type) |
 | vcpus_current | Integer | CPU 核数，有效值为 1, 2, 4 等 |
 | memory_current | Integer | 内存大小，单位 MB，有效值为 1024, 2048, 4096 等 |
 | image_id | String | 映像 ID |
@@ -92,25 +92,25 @@ User Data 为用户自定义的任何格式、任何内容的配置文本或脚�
 
 想要创建有 User Data 功能的主机，首先和创建普通主机一样点击“新建”按钮，并选择映像和主机配置。若第二步“选择类型”中选择了挂载硬盘，则硬盘 ID 会反映在 MetaData 的字段中。
 
-![](/compute/vm/manual/_images/userdata_vol.png)
+![](/compute/vm/manual/_images/userdata01.png)
 
 若想使用 User Data 功能，需在新建主机的第四步“基本设置”中选择“显示高级选项”。
 
-![](/compute/vm/manual/_images/userdata_advanced_option.png)
+![](/compute/vm/manual/_images/userdata02.png)
 
 在随后显示的 User Data 设置中，若选择“无”，则不使用 User Data 功能。若选择“文本”，则可以手动输入文本或从一个文本文件中读取。
 
-![](/compute/vm/manual/_images/userdata_string.png)
+![](/compute/vm/manual/_images/userdata03.png)
 
 默认的，metadata 和 userdata.string 文件都会放在 /etc/qingcloud/userdata 目录下。用户可以通过输入自定义路径更改其位置。只需在输入文本或上传压缩包时同时指定路径即可。 若路径不合法，则依然使用默认路径。
 
 若选择“执行文件”，则需填入脚本代码。
 
-![](/compute/vm/manual/_images/userdata_exec.png)
+![](/compute/vm/manual/_images/userdata04.png)
 
 若选择“压缩包”，则需上传一个压缩包。
 
-![](/compute/vm/manual/_images/userdata_tar.png)
+![](/compute/vm/manual/_images/userdata05.png)
 
 最后点击“创建”，就可以创建带有 MetaData 和 User Data 的主机。
 

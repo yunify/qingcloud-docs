@@ -1,6 +1,5 @@
 ---
 title: "标签"
-date: 2020-12-10T00:40:25+09:00
 description: Test description
 draft: false
 enableToc: false
@@ -11,7 +10,7 @@ keyword: 标签, QingCloud
 
 ## 创建和管理标签
 
-在青云控制台，打开“管理”->“标签”页面，点击“创建”：
+在青云控制台，打开“运维与管理”->“标签”页面，点击“创建”：
 
 ![](../../_images/create_tag_1.png)
 

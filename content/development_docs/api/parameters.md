@@ -23,7 +23,7 @@ collapsible: false
 | **version** | API的版本号，目前只支持版本号为 1。 |   |
 | **signature_method** | 签名所用哈希算法，目前支持 HmacSHA256 和 HmacSHA1。 |   |
 | **signature_version** | 签名函数的版本号，目前只支持版本号为 1。 |   |
-| **signature** | 请求消息的签名，请参见 [_签名方法_](../signature) |   |
+| **signature** | 请求消息的签名，请参见 [_签名方法_](../signature/) |   |
 
 **请求样例**:
 

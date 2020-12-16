@@ -20,7 +20,7 @@ keyword: 青云
 
 ![容量型硬盘创建](/storage/disk/manual/_images/create_容量型_1.png)
 
-点击 **创建** 跳出如下界面
+点击 **创建** 进入如下界面
 
 ![创建容量型硬盘](/storage/disk/manual/_images/create_容量型_2.png)
 
@@ -35,7 +35,7 @@ keyword: 青云
 
 ### 第二步：配置服务
 
-鼠标右键点击硬盘条目，或选中硬盘条目鼠标左键点击更多操作，跳出如下界面
+鼠标右键点击硬盘条目，或选中硬盘条目鼠标左键点击更多操作，进入如下界面
 
 ![容量型硬盘操作](/storage/disk/manual/_images/create_容量型_4.png)
 
@@ -43,7 +43,7 @@ keyword: 青云
 
 **加载容量型硬盘到主机**
 
-点击 **加载硬盘到主机** ，跳出如下界面
+点击 **加载硬盘到主机** ，进入如下界面
 
 ![加载硬盘到主机](/storage/disk/manual/_images/create_容量型_6.png)
 
@@ -57,7 +57,7 @@ keyword: 青云
 
 **修改容量型硬盘名称或属性**
 
-点击 **修改**，跳出如下界面
+点击 **修改**，进入如下界面
 
 ![修改硬盘属性](/storage/disk/manual/_images/create_容量型_8.png)
 
@@ -65,7 +65,7 @@ keyword: 青云
 
 **克隆容量型硬盘**
 
-点击 **克隆硬盘** ，跳出如下界面
+点击 **克隆硬盘** ，进入如下界面
 
 ![克隆容量型硬盘](/storage/disk/manual/_images/create_容量型_9.png)
 
@@ -77,13 +77,13 @@ keyword: 青云
 
 **扩容**
 
-点击 **扩容** ，跳出如下界面
+点击 **扩容** ，进入如下界面
 
 ![扩容容量型硬盘](/storage/disk/manual/_images/create_容量型_11.png)
 
 **备份**
 
-点击 **备份** ，跳出如下界面
+点击 **创建备份** ，进入如下界面
 
 ![备份容量型硬盘](/storage/disk/manual/_images/create_容量型_12.png)
 
@@ -99,7 +99,7 @@ keyword: 青云
 
 **标签**
 
-点击 **标签** ，为已经创建的容量型硬盘绑定标签，跳出如下界面
+点击 **标签** ，为已经创建的容量型硬盘绑定标签，进入如下界面
 
 ![硬盘标签](/storage/disk/manual/_images/create_容量型_15.png)
 
@@ -109,7 +109,7 @@ keyword: 青云
 
 **添加到项目**
 
-点击 **项目-加入**，跳出如下界面
+点击 **项目-加入**，进入如下界面
 
 ![加入项目](/storage/disk/manual/_images/create_容量型_project.png)
 
@@ -124,13 +124,13 @@ keyword: 青云
 
 ![备份容量型硬盘](/storage/disk/manual/_images/create_容量型_17.png)
 
-鼠标右键点击备份链ID，跳出如下界面
+鼠标右键点击备份链ID，进入如下界面
 
 ![备份链修改](/storage/disk/manual/_images/create_容量型_18.png)
 
 **修改备份名称或描述**
 
-点击 **修改** ，跳出如下界面
+点击 **修改** ，进入如下界面
 
 ![修改备份属性](/storage/disk/manual/_images/create_容量型_19.png)
 
@@ -138,7 +138,7 @@ keyword: 青云
 
 **基于备份新建硬盘**
 
-点击 **创建硬盘** ，跳出如下界面
+点击 **创建硬盘** ，进入如下界面
 
 ![基于备份创建硬盘](/storage/disk/manual/_images/create_性能型_20.png)
 
@@ -150,7 +150,7 @@ keyword: 青云
 
 **共享备份**
 
-点击 **共享备份** ，跳出如下界面
+点击 **共享备份** ，进入如下界面
 
 ![共享备份](/storage/disk/manual/_images/create_容量型_22.png)
 
@@ -158,7 +158,7 @@ keyword: 青云
 
 **跨区复制备份**
 
-点击 **跨区复制备份** ，跳出如下界面
+点击 **跨区复制备份** ，进入如下界面
 
 ![跨区复制备份](/storage/disk/manual/_images/create_容量型_23.png)
 

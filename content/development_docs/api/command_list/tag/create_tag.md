@@ -19,7 +19,7 @@ draft: false
 | tag_name | String | 标签名称, 名称不可重复 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

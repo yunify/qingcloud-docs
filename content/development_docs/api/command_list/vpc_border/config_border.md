@@ -17,7 +17,7 @@ draft: false
 | border | String | 需要配置的边界路由器 | Yes |
 | data | String | 配置的数据 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

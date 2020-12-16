@@ -20,7 +20,7 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 ![SSD企业级硬盘](/storage/disk/manual/_images/create_ssd_1.png)
 
-点击 **创建** 跳出如下界面。
+点击 **创建** 进入如下界面。
 
 ![创建SSD企业级硬盘](/storage/disk/manual/_images/create_ssd_2.png) 
 
@@ -42,7 +42,7 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 ### 第二步：配置服务
 
-鼠标右键点击硬盘条目，或选中硬盘条目鼠标左键点击更多操作，跳出如下界面。
+鼠标右键点击硬盘条目，或选中硬盘条目鼠标左键点击更多操作，进入如下界面。
 
 ![SSD企业级硬盘操作](/storage/disk/manual/_images/create_ssd_4.png)
  
@@ -50,7 +50,7 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 **加载 SSD 企业级硬盘到主机**
 
-点击 **加载硬盘到主机**，跳出如下界面。
+点击 **加载硬盘到主机**，进入如下界面。
 
 ![加载SSD到主机](/storage/disk/manual/_images/create_ssd_6.png)
 
@@ -64,7 +64,7 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 **修改 SSD 企业级硬盘名称或属性**  
 
-点击 **修改** ，跳出如下界面。
+点击 **修改** ，进入如下界面。
  
 ![修改SSD属性](/storage/disk/manual/_images/create_ssd_8.png)
 
@@ -72,7 +72,7 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 **克隆 SSD 企业级硬盘**
 
-点击 **克隆硬盘**，跳出如下界面。
+点击 **克隆硬盘**，进入如下界面。
  
 ![克隆SSD硬盘](/storage/disk/manual/_images/create_ssd_9.png)
 
@@ -84,13 +84,13 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 **扩容**
 
-点击 **扩容**，跳出如下界面。
+点击 **扩容**，进入如下界面。
  
 ![扩容SSD](/storage/disk/manual/_images/create_ssd_11.png)
 
 **备份**
 
-点击 **备份**，跳出如下界面。
+点击 **创建备份**，进入如下界面。
  
 ![备份SSD](/storage/disk/manual/_images/create_ssd_12.png)
 
@@ -106,7 +106,7 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 **标签**
 
-点击 **标签**，为已经创建的 SSD 企业级硬盘绑定标签，跳出如下界面。
+点击 **标签**，为已经创建的 SSD 企业级硬盘绑定标签，进入如下界面。
 
 ![SSD绑定标签](/storage/disk/manual/_images/create_ssd_label.png)
  
@@ -116,7 +116,7 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
  
 **添加到项目**
 
-点击 **项目-加入**，跳出如下界面
+点击 **项目-加入**，进入如下界面
 
 ![SSD加入到项目](/storage/disk/manual/_images/create_basic_project.png)
 
@@ -130,13 +130,13 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
  
 ![SSD备份配置](/storage/disk/manual/_images/create_ssd_15.png)
 
-鼠标右键点击备份链 ID，跳出如下界面。
+鼠标右键点击备份链 ID，进入如下界面。
  
 ![编辑备份链](/storage/disk/manual/_images/create_ssd_16.png)
 
 **修改备份名称或描述**
 
-点击 **修改**，跳出如下界面。
+点击 **修改**，进入如下界面。
  
 ![修改备份属性](/storage/disk/manual/_images/create_ssd_17.png)
 
@@ -144,7 +144,7 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 **基于备份新建硬盘**
 
-点击 **创建硬盘**，跳出如下界面。
+点击 **创建硬盘**，进入如下界面。
  
 ![基于备份创建SSD](/storage/disk/manual/_images/create_ssd_18.png)
 
@@ -156,7 +156,7 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 **共享备份**
 
-点击 **共享备份**，跳出如下界面。
+点击 **共享备份**，进入如下界面。
  
 ![共享备份](/storage/disk/manual/_images/create_ssd_20.png)
 
@@ -164,7 +164,7 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 **跨区复制备份**
 
-点击 **跨区复制备份**，跳出如下界面。
+点击 **跨区复制备份**，进入如下界面。
  
 ![跨区复制备份](/storage/disk/manual/_images/create_ssd_21.png)
 

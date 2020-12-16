@@ -190,7 +190,7 @@ weight: 1
 	在开启静态网站托管服务之前，需要将 Bucket 设置为 “公开可读” （参考 [修改权限](#修改-bucket-权限) ），
 	或者使用[存储空间策略](#设置存储空间策略) 来进行访问控制。
 	之后将网站内容上传至 Bucket，推荐使用 QingStor 的命令行工具 qsctl 进行上传，
-	使用方法可以参考 [qsctl 文档](../developer_tools/qsctl.html#qsctl)。
+	使用方法可以参考 [qsctl 文档](/storage/object-storage/manual/developer-tools/qsctl)。
 
 2. 绑定自定义域名
 
@@ -253,3 +253,5 @@ weight: 1
 
 查看日志参数详细信息点击描述中的”点击这里“或阅读 QingStor API 文档。
 ![](bucket_logger_params.png)
+
+

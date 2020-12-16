@@ -16,7 +16,7 @@ draft: false
 | router | String | 解除关联的 vpc 路由器 | Yes |
 | border | String | 解除的边界路由器 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

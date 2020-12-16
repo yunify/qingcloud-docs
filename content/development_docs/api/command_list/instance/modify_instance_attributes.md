@@ -19,7 +19,7 @@ weight: 10
 | zone | String | 区域 ID，注意要小写 | Yes |
 | nic_mqueue | Integer | 1: 启用网卡多队列功能，0: 禁用网卡多队列功能, 默认为0 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

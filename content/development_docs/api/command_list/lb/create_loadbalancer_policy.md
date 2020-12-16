@@ -16,7 +16,7 @@ draft: false
 | balance_mode | String | 绑定相应转发策略的后端逻辑组之间的均衡算法：roundrobin (轮询)，leastconn (最小连接)和 source (源地址) 三种。不指定的话默认使用的是监听器均衡算法| No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

@@ -14,7 +14,7 @@ draft: false
 | --- | --- | --- | --- |
 | group_roles.n | String | 角色ID | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Example**
 

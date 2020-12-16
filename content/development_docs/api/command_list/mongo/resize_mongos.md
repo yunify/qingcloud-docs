@@ -17,7 +17,7 @@ draft: false
 | storage_size | Integer | Mongo 磁盘容量(GB)，用于存放数据和日志，最小10G，最大1000G，扩容时该值不能比原始容量小 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

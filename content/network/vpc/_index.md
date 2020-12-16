@@ -21,11 +21,11 @@ Section2:
 
     - title: 产品简介
       content: 产品简介
-      url: "/network/vpc/intro/intro/"
+      url: "/network/vpc/intro/intro"
 
     - title: 计费指南
       content: 计费指南
-      url: "/network/vpc/billing/"
+      url: "/network/vpc/billing/price"
 
     - title: 快速入门
       content: 快速入门
@@ -33,25 +33,30 @@ Section2:
 
     - title: 操作指南
       content: 操作指南
-      url: "/network/vpc/manual/"
+      url: "/network/vpc/manual/base"
 
     - title: 最佳实践
       content: 最佳实践
-      url: "/network/vpc/beat-practices/"
+      url: "/network/vpc/best-practices/best_practices"
 
     - title: 常见问题
       content: 常见问题
-      url: "/network/vpc/faq"
+      url: "/network/vpc/faq/vpc_faq"
 
-#section3:
-#  title: 开发者指南
-#  children:
-#    - title: API 文档
-#      content: 如何使用 API 文档
-#      url: "/network/vpc/api"
-#    - title: SDK 文档
-#      content: SDK 文档
-#      url: "/network/vpc/sdk"
+section3:
+  title: 开发者指南
+  children:
+    - title: API 文档
+      content: 如何使用 API 文档
+      url: "/development_docs/api/"
+
+    - title: SDK 文档
+      content: 如何使用 SDK 文档
+      url: "/development_docs/sdk/"
+
+    - title: CLI 文档
+      content: 如何使用 CLI 文档
+      url: "/development_docs/cli/"
 
 section4:
   children:

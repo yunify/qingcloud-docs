@@ -15,7 +15,7 @@ draft: false
 | resource_groups.n | String | 查询特定的资源组 | No |
 | owner | String | 查询这个 owner 共享给自己的资源组 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Example**
 

@@ -24,7 +24,7 @@ VPC 直连，提供与虚拟主机（VM）一致的使用方式，支持弹性�
 
 一、创建边界路由器
 
-在"网络与 CDN"下的"边界路由器"页面中, 点击"创建"即可创建边界路由器。
+在"网络"下的"边界路由器"页面中, 点击"创建"即可创建边界路由器。
 
 ![](/compute/vm/manual/_images/intranet_router.png)
 
@@ -32,7 +32,7 @@ VPC 直连，提供与虚拟主机（VM）一致的使用方式，支持弹性�
 
 在边界路由器详情页, 点击"绑定 VPC 网络", 选择需要绑定的VPC。
 
-![](/compute/vm/manual/_images/intranet_router_vpc_detail.jpg)
+![](/compute/vm/manual/_images/intranet_router_vpc_detail.png)
 
 三、创建物理主机网络
 
@@ -55,7 +55,7 @@ VPC 直连，提供与虚拟主机（VM）一致的使用方式，支持弹性�
 
 ![](/compute/vm/manual/_images/bm_select_type.png)
 
-第三步：选择物理主机网络。
+第三步：选择或创建物理主机网络。
 
 ![](/compute/vm/manual/_images/bm_select_vxnet.png)
 
@@ -114,15 +114,15 @@ VPC 直连，提供与虚拟主机（VM）一致的使用方式，支持弹性�
 
 一、创建物理主机
 
-请参考：[物理主机](https://docs.qingcloud.com/product/computing/bm_instance)
+请参考：[物理主机](https://docsv3.qingcloud.com/compute/vm/manual/bm_instance)
 
 二、创建 NeonSAN 硬盘
 
-请参考： [企业级分布式 SAN (NeonSAN)](https://docs.qingcloud.com/product/storage/shared/vsan)
+请参考： [企业级分布式 SAN (NeonSAN)](https://docsv3.qingcloud.com/storage/disk/manual/neonsan_volume)
 
 三、创建 VSAN，并将 NeoSAN 硬盘挂载到 VSAN 上
 
-请参考：[Virtual SAN（vSAN）](https://docs.qingcloud.com/product/storage/shared/vsan)
+请参考：[Virtual SAN（vSAN）](https://docsv3.qingcloud.com/storage/share/manual/vsan)
 
 四、主机端配置：
 

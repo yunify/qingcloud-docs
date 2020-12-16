@@ -16,7 +16,7 @@ draft: false
 | description | String | 资源组的描述 | No |
 | count | Integer | 一次创建资源组的数量 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Example**
 

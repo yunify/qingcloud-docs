@@ -15,7 +15,7 @@ draft: false
 | cluster | String | 将要重启服务的集群ID | Yes |
 | role | String | 重启的集群角色 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

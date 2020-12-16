@@ -19,7 +19,7 @@ draft: false
 | tunnel_key | Integer | 数据封装使用的密钥， 默认0 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

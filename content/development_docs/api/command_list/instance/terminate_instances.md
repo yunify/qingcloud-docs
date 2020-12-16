@@ -21,7 +21,7 @@ weight: 4
 | direct_cease | Integer | 是否直接彻底销毁主机，如果指定 “1” 则不会进入回收站直接销毁，默认是 “0” | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

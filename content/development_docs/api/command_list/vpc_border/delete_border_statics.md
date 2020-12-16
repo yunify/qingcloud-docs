@@ -16,7 +16,7 @@ draft: false
 | border | String | 边界路由器 ID | Yes |
 | border_statics | List | 需要删除的静态路由规则 ID | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

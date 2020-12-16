@@ -15,7 +15,7 @@ draft: false
 | ipsets.n | String | 一个或多个IP/端口集合ID | Yes |
 | dest_zones.n | String | 一个或多个区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

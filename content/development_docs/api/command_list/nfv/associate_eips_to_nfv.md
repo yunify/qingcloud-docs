@@ -16,7 +16,7 @@ draft: false
 | eips.n | String | 一个或多个要被绑定的公网 IP 地址 | Yes |
 | zone | String | 区域 ID，注意要小写。 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

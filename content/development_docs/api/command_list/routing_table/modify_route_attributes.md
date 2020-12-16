@@ -19,7 +19,7 @@ draft: false
 | nexthop_type | String | 路由表规则的下一跳类型, 可选值：2,3,4 <br> 2 - 路由器，nexthop取值应该是路由器的ID <br> 3 - IP地址，nexthop取值应该是IP地址 <br> 4 - NAT网关的ID | No |
 | route_table_rule_name | String | 路由表规则名称  | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

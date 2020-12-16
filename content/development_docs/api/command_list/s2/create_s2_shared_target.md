@@ -23,7 +23,7 @@ draft: false
 | s2_group | String | 访问共享目录的权限组ID<br/>注：仅支持vnas服务类型 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

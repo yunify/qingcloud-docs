@@ -18,7 +18,7 @@ draft: false
 | --- | --- | --- | --- |
 | notification_items | Array | 通知项信息，数组中每一项都是一个 Object ，包括：<br/>*   content: 通知项内容，可以是 邮箱地址、手机号、webhook url ，需对应下面的类型。<br/>*   notification_item_type: 通知项类型，可以是 email，phone, webhook<br/>*   remarks: 此通知项的备注<br/>如:<br/>{<br/>  "content":"test@example.com",<br/>  "notification_item_type":"email",<br/>  "remarks":"tester1"<br/>} | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

@@ -17,7 +17,7 @@ draft: false
 | routing_table_type | Integer | 路由表类型，可选值：0 | Yes|
 | rtable_rtype | Integer | 路由表对应的资源类型，可选值：1,2 <br> 1 - 负载均衡器 <br> 2 - 私有网络 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

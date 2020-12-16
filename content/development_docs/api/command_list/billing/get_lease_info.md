@@ -17,7 +17,7 @@ draft: false
 | zone | String | 区域 ID | Yes |
 | user | String | 用户 ID | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

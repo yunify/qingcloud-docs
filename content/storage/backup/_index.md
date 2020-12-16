@@ -7,9 +7,8 @@ type: "product"
 
 section1:
   title: 备份
-  vice_title: QingCloud 为您提供秒级响应、性能卓越、安全稳定的云计算服务
-  video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
-  video_img: "/images/video.png"
+  vice_title: 备份 (Snapshot) 用于在块设备级别上进行硬盘的备份与恢复
+
 
 Section2:
   title: 用户指南
@@ -18,20 +17,14 @@ Section2:
       content: 备份与恢复指南
       url: "/storage/backup/intro/introduction"
 
+
 section3:
   title: 开发者指南
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/qingstor/guide/object_manage"
+      url: "/development_docs/api/command_list/snapshot/apply_snapshots"
 
-    - title: SDK 文档
-      content: 如何使用 SDK 文档
-      url: "/test/guide/object_manage"
-
-    - title: CLI 文档
-      content: 如何使用 CLI 文档
-      url: "/qingstor/guide/object_manage/"
 
 section4:
   children:
@@ -39,27 +32,24 @@ section4:
       content: 备份为用户提供开箱即用的操作系统与工具。
       vice_title: 了解的第一步
       children:
-        - title: 产品概述（从这里进入示例目录）
-          url: "/compute/vm/intro/introduction"
+        - title: 产品概述
+          url: "/storage/backup/intro/introduction"
 
-        - title: 产品优势
-          url: "/compute/vm/test1_3/test1_3_2"
-
-        - title: 应用场景
-          url: "/compute/vm/test1_3/test1_3_2"
-
-    - title: 上手：创建备份与部署应用
-      content: 虚拟备份为用户提供可无限扩展的通用数据存储服务。
+    - title: 备份的相关操作
+      content: 备份为用户提供数据备份与恢复能力。
       vice_title: 上手的第一步
       children: 
-        - title: 创建与使用青云备份
-          url: "/storage/backup/manual/snapshot"
+        - title: 创建备份
+          url: "/storage/backup/manual/create_snapshot"
 
-        - title: 基于备份搭建 Wordpress 网站
-          url: "/storage/backup/manual/snapshot"
+        - title: 删除备份
+          url: "/storage/backup/manual/delete_snapshot"
 
-        - title: 基于备份创建镜像
-          url: "/storage/backup/manual/snapshot"
+        - title: 备份回滚
+          url: "/storage/backup/manual/rollback_snapshot"
+
+        - title: 备份导出
+          url: "/storage/backup/manual/export_snapshot"
 ---
 
 

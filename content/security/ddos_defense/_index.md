@@ -1,6 +1,6 @@
 ---
-title: "DDOS高防"
-linkTitle: "DDOS高防"
+title: "DDoS攻击防护"
+linkTitle: "DDoS攻击防护"
 weight: 2
 collapsible: true
 type: "product"
@@ -8,8 +8,6 @@ type: "product"
 section1:
   title: DDoS 攻击防护
   vice_title: DDoS 攻击防护服务帮助用户有效抵御大流量 DDoS 攻击。用户可以通过配置 DDoS 攻击防护服务，将攻击流量引流到防护服务器，确保源站的稳定可靠。
-  video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
-  video_img: "/images/video.png"
 
 Section2:
   title: 用户指南
@@ -21,7 +19,6 @@ Section2:
     - title: 操作指南
       content: DDoS 攻击防护操作文档
       url: "/security/ddos_defense/manual/antiddos_user_guide"
-
 
 
 section4:

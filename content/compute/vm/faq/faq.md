@@ -15,7 +15,7 @@ enableToc: false
 
 ![图片](/compute/vm/_images/image.png)
 
- 2、通过控制台---网络与CDN---公网ip---申请eip
+ 2、通过控制台---网络---公网ip---申请
 
 ![图片](/compute/vm/_images/image-1568884014191.png)
 
@@ -37,7 +37,7 @@ enableToc: false
 
 ![图片](/compute/vm/_images/image-1568884099948.png)
 
- 6、放行青云平台主机绑定的防火墙规则下行3389端口。并应用修改防火墙
+ 6、放行青云平台主机绑定的安全组规则下行3389端口。并应用修改安全组
 
 ![图片](/compute/vm/_images/image-1568884118279.png)
 
@@ -149,7 +149,7 @@ https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
 ![图片](/compute/vm/_images/image-1568884250307.png)
 
-### 如何安装telnet客户端
+## 如何安装telnet客户端
 
 可以通过以下路径安装，服务器管理器---本地服务器---管理----添加角色和功能---功能---telnet客户端---安装
 
@@ -197,7 +197,7 @@ https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
 可以使用开始----运行----cmd命令行（以管理员身份）----ipconfig /all---回车，查看配置的ip地址
 
-![图片](/computing/_images/image-1568884277992.png)
+![图片](/compute/vm/_images/image-1568884277992.png)
 
 ## 如何手动激活windows
 
@@ -223,7 +223,7 @@ https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
 ![图片](/compute/vm/_images/image-1568884288791.png)
 
-### 创建用户，用户名为test
+## 创建用户，用户名为test
 右键这台电脑---管理---服务器管理器---工具---计算机管理---本地用户和组-用户，右键右侧空白处-新用户，创建test用户；
 
 ![图片](/compute/vm/_images/image-1568884291334.png)
@@ -298,19 +298,6 @@ windows设置——安全设置——帐户策略——帐户锁定策略：
 
 开始-运行-gpedit.msc-计算机配置-windows设置-安全设置-本地策略-审核策略，将所有属性页的“审核这些操作”项勾选“成功”和“失败”
 
-### 主机关机后主机是否收费
-
-
-
-### 如何通过ssh秘钥方式访问主机
-
-
-
-### 连接青云远程终端时的默认登录用户名和密码
-
-
-
-### 80端口被禁用
 
 
 

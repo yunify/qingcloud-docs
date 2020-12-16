@@ -20,7 +20,7 @@ draft: false
 | billing_mode | String | 公网IP计费模式：bandwidth 按带宽计费，traffic 按流量计费，默认是 bandwidth | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 
