@@ -27,8 +27,8 @@ span.menu__title--collapse[data-depth="0"] {
     color: #3e464c;
     cursor: pointer;
     word-break: break-word;
-    font-size: 14px;
-    padding-left: 18px;
+    font-size: 13px;
+    padding-left: 14px;
     height: 30px;
     margin: .25rem 0;
     -webkit-touch-callout: none;
@@ -77,10 +77,10 @@ span.menu__title--collapse[data-depth="0"] {
     color: #3e464c;
     cursor: pointer;
     word-break: break-word;
-    font-size: 14px;
+    font-size: 13px;
     padding-left: 18px;
     height: 30px;
-    margin: .25rem 0;
+    margin: .15rem 0;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -131,14 +131,25 @@ span.menu__title--collapse[data-depth="0"] {
 }
 
 .menu__title[data-depth="1"] {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1;
     letter-spacing: normal;
     color: #3e464c;
-    margin-left: 0.35rem;
+    margin-left: 0;
+}
+
+.menu__title[data-depth="2"] {
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #939ea9;
+    margin-left: 0;
 }
 
 @media (min-width:768px) {
