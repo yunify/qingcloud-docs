@@ -27,8 +27,8 @@
         margin: 0;
         font-size: 85%;
         word-break: normal;
-        background-color: rgba($black, 0.05);
-        border-radius: $border-radius;
+        background-color: #dff7f0;
+        border-radius: 2px;
 
         br {
             display: none;
@@ -56,6 +56,6 @@
     }
 
     ol,ul{
-        margin: 1rem;
+        margin: 8px;
     }
 }

@@ -61,7 +61,7 @@ header {
 
 
     .card-body {
-        padding: 0;
+        padding: 0 0 12px 0;
         min-height: 200px;
 
         .card-title {
@@ -152,7 +152,7 @@ ul.timeline > li:before {
     p {
         color: #8493a2;
         font-size: 12px;
-        line-height: 2;
+        line-height: 20px;
     }
 }
 .timeline-content {
@@ -174,7 +174,7 @@ ul.timeline > li:before {
             li {
                 font-size: 14px;
                 position: relative;
-                color: #3e464c;
+                color:#324558;
                 line-height: 2;
 
                 &:before {
@@ -448,7 +448,7 @@ footer.footer span.tel {
     word-break: break-word;
     font-size: .925rem;
     color: #3e464c;
-    height: 30px;
+    height: 24px;
     margin: .25rem 0;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -474,7 +474,7 @@ span.menu__title[data-depth="0"] {
 
 
 .menu__title[data-depth="1"] {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -513,9 +513,9 @@ span.menu__title[data-depth="0"] {
     color: #3e464c;
     cursor: pointer;
     word-break: break-word;
-    font-size: 14px;
+    font-size: 13px;
     padding-left: 18px;
-    height: 30px;
+    height: 24px;
     margin: .25rem 0;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -600,7 +600,7 @@ span.menu__title--collapse[data-depth="0"] {
 
 .menu__title--icon {
     position: absolute;
-    top: 11px;
+    top: 8px;
     width: 0;
     height: 0;
     content: "";
