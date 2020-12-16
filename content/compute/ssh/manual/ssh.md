@@ -30,7 +30,7 @@ keyword: SSH, QingCloud,ssh密钥
 
 ### 3. 配置好弹性 IP 和防火墙
 
-在连接主机之前，请确保您的主机已经绑定了弹性公网 IP，[防火墙放行](https://docs.qingcloud.com/product/security/security_group) TCP 22 端口。
+在连接主机之前，请确保您的主机已经绑定了弹性公网 IP，[防火墙放行](https://docsv3.qingcloud.com/security/security_group/manual/sg_setting/) TCP 22 端口。
 
 ### 4. 将密钥转换为正确的格式
 

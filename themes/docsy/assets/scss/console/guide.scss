@@ -23,7 +23,7 @@
 }
 
 .td-content {
-    padding: 20px 24px;
+    padding: 8px 24px;
 
     .td-page-top {
         display: flex;
@@ -50,7 +50,7 @@
     }
 
     section {
-        padding-top: 28px;
+        padding-top: 4px;
     }
 }
 
@@ -87,7 +87,6 @@
     display: flex;
     font-size: 14px;
     line-height: 1.71;
-    padding-top: 20px;
 
     .doc_fix_click {
         padding-left: 2rem;
@@ -134,7 +133,7 @@
                 font-weight: 500;
                 line-height: normal;
                 color: #020508;
-                border-radius: 3px 3px 0 0;
+                border-radius: 3px;
                 background-color: #e4ebf1;
                 padding: 10px 16px;
                 margin-bottom: 0;
@@ -183,7 +182,7 @@
 
     .console-tree-title{
         display:block;
-        padding: 0.5rem 0 0.5rem 2rem;
+        padding: 12px 0 6px 24px;
         border-top: solid 1px #e4ebf1;
     }
 }
