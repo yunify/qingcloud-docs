@@ -7,15 +7,14 @@
 
     p, li, td {
         font-weight: normal;
-        font-size: 0.85rem;
-        color: #68747f;
-        line-height: 1.71;
+        font-size: 14px;
+        color: #324558;
+        line-height: 1.8;
     }
 
     > h1 {
-        font-weight: 500;
-        margin-bottom: 8px;
-        color: #31383e;
+        margin-bottom: 16px;
+        color: #1d2c39;
     }
 
     > h2 {
@@ -59,7 +58,7 @@
 
         > p {
             font-size: 14px;
-            color: #a1a6ab;
+            color: #939ea9;
             line-height: 1.71;
             margin-bottom:0;
         }
@@ -67,7 +66,7 @@
 
     > ul li, > ol li {
         margin-bottom: .25rem;
-        list-style: disc;
+        list-style: decimal;
         margin-left: 1em;
         > blockquote {
             padding: 10px 24px;
@@ -89,8 +88,9 @@
     }
 
     > ul li {
-        list-style: decimal;
+        list-style: disc;
         margin-left: 1em;
+
     }
     strong {
         font-weight: $font-weight-bold;

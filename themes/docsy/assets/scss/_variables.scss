@@ -54,9 +54,9 @@ $td-sidebar-border-color: $border-color !default;
 // These colors are all part of the theme palette, but the mix is fairly random to create variation. This can be overridden by the project if needed.
 $td-box-colors: $dark, $primary, $secondary, $info, $primary-light, $gray-600, $success, $warning, $dark, $danger, $primary, $secondary, $primary-light, $info !default;
 
-$link-color: #0070a8 !default;
+$link-color: #00a870 !default;
 $link-decoration: none !default;
-$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-color: darken($link-color, 20%) !default;
 $link-hover-decoration: none !default;
 
 // Fonts
@@ -81,7 +81,7 @@ $font-size-base: 1rem !default;
 
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
-$font-weight-medium: 500 !default;
+$font-weight-medium: 600 !default;
 $font-weight-bold: 700 !default;
 
 $font-weight-body-text: $font-weight-normal !default;

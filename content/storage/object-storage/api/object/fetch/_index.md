@@ -9,7 +9,7 @@ weight: 3
 
 # PUT Object - Fetch
 
-用于从指定的源链接抓取资源，保存到指定的对象中。Qingstor 在抓取时能够自动处理源链接服务器返回的 301/302/307 等重定向请求。 如果在同一时间相同源链接的 fetch 请求正在进行，或者被动触发的外部镜像功能正在抓取该源链接对应的文件，服务端将返回 409 fetch_in_process。 除此之外，服务端根据源链接错误情况还可能返回 404 object_not_exists, 503 upstream_failed 等错误，[参见错误信息](../common/error_code.html#object-storage-error-code)
+用于从指定的源链接抓取资源，保存到指定的对象中。Qingstor 在抓取时能够自动处理源链接服务器返回的 301/302/307 等重定向请求。 如果在同一时间相同源链接的 fetch 请求正在进行，或者被动触发的外部镜像功能正在抓取该源链接对应的文件，服务端将返回 409 fetch_in_process。 除此之外，服务端根据源链接错误情况还可能返回 404 object_not_exists, 503 upstream_failed 等错误，[参见错误信息](../../error_code/#object-storage-error-code)
 
 > 注意:
 >
@@ -33,7 +33,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-参见[公共请求头](../common/common_header.html#请求头字段-request-header)
+参见[公共请求头](../../common_header/#请求头字段-request-header)
 
 | Header Name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -46,16 +46,16 @@ Authorization: <authorization-string>
 
 ## Status Code
 
-回源成功返回 201; 假如源 object 不存在或目标 Bucket 不存在返回 404; 假如已经有另一个并发的 fetch 请求, 返回 409 fetch_in_process; 假如源站不可用, 返回 503 upstream_failed; 假如当前回源请求过多, 返回 429 fetch_throttled . 其他失败的返回码参考[错误码列表](../common/error_code.html).
+回源成功返回 201; 假如源 object 不存在或目标 Bucket 不存在返回 404; 假如已经有另一个并发的 fetch 请求, 返回 409 fetch_in_process; 假如源站不可用, 返回 503 upstream_failed; 假如当前回源请求过多, 返回 429 fetch_throttled . 其他失败的返回码参考[错误码列表](../../error_code/).
 
 
 ## Response Headers
 
-参见[公共响应头](../common/common_header.html#响应头字段-request-header)
+参见[公共响应头](../../common_header/#响应头字段-request-header)
 
 ## Response Body
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../common/error_code.html)
+正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
 
 
 ## Example

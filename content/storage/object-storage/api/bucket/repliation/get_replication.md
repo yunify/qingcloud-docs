@@ -30,7 +30,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](../../common/common_header.html#请求头字段-request-header)
+> [参见公共请求头](../../../common_header/#请求头字段-request-header)
 
 ## Request Elements
 
@@ -38,7 +38,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](../../common/common_header.html#响应头字段-response-heaader)
+> [参见公共响应头](../../../common_header/#响应头字段-response-heaader)
 
 ## Response Elements
 
