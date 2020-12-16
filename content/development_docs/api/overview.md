@@ -23,7 +23,7 @@ collapsible: false
 | Name | Description | Notes |
 | --- | --- | --- |
 | API入口 | API 调用的 webservice 入口 | 我们的API入口目前统一为：[https://api.qingcloud.com/iaas/](https://api.qingcloud.com/iaas/) |
-| 公共参数 | 每个 API 调用都需要包含公共参数 | 详情可见 [_公共参数_](../parameters) |
+| 公共参数 | 每个 API 调用都需要包含公共参数 | 详情可见 [_公共参数_](../parameters/) |
 | 指令名称 | API指令的名称 ( action )，例如 DescribeInstances 等。 | 完整的指令名称列表请参见 [_API指令列表_](../command_list/instance/)。 |
 | 指令参数 | 指令参数请参见每个指令的相关文档。 |   |
 
@@ -56,7 +56,7 @@ https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
 | Name | Description | Notes |
 | --- | --- | --- |
 | 指令名称 | API 返回的指令名称 ( action )，例如 DescribeInstancesResponse 等。 | API 返回的指令名称一般以 “API 请求指令名称” + “Response” 来表示。 |
-| 返回码 | 返回码 ( ret_code ) 用来表示API请求的返回值，当ret_code = 0时表示API请求正常，ret_code != 0时表示API请求错误。 | 详情可见 [_错误码_](../error_code) |
+| 返回码 | 返回码 ( ret_code ) 用来表示API请求的返回值，当ret_code = 0时表示API请求正常，ret_code != 0时表示API请求错误。 | 详情可见 [_错误码_](../error_code/) |
 | 返回参数 | 返回参数请参见每个指令的相关文档。 |   |
 
 **API 返回样例**

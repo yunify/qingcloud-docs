@@ -14,7 +14,7 @@ draft: false
 | --- | --- | --- | --- |
 | users.n | String | 子帐户 ID。 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

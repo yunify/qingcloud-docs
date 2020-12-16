@@ -16,7 +16,7 @@ draft: false
 | rur_set.n.user_group | String | 用户组ID | Yes |
 | rur_set.n.group_role | String | 角色ID | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Example**
 

@@ -23,7 +23,7 @@ draft: false
 | resource_type | String | 资源类型 |
 | resource_id | String | 资源 ID |
 
-[_公共参数_](../../../parameters) **Response Elements**
+[_公共参数_](../../../parameters/) **Response Elements**
 
 | Name | Type | Description |
 | --- | --- | --- |

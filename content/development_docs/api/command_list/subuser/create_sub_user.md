@@ -17,7 +17,7 @@ draft: false
 | passwd | String | 子帐户登录密码。 | Yes |
 | notify_email | String | 通知邮箱。 | No |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

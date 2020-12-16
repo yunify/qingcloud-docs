@@ -14,7 +14,7 @@ draft: false
 | role | String | 将要修改的角色，如集群未配置角色，可留空 | No |
 | env | String | JSON格式的环境变量，例如 `{"key": "value"}` | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

@@ -22,7 +22,7 @@ draft: false
 | statics.n.val6 | String | 请参考 [_AddRouterStatics_](add_router_statics.html) 对应参数说明。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

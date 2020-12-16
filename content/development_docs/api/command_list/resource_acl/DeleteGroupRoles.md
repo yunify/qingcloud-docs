@@ -14,7 +14,7 @@ draft: false
 | --- | --- | --- | --- |
 | group_roles.n | String | 角色ID | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Example**
 

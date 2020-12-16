@@ -17,7 +17,7 @@ draft: false
 | parameters.n.cache_parameter_value | String | 新的缓存服务配置项值 | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

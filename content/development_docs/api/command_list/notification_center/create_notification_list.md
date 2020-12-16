@@ -17,7 +17,7 @@ draft: false
 | notification_list_name | String | 通知列表名称 | Yes |
 | notification_items | Array | 通知列表中的通知项 ID | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

@@ -20,7 +20,7 @@ draft: false
 | conf | String | 集群的配置信息(转义并去除空格的JSON格式) | Yes |
 | debug | Integer | 集群是否为开发测试集群。此项针对开发者，如果开发者完成应用上传，部署开发的应用指定debug值可以跳过服务费计费 | No |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

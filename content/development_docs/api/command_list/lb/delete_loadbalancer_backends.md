@@ -15,7 +15,7 @@ draft: false
 | loadbalancer_backends.n | String | 后端服务ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 
