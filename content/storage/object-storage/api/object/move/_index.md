@@ -37,7 +37,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-参见[公共请求头](../common/common_header.html#请求头字段-request-header)
+参见[公共请求头](../../common_header/#请求头字段-request-header)
 
 | Header Name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -53,15 +53,15 @@ Authorization: <authorization-string>
 
 ## Status Code
 
-移动成功返回 201, 假如源 object 不存在或目标 Bucket 不存在返回 404; 其他失败的返回码参考[错误码列表](../common/error_code.html).
+移动成功返回 201, 假如源 object 不存在或目标 Bucket 不存在返回 404; 其他失败的返回码参考[错误码列表](../../error_code/).
 
 ## Response Headers
 
-参见[公共响应头](../common/common_header.html#响应头字段-request-header)
+参见[公共响应头](../../common_header/#响应头字段-request-header)
 
 ## Response Body
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../common/error_code.html)
+正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
 
 ## Example
 

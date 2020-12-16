@@ -44,16 +44,11 @@ section3:
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/development_docs/api/"
+      url: "api/overview/"
 
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: "/development_docs/sdk/"
-
-    - title: CLI 文档
-      content: 如何使用 CLI 文档
-      url: "/development_docs/cli/"
-
+      url: "sdk/python/"
 
 section4:
   children:
@@ -67,8 +62,6 @@ section4:
         - title: 产品优势
           url: "/storage/object-storage/intro/object-storage/#产品优势"
 
-        - title: 应用场景
-          url: "https://www.qingcloud.com/products/objectstorage/"
 
     - title: 上手：创建和管理 Bucket 存储空间
       content: 创建独立的存储空间，管理存储空间的访问权限，设置 CORS 等。

@@ -34,7 +34,7 @@ Range: bytes=<byte-range>
 
 ## Request Headers
 
-参见[公共请求头](../common/common_header.html#请求头字段-request-header)
+参见[公共请求头](../../common_header/#请求头字段-request-header)
 
 对象加密，参见[加密请求头](../common/encryption.html#加密请求头)
 
@@ -49,7 +49,7 @@ Range: bytes=<byte-range>
 
 ## Response Headers
 
-参见[公共响应头](../common/common_header.html#响应头字段-request-header)
+参见[公共响应头](../../common_header/#响应头字段-request-header)
 
 若对象被加密，服务端将返回[加密响应头](../common/encryption.html#加密响应头)
 
@@ -65,7 +65,7 @@ Range: bytes=<byte-range>
 
 ## status code
 
-该 API 为幂等操作. 成功则返回 200; object 或 bucket 不存在会返回 404. 其他失败的返回码参考[错误码列表](../common/error_code.html)
+该 API 为幂等操作. 成功则返回 200; object 或 bucket 不存在会返回 404. 其他失败的返回码参考[错误码列表](../../error_code/)
 
 ## Response Body
 
