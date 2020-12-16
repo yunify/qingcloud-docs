@@ -18,7 +18,6 @@ keyword: 青云
 > 
 > 如果将一块硬盘通过 Virtual SAN 服务挂载到多台主机上，那么必须通过分布式文件系统（Distributed File System）的支持才可以并行读写，可以使用青云已经推出的 [_NAS 服务_](https://docsv3.qingcloud.com/storage/vnas/manual/vnas) 。
 
-
 ## 创建 Virtual SAN 服务器
 
 在本例中，我们会创建一台提供 Virtual SAN 的服务器。
@@ -33,7 +32,7 @@ Virtual SAN 服务提供两种主机类型：基础型和企业型：
 在创建的对话框中，你可以给 Virtual SAN 命名，并且配置它的网络。你需要将 Virtual SAN 放入一个受管私有网络中，并且可以指定 Virtual SAN 在私有网络中的 IP 。
 
 > 注解
->
+> 
 > 需要确保所选私有网络的 DHCP 处于『打开』状态。
 
 ![](/storage/share/manual/_images/create_s2_server.png)
@@ -92,8 +91,9 @@ Debian/Ubuntu: apt-get install open-iscsi
 InitiatorName=iqn.1993-08.org.debian:01:967eaffe29d7
 ```
 
->注解
-可以用 iscsi-iname 命令生成一个 initiator name，例如：
+> 注解
+> 
+> 可以用 iscsi-iname 命令生成一个 initiator name，例如：
 
 ```
 iscsi-iname （以缺省前缀生成名称）
@@ -104,8 +104,9 @@ iscsi-iname -p iqn.2005-03.com.qingcloud （以指定的前缀生成名称）
 
 默认情况下，iSCSI 发起方和目标方之间通过端口3260连接。
 
->注解
-iSCSI 命令需要以 root 身份运行（下同）。
+> 注解
+> 
+> iSCSI 命令需要以 root 身份运行（下同）。
 
 ```
 iscsiadm -m discovery -t st -p <Virtual SAN 服务器IP>
@@ -123,8 +124,9 @@ iscsiadm -m session
 
 完成上述步骤后，当你执行 lsblk 命令时你可以发现本地多了一块或多块硬盘， 你可以像本地硬盘一样使用它（们）。
 
->注解
-如果你想在客户端重启时自动登录，请执行下面的命令：
+> 注解
+> 
+> 如果你想在客户端重启时自动登录，请执行下面的命令：
 
 ```
 iscsiadm -m node -T <目标IQN>  -p  <Virtual SAN 服务器IP> --op update -n node.startup -v automatic
@@ -138,8 +140,9 @@ iscsiadm -m node -T  <目标IQN>   -p <Virtual SAN 服务器IP> --logout
 iscsiadm -m node -T <目标IQN> -p  <Virtual SAN 服务器IP> --op=delete
 ```
 
->注解
-如果你想登出所有的目标，请执行下面的命令：
+> 注解
+> 
+> 如果你想登出所有的目标，请执行下面的命令：
 
 ```
 iscsiadm -m node --logout
@@ -170,8 +173,9 @@ iscsiadm -m node --logout
 
 转到目标器页面，选中之前创建的目标，然后，点击连接。
 
->注解
-默认勾选“将此连接添加到收藏目标列表”，意思就是，系统启动会自动连接存储设备。
+> 注解
+> 
+> 默认勾选“将此连接添加到收藏目标列表”，意思就是，系统启动会自动连接存储设备。
 
 点击确定，就能够连接，然后我们就可以像操作普通磁盘一样，对其格式化，分区等等。
 
@@ -203,8 +207,9 @@ vi /var/lib/iscsi/nodes/<目标IQN>/<Virtual SAN 服务器IP>/default
 *   其中两台（node1, node2）作为 oracle 数据库节点，至少2核8G
 *   加入连接了路由器的私有网络
 
->注解
-本文为了简化部署拓扑，只使用两个节点。请根据自己的项目需求决定数据库节点数量。
+> 注解
+> 
+> 本文为了简化部署拓扑，只使用两个节点。请根据自己的项目需求决定数据库节点数量。
 
 **性能型硬盘**
 
@@ -242,7 +247,7 @@ Oracle RAC 需要主机加入两个网络，分别用于对外提供服务，和
 ![](../_images/oracle_rac_dhcp.png)
 
 > 注解
->
+> 
 > 这里推荐修改 DHCP 服务范围为2~100是为了方便配置数据库节点的 VIP, 比如 192.168.100.3对应的 VIP 可以是192.168.100.103。
 
 **配置主机网络和地址**
@@ -258,7 +263,7 @@ Oracle RAC 需要主机加入两个网络，分别用于对外提供服务，和
 ![](../_images/oracle_rac_private_ip.png)
 
 > 注解
->
+> 
 > 1.  Oracle Linux自带的 NetworkManage 会覆盖命令行对 IP 地址的修改，最好使用桌面配置 IP。
 > 2.  截图里面172.16.100.1这个地址实际不存在，只是为了让配置有效。
 > 3.  先加入受管网络，再加入自管网络。这是为了让自管网络对应网卡成为 eth1, 这样默认网关就是 eth0 对应的网关，也就是受管网络路由器。
@@ -272,6 +277,7 @@ Oracle RAC 对外提供的地址是 scan-cluster 域名，Oracle 会管理 scan-
 ![](../_images/oracle_rac_enable_dns.png)
 
 > 注解
+> 
 > 其中i-xjrahmmp和i-bxjv3vop是node1和node2的机器名。如果需要用自定义的机器名，请使用 [*](#id7).localdomain的格式，比如: node1.localdomain
 
 应用路由器修改后，如果是第一次启用私网 DNS 功能，需要等待一会儿，或者重启 network-manager 服务，让主机从 DHCP 更新 DNS 服务器 IP 地址，然后到node1/node2上面测试 DNS 记录是否可用:
@@ -364,6 +370,7 @@ id oracle
 ```
 
 > 注解
+> 
 > 生成环境请修改代码中的密码。
 
 脚本执行后会输出 uid/gid, 请比较两个节点，看是否如下：
@@ -489,6 +496,7 @@ ssh node2-priv.localdomain date
 ```
 
 > 注解
+> 
 > 请替换里面的``i-xjrahmmp``和``i-bxjv3vop``为node1|node2的主机id。node1除了信任node2, 还要信任自己，反之也是。请多次运行以上命令，直到能正确返回时间，并且不再提示“RSA key fingerprint...Are you sure you want...”
 
 ### 存储配置
@@ -496,6 +504,7 @@ ssh node2-priv.localdomain date
 本例共需要5块性能型硬盘，1块本地硬盘用于存储数据库安装文件，4块共享存储。对应本地硬盘，请挂载到node1上面，并拷贝和解压安装文件。
 
 > 注解
+> 
 > 对于您具体需要多少块共享硬盘，和具体的大小，请咨询 dba
 
 创建并挂载共享存储，请参考 [_Virtual SAN 指南_](#guide-s2) 。将 4 块硬盘全部加载到 node1 和 node2 ， 然后把那块本地硬盘挂到 node1。挂完之后，node1 应该是这样子(其中 vdc 是本地硬盘):
@@ -531,6 +540,7 @@ for x in a b c d
 ```
 
 > 注解
+> 
 > 以上代码中，”a b c d”代表加载的共享硬盘 sda~sdd 。请根据实际情况修改。硬盘必须是新硬盘（无分区，没有被格式化），否则 Grid 无法安装。
 
 检查udev是否正常配置
@@ -620,8 +630,9 @@ Press ENTER key to continue after execution of "/tmp/CVU_12.1.0.1.0_grid/runfixu
 
 ![](../_images/grid17.png)
 
->注解
-grid 安装环境检查脚本在 Oracle Linux 6 上面的一个 bug 导致错误” PRVF-9802” 无法解决，具体原因请见 [Debug Cluvfy error ERROR: PRVF-9802](http://www.hhutzler.de/blog/debug-cluvfy-error-error-prvf-9802/) 。
+> 注解
+> 
+> grid 安装环境检查脚本在 Oracle Linux 6 上面的一个 bug 导致错误” PRVF-9802” 无法解决，具体原因请见 [Debug Cluvfy error ERROR: PRVF-9802](http://www.hhutzler.de/blog/debug-cluvfy-error-error-prvf-9802/) 。
 
 为了继续安装，请勾上”Ingore All”忽略这个错误，然后下一步。
 
@@ -658,8 +669,9 @@ ora.proxy_advm ora....vm.type ONLINE    OFFLINE
 ora.scan1.vip  ora....ip.type ONLINE    ONLINE    i-xjrahmmp
 ```
 
->注解
-在 12c 版本中， ora.proxy_advm 被用到时才会启动，所以安装完显示为 OFFLINE ,并不代表出了问题。
+> 注解
+> 
+> 在 12c 版本中， ora.proxy_advm 被用到时才会启动，所以安装完显示为 OFFLINE ,并不代表出了问题。
 
 **安装 oracle 数据库软件**
 
