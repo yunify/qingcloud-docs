@@ -39,11 +39,11 @@ Range: bytes=<byte-range>
 
 ## Request Headers
 
-参见[公共请求头](../common/common_header.html#请求头字段-request-header)
+参见[公共请求头](../../common_header/)
 
-若对象需要加密，参见[加密请求头](/qingstor/api/common/encryption.html#加密请求头)
+若对象需要加密，参见[加密请求头](../../common/encryption/#加密请求头)
 
-若对象附有标准 HTTP 头或自定义元数据，参见[如何获取对象元数据](../common/metadata.html#如何获取对象元数据)
+若对象附有标准 HTTP 头或自定义元数据，参见[如何获取对象元数据](../../metadata/)
 
 | Header Name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -59,17 +59,17 @@ Range: bytes=<byte-range>
 
 ## Response Headers
 
-参见[公共响应头](../common/common_header.html#响应头字段-request-header)
+参见[公共响应头](../../common_header/)
 
-若对象被加密，服务端将返回加密响应头, 具体请参见[加密响应头](/qingstor/api/common/encryption.html#加密响应头)
+若对象被加密，服务端将返回加密响应头, 具体请参见[加密响应头](../../common/encryption/#加密响应头)
 
 ## Status Code
 
-该 API 为幂等操作. 成功则返回 200; object 或 bucket 不存在会返回 404; 假如开启了外部镜像功能并且对象在 Bucket 中不存在, 有可能返回 302 重定向. 失败的返回码参考[错误码列表](../common/error_code.html)
+该 API 为幂等操作. 成功则返回 200; object 或 bucket 不存在会返回 404; 假如开启了外部镜像功能并且对象在 Bucket 中不存在, 有可能返回 302 重定向. 失败的返回码参考[错误码列表](../../error_code/)
 
 ## Response Body
 
-正常情况下为对象实体内容, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../common/error_code.html)
+正常情况下为对象实体内容, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
 
 ## Example
 

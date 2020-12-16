@@ -31,7 +31,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-参见[公共请求头](../../common/common_header.html#请求头字段-request-header)
+参见[公共请求头](../../../common_header/#请求头字段-request-header)
 
 ## Request Body
 
@@ -39,15 +39,15 @@ Authorization: <authorization-string>
 
 ## Status Code
 
-正常会返回 200,  失败的返回码参考[错误码列表](../common/error_code.html)
+正常会返回 200,  失败的返回码参考[错误码列表](../../error_code/)
 
 ## Response Headers
 
-参见[公共响应头](../../common/common_header.html#响应头字段-response-heaader)
+参见[公共响应头](../../../common_header/#响应头字段-response-heaader)
 
 ## Response Body
 
-正常情况下会有一个 Json 消息体; 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../common/error_code.html)
+正常情况下会有一个 Json 消息体; 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
 
 GET Bucket Lifecycle 的 Response Body 包括两部分:
 一部分与 PUT Bucket Lifecycle 相同, 参见 PUT Bucket Lifecycle [Request Body](../put_lifecycle#request-body),

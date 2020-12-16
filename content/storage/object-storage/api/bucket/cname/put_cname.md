@@ -35,7 +35,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-参见[公共请求头](../../common/common_header.html#请求头字段-request-header)
+参见[公共请求头](../../../common_header/#请求头字段-request-header)
 
 ## Request Body
 
@@ -48,7 +48,7 @@ Json 消息体
 
 ## Response Headers
 
-参见[公共响应头](../../common/common_header.html#响应头字段-request-header)
+参见[公共响应头](../../../common_header/#响应头字段-request-header)
 
 ## Example
 
