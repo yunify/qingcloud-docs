@@ -11,9 +11,9 @@ weight: 3
 
 获取 Bucket Replication 规则列表, Replication 是存储空间的子资源（subresource), 只有存储空间所有者才能获取.
 
-设置 Replication 请参见 [PUT Bucket Replication](../put_replication).
+设置 Replication 请参见 [PUT Bucket Replication](../put_replication/).
 
-删除 Replication 请参见 [DELETE Bucket Replication](../delete_replication).
+删除 Replication 请参见 [DELETE Bucket Replication](../delete_replication/).
 
 ## Request Syntax
 
@@ -43,7 +43,7 @@ Authorization: <authorization-string>
 ## Response Elements
 
 GET Bucket Replication 的 Response Elements 包括两部分:
-一部分与 PUT Bucket Replication 相同, 参见 PUT Bucket Replication [Request Elements](put_replication.html#request-elements),
+一部分与 PUT Bucket Replication 相同, 参见 PUT Bucket Replication [Request Elements](../put_replication/),
 及 GET Bucket Replication 特有的 Request Elements, 如下表：
 
 | Name | Type | Description |
