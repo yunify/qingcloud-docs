@@ -42,15 +42,15 @@
     #TableOfContents {
         // Hugo's ToC is a mouthful, this can be used to style the top level h2 entries.
         > ul > li > ul > li  a {
-            font-size: 12px;
-            color: #999;
+            font-size: 13px;
+            color: #939ea9;
         }
         
         overflow-y: auto;
         max-height: calc(100vh - 10rem);
 
         a {
-            color: #68747f;
+            color: #4c5e70;
             font-size: 14px;
             line-height: 1.71;
             font-weight: normal;
