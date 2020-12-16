@@ -170,7 +170,7 @@ Windows 系统
 
 ![image](/compute/vm/manual/_images/8.png)
 
-（2）配置 Windows iSCSI 客户端，请参考文档 [Virtual SAN（vSAN）](https://docs.qingcloud.com/product/storage/shared/vsan)
+（2）配置 Windows iSCSI 客户端，请参考文档 [Virtual SAN（vSAN）](https://docsv3.qingcloud.com/storage/share/manual/vsan)
 
 > 注解：当创建的 VSAN 为多节点时， 点击程序的发现页面，然后点击『发现门户』，输入每个 VSAN 节点的 IP 。
 
@@ -250,4 +250,4 @@ service multipath-tools start
 
 ```ls /dev/mapper/```  可以看到对应的盘符. 后续可以格式化等操作，开始使用。
 
-（2）配置 Linux iSCSI 客户端，请参考文档 [Virtual SAN（vSAN）](https://docs.qingcloud.com/product/storage/shared/vsan)
+（2）配置 Linux iSCSI 客户端，请参考文档 [Virtual SAN（vSAN）](https://docsv3.qingcloud.com/storage/share/manual/vsan)
