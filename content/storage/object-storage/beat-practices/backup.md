@@ -46,7 +46,7 @@ CONFIG_INOTIFY_USER=y
    > sudo yum install lsyncd
    ```
 
-1. 使用 pip 安装并配置 `qsctl`，`qsctl` 的详细配置可以参考 [qsctl 的文档](../developer_tools/qsctl.html#qsctl)
+1. 使用 pip 安装并配置 `qsctl`，`qsctl` 的详细配置可以参考 [qsctl 的文档](../../manual/developer_tools/qsctl/)
 
    ```bash
    > pip install qsctl -U

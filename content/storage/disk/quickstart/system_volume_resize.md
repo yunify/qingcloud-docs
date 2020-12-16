@@ -50,7 +50,7 @@ keyword: 青云
 
 3、启动主机，并查看更改后的结果：
 
-![启动主机](/storage/disk/quickstart/_images/_images/after_resize.png)
+![启动主机](/storage/disk/quickstart/_images/after_resize.png)
 
 确认修改成功。
 
