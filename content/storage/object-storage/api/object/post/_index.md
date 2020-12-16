@@ -55,16 +55,16 @@ Content-Length: length
 
 ## Status Code
 
-该 API 为幂等操作. 上传成功返回 201; 假如有重定向则返回 302. 失败的返回码参考[错误码列表](../common/error_code.html)
+该 API 为幂等操作. 上传成功返回 201; 假如有重定向则返回 302. 失败的返回码参考[错误码列表](../../error_code/)
 
 ## Response Body
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../common/error_code.html)
+正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
 
 
 ## Response Headers
 
-参见[公共响应头](../common/common_header.html#响应头字段-request-header)
+参见[公共响应头](../../common_header/#响应头字段-request-header)
 
 ## Example
 
