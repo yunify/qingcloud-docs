@@ -66,7 +66,7 @@
 
     > ul li, > ol li {
         margin-bottom: .25rem;
-        list-style: disc;
+        list-style: decimal;
         margin-left: 1em;
         > blockquote {
             padding: 10px 24px;
@@ -88,7 +88,7 @@
     }
 
     > ul li {
-        list-style: decimal;
+        list-style: disc;
         margin-left: 1em;
 
     }
