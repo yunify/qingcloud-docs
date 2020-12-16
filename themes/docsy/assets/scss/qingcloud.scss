@@ -61,7 +61,7 @@ header {
 
 
     .card-body {
-        padding: 0 0 12px 0;
+        padding: 0;
         min-height: 200px;
 
         .card-title {
@@ -76,6 +76,9 @@ header {
             line-height: 1.71;
             color: #68747f;
             margin-bottom: 13px;
+        }
+        .card-text:last-child{
+            margin-bottom: 24px;
         }
         .card-link {
             margin-left: 2rem;

@@ -17,7 +17,12 @@
   {{ end }}
 {{ end }}
 {{ if eq .p1 .p2 }}
-<span class="crumb-last-color">{{ .p1.LinkTitle }}</span>
+{{ $length := len .p1.LinkTitle}}
+	{{if and (ne .Params.type "product") (eq .p1.Site.Params.IsConsole true)}}
+	<span class="crumb-last-color">{{ if ge $length 20 }}详情{{else}}{{ .p1.LinkTitle }}{{end}}</span>
+	{{else}}
+	<span class="crumb-last-color">{{ .p1.LinkTitle }}</span>
+	{{end}}
 {{ else}}
 	
 	{{if ne .p1.LinkTitle "Document"}}
