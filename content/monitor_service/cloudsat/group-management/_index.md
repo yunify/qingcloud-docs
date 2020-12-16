@@ -19,15 +19,15 @@ Section2:
     
     - title: 功能概述
       content: 功能概述
-      url: "/cloudsat/cloudsat/group-management/intro/intro/"
+      url: "/monitor_service/cloudsat/group-management/intro/intro/"
     
     - title: 操作指南
       content: 操作指南
-      url: "/cloudsat/cloudsat/group-management/manual/group_management/"
+      url: "/monitor_service/cloudsat/group-management/manual/group_management/"
     
     - title: 最佳实践
       content: 最佳实践
-      url: "/cloudsat/cloudsat/group-management/best-practices/exceptionhandle"
+      url: "/monitor_service/cloudsat/group-management/best-practices/exceptionhandle"
         
 
 ---

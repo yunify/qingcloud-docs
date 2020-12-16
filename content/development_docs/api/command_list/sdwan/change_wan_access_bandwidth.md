@@ -19,7 +19,7 @@ draft: false
 | bandwidth_type | String | 带宽类型, 目前只支持 elastic 类型 | Yes |
 | bandwidth | Integer | 带宽值, bandwidth_type 为 elastic 时, bandwidth 必须指定 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

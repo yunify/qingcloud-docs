@@ -8,7 +8,7 @@ draft: false
 
 创建策略时，可一同创建规则(rules) 和行为(action) ，也可创建之后再添加规则或行为。
 
-告警策略数据可以通过 [_DescribeAlarmPolicies_](describe_alarm_policies.html#api-describe-alarm-policies) 得到。
+告警策略数据可以通过 [_DescribeAlarmPolicies_](../describe_alarm_policies) 得到。
 
 **Request Parameters**
 
@@ -20,7 +20,7 @@ draft: false
 | zone | String | 区域 ID，注意要小写 | Yes |
 | notice_count | Integer | 连续告警次数（1-5） | No |
 | rules.n.alarm_policy_rule_name | String | 规则名称 | No |
-| rules.n.meter | String | 资源监控项，不同资源类型有不同的监控项。可参考 [_资源监控_](../monitor/index.html#api-monitor) | No |
+| rules.n.meter | String | 资源监控项，不同资源类型有不同的监控项。可参考 [_资源监控_](../../monitor/) | No |
 | rules.n.condition_type | String | 条件类型: gt (大于), lt (小于) | No |
 | rules.n.thresholds | Integer | 阈值 | No |
 | rules.n.data_processor | String | 监控数据处理方式: raw (使用监控数据原始值), percent (只适用于 IP 带宽监控，将监控数据转换为带宽占用百分比，再跟阈值进行比较) 默认是 raw 。 | No |
@@ -31,7 +31,7 @@ draft: false
 | actions.n.trigger_action | String | 通知列表 ID ， | No |
 | actions.n.trigger_status | String | 当监控告警变成什么状态时，发消息给此通知列表。有效值是 “ok”, “alarm”, “insufficient” | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

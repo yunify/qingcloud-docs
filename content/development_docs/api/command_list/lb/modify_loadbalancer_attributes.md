@@ -20,7 +20,7 @@ draft: false
 | zone | String | 区域 ID，注意要小写 | Yes |
 | http_header_size | Integer | 负载均衡器允许的最大http头部长度，默认值为15，合法范围[1-127]，单位为kbytes，调高此参数时会影响最大连接数 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

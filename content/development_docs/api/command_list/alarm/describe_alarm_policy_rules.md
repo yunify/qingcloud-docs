@@ -18,7 +18,7 @@ draft: false
 | limit | Integer | 返回数据长度，默认为20 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 
@@ -35,7 +35,7 @@ draft: false
 | --- | --- | --- |
 | alarm_policy_id | String | 告警策略ID |
 | alarm_policy_rule_id | String | 告警策略规则ID |
-| meter | String | 资源监控项，不同资源类型有不同的监控项。可参考 [_资源监控_](../monitor/index.html#api-monitor) |
+| meter | String | 资源监控项，不同资源类型有不同的监控项。可参考 [_资源监控_](../../monitor/) |
 | condition_type | String | 判断条件类型：gt - 大于, lt - 小于 |
 | thresholds | String | 告警阈值 |
 | data_processor | String | 通常都是采用默认值 “raw” 表示对监控数据不需做额外处理。 如果监控资源类型是公网 IP ，还可选择 “percent” 表示阈值数字代表的是百分比， 这样系统会自动根据公网 IP 当前的带宽上限计算百分比。 |

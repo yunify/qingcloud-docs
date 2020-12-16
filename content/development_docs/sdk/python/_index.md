@@ -10,11 +10,11 @@ Section2:
   children:
     - title: 安装指南
       content: 通过pip安装青云SDK。
-      url: "install/installation"
+      url: "install/install/"
 
     - title: 操作指南
       content: 如何使用青云SDK
-      url: "manual/manual_guide"
+      url: "manual/manual_guide/"
 
 section3:
   title: 开发者指南

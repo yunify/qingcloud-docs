@@ -13,6 +13,7 @@ keyword: 青云
 
 本指南旨在介绍如何配置 Virtual SAN 和目标，以及如何设置客户端来访问 Virtual SAN。
 
+
 > 注解
 > 
 > 如果将一块硬盘通过 Virtual SAN 服务挂载到多台主机上，那么必须通过分布式文件系统（Distributed File System）的支持才可以并行读写，可以使用青云已经推出的 [_NAS 服务_](https://docsv3.qingcloud.com/storage/vnas/manual/vnas) 。

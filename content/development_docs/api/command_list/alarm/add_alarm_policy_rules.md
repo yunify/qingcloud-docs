@@ -4,7 +4,7 @@ description:
 draft: false
 ---
 
-给监控告警策略添加规则，当资源监控数据满足设置的任何一条规则，都会触发告警行为。 改后需要调用 [_ApplyAlarmPolicy_](apply_alarm_policy.html#api-apply-alarm-policy) 使修改生效。
+给监控告警策略添加规则，当资源监控数据满足设置的任何一条规则，都会触发告警行为。 改后需要调用 [_ApplyAlarmPolicy_](../apply_alarm_policy) 使修改生效。
 
 **Request Parameters**
 
@@ -12,7 +12,7 @@ draft: false
 | --- | --- | --- | --- |
 | alarm_policy | String | 监控告警策略 ID | Yes |
 | rules.n.alarm_policy_rule_name | String | 规则名称 | No |
-| rules.n.meter | String | 资源监控项，不同资源类型有不同的监控项。可参考 [_资源监控_](../monitor/index.html#api-monitor) | Yes |
+| rules.n.meter | String | 资源监控项，不同资源类型有不同的监控项。可参考 [_资源监控_](../../monitor/) | Yes |
 | rules.n.condition_type | String | 条件类型: gt (大于), lt (小于) | Yes |
 | rules.n.thresholds | Integer | 阈值 | No |
 | rules.n.data_processor | String | 监控数据处理方式: raw (使用监控数据原始值), percent (只适用于 IP 带宽监控，将监控数据转换为带宽占用百分比，再跟阈值进行比较) 默认是 raw 。 | No |
@@ -22,7 +22,7 @@ draft: false
 | rules.n.alarm_level_id | String | 告警级别，level-00000000 表示高，level-00000001表示低 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

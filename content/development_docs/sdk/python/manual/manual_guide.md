@@ -38,11 +38,11 @@ draft: false
 
 上面代码中得到的 conn 是 APIConnection 的实例，在接下来的教程中会继续用到它。
 
-APIConnection 中各操作函数的返回值是根据 API 返回的 JSON 数据转换而成的 dict 。 具体返回内容可参见 [_API 文档_](../../api/index.html#api) 中对应指令。
+APIConnection 中各操作函数的返回值是根据 API 返回的 JSON 数据转换而成的 dict 。 具体返回内容可参见 [_API 文档_](../../../../api/) 中对应指令。
 
 **创建主机**
 
-创建一台主机至少要提供映像ID，[_Instance Types_](../../api/common/includes/instance_type.html#instance-type) 或 cpu/memory:
+创建一台主机至少要提供映像ID，[_Instance Types_](../../../../api/common/instance_type/) 或 cpu/memory:
 
 ```
 >>> ret = conn.run_instances(

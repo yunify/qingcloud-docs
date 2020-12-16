@@ -39,9 +39,9 @@ Authorization: <authorization-string>
 | Content-MD5 | String | 分段实体的预期 MD5 值，用于检查对象在传输过程中字符是否出错或被篡改 | No |
 | Expect | String | 如果请求头附加这个参数，不需要附带 request body，对象存储服务端判断可以接受此请求，则返回 100 CONTINUE | No |
 
-参见[公共请求头](../../common/common_header.html#请求头字段-request-header)
+参见[公共请求头](../../../common_header/#请求头字段-request-header)
 
-对象加密，参见[加密请求头](/qingstor/api/common/encryption.html#加密请求头)
+对象加密，参见[加密请求头](../../common/encryption/#加密请求头)
 
 ## Request Body
 
@@ -49,18 +49,18 @@ Authorization: <authorization-string>
 
 ## Status Code
 
-成功则返回 201; 若 upload_id 不存在则返回 404 upload_not_exists; 其他失败的返回码参考[错误码列表](../../common/error_code.html)
+成功则返回 201; 若 upload_id 不存在则返回 404 upload_not_exists; 其他失败的返回码参考[错误码列表](../../../error_code/)
 
 
 ## Response Headers
 
-参见[公共响应头](../../common/common_header.html#响应头字段-request-header)
+参见[公共响应头](../../../common_header/#响应头字段-request-header)
 
-若对象被加密，服务端将返回[加密响应头](/qingstor/api/common/encryption.html#加密响应头)
+若对象被加密，服务端将返回[加密响应头](../../common/encryption/#加密响应头)
 
 ## Response Body
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../common/error_code.html)
+正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
 
 ## Example
 

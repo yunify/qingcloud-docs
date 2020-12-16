@@ -32,7 +32,7 @@ weight: 2
 | limit | Integer | 返回数据长度，默认为20，最大100 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 
@@ -49,7 +49,7 @@ weight: 2
 | instance_id | String | 主机ID |
 | instance_name | String | 主机名称 |
 | description | String | 主机描述 |
-| instance_type | String | 主机类型, 配置列表请参考 [_Instance Types_](../../common/includes/instance_type.html#instance-type)。 |
+| instance_type | String | 主机类型, 配置列表请参考 [_Instance Types_](../../../common/instance_type/)。 |
 | vcpus_current | Integer | 主机CPU核心数目。 |
 | memory_current | Integer | 主机内存大小, 单位为MB。 |
 | status | String | 主机状态, 有效值为pending, running, stopped, suspended, terminated, ceased。<br/>pending： 等待被创建<br/>running： 运行中<br/>stopped： 已关机<br/>suspended： 由于欠费, 已被暂停使用<br/>terminated： 已被删除, 但处于此状态的主机在2小时之内仍可以被恢复为 running 状态<br/>ceased： 已被彻底删除, 处于此状态的主机无法恢复 |

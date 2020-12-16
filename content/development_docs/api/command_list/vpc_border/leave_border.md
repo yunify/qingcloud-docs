@@ -17,7 +17,7 @@ VXNET 离开边界路由器。
 | vxnets | List | 离开边界路由器的 vxnet | Yes |
 | force | Integer | 是否强制离开边界路由器 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

@@ -7,11 +7,11 @@ weight: 3
 
 创建指定配置，指定数量的主机。
 
-当你创建主机时，主机会先进入 pending 状态，直到创建完成后，变为 running 状态。 你可以使用 [_DescribeInstances_](describe_instances.html#api-describe-instances) 检查主机状态。
+当你创建主机时，主机会先进入 pending 状态，直到创建完成后，变为 running 状态。 你可以使用 [_DescribeInstances_](../describe_instances/) 检查主机状态。
 
 创建主机时，一旦参数 vxnets.n 包含基础网络（即： vxnet-0 ），则需要指定防火墙 security_group，如果没有指定，青云会自动使用缺省防火墙。
 
-青云给主机定义了几种经典配置，可通过参数 instance_type 指定，配置列表请参考 [_Instance Types_](../../common/includes/instance_type.html#instance-type) 。 如果经典配置不能满足你的需求，可通过参数 cpu, memory 自定义主机配置。
+青云给主机定义了几种经典配置，可通过参数 instance_type 指定，配置列表请参考 [_Instance Types_](../../../common/instance_type/) 。 如果经典配置不能满足你的需求，可通过参数 cpu, memory 自定义主机配置。
 
 如果参数中既指定 instance_type ，又指定了 cpu 和 memory ， 则以指定的 cpu 和 memory 为准。
 
@@ -20,7 +20,7 @@ weight: 3
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | image_id | String | 映像ID，此映像将作为主机的模板。可传青云提供的映像ID，或自己创建的映像ID | Yes |
-| instance_type | String | 主机类型，有效值请参考 [_Instance Types_](../../common/includes/instance_type.html#instance-type)<br/>如果使用物理主机, 该参数必填。<br/>如果请求中指定了 instance_type，cpu 和 memory 参数可略过。<br/>如果请求中没有 instance_type，则 cpu 和 memory 参数必须指定。<br/>如果请求参数中既有 instance_type，又有 cpu 和 memory，则以 cpu, memory 的值为准。 | No |
+| instance_type | String | 主机类型，有效值请参考 [_Instance Types_](../../../common/instance_type/)<br/>如果使用物理主机, 该参数必填。<br/>如果请求中指定了 instance_type，cpu 和 memory 参数可略过。<br/>如果请求中没有 instance_type，则 cpu 和 memory 参数必须指定。<br/>如果请求参数中既有 instance_type，又有 cpu 和 memory，则以 cpu, memory 的值为准。 | No |
 | cpu | Integer | CPU core，有效值为: 1, 2, 4, 8, 16 | No |
 | memory | Integer | 内存，有效值为: 1024, 2048, 4096, 6144, 8192, 12288, 16384, 24576, 32768 | No |
 | os_disk_size | Integer | 系统盘大小，单位GB。<br>Linux操作系统的有效值为：20-100，默认值为：20<br>Windows操作系统的有效值为：50-100，默认值为：50 | No |
@@ -42,7 +42,7 @@ weight: 3
 | nic_mqueue | Integer | 网卡多对列: 关闭(默认)：0，开启：1 | No |
 | need_userdata | Integer | 1: 使用 User Data 功能；0: 不使用 User Data 功能；默认为 0 。 | No |
 | userdata_type | String | User Data 类型，有效值：’plain’, ‘exec’ 或 ‘tar’。为 ‘plain’或’exec’ 时，使用一个 Base64 编码后的字符串；为 ‘tar’ 时，使用一个压缩包（种类为 zip，tar，tgz，tbz）。 | No |
-| userdata_value | String | User Data 值。当类型为 ‘plain’ 时，为字符串的 Base64 编码值，长度限制 4K；当类型为 ‘tar’，为调用 [_UploadUserDataAttachment_](../userdata/upload_userdata_attachment.html#api-upload-userdata-attachment) 返回的 attachment_id。 | No |
+| userdata_value | String | User Data 值。当类型为 ‘plain’ 时，为字符串的 Base64 编码值，长度限制 4K；当类型为 ‘tar’，为调用 [_UploadUserDataAttachment_](../../userdata/upload_userdata_attachment/) 返回的 attachment_id。 | No |
 | userdata_path | String | User Data 和 MetaData 生成文件的存放路径。不输入或输入不合法时，为默认目录 /etc/qingcloud/userdata | No |
 | userdata_file | String | userdata_type 为 ‘exec’ 时，指定生成可执行文件的路径，默认为/etc/rc.local | No |
 | target_user | String | 目标用户 ID ，可用于主账号为其子账号创建资源。 | No |

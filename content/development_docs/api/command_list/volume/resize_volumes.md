@@ -18,7 +18,7 @@ draft: false
 | size | Integer | 硬盘容量<br/>警告<br/>只允许比当前容量更大，否则会返回错误信息 | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

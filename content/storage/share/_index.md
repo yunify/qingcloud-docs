@@ -9,7 +9,6 @@ section1:
   title: 共享存储
   vice_title: QingCloud 提供两种共享存储：企业级分布式 SAN（NeonSAN）和 Virtual SAN（vSAN）以匹配不同业务场景，实现稳定高效、安全可靠、灵活便捷的存储服务
 
-
 Section2:
   title: 用户指南
   children:
@@ -27,7 +26,7 @@ section4:
       content: 共享存储为用户提供开箱即用的操作系统与工具。
       vice_title: 了解的第一步
       children:
-        - title: 产品概述（从这里进入示例目录）
+        - title: 产品概述
           url: "/storage/share/intro/introduction"
 
         - title: 产品优势

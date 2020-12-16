@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: 专属宿主机
-  vice_title: QingCloud 为您提供秒级响应、性能卓越、安全稳定的云计算服务
+  vice_title: 为用户提供独占物理服务器资源，从而将实例定向部署到宿主机上
 
 Section2:
   title: 用户指南
@@ -18,27 +18,13 @@ Section2:
 
     - title: 计费指南
       content: 专属宿主机计费指南
-      url: "/compute/dedicated-host/billing/price"
+      url: "/compute/dedicated-host/billing/reserved_contract"
 
     - title: 操作指南
       content: 专属宿主机操作指南
       url: "/compute/dedicated-host/manual/dedicated-host"
 
     
-section3:
-  title: 开发者指南
-  children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/development_docs/api/"
-
-    - title: SDK 文档
-      content: 如何使用 SDK 文档
-      url: "/development_docs/sdk/"
-
-    - title: CLI 文档
-      content: 如何使用 CLI 文档
-      url: "/development_docs/cli/"
 
 section4:
   children:

@@ -23,7 +23,7 @@ draft: false
 | monitor_type | String | 监控类型, 有效值为：internet, pop<br/>internet: 表示需要获取访问互联网的监控数据<br/>pop: 表示需要获取访问接入点的监控数据 | No |
 | ha_member_index | String | 光盒双机成员索引 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

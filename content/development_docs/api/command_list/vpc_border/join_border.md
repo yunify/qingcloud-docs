@@ -17,7 +17,7 @@ VXNET 加入边界路由器。
 | vxnets | List | 加入边界路由器的 vxnet ID | Yes |
 | border_private_ips | List of dictionary | 加入边界路由器 vxnet IP | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

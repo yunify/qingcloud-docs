@@ -20,7 +20,7 @@ draft: false
 | caches.n | String | 缓存服务ID，如果不指定，默认会应用到与该缓存配置组绑定的所有缓存服务。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

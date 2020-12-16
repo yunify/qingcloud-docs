@@ -15,7 +15,7 @@ draft: false
 | action | String | 请求动作，可选值：DeleteRouteTables | Yes |
 | routing_tables.n | String | 一个或者多个路由表的ID | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

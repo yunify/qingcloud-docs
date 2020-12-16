@@ -1,13 +1,10 @@
 ---
 title: "最佳实践"
 linkTitle: "最佳实践"
-_build:
- render: false 
-weight: 6
+weight: 7
 collapsible: true
 ---
 
-# 最佳实践
 
 对象存储服务（Object Storage）提供了一个在线文件存储和访问平台，您可以将数据、日志、静态分发资源等多种文件类型，通过控制台或 Object Storage API 传到一个 Bucket 中，以供 HTTP 访问或数据分析使用。
 

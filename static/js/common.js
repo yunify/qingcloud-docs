@@ -23,3 +23,18 @@ function download_pdf(url='',pdf_name=''){
 	}
 	window.location.href='/download.php?url='+url+'&pdf_name='+pdf_name;
 }
+
+$(function(){
+	//查看链接结尾是否/结尾
+	$('a').each(function(){
+		var url = $(this).attr('href');
+		if(url != null && url != 'undefined'){
+			var start = url.length-1;
+			var last = url.substr(start,1);
+			var reg= /^[A-Za-z]/;
+			if(last != '/' && reg.test(last)){
+				$(this).attr('href',url+'/');
+			}
+		}
+	});
+})

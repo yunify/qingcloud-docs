@@ -18,7 +18,7 @@ draft: false
 | routing_table_rules.n | String | 一个或者多个路由表规则的ID | No |
 | routing_table | String | 路由表ID | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

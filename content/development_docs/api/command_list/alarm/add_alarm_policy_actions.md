@@ -19,7 +19,7 @@ draft: false
 | actions.n.trigger_status | String | 当监控告警变成什么状态时，发消息给此通知列表。有效值是 “ok”, “alarm”, “insufficient”, “deleted” | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

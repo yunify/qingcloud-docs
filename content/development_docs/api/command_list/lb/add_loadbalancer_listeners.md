@@ -27,7 +27,7 @@ draft: false
 | listeners.n.tunnel_timeout | Integer | 监听器的tunnel超时时间，范围为10 ~ 86400秒，单位为秒。 | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

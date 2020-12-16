@@ -23,7 +23,7 @@ draft: false
 | statics.n.vpc | String | type 为 0 时，静态路由下一跳 VPC 的 ID | No |
 | statics.n.instance | String | type 为 1 时，静态路由下一跳主机的 ID | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

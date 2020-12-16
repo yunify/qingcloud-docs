@@ -22,7 +22,7 @@ S2 Group权限组包含可访问共享目标的一组用户，将权限组和共
 | description | String | 权限组描述 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

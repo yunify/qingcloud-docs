@@ -18,16 +18,16 @@ Section2:
 
     - title: 功能概述
       content: 功能概述
-      url: "/cloudsat/cloudsat/alarm-service/intro/intro/"
+      url: "/monitor_service/cloudsat/alarm-service/intro/intro/"
    
     
     - title: 操作指南
       content: 操作指南
-      url: "/cloudsat/cloudsat/alarm-service/manual/alarm_service/"
+      url: "/monitor_service/cloudsat/alarm-service/manual/alarm_service/"
     
     - title: 最佳实践
       content: 最佳实践
-      url: "/cloudsat/cloudsat/alarm-service/best-practices/exceptionhandle"
+      url: "/monitor_service/cloudsat/alarm-service/best-practices/exceptionhandle"
 
 
 ---

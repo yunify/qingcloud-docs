@@ -24,7 +24,7 @@ draft: false
 | hypervisor | String | 网络组件节点使用的虚拟化方式，可以使用 kvm 或者　lxc。 | No |
 | zone | String | 区域 ID，注意要小写。 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

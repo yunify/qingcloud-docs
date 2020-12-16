@@ -1,79 +1,80 @@
 {{/* We cache this partial for bigger sites and set the active class client side. */}}
 {{ $shouldDelayActive := ge (len .Site.Pages) 2000 }}
 {{ if not .Site.Params.IsConsole }}
-	<div class="td-sidebar-section-title" style="padding-bottom: 5px;display: flex;">
-		<img class="is-40x40" src="/images/icons/book-open.svg">
-		<h3 class="doc_vice_title">{{ .CurrentSection.LinkTitle }}</h3>
-	</div>
+<div class="td-sidebar-section-title" style="padding:8px 0 12px 0;display: flex;">
+  <img class="is-40x40" src="/images/icons/book-open.svg">
+  <h3 class="doc_vice_title">{{ .CurrentSection.LinkTitle }}</h3>
+</div>
 {{ end }}
 <div id="td-sidebar-menu" class="td-sidebar__inner{{ if $shouldDelayActive }} d-none{{ end }}">
-	{{ with .Params.section }}
-	<div class="field has-addons has-addons-centered select-field">
-	  <div class="control">
-		<div class="select is-small">
-		  <select>
-		  {{range .}}
-			<option value="{{.url}}">{{.title}}</option>
-		  {{ end }}
-		  </select>
-		</div>
-	  </div>
-	</div>
-	{{ end }}
-    <nav class="collapse td-sidebar-nav pt-2" id="td-section-nav">
-      <div class="nav-item dropdown d-block ">
+  {{ with .Params.section }}
+  <div class="field has-addons has-addons-centered select-field">
+    <div class="control">
+      <div class="select is-small">
+        <select>
+          {{range .}}
+          <option value="{{.url}}">{{.title}}</option>
+          {{ end }}
+        </select>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+  <nav class="collapse td-sidebar-nav pt-2" id="td-section-nav">
+    <div class="nav-item dropdown d-block ">
       {{ $root := . }}
       {{ range (.Site.GetPage "section" .Type).Pages }}
-        {{ template "render-menu" (dict "ctx" . "root" $root "depth" 0)}}
+      {{ template "render-menu" (dict "ctx" . "root" $root "depth" 0)}}
       {{ end }}
     </div>
-    </nav>
-  </div>
-  {{ define "render-menu" }}
-  {{ $root := .root }}
-  {{ $ctx := .ctx }}
-  {{ $depth := .depth }}
-  {{ $currentURL := $root.Permalink }}
-  
-  {{ $sectionName1 := index (last 1 (split (delimit (split $ctx.Permalink "/") "," "") ",")) 0 }}
-  {{ $sectionName2 := index (last 2 (split (delimit (split $currentURL "/") "," "") ",")) 0 }}
-  
-  {{ $active := in $currentURL $ctx.Permalink }}
-  {{ $active = or $active (eq $sectionName1 $sectionName2) }}
-  {{ $active = or $active (in $currentURL $sectionName1) }}
-  
-  {{ if $ctx.Params.Collapsible }}
-  <span class="menu__title--collapse {{ if $active }}active{{ end }} {{ if eq $depth 0 }}display-hide{{ end }}" data-depth="{{ $depth }}">
-    {{ $ctx.Title }}
-    <span
-      class="menu__title--icon {{ if $active }}{{ if eq ($root.Param "languagedir") "rtl" }}downrtl{{ else }}down{{ end }}{{ else }}right{{ end }}">
-      
-    </span>
+  </nav>
+</div>
+{{ define "render-menu" }}
+{{ $root := .root }}
+{{ $ctx := .ctx }}
+{{ $depth := .depth }}
+{{ $currentURL := $root.Permalink }}
+
+{{ $sectionName1 := index (last 1 (split (delimit (split $ctx.Permalink "/") "," "") ",")) 0 }}
+{{ $sectionName2 := index (last 2 (split (delimit (split $currentURL "/") "," "") ",")) 0 }}
+
+{{ $active := in $currentURL $ctx.Permalink }}
+{{ $active = or $active (eq $sectionName1 $sectionName2) }}
+{{ $active = or $active (in $currentURL $sectionName1) }}
+
+{{ if $ctx.Params.Collapsible }}
+<span class="menu__title--collapse {{ if $active }}active{{ end }} {{ if eq $depth 0 }}display-hide{{ end }}"
+  data-depth="{{ $depth }}">
+  {{ $ctx.Title }}
+  <span
+    class="menu__title--icon {{ if $active }}{{ if eq ($root.Param "languagedir") "rtl" }}downrtl{{ else }}down{{ end }}{{ else }}right{{ end }}">
+
   </span>
-  <ul class="menu__list {{ if $active }}active{{ else if (in $ctx.Permalink (print "/" $sectionName1 "/")) }} {{ end }}"
-    data-data={{ print "/" $sectionName1 "/"}} data-link={{ .root.Permalink }}>
-    {{ range $ctx.Pages.ByWeight }}
-    {{ if .Params.Collapsible }}
-    {{ template "render-menu" (dict "ctx" . "root" $root "depth" (add $depth 1)) }}
-    {{ else }}
-    {{ $lastUrlElement1 := index (last 1 (split (delimit (split .Permalink "/") "," "") ",")) 0 }}
-    {{ $lastUrlElement2 := index (last 1 (split (delimit (split $currentURL "/") "," "") ",")) 0 }}
-	{{ $length := len .Title}}
-    <li>
-      <a href="{{ .Permalink }}"
-        class="menu__title {{ if and (eq $lastUrlElement1 $lastUrlElement2) (eq $sectionName1 $sectionName2) }}active{{ end }} {{ if ge $length 50 }}more-space{{end}}"
-        data-depth="{{ $depth }}">{{ .Title }}</a>
-    </li>
-    {{ end }}
-    {{ end }}
-  </ul>
+</span>
+<ul class="menu__list {{ if $active }}active{{ else if (in $ctx.Permalink (print "/" $sectionName1 "/")) }} {{ end }}"
+  data-data={{ print "/" $sectionName1 "/"}} data-link={{ .root.Permalink }}>
+  {{ range $ctx.Pages.ByWeight }}
+  {{ if .Params.Collapsible }}
+  {{ template "render-menu" (dict "ctx" . "root" $root "depth" (add $depth 1)) }}
   {{ else }}
-  {{ $lastUrlElement1 := index (last 1 (split (delimit (split $ctx.Permalink "/") "," "") ",")) 0 }}
+  {{ $lastUrlElement1 := index (last 1 (split (delimit (split .Permalink "/") "," "") ",")) 0 }}
   {{ $lastUrlElement2 := index (last 1 (split (delimit (split $currentURL "/") "," "") ",")) 0 }}
-  <li class="{{ if $active }}active{{ end }}">
-    <a data-depth="0" href="{{ $ctx.Permalink }}" class="menu__title {{ if $active }}active{{ end }}">{{ $ctx.Title }}</a>
+  {{ $length := len .Title}}
+  <li>
+    <a href="{{ .Permalink }}"
+      class="menu__title {{ if and (eq $lastUrlElement1 $lastUrlElement2) (eq $sectionName1 $sectionName2) }}active{{ end }} {{ if ge $length 50 }}more-space{{end}}"
+      data-depth="{{ $depth }}">{{ .Title }}</a>
   </li>
   {{ end }}
+  {{ end }}
+</ul>
+{{ else }}
+{{ $lastUrlElement1 := index (last 1 (split (delimit (split $ctx.Permalink "/") "," "") ",")) 0 }}
+{{ $lastUrlElement2 := index (last 1 (split (delimit (split $currentURL "/") "," "") ",")) 0 }}
+<li class="{{ if $active }}active{{ end }}">
+  <a data-depth="0" href="{{ $ctx.Permalink }}" class="menu__title {{ if $active }}active{{ end }}">{{ $ctx.Title }}</a>
+</li>
+{{ end }}
 {{ end }}
 
 <script src="/js/sidebar-tree.js"></script>

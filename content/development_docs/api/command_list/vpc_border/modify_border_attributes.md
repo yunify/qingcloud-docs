@@ -17,7 +17,7 @@ draft: false
 | border_name | String | 边界路由器名称 | No |
 | description | String | 边界路由器描述 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

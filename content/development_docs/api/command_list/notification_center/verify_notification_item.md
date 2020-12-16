@@ -15,7 +15,7 @@ draft: false
 | notification_item_content | String | 要验证的通知项内容 | Yes |
 | verification_code | String | 验证码 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 
