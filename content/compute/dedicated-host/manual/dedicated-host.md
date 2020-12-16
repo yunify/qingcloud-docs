@@ -21,7 +21,7 @@ keyword: 专属宿主机, QingCloud
 
 注解
 
-创建专属宿主机默认为预留模式（详情参考 [预留合约计费模式](./reserved_contract.html#reserved-contract) ）。弹性模式（试用）需要单独提工单申请配额。
+创建专属宿主机默认为预留模式（详情参考 [预留合约计费模式](/compute/dedicated-host/billing/reserved_contract) ）。弹性模式（试用）需要单独提工单申请配额。
 
 **第二步：创建成功** 当 专属宿主机组 创建完成之后，您可以查看专属宿主机组的基本信息。如图所示，当状态显示为“活跃”状态，表示该物理机组可用。
 

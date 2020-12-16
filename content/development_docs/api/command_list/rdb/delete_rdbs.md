@@ -15,7 +15,7 @@ draft: false
 | rdbs.n | String | 数据库集群 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

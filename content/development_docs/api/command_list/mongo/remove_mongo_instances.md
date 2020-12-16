@@ -16,7 +16,7 @@ draft: false
 | mongo_instances | Array | 节点 ID 列表 | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

@@ -17,7 +17,7 @@ draft: false
 | nfv | String | 网络组件的 ID 。 | No |
 | zone | String | 区域 ID，注意要小写。 | No |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

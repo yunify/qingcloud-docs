@@ -10,7 +10,7 @@ draft: false
 
 **Request Parameters**
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

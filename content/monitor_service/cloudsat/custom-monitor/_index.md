@@ -18,16 +18,16 @@ Section2:
      
     - title: 功能概述
       content: 功能概述
-      url: "/cloudsat/cloudsat/custom-monitor/intro/intro/"
+      url: "/monitor_service/cloudsat/custom-monitor/intro/intro/"
     
     
     - title: 操作指南
       content: 操作指南
-      url: "/cloudsat/cloudsat/custom-monitor/manual/custom_monitor/"
+      url: "/monitor_service/cloudsat/custom-monitor/manual/custom_monitor/"
     
     - title: 最佳实践
       content: 最佳实践
-      url: "/cloudsat/cloudsat/custom-monitor/best-practices/exceptionhandle"
+      url: "/monitor_service/cloudsat/custom-monitor/best-practices/exceptionhandle"
 
 
 section3:
@@ -35,15 +35,16 @@ section3:
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/qingstor/guide/object_manage"
+      url: "/development_docs/api/"
 
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: "/test/guide/object_manage"
+      url: "/development_docs/sdk/"
 
     - title: CLI 文档
       content: 如何使用 CLI 文档
-      url: "/qingstor/guide/object_manage/"
+      url: "/development_docs/cli/"
+
 
 section4:
   children:
@@ -52,7 +53,7 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 自定义监控概述
-          url: "/cloudsat/cloudsat/custom-monitor/intro/intro/"
+          url: "/monitor_service/cloudsat/custom-monitor/intro/intro/"
 
 
     - title: 上手：创建自定义监控
@@ -60,7 +61,7 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 自定义监控的使用
-          url: "/cloudsat/custom-monitor/manual/custom_monitor/"
+          url: "/monitor_service/cloudsat/custom-monitor/manual/custom_monitor/"
 ---
 
 

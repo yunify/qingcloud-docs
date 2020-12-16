@@ -19,7 +19,7 @@ draft: false
 | zone | String | 区域 ID，注意要小写 | Yes |
 | notice_count | Integer | 连续告警次数（1-5） | No |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

@@ -15,7 +15,7 @@ draft: false
 | loadbalancer_policy_rules.n | String | 要删除的转发策略规则ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

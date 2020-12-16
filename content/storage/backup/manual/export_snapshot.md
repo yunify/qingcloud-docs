@@ -15,7 +15,7 @@ keyword: 青云
 > 
 > 当备份点是基于主机系统盘创建时，通过这个备份点可以创建新的映像，基于该映像可以创建多台和备份点状态相同的主机。
 > 
-> > ![](_images/capture_instance_from_snapshot.png)
+> > ![](/storage/backup/manual/_images/capture_instance_from_snapshot.png)
 > 
 > 
 

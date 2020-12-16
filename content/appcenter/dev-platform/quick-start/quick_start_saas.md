@@ -9,7 +9,7 @@ draft: false
 
 ## Saas应用示例
 
-以下链接中包含示例代码: [Saas应用示例](https://github.com/yanshanlangren/sample_qc_ap)
+以下链接中包含示例代码: [SaaS 应用示例](https://github.com/yanshanlangren/sample_qc_ap)
 
 ## 主要流程
 
@@ -23,5 +23,3 @@ draft: false
 - [提交应用审核](/appcenter/dev-platform/saas-developer-guide/release/#提交应用审核)
 - [发布应用上架](/appcenter/dev-platform/saas-developer-guide/release/#发布上架应用)
 
-
-* 常见的问题请参考－－[常见问题](/appcenter/dev-platform/faq/cluster-faqs)

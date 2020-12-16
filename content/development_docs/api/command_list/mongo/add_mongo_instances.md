@@ -17,7 +17,7 @@ draft: false
 | private_ips | List of dictionary | 私有网络 IP 地址；例如 [{“replica”: “192.168.100.2”}, {“replica”: “192.168.100.3”}] | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

@@ -15,7 +15,7 @@ draft: false
 | rules.n | String |策略的规则内容<br/>wafri-xxxxxxxx: 自定义规则ID<br/>wafci-xxxxxxxx: 黑白名单规则ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[公共参数](../../../parameters)
+[公共参数](../../../parameters/)
 
 **Response Elements**
 
