@@ -288,7 +288,7 @@ separator|定义 multichoice 为 true 时有效，多选后多个值连接所使
 min|若配置项 type 为 integer 或 number(浮点数)，指定该项的最小值。
 max|若配置项 type 为 integer 或 number(浮点数)，指定该项的最大值。若配置项是 volume_size，通常不建议指定该值。
 step|若配置项是 volume_size，指定硬盘每次调整的最小步长单位。在每个主机挂多块盘时，通常需要指定该项。
-auto_scale_step|自动伸缩的步长。若配置项是 volume_size，指定硬盘每次自动伸缩的步长单位；若配置项是 count，指定该类角色节点数自动伸缩的步长单位，可参考[自动伸缩](https://docs.qingcloud.com/product/operation/autoscaling.html#支持的资源类型)。
+auto_scale_step|自动伸缩的步长。若配置项是 volume_size，指定硬盘每次自动伸缩的步长单位；若配置项是 count，指定该类角色节点数自动伸缩的步长单位，可参考[自动伸缩](/operation/autoscaling/intro/intro/)。
 pattern|正则表达式，可用该值规范填写内容。
 default|该项的默认取值，若 required 设为 "no"，default 值必须提供。
 customizable|若配置项是 resource_group，该项表示用户部署应用时，除 resource_group 中定义好的组合外，是否允许自定义。默认值是 true。
@@ -661,7 +661,7 @@ zone|镜像制作时所属区域 (如果是 docker 镜像，则无需填写该�
 
 ##### gpu
 
-每个节点 gpu 个数，可选值范围：0, 1, 2, 4, 8。目前仅在 北京3区-A(pek3a)，北京3区(pek3b，pek3c，pek3d) 和 上海1区(sh1a) 可创建带 gpu 的集群, 具体使用方式参考[GPU 主机](https://docs.qingcloud.com/product/computing/gpu_instance)
+每个节点 gpu 个数，可选值范围：0, 1, 2, 4, 8。目前仅在 北京3区-A(pek3a)，北京3区(pek3b，pek3c，pek3d) 和 上海1区(sh1a) 可创建带 gpu 的集群, 具体使用方式参考[GPU 主机](/compute/vm/manual/gpu_instance/)
 
 ##### gpu\_class
 
@@ -681,7 +681,7 @@ size|每个节点数据容量大小，单位 GiB，注：是单个节点总容�
 mount\_point|每个节点数据盘挂载路径，可以是单个数据盘， 也可以有多个数据盘，多个数据盘以数组形式表示，如 "mount\_point": ["/data1","/data2"]。如果image是基于 Linux 操作系统，默认挂载路径为 /data; 如果 image 是基于 Windows 操作系统，默认挂载路径是 d:, 挂载路径是盘符（后面须带冒号，可选的盘符名从 d 开始，z 结束）。目前最大支持3块数据盘挂载到节点上。请注意，如果挂载了多块数据盘，config.json 对应的 volume\_size 部分，最好设置一下 min，step 这 2 个值，以配置创建集群、扩容集群时的范围和步长。例如挂载盘数为3，可以指定 `{min: 30, step: 30}` 。
 mount\_options|描述数据盘的挂接方式，默认值 ext4 是 defaults,noatime，xfs 是 rw,noatime,inode64,allocsize=16m。
 filesystem|数据盘文件系统类型。如果 image 是基于 Linux 操作系统，目前支持 ext4 和 xfs，默认为 ext4; 如果 image 是基于 Windows 操作系统，目前支持 ntfs, 默认为 ntfs。
-class|数据盘类型，支持 0、2、3、5、6、100、200 其中 0 表示性能盘，3 表示超高性能盘，2 表示容量盘，5 表示 NeonSAN，6 表示 NeonSAN 容量盘，100 表示基础型硬盘，200 表示企业性硬盘。可选项，如果不写此项，数据盘类型和主机类型一样，即性能主机挂载性能硬盘，超高性能主机挂载超高性能硬盘，基础型主机挂载基础型硬盘，企业型主机和专业增强型主机挂载企业型硬盘。容量盘、NeonSAN、NeonSAN 容量盘可以挂载在不同类型主机上，容量盘是通过网络协议挂载的，所以性能相对来说比较差，通常来说如果不是提供必须基于容量盘的服务，最好去掉这个选项，大容量存储可以考虑 [NeonSAN](https://www.qingcloud.com/products/qingstor-neonsan/) 或者[对象存储 QingStor](https://docs.qingcloud.com/qingstor/index.html)。
+class|数据盘类型，支持 0、2、3、5、6、100、200 其中 0 表示性能盘，3 表示超高性能盘，2 表示容量盘，5 表示 NeonSAN，6 表示 NeonSAN 容量盘，100 表示基础型硬盘，200 表示企业性硬盘。可选项，如果不写此项，数据盘类型和主机类型一样，即性能主机挂载性能硬盘，超高性能主机挂载超高性能硬盘，基础型主机挂载基础型硬盘，企业型主机和专业增强型主机挂载企业型硬盘。容量盘、NeonSAN、NeonSAN 容量盘可以挂载在不同类型主机上，容量盘是通过网络协议挂载的，所以性能相对来说比较差，通常来说如果不是提供必须基于容量盘的服务，最好去掉这个选项，大容量存储可以考虑 [NeonSAN](https://www.qingcloud.com/products/qingstor-neonsan/) 或者[对象存储 QingStor](/storage/object-storage/intro/object-storage/)。
 
 > 建议值：100, 200。其中 0, 3 这两种主机类型，会逐步做下架处理，故不建议使用。
 
