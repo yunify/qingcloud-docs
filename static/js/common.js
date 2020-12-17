@@ -18,8 +18,12 @@ function getQueryString(name) {
 }
 
 function download_pdf(url='',pdf_name=''){
+	var pathname = window.location.pathname;
 	if(url==''){
-		url = window.location.pathname;
+		url = pathname;
+	}
+	if(url.indexOf(pathname) == '-1'){
+		url = pathname+url;
 	}
 	window.location.href='/download.php?url='+url+'&pdf_name='+pdf_name;
 }
@@ -34,6 +38,13 @@ $(function(){
 			var last = url.substr(start,1);
 			if(last != '/'){
 				$(this).attr('href',url+'/');
+			}
+		}
+		//判断是否是外链 console时 外链需在父页面打开
+		var content_console = $('#content_console').val();
+		if(content_console == 1){
+			if(url != null && url != 'undefined' && url.indexOf('http') != '-1'){
+				$(this).attr('target','top');
 			}
 		}
 	});
