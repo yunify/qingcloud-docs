@@ -33,11 +33,11 @@ weight: 1
 
 * **签名服务**
 
-由于移动端应用的特点，将 access key 随 APP 分发会带来安全问题。所以我们提供了签名服务解决方案，具体请参考 [移动 App 接入方案](../../solutions/app_integration.html)。
+由于移动端应用的特点，将 access key 随 APP 分发会带来安全问题。所以我们提供了签名服务解决方案，具体请参考 [移动 App 接入方案](../../beat-practices/app_integration/)。
 
 移动客户端每次上传下载文件之前，由服务端验证了用户身份之后，签名服务根据特定的 Qingstor API 调用参数，生成头签名或参数签名，返回给客户端；
 客户端使用该签名来直接跟Qingstor进行交互。
-[Javascript SDK](../../sdk/js/) (适用于Ajax类型的应用)、[Java SDK](../../sdk/java/) (适用 Android 平台)、[Swift SDK](../../sdk/swift/) (适用 IOS 平台) 均支持构造 API 请求时应用服务端计算的签名串。
+[Javascript SDK](../../sdk/javascript/) (适用于Ajax类型的应用)、[Java SDK](../../sdk/java/) (适用 Android 平台)、[Swift SDK](../../sdk/swift/) (适用 IOS 平台) 均支持构造 API 请求时应用服务端计算的签名串。
 
 由于移动客户端经常会遇到系统时间不准确的问题，并且签名计算结果跟时间密切相关，需要签名服务在计算签名时把所用的标准时间一并返回给客户端，设置正确的 `Date` header。
 
@@ -109,7 +109,7 @@ x-qs-date:Wed, 10 Dec 2014 17:20:31 GMT\n
 1. 如果请求 URL 为 `Virtual-host 风格` 则设置初始字符串为 `/<bucket-name>` 。而如果 URL 为 `Path 风格` 则设置初始字符串为空
 1. 在第1步得到的字符串后追加 URI path (与请求头中的请求 path 一致，即 URI 编码后的值)
 1. 如果请求包括子资源，例如 acl 等，那么将所有的子资源按照字典序从小到大排列，以 & 拼接生成子资源字符串，并以 ? 开头追加到字符串结尾
-1. 除了上述子资源以外，形如 `response-*` 的参数 (见 [GET Object](../object/get.html#object-storage-api-get-object) 的文档) 也需要按照上述规则拼接到 Canonicalized Resource
+1. 除了上述子资源以外，形如 `response-*` 的参数 (见 [GET Object](../object/get/#object-storage-api-get-object) 的文档) 也需要按照上述规则拼接到 Canonicalized Resource
 
 > 全部的子资源包括：
 >

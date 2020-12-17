@@ -39,7 +39,7 @@ Content-Length: length
 
 ## Request Form Fields
 
-> 如果要给对象附带支持的标准 HTTP 头或自定义元数据，参见[如何通过表单项创建对象元数据](../common/metadata.html#如何通过HTML表单创建对象元数据)
+> 如果要给对象附带支持的标准 HTTP 头或自定义元数据，参见[如何通过表单项创建对象元数据](../../metadata/#如何通过HTML表单创建对象元数据)
 
 | Field Name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -64,7 +64,7 @@ Content-Length: length
 
 ## Response Headers
 
-参见[公共响应头](../../common_header/#响应头字段-request-header)
+参见[公共响应头](../../common_header/#响应头字段-response-header)
 
 ## Example
 
