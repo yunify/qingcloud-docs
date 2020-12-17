@@ -5,6 +5,9 @@
 	</div>
 	<div class="page-meta-lastmod text-muted ">{{ partial "page-meta-lastmod.html" . }}</div>
 
+	{{ if .Site.Params.IsConsole }}
+	<input type="hidden" id="content_console" value="1">
+	{{end}}
 	<!-- {{ partial "page-meta-actions.html" .}} -->
 	<!--{{ with .Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}-->
 	{{ with .Params.description }}<div class="lead"></div>{{ end }}
