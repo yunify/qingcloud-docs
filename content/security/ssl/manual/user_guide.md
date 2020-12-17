@@ -21,7 +21,7 @@ draft: false
 
 点击“购买 SSL 证书”
 
-选择需要的 [_证书类型_](#id3) 和 [_证书品牌_](#brand) 点击“确定”
+选择需要的 [_证书类型_](../../intro/introduction/#id3) 和 [_证书品牌_](../../billing/price/#brand) 点击“确定”
 
 [![](../../_images/step_2.png)](../../_images/step_2.png)
 
@@ -35,7 +35,7 @@ DV 域名同时需要选择域名验证方式,建议使用 DNS 验证方式，�
 
 输入需要签发的域名并选择加密算法
 
-DV 证书需要选择 [_域名验证方式_](#valid-domain)
+DV 证书需要选择 [_域名验证方式_](../../manual/manualq/#valid-domain)
 
 注解
 
@@ -65,11 +65,11 @@ DV 域名的验证通过 DNS 验证，或者文件验证即可，验证过程通
 
 ***DV 验证***
 
-[_域名验证方式_]()
+[_域名验证方式_](../../manual/manualq/#valid-domain)
 
 ***OV,EV 验证***
 
-[_确认函确认_]()
+[_确认函确认_](../../manual/manualq/#confirm-letter)
 
 **第六步:下载证书**
 
