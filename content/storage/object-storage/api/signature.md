@@ -29,7 +29,7 @@ weight: 1
 
 * **表单签名**
 
-适用于浏览器直接通过 HTML 表单方式 上传小文件。请参考 [Post Object API](../object/post.html)
+适用于浏览器直接通过 HTML 表单方式 上传小文件。请参考 [Post Object API](../object/post/)
 
 * **签名服务**
 

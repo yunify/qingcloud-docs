@@ -211,7 +211,7 @@ tmpfs           499M     0  499M   0% /dev/shm
 
 [root@i-oemhrgx8 ~]# `echo "UUID=70fc59fe-d388-49ba-be56-b06cfbcc01ed /mnt  ext4 defaults     0   0" >>/etc/fstab`
 
-![图片](_images/image-1568774988226.png)
+![图片](../_images/image-1568774988226.png)
 
 **4、使用 umount 命令将挂载的磁盘卸载；然后使用 mount -a 命令测试一下是否能自动挂载成功**
 

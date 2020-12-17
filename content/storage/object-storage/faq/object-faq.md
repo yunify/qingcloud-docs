@@ -67,7 +67,7 @@ qsctl 支持使用 `--force` 参数来进行强制覆盖。
 
 ## 如何批量取消未完成的分段上传 ？
 
-使用对象存储的应用普遍会使用分段上传，假如初始化了分段上传后未调用[完成分段上传](/storage/object-storage/api/object/multipart/complete_multipart_upload)或者[终止分段上传](/storage/object-storage/api/object/multipart/abort_multipart_upload), 这些未完成的上传记录会占用 Bucket 空间。
+使用对象存储的应用普遍会使用分段上传，假如初始化了分段上传后未调用[完成分段上传](/storage/object-storage/api/object/multipart/complete)或者[终止分段上传](/storage/object-storage/api/object/multipart/abort), 这些未完成的上传记录会占用 Bucket 空间。
 
 对于大量的未完成分段上传, 可通过配置 [生命周期](/storage/object-storage/manual/lifecycle) 规则自动删除。
 
@@ -83,11 +83,11 @@ qsctl 支持使用 `--force` 参数来进行强制覆盖。
 
 Access Key 可以在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请。
 
-更详细内容请参考文档 [API 指南–签名验证](/storage/object-storage/api/common/signature) 。
+更详细内容请参考文档 [API 指南–签名验证](/storage/object-storage/api/signature) 。
 
 ## 如何分享文件给没有 Access Key 的用户
 
-可以参考 [请求参数签名](/storage/object-storage/api/common/signature) 文档, 或调用 SDK 相应的生成签名 URL 的函数来生成指定时间段有效的超链接。
+可以参考 [请求参数签名](/storage/object-storage/api/signature) 文档, 或调用 SDK 相应的生成签名 URL 的函数来生成指定时间段有效的超链接。
 
 ## 将数据分散存储到100个 Bucket，是否会比只存储在1个 Bucket 拥有更好的性能？
 
@@ -142,6 +142,6 @@ keytool -trustcacerts -keystore "$JAVA_HOME/jre/lib/security/cacerts" -storepass
 ## 对出错的请求原因有疑问
 
 QingStor 对每个请求都生成了唯一的 Request ID, 在返回中会放在 x-qs-request-id 头字段中。
-每一个错误返回都有一个 json 格式内容, 包含 Code (返回码) 和 Message (具体原因), 参考 [错误信息](/storage/object-storage/api/common/error_code)。
+每一个错误返回都有一个 json 格式内容, 包含 Code (返回码) 和 Message (具体原因), 参考 [错误信息](/storage/object-storage/api/error_code)。
 如果用户对错误的原因有疑问, 或者比如调试签名串计算方式之类的问题, 都可以记录好 x-qs-request-id 并在工单提供给我们。
 

@@ -15,7 +15,7 @@ weight: 3
 
 删除 cors 请参见 [DELETE Bucket CORS](../delete_cors) 。
 
-发起 Object OPTIONS 请参见 [OPTIONS Object](../../object/options.html#object-storage-api-options-object) 。
+发起 Object OPTIONS 请参见 [OPTIONS Object](../../../object/options/) 。
 
 ## Request Syntax
 
@@ -40,7 +40,7 @@ Authorization: <authorization-string>
 
 ## Status Code
 
-正常会返回 200,  失败的返回码参考[错误码列表](../../error_code/)
+正常会返回 200,  失败的返回码参考[错误码列表](../../../error_code/)
 
 
 ## Response Headers
@@ -49,7 +49,7 @@ Authorization: <authorization-string>
 
 ## Response Body
 
-正常情况下会有一个 Json 消息体; 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
+正常情况下会有一个 Json 消息体; 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
 
 | Name | Type | Description |
 | --- | --- | --- |

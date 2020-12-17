@@ -6,11 +6,11 @@ weight: 6
 collapsible: false
 ---
 
-这里介绍 API 请求中签名 ( signature ) 的生成方法。您可以根据实际情况选择使用 **API 密钥** 或 [IAM](../../iam/) **身份** 来完成签名。
+这里介绍 API 请求中签名 ( signature ) 的生成方法。您可以根据实际情况选择使用 **API 密钥** 或 [IAM](../../../authorization/iam/) **身份** 来完成签名。
 
 ## API 密钥签名
 
-您需要先在控制台创建API密钥，获得 accesss_key_id 和 secret_access_key，这里我们假设
+您需要先在控制台创建[API密钥](https://console.qingcloud.com/access_keys/)，获得 accesss_key_id 和 secret_access_key，这里我们假设
 
 ```
 access_key_id = 'QYACCESSKEYIDEXAMPLE'

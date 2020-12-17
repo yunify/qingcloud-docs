@@ -90,7 +90,7 @@ Authorization: <authorization-string>
 
 ## Status Code
 
-正常会返回 200,  失败的返回码参考[错误码列表](../../error_code/)
+正常会返回 200,  失败的返回码参考[错误码列表](../../../error_code/)
 
 ## Request Body
 
@@ -98,7 +98,7 @@ Json 消息体
 
 | Name | Type | Description | Required |
 | --- | --- | --- | --- |
-| rule | List | rule 的元素为 Lifecycle 规则。规则为 Dict 类型，有效的键为 "id"、"status"、"filter"、"expiration"、"abort_incomplete_multipart_upload" 和 "transition"。规则总数不能超过 100 条，且每条规则中只允许存在一种类型的操作。同一 bucket, prefix 和 支持操作（ expiration, abort_incomplete_multipart_upload, transition) 不能有重复，否则返回 400 invalid_request 包含重复的规则信息 [参见错误信息](../../../error_code/#object-storage-error-code)。| Yes |
+| rule | List | rule 的元素为 Lifecycle 规则。规则为 Dict 类型，有效的键为 "id"、"status"、"filter"、"expiration"、"abort_incomplete_multipart_upload" 和 "transition"。规则总数不能超过 100 条，且每条规则中只允许存在一种类型的操作。同一 bucket, prefix 和 支持操作（ expiration, abort_incomplete_multipart_upload, transition) 不能有重复，否则返回 400 invalid_request 包含重复的规则信息 [参见错误信息](../../../../error_code/#object-storage-error-code)。 | Yes |
 | id | String | 规则的标识符。可为任意 UTF-8 编码字符，长度不能超过 255 个字节，在一个 Bucket Lifecycle 中，规则的标识符必须唯一。该字符串可用来描述策略的用途。如果 id 有重复，会返回 400 invalid_request 。| Yes |
 | status | String | 该条规则的状态。其值可为 "enabled" (表示生效) 或 "disabled" (表示禁用)。| Yes |
 | filter | Dict | 用于匹配 Object 的过滤条件，有效的键为 "prefix"。| Yes |
@@ -116,7 +116,7 @@ Json 消息体
 
 ## Response Body
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
+正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
 
 
 ## Example

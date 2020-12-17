@@ -32,7 +32,7 @@ Host: qingstor.com
 
 ## Response Headers
 
-[参见公共响应头](../../common/common_header#响应头字段-request-header)
+[参见公共响应头](../../common_header#响应头字段-request-header)
 
 ## Response Body
 

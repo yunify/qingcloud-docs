@@ -6,7 +6,7 @@ title: "Delete Multiple Objects"
 
 从存储空间中批量删除指定对象，此操作要求请求者对存储空间拥有可写权限。
 
-请求者必须设置 `Content-MD5` 这个请求头，其值为请求体的 md5, 并对结果进行 base64 编码，[参见公共请求头](../../common/common_header#请求头字段-request-header) 。
+请求者必须设置 `Content-MD5` 这个请求头，其值为请求体的 md5, 并对结果进行 base64 编码，[参见公共请求头](../../common_header#请求头字段-request-header) 。
 
 注解
 
@@ -37,7 +37,7 @@ Content-MD5: Dd11y+x5Jegm/fUJ6mOuhg==
 
 ## Request Headers
 
-参见[公共请求头](../../common/common_header#请求头字段-request-header)
+参见[公共请求头](../../common_header#请求头字段-request-header)
 
 ## Request Body
 
@@ -50,15 +50,15 @@ Content-MD5: Dd11y+x5Jegm/fUJ6mOuhg==
 
 ## Status Code
 
-一般都会返回 200, 除非是Bucket 不存在或没有执行权限等错误. 失败的返回码参考[错误码列表](../../common/error_code)
+一般都会返回 200, 除非是Bucket 不存在或没有执行权限等错误. 失败的返回码参考[错误码列表](../../error_code/)
 
 ## Response Headers
 
-参见[公共响应头](../../common/common_header#响应头字段-request-header)
+参见[公共响应头](../../common_header#响应头字段-request-header)
 
 ## Response Body
 
-正常情况下会有一个 Json 消息体返回删除成功和失败的 Object 列表; 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../common/error_code)
+正常情况下会有一个 Json 消息体返回删除成功和失败的 Object 列表; 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
 
 | Name | Type | Description |
 | --- | --- | --- |
