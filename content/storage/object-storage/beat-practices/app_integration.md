@@ -113,7 +113,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 Main.storyboard UI结构图：
 
-![_images/main_storyboard.png](_images/main_storyboard.png)
+![](_images/main_storyboard.png)
 
 例子并不复杂，使用一个 BucketListController 显示当前的 Bucket 列表，一个 ObjectListController 显示 Bucket 下面的对象列表。
 
@@ -179,7 +179,7 @@ private func requestBucketList() {
 
 我们把得到的响应数据存储到 listBucketsOutput，在刷新 TableView 的时候根据输出显示对应的内容，最终效果如下图所示：
 
-![_images/bucket_list.png](_images/bucket_list.png)
+![](_images/bucket_list.png)
 
 `mobile-bucket-test` 是我之前为了测试创建的 `bucket` ，点击该列表项，会跳转到 `ObjectListController` 页面，并把当前列表项的 `bucket` 数据传递过去。
 
@@ -218,7 +218,7 @@ private func requestObjectList() {
 
 类似在 BucketListController 里面做的处理，我们把得到的响应数据存储到 listObjectsOutput，在刷新 TableView 的时候根据输出显示对应的内容，最终效果如下图所示：
 
-![_images/object_list.png](_images/object_list.png)
+![](_images/object_list.png)
 
 可以看到，右上角有个 + 符号，点击会触发选择图片事件，这里使用 UIImagePickerController 来做图片选择器，UI 的问题就不多说了，当你选择完图片时会触发 UIImagePickerController 的回调方法，我们可以在该方法做一些图片上传的处理，代码如下
 
@@ -301,7 +301,7 @@ QingStor 官方提供了一个签名服务器的 [样例](https://github.com/yun
 
 如果要自己开发签名服务，需要注意：
 
-1) 签名服务需要考虑 [JavaScript 客户端的特例](/storage/object-storage/api/common/signature)
+1) 签名服务需要考虑 [JavaScript 客户端的特例](/storage/object-storage/api/signature/)
 
 2) 签名服务需要把计算签名时所有的时间戳，返回给客户端，客户端根据这个时间戳设置 ```Date``` 头字段（一般的客户端）或 ```x-qs-date``` 头字段（JavaScript客户端）
 
@@ -379,7 +379,7 @@ SDK 参考例子:
 
 ```
 
-1. 用户通过表单上传文件以及 Signature 给 QingStor 表单上传的具体方法，请见 [官方文档](https://docs.qingcloud.com/qingstor/api/object/post.html)
+1. 用户通过表单上传文件以及 Signature 给 QingStor 表单上传的具体方法，请见 [官方文档](../../api/object/post/)
 
 ## 请求参数签名
 
@@ -393,6 +393,6 @@ Host: mybucket.pek3a.qingstor.com
 Date: Mon, 14 Nov 2016 14:05:00 GMT
 ```
 
-参数签名使用的场合较为广泛，它所能达成的效果跟请求头签名完全一样，只是让附带签名的过程更加方便和易于使用。具体方法请见 [官网文档](https://docs.qingcloud.com/qingstor/api/common/signature.html#id3)
+参数签名使用的场合较为广泛，它所能达成的效果跟请求头签名完全一样，只是让附带签名的过程更加方便和易于使用。具体方法请见 [官网文档](../../api/signature/)
 
 

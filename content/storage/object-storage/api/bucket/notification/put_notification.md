@@ -13,9 +13,9 @@ weight: 2
 
 Bucket Notificaiton 提供了一种机制，使得当某些指定的事件在 QingStor 中发生时，触发通知或者事件处理。
 
-获取 Bucket Notification 请参见 [GET Bucket Notification](get_notification.html) 。
+获取 Bucket Notification 请参见 [GET Bucket Notification](../get_notification/) 。
 
-删除 Bucket Notification 请参见 [DELETE Bucket Notification](delete_notification.html) 。
+删除 Bucket Notification 请参见 [DELETE Bucket Notification](../delete_notification/) 。
 
 > **若设置多个通知规则，每个规则都将逐一进行检查，将可能触发多个事件。**
 
@@ -55,7 +55,7 @@ Json 消息体
 | id | String | 通知配置的标识 | Yes |
 | event_types | Array | 事件的类型，每当该类型的事件被触发时，发出通知。<br> 目前支持的类型为: <br> - "create_object": 创建对象完成 <br> - "delete_object": 删除对象完成 <br> - "abort_multipart": 终止分段上传 <br> - "complete_multipart": 完成分段上传 | Yes |
 | object_filters | List or String | 对象名匹配规则(glob patterns) | no |
-| cloudfunc | String | 事件处理云服务，接收通知中触发的事件并进行处理。目前支持: <br> - tupu-porn: [图谱鉴黄服务](/qingstor/data_process/third_party/tupu_porn.html) <br> - notifier: 通知服务, 将 QingStor 事件推送到 notify_url <br> - image: [图片基本处理服务](/qingstor/data_process/image_process/index.html)| Yes |
+| cloudfunc | String | 事件处理云服务，接收通知中触发的事件并进行处理。目前支持: <br> - tupu-porn: [图谱鉴黄服务](../../../../manual/data_process/tupu_porn/) <br> - notifier: 通知服务, 将 QingStor 事件推送到 notify_url <br> - image: [图片基本处理服务](../../../../manual/data_process/image_process/)| Yes |
 | cloudfunc_args | Object | 提供给 cloudfunc 的自定义参数 | No |
 | notify_url | String | 通知事件处理结果的 url ，当事件处理完成后，会将处理结果以 POST 方式向 notify_url 请求。如果 POST 超时，将会重试，超时时间是 5s， 重试间隔为 1s。| No |
 
@@ -65,7 +65,7 @@ Json 消息体
 
 |Name|Type|Description|Required|
 | - | - | - | - |
-| action | String | 图片的具体操作参数, 见 [图片基本处理服务](/qingstor/data_process/image_process/index.html) | Yes |
+| action | String | 图片的具体操作参数, 见 [图片基本处理服务](../../../../manual/data_process/image_process/) | Yes |
 | key_prefix | String | 处理后 object 名称的前缀, 默认为 "gen" | No |
 | key_seprate | String | key_prefix 和 object 之间的分隔符，默认为 "_"，处理后新的 object 为 <key_prefix><key_seprate><origin_object> | No |
 | save_bucket | String | 另存为的目标 bucket 名称，默认为当前 object 所在 bucket | No |
@@ -80,7 +80,7 @@ Json 消息体
 
 ## Status Code
 
-正常会返回 200,  失败的返回码参考[错误码列表](../../error_code/)
+正常会返回 200,  失败的返回码参考[错误码列表](../../../error_code/)
 
 ## Response Headers
 
@@ -88,7 +88,7 @@ Json 消息体
 
 ## Response Body
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
+正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
 
 
 ## Example

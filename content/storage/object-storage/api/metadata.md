@@ -46,13 +46,13 @@ weight: 2
 
 | API | Description |
 | - | - |
-| [GetObject](/qingstor/api/object/get.html) | 获取对象时，如果该对象附有标准 HTTP 头或自定义元数据，服务端会返回 [如何获取对象元数据](#如何获取对象元数据) 一节中定义的响应头。|
-| [HeadObject](/qingstor/api/object/head.html) | 获取对象元信息时，如果该对象附有标准 HTTP 头或自定义元数据，服务端会返回 [如何获取对象元数据](#如何获取对象元数据) 一节中定义的响应头。|
-| [PutObject](/qingstor/api/object/put.html) | 当向存储空间上传一个对象时，可以指定 [如何创建对象元数据](#如何创建对象元数据) 一节中定义的请求头来创建对象元数据。|
-| [PutObject - Copy](/qingstor/api/object/copy.html) | 当复制一个源对象到目标对象时，可以使用 [如何复制或替换对象元数据](#如何复制或替换对象元数据) 一节中定义的请求头来复制源对象的标准 HTTP 头和自定义元数据给目标对象，或用请求头的标准 HTTP 头和自定义元数据做目标对象的标准 HTTP 头和自定义元数据。|
-| [PutObject - Move](/qingstor/api/object/move.html) | 当移动一个源对象到目标对象，Move 后源对象的标准 HTTP 头和自定义元数据保留。 |
-| [PostObject](/qingstor/api/object/post.html) | 当通过 HTML 表单的方式上传一个对象时，可以使用 [如何通过 HTML 表单创建对象元数据](#如何通过 HTML 表单创建对象元数据) 一节中定义的表单项来创建对象元数据。 |
-| [InitiateMultipartUpload](/qingstor/api/object/multipart/initiate_multipart_upload.html) | 当初始化一个分段上传时，可以使用 [如何创建对象元数据](#如何创建对象元数据) 一节中定义的请求头来创建对象元数据。 |
+| [GetObject](../object/get/) | 获取对象时，如果该对象附有标准 HTTP 头或自定义元数据，服务端会返回 [如何获取对象元数据](#如何获取对象元数据) 一节中定义的响应头。|
+| [HeadObject](../object/head/) | 获取对象元信息时，如果该对象附有标准 HTTP 头或自定义元数据，服务端会返回 [如何获取对象元数据](#如何获取对象元数据) 一节中定义的响应头。|
+| [PutObject](../object/put/) | 当向存储空间上传一个对象时，可以指定 [如何创建对象元数据](#如何创建对象元数据) 一节中定义的请求头来创建对象元数据。|
+| [PutObject - Copy](../object/copy/) | 当复制一个源对象到目标对象时，可以使用 [如何复制或替换对象元数据](#如何复制或替换对象元数据) 一节中定义的请求头来复制源对象的标准 HTTP 头和自定义元数据给目标对象，或用请求头的标准 HTTP 头和自定义元数据做目标对象的标准 HTTP 头和自定义元数据。|
+| [PutObject - Move](../object/move/) | 当移动一个源对象到目标对象，Move 后源对象的标准 HTTP 头和自定义元数据保留。 |
+| [PostObject](../object/post/) | 当通过 HTML 表单的方式上传一个对象时，可以使用 [如何通过 HTML 表单创建对象元数据](#如何通过 HTML 表单创建对象元数据) 一节中定义的表单项来创建对象元数据。 |
+| [InitiateMultipartUpload](../object/multipart/initiate/) | 当初始化一个分段上传时，可以使用 [如何创建对象元数据](#如何创建对象元数据) 一节中定义的请求头来创建对象元数据。 |
 
 ## 如何创建对象元数据
 
