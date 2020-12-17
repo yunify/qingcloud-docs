@@ -7,17 +7,11 @@ weight: 3
 collapsible: true
 ---
 
-
-# 数据处理
-
-- [图片处理](image_process/)
-- [音视频转码](media_transcoder/index.html)
-- [第三方数据处理](third_party/index.html)
-  - [图普科技鉴黄服务](tupu_porn/)
-
-# 数据处理
-
 数据处理可以对存储在 QingStor™ 对象存储上的数据进行处理。
+
+- [图普科技鉴黄服务](tupu_porn/)
+- [图片处理](image_process/)
+
 
 ## 图谱鉴黄
 
@@ -82,3 +76,5 @@ QingStor™ 对象存储图片处理提供了包括格式转换、旋转、添�
 - 格式：将图片转换成指定格式。
 
 ![](data_process_magick_operate.jpg)
+
+
