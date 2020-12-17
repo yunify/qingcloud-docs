@@ -12,7 +12,7 @@ class download{
 		//文件是否存在
 		$file_exists = file_exists($save_root.$save_file);
 		if(!empty($url) && !$file_exists){
-			$script = "document.getElementsByTagName('header')[0].style.display='none';document.getElementsByClassName('col-12 col-md-3 col-xl-3 td-sidebar d-print-none')[0].style.display='none';document.getElementsByClassName('d-none col-md-2 d-xl-block d-md-block col-xl-2 td-toc d-print-none')[0].style.visibility='hidden';document.getElementsByClassName('td-page-meta page-meta-actions ml-2 pb-1 mb-0')[0].style.display='none';document.getElementsByClassName('bg-dark py-5 d-print-none footer')[0].style.display='none';";
+			$script = "document.getElementsByTagName('header')[0].style.display='none';document.getElementsByClassName('col-12 col-md-3 col-xl-3 td-sidebar d-print-none')[0].style.display='none';document.getElementsByClassName('d-none col-md-2 d-xl-block d-md-block col-xl-2 td-toc d-print-none')[0].style.visibility='hidden';document.getElementsByClassName('td-page-meta page-meta-actions ml-2 pb-1 mb-0')[0].style.display='none';document.getElementsByClassName('bg-dark py-5 d-print-none footer')[0].style.display='none';document.getElementsByClassName('col-12 col-md-7 col-xl-7')[0].style.maxWidth='100%';document.getElementsByClassName('col-12 col-md-7 col-xl-7')[0].style.flex='100%';document.getElementsByClassName('page-meta-pagination_word')[0].style.display='none';document.getElementsByClassName('page-meta-pagination border-top')[0].style.display='none';";
 			shell_exec("wkhtmltopdf --run-script \"".$script."\" ".$url_host." ".$save_root.$save_file);
 		}
 		sleep(2);
