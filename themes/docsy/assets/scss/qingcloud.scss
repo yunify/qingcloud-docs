@@ -77,6 +77,9 @@ header {
             color: #68747f;
             margin-bottom: 13px;
         }
+        .card-text:last-child{
+            margin-bottom: 24px;
+        }
         .card-link {
             margin-left: 2rem;
             font-size: 14px;
@@ -152,7 +155,7 @@ ul.timeline > li:before {
     p {
         color: #8493a2;
         font-size: 12px;
-        line-height: 2;
+        line-height: 20px;
     }
 }
 .timeline-content {
@@ -174,7 +177,7 @@ ul.timeline > li:before {
             li {
                 font-size: 14px;
                 position: relative;
-                color: #3e464c;
+                color:#324558;
                 line-height: 2;
 
                 &:before {
@@ -226,7 +229,7 @@ ul.timeline > li:before {
         padding-left: 10px;
         padding-top: 1rem;
         padding-right: 1rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
 
         .td-page-top {
             position: relative;
@@ -448,7 +451,7 @@ footer.footer span.tel {
     word-break: break-word;
     font-size: .925rem;
     color: #3e464c;
-    height: 30px;
+    height: 24px;
     margin: .25rem 0;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -474,7 +477,7 @@ span.menu__title[data-depth="0"] {
 
 
 .menu__title[data-depth="1"] {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -483,6 +486,7 @@ span.menu__title[data-depth="0"] {
     color: #3e464c;
     margin-left: 0.35rem;
     margin-right: 5px;
+    margin-bottom: 8px;
 }
 
 .menu__title[data-depth="2"] {
@@ -492,7 +496,7 @@ span.menu__title[data-depth="0"] {
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
-    color: #3e464c;
+    color:#939ea9;
     margin-left: 1rem
 }
 
@@ -512,9 +516,9 @@ span.menu__title[data-depth="0"] {
     color: #3e464c;
     cursor: pointer;
     word-break: break-word;
-    font-size: 14px;
+    font-size: 13px;
     padding-left: 18px;
-    height: 30px;
+    height: 24px;
     margin: .25rem 0;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -599,7 +603,7 @@ span.menu__title--collapse[data-depth="0"] {
 
 .menu__title--icon {
     position: absolute;
-    top: 11px;
+    top: 8px;
     width: 0;
     height: 0;
     content: "";
@@ -749,10 +753,9 @@ ul.product_dynamics_ul > li {
 }
 .timeline-outer > a {
     font-size: 14px;
-    color:#00a971;
 }
 ul.product_dynamics_ul{
-    margin-top: -1rem;
+    margin-top: -2rem;
 }
 .timeline .timeline-outer .product_dynamics_p{
     font-size: 14px;
@@ -861,6 +864,8 @@ section.hero.home-body {
 }
 .row .col-sm-7 h3{
     font-weight: 400;
+    line-height: 1.4;
+    font-size: 15px;
 }
 
 .section-out .container .row .col-md-3{

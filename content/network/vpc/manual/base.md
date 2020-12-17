@@ -34,7 +34,7 @@ weight: 1
 
 除在创建时指定的管理路由器类型及防火墙之外，管理路由器还包含以下几个属性，分别是：
 
-**公网IP**: 管理路由器的公网 IP 地址，用于从公网访问端口转发、隧道服务( [GRE 隧道](tunnel/gre) 、[IPSec 隧道](tunnel/ipsec) )、[VPN 服务](vpn) 等管理服务。
+**公网IP**: 管理路由器的公网 IP 地址，用于从公网访问端口转发、隧道服务( [GRE 隧道](../tunnel/gre) 、[IPSec 隧道](../tunnel/ipsec) )、[VPN 服务](../vpn) 等管理服务。
 
 **内网IP**: 管理路由器的内网 IP 地址，用于从青云内网访问管理服务。
 
@@ -60,7 +60,7 @@ VPC 网络的私有网络指的是一个二层子网网段，通常是一个 C �
 
 ## 管理配置
 
-VPC 网络管理路由器功能主要包含端口转发、隧道服务([GRE 隧道](tunnel/gre) 、[IPSec 隧道](tunnel/ipsec) )、[VPN 服务](vpn)、网关过滤控制(ACL)、DNS 服务以及边界路由器等。
+VPC 网络管理路由器功能主要包含端口转发、隧道服务([GRE 隧道](../tunnel/gre) 、[IPSec 隧道](../tunnel/ipsec) )、[VPN 服务](../vpn)、网关过滤控制(ACL)、DNS 服务以及边界路由器等。
 
 ![](../_images/vpc_settings.png)
 

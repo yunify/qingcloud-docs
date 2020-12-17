@@ -44,6 +44,8 @@ weight: 8
 
 Bucket Replication API 见 API 文档:
 
-- [PUT Bucket Replication](/qingstor/api/bucket/replication/put_replication.html)
-- [GET Bucket Replication](/qingstor/api/bucket/replication/get_replication.html)
-- [DELETE Bucket Replication](/qingstor/api/bucket/replication/delete_replication.html)
+- [PUT Bucket Replication](/storage/object-storage/api/bucket/repliation/put_replication)
+- [GET Bucket Replication](/storage/object-storage/api/bucket/repliation/get_replication)
+- [DELETE Bucket Replication](/storage/object-storage/api/bucket/replication/delete_repliation)
+
+

@@ -58,7 +58,7 @@ http://clousatserver:8052/api/pek3/v1/custom/UploadMonitorData?access_key_id=QEJ
 
 **UploadMonitorData接口数据规范**
 
-由于/api/:zone/v1/custom/UploadMonitorData接口上传监控数据需要对请求进行验证，这里采用类似[青云API 请求中签名 ( signature )]( ../../../development_docs/api/signature/) 的生成方法，构造验证请求串，拼接在相应请求API中如
+由于/api/:zone/v1/custom/UploadMonitorData接口上传监控数据需要对请求进行验证，这里采用类似[青云API 请求中签名 ( signature )]( /development_docs/api/signature/) 的生成方法，构造验证请求串，拼接在相应请求API中如
 
 **请求api** http://xxx.xxx.xxx/api/:zone/v1/custom/UploadMonitorData
 

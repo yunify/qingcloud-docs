@@ -25,11 +25,7 @@ Section2:
 
     - title: 计费指南
       content: 计费指南
-      url: "/storage/object-storage/billing"
-
-    # - title: 快速入门
-    #   content: 快速入门
-    #   url: "/storage/object-storage/quickstart"
+      url: "/storage/object-storage/billing/price"
 
     - title: 操作指南
       content: 操作指南
@@ -37,27 +33,22 @@ Section2:
 
     - title: 最佳实践
       content: 最佳实践
-      url: "/storage/object-storage/beat-practices"
+      url: "/storage/object-storage/beat-practices/"
 
     - title: 常见问题
       content: 常见问题
-      url: "/storage/object-storage/faq"
+      url: "/storage/object-storage/faq/object-faq"
 
 section3:
   title: 开发者指南
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/development_docs/api/"
+      url: "api/overview/"
 
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: "/development_docs/sdk/"
-
-    - title: CLI 文档
-      content: 如何使用 CLI 文档
-      url: "/development_docs/cli/"
-
+      url: "sdk/python/"
 
 section4:
   children:
@@ -71,8 +62,6 @@ section4:
         - title: 产品优势
           url: "/storage/object-storage/intro/object-storage/#产品优势"
 
-        - title: 应用场景
-          url: "https://www.qingcloud.com/products/objectstorage/"
 
     - title: 上手：创建和管理 Bucket 存储空间
       content: 创建独立的存储空间，管理存储空间的访问权限，设置 CORS 等。
@@ -94,3 +83,5 @@ section4:
 <!-- section2 为产品index页面 第一个大块的用户文档配置  -->
 <!-- section3 为产品index页面 第二个大块的开发者文档配置  -->
 <!-- section4 为产品index页面 第三个大块的学习路径配置  -->
+
+

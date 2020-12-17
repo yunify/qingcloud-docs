@@ -11,7 +11,7 @@ weight: 3
 
 用于从源存储空间复制一个对象到目标存储空间，此操作要求请求者对源存储空间拥有可读权限，对目标存储空间拥有可写权限。源存储空间与目标存储空间可相同。因此该接口可用于重命名对象，即先调用此接口复制对象，然后删除源对象。
 
-目前实体对象单次复制的大小最大支持 5G，如果源的对象大小超过此限制，请参考 [Multipart API 分段对象的拷贝](../multipart)。
+目前实体对象单次复制的大小最大支持 5G，如果源的对象大小超过此限制，请参考 [Multipart API 分段对象的拷贝](../multipart/)。
 
 当目标对象已存在时，该操作会对目标对象的内容进行覆盖。
 
@@ -33,13 +33,13 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-参见[公共请求头](../common/common_header.html#请求头字段-request-header)
+参见[公共请求头](../../common_header/)
 
-如果源对象是加密的，参见[如何Copy加密过的对象](/qingstor/api/common/encryption.html#如何copy加密过的对象)
+如果源对象是加密的，参见[如何Copy加密过的对象](../../common/encryption/#如何copy加密过的对象)
 
-为目标对象加密，参见[加密请求头](/qingstor/api/common/encryption.html#加密请求头)
+为目标对象加密，参见[加密请求头](../../common/encryption/#加密请求头)
 
-如果要复制源对象附带的元数据给目标对象，或用请求头中的支持的 HTTP 头和自定义元数据作为目标对象附带的元数据，参见[如何复制或替换对象元数据](../common/metadata.html#如何复制或替换对象元数据)
+如果要复制源对象附带的元数据给目标对象，或用请求头中的支持的 HTTP 头和自定义元数据作为目标对象附带的元数据，参见[如何复制或替换对象元数据](../../metadata.html#如何复制或替换对象元数据)
 
 | Header Name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -56,17 +56,17 @@ Authorization: <authorization-string>
 
 ## Status Code
 
-复制成功返回 201, 假如源 object 不存在或目标 Bucket 不存在返回 404; 其他失败的返回码参考[错误码列表](../common/error_code.html).
+复制成功返回 201, 假如源 object 不存在或目标 Bucket 不存在返回 404; 其他失败的返回码参考[错误码列表](../../error_code/).
 
 ## Response Headers
 
-参见[公共响应头](../common/common_header.html#响应头字段-request-header)
+参见[公共响应头](../../common_header/#响应头字段-request-header)
 
-若目标对象被加密，服务端将返回加密响应头, 具体请参见[加密响应头](/qingstor/api/common/encryption.html#加密响应头)
+若目标对象被加密，服务端将返回加密响应头, 具体请参见[加密响应头](../../common/encryption/#加密响应头)
 
 ## Response Body
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../common/error_code.html)
+正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
 
 ## Example
 

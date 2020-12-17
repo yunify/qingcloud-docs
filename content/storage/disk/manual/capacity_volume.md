@@ -83,7 +83,7 @@ keyword: 青云
 
 **备份**
 
-点击 **备份** ，进入如下界面
+点击 **创建备份** ，进入如下界面
 
 ![备份容量型硬盘](/storage/disk/manual/_images/create_容量型_12.png)
 
@@ -140,7 +140,7 @@ keyword: 青云
 
 点击 **创建硬盘** ，进入如下界面
 
-![基于备份创建硬盘](/storage/disk/manual/_images/create_性能型_20.png)
+![基于备份创建硬盘](/storage/disk/manual/_images/create_容量型_20.png)
 
 在名称框里填入新硬盘的名称，点击 **提交** ，可以在硬盘首页看到，界面如下
 

@@ -17,7 +17,7 @@ draft: false
 | storage_size | Integer | 数据库磁盘容量(GB)，用于存放数据和日志，最小50G，最大1000G，扩容时该值不能比原始容量小 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

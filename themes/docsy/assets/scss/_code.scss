@@ -5,9 +5,9 @@
     .highlight {
         @extend .card;
         
-        margin: 10px 24px;
+        margin: 10px 0;
         padding: 1rem;
-        background-color:#3d3e49;
+        background-color:#263546;
 
         pre, div {
             background-color: inherit !important;
@@ -21,14 +21,14 @@
 
     // Inline code
     p code, li > code, table code {
-        color: #ff3860;
+        color: #00a971;
         line-height: 1.71;
         padding: 0.2em 0.4em;
         margin: 0;
         font-size: 85%;
         word-break: normal;
-        background-color: rgba($black, 0.05);
-        border-radius: $border-radius;
+        background-color: #dff7f0;
+        border-radius: 2px;
 
         br {
             display: none;
@@ -39,14 +39,15 @@
     // Code blocks
     pre {
         word-wrap: normal;
-        background-color: black;
+        background-color: #263546;
+        border-radius:3px;
         padding: $spacer;
      
 
         > code {
             padding: 0;
             margin: 0;
-            font-size: 100%;
+            font-size: 12px;
             word-break: normal;
             white-space: pre;
             border: 0;
@@ -55,6 +56,6 @@
     }
 
     ol,ul{
-        margin-left: 1rem;
+        margin: 8px;
     }
 }

@@ -90,7 +90,7 @@ SSD 企业级硬盘采用全闪存架构，相对于基础型硬盘，SSD 企业
 
 **备份**
 
-点击 **备份**，进入如下界面。
+点击 **创建备份**，进入如下界面。
  
 ![备份SSD](/storage/disk/manual/_images/create_ssd_12.png)
 

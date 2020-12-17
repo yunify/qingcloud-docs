@@ -17,7 +17,7 @@ weight: 1
 | 错误代码 | 错误描述 | HTTP 状态码 |
 | --- | --- | --- |
 | invalid_access_key_id | 当 access key 不正确或不存在时，返回此错误 | 401 |
-| invalid_range | 当请求头 `Range` 不符合规则时，返回此错误，具体规则可参考 [请求头字段 (Request Header)](common_header.html#请求头字段-request-header) 中 `Range` 的定义 | 416 |
+| invalid_range | 当请求头 `Range` 不符合规则时，返回此错误，具体规则可参考 [请求头字段 (Request Header)](../common_header/#请求头字段) 中 `Range` 的定义 | 416 |
 | request_expired | 当请求头中 `Date` 或 `x-qs-date` 与服务端本地时间相差大于 15 分钟时，返回此错误 | 403 |
 | signature_not_matched | 当请求的签名不匹配时，返回此错误 | 401 |
 | invalid_argument | 当请求中的参数值非法时，返回此错误 | 400 |
@@ -75,6 +75,6 @@ weight: 1
   "code": "bad_request",
   "message": "Invalid argument(s) or invalid argument value(s)",
   "request_id": "aa08cf7a43f611e5",
-  "url": "http://docs.qingcloud.com/qingstor/api/common/error_code.html"
+  "url": "http://docs.qingcloud.com/qingstor/api/error_code.html"
 }
 ```

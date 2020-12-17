@@ -3,11 +3,9 @@ title: "FAQ"
 date: 2020-11-23T10:08:56+09:00
 description:
 draft: false
-weight: 29
+weight: 39
 ---
 
-
-# FAQ 常见问题
 
 ## 如何提高 Bucket 配额？
 
@@ -19,15 +17,15 @@ weight: 29
 
 QingStor 对象存储是面向海量非结构化数据的通用存储，没有针对文件数量和类型的限制。
 
-## 怎样同步本地目录到对象存储？
+## 如何同步本地目录到对象存储？
 
-可以使用高级命令行工具 qsctl ，其中的 `sync` 命令支持将本地目录和 QingStor 对象存储目录进行同步，详情请参考 [qsctl 文档](/qingstor/developer_tools/qsctl) 。
+可以使用高级命令行工具 qsctl ，其中的 `sync` 命令支持将本地目录和 QingStor 对象存储目录进行同步，详情请参考 [qsctl 文档](/storage/object-storage/manual/developer-tools/qsctl/) 。
 
-## 对象存储可以创建文件夹吗？
+## 对象存储是否可以创建文件夹？
 
 QingStor 对象存储的存储空间本质上是一个平级结构，但控制台界面会根据 “/” 来模拟文件系统的层级结构。如果使用 API 调用，可以请求 GET Bucket API ，通过 prefix 和 delimiter 参数来获取按照文件夹归类的文件列表。
 
-## 有没有针对文件夹操作的接口？
+## 是否有针对文件夹操作的接口？
 
 针对文件夹相关的操作，请使用 putObject 接口， object 名称请使用 “/” 结尾(模拟文件夹)。
 
@@ -37,7 +35,7 @@ QingStor 对象存储不对 API 请求频率做限制。
 
 ## 是否兼容 AWS S3 的上传工具？
 
-QingStor 对象存储兼容 AWS S3 的主要 API，所以您可以直接使用 AWS S3 相关的上传工具以上传数据到 QingStor 对象存储，兼容工具列表可以参考[文档](/qingstor/s3/compatible_tools/index.html) 。
+QingStor 对象存储兼容 AWS S3 的主要 API，所以您可以直接使用 AWS S3 相关的上传工具以上传数据到 QingStor 对象存储，兼容工具列表可以参考[文档](/storage/object-storage/s3) 。
 
 ## Bucket 能否像 AWS S3 一样 mount 到主机上？
 
@@ -51,7 +49,7 @@ qsctl 支持使用 `--force` 参数来进行强制覆盖。
 
 ## 如何上传较大的文件？
 
-可以使用 PUT 方法上传， 如果文件很大的话， 还可以考虑用[分段上传 API](api/object/multipart/index.html) 。
+可以使用 PUT 方法上传， 如果文件很大的话， 还可以考虑用[分段上传 API](/storage/object-storage/api/object/multipart) 。
 
 > PUT 方法上传的 Object 允许最大 5GB; 分段( Multipart ) 上传的 Object 最大可达 50TB( 每个分段最大为 5GB )。如果通过广域网上传，建议几百兆以上文件都用分段上传。
 
@@ -61,17 +59,17 @@ qsctl 支持使用 `--force` 参数来进行强制覆盖。
 
 ## 使用分段上传时，对分段数量和大小是否有限制？
 
-对于单个 Upload 过程的限制可以参考 [分段上传限制](api/object/multipart/index.html#分段上传限制)
+对于单个 Upload 过程的限制可以参考 [分段上传限制](/storage/object-storage/api/object/multipart)
 
 ## 使用分段上传时，对分段数量是否有限制？
 
-对于单个 Upload ID ，允许的最大分段个数为 10000 , 关于 Upload ID 的定义，请参考 [对象存储 API 文档](/qingstor/api/object/multipart/index.html)。
+对于单个 Upload ID ，允许的最大分段个数为 10000 , 关于 Upload ID 的定义，请参考 [对象存储 API 文档](/storage/object-storage/api/object/multipart)。
 
 ## 如何批量取消未完成的分段上传 ？
 
-使用对象存储的应用普遍会使用分段上传，假如初始化了分段上传后未调用[完成分段上传](api/object/multipart/complete_multipart_upload.html)或者[终止分段上传](api/object/multipart/abort_multipart_upload.html), 这些未完成的上传记录会占用 Bucket 空间。
+使用对象存储的应用普遍会使用分段上传，假如初始化了分段上传后未调用[完成分段上传](/storage/object-storage/api/object/multipart/complete)或者[终止分段上传](/storage/object-storage/api/object/multipart/abort), 这些未完成的上传记录会占用 Bucket 空间。
 
-对于大量的未完成分段上传, 可通过配置 [生命周期](/qingstor/lifecycle) 规则自动删除。
+对于大量的未完成分段上传, 可通过配置 [生命周期](/storage/object-storage/manual/lifecycle) 规则自动删除。
 
 ## 如何使根目录对匿名用户显示所有的文件？
 
@@ -79,17 +77,17 @@ qsctl 支持使用 `--force` 参数来进行强制覆盖。
 
 进入对象存储控制台，选择 Bucket，点击”设置” ，进入”存储空间策略”，再点击”添加规则” 操作，选择 `list objects` ，用户选择 `*`， 响应动作选择 `允许` 。
 
-更详细内容请参考文档 [控制台用户指南–设置存储空间策略](/qingstor/guide/index.html#设置存储空间策略) 。
+更详细内容请参考文档 [控制台用户指南–设置存储空间策略](/storage/object-storage/manual/access_control) 。
 
 ## 从哪里获取对象存储的 Access Key ？
 
 Access Key 可以在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请。
 
-更详细内容请参考文档 [API 指南–签名验证](/qingstor/api/common/signature.html#access-key) 。
+更详细内容请参考文档 [API 指南–签名验证](/storage/object-storage/api/signature) 。
 
 ## 如何分享文件给没有 Access Key 的用户
 
-可以参考 [请求参数签名](api/common/signature.html#请求参数签名) 文档, 或调用 SDK 相应的生成签名 URL 的函数来生成指定时间段有效的超链接。
+可以参考 [请求参数签名](/storage/object-storage/api/signature) 文档, 或调用 SDK 相应的生成签名 URL 的函数来生成指定时间段有效的超链接。
 
 ## 将数据分散存储到100个 Bucket，是否会比只存储在1个 Bucket 拥有更好的性能？
 
@@ -144,6 +142,6 @@ keytool -trustcacerts -keystore "$JAVA_HOME/jre/lib/security/cacerts" -storepass
 ## 对出错的请求原因有疑问
 
 QingStor 对每个请求都生成了唯一的 Request ID, 在返回中会放在 x-qs-request-id 头字段中。
-每一个错误返回都有一个 json 格式内容, 包含 Code (返回码) 和 Message (具体原因), 参考 [错误信息](api/common/error_code)。
+每一个错误返回都有一个 json 格式内容, 包含 Code (返回码) 和 Message (具体原因), 参考 [错误信息](/storage/object-storage/api/error_code)。
 如果用户对错误的原因有疑问, 或者比如调试签名串计算方式之类的问题, 都可以记录好 x-qs-request-id 并在工单提供给我们。
 

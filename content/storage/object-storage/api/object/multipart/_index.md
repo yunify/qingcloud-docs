@@ -29,7 +29,7 @@ Multipart API 提供了多个API实现一种将对象分段上传的方式。使
 在上传分段过程中未完成的分段会增加 Bucket 的空间使用，所以如果要取消上传过程，需要调用 [Abort Multipart Upload API](abort/)
 并传递 Upload Id 来清除没用的分段数据。
 
-在 Bucket 中所有未完成的分段上传过程，可以通过 [List Multipart Uploads API](../../bucket/list_multipart_uploads.html)来列出。
+在 Bucket 中所有未完成的分段上传过程，可以通过 [List Multipart Uploads API](../../bucket/list_multipart_uploads/)来列出。
 
 
 # 并发的考虑

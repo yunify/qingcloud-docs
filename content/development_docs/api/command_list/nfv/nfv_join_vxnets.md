@@ -17,7 +17,7 @@ draft: false
 | vxnets.n | String | 私有网络 ID | Yes |
 | security_group | String | 防火墙 ID | No |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

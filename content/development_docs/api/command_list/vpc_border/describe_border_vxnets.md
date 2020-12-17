@@ -20,7 +20,7 @@ draft: false
 | limit | Integer | 返回数据长度，默认为20 | No |
 
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

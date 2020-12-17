@@ -16,7 +16,7 @@ draft: false
 | resource | String | 资源ID, 可以是负载均衡器ID，也可以是私有网络ID <br> 资源类型必须和创建路由表时指定的资源的资源，比如创建路由表时绑定的是负载均衡器，那么这里的资源类型也必须是负载均衡器 | Yes |
 | routing_table | String | 路由表ID | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

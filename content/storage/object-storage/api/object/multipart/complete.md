@@ -30,9 +30,9 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-参见[公共请求头](../../common/common_header.html#请求头字段-request-header)
+参见[公共请求头](../../../common_header/#请求头字段-request-header)
 
-对象加密，参见[加密请求头](/qingstor/encryption.html#加密请求头)
+对象加密，参见[加密请求头](../../common/encryption/#加密请求头)
 
 | Name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -52,17 +52,17 @@ part_number 不一定需要连续，但需要递增。允许在最终合并的�
 
 ## Status Code
 
-成功则返回 201, 失败的返回码参考[错误码列表](../../common/error_code.html)
+成功则返回 201, 失败的返回码参考[错误码列表](../../../error_code/)
 
 ## Response Headers
 
-参见[公共响应头](../../common/common_header.html#响应头字段-request-header)
+参见[公共响应头](../../../common_header/#响应头字段-request-header)
 
-若对象被加密，服务端将返回[加密响应头](/qingstor/encryption.html#加密请求头)
+若对象被加密，服务端将返回[加密响应头](../../common/encryption/#加密请求头)
 
 ## Response Body
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../common/error_code.html)
+正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
 
 
 ## Example

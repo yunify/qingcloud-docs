@@ -6,7 +6,6 @@ draft: false
 weight: 2
 ---
 
-# 实时增量数据备份解决方案
 
 实时且增量地对数据进行备份是用户的普遍需求，在本方案中，我们将描述如何在 Linux 下将本地业务数据实时备份至 QingStor 对象存储的存储空间中。
 
@@ -47,7 +46,7 @@ CONFIG_INOTIFY_USER=y
    > sudo yum install lsyncd
    ```
 
-1. 使用 pip 安装并配置 `qsctl`，`qsctl` 的详细配置可以参考 [qsctl 的文档](../developer_tools/qsctl.html#qsctl)
+1. 使用 pip 安装并配置 `qsctl`，`qsctl` 的详细配置可以参考 [qsctl 的文档](../../manual/developer_tools/qsctl/)
 
    ```bash
    > pip install qsctl -U

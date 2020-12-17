@@ -24,7 +24,7 @@ draft: false
 | statics.n.val6 | String | 第n条规则的 val6 值，会根据规则类型的不同，代表不同含义：<br/>*   过滤控制：val6 表示『行为』，包括： “accept” 和 “drop” | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

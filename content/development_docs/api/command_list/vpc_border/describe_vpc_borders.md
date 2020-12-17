@@ -25,7 +25,7 @@ draft: false
 | verbose | Integer | verbose等级，数值越大，返回的信息越多 | No |
 | search_word | String | 模糊查询的字段 | No |
 
-[_公共参数_](../../../parameters)
+[_公共参数_](../../../parameters/)
 
 **Response Elements**
 

@@ -149,7 +149,7 @@ https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
 ![图片](/compute/vm/_images/image-1568884250307.png)
 
-### 如何安装telnet客户端
+## 如何安装telnet客户端
 
 可以通过以下路径安装，服务器管理器---本地服务器---管理----添加角色和功能---功能---telnet客户端---安装
 
@@ -197,7 +197,7 @@ https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
 可以使用开始----运行----cmd命令行（以管理员身份）----ipconfig /all---回车，查看配置的ip地址
 
-![图片](/computing/_images/image-1568884277992.png)
+![图片](/compute/vm/_images/image-1568884277992.png)
 
 ## 如何手动激活windows
 
@@ -223,7 +223,7 @@ https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
 ![图片](/compute/vm/_images/image-1568884288791.png)
 
-### 创建用户，用户名为test
+## 创建用户，用户名为test
 右键这台电脑---管理---服务器管理器---工具---计算机管理---本地用户和组-用户，右键右侧空白处-新用户，创建test用户；
 
 ![图片](/compute/vm/_images/image-1568884291334.png)
