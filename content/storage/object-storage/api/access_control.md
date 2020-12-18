@@ -21,28 +21,28 @@ QingStor 的访问控制方式有三种：
 通过 Bucket Policy，可以向其他青云 QingCloud 用户赋予相应存储空间及其对象的访问权限, 其语义覆盖 API ACL, 及 Resource ACL。
 Bucket Policy 对于 QingStor 资源的访 问控制粒度介于 Bucket ACL 和 Object ACL(对象访问控制列表，尚未推出) 的一种访问控 制方式。Bucket Policy 可以通过细致地指定 API 级别的控制, 实现Bucket ACL 和 Object ACL 所不能实现的一些功能， 比如，防盗链。
 
-一般情况下通过 Qingstor Console 界面进行[配置](../todo) 即可, 也支持通过以下 API 来设置。
+一般情况下通过 Qingstor Console 界面进行[配置](https://console.qingcloud.com/sh1b) 即可, 也支持通过以下 API 来设置。
 
 ### 相关API
 
-设置 Bucket Policy [PUT Bucket Policy](../todo)
+设置 Bucket Policy [PUT Bucket Policy](/storage/object-storage/api/bucket/policy/put_policy)
 
-获取 Bucket Policy [GET Bucket Policy](../todo)
+获取 Bucket Policy [GET Bucket Policy](/storage/object-storage/api/bucket/policy/get_policy)
 
-删除 Bucket Policy [DELETE Bucket Policy](../todo)
+删除 Bucket Policy [DELETE Bucket Policy](/storage/object-storage/api/bucket/policy/delete_policy)
 
 ## 存储空间访问控制列表(Bucket ACL)
 
 Bucket ACL 对于 QingStor 资源的访问控制粒度比起 Bucket Policy 和 Object ACL 要更大一些，使用起来也更加简单。其所授予被授权者的权限列表仅可为 READ (可读), WRITE (可写), 或 FULL_CONTROL (可读写)。
 Bucket 拥有者默认就有所有权限, 另外可配置公开读或公开写(即不附带认证信息的匿名访问), 也可以针对特定青云用户来配置读写权限.
 
-一般情况下通过 Qingstor Console 界面进行[配置](../todo) 即可, 也支持通过以下 API 来设置.
+一般情况下通过 Qingstor Console 界面进行[配置](https://console.qingcloud.com/sh1b) 即可, 也支持通过以下 API 来设置.
 
 ### 相关API
 
-设置 Bucket ACL [PUT Bucket ACL](../todo)
+设置 Bucket ACL [PUT Bucket ACL](/storage/object-storage/api/bucket/acl/put_acl)
 
-获取 Bucket ACL [GET Bucket ACL](../todo)
+获取 Bucket ACL [GET Bucket ACL](/storage/object-storage/api/bucket/acl/get_acl)
 
 
 ## 权限控制匹配顺序和特殊情况
@@ -57,15 +57,15 @@ Bucket 拥有者默认就有所有权限, 另外可配置公开读或公开写(�
 
 当您利用 JavaScript AJAX 向 QingStor 发起的请求属于跨源请求时, 默认情况下浏览器为了安全考虑, 不允许调用不同域名下的资源 (因为您的网站域名跟 Qingstor的域名不一样), 这种情况下需要为 Bucket 配置 CORS 规则.
 
-Bucket CORS 可以对请求来源的域名和请求头进行控制. 一般情况下通过 Qingstor Console 界面进行[配置](../todo) 即可, 也支持通过 API 来设置.
+Bucket CORS 可以对请求来源的域名和请求头进行控制. 一般情况下通过 Qingstor Console 界面进行[配置](https://console.qingcloud.com/sh1b) 即可, 也支持通过 API 来设置.
 
 ### 相关API
 
-获取 Bucket CORS [GET Bucket CORS](../todo) 。
+获取 Bucket CORS [GET Bucket CORS](/storage/object-storage/api/bucket/cors/get_cors) 。
 
-删除 Bucket CORS [DELETE Bucket CORS](../todo) 。
+删除 Bucket CORS [DELETE Bucket CORS](/storage/object-storage/api/bucket/cors/delete_cors) 。
 
-浏览器如何发起 OPTIONS 请求 [OPTIONS Object](../todo) 。
+浏览器如何发起 OPTIONS 请求 [OPTIONS Object](/storage/object-storage/api/object/options) 。
 
 ## 如何授权存储空间或对象操作的请求
 
@@ -99,7 +99,7 @@ Bucket Policy 的优先级高于 Bucket ACL。当某个请求被 Bucket Policy �
 
 可以利用 Bucket Policy 中的 condition 实现一些条件访问控制，比如防盗链。
 
-condition的详细介绍请参见 [Bucket Policy Condition](../todo)
+condition的详细介绍请参见 [Bucket Policy Condition](/storage/object-storage/api/bucket/policy/policy_condition)
 
 ### 防盗链白名单示例
 
@@ -147,3 +147,5 @@ condition的详细介绍请参见 [Bucket Policy Condition](../todo)
 ```
 
 其中 `"*.example2.com` 为域名黑名单。
+
+

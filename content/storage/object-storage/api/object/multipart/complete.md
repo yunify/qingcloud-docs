@@ -32,7 +32,7 @@ Authorization: <authorization-string>
 
 参见[公共请求头](../../../common_header/#请求头字段-request-header)
 
-对象加密，参见[加密请求头](../../common/encryption/#加密请求头)
+对象加密，参见[加密请求头](../../../common/encryption/#加密请求头)
 
 | Name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -58,7 +58,7 @@ part_number 不一定需要连续，但需要递增。允许在最终合并的�
 
 参见[公共响应头](../../../common_header/#响应头字段-request-header)
 
-若对象被加密，服务端将返回[加密响应头](../../common/encryption/#加密请求头)
+若对象被加密，服务端将返回[加密响应头](../../../common/encryption/#加密请求头)
 
 ## Response Body
 
