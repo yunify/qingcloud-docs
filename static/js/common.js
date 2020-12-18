@@ -32,13 +32,18 @@ $(function(){
 	//查看链接结尾是否/结尾
 	$('a').each(function(){
 		var url = $(this).attr('href');
-		if(url != null && url != '' && url != 'undefined' && url.indexOf('http') == '-1' && url.indexOf('#') == '-1' && url.indexOf('.zip') == '-1' && url.indexOf('.tar') == '-1' && url.indexOf('.rar') == '-1' && url.indexOf('.gz') == '-1'){
+		if(url != null && url != '' && url != 'undefined' && url.indexOf('http') == '-1' && url.indexOf('#') == '-1' && url.indexOf('.') == '-1'){
 			var start = url.length-1;
 			var last = url.substr(start,1);
 			if(last != '/'){
 				$(this).attr('href',url+'/');
 			}
 		}
+		var reg = new RegExp(/.+#/);
+		if(url != null && url != '' && url != 'undefined' && url.indexOf('#') != '-1' && url.indexOf('/#') == '-1' && reg.test(url)){
+			$(this).attr('href',url.replace('#','/#'));
+		}
+
 		//判断是否是外链 console时 外链需在父页面打开
 		var content_console = $('#content_console').val();
 		if(content_console == 1){
