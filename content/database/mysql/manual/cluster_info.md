@@ -1,6 +1,7 @@
 ---
 title: "集群信息"
 description: test
+weight: 2
 draft: false
 ---
 
