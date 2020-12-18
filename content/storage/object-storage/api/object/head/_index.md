@@ -36,9 +36,9 @@ Range: bytes=<byte-range>
 
 参见[公共请求头](../../common_header/#请求头字段-request-header)
 
-对象加密，参见[加密请求头](../common/encryption.html#加密请求头)
+对象加密，参见[加密请求头](../../common/encryption/#加密请求头)
 
-若对象附有标准 HTTP 头或自定义元数据，参见[如何获取对象元数据](../common/metadata#如何获取对象元数据)`
+若对象附有标准 HTTP 头或自定义元数据，参见[如何获取对象元数据](../../metadata/#如何获取对象元数据)
 
 | Header Name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -51,7 +51,7 @@ Range: bytes=<byte-range>
 
 参见[公共响应头](../../common_header/#响应头字段-request-header)
 
-若对象被加密，服务端将返回[加密响应头](../common/encryption.html#加密响应头)
+若对象被加密，服务端将返回[加密响应头](../../common/encryption/#加密响应头)
 
 | Name | Type | Description |
 | --- | --- | --- |

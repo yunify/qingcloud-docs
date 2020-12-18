@@ -71,9 +71,9 @@ enableToc: false
 
 **Windows 下使用 Xshell**
 
-注解
-
-推荐使用 Xshell 5 及以上版本
+> 注解
+>
+> 推荐使用 Xshell 5 及以上版本
 
 *   在青云控制台的“安全” -> “SSH 密钥”里创建 SSH 密钥，将这个密钥加载到主机上并下载私钥文件，例如 kp-12345678；
 *   在 Xshell 上 创建(New) 一个新 会话(Session) ，协议(Protocol) 是 SSH，主机(Host) 是公网 IP 地址；

@@ -31,7 +31,7 @@ Section2:
       url: "manual/cluster_info"
 
     - title: 最佳实践
-      content: 
+      content: 场景：MySQL Plus的数据迁移
       url: "best-practices/data_transfer"
 
 section3:
@@ -69,7 +69,7 @@ section4:
         - title: 创建MySQL Plus
           url: "/database/mysql/quickstart/quick_start"
 
-        - title: MySQL集群信息
+        - title: MySQL Plus集群信息
           url: "/database/mysql/manual/cluster_info"
 
         - title: MySQL Plus服务功能
