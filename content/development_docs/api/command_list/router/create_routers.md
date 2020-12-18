@@ -8,9 +8,9 @@ draft: false
 
 创建一台或多台路由器。路由器用于受管私有网络之间互联，并提供三项附加服务：DHCP 服务、端口转发、VPN 隧道服务。
 
-这个API只负责路由器的创建工作，如果需要通过路由器将自己名下的受管私有网络连接起来，请查看 [_JoinRouter_](join_router.html#api-join-router)。
+这个API只负责路由器的创建工作，如果需要通过路由器将自己名下的受管私有网络连接起来，请查看 [_JoinRouter_](../join_router/)。
 
-如果需要配置端口转发规则或打开VPN 隧道服务，请查看 [_AddRouterStatics_](add_router_statics.html#api-add-router-statics) 和 [_UpdateRouters_](update_routers.html#api-update-routers)。
+如果需要配置端口转发规则或打开VPN 隧道服务，请查看 [_AddRouterStatics_](../add_router_statics/) 和 [_UpdateRouters_](../update_routers/)。
 
 **Request Parameters**
 

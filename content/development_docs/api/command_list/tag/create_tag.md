@@ -10,7 +10,7 @@ draft: false
 
 **注意**: 标签名称少于15个字符, 不可重复.
 
-标签数据可以随时通过 [_DescribeTags_](describe_tags.html#api-describe-tags) 得到。
+标签数据可以随时通过 [_DescribeTags_](../describe_tags/) 得到。
 
 **Request Parameters**
 

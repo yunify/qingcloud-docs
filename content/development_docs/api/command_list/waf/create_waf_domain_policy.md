@@ -17,7 +17,7 @@ draft: false
 | affect_mode | Integer | 域名的规则相应模式，0: 执行规则内容，1: 观察模式 | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[公共参数](../common/parameters.html#api-common-parameters)
+[公共参数](../../../parameters/)
 
 **Response Elements**
 

@@ -4,7 +4,7 @@ description:
 draft: false
 ---
 
-修改告警策略的名称和描述等属性，如果修改告警检查周期或者连续告警次数， 改后需要调用 [_ApplyAlarmPolicy_](apply_alarm_policy.html#api-apply-alarm-policy) 使修改生效。
+修改告警策略的名称和描述等属性，如果修改告警检查周期或者连续告警次数， 改后需要调用 [_ApplyAlarmPolicy_](../apply_alarm_policy/) 使修改生效。
 
 一次只能修改一个告警策略。
 

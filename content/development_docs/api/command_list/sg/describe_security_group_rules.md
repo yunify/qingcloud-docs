@@ -41,8 +41,8 @@ draft: false
 | priority | Integer | 防火墙规则优先级。优先级由高到低的范围是 0 到 100，值越大优先级越低。 |
 | protocol | String | 协议 |
 | action | String | 操作，accept 表示接受，drop 表示拒绝。 |
-| val1 | String | 如果协议为 tcp 或 udp，此值表示起始端口。<br/>如果协议为 icmp，此值表示 ICMP 类型。 具体类型可参见 [_ICMP 类型及代码_](../../common/security_group_rule_icmp_type.html#security-group-rule-icmp-type) |
-| val2 | String | 如果协议为 tcp 或 udp，此值表示结束端口。<br/>如果协议为 icmp，此值表示 ICMP 代码。 具体代码可参见 [_ICMP 类型及代码_](../../common/security_group_rule_icmp_type.html#security-group-rule-icmp-type) |
+| val1 | String | 如果协议为 tcp 或 udp，此值表示起始端口。<br/>如果协议为 icmp，此值表示 ICMP 类型。 具体类型可参见 [_ICMP 类型及代码_](../../../common/security_group_rule_icmp_type/) |
+| val2 | String | 如果协议为 tcp 或 udp，此值表示结束端口。<br/>如果协议为 icmp，此值表示 ICMP 代码。 具体代码可参见 [_ICMP 类型及代码_](../../../common/security_group_rule_icmp_type/) |
 | val3 | String | 源IP |
 
 **Example**

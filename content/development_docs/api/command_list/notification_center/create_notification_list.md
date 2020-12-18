@@ -8,7 +8,7 @@ draft: false
 
 创建新的通知列表。
 
-在创建通知列表前，需先创建通知项，请参见 [_CreateNotificationItems_](create_notification_items.html#api-create-notification-items)
+在创建通知列表前，需先创建通知项，请参见 [_CreateNotificationItems_](../create_notification_items/)
 
 **Request Parameters**
 

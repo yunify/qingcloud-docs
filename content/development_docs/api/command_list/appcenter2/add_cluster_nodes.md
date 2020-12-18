@@ -6,7 +6,7 @@ draft: false
 
 
 
-横向扩容集群，增加集群节点。前提是集群支持增加节点的操作，即应用配置中角色 `advanced_actions` 包含 `scale_horizontal` ，可以通过 API [DescribeAppVersions](./describe_app_versions.html) 来查看应用的配置文件是否包含此配置，也可以通过 API [DescribeClusters](./describe_clusters.html) 来查看集群的角色是否支持此操作。
+横向扩容集群，增加集群节点。前提是集群支持增加节点的操作，即应用配置中角色 `advanced_actions` 包含 `scale_horizontal` ，可以通过 API [DescribeAppVersions](../describe_app_versions/) 来查看应用的配置文件是否包含此配置，也可以通过 API [DescribeClusters](../describe_clusters/) 来查看集群的角色是否支持此操作。
 
 **Request Parameters**
 

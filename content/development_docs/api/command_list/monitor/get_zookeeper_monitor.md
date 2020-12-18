@@ -10,7 +10,7 @@ draft: false
 
 因为 ZooKeeper 服务包含多个节点，每个 ZooKeeper 节点都有独立的监控数据。
 
-为减少数据传输，在保持数据结构清晰的前提下，我们对监控数据做了压缩， 在解析返回数据时要留意。详细说明参见 [_监控数据压缩说明_](compress.html#monitor-compress) 。
+为减少数据传输，在保持数据结构清晰的前提下，我们对监控数据做了压缩， 在解析返回数据时要留意。详细说明参见 [_监控数据压缩说明_](../compress/) 。
 
 **Request Parameters**
 
@@ -31,7 +31,7 @@ draft: false
 | --- | --- | --- |
 | action | String | 响应动作 |
 | resource_id | String | 资源 ID |
-| meter_set | Array | 监控数据集，可参见下面 [_监控数据集说明_](#zookeeper-data-meaning) |
+| meter_set | Array | 监控数据集，可参见下面的监控数据集说明 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
 **监控数据集说明**

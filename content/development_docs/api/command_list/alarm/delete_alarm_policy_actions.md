@@ -6,7 +6,7 @@ draft: false
 
 删除告警行为。
 
-删除后，记得调用 [_ApplyAlarmPolicy_](apply_alarm_policy.html#api-apply-alarm-policy) 使其生效。
+删除后，记得调用 [_ApplyAlarmPolicy_](../apply_alarm_policy/) 使其生效。
 
 **Request Parameters**
 

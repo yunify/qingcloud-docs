@@ -6,7 +6,7 @@ draft: false
 
 
 
-给转发策略添加多条规则。 注意：在添加之后，为了让新规则生效，你需要执行 [_ApplyLoadBalancerPolicy_](apply_loadbalancer_policy.html#api-apply-loadbalancer-policy) 指令。
+给转发策略添加多条规则。 注意：在添加之后，为了让新规则生效，你需要执行 [_ApplyLoadBalancerPolicy_](../apply_loadbalancer_policy/) 指令。
 
 **Request Parameters**
 

@@ -8,9 +8,9 @@ draft: false
 
 创建新的通知项。
 
-注意，如果通知项的内容（content）是第一次创建，需要经过验证才能接收通知。 可参考 [_VerifyNotificationItem_](verify_notification_item.html#api-verify-notification-item) 。 如果已创建并验证过相同的内容，那么不需要再次验证。
+注意，如果通知项的内容（content）是第一次创建，需要经过验证才能接收通知。 可参考 [_VerifyNotificationItem_](../verify_notification_item/) 。 如果已创建并验证过相同的内容，那么不需要再次验证。
 
-创建通知项后，就可将其加入到通知列表中。可参考 [_CreateNotificationList_](create_notification_list.html#api-create-notification-list) 和 [_ModifyNotificationListAttributes_](modify_notification_list_attributes.html#api-modify-notification-list-attributes)
+创建通知项后，就可将其加入到通知列表中。可参考 [_CreateNotificationList_](../create_notification_list/) 和 [_ModifyNotificationListAttributes_](../modify_notification_list_attributes/)
 
 **Request Parameters**
 

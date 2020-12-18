@@ -8,7 +8,7 @@ draft: false
 
 通知列表中只有验证过的联系方式才能接收通知。
 
-改后需要调用 [_ApplyAlarmPolicy_](apply_alarm_policy.html#api-apply-alarm-policy) 使修改生效。
+改后需要调用 [_ApplyAlarmPolicy_](../apply_alarm_policy/) 使修改生效。
 
 **Request Parameters**
 

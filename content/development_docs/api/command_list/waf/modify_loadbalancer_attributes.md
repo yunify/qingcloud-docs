@@ -16,7 +16,7 @@ WAF功能是依赖于负载均衡器的，所以需要通过修改负载均衡�
 | waf_pg | String | WAF功能的全局配置参数，为空则关闭WAF功能 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[公共参数](../common/parameters.html#api-common-parameters)
+[公共参数](../../../parameters/)
 
 **Response Elements**
 

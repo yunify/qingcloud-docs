@@ -1,7 +1,8 @@
 ---
+title: "Instance Types"
+description: 
+draft: false
 ---
-
-# Instance Types[¶](#instance-types "永久链接至标题")
 
 青云给主机定义了几种经典配置
 

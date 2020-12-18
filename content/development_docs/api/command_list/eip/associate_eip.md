@@ -11,7 +11,7 @@ draft: false
 不能对已绑定公网IP的主机再次绑定，如果需要更改IP， 则要先解绑之前的IP，再绑定新的。如果已绑定公网IP所在的主机没有反应,可以使用强制绑定
 将该公网IP绑定到目标资源上。
 
-如果想将公网IP绑定到路由器，请参见 [_ModifyRouterAttributes_](../router/modify_router_attributes.html#api-modify-router-attributes)
+如果想将公网IP绑定到路由器，请参见 [_ModifyRouterAttributes_](../../router/modify_router_attributes/)
 
 **Request Parameters**
 

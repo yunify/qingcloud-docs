@@ -16,7 +16,7 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| prefix | String | 域名别名前缀，此前缀会跟 [_GetDNSLabel_](get_dns_label.html#api-get-dns-label) 一起组成内网域名 | Yes |
+| prefix | String | 域名别名前缀，此前缀会跟 [_GetDNSLabel_](../get_dns_label/) 一起组成内网域名 | Yes |
 | resource | String | 资源 ID | Yes |
 | dns_alias_name | String | 域名别名名称 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
