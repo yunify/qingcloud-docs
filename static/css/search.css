@@ -305,7 +305,7 @@ ul {
     color: #00a971;
 }
 
-@media (max-width:376px) {
+@media (max-width:600px) {
     .search-pagination .pager-item{
 		width: 26px;
 	}

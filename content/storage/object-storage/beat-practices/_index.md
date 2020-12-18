@@ -24,11 +24,11 @@ collapsible: true
     * [使用 QingStor SDK](app_integration/#qingstor-sdk)
     * [开发者实现签名服务器](app_integration/#id2)
     * [表单 POST 上传](app_integration/#post)
-    * [请求参数签名](app_integration/l#id3)
+    * [请求参数签名](app_integration/#id3)
 * [静态网站托管方案](web_hosting/)
     * [主要优势](web_hosting/#id2)
     * [应用场景](web_hosting/#id3)
     * [静态网站托管使用流程](web_hosting/#id4)
     * [对比传统部署方式](web_hosting/#id5)
-    * [Web 服务静态化拆分样例](web_hosting/l#web)
+    * [Web 服务静态化拆分样例](web_hosting/#web)
 
