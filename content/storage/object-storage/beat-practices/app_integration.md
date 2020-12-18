@@ -362,7 +362,6 @@ SDK 参考例子:
 
 [Java 使用服务端签名](/storage/object-storage/sdk/java/)
 
-[Swift 应用服务端签名](/storage/object-storage/sdk/swift/)
 
 
 ## 表单 POST 上传

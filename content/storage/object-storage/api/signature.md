@@ -37,7 +37,8 @@ weight: 1
 
 移动客户端每次上传下载文件之前，由服务端验证了用户身份之后，签名服务根据特定的 Qingstor API 调用参数，生成头签名或参数签名，返回给客户端；
 客户端使用该签名来直接跟Qingstor进行交互。
-[Javascript SDK](../../sdk/javascript/) (适用于Ajax类型的应用)、[Java SDK](../../sdk/java/) (适用 Android 平台)、[Swift SDK](../../sdk/swift/) (适用 IOS 平台) 均支持构造 API 请求时应用服务端计算的签名串。
+
+[Javascript SDK](../../sdk/javascript/) (适用于Ajax类型的应用)、[Java SDK](../../sdk/java/) (适用 Android 平台) 均支持构造 API 请求时应用服务端计算的签名串。
 
 由于移动客户端经常会遇到系统时间不准确的问题，并且签名计算结果跟时间密切相关，需要签名服务在计算签名时把所用的标准时间一并返回给客户端，设置正确的 `Date` header。
 
@@ -253,3 +254,5 @@ signature = urllib.quote(base64.b64encode(h.digest()).strip())
 ```plain_text
 access_key_id=PLLZOBTTZXGBNOWUFHZZ&expires=1479107162&signature=tuXu/KcggHWPAfEmraUHDwEUdiIPSXVRsO%2BT2rxomBQ%3D
 ```
+
+
