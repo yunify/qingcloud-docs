@@ -6,7 +6,7 @@ draft: false
 
 
 
-删除一个或多个你拥有的标签，该标签绑定的所有资源自动解除绑定关系 关于解绑标签可参考 [_DetachTags_](detach_tags.html#api-detach-tags)
+删除一个或多个你拥有的标签，该标签绑定的所有资源自动解除绑定关系 关于解绑标签可参考 [_DetachTags_](../detach_tags/)
 
 **Request Parameters**
 

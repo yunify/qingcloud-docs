@@ -6,7 +6,7 @@ draft: false
 
 
 
-切换集群的网络，前提是集群必须支持此操作，即应用的mustache配置文件中角色的advanced_actions定义了change_vxnet。可以通过 API [DescribeAppVersions](./describe_app_versions.html) 来查看应用的配置文件是否包含此配置，也可以通过 API [DescribeClusters](./describe_clusters.html) 来查看集群的角色是否支持此操作。
+切换集群的网络，前提是集群必须支持此操作，即应用的mustache配置文件中角色的advanced_actions定义了change_vxnet。可以通过 API [DescribeAppVersions](../describe_app_versions/) 来查看应用的配置文件是否包含此配置，也可以通过 API [DescribeClusters](../describe_clusters/) 来查看集群的角色是否支持此操作。
 
 **Request Parameters**
 

@@ -10,7 +10,7 @@ draft: false
 
 注解
 
-回滚规则后，记得调用 [_ApplySecurityGroup_](apply_security_group.html#api-apply-security-group) 使其生效。
+回滚规则后，记得调用 [_ApplySecurityGroup_](../apply_security_group/) 使其生效。
 
 **Request Parameters**
 

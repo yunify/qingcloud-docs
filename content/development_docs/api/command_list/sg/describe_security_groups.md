@@ -40,7 +40,7 @@ draft: false
 | security_group_id | String | 防火墙ID |
 | security_group_name | String | 防火墙名称 |
 | description | String | 防火墙描述 |
-| is_applied | Integer | 是否已更新规则，1为已更新，0为还未更新。<br/>当你修改防火墙的规则后，要“更新规则”才会生效。 更新规则 API 参见 [_ApplySecurityGroup_](apply_security_group.html#api-apply-security-group) |
+| is_applied | Integer | 是否已更新规则，1为已更新，0为还未更新。<br/>当你修改防火墙的规则后，要“更新规则”才会生效。 更新规则 API 参见 [_ApplySecurityGroup_](../apply_security_group/) |
 | is_default | Integer | 是否是系统默认防火墙，1为是，0为不是 |
 | resources | Array | 应用了此防火墙的资源列表，每项资源数据格式为:<br/>{<br/>  "resource_id": "i-nz7v9hgq",<br/>  "resource_name": "api test"<br/>  "resource_type": "instance"<br/>}<br/>只有在请求参数 verbose=1 时才会返回此信息。 |
 | create_time | TimeStamp | 防火墙创建时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |

@@ -10,7 +10,7 @@ draft: false
 
 S2 Group权限组包含可访问共享目标的一组用户，将权限组和共享目标关联，即可让用户获得访问共享目标的权限。 共享目标只能和一个权限组绑定，同一个权限组可以和多个共享目标进行绑定。
 
-此操作完成后需要调用 [_UpdateS2Servers_](update_s2_servers.html#api-update-s2-servers) 以应用到共享存储服务器上。
+此操作完成后需要调用 [_UpdateS2Servers_](../update_s2_servers/) 以应用到共享存储服务器上。
 
 **Request Parameters**
 

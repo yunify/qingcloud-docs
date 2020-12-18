@@ -18,7 +18,7 @@ draft: false
 | processor_type | String | 映像支持的处理器类型，有效值为 64bit 和 32bit | No |
 | os_family | String | 映像操作系统发行版，有效值为 centos，ubuntu，debian，fedora 和 windows 等 | No |
 | visibility | String | 映像的可见范围，有效值为 public 和 private | No |
-| provider | String | 映像提供者。初始青云系统会提供一系列默认映像，其 provider 为 system 。 当用户捕获主机后，被捕获的“自有”映像的 provider 为 self 。<br/>参见<br/>[_CaptureInstance_](capture_instance.html#api-capture-instance) | No |
+| provider | String | 映像提供者。初始青云系统会提供一系列默认映像，其 provider 为 system 。 当用户捕获主机后，被捕获的“自有”映像的 provider 为 self 。<br/>参见<br/>[_CaptureInstance_](../capture_instance/) | No |
 | status.n | String | 映像状态: pending, available, deprecated, suspended, deleted, ceased | No |
 | search_word | String | 搜索关键词，支持映像ID，映像名称 | No |
 | verbose | Integer | 是否返回冗长的信息，目前 verbose 只支持为 0。 | No |
