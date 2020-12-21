@@ -8,7 +8,7 @@ draft: false
 
 更新一台或多台路由器的配置信息。当配置发生变更之后，需要执行本操作使配置生效。
 
-可以使路由器配置发生变更的操作为 [_AddRouterStatics_](add_router_statics.html#api-add-router-statics) 和 [_DeleteRouterStatics_](delete_router_statics.html#api-delete-router-statics) 和 [_ModifyRouterAttributes_](modify_router_attributes.html#api-modify-router-attributes)。
+可以使路由器配置发生变更的操作为 [_AddRouterStatics_](../add_router_statics/) 和 [_DeleteRouterStatics_](../delete_router_statics/) 和 [_ModifyRouterAttributes_](../modify_router_attributes/)。
 
 只有在处于 active 状态的路由器才能支持此操作，如果处于非活跃状态，则返回错误信息。
 

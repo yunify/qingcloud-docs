@@ -8,7 +8,7 @@ draft: false
 
 将访问NFS和SMB资源的用户账户和权限组进行关联，用户加入资源组之后，就可以访问共享目录的资源。
 
-此操作完成后需要调用 [_UpdateS2Servers_](update_s2_servers.html#api-update-s2-servers) 以应用到共享存储服务器上。
+此操作完成后需要调用 [_UpdateS2Servers_](../update_s2_servers/) 以应用到共享存储服务器上。
 
 **Request Parameters**
 

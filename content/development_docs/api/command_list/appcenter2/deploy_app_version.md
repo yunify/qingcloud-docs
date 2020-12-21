@@ -8,9 +8,9 @@ draft: false
 
 部署指定应用版本的集群
 
-当你部署应用时，集群会先进入pending状态，创建完成后，集群变成active状态。你可以使用[_DescribeClusters_](describe_clusters.html#api-describe-clusters)检查集群状态。
+当你部署应用时，集群会先进入pending状态，创建完成后，集群变成active状态。你可以使用[_DescribeClusters_](../describe_clusters/)检查集群状态。
 
-此API需要你传递一个JSON格式的`conf`参数，对于不同的应用，此参数格式会有不同，请结合[_DescribeAppVersions_](describe_app_versions.html) 来确定`conf`参数的格式。
+此API需要你传递一个JSON格式的`conf`参数，对于不同的应用，此参数格式会有不同，请结合[_DescribeAppVersions_](../describe_app_versions/) 来确定`conf`参数的格式。
 
 **Request Parameters**
 

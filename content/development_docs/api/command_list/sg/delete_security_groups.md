@@ -10,8 +10,8 @@ draft: false
 
 防火墙须在没有资源（主机或路由器）使用的情况下才能被删除。 已加载规则到资源的防火墙，需先将相关资源从防火墙移出后才能被删除。
 
-*   要删除的防火墙已加载规则到主机，则需要先调用 [_ApplySecurityGroup_](apply_security_group.html#api-apply-security-group) 将其他防火墙的规则应用到对应主机，之后才能被删除。
-*   要删除的防火墙已加载规则到路由器，则需要先调用 [_ModifyRouterAttributes_](../router/modify_router_attributes.html#api-modify-router-attributes) 并 [_UpdateRouters_](../router/update_routers.html#api-update-routers) 将其他防火墙的规则应用到对应路由器，之后才能被删除。
+*   要删除的防火墙已加载规则到主机，则需要先调用 [_ApplySecurityGroup_](../apply_security_group/) 将其他防火墙的规则应用到对应主机，之后才能被删除。
+*   要删除的防火墙已加载规则到路由器，则需要先调用 [_ModifyRouterAttributes_](../../router/modify_router_attributes/) 并 [_UpdateRouters_](../../router/update_routers/) 将其他防火墙的规则应用到对应路由器，之后才能被删除。
 
 青云系统提供的缺省防火墙不能被删除。
 

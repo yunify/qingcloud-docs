@@ -6,7 +6,7 @@ draft: false
 
 删除一个或多个你拥有的告警策略，删除前该告警策略绑定的所有资源需先解除绑定关系。
 
-解绑告警策略可参考 [_DissociateAlarmPolicy_](dissociate_alarm_policy.html#api-dissociate-alarm-policy)
+解绑告警策略可参考 [_DissociateAlarmPolicy_](../dissociate_alarm_policy/)
 
 **Request Parameters**
 

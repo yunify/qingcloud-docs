@@ -6,7 +6,7 @@ draft: false
 
 
 
-修改某条路由器规则。修改规则后，需要执行 [_UpdateRouters_](update_routers.html#api-update-routers) 来使规则生效。
+修改某条路由器规则。修改规则后，需要执行 [_UpdateRouters_](../update_routers/) 来使规则生效。
 
 **Request Parameters**
 
@@ -14,12 +14,12 @@ draft: false
 | --- | --- | --- | --- |
 | router_static | String | 需要修改的路由器规则 ID | Yes |
 | router_static_name | String | 规则名称 | No |
-| statics.n.val1 | String | 请参考 [_AddRouterStatics_](add_router_statics.html) 对应参数说明。 | No |
-| statics.n.val2 | String | 请参考 [_AddRouterStatics_](add_router_statics.html) 对应参数说明。 | No |
-| statics.n.val3 | String | 请参考 [_AddRouterStatics_](add_router_statics.html) 对应参数说明。 | No |
-| statics.n.val4 | String | 请参考 [_AddRouterStatics_](add_router_statics.html) 对应参数说明。 | No |
-| statics.n.val5 | String | 请参考 [_AddRouterStatics_](add_router_statics.html) 对应参数说明。 | No |
-| statics.n.val6 | String | 请参考 [_AddRouterStatics_](add_router_statics.html) 对应参数说明。 | No |
+| statics.n.val1 | String | 请参考 [_AddRouterStatics_](../add_router_statics/) 对应参数说明。 | No |
+| statics.n.val2 | String | 请参考 [_AddRouterStatics_](../add_router_statics/) 对应参数说明。 | No |
+| statics.n.val3 | String | 请参考 [_AddRouterStatics_](../add_router_statics/) 对应参数说明。 | No |
+| statics.n.val4 | String | 请参考 [_AddRouterStatics_](../add_router_statics/) 对应参数说明。 | No |
+| statics.n.val5 | String | 请参考 [_AddRouterStatics_](../add_router_statics/) 对应参数说明。 | No |
+| statics.n.val6 | String | 请参考 [_AddRouterStatics_](../add_router_statics/) 对应参数说明。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)

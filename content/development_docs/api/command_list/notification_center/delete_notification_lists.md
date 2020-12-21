@@ -10,7 +10,7 @@ draft: false
 
 注意，删除通知列表不会连带其中的通知项一起删除，这是为了将来可能会复用已创建过的通知项。
 
-如果需要删通知项请调用 [_DeleteNotificationItems_](delete_notification_items.html#api-delete-notification-items)
+如果需要删通知项请调用 [_DeleteNotificationItems_](../delete_notification_items/)
 
 **Request Parameters**
 

@@ -8,7 +8,7 @@ draft: false
 
 删除子帐户。
 
-注意这里并非完全删除数据，只是禁用了此子账号，还可以通过 [_RestoreSubUsers_](restore_sub_users.html#api-restore-sub-users) 恢复。
+注意这里并非完全删除数据，只是禁用了此子账号，还可以通过 [_RestoreSubUsers_](../restore_sub_users/) 恢复。
 
 **Request Parameters**
 

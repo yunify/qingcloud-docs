@@ -6,7 +6,7 @@ draft: false
 
 修改告警策略规则的属性。
 
-修改规则后，记得调用 [_ApplyAlarmPolicy_](apply_alarm_policy.html#api-apply-alarm-policy) 使其生效。
+修改规则后，记得调用 [_ApplyAlarmPolicy_](../apply_alarm_policy/) 使其生效。
 
 **Request Parameters**
 

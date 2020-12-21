@@ -15,7 +15,7 @@ draft: false
 | domain_policies.n | String | WAF域名防护策略ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[公共参数](../common/parameters.html#api-common-parameters)
+[公共参数](../../../parameters/)
 
 **Response Elements**
 
