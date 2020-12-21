@@ -13,7 +13,7 @@
 | --- | --- | --- | --- |
 | clusters.n | String | 将要启动的集群ID | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[*公共参数*](/development_docs/api/parameters/)
 
 **Response Elements**
 

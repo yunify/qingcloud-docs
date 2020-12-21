@@ -16,7 +16,7 @@
 | private_ips | String | JSON格式的节点私有ip地址 | No |
 | node_name | String | 节点的名称　| No |
 
-[*公共参数*](https://docs.qingcloud.com/product/api/common/parameters.html#api-common-parameters)
+[*公共参数*](/development_docs/api/parameters/)
 
 **Response Elements**
 

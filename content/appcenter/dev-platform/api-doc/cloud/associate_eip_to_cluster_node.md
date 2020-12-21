@@ -14,7 +14,7 @@
 | eip | String | 公网IP的ID | Yes |
 | cluster_node | String | 集群节点ID | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[*公共参数*](/development_docs/api/parameters/)
 
 **Response Elements**
 

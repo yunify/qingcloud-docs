@@ -9,7 +9,7 @@
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| cluster | String | 集群ID | Yes | 
+| cluster | String | 集群ID | Yes |
 | cluster_nodes.n | String | 集群节点ID | No |
 | role | String | 集群节点角色 | No |
 | verbose | Integer | 是否返回冗长的信息，目前 verbose 只支持为 0。 | No
@@ -17,7 +17,7 @@
 | limit | Integer | 返回数据长度，默认为20，最大100 | No
 | reverse | Integer | 是否逆序，1为逆序，0为正序 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[*公共参数*](/development_docs/api/parameters/)
 
 **Response Elements**
 
@@ -30,7 +30,6 @@
 
 **Response Item**
 
-https://docs.qingcloud.com/appcenter/docs/specifications/specifications.html
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -44,7 +43,7 @@ https://docs.qingcloud.com/appcenter/docs/specifications/specifications.html
 | name | String | 节点名称 |
 | memory | Integer | 节点的内存大小，单位MB |
 | app_version | String | 应用版本ID |
-| status | String | 节点的状态，active | 
+| status | String | 节点的状态，active |
 | storage_size| Integer | 节点的存储大小，单位GB|
 | image_id | String | 节点的镜像ID |
 | eip | String | 节点绑定的公网或基础网络IP |

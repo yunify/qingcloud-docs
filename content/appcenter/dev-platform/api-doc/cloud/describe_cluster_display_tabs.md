@@ -12,7 +12,7 @@
 | cluster | String | 集群ID | Yes |
 | display_tabs | String | display tabs的名称 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[*公共参数*](/development_docs/api/parameters/)
 
 **Response Elements**
 

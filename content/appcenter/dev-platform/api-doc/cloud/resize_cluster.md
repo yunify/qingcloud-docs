@@ -16,7 +16,7 @@
 | storage | Integer | 节点将要增加到的存储大小，单位GB | No |
 | node_role | String | 节点的角色，如应用未配置节点角色，可留空 | No |　
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[*公共参数*](/development_docs/api/parameters/)
 
 **Response Elements**
 
