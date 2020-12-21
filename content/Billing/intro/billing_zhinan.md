@@ -8,8 +8,6 @@ enableToc: false
 keyword: 账单, 发票, 订单, 充值
 ---
 
-***
-
 ## 充值与计费
 
 青云账号支持多种充值途径：支付宝、网上银行、微信支付、线下银行转账。 可在 [充值页面](https://console.qingcloud.com/finance/wallet/)选择。微信支付目前只能在 Android 手机的青云 App 中操作。
