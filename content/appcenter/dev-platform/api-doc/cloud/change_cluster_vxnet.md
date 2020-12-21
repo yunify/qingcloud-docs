@@ -15,7 +15,7 @@
 | private_ips.n.node_id | String | 节点ID | No |
 | private_ips.n.private_ip | String | 节点对应的私有IP | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[*公共参数*](/development_docs/api/parameters/)
 
 **Response Elements**
 

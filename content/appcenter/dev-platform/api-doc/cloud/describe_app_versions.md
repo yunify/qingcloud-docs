@@ -21,7 +21,7 @@
 | limit | Integer | 返回数据长度，默认为20，最大100 | No |
 | reverse | Integer | 是否逆序，1为逆序，0为正序 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[*公共参数*](/development_docs/api/parameters/)
 
 **Response Elements**
 

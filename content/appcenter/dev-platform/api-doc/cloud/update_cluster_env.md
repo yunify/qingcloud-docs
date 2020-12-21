@@ -13,7 +13,7 @@
 | role | String | 将要修改的角色，如集群未配置角色，可留空 | No |
 | env | String | JSON格式的环境变量，例如 `{"key": "value"}` | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[*公共参数*](/development_docs/api/parameters/)
 
 **Response Elements**
 

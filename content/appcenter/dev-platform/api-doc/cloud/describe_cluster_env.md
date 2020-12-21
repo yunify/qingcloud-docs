@@ -12,7 +12,7 @@
 | cluster | String | 集群ID | Yes |
 | role | String | 将要获取环境变量的角色，可留空 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[*公共参数*](/development_docs/api/parameters/)
 
 **Response Elements**
 
