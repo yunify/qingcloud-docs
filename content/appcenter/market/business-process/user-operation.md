@@ -77,7 +77,7 @@ draft: false
 
 **第一步：进入AppCenter控制台的应用中心后，选择应用，点击立即部署，进入部署页面**
 
-以云应用ZooKeeper购买为例。
+以云应用 ZooKeeper 购买为例。
 
 ![应用中心](/appcenter/market/business-process/_image/appcenter_zookeeper.png)
 
