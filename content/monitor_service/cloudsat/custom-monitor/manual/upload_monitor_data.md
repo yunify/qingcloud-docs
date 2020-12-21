@@ -47,20 +47,20 @@ table th:nth-of-type(3) {
 post接口url示例：
 
 ```
-http://clousatserver:8052/api/:zone/v1/custom/UploadMonitorData?access_key_id=QEJMCFROGCAPHUOAJMRN&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-10-13T10%3A28%3A33Z&version=1&zone=test&signature=SO9ZufFb69Om21bK%2BH7Gs6f%2FuuDljHh41STgIX%3D
+http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData?access_key_id=QEJMCFROGCAPHUOAJMRN&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-10-13T10%3A28%3A33Z&version=1&zone=test&signature=SO9ZufFb69Om21bK%2BH7Gs6f%2FuuDljHh41STgIX%3D
 ```
 
 注：url里面:zone，请根据具体分区信息填写，如北京3区pek3，其他地方类似；clousatserver 为对应分区clousatserver服务地址或域名，请根据实际替换
 
 ```
-http://clousatserver:8052/api/pek3/v1/custom/UploadMonitorData?access_key_id=QEJMCFROGCAPHUOAJMRN&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-10-13T10%3A28%3A33Z&version=1&zone=test&signature=SO9ZufFb69Om21bK%2BH7Gs6f%2FuuDljHh41STgIX%3D
+http://cloudsat.qingcloud.com/api/pek3/v1/custom/UploadMonitorData?access_key_id=QEJMCFROGCAPHUOAJMRN&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-10-13T10%3A28%3A33Z&version=1&zone=test&signature=SO9ZufFb69Om21bK%2BH7Gs6f%2FuuDljHh41STgIX%3D
 ```
 
 **UploadMonitorData接口数据规范**
 
 由于/api/:zone/v1/custom/UploadMonitorData接口上传监控数据需要对请求进行验证，这里采用类似[青云API 请求中签名 ( signature )]( /development_docs/api/signature/) 的生成方法，构造验证请求串，拼接在相应请求API中如
 
-**请求api** http://xxx.xxx.xxx/api/:zone/v1/custom/UploadMonitorData
+**请求api** http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData
 
 **构造验证请求串**：构造验证请求串方法详见下面说明
 ```
@@ -69,7 +69,7 @@ access_key_id=QEJMCFROGCAPHUOAJMRN&action=DescribeUsers&signature_method=HmacSHA
 ```
 **则最终请求url为**：请求api + "?" + 构造验证请求串
 ```
-http://xxx.xxx.xxx/api/:zone/v1/custom/UploadMonitorData?access_key_id=QEJMCFROGCAPHUOAJMRN&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-10-13T10%3A28%3A33Z&version=1&zone=test&signature=SO9ZufFb69Om21bK%2BH7Gs6f%2FuuDljHh41STgIX%3D
+http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData?access_key_id=QEJMCFROGCAPHUOAJMRN&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-10-13T10%3A28%3A33Z&version=1&zone=test&signature=SO9ZufFb69Om21bK%2BH7Gs6f%2FuuDljHh41STgIX%3D
 
 ```
 **UploadMonitorData接口数据规范**
@@ -80,7 +80,7 @@ http://xxx.xxx.xxx/api/:zone/v1/custom/UploadMonitorData?access_key_id=QEJMCFROG
 
 **请求url**：
 ```
-http://xxx.xxx.xxx/api/:zone/v1/custom/UploadMonitorData?access_key_id=QEJMCFROGCAPHUOAJMRN&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-10-13T10%3A28%3A33Z&version=1&zone=test&signature=SO9ZufFb69Om21bK%2BH7Gs6f%2FuuDljHh41STgIX%3D
+http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData?access_key_id=QEJMCFROGCAPHUOAJMRN&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-10-13T10%3A28%3A33Z&version=1&zone=test&signature=SO9ZufFb69Om21bK%2BH7Gs6f%2FuuDljHh41STgIX%3D
 
 ```
 
