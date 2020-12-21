@@ -1,12 +1,12 @@
 ---
-title: "StopClusters"
+title: "StartClusters"
 description: 
 draft: false
 ---
 
 
 
-关闭处于活跃状态的集群，可以是一个或者多个集群。
+启动处于关闭状态的集群，可以是一个或者多个集群。
 
 **Request Parameters**
 
@@ -14,7 +14,7 @@ draft: false
 | --- | --- | --- | --- |
 | clusters.n | String | 将要启动的集群ID | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../../../parameters/)
 
 **Response Elements**
 
@@ -31,7 +31,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?&action=StopClusters
+https://api.qingcloud.com/iaas/?&action=StartClusters
 &clusters.1=cl-q1witcdk
 &zone=pek3b
 &COMMON_PARAMS
@@ -41,7 +41,7 @@ _Example Response_:
 
 ```json
 {
-  "action":"StopClustersResponse",
+  "action":"StartClustersResponse",
   "job_ids":{
     "cl-q1witcdk":"j-m430f0i8ldu"
   },

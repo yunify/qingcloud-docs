@@ -30,10 +30,10 @@ section3:
   children:
     - title: 云应用
       content: 云应用使用的API
-      url: "/development_docs/api/command_list/appcenter2/"
+      url: "/development_docs/api/command_list/appcenter2/cloud/"
     - title: SaaS 应用
       content: SaaS应用使用的API
-      url: "/development_docs/api/command_list/saas/"
+      url: "/development_docs/api/command_list/appcenter2/saas/"
 
 section4:
   children:

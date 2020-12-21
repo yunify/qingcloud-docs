@@ -19,7 +19,7 @@ draft: false
 | private_ips | String | JSON格式的节点私有ip地址 | No |
 | node_name | String | 节点的名称　| No |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../../../parameters/)
 
 **Response Elements**
 

@@ -1,12 +1,14 @@
 ---
-title: "StartClusters"
+title: "CeaseClusters"
 description: 
 draft: false
 ---
 
 
 
-启动处于关闭状态的集群，可以是一个或者多个集群。
+彻底删除集群，可以是一个或者多个集群。
+
+> 注意： 集群彻底删除后，不可恢复，请谨慎操作
 
 **Request Parameters**
 
@@ -14,25 +16,21 @@ draft: false
 | --- | --- | --- | --- |
 | clusters.n | String | 将要启动的集群ID | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../../../parameters/)
 
 **Response Elements**
 
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| job_id | String | 执行任务的 Job ID，格式为`{"cln-ssdfawx":"j-kdlsafda"}` |
+| job_id | String | 执行任务的 Job ID |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
-
-**Example**
-
-以应用[ZooKeeper](https://appcenter.qingcloud.com/apps/app-tg3lbp0a/ZooKeeper%20on%20QingCloud)为例
 
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?&action=StartClusters
-&clusters.1=cl-q1witcdk
+https://api.qingcloud.com/iaas/?&action=CeaseClusters
+&clusters.1=cl-2gi2b3oc
 &zone=pek3b
 &COMMON_PARAMS
 ```
@@ -41,12 +39,11 @@ _Example Response_:
 
 ```json
 {
-  "action":"StartClustersResponse",
-  "job_ids":{
-    "cl-q1witcdk":"j-m430f0i8ldu"
-  },
+  "action":"CeaseClustersResponse",
+  "job_id":"j-1br9d0839v1",
   "ret_code":0
 }
+
 ```
 
 

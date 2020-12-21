@@ -18,7 +18,7 @@ draft: false
 | private_ips.n.node_id | String | 节点ID | No |
 | private_ips.n.private_ip | String | 节点对应的私有IP | No |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../../../parameters/)
 
 **Response Elements**
 

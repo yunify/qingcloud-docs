@@ -33,7 +33,7 @@ draft: false
 | reverse | Integer | 是否逆序，1为逆序，0为正序 | No |
 | zone | String | 区域ID，注意要小写 | No |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../../../parameters/)
 
 
 **Response Elements**
