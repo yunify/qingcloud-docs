@@ -39,7 +39,7 @@ draft: false
 
 **Example**
 
-以应用[Tomcat Cluster](https://appcenter.qingcloud.com/apps/app-jwq1fzqo/Tomcat%20Cluster%20on%20QingCloud)为例，请使用[DescribeAppVersions](describe_app_versions.html)来查看应用的`config.json`和`cluster.json.mustache`配置文件，以此来确定conf的具体值。通过[DescribeAppVersions](describe_app_versions.html)获得的 **Tomcat Cluster** 应用的 `config.json` 配置文件如下。我们需要注意每项的范围(`range`值)，确保我们传递的值都在`config.json`定义的`range`中；还需要注意其中 `required` 属性为 `true` 的项，这些是我们必须向后端传递的值
+以应用[Tomcat Cluster](https://appcenter.qingcloud.com/apps/app-jwq1fzqo/Tomcat%20Cluster%20on%20QingCloud)为例，请使用[DescribeAppVersions](../describe_app_versions/)来查看应用的`config.json`和`cluster.json.mustache`配置文件，以此来确定conf的具体值。通过[DescribeAppVersions](../describe_app_versions/)获得的 **Tomcat Cluster** 应用的 `config.json` 配置文件如下。我们需要注意每项的范围(`range`值)，确保我们传递的值都在`config.json`定义的`range`中；还需要注意其中 `required` 属性为 `true` 的项，这些是我们必须向后端传递的值
 
 ```json
 {
