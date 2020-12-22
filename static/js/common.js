@@ -32,7 +32,7 @@ $(function(){
 	//查看链接结尾是否/结尾
 	$('a').each(function(){
 		var url = $(this).attr('href');
-		if(url != null && url != '' && url != 'undefined' && url.indexOf('http') == '-1' && url.indexOf('#') == '-1' && url.indexOf('.') == '-1'){
+		if(url != null && url != '' && url != 'undefined' && url.indexOf(':') == '-1' && url.indexOf('#') == '-1' && url.indexOf('.') == '-1'){
 			var start = url.length-1;
 			var last = url.substr(start,1);
 			if(last != '/'){
@@ -52,4 +52,33 @@ $(function(){
 			}
 		}
 	});
+
+	$('.product-learn-icon').click(function(){
+		if($(this).attr('src')=='/images/icons/caret-down.svg'){
+			$(this).attr('src','/images/icons/caret-up.svg');
+		}else{
+			$(this).attr('src','/images/icons/caret-down.svg');
+		}
+		$(this).parent().next('ul').toggle("normal");
+	})
+
+	var max_width = window.screen.width;
+	$('.search-mobile-icon').click(function(){
+		if(max_width<1023){
+			$('#search-mobile-logo').hide();
+			$(this).hide();
+			$(this).prev('form').show();
+		}
+	})
+	document.onmousedown = function(e){
+	　　var ev = document.all ? window.event : e;
+	　　var _con = $(".search-mobile-icon").prev('form');
+	　　if(!_con.is(e.target) && _con.has(e.target).length === 0){
+	　　　　if(!_con.is(":hidden") && max_width<1023){
+				$('#search-mobile-logo').show();
+				$('.search-mobile-icon').show();
+				_con.hide();
+	　　　　}
+	　　}
+	}
 })
