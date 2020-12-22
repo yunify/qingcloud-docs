@@ -6,7 +6,7 @@ draft: false
 
 
 
-删除一个或多个你拥有的密钥对。密钥对须在未使用的情况下才能被删除， 已加载到主机的密钥对需先卸载后才能删除， 关于卸载密钥对可参考 [_DetachKeyPairs_](detach_key_pairs.html#api-detach-key-pairs)
+删除一个或多个你拥有的密钥对。密钥对须在未使用的情况下才能被删除， 已加载到主机的密钥对需先卸载后才能删除， 关于卸载密钥对可参考 [_DetachKeyPairs_](../detach_key_pairs/)
 
 **Request Parameters**
 

@@ -8,7 +8,7 @@ draft: false
 
 从共享存储目标卸载硬盘。
 
-此操作完成后需要调用 [_UpdateS2Servers_](update_s2_servers.html#api-update-s2-servers) 以应用到共享存储服务器上。
+此操作完成后需要调用 [_UpdateS2Servers_](../update_s2_servers/) 以应用到共享存储服务器上。
 
 **Request Parameters**
 

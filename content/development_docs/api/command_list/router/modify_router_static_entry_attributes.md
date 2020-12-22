@@ -6,7 +6,7 @@ draft: false
 
 
 
-修改路由器规则中的某条条目属性。修改后，需要执行 [_UpdateRouters_](update_routers.html#api-update-routers) 来使规则生效。
+修改路由器规则中的某条条目属性。修改后，需要执行 [_UpdateRouters_](../update_routers/) 来使规则生效。
 
 **Request Parameters**
 

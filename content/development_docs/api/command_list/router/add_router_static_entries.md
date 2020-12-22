@@ -6,7 +6,7 @@ draft: false
 
 
 
-增加一条路由器规则条目，比如 OpenVPN / PPTP 的账户信息或是隧道规则的网络地址。 注意：在增加路由器规则条目后，你需要执行 [_UpdateRouters_](update_routers.html#api-update-routers) 才能使之生效。
+增加一条路由器规则条目，比如 OpenVPN / PPTP 的账户信息或是隧道规则的网络地址。 注意：在增加路由器规则条目后，你需要执行 [_UpdateRouters_](../update_routers/) 才能使之生效。
 
 **Request Parameters**
 

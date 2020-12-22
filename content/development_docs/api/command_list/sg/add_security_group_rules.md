@@ -13,13 +13,13 @@ draft: false
 *   security_group_rule_name：规则名称
 *   action：操作，分为 accept 接受 和 drop 拒绝
 *   direction：方向，0 表示下行，1 表示上行。
-*   val1：如果协议为 tcp 或 udp，此值表示起始端口。 如果协议为 icmp，此值表示 ICMP 类型。 具体类型可参见 [_ICMP 类型及代码_](../../common/security_group_rule_icmp_type.html#security-group-rule-icmp-type)
-*   val2：如果协议为 tcp 或 udp，此值表示结束端口。 如果协议为 icmp，此值表示 ICMP 代码。 具体代码可参见 [_ICMP 类型及代码_](../../common/security_group_rule_icmp_type.html#security-group-rule-icmp-type)
+*   val1：如果协议为 tcp 或 udp，此值表示起始端口。 如果协议为 icmp，此值表示 ICMP 类型。 具体类型可参见 [_ICMP 类型及代码_](../../../common/security_group_rule_icmp_type/)
+*   val2：如果协议为 tcp 或 udp，此值表示结束端口。 如果协议为 icmp，此值表示 ICMP 代码。 具体代码可参见 [_ICMP 类型及代码_](../../../common/security_group_rule_icmp_type/)
 *   val3：源IP
 
 注解
 
-添加规则后，记得调用 [_ApplySecurityGroup_](apply_security_group.html#api-apply-security-group) 使其生效。
+添加规则后，记得调用 [_ApplySecurityGroup_](../apply_security_group/) 使其生效。
 
 **Request Parameters**
 

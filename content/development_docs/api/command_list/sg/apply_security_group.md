@@ -8,7 +8,7 @@ draft: false
 
 应用防火墙规则。当防火墙的规则发生改变后，新规则不会即刻生效 （可通过 is_applied 属性分辨），需要调用 ApplySecurityGroup 之后才生效。
 
-防火墙规则可通过 [_AddSecurityGroupRules_](add_security_group_rules.html#api-add-security-group-rules), [_DeleteSecurityGroupRules_](delete_security_group_rules.html#api-delete-security-group-rules), [_ModifySecurityGroupRuleAttributes_](modify_security_group_rule_attributes.html#api-modify-security-group-rule-attributes) 修改。
+防火墙规则可通过 [_AddSecurityGroupRules_](../add_security_group_rules/), [_DeleteSecurityGroupRules_](../delete_security_group_rules/), [_ModifySecurityGroupRuleAttributes_](../modify_security_group_rule_attributes/) 修改。
 
 如果请求参数中传递了 instances.n ，则表示将此防火墙的规则应用到对应的主机。 如果不传此参数，则会将最新规则更新到所有已应用此防火墙的主机。
 

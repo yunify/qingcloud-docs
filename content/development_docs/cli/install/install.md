@@ -10,7 +10,7 @@ qingcloud-cli 是管理青云资源的命令行接口 (_Command Line Interface_)
 
 警告
 
-qingcloud-cli 的使用受 API 访问配额的限制，具体请查看 [_概述_](../api/common/overview.html#common-overview) 中的 “API 请求配额限制”
+qingcloud-cli 的使用受 API 访问配额的限制，具体请查看 [_概述_](../../../api/overview/) 中的 “API 请求配额限制”
 
 ## 安装
 
