@@ -80,7 +80,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header/#请求头字段)
 
 ## Request Elements
 
@@ -88,7 +88,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header/#响应头字段)
 
 ## Response Elements
 
@@ -191,7 +191,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header)
 
 ## Request Elements
 
@@ -199,7 +199,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header)
 
 ## Response Elements
 
@@ -258,7 +258,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header)
 
 ## Request Elements
 
@@ -266,7 +266,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header)
 
 ## Response Elements
 
@@ -320,7 +320,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header)
 
 ## Request Elements
 
@@ -328,7 +328,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header)
 
 ## Response Elements
 
@@ -385,7 +385,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header)
 
 ## Request Elements
 
@@ -393,7 +393,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header)
 
 ## Response Elements
 
@@ -448,7 +448,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header)
 
 ## Request Elements
 
@@ -456,7 +456,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header)
 
 ## Response Elements
 
@@ -508,7 +508,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header/)
 
 ## Request Elements
 
@@ -516,7 +516,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header/)
 
 ## Response Elements
 
@@ -573,7 +573,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header/)
 
 ## Request Elements
 
@@ -581,7 +581,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header/)
 
 ## Response Elements
 
