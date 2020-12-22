@@ -8,10 +8,10 @@ draft: false
 
 ## 应用查找
 
-青云QingCloud 为青云用户和Qingcloud AppCenter 服务商提供了以下方式进行应用查看：
+青云QingCloud 为青云用户和 Qingcloud AppCenter 服务商提供了以下方式进行应用查看：
 
-1. 登录[应用管理平台](https://appcenter.qingcloud.com/developer)，进入应用市场，可查看QingCloud出品的应用，可根据应用分类和应用搜索查找所需应用。
-2. 登录进入[控制管理平台](https://console.qingcloud.com/)，在AppCenter控制台的**应用中心**或者**产品与服务**，快速查看所需应用。
+1. 登录[应用管理平台](https://appcenter.qingcloud.com/developer)，进入应用市场，可查看 QingCloud 出品的应用，可根据应用分类和应用搜索查找所需应用。
+2. 登录进入[控制管理平台](https://console.qingcloud.com/)，在 AppCenter 控制台的**应用中心**或者**产品与服务**，快速查看所需应用。
 
 在控制管理平台，进入到了工作台，点击**产品与服务**查看。
 
@@ -23,7 +23,7 @@ draft: false
 
 ### 应用中心
 
-用户不仅可直接在产品与服务进行应用的查找，同时可点击AppCenter进入应用中心，按照应用类型进行筛选或者进行应用的搜索。
+用户不仅可直接在产品与服务进行应用的查找，同时可点击 AppCenter 进入应用中心，按照应用类型进行筛选或者进行应用的搜索。
 
 ![进入应用中心](/appcenter/market/business-process/_image/appcenter.png)
 
@@ -77,7 +77,7 @@ draft: false
 
 **第一步：进入AppCenter控制台的应用中心后，选择应用，点击立即部署，进入部署页面**
 
-以云应用ZooKeeper购买为例。
+以云应用 ZooKeeper 购买为例。
 
 ![应用中心](/appcenter/market/business-process/_image/appcenter_zookeeper.png)
 
