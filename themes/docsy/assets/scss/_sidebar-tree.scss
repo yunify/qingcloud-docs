@@ -186,6 +186,7 @@
 .td-sidebar-section-title {
     display: flex;
     align-items: center;
+    padding-bottom: 5px;
     .doc_vice_title{
         margin-bottom: 0;
         padding-left: 10px;
@@ -194,4 +195,18 @@
 .doc_vice_title{
     padding-left: 10px;
     margin-bottom:0;
+}
+
+@media only screen and (max-width: 1023px) {
+    #mobile-index-tree{
+        
+    }
+    .col-12.col-md-3.col-xl-3.td-sidebar.d-print-none.td-sidebar-menu{
+        max-width: 92%;
+        position: absolute;
+        z-index: 1000;
+        background-color: #f6f8fa;
+        margin-top: 3.5rem;
+        left: 4%;
+    }
 }
