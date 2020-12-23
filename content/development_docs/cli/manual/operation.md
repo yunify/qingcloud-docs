@@ -1,5 +1,5 @@
 ---
-title: "操作指南"
+title: "CLI配置"
 description: test
 draft: false
 ---

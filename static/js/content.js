@@ -14,6 +14,22 @@
 			}
 			$('#doc_fix_flag').val('1');
 		})
+		
+		$('.nav-trigger').click(function(){
+			var status = $('#td-sidebar-menu').css('display');
+			if(status=='none'){
+				$('#td-sidebar-menu').show();
+				$('#td-sidebar-menu').prev('.td-sidebar-section-title').hide();
+				$('#td-sidebar-menu').parent().show();
+				$('#td-section-nav').show();
+			}else{
+				$('#td-sidebar-menu').hide();
+				$('#td-sidebar-menu').prev('.td-sidebar-section-title').hide();
+				$('#td-sidebar-menu').parent().hide();
+			}
+		
+		})
+
 
 		//获取点赞踩数
 		get_fix_count();
