@@ -1,5 +1,5 @@
 ---
-title: "安装指南"
+title: "CLI安装"
 description: test
 draft: false
 ---

@@ -19,7 +19,10 @@ http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData
 ```
 注：构造完成之后请求url即最终UploadMonitorData接口请求url，url里面:zone，请根据具体分区信息填写，如上海1区sh1，文中其他地方类似。
 
+
 **构造验证请求串示例**：构造验证请求串方法详见下面说明(下方为示例，请自行参照后文构造验证请求串方法进行构造)
+
+
 ```
 access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T13%3A32%3A34Z&version=1&zone=sh1&signature=sOdokWwvYJ80mM%2FxYbBTsgTgQl3iu%2F2WDXWjgKFPNNs%3D
 
@@ -27,6 +30,7 @@ access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA
 注：这部分请根据实际参数进行构造
 
 由于上面构造前url上传监控数据需要对请求进行验证，这里采用类似[青云API 请求中签名 ( signature )]( /development_docs/api/signature/) 的生成方法，构造验证请求串，拼接在上面构造前url后面。由于需要去iaas对用户信息进行确认，所以这里选择DescribeUsers这个action去构造签名信息。
+
 
 **最终构造完成之后请求url示例为**：
 ```
@@ -41,6 +45,7 @@ http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData?access_key_i
 http://cloudsat.qingcloud.com/api/sh1/v1/custom/UploadMonitorData?access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T13%3A32%3A34Z&version=1&zone=sh1&signature=sOdokWwvYJ80mM%2FxYbBTsgTgQl3iu%2F2WDXWjgKFPNNs%3D
 ```
 
+
 ### UploadMonitorData接口数据规范
 
 **描述**：上传监控数据
@@ -50,6 +55,7 @@ http://cloudsat.qingcloud.com/api/sh1/v1/custom/UploadMonitorData?access_key_id=
 **请求url**：
 ```
 http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData?access_key_id=QEJMCFROGCAPHUOAJMRN&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-10-13T10%3A28%3A33Z&version=1&zone=test&signature=SO9ZufFb69Om21bK%2BH7Gs6f%2FuuDljHh41STgIX%3D
+
 ```
 
 请求body格式例如：
