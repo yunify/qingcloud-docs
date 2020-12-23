@@ -32,7 +32,7 @@
 
         var parent = elem.parentNode;
         while (parent.classList.contains('menu__list') && parent.classList.contains('active')) {
-          parent.style.maxHeight = 100 * parent.children.length + "px";
+          parent.style.maxHeight = "100%";
           parent = parent.parentNode;
         }
 
