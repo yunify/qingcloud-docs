@@ -1059,3 +1059,11 @@ main.col-12.col-md-7.col-xl-7{
         display:flex;
     }
 }
+
+main .td-content table, tr, td, th, tbody, thead{
+    page-break-inside: avoid !important;
+}
+
+main .td-content thead{
+    display: table-row-group;
+}
