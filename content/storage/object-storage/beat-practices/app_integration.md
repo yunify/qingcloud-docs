@@ -113,7 +113,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 Main.storyboard UI结构图：
 
-![](_images/main_storyboard.png)
+![](main_storyboard.png)
 
 例子并不复杂，使用一个 BucketListController 显示当前的 Bucket 列表，一个 ObjectListController 显示 Bucket 下面的对象列表。
 
@@ -179,7 +179,7 @@ private func requestBucketList() {
 
 我们把得到的响应数据存储到 listBucketsOutput，在刷新 TableView 的时候根据输出显示对应的内容，最终效果如下图所示：
 
-![](_images/bucket_list.png)
+![](bucket_list.png)
 
 `mobile-bucket-test` 是我之前为了测试创建的 `bucket` ，点击该列表项，会跳转到 `ObjectListController` 页面，并把当前列表项的 `bucket` 数据传递过去。
 
@@ -218,7 +218,7 @@ private func requestObjectList() {
 
 类似在 BucketListController 里面做的处理，我们把得到的响应数据存储到 listObjectsOutput，在刷新 TableView 的时候根据输出显示对应的内容，最终效果如下图所示：
 
-![](_images/object_list.png)
+![](object_list.png)
 
 可以看到，右上角有个 + 符号，点击会触发选择图片事件，这里使用 UIImagePickerController 来做图片选择器，UI 的问题就不多说了，当你选择完图片时会触发 UIImagePickerController 的回调方法，我们可以在该方法做一些图片上传的处理，代码如下
 
