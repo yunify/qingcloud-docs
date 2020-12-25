@@ -19,13 +19,14 @@ http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData
 ```
 注：构造完成之后请求url即最终UploadMonitorData接口请求url，url里面:zone，请根据具体分区信息填写，如上海1区sh1，文中其他地方类似。
 
+分区信息参考：北京3区（pek3）、北京3区-A（pek3a）、上海1区（sh1）、广东2区（gd2）、亚太2区-A（ap2a）
+
 
 **构造验证请求串示例**：构造验证请求串方法详见下面说明(下方为示例，请自行参照后文构造验证请求串方法进行构造)
 
 
 ```
 access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T13%3A32%3A34Z&version=1&zone=sh1&signature=sOdokWwvYJ80mM%2FxYbBTsgTgQl3iu%2F2WDXWjgKFPNNs%3D
-
 ```
 注：这部分请根据实际参数进行构造
 
@@ -35,7 +36,6 @@ access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA
 **最终构造完成之后请求url示例为**：
 ```
 http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData?access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T13%3A32%3A34Z&version=1&zone=sh1&signature=sOdokWwvYJ80mM%2FxYbBTsgTgQl3iu%2F2WDXWjgKFPNNs%3D
-
 ```
 
 
@@ -55,10 +55,22 @@ http://cloudsat.qingcloud.com/api/sh1/v1/custom/UploadMonitorData?access_key_id=
 **请求url**：
 ```
 http://cloudsat.qingcloud.com/api/:zone/v1/custom/UploadMonitorData?access_key_id=QEJMCFROGCAPHUOAJMRN&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-10-13T10%3A28%3A33Z&version=1&zone=test&signature=SO9ZufFb69Om21bK%2BH7Gs6f%2FuuDljHh41STgIX%3D
-
 ```
+注：请仔细阅读上文说明，根据实际情况构造验证请求串，拼接成最终api请求url并替换:zone信息。
 
-请求body格式例如：
+**Headers**：
+
+<style>
+table th:first-of-type {
+	width: 600px;
+}
+</style>
+|参数名称	|  参数值	|  是否必须  | 示例| 备注|
+| :-: | :-: | :-: | :-: | :-: |
+ | Content-Type |	application/json	|  是  | 'Content-Type': 'application/json' | 不可缺少|
+ 
+
+**请求body格式例如**：
 ```
 {
     "user_id": "usr-123456",
@@ -121,7 +133,7 @@ table th:nth-of-type(3) {
 |resource_type|	string|	instance|	是|	资源类型|
 |user_id|	string|	usr-123456|	是|	监控资源资源对应用户的id|
 |root_user_id|	string|	usr-123456|	否|	主账户id|
-|meter|	string|	cpu|	是|	监控指标|
+|meter|	string|	cpu|	是|	监控指标,请于该命名空间下监控配置中的监控指标名称保持一致|
 |value_type|	string|	raw|	是|	指标值的类型，例如raw(原格式)percent(百分比)|
 |value|	int|	80|	是|	监控的数据，整型的数据|
 |time_stamp	|string|	2019-12-16T11:14:32Z|	是|	监控数据时间(UTC)|
@@ -138,6 +150,9 @@ table th:nth-of-type(3) {
     "ret_code": 0
 }
 ```
+结果说明：ret_code为0时表示上传数据成功，data中upload_count表示上传数据条数。
+
+自定义页面监控列表中涉及到一些时间区间内的监控数据计算，最小统计周期为5分钟，因此需连续发送一段时间（不小于5分钟）页面才有数据显示。
 
 数据格式例如：
 ```
@@ -202,7 +217,7 @@ secret_access_key = 'SECRETACCESSKEY'
 ```
 注解
 
-你可以使用上述的 AccessKey 和 Request 调试你的代码， 当得到跟后面一致的签名结果后(即表示你的代码是正确的)， 可再换为你自己的 AccessKey 和其他 API 请求。
+实际使用过程中请替换成你自己的AccessKeyId，切换相应区间信息。签名验证可以参考[青云API 请求中签名 ( signature )]( /development_docs/api/signature/)，使用链接文档中数据签名结果如果和链接中的一致代表签名方法正确。
 
 签名步骤
 
@@ -343,7 +358,7 @@ type verifyInfo struct {
 	httpMothod      string
 	path            string
 	secretAccessKey string
-	describeUsers          *describeUsers
+	describeUsers   *describeUsers
 }
 
 type describeUsers struct {
@@ -452,6 +467,8 @@ func main() {
 
 ```
 
+代码证result结果即构造的验证请求串，由于验证信息有时效性，如中断数据发送后重新发送时间间隔大于5分钟，请重新构造验证请求串。
+
 **验证所构造的验证请求串是否正确**
 
 使用自己构造的验证请求串替换下面代码中代码中result，执行下面代码。打印结果为1,验证请求串构造错误；打印结果为0，验证请求串构造正确。
@@ -497,7 +514,7 @@ func main() {
 
 **上传自定义数据代码示例**
 
-上传自定义数据需要预先在cloudsat自定义监控中创建命名空间和监控配置，并根据实际情况替换下面代码中一些数据如UserId、Namespace、Namespace、Region等。
+上传自定义数据需要预先在cloudsat自定义监控中创建命名空间和监控配置，并根据实际情况替换下面代码中一些数据如UserId、Namespace、Region、Meter等。Meter请与对应命名空间上监控配置中的监控指标保持一致。时间使用UTC时间，所有上传数据字段严格遵守接口数据规范中字段说明规范。
 
 ```
 package main

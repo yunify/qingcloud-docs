@@ -2,6 +2,7 @@
 title: "SaaS应用"
 description: test
 draft: false
+collapsible: true
 weight: 4
 ---
 
