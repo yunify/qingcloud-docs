@@ -48,7 +48,7 @@ $(function(){
 			$(this).attr('href',url.replace('#','/#'));
 		}
 
-		//判断是否是外链 console时 外链需在父页面打开
+		//判断是否是外链 外链需在父页面打开
 		var content_console = $('#content_console').val();
 		if(content_console == 1){
 			if(url != null && url != 'undefined' && url.indexOf('http') != '-1'){
@@ -74,6 +74,7 @@ $(function(){
 			$(this).prev('form').show();
 		}
 	})
+
 	document.onmousedown = function(e){
 	　　var ev = document.all ? window.event : e;
 	　　var _con = $(".search-mobile-icon").prev('form');
@@ -85,4 +86,24 @@ $(function(){
 	　　　　}
 	　　}
 	}
+	if(max_width>1024){
+		$(window).scroll(funScroll);
+	}
 })
+
+
+//滚动事件方法
+function funScroll() {
+	//获取当前滚动条的高度
+	var top = $(document).scrollTop();
+	var titles = $('main h2');
+	//遍历所有的div
+	titles.each(function(index) {
+		var thisTop = $(this).offset().top;
+		if (top >= thisTop-80) {
+			var anchor = $(this).children('a').attr('href');
+			$('#TableOfContents ul a[class="active"]').removeClass('active');
+			$('#TableOfContents ul a[href="'+anchor+'"]').addClass('active');
+		}
+	});
+}
