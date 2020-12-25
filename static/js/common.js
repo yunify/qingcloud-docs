@@ -86,8 +86,9 @@ $(function(){
 	　　　　}
 	　　}
 	}
-
-	$(window).scroll(funScroll);
+	if(max_width>1024){
+		$(window).scroll(funScroll);
+	}
 })
 
 
