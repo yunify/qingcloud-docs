@@ -69,8 +69,12 @@
   {{ end }}
 </ul>
 {{ else }}
-{{ $lastUrlElement1 := index (last 1 (split (delimit (split $ctx.Permalink "/") "," "") ",")) 0 }}
+{{ $lastUrlElement1 := index (split (index (last 1 (split $ctx "/")) 0 ) ".") 0}}
 {{ $lastUrlElement2 := index (last 1 (split (delimit (split $currentURL "/") "," "") ",")) 0 }}
+
+{{ $active := in $currentURL $ctx }}
+{{ $active = or $active (eq $lastUrlElement1 $lastUrlElement2) }}
+
 <li class="{{ if $active }}active{{ end }}">
   <a data-depth="0" href="{{ $ctx.Permalink }}" class="menu__title {{ if $active }}active{{ end }}">{{ $ctx.Title }}</a>
 </li>

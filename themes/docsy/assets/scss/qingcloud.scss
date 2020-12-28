@@ -494,15 +494,16 @@ span.menu__title[data-depth="0"] {
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
+    line-height: 1;
     letter-spacing: normal;
     color:#939ea9;
-    margin-left: 1rem
+    margin-left: 0;
 }
 
 .menu__title[data-depth="3"] {
-    font-size: .925rem;
-    margin-left: 3.75rem
+    font-size: 12px;
+    margin-left: 0.2rem;
+    line-height: 1;
 }
 
 .menu__title[data-depth="4"] {
@@ -542,6 +543,15 @@ span.menu__title--collapse[data-depth="0"] {
     font-weight: 500;;
 }
 
+.menu__title--collapse[data-depth="2"] {
+    padding-left: 0;
+    margin-left: 0.35rem;
+
+    .menu__title--icon{
+        left: -18px;
+    }
+}
+
 .menu__title--collapse[data-depth="1"] {
     font-size: 14px;
     font-weight: 500;
@@ -552,18 +562,15 @@ span.menu__title--collapse[data-depth="0"] {
     color: #3e464c;
 }
 
-.menu__title--collapse[data-depth="2"] {
-    margin-left: 1rem
-}
 
 .menu__title--collapse[data-depth="3"] {
-    font-size: .925rem;
-    margin-left: 3.75rem
+    font-size: 12px;
+    margin-left: 0;
 }
 
 .menu__title--collapse[data-depth="4"] {
-    font-size: .925rem;
-    margin-left: 5rem
+    font-size: 12px;
+    margin-left: 0;
 }
 
 
@@ -1058,4 +1065,23 @@ main.col-12.col-md-7.col-xl-7{
     .td-sidebar-section-title.content-index{
         display:flex;
     }
+}
+
+main .td-content table, tr, td, th, tbody, thead{
+    page-break-inside: avoid !important;
+}
+
+main .td-content thead{
+    display: table-row-group;
+}
+
+.nav-item a.menu__title[data-depth="0"]{
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    padding-left: 18px;
+    margin: .25rem 0;
 }

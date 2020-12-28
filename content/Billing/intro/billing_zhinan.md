@@ -1,6 +1,5 @@
 ---
 title: "计费指南"
-date: 2020-01-01T00:38:25+09:00
 weight: 1
 description: Test description
 draft: false
