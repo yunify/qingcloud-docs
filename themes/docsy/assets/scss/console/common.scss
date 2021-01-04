@@ -154,13 +154,13 @@ ul.timeline>li:before {
 
 
 
-@media (min-width:768px) {
+@media (min-width:760px) {
     .modal-dialog {
         max-width: 60%;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:760px) {
     .timeline .row {
         flex-direction: column;
         border: none;
