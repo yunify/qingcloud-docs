@@ -8,7 +8,7 @@ product:
     - time: 2021-01-05
       title: Ruby SDK v2.4.0 版本发布
       content: 新增对于跨区域复制功能的支持；新增对上传对象元数据的键值解析。<a target="_blank" href="https://github.com/qingstor/qingstor-sdk-ruby#v240---2021-01-05">更多变更日志</a>
-      url: /storage/object-storage/api/sdk/ruby/
+      url: /storage/object-storage/sdk/ruby/
       
     - time: 2020-05-15
       title: 开放雅加达（ap3）区
