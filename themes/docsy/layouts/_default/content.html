@@ -28,7 +28,7 @@
 						<div class="timeline-outer-line timeline-product"></div>
 						<div class="col-sm-12 timeline-outer">
 							<p>{{ .time }}</p>
-							<h2>{{ .title }}</h2>
+							<h2 id="{{ .title }}">{{ .title }}</h2>
 							<p class="product_dynamics_p">{{ .content | markdownify  }}</p>
 							{{ if .url}}
 							<a href="{{ .url }}">查看相关文档 <img src="/images/icons/black.svg"></a>
@@ -40,6 +40,7 @@
 			</div>
 		</div>
 	</section>
+	<script src="/js/product_news.js"></script>
 	{{ end }}
 	{{ .Content }}
 	<!-- {{ if (and (not .Params.hide_feedback) (.Site.Params.ui.feedback.enable) (.Site.GoogleAnalytics)) }}
