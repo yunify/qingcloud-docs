@@ -46,8 +46,8 @@ languageName ="中文"
 contentDir = "content"
 # Weight used for sorting.
 weight = 1
-time_format_default = "2020.12.01"
-time_format_blog = "2020.12.01"
+time_format_default = "2020-12-01"
+time_format_blog = "2020-12-01"
 
 [module]
   [module.hugoVersion]
