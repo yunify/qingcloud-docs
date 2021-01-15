@@ -23,7 +23,6 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 |:----|:----|:----|:----|
 |s1.small.r1   |1核    |1G    |0.2 Gbps    |
 |s1.small.r2   |1核    |2G    |0.2 Gbps    |
-|s1.small.r4   |1核    |4G    |0.2 Gbps    |
 |s1.large.r1   |2核    |2G    |0.5 Gbps    |
 |s1.large.r2   |2核    |4G    |0.5 Gbps    |
 |s1.large.r4   |2核    |8G    |0.5 Gbps    |
@@ -59,11 +58,11 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 |e1.4xlarge.r2 |16核    |32G    |5.5 Gbps    |
 |e1.4xlarge.r4 |16核    |64G    |5.5 Gbps    |
 |e1.4xlarge.r8 |16核    |128G    |5.5 Gbps    |
-|e1.6xlarge.r2 |24核    |48G    |8 Gbps    |
-|e1.6xlarge.r4 |24核    |96G    |8 Gbps    |
-|e1.6xlarge.r8 |24核    |192G    |8 Gbps    |
-|e1.8xlarge.r2 |32核    |64G    |10 Gbps    |
-|e1.8xlarge.r4 |32核    |128G    |10 Gbps    |
+|e1.6xlarge.r2 |24核    |48G    |7.5 Gbps    |
+|e1.6xlarge.r4 |24核    |96G    |7.5 Gbps    |
+|e1.6xlarge.r8 |24核    |192G    |7.5 Gbps    |
+|e1.8xlarge.r2 |32核    |64G    |8 Gbps    |
+|e1.8xlarge.r4 |32核    |128G    |8 Gbps    |
 
 ## 企业型 ( E2 )
 
@@ -90,13 +89,13 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 |e2.4xlarge.r2 |16核    |32G    |5.5 Gbps    |
 |e2.4xlarge.r4 |16核    |64G    |5.5 Gbps    |
 |e2.4xlarge.r8 |16核    |128G    |5.5 Gbps    |
-|e2.6xlarge.r2 |24核    |48G    |8 Gbps    |
-|e2.6xlarge.r4 |24核    |96G    |8 Gbps    |
-|e2.6xlarge.r8 |24核    |192G    |8 Gbps    |
-|e2.8xlarge.r2 |32核    |64G    |12 Gbps    |
-|e2.8xlarge.r4 |32核    |128G    |12 Gbps    |
-|e2.8xlarge.r8 |32核    |256G    |12 Gbps    |
-|e2.8xlarge.r16 |32核    |512G    |12 Gbps    |
+|e2.6xlarge.r2 |24核    |48G    |7.5 Gbps    |
+|e2.6xlarge.r4 |24核    |96G    |7.5 Gbps    |
+|e2.6xlarge.r8 |24核    |192G    |7.5 Gbps    |
+|e2.8xlarge.r2 |32核    |64G    |10 Gbps    |
+|e2.8xlarge.r4 |32核    |128G    |10 Gbps    |
+|e2.8xlarge.r8 |32核    |256G    |10 Gbps    |
+|e2.8xlarge.r16 |32核    |512G    |10 Gbps    |
 
 ## 专业增强型 ( P1 )
 
@@ -131,21 +130,7 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 |p1.8xlarge.r8 |32核    |256G    |12 Gbps    |
 |p1.16xlarge.r4|64核    |256G    |25 Gbps    |
 
-## 性能型
 
-经过 QingCloud 优化的存储技术，IO 吞吐性能最高可达 128 MB/s，该类型主机的推荐使用场景包括 Web 应用服务器、开发环境、轻量级企业服务等。
-
-| CPU | 内存 | 性能型块存储| 容量型块存储 |
-|:----|:----|:----|:----|
-|1核~32核|1GB ~128GB|10 GB ~ 2 TB|100 GB ~ 5 TB|
-
-## 超高性能型
-
-经过 QingCloud 优化的存储技术，IO 吞吐性能最高可达 200 MB/s，随机读写性能最高可达 25000 IOPS，该类型主机的推荐使用场景包括核心数据库，在线业务系统，传统企业服务，大数据处理等高 IOPS、网络负载重的场景。
-
-| CPU | 内存 | 超高性能型块存储| 容量型块存储 |
-|:---- |:---- |:----|:----|
-|1核~32核|1GB ~128GB|10 GB ~ 2 TB|100 GB ~ 5 TB|
 
 ## 其它
 
