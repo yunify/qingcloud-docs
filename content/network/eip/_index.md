@@ -51,18 +51,25 @@ section3:
 section4:
   children:
     - title: 了解：什么是公网 IP
-      content: 负载均衡器可以将来访问流量分配到多台主机，从而提高业务的服务能力和可用性。
+      content: 公网 IP 是在互联网上合法的静态 IP 地址。
       vice_title: 了解的第一步
       children:
         - title: 产品简介
           url: "intro/introduction/"
 
-    - title: 上手：搭建负载均衡
-      content: 搭建基于各个协议的负载均衡。
+    - title: 上手：绑定公网 IP
+      content: 公网 IP 的绑定模式分为两类：外部绑定与内部绑定。
       vice_title: 上手的第一步
       children:
-        - title: 搭建负载均衡
-          url: "/network/loadbalancer/quickstart/quick_start"       
+        - title: 外部绑定 IPv4 公网 IP
+          url: "manual/ipv4/outband_ipv4/" 
+        - title: 内部绑定 IPv4 公网 IP
+          url: "manual/ipv4/inband_ipv4/"  
+        - title: 外部绑定 IPv6 公网 IP
+          url: "manual/ipv6/outband_ipv6/"      
+        - title: 内部绑定 IPv6 公网 IP
+          url: "manual/ipv6/inband_ipv6/"  
+
 ---
 
 
