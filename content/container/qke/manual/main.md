@@ -62,13 +62,13 @@ EIP 可以有两种方式与 K8s Apiserver 相连接：VPC 端口转发和通过
 
 ![](../../_images/access-kubernetes-vxnet-ip-ha-lb-ip.png)
 
-VPC 配置转发规则，源端口可以根据用户实际情况配置，内网 IP 为访问 Kubernetes Apiserver 的私有网络 IP 地址，内网端口为 6443，
+VPC 配置转发规则，源端口可以根据用户实际情况配置，内网 IP 为访问 Kubernetes Apiserver 的私有网络 IP 地址，内网端口为 6443。
 
 > 此示例中 VPC 端口转发源端口为 16443。
 
   ![](../../_images/acees-kubernetes-vpc-port-forward.png)
 
-打开 VPC 网络绑定的防火墙下行端口，
+打开 VPC 网络绑定的防火墙下行端口。
 
 ![](../../_images/access-kubernetes-firewall.png)
 
