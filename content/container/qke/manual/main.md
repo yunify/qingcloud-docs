@@ -231,7 +231,7 @@ Service 的 type 设置为 LoadBalancer，然后在 metadata 中增加以下 ann
 
 - `service.beta.kubernetes.io/qingcloud-load-balancer-type`
   
-> 负载均衡器的承载能力类型，与 [create_loadbalancer](https://docs.qingcloud.com/product/api/action/lb/create_loadbalancer.html) 接口中的 loadbalancer_type 取值范围相同。
+> 负载均衡器的承载能力类型，与 [create_loadbalancer](/development_docs/api/command_list/lb/create_loadbalancer/) 接口中的 loadbalancer_type 取值范围相同。
   
 - `service.beta.kubernetes.io/qingcloud-load-balancer-eip-ids`
   
