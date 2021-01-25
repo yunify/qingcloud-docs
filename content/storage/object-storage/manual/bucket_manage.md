@@ -1,5 +1,5 @@
 ---
-title: "Bucket 管理功能"
+title: "Bucket 管理"
 date: 2020-02-28T10:08:56+09:00
 description:
 draft: false
@@ -7,7 +7,6 @@ weight: 1
 ---
 
 
-# Bucket 管理功能
 
 ## Bucket 列表
 
@@ -45,7 +44,7 @@ weight: 1
 
 ### 删除 Bucket
 
-如果一个 Bucket 不再需要，用户可以删除 Bucket。请注意，如果删除了 Bucket，文件和文件夹也会被删除，无法恢复，操作前需要谨慎。
+如果一个 Bucket 不再需要，用户可以选择删除 Bucket。请注意，如需删除 Bucket，须提前将Bucket 内的数据删除，操作前需要谨慎。
 
 ![](delete_bucket.png)
 

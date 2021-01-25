@@ -551,9 +551,8 @@ x-qs-request-id: aa08cf7a43f611
 
 将图片另存到对象存储的某个 Bucket 下，主要为了方便用户保存各种处理后的图片。
 
-Note: 用户必须有对此 Bucket 的写入权限。
-
-Note: 不支持另存到跨区的 Bucket 中。
+> - 用户必须有对此 Bucket 的写入权限。
+> - 不支持另存到跨区的 Bucket 中。
 
 ## Request Syntax
 
