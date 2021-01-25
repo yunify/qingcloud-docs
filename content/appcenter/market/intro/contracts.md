@@ -1,7 +1,7 @@
 ---
 title: "服务商申请入驻"
 description: test
-weight: 3
+weight: 2
 draft: false
 ---
 

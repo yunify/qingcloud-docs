@@ -20,7 +20,7 @@ Section2:
 
     - title: 服务商入驻
       content: 服务商入驻
-      url: "/appcenter/market/business-process/contracts"
+      url: "/appcenter/market/intro/contracts"
 
 section4:
   children:
