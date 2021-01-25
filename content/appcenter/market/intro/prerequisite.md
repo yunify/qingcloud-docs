@@ -1,7 +1,7 @@
 ---
 title: "入驻须知"
 description: test
-weight: 4
+weight: 3
 draft: false
 
 ---

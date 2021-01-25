@@ -3,7 +3,7 @@ title: "通知中心"
 date: 2020-11-11T00:00:00+09:00
 draft: false
 collapsible: false
-weight: 2
+weight: 4
 ---
 
 ## 通知中心
