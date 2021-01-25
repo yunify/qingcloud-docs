@@ -5,7 +5,7 @@ draft: false
 weight: 4
 ---
 
-## 应用上架
+## Licence 应用发布
 
 ### 创建应用
 
