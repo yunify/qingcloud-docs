@@ -29,11 +29,11 @@ section4:
         - title: 产品概述
           url: "/storage/share/intro/introduction"
 
-        - title: 产品优势
-          url: "https://www.qingcloud.com/products/neon-san-and-virtual-san/"
+        - title: 产品特性
+          url: "/storage/share/intro/introduction/#产品优势"
 
         - title: 应用场景
-          url: "https://www.qingcloud.com/products/neon-san-and-virtual-san/"
+          url: "/storage/share/intro/introduction/#应用场景"
 ---
 
 
