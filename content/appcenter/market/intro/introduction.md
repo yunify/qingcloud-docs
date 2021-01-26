@@ -5,6 +5,7 @@ description: Test description
 draft: false
 enableToc: false
 keyword: 青云
+weight: 1
 ---
 
 # AppCenter 应用市场
