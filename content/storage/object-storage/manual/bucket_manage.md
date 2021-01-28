@@ -152,7 +152,6 @@ weight: 1
 
 ![](bucket_cdn_check_win.png)
 
-> NOTE:
 >
 > 假如您的网站已经搭建在别处需要迁移到对象存储上， 不希望中断访问， 希望先等待CDN 生效， 验证效果再修改域名记录。
 > 可以先添加域名，获取分配的"xxxxxx.cname.qingcache.com"域名，

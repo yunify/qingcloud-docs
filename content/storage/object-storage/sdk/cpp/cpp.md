@@ -2,7 +2,6 @@
 title: "Cpp SDK 快速指南"
 ---
 
-# 快速指南
 
 在开始使用 SDK 之前，请确认您已经了解 [青云 QingStor 对象存储基本概念](https://docs.qingcloud.com/qingstor/api/common/overview.html) ，如 Zone，Service，Bucket，Object 等。
 
