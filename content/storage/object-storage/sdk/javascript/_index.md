@@ -2,7 +2,6 @@
 title: "JavaScript SDK"
 ---
 
-# JavaScript SDK
 
 QingStor JavaScript SDK 已在 GitHub 开源，下文为简要使用文档。更多详细信息请参见 [https://github.com/yunify/qingstor-sdk-js](https://github.com/yunify/qingstor-sdk-js) 。
 
