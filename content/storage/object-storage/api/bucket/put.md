@@ -7,7 +7,6 @@ draft: false
 weight: 1
 ---
 
-# PUT Bucket
 
 创建一个新的存储空间，创建成功后，空间的 owner 就是 API 调用者。
 
