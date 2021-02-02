@@ -23,7 +23,7 @@ weight: 1
 | [图片格式转换](#7) | Y | Y | Y | Y | N | N | N |
 | [图片另存](#8) | Y | Y | Y | Y | Y | Y | Y |
 
-> **目前不支持对加密过后的图片进行处理，单张图片最大为 `10M` 。**
+> 目前不支持对加密过后的图片进行处理，单张图片最大为 `10M` 。
 
 ## Request Syntax
 
@@ -40,7 +40,7 @@ Authorization: <authorization-string>
 - `k` 为 operation 的 argument key, `v` 为 argument value。
 - 多个 `operation` 用分隔符 `|` 连接成为一个 `action` ，其将会顺序对图片进行操作，类似管道。
 
-*### Example Request*
+### Example Request
 
 ```http
 GET /myphoto.jpg?image&action=resize:w_300,h_400|rotate:a_90 HTTP/1.1
@@ -551,9 +551,8 @@ x-qs-request-id: aa08cf7a43f611
 
 将图片另存到对象存储的某个 Bucket 下，主要为了方便用户保存各种处理后的图片。
 
-Note: 用户必须有对此 Bucket 的写入权限。
-
-Note: 不支持另存到跨区的 Bucket 中。
+> - 用户必须有对此 Bucket 的写入权限。
+> - 不支持另存到跨区的 Bucket 中。
 
 ## Request Syntax
 
