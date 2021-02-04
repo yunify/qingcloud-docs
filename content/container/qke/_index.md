@@ -48,7 +48,7 @@ section4:
     vice_title: 上手的第一步
     children:
     - title: 访问 KubeSphere
-      url: "/container/qke/manual/main/#%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AE%BF%E9%97%AE-kubesphere"
-    - title: 创建公网服务
-      url: "/container/qke/manual/main/#%E6%8C%87%E5%AE%9A%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E5%99%A8%E6%9C%8D%E5%8A%A1%E7%B1%BB%E5%9E%8B"
+      url: "/container/qke/manual/main/#浏览器访问-kubesphere"
+    - title: 指定负载均衡器服务类型
+      url: "/container/qke/manual/main/#指定负载均衡器服务类型"
 ---

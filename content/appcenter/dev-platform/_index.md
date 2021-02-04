@@ -20,8 +20,12 @@ section2:
       content: 如何开发 SaaS 应用
       url: "/appcenter/dev-platform/quick-start/quick_start_saas"
 
+    - title: License 应用发布
+      content: License 应用如何发布
+      url: "/appcenter/dev-platform/license-guide/release"
+
     - title: 平台管理
-      content: 开发者财务管理、工单管理、通知管理
+      content: 开发者财务管理、工单管理、通知管理、用户订单管理
       url: "/appcenter/dev-platform/platform-manage/finance/finance/"
 
 

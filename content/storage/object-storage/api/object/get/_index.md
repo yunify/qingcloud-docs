@@ -6,7 +6,6 @@ draft: false
 weight: 3
 ---
 
-# GET Object
 
 用于获取指定对象，此操作要求请求者对存储空间拥有可读权限。
 
