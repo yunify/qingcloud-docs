@@ -6,7 +6,6 @@ draft: false
 weight: 3
 ---
 
-# OPTIONS Object
 
 用户或浏览器向 QingStor 的 Object 发起预检请求(preflight request),用以确定是否能向该跨源请求发出回应。
 
