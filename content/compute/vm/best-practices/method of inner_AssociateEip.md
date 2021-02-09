@@ -2,6 +2,7 @@
 title: "windows主机内部绑定eip的操作步骤"
 description: test
 draft: false
+weight: 20
 ---
 
 #### 内部绑定方式与外部绑定方式的差异
