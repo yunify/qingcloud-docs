@@ -4,7 +4,7 @@ description: test
 draft: false
 ---
 
-## 救援主机
+### 救援主机
 
 救援主机（Rescue Instance）可以对一台故障的主机进行人工运维。
 
@@ -12,7 +12,7 @@ draft: false
 
 ![rescue-vm-instance01](..\_images\rescue-vm-instance01.png)
 
-## 修改系统密码
+### 修改系统密码
 
 假设有个需求是，忘记了 Linux 操作系统的密码，要对其进行修改，请进行以下步骤：
 
