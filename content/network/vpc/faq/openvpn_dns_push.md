@@ -15,7 +15,7 @@ weight: 20
 
 <img src="../homer/openvpn_dns_push_01.png" width="60%" height="60%">
 
-#### vpn服务---openvpn—修改，在附加配置里增加以下内容
+#### 1.vpn服务---openvpn—修改，在附加配置里增加以下内容
 
 ```
 push "route 172.20.0.0 255.255.0.0"
@@ -26,9 +26,9 @@ push "dhcp-option DNS 172.20.255.254"
 
 
 
-#### 本地拨入vpn以后查看是否生效
+#### 2.本地拨入vpn以后查看是否生效，如果没有生效
 
-刷新一下dns缓存
+#### 3.刷新一下dns缓存
 
 ```
 ipconfig /flushdns
