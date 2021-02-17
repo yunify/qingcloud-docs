@@ -11,7 +11,7 @@ enableToc: false
 
 ##  1、准备环境
 
-  OS：CentOS 7.5 64bit
+  OS：CentOS 7.5 64 bit
 
   青云centos7镜像默认为最小化部署，需要自行安装图形化桌面
 
