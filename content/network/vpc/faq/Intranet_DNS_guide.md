@@ -5,25 +5,25 @@ draft: false
 weight: 20
 ---
 
-#### 内网dns的使用场景
+## 内网dns的使用场景
 
  对 VPC 内部提供域名解析的服务，可以开启/关闭内网 DNS 服务，同时支持开启/关闭 PTR 解析类型-反向 DNS 解析。
 
-#### 开启此功能的路径
+### 1.开启此功能的路径
 
 通过vpc详情界面---管理配置---dns服务---打开dns服务，可以参考截图
 
 <img src="../homer/openvpn_dns_push_03.png" width="60%" height="60%">
 
-#### 应用修改vpc网络
+### 2.应用修改vpc网络
 
 <img src="../homer/openvpn_dns_push_04.png" width="60%" height="60%">
 
-#### 添加一条内网dns解析，并应用修改vpc网络
+### 3.添加一条内网dns解析，并应用修改vpc网络
 
 <img src="../homer/openvpn_dns_push_05.png" width="60%" height="60%">
 
-#### 验证一下配置的内网dns解析是否生效
+### 4.验证一下配置的内网dns解析是否生效
 
 ```
 PING localhost (127.0.0.1) 56(84) bytes of data.
@@ -42,16 +42,16 @@ ping: test: Name or service not known
 
 
 
-如内网dns配置没有生效，可以参考以下办法
+### 5.如内网dns配置没有生效，可以参考以下办法
 
-- 重启主机的网络
+- #### 重启主机的网络
 
 ```
 systemctl restart networking
 ```
 
-- 离开私有网络，重新加入
-- 重启主机
+- #### 离开私有网络，重新加入
+- #### 重启主机
 
 或者手动更改dns配置，参考格式如下
 
@@ -62,7 +62,7 @@ search localdomain pek3.qingcloud.com
 nameserver 172.20.255.254
 ```
 
-#### 重新验证一下dns配置是否生效
+### 6.重新验证一下dns配置是否生效
 
 ```
 [root@i-b6s3dvje ~]# ping test.localdomain

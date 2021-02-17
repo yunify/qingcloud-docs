@@ -5,17 +5,15 @@ draft: false
 weight: 20
 ---
 
-#### 需求背景
+## 需求背景
 
-客户希望vpc内网配置的域名解析，通过vpn拨入到本地生效，无需手动去配置hosts解析
+客户希望vpc内网配置的域名解析，通过vpn拨入到本地生效，无需手动去配置hosts解析，以下是具体案例的实践过程。
 
-#### 具体案例
-
-#### 配置内网解析的域名如下
+### 1.配置内网解析的域名如下
 
 <img src="../homer/openvpn_dns_push_01.png" width="60%" height="60%">
 
-#### 1.vpn服务---openvpn—修改，在附加配置里增加以下内容
+### 2.vpn服务---openvpn—修改，在附加配置里增加以下内容
 
 ```
 push "route 172.20.0.0 255.255.0.0"
@@ -24,11 +22,9 @@ push "dhcp-option DNS 172.20.255.254"
 
 备注：push的路由需要按照指定的格式
 
+### 3.本地拨入vpn以后查看是否生效，如果没有生效
 
-
-#### 2.本地拨入vpn以后查看是否生效，如果没有生效
-
-#### 3.刷新一下dns缓存
+### 4.刷新一下dns缓存
 
 ```
 ipconfig /flushdns
@@ -37,8 +33,6 @@ ipconfig /flushdns
 如截图，解析已经生效
 
 <img src="../homer/openvpn_dns_push_02.png">
-
-
 
 如内网dns配置没有生效，需要离开私有网络重新加入私有网络时手动指定内网ip地址；或者手动更改/etc/resolv.conf的配置，格式如下
 
