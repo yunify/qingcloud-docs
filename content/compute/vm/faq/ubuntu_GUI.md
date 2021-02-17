@@ -10,7 +10,7 @@ enableToc: false
 
 ## 1、准备环境
 
-OS：版本为Ubuntu Server 16.04.5 LTS 64bit.
+OS：版本为Ubuntu Server 16.04.5 LTS 64bit
 
 Ubuntu 16.04 在安装时默认是不安装图形界面的.
 
