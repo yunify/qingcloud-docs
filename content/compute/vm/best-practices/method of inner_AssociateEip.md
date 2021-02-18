@@ -17,7 +17,7 @@ weight: 20
 
 <img src="../homer/window_nic01.png" width="60%" height="60%">
 
-控制面板\网络和Internet\网络连接，双击新加的网卡， 点击属性，再双击Internet 协议版本4（TCP/IPv4），填入相关信息，如下图所示。
+通过控制面板–》网络和Internet–》网络连接–》以太网3–》点击属性–》再双击Internet 协议版本4（TCP/IPv4）–》高级，并填写ip地址等信息，如图所示
 
 <img src="../homer/window_nic02.png" width="60%" height="60%">
 
@@ -26,7 +26,7 @@ weight: 20
 打开 Windows 命令行终端进行路由配置。首先使用 route 命令查看网卡的编号：
 route print -4
 
-输出结果如下图所示，其中第一行与第二行分别为公网的网络连接与基础网络的网络连接，每行的第一个数字为网卡的编号。在本示例中，私有网络的网卡编号为 12 ，公网的网卡编号为 17 。
+输出结果如下图所示，其中第一行与第二行分别为公网的网络连接与基础网络的网络连接，每行的第一个数字为网卡的编号。在本示例中，基础网络的网卡编号为 12 ，公网的网卡编号为 17 。
 
 <img src="../homer/window_nic03.png" width="60%" height="60%">
 
@@ -34,7 +34,7 @@ route print -4
 从截图上看，已经存在一条公网ip的默认路由，将此条路由的优先级调整为1，使用以下命令调整,调整后如截图所示
 
 ```
-route -p change 0.0.0.0 mask 0.0.0.0 139.198.1.1 metric 1 ``if` `17
+route -p change 0.0.0.0 mask 0.0.0.0 139.198.1.1 metric 1 if 17
 ```
 
 <img src="../homer/window_nic04.png" width="60%" height="40%">
@@ -42,7 +42,7 @@ route -p change 0.0.0.0 mask 0.0.0.0 139.198.1.1 metric 1 ``if` `17
 增加一条基础网络的路由，将此条路由的优先级调整为100，使用以下命令调整，调整后如截图所示
 
 ```
-route -p add 0.0.0.0 mask 0.0.0.0 10.140.84.1 metric 1 if 12
+route -p add 0.0.0.0 mask 0.0.0.0 10.140.84.1 metric 100 if 12
 ```
 <img src="../homer/window_nic05.png" width="80%" height="60%">
 
