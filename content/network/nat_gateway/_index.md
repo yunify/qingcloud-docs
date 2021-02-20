@@ -16,17 +16,17 @@ section2:
       content: 产品简介
       url: "intro/nat_gateway"
 
-    - title: 计费指南
-      content: 计费指南
-      url: "billing/price"
+    #- title: 计费指南
+     # content: 计费指南
+     # url: "billing/price"
       
     - title: 操作指南
       content: 操作指南
       url: "manual/nat_user_guide"
       
-    - title: 常见问题
-      content: 常见问题
-      url: "faq/nat-faq"
+    #- title: 常见问题
+     # content: 常见问题
+     # url: "faq/nat-faq"
 
 
 

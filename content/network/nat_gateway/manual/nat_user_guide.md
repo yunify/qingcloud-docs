@@ -42,7 +42,7 @@ NAT 网关中的配置的私有网络主机可以共用 NAT 网关，`路由规�
 ![](/network/nat_gateway/_images/modify_natgw_fw1.png)
 
 
-在更多操作中，可以修改 NAT 网关与单个私有网络之间的防火墙
+在更多操作中，可以修改 NAT 网关与单个私有网络的安全组
 
 ![](/network/nat_gateway/_images/modify_natgw_fw2.png)
 
