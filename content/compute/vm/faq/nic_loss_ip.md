@@ -9,7 +9,7 @@ enableToc: false
 
 执行 ip a 发现网卡没有获取到ip
 
-![image-20210218122347304](/compute/vm/_images/dhclient_ip_1.png)
+![image-20210218122347304](/compute/vm/_images/nic_loss_ip1.png)
 
 1、可以执行命令 dhclient + 网卡名，以eth0例：
 
