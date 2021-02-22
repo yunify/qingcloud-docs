@@ -2,7 +2,6 @@
 title: "GET Service"
 ---
 
-# GET Service (List Buckets)
 
 获取请求者名下的所有存储空间 (Bucket) 列表。 不支持匿名请求，请先注册青云账号并创建 Access Key 后才能调用此 API 。
 

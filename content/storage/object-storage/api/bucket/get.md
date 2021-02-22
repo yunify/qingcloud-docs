@@ -7,7 +7,6 @@ draft: false
 weight: 3
 ---
 
-# GET Bucket (List Objects)
 
 获取存储空间中的对象（object）列表。此 API 需要调用者对 bucket 有读权限, 不允许匿名访问。
 

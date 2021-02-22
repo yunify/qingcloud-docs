@@ -1,7 +1,7 @@
 ---
 title: "GET Bucket ACL"
 ---
-# GET Bucket ACL
+
 
 获取存储空间的访问控制列表 (Access Control List)， acl 是存储空间的子资源 (subresource)，只有存储空间的所有者才能获取。
 
