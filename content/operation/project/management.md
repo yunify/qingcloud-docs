@@ -9,7 +9,7 @@
 
 在控制台顶部的导航、选择 ”项目“ 查看项目列表。如需查看全部项目，选择”查看全部“，则可以列出所有有权限访问的项目。
 
-![全部项目入口](_images/all-project-entry.png)
+![全部项目入口](../_images/all-project-entry.png)
 
 在全部项目视图，可以浏览、创建、修改、删除项目。
 
@@ -22,11 +22,11 @@
 
 这 2 处入口点击可以创建新项目：
 
-![创建项目](_images/create-project.png)
+![创建项目](../_images/create-project.png)
 
 一个新的项目，需要填写项目名称，选择标识项目的颜色，并给项目添加上用途描述。创建之后，创建者本人成为该项目的所有者，控制台也会直接进入新项目的总览页。如果您是第一次使用项目功能，新建项目后会弹出一个引导框，为您介绍项目的用途。
 
-![项目指引](_images/project-introduce.png)
+![项目指引](../_images/project-introduce.png)
 
 ## 删除项目
 
@@ -35,7 +35,7 @@
 1. 全部项目的列表中，项目卡片右上角操作。
 2. 项目总览页基本信息卡片右上角操作。
 
-![删除项目](_images/delete-project.png)
+![删除项目](../_images/delete-project.png)
 
 注意：删除项目是不可逆操作，因此删除的操作要非常小心。
 
@@ -43,13 +43,13 @@
 
 项目创建后，仍然可以修改其名称、描述、颜色。具体的方法是在项目列表或项目总览页的卡片右上角。
 
-![modify-project](C:\work\qingcloud-docs\content\operation\project\_images\modify-project.jpg)
+![modify-project](../_images\modify-project.jpg)
 
 ## 切换项目
 
 在导航栏顶部点击下拉框的项目名称，或者在全部项目列表中点击项目卡片，即可切换进入项目的总览页。除此之外，您还可以在“全部资源”视图，点击资源列表中的所属项目，直接进入该项目相应资源页面。如：点击主机列表中的项目名称，进入该项目的主机列表页。
 
-![全部资源项目入口](_images/project-entry-in-all-resources.png)
+![全部资源项目入口](../_images/project-entry-in-all-resources.png)
 
 ## 项目总览
 
@@ -61,4 +61,4 @@
 * 项目告警：展示项目绑定了告警策略的资源，产生的告警信息。这里的告警包含了项目所有区域、可用区的资源。
 * 项目文档：列出关于项目的常见操作的文档入口地址。
 
-![项目总览页](_images/project-overview.png)
+![项目总览页](../_images/project-overview.png)
