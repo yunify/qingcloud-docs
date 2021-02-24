@@ -2,7 +2,6 @@
 title: "Java SDK"
 ---
 
-# Java SDK
 
 QingStor Java SDK 已在 GitHub 开源，下文为简要使用文档。更多详细信息请参见 [GitHub 项目页面](https://github.com/yunify/qingstor-sdk-java)，
 和[Java SDK API 文档](https://qingstor.github.io/qingstor-sdk-java/)。Java SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，

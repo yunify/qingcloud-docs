@@ -2,7 +2,6 @@
 title: "Delete Multiple Objects"
 ---
 
-# Delete Multiple Objects
 
 从存储空间中批量删除指定对象，此操作要求请求者对存储空间拥有可写权限。
 
