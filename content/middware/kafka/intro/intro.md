@@ -18,4 +18,4 @@ keyword:
 - 提供文件查看器方便排查问题（版本 Kafka 1.1.1 - QingCloud 1.5.0 起）
 - 提供第三方监控 [zabbix](https://www.zabbix.com/) 平台接口（版本 kafka 2.3.0 - QingCloud 2.0.0 起）
 
->注意：Kafka 1.0.0-QingCloud1.1.6 及后续新版本提供的 Kafka-manager 安装在客户端节点上。客户端节点用户名：ubuntu，密码：kafka 。Kafka-manager 显示的版本并非实际 Kafka 版本，我们以创建 Kafka 实际版本为主，并不会影响到您使用 Kafka 和 Kafka-manager。
+>**注意**：Kafka 1.0.0-QingCloud1.1.6 及后续新版本提供的 Kafka-manager 安装在客户端节点上。客户端节点用户名：ubuntu，密码：kafka 。Kafka-manager 显示的版本并非实际 Kafka 版本，我们以创建 Kafka 实际版本为主，并不会影响到您使用 Kafka 和 Kafka-manager。
