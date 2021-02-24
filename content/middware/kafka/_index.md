@@ -26,7 +26,7 @@ Section2:
 
     - title: 操作指南
       content: 学习如何管理Kafka集群，以及如何使用Kafka提供的相关服务等。
-      url: "manual/manual"
+      url: "manual/create_kafka"
 
 
 
