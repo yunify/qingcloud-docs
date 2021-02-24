@@ -43,7 +43,7 @@
 
 项目创建后，仍然可以修改其名称、描述、颜色。具体的方法是在项目列表或项目总览页的卡片右上角。
 
-![modify-project](../_images\modify-project.jpg)
+![modify-project](../_images/modify-project.jpg)
 
 ## 切换项目
 
