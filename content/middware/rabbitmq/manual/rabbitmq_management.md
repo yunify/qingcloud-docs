@@ -1,0 +1,24 @@
+---
+title: "rabbitmq_management使用示例简介"
+description: test
+weight: 12
+draft: false
+---
+
+###  创建一个队列
+
+![](../../_images/create_queue.png)
+
+> 创建一个队列，指定队列所在的节点，设置队列是否持久化，如果未设置持久化，集群重启会导致队列消失。
+
+###  投递消息
+
+![](../../_images/publish_message.png)
+
+> 投递消息，设置消息是否持久化，设置为2时候代表持久化，默认不持久化，如果未设置持久化，集群重启消息消失。
+
+###  消费消息
+
+![](../../_images/get_message.png)
+
+> 获取消息，并设置队列消息是否可以重复获取，是否需要 base64 编码。

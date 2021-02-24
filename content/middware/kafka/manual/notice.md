@@ -16,5 +16,3 @@ draft: false
 
 在使用过程中如果遇到问题可以通过 `提交工单` 来获取帮助，我们将竭诚为您服务。
 
-Have a nice day on QingCloud AppCenter !
-
