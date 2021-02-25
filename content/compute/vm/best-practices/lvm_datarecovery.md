@@ -22,7 +22,7 @@ Linux的LVM会默认存储用户对PV/VG/LV的每一步操作，并自动把当�
 cat /etc/dev/vdc/vgtest_00002-645033136.vg
 ```
 
-![vg_info](..\_images\vg_info.png)
+![vg_info](../../_images/vg_info.png)
 
 ### 3.创建PV
 
