@@ -6,7 +6,7 @@ draft: false
 
 ## 费用说明
 
-Kafka 创建页面上的**费用预览**计费仅包括集群基础资源（CPU, RAM, 磁盘）费用，集群创建完成之后绑定的公网 IP 资源、 VPC 网络资源等费用将会另外计算。使用 Kafka 时用户扩容后的资源费用也将另外计算。Kafka 基础资源费用的计算周期以 Kafka 集群创建时间为起点，以 Kafka 集群销毁时间为终点。
+Kafka 创建页面上的**费用预览**计费仅包括集群基础资源（CPU、RAM、磁盘）费用，集群创建完成之后绑定的公网 IP 资源、VPC网络资源等费用将会另外计算。使用 Kafka 时用户扩容后的资源费用也将另外计算。Kafka 基础资源费用的计算周期以 Kafka 集群创建时间为起点，以 Kafka 集群销毁时间为终点。
 
 除了支持弹性计费，Kafka 也支持包年、包月等[合约方式](https://docsv3.qingcloud.com/billing/intro/billing_zhinan/)。
 
