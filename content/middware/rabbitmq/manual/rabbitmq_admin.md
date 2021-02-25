@@ -5,19 +5,19 @@ weight: 20
 draft: false
 ---
 
-### 在 RabbitMQ 管理界面下载
+### 在RabbitMQ管理界面下载
 
 官网参考地址：http://www.rabbitmq.com/management-cli.html
 
-### client 节点上自带 rabbitmqadmin 工具
+### client节点上自带rabbitmqadmin工具
 
-> **注意**：rabbitmqadmin 工具已经在 client 节点上配置好了，可以直接使用，若修改了guest 用户，需要自己修改 default_options 中用户名和密码配置。
+> **注意**：rabbitmqadmin工具已经在client节点上配置好了，可以直接使用，若修改了guest 用户，需要自己修改default_options中用户名和密码配置。
 
-### 自己下载或者自定义配置 rabbitmqadmin 工具方法
+### 自己下载或者自定义配置rabbitmqadmin工具方法
 
-> **注意**：可以选择任意 RabbitMQ 节点 或者 Haproxy 节点 ip 或者 Keepalived vip 操作 使用。
+> **注意**：可以选择任RabbitMQ节点或者Haproxy节点ip或者Keepalived vip操作使用。
 
-如Keepalived VIP 为 192.168.0.253 (也可以是任意 RabbitMQ 节点 或者 Haproxy 节点 ip)
+如Keepalived VIP为192.168.0.253（也可以是任意RabbitMQ节点或者Haproxy节点ip）
 
 执行以下命令：
 
@@ -29,29 +29,29 @@ file rabbitmqadmin
 chmod +x rabbitmqadmin
 ```
 
-修改 rabbitmqadmin文件 default_options 中的 hostname 为 任意 RabbitMQ 节点 或者 Haproxy 节点 ip 或者 Keepalived vip，若修改了guest 用户，还需要修改 default_options 中用户名和密码配置。
+修改rabbitmqadmin文件default_options中的hostname为任意RabbitMQ节点或者Haproxy节点ip或者Keepalived vip，若修改了guest用户，还需要修改default_options中用户名和密码配置。
 
-### 定义一个 queue
+### 定义一个queue
 
-> **提示**：durable=true 仅表示该队列持久化，并不表示队列中的消息已经持久化。
+> **提示**：durable=true仅表示该队列持久化，并不表示队列中的消息已经持久化。
 
 ```
 ./rabbitmqadmin declare queue name=test durable=true
 ```
 
-### 查看 queues
+### 查看queues
 
 ```
 ./rabbitmqadmin list queues
 ```
 
-### 查看 channels
+### 查看channels
 
 ```
 ./rabbitmqadmin list channels
 ```
 
-### 查看 consumers
+### 查看consumers
 
 ```
 ./rabbitmqadmin list consumers

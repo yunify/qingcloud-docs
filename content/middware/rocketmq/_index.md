@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: "RocketMQ"
-  vice_title: Apache RocketMQ 是一个基于 Apache 2.0 协议 开源的分布式消息和流数据平台，具有低延时、高吞吐、可审计、可几乎无限水平扩展等优点。
+  vice_title: Apache RocketMQ是一个基于Apache2.0协议 开源的分布式消息和流数据平台，具有低延时、高吞吐、可审计、可几乎无限水平扩展等优点。
 
 Section2:
   title: 用户指南
@@ -64,9 +64,9 @@ section4:
         - title: 集群使用
           url: "/middware/RocketMQ/manual/cluster_use"
         
-        - title: RocketMQ Console 使用示例
+        - title: RocketMQ Console使用示例
           url: "/middware/RocketMQ/manual/rocketmq_console"
-        - title: RocketMQ CLI 命令示例
+        - title: RocketMQ CLI命令示例
           url: "/middware/RocketMQ/manual/rocketmq_cli"
 ---
 

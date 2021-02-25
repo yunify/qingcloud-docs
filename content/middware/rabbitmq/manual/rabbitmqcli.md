@@ -7,7 +7,7 @@ draft: false
 
 官网参考地址：https://www.rabbitmq.com/man/rabbitmqctl.1.man.html
 
-> **注意**：使用 root/rabbitmq 登录 client 节点，请勿随便使用集群管理命令去管理集群。client 使用 -n nodename 连接集群中的节点，nodename 格式为 rabbit@hostname ，可以在 client节点 /etc/hosts 下看到有哪些 host ，也可以在 rabbitmq 的 web 界面直接看到 nodename。
+> **注意**：使用root/rabbitmq登录client节点，请勿随便使用集群管理命令去管理集群。client使用-n nodename连接集群中的节点，nodename格式为rabbit@hostname，可以在client节点/etc/hosts下看到有哪些host，也可以在rabbitmq的web界面直接看到nodename。
 
 ### 添加用户
 
@@ -21,7 +21,7 @@ rabbitmqctl -n rabbit@i-1zo2scr7 add_user username password
 rabbitmqctl -n rabbit@i-1zo2scr7 delete_user username
 ```
 
-### 创建 vhost
+### 创建vhost
 
 ```
 rabbitmqctl -n rabbit@i-1zo2scr7 add_vhost vhostpath
@@ -51,9 +51,9 @@ rabbitmqctl -n rabbit@i-1zo2scr7 start_app
 rabbitmqctl -n rabbit@i-1zo2scr7 change_cluster_node_type ram
 ```
 
-> **注意**：更改节点类型需要先关闭 app 后执行，然后再启动 app，正常运行时不建议做集群和节点管理的操作。
+> **注意**：更改节点类型需要先关闭app后执行，然后再启动app，正常运行时不建议做集群和节点管理的操作。
 
-### 设置镜像队列 HA
+### 设置镜像队列HA
 
 ```
 rabbitmqctl -n rabbit@i-1zo2scr7 set_policy ha-all “^ha.” ‘{“ha-mode”:”all”}’
