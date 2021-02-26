@@ -25,7 +25,7 @@ draft: false
 2.将被救援主机的根盘挂载到目录
 
 ```
-mount /dev/sdc1 /mnt
+mount /dev/vdc1 /mnt
 ```
 
 3.使用 chroot，切换根盘目录
@@ -61,7 +61,7 @@ exit;umount /mnt
 3.将被救援主机的根盘挂载到目录
 
 ```
-mount /dev/sdc1 /mnt
+mount /dev/vdc1 /mnt
 ```
 
 5.使用scp拷贝数据，被救援主机的数据都在/mnt下
@@ -85,7 +85,7 @@ umount /mnt
 2.将被救援主机的根盘挂载到目录
 
 ```
-mount /dev/sdc1 /mnt
+mount /dev/vdc1 /mnt
 ```
 
 3.使用 chroot，切换根盘目录
@@ -115,7 +115,7 @@ exit;umount /mnt
 2.将被救援主机的根盘挂载到目录
 
 ```
-mount /dev/sdc1 /mnt
+mount /dev/vdc1 /mnt
 ```
 
 3.使用 chroot，切换根盘目录
