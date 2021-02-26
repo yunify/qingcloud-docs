@@ -1,13 +1,13 @@
 ---
-title: "RocketMQ"
-linkTitle: "RocketMQ"
+title: "RocketMQ服务"
+linkTitle: "RocketMQ服务"
 weight: 7
 collapsible: true
 type: "product"
 
 section1:
   title: "RocketMQ"
-  vice_title: Apache RocketMQ是一个基于Apache2.0协议 开源的分布式消息和流数据平台，具有低延时、高吞吐、可审计、可几乎无限水平扩展等优点。
+  vice_title: Apache RocketMQ是一个基于Apache2.0协议开源的分布式消息和流数据平台，具有低延时、高吞吐、可审计、可几乎无限水平扩展等优点。
 
 Section2:
   title: 用户指南

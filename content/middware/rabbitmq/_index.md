@@ -1,6 +1,6 @@
 ---
-title: "RabbitMQ"
-linkTitle: "RabbitMQ"
+title: "RabbitMQ服务"
+linkTitle: "RabbitMQ服务"
 weight: 4
 collapsible: true
 type: "product"
