@@ -32,21 +32,18 @@ ClientAliveCountMax 10 表示服务器发出请求后客户端没有响应的次
 
 则无响应的SSH客户端将在大约600x10=6000秒后断开连接。
 
-```
-说明：
-ClientAliveInterval设置超时间隔（以秒为单位），在此间隔之后，如果尚未从客户端接收到任何数据,则sshd将通过加密的通道发送消息以请求客户端的响应。默认值为0，表示这些消息将不会发送到客户端。此选项仅适用于协议版本2。
-
-ClientAliveCountMax设置客户端活动消息的数量，该消息可以在sshd接收不到来自客户端的任何消息的情况下发送。如果在发送客户端活动消息时达到此阈值，则sshd将断开客户端连接，从而终止会话。
-
-```
+>说明：
+>ClientAliveInterval设置超时间隔（以秒为单位），在此间隔之后，如果尚未从客户端接收到任何数据,则sshd将通过加密的通道发送消息以请求客户端的响应。默认值为0，表示这些消息将不会发送到客户端。此选项仅适用于协议版本2。
+>
+>ClientAliveCountMax设置客户端活动消息的数量，该消息可以在sshd接收不到来自客户端的任何消息的情况下发送。如果在发送客户端活动消息时达到此阈值，则sshd将断开客户端连接，从而终止会话。
 
 2.执行以下命令，重启sshd服务，使配置生效。
 
 - CentOS6操作系统
 
-  **# service sshd restart**
+  >service sshd restart
 
 - CentOS7操作系统
 
-  **# systemctl restart sshd**
+  > systemctl restart sshd
 
