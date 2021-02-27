@@ -3,7 +3,7 @@
 title: "怎样将文件上传到云服务器"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
-weight: 120
+weight: 40
 draft: false
 enableToc: false
 ---

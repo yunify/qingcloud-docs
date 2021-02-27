@@ -3,7 +3,7 @@
 title: "如何长时间保持SSH会话连接不断开？"
 date: 2021-01-30T00:38:25+09:00
 description: Test description
-weight: 80
+weight: 40
 draft: false
 enableToc: false
 ---

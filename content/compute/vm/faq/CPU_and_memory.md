@@ -3,7 +3,7 @@
 title: "Linux系统云主机中如何查看CPU和内存信息"
 date: 2021-01-30T00:38:25+09:00
 description: Test description
-weight: 100
+weight: 40
 draft: false
 enableToc: false
 ---
