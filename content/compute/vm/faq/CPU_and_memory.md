@@ -1,6 +1,6 @@
 ---
 
-title: "Linux系统的主机中如何查看物理CPU和内存信息"
+title: "Linux系统云主机中如何查看CPU和内存信息"
 date: 2021-01-30T00:38:25+09:00
 description: Test description
 weight: 100
@@ -10,32 +10,40 @@ enableToc: false
 
 **概述**
 
-本文主要介绍在Linux系统的主机中，如何查看物理CPU和内存信息。
+本文主要介绍在Linux系统的云主机中，如何查看CPU和内存信息。
 
 >说明：
 >
->总核数 = 物理CPU个数 × 每颗物理CPU的核数
+>总核心数 = 物理CPU颗数 * 每颗CPU上核心数
 >
->总逻辑CPU数 = 物理CPU个数 × 每颗物理CPU的核数 × 超线程数
+>总线程数（逻辑CPU数） = 物理CPU颗数 * 每颗CPU上核心数 * 每颗核心数上的线程  或者 总线程数（逻辑CPU数） = 总核心数 * 每颗核心数上的线程
 
-通过如下命令，可以查看物理CPU和内存相关信息。
+通过如下命令，可以查看Linux系统的云主机CPU和内存相关信息。
 
-- 查看物理CPU个数。
-
-  ```
-  cat /proc/cpuinfo| grep "physical id"| sort| uniq| wc -l
-  ```
-
-- 查看每个物理CPU中core的个数，即CPU核数。
+- 查看主机上物理cpu的颗数。
 
   ```
-  cat /proc/cpuinfo| grep "cpu cores"| uniq
+  cat /proc/cpuinfo |grep "physical id" | sort -u |wc -l
   ```
 
-- 查看逻辑CPU的个数。
+- 查看主机上每颗cpu上的核心数。
 
   ```
-  cat /proc/cpuinfo| grep "processor"| wc -l
+  cat /proc/cpuinfo |grep "cpu cores"|sort -u
+  ```
+
+- 查看主机上总逻辑CPU数量（可通过如下三种方式查看）。
+
+  ```
+  cat /proc/cpuinfo |grep "core id"|wc -l
+  ```
+
+  ```
+  nproc --all
+  ```
+
+  ```
+  getconf _NPROCESSORS_ONLN
   ```
 
 - 查看CPU型号。
