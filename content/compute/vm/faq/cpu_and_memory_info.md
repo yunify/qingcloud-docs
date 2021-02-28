@@ -1,6 +1,5 @@
 ---
-
-title: "Linux系统云主机中如何查看CPU和内存信息"
+title: "云主机如何查看CPU和内存信息"
 date: 2021-01-30T00:38:25+09:00
 description: Test description
 weight: 40
@@ -8,7 +7,7 @@ draft: false
 enableToc: false
 ---
 
-**概述**
+### **概述**
 
 本文主要介绍在Linux系统的云主机中，如何查看CPU和内存信息。
 

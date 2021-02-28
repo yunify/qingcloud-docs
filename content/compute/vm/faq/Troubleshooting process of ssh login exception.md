@@ -1,6 +1,5 @@
 ---
-
-title: "ssh秘钥无法登录主机_提示未注册的问题"
+title: "SSH秘钥无法登录主机，提示未注册题"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 weight: 20

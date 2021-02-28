@@ -1,5 +1,5 @@
 ---
-title: "内网dns功能的使用介绍"
+title: "使用内网DNS功能"
 description: test
 draft: false
 weight: 20
