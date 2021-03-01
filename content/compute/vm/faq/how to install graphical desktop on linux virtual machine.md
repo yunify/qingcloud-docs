@@ -1,20 +1,21 @@
 ---
-title: "Linux安装图形化桌面"
+title: "Linux云主机安装图形化桌面的方法"
 date: 2021-02-15T21:37:25+09:00
 description: Test description
 weight: 50
 draft: false
 enableToc: false
-
 ---
 
 # Centos安装图形化桌面
 
+## 问题背景
 
+青云的linux操作系统默认是最小化安装，部分客户需要图形化界面，比如搭建oracle环境；以下文档主要介绍linux主机如何安装图形化桌面
 
+### centos7云主机部署图形化桌面
 
-
-##  1、准备环境
+####  1.准备环境
 
   OS：CentOS 7.5 64 bit
 
@@ -22,7 +23,7 @@ enableToc: false
 
   本次示例为安装 GNOME 图形化
 
-##  2、安装 xinit
+####  2.安装 xinit
 
  安装图形化界面前，需先安装X WINDOWS控制功能插件
 
@@ -30,7 +31,7 @@ enableToc: false
  yum groupinstall "X Window System" 
 ```
 
-##  3、安装GNOME登录器 
+####  3.安装GNOME登录器 
 
  登录管理器 gnome display manager,简称 gdm
 
@@ -39,7 +40,7 @@ yum groupinstall -y "GNOME Desktop"
 ```
  ![centos_GUI_1](../_images/centos_GUI_1.png)
 
-##  4、启动图形化桌面
+####  4.启动图形化桌面
 
  从控制台vnc登入到主机内，命令输入inti 5 可进入图形化桌面
 
@@ -51,20 +52,12 @@ yum groupinstall -y "GNOME Desktop"
 
  ![centos_GUI_4](../_images/centos_GUI_4.png)
 
+### 
+
+### Ubuntu 安装图形化桌面
 
 
-
-
-
-
-# Ubuntu 安装图形化桌面
-
-
-
-
-
-
- ## 1、准备环境
+ #### 1.准备环境
 
 OS：版本为Ubuntu Server 16.04.5 LTS 64bit
 
@@ -72,25 +65,25 @@ Ubuntu 16.04 在安装时默认是不安装图形界面的.
 
 Gnome是Linux最流行的桌面环境.
 
-##  2、安装 xinit
+####  2.安装 xinit
 
 ```shell
  apt update
  apt install -y xinit  
 ```
-##  3、安装登录器
+####  3.安装登录器
 
  登录管理器 gnome display manager,简称 gdm
 
  ```shell
  apt install -y gdm 
  ```
-##  4、安装桌面环境
+####  4.安装桌面环境
 
  ```shell
  apt install -y --no-install-recommends ubuntu-gnome-desktop
  ```
-##  5、Startx 启动桌面
+####  5.Startx 启动桌面
 
  取消开机 GUI 自动启动桌面：
 

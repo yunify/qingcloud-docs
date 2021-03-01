@@ -1,5 +1,5 @@
 ---
-title: "多网卡配置策略路由的方法"
+title: "配置多网卡路由策略"
 description: test
 draft: false
 

@@ -57,4 +57,4 @@ vgchange -ay vgtest
 mount /dev/vgtest/lvtest
 ```
 
-挂载之后查看数据已恢复
+挂载之后可以让业务方确认数据是否已恢复。

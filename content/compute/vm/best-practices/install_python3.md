@@ -1,5 +1,5 @@
 ---
-title: "centos7安装python3的方法"
+title: "安装Python3到Centos7系统上"
 description: test
 draft: false
 weight: 10

@@ -1,5 +1,5 @@
 ---
-title: "vm配置成网关服务器"
+title: "配置云服务器为网关服务器"
 description: test
 draft: false
 
