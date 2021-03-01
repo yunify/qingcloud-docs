@@ -26,7 +26,7 @@ Section2:
 
     - title: 操作指南
       content: 学习如何管理RabbitMQ集群，以及如何使用RabbitMQ提供的相关服务等。
-      url: "manual/create_rabbitmq"
+      url: "manual/cluster_use"
 
 
 
@@ -56,7 +56,7 @@ section4:
       content: 学习如何创建、管理、使用RabbitMQ集群
       children: 
         - title: 创建RabbitMQ
-          url: "/middware/rabbitmq/manual/create_rabbitmq"
+          url: "/middware/rabbitmq/quick-start/quick_start"
 
         - title: 集群使用
           url: "/middware/rabbitmq/manual/cluster_use"

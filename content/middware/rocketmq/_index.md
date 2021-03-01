@@ -26,7 +26,7 @@ Section2:
 
     - title: 操作指南
       content: 学习如何管理RocketMQ集群，以及如何使用RocketMQ提供的相关服务等。
-      url: "manual/create_rocketmq"
+      url: "manual/cluster_use"
      
     - title: 常见问题
       content: RocketMQ使用常见问题
@@ -59,7 +59,7 @@ section4:
       content: 学习如何创建、管理、使用RocketMQ集群
       children: 
         - title: 创建RocketMQ
-          url: "/middware/RocketMQ/manual/create_rocketmq"
+          url: "/middware/RocketMQ/quick-start/quick_start"
 
         - title: 集群使用
           url: "/middware/RocketMQ/manual/cluster_use"

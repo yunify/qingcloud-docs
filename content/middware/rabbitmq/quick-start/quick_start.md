@@ -1,5 +1,5 @@
 ---
-title: "快速入门"
+title: "创建RabbitMQ"
 description: 
 draft: false
 ---

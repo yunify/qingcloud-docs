@@ -5,7 +5,7 @@ weight: 8
 draft: false
 ---
 
-### 集群信息
+## 集群信息
 
 在集群创建完毕后，可以在控制台`Appcenter -> 集群管理`标签下看到目前已经创建的集群信息：
 
@@ -21,13 +21,13 @@ draft: false
 
 ![](../../_images/cluster_monitor.png)
 
-### 配置参数
+## 配置参数
 
   点击**配置参数**，可以修改**Kafka参数**，**Kafka-manager参数**。
 
 ![](../../_images/config_parameter.png)
 
-### 扩容集群
+## 扩容集群
 
   点击集群**基本属性**右侧按钮里的**扩容集群**，在集群性能不足时提高集群的配置。
 
@@ -35,9 +35,9 @@ draft: false
 
 ![](../../_images/expand_cluster.png)
 
-### 跨网访问
+## 跨网访问
 
-青云提供灵活的网络配置，一般建议kafka集群和客户端（生产者、消费者）都在同一个VPC下工作，来达到最高的性能。如果Kafka在实际使用中会出现producer，consumer与broker都不在一个网段之中需要跨VPC，可以考虑以下方法：
+青云提供灵活的网络配置，一般建议Kafka集群和客户端（生产者、消费者）都在同一个VPC下工作，来达到最高的性能。如果Kafka在实际使用中会出现producer，consumer与broker都不在一个网段之中需要跨VPC，可以考虑以下方法：
 
 1. 通过[边界路由器](https://docs.qingcloud.com/product/network/border)、[IP Sec 隧道](https://docs.qingcloud.com/product/network/ipsec)、[GRE隧道](https://docs.qingcloud.com/product/network/gre) 等方式把网络打通，这种方式适合于大规模复杂网络的情况。
 
@@ -48,19 +48,19 @@ draft: false
    ![](../../_images/modify_parameter.png)
 
 
-### kafka-manager创建Topic
+## Kafka-manager创建Topic
 
 点击**Topic**，点击**Create**，若不单独给Topic配置参数，会使用集群级别默认参数：
 
 ![](../../_images/create_topic.png)
 
-### kafka-manager管理Topic
+## Kafka-manager管理Topic
 
 点击**Topic**，可以在**List**里找到Topic进行管理，修改topic参数：
 
 ![](../../_images/manage_topic.png)
 
-### kafka-manager平衡分区leader
+## Kafka-manager平衡分区leader
 
 点击**Preferred Replica Election**，通过**Run**执行。
 
@@ -68,15 +68,15 @@ draft: false
 
 ![](../../_images/replica_election.png)
 
-### 日志及文件查看
+## 日志及文件查看
 
 为了更好的获取节点使用情况，青云提供了方便快捷的文件日志获取服务。配置[VPN](https://docs.qingcloud.com/product/network/vpn)或[端口转发](https://docs.qingcloud.com/product/network/appcenter_network_config/config_portmapping)后，确保本地可以访问集群网络。即可在本地浏览器里查看或下载相应节点的日志和文件。
 
-在控制台`Appcenter -> 集群列表`标签下可以看到集群每个节点的信息，如节点角色，节点IP。对于kafka-manager节点，在浏览器输入`http://节点IP`，可查看Kafka Manager的日志文件。
+在控制台`Appcenter -> 集群列表`标签下可以看到集群每个节点的信息，如节点角色，节点IP。对于Kafka-manager节点，在浏览器输入`http://节点IP`，可查看Kafka Manager的日志文件。
 
 ![](../../_images/file_viewer_1.png)
 
-对于kafka节点，只需要获取其中一个节点IP，在本地浏览器输入`http://节点IP`，可查看全部Kafka节点的Heap Dump文件（dump目录）、数据文件（kafka-logs目录）和日志文件（logs目录）。
+对于Kafka节点，只需要获取其中一个节点IP，在本地浏览器输入`http://节点IP`，可查看全部Kafka节点的Heap Dump文件（dump目录）、数据文件（kafka-logs目录）和日志文件（logs目录）。
 
 ![](../../_images/file_viewer_2.png)
 

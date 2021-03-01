@@ -1,5 +1,5 @@
 ---
-title: "kafka 客户端命令行简介"
+title: "Kafka客户端命令行简介"
 description: test
 weight: 12
 draft: false
@@ -7,7 +7,7 @@ draft: false
 
 >**提示**：使用Kafka 1.0.0-QingCloud1.1.6及后续版本，建议使用青云为您创建客户端节点，用户名：`ubuntu`，密码：`kafka`。
 
-### 创建Topic
+## 创建Topic
 
 创建一个topic为test，该topic分区为 3，副本为 1
 
@@ -16,7 +16,7 @@ $ kafka-topics.sh  --create --zookeeper 192.168.0.6:2181,192.168.0.8:2181,192.16
 Created topic "test".
 ```
 
-### 查看Topic
+## 查看Topic
 
 查看集群所有topic
 
@@ -26,7 +26,7 @@ __consumer_offsets
 test
 ```
 
-### 向Topic发送消息
+## 向Topic发送消息
 
  向test发送消息
 
@@ -37,7 +37,7 @@ $ kafka-console-producer.sh --broker-list 192.168.0.3:9092,192.168.0.4:9092,192.
 >how are you
 ```
 
-### 消费Topic消息
+## 消费Topic消息
 
 消费 test 消息（若没有使用 --from-beginning ， 则从最新的开始消费）
 
@@ -48,7 +48,7 @@ hello world
 how are you
 ```
 
-### 查看Topic消息分布情况
+## 查看Topic消息分布情况
 
 查看test消息分布情况
 
@@ -60,7 +60,7 @@ Topic: test	Partition: 1	Leader: -1	Replicas: 2	Isr: 2
 Topic: test	Partition: 2	Leader: 3	Replicas: 3	Isr: 3
 ```
 
-### 修改Topic
+## 修改Topic
 
 修改分区
 
@@ -77,7 +77,7 @@ Topic test is marked for deletion.
 Note: This will have no impact if delete.topic.enable is not set to true.
 ```
 
-### 平衡Topic
+## 平衡Topic
 
 平衡topic分区leader
 
@@ -86,7 +86,7 @@ $ kafka-preferred-replica-election.sh -zookeeper 192.168.0.6:2181,192.168.0.8:21
 Created preferred replica election path with {"version":1,"partitions":[{"topic":"__consumer_offsets","partition":34},{"topic":"__consumer_offsets","partition":36},{"topic":"__consumer_offsets","partition":27},...
 ```
 
-### 查看消费者消费情况
+## 查看消费者消费情况
 
 检查topic消费者消费情况
 
@@ -105,7 +105,7 @@ test                          1          7               7               0      
 >$ kafka-consumer-offset-checker.sh  --zookeeper 192.168.0.6:2181,192.168.0.8:2181,192.168.0.7:2181/kafka/cl-zom1un35 --topic test --group my-group
 >```
 
-### 更改topic配置参数
+## 更改Topic配置参数
 
 更改topic配置参数（也可以在创建的时候指定，例如创建时候最后跟上--config a=b --config x=y）
 
@@ -114,7 +114,7 @@ $ kafka-configs.sh --zookeeper 192.168.0.6:2181,192.168.0.8:2181,192.168.0.7:218
 Completed Updating config for entity: topic 'test'.
 ```
 
-### 跨集群迁移方案MirrorMaker使用
+## 跨集群迁移方案MirrorMaker使用
 
 Kakfa MirrorMaker是Kafka官方提供的跨数据中心的流数据同步方案。其实现原理，其实就是通过从Source Cluster消费消息然后将消息生产到Target Cluster，即普通的消息生产和消费。用户只要通过简单的consumer配置和producer配置，然后启动Mirror，就可以实现准实时的数据同步。 具体可以参照官方详细文档[Kafka-MirrorMaker](https://kafka.apache.org/documentation/) 。
 
