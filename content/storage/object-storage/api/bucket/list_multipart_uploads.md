@@ -2,7 +2,6 @@
 title: "List Multipart Uploads"
 ---
 
-# List Multipart Uploads
 
 获取正在进行的分段上传对象的列表。当一个对象通过 Initiate Multipart 接口开启了分段上传模式，在调用 Complete Multipart 或 Abort Multipart 接口之前，该对象处于“正在进行分段上传”的状态，此对象将会出现在该接口返回的列表里。
 

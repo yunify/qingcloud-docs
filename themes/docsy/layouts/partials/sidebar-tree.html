@@ -40,10 +40,10 @@
 
 {{ $active := in $currentURL $ctx }}
 {{ $active = or $active (eq $sectionName1 $sectionName2) }}
-{{ $active = or $active (in $currentURL $sectionName1) }}
+{{ $active = or $active (in (split $currentURL "/") $sectionName1) }}
 
 {{ if $ctx.Params.Collapsible }}
-<span class="menu__title--collapse {{ $sectionName1 }} {{ if $active }}active{{ end }} {{ if eq $depth 0 }}display-hide{{ end }}"
+<span class="menu__title--collapse {{ if $active }}active{{ end }} {{ if eq $depth 0 }}display-hide{{ end }}"
   data-depth="{{ $depth }}">
   {{ $ctx.Title }}
   <span

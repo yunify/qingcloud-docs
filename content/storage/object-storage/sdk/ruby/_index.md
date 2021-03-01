@@ -7,7 +7,6 @@ draft: false
 weight: 13
 ---
 
-# Ruby SDK
 
 QingStor Ruby SDK 已在 GitHub 开源，下文为简要使用文档。更多详细信息请参见 [https://github.com/qingstor/qingstor-sdk-ruby](https://github.com/qingstor/qingstor-sdk-ruby) 。
 

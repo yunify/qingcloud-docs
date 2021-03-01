@@ -19,5 +19,12 @@ collapsible: true
 
 - [Bucket 管理](bucket_manage/)
 - [Object管理](object_manage/)
-- [数据处理](data_process/)
 - [监控与报表](monitor/)
+- [访问控制](access_control/)
+- [日志归档](logging/)
+- [生命周期管理](lifecycle/)
+- [跨区域复制](replication/)
+- [数据加密](encryption/)
+- [数据处理](data_process/)
+- [客户端工具](developer-tools/)
+- [第三方数据集成](third_party_integration/)
