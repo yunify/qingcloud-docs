@@ -7,7 +7,6 @@ draft: false
 weight: 2
 ---
 
-# DELETE CNAME
 
 删除存储空间的域名别名，CNAME 是存储空间的子资源(subresource)，只有存储空间所有者才能删除。
 

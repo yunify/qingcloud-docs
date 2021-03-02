@@ -6,7 +6,6 @@ draft: false
 weight: 3
 ---
 
-# POST Object
 
 通过 HTML 表单上传的方式向存储空间上传一个对象，此操作要求请求者对存储空间拥有可写权限。
 
