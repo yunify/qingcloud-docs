@@ -54,19 +54,19 @@ section4:
       content: 什么是RocketMQ
       children:
         - title: 产品简介
-          url: "/middware/RocketMQ/intro/intro"
+          url: "/middware/rocketmq/intro/intro"
     - title: 进阶
       content: 学习如何创建、管理、使用RocketMQ集群
       children: 
         - title: 创建RocketMQ
-          url: "/middware/RocketMQ/quick-start/quick_start"
+          url: "/middware/rocketmq/quick-start/quick_start"
 
         - title: 集群使用
-          url: "/middware/RocketMQ/manual/cluster_use"
+          url: "/middware/rocketmq/manual/cluster_use"
         
         - title: RocketMQ Console使用示例
-          url: "/middware/RocketMQ/manual/rocketmq_console"
+          url: "/middware/rocketmq/manual/rocketmq_console"
         - title: RocketMQ CLI命令示例
-          url: "/middware/RocketMQ/manual/rocketmq_cli"
+          url: "/middware/rocketmq/manual/rocketmq_cli"
 ---
 
