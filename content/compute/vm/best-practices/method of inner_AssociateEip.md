@@ -1,5 +1,5 @@
 ---
-title: "windows主机内部绑定eip的操作步骤"
+title: "Windows 云服务器内部绑定公网IP"
 description: test
 draft: false
 weight: 20
