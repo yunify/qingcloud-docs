@@ -37,7 +37,7 @@ Section2:
 
     - title: 疑难杂症
       content: 主机产品底层类问题
-      url: "/compute/vm/dmd/dmd"
+      url: "/compute/vm/dmd/softlock"
 
 section3:
   title: 开发者指南
