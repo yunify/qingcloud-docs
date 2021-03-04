@@ -89,5 +89,4 @@ weight: 2
     注意：设置好内网路由策略后，需要点击"应用修改”以生效。
     注意：边界路由器静态静态路由个数默认最大额度为10。
 
-边界路由器静态路由应用场景可见[专线经 VPC 访问公网](../../../sd_wan/quick-start/line_connect_eip)
-和[光盒经 VPC 访问第三方网络](../../../sd_wan/quick-start/cpe_connect_tunnel)
+边界路由器静态路由应用场景可见[专线经 VPC 访问公网](../../../../sd-wan/sd-wan/quick-start/line_connect_eip)和[光盒经 VPC 访问第三方网络](../../../../sd-wan/sd-wan/quick-start/cpe_connect_tunnel)。
