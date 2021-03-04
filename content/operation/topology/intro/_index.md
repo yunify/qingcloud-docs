@@ -1,6 +1,6 @@
 ---
-title: "资源编排指南"
-linkTitle: "资源编排指南"
+title: "产品简介"
+linkTitle: "产品简介"
 _build:
  render: false 
 weight: 2
