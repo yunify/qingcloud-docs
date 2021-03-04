@@ -1,18 +1,12 @@
 ---
-<<<<<<< HEAD
-title: "SSH端口不通的排查思路"
-=======
 title: "SSH连接基本问题排查"
->>>>>>> upstream/master
-date: 2021-02-17T10:15:25+09:00
+date: 2020-01-30T00:38:25+09:00
 description: Test description
-weight: 50
+weight: 20
 draft: false
 enableToc: false
-
 ---
 
-<<<<<<< HEAD
 ### 故障现象
 
 ssh远程登入连接不上，提示连接拒绝相关提示，初步定位是由于sshd端口不通导致，以下是故障定位流程，请参考。
