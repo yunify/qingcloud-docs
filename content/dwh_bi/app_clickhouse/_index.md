@@ -1,23 +1,23 @@
 ---
-title: "项目"
-linkTitle: "项目"
+title: "Clickhouse"
+linkTitle: "Clickhouse"
 weight: 1
 collapsible: true
 type: "product"
 
 section1:
-  title: 项目
-  vice_title: 项目是基于“资源协作（Collaboration）”升级的功能，目的是帮助您分组管理、分享资源。 
+  title: Clickhouse
+  vice_title: 「ClickHouse on QingCloud」 是一款深度定制的ClickHouse集群应用
 
 section2:
   title: 用户指南
   children:
-    - title: 产品简介
+    - title: ClickHouse
       content: 产品简介
-      url: "intro"
+      url: "intro/intro"
 
     - title: 操作指南
-      content: 学习如何创建、查看及应用项目等。
+      content: 学习上手如何创建、查看及应用ClickHouse等。
       url: "manual"
 
 
