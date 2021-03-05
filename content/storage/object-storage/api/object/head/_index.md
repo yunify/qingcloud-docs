@@ -6,7 +6,6 @@ draft: false
 weight: 3
 ---
 
-# HEAD Object
 
 只返回对象的元信息，不返回对象内容。此操作要求请求者对存储空间拥有可读权限。
 

@@ -2,7 +2,6 @@
 title: "List Locations"
 ---
 
-# List Locations
 
 获取 QingStor 的所有(部署区域) 列表。
 支持匿名请求。

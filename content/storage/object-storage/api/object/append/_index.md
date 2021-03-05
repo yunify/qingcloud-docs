@@ -7,7 +7,6 @@ draft: false
 weight: 3
 ---
 
-# Append Object
 
 用于以追加写的方式上传对象到存储桶，通过 Append Object 接口创建的对象类型为 appendable。
 

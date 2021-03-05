@@ -6,7 +6,6 @@ draft: false
 weight: 3
 ---
 
-# DELETE Object
 
 用于删除指定对象，此操作要求请求者对存储空间拥有可写权限, 不允许匿名访问。
 

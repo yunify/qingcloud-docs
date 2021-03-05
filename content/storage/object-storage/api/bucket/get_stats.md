@@ -2,7 +2,6 @@
 title: "GET Bucket Statistics"
 ---
 
-# GET Bucket Statistics
 
 获取存储空间的统计信息 (Statistics)，stats 是存储空间的子资源 (subresource)，只有存储空间的所有者才能调用。
 
