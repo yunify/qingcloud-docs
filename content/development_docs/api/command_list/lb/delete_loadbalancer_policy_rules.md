@@ -6,7 +6,7 @@ draft: false
 
 
 
-删除一个或多个负载均衡器转发策略规则。 注意：在删除后，你需要执行 [_ApplyLoadBalancerPolicy_](apply_loadbalancer_policy.html#api-apply-loadbalancer-policy) 指令才会生效。
+删除一个或多个负载均衡器转发策略规则。 注意：在删除后，你需要执行 [_ApplyLoadBalancerPolicy_](../apply_loadbalancer_policy/) 指令才会生效。
 
 **Request Parameters**
 

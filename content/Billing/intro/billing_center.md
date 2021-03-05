@@ -1,18 +1,18 @@
 ---
 title: "费用中心"
-date: 2020-01-01 T00:38:25+09:00
 weight: 2
 description: Test description
 draft: false
 enableToc: false
 keyword: 账单, 发票, 订单, 充值, 费用
 ---
-***
-## 费用中心介绍
+
 QingCloud 费用中心为用户提供基于页面的云产品交易和账单管理能力，您可以通过费用中心清晰地了解自己的账户、订单、账单和费用等相关信息。
 
 ## 费用中心菜单介绍
 [费用中心](https://console.qingcloud.com/finance/overview/)为您提供了如下功能：
+
+
 <table border="1">
    <border  ></border>
    <thead>
@@ -40,15 +40,13 @@ QingCloud 费用中心为用户提供基于页面的云产品交易和账单管�
 	    <td style="background:#fff;">消费明细</td>
 	</tr>
     <tr>
-	    <td style="background:#fff;">费用预估</td>
+	    <td style="background:#fff;">消费预估</td>
 	</tr>
 	<tr>
 	    <td style="background:#fff;">续约管理</td>
 	</tr>
-		<tr >
+	<tr >
 	    <td style="background:#fff;">发票管理</td>
-	</tr>
-	<tr>
 	    <td style="background:#fff;">发票管理</td>
 	</tr>
 </table>
@@ -97,7 +95,7 @@ QingCloud 费用中心为用户提供基于页面的云产品交易和账单管�
 
 >续约管理支持的产品有：预留合约（主机、硬盘）、集群、SD-WAN等。
 
-操作方式：登录 [青云控制台](https://console.qingcloud.com/)，鼠标移至页面上方【费用】，在下拉菜单中单击续费管理，进入[续约管理](https://console.qingcloud.com/finance/renewal_management//)页面。
+操作方式：登录 [青云控制台](https://console.qingcloud.com/)，鼠标移至页面上方【费用】，在下拉菜单中单击续费管理，进入[续约管理](https://console.qingcloud.com/finance/renewal_management/)页面。
 
 注意：提交续约之后，需要完成`完成支付` 才能成功续约。
 ![](_images/103.png)

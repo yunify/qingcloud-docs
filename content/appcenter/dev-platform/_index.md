@@ -20,8 +20,12 @@ section2:
       content: 如何开发 SaaS 应用
       url: "/appcenter/dev-platform/quick-start/quick_start_saas"
 
+    - title: License 应用发布
+      content: License 应用如何发布
+      url: "/appcenter/dev-platform/license-guide/release"
+
     - title: 平台管理
-      content: 开发者财务管理、工单管理、通知管理
+      content: 开发者财务管理、工单管理、通知管理、用户订单管理
       url: "/appcenter/dev-platform/platform-manage/finance/finance/"
 
 
@@ -29,11 +33,11 @@ section3:
   title: API 文档
   children:
     - title: 云应用
-      content: 云应用使用 API
-      url: "/appcenter/dev-platform/api-doc/cloud"
+      content: 云应用使用的API
+      url: "/development_docs/api/command_list/appcenter2/cloud/"
     - title: SaaS 应用
-      content: SaaS 应用使用 API
-      url: "/appcenter/dev-platform/api-doc/saas"
+      content: SaaS应用使用的API
+      url: "/development_docs/api/command_list/appcenter2/saas/"
 
 section4:
   children:
@@ -42,7 +46,7 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品概述
-          url: "/appcenter/dev-platform/introduction/introduction"
+          url: "/appcenter/dev-platform/introduction/introduction/"
 
         - title: 云应用架构
           url: "/appcenter/dev-platform/introduction/architechure/"

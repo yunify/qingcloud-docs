@@ -7,7 +7,6 @@ draft: false
 weight: 2
 ---
 
-# Python SDK
 
 QingStor 对象存储的新版 Python SDK 项目为 qingstor-sdk-python, 已在 GitHub 开源， 下文为简要使用文档。
 更多详细信息请参见 [GitHub 项目页面](https://github.com/qingstor/qingstor-sdk-python)，

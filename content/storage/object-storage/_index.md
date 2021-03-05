@@ -49,6 +49,10 @@ section3:
     - title: SDK 文档
       content: 如何使用 SDK 文档
       url: "sdk/python/"
+      
+    - title: S3 兼容
+      content: S3 兼容说明
+      url: "s3/"
 
 section4:
   children:

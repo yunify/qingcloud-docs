@@ -6,7 +6,7 @@ draft: false
 weight: 5
 ---
 
-QingStor 通过请求中的[签名串](../../api/common/signature/) 来验证用户身份, 签名串中的 access key (API key) 需要用户事先从控制台申请并配置到应用程序中。如果没有经过签名的请求我们称做匿名用户。本章主要描述判断了用户身份之后如何进行权限的控制。
+QingStor 通过请求中的[签名串](../../api/signature/) 来验证用户身份, 签名串中的 access key (API key) 需要用户事先从控制台申请并配置到应用程序中。如果没有经过签名的请求我们称做匿名用户。本章主要描述判断了用户身份之后如何进行权限的控制。
 
 QingStor 的访问控制方式有三种：
 
@@ -19,7 +19,7 @@ QingStor 的访问控制方式有三种：
 通过 Bucket Policy，可以向其他青云 QingCloud 用户赋予相应存储空间及其对象的访问权限, 其语义覆盖 API ACL, 及 Resource ACL。
 Bucket Policy 对于 QingStor 资源的访问控制粒度介于 Bucket ACL 和 Object ACL(对象访问控制列表，尚未推出) 的一种访问控制方式。Bucket Policy 可以通过细致地指定 API 级别的控制, 实现Bucket ACL 和 Object ACL 所不能实现的一些功能，比如防盗链。
 
-一般情况下通过 Qingstor Console 界面进行[配置](https://docs.qingcloud.com/qingstor/guide/bucket_manage.html#%E8%AE%BE%E7%BD%AE%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E7%AD%96%E7%95%A5) 即可, 也支持通过以下 API 来设置。
+一般情况下通过 Qingstor Console 界面进行[配置](/storage/object-storage/manual/bucket_manage/) 即可, 也支持通过以下 API 来设置。
 
 ### 相关API
 

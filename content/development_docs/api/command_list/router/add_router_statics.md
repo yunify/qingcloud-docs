@@ -6,7 +6,7 @@ draft: false
 
 
 
-增加一条或多条路由器规则，规则包括：端口转发、VPN 、DHCP 、隧道、过滤控制。 注意：在增加路由器规则后，你需要执行 [_UpdateRouters_](update_routers.html#api-update-routers) 才能使之生效。
+增加一条或多条路由器规则，规则包括：端口转发、VPN 、DHCP 、隧道、过滤控制。 注意：在增加路由器规则后，你需要执行 [_UpdateRouters_](../update_routers/) 才能使之生效。
 
 **Request Parameters**
 

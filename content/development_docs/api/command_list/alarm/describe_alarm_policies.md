@@ -42,7 +42,7 @@ draft: false
 | description | String | 告警策略描述 |
 | resources | Array | 该告警策略绑定的资源 ID 列表 |
 | alarm_policy_type | String | 该告警策略类型 |
-| is_applied | Integer | 告警策略的改动是否应用了。 可参见 [_ApplyAlarmPolicy_](apply_alarm_policy.html#api-apply-alarm-policy) |
+| is_applied | Integer | 告警策略的改动是否应用了。 可参见 [_ApplyAlarmPolicy_](../apply_alarm_policy/) |
 | status | String | 告警策略状态 |
 | create_time | TimeStamp | 告警策略创建时间 |
 | status_time | TimeStamp | 告警策略最后一次状态变化的时间 |

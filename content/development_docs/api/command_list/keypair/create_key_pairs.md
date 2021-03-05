@@ -13,7 +13,7 @@ draft: false
 *   1024-位 DSS
 *   2048-位 RSA （默认）
 
-创建密钥对成功后，请及时从 API 返回结果中保存私钥， 因为我们不会保存用户的私钥数据。 公钥数据可以随时通过 [_DescribeKeyPairs_](describe_key_pairs.html#api-describe-key-pairs) 得到。
+创建密钥对成功后，请及时从 API 返回结果中保存私钥， 因为我们不会保存用户的私钥数据。 公钥数据可以随时通过 [_DescribeKeyPairs_](../describe_key_pairs/) 得到。
 
 另外用户也可以通过已有公钥来创建 SSH 密钥。
 

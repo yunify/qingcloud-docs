@@ -7,7 +7,6 @@ draft: false
 weight: 3
 ---
 
-# Go SDK
 
 QingStor Go SDK 已在 GitHub 开源，下文为简要使用文档。更多详细信息请参见 [GitHub 项目页面](https://github.com/qingstor/qingstor-sdk-go) ，和[Godoc](https://godoc.org/github.com/qingstor/qingstor-sdk-go)。
 

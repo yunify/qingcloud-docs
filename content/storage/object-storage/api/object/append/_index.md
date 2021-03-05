@@ -7,7 +7,6 @@ draft: false
 weight: 3
 ---
 
-# Append Object
 
 用于以追加写的方式上传对象到存储桶，通过 Append Object 接口创建的对象类型为 appendable。
 
@@ -35,7 +34,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-参见[公共请求头](../../common_header/#请求头字段-request-header)
+参见[公共请求头](../../common_header/#请求头字段)
 
 | Header Name        | Type   | Description                                                  | Required |
 | ------------------ | ------ | ------------------------------------------------------------ | -------- |
@@ -50,7 +49,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-参见[公共响应头](../../../common_header/#响应头字段-request-header)
+参见[公共响应头](../../common_header/#响应头字段)
 
 | Header Name               | Type     | Description                                      | Required |
 | ------------------------- | -------- | ------------------------------------------------ | -------- |

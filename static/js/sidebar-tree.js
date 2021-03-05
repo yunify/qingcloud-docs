@@ -32,7 +32,7 @@
 
         var parent = elem.parentNode;
         while (parent.classList.contains('menu__list') && parent.classList.contains('active')) {
-          parent.style.maxHeight = 100 * parent.children.length + "px";
+          parent.style.maxHeight = "100%";
           parent = parent.parentNode;
         }
 
@@ -45,7 +45,11 @@
             menuTitleIcon.classList.remove('down');
           
         } else {
-          content.style.maxHeight = content.scrollHeight + "px";
+		  if(content.scrollHeight > 0){
+			content.style.maxHeight = content.scrollHeight + "px";
+		  }else{
+			content.style.maxHeight = "100%";
+		  }
           content.classList.add('active');
           menuTitleIcon.classList.remove('right');
           

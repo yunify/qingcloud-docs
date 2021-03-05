@@ -63,7 +63,7 @@ qsctl 支持使用 `--force` 参数来进行强制覆盖。
 
 ## 使用分段上传时，对分段数量是否有限制？
 
-对于单个 Upload ID ，允许的最大分段个数为 10000 , 关于 Upload ID 的定义，请参考 [对象存储 API 文档](/storage/object-storage/api/object/multipart)。
+对于单个 Upload ID ，允许的最大分段个数为 10000 , 关于 Upload ID 的定义，请参考 [分段上传 API 文档](/storage/object-storage/api/object/multipart)。
 
 ## 如何批量取消未完成的分段上传 ？
 
@@ -102,7 +102,7 @@ Access Key 可以在 [青云控制台](https://console.qingcloud.com/access_keys
 ## 访问对象存储出现 https 证书问题的解决办法
 
 QingStor™ 对象存储使用由 `Let's Encrypt` 所签发的 HTTPS 证书。`Let's Encrypt` 是由 `Mozilla`、`Cisco`、`Akamai`、
-`IdenTrust`、`EFF` 等组织人员发起，主要目的是为了推进网站从 HTTP 向 HTTPS 过度的进程，其证书现在已经可以被所有主流浏览器及操作系统所信任。但是，仍有一些老旧的系统和应用不能兼容, `Let's Encrypt` 在官网公布了目前已知的兼容和不兼容列表 [https://letsencrypt.org/docs/certificate-compatibility](https://letsencrypt.org/docs/certificate-compatibility)
+`IdenTrust`、`EFF` 等组织人员发起，主要目的是为了推进网站从 HTTP 向 HTTPS 过度的进程，其证书现在已经可以被所有主流浏览器及操作系统所信任。但是，仍有一些老旧的系统和应用不能兼容, `Let's Encrypt` 在官网公布了目前[已知的兼容和不兼容列表](https://letsencrypt.org/docs/certificate-compatibility)
 
 如果您有自己的域名和 HTTPS 证书, 请在 Bucket 设置中绑定自定义域名, 并开启 CDN 加速, 即可上传使用自有 HTTPS 证书, 访问 Bucket 中的文件不受 `Let's Encrypt` 证书的影响。
 

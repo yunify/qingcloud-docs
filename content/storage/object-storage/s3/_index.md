@@ -4,7 +4,6 @@ collapsible: true
 weight: 9
 ---
 
-# AWS S3 兼容
 
 为了使众多基于 AWS S3 开发的应用程序、SDK、及第三方服务在不修改代码的前提下，更容易的接入到 QingStor，QingStor 兼容了 AWS S3 的接口。
 

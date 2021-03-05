@@ -39,7 +39,7 @@ Authorization: <authorization-string>
 
 为目标对象加密，参见[加密请求头](../../common/encryption/#加密请求头)
 
-如果要复制源对象附带的元数据给目标对象，或用请求头中的支持的 HTTP 头和自定义元数据作为目标对象附带的元数据，参见[如何复制或替换对象元数据](../../metadata.html#如何复制或替换对象元数据)
+如果要复制源对象附带的元数据给目标对象，或用请求头中的支持的 HTTP 头和自定义元数据作为目标对象附带的元数据，参见[如何复制或替换对象元数据](../../metadata/#如何复制或替换对象元数据)
 
 | Header Name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -60,7 +60,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-参见[公共响应头](../../common_header/#响应头字段-request-header)
+参见[公共响应头](../../common_header/#响应头字段)
 
 若目标对象被加密，服务端将返回加密响应头, 具体请参见[加密响应头](../../common/encryption/#加密响应头)
 

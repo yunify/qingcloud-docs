@@ -6,7 +6,7 @@ draft: false
 
 
 
-删除一条或多条路由器规则条目。在删除路由器规则条目之后，你需要执行 [_UpdateRouters_](update_routers.html#api-update-routers) 来使规则删除生效。
+删除一条或多条路由器规则条目。在删除路由器规则条目之后，你需要执行 [_UpdateRouters_](../update_routers/) 来使规则删除生效。
 
 **Request Parameters**
 

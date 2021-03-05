@@ -38,7 +38,7 @@ draft: false
 | notification_item_id | String | 通知列表名称 |
 | content | String | 通知项内容，可以是邮箱地址，手机号或 webhook url |
 | create_time | TimeStamp | 创建时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
-| verification_code | String | 验证码，可用于验证通知项 [_VerifyNotificationItem_](verify_notification_item.html#api-verify-notification-item) 。 如已完成验证，此码的值变成空字符串。 |
+| verification_code | String | 验证码，可用于验证通知项 [_VerifyNotificationItem_](../verify_notification_item/) 。 如已完成验证，此码的值变成空字符串。 |
 
 **Example**
 

@@ -140,7 +140,7 @@ ul.timeline>li:before {
                 font-size: 14px;
                 line-height: 1.71;
                 color: #272b2f;
-
+                margin-left: 15px;
                 a {
                     color: #272b2f;
                     &:hover{
@@ -154,13 +154,13 @@ ul.timeline>li:before {
 
 
 
-@media (min-width:768px) {
+@media (min-width:760px) {
     .modal-dialog {
         max-width: 60%;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:760px) {
     .timeline .row {
         flex-direction: column;
         border: none;
@@ -180,4 +180,13 @@ ul.timeline>li:before {
 .container .row .col-sm-7 h3{
     font-size: 14px;
     font-weight: 400;
+}
+.td-sidebar-section-title.content-index{
+    display:none;
+}
+
+@media only screen and (max-width: 1023px) {
+    .col-12.col-md-3.col-xl-3.td-sidebar.d-print-none.td-sidebar-menu{
+        display:none;
+    }
 }

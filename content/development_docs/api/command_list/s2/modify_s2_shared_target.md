@@ -8,7 +8,7 @@ draft: false
 
 修改共享存储目标属性，通过此操作可以修改共享存储目标参数和设置客户端标识。 共享存储目标参数可参见 :ref: api-describle-s2-default-parameters 。
 
-此操作完成后需要调用 [_UpdateS2Servers_](update_s2_servers.html#api-update-s2-servers) 以应用到共享存储服务器上。
+此操作完成后需要调用 [_UpdateS2Servers_](../update_s2_servers/) 以应用到共享存储服务器上。
 
 **Request Parameters**
 

@@ -2,7 +2,6 @@
 title: "PUT Bucket ACL"
 ---
 
-# PUT Bucket ACL
 
 设置存储空间的访问控制列表 (Access Control List)，acl 是存储空间的子资源 (subresource)，只有存储空间的所有者才能设置。
 

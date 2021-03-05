@@ -14,16 +14,16 @@ weight: 1
 
 | 操作/格式 | jpeg | png | webp | tiff | gif | svg | pdf |
 |-|-|-|-|-|-|-|-|
-| [图片信息](info.html) | Y | Y | Y | Y | Y | Y | Y |
-| [图片裁剪](crop.html) | Y | Y | Y | Y | N | N | N |
-| [图片旋转](rotate.html) | Y | Y | Y | Y | N | N | N |
-| [图片缩放](resize.html) | Y | Y | Y | Y | Y | N | N|
-| [文字水印](watermark.html) | Y | Y | Y | Y | N | N | N |
-| [图片水印](watermark_image.html) | Y | Y | Y | Y | N | N | N |
-| [图片格式转换](format.html) | Y | Y | Y | Y | N | N | N |
-| [图片另存](save.html) | Y | Y | Y | Y | Y | Y | Y |
+| [图片信息](#1) | Y | Y | Y | Y | Y | Y | Y |
+| [图片裁剪](#2) | Y | Y | Y | Y | N | N | N |
+| [图片旋转](#3) | Y | Y | Y | Y | N | N | N |
+| [图片缩放](#4) | Y | Y | Y | Y | Y | N | N|
+| [文字水印](#5) | Y | Y | Y | Y | N | N | N |
+| [图片水印](#6) | Y | Y | Y | Y | N | N | N |
+| [图片格式转换](#7) | Y | Y | Y | Y | N | N | N |
+| [图片另存](#8) | Y | Y | Y | Y | Y | Y | Y |
 
-> **目前不支持对加密过后的图片进行处理，单张图片最大为 `10M` 。**
+> 目前不支持对加密过后的图片进行处理，单张图片最大为 `10M` 。
 
 ## Request Syntax
 
@@ -40,7 +40,7 @@ Authorization: <authorization-string>
 - `k` 为 operation 的 argument key, `v` 为 argument value。
 - 多个 `operation` 用分隔符 `|` 连接成为一个 `action` ，其将会顺序对图片进行操作，类似管道。
 
-*### Example Request*
+### Example Request
 
 ```http
 GET /myphoto.jpg?image&action=resize:w_300,h_400|rotate:a_90 HTTP/1.1
@@ -53,15 +53,15 @@ Authorization: authorization string
 
 **详细图片操作**
 
-- [图片信息](info.html)
-- [图片裁剪](crop.html)
-- [图片旋转](rotate.html)
-- [图片缩放](resize.html)
-- [文字水印](watermark.html)
-- [图片水印](watermark_image.html)
-- [图片格式转换](format.html)
-- [图片另存](save.html)
-# 图片信息
+- [图片信息](#1)
+- [图片裁剪](#2)
+- [图片旋转](#3)
+- [图片缩放](#4)
+- [文字水印](#5)
+- [图片水印](#6)
+- [图片格式转换](#7)
+- [图片另存](#8)
+# <span id=1>图片信息</span>
 
 用于获取图片的基本信息和部分 [Exif](https://en.wikipedia.org/wiki/Exif) 信息
 
@@ -80,7 +80,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header/#请求头字段)
 
 ## Request Elements
 
@@ -88,7 +88,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header/#响应头字段)
 
 ## Response Elements
 
@@ -154,7 +154,7 @@ x-qs-request-id: 256f44de00000af1
 }
 ```
 
-# 图片裁剪
+# <span id=2>图片裁剪</span>
 
 用于对图片进行裁剪
 
@@ -191,7 +191,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header)
 
 ## Request Elements
 
@@ -199,7 +199,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header)
 
 ## Response Elements
 
@@ -237,7 +237,7 @@ x-qs-request-id: aa08cf7a43f611
 [7987 bytes of object data]
 ```
 
-# 图片旋转
+# <span id=3>图片旋转</span>
 
 用于对图片进行旋转
 
@@ -258,7 +258,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header)
 
 ## Request Elements
 
@@ -266,7 +266,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header)
 
 ## Response Elements
 
@@ -297,7 +297,7 @@ x-qs-request-id: aa08cf7a43f611
 [7987 bytes of object data]
 ```
 
-# 图片缩放
+# <span id=4>图片缩放</span>
 
 用于对图片进行缩放
 
@@ -320,7 +320,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header)
 
 ## Request Elements
 
@@ -328,7 +328,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header)
 
 ## Response Elements
 
@@ -359,7 +359,7 @@ x-qs-request-id: aa08cf7a43f611
 [7987 bytes of object data]
 ```
 
-# 文字水印
+# <span id=5>文字水印</span>
 
 用于对图片增加文字水印
 
@@ -385,7 +385,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header)
 
 ## Request Elements
 
@@ -393,7 +393,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header)
 
 ## Response Elements
 
@@ -424,7 +424,7 @@ x-qs-request-id: aa08cf7a43f611
 [7987 bytes of object data]
 ```
 
-# 图片水印
+# <span id=6>图片水印</span>
 
 用于对图片增加图片水印
 
@@ -448,7 +448,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header)
 
 ## Request Elements
 
@@ -456,7 +456,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header)
 
 ## Response Elements
 
@@ -487,7 +487,7 @@ x-qs-request-id: aa08cf7a43f611
 [7987 bytes of object data]
 ```
 
-# 图片格式转换
+# <span id=7>图片格式转换</span>
 
 用于将原始图片转换为目标格式
 
@@ -508,7 +508,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header/)
 
 ## Request Elements
 
@@ -516,7 +516,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header/)
 
 ## Response Elements
 
@@ -547,13 +547,12 @@ x-qs-request-id: aa08cf7a43f611
 [7987 bytes of object data]
 ```
 
-# 图片另存
+# <span id=8>图片另存</span>
 
 将图片另存到对象存储的某个 Bucket 下，主要为了方便用户保存各种处理后的图片。
 
-Note: 用户必须有对此 Bucket 的写入权限。
-
-Note: 不支持另存到跨区的 Bucket 中。
+> - 用户必须有对此 Bucket 的写入权限。
+> - 不支持另存到跨区的 Bucket 中。
 
 ## Request Syntax
 
@@ -573,7 +572,7 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> [参见公共请求头](/storage/object-storage/api/common/common_header)
+> [参见公共请求头](/storage/object-storage/api/common_header/)
 
 ## Request Elements
 
@@ -581,7 +580,7 @@ Authorization: <authorization-string>
 
 ## Response Headers
 
-> [参见公共响应头](/storage/object-storage/api/common/common_header)
+> [参见公共响应头](/storage/object-storage/api/common_header/)
 
 ## Response Elements
 

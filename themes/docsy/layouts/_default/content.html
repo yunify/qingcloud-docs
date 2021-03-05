@@ -1,13 +1,16 @@
 <div class="td-content">
+	<div class="td-sidebar-section-title content-index">
+		<img class="is-40x40" src="/images/icons/book-open.svg">
+		<h3 class="doc_vice_title">{{ .CurrentSection.LinkTitle }}</h3>
+		<a href="javascript:;" class="nav-trigger">&nbsp;<span aria-hidden="true"></span></a>
+	</div>
 	<div class="td-page-top">
 		<h1>{{ .Title }}</h1>
 		{{ partial "page-meta-actions.html" .}}
 	</div>
 	<div class="page-meta-lastmod text-muted ">{{ partial "page-meta-lastmod.html" . }}</div>
 
-	{{ if .Site.Params.IsConsole }}
 	<input type="hidden" id="content_console" value="1">
-	{{end}}
 	<!-- {{ partial "page-meta-actions.html" .}} -->
 	<!--{{ with .Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}-->
 	{{ with .Params.description }}<div class="lead"></div>{{ end }}
@@ -25,7 +28,7 @@
 						<div class="timeline-outer-line timeline-product"></div>
 						<div class="col-sm-12 timeline-outer">
 							<p>{{ .time }}</p>
-							<h2>{{ .title }}</h2>
+							<h2 id="{{ .title }}">{{ .title }}</h2>
 							<p class="product_dynamics_p">{{ .content | markdownify  }}</p>
 							{{ if .url}}
 							<a href="{{ .url }}">查看相关文档 <img src="/images/icons/black.svg"></a>
@@ -37,6 +40,7 @@
 			</div>
 		</div>
 	</section>
+	<script src="/js/product_news.js"></script>
 	{{ end }}
 	{{ .Content }}
 	<!-- {{ if (and (not .Params.hide_feedback) (.Site.Params.ui.feedback.enable) (.Site.GoogleAnalytics)) }}
