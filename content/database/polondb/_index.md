@@ -1,13 +1,13 @@
 ---
-title: "PostgreSQL"
-linkTitle: "PostgreSQL"
+title: "PolonDB"
+linkTitle: "PolonDB"
 weight: 7
 collapsible: true
 type: "product"
 
 section1:
-  title: PostgreSQL
-  vice_title: PostgreSQL 是业界最先进的开源数据库系统。
+  title: PolonDB
+  vice_title: PolonDB 是基于 PostgreSQL 和 Citus 构建的一款 HTAP 分布式关系型数据库。
 
 Section2:
   title: 用户指南
@@ -25,12 +25,12 @@ Section2:
       url: "quickstart/quick_start/"
 
     - title: 操作指南
-      content: 学习上手如何管理 PostgreSQL 集群。
-      url: "manual/cluster_info/"
+      content: 学习上手如何管理 PolonDB 集群，以及如何使用 PolonDB 提供的相关服务等。
+      url: "manual/mofiy_parameter/"
 
     - title: 最佳实践
-      content: PostgreSQL 的最佳实践
-      url: "best-practices/data_import_and_export/"
+      content: PolonDB 的最佳实践
+      url: "best-practices/data_recover/"
 
 section3:
   title: 开发者指南
@@ -50,19 +50,17 @@ section3:
 section4:
   children:
     - title: 了解
-      content: 什么是 PostgreSQL
+      content: 什么是 PolonDB
       children:
         - title: 产品简介
           url: "intro/introduction/"
 
     - title: 进阶
-      content: 学习如何如何创建、管理、使用 PostgreSQL 集群
+      content: 学习如何如何管理、使用 PolonDB 集群
       children: 
-        - title: 创建 PostgreSQL
-          url: "quickstart/quick_start/"
+        - title: 管理 PolonDB
+          url: "manual/general_operation/"
 
-        - title: PostgreSQL 集群信息
-          url: "manual/cluster_info/"
 
 ---
 
