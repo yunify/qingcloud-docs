@@ -58,7 +58,7 @@ section4:
     - title: 进阶
       content: 学习如何如何创建、管理、使用 PostgreSQL 集群
       children: 
-        - title: 创建 RadonDB
+        - title: 创建 PostgreSQL
           url: "quickstart/quick_start/"
 
         - title: PostgreSQL 集群信息

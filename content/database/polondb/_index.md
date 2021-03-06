@@ -26,11 +26,11 @@ Section2:
 
     - title: 操作指南
       content: 学习上手如何管理 PolonDB 集群，以及如何使用 PolonDB 提供的相关服务等。
-      url: "manual/cluster_info/"
+      url: "manual/mofiy_parameter/"
 
     - title: 最佳实践
       content: PolonDB 的最佳实践
-      url: "best-practices/data_import_and_export/"
+      url: "best-practices/data_recover/"
 
 section3:
   title: 开发者指南
@@ -56,9 +56,9 @@ section4:
           url: "intro/introduction/"
 
     - title: 进阶
-      content: 学习如何如何创建、管理、使用 PolonDB 集群
+      content: 学习如何如何管理、使用 PolonDB 集群
       children: 
-        - title: 创建、管理 PolonDB
+        - title: 管理 PolonDB
           url: "manual/general_operation/"
 
 
