@@ -8,7 +8,7 @@ draft: false
 
 访问端口失败，telnet端口不通，服务无法连接。
 
-![](../_images/telnet.png)
+![](../../_images/telnet.png)
 
 
 
@@ -18,15 +18,15 @@ draft: false
 
 通过netstat命令进行端口验证，如图：
 
-![](../_images/netstat80no.png)
+![](../../_images/netstat80no.png)
 
 未发现80端口处于监听状态，http服务未启动，需先将http服务启动：
 
-![](../_images/starthttpd.png)
+![](../../_images/starthttpd.png)
 
 启动完成后再次通过netstat进行验证
 
-![](../_images/netstat80yes.png)
+![](../../_images/netstat80yes.png)
 
 如上图标识行，80端口处于LISTEN状态，表示端口处于活跃状态。
 
@@ -38,11 +38,11 @@ draft: false
 
 iptables规则查看：
 
-![](../_images/iptables.png)
+![](../../_images/iptables.png)
 
 firewall规则查看
 
-![](../_images/firewall.png)
+![](../../_images/firewall.png)
 
 
 
@@ -56,18 +56,18 @@ https://www.cnblogs.com/zxg-blog/p/9835263.html
 
 登录青云console，选择访问主机所属安全组：
 
-![](../_images/anquanzu.png)
+![](../../_images/anquanzu.png)
 
 查看安全组下行规则是否有80端口的放行规则
 
-![](../_images/showanquanzu.png)
+![](../../_images/showanquanzu.png)
 
 添加80端口下行规则并提交
 
 
 
-![](../_images/add80.png)
+![](../../_images/add80.png)
 
 点应用修改生效
 
-![](../_images/applay.png)
+![](../../_images/applay.png)
