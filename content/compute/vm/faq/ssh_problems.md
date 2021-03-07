@@ -35,7 +35,7 @@ systemctl start sshd
 ###  2.检查主机内部iptables规则是否禁用sshd端口。
 
 #### 1.使用WEB vnc登入到主机中，执行下面命令，查看防火墙规则。
-=======
+
 
 ##  1、排查SSH服务状态
 
