@@ -1,9 +1,7 @@
 title: "Windows2019安装.net framework3.5"
-date: 2021-03-8T21:37:25+09:00
-description: Test description
-weight: 50
+description: test
 draft: false
-enableToc: false
+weight: 10
 
 
 
