@@ -1,5 +1,5 @@
 ---
-title: "windows重置密码的方法汇总"
+title: "Windows 云服务器重置密码"
 description: test
 draft: false
 
@@ -69,4 +69,3 @@ draft: false
 
    <img src="../homer/window reset password_06.png" width="60%" height="60%">
 
-   

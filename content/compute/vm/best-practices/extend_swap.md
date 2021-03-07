@@ -1,5 +1,5 @@
 ---
-title: "linux主机如何扩容swap大小"
+title: "Linux主机如何扩容swap大小"
 description: test
 draft: false
 ---

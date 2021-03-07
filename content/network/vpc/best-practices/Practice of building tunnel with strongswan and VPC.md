@@ -1,6 +1,6 @@
 ---
-title: "strongswan与vpc搭建隧道的实践"
-linkTitle: "strongswan与vpc搭建隧道的实践"
+title: "strongswan与VPC共同搭建隧道"
+linkTitle: "strongswan与VPC共同搭建隧道"
 date: 2021-02-16T10:08:56+09:00
 description:
 draft: false

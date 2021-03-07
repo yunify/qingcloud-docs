@@ -1,5 +1,5 @@
 ---
-title: "windows客户端配置openvpn客户端"
+title: "在Windows客户端中配置OpenVPN"
 description: test
 draft: false
 weight: 20
