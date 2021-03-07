@@ -1,13 +1,9 @@
-```
+---
 title: "Linux主机配置多网卡"
-
 description: test
-
 draft: false
-
 weight: 10
-
-```
+---
 
 
 

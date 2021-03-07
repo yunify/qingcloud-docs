@@ -1,15 +1,10 @@
-```
+---
 title: "存储空间策略(Policy)白名单和黑名单使用实例"
-
 date: 2020-02-28T10:08:56+09:00
-
 description:
-
 draft: false
-
 weight: 10
-
-```
+---
 
 
 
@@ -19,13 +14,13 @@ weight: 10
 
 **案例一**： ACL无任何规则，policy白名单（允许） referer 匹配 *.[baidu.com](http://baidu.com/) 访问，如图
 
-![](../../_images/policy1.png)
+![](../_images/policy1.png)
 
-![](../../_images/policy2.png)
+![](../_images/policy2.png)
 
 测试结果，如下:
 
-![](../../_images/policy3.png)
+![](../_images/policy3.png)
 
 直接curl访问提示无权限， --referer指定[www.baidu.com](http://www.baidu.com/)之后可以正常访问
 
@@ -35,13 +30,13 @@ weight: 10
 
 案例二：ACL限制所有人可读，policy黑名单 （拒绝） referer 不匹配 *.[baidu.com](http://baidu.com/) ，如图:
 
-![](../../_images/policy4.png)
+![](../_images/policy4.png)
 
-![](../../_images/policy5.png)
+![](../_images/policy5.png)
 
 测试结果，如下:
 
-![](../../_images/policy6.png)
+![](../_images/policy6.png)
 
 直接curl访问提示无权限， --referer指定[www.baidu.com](http://www.baidu.com/)之后可以正常访问
 
