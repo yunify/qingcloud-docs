@@ -1,10 +1,13 @@
-title: "windows2019安装.net framework3.5"
-description: test
+title: "Windows2019安装.net framework3.5"
+date: 2021-03-8T21:37:25+09:00
+description: Test description
+weight: 50
 draft: false
+enableToc: false
 
 
 
-**windows2019安装net framework3.5会出现如下报错:**
+**Windows2019安装net framework3.5会出现如下报错:**
 
 ![](../win2019net3.5/framework1.png)
 

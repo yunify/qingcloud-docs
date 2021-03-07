@@ -1,6 +1,9 @@
-title: "linux配置多网卡"
-description: test
+title: "Linux配置多网卡"
+date: 2021-03-8T21:37:25+09:00
+description: Test description
+weight: 50
 draft: false
+enableToc: false
 
 ###多网卡说明
 
