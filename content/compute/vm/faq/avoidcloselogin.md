@@ -1,10 +1,11 @@
-title: "linux配置主机免密登录"
+---
+title: "Linux配置主机免密登录"
 date: 2021-02-15T21:37:25+09:00
 description: Test description
 weight: 50
 draft: false
 enableToc: false
-
+---
 
 
 ## 1.本机自身实现无密码登录

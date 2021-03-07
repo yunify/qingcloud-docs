@@ -19,7 +19,7 @@ enableToc: false
 
 <img src="../homer/disk_01.png" width="80%" height="60%">
 
-###2.发现有未分配的磁盘容量，右键C盘-扩展卷，请参考以下的流程处理即可。
+### 2.发现有未分配的磁盘容量，右键C盘-扩展卷，请参考以下的流程处理即可。
 
 <img src="../homer/disk_02.png" width="80%" height="60%">
 
