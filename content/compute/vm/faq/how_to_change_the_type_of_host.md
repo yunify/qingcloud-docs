@@ -1,5 +1,5 @@
 ---
-title: "如何更改主机类型"
+title: "云主机的类型更改"
 date: 2020-02-12T21:08:00+09:00
 description: Test description
 weight: 20
