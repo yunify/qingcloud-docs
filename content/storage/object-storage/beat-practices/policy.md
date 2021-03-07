@@ -1,8 +1,15 @@
+```
 title: "存储空间策略(Policy)白名单和黑名单使用实例"
+
 date: 2020-02-28T10:08:56+09:00
+
 description:
+
 draft: false
-weight: 2
+
+weight: 10
+
+```
 
 
 

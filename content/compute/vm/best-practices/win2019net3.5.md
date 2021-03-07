@@ -1,7 +1,13 @@
+```
 title: "Windows2019安装.net framework3.5"
+
 description: test
+
 draft: false
+
 weight: 10
+
+```
 
 
 
