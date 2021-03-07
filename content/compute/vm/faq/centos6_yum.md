@@ -1,5 +1,5 @@
 ---
-title: "CentOS6如何更新yum源"
+title: "CentOS6更新yum源"
 date: 2021-02-04T20:38:25+09:00
 description: Test description
 weight: 40

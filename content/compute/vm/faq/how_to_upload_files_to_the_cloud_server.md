@@ -1,5 +1,5 @@
 ---
-title: "怎样上传文件到云服务器"
+title: "上传文件到云服务器"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 weight: 40

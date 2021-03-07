@@ -11,7 +11,7 @@ enableToc: false
 
 ## 问题背景
 
-青云的linux操作系统默认是最小化安装，部分客户需要图形化界面，比如搭建oracle环境；以下文档主要介绍linux主机如何安装图形化桌面
+青云的Linux操作系统默认是最小化安装，部分客户需要图形化界面，比如搭建oracle环境；以下文档主要介绍Linux主机如何安装图形化桌面
 
 ### centos7云主机部署图形化桌面
 
@@ -52,7 +52,7 @@ yum groupinstall -y "GNOME Desktop"
 
  ![centos_GUI_4](../_images/centos_GUI_4.png)
 
-### 
+
 
 ### Ubuntu 安装图形化桌面
 

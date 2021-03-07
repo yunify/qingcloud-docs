@@ -1,5 +1,5 @@
 ---
-title: "如何避免SSH会话连接断开？"
+title: "Linux主机开启SSH会话保持"
 date: 2021-01-30T00:38:25+09:00
 description: Test description
 weight: 40
@@ -50,5 +50,5 @@ ClientAliveCountMax 10 表示服务器发出请求后客户端没有响应的次
   systemctl restart sshd
   ```
 
-  ​
+  
 

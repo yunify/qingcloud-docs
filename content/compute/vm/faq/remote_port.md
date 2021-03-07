@@ -23,11 +23,11 @@ enableToc: false
 
 ## 2.修改注册表
 
-### 2.1.开始-运行-regedit，打开注册表，进入以下注册表项“HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Control/Terminal Server/Wds/rdpwd/Tds/tcp”，在右侧找到PortNamber，可以看见其默认值是3389，修改成所希望的端口(2000-65535间选择)即可。
+2.1.开始-运行-regedit，打开注册表，进入以下注册表项“HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Control/Terminal Server/Wds/rdpwd/Tds/tcp”，在右侧找到PortNamber，可以看见其默认值是3389，修改成所希望的端口(2000-65535间选择)即可。
 
 ![remote_port_3](/compute/vm/_images/remote_port_3.png)
 
-### 2.2修改注册表项HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Control/Terminal Server/WinStations/RDP-Tcp]，将PortNumber的值修改成其他端口，注意使用十进制。
+2.2修改注册表项HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Control/Terminal Server/WinStations/RDP-Tcp]，将PortNumber的值修改成其他端口，注意使用十进制。
 
 ![remote_port_4](/compute/vm/_images/remote_port_4.png)
 
