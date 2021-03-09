@@ -10,12 +10,12 @@ weight: 10
 ---
 
 
-
-**Windows2019安装net framework3.5会出现如下报错:**
+**使镜像向Windows2019安装net framework3.5会存在报错，暂未发现其他版本镜像存在此问题，如有也可参考此方法**
+Windows2019安装net framework3.5会出现如下报错:
 
 ![](../win2019net3.5/framework1.png)
 
-需要自行上传sxs本地安装，我这里提供一个sxs下载地址 [bucket.lysandry.com/sources.zip](http://bucket.lysandry.com/sources.zip)
+需要自行上传sxs本地安装，我这里提供一个sxs下载地址 (http://bucket.lysandry.com/sources.zip)
 
 下载之后解压到任意目录，记住路径， 比如我这里是 C:\sources\sxs:
 
