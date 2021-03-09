@@ -26,17 +26,17 @@ https://www.qingcloud.com/consultation
 
 2.3优惠券使用
 
-2.3.1免费试用28.8元优惠券,可用于创建sh1/gd2的公网ip
+2.3.1免费试用28.8元优惠券,可用于创建sh1/gd2的公网ip，带宽必须是1Mbps
 
 创建路径：控制台-网络与CDN-公网ip
 
 ![free-instance-4](/compute/vm/_images/free-instance-4.png)
 
-2.3.2免费试用78.12元优惠券可用于创建sh1/gd2的基础型1c1g 20g的Linux主机
+2.3.2免费试用78.12元优惠券可用于创建sh1/gd2的基础型1c1g 20g的云主机，如果创建Linux主机，正好支撑1个月；如果创建Windows主机，不足以支撑1个月。
 
 创建路径：控制台-计算-主机
 
-注意：主机配置-基础型1c1g 20g系统盘的Linux主机；计费方式-按需计费
+注意：主机配置-基础型1c1g 20g系统盘的云主机；计费方式-按需计费
 
 ![free-instance-5](/compute/vm/_images/free-instance-5.png)
 
