@@ -1,6 +1,6 @@
 ---
-title: "NTP时间同步服务使用指南"
-date: 2021-02-15T21:37:25+09:00
+title: "Linux主机同步NTP时间"
+date: 2021-03-10T21:37:25+09:00
 description: Test description
 weight: 50
 draft: false
@@ -8,11 +8,17 @@ enableToc: false
 
 ---
 
-# 1. Linux配置NTP服务
+## 背景：
+
+**青云主机默认会开启时间同步，主机中Agent进程会与平台系统Ntp同步时间，对于业务需求很强时间准确性的用户，可自己配置NTP服务同步时间。**
 
 
 
-## 1.1  环境配置说明
+##  1.Linux配置NTP服务
+
+
+
+### 1.1  环境配置说明
 
 **●主机系统版本       centos 7.7**
 
@@ -27,17 +33,17 @@ enableToc: false
  ![ntp](../_images/ntp1.png)
 
 
-## 1.2  检查服务是否安装ntp、ntpdate
+### 1.2  检查服务是否安装ntp、ntpdate
 
 ```
        #  rpm -qa | grep ntp
 ```
 
-## 1.3   安装服务
+### 1.3   安装服务
 ```
        # yum install ntp ntpdate -y
 ```
-## 1.4  修改配置文件
+### 1.4  修改配置文件
 
 ● 修改配置文件/etc/ntp.conf ,注释默认ntp服务
 
@@ -65,20 +71,20 @@ restrict 1.cn.pool.ntp.org nomodify notrap noquery
 restrict 2.cn.pool.ntp.org nomodify notrap noquery
 restrict 3.cn.pool.ntpp.org nomodify notrap noquery
 ```
-## 1.5 重启ntp服务并配置开机自启
+### 1.5 重启ntp服务并配置开机自启
 
 ```
  #systemctl restart ntpd
  #systemctl enable ntpd
 ```
-## 1.6 手动同步本地时间
+### 1.6 手动同步本地时间
 
  ![ntp](../_images/ntp4.png)
 
 ```
  # ntpdate -u 1.cn.pool.ntp.org
 ```
-## 1.7  查看ntp同步信息
+### 1.7  查看ntp同步信息
 
 **第一查询输入命令出现图一情况，需要等待几分钟，再次输入命令后可查看到结果**
 
@@ -88,9 +94,9 @@ restrict 3.cn.pool.ntpp.org nomodify notrap noquery
 
 
 
-# 2 客户端配置
+##  2 客户端配置
 
-## 2.1 安装NTP服务端
+### 2.1 安装NTP服务端
 
 ```
   # rpm-qa| grep ntp
@@ -98,7 +104,7 @@ restrict 3.cn.pool.ntpp.org nomodify notrap noquery
   # yum install ntp ntpdate -y
 ```
 
-## 2.2 设置NTP配置文件
+### 2.2 设置NTP配置文件
 
  ![ntp](../_images/ntp8.png)
 
@@ -111,7 +117,7 @@ server 127.0.0.1                # 当外部时间不可用时，使用本地时�
 fudge 127.0.0.1 stratum 10
 ```
 
-## 2.3 重启ntp服务并配置开机自启
+### 2.3 重启ntp服务并配置开机自启
 
 
 ```
@@ -121,7 +127,7 @@ fudge 127.0.0.1 stratum 10
 
 ```
 
-## 2.4 查看NTP服务时间同步
+### 2.4 查看NTP服务时间同步
 
 ```
          #  ntpq -p
