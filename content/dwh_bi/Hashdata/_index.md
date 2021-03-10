@@ -1,24 +1,22 @@
 ---
-title: "Clickhouse"
-linkTitle: "Clickhouse"
+title: "HashData"
+linkTitle: "HashData"
 weight: 1
 collapsible: true
 type: "product"
 
 section1:
-  title: Clickhouse
-  vice_title: ClickHouse 是一款深度定制的ClickHouse集群应用。
+  title: HashData
+  vice_title: HashData 数据仓库是一个高性能，完全托管的 PB 级数据仓库服务。
 
 section2:
   title: 用户指南
   children:
-    - title: ClickHouse
+    - title: HashData
       content: 产品简介
-      url: "intro/intro"
+      url: "intro/hashdata"
 
-    - title: 操作指南
-      content: 学习上手如何创建、查看及应用ClickHouse等。
-      url: "manual"
+
 
 
 ---

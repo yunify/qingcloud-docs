@@ -1,24 +1,22 @@
 ---
-title: "Clickhouse"
-linkTitle: "Clickhouse"
+title: " Kyligence"
+linkTitle: "Kyligence"
 weight: 1
 collapsible: true
 type: "product"
 
 section1:
-  title: Clickhouse
-  vice_title: ClickHouse 是一款深度定制的ClickHouse集群应用。
+  title: Kyligence
+  vice_title: Kyligence Enterprise是基于Apache Kylin的人工智能增强型大数据管理和分析平台。
 
 section2:
   title: 用户指南
   children:
-    - title: ClickHouse
+    - title: Kyligence
       content: 产品简介
-      url: "intro/intro"
+      url: "intro/kyligence"
 
-    - title: 操作指南
-      content: 学习上手如何创建、查看及应用ClickHouse等。
-      url: "manual"
+
 
 
 ---
