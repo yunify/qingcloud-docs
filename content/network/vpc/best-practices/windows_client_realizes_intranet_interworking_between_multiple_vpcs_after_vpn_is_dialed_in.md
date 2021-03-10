@@ -34,7 +34,9 @@ vpc B
 
 ```
 
-### 2.vpc A与 vpc B之间通过gre隧道打通，配置步骤（略）
+### 2.vpc A与 vpc B之间通过gre隧道打通，配置步骤参考以下链接
+
+https://docs.qingcloud.com/product/network/gre
 
 ```
 172.20.0.0/16<==>172.21.0.0/16

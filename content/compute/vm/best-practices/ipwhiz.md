@@ -1,6 +1,11 @@
-title: "linux配置多网卡"
+---
+title: "Linux主机配置多网卡"
 description: test
 draft: false
+weight: 10
+---
+
+
 
 ###多网卡说明
 
