@@ -10,8 +10,7 @@ draft: false
 
 ![](../../../_images/log-ipv6-connect.png)
 
-接入公网以后，在公网 IP 页面，可查看接入公网的 IPv6 地址详情，以及计费和监控的具体信息：[_IPv6公网 IP_](
-../../network/eip#ipv6_eip)。
+接入公网以后，在公网 IP 页面，可查看接入公网的 IPv6 地址详情，以及计费和监控的具体信息：[_IPv6公网 IP_](../ipv6_other_operation/)。
 
 ![](../../../_images/log-ipv6-eip.png)
 
