@@ -27,21 +27,21 @@ Section2:
     #  content: 计费指南
     #  url: "/sd-wan/sd-wan/billing/price"
 
-    # - title: 快速入门
-    #  content: 快速入门
-    #  url: "/sd-wan/sd-wan/quick-start/cpe_connect_vpc"
+    - title: 快速入门
+      content: 快速入门
+      url: "/sd-wan/sd-wan/quick-start/cpe_connect_vpc/"
 
     - title: 操作指南
       content: 操作指南
-      url: "/sd-wan/sd-wan/quick-start/cpe_connect_vpc"
+      url: "/sd-wan/sd-wan/wan_access/"
 
     # - title: 最佳实践
     #  content: 最佳实践
-    #  url: "/sd-wan/sd-wan/best-practices/best_practices"
+    #  url: "/sd-wan/sd-wan/best-practices/best_practices/"
 
     # - title: 常见问题
     #  content: 常见问题
-    #  url: "/sd-wan/sd-wan/faq/sd_wan_faq"
+    #  url: "/sd-wan/sd-wan/faq/faq/"
 
 section3:
   title: 开发者指南
@@ -65,16 +65,22 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品简介
-          url: "/network/sd_wan/intro/intro"
+          url: "/sd-wan/sd-wan/intro/intro"
 
         - title: 产品优势
-          url: "/network/sd_wan/intro/intro/#sd_wan-产品优势"
+          url: "/sd-wan/sd-wan/intro/intro/#sd_wan-产品优势"
     - title: 上手：创建和管理光格SD-WAN
       content: 创建光格SD-WAN网络，管理配置，图形化页面。
       vice_title: 上手的第一步
       children:
-        - title: 创建光格SD-WAN网络
-          url: "/network/sd_wan/manual/base"
+        - title: 光盒连 VPC
+          url: "/sd-wan/sd-wan/quick-start/cpe_connect_vpc/"
+
+        - title: 专线连 VPC
+          url: "/sd-wan/sd-wan/quick-start/line_connect_vpc/"
+
+        - title: VPC跨区连VPC
+          url: "/sd-wan/sd-wan/quick-start/vpc_connect_vpc/"
 
 ---
 
