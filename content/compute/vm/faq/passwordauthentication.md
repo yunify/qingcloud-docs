@@ -1,13 +1,19 @@
 ---
-title: "ssh密钥开启密码登录"
+title: "Linux主机密钥登陆下如何开启密码登陆"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 weight: 50
 draft: false
-enableToc: false
+enableToc: false 
 ---
 
-若在绑定密钥时，未取消勾选 "加载ssh密钥以后，禁止密码登录。" 需要在主机内部开启密码登陆，以cent os为例。
+## 操作背景
+
+在绑定密钥时，未取消勾选 "加载ssh密钥以后，禁止密码登录" ，同时需要通过用户名及密码登录。此时需要在主机内部开启密码登陆。
+
+## 操作步骤
+
+以Cent OS为例。
 
 ```shell
 vi /etc/ssh/sshd_config
