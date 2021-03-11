@@ -304,7 +304,7 @@ netsh interface ipv6>set interface 5 dadtransmits=0
 
 ## 申请 IPv6 并完成配置
 
-用户可以申请 IPv6 公网 IP，此类 IPv6 的配置与[内部绑定 IPv4 公网IP](../inband_ipv4/) 类似，
+用户可以申请 IPv6 公网 IP，此类 IPv6 的配置与[内部绑定 IPv4 公网IP](../../ipv4/inband_ipv4/) 类似，
 将公网 IP 分配到主机后可以看到主机内多出一块还未分配 IP 地址的网卡。如下图所示
 
 ![](../../../_images/IPv6_inbind_nic.png)
