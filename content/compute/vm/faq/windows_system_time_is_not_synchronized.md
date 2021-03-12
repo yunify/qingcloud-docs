@@ -1,5 +1,5 @@
 ---
-title: "windows主机系统时间与网络时间不同步"
+title: "Windows主机同步网络时间"
 date: 2021-02-04T20:38:25+09:00
 description: Test description
 weight: 40
@@ -9,7 +9,9 @@ enableToc: false
 
 ## 问题背景
 
-有的时候我们会发现电脑的时间和网络的时间是不同的，那要怎么让它们同步起来呢?
+国内 Windows 系统的主机有时候不能自动同步互联网当前时间，这就需要改一下 Windows 的时间同步服务器
+
+## 操作步骤
 
 ### 1、点击桌面上右下的时间，弹出框点击更改时间和日期
 
@@ -23,7 +25,6 @@ enableToc: false
 
 <img src="../../_images/time3.png" width="60%" height="40%">
 
-<p></p>
 
 
 

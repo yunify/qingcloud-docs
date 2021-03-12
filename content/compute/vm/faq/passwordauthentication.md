@@ -13,7 +13,7 @@ enableToc: false
 
 ## 操作步骤
 
-以Cent OS为例。
+以CentOS为例。
 
 ```shell
 vi /etc/ssh/sshd_config

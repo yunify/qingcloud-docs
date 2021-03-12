@@ -8,9 +8,7 @@ draft: false
 enableToc: falseWindows
 ---
 
-## windows主机配置多用户同时登录
-
-### Windows主机配置多用户同时登录
+## Windows主机配置多用户同时登录
 
 一、在键盘上按Win+R键(也可以在开始菜单右键然后选择运行)，在运行的输入框里输入"gpedit.msc"命令，然后点击确定
 

@@ -10,7 +10,7 @@ enableToc: false
 
 ## 背景：
 
-**青云主机默认会开启时间同步，主机中Agent进程会与平台系统Ntp同步时间，对于业务需求很强时间准确性的用户，可自己配置NTP服务同步时间。**
+**青云主机默认会开启时间同步，主机中Agent进程会与平台系统NTP同步时间，对于业务需求很强时间准确性的用户，可自己配置NTP服务同步时间。**
 
 
 
@@ -22,11 +22,11 @@ enableToc: false
 
 **●主机系统版本       centos 7.7**
 
-**●Ntp server端： 192.128.126.3**
+**●NTP服务端： 192.128.126.3**
 
-**●Ntp      客户端： 192.168.126.2**
+**●NTP客户端： 192.168.126.2**
 
-**如果ntp服务器和客户端都是青云的主机，都需要到控制体右键主机id关闭时间同步，否则主机还会自动同步青云的ntp时间。**
+**如果NTP服务器和客户端都是青云的主机，都需要到控制体右键主机id关闭时间同步，否则主机还会自动同步青云的NTP时间。**
 
 
 
@@ -45,11 +45,11 @@ enableToc: false
 ```
 ### 1.4  修改配置文件
 
-● 修改配置文件/etc/ntp.conf ,注释默认ntp服务
+● 修改配置文件/etc/ntp.conf ,注释默认NTP服务
 
  ![ntp](../_images/ntp2.png)
 
-● 然后添加新ntp服务配置
+● 然后添加新NTP服务配置
 
  ![ntp](../_images/ntp3.png)
 
@@ -71,7 +71,7 @@ restrict 1.cn.pool.ntp.org nomodify notrap noquery
 restrict 2.cn.pool.ntp.org nomodify notrap noquery
 restrict 3.cn.pool.ntpp.org nomodify notrap noquery
 ```
-### 1.5 重启ntp服务并配置开机自启
+### 1.5 重启NTP服务并配置开机自启
 
 ```
  #systemctl restart ntpd
@@ -84,7 +84,7 @@ restrict 3.cn.pool.ntpp.org nomodify notrap noquery
 ```
  # ntpdate -u 1.cn.pool.ntp.org
 ```
-### 1.7  查看ntp同步信息
+### 1.7  查看NTP同步信息
 
 **第一查询输入命令出现图一情况，需要等待几分钟，再次输入命令后可查看到结果**
 
@@ -117,20 +117,20 @@ server 127.0.0.1                # 当外部时间不可用时，使用本地时�
 fudge 127.0.0.1 stratum 10
 ```
 
-### 2.3 重启ntp服务并配置开机自启
+### 2.3 重启NTP服务并配置开机自启
 
 
 ```
-       # systemctl restart ntpd
+# systemctl restart ntpd
 
-       # systemctl enable ntpd
+# systemctl enable ntpd
 
 ```
 
 ### 2.4 查看NTP服务时间同步
 
 ```
-         #  ntpq -p
+#  ntpq -p
 ```
 
  ![ntp](../_images/ntp7.png)

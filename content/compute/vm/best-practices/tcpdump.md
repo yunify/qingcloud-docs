@@ -10,11 +10,13 @@ weight: 10
 
 ## 概述
 
-本文主要介绍了[Linux](https://help.aliyun.com/document_detail/40564.htm?spm=a2c4g.11186623.2.44.1b2929e82kYIBg#h3-linux-)和[Windows](https://help.aliyun.com/document_detail/40564.htm?spm=a2c4g.11186623.2.44.1b2929e82kYIBg#h3-Windows-)环境下如何使用抓包工具进行抓包。
+本文主要介绍了Linux和Windows环境下如何使用抓包工具进行抓包。
 
 ## 详细信息
 
 如果源服务器访问目标服务器时出现异常，您可以抓包获取最原始的交互数据进行排查分析。
+
+## 抓包步骤
 
 ### Linux环境中的抓包工具
 
