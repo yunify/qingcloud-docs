@@ -87,8 +87,7 @@ IPv4 过渡到 IPv6 的[方案](https://tools.ietf.org/html/rfc6180)，大体分
 
 ![](../../_images/log-ipv6-connect.png)
 
-接入公网以后，在公网 IP 页面，可查看接入公网的 IPv6 地址详情，以及计费和监控的具体信息：[_IPv6公网 IP_](
-../network/eip#ipv6_eip)。
+接入公网以后，在公网 IP 页面，可查看接入公网的 IPv6 地址详情，以及计费和监控的具体信息：[_IPv6公网 IP_](../../manual/ipv6/ipv6_other_operation/)。
 
 ![](../../_images/log-ipv6-eip.png)
 
