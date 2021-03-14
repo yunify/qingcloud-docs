@@ -44,14 +44,14 @@ ping: test: Name or service not known
 
 ### 5.如内网dns配置没有生效，可以参考以下办法
 
-- #### 重启主机的网络
+- #### 重启云服务器的网络
 
 ```
 systemctl restart networking
 ```
 
 - #### 离开私有网络，重新加入
-- #### 重启主机
+- #### 重启云服务器
 
 或者手动更改dns配置，参考格式如下
 

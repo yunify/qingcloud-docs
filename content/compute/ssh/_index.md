@@ -42,11 +42,11 @@ section4:
           url: "/compute/ssh/intro/ssh"
 
 
-    - title: 上手：通过SSH密钥连接主机
+    - title: 上手：通过SSH密钥连接云服务器
       content: SSH密钥提供更安全的登录方式。
       vice_title: 上手的第一步
       children: 
-        - title: 通过SSH密钥连接主机
+        - title: 通过SSH密钥连接云服务器
           url: "/compute/ssh/manual/ssh"
 
 ---

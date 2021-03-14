@@ -12,7 +12,7 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| image | String | 映像 ID | Yes |
+| image | String | 镜像 ID | Yes |
 | users.n | String | 用户id | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 

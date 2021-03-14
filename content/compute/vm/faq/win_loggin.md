@@ -1,6 +1,6 @@
 ---
 
-title: "windows主机配置多用户同时登录"
+title: "windows云服务器配置多用户同时登录"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 weight: 20
@@ -8,7 +8,7 @@ draft: false
 enableToc: false
 ---
 
-## windows主机配置多用户同时登录
+## windows云服务器配置多用户同时登录
 
 一、在键盘上按Win+R键(也可以在开始菜单右键然后选择运行)，在运行的输入框里输入"gpedit.msc"命令，然后点击确定
 
@@ -18,11 +18,11 @@ enableToc: false
 
 ![mstsc_service](../_images/mstsc_service.jpg)
 
-三、在远程桌面服务界面双击打开 “远程桌面会话主机”
+三、在远程桌面服务界面双击打开 “远程桌面会话云服务器”
 
 ![mstsc_socket](../_images/mstsc_socket.jpg)
 
-四、在“远程桌面会话主机”界面中双击打开“连接”
+四、在“远程桌面会话云服务器”界面中双击打开“连接”
 
 ![mstsc_connection](../_images/mstsc_connection.jpg)
 

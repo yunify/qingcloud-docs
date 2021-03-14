@@ -9,7 +9,7 @@ weight: 3
 ---
 
 
-虚拟 IP（Virtul_IP）是 VPC 网络中的一种 IP 地址，通常用于不同主机之间的切换，例如主从切换。
+虚拟 IP（Virtul_IP）是 VPC 网络中的一种 IP 地址，通常用于不同云服务器之间的切换，例如主从切换。
 
 ## 使用场景
 
@@ -49,7 +49,7 @@ vrrp_instance VI_1 {
     virtual_router_id 50              #同一个虚拟的路由
     advert_int 1                      #心跳的间隔时间
     authentication {
-        auth_type PASS      #两个主机之间的密语
+        auth_type PASS      #两个云服务器之间的密语
         auth_pass 1111          #心跳密码
 }
     virtual_ipaddress {
@@ -69,7 +69,7 @@ service keepalived start
 
 ![](../_images/vip_1.png)
 
-此时说明此主机已经占用了虚拟 IP 地址172.16.0.247
+此时说明此云服务器已经占用了虚拟 IP 地址172.16.0.247
 
 ## 虚拟IP 管理
 
@@ -78,7 +78,7 @@ service keepalived start
 
 在 VPC 网络和私有网络中，都可以创建虚拟IP
 
-可以展示出当前虚拟 IP 被哪台主机占用，并且点击跳转到主机详情页
+可以展示出当前虚拟 IP 被哪台云服务器占用，并且点击跳转到云服务器详情页
 
 ![](../_images/vip_3.png)
 

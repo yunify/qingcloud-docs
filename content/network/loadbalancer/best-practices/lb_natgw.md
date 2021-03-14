@@ -8,7 +8,7 @@ draft: false
 
 ## 借助 NAT 网关及路由表
 
-NAT 网关为私有网络的主机提供了复用公网 IP 的能力，目前支持 SNAT 功能，主机可以共用 NAT 网关绑定的公网 IP 地址访问互联网。查看[详情](https://docs.qingcloud.com/product/network/nat_gateway)
+NAT 网关为私有网络的云服务器提供了复用公网 IP 的能力，目前支持 SNAT 功能，云服务器可以共用 NAT 网关绑定的公网 IP 地址访问互联网。查看[详情](https://docs.qingcloud.com/product/network/nat_gateway)
 
 
 ### 创建一个vpc网络以及私有网络并完成绑定
@@ -38,7 +38,7 @@ NAT 网关为私有网络的主机提供了复用公网 IP 的能力，目前支
 
 ![](../_images/lb+natgw6.png)
 
-然后可以在路由表中添加默认路由指向natgw以后，私有网络的主机可以主动通过 NAT 网关访问互联网
+然后可以在路由表中添加默认路由指向natgw以后，私有网络的云服务器可以主动通过 NAT 网关访问互联网
 
 ![](../_images/lb+natgw13.png)
 

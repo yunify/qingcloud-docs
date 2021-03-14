@@ -1,18 +1,18 @@
 ---
-title: "免费试用云主机"
+title: "免费试用云服务器"
 date: 2021-03-07T10:08:56+09:00
 description:
 draft: false
 weight: 39
 ---
 
-### 1.申请免费试用主机
+### 1.申请免费试用云服务器
 
 https://www.qingcloud.com/consultation
 
 申请条件：1.注册青云账户；2.完成实名认证
 
-### 2.免费试用 1个月云主机
+### 2.免费试用 1个月云服务器
 
 #### 2.1点击云服务器"免费试用"
 
@@ -32,11 +32,11 @@ https://www.qingcloud.com/consultation
 
 ![free-instance-4](/compute/vm/_images/free-instance-4.png)
 
-#### 2.3.2免费试用78.12元优惠券可用于创建sh1/gd2的基础型1c1g 20g的linux主机
+#### 2.3.2免费试用78.12元优惠券可用于创建sh1/gd2的基础型1c1g 20g的linux云服务器
 
-创建路径：控制台-计算-主机
+创建路径：控制台-计算-云服务器
 
-注意：主机配置-基础型1c1g 20g系统盘的linux主机；计费方式-按需计费
+注意：云服务器配置-基础型1c1g 20g系统盘的linux云服务器；计费方式-按需计费
 
 ![free-instance-5](/compute/vm/_images/free-instance-5.png)
 

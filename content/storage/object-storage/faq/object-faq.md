@@ -37,7 +37,7 @@ QingStor 对象存储不对 API 请求频率做限制。
 
 QingStor 对象存储兼容 AWS S3 的主要 API，所以您可以直接使用 AWS S3 相关的上传工具以上传数据到 QingStor 对象存储，兼容工具列表可以参考[文档](/storage/object-storage/s3) 。
 
-## Bucket 能否像 AWS S3 一样 mount 到主机上？
+## Bucket 能否像 AWS S3 一样 mount 到云服务器上？
 
 可以使用 s3fs 挂载 QingStor 对象存储的存储空间作为后端存储，具体内容可参考：[青云志( QingStor 兼容 AWS S3 接口)](https://log.qingcloud.com/?p=1676) 。
 
@@ -101,7 +101,7 @@ Access Key 可以在 [青云控制台](https://console.qingcloud.com/access_keys
 
 ## 访问对象存储出现 https 证书问题的解决办法
 
-QingStor™ 对象存储使用由 `Let's Encrypt` 所签发的 HTTPS 证书。`Let's Encrypt` 是由 `Mozilla`、`Cisco`、`Akamai`、
+QingStorTM 对象存储使用由 `Let's Encrypt` 所签发的 HTTPS 证书。`Let's Encrypt` 是由 `Mozilla`、`Cisco`、`Akamai`、
 `IdenTrust`、`EFF` 等组织人员发起，主要目的是为了推进网站从 HTTP 向 HTTPS 过度的进程，其证书现在已经可以被所有主流浏览器及操作系统所信任。但是，仍有一些老旧的系统和应用不能兼容, `Let's Encrypt` 在官网公布了目前[已知的兼容和不兼容列表](https://letsencrypt.org/docs/certificate-compatibility)
 
 如果您有自己的域名和 HTTPS 证书, 请在 Bucket 设置中绑定自定义域名, 并开启 CDN 加速, 即可上传使用自有 HTTPS 证书, 访问 Bucket 中的文件不受 `Let's Encrypt` 证书的影响。

@@ -22,7 +22,7 @@ df -i
 
 ![](../../_images/inodes_1.png)
 
-或者在平台的主机详情页中可以看到 inode的监控。
+或者在平台的云服务器详情页中可以看到 inode的监控。
 
 ![](../../_images/inodes_2.png)
 

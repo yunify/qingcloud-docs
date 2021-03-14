@@ -34,13 +34,13 @@ draft: false
 - 步骤一
 
 ![扩容集群](../../_images/increase_cluster_1.png)
-​
+
 
 - 步骤二
 
 操作完上面的步骤，就会出现下面的选项，按照自己的需求选择相应的内存和磁盘大小，确认无误后点击提交即可
-​
-​![扩容集群](../../_images/increase_cluster_2.png)
+
+![扩容集群](../../_images/increase_cluster_2.png)
 
 
 
@@ -118,7 +118,7 @@ draft: false
 
 集群创建完成后，可以使用 redis-cli 来测试服务是否正常运行。
 
-在同一私网下创建一台 Linux 主机，下载与集群 redis 版本相同的 redis，这里以 [redis 5.0.7](http://download.redis.io/releases/redis-5.0.7.tar.gz) 版本为例，编译，进入 src 目录执行下面的命令
+在同一私网下创建一台 Linux 云服务器，下载与集群 redis 版本相同的 redis，这里以 [redis 5.0.7](http://download.redis.io/releases/redis-5.0.7.tar.gz) 版本为例，编译，进入 src 目录执行下面的命令
 
 - 查询主节点的角色
 

@@ -12,7 +12,7 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| resource_types.n | Array | 配额项，如 主机-instance，硬盘-volume，内存-memory 等。 hp_ 前缀的配额项表示 “超高性能型” ，如 hp_cpu 表示超高性能型 CPU 配额。 可不传此参数得到所有配额情况。 | No |
+| resource_types.n | Array | 配额项，如 云服务器-instance，硬盘-volume，内存-memory 等。 hp_ 前缀的配额项表示 “超高性能型” ，如 hp_cpu 表示超高性能型 CPU 配额。 可不传此参数得到所有配额情况。 | No |
 | zone | String | 区域ID | Yes |
 
 **Response Elements**

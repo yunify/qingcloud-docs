@@ -6,16 +6,16 @@ draft: false
 
 
 
-将一块或多块“可用”（ available ）状态的硬盘加载到某台”运行”（ running ） 或”关机”（ stopped ）状态的主机。
+将一块或多块“可用”（ available ）状态的硬盘加载到某台”运行”（ running ） 或”关机”（ stopped ）状态的云服务器。
 
-硬盘加载成功后，需要到加载的主机上进一步手动操作，具体可参考 [_FAQ_](../../../faq/index.html#faq) 。
+硬盘加载成功后，需要到加载的云服务器上进一步手动操作，具体可参考 [_FAQ_](../../../faq/index.html#faq) 。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | volumes.n | String | 硬盘 ID | Yes |
-| instance | String | 主机 ID | Yes |
+| instance | String | 云服务器 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)

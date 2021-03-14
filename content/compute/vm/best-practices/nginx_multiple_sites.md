@@ -10,9 +10,9 @@ draft: false
 
 ## 准备事项
 
-* 主机已安装好nginx服务
-* 站点文件已上传到主机目录
-* 不同域名已解析到主机IP
+* 云服务器已安装好nginx服务
+* 站点文件已上传到云服务器目录
+* 不同域名已解析到云服务器IP
 
 ## 部署步骤
 **1、检查/etc/nginx/nginx.conf <span style="color:red">（nginx默认配置文件路径，如果使用其他方式部署，对应部署的其他路径）</span>配置文件，确保文件中包含 include /etc/nginx/conf.d/*.conf;**

@@ -6,7 +6,7 @@ draft: false
 
 
 
-将一块或多块“使用中”（ in-use ）状态的硬盘从某台主机中卸载。
+将一块或多块“使用中”（ in-use ）状态的硬盘从某台云服务器中卸载。
 
 卸载前要保证已先从操作系统中 unmount 了硬盘，不然会返回错误信息。
 
@@ -17,7 +17,7 @@ draft: false
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | volumes.n | String | 硬盘 ID | Yes |
-| instance | String | 主机 ID | Yes |
+| instance | String | 云服务器 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)
