@@ -82,6 +82,6 @@ draft: false
 
 #### 启动 Zabbix 客户端服务
 
-  提供了zabbix agent服务（zabbix 4.2.8），当启动该服务后，用户只需要直接在Zabbix Server的web界面添加主机即可。请前往zabbix官方下载[监控模板](https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/db/postgresql)。
+  提供了zabbix agent服务（zabbix 4.2.8），当启动该服务后，用户只需要直接在Zabbix Server的web界面添加云服务器即可。请前往zabbix官方下载[监控模板](https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/db/postgresql)。
 
   ![启动 Zabbix 客户端服务](../../_images/start_zabbix_agent.png)

@@ -44,7 +44,7 @@ config.json 定义用户在 QingCloud 控制台部署应用时需要填写的表
 
 此配置文件定义用户在创建应用的时候需填入的参数信息，参数包括资源信息如 CPU、内存、节点数等，还包括应用本身配置参数以及外面依赖集群信息等。
 
-> 对于物理主机BM(BareMetal)类型的应用，不需要在 `config.json` 中配置CPU、内存、硬盘大小等信息，只需要配置物理主机的类型 `instance_type` 即可。
+> 对于弹性裸金属服务器BM(BareMetal)类型的应用，不需要在 `config.json` 中配置CPU、内存、硬盘大小等信息，只需要配置弹性裸金属服务器的类型 `instance_type` 即可。
 
 这些信息有集群级别的全局设置，也有基于角色节点级别的信息设置。下面是对每个参数详细的解释：
 
@@ -272,7 +272,7 @@ config.json 定义用户在 QingCloud 控制台部署应用时需要填写的表
 }
 ```
 
-对于物理主机 BM(BareMetal) 类型的应用，我们无需配置 CPU、内存、硬盘大小等参数，只需指定物理主机的类型即可，示例见 [config.json](/appcenter/dev-platform/cluster-developer-guide/specifications/bm/config.json)，与 `KVM` 类型应用稍有不同。
+对于弹性裸金属服务器 BM(BareMetal) 类型的应用，我们无需配置 CPU、内存、硬盘大小等参数，只需指定弹性裸金属服务器的类型即可，示例见 [config.json](/appcenter/dev-platform/cluster-developer-guide/specifications/bm/config.json)，与 `KVM` 类型应用稍有不同。
 
 json 配置项中的每一项，都是一个含有 key、label、description、type、range 等参数的 object。配置项支持嵌套，若 type 为 array，则该项的 properties 填写一个有序列表，在用户部署应用的时候填写配置使用，因此需要注意配置项的顺序。配置项中各参数的解释如下：
 
@@ -287,7 +287,7 @@ multichoice|和 range 配合使用，定义为 true 则为多选，默认是 fal
 separator|定义 multichoice 为 true 时有效，多选后多个值连接所使用的分隔符，默认值为逗号。
 min|若配置项 type 为 integer 或 number(浮点数)，指定该项的最小值。
 max|若配置项 type 为 integer 或 number(浮点数)，指定该项的最大值。若配置项是 volume_size，通常不建议指定该值。
-step|若配置项是 volume_size，指定硬盘每次调整的最小步长单位。在每个主机挂多块盘时，通常需要指定该项。
+step|若配置项是 volume_size，指定硬盘每次调整的最小步长单位。在每个云服务器挂多块盘时，通常需要指定该项。
 auto_scale_step|自动伸缩的步长。若配置项是 volume_size，指定硬盘每次自动伸缩的步长单位；若配置项是 count，指定该类角色节点数自动伸缩的步长单位，可参考[自动伸缩](/operation/autoscaling/intro/intro/)。
 pattern|正则表达式，可用该值规范填写内容。
 default|该项的默认取值，若 required 设为 "no"，default 值必须提供。
@@ -321,7 +321,7 @@ resource\_group|用来说明当前这个集群支持哪些配置组合，必须�
 
 >注： 右上角带3个星号(*)表示该项有 sibling (兄弟)节点，开发者提交的时候也要去掉这个标记。advanced_actions 的内容可以添加在国际化中，在控制台用户操作时展示。
 
-> 对于物理主机 BM(BareMetal) 的应用，配置文件会稍有不同，具体是无需配置CPU、内存、硬盘大小，类型等信息，因为物理主机的这些信息是固定的。具体配置文件可以参见 [cluster.json.mustache](/appcenter/dev-platform/cluster-developer-guide/specifications/bm/cluster.json.mustache)
+> 对于弹性裸金属服务器 BM(BareMetal) 的应用，配置文件会稍有不同，具体是无需配置CPU、内存、硬盘大小，类型等信息，因为弹性裸金属服务器的这些信息是固定的。具体配置文件可以参见 [cluster.json.mustache](/appcenter/dev-platform/cluster-developer-guide/specifications/bm/cluster.json.mustache)
 
 
 ```mustache
@@ -617,8 +617,8 @@ volume、loadbalancer、eip、security_group、snapshot、nic。
 
 * parallel：并行升级，需要关闭集群才能执行，集群节点会同 时启动并执行升级，因此升级的过程中集群提供的服务会短时中断，升级失败时，需先关闭集群再降级或启动。
 * sequential：滚动升级，需要集群在开机状态才能执行，集群节点会逐个重启并执行升级，这样集群提供的服务不会中断，滚动升级的流程参考[集群升级](/appcenter/dev-platform/cluster-developer-guide/specifications/lifecycle#滚动升级)，升级失败时，需先关闭集群再降级或启动。
-* in-place-parallel：原地并行升级，不更新 image，所以不需要重启主机，定义方式可以参考：[如何定义原地升级方式](/appcenter/dev-platform/faq/cluster-faqs#36-如何定义原地升级方式)，拷贝数据完成后，按照 upgrade 的 order 顺序，并行执行 cmd。升级失败时，只支持集群活跃状态下再次升级或降级，降级时，按照 rollback 的 order 顺序，并行执行 cmd。升级完成后，关闭集群再启动集群会替换 image（只有在升级或降级成功后才会替换；升级失败，关闭启动，不会更新 image）。
-* in-place-sequential：原地串行升级，不更新 image，所以不需要重启主机，定义方式可以参考：[如何定义原地升级方式](/appcenter/dev-platform/faq/cluster-faqs#36-如何定义原地升级方式)，拷贝数据完成后，按照 get_nodes_order 的执行结果，以及 upgrade 的 order 顺序，串行执行 cmd。升级失败时，只支持集群活跃状态下再次升级或降级，降级时，按照 get_nodes_order 的执行结果，以及 rollback 的 order 顺序，串行执行 cmd。升级完成后，关闭集群再启动集群会替换 image（只有在升级或降级成功后才会替换；升级失败，关闭启动，不会更新 image）。
+* in-place-parallel：原地并行升级，不更新 image，所以不需要重启云服务器，定义方式可以参考：[如何定义原地升级方式](/appcenter/dev-platform/faq/cluster-faqs#36-如何定义原地升级方式)，拷贝数据完成后，按照 upgrade 的 order 顺序，并行执行 cmd。升级失败时，只支持集群活跃状态下再次升级或降级，降级时，按照 rollback 的 order 顺序，并行执行 cmd。升级完成后，关闭集群再启动集群会替换 image（只有在升级或降级成功后才会替换；升级失败，关闭启动，不会更新 image）。
+* in-place-sequential：原地串行升级，不更新 image，所以不需要重启云服务器，定义方式可以参考：[如何定义原地升级方式](/appcenter/dev-platform/faq/cluster-faqs#36-如何定义原地升级方式)，拷贝数据完成后，按照 get_nodes_order 的执行结果，以及 upgrade 的 order 顺序，串行执行 cmd。升级失败时，只支持集群活跃状态下再次升级或降级，降级时，按照 get_nodes_order 的执行结果，以及 rollback 的 order 顺序，串行执行 cmd。升级完成后，关闭集群再启动集群会替换 image（只有在升级或降级成功后才会替换；升级失败，关闭启动，不会更新 image）。
 
 #### nodes
 
@@ -656,12 +656,12 @@ zone|镜像制作时所属区域 (如果是 docker 镜像，则无需填写该�
 
 ##### instance\_class
 
-节点类型，可选值范围：0, 1, 101, 201, 202, 301。其中 0 表示性能主机，1 表示超高性能主机，101 表示基础型主机，201 表示企业型 e1 主机，202 表示企业型 e2 主机，301 表示专业增强型主机。可选项，默认值为 0。
-> 建议值：101, 202, 301。其中 0, 1, 201 这三种主机类型，会逐步做下架处理，故不建议使用。
+节点类型，可选值范围：0, 1, 101, 201, 202, 301。其中 0 表示性能云服务器，1 表示超高性能云服务器，101 表示基础型云服务器，201 表示企业型 e1 云服务器，202 表示企业型 e2 云服务器，301 表示专业增强型云服务器。可选项，默认值为 0。
+> 建议值：101, 202, 301。其中 0, 1, 201 这三种云服务器类型，会逐步做下架处理，故不建议使用。
 
 ##### gpu
 
-每个节点 gpu 个数，可选值范围：0, 1, 2, 4, 8。目前仅在 北京3区-A(pek3a)，北京3区(pek3b，pek3c，pek3d) 和 上海1区(sh1a) 可创建带 gpu 的集群, 具体使用方式参考[GPU 主机](/compute/vm/manual/gpu_instance/)
+每个节点 gpu 个数，可选值范围：0, 1, 2, 4, 8。目前仅在 北京3区-A(pek3a)，北京3区(pek3b，pek3c，pek3d) 和 上海1区(sh1a) 可创建带 gpu 的集群, 具体使用方式参考[GPU 云服务器](/compute/vm/manual/gpu_instance/)
 
 ##### gpu\_class
 
@@ -681,9 +681,9 @@ size|每个节点数据容量大小，单位 GiB，注：是单个节点总容�
 mount\_point|每个节点数据盘挂载路径，可以是单个数据盘， 也可以有多个数据盘，多个数据盘以数组形式表示，如 "mount\_point": ["/data1","/data2"]。如果image是基于 Linux 操作系统，默认挂载路径为 /data; 如果 image 是基于 Windows 操作系统，默认挂载路径是 d:, 挂载路径是盘符（后面须带冒号，可选的盘符名从 d 开始，z 结束）。目前最大支持3块数据盘挂载到节点上。请注意，如果挂载了多块数据盘，config.json 对应的 volume\_size 部分，最好设置一下 min，step 这 2 个值，以配置创建集群、扩容集群时的范围和步长。例如挂载盘数为3，可以指定 `{min: 30, step: 30}` 。
 mount\_options|描述数据盘的挂接方式，默认值 ext4 是 defaults,noatime，xfs 是 rw,noatime,inode64,allocsize=16m。
 filesystem|数据盘文件系统类型。如果 image 是基于 Linux 操作系统，目前支持 ext4 和 xfs，默认为 ext4; 如果 image 是基于 Windows 操作系统，目前支持 ntfs, 默认为 ntfs。
-class|数据盘类型，支持 0、2、3、5、6、100、200 其中 0 表示性能盘，3 表示超高性能盘，2 表示容量盘，5 表示 NeonSAN，6 表示 NeonSAN 容量盘，100 表示基础型硬盘，200 表示企业性硬盘。可选项，如果不写此项，数据盘类型和主机类型一样，即性能主机挂载性能硬盘，超高性能主机挂载超高性能硬盘，基础型主机挂载基础型硬盘，企业型主机和专业增强型主机挂载企业型硬盘。容量盘、NeonSAN、NeonSAN 容量盘可以挂载在不同类型主机上，容量盘是通过网络协议挂载的，所以性能相对来说比较差，通常来说如果不是提供必须基于容量盘的服务，最好去掉这个选项，大容量存储可以考虑 [NeonSAN](https://www.qingcloud.com/products/qingstor-neonsan/) 或者[对象存储 QingStor](/storage/object-storage/intro/object-storage/)。
+class|数据盘类型，支持 0、2、3、5、6、100、200 其中 0 表示性能盘，3 表示超高性能盘，2 表示容量盘，5 表示 NeonSAN，6 表示 NeonSAN 容量盘，100 表示基础型硬盘，200 表示企业性硬盘。可选项，如果不写此项，数据盘类型和云服务器类型一样，即性能云服务器挂载性能硬盘，超高性能云服务器挂载超高性能硬盘，基础型云服务器挂载基础型硬盘，企业型云服务器和专业增强型云服务器挂载企业型硬盘。容量盘、NeonSAN、NeonSAN 容量盘可以挂载在不同类型云服务器上，容量盘是通过网络协议挂载的，所以性能相对来说比较差，通常来说如果不是提供必须基于容量盘的服务，最好去掉这个选项，大容量存储可以考虑 [NeonSAN](https://www.qingcloud.com/products/qingstor-neonsan/) 或者[对象存储 QingStor](/storage/object-storage/intro/object-storage/)。
 
-> 建议值：100, 200。其中 0, 3 这两种主机类型，会逐步做下架处理，故不建议使用。
+> 建议值：100, 200。其中 0, 3 这两种云服务器类型，会逐步做下架处理，故不建议使用。
 
 ##### replica
 
@@ -717,7 +717,7 @@ class|数据盘类型，支持 0、2、3、5、6、100、200 其中 0 表示性�
 
 ##### passphraseless　
 
-生成密钥信息，即提供此类节点能无密码登录其它节点的可能性，但青云调度系统只负责把此信息注册到 metadata service 中，开发者自行去获取密钥配置主机。目前支持 ssh-dsa, ssh-rsa，非必填项。
+生成密钥信息，即提供此类节点能无密码登录其它节点的可能性，但青云调度系统只负责把此信息注册到 metadata service 中，开发者自行去获取密钥配置云服务器。目前支持 ssh-dsa, ssh-rsa，非必填项。
 
 ##### vertical\_scaling\_policy
 
@@ -726,9 +726,9 @@ class|数据盘类型，支持 0、2、3、5、6、100、200 其中 0 表示性�
 ##### user_access　
 
 是否允许用户访问，true 表示该角色节点允许用户通过 vnc 登录，默认值为 false，
-该映像的初始用户名和密码需要在“版本描述”中写清楚以便告知用户。
-允许用户登陆的节点在集群非活跃状态如关闭时不会销毁主机，所以用户可以往这类主机写入数据。
-而其它主机是不会持久化数据，必须在挂盘上持久化数据，
+该镜像的初始用户名和密码需要在“版本描述”中写清楚以便告知用户。
+允许用户登陆的节点在集群非活跃状态如关闭时不会销毁云服务器，所以用户可以往这类云服务器写入数据。
+而其它云服务器是不会持久化数据，必须在挂盘上持久化数据，
 参见[制作 KVM 镜像](/appcenter/dev-platform/cluster-developer-guide/image-build/build/#制作-kvm-镜像)。
 
 ##### eip\_class
@@ -861,7 +861,7 @@ type |custom 表示这个服务是自定义的， 自定义的名字 (即 key，
 
 ##### agent\_installed
 
-如果用户想利用这套框架管理纯主机集群，则可以不用装青云提供的 App agent，同时需要指定这个参数为 false，否则系统会提示错误，该参数默认为 true。
+如果用户想利用这套框架管理纯云服务器集群，则可以不用装青云提供的 App agent，同时需要指定这个参数为 false，否则系统会提示错误，该参数默认为 true。
 
 ##### custom\_metadata
 

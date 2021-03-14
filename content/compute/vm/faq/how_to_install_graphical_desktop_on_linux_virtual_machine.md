@@ -1,5 +1,5 @@
 ---
-title: "Linux云主机安装图形化桌面的方法"
+title: "Linux云服务器安装图形化桌面的方法"
 date: 2021-02-15T21:37:25+09:00
 description: Test description
 weight: 50
@@ -11,9 +11,9 @@ enableToc: false
 
 ## 问题背景
 
-青云的Linux操作系统默认是最小化安装，部分客户需要图形化界面，比如搭建oracle环境；以下文档主要介绍Linux主机如何安装图形化桌面
+青云的Linux操作系统默认是最小化安装，部分客户需要图形化界面，比如搭建oracle环境；以下文档主要介绍Linux云服务器如何安装图形化桌面
 
-### centos7云主机部署图形化桌面
+### Centos7云服务器部署图形化桌面
 
 ####  1.准备环境
 
@@ -42,7 +42,7 @@ yum groupinstall -y "GNOME Desktop"
 
 ####  4.启动图形化桌面
 
- 从控制台vnc登入到主机内，命令输入inti 5 可进入图形化桌面
+ 从控制台vnc登入到云服务器内，命令输入inti 5 可进入图形化桌面
 
  ![centos_GUI_2.](../_images/centos_GUI_2.png)
 

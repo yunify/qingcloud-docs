@@ -51,7 +51,7 @@ section3:
 section4:
   children:
     - title: 了解：什么是负载均衡
-      content: 负载均衡器可以将来访问流量分配到多台主机，从而提高业务的服务能力和可用性。
+      content: 负载均衡器可以将来访问流量分配到多台云服务器，从而提高业务的服务能力和可用性。
       vice_title: 了解的第一步
       children:
         - title: 产品简介

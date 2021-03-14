@@ -1,5 +1,5 @@
 ---
-title: "windows主机系统时间与网络时间不同步"
+title: "windows云服务器系统时间与网络时间不同步"
 date: 2021-02-04T20:38:25+09:00
 description: Test description
 weight: 40

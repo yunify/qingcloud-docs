@@ -52,7 +52,7 @@ push "route 172.21.0.0 255.255.0.0"
 
 <img src="../homer/build_gre_tunnel_06.png" width="60%" height="100%">
 
-### 5.实测可以同时ping通两个私有网络的主机了，如图所示
+### 5.实测可以同时ping通两个私有网络的云服务器了，如图所示
 
 ```
 C:\Users\myhomer>ping 172.20.100.20

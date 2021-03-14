@@ -15,7 +15,7 @@ weight: 5
 
 echo "CREATE DATABASE monitor" | curl 'http://ChronusDB用户名:ChronusDB密码@高可用IP:8123/' --data-binary @-
 
-# 建立CPU监控表，表中主要包含时间，主机名，CPU 型号等标签信息和 CPU 常见监控指标
+# 建立CPU监控表，表中主要包含时间，云服务器名，CPU 型号等标签信息和 CPU 常见监控指标
 
 echo "CREATE TABLE monitor.cpu_tags_metrics
 (
@@ -76,7 +76,7 @@ ENGINE = Distributed(logical_consistency_cluster, monitor, cpu_tags_metrics, ran
 ## 查询模型
 
 ```bash
-# 指定五个主机，查询八小时内所有CPU指标的最大值
+# 指定五个云服务器，查询八小时内所有CPU指标的最大值
 
 echo "SELECT
     toStartOfHour(time) AS hour,
@@ -95,7 +95,7 @@ WHERE (hostname IN ('host_9', 'host_5', 'host_1', 'host_7', 'host_2')) AND (time
 GROUP BY hour
 ORDER BY hour ASC" | curl 'http://ChronusDB用户名:ChronusDB密码@高可用IP:8123/' --data-binary @-
 
-# 12小时内，所有主机 5 个 CPU 指标的平均值
+# 12小时内，所有云服务器 5 个 CPU 指标的平均值
 
 echo "SELECT
     toStartOfHour(time) AS hour,
@@ -124,19 +124,19 @@ GROUP BY minute
 ORDER BY minute DESC
 LIMIT 5" | curl 'http://ChronusDB用户名:ChronusDB密码@高可用IP:8123/' --data-binary @-
 
-# 一定时段内，所有主机 CPU 过载情况
+# 一定时段内，所有云服务器 CPU 过载情况
 
 echo "SELECT *
 FROM monitor.cpu_tags_metrics_logical_distributed
 PREWHERE (usage_user > 90.) AND (time >= '2019-01-01 00:16:22') AND (time < '2019-01-01 12:16:22')" | curl 'http://ChronusDB用户名:ChronusDB密码@高可用IP:8123/' --data-binary @-
 
-# 一定时段内，某些主机 CPU 过载情况
+# 一定时段内，某些云服务器 CPU 过载情况
 
 echo "SELECT *
 FROM monitor.cpu_tags_metrics_logical_distributed
 PREWHERE (usage_user > 90.) AND (time >= '2019-01-01 00:08:59') AND (time < '2019-01-01 12:08:59') AND (hostname IN ('host_9', 'host_5', 'host_1', 'host_7', 'host_2'))" | curl 'http://ChronusDB用户名:ChronusDB密码@高可用IP:8123/' --data-binary @-
 
-# 每台主机最近的监控记录
+# 每台云服务器最近的监控记录
 
 echo "SELECT DISTINCT
     hostname,
@@ -155,7 +155,7 @@ ORDER BY
     hostname ASC,
     time DESC" | curl 'http://ChronusDB用户名:ChronusDB密码@高可用IP:8123/' --data-binary @-
 
-# 某台主机 CPU 在指定时段内，每分钟 usage_user 的最大值
+# 某台云服务器 CPU 在指定时段内，每分钟 usage_user 的最大值
 
 echo "SELECT
     toStartOfMinute(time) AS minute,
@@ -185,10 +185,10 @@ ORDER BY minute ASC" | curl 'http://ChronusDB用户名:ChronusDB密码@高可用
 >
 > | 查询模型 | 查询耗时 |
 > |:--|--:|
-> | 指定五个主机，查询八小时内所有CPU指标的最大值 | 0.06s |
-> | 12小时内，所有主机 5 个 CPU 指标的平均值 | 0.071s |
+> | 指定五个云服务器，查询八小时内所有CPU指标的最大值 | 0.06s |
+> | 12小时内，所有云服务器 5 个 CPU 指标的平均值 | 0.071s |
 > | 获取某时刻前五分钟 CPU usage_user 的最大值 | 0.017s |
-> | 一定时段内，所有主机 CPU 过载情况 | 9.315s |
-> | 一定时段内，某些主机 CPU 过载情况 | 0.06s |
-> | 每台主机最近的监控记录 | 36s |
-> | 某台主机 CPU 在指定时段内，每分钟 usage_user 的最大值 | 0.12s |
+> | 一定时段内，所有云服务器 CPU 过载情况 | 9.315s |
+> | 一定时段内，某些云服务器 CPU 过载情况 | 0.06s |
+> | 每台云服务器最近的监控记录 | 36s |
+> | 某台云服务器 CPU 在指定时段内，每分钟 usage_user 的最大值 | 0.12s |

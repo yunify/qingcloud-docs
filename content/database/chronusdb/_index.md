@@ -25,7 +25,7 @@ Section2:
       url: "quickstart/quick_start/"
 
     - title: 操作指南
-      content: 学习上手如何管理 ChronusDB 集群，以及如何使用 RadonDB 提供的相关服务等。
+      content: 学习上手如何管理 ChronusDB 集群，以及如何使用 ChronusDB 提供的相关服务等。
       url: "manual/cluster_info/"
 
     - title: 最佳实践

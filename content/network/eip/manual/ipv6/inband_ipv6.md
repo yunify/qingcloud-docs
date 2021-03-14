@@ -5,37 +5,37 @@ weight: 30
 draft: false
 ---
 
-IPv6 的网络配置与 IPv4 的配置大体上是类似的。主要是两种方式，一种是配置主机通过 VPC DHCP 获取动态的 IPv6 并与网络同步路由信息，第二种是手动申请静态的公网 IPv6 地址，并在主机中配置静态 IPv6 并与网络同步路由信息。
+IPv6 的网络配置与 IPv4 的配置大体上是类似的。主要是两种方式，一种是配置云服务器通过 VPC DHCP 获取动态的 IPv6 并与网络同步路由信息，第二种是手动申请静态的公网 IPv6 地址，并在云服务器中配置静态 IPv6 并与网络同步路由信息。
 
 两种 IPv6 最大的区别，通过 VPC DHCP 获取的 IPv6 地址，在接入公网后，同时具备公网和 VPC 内网的访问能力，点击查看[操作步骤](../../../quickstart/ipv6_quick_start/)。手动申请的 IPv6 地址只具有公网能力，无法与不具备公网带宽的VPC内部IPv6访问，类似于用内网的 IPv4 是无法访问公网IPv4。两种方案都可以提供 IPv6 的公网访问，您可以根据自己的网络需求和偏好进行选择。
 
 ## 通过私有网络动态分配 IPv6 和自动化配置
 
-在支持 IPv6 的私有网络中，点击“创建资源”按钮，选择“主机”，建议选择标识 `IPv6` 的镜像完成创建主机，有 IPv6 标识的镜像在支持 IPv6 的 VPC网络会自动分配 IPv6 地址，并自动完成 IPv6 配置。
+在支持 IPv6 的私有网络中，点击“创建资源”按钮，选择“云服务器”，建议选择标识 `IPv6` 的镜像完成创建云服务器，有 IPv6 标识的镜像在支持 IPv6 的 VPC网络会自动分配 IPv6 地址，并自动完成 IPv6 配置。
 
 >注解： 目前仅部分操作系统镜像支持 IPv6 自动化配置：`centos75x64b`，`bionic1x64c`，`xenial5x64b`（及相关操作系统以后的版本）。
-若从其他的镜像启动的主机， 则未针对 DHCPv6 进行配置， 也即该主机的网络接口无法自动获取/识别 IPv6 相关网络配置。
+若从其他的镜像启动的云服务器， 则未针对 DHCPv6 进行配置， 也即该云服务器的网络接口无法自动获取/识别 IPv6 相关网络配置。
 
-### <span id="enable_instance_ipv6">主机 IPv6 自动化配置 </span>
+### <span id="enable_instance_ipv6">云服务器 IPv6 自动化配置 </span>
 
-对于没有标识 IPv6 的镜像所启动的主机，登录主机后进行一些配置， 也可以开启 IPv6 的自动化 。
+对于没有标识 IPv6 的镜像所启动的云服务器，登录云服务器后进行一些配置， 也可以开启 IPv6 的自动化 。
 
-青云的网络采用了`DHCPv6`，用户主机需要以`DHCPv6`的方式获取到IPv6地址，并通过[Network Discovery Protocol](https://tools.ietf.org/html/rfc4861)里的`Router Advertisement`来自动路由寻址。
+青云的网络采用了`DHCPv6`，用户云服务器需要以`DHCPv6`的方式获取到IPv6地址，并通过[Network Discovery Protocol](https://tools.ietf.org/html/rfc4861)里的`Router Advertisement`来自动路由寻址。
 
-主机内要配置支持 DHCPv6，主要包括三个要点：
+云服务器内要配置支持 DHCPv6，主要包括三个要点：
 
 1. 需要配置 [DUID](https://en.wikipedia.org/wiki/DHCPv6#DHCP_Unique_Identifier)
  的类型为 [DUID-LLT](https://tools.ietf.org/html/rfc3315#section-9.2)。
 2. 需要在关闭网络时，及时清理 lease 文件，确保切换网络时 duid 不会缓存在 lease 文件里。
 3. 配置 sysctl `accept_dad` 为 0。[DAD](https://tools.ietf.org/html/rfc4429)
-功能会避免 IPv6 地址重复分配。在青云，会通过 DHCP 机制避免地址重复分配；且底层实现有对 IPv6 实现地址代答功能，可能会导致主机内 IPv6
+功能会避免 IPv6 地址重复分配。在青云，会通过 DHCP 机制避免地址重复分配；且底层实现有对 IPv6 实现地址代答功能，可能会导致云服务器内 IPv6
 地址变为 'duplicated'，所以需要关闭 DAD。
 
 此外，不同操作系统、不同发行版的配置方法是不同的，需要根据您的操作系统版本和网络管理工具，并查阅相关文档，进行合理正确配置。
 
 下面的文档包括了 `CentOS 7.5 / Ubuntu 18.04 / Ubuntu 16.04` 的配置方法
 
-配置完成后，需要重启主机，以确保您的配置生效。
+配置完成后，需要重启云服务器，以确保您的配置生效。
 
 至此，您就可以轻松的体验 IPv6 带来的种种好处了。
 
@@ -240,11 +240,11 @@ dhclient 会把 v4/v6的配置互做 backup 来确保使用相同的 duid，所�
 
 ### Windows Server 2008/2012/2016
 
-Windows Server 已经默认开启了 IPv6 协议与 DHCPv6,但是 DHCPv6 的相关配置需要与上述[主机 IPv6 自动化配置](#主机-IPv6-自动化配置)保持一致。
+Windows Server 已经默认开启了 IPv6 协议与 DHCPv6,但是 DHCPv6 的相关配置需要与上述[云服务器 IPv6 自动化配置](#云服务器-IPv6-自动化配置)保持一致。
 
 1.禁用 IPv6 随机标识
 
-主机网卡默认都会有一个链路本地（Link Local）IPv6 地址，Windows Server 默认的 Link Local IPv6地址生成方式是随机生成的，这与基于 MAC-48 的 [EUI-64](https://tools.ietf.org/html/rfc4291#appendix-A) 方式不同。
+云服务器网卡默认都会有一个链路本地（Link Local）IPv6 地址，Windows Server 默认的 Link Local IPv6地址生成方式是随机生成的，这与基于 MAC-48 的 [EUI-64](https://tools.ietf.org/html/rfc4291#appendix-A) 方式不同。
 
 所以需要禁用 Link Local IPv6 地址随机生成。通过 cmd.exe 启动命令提示符窗口，命令与结果如下：
 
@@ -281,7 +281,7 @@ netsh interface ipv6>set interface 5 dadtransmits=0
 
 3.修改注册表 TCPip6/parameters 下的 dhcpv6-duid
 
-部分 Windows Server 中的 dhcpv6-duid 为固定值，会导致 Windows Server DHCP冲突。所以需要修改 dhcpv6-duid 为独特值，最方便的方式就是把最后 48 位修改为主机的 MAC 地址。
+部分 Windows Server 中的 dhcpv6-duid 为固定值，会导致 Windows Server DHCP冲突。所以需要修改 dhcpv6-duid 为独特值，最方便的方式就是把最后 48 位修改为云服务器的 MAC 地址。
 
 在开始菜单或者命令行界面，通过 `regedit` 命令打开`注册表编辑器`,打开注册表目录 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\TCPIP6\Parameters
 
@@ -297,19 +297,19 @@ netsh interface ipv6>set interface 5 dadtransmits=0
 
 ![](../../../_images/IPv6_dualstack_ip_windows_3.png)
 
-主机获取 IPv6 地址后，即可与 VPC 内其他主机通过 IPv6 地址进行内网通信。
+云服务器获取 IPv6 地址后，即可与 VPC 内其他云服务器通过 IPv6 地址进行内网通信。
 
-如果需要与 IPv6 公网地址进行通信，则需要通过控制台进行开通，详见[开通主机 IPv6 公网访问](../../../quickstart/ipv6_quick_start/#开通主机-IPv6-公网访问)。
+如果需要与 IPv6 公网地址进行通信，则需要通过控制台进行开通，详见[开通云服务器 IPv6 公网访问](../../../quickstart/ipv6_quick_start/#开通云服务器-IPv6-公网访问)。
 
 
 ## 申请 IPv6 并完成配置
 
 用户可以申请 IPv6 公网 IP，此类 IPv6 的配置与[内部绑定 IPv4 公网IP](../../ipv4/inband_ipv4/) 类似，
-将公网 IP 分配到主机后可以看到主机内多出一块还未分配 IP 地址的网卡。如下图所示
+将公网 IP 分配到云服务器后可以看到云服务器内多出一块还未分配 IP 地址的网卡。如下图所示
 
 ![](../../../_images/IPv6_inbind_nic.png)
 
-下面以镜像 `CentOS 7.5` / `CentOS 6.8` / `Ubuntu 18.04`为例，配置 IPv6 弹性 IP。在`[Your IPv6 Address]`处请填入您在平台申请并绑定到主机的 IPv6 地址
+下面以镜像 `CentOS 7.5` / `CentOS 6.8` / `Ubuntu 18.04`为例，配置 IPv6 弹性 IP。在`[Your IPv6 Address]`处请填入您在平台申请并绑定到云服务器的 IPv6 地址
 
 
 ### Centos 7.5

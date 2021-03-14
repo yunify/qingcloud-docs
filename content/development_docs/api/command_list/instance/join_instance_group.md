@@ -5,14 +5,14 @@ draft: false
 weight: 17
 ---
 
-主机加入指定的主机组。
+云服务器加入指定的云服务器组。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| instances.n | String | 一个或多个主机ID | Yes |
-| instance_group | String | 主机组 ID | Yes |
+| instances.n | String | 一个或多个云服务器ID | Yes |
+| instance_group | String | 云服务器组 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)

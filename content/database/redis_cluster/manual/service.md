@@ -137,7 +137,7 @@ wget http://[username]:[password]@[ip]/redis/redis-server.log
 
 ### 1）redis 客户端操作 redis cluster
 
-在同一私网下创建一台 Linux 主机，下载与集群 redis 版本相同的 redis，这里以 [redis 5.0.5](http://download.redis.io/releases/redis-5.0.5.tar.gz) 版本为例，编译，进入 src 目录执行下面的命令
+在同一私网下创建一台 Linux 云服务器，下载与集群 redis 版本相同的 redis，这里以 [redis 5.0.5](http://download.redis.io/releases/redis-5.0.5.tar.gz) 版本为例，编译，进入 src 目录执行下面的命令
 
 
 ```shell
@@ -162,7 +162,7 @@ wget http://[username]:[password]@[ip]/redis/redis-server.log
 
 ### 2）检查集群状态
 
-在同一私网中创建一台 Linux 主机，您可能需要先装一些依赖包 (如 Ubuntu 下 apt-get install tcl ruby　和　gem install redis)， 然后请 [下载 Redis 4.x](http://download.redis.io/releases/redis-4.0.6.tar.gz)或者[下载 Redis 5.x](http://download.redis.io/releases/redis-5.0.3.tar.gz)（根据版本需求来定），解压后进入 Redis src 目录，执行以下命令　（假设 Redis cluster 其中一个节点的 IP 为 192.168.100.13，端口为 6379)。
+在同一私网中创建一台 Linux 云服务器，您可能需要先装一些依赖包 (如 Ubuntu 下 apt-get install tcl ruby　和　gem install redis)， 然后请 [下载 Redis 4.x](http://download.redis.io/releases/redis-4.0.6.tar.gz)或者[下载 Redis 5.x](http://download.redis.io/releases/redis-5.0.3.tar.gz)（根据版本需求来定），解压后进入 Redis src 目录，执行以下命令　（假设 Redis cluster 其中一个节点的 IP 为 192.168.100.13，端口为 6379)。
 
 Redis 4.x 执行以下命令
 

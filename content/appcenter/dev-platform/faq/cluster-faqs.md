@@ -53,7 +53,7 @@ curl http://metadata/self
 
 App有以下几种日志信息需要开发者关注。
 
-1. 集群主机里的 confd的日志     
+1. 集群云服务器里的 confd的日志     
     启动时的 log： /opt/qingcloud/app-agent/log/confd-onetime.log   
     其他操作修改时的 log： /opt/qingcloud/app-agent/log/confd.log  
     > 其他操作是指修改了 confd 相关的 .toml 和 .tmpl 文件后,执行了 service confd restart 命令之后重新生成新的 confd 相关的日志。
@@ -882,7 +882,7 @@ cd /tmp
 
 > 在使用说明中，如果只输入一个网址，用户在查看使用说明时会直接跳转到该网址
 
-### 33. 如果只想用云应用开发框架管理纯主机集群
+### 33. 如果只想用云应用开发框架管理纯云服务器集群
 
 可以不用装青云提供的 App agent，以下是样例。
 

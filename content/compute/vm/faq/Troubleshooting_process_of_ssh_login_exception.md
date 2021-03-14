@@ -1,5 +1,5 @@
 ---
-title: "SSH秘钥无法登录主机，提示未注册题"
+title: "SSH秘钥无法登录云服务器，提示未注册题"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 weight: 20
@@ -9,11 +9,11 @@ enableToc: false
 
 ## 问题现象
 
-ssh使用密码远程的时候正常，ssh秘钥登录提示未注册,centos7.5的主机
+ssh使用密码远程的时候正常，ssh秘钥登录提示未注册,centos7.5的云服务器
 
 ## 排查过程
 
-1、首先检查了一下/etc/ssh/sshd_config和/etc/ssh/ssh_config的配置，与正常的主机做对比 egrep -v “#|^$” /etc/ssh/sshd_config ，并没有发现异常
+1、首先检查了一下/etc/ssh/sshd_config和/etc/ssh/ssh_config的配置，与正常的云服务器做对比 egrep -v “#|^$” /etc/ssh/sshd_config ，并没有发现异常
 
 2、检查了.ssh目录权限和authorized_keys文件权限，一般.ssh目录的权限为700或者755 authorized_keys的文件权限为600或者644，没有发现异常
 

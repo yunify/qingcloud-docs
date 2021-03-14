@@ -11,7 +11,7 @@ enableToc: false
 
 # CPU 体系结构指令集
 
-QingCloud 主机支持的 CPU 体系结构包括 **Westmere**, **SandyBridge**, **IvyBridge**, **Haswell**, **Broadwell**, **Skylake**, **CasecadeLake**, **QEMU Virtual CPU**。基础型主机和企业型e2主机不支持修改CPU体系结构，其中基础型主机CPU体系结构为**QEMU Virtual CPU**，企业型e2主机CPU体系结构为**CascadeLake**。各体系结构支持的指令集分别是：
+QingCloud 云服务器支持的 CPU 体系结构包括 **Westmere**, **SandyBridge**, **IvyBridge**, **Haswell**, **Broadwell**, **Skylake**, **CasecadeLake**, **QEMU Virtual CPU**。基础型云服务器和企业型e2云服务器不支持修改CPU体系结构，其中基础型云服务器CPU体系结构为**QEMU Virtual CPU**，企业型e2云服务器CPU体系结构为**CascadeLake**。各体系结构支持的指令集分别是：
 
 | 体系结构 | 支持的指令集 |
 |:-------------|:-------------|
