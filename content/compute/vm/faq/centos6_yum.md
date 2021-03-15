@@ -1,5 +1,5 @@
 ---
-title: "CentOS6更新yum源"
+title: "CentOS 6更新yum源"
 date: 2021-02-04T20:38:25+09:00
 description: Test description
 weight: 40
@@ -9,7 +9,7 @@ enableToc: false
 
 ## 问题背景
 
-由于CentOS6的版本有点老了，很多镜像站都不在维护CentOS6的yum源；新建的CentOS6云服务器我们已经更新了yum源，之前创建的CentOS6云服务器的yum源需要手动更新一下，可以参考以下步骤。
+由于CentOS 6的版本有点老了，很多镜像站都不在维护CentOS 6的yum源；新建的CentOS 6云服务器我们已经更新了yum源，之前创建的CentOS 6云服务器的yum源需要手动更新一下，可以参考以下步骤。
 
 ### 1.先备份源文件
 

@@ -23,7 +23,7 @@ draft: false
 
 <img src="../homer/network_nic_03.png" width="60%" height="60%">
 
-### 3.登录到云服务器，查看网卡ip地址信息
+### 3.登录到云服务器，查看网卡IP地址信息
 
 <img src="../homer/network_nic_04.png" width="60%" height="60%">
 

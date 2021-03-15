@@ -1,6 +1,6 @@
 ---
-title: "Windows客户端实现拨入vpn后，实现跨多个vpc之间的内网互通"
-linkTitle: "Windows客户端实现拨入vpn后，实现跨多个vpc之间的内网互通"
+title: "Windows客户端实现拨入VPN后，实现跨多个VPC之间的内网互通"
+linkTitle: "Windows客户端实现拨入VPN后，实现跨多个VPC之间的内网互通"
 date: 2021-02-16T10:08:56+09:00
 description:
 draft: false
@@ -9,14 +9,14 @@ weight: 1
 
 ## 项目介绍
 
-客户的两个vpc之间通过ipsec或者gre隧道打通了私有网络，希望本地拨入vpc A 能同时与vpc B的私有网络互通，具体拓扑如下
+客户的两个VPC之间通过IPSec或者GRE隧道打通了私有网络，希望本地拨入VPC A 能同时与VPC B的私有网络互通，具体拓扑如下
 
 <img src="../homer/build_gre_tunnel_05.png" width="60%" height="100%">
 
 ### 1.以下环境配置如下
 
 ```
-vpc A
+VPC A
 
 资源id :  rtr-d5651a81
 
@@ -24,7 +24,7 @@ vpc A
 
 私有网络  172.20.100.0/24  
 
-vpc B
+VPC B
 
 资源id :  rtr-0qtg9gh8
 
@@ -34,7 +34,7 @@ vpc B
 
 ```
 
-### 2.vpc A与 vpc B之间通过gre隧道打通，配置步骤参考以下链接
+### 2.VPC A与 VPC B之间通过GRE隧道打通，配置步骤参考以下链接
 
 https://docs.qingcloud.com/product/network/gre
 
@@ -42,7 +42,7 @@ https://docs.qingcloud.com/product/network/gre
 172.20.0.0/16<==>172.21.0.0/16
 ```
 
-### 3.VPC A配置openvpn，并配置路由推送，如图所示
+### 3.VPC A配置OpenVPN，并配置路由推送，如图所示
 
 <img src="../homer/build_gre_tunnel_07.png" width="60%" height="100%">
 
@@ -50,7 +50,7 @@ https://docs.qingcloud.com/product/network/gre
 push "route 172.21.0.0 255.255.0.0"
 ```
 
-### 4.本地拨入vpn以后，检查一下路由是否推送成功，如图所示
+### 4.本地拨入VPN以后，检查一下路由是否推送成功，如图所示
 
 <img src="../homer/build_gre_tunnel_06.png" width="60%" height="100%">
 

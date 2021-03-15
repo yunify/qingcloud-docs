@@ -40,7 +40,7 @@ ping windows-kms-server.ks.qingcloud.com
 >注解
 >返回的IP地址会根据大区的不同会有差别，实际操作中请以实际返回结果为准。
 
-![获取ksm服务器ip](../../_images/activation_of_winOS_5.png)
+![](../../_images/activation_of_winOS_5.png)
 
 ## 修改hosts文件
 

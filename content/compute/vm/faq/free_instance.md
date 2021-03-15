@@ -26,9 +26,9 @@ https://www.qingcloud.com/consultation
 
 2.3优惠券使用
 
-2.3.1免费试用28.8元优惠券,可用于创建sh1/gd2的公网ip，带宽必须是1Mbps
+2.3.1免费试用28.8元优惠券,可用于创建sh1/gd2的公网IP，带宽必须是1Mbps
 
-创建路径：控制台-网络与CDN-公网ip
+创建路径：控制台-网络与CDN-公网IP
 
 ![free-instance-4](/compute/vm/_images/free-instance-4.png)
 

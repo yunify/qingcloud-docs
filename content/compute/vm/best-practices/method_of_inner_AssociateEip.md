@@ -1,5 +1,5 @@
 ---
-title: "Windows 云服务器内部绑定公网IP"
+title: "Windows云服务器内部绑定公网IP"
 description: test
 draft: false
 weight: 20
@@ -77,7 +77,7 @@ route -p add 0.0.0.0 mask 0.0.0.0 10.140.84.1 metric 100 if 12
 
 #### 调整公网网卡的路由优先级
 
-通过控制面板--》网络和Internet--》网络连接--》以太网3--》点击属性--》再双击Internet 协议版本4（TCP/IPv4）–》高级，并填写ip地址等信息，如下图所示。
+通过控制面板--》网络和Internet--》网络连接--》以太网3--》点击属性--》再双击Internet 协议版本4（TCP/IPv4）–》高级，并填写IP地址等信息，如下图所示。
 
 <img src="../homer/window_nic12.png" width="60%" height="60%">
 
