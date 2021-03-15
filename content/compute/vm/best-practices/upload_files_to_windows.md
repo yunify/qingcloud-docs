@@ -30,9 +30,9 @@ draft: false
 
 ![剪贴板](../upload_files_to_windows.assets/upload_files_to_windows_2.png)
 
-### 5）连接远程主机
+### 5）连接远程云服务器
 
-在【常规】中，输入主机的公网ip以及用户名(默认为Administrator)，点击连接，即可进行复制粘贴操作
+在【常规】中，输入云服务器的公网ip以及用户名(默认为Administrator)，点击连接，即可进行复制粘贴操作
 
 ![连接](../upload_files_to_windows.assets/upload_files_to_windows_3.png)
 
@@ -66,14 +66,14 @@ draft: false
 
 ![添加驱动器](../upload_files_to_windows.assets/upload_files_to_windows_5.png)
 
-### 6）连接远程主机
+### 6）连接远程云服务器
 
-在【常规】中，输入主机的公网ip以及用户名(默认为Administrator)，点击连接
+在【常规】中，输入云服务器的公网ip以及用户名(默认为Administrator)，点击连接
 
 ![连接](../upload_files_to_windows.assets/upload_files_to_windows_3.png)
 
 ### 7）拷贝文件
 
-连接主机后，可以在【此电脑】中看到相应的盘符，复制文件与本地操作方式一致。
+连接云服务器后，可以在【此电脑】中看到相应的盘符，复制文件与本地操作方式一致。
 
 ![拷贝文件](../upload_files_to_windows.assets/upload_files_to_windows_6.png)

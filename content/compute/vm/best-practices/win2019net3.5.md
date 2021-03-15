@@ -18,7 +18,7 @@ Windows2019安装net framework3.5会出现如下报错:
 ## 解决方法
 
 ### 1、下载sxs
-[点击此处下载](http://bucket.lysandry.com/sources.zip)，下载后，在Windows2019系统云主机上安装
+[点击此处下载](http://bucket.lysandry.com/sources.zip)，下载后，在Windows2019系统云服务器上安装
 
 下载之后解压到任意目录，记住路径， 比如我这里是 C:\sources\sxs:
 

@@ -71,7 +71,7 @@ vpc2基本信息
 
 <img src="../homer/build_gre_tunnel_03.png" width="60%" height="100%">
 
-### 4.测试连通性，使用192.168.10.2主机去ping一下192.168.20.2这个主机，结果如图
+### 4.测试连通性，使用192.168.10.2云服务器去ping一下192.168.20.2这个云服务器，结果如图
 
 <img src="../homer/build_gre_tunnel_04.png" width="60%" height="100%">
 

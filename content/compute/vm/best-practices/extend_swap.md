@@ -1,10 +1,10 @@
 ---
-title: "Linux主机如何扩容swap大小"
+title: "Linux云服务器如何扩容swap大小"
 description: test
 draft: false
 ---
 
-## linux主机扩容swap
+## linux云服务器扩容swap
 
 ### 第1步：在根目录下新建一个文件夹swap
 ```

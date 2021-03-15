@@ -1,5 +1,5 @@
 ---
-title: "Linux云主机之间配置SSH互信（SSH免密码登录）"
+title: "Linux云服务器之间配置SSH互信（SSH免密码登录）"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 weight: 40
@@ -9,7 +9,7 @@ enableToc: false
 
 ## 操作场景
 
-通过配置Linux云主机SSH互信可以实现云主机间免密码登录
+通过配置Linux云服务器SSH互信可以实现云服务器间免密码登录
 
 ## 操作步骤
 
