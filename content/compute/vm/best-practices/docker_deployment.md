@@ -1,5 +1,5 @@
 ---
-title: "云主机部署Docker"
+title: "云服务器部署Docker"
 description: "常见问题"
 draft: false
 enableToc: false
@@ -7,7 +7,7 @@ enableToc: false
 
 ##  简介
 
-本文介绍了如何在Linux云主机实例中部署Docker，并提供了Docker常用操作命令及简单的镜像制作过程。
+本文介绍了如何在Linux云服务器实例中部署Docker，并提供了Docker常用操作命令及简单的镜像制作过程。
 >本文档示例环境为CentOS7.9
 
 ## Docker相关术语
@@ -94,15 +94,15 @@ docker rmi centos
 
 * 创建一个容器并运行
 ```
-docker run -it -d -p 80:80 --name nginx nginx	#使用镜像Nginx，以交互模式启动一个容器，将容器的80端口映射到云主机的80端口，并返回容器ID。
+docker run -it -d -p 80:80 --name nginx nginx	#使用镜像Nginx，以交互模式启动一个容器，将容器的80端口映射到云服务器的80端口，并返回容器ID。
 ```
 启动参数说明如下：
 -i：以交互模式运行容器，通常与-t同时使用。
 -t：为容器重新分配一个伪输入终端，通常与-i同时使用。
 -d：后台运行容器。
--p：端口映射，格式为“云主机端口:容器端口”。
+-p：端口映射，格式为“云服务器端口:容器端口”。
 --name：为容器指定一个名称。
--v：把云主机的一个目录挂载到容器里，格式为“云主机目录:容器内挂载的路径”，必须为绝对路径。
+-v：把云服务器的一个目录挂载到容器里，格式为“云服务器目录:容器内挂载的路径”，必须为绝对路径。
 <img src="../../_images/docker_deployment2.png" width="100%" height="40%">
 
 * 查看容器启动情况
@@ -156,5 +156,5 @@ docker images
 ```
 docker run -it -d -p 80:80 --name nginx nginx:v1
 ```
-* 在浏览器输入云主机所绑定的弹性公网IP，访问测试容器运行情况。出现以下内容表示运行成功。
+* 在浏览器输入云服务器所绑定的弹性公网IP，访问测试容器运行情况。出现以下内容表示运行成功。
 <img src="../../_images/docker_deployment7.png" width="100%" height="40%">

@@ -1,5 +1,5 @@
 ---
-title: "Windows主机同步网络时间"
+title: "Windows云服务器同步网络时间"
 date: 2021-02-04T20:38:25+09:00
 description: Test description
 weight: 40
@@ -9,7 +9,7 @@ enableToc: false
 
 ## 问题背景
 
-国内 Windows 系统的主机有时候不能自动同步互联网当前时间，这就需要改一下 Windows 的时间同步服务器
+国内 Windows 系统的云服务器有时候不能自动同步互联网当前时间，这就需要改一下 Windows 的时间同步服务器
 
 ## 操作步骤
 

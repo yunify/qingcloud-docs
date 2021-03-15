@@ -1,6 +1,6 @@
 ---
-title: "在windows主机中配置pptp vpn客户端"
-linkTitle: "在windows主机中配置pptp vpn客户端"
+title: "在windows云服务器中配置pptp vpn客户端"
+linkTitle: "在windows云服务器中配置pptp vpn客户端"
 date: 2021-02-16T10:08:56+09:00
 description:
 draft: false
@@ -9,7 +9,7 @@ weight: 1
 
 ## 项目介绍
 
-客户希望自己在办公或者家庭网络能拨入到青云vpc的私有网络，以实现内网访问云上部署的业务，因为vpn隧道是加密通讯的，安全性比较可靠，另外使用起来比较方便；以下介绍的是如何在windows主机部署pptp客户端。
+客户希望自己在办公或者家庭网络能拨入到青云vpc的私有网络，以实现内网访问云上部署的业务，因为vpn隧道是加密通讯的，安全性比较可靠，另外使用起来比较方便；以下介绍的是如何在windows云服务器部署pptp客户端。
 
 ### 1.通过以下步骤找到vpn服务端开启入口
 
