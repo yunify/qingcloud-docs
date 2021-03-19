@@ -5,13 +5,13 @@ draft: false
 weight: 13
 ---
 
-为指定的主机创建远程桌面代理。
+为指定的云服务器创建远程桌面代理。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| instances.n | String | 主机 ID 列表 | Yes |
+| instances.n | String | 云服务器 ID 列表 | Yes |
 | zone | String | 区域 ID | Yes |
 
 [_公共参数_](../../../parameters/)
@@ -28,7 +28,7 @@ weight: 13
 
 | Name | Type | Description |
 | --- | --- | --- |
-| instance_id | String | 主机 ID |
+| instance_id | String | 云服务器 ID |
 | broker_host | String | 远程桌面代理域名 |
 | broker_port | Integer | 远程桌面代理端口 |
 

@@ -9,7 +9,7 @@ keyword: 青云
 
 # 简介
 
-企业级分布式 SAN (NeonSAN) 是基于全闪存架构提供的分布式 SAN 服务，单块硬盘容量最高 20TB， I/O 吞吐性能最高可达 350 MB/s， IOPS 最高 50000，适用于对 IOPS、吞吐、容量和稳定性要求很高的业务，例如：企业核心数据库 Oracle RAC 及 SQL Server 故障转移集群、企业级分布式数据库 RadonDB、物理主机高可用架构、大数据分析与计算、以及高可用容器集群等。
+企业级分布式 SAN (NeonSAN) 是基于全闪存架构提供的分布式 SAN 服务，单块硬盘容量最高 20TB， I/O 吞吐性能最高可达 350 MB/s， IOPS 最高 50000，适用于对 IOPS、吞吐、容量和稳定性要求很高的业务，例如：企业核心数据库 Oracle RAC 及 SQL Server 故障转移集群、企业级分布式数据库 RadonDB、弹性裸金属服务器高可用架构、大数据分析与计算、以及高可用容器集群等。
 
 
 ## 创建
@@ -51,19 +51,19 @@ keyword: 青云
 
 ![备份NeonSAN](/storage/disk/manual/_images/create_NeonSAN_5.png)
 
-**加载企业级分布式 SAN (NeonSAN) 到主机**
+**加载企业级分布式 SAN (NeonSAN) 到云服务器**
 
-点击 **加载硬盘到主机** ，进入如下界面
+点击 **加载硬盘到云服务器** ，进入如下界面
 
-![加载neonSAN到主机](/storage/disk/manual/_images/create_NeonSAN_6.png)
+![加载neonSAN到云服务器](/storage/disk/manual/_images/create_NeonSAN_6.png)
 
-选择需要加载该企业级分布式 SAN (NeonSAN) 的主机，点击 **提交**，即可挂载到指定主机。
+选择需要加载该企业级分布式 SAN (NeonSAN) 的云服务器，点击 **提交**，即可挂载到指定云服务器。
 
-> 注解：企业级分布式 SAN(NeonSAN) 支持被挂载至基础型、企业型 e2 和 GPU 主机上，且一块 NeonSAN 硬盘可以同时挂载到多台主机。如果您将一块 NeonSAN 硬盘绑定到多个主机上， 请确保使用集群文件系统，例如 OCFS2, 否则磁盘可能会损坏
+> 注解：企业级分布式 SAN(NeonSAN) 支持被挂载至基础型、企业型 e2 和 GPU 云服务器上，且一块 NeonSAN 硬盘可以同时挂载到多台云服务器。如果您将一块 NeonSAN 硬盘绑定到多个云服务器上， 请确保使用集群文件系统，例如 OCFS2, 否则磁盘可能会损坏
 
-还可以从 **计算-主机** 页面，鼠标右键点击主机条目，来选择 **硬盘**，进行硬盘加载，界面如下
+还可以从 **计算-云服务器** 页面，鼠标右键点击云服务器条目，来选择 **硬盘**，进行硬盘加载，界面如下
 
-![从主机加载NeonSAN](/storage/disk/manual/_images/create_NeonSAN_7.png)
+![从云服务器加载NeonSAN](/storage/disk/manual/_images/create_NeonSAN_7.png)
 
 **修改企业级分布式 SAN (NeonSAN) 名称或属性**
 
@@ -185,7 +185,7 @@ keyword: 青云
 
 ## 监控
 
-在企业级分布式 SAN (NeonSAN) 挂载到主机时，可以点击条目，查看监控情况，界面如下
+在企业级分布式 SAN (NeonSAN) 挂载到云服务器时，可以点击条目，查看监控情况，界面如下
 
 ![NeonSAN监控](/storage/disk/manual/_images/create_NeonSAN_26.png)
 

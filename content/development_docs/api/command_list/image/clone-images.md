@@ -6,15 +6,15 @@ draft: false
 
 
 
-从一个映像克隆多个映像。
+从一个镜像克隆多个镜像。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| image | String | 需要克隆的原始映像 ID | Yes |
-| count | Integer | 克隆映像的数量，默认是1 | No |
-| image_name | String | 映像名称<br/>注解<br/>如果不指定，则和原始映像名称一致 | No |
+| image | String | 需要克隆的原始镜像 ID | Yes |
+| count | Integer | 克隆镜像的数量，默认是1 | No |
+| image_name | String | 镜像名称<br/>注解<br/>如果不指定，则和原始镜像名称一致 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)

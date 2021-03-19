@@ -6,14 +6,14 @@ draft: false
 
 
 
-将任意数量密钥对加载到任意数量的主机， 主机状态须为“运行中”（ running ）或“已关机”（ stopped ）。
+将任意数量密钥对加载到任意数量的云服务器， 云服务器状态须为“运行中”（ running ）或“已关机”（ stopped ）。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | keypairs.n | String | 密钥 ID | Yes |
-| instances.n | String | 主机 ID | Yes |
+| instances.n | String | 云服务器 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)

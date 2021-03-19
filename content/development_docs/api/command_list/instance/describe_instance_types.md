@@ -5,15 +5,15 @@ draft: false
 weight: 12
 ---
 
-获取区域支持的主机类型
+获取区域支持的云服务器类型
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | zone | String | 区域 ID，注意要小写 | Yes |
-| instance_types | Array | 指定查询的主机类型 | No |
-| baremetal | Integer | 是否返回物理机的主机类型，”1” 则返回物理机支持的类型，默认 “0” | No |
+| instance_types | Array | 指定查询的云服务器类型 | No |
+| baremetal | Integer | 是否返回物理机的云服务器类型，”1” 则返回物理机支持的类型，默认 “0” | No |
 
 [_公共参数_](../../../parameters/)
 
@@ -22,19 +22,19 @@ weight: 12
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| instance_type_set | Array | JSON 格式的主机类型列表, 每项参数可见下面 [Response Item](#response-item) |
-| total_count | Integer | 根据过滤条件得到的主机类型总数 |
+| instance_type_set | Array | JSON 格式的云服务器类型列表, 每项参数可见下面 [Response Item](#response-item) |
+| total_count | Integer | 根据过滤条件得到的云服务器类型总数 |
 
 **Response Item**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| instance_type_id | String | 主机类型ID |
-| instance_type_name | String | 主机类型名称 |
-| description | String | 主机类型描述 |
-| vcpus_current | Integer | 主机类型CPU核心数目。 |
-| memory_current | Integer | 主机类型内存大小, 单位为MB。 |
-| status | String | 主机类型状态, 有效值为available, deprecated。<br/>available： 可用的主机类型<br/>deprecated： 已废弃的主机类型 |
+| instance_type_id | String | 云服务器类型ID |
+| instance_type_name | String | 云服务器类型名称 |
+| description | String | 云服务器类型描述 |
+| vcpus_current | Integer | 云服务器类型CPU核心数目。 |
+| memory_current | Integer | 云服务器类型内存大小, 单位为MB。 |
+| status | String | 云服务器类型状态, 有效值为available, deprecated。<br/>available： 可用的云服务器类型<br/>deprecated： 已废弃的云服务器类型 |
 
 **Example**
 

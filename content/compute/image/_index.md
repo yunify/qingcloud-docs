@@ -1,24 +1,24 @@
 ---
-title: "映像"
-linkTitle: "映像"
+title: "镜像"
+linkTitle: "镜像"
 weight: 2
 collapsible: true
 type: "product"
 
 section1:
-  title: 映像
-  vice_title: 映像（Image）是一个包含了软件及必要配置的机器模版
+  title: 镜像
+  vice_title: 镜像（Image）是一个包含了软件及必要配置的机器模版
 
 Section2:
   title: 用户指南
   children:
     - title: 产品简介
-      content: 映像产品简介
+      content: 镜像产品简介
       url: "/compute/image/intro/image"
 
 
     - title: 操作指南
-      content: 映像操作指南
+      content: 镜像操作指南
       url: "/compute/image/manual/image"
 
     
@@ -33,19 +33,19 @@ section3:
 
 section4:
   children:
-    - title: 了解：什么是映像
-      content: 映像是一个包含了软件及必要配置的机器模版。
+    - title: 了解：什么是镜像
+      content: 镜像是一个包含了软件及必要配置的机器模版。
       vice_title: 了解的第一步
       children:
         - title: 产品概述
           url: "/compute/image/intro/image"
 
 
-    - title: 上手：映像的相关操作
-      content: 如何捕获属于自己的映像。
+    - title: 上手：镜像的相关操作
+      content: 如何捕获属于自己的镜像。
       vice_title: 上手的第一步
       children: 
-        - title: 如何捕获映像
+        - title: 如何捕获镜像
           url: "/compute/image/manual/image"
 
 ---

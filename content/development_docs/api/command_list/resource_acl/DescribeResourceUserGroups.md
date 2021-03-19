@@ -17,7 +17,7 @@ draft: false
 | group_roles.n | String | 角色ID | No |
 | limit | Integer | 每次最多返回多少条数据。 | No |
 | offset | Integer | 数据偏移量, 默认为0 | No |
-| verbose | Integer | 是否返回冗长的信息, 若为1, 则返回主机相关其他资源的详细数据。 | No |
+| verbose | Integer | 是否返回冗长的信息, 若为1, 则返回云服务器相关其他资源的详细数据。 | No |
 | sort_key | String | 排序字段，默认为 create_time | No |
 | reverse | Integer | 0 为增序排列；1 为降序排列 | No |
 

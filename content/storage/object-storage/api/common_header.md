@@ -11,7 +11,7 @@ weight: 3
 
 ### Host
 
-指定所请求资源的主机名及端口。在HTTP/1.1中为必填字段，可以为空值。HTTP/1.0中为可选字段。
+指定所请求资源的云服务器名及端口。在HTTP/1.1中为必填字段，可以为空值。HTTP/1.0中为可选字段。
 http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.23
 
 ### Authorization

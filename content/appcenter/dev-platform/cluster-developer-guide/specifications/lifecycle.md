@@ -13,7 +13,7 @@ weight: 7
 
 ![创建集群](/appcenter/dev-platform/cluster-developer-guide/specifications/images/create-cluster.png)
 
-1. 创建当前集群所有节点的资源如主机、硬盘、IP 地址等；　<br>
+1. 创建当前集群所有节点的资源如云服务器、硬盘、IP 地址等；　<br>
 2. 将本集群中所有信息注册到 [metadata service](/appcenter/dev-platform/cluster-developer-guide/metadata/metadata-service) 中；　<br>
 3. 启动所有节点的 confd agent，监控 metadata service 中本集群信息的变化并按照 /etc/confd 下的模板 (toml、tmpl) 定义刷新配置；如果 toml 文件里定义 reload_cmd　且配置确实发生变更则相应地执行该命令；　<br>
 4. 执行 init 和 start 中定义的 cmd，按照 init 中 [post\_start\_service](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications#init) 的定义顺序执行，如果 post\_start\_service 为 true 则表示 init 在 start 后执行；不同 role 节点相同命令执行顺序按照 order 的定义从小到大依次执行，默认为0(最早执行)，相同 order 的节点并行执行。
@@ -44,8 +44,8 @@ weight: 7
 ![增加节点](/appcenter/dev-platform/cluster-developer-guide/specifications/images/add-cluster-nodes.png)
 > 新增角色节点需支持横向伸缩，即定义了 scale\_horizontal 的 advanced\_actions，参见 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。 <br>
 
-1. 创建新增节点的资源如主机、硬盘、IP 地址等；<br>
-2. 注册新增节点的信息到 metadata service 中即 /hosts 下，同时注册到 /adding-hosts 这个临时目录下 (注：应用的主机可以从这个临时目录获取信息并执行横向扩容之前预处理操作等)；<br>
+1. 创建新增节点的资源如云服务器、硬盘、IP 地址等；<br>
+2. 注册新增节点的信息到 metadata service 中即 /hosts 下，同时注册到 /adding-hosts 这个临时目录下 (注：应用的云服务器可以从这个临时目录获取信息并执行横向扩容之前预处理操作等)；<br>
 3. 由于 metadata service 中集群信息发生改变，因此非新增节点可能会同时更新配置。如果 toml 文件里定义 reload_cmd 且配置确实发生变更则执行该命令；<br>
 4. 启动新增节点的 confd agent，同时更新自身配置信息并执行 reload_cmd；　<br>
 5. 执行新增节点 init 和 start 中定义的 cmd，按照 init 中 post\_start\_service 的定义顺序执行，不同角色节点相同命令执行顺序按照 order 的定义从小到大依次执行，默认为0(最早执行)，相同 order 的节点并行执行；　<br>
@@ -71,9 +71,9 @@ weight: 7
 11. 将删除了的节点信息从 metadata service 中注销并且删除临时目录 /deleting-hosts 下信息；　<br>
 12. 由于 metadata service 中集群信息发生改变，因此剩余所有节点可能会同时更新配置。如果 toml 文件里定义 reload_cmd 且配置确实发生变更则执行该命令。
 
-## 纵向扩容/更改主机类型
+## 纵向扩容/更改云服务器类型
 
-![纵向扩容/更改主机类型](/appcenter/dev-platform/cluster-developer-guide/specifications/images/scale-vertical.png)
+![纵向扩容/更改云服务器类型](/appcenter/dev-platform/cluster-developer-guide/specifications/images/scale-vertical.png)
 
 1. 注册扩容角色到 vertical-scaling-roles
 2. 如果只扩容硬盘则直接并行执行在线扩容，然后执行最后两步；<br>

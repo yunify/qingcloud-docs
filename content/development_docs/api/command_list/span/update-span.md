@@ -6,7 +6,7 @@ draft: false
 
 
 
-在修改SPAN属性后使用，应用变更到所有主机
+在修改SPAN属性后使用，应用变更到所有云服务器
 
 **Request Parameters**
 

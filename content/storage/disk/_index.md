@@ -38,7 +38,7 @@ section4:
       content: 硬盘为用户提供开箱即用的操作系统与工具。
       vice_title: 了解的第一步
       children:
-        - title: 产品概述（从这里进入示例目录）
+        - title: 产品概述
           url: "/storage/disk/intro/introduction"
 
         - title: 产品优势
@@ -48,13 +48,13 @@ section4:
           url: "https://www.qingcloud.com/products/volume/"
 
     - title: 上手：创建硬盘与部署应用
-      content: 虚拟硬盘为用户提供可无限扩展的通用数据存储服务。
+      content: 硬盘为用户提供可无限扩展的通用数据存储服务。
       vice_title: 上手的第一步
       children: 
-        - title: 创建与使用青云硬盘
+        - title: 创建与使用硬盘
           url: "/storage/disk/quickstart/quick_start"
 
-        - title: 主机系统盘扩容
+        - title: 云服务器系统盘扩容
           url: "/storage/disk/quickstart/system_volume_resize"
 
 ---
