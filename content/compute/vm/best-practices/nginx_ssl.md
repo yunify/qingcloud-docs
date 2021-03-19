@@ -29,6 +29,7 @@ configure arguments: --prefix=/usr/share/nginx --sbin-path=/usr/sbin/nginx --mod
 ```
 **2、下载证书，并上传到云服务器上面（例目录/etc/nginx/cert）**
 ![](../../_images/nginx_https1.png)
+
 ```
 [root@i-3lioycgh cert]# pwd
 /etc/nginx/cert
