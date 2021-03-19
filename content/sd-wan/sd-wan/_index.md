@@ -33,7 +33,7 @@ Section2:
 
     - title: 操作指南
       content: 操作指南
-      url: "/sd-wan/sd-wan/wan_access/"
+      url: "/sd-wan/sd-wan/manual/wan_access/"
 
     # - title: 最佳实践
     #  content: 最佳实践
