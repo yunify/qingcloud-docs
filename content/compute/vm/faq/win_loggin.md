@@ -1,6 +1,6 @@
 ---
 
-title: "windows云服务器配置多用户同时登录"
+title: "Windows云服务器配置多用户同时登录"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 weight: 20
@@ -8,13 +8,13 @@ draft: false
 enableToc: false
 ---
 
-## windows云服务器配置多用户同时登录
+## Windows云服务器配置多用户同时登录
 
 一、在键盘上按Win+R键(也可以在开始菜单右键然后选择运行)，在运行的输入框里输入"gpedit.msc"命令，然后点击确定
 
 ![cmd_gpedit.msc](../_images/cmd_gpedit.msc.jpg)
 
-二、在“计算机组策略“中依次展开 计算机配置 ---> 管理模板  ---> windows组件 ---> 然后在右边的菜单中选择远程桌面服务，双击打开
+二、在“计算机组策略“中依次展开 计算机配置 ---> 管理模板  ---> Windows组件 ---> 然后在右边的菜单中选择远程桌面服务，双击打开
 
 ![mstsc_service](../_images/mstsc_service.jpg)
 
@@ -42,4 +42,4 @@ enableToc: false
 
 ![mstsc_addcnnum](../_images/mstsc_addcnnum.jpg)
 
-九、验证
+九、用多台云服务器同时远程该云服务器，验证配置是否成功
