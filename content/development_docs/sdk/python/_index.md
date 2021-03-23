@@ -12,7 +12,7 @@ Section2:
       content: 通过pip安装青云SDK。
       url: "install/install/"
 
-    - title: 操作指南
+    - title: 快速入门
       content: 如何使用青云SDK
       url: "manual/manual_guide/"
 
