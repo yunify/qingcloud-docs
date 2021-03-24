@@ -27,6 +27,6 @@ weight: 1
 
 ![](../../_images/delivering_cpe.png)
 
-用户在收到光盒之后即可开始使用，使用方法请参考[快速入门](../../../sd-wan/quick-start/cpe_connect_vpc)、[WAN 接入点](../../../sd-wan/manual/wan_access)。
+用户在收到光盒之后即可开始使用，使用方法请参考[快速入门](../../../sdwan/quick-start/cpe_connect_vpc)、[WAN 接入点](../../../sdwan/manual/wan_access)。
 
 
