@@ -7,7 +7,8 @@ type: "product"
 
 section1:
   title: "RabbitMQ"
-  vice_title: QingCloud RabbitMQ是一个基于AMQP协议，构建于QingCloud云服务器之上的分布式消息队列系统，具有灵活路由、事务、高可用队列、消息排序、可视化管理工具等功能。服务器端用Erlang语言编写，天生具备高可用和高并发的特性。
+  vice_title: QingCloud RabbitMQ是一个基于AMQP协议，构建于QingCloud云主机之上的分布式消息队列系统，具有灵活路由、事务、高可用队列、消息排序、可视化管理工具等功能。服务器端用Erlang语言编写，天生具备高可用和高并发的特性。
+
 
 Section2:
   title: 用户指南
@@ -47,13 +48,16 @@ section3:
 
 section4:
   children:
-    - title: 了解
-      content: 什么是RabbitMQ
+    - title: 了解：什么是RabbitMQ
+      content: RabbitMQ是一个基于AMQP协议，构建于QingCloud云主机之上的分布式消息队列系统。
+      vice_title: 了解的第一步
       children:
         - title: 产品简介
           url: "/middware/rabbitmq/intro/intro"
-    - title: 进阶
-      content: 学习如何创建、管理、使用RabbitMQ集群
+    - title: 上手：RabbitMQ集群的常见操作
+      content: 学习如何创建、管理、使用RabbitMQ集群。
+      vice_title: 上手的第一步
+
       children: 
         - title: 创建RabbitMQ
           url: "/middware/rabbitmq/quick-start/quick_start"
