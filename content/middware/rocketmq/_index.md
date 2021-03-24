@@ -50,14 +50,14 @@ section3:
 
 section4:
   children:
-    - title: 了解
-      content: 什么是RocketMQ
+    - title: 了解：什么是RocketMQ
+      content: RocketMQ是一个基于Apache2.0协议开源的分布式消息和流数据平台。
       vice_title: 了解的第一步      
       children:
         - title: 产品简介
           url: "/middware/rocketmq/intro/intro"
-    - title: 进阶
-      content: 学习如何创建、管理、使用RocketMQ集群
+    - title: 上手：RocketMQ集群的常见操作
+      content: 学习如何创建、管理、使用RocketMQ集群。
       vice_title: 上手的第一步
       children: 
         - title: 创建RocketMQ

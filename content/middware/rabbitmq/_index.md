@@ -47,14 +47,14 @@ section3:
 
 section4:
   children:
-    - title: 了解
-      content: 什么是RabbitMQ
+    - title: 了解：什么是RabbitMQ
+      content: RabbitMQ是一个基于AMQP协议，构建于QingCloud云主机之上的分布式消息队列系统。
       vice_title: 了解的第一步
       children:
         - title: 产品简介
           url: "/middware/rabbitmq/intro/intro"
-    - title: 进阶
-      content: 学习如何创建、管理、使用RabbitMQ集群
+    - title: 上手：RabbitMQ集群的常见操作
+      content: 学习如何创建、管理、使用RabbitMQ集群。
       vice_title: 上手的第一步
       children: 
         - title: 创建RabbitMQ
