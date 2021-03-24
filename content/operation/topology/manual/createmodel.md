@@ -19,7 +19,7 @@ weight: 5
 
 其中最后一种方法可以作为创建过程中保存、再修改的方式，后文再详细说明。点击“创建模板”按钮，进入引导页面，提供前 4 种方式的入口。
 
-[![](../_images/tutorial.png)](_images/tutorial.png)
+![](../_images/tutorial.png)
 
 **使用系统推荐模板创建**
 
@@ -27,7 +27,7 @@ weight: 5
 
 选择其中一个模板进入编辑页面，您可以直接提交生成属于自己的模板，也可以修改配置、增减资源以满足自己的要求，这些修改不会影响到原模板。
 
-[![](../_images/recommend.png)](_images/recommend.png)
+![](../_images/recommend.png)
 
 注解
 
@@ -39,7 +39,7 @@ weight: 5
 
 资源编排的模板是跨区域共享的，您可以从某个区域的资源抽取一份模板，并将其在其他区域应用生成编排，就实现了跨区域复制资源结构。若模板依赖的资源，例如自有镜像在新区域不存在，请先迁移镜像。
 
-[![](C:../_images/extract.png)](_images/extract.png)
+![](../_images/extract.png)
 
 注解
 
@@ -49,7 +49,7 @@ weight: 5
 
 如果您希望与其他用户共享已有的资源模版，或者在青云云平台的跨区迁移等业务场景中，需要快速高效地导入已有的资源模版，可选择使用导入模版功能。在使用该类方式之前，需要先导出已创建的资源模版，导出入口位于模版详情页内，基本属性版块的下拉框内，如下图所示：
 
-[![](../_images/upload-tmp.png)](_images/upload-tmp.png)
+![](../_images/upload-tmp.png)
 
 导出的资源模版为 JSON 文件，并保存在本地。按照创建模版的第四种方式，可从本地导入模版直接使用，导入成功之后即完成了一次模版创建。
 
@@ -57,7 +57,7 @@ weight: 5
 
 在熟悉资源编排功能之后，手动创建模板是最常用的创建方式。在这里您可以根据构想的资源组合，从无到有地生成资源以及资源之间的关系。资源的组合遵循实际依赖关系，如私有网络必须挂载在路由器 / VPC 内，硬盘必须挂载在云服务器或 Virtual SAN / VNAS 下，公网IP 只能绑定到云服务器、路由器 / VPC 或负载均衡器等。
 
-[![](../_images/manual.png)](_images/manual.png)
+![](../_images/manual.png)
 
 模板编辑界面分为3个区域：选择区、绘图区、配置区，各区域的作用和操作说明如下：
 
@@ -89,7 +89,7 @@ weight: 5
 
 从选择区中拖动资源到绘图区，即可添加资源。如果释放在空白区，则添加到基础网络中；如果释放在某个资源上，则添加到该资源。
 
-[![](../_images/dragdrop.png)](_images/dragdrop.png)
+![](../_images/dragdrop.png)
 
 注解
 
@@ -101,11 +101,11 @@ weight: 5
 
 拖拽删除方式：
 
-[![](../_images/removearea.png)](_images/removearea.png)
+![](../_images/removearea.png)
 
 右键删除方式：
 
-[![](../_images/rightremove.png)](_images/rightremove.png)
+![](../_images/rightremove.png)
 
 **复制资源**
 
@@ -115,7 +115,7 @@ weight: 5
 *   如果云服务器在私有网络中，那么新云服务器也在该私有网络中；
 *   如果云服务器指定了私有网络IP，那么新云服务器会获得同一网段的不同IP。
 
-[![](../_images/copy.png)](_images/copy.png)
+![](../_images/copy.png)
 
 注解
 
@@ -125,17 +125,17 @@ weight: 5
 
 在绘图区中点击资源，配置区会展示该资源的配置。有的配置是可以修改的，有的不能修改。可以修改的配置项，鼠标移动上去后，会出现编辑按钮。点击编辑按钮，或双击该配置项，进入该配置项或一组关联配置项的编辑。
 
-[![](../_images/edit_image.png)](_images/edit_image.png)
+![](../_images/edit_image.png)
 
 资源的配置，与该类资源申请创建界面中支持的配置是相似的。加入了私有网络的资源，如果私有网络打开了 DHCP 选项，可以给资源手动指定私有网络IP。如果您输入的 IP 与当前模板中已指定的 IP 有冲突，提交时会提示您。如果不确定哪些 IP 已经配置过，您可以点击“自动填充”按钮，系统会为该资源分配未使用过的 IP。
 
-[![](../_images/assign_ip.png)](_images/assign_ip.png)
+![](../_images/assign_ip.png)
 
 **提取资源**
 
 有些关联配置，需要指定目标资源到配置项中，例如选择路由器端口转发的目标IP、选择负载均衡器的后端资源、选择共享存储的挂载硬盘等。这些目标资源的输入框后边，都有一个提取器，点击提取器后，点击绘图区中的资源，即可提取到输入框中。
 
-[![](../_images/pick_resource.png)](_images/pick_resource.png)
+![](../_images/pick_resource.png)
 
 注解
 
@@ -157,7 +157,7 @@ weight: 5
 
 您可以在模板编辑的过程中，随时查看加入模板的计费资源价格。此处会按资源的类型、配置归类，统计出不同配置资源的数量，并根据该区域的资源单价计算出总价。
 
-[![](../_images/price.png)](_images/price.png)
+![](../_images/price.png)
 
 注解
 
@@ -167,5 +167,5 @@ weight: 5
 
 完成编辑之后，您可以点击“提交模板”按钮，将此模板创建到系统中。需要注意的是，模板在创建之后是不能修改的，但可以以某个模板为蓝本创建新模板。因此如果您的模板创建到了一半需要保存，可以直接提交，下一次基于该模板创建即可。
 
-[![](../_images/create_template.png)](_images/create_template.png)
+![](../_images/create_template.png)
 
