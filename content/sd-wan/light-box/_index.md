@@ -7,8 +7,7 @@ type: "product"
 
 section1:
   title: 光盒
-  # vice_title: 
-  # todo add qingstor introduction video
+  vice_title: 光盒是光格网络 SD-WAN 服务的重要接入组件，便于用户最后一公里快速接入到 WAN 网。
   # video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
   # video_img: "/images/video.png"
 
@@ -18,12 +17,12 @@ Section2:
 
     - title: 产品简介
       content: 产品简介
-      url: "/sd-wan/light-box/intro/intro"
+      url: "intro/intro/"
 
   
     - title: 操作指南
       content: 操作指南
-      url: "/sd-wan/light-box/manual/base"
+      url: "manual/base/"
 
   
 section3:
@@ -41,6 +40,24 @@ section3:
       content: 如何使用 CLI 文档
       url: "/development_docs/cli/"
 
+section4:
+  children:
+    - title: 了解
+      content: 什么是 光盒
+      vice_title: 了解的第一步
+      children:
+        - title: 产品简介
+          url: "intro/intro/"
+
+    - title: 进阶
+      content: 如何申请光盒及光盒服务的分类
+      vice_title: 上手的第一步
+      children: 
+        - title: 如何申请光盒
+          url: "manual/base/"
+
+        - title: 光盒服务的分类
+          url: "manual/service/"
 
 ---
 
