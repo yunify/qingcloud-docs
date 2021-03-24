@@ -14,11 +14,11 @@ Section2:
   children:
     - title: 安全组
       content: 安全组产品简介
-      url: "/security/security_group/intro/introduction"
+      url: "/security/security_group/intro/introduction/"
 
     - title: 操作指南
       content: 安全组操作文档
-      url: "/security/security_group/manual/sg_create"
+      url: "/security/security_group/manual/sg_create/"
 
 section3:
   title: 开发者指南
@@ -42,7 +42,19 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品描述
-          url: "/security/security_group/intro/introduction"
+          url: "/security/security_group/intro/introduction/"
+
+    - title: 上手：安全组操作
+      content: 安全组的创建与配置
+      vice_title: 上手的第一步
+      children:
+        - title: 创建安全组
+          url: "manual/sg_create/" 
+        - title: 配置安全组
+          url: "manual/sg_setting/"  
+
 
 ---
+
+
 

@@ -1,5 +1,5 @@
 ---
-title: "安全组配置"
+title: "配置安全组"
 description: manual
 draft: false
 ---
