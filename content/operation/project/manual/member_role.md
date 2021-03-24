@@ -85,4 +85,4 @@ weight: 3
 
 ![账户组入口](../_images/user-group-entry.png)
 
-
+账户组的操作请参考 [账户组](../security/resource_group.html#%E7%94%A8%E6%88%B7%E7%BB%84)
