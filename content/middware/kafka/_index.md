@@ -49,11 +49,13 @@ section4:
   children:
     - title: 了解
       content: 什么是Kafka
+      vice_title: 了解的第一步
       children:
         - title: 产品简介
           url: "/middware/kafka/intro/intro"
     - title: 进阶
       content: 学习如何创建、管理、使用Kafka集群
+      vice_title: 上手的第一步
       children: 
         - title: 创建Kafka
           url: "/middware/kafka/quick-start/quick_start"
