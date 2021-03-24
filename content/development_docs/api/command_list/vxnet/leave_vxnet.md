@@ -6,14 +6,14 @@ draft: false
 
 
 
-将主机从私有网络中断开。
+将云服务器从私有网络中断开。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | vxnet | String | 私有网络 ID | Yes |
-| instances.n | String | 要离开的主机 ID | Yes |
+| instances.n | String | 要离开的云服务器 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)

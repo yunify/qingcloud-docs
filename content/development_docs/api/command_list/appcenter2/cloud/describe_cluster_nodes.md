@@ -52,8 +52,8 @@ https://docs.qingcloud.com/appcenter/docs/specifications/specifications.html
 | image_id | String | 节点的镜像ID |
 | eip | String | 节点绑定的公网或基础网络IP |
 | volume_type | Integer | 节点存储类型，具体参加开发者文档 |
-| instance_id | String | 节点的主机ID |
-| instance_type | String | 节点的主机类型 |
+| instance_id | String | 节点的云服务器ID |
+| instance_type | String | 节点的云服务器类型 |
 | security_group | String | 节点绑定的防火墙ID |
 | cpu | Integer | 节点的CPU |
 | health_status | String | 节点的健康状态，healthy或unhealthy |

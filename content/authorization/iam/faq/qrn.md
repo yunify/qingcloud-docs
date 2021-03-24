@@ -23,7 +23,7 @@ QingCloud 资源名称 (QRN) 被用来作为 QingCloud 资源的唯一标识。�
   
 - **平台分区(partition)**：目前作为保留字段。该字段是必填项，且固定为"qingcloud"。
 
-- **服务(service)**：QingCloud（例如：弹性云主机[ecm]、虚机私有云[vpc] 等）的产品命名空间。该字段是必填项，相关服务列表请参阅[QingCloud 服务类别](../supported_services#服务类别)。
+- **服务(service)**：QingCloud（例如：弹性云服务器[ecm]、虚机私有云[vpc] 等）的产品命名空间。该字段是必填项，相关服务列表请参阅[QingCloud 服务类别](../supported_services#服务类别)。
 
 - **区域(region)**：资源所在的区域或可用区（例如：北京3区[pek3]、亚太2区-A[ap2a]等）。一些全局资源的 QRN 不需要指定区域，因此该字段可能会被省略。相关区域列表请参阅[区域列表](../supported_services#区域和可用区)
 
@@ -33,7 +33,7 @@ QingCloud 资源名称 (QRN) 被用来作为 QingCloud 资源的唯一标识。�
 
 > 1.`<resource_type>/<resource_id>`
 >
-> 表示某个资源类型下的某个具体资源。例如资源 ID 为 i-xxxxxx 的主机：instance/i-xxxxxx
+> 表示某个资源类型下的某个具体资源。例如资源 ID 为 i-xxxxxx 的云服务器：instance/i-xxxxxx
 >
 > 2.`<resource_type>/*`  
 >
@@ -55,7 +55,7 @@ QingCloud 资源名称 (QRN) 被用来作为 QingCloud 资源的唯一标识。�
 qrn:qingcloud:iam::usr-xxxxxx:root
 ```
 
-资源 id 为`i-xxxxxx`的主机实例：
+资源 id 为`i-xxxxxx`的云服务器实例：
 
 ```txt
 qrn:qingcloud:ecm:pek3:usr-xxxxxx:instance/i-xxxxxx

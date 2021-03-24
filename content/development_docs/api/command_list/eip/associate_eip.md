@@ -6,9 +6,9 @@ draft: false
 
 
 
-将一个“可用”（ available ）状态的公网IP绑定到主机， 绑定后的主机才具有访问外网的能力。
+将一个“可用”（ available ）状态的公网IP绑定到云服务器， 绑定后的云服务器才具有访问外网的能力。
 
-不能对已绑定公网IP的主机再次绑定，如果需要更改IP， 则要先解绑之前的IP，再绑定新的。如果已绑定公网IP所在的主机没有反应,可以使用强制绑定
+不能对已绑定公网IP的云服务器再次绑定，如果需要更改IP， 则要先解绑之前的IP，再绑定新的。如果已绑定公网IP所在的云服务器没有反应,可以使用强制绑定
 将该公网IP绑定到目标资源上。
 
 如果想将公网IP绑定到路由器，请参见 [_ModifyRouterAttributes_](../../router/modify_router_attributes/)
@@ -18,7 +18,7 @@ draft: false
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | eip | String | 公网IP的ID | Yes |
-| instance | String | 主机 ID | Yes |
+| instance | String | 云服务器 ID | Yes |
 | force | Boolean | 是否强制绑定 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 

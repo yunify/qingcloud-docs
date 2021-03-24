@@ -56,6 +56,7 @@ section4:
     - title: 上手：Kafka集群的常见操作
       content: 学习如何创建、管理、使用Kafka集群。
       vice_title: 上手的第一步
+
       children: 
         - title: 创建Kafka
           url: "/middware/kafka/quick-start/quick_start"

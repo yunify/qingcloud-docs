@@ -6,19 +6,19 @@ draft: false
 
 
 
-从回收站销毁一台或多台主机。
+从回收站销毁一台或多台云服务器。
 
-销毁主机的前提，是此主机已被删除并进入回收站。
+销毁云服务器的前提，是此云服务器已被删除并进入回收站。
 
 警告
 
-已销毁的主机会直接从回收站销毁，无法再恢复，如果误操作，请及时与我们联系。
+已销毁的云服务器会直接从回收站销毁，无法再恢复，如果误操作，请及时与我们联系。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| instances.n | String | 一个或多个主机ID | Yes |
+| instances.n | String | 一个或多个云服务器ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)

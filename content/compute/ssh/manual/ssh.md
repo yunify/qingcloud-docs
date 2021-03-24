@@ -8,9 +8,9 @@ keyword: SSH, QingCloud,ssh密钥
 ---
 
 
-## 通过 SSH 密钥连接主机
+## 通过 SSH 密钥连接云服务器
 >注解
-相对于用户名密码方式，密钥方式拥有更强的安全性，也可以很大程度阻止暴力破解的发生。目前常用的密钥都是非对称性的加密方式，主机内置公钥，而用户则拥有私钥。由于采用非对称加密，入侵者试图通过公钥去破解私钥难度会远远超出密码的破解。
+相对于用户名密码方式，密钥方式拥有更强的安全性，也可以很大程度阻止暴力破解的发生。目前常用的密钥都是非对称性的加密方式，云服务器内置公钥，而用户则拥有私钥。由于采用非对称加密，入侵者试图通过公钥去破解私钥难度会远远超出密码的破解。
 
 ### 1. 准备密钥
 
@@ -18,19 +18,19 @@ keyword: SSH, QingCloud,ssh密钥
 
 ![](/compute/ssh/manual/_images/creat-sshkey.png)
 
-### 2. 主机加载上密钥
+### 2. 云服务器加载上密钥
 
-您可以在创建主机时选择密钥
+您可以在创建云服务器时选择密钥
 
 ![](/compute/ssh/manual/_images/creat-instance-key.png)
 
-也可以给现有主机加载密钥,选择主机右键 - ssh 密钥 - 加载
+也可以给现有云服务器加载密钥,选择云服务器右键 - ssh 密钥 - 加载
 
 ![](/compute/ssh/manual/_images/add-instance-key.png)
 
 ### 3. 配置好弹性 IP 和防火墙
 
-在连接主机之前，请确保您的主机已经绑定了弹性公网 IP，[防火墙放行](https://docsv3.qingcloud.com/security/security_group/manual/sg_setting/) TCP 22 端口。
+在连接云服务器之前，请确保您的云服务器已经绑定了弹性公网 IP，[防火墙放行](https://docsv3.qingcloud.com/security/security_group/manual/sg_setting/) TCP 22 端口。
 
 ### 4. 将密钥转换为正确的格式
 
@@ -53,4 +53,4 @@ keyword: SSH, QingCloud,ssh密钥
 
 
 >注解
-如果您已经尝试采用上述的步骤，仍然无法连接至您的主机。建议您提交工单，我们的工程师会尽快帮您解决问题。
+如果您已经尝试采用上述的步骤，仍然无法连接至您的云服务器。建议您提交工单，我们的工程师会尽快帮您解决问题。

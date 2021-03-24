@@ -6,18 +6,18 @@ draft: false
 
 
 
-将主机加入到私有网络。当需要主机加入私有网络时指定 IP 地址，只支持单台主机加入。
+将云服务器加入到私有网络。当需要云服务器加入私有网络时指定 IP 地址，只支持单台云服务器加入。
 
 警告
 
-一台主机最多只能加入一个受管网络 ( 包括基础网络vxnet-0 )
+一台云服务器最多只能加入一个受管网络 ( 包括基础网络vxnet-0 )
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | vxnet | String | 私有网络 ID (如果要指定 ip 地址，格式为'私有网络 ID\|IP 地址') | Yes |
-| instances.n | String | 加入到网络的主机 ID | Yes |
+| instances.n | String | 加入到网络的云服务器 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)

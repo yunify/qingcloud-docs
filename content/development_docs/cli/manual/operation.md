@@ -99,15 +99,15 @@ Command 的返回结果为 JSON 结构。例如 describe-keypair 的返回结果
 
 最新版本 CLI 支持的操作命令
 
-**主机**
+**云服务器**
 
 | 命令 | 描述  | 命令 | 描述 |
 | :---- | :---- | :---- | :---- |
-| describe-instances | 获取主机列表 | run-instances | 创建主机 |
-| start-instances | 开启主机 | stop-instances | 关闭主机 |
-| restart-instances | 重启主机 | terminate-instances | 销毁主机 |
-| resize-instances | 修改主机配置 | reset-instances | 重置操作系统 |
-| clone-instances | 克隆主机 | modify-instance-attributes | 修改主机基本属性 |
+| describe-instances | 获取云服务器列表 | run-instances | 创建云服务器 |
+| start-instances | 开启云服务器 | stop-instances | 关闭云服务器 |
+| restart-instances | 重启云服务器 | terminate-instances | 销毁云服务器 |
+| resize-instances | 修改云服务器配置 | reset-instances | 重置操作系统 |
+| clone-instances | 克隆云服务器 | modify-instance-attributes | 修改云服务器基本属性 |
 
 
 
@@ -116,7 +116,7 @@ Command 的返回结果为 JSON 结构。例如 describe-keypair 的返回结果
 | 命令 | 描述  | 命令 | 描述 |
 | :---- | :---- | :---- | :---- |
 | describe-volumes | 获取硬盘列表 | create-volumes | 创建硬盘 |
-| attach-volumes | 加载硬盘到主机 | detach-volumes | 从主机卸载硬盘 |
+| attach-volumes | 加载硬盘到云服务器 | detach-volumes | 从云服务器卸载硬盘 |
 | resize-volumes | 扩容硬盘 | modify-volume-attributes | 修改硬盘基本属性 |
 | delete-volumes | 删除硬盘 | clone-volumes | 克隆硬盘 |
 
@@ -124,10 +124,10 @@ Command 的返回结果为 JSON 结构。例如 describe-keypair 的返回结果
 
 | 命令 | 描述  | 命令 | 描述 |
 | :---- | :---- | :---- | :---- |
-| describe-vxnets | 获取私有网络列表 | describe-vxnet-instances | 获取私有网络内的主机 |
-| join-vxnet | 将主机加入到私有网络 | leave-vxnet | 将主机从私有网络离开 |
+| describe-vxnets | 获取私有网络列表 | describe-vxnet-instances | 获取私有网络内的云服务器 |
+| join-vxnet | 将云服务器加入到私有网络 | leave-vxnet | 将云服务器从私有网络离开 |
 | create-vxnets | 创建私有网络 | delete-vxnets | 删除私有网络 |
-| modify-vxnet-attributes | 修改私有网络基本属性 |   |   |
+| modify-vxnet-attributes | 修改私有网络基本属性 |   |   |
 
 **路由器**
 
@@ -139,14 +139,14 @@ Command 的返回结果为 JSON 结构。例如 describe-keypair 的返回结果
 | poweron-routers | 启动路由器 | poweroff-routers | 关闭路由器 |
 | modify-router-attributes | 修改路由器基本属性 | update-routers | 更新路由器配置 |
 | describe-router-statics | 获取路由器规则 | add-router-statics | 给路由器添加 DHCP，VPN，端口转发等规则 |
-| modify-router-static-attributes | 修改路由器规则的内容 |   |   |
+| modify-router-static-attributes | 修改路由器规则的内容 |   |   |
 
 **公网IP**
 
 | 命令 | 描述  | 命令 | 描述 |
 | :---- | :---- | :---- | :---- |
 | allocate-eips | 从IP池中分配一个IP | describe-eips | 获取公网IP列表 |
-| associate-eip | 将公网IP绑定到主机 | dissociate-eips | 解绑公网IP |
+| associate-eip | 将公网IP绑定到云服务器 | dissociate-eips | 解绑公网IP |
 | change-eips-bandwidth | 调整公网IP带宽 | change-eips-billing-mode | 修改公网IP计费模式 |
 | modify-eip-attributes | 修改公网IP基本属性 | release-eips | 释放公网IP |
 
@@ -160,7 +160,7 @@ Command 的返回结果为 JSON 结构。例如 describe-keypair 的返回结果
 | add-security-group-rules | 添加防火墙规则 | delete-security-group-rules | 删除防火墙规则 |
 | apply-security-group | 应用防火墙规则 | create-security-group-ipset | 创建防火墙 IP /端口集合 |
 | delete-security-group-ipsets | 删除一个或多个防火墙 IP /端口集合 | describe-security-group-ipsets | 获取一个或多个 IP /端口集合信息 |
-| modify-security-group-ipset-attributes | 修改防火墙 IP /端口集合的名称和描述 |   |   |
+| modify-security-group-ipset-attributes | 修改防火墙 IP /端口集合的名称和描述 |   |   |
 
 **SSH 密钥**
 
@@ -168,14 +168,14 @@ Command 的返回结果为 JSON 结构。例如 describe-keypair 的返回结果
 | :---- | :---- | :---- | :---- |
 | describe-keypairs | 获取密钥列表 | modify-keypair-attributes | 修改密钥基本属性 |
 | create-keypair | 新加密钥对 | delete-keypairs | 删除密钥 |
-| attach-keypairs | 加载密钥到主机 | detach-keypairs | 从主机卸载密钥 |
+| attach-keypairs | 加载密钥到云服务器 | detach-keypairs | 从云服务器卸载密钥 |
 
-**映像**
+**镜像**
 
 | 命令 | 描述  | 命令 | 描述 |
 | :---- | :---- | :---- | :---- |
-| describe-images | 获取自有映像列表 | modify-image-attributes | 修改自有映像的基本属性 |
-| capture-instance | 将关闭的主机捕获为自有映像 | delete-images | 删除自有映像 |
+| describe-images | 获取自有镜像列表 | modify-image-attributes | 修改自有镜像的基本属性 |
+| capture-instance | 将关闭的云服务器捕获为自有镜像 | delete-images | 删除自有镜像 |
 
 **负载均衡器**
 
@@ -189,13 +189,13 @@ Command 的返回结果为 JSON 结构。例如 describe-keypair 的返回结果
 | add-loadbalancer-backends | 添加监听器下的后端服务 | delete-loadbalancer-backends | 删除后端服务 |
 | describe-loadbalancer-listeners | 获取负载均衡器监听器列表 | describe-loadbalancer-backends | 获取负载均衡器后端服务列表 |
 | modify-loadbalancer-listener-attributes | 修改监听器基本属性 | modify-loadbalancer-backend-attributes | 修改后端服务基本属性 |
-| update-loadbalancers | 更新负载均衡器配置 |   |   |
+| update-loadbalancers | 更新负载均衡器配置 |   |   |
 
 **资源监控**
 
 | 命令 | 描述  | 命令 | 描述 |
 | :---- | :---- | :---- | :---- |
-| get-monitoring-data | 获取主机、公网、路由器的监控 | get-loadbalancer-monitoring-data | 获取负载均衡器的监控 |
+| get-monitoring-data | 获取云服务器、公网、路由器的监控 | get-loadbalancer-monitoring-data | 获取负载均衡器的监控 |
 
 **备份**
 
@@ -203,8 +203,8 @@ Command 的返回结果为 JSON 结构。例如 describe-keypair 的返回结果
 | :---- | :---- | :---- | :---- |
 | describe-snapshots | 获取备份列表 | modify-snapshot-attributes | 修改备份的基本属性 |
 | create-snapshots | 创建备份 | delete-snapshots | 删除备份 |
-| create-volume-from-snapshot | 从备份创建硬盘 | capture-instance-from-snapshot | 从备份创建自有映像 |
-| apply-snapshots | 回滚到指定备份点 |   |   |
+| create-volume-from-snapshot | 从备份创建硬盘 | capture-instance-from-snapshot | 从备份创建自有镜像 |
+| apply-snapshots | 回滚到指定备份点 |   |   |
 
 **SD-WAN**
 
@@ -217,4 +217,4 @@ Command 的返回结果为 JSON 结构。例如 describe-keypair 的返回结果
 
 | 命令 | 描述  | 命令 | 描述 |
 | :---- | :---- | :---- | :---- |
-| describe-jobs | 获取日志列表 |   |   |
+| describe-jobs | 获取日志列表 |   |   |
