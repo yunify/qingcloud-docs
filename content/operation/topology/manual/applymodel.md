@@ -8,7 +8,7 @@ weight: 5
 
 模板的另一个操作是“应用模板”，点击该按钮，系统将按模板中的配置，生成具有相同配置的一整套资源。资源生成之后开始计费，因此您需要先通过资源价格按钮了解该模板应用之后产生的新资费。
 
-[![](../_images/apply_template.png)](_images/apply_template.png)
+![](../_images/apply_template.png)
 
 注解
 
@@ -18,11 +18,11 @@ weight: 5
 
 在已创建的编排中可以看到应用模板的历史记录，以及成功、失败状态。点击进入详情页，可以看到该编排的创建流程输出信息。如果失败的话，失败原因会列在创建过程中，如图：
 
-[![](../_images/procedure.png)](_images/procedure.png)
+![](../_images/procedure.png)
 
 如果创建成功，详情页会列明生成资源的列表，以供管理和查看：
 
-[![](../_images/resources.png)](_images/resources.png)
+![](../_images/resources.png)
 
 注解
 
