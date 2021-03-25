@@ -20,6 +20,24 @@ section2:
       content: 学习上手如何创建、查看及应用ClickHouse等。
       url: "manual"
 
+section4:
+  children:
+    - title: 了解：什么是ClickHouse
+      content: ClickHouse的介绍以及应用。
+      vice_title: 了解的第一步
+      children:
+        - title: 产品介绍
+          url: "intro/intro" 
+
+    - title: 上手：应用ClickHouse。
+      content: 如何查看及应用ClickHouse。
+      vice_title: 上手的第一步
+      children: 
+        - title: 创建ClickHouse
+          url: "manual/setstep"
+
+        - title: 服务功能概述
+          url: "manual/service"
 
 ---
 
