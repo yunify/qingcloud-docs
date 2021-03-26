@@ -11,7 +11,7 @@ weight: 10
 
 [KubeSphere](https://kubesphere.io/) 是在 Kubernetes 之上构建的企业级分布式多租户容器管理平台，帮助企业轻松应对多租户、工作负载和集群管理、服务与网络管理、应用管理、镜像仓库管理和存储管理等业务场景，是 CNCF 会员，已通过 Kubernetes 一致性验证。
 
-QingCloud KubeSphere Engine (QKE) 服务集成了云平台的主机、存储、网络等资源，可以在青云平台一键部署高可用的 KubeSphere 集群，支持集群自动巡检和修复，支持一键升级到新版本，工单 24 小时随时响应，并由 KubeSphere 核心团队提供专业支持和服务。
+QingCloud KubeSphere Engine (QKE) 服务集成了云平台的云服务器、存储、网络等资源，可以在青云平台一键部署高可用的 KubeSphere 集群，支持集群自动巡检和修复，支持一键升级到新版本，工单 24 小时随时响应，并由 KubeSphere 核心团队提供专业支持和服务。
 
 ## 功能概览
 

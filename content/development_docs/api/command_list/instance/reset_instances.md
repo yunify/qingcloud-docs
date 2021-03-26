@@ -5,19 +5,19 @@ draft: false
 weight: 8
 ---
 
-将一台或多台主机的系统盘重置到初始状态。 被重置的主机必须处于运行（ running ）或关闭（ stopped ）状态。
+将一台或多台云服务器的系统盘重置到初始状态。 被重置的云服务器必须处于运行（ running ）或关闭（ stopped ）状态。
 
-重置只涉及系统盘数据，不包含主机所加载的硬盘。
+重置只涉及系统盘数据，不包含云服务器所加载的硬盘。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| instances.n | String | 一个或多个主机ID | Yes |
-| login_mode | String | 指定登录方式。当为 linux 主机时，有效值为 keypair 和 passwd; 当为 windows 主机时，只能选用 passwd 登录方式。<br/>当登录方式为 keypair 时，需要指定 login_keypair 参数；<br/>当登录方式为 passwd 时，需要指定 login_passwd 参数。 | Yes |
+| instances.n | String | 一个或多个云服务器ID | Yes |
+| login_mode | String | 指定登录方式。当为 linux 云服务器时，有效值为 keypair 和 passwd; 当为 windows 云服务器时，只能选用 passwd 登录方式。<br/>当登录方式为 keypair 时，需要指定 login_keypair 参数；<br/>当登录方式为 passwd 时，需要指定 login_passwd 参数。 | Yes |
 | login_keypair | String | 登录密钥ID。 | No |
 | login_passwd | String | 登录密码。 | No |
-| need_newsid | Integer | 1: 生成新的SID，0: 不生成新的SID, 默认为0；只对Windows类型主机有效。 | No |
+| need_newsid | Integer | 1: 生成新的SID，0: 不生成新的SID, 默认为0；只对Windows类型云服务器有效。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)

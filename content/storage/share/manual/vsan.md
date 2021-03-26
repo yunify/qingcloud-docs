@@ -9,25 +9,25 @@ keyword: 青云
 
 # 简介
 
-通过青云的 SDS（软件定义存储）技术，您可以快速地搭建您专属的基于 iSCSI 协议的 Virtual SAN 服务。 首先需要创建一个 Virtual SAN 服务器；然后再在其上创建一个或多个目标； 最后在主机客户端登录这些目标即可使用。
+通过青云的 SDS（软件定义存储）技术，您可以快速地搭建您专属的基于 iSCSI 协议的 Virtual SAN 服务。 首先需要创建一个 Virtual SAN 服务器；然后再在其上创建一个或多个目标； 最后在云服务器客户端登录这些目标即可使用。
 
 本指南旨在介绍如何配置 Virtual SAN 和目标，以及如何设置客户端来访问 Virtual SAN。
 
 
 > 注解
 > 
-> 如果将一块硬盘通过 Virtual SAN 服务挂载到多台主机上，那么必须通过分布式文件系统（Distributed File System）的支持才可以并行读写，可以使用青云已经推出的 [_NAS 服务_](https://docsv3.qingcloud.com/storage/vnas/manual/vnas) 。
+> 如果将一块硬盘通过 Virtual SAN 服务挂载到多台云服务器上，那么必须通过分布式文件系统（Distributed File System）的支持才可以并行读写，可以使用青云已经推出的 [_NAS 服务_](https://docsv3.qingcloud.com/storage/vnas/manual/vnas) 。
 
 ## 创建 Virtual SAN 服务器
 
 在本例中，我们会创建一台提供 Virtual SAN 的服务器。
 在控制台导航中点击『产品与服务』-『存储服务』-『共享存储 』-『Virtual SAN』进入列表页面，然后点击『创建』按钮开始创建。
 
-Virtual SAN 服务提供两种主机类型：基础型和企业型：
+Virtual SAN 服务提供两种云服务器类型：基础型和企业型：
 
-* 基础型 VSAN 服务使用的主机类型为基础型的主机，是面向个人或中小团队用户推出的入门型共享块存储服务，满足低负载的共享存储服务的场景需求。基础型 VSAN 服务可以使用基础型硬盘，容量型硬盘和企业级分布式 SAN 硬盘 (NeonSAN) 。
+* 基础型 VSAN 服务使用的云服务器类型为基础型的云服务器，是面向个人或中小团队用户推出的入门型共享块存储服务，满足低负载的共享存储服务的场景需求。基础型 VSAN 服务可以使用基础型硬盘，容量型硬盘和企业级分布式 SAN 硬盘 (NeonSAN) 。
 
-* 企业型 VSAN 服务使用的主机类型为企业型的主机，是面向性能要求更高的的企业级生产应用环境设计的高性能高可靠共享块存储服务，满足企业客户关键业务使用场景的存储需求。企业型 VSAN 服务可以使用 SSD 企业型硬盘，容量型硬盘和企业级分布式 SAN 硬盘 (NeonSAN) 。
+* 企业型 VSAN 服务使用的云服务器类型为企业型的云服务器，是面向性能要求更高的的企业级生产应用环境设计的高性能高可靠共享块存储服务，满足企业客户关键业务使用场景的存储需求。企业型 VSAN 服务可以使用 SSD 企业型硬盘，容量型硬盘和企业级分布式 SAN 硬盘 (NeonSAN) 。
 
 在创建的对话框中，你可以给 Virtual SAN 命名，并且配置它的网络。你需要将 Virtual SAN 放入一个受管私有网络中，并且可以指定 Virtual SAN 在私有网络中的 IP 。
 
@@ -201,7 +201,7 @@ vi /var/lib/iscsi/nodes/<目标IQN>/<Virtual SAN 服务器IP>/default
 
 ### 安装前准备
 
-**主机**
+**云服务器**
 
 *   基于 Oracle Linux 6.6 镜像
 *   其中两台（node1, node2）作为 oracle 数据库节点，至少2核8G
@@ -226,7 +226,7 @@ vi /var/lib/iscsi/nodes/<目标IQN>/<Virtual SAN 服务器IP>/default
 
 ### 网络配置
 
-Oracle RAC 需要主机加入两个网络，分别用于对外提供服务，和对内数据同步。在青云可以让主机同时加入受管，和自管私有网络来满足这个要求。
+Oracle RAC 需要云服务器加入两个网络，分别用于对外提供服务，和对内数据同步。在青云可以让云服务器同时加入受管，和自管私有网络来满足这个要求。
 
 **网络规划**
 
@@ -236,7 +236,7 @@ Oracle RAC 需要主机加入两个网络，分别用于对外提供服务，和
 | node2 | 192.168.100.3 | 172.16.100.3 | 192.168.100.103 |
 | scan-cluster IP | 192.168.100.210 | n/a | n/a |
 
-其中scan-cluster IP 并不是主机，只是一个配置了 DNS 域名解析的 IP 地址，作用类似 VIP。在这个例子里面，我们把 Oracle RAC 的域名定为“scan-cluster.localdomain”, 您需要把它替换成适合自己的名字。
+其中scan-cluster IP 并不是云服务器，只是一个配置了 DNS 域名解析的 IP 地址，作用类似 VIP。在这个例子里面，我们把 Oracle RAC 的域名定为“scan-cluster.localdomain”, 您需要把它替换成适合自己的名字。
 
 由于需要预留一些 IP 段，请修改路由器 DHCP 配置，减少自动分配的 IP 段。具体操作是:
 
@@ -250,15 +250,15 @@ Oracle RAC 需要主机加入两个网络，分别用于对外提供服务，和
 > 
 > 这里推荐修改 DHCP 服务范围为2~100是为了方便配置数据库节点的 VIP, 比如 192.168.100.3对应的 VIP 可以是192.168.100.103。
 
-**配置主机网络和地址**
+**配置云服务器网络和地址**
 
 用户需要在青云中做如下操作:
 
-1.  主机 node1 和 node2 加入连接了路由器的受管私有网络（通常这一步创建主机时已经完成)
+1.  云服务器 node1 和 node2 加入连接了路由器的受管私有网络（通常这一步创建云服务器时已经完成)
 2.  点击私有网络–创建， 在对话框中点击高级选项 ，选择“自管”，创建一个新的自管网络
-3.  右击私有网络–添加主机。把两个主机加到自管网络中
+3.  右击私有网络–添加云服务器。把两个云服务器加到自管网络中
 
-加入所需的网络后，需要到主机的桌面上配置下自管网络的 IP 地址
+加入所需的网络后，需要到云服务器的桌面上配置下自管网络的 IP 地址
 
 ![](../_images/oracle_rac_private_ip.png)
 
@@ -280,7 +280,7 @@ Oracle RAC 对外提供的地址是 scan-cluster 域名，Oracle 会管理 scan-
 > 
 > 其中i-xjrahmmp和i-bxjv3vop是node1和node2的机器名。如果需要用自定义的机器名，请使用 [*](#id7).localdomain的格式，比如: node1.localdomain
 
-应用路由器修改后，如果是第一次启用私网 DNS 功能，需要等待一会儿，或者重启 network-manager 服务，让主机从 DHCP 更新 DNS 服务器 IP 地址，然后到node1/node2上面测试 DNS 记录是否可用:
+应用路由器修改后，如果是第一次启用私网 DNS 功能，需要等待一会儿，或者重启 network-manager 服务，让云服务器从 DHCP 更新 DNS 服务器 IP 地址，然后到node1/node2上面测试 DNS 记录是否可用:
 
 ```
 # yum install bind-utils -y
@@ -300,7 +300,7 @@ Address: 192.168.100.210
 
 **修改/etc/hosts**
 
-Grid安装包会从 ``/etc/hosts`` 里面找当前节点名字，在 ``/etc/hosts`` 文件的 ``127.0.0.1`` 这一行结尾添加主机名字，比如``i-xjrahmmp i-xjrahmmp.localdomain`` 修改后，内容如下：
+Grid安装包会从 ``/etc/hosts`` 里面找当前节点名字，在 ``/etc/hosts`` 文件的 ``127.0.0.1`` 这一行结尾添加云服务器名字，比如``i-xjrahmmp i-xjrahmmp.localdomain`` 修改后，内容如下：
 
 ```
 # cat /etc/hosts
@@ -497,7 +497,7 @@ ssh node2-priv.localdomain date
 
 > 注解
 > 
-> 请替换里面的``i-xjrahmmp``和``i-bxjv3vop``为node1|node2的主机id。node1除了信任node2, 还要信任自己，反之也是。请多次运行以上命令，直到能正确返回时间，并且不再提示“RSA key fingerprint...Are you sure you want...”
+> 请替换里面的``i-xjrahmmp``和``i-bxjv3vop``为node1|node2的云服务器id。node1除了信任node2, 还要信任自己，反之也是。请多次运行以上命令，直到能正确返回时间，并且不再提示“RSA key fingerprint...Are you sure you want...”
 
 ### 存储配置
 

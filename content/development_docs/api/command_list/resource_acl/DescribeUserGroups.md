@@ -14,10 +14,10 @@ draft: false
 | --- | --- | --- | --- |
 | user_groups.n | String | 用户组ID | No |
 | status.n | String | 过滤状态。 | No |
-| search_word | String | 搜索关键词, 支持主机ID, 主机名称 | No |
+| search_word | String | 搜索关键词, 支持云服务器ID, 云服务器名称 | No |
 | limit | Integer | 每次最多返回多少条数据。 | No |
 | offset | Integer | 数据偏移量, 默认为0 | No |
-| verbose | Integer | 是否返回冗长的信息, 若为1, 则返回主机相关其他资源的详细数据。 | No |
+| verbose | Integer | 是否返回冗长的信息, 若为1, 则返回云服务器相关其他资源的详细数据。 | No |
 | sort_key | String | 排序字段，默认为 create_time | No |
 | reverse | Integer | 0 为增序排列；1 为降序排列 | No |
 

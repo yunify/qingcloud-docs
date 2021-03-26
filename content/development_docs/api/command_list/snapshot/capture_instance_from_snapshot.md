@@ -6,15 +6,15 @@ draft: false
 
 
 
-将指定备份导出为映像。请注意，此备份点必须为主机的备份点才能导出为映像。
+将指定备份导出为镜像。请注意，此备份点必须为云服务器的备份点才能导出为镜像。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | snapshot | String | 备份 ID | Yes |
-| image_name | String | 映像名称 | No |
-| image_encryption | Integer | 映像加密开关： 关闭：0，开启：1，默认：继承 snapshot resource 加密配置| No |
+| image_name | String | 镜像名称 | No |
+| image_encryption | Integer | 镜像加密开关： 关闭：0，开启：1，默认：继承 snapshot resource 加密配置| No |
 | cipher_alg | String | 加密使用的算法类型:<br/>目前仅支持 aes256，默认：继承 snapshot resource 加密算法配置 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
@@ -26,7 +26,7 @@ draft: false
 | --- | --- | --- |
 | action | String | 响应动作 |
 | job_id | String | Job ID |
-| image_id | String | 新的映像 ID |
+| image_id | String | 新的镜像 ID |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
 **Example**

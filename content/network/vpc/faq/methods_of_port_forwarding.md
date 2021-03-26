@@ -6,7 +6,11 @@ weight: 20
 ---
 ## 端口转发的功能介绍
 
+<<<<<<< HEAD:content/network/vpc/faq/methods_of_port_forwarding.md
 VPC网络提供端口转发（DNAT）功能，将NAT网关上的公网IP映射给私有网络的云服务器使用，使云服务器可以面向互联网提供服务，比如http/https等
+=======
+vpc网络提供端口转发（DNAT）功能，将NAT网关上的公网IP映射给私有网络的云服务器使用，使云服务器可以面向互联网提供服务，比如http/https等
+>>>>>>> upstream/master:content/network/vpc/faq/Methods of port forwarding.md
 
 ### 配置方法
 
@@ -18,7 +22,11 @@ VPC网络==>管理配置==>端口转发==>添加规则，如图所示
 - **协议**：可以设置tpc/udp两种类型的协议
 - **源端口**：NAT网关会将以指定协议和端口访问该公网IP的请求转发到目标云服务器的内网端口上
 
+<<<<<<< HEAD:content/network/vpc/faq/methods_of_port_forwarding.md
 - **内网 IP**：云服务器获取的私有网络IP地址
+=======
+- **内网 IP**：云服务器获取的私有网络ip地址
+>>>>>>> upstream/master:content/network/vpc/faq/Methods of port forwarding.md
 
 - **内网端口**：云服务器需要对公网暴露的端口服务，比如http/https/ssh等
 

@@ -8,7 +8,7 @@ draft: false
 
 获取一个或多个网卡的配置。
 
-可根据mac地址，名称，主机，网络，网络类型，状态，作过滤条件，来获取网卡列表。 如果不指定任何过滤条件，默认返回你的所有网卡。
+可根据mac地址，名称，云服务器，网络，网络类型，状态，作过滤条件，来获取网卡列表。 如果不指定任何过滤条件，默认返回你的所有网卡。
 
 **Request Parameters**
 
@@ -40,12 +40,12 @@ draft: false
 | nic_id | String | NIC ID |
 | nic_name | String | NIC名称 |
 | status | String | 网卡状态：available: 空闲；in-use: 正在使用中 |
-| instance_id | String | 挂载的主机id |
+| instance_id | String | 挂载的云服务器id |
 | vxnet_id | String | 网络vxnet_id |
 | create_time | TimeStamp | 网卡创建时间, 为UTC时间, 格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
 | status_time | TimeStamp | 网卡最近一次状态变更时间, 为UTC时间, 格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
-| sequence | Integer | 网卡在主机上的序号 |
-| role | Integer | 网卡角色 1:主网卡，每个主机一个，是主机绑定eip，防火墙时的默认网卡; 0：从网卡，每个主机可以挂载多个 |
+| sequence | Integer | 网卡在云服务器上的序号 |
+| role | Integer | 网卡角色 1:主网卡，每个云服务器一个，是云服务器绑定eip，防火墙时的默认网卡; 0：从网卡，每个云服务器可以挂载多个 |
 
 **Example**
 

@@ -20,7 +20,7 @@ mysqldump --all-databases --single-transaction --triggers --routines --events  -
 
 ### 数据导入
 
-将上一步导出的 dump.sql 文件复制到一台能连接「QingCloud MySQL Plus」的主机后执行该 .sql 文件。
+将上一步导出的 dump.sql 文件复制到一台能连接「QingCloud MySQL Plus」的云服务器后执行该 .sql 文件。
 需要使用「QingCloud MySQL Plus」的高可用写IP来进行链接。假设高可用的写IP地址为 192.168.0.250，导入语句为：
 
 ```bash

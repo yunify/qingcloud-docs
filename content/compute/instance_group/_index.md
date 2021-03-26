@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: 安置策略组
-  vice_title: 为用户提供了虚拟主机分组功能
+  vice_title: 为用户提供了云服务器分组功能
 
 Section2:
   title: 用户指南
@@ -26,14 +26,14 @@ Section2:
 section4:
   children:
     - title: 了解：什么是安置策略组
-      content: 安置策略组功能为用户提供了虚拟主机分组功能。
+      content: 安置策略组功能为用户提供了云服务器分组功能。
       vice_title: 了解的第一步
       children:
         - title: 产品概述
           url: "/compute/instance_group/intro/instance_group"
 
     - title: 上手：安置策略组相关操作
-      content: 安置策略组功能为用户提供了虚拟主机分组功能。
+      content: 安置策略组功能为用户提供了云服务器分组功能。
       vice_title: 上手的第一步
       children: 
         - title: 创建安置策略组

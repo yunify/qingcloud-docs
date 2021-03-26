@@ -7,7 +7,11 @@ draft: false
 
 ## 项目概览
 
+<<<<<<< HEAD:content/compute/vm/best-practices/instance_to_gateway_server.md
 在本项目中，您将了解如何虚拟云服务器自建一个网关服务器，让其他云服务器可以使用网关服务器访问互联网。
+=======
+在本项目中，您将了解如何云服务器自建一个网关服务器，让其他云服务器可以使用网关服务器访问互联网。
+>>>>>>> upstream/master:content/compute/vm/best-practices/instance to gateway_server.md
 
 ## 网络拓扑如下
 
@@ -15,16 +19,27 @@ draft: false
 
 ## 准备事项
 
+<<<<<<< HEAD:content/compute/vm/best-practices/instance_to_gateway_server.md
 - 请先创建一个VPC网络
 - 请创建一个私有网络加入到VPC网络，指定IP网段为192.168.0.0/24
 - 请创建两台vm云服务器加入到私有网络，指定IP地址分别为192.168.0.2/192.168.0.3
 - 请创建一个内部绑定的弹性EIP绑定到192.168.0.2，参考下图
+=======
+- 请先创建一个vpc网络
+- 请创建一个私有网络加入到vpc网络，指定ip网段为192.168.0.0/24
+- 请创建两台vm云服务器加入到私有网络，指定ip地址分别为192.168.0.2/192.168.0.3
+- 请创建一个内部绑定的弹性eip绑定到192.168.0.2，参考下图
+>>>>>>> upstream/master:content/compute/vm/best-practices/instance to gateway_server.md
 
 <img src="../homer/gateway_01.png" width="60%" height="60%">
 
 ## 目标是把192.168.0.2这个云服务器配置成网关服务器
 
+<<<<<<< HEAD:content/compute/vm/best-practices/instance_to_gateway_server.md
 ### 1.内部绑定的公网IP分配给云服务器，会有两个网卡eth0和eth1，先备份之前的网卡配置
+=======
+### 1.内部绑定的公网ip分配给云服务器，会有两个网卡eth0和eth1，先备份之前的网卡配置
+>>>>>>> upstream/master:content/compute/vm/best-practices/instance to gateway_server.md
 
 ```
 cd /etc/sysconfig/network-scripts/ 
@@ -108,13 +123,21 @@ iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -o eth1 -j SANT --to-source 139
 service iptables save
 ```
 
+<<<<<<< HEAD:content/compute/vm/best-practices/instance_to_gateway_server.md
 ### 8.配置客户端云服务器的网关及DNS
+=======
+### 8.配置客户端云服务器的网关及dns
+>>>>>>> upstream/master:content/compute/vm/best-practices/instance to gateway_server.md
 
 #### 配置路由
 
 #### **方法一（推荐）**
 
+<<<<<<< HEAD:content/compute/vm/best-practices/instance_to_gateway_server.md
 通过VPC网络---管理配置---路由推送---添加云服务器路由，如图所示
+=======
+通过vpc网络---管理配置---路由推送---添加云服务器路由，如图所示
+>>>>>>> upstream/master:content/compute/vm/best-practices/instance to gateway_server.md
 
 <img src="../homer/gateway_04.png" width="60%" height="60%">
 
@@ -138,9 +161,15 @@ nameserver 114.114.114.114
 nameserver 1.2.4.8
 ```
 
+<<<<<<< HEAD:content/compute/vm/best-practices/instance_to_gateway_server.md
 ### 10.放行云服务器防火墙下行UDP 53号端口
 
 备注：私有网络的云服务器绑定了公网IP 默认会加一层防火墙，需要手动放行一下DNS服务的端口，否则无法实现域名解析
+=======
+### 10.放行云服务器防火墙下行udp 53号端口
+
+备注：私有网络的云服务器绑定了公网ip 默认会加一层防火墙，需要手动放行一下dns服务的端口，否则无法实现域名解析
+>>>>>>> upstream/master:content/compute/vm/best-practices/instance to gateway_server.md
 
 
 

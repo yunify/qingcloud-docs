@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "如何修改Windows云服务器远程桌面的访问端口"
+=======
+title: "如何修改windows云服务器远程桌面的访问端口"
+>>>>>>> upstream/master
 date: 2021-02-19T00:38:25+09:00
 description: Test description
 weight: 10
@@ -7,9 +11,15 @@ draft: false
 enableToc: false
 ---
 
+<<<<<<< HEAD
 ## 1.打开Windows云服务器远程桌面，关闭系统自带防火墙
 
 ### 1.1打开Windows云服务器远程桌面
+=======
+## 1.打开windows云服务器远程桌面，关闭系统自带防火墙
+
+### 1.1打开windows云服务器远程桌面
+>>>>>>> upstream/master
 
 开始-控制面板-系统和安全-系统-允许远程访问-勾选"允许远程连接到此计算机(L)"
 

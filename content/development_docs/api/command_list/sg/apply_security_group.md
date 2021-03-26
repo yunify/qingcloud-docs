@@ -10,14 +10,14 @@ draft: false
 
 防火墙规则可通过 [_AddSecurityGroupRules_](../add_security_group_rules/), [_DeleteSecurityGroupRules_](../delete_security_group_rules/), [_ModifySecurityGroupRuleAttributes_](../modify_security_group_rule_attributes/) 修改。
 
-如果请求参数中传递了 instances.n ，则表示将此防火墙的规则应用到对应的主机。 如果不传此参数，则会将最新规则更新到所有已应用此防火墙的主机。
+如果请求参数中传递了 instances.n ，则表示将此防火墙的规则应用到对应的云服务器。 如果不传此参数，则会将最新规则更新到所有已应用此防火墙的云服务器。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | security_group | String | 防火墙 ID | Yes |
-| instances.n | String | 应用防火墙的主机ID。<br/>如果不传任何值，则会将最新规格更新到所有之前已应用此防火墙的主机。 | No |
+| instances.n | String | 应用防火墙的云服务器ID。<br/>如果不传任何值，则会将最新规格更新到所有之前已应用此防火墙的云服务器。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)

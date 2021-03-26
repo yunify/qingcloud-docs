@@ -8,19 +8,19 @@ draft: false
 
 获取一个或多个 SSH 密钥
 
-可根据密钥ID，密钥名称，主机ID，加密方式作为过滤条件，获取密钥列表。 如果不指定任何过滤条件，默认返回你所拥有的所有密钥。 如果指定不支持的加密方式，则会返回错误信息。
+可根据密钥ID，密钥名称，云服务器ID，加密方式作为过滤条件，获取密钥列表。 如果不指定任何过滤条件，默认返回你所拥有的所有密钥。 如果指定不支持的加密方式，则会返回错误信息。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | keypairs.n | String | 密钥ID | No |
-| instance_id | String | 主机ID | No |
+| instance_id | String | 云服务器ID | No |
 | owner | String | 按照用户账户过滤, 只返回指定账户的资源 | No |
 | encrypt_method | String | 加密算法: ssh-rsa，ssh-dss，ecdsa-sha2-nistp521 和 ssh-ed25519 | No |
 | search_word | String | 搜索关键词，支持密钥ID，密钥名称 | No |
 | tags.n | String | 按照标签ID过滤, 只返回已绑定某标签的资源 | No |
-| verbose | Integer | 是否返回冗长的信息，若为1，则返回加载了该SSH密钥的主机的信息，默认为0. | No |
+| verbose | Integer | 是否返回冗长的信息，若为1，则返回加载了该SSH密钥的云服务器的信息，默认为0. | No |
 | offset | Integer | 数据偏移量，默认为0 | No |
 | limit | Integer | 返回数据长度，默认为20，最大100 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
@@ -45,7 +45,7 @@ draft: false
 | description | String | SSH密钥描述 |
 | encrypt_method | String | SSH密钥加密算法，有效值为 ssh-rsa 和 ssh-dss |
 | pub_key | String | SSH密钥公钥 |
-| instance_ids | Array | SSH密钥加载的主机ID列表<br/>只有在请求参数 verbose=1 时才会返回此信息。 |
+| instance_ids | Array | SSH密钥加载的云服务器ID列表<br/>只有在请求参数 verbose=1 时才会返回此信息。 |
 
 **Example**
 
