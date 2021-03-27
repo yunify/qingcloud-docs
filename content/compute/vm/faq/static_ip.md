@@ -16,7 +16,7 @@ enableToc: false
 
 ## 1.准备设置
 
-●**关闭私有网络DHCP，再开启DHCP 设置获取范围，将需设置Ip设置在DHCP自动获取的范围外，避免系统HDCP分配时将设置的静态IP分配，导致网络故障。**
+●**关闭私有网络DHCP，再开启DHCP 设置获取范围，将需设置IP设置在DHCP自动获取的范围外，避免系统HDCP分配时将设置的静态IP分配，导致网络故障。**
 
 示例为：Cento 7.5 操作系统
 
@@ -56,6 +56,6 @@ GATEWAY=192.168.100.1
 systemctl restart network
 ```
 
-**●检查网卡获取静态ip信息，并测试IP连通性**
+**●检查网卡获取静态IP信息，并测试IP连通性**
 
  ![ip_](../_images/ip_5.png)
