@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "Windows云服务器扩容磁盘大小后，实际使用空间并未增加"
-=======
 title: "windows云服务器扩容磁盘大小后，实际使用空间并未增加"
->>>>>>> upstream/master
 date: 2021-02-19T00:38:25+09:00
 description: Test description
 weight: 60
@@ -13,12 +9,9 @@ enableToc: false
 
 ## 问题背景
 
-<<<<<<< HEAD
 客户创建系统盘超过50G大小的Windows云服务器，登录云服务器后发现系统盘空间大小是50G，并非实际创建时指定的值。
 =======
 客户创建系统盘超过50G大小的windows云服务器，登录云服务器后发现系统盘空间大小是50G，并非实际创建时指定的值。
->>>>>>> upstream/master
-
 ## 处理方案
 
 ### 1.打开磁盘管理，请参考以下步骤。

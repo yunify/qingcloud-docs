@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 title: "如何修改Windows云服务器远程桌面的访问端口"
-=======
-title: "如何修改windows云服务器远程桌面的访问端口"
->>>>>>> upstream/master
 date: 2021-02-19T00:38:25+09:00
 description: Test description
 weight: 10
