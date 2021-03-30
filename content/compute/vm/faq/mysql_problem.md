@@ -1,6 +1,6 @@
 ---
 
-title: "自建mysql无法远程访问该如何处理？"
+title: "自建mysql无法远程访问排查思路"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 weight: 20

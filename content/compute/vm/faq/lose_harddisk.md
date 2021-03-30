@@ -1,6 +1,6 @@
 ---
 
-title: "Windows云服务器磁盘脱盘如何处理？"
+title: "Windows云服务器磁盘脱盘解决方法"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 weight: 20
