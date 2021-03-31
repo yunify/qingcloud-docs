@@ -88,9 +88,9 @@ VPC 配置转发规则，源端口可以根据用户实际情况配置，内网 
 
 ### 下载 kubeconfig
 
-> 请确保用户本地主机可访问 EIP。
+> 请确保用户本地云服务器可访问 EIP。
 
-在 Kubeconfig 标签页将 QKE 的 Kubernetes Kubeconfig 拷贝到用户本地主机，即可使用。
+在 Kubeconfig 标签页将 QKE 的 Kubernetes Kubeconfig 拷贝到用户本地云服务器，即可使用。
 
 > **注意：** `v2.0.0 - KubeSphere v2.1.1` 及更老的版本需要修改 kubeconfig 文件中的 server 字段
 
@@ -259,7 +259,7 @@ Service 的 type 设置为 LoadBalancer，然后在 metadata 中增加以下 ann
 
 ## 挂载云平台块存储
 
-从 `QKE v1.0.1` 版本起内置了 [QingCloud CSI](https://github.com/yunify/qingcloud-csi)，可以动态创建基于 QingCloud IaaS 上的硬盘的 PVC，并挂载到 Pod，当 Pod 迁移时，硬盘会自动随着 Pod 迁移到其他主机上。KubeSphere 的存储卷使用方法见[文档](https://kubesphere.com.cn/en/docs/installing-on-linux/introduction/storage-configuration/)。
+从 `QKE v1.0.1` 版本起内置了 [QingCloud CSI](https://github.com/yunify/qingcloud-csi)，可以动态创建基于 QingCloud IaaS 上的硬盘的 PVC，并挂载到 Pod，当 Pod 迁移时，硬盘会自动随着 Pod 迁移到其他云服务器上。KubeSphere 的存储卷使用方法见[文档](https://kubesphere.com.cn/en/docs/installing-on-linux/introduction/storage-configuration/)。
 
 ### 使用 NeonSAN 硬盘
 

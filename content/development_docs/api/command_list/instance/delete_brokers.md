@@ -7,13 +7,13 @@ weight: 14
 
 
 
-删除指定主机的远程桌面代理。
+删除指定云服务器的远程桌面代理。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| instances.n | String | 主机 ID 列表 | Yes |
+| instances.n | String | 云服务器 ID 列表 | Yes |
 | zone | String | 区域 ID | Yes |
 
 [_公共参数_](../../../parameters/)

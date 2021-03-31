@@ -5,13 +5,13 @@ draft: false
 weight: 15
 ---
 
-创建主机组。
+创建云服务器组。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| relation | String | 主机组关系 | Yes |
+| relation | String | 云服务器组关系 | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)
@@ -21,7 +21,7 @@ weight: 15
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| instance_groups | Array | 新创建的主机组列表 |
+| instance_groups | Array | 新创建的云服务器组列表 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
 **Example**

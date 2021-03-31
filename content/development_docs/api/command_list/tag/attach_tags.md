@@ -58,7 +58,7 @@ _Example Response_:
 
 | Name | Type |
 | --- | --- |
-| 主机 | instance |
+| 云服务器 | instance |
 | 硬盘 | volume |
 | SSH 密钥 | keypair |
 | 防火墙 | security_group |

@@ -239,7 +239,7 @@ qingstor 端点有如下配置内容:
 # 可选值: https, http
 # 默认值: https
 protocol: https
-# host 控制访问 QingStor 的主机名。
+# host 控制访问 QingStor 的云服务器名。
 # 默认值: qingstor.com
 host: qingstor.com
 # port 控制访问 QingStor 的端口号。

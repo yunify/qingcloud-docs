@@ -53,6 +53,7 @@ section4:
   children:
     - title: 了解
       content: 什么是MySQL Plus
+      vice_title: 了解的第一步
       children:
         - title: 产品简介
           url: "/database/mysql/intro/introduction"
@@ -64,7 +65,8 @@ section4:
           url: "/database/mysql/intro/superiority"
 
     - title: 进阶
-      content: 学习如何如何创建、管理、使用MySQL Plus集群
+      content: 学习如何创建、管理、使用MySQL Plus集群
+      vice_title: 上手的第一步
       children: 
         - title: 创建MySQL Plus
           url: "/database/mysql/quickstart/quick_start"

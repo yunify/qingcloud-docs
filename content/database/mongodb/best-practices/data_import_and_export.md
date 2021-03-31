@@ -11,7 +11,7 @@ weight: 3
 
 ### 在线导入
 
-下面演示如何将`192.168.110.101`的数据直接在线导入到`192.168.110.102`中。在同一个VPC下创建一台主机，安装 `mongodb-org-tools` 工具。在命令行中执行以下的命令：
+下面演示如何将`192.168.110.101`的数据直接在线导入到`192.168.110.102`中。在同一个VPC下创建一台云服务器，安装 `mongodb-org-tools` 工具。在命令行中执行以下的命令：
 
 ```shell
 mongodump --archive --username=user001 --password=Pwd00001 --authenticationDatabase=admin --host=192.168.110.101 --db=db1 | mongorestore --archive --username=user002 --password=Pwd00002 --authenticationDatabase=admin --host=192.168.110.102 --db=db2

@@ -36,7 +36,7 @@ yum groupinstall -y "GNOME Desktop"
 
 ##  4、启动图形化桌面
 
- 从控制台vnc登入到主机内，命令输入inti 5 可进入图形化桌面
+ 从控制台vnc登入到云服务器内，命令输入inti 5 可进入图形化桌面
 
  ![centos_GUI_2.](../_images/centos_GUI_2.png)
 

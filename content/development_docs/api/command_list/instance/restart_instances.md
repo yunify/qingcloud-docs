@@ -5,15 +5,15 @@ draft: false
 weight: 7
 ---
 
-重启一台或多台运行状态的主机。
+重启一台或多台运行状态的云服务器。
 
-主机只有在运行 running 状态才能被重启，如果处于非运行状态，则返回错误信息。
+云服务器只有在运行 running 状态才能被重启，如果处于非运行状态，则返回错误信息。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| instances.n | String | 一个或多个主机ID | Yes |
+| instances.n | String | 一个或多个云服务器ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)

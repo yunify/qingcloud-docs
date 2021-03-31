@@ -7,18 +7,18 @@ weight: 20
 
 拷贝一台或多台机器。
 
-拷贝主机的前提，是此主机对应的镜像可用、没有被删除掉。主机处于运行或关机状态。
+拷贝云服务器的前提，是此云服务器对应的镜像可用、没有被删除掉。云服务器处于运行或关机状态。
 
 提醒
 
-拷贝后的主机处于运行状态。原主机的硬盘等也会拷贝并挂载到目标主机。
+拷贝后的云服务器处于运行状态。原云服务器的硬盘等也会拷贝并挂载到目标云服务器。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| instances.n | String | 一个或多个主机ID | Yes |
-| vxnets.n | String | 一个或多个主机克隆生成的新主机的vxnet或ip地址<br/>格式是: 'instance_id\|vxnet_id\|ip_addr'  | No |
+| instances.n | String | 一个或多个云服务器ID | Yes |
+| vxnets.n | String | 一个或多个云服务器克隆生成的新云服务器的vxnet或ip地址<br/>格式是: 'instance_id\|vxnet_id\|ip_addr'  | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)

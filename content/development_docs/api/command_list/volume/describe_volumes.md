@@ -15,7 +15,7 @@ draft: false
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | volumes.n | String | 硬盘ID | No |
-| volume_type | Integer | 硬盘类型:<br/>*   性能型是 0<br/>*   超高性能型是 3 (只能与超高性能主机挂载，目前只支持北京2区)，<br/>*   容量型因技术升级过程中，在各区的 type 值略有不同:<br/>    北京1区，亚太1区：容量型是 1<br/>    北京2区，广东1区：容量型是 2 | No |
+| volume_type | Integer | 硬盘类型:<br/>*   性能型是 0<br/>*   超高性能型是 3 (只能与超高性能云服务器挂载，目前只支持北京2区)，<br/>*   容量型因技术升级过程中，在各区的 type 值略有不同:<br/>    北京1区，亚太1区：容量型是 1<br/>    北京2区，广东1区：容量型是 2 | No |
 | status.n | String | 硬盘状态: pending, available, in-use, suspended, deleted, ceased | No |
 | search_word | String | 搜索关键词，支持硬盘ID，硬盘名称 | No |
 | tags.n | String | 按照标签ID过滤, 只返回已绑定某标签的资源 | No |
@@ -43,13 +43,13 @@ draft: false
 | volume_name | String | 硬盘名称 |
 | description | String | 硬盘描述 |
 | size | Integer | 硬盘空间大小，单位为 GB |
-| status | String | 硬盘状态，有效值为pending, available, in-use, suspended, deleted, ceased。<br/>pending： 等待被创建<br/>available： 可用状态，此时硬盘可以加载到主机上。<br/>in-use： 使用中，此时硬盘已经加载到主机上。<br/>suspended： 由于欠费，已被暂停使用<br/>deleted： 已被删除，但处于此状态的硬盘在2小时之内仍可以被恢复为 available 状态<br/>ceased： 已被彻底删除，处于此状态的硬盘无法恢复 |
-| transition_status | String | 硬盘过渡状态，有效值为creating, attaching, detaching, suspending，resuming，deleting，recovering。<br/>creating： 创建中，由 pending 状态变成 available 状态<br/>attaching： 加载到主机中，由 available 状态变成 in-use 状态<br/>detaching： 从主机卸载中，由 in-use 状态变成 available 状态<br/>suspending： 欠费暂停中，由 available/in-use 状态变成 suspended 状态<br/>resuming： 恢复中，由 suspended 状态变成 available 状态<br/>deleting： 删除中，由 available/in-use/suspended 状态变成 deleted 状态<br/>recovering： 恢复中，由 deleted 状态变成 available 状态 |
+| status | String | 硬盘状态，有效值为pending, available, in-use, suspended, deleted, ceased。<br/>pending： 等待被创建<br/>available： 可用状态，此时硬盘可以加载到云服务器上。<br/>in-use： 使用中，此时硬盘已经加载到云服务器上。<br/>suspended： 由于欠费，已被暂停使用<br/>deleted： 已被删除，但处于此状态的硬盘在2小时之内仍可以被恢复为 available 状态<br/>ceased： 已被彻底删除，处于此状态的硬盘无法恢复 |
+| transition_status | String | 硬盘过渡状态，有效值为creating, attaching, detaching, suspending，resuming，deleting，recovering。<br/>creating： 创建中，由 pending 状态变成 available 状态<br/>attaching： 加载到云服务器中，由 available 状态变成 in-use 状态<br/>detaching： 从云服务器卸载中，由 in-use 状态变成 available 状态<br/>suspending： 欠费暂停中，由 available/in-use 状态变成 suspended 状态<br/>resuming： 恢复中，由 suspended 状态变成 available 状态<br/>deleting： 删除中，由 available/in-use/suspended 状态变成 deleted 状态<br/>recovering： 恢复中，由 deleted 状态变成 available 状态 |
 | create_time | TimeStamp | 硬盘创建时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
 | status_time | TimeStamp | 硬盘最近一次状态变更时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
-| instance | Dict | 硬盘加载的主机信息.<br/>instance_id： 主机ID<br/>instance_name： 主机名称<br/>device：硬盘在主机系统中的设备名 |
+| instance | Dict | 硬盘加载的云服务器信息.<br/>instance_id： 云服务器ID<br/>instance_name： 云服务器名称<br/>device：硬盘在云服务器系统中的设备名 |
 | owner | String | 硬盘的所属用户 |
-| volume_type | Integer | 硬盘类型:<br/>*   性能型是 0<br/>*   超高性能型是 3 (只能与超高性能主机挂载，目前只支持北京2区)，<br/>*   容量型因技术升级过程中，在各区的 type 值略有不同:<br/>    北京1区，亚太1区：容量型是 1<br/>    北京2区，广东1区：容量型是 2 |
+| volume_type | Integer | 硬盘类型:<br/>*   性能型是 0<br/>*   超高性能型是 3 (只能与超高性能云服务器挂载，目前只支持北京2区)，<br/>*   容量型因技术升级过程中，在各区的 type 值略有不同:<br/>    北京1区，亚太1区：容量型是 1<br/>    北京2区，广东1区：容量型是 2 |
 
 **Example**
 

@@ -6,7 +6,7 @@ draft: false
 
 
 
-将一块或多块以挂载(in-use)状态的网卡从某台主机中卸载。
+将一块或多块以挂载(in-use)状态的网卡从某台云服务器中卸载。
 
 **Request Parameters**
 

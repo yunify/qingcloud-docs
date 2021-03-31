@@ -1,6 +1,6 @@
 ---
 title: "端口无法连接"
-date: 2020-01-30T00:38:25+09:00
+date: 2021-01-30T00:38:25+09:00
 description: Test description
 weight: 40
 draft: false
@@ -13,7 +13,7 @@ enableToc: false
 
 
 
-**查看主机服务端口是否正常启动，端口处于监听状态**
+**查看云服务器服务端口是否正常启动，端口处于监听状态**
 
 以下均以常见的80端口为例：
 
@@ -33,7 +33,7 @@ enableToc: false
 
 
 
-**查看主机是否启用iptables或firewall，如启用是否端口不在放行规则**
+**查看云服务器是否启用iptables或firewall，如启用是否端口不在放行规则**
 
 虚机镜像默认是未开启iptables规则和firewall规则，部分第三方软件（如docker,宝塔等）会自动将系统防火墙拉起来，并启用部分规则，导致部分应用端口被系统防火墙拦截。
 
@@ -55,7 +55,7 @@ https://www.cnblogs.com/zxg-blog/p/9835263.html
 
 **查看安全组规则是否添加**
 
-登录青云console，选择访问主机所属安全组：
+登录青云console，选择访问云服务器所属安全组：
 
 ![](../../_images/anquanzu.png)
 

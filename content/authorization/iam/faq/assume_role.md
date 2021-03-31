@@ -14,19 +14,19 @@ weight: 45
 
 ## 代入身份方式一：利用 QingCloud SDK 开发应用
 
-> 提示：该方式可以让授权主机（信任载体）上的应用程序（ APP 或 SDK 等）通过获取主机临时安全凭证来执行身份允许的操作，从而屏蔽因 Access_Key 和 Secret_Key 泄露导致的安全问题。
+> 提示：该方式可以让授权云服务器（信任载体）上的应用程序（ APP 或 SDK 等）通过获取云服务器临时安全凭证来执行身份允许的操作，从而屏蔽因 Access_Key 和 Secret_Key 泄露导致的安全问题。
 
 **使用示例：**
 
-1. 给主机绑定已经赋予一定权限的身份，可在该身份详情页下的`信任载体详情`中看到主机信息：
+1. 给云服务器绑定已经赋予一定权限的身份，可在该身份详情页下的`信任载体详情`中看到云服务器信息：
 
    ![demo1_SuccessAttachInstance](../../_images/demo1_SuccessAttachInstance.png)
 
-2. 切换`关联策略`选项卡，查看该主机已拥有的权限：
+2. 切换`关联策略`选项卡，查看该云服务器已拥有的权限：
 
     ![demo1_AttachedPolicy](../../_images/demo1_AttachedPolicy.png)
 
-3. 访问该主机终端，可使用 pip 安装 SDK: （[点此了解更多 SDK 文档信息](https://docs.qingcloud.com/product/sdk/)）
+3. 访问该云服务器终端，可使用 pip 安装 SDK: （[点此了解更多 SDK 文档信息](https://docs.qingcloud.com/product/sdk/)）
 
    ```bash
    pip install qingcloud-sdk
@@ -56,21 +56,21 @@ weight: 45
 
     *输出*
 
-    如果该主机绑定的身份拥有允许访问路由器的权限，执行上述实例代码后输出结果：
+    如果该云服务器绑定的身份拥有允许访问路由器的权限，执行上述实例代码后输出结果：
 
     ```bash
     DescribeRouters: {u'action': u'DescribeRoutersResponse', u'router_set': [...], u'ret_code': 0, u'total_count': 1}
     ```
 
-   如果该主机绑定的身份没有附加访问路由器的权限，执行上述实例代码后输出结果：
+   如果该云服务器绑定的身份没有附加访问路由器的权限，执行上述实例代码后输出结果：
 
     ```bash
     DescribeRouters: {u'message': u'PermissionDenied, IAM authorization evaluate deny', u'ret_code': 1400}
     ```
 
-> 注：如果您是在 Windows 主机上开发应用，需要先参考下文配置路由才可使用。
+> 注：如果您是在 Windows 云服务器上开发应用，需要先参考下文配置路由才可使用。
 
-### Windows 主机路由配置
+### Windows 云服务器路由配置
 
 配置方法如下：
 
@@ -78,7 +78,7 @@ weight: 45
 
     ![Windows_Local_IP](../../_images/win_local_ip.png)
 
-2. 执行命令 `route add -p 169.254.169.254 mask 255.255.255.255 默认网关地址` ，将 IAM 的凭证颁发中心的固定地址 `169.254.169.254` 配置到该主机的默认网关路由中即可：
+2. 执行命令 `route add -p 169.254.169.254 mask 255.255.255.255 默认网关地址` ，将 IAM 的凭证颁发中心的固定地址 `169.254.169.254` 配置到该云服务器的默认网关路由中即可：
 
     ![Windows_Route_Add](../../_images/win_route_add.png)
 
@@ -86,7 +86,7 @@ weight: 45
 
     ![Windows_Route](../../_images/win_route.png)
 
-Windows 主机上配置好路由后，代入身份开发应用的方法与前文描述一致。
+Windows 云服务器上配置好路由后，代入身份开发应用的方法与前文描述一致。
 
 ## 代入身份方式二：QingCloud 控制台“切换身份”
 

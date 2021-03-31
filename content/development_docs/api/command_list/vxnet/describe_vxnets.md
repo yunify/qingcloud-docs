@@ -41,7 +41,7 @@ draft: false
 | vxnet_name | String | 私有网络名称 |
 | create_time | TimeStamp | 创建时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
 | description | String | 私有网络的描述 |
-| instance_ids | Array | 已加入此私有网络的主机ID列表。只有在请求参数 verbose=1 才会返回此项。 |
+| instance_ids | Array | 已加入此私有网络的云服务器ID列表。只有在请求参数 verbose=1 才会返回此项。 |
 | router | Dict |
 
 与此私有网络相连的路由器信息，数据格式为:
