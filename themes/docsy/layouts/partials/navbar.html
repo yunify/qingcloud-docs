@@ -1,11 +1,9 @@
-<div class="nav-wrapper {{ if eq .Params.LinkTitle " Document"}}nav-wrapper-index {{ end }}">
+<div class="nav-wrapper {{ if eq .Params.LinkTitle " Document" }}nav-wrapper-index {{ end }}">
   <nav class="navbar navmenu" {{if eq .Site.Params.IsConsole true}} style="display:none;" {{end}}>
-    <div class="container with-no-position {{ if and (ne .Params.LinkTitle " Document") (ne .Params.type "product"
-      )}}doc-container-width {{ end }}">
+    <div class="container with-no-position {{ if and (ne .Params.LinkTitle " Document" ) (ne .Params.type "product" )}}doc-container-width {{ end }}">
       <div class="navbar-brand" id="search-mobile-logo">
         <a class="navbar-item logo" href="https://www.qingcloud.com">
-          <img src="https://s3.qingcloud.com/static/assets/images/icons/common/nav_logo_white.svg?v=1510299508"
-            alt="logo" width="auto" height="32">
+          <img src="https://s3.qingcloud.com/static/assets/images/icons/common/nav_logo_white.svg?v=1510299508" alt="logo" width="auto" height="32">
         </a>
       </div>
       <div class="media-content column is-centered is-6 search-mobile">
@@ -32,8 +30,7 @@
               <a class="nav-item" href="https://console.qingcloud.com">登录</a>
             </p>
             <div class="navbar-user">
-              <a class="button is-primary j-signup" href="https://console.qingcloud.com/signup/"
-                data-gio="{id:'createPageView',var:{sourceType_var:'导航栏'}}">注册</a>
+              <a class="button is-primary j-signup" href="https://console.qingcloud.com/signup/" data-gio="{id:'createPageView',var:{sourceType_var:'导航栏'}}">注册</a>
             </div>
           </div>
         </div>
