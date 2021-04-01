@@ -3,10 +3,11 @@
 
 .hero-body {
     display: flex;
+    flex-direction: column;
     position: relative;
-    padding:  38px 0;
+    padding:  0;
+    padding-top: 60px;
     align-items: center;
-    height: 220px;
     background-color: #3d3e49;
     border-top: 1px solid rgba(255, 255, 255, .1);
     color: #fff;
@@ -19,6 +20,23 @@
         height: auto;
         align-self: flex-end;
         display: block;
+    }
+    .nav-link {
+      height: 38px;
+      padding: 0;
+      a {
+        padding: 0 20px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0);
+        font-size: 1rem;
+        &:first-child {
+          margin-right: 5rem;
+        }
+        &.active {
+          color: #00a971;
+          border-color: #00a971;
+        }
+      }
     }
 }
 section.is-grey-background {
@@ -255,7 +273,6 @@ ul.timeline > li:before {
             }
         }
     }
-
     .td-sidebar {
 
         .td-sidebar-nav {
@@ -276,15 +293,32 @@ ul.timeline > li:before {
     }
     .td-content {
         position: relative;
-        
-        
-
         .p code {
             color: #ff3860;
         }
     }
-    
+    .has-bg {
+      background-image: url('/images/mask.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .section-has-title {
+      padding-top: 33px;
+      .section-title {
+        margin-bottom: 18px;
+        font-size: 1.75rem;
+        img {
+          margin-right: 1rem;
+        }
+        span {
+          &.white {
+            color: white;
+          }
+        }
+      }
+    }
 }
+
 
 /* footer style */
 footer {
@@ -784,13 +818,13 @@ ul.product_dynamics_ul{
 
 section.hero.home-body {
     padding-top: 0;
-    height: 300px;
+    position: relative;
 }
 .slider-bg {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 300px;
+    height: 100%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -812,9 +846,7 @@ section.hero.home-body {
     background-color: transparent;
     margin-top: 76px;
 }
-.section-out .container{
-    margin-top: -6rem;
-}
+
 .container.td-outer{
     z-index: 1;
 }
@@ -912,9 +944,6 @@ main.col-12.col-md-7.col-xl-7{
     }
     .hero-body-index{
         margin-top: 0;
-    }
-    .slider-bg{
-        height: 400px;
     }
     
     .product-learn-icon{
