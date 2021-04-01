@@ -5,6 +5,10 @@ weight: 7
 collapsible: true
 type: "product"
 
+section1:
+  title: 公网 IP
+  vice_title: 公网 IP 是在互联网上合法的静态 IP 地址。用户可以将申请到的公网 IP 地址与任意云服务器/路由器/负载均衡器绑定。
+
 Section2:
   title: 用户指南
   children:
