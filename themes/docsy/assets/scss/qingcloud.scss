@@ -51,6 +51,7 @@ main section {
 }
 header {
     min-height: 120px;
+    position: relative;
     nav {
         min-height: 64px;
     }
@@ -818,7 +819,6 @@ ul.product_dynamics_ul{
 
 section.hero.home-body {
     padding-top: 0;
-    position: relative;
 }
 .slider-bg {
     position: absolute;
