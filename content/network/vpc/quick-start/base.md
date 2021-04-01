@@ -16,7 +16,7 @@ weight: 1
 
 如本文开头所说，在 VPC 网络内，您可以自定义 IP 地址范围，且由管理路由器来负责 VPN /隧道/ DNS /端口转发等管理功能，所以在创建 VPC 时，需要设置这两部分属性。
 
-[![](../_images/create_vpc.png)](../_images/create_vpc.png)
+![](../_images/create_vpc.png)
 
 其中：
 
@@ -28,7 +28,7 @@ weight: 1
 
 设置完成后点击“提交”，创建完成的 VPC 网络属性显示如下：
 
-[![](../_images/vpc_list.png)](../_images/vpc_list.png)
+![](../_images/vpc_list.png)
 
 ## 管理路由器
 
@@ -52,7 +52,7 @@ weight: 1
 
 VPC 网络的私有网络指的是一个二层子网网段，通常是一个 C 段地址；你可以根据需要将一个 VPC 网络划分成多个子网，云服务器必须加入到子网里面使用。
 
-[![../_images/vpc_vxnets.png](../_images/vpc_vxnets.png)](../_images/vpc_vxnets.png)
+![](../_images/vpc_vxnets.png)
 
 *   VPC 网络中的子网可以是当前主账户名下的私有网络，也可以是子帐户名下的私有网络。
 *   在私有网络的资源列表中可以直接添加云服务器、数据库和大数据资源。
@@ -62,10 +62,8 @@ VPC 网络的私有网络指的是一个二层子网网段，通常是一个 C �
 
 VPC 网络管理路由器功能主要包含端口转发、隧道服务([GRE 隧道](../../manual/tunnel/gre) 、[IPSec 隧道](../../manual/tunnel/ipsec) )、[VPN 服务](../../manual/vpn)、网关过滤控制(ACL)、DNS 服务以及边界路由器等。
 
-[![](../_images/vpc_settings.png)](../_images/vpc_settings.png)
+![](../_images/vpc_settings.png)
 
-
-    
 ## 图形化
 
 VPC网络支持图形化查看和编辑网络拓扑，让用户可以对整体网络可以一目了然，形成形象认知。
