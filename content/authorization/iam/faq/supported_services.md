@@ -6,7 +6,7 @@ draft: false
 weight: 44
 ---
 
-**服务类别**指的是 QingCloud 平台为客户提供的一系列云服务，如弹性云主机服务、虚拟专用网服务等。
+**服务类别**指的是 QingCloud 平台为客户提供的一系列云服务，如弹性云服务器服务、虚拟专用网服务等。
 
 若您决定针对性的创建策略以定义某些操作或资源的访问权限，您需要先选择对应的服务类别，然后勾选需要限定的操作，最后根据操作来指定权限范围。
 
@@ -20,7 +20,7 @@ weight: 44
 
 目前 QingCloud IAM 暂时支持以下几种服务类别以及对应 ID：
 
-* 弹性云主机：ecm
+* 弹性云服务器：ecm
 * 虚拟专用网：vpc
 * 弹性负载均衡器：elb
 * 资源云监控：rcm
@@ -51,13 +51,13 @@ IAM 身份和 QRN 支持的区域及可用区列表：
 
 IAM 支持管理访问控制的操作列表如下：
 
-### 弹性云主机(ecm)
+### 弹性云服务器(ecm)
 
 |API 指令|操作名称|
 |:------|----|
-|DescribeInstances|查看主机|
-|DescribeInstancesWithMonitors|查看主机监控|
-|DescribeInstanceTypes|查看主机类型|
+|DescribeInstances|查看云服务器|
+|DescribeInstancesWithMonitors|查看云服务器监控|
+|DescribeInstanceTypes|查看云服务器类型|
 |CreateBrokers|访问终端|
 |DeleteBrokers|关闭终端|
 |DescribeInstanceGroups|查看安置策略组|
@@ -77,16 +77,16 @@ IAM 支持管理访问控制的操作列表如下：
 |DescribeS2DefaultParameters|查看共享存储目标缺省参数|
 |DescribeS2SharedTargets|查看共享存储目标门户组|
 |DescribeSchedulers|查看定时器|
-|ModifyInstanceAttributes|更改主机属性|
+|ModifyInstanceAttributes|更改云服务器属性|
 |ResetLoginPasswd|重置登录密码|
 |RemoveSecurityGroup|删除防火墙|
-|RestartInstances|重启主机|
-|StartInstances|启动主机|
-|StopInstances|关闭主机|
+|RestartInstances|重启云服务器|
+|StartInstances|启动云服务器|
+|StopInstances|关闭云服务器|
 |RemoveSecurityGroupFromResources|移除防火墙|
 |CreateInstanceGroups|创建安置策略组|
 |DeleteInstanceGroups|删除安置策略组|
-|JoinInstanceGroup|分配主机到安置策略组|
+|JoinInstanceGroup|分配云服务器到安置策略组|
 |ApplyInstanceGroup|更新安置策略组|
 |LeaveInstanceGroup|离开安置策略组|
 |ModifyInstanceGroupAttributes|修改安置策略组信息|
@@ -141,14 +141,14 @@ IAM 支持管理访问控制的操作列表如下：
 |AttachNics|绑定网卡|
 |DetachNics|解绑网卡|
 |ModifyNicAttributes|修改网卡属性|
-|RunInstances|创建主机|
-|TerminateInstances|删除主机|
-|ResizeInstances|更改主机配置|
-|RescueInstances|救援主机|
-|UnrescueInstances|取消救援主机|
+|RunInstances|创建云服务器|
+|TerminateInstances|删除云服务器|
+|ResizeInstances|更改云服务器配置|
+|RescueInstances|救援云服务器|
+|UnrescueInstances|取消救援云服务器|
 |ResetInstances|重置系统|
-|CaptureInstance|制作新映像|
-|DeleteImages|删除映像|
+|CaptureInstance|制作新镜像|
+|DeleteImages|删除镜像|
 |CreateVolumes|创建硬盘|
 |CloneVolumes|克隆硬盘|
 |ResizeVolumes|扩容硬盘|
@@ -186,7 +186,7 @@ IAM 支持管理访问控制的操作列表如下：
 |DescribeRouterStatics|查看路由器详细配置|
 |DescribeRouterVxnets|查看路由器下的私有网络|
 |DescribeVxnets|查看私有网络|
-|DescribeVxnetInstances|查看私有网络下主机|
+|DescribeVxnetInstances|查看私有网络下云服务器|
 |DescribeVxnetResources|查看私有网络下资源|
 |DescribeRouterStaticEntries|查看路由器规则条目|
 |GetVPNCerts|查看 VPN 证书|

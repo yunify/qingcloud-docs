@@ -9,13 +9,13 @@ enableToc: false
 
 ```plain
 RadonDB:
-1 组 SQL 节点 (16C64G 超高性能主机)
-4 组存储节点 (16C64G 超高性能主机)
+1 组 SQL 节点 (16C64G 超高性能云服务器)
+4 组存储节点 (16C64G 超高性能云服务器)
 sync_binlog=1
 innodb_flush_log_at_trx_commit=1
 
 RDB:
-RDB (16C64G 超高性能主机)
+RDB (16C64G 超高性能云服务器)
 sync_binlog=1
 innodb_flush_log_at_trx_commit=1
 ```

@@ -6,14 +6,14 @@ draft: false
 
 
 
-将一块或多块“可用”（ available ）状态的网卡加载到某台”运行”（ running ） 状态的主机。
+将一块或多块“可用”（ available ）状态的网卡加载到某台”运行”（ running ） 状态的云服务器。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | nics.n | String | 网卡 ID | Yes |
-| instance | String | 主机 ID | Yes |
+| instance | String | 云服务器 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)

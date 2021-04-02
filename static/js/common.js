@@ -97,6 +97,7 @@ function funScroll() {
 	//获取当前滚动条的高度
 	var top = $(document).scrollTop();
 	var titles = $('main h2');
+	var titles_h3 = $('main h3');
 	//遍历所有的div
 	titles.each(function(index) {
 		var thisTop = $(this).offset().top;
@@ -104,6 +105,18 @@ function funScroll() {
 			var anchor = $(this).children('a').attr('href');
 			$('#TableOfContents ul a[class="active"]').removeClass('active');
 			$('#TableOfContents ul a[href="'+anchor+'"]').addClass('active');
+		}
+	});
+	//遍历所有的div
+	titles_h3.each(function(index) {
+		var thisTop = $(this).offset().top;
+		if (top >= thisTop-80) {
+			var anchor = $(this).children('a').attr('href');
+			if($('#TableOfContents ul ul a[href="'+anchor+'"]').parent().parent().prev().hasClass('active')){
+				$('#TableOfContents ul ul a[class="active"]').removeClass('active');
+				$('#TableOfContents ul ul a[href="'+anchor+'"]').addClass('active');
+			}
+			
 		}
 	});
 }

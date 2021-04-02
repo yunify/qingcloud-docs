@@ -5,11 +5,11 @@ draft: false
 ---
 
 
-在连接实例前，请确保您的主机已经绑定了弹性公网 IP 或者采用NAT转发了相应的端口，并且您的`防火墙`放行了相应端口。
+在连接实例前，请确保您的云服务器已经绑定了弹性公网 IP 或者采用NAT转发了相应的端口，并且您的`防火墙`放行了相应端口。
 ## 浏览器web连接
 ### 1. 登录 QingCloud 控制台
 
-然后选择您主机所在的 Region 或者可用区，点击计算-主机，进入实例列表。
+然后选择您云服务器所在的 Region 或者可用区，点击**计算** --> **云服务器**，进入实例列表。
 
 ### 2. 点击图标，打开VNC
 
@@ -23,10 +23,10 @@ draft: false
 
 ![](/compute/vm/manual/_images/web-vnc.png)
 
-如果主机不接受您的密码，您可以先关闭主机，然后[修改主机密码](https://docs.qingcloud.com/product/faq/#id7)。
+如果云服务器不接受您的密码，您可以先关闭云服务器，然后[修改云服务器密码](https://docs.qingcloud.com/product/faq/#id7)。
 
-## Linux主机
-如果您使用的是 Windows 操作系统，除了通过 QingCloud 控制台以外，您也可以通过软件连接至 Linux 主机，常见的软件有[PuTTY](https://www.putty.org/) ， [Xshell](https://www.netsarang.com/zh/xshell/)。
+## Linux云服务器
+如果您使用的是 Windows 操作系统，除了通过 QingCloud 控制台以外，您也可以通过软件连接至 Linux 云服务器，常见的软件有[PuTTY](https://www.putty.org/) ， [Xshell](https://www.netsarang.com/zh/xshell/)。
 
 请注意，青云并不知道您的软件来源和用途，也不对其产生的任何的问题和纠纷负责。
 
@@ -36,7 +36,7 @@ draft: false
 
 #### 1. 配置好弹性 IP 和防火墙
 
-首先在连接主机之前，请确保您的主机已经绑定了弹性公网 IP，[防火墙放行](https://docsv3.qingcloud.com/security/security_group/manual/sg_setting/) TCP 22 端口。
+首先在连接云服务器之前，请确保您的云服务器已经绑定了弹性公网 IP，[防火墙放行](https://docsv3.qingcloud.com/security/security_group/manual/sg_setting/) TCP 22 端口。
 
 ![](/compute/vm/manual/_images/fw-ssh-22.png)
 
@@ -54,7 +54,7 @@ draft: false
 
 ### 通过 SSH 密钥连接
 >注解
-相对于用户名密码方式，密钥方式拥有更强的安全性，也可以很大程度阻止暴力破解的发生。目前常用的密钥都是非对称性的加密方式，主机内置公钥，而用户则拥有私钥。由于采用非对称加密，入侵者试图通过公钥去破解私钥难度会远远超出密码的破解。
+相对于用户名密码方式，密钥方式拥有更强的安全性，也可以很大程度阻止暴力破解的发生。目前常用的密钥都是非对称性的加密方式，云服务器内置公钥，而用户则拥有私钥。由于采用非对称加密，入侵者试图通过公钥去破解私钥难度会远远超出密码的破解。
 
 #### 1. 准备密钥
 
@@ -62,19 +62,19 @@ draft: false
 
 ![](/compute/vm/manual/_images/creat-sshkey.png)
 
-#### 2. 主机加载上密钥
+#### 2. 云服务器加载上密钥
 
-您可以在创建主机时选择密钥
+您可以在创建云服务器时选择密钥
 
 ![](/compute/vm/manual/_images/creat-instance-key.png)
 
-也可以给现有主机加载密钥,选择主机右键 - ssh 密钥 - 加载
+也可以给现有云服务器加载密钥,右键点击云服务器，选择**SSH 密钥** --> **加载**。
 
 ![](/compute/vm/manual/_images/add-instance-key.png)
 
 #### 3. 配置好弹性 IP 和防火墙
 
-在连接主机之前，请确保您的主机已经绑定了弹性公网 IP，[防火墙放行](https://docsv3.qingcloud.com/security/security_group/manual/sg_setting/) TCP 22 端口。
+在连接云服务器之前，请确保您的云服务器已经绑定了弹性公网 IP，[防火墙放行](https://docsv3.qingcloud.com/security/security_group/manual/sg_setting/) TCP 22 端口。
 
 #### 4. 将密钥转换为正确的格式
 
@@ -94,8 +94,8 @@ draft: false
 
 ![](/compute/vm/manual/_images/putty-session.png)
 
-## Windows主机
-从安全考虑， QingCloud 上的 Windows 主机默认关闭了远程登录， 您首先需要通过浏览器 Web 方式登录到主机，并开启远程登录功能
+## Windows云服务器
+从安全考虑， QingCloud 上的 Windows 云服务器默认关闭了远程登录， 您首先需要通过浏览器 Web 方式登录到云服务器，并开启远程登录功能
 
 ### 第一部分  Windows Server  开启远程登录
 
@@ -113,7 +113,7 @@ draft: false
 
 #### 3. 打开系统属性
 
-在主机中，点击下方文件管理器，依次点击 `此电脑` - `计算机` - `系统属性`
+在云服务器中，点击下方文件管理器，依次点击 `此电脑` - `计算机` - `系统属性`
 
 ![](/compute/vm/manual/_images/windows-system-conf.jpg)
 
@@ -127,7 +127,7 @@ draft: false
 
 #### 1. 配置好弹性 IP 和防火墙
 
-在启动远程桌面连接之前，请给您的主机绑定弹性 IP ，防火墙开启上下行的 `TCP` `3389` 端口，并`应用修改`
+在启动远程桌面连接之前，请给您的云服务器绑定弹性 IP ，防火墙开启上下行的 `TCP` `3389` 端口，并`应用修改`
 
 ![](/compute/vm/manual/_images/fw-tcp-3389.png)
 
@@ -139,4 +139,4 @@ draft: false
 
 
 >注解
-如果您已经尝试采用上述的步骤，仍然无法连接至您的主机。建议您提交工单，我们的工程师会尽快帮您解决问题。
+如果您已经尝试采用上述的步骤，仍然无法连接至您的云服务器。建议您提交工单，我们的工程师会尽快帮您解决问题。

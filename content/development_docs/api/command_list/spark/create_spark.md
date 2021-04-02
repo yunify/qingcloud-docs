@@ -20,7 +20,7 @@ draft: false
 | vxnet | String | 集群要加入的私有网络id | Yes |
 | description | String | 集群的描述 | No |
 | spark_name | String | 服务的名字 | No |
-| spark_class | Integer | 节点使用的主机类型，0 是指 高性能， 1 是指超高性能 | No |
+| spark_class | Integer | 节点使用的云服务器类型，0 是指 高性能， 1 是指超高性能 | No |
 | private_ips.n.role | String | 节点的角色，目前有效值为 “spark-master”“hadoop-master”“slave” | No |
 | private_ips.n.private_ips | String | 为该角色节点指定的IP列表, 如果该角色存在多个节点，IP之间”,” 号分隔，例如 “192.168.1.21,192.168.1.22”。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |

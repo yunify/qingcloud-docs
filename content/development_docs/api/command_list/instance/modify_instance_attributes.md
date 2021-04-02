@@ -5,17 +5,17 @@ draft: false
 weight: 10
 ---
 
-修改一台主机的名称和描述。
+修改一台云服务器的名称和描述。
 
-修改时不受主机状态限制。一次只能修改一台主机。
+修改时不受云服务器状态限制。一次只能修改一台云服务器。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| instance | String | 主机ID | Yes |
-| instance_name | String | 主机名称 | No |
-| description | String | 主机描述 | No |
+| instance | String | 云服务器ID | Yes |
+| instance_name | String | 云服务器名称 | No |
+| description | String | 云服务器描述 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 | nic_mqueue | Integer | 1: 启用网卡多队列功能，0: 禁用网卡多队列功能, 默认为0 | No |
 

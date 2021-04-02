@@ -8,14 +8,14 @@ draft: false
 
 获取一个或多个公网IP
 
-可根据公网IP的ID，状态，名称，分配的主机ID作过滤条件，来获取公网IP列表。 如果不指定任何过滤条件，默认返回你所拥有的所有公网IP。 如果指定不存在的公网IP，或非法状态值，则会返回错误信息。
+可根据公网IP的ID，状态，名称，分配的云服务器ID作过滤条件，来获取公网IP列表。 如果不指定任何过滤条件，默认返回你所拥有的所有公网IP。 如果指定不存在的公网IP，或非法状态值，则会返回错误信息。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | eips.n | String | 公网IP的ID | No |
-| instance_id | String | 主机ID，可得到已分配给此主机的公网IP | No |
+| instance_id | String | 云服务器ID，可得到已分配给此云服务器的公网IP | No |
 | status.n | String | 公网IP状态，有效值为 pending, available, associated, suspended，released, ceased | No |
 | search_word | String | 搜索关键词，支持公网IP的ID，名称 | No |
 | tags.n | String | 按照标签ID过滤, 只返回已绑定某标签的资源 | No |
@@ -50,7 +50,7 @@ draft: false
 | icp_codes | String | 备案号 |
 | create_time | TimeStamp | 公网IP创建时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
 | status_time | TimeStamp | 公网IP最近一次状态变更时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
-| resource | Dict | 若已分配到主机/路由器，则表示所分配的主机/路由器信息，数据格式为:<br/>{<br/> "resource_name":"website",<br/> "resource_type":"instance",<br/> "resource_id":"i-j32t3llb"<br/>} |
+| resource | Dict | 若已分配到云服务器/路由器，则表示所分配的云服务器/路由器信息，数据格式为:<br/>{<br/> "resource_name":"website",<br/> "resource_type":"instance",<br/> "resource_id":"i-j32t3llb"<br/>} |
 | eip_group | Dict | 公网IP的分组信息，数据格式为:<br/>{<br/>  "eip_group_id":"eipg-1nv8hobz",<br/>  "eip_group_name":"192.168.93.*"<br/>} |
 | eip_addr | String | 公网IP地址 |
 

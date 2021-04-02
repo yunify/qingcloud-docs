@@ -14,7 +14,7 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| alarm_policy_type | String | 告警策略类型: 主机（instance），路由器（router），公网 IP（eip），负载均衡器（loadbalancer_listener_http / loadbalancer_listener_https / loadbalancer_listener_tcp / loadbalancer_backend_http / loadbalancer_backend_tcp），集群（cluster_node） | Yes |
+| alarm_policy_type | String | 告警策略类型: 云服务器（instance），路由器（router），公网 IP（eip），负载均衡器（loadbalancer_listener_http / loadbalancer_listener_https / loadbalancer_listener_tcp / loadbalancer_backend_http / loadbalancer_backend_tcp），集群（cluster_node） | Yes |
 | period | String | 告警策略周期：一分钟：1m ，5分钟：5m | Yes |
 | alarm_policy_name | String | 告警策略名称 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |

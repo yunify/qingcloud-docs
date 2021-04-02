@@ -17,7 +17,7 @@ section2:
       url: "intro/intro"
 
     - title: 操作指南
-      content: 学习上手如何创建自动伸缩策略，如何设置主机启动配置，以及查看历史记录等。
+      content: 学习上手如何创建自动伸缩策略，如何设置云服务器启动配置，以及查看历史记录等。
       url: "manual/autoscaling"
 
 section3:
@@ -45,14 +45,14 @@ section4:
           url: "intro/intro" 
 
     - title: 上手：如何配置自动伸缩。
-      content: 如何创建自动伸缩策略和进行主机启动配置。
+      content: 如何创建自动伸缩策略和进行云服务器启动配置。
       vice_title: 上手的第一步
       children: 
         - title: 创建自动伸缩策略
           url: "manual/autoscaling#创建自动伸缩策略"
 
-        - title: 主机启动配置
-          url: "manual/autoscaling#主机启动配置"
+        - title: 云服务器启动配置
+          url: "manual/autoscaling#云服务器启动配置"
 ---
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->

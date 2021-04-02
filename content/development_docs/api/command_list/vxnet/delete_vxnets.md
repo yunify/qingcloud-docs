@@ -8,7 +8,7 @@ draft: false
 
 除私有网络。
 
-只能删除没有主机的私有网络，若删除时仍然有主机在此网络中，会返回错误信息。 可通过 [_LeaveVxnet_](../leave_vxnet/) 移出主机。
+只能删除没有云服务器的私有网络，若删除时仍然有云服务器在此网络中，会返回错误信息。 可通过 [_LeaveVxnet_](../leave_vxnet/) 移出云服务器。
 
 **Request Parameters**
 

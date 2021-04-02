@@ -4,7 +4,7 @@ date: 2020-12-01T00:38:25+09:00
 description: Test description
 draft: false
 enableToc: false
-keyword: 云主机, QingCloud, DDOS防护, DDOS
+keyword: 云服务器, QingCloud, DDOS防护, DDOS
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-title: "边界路由器 操作指南"
+title: "操作指南"
 date: 2020-12-01T00:38:25+09:00
 draft: false
 weight: 2

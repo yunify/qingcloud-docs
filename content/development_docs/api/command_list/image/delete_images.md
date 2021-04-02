@@ -6,13 +6,13 @@ draft: false
 
 
 
-删除一个或多个自有映像。映像须在可用（ available ） 状态下才能被删除。
+删除一个或多个自有镜像。镜像须在可用（ available ） 状态下才能被删除。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| images.n | String | 映像 ID | Yes |
+| images.n | String | 镜像 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)
