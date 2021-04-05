@@ -14,7 +14,7 @@ QingCloud DNS 解析管理，仅针对 QingCloud 提供的 DNS 服务器生效�
 
     > QingCloud DNS 会采取一定的规则将域名划分到不同的 NameServer 平台，具体服务器地址请以对应域名解析页面的提示为准。
 
-    ![qingcloud dns](_images/dns_ns_list.png)
+    ![qingcloud dns](../_images/dns_ns_list.png)
 
     如上图，当前域名需要将 DNS 服务器修改为 `ns1.routewize.com` 和 `ns2.routewize.com` ，QingCloud DNS 才会接管。
 
@@ -22,19 +22,19 @@ QingCloud DNS 解析管理，仅针对 QingCloud 提供的 DNS 服务器生效�
 
     * 国内注册商以阿里云为例：
 
-        ![阿里云修改DNS](_images/dns_modify_aliyun.png)
+        ![阿里云修改DNS](../_images/dns_modify_aliyun.png)
 
     * 海外注册商以 Godaddy 为例：
 
-        ![Godaddy修改NS入口](_images/dns_modify_godaddy_1.png)
+        ![Godaddy修改NS入口](../_images/dns_modify_godaddy_1.png)
 
-   子域托管方法请参考：[管理子域名](subZone)
+   子域托管方法请参考：[管理子域名](../subZone)
 
 3. 修改 DNS 服务器。
 
     一般注册商的 NameServer 填写处会提示域名正在使用其默认的 DNS 服务器地址，需要您切换到其他 NameServer 并填入前面已复制好的 `ns1.routewize.com`和`ns2.routewize.com` 后保存。
 
-    ![Godaddy修改NS](_images/dns_modify_godaddy_2.png)
+    ![Godaddy修改NS](../_images/dns_modify_godaddy_2.png)
 
 4. QingCloud 接管域名最长不超过 72 小时，请耐心等待 。
 

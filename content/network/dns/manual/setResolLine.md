@@ -21,11 +21,11 @@ QingCloud DNS 为客户提供逾1600条解析线路，国内精确到运营商�
 3. 点击域名名称，进入域名解析记录页面。
 4. 选择**域名配置**页签，展开域名域名配置管理信息。
 
-   ![域名配置](_images/dns_route_config.png)
+   ![域名配置](../_images/dns_route_config.png)
 
 5. 在**功能配置**区域，点击**编辑线路**，弹出线路编辑窗口。
 
-   ![修改线路配置](_images/modify_dns_route.png)
+   ![修改线路配置](../_images/modify_dns_route.png)
 
 6. 在对话框中添加或移除线路。
 
