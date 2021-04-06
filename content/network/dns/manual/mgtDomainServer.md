@@ -28,7 +28,7 @@ QingCloud DNS 解析管理，仅针对 QingCloud 提供的 DNS 服务器生效�
 
         ![Godaddy修改NS入口](../_images/dns_modify_godaddy_1.png)
 
-   子域托管方法请参考：[管理子域名](../subZone)
+   子域托管方法请参考：[管理子域名](../subzone)
 
 3. 修改 DNS 服务器。
 

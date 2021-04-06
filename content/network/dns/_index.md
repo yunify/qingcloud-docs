@@ -21,7 +21,7 @@ Section2:
 
     - title: 快速入门
       content: 快速入门
-      url: "/network/dns/quickstart/creatRecodeSet"
+      url: "/network/dns/quickstart/creatrecordset"
 
     - title: 操作指南
       content: 操作指南
@@ -64,10 +64,10 @@ section4:
       vice_title: 上手的第一步
       children:
         - title: 配置域名解析记录
-          url: "/network/dns/quickstart/creatRecodeSet"  
+          url: "/network/dns/quickstart/creatrecordset"  
 
         - title: 验证域名解析是否生效
-          url: "/network/dns/quickstart/checkRecordSet"       
+          url: "/network/dns/quickstart/checkrecordset"       
 ---
 
 
