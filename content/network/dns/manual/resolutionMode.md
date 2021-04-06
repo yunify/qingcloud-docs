@@ -1,6 +1,7 @@
 ---
 title: "选择解析模式"
 description: dns解析模式
+weight: 5
 draft: false
 ---
 

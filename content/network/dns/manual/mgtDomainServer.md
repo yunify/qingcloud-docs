@@ -1,6 +1,7 @@
 ---
 title: "修改域名 DNS 服务器"
 description: dns域名服务器。
+weight: 2
 draft: false
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "管理解析记录"
 description: dns管理解析记录，包括修改解析记录、删除解析记录。
+weight: 3
 draft: false
 ---
 
