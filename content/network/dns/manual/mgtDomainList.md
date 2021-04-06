@@ -1,6 +1,7 @@
 ---
 title: "管理域名列表"
 description: dns管理域名列表，包括查看和删除域名，以及管理域名备注等。
+weight: 1
 draft: false
 ---
 

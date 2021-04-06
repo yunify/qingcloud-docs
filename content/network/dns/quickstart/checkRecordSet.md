@@ -1,5 +1,6 @@
 ---
-title: "快速验证域名解析是否生效"
+title: "验证域名解析是否生效"
+weight: 2
 description: test
 draft: false
 ---

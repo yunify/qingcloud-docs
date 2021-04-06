@@ -1,13 +1,13 @@
 ---
-title: "DNS服务"
-linkTitle: "DNS服务"
-weight: 1
+title: "DNS"
+linkTitle: "DNS"
+weight: 8
 collapsible: true
 type: "product"
 
 section1:
-  title: DNS 服务
-  vice_title: QingCloud DNS 服务是一款权威域名解析服务，将域名和 IP 地址相互解析映射，提供可视化管理域名智能解析，并跟踪域名解析状态，以助用户便捷访问互联网。
+  title: DNS
+  vice_title: QingCloud DNS 是一款权威域名解析服务，将域名和 IP 地址相互解析映射，提供可视化管理域名智能解析，并跟踪域名解析状态，以助用户便捷访问互联网。
   # todo add qingstor introduction video
   # video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
   # video_img: "/images/video.png"
@@ -29,7 +29,7 @@ Section2:
 
     - title: 常见问题
       content: 常见问题
-      url: "/network/dns/faq/dns_faq"
+      url: "/network/dns/faq/faq"
 
 section3:
   title: 开发者指南
@@ -49,7 +49,7 @@ section3:
 section4:
   children:
     - title: 了解：什么是DNS服务？
-      content: QingCloud DNS 服务是一款权威域名解析服务，提供可视化管理域名智能解析，并跟踪域名解析情况。
+      content: QingCloud DNS 是一款权威域名解析服务，提供可视化管理域名智能解析，并跟踪域名解析情况。
 
       vice_title: 了解的第一步
       children:

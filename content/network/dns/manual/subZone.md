@@ -1,6 +1,7 @@
 ---
 title: "管理子域名"
 description: dns的独立子域名
+weight: 6
 draft: false
 ---
 

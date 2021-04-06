@@ -1,6 +1,7 @@
 ---
-title: "快速配置域名解析记录"
+title: "配置域名解析记录"
 description: test
+weight: 1
 draft: false
 ---
 
