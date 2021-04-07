@@ -1,6 +1,6 @@
 ---
 title: "常见问题"
-date: 2020-01-30T00:38:25+09:00
+date: 2021-04-07T00:38:25+09:00
 description: dns 常见问题
 draft: false
 enableToc: false

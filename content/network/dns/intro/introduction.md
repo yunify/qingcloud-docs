@@ -1,6 +1,6 @@
 ---
 title: "什么是 DNS "
-date: 2020-03-30T00:38:25+09:00
+date: 2021-04-07T00:38:25+09:00
 description: DNS description
 weight: 10
 draft: false

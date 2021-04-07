@@ -1,6 +1,6 @@
 ---
 title: "功能特性"
-date: 2020-03-30T00:38:25+09:00
+date: 2021-04-07T00:38:25+09:00
 description: DNS服务功能简介
 weight: 20
 draft: false

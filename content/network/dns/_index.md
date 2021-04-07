@@ -15,6 +15,10 @@ section1:
 Section2:
   title: 用户指南
   children:
+    - title: 最新动态
+      content: 产品动态
+      url: "/network/dns/news/product_news"
+    
     - title: 产品简介
       content: 产品简介
       url: "/network/dns/intro/introduction"

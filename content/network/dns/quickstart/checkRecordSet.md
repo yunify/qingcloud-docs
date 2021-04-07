@@ -1,5 +1,6 @@
 ---
 title: "验证域名解析是否生效"
+date: 2021-04-07T00:38:25+09:00
 weight: 2
 description: test
 draft: false

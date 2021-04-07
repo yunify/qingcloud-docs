@@ -1,6 +1,7 @@
 ---
 title: "配置域名解析记录"
 description: test
+date: 2021-04-07T00:38:25+09:00
 weight: 1
 draft: false
 ---

@@ -1,6 +1,7 @@
 ---
 title: "选择解析模式"
 description: dns解析模式
+date: 2021-04-07T00:38:25+09:00
 weight: 5
 draft: false
 ---
