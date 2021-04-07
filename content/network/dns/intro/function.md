@@ -2,7 +2,7 @@
 title: "功能特性"
 date: 2020-03-30T00:38:25+09:00
 description: DNS服务功能简介
-weight: 40
+weight: 20
 draft: false
 enableToc: false
 keyword: DNS服务,

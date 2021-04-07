@@ -13,11 +13,11 @@ draft: false
 
 以下为解析验证示例：
 
-在 QingCloud DNS 管理面板配置 `simple.example.com` 解析记录如图所示：
+在 QingCloud DNS 管理面板配置 `simple.example.com` 解析记录如图所示。
 
 ![域名验证配置](../_images/dns_rr_1.png)
 
-> 注意上方页面提示 `example.com` 的域名服务器地址为：**`ns3.routewize.com`** 和 **`ns4.routewize.com`**
+> 注意上方页面提示 `example.com` 的域名服务器地址为**`ns3.routewize.com`** 和 **`ns4.routewize.com`**。
 
 ## 在 Windows 系统中执行
 
