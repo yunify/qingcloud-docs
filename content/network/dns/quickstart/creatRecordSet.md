@@ -31,8 +31,6 @@ draft: false
 
    ![点击域名](../_images/dns_parse_1.png)
 
-   ![进入域名解析](../_images/dns_parse_2.png)
-
 2. 点击**添加记录**，显示添加记录输入框。
 
    ![添加记录](../_images/dns_parse_3.png)
@@ -43,8 +41,8 @@ draft: false
 
 3. 按对话框指引，填写云服务器名和记录值，选择线路、记录类型、模式和 TTL 后提交即可。
 
-   * 示例：将 www.eg.com 默认解析指向网站服务器 IP 地址 1.1.1.1 。
+    示例：将 www.eg.com 默认解析指向网站服务器 IP 地址 1.1.1.1 。
 
-    ![右键创建记录](../_images/dns_A.png)
+    ![添加解析信息](../_images/dns_A.png)
 
 > 注：QingCloud DNS 默认提供5条线路，包括**全网默认、中国电信、中国联通、中国移动、港澳台及海外**。若需自定义解析线路，可参考[配置解析线路](../../manual/setresolline)。
