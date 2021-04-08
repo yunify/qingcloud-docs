@@ -1,5 +1,5 @@
 ---
-title: "Linux云服务器如何扩容swap大小"
+title: "Linux云服务器扩容swap大小"
 description: test
 draft: false
 ---
