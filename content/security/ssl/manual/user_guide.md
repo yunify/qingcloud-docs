@@ -2,9 +2,8 @@
 title: "购买指南"
 description: manual
 draft: false
+weight: 2
 ---
-
-
 
 
 ## 购买流程 {#id5}

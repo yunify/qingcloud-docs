@@ -1,14 +1,15 @@
 ---
-title: "工单服务"
-date: 2021-02-19T00:00:00+09:00
+title: "工单操作"
+description: test
+weight: 2
 draft: false
-collapsible: false
-weight: 1
 ---
 
-工单服务可为您有效地解决问题。您在工单系统中提交问题后，青云的工作人员致力于解决问题并反馈在工单系统中。您登陆控制台即可方便地查看记录或追溯问题。
 
-![](../_images/my-tickets.png)
+
+工单服务可为您有效地解决问题。
+
+![](../../_images/my-tickets.png)
 
 ## 查看工单
 
@@ -18,7 +19,7 @@ weight: 1
 >
 > **企业内**的工单，是指该用户所属的企业的所有工单。
 
-![](../_images/checking-tickets.png)
+![](../../_images/checking-tickets.png)
 
 ## 创建工单
 
@@ -28,14 +29,14 @@ weight: 1
 2. 填写工单内容，包括：工单类型、标题、问题的影响类型、描述、相关产品等内容。
 3. 点击**提交**。
 
-![](../_images/creating-tickets.png)
+![](../../_images/creating-tickets.png)
 
 ## 回复工单
 
 在您提交工单后，青云的后台工作人员将致力于解决您的问题，并回复在您提交的工单里。同时，您也会收到系统及时的邮件提醒，便于您查看工单。
 
-![](../_images/tickets-email.png)
+![](../../_images/tickets-email.png)
 
 若您对于问题的解决方案仍有疑问，您可以继续地回复工单并和后台工作人员沟通来解决问题。
 
-![](../_images/replying-tickets.png)
+![](../../_images/replying-tickets.png)
