@@ -9,7 +9,7 @@ enableToc: false
 
 
 
-**概述**
+### 概述
 
 1. 当网站访问很慢或无法访问时，若已经排除显著的问题，而使用ping命令检测到有明显丢包时，建议您做链路测试。Linux环境下，推荐优先使用mtr命令行工具测试，或使用traceroute命令行工具进行链路测试来判断问题来源。通常情况下，链路测试步骤如下。
 
@@ -19,8 +19,7 @@ enableToc: false
    ​
 
 
-
-**WinMTR工具**
+### WinMTR工具
 
 
 
@@ -81,7 +80,7 @@ Host Loss% Snt Last Avg Best Wrst StDev
 
  
 
-  **常见可选参数说明**
+  ### 常见可选参数说明
 
 
 
@@ -103,7 +102,7 @@ Host Loss% Snt Last Avg Best Wrst StDev
 - ​
 
 
-**返回结果说明**
+### 返回结果说明
 
 - 默认配置下，返回结果中各数据列的说明如下。
 
@@ -117,8 +116,7 @@ Host Loss% Snt Last Avg Best Wrst StDev
   ​
 
 
-
-**traceroute命令行工具**
+### traceroute命令行工具
 
 raceroute是几乎所有Linux发行版本预装的网络测试工具，用于跟踪Internet 协议（IP）数据包传送到目标地址时经过的路径。traceroute先发送最大存活时间值（Max_TTL）的UDP探测数据包，然后侦听从网关开始的整个链路上的ICMP TIME_EXCEEDED响应。探测从TTL=1开始，TTL值逐步增加，直至接收到ICMP PORT_UNREACHABLE消息。ICMP PORT_UNREACHABLE消息用于标识目标主机已经被定位，或命令已经达到允许跟踪的最大TTL值。traceroute默认发送UDP数据包进行链路探测。可以通过“-I”参数来指定发送ICMP数据包用于探测。
 
@@ -173,10 +171,10 @@ traceroute to 223.5.5.5 (223.5.5.5), 30 hops max, 60 byte packets
 - -w：设置等待远端主机回包时间。
 - -x：开启或关闭数据包的正确性检验。
 
- 
 
 
-**分析链路测试结果**
+
+### 分析链路测试结果
 
 1. - 以如下链路测试结果示例图为基础进行阐述。
 
@@ -220,7 +218,7 @@ traceroute to 223.5.5.5 (223.5.5.5), 30 hops max, 60 byte packets
         ​
 
 
-**操作建议**
+### 操作建议
 
 
 
