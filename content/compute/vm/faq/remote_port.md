@@ -7,16 +7,9 @@ draft: false
 enableToc: false
 ---
 
-<<<<<<< HEAD
-## 1.打开Windows云服务器远程桌面，关闭系统自带防火墙
-
-### 1.1打开Windows云服务器远程桌面
-=======
 ## 1.打开windows云服务器远程桌面，关闭系统自带防火墙
 
 ### 1.1打开windows云服务器远程桌面
->>>>>>> upstream/master
-
 开始-控制面板-系统和安全-系统-允许远程访问-勾选"允许远程连接到此计算机(L)"
 
 ![remote_port_1](/compute/vm/_images/remote_port_1.png)
