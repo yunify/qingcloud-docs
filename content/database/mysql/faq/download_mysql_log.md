@@ -6,13 +6,13 @@ draft: false
 enableToc: false
 ---
 
-#### 1.启动mysql日志服务端
+### 1.启动mysql日志服务端
 
 MySQL Plus 支持通过 HTTP 服务预览和下载日志，HTTP 服务端口为 `18801` 。
 
 日志服务支持下载 mysql 错误日志 `mysql-error` 和 mysql 慢日志 `mysql-slow`（二者都保留六个日志文件），同时支持下载 mysql 审计日志 `mysql-audit` ， mysql binlog 文件 `mysql-bin` 和 SSL 证书文件 `mysql-cert` 。
 
-1.1启动服务
+#### 1.1启动服务
 
 AppCenter 控制台-集群管理-点击MySQL Plus集群资源id进入到集群详情界面
 
@@ -24,7 +24,7 @@ AppCenter 控制台-集群管理-点击MySQL Plus集群资源id进入到集群�
 
 **注解**：点选运行服务的角色，并勾选需要预览和下载的 MySQL 日志，输入 HTTP 用户名和密码点击提交即可启动日志服务。
 
-1.2预览日志
+#### 1.2预览日志
 
 ![download_mysql_log_4](/database/mysql/_images/download_mysql_log_4.png)
 
@@ -34,43 +34,59 @@ AppCenter 控制台-集群管理-点击MySQL Plus集群资源id进入到集群�
 
 ![download_mysql_log_5](/database/mysql/_images/download_mysql_log_5.png)
 
-1.3下载日志
+#### 1.3下载日志
 
 进入需要下载的日志目录，点击日志文件进行下载即可
 
 ![download_mysql_log_6](/database/mysql/_images/download_mysql_log_6.png)
 
-1.4可以通过wget指令在MySQL Plus同vpc下的私有网络云服务器里下载集群日志
+#### 1.4可以通过wget指令在MySQL Plus同vpc下的私有网络云服务器里下载集群日志
 
 1.4.1下载所有目录
 
+```
 wget -r http://192.168.8.6/:18801 --http-user=Admin --http-password=Admin123@ --reject="index.html*"
+```
 
 1.4.2下载单个目录
 
+```
 wget -r http://192.168.8.6:18801/mysql-bin/ --http-user=Admin --http-password=Admin123@ --reject="index.html*" -np
+```
 
 1.4.3下载单个文件
 
+```
 wget -r http://192.168.8.6:18801/mysql-bin/mysql-bin.000001 --http-user=Admin --http-password=Admin123@ --reject="index.html*"
+```
 
 1.4.4下载限速
 
 为避免下载过大文件对MySQL服务造成影响，建议wget时加限速处理：
 
+```
 wget -r --limit-rate=100k http://192.168.8.6:18801 --http-user=Admin --http-password=Admin123@ --reject="index.html
+```
 
+```
 wget -r --limit-rate=8m http://192.168.8.6:18801 --http-user=Admin --http-password=Admin123@ --reject="index.html*"
+```
 
-#### 2.下载general日志
+### 2.下载general日志
 
-2.1 MySQL的general日志默认没有开启，需要用户自己开启 `set global general_log=on;`
+#### 2.1 MySQL的general日志默认没有开启，需要用户自己开启 
 
-2.2 提交工单联系青云同事后台拷贝
+```
+set global general_log=on;
+```
 
-2.3 用户可通过内网下载general日志：
+#### 2.2 提交工单联系青云同事后台拷贝；
 
+#### 2.3 用户可通过内网下载general日志：
+
+```
 wget -r ftp://node_ip/mysql-audit.log --ftp-user=ftpuser --ftp-password=ftppassword
+```
 
 
 
