@@ -1,9 +1,11 @@
 ---
-title: "删除swap分区"
+title: "屏蔽swap分区"
 date: 2020-04-02T17:08:56+09:00
 description: test
 draft: false
 ---
+
+在部署业务时，会遇到使用脚本来部署的场景，如果此时业务部署脚本将程序部署在/dev/vdb或者/dev/sdb，会与云服务器的swap分区发生冲突，此时我们需要临时屏蔽swap分区来避免冲突。
 
 ## 1 找到swap的盘符
 

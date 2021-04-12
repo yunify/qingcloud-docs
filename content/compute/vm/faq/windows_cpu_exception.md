@@ -50,9 +50,7 @@ enableToc: false
 
 **Microsoft Safety Scanner下载链接如下：**
 
-https://docs.microsoft.com/zh-cn/windows/security/threat-protection/intelligence/safety-scanner-download?spm=a2c4g.11186623.2.22.232f52beJo7DUS
-
-
+[https://docs.microsoft.com/zh-cn/windows/security/threat-protection/intelligence/safety-scanner-download?spm=a2c4g.11186623.2.22.232f52beJo7DUS](https://docs.microsoft.com/zh-cn/windows/security/threat-protection/intelligence/safety-scanner-download?spm=a2c4g.11186623.2.22.232f52beJo7DUS)
 
 **4.运行Windows Update来安装最新的微软安全补丁。**
 

@@ -7,9 +7,9 @@ draft: false
 
 sftp 工具可以用来打开一次安全互动的 FTP 会话。它与 ftp 相似，只不过，它使用安全、加密的连接。它的一般语法是：sftp username@hostname.com。一旦通过 验证，你可以使用一组和使用 FTP 相似的命令。
 
-#### Ubuntu云服务器开启sftp
+### Ubuntu云服务器开启sftp
 
-1.确认是否已经安装openssh-server
+#### 1.确认是否已经安装openssh-server
 
 ```
 dpkg --get-selections |grep ssh
@@ -23,7 +23,7 @@ dpkg --get-selections |grep ssh
 sudo apt-get install openssh-server
 ```
 
-2.新建用户组 sftp-users，并新建用户sftp
+#### 2.新建用户组 sftp-users，并新建用户sftp
 
 ```
 sudo addgroup sftp-users
@@ -32,7 +32,7 @@ sudo adduser sftp
 
 ![sftp_2](/compute/vm/_images/sftp_2.png)
 
-3.给sftp赋权并新建用户组ssh-users
+#### 3.给sftp赋权并新建用户组ssh-users
 
 3.1将sftp从所有其他用户组中移除并加入到sftp-users组，并且关闭其Shell访问：
 
@@ -51,7 +51,7 @@ sudo usermod -a -G ssh-users root
 
 ![sftp_4](/compute/vm/_images/sftp_4.png)
 
-4.创建并设置sftp用户目录
+#### 4.创建并设置sftp用户目录
 
 ```
 sudo mkdir /home/sftp_root
@@ -62,7 +62,7 @@ sudo chmod 770 /home/sftp_root/shared
 
 ![sftp_5](/compute/vm/_images/sftp_5.png)
 
-5.修改SSH配置文件
+#### 5.修改SSH配置文件
 
 ```
 sudo vi  /etc/ssh/sshd_config
@@ -78,7 +78,7 @@ ForceCommand internal-sftp
 
 ![sftp_6](/compute/vm/_images/sftp_6.png)
 
-6.重启系统使配置生效
+#### 6.重启系统使配置生效
 
 ```
 sudo reboot now
@@ -86,7 +86,7 @@ sudo reboot now
 
 ![sftp_7](/compute/vm/_images/sftp_7.png)
 
-7.验证
+#### 7.验证
 
 ```
 sftp sftp@192.168.8.2
@@ -94,21 +94,21 @@ sftp sftp@192.168.8.2
 
 ![sftp_8](/compute/vm/_images/sftp_8.png)
 
-#### Centos云服务器开启sftp
+### Centos云服务器开启sftp
 
-1.创建用户组 sftp
+#### 1.创建用户组 sftp
 
 ```
 groupadd sftp
 ```
 
-2创建用户ftp文件目录
+#### 2.创建用户ftp文件目录
 
 ```
 mkdir /home/sftp
 ```
 
-3.创建用户sftpuser
+#### 3.创建用户sftpuser
 
 ```
 useradd -g sftp -s /sbin/nologin -d /home/sftp/sftpuser sftpuser
@@ -116,13 +116,13 @@ useradd -g sftp -s /sbin/nologin -d /home/sftp/sftpuser sftpuser
 
 注解：-g 加入到sftp组；-s 禁止登录；-d 指定用户的登入目录
 
-4.设置密码
+#### 4.设置密码
 
 ```
 passwd sftpuser
 ```
 
-5.修改文件夹 属组
+#### 5.修改文件夹 属组
 
 ```
 chown -R sftpuser:sftp /home/sftp/sftpuser
@@ -130,7 +130,7 @@ chown -R sftpuser:sftp /home/sftp/sftpuser
 
 ![sftp_9](/compute/vm/_images/sftp_9.png)
 
-6.修改ssh的配置文件
+#### 6.修改ssh的配置文件
 
 ```
 vi /etc/ssh/sshd_config
@@ -150,13 +150,13 @@ ForceCommand    internal-sftp
 
 ![sftp_10](/compute/vm/_images/sftp_10.png)
 
-7.重启sshd服务
+#### 7.重启sshd服务
 
 ```
 systemctl restart sshd
 ```
 
-8.验证
+#### 8.验证
 
 ```
 sftp sftpuser@192.168.8.2
