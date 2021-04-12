@@ -1,5 +1,5 @@
 ---
-title: "如何修改windows云服务器远程桌面的访问端口"
+title: "如何修改Windows云服务器远程桌面的访问端口"
 date: 2021-02-19T00:38:25+09:00
 description: Test description
 weight: 10
@@ -10,7 +10,6 @@ enableToc: false
 ## 1.打开windows云服务器远程桌面，关闭系统自带防火墙
 
 ### 1.1打开windows云服务器远程桌面
-
 开始-控制面板-系统和安全-系统-允许远程访问-勾选"允许远程连接到此计算机(L)"
 
 ![remote_port_1](/compute/vm/_images/remote_port_1.png)
@@ -39,4 +38,4 @@ enableToc: false
 
 安全-安全组-找到云服务器对应的安全组sg-xxxxxx，放行修改后的端口，并应用修改安全组
 
-## 5.测试新端口的远程桌面ip:port
+## 5.测试新端口的远程桌面IP:PORT

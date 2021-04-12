@@ -7,13 +7,19 @@ draft: false
 enableToc: false
 ---
 
-# Centos安装图形化桌面
+# CentOS安装图形化桌面
 
 ## 问题背景
 
+<<<<<<< HEAD
+青云的Linux操作系统默认是最小化安装，部分客户需要图形化界面，比如搭建Oracle境；以下文档主要介绍Linux云服务器如何安装图形化桌面
+
+### CentOS7云服务器部署图形化桌面
+=======
 青云的Linux操作系统默认是最小化安装，部分客户需要图形化界面，比如搭建oracle环境；以下文档主要介绍Linux云服务器如何安装图形化桌面
 
 ### Centos7云服务器部署图形化桌面
+>>>>>>> upstream/master
 
 ####  1.准备环境
 
