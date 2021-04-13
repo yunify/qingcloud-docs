@@ -2,10 +2,8 @@
 title: "验证指南"
 description: manual
 draft: false
+weight: 2
 ---
-
-
-
 
 
 ## 域名验证方式 {#valid-domain}
