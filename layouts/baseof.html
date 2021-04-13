@@ -4,7 +4,13 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-
+{{ $has_private := 0 }}
+{{ $sections := .Sections.ByWeight }}
+{{ range $sections }}
+{{ if .Params.isPrivate }}
+    {{ $has_private = 1 }}
+{{ end }}
+{{ end }}          
 <body class="td-{{ .Kind }}">
   <header>
     {{ partial "navbar.html" . }}
@@ -23,10 +29,12 @@
           </div>
         </div>
       </div>
+      {{ if $has_private }}
       <div class="nav-link" id="nav-link-box">
         <a href="#public" class="active">公有云服务</a>
         <a href="#private">私有云服务</a>
-      </div>      
+      </div>
+      {{end}}      
       <section>
         {{ end }}
   </header>
@@ -62,6 +70,7 @@
         </div>
       </div>
     </section>
+    {{ if $has_private }}
     <section class="section is-grey-background section-out container-min-height section-has-title has-bg" id="private">
       <div class="container  td-outer">
         <div class="section-title">
@@ -91,7 +100,7 @@
         </div>
       </div>
     </section>
-
+    {{end}}
     {{ block "main" . }}{{ end }}
   </main>
 
