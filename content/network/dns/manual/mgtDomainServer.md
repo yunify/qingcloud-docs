@@ -1,5 +1,5 @@
 ---
-title: "修改域名 DNS 服务器"
+title: "修改域名服务器"
 description: dns域名服务器。
 date: 2021-04-07T00:38:25+09:00
 weight: 2

@@ -1,12 +1,12 @@
 ---
-title: "CDN"
+title: "CDN 服务"
 linkTitle: "CDN"
-weight: 3
+weight: 70
 collapsible: true
 type: "product"
 
 section1:
-  title: CDN
+  title: CDN 服务
   vice_title: CDN（Content Delivery Network）即内容分发网络。CDN 能够实时地根据网络流量和各节点负载状况以及节点到用户的距离和响应时间等综合因素，将用户的请求重新导向离用户最近的服务节点上，从而使用户可就近取得所需内容，解决 Internet 网络拥挤的状况，提高用户访问网站的响应速度。
 
 section2:
@@ -31,7 +31,7 @@ section2:
 
 section4:
   children:
-    - title: 了解：什么是CDN
+    - title: 了解：什么是 CDN 服务
       content: 了解 CDN 的概念，和其工作原理
       vice_title: 了解的第一步
       children:

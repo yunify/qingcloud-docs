@@ -5,7 +5,7 @@ description: DNS服务功能简介
 weight: 20
 draft: false
 enableToc: false
-keyword: DNS服务,
+keyword: DNS 服务,
 ---
 
 ## 功能特性
