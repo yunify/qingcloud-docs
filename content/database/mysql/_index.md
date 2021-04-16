@@ -1,7 +1,7 @@
 ---
 title: "MySQL Plus"
 linkTitle: "MySQL Plus"
-weight: 1
+weight: 01
 collapsible: true
 type: "product"
 

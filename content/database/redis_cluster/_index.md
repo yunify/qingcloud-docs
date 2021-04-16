@@ -1,7 +1,7 @@
 ---
 title: "Redis Cluster"
 linkTitle: "Redis Cluster"
-weight: 13
+weight: 08
 collapsible: true
 type: "product"
 
