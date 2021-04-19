@@ -17,17 +17,17 @@ Section2:
       content: 产品简介
       url: "intro/intro"
 
-    - title: 快速入门
-      content: 快速入门
-      url: "quick-start/base"
-  
     - title: 计费指南
       content: 计费指南
       url: "billing/price"
 
+    - title: 快速入门
+      content: 快速入门
+      url: "quick-start/base"
+  
     - title: 操作指南
       content: 操作指南
-      url: "manual/base"
+      url: "manual/checkdata"
 
 section4:
   children:
