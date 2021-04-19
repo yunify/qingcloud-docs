@@ -1,12 +1,12 @@
 ---
-title: "Clickhouse"
-linkTitle: "Clickhouse"
+title: "ClickHouse"
+linkTitle: "ClickHouse"
 weight: 1
 collapsible: true
 type: "product"
 
 section1:
-  title: Clickhouse
+  title: ClickHouse
   vice_title: QingCloud ClickHouse 是一款深度定制的ClickHouse集群应用。
   # todo add qingstor introduction video
   # video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
@@ -21,7 +21,7 @@ section2:
 
     - title: 操作指南
       content: 学习上手如何创建、查看及应用ClickHouse等。
-      url: "manual"
+      url: "manual/setstep"
 
 section3:
   title: 开发者指南
