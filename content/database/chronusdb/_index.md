@@ -1,7 +1,7 @@
 ---
 title: "ChronusDB"
 linkTitle: "ChronusDB"
-weight: 9
+weight: 05
 collapsible: true
 type: "product"
 

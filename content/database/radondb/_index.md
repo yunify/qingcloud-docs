@@ -1,7 +1,7 @@
 ---
 title: "RadonDB"
 linkTitle: "RadonDB"
-weight: 3
+weight: 03
 collapsible: true
 type: "product"
 
