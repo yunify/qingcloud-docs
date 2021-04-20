@@ -31,8 +31,8 @@ Section2:
 
 section4:
   children:
-    - title: 了解：什么是CFW
-      content: CFW是一款网络安全产品，用于防护进出 EIP的网络攻击。
+    - title: 了解：什么是CFW云防火墙
+      content: CFW云防火墙是一款网络安全产品，用于防护进出 EIP的网络攻击。
       vice_title: 了解的第一步
       children:
         - title: 产品简介
