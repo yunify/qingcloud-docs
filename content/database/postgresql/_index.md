@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL"
 linkTitle: "PostgreSQL"
-weight: 7
+weight: 02
 collapsible: true
 type: "product"
 
