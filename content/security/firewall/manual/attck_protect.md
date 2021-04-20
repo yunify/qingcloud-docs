@@ -11,8 +11,6 @@ weight: 3
 
 ![](../_images/attack_setting.png)
 
-![](../_images/version.png) 
-
 事件详细介绍请参考下表。
 
 | 事件英文名称    | 中文名称 | 描述                                                         |
