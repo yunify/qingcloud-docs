@@ -1,5 +1,5 @@
 ---
-title: "Redis Standalone"
+title: "键值数据库 Redis Standalone"
 linkTitle: "Redis Standalone"
 weight: 07
 collapsible: true

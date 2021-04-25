@@ -3,12 +3,12 @@ title: "基准测试"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
-enableToc: false
+weight: 12
 ---
 
 数据库基准性能测试为 sysbench 0.5。
 
-**测试方法：**
+## 测试方法
 
 1. 准备测试数据
 
