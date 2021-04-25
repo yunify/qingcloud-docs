@@ -16,7 +16,7 @@ Section2:
   children:
     - title: 最新动态
       content: 最新动态
-      url: "news/announcements/"
+      url: "news/product_news/"
 
     - title: 产品简介
       content: 产品简介
@@ -24,7 +24,7 @@ Section2:
 
     - title: 计费指南
       content: 计费指南
-      url: "billing/price/"
+      url: "billing/bill/"
 
     - title: 快速入门
       content: 快速入门
@@ -54,25 +54,17 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 什么是备案
-          url: "/database/mysql/intro/introduction"
+          url: "intro/intro/"
 
-        - title: 基本概念
-          url: "/database/mysql/intro/list"
-
-        - title: 备案方式
-          url: "/database/mysql/intro/superiority"
+        - title: 备案术语
+          url: "intro/glossary/"
 
         - title: 备案类型
-          url: "/database/mysql/intro/introduction"
+          url: "intro/type/"
 
         - title: 备案限制
-          url: "/database/mysql/intro/list"
+          url: "intro/limit/"
 
-        - title: 备案流程
-          url: "/database/mysql/intro/superiority"
-
-        - title: 权限管理
-          url: "/database/mysql/intro/superiority"
 
     - title: 入门
       content: 备案准备
@@ -103,12 +95,6 @@ section4:
       content: 开始备案
       vice_title: 上手的第一步
       children: 
-        - title: 填写备案信息并上传资料
-          url: "faq/upload/"
-
-        - title: 真实性核验
-          url: "faq/faq/"
-
         - title: 首次备案
           url: "manual/first_filing/"
 
@@ -118,14 +104,14 @@ section4:
         - title: 新增接入
           url: "manual/add_access/"
 
-        - title: 变更备案
-          url: "manual/change_filing/"
+        # - title: 变更备案
+        # url: "manual/change_filing/"
 
-        - title: 注销备案
-          url: "manual/write_off_record/"
+        # - title: 注销备案
+          # url: "manual/write_off_record/"
 
-        - title: 取消接入
-          url: "manual/concel_access/"
+        # - title: 取消接入
+          # url: "manual/concel_access/"
 
 
 ---

@@ -38,3 +38,10 @@ weight: 14
 填写完成模板请参考：
 
 ![承诺书](../../_images/commitment_2.png)
+
+## 网站建设方案书
+
+网站建设方案书填写说明模板请参考图片：
+
+![img](../../_images/website_solution.png)
+

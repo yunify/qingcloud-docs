@@ -7,4 +7,4 @@ draft: false
 
 
 
-具体政策法规，请参见[工信部平台](https://beian.miit.gov.cn/#/Integrated/lawStatute)“政策文件”专栏。
+具体政策法规，请参见[工信部平台](https://beian.miit.gov.cn/#/Integrated/lawStatute)政策文件专栏。

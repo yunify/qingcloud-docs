@@ -13,10 +13,6 @@ draft: false
 
 ##### 公安备案和安全评估报告指南
 
-1.如需了解公安联网备案的操作流程，请进入[全国互联网安全管理服务平台](http://www.beian.gov.cn/?spm=a2c4g.11186623.2.15.11975096RXulyz)，在下载中心找到并下载 《互联网站安全服务平台操作指南》，按照操作指南进行备案。 
+1.如需了解公安联网备案的操作流程，请进入[全国互联网安全管理服务平台](http://www.beian.gov.cn/portal/index.do)，在下载中心找到并下载 《互联网站安全服务平台操作指南》，按照操作指南进行备案。 
 
-公安联网备案所需填写的相关信息，请参见[公安联网备案信息填写指南](https://help.aliyun.com/document_detail/36981.html#concept-ukf-fsl-zdb)。 
-
-2.安全评估报告具体内容填写请参考：《安全评估手册》 
-
-![img](file:///C:/Users/peter/AppData/Local/Packages/microsoft.office.desktop_8wekyb3d8bbwe/AC/%23!oice_16_974fa576_32c1d314_334e/Temp/msohtmlclip1/01/clip_image002.gif)
+2.如需提交安全评估报告，可点击**评估报告登录**，进入登录页面。登录后，下载《安全评估手册》，然后依照操作指南提交安全评估报告。 
