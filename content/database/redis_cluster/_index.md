@@ -1,5 +1,5 @@
 ---
-title: "Redis Cluster"
+title: "键值数据库 Redis"
 linkTitle: "Redis Cluster"
 weight: 08
 collapsible: true
@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: Redis Cluster
-  vice_title: Redis 是一个使用ANSI C编写的开源、支持网络、基于内存、可选持久性的键值对存储数据库。Redis cluster on QingCloud AppCenter 基于原生的 Redis 提供了 Redis cluster 的 APP，能够在 AppCenter 进行一键部署。
+  vice_title: Redis 是一个使用ANSI C编写的开源、支持网络、基于内存、可选持久性的键值对存储数据库。Redis Cluster on QingCloud AppCenter 基于原生的 Redis 提供了 Redis Cluster 的 APP，能够在 AppCenter 进行一键部署。
 
 Section2:
   title: 用户指南
