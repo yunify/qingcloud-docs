@@ -8,40 +8,64 @@ QingStor Java SDK 已在 GitHub 开源，下文为简要使用文档。更多详
 各个调用的均与具体的 [Qingstor Restful API](https://docs.qingcloud.com/qingstor/api/) 对应，
 返回码、请求头、错误码等规定请参照具体 API 文档的描述。
 
-SDK 示例请参见 [SDK Example](https://github.com/qingstor/qingstor-sdk-java/blob/master/docs/more-examples.md) 
+SDK 示例请参见 [SDK Example](https://github.com/qingstor/qingstor-sdk-java/blob/master/docs/examples_zh-CN.md) 
 
 ## 安装
 
 可以下载源码:
 
 ```bash
-> git clone git@github.com:yunify/qingstor-sdk-java.git
+> git clone git@github.com:qingstor/qingstor-sdk-java.git
 ```
 
-也可以访问 GitHub 的 [release 页面](https://github.com/yunify/qingstor-sdk-java/releases) 下载压缩包
+也可以访问 GitHub 的 [release 页面](https://github.com/qingstor/qingstor-sdk-java/releases) 下载压缩包
 
 ## 快速开始
 
 使用 SDK 之前请先在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请 access key 。
+
+### 安装
+
+在 gradle/maven 中将版本替换为你需要的版本, 推荐使用最新的版本.
+
+Gradle:
+
+```gradle
+dependencies {
+  implementation 'com.yunify:qingstor.sdk.java:2.5.1'
+}
+```
+
+Maven:
+
+```xml
+<dependency>
+  <groupId>com.yunify</groupId>
+  <artifactId>qingstor.sdk.java</artifactId>
+  <version>2.5.1</version>
+</dependency>
+```
 
 ### 初始化服务
 
 发起请求前首先建立需要初始化服务:
 
 ```java
-import com.qingstor.sdk.config.EvnContext;
+import com.qingstor.sdk.config.EnvContext;
 import com.qingstor.sdk.service.*;
 
-EvnContext evn = new EvnContext("ACCESS_KEY_ID", "SECRET_ACCESS_KEY");
-QingStor storService = new QingStor(evn);
+EvnContext env = new EnvContext("ACCESS_KEY_ID", "SECRET_ACCESS_KEY");
+QingStor stor = new QingStor(env);
 ```
 
-上面代码初始化了一个 QingStor Service
+上面代码初始化了一个 QingStor Service,
+其中用于创建 `stor` 对象的 `env` 承载了用户的认证信息及 SDK 配置,
+`stor` 对象用于操作 QingStor 对象存储服务，如调用 Service 级别的 API 或创建指定的 Bucket 对象来调用 Bucket 和 Object 级别的 API。
 
 ### 获取账户下的 Bucket 列表
 
 ```java
-ListBucketsOutput listOutput = storService.listBuckets(null);
+ListBucketsOutput listOutput = stor.listBuckets(null);
 ```
 
 ### 创建 Bucket
@@ -49,14 +73,23 @@ ListBucketsOutput listOutput = storService.listBuckets(null);
 初始化并创建 Bucket, 需要指定 Bucket 名称和所在 Zone:
 
 ```java
-Bucket bucket = storService.getBucket("test-bucket", "pek3a");
-Bucket.PutBucketOutput putBucketOutput = bucket.put();
+// 您要在哪个 zone 创建/操作 bucket.
+String zoneName = "pek3b";
+Bucket bucket = stor.getBucket("您的 bucket 名字", zoneName);
+Bucket.PutBucketOutput output = bucket.put();
+if (output.getStatueCode() == 201) {
+    // Created
+    System.out.println("Put Bucket: Created.");
+}
 ```
+
+`bucket` 对象绑定了指定 bucket，提供一系列针对该 bucket 的对象存储操作。
 
 ### 获取 Bucket 中存储的 Object 列表
 
 ```java
 Bucket.ListjavaObjectsOutput listObjectsOutput = Bucket.listObjects(null);
+List<KeyModel> objectKeys = listObjectsOutput.getKeys();
 ```
 
 ### 创建一个 Object
@@ -64,12 +97,15 @@ Bucket.ListjavaObjectsOutput listObjectsOutput = Bucket.listObjects(null);
 例如一个文件:
 
 ```java
+String objKey = "object_name";
 Bucket.PutObjectInput input = new Bucket.PutObjectInput();
-File f = new File("test_file");
+// input 可以设置 File, Stream 等作为要上传的内容.
+File f = new File("test_file.txt");
 input.setBodyInputFile(f);
+// 可选设置.
 input.setContentType("text/plain");
-input.setContentLength((int) f.length());
-Bucket.PutObjectOutput putObjectOutput = bucket.putObject(test_object, input);
+input.setContentLength(f.length());
+Bucket.PutObjectOutput putObjectOutput = bucket.putObject(objKey, input);
 ```
 
 ### 删除一个 Object
