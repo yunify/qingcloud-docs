@@ -15,35 +15,35 @@ QingCloud 为您提供以下云服务器类型，您可以根据不同使用场�
 
 ## 入门级
 
-- ### [基础型s1](/compute/vm/intro/instance/#基础型--s1-)
+- ### [基础型（S1）](/compute/vm/intro/instance/#基础型--s1-)
 
 ## 企业级
 
-- ### [计算型ec3](/compute/vm/intro/instance/#计算型ec3)
+- ### [计算型（EC3）](/compute/vm/intro/instance/#计算型ec3)
 
-- ### [通用型eg3](/compute/vm/intro/instance/#通用型eg3)
+- ### [通用型（EG3）](/compute/vm/intro/instance/#通用型eg3)
 
-- ### [内存型er3](/compute/vm/intro/instance/#内存型er3)
+- ### [内存型（ER3）](/compute/vm/intro/instance/#内存型er3)
 
-- ### [网络增强计算型ec3ne](/compute/vm/intro/instance/#网络增强计算型ec3ne)
+- ### [网络增强计算型（EC3NE）](/compute/vm/intro/instance/#网络增强计算型ec3ne)
 
-- ### [网络增强通用型eg3ne](/compute/vm/intro/instance/#网络增强通用型eg3ne)
+- ### [网络增强通用型（EG3NE）](/compute/vm/intro/instance/#网络增强通用型eg3ne)
 
-- ### [网络增强内存型er3ne](/compute/vm/intro/instance/#网络增强内存型er3ne)
+- ### [网络增强内存型（ER3NE）](/compute/vm/intro/instance/#网络增强内存型er3ne)
 
-- ### [通用型e2](/compute/vm/intro/instance/#通用型e2)
+- ### [通用型（E2）](/compute/vm/intro/instance/#通用型e2)
 
-- ### [内存型e2](/compute/vm/intro/instance/#内存型e2)
+- ### [内存型（E2）](/compute/vm/intro/instance/#内存型e2)
 
-- ### [计算型e2](/compute/vm/intro/instance/#计算型e2)
+- ### [计算型（E2）](/compute/vm/intro/instance/#计算型e2)
 
-- ### [专业增强型p1](/compute/vm/intro/instance/#专业增强型p1)
+- ### [专业增强型（P1）](/compute/vm/intro/instance/#专业增强型p1)
 
 ## 专业级
 
-- ### [GPU云服务器 g2](/compute/vm/intro/instance/#gpu云服务器-g2)
+- ### [GPU云服务器 （G2）](/compute/vm/intro/instance/#gpu云服务器-g2)
 
-- ### [弹性裸金属服务器 bm3](/compute/vm/intro/instance/#弹性裸金属服务器-bm3)
+- ### [弹性裸金属服务器（ BM3）](/compute/vm/intro/instance/#弹性裸金属服务器-bm3)
 
 
 
