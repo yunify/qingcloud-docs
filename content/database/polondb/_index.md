@@ -1,7 +1,7 @@
 ---
-title: "PolonDB"
+title: "分布式数据库 PolonDB"
 linkTitle: "PolonDB"
-weight: 7
+weight: 04
 collapsible: true
 type: "product"
 

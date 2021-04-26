@@ -7,7 +7,7 @@ enableToc: false
 
 ## 测试方法
 
-本次测试的集群版本为 _Redis standalone v4.0.9_ ，下载对应的 [redis 版本](http://download.redis.io/releases/redis-4.0.9.tar.gz) 解压，并编译安装，使用 src 目录下的 redis-benchmark 对 Redis standalone 集群做测试，命令如下
+本次测试的集群版本为 _Redis Standalone v4.0.9_ ，下载对应的 [redis 版本](http://download.redis.io/releases/redis-4.0.9.tar.gz) 解压，并编译安装，使用 src 目录下的 redis-benchmark 对 Redis Standalone 集群做测试，命令如下
 
 `./redis-benchmark -h <目标节点ip> -n 200000 -c 100 -q`
 

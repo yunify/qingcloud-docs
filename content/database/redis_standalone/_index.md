@@ -1,13 +1,13 @@
 ---
-title: "Redis standalone"
-linkTitle: "Redis standalone"
-weight: 11
+title: "键值数据库 Redis Standalone"
+linkTitle: "Redis Standalone"
+weight: 07
 collapsible: true
 type: "product"
 
 section1:
-  title: Redis standalone
-  vice_title:    Redis 是一个使用ANSI C编写的开源、支持网络、基于内存、可选持久性的键值对存储数据库。Redis standalone on QingCloud 将 Redis 封装成 App，采用 Redis 最近的稳定版本 3.2.9 构建，支持在 AppCenter 上一键部署，在原生 Redis 的基础上增加了其易用性、高可用的特性。
+  title: Redis Standalone
+  vice_title:    Redis 是一个使用ANSI C编写的开源、支持网络、基于内存、可选持久性的键值对存储数据库。Redis Standalone on QingCloud 将 Redis 封装成 App，采用 Redis 最近的稳定版本 3.2.9 构建，支持在 AppCenter 上一键部署，在原生 Redis 的基础上增加了其易用性、高可用的特性。
 
 Section2:
   title: 用户指南
@@ -25,11 +25,11 @@ Section2:
       url: "quickstart/quick_start/"
 
     - title: 操作指南
-      content: 学习上手如何管理 Redis standalone 集群，以及如何使用 Redis standalone 提供的相关服务等。
+      content: 学习上手如何管理 Redis Standalone 集群，以及如何使用 Redis Standalone 提供的相关服务等。
       url: "manual/cluster_info/"
 
     - title: 最佳实践
-      content: Redis standalone 的最佳实践
+      content: Redis Standalone 的最佳实践
       url: "best-practices/data_transfer/"
 
 section3:
@@ -50,23 +50,23 @@ section3:
 section4:
   children:
     - title: 了解
-      content: 什么是 Redis standalone
+      content: 什么是 Redis Standalone
       vice_title: 了解的第一步
       children:
         - title: 产品简介
           url: "intro/introduction/"
 
     - title: 进阶
-      content: 学习如何创建、管理、使用 Redis standalone 集群
+      content: 学习如何创建、管理、使用 Redis Standalone 集群
       vice_title: 上手的第一步
       children: 
-        - title: 创建 Redis standalone
+        - title: 创建 Redis Standalone
           url: "quickstart/quick_start/"
 
-        - title: Redis standalone 集群信息
+        - title: Redis Standalone 集群信息
           url: "manual/cluster_info/"
 
-        - title: Redis standalone 服务功能
+        - title: Redis Standalone 服务功能
           url: "manual/service/"
 ---
 
