@@ -44,3 +44,4 @@ draft: false
 ### 用户协议
 
 阅读并同意青云AppCenter用户协议之后即可开始部署应用。
+![](../../_images/base_step_5.png)

@@ -1,17 +1,17 @@
 ---
-title: "什么是 Redis standalone"
+title: "什么是 Redis Standalone"
 description: Test description
 draft: false
 weight: 3
 enableToc: false
-keyword: Redis standalone, QingCloud, 数据库
+keyword: Redis Standalone, QingCloud, 数据库
 ---
 
 
 
 [Redis](https://redis.io/) 是一个使用ANSI C编写的开源、支持网络、基于内存、可选持久性的键值对存储数据库。
 
-**Redis standalone on QingCloud** 将 **Redis** 封装成 App，采用 **Redis** 最近的稳定版本 3.2.9 构建，支持在 AppCenter 上一键部署，在原生 **Redis** 的基础上增加了其易用性、高可用的特性。**Redis standalone on QingCloud** 的特性如下：
+**Redis Standalone on QingCloud** 将 **Redis** 封装成 App，采用 **Redis** 最近的稳定版本 3.2.9 构建，支持在 AppCenter 上一键部署，在原生 **Redis** 的基础上增加了其易用性、高可用的特性。**Redis Standalone on QingCloud** 的特性如下：
 
 - 高可用性。
 
