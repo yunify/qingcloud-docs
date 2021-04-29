@@ -13,7 +13,7 @@ ICP备案号，就是网站的备案号码。您提交的网站备案申请经�
 
 备案号采取主体与网站结合编码的方式，由三部分组成：**(省简写)ICP备+主体序列号+网站序列号**，如：京ICP备00000000号-*。
 
-您需要在网站最下方显示备案号，并能链接到工信部网站：[http://www.beian.miit.gov.cn/](https://beian.miit.gov.cn/#/Integrated/index)。
+您需要在网站最下方显示备案号，并能链接到工信部网站：[https://beian.miit.gov.cn/](https://beian.miit.gov.cn/)。
 
 #### 如何查询ICP备案号
 
