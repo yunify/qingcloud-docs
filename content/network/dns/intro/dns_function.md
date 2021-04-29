@@ -1,14 +1,14 @@
 ---
-title: "功能特性"
-date: 2021-04-07T00:38:25+09:00
-description: DNS服务功能简介
+title: "DNS 功能特性"
+date: 2021-04-28T00:38:25+09:00
+description: 云解析服务 功能简介
 weight: 20
 draft: false
 enableToc: false
-keyword: DNS 服务,
+keyword: DNS 功能简介
 ---
 
-## 功能特性
+## 功能简介
 
 - 支持托管主域名及拆分子域名。
 
@@ -22,7 +22,7 @@ keyword: DNS 服务,
 
 - 支持按日/按月同比和环比统计域名解析量，有效管理域名解析信息。
 
-## 解析类型
+### 解析类型
 
 QingCloud DNS 支持七种标准解析类型，包括 A、CNAME、AAAA、MX、NS、TXT 和 PTR。
 
@@ -43,7 +43,7 @@ QingCloud DNS 支持七种标准解析类型，包括 A、CNAME、AAAA、MX、NS
 
 QingCloud DNS 还以解析类型的方式扩展实现301跳转、302跳转及隐性跳转功能。
 
-## 解析模式
+### 解析模式
 
 QingCloud DNS 提供四种解析模式：**普通模式**、**轮询模式**、**权重模式**和**智能模式**，以应对不同业务场景的负载均衡需求。
 

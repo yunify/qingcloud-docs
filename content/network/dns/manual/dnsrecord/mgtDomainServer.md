@@ -1,7 +1,7 @@
 ---
 title: "修改域名服务器"
 description: dns域名服务器。
-date: 2021-04-07T00:38:25+09:00
+date: 2021-04-28T00:38:25+09:00
 weight: 2
 draft: false
 ---
