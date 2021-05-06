@@ -1,7 +1,7 @@
 ---
-title: "PostgreSQL"
+title: "关系型数据库 PostgreSQL"
 linkTitle: "PostgreSQL"
-weight: 7
+weight: 02
 collapsible: true
 type: "product"
 

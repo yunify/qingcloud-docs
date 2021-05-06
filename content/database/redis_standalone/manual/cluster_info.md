@@ -14,7 +14,7 @@ draft: false
 
 ## 服务端口信息
 
-**Redis standalone on QingCloud** 提供一个读写IP，此IP始终指向主节点。当发生主从切换时，此IP将指向新的主节点，无需手动更改主节点IP。
+**Redis Standalone on QingCloud** 提供一个读写IP，此IP始终指向主节点。当发生主从切换时，此IP将指向新的主节点，无需手动更改主节点IP。
 
 ## 节点实时角色
 

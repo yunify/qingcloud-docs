@@ -52,6 +52,7 @@
           {{ $sections := .Sections.ByWeight }}
           {{ range $sections }}
           {{ if not .Params.isPrivate }}
+          {{ if not .Params.not_show}}
           <div class="col-md-3">
             <div class="card">
               <div class="card-body">
@@ -64,6 +65,7 @@
               </div>
             </div>
           </div>
+          {{ end }}
           {{ end }}
           {{ end }}
           <script src="/js/index.js"></script>
@@ -83,6 +85,7 @@
           {{ $sections := .Sections.ByWeight }}
           {{ range $sections }}
           {{if .Params.isPrivate }}
+          {{ if not .Params.not_show}}
           <div class="col-md-3">
             <div class="card">
               <div class="card-body">
@@ -95,6 +98,7 @@
               </div>
             </div>
           </div>
+          {{ end }}
           {{ end }}
           {{ end }}
         </div>

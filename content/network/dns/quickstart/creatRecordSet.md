@@ -13,10 +13,10 @@ draft: false
 ## 步骤一：添加域名
 
 1. 登录 QingCloud 控制台。
-2. 选择**产品与服务** > **网络服务** > **DNS 服务**，进入域名列表页。
+2. 选择**产品与服务** > **网络服务** > **云解析 DNS**，进入域名列表页。
 
    ![DNS域名列表](../_images/create_domain_1.png)
-
+   
 3. 点击**添加**，在下方弹窗中输入您在注册商处申请的域名。
 
    ![添加域名](../_images/create_domain_2.png)
@@ -45,4 +45,4 @@ draft: false
 
     ![添加解析信息](../_images/dns_A.png)
 
-> 注：QingCloud DNS 默认提供5条线路，包括**全网默认、中国电信、中国联通、中国移动、港澳台及海外**。若需自定义解析线路，可参考[配置解析线路](../../manual/setresolline)。
+> 注：QingCloud DNS 默认提供5条线路，包括**全网默认、中国电信、中国联通、中国移动、港澳台及海外**。若需自定义解析线路，可参考[配置解析线路](../../manual/dnsrecord/setresolline)。
