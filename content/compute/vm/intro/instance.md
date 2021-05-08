@@ -97,50 +97,6 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 |e2.8xlarge.r8 |32核    |256G    |10 Gbps    |
 |e2.8xlarge.r16 |32核    |512G    |10 Gbps    |
 
-## 企业型（E3)
-
-采用第三代英特尔®至强®可扩展处理器（Ice Lake），和上一代相比性能大幅提升，独享 CPU 模式，提供从 2C 4G - 120C 480G 可选配置，IOPS可达100k，最大内网带宽可达32G，适用于：
-
-- 对计算与网络有更高性能要求的网站和Web服务器、企业级应用。
-- 高性能数据库、大数据分析与挖掘、分布式内存缓存、Hadoop和Spark集群。
-- 数据分析、批量计算、视频编码等计算密集型应用程序。
-
-可用区：gd2b、pek3b、pek3c、sh1b 
-
-| 实例规格        | vCPU | 内存 | 内网带宽 | 更新后内网带宽 |
-| --------------- | ---- | ---- | -------- | -------------- |
-| ec3.large.r2    | 2    | 4G   | 1Gbps    | 2 Gbps         |
-| eg3.large.r4    | 2    | 8G   | 1Gbps    | 2 Gbps         |
-| er3.large.r8    | 2    | 16G  | 1Gbps    | 2 Gbps         |
-| ec3.xlarge.r1   | 4    | 4G   | 2Gbps    | 2.5 Gbps       |
-| ec3.xlarge.r2   | 4    | 8G   | 2Gbps    | 2.5 Gbps       |
-| eg3.xlarge.r4   | 4    | 16G  | 2Gbps    | 2.5 Gbps       |
-| er3.xlarge.r8   | 4    | 32G  | 2Gbps    | 2.5 Gbps       |
-| ec3.2xlarge.r1  | 8    | 8G   | 3Gbps    | 3.5 Gbps       |
-| ec3.2xlarge.r2  | 8    | 16G  | 3Gbps    | 3.5 Gbps       |
-| eg3.2xlarge.r4  | 8    | 32G  | 3Gbps    | 3.5 Gbps       |
-| er3.2xlarge.r8  | 8    | 64G  | 3Gbps    | 3.5 Gbps       |
-| ec3.3xlarge.r1  | 12   | 12G  | 5Gbps    | 5Gbps          |
-| ec3.3xlarge.r2  | 12   | 24G  | 5Gbps    | 5Gbps          |
-| eg3.3xlarge.r4  | 12   | 48G  | 5Gbps    | 5Gbps          |
-| er3.3xlarge.r8  | 12   | 96G  | 5Gbps    | 5Gbps          |
-| ec3.4xlarge.r1  | 16   | 16G  | 6Gbps    | 6Gbps          |
-| ec3.4xlarge.r2  | 16   | 32G  | 6Gbps    | 6Gbps          |
-| eg3.4xlarge.r4  | 16   | 64G  | 6Gbps    | 6Gbps          |
-| er3.4xlarge.r8  | 16   | 128G | 6Gbps    | 6Gbps          |
-| ec3.6xlarge.r2  | 24   | 48G  | 8Gbps    | 9Gbps          |
-| eg3.6xlarge.r4  | 24   | 96G  | 8Gbps    | 9Gbps          |
-| er3.6xlarge.r8  | 24   | 192G | 8Gbps    | 9Gbps          |
-| ec3.8xlarge.r1  | 32   | 32G  | 12Gbps   | 13Gbps         |
-| ec3.8xlarge.r2  | 32   | 64G  | 12Gbps   | 13Gbps         |
-| eg3.8xlarge.r4  | 32   | 128G | 12Gbps   | 13Gbps         |
-| er3.8xlarge.r8  | 32   | 256G | 12Gbps   | 13Gbps         |
-| ec3.16xlarge.r2 | 64   | 128G | 25Gbps   | 25Gbps         |
-| eg3.16xlarge.r4 | 64   | 256G | 25Gbps   | 25Gbps         |
-| eg3.24xlarge.r4 | 96   | 384G | 30Gbps   | 30Gbps         |
-| eg3.30xlarge.r4 | 120  | 480G | 32Gbps   | 32Gbps         |
-
-
 
 ## 专业增强型 ( P1 )
 
