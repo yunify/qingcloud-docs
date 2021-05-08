@@ -32,7 +32,7 @@ Section2:
 
     - title: 常见问题
       content: 云服务器常见问题
-      url: "/compute/vm/faq/common_operations/other_func/faq"
+      url: "/compute/vm/faq/faq_linkpage/"
 
 
 section3:
