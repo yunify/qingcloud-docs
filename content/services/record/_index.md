@@ -86,7 +86,7 @@ section4:
           url: "prepare/pre_approval/"
 
         - title: 各地管局备案要求
-          url: "prepare/policy_requirement/"
+          url: "prepare/policy_requirement/policy_requirement/"
 
         - title: 下载备案材料模板
           url: "prepare/download_template/"
