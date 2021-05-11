@@ -7,16 +7,19 @@ type: "product"
 
 section1:
   title: 备份
-  vice_title: 备份 (Snapshot) 用于在块设备级别上进行硬盘的备份与恢复
+  vice_title: 备份 (Snapshot) 用于在块设备级别上进行硬盘的备份与恢复。
 
 
 Section2:
   title: 用户指南
   children:
-    - title: 备份
-      content: 备份与恢复指南
-      url: "/storage/backup/intro/introduction"
+    - title: 产品简介
+      content: 备份概述
+      url: "/storage/backup/intro/introduction/"
 
+    - title: 操作指南
+      content: 管理备份
+      url: "/storage/backup/manual/create_snapshot/"
 
 section3:
   title: 开发者指南
@@ -48,8 +51,6 @@ section4:
         - title: 备份回滚
           url: "/storage/backup/manual/rollback_snapshot"
 
-        - title: 备份导出
-          url: "/storage/backup/manual/export_snapshot"
 ---
 
 

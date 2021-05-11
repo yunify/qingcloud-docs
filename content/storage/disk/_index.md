@@ -14,22 +14,17 @@ section1:
 Section2:
   title: 用户指南
   children:
-    - title: 基础型硬盘
-      content: 基础型硬盘用户使用文档
-      url: "/storage/disk/manual/basic_volume"
+    - title: 产品简介
+      content: 云硬盘简介
+      url: "/storage/disk/intro/introduction/"
 
-    - title: SSD 企业型硬盘
-      content: SSD企业型硬盘用户使用文档
-      url: "/storage/disk/manual/ssd_enterprise_volume"
+    - title: 计费指南
+      content: 云硬盘计费指南
+      url: "/storage/disk/billing/price/"
 
-    - title: 容量型硬盘
-      content: 容量型硬盘用户使用文档
-      url: "/storage/disk/manual/capacity_volume"
-
-    - title: 企业级分布式SAN（NeonSAN）
-      content: 企业级分布式SAN（NeonSAN）硬盘用户使用文档
-      url: "/storage/disk/manual/neonsan_volume"
-
+    - title: 操作指南
+      content: 云硬盘操作指南
+      url: "/storage/disk/manual/basic_operation/"
 
 
 section4:
@@ -39,26 +34,25 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品概述
-          url: "/storage/disk/intro/introduction"
+          url: "/storage/disk/intro/introduction/#产品概述"
 
         - title: 产品优势
-          url: "https://www.qingcloud.com/products/volume/"
+          url: "/storage/disk/intro/introduction/#产品优势"
 
-        - title: 应用场景
-          url: "https://www.qingcloud.com/products/volume/"
+        - title: 产品类型
+          url: "/storage/disk/intro/introduction/#产品类型"
 
     - title: 上手：创建硬盘与部署应用
       content: 硬盘为用户提供可无限扩展的通用数据存储服务。
       vice_title: 上手的第一步
       children: 
-        - title: 创建与使用硬盘
-          url: "/storage/disk/quickstart/quick_start"
+        - title: 创建云硬盘
+          url: "/storage/disk/quickstart/create_disk/"
 
         - title: 云服务器系统盘扩容
-          url: "/storage/disk/quickstart/system_volume_resize"
+          url: "/storage/disk/manual/expand/expan_linux/"
 
 ---
-
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->
 <!-- section1 为产品index页面 主标题 副标题 video  video_img为视频图片  -->
