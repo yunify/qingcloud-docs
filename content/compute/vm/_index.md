@@ -28,11 +28,11 @@ Section2:
 
     - title: 最佳实践
       content: 云服务器最佳实践
-      url: "/compute/vm/best-practices/wordpress"
+      url: "/compute/vm/best-practices/linux/wordpress"
 
     - title: 常见问题
       content: 云服务器常见问题
-      url: "/compute/vm/faq/faq"
+      url: "/compute/vm/faq/faq_linkpage/"
 
 
 section3:
@@ -69,7 +69,6 @@ section4:
         - title: 基于云服务器搭建博客
           url: "/compute/vm/best-practices/wordpress"
 ---
-
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->
 <!-- section1 为产品index页面 主标题 副标题 video  video_img为视频图片  -->
