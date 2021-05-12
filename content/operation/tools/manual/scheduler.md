@@ -28,7 +28,7 @@ keyword: 定时器, QingCloud
 *   开启云服务器
 *   关闭云服务器
 *   重启云服务器
-*   创建备份
+*   [创建备份](#创建备份定时备份)
 *   跨区复制备份
 *   调整公网 IP 带宽上限（每天每个公网 IP 带宽调整次数最多 100 次）
 *   调整公网 IP计费模式
@@ -73,3 +73,38 @@ keyword: 定时器, QingCloud
 *   发送通知给通知列表后，也会有相应的记录，
 
 ![](../../_images/scheduler-history.png)
+
+## 创建备份（定时备份）
+
+**前提条件**
+
+- 只有**运行中**和**关机**状态的服务器支持备份。
+- 至少存在一个可用的云服务器备份存储库。
+
+**操作步骤**
+
+1. 登录定时器管理控制台。
+
+   1. 登录管理控制台。
+   2. 选择**运维与管理** > **定时器**。选择对应定时器的页签。
+
+2. 在定时器界面，单击**创建**创建定时器。填写定时器名称，设定定时器规则后点击**提交**。
+
+   ![create1](/Users/rosasu/Desktop/qingcloud-docs/content/operation/tools/_images/create1.png)
+
+3. 进入已创建的定时器任务详情，单击**创建**，选择类型**创建备份**，指定备份云服务器。
+
+   ![create3](/Users/rosasu/Desktop/qingcloud-docs/content/operation/tools/_images/create3.png)
+
+4. 选择备份链长度和保留规则；当保留规则选择**永久保留**时，这个定时备份任务持续备份，直到您停止任务为止；当选择**按备份链个数**时，会根据您填写的备份链个数，一旦备份链备份到您填写的个数上限时，定时器会自动删除最早的备份链。
+
+   ![create](/Users/rosasu/Desktop/qingcloud-docs/content/operation/tools/_images/create.png)
+
+5. 配置完毕后点击**提交**，系统会按照规则自动为服务器创建备份。
+
+   ![create_2](/Users/rosasu/Desktop/qingcloud-docs/content/operation/tools/_images/create_2.png)
+
+**注意**：
+
+- 执行备份成功后，后续可以使用云服务器备份恢复服务器数据或创建镜像。
+- 定时器创建的备份任务，在**我的备份**列表中，会自动打上**定时器**标签，并且按照定时器的规则去备份；当用户手动去掉**定时器**标签后，此条备份任务将不再被定时器控制。
