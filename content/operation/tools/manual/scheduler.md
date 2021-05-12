@@ -90,19 +90,19 @@ keyword: 定时器, QingCloud
 
 2. 在定时器界面，单击**创建**创建定时器。填写定时器名称，设定定时器规则后点击**提交**。
 
-   ![create1](/Users/rosasu/Desktop/qingcloud-docs/content/operation/tools/_images/create1.png)
+   ![create1](../_images/create1.png)
 
 3. 进入已创建的定时器任务详情，单击**创建**，选择类型**创建备份**，指定备份云服务器。
 
-   ![create3](/Users/rosasu/Desktop/qingcloud-docs/content/operation/tools/_images/create3.png)
+   ![create3](../_images/create3.png)
 
 4. 选择备份链长度和保留规则；当保留规则选择**永久保留**时，这个定时备份任务持续备份，直到您停止任务为止；当选择**按备份链个数**时，会根据您填写的备份链个数，一旦备份链备份到您填写的个数上限时，定时器会自动删除最早的备份链。
 
-   ![create](/Users/rosasu/Desktop/qingcloud-docs/content/operation/tools/_images/create.png)
+   ![create](../_images/create.png)
 
 5. 配置完毕后点击**提交**，系统会按照规则自动为服务器创建备份。
 
-   ![create_2](/Users/rosasu/Desktop/qingcloud-docs/content/operation/tools/_images/create_2.png)
+   ![create_2](../_images/create_2.png)
 
 **注意**：
 
