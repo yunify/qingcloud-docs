@@ -99,7 +99,7 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 
 ## 企业型（E3）
 
-本类型云服务器正在公测中，如需使用，请填写表单申请（https://jinshuju.net/f/oNtOJw）。
+本类型云服务器正在公测中，如需使用，请填写[表单申请](https://jinshuju.net/f/oNtOJw)。
 
 采用第三代英特尔®至强®可扩展处理器（Ice Lake），主频：2.6GHz，睿频：3.4GHz，和上一代相比性能大幅提升，独享 CPU 模式，提供从 2C 4G - 120C 480G 可选配置，IOPS可达100k，最大内网带宽可达32G，适用场景：
 
@@ -140,42 +140,9 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 | er3.6xlarge.r8  | 24核  | 192G | 9Gbps    | 400万         | 91μs |
 | er3.8xlarge.r8  | 32核  | 256G | 13Gbps   | 400万         | 91μs |
 
-## 专业增强型 ( P1 )
-
-专业增强型主机提供从 2C 4G - 32C 256G 的可选配置，是面向企业级用户全新推出的 vCPU 独享型虚拟主机，可为用户提供更高的计算性能、更大的内存带宽与稳定性，满足企业用户对 CPU 主频及网络吞吐性能有极高要求，且需要独享 vCPU 资源的应用系统，特别适用于企业核心数据库、线上关键业务等应用场景。
-
-|实例类型    |CPU    |内存    |内网带宽    |
-|:----|:----|:----|:----|
-|p1.large.r2   |2核    |4G    |1.5 Gbps    |
-|p1.large.r4   |2核    |8G    |1.5 Gbps    |
-|p1.large.r8   |2核    |16G    |1.5 Gbps    |
-|p1.xlarge.r1  |4核    |4G    |2 Gbps    |
-|p1.xlarge.r2  |4核    |8G    |2 Gbps    |
-|p1.xlarge.r4  |4核    |16G    |2 Gbps    |
-|p1.xlarge.r8  |4核    |32G    |2 Gbps    |
-|p1.2xlarge.r1 |8核    |8G    |3 Gbps    |
-|p1.2xlarge.r2 |8核    |16G    |3 Gbps    |
-|p1.2xlarge.r4 |8核    |32G    |3 Gbps    |
-|p1.2xlarge.r8 |8核    |64G    |3 Gbps    |
-|p1.3xlarge.r1 |12核    |12G    |4.5 Gbps    |
-|p1.3xlarge.r2 |12核    |24G    |4.5 Gbps    |
-|p1.3xlarge.r4 |12核    |48G    |4.5 Gbps    |
-|p1.3xlarge.r8 |12核    |96G    |4.5 Gbps    |
-|p1.4xlarge.r1 |16核    |16G    |5.5 Gbps    |
-|p1.4xlarge.r2 |16核    |32G    |5.5 Gbps    |
-|p1.4xlarge.r4 |16核    |64G    |5.5 Gbps    |
-|p1.4xlarge.r8 |16核    |128G    |5.5 Gbps    |
-|p1.6xlarge.r2 |24核    |48G    |8 Gbps    |
-|p1.6xlarge.r4 |24核    |96G    |8 Gbps    |
-|p1.6xlarge.r8 |24核    |192G    |8 Gbps    |
-|p1.8xlarge.r2 |32核    |64G    |12 Gbps    |
-|p1.8xlarge.r4 |32核    |128G    |12 Gbps    |
-|p1.8xlarge.r8 |32核    |256G    |12 Gbps    |
-|p1.16xlarge.r4|64核    |256G    |25 Gbps    |
-
 ## 网络增强企业型（E3）
 
-本类型云服务器正在公测中，如需使用，请填写表单申请（https://jinshuju.net/f/oNtOJw）。
+本类型云服务器正在公测中，如需使用，请填写[表单申请](https://jinshuju.net/f/oNtOJw)。
 
 独享 CPU 模式，采用第三代英特尔®至强®可扩展处理器（Ice Lake），主频：2.6GHz，睿频：3.4GHz。网络优化实例，延时低至25μs，内网收发包最高2400万，IOPS可达140k，支持DPDK与RDMA，提供从 2C 4G - 120C 480G 可选配置，使用场景：
 
@@ -217,6 +184,39 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 | er3ne.4xlarge.r8  | 16核  | 128G | 6Gbps    | 800万         | 25μs |
 | er3ne.6xlarge.r8  | 24核  | 192G | 9Gbps    | 1200万        | 25μs |
 | er3ne.8xlarge.r8  | 32核  | 256G | 13Gbps   | 2400万        | 25μs |
+
+## 专业增强型 ( P1 )
+
+专业增强型主机提供从 2C 4G - 32C 256G 的可选配置，是面向企业级用户全新推出的 vCPU 独享型虚拟主机，可为用户提供更高的计算性能、更大的内存带宽与稳定性，满足企业用户对 CPU 主频及网络吞吐性能有极高要求，且需要独享 vCPU 资源的应用系统，特别适用于企业核心数据库、线上关键业务等应用场景。
+
+|实例类型    |CPU    |内存    |内网带宽    |
+|:----|:----|:----|:----|
+|p1.large.r2   |2核    |4G    |1.5 Gbps    |
+|p1.large.r4   |2核    |8G    |1.5 Gbps    |
+|p1.large.r8   |2核    |16G    |1.5 Gbps    |
+|p1.xlarge.r1  |4核    |4G    |2 Gbps    |
+|p1.xlarge.r2  |4核    |8G    |2 Gbps    |
+|p1.xlarge.r4  |4核    |16G    |2 Gbps    |
+|p1.xlarge.r8  |4核    |32G    |2 Gbps    |
+|p1.2xlarge.r1 |8核    |8G    |3 Gbps    |
+|p1.2xlarge.r2 |8核    |16G    |3 Gbps    |
+|p1.2xlarge.r4 |8核    |32G    |3 Gbps    |
+|p1.2xlarge.r8 |8核    |64G    |3 Gbps    |
+|p1.3xlarge.r1 |12核    |12G    |4.5 Gbps    |
+|p1.3xlarge.r2 |12核    |24G    |4.5 Gbps    |
+|p1.3xlarge.r4 |12核    |48G    |4.5 Gbps    |
+|p1.3xlarge.r8 |12核    |96G    |4.5 Gbps    |
+|p1.4xlarge.r1 |16核    |16G    |5.5 Gbps    |
+|p1.4xlarge.r2 |16核    |32G    |5.5 Gbps    |
+|p1.4xlarge.r4 |16核    |64G    |5.5 Gbps    |
+|p1.4xlarge.r8 |16核    |128G    |5.5 Gbps    |
+|p1.6xlarge.r2 |24核    |48G    |8 Gbps    |
+|p1.6xlarge.r4 |24核    |96G    |8 Gbps    |
+|p1.6xlarge.r8 |24核    |192G    |8 Gbps    |
+|p1.8xlarge.r2 |32核    |64G    |12 Gbps    |
+|p1.8xlarge.r4 |32核    |128G    |12 Gbps    |
+|p1.8xlarge.r8 |32核    |256G    |12 Gbps    |
+|p1.16xlarge.r4|64核    |256G    |25 Gbps    |
 
 ## 其它
 
