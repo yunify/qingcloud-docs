@@ -107,38 +107,37 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 - 高性能数据库、大数据分析与挖掘、分布式内存缓存、Hadoop和Spark集群。
 - 数据分析、批量计算、视频编码等计算密集型应用程序。
 
-| 实例规格        | vCPU  | 内存 | 内网带宽 | 内网收发包PPS | 延时 |
-| --------------- | ----- | ---- | -------- | ------------- | ---- |
-| ec3.xlarge.r1   | 4核   | 4G   | 2.5Gbps  | 200万         | 91μs |
-| ec3.2xlarge.r1  | 8核   | 8G   | 3.5Gbps  | 400万         | 91μs |
-| ec3.3xlarge.r1  | 12核  | 12G  | 5Gbps    | 400万         | 91μs |
-| ec3.4xlarge.r1  | 16核  | 16G  | 6Gbps    | 400万         | 91μs |
-| ec3.8xlarge.r1  | 32核  | 32G  | 13Gbps   | 400万         | 91μs |
-| ec3.large.r2    | 2核   | 4G   | 2Gbps    | 100万         | 91μs |
-| ec3.xlarge.r2   | 4核   | 8G   | 2.5Gbps  | 200万         | 91μs |
-| ec3.2xlarge.r2  | 8核   | 16G  | 3.5Gbps  | 400万         | 91μs |
-| ec3.3xlarge.r2  | 12核  | 24G  | 5Gbps    | 400万         | 91μs |
-| ec3.4xlarge.r2  | 16核  | 32G  | 6Gbps    | 400万         | 91μs |
-| ec3.6xlarge.r2  | 24核  | 48G  | 9Gbps    | 400万         | 91μs |
-| ec3.8xlarge.r2  | 32核  | 64G  | 13Gbps   | 400万         | 91μs |
-| ec3.16xlarge.r2 | 64核  | 128G | 25Gbps   | 400万         | 91μs |
-| eg3.large.r4    | 2核   | 8G   | 2Gbps    | 100万         | 91μs |
-| eg3.xlarge.r4   | 4核   | 16G  | 2.5Gbps  | 200万         | 91μs |
-| eg3.2xlarge.r4  | 8核   | 32G  | 3.5Gbps  | 400万         | 91μs |
-| eg3.3xlarge.r4  | 12核  | 48G  | 5Gbps    | 400万         | 91μs |
-| eg3.4xlarge.r4  | 16核  | 64G  | 6Gbps    | 400万         | 91μs |
-| eg3.6xlarge.r4  | 24核  | 96G  | 9Gbps    | 400万         | 91μs |
-| eg3.8xlarge.r4  | 32核  | 128G | 13Gbps   | 400万         | 91μs |
-| eg3.16xlarge.r4 | 64核  | 256G | 25Gbps   | 400万         | 91μs |
-| eg3.24xlarge.r4 | 96核  | 384G | 30Gbps   | 400万         | 91μs |
-| eg3.30xlarge.r4 | 120核 | 480G | 32Gbps   | 400万         | 91μs |
-| er3.large.r8    | 2核   | 16G  | 2Gbps    | 100万         | 91μs |
-| er3.xlarge.r8   | 4核   | 32G  | 2.5Gbps  | 200万         | 91μs |
-| er3.2xlarge.r8  | 8核   | 64G  | 3.5Gbps  | 400万         | 91μs |
-| er3.3xlarge.r8  | 12核  | 96G  | 5Gbps    | 400万         | 91μs |
-| er3.4xlarge.r8  | 16核  | 128G | 6Gbps    | 400万         | 91μs |
-| er3.6xlarge.r8  | 24核  | 192G | 9Gbps    | 400万         | 91μs |
-| er3.8xlarge.r8  | 32核  | 256G | 13Gbps   | 400万         | 91μs |
+| 实例规格        | vCPU | 内存 | 内网带宽 | 内网收发包PPS | 延时 |
+| --------------- | ---- | ---- | -------- | ------------- | ---- |
+| ec3.xlarge.r1   | 4核  | 4G   | 2.5Gbps  | 200万         | 91μs |
+| ec3.2xlarge.r1  | 8核  | 8G   | 3.5Gbps  | 400万         | 91μs |
+| ec3.3xlarge.r1  | 12核 | 12G  | 5Gbps    | 400万         | 91μs |
+| ec3.4xlarge.r1  | 16核 | 16G  | 6Gbps    | 400万         | 91μs |
+| ec3.8xlarge.r1  | 32核 | 32G  | 13Gbps   | 400万         | 91μs |
+| ec3.large.r2    | 2核  | 4G   | 2Gbps    | 100万         | 91μs |
+| ec3.xlarge.r2   | 4核  | 8G   | 2.5Gbps  | 200万         | 91μs |
+| ec3.2xlarge.r2  | 8核  | 16G  | 3.5Gbps  | 400万         | 91μs |
+| ec3.3xlarge.r2  | 12核 | 24G  | 5Gbps    | 400万         | 91μs |
+| ec3.4xlarge.r2  | 16核 | 32G  | 6Gbps    | 400万         | 91μs |
+| ec3.6xlarge.r2  | 24核 | 48G  | 9Gbps    | 400万         | 91μs |
+| ec3.8xlarge.r2  | 32核 | 64G  | 13Gbps   | 400万         | 91μs |
+| ec3.16xlarge.r2 | 64核 | 128G | 25Gbps   | 400万         | 91μs |
+| eg3.large.r4    | 2核  | 8G   | 2Gbps    | 100万         | 91μs |
+| eg3.xlarge.r4   | 4核  | 16G  | 2.5Gbps  | 200万         | 91μs |
+| eg3.2xlarge.r4  | 8核  | 32G  | 3.5Gbps  | 400万         | 91μs |
+| eg3.3xlarge.r4  | 12核 | 48G  | 5Gbps    | 400万         | 91μs |
+| eg3.4xlarge.r4  | 16核 | 64G  | 6Gbps    | 400万         | 91μs |
+| eg3.6xlarge.r4  | 24核 | 96G  | 9Gbps    | 400万         | 91μs |
+| eg3.8xlarge.r4  | 32核 | 128G | 13Gbps   | 400万         | 91μs |
+| eg3.16xlarge.r4 | 64核 | 256G | 25Gbps   | 400万         | 91μs |
+| eg3.24xlarge.r4 | 96核 | 384G | 30Gbps   | 400万         | 91μs |
+| er3.large.r8    | 2核  | 16G  | 2Gbps    | 100万         | 91μs |
+| er3.xlarge.r8   | 4核  | 32G  | 2.5Gbps  | 200万         | 91μs |
+| er3.2xlarge.r8  | 8核  | 64G  | 3.5Gbps  | 400万         | 91μs |
+| er3.3xlarge.r8  | 12核 | 96G  | 5Gbps    | 400万         | 91μs |
+| er3.4xlarge.r8  | 16核 | 128G | 6Gbps    | 400万         | 91μs |
+| er3.6xlarge.r8  | 24核 | 192G | 9Gbps    | 400万         | 91μs |
+| er3.8xlarge.r8  | 32核 | 256G | 13Gbps   | 400万         | 91μs |
 
 ## 网络增强企业型（E3）
 
@@ -152,38 +151,37 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 
 备注：如果物理服务器遭遇偶然硬件故障，会自动将云服务器关机后迁移到正常物理服务器上，此过程持续几秒，涉及开机、关机操作。
 
-| 实例规格          | vCPU  | 内存 | 内网带宽 | 内网收发包PPS | 延时 |
-| ----------------- | ----- | ---- | -------- | ------------- | ---- |
-| ec3ne.xlarge.r1   | 4核   | 4G   | 2.5Gbps  | 200万         | 25μs |
-| ec3ne.2xlarge.r1  | 8核   | 8G   | 3.5Gbps  | 400万         | 25μs |
-| ec3ne.3xlarge.r1  | 12核  | 12G  | 5Gbps    | 600万         | 25μs |
-| ec3ne.4xlarge.r1  | 16核  | 16G  | 6Gbps    | 800万         | 25μs |
-| ec3ne.8xlarge.r1  | 32核  | 32G  | 13Gbps   | 200万         | 25μs |
-| ec3ne.large.r2    | 2核   | 4G   | 2Gbps    | 100万         | 25μs |
-| ec3ne.xlarge.r2   | 4核   | 8G   | 2.5Gbps  | 200万         | 25μs |
-| ec3ne.2xlarge.r2  | 8核   | 16G  | 3.5Gbps  | 400万         | 25μs |
-| ec3ne.3xlarge.r2  | 12核  | 24G  | 5Gbps    | 600万         | 25μs |
-| ec3ne.4xlarge.r2  | 16核  | 32G  | 6Gbps    | 800万         | 25μs |
-| ec3ne.6xlarge.r2  | 24核  | 48G  | 9Gbps    | 1200万        | 25μs |
-| ec3ne.8xlarge.r2  | 32核  | 64G  | 13Gbps   | 2400万        | 25μs |
-| ec3ne.16xlarge.r2 | 64核  | 128G | 25Gbps   | 2400万        | 25μs |
-| eg3ne.large.r4    | 2核   | 8G   | 2Gbps    | 100万         | 25μs |
-| eg3ne.xlarge.r4   | 4核   | 16G  | 2.5Gbps  | 200万         | 25μs |
-| eg3ne.2xlarge.r4  | 8核   | 32G  | 3.5Gbps  | 400万         | 25μs |
-| eg3ne.3xlarge.r4  | 12核  | 48G  | 5Gbps    | 600万         | 25μs |
-| eg3ne.4xlarge.r4  | 16核  | 64G  | 6Gbps    | 800万         | 25μs |
-| eg3ne.6xlarge.r4  | 24核  | 96G  | 9Gbps    | 1200万        | 25μs |
-| eg3ne.8xlarge.r4  | 32核  | 128G | 13Gbps   | 2400万        | 25μs |
-| eg3ne.16xlarge.r4 | 64核  | 256G | 25Gbps   | 2400万        | 25μs |
-| eg3ne.24xlarge.r4 | 96核  | 384G | 30Gbps   | 2400万        | 25μs |
-| eg3ne.30xlarge.r4 | 120核 | 480G | 32Gbps   | 2400万        | 25μs |
-| er3ne.large.r8    | 2核   | 16G  | 2Gbps    | 100万         | 25μs |
-| er3ne.xlarge.r8   | 4核   | 32G  | 2.5Gbps  | 200万         | 25μs |
-| er3ne.2xlarge.r8  | 8核   | 64G  | 3.5Gbps  | 400万         | 25μs |
-| er3ne.3xlarge.r8  | 12核  | 96G  | 5Gbps    | 600万         | 25μs |
-| er3ne.4xlarge.r8  | 16核  | 128G | 6Gbps    | 800万         | 25μs |
-| er3ne.6xlarge.r8  | 24核  | 192G | 9Gbps    | 1200万        | 25μs |
-| er3ne.8xlarge.r8  | 32核  | 256G | 13Gbps   | 2400万        | 25μs |
+| 实例规格          | vCPU | 内存 | 内网带宽 | 内网收发包PPS | 延时 |
+| ----------------- | ---- | ---- | -------- | ------------- | ---- |
+| ec3ne.xlarge.r1   | 4核  | 4G   | 2.5Gbps  | 200万         | 25μs |
+| ec3ne.2xlarge.r1  | 8核  | 8G   | 3.5Gbps  | 400万         | 25μs |
+| ec3ne.3xlarge.r1  | 12核 | 12G  | 5Gbps    | 600万         | 25μs |
+| ec3ne.4xlarge.r1  | 16核 | 16G  | 6Gbps    | 800万         | 25μs |
+| ec3ne.8xlarge.r1  | 32核 | 32G  | 13Gbps   | 200万         | 25μs |
+| ec3ne.large.r2    | 2核  | 4G   | 2Gbps    | 100万         | 25μs |
+| ec3ne.xlarge.r2   | 4核  | 8G   | 2.5Gbps  | 200万         | 25μs |
+| ec3ne.2xlarge.r2  | 8核  | 16G  | 3.5Gbps  | 400万         | 25μs |
+| ec3ne.3xlarge.r2  | 12核 | 24G  | 5Gbps    | 600万         | 25μs |
+| ec3ne.4xlarge.r2  | 16核 | 32G  | 6Gbps    | 800万         | 25μs |
+| ec3ne.6xlarge.r2  | 24核 | 48G  | 9Gbps    | 1200万        | 25μs |
+| ec3ne.8xlarge.r2  | 32核 | 64G  | 13Gbps   | 2400万        | 25μs |
+| ec3ne.16xlarge.r2 | 64核 | 128G | 25Gbps   | 2400万        | 25μs |
+| eg3ne.large.r4    | 2核  | 8G   | 2Gbps    | 100万         | 25μs |
+| eg3ne.xlarge.r4   | 4核  | 16G  | 2.5Gbps  | 200万         | 25μs |
+| eg3ne.2xlarge.r4  | 8核  | 32G  | 3.5Gbps  | 400万         | 25μs |
+| eg3ne.3xlarge.r4  | 12核 | 48G  | 5Gbps    | 600万         | 25μs |
+| eg3ne.4xlarge.r4  | 16核 | 64G  | 6Gbps    | 800万         | 25μs |
+| eg3ne.6xlarge.r4  | 24核 | 96G  | 9Gbps    | 1200万        | 25μs |
+| eg3ne.8xlarge.r4  | 32核 | 128G | 13Gbps   | 2400万        | 25μs |
+| eg3ne.16xlarge.r4 | 64核 | 256G | 25Gbps   | 2400万        | 25μs |
+| eg3ne.24xlarge.r4 | 96核 | 384G | 30Gbps   | 2400万        | 25μs |
+| er3ne.large.r8    | 2核  | 16G  | 2Gbps    | 100万         | 25μs |
+| er3ne.xlarge.r8   | 4核  | 32G  | 2.5Gbps  | 200万         | 25μs |
+| er3ne.2xlarge.r8  | 8核  | 64G  | 3.5Gbps  | 400万         | 25μs |
+| er3ne.3xlarge.r8  | 12核 | 96G  | 5Gbps    | 600万         | 25μs |
+| er3ne.4xlarge.r8  | 16核 | 128G | 6Gbps    | 800万         | 25μs |
+| er3ne.6xlarge.r8  | 24核 | 192G | 9Gbps    | 1200万        | 25μs |
+| er3ne.8xlarge.r8  | 32核 | 256G | 13Gbps   | 2400万        | 25μs |
 
 ## 专业增强型 ( P1 )
 
