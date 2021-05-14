@@ -90,10 +90,18 @@
             <div class="card">
               <div class="card-body">
                 <div class="card-title"><img src="{{ .Params.icon }}" class="card-title-img">{{ .Params.title }}</div>
-                {{ $page_list := (union (where .Pages ".Params._build.render" "!=" false) .Sections).ByWeight }}
-                {{ $length := len $page_list}}
-                {{ range $page_list }}
-                <p class="card-text"><a href="{{ .RelPermalink }}" class="card-link">{{ .Params.title }}</a></p>
+                {{if .Params.section1}}
+                    {{ with .Params.section1 }}
+                    {{ range .children }}
+                    <p class="card-text"><a href="{{ .url }}" class="card-link">{{ .title }}</a></p>
+                    {{ end }}
+                    {{ end }}
+                {{else}}
+                    {{ $page_list := (union (where .Pages ".Params._build.render" "!=" false) .Sections).ByWeight }}
+                    {{ $length := len $page_list}}
+                    {{ range $page_list }}
+                    <p class="card-text"><a href="{{ .RelPermalink }}" class="card-link">{{ .Params.title }}</a></p>
+                    {{ end }}
                 {{ end }}
               </div>
             </div>
