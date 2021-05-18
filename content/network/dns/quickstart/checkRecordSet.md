@@ -49,5 +49,4 @@ simple.example.com.600 IN A 139.34.32.100
 simple.example.com.600 IN A 139.34.32.101
 simple.example.com.600 IN A 139.34.32.102
 ```
-
 > 注：Windows 上操作系统默认安装 `nslookup` ，若您需要在 Windows 中使用 `dig` 命令，您可以自行安装后使用。
