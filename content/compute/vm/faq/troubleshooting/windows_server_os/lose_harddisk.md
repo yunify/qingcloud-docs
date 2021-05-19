@@ -8,7 +8,7 @@ enableToc: false
 ---
 
 ## 问题背景
-Windows云服务器挂载硬盘后如果没有设置开机[自动挂载](https://docsv3.qingcloud.com/storage/disk/manual/winos_auto_mount/winos_auto_mount/)，云服务器重启之后，硬盘状态可能会变成脱机状态
+Windows云服务器挂载硬盘后如果没有设置开机[自动挂载](https://docsv3.qingcloud.com/storage/disk/manual/auto_mount/win_auto_mount/)，云服务器重启之后，硬盘状态可能会变成脱机状态
 
 ## 解决步骤
 
