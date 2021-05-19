@@ -1,7 +1,7 @@
 ---
 title: "Windows云服务器蓝屏"
 description: test
-weight: 20
+weight: 16
 draft: false
 ---
 
