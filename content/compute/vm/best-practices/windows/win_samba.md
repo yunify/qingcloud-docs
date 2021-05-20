@@ -4,11 +4,11 @@ description: Test description
 draft: false
 ---
 
-本文以 Windows Server 2016系统配置 samba 服务为例，WindowsServer 2016 默认已安装 samba 客户端，
+本文以 Windows Server 2016系统配置 samba 服务为例，Windows Server 2016 默认已安装 samba 客户端，
 
 ## Windows Server 端配置
 
-### 1. 开启 Server 服务
+### 1.开启 Server 服务
 
 点击【开始】---【服务器管理器】。
 
@@ -24,7 +24,7 @@ draft: false
 
 ![](../../_images/win_samba_5.png)
 
-### 2. 安装 samba 服务
+### 2.安装 samba 服务
 
 在【服务器管理器】中，点击上方的【添加角色和功能】，然后在【功能】处，勾选【SMB 1.0/CIFS 文件共享支持】和【SMB Bandwidth Limit】，点击下一步后，确认下需要安装的服务，然后点击安装。
 
@@ -44,7 +44,7 @@ draft: false
 
 
 
-### 3. 设置文件通过 samba 共享
+### 3.设置文件通过 samba 共享
 
 在【服务器管理器】中点击【文件和存储服务】。点击【共享】，在【任务】处新建共享。
 
@@ -92,18 +92,18 @@ Windows 默认带有 samba 客户端，可以直接访问。
 
 ![](../../_images/win_samba_23.png)
 
-## linux 客户端访问
+## Linux 客户端访问
 
 本文以 CentOS 7.9 64bit 为例。
 
-### 1. 安装 samba 客户端
+### 1.安装 samba 客户端
 
 ```shell
 yum -y install samba-client
 yum -y install cifs-utils
 ```
 
-### 2. 创建相应目录并挂载
+### 2.创建相应目录并挂载
 
 ```shell
 mkdir /mnt/shared
