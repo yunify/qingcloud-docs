@@ -17,11 +17,11 @@ section2:
   children:
     - title: ClickHouse
       content: 产品简介
-      url: "intro/intro"
+      url: "intro/introduction"
 
     - title: 操作指南
       content: 学习上手如何创建、查看及应用ClickHouse等。
-      url: "manual/setstep"
+      url: "manual/set_step"
 
 section3:
   title: 开发者指南
