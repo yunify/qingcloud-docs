@@ -69,7 +69,7 @@ section4:
 
     - title: 入门
       content: 备案准备
-      vice_title: 上手的第一步
+      vice_title: 入门的第一步
       children: 
         - title: 注册青云账号并实名认证
           url: "prepare/regist/"
