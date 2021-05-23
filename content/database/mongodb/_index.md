@@ -22,7 +22,7 @@ Section2:
 
     - title: 快速入门
       content: 快速入门
-      url: "quickstart/quick_start/"
+      url: "quickstart/create_mongodb_cluster/"
 
     - title: 操作指南
       content: 学习上手如何管理 MongoDB 集群，以及如何使用 MongoDB 提供的相关服务等。
@@ -61,7 +61,7 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 创建 MongoDB
-          url: "quickstart/quick_start/"
+          url: "quickstart/create_mongodb_cluster/"
 
         - title: MongoDB 服务功能
           url: "manual/service/"
