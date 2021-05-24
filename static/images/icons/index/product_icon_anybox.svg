@@ -1,0 +1,43 @@
+<svg width="62" height="72" viewBox="0 0 62 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="product_icon_anybox">
+<path id="Polygon 2" fill-rule="evenodd" clip-rule="evenodd" d="M29.4936 0.405633C30.425 -0.135211 31.575 -0.135211 32.5064 0.405633L60.5064 16.6637C61.431 17.2006 62 18.1889 62 19.2581V51.8038C62 52.873 61.431 53.8613 60.5064 54.3982L32.5064 70.6563C31.575 71.1971 30.425 71.1971 29.4936 70.6563L1.49359 54.3982C0.569001 53.8613 0 52.873 0 51.8038L0 19.2581C0 18.1889 0.569002 17.2006 1.49359 16.6637L29.4936 0.405633Z" fill="#F5F8FA"/>
+<g id="Group 60">
+<g id="anybox">
+<g id="&#233;&#161;&#181;&#233;&#157;&#162; 1">
+<g id="&#228;&#187;&#183;&#230;&#160;&#188;">
+<g id="Group 6">
+<g id="&#231;&#188;&#150;&#231;&#187;&#132;">
+<g id="&#231;&#188;&#150;&#231;&#187;&#132; 6">
+<g id="Group">
+<path id="Fill 10" fill-rule="evenodd" clip-rule="evenodd" d="M30.834 19.0484L41.5342 25.2264L45.1016 23.1671L30.834 14.9297" fill="#00A971"/>
+<g id="&#231;&#188;&#150;&#231;&#187;&#132;_2">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="16" y="14" width="30" height="12">
+<g id="mask 2">
+<path id="Vector" d="M16.5674 14.9297H45.1017V25.2261H16.5674V14.9297Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0)">
+<path id="Fill 12" fill-rule="evenodd" clip-rule="evenodd" d="M20.1338 25.2264L30.8341 19.0484L41.5353 25.2264L45.1017 23.1671L30.8341 14.9297L16.5674 23.1671L20.1338 25.2264Z" fill="#D0D0D8"/>
+</g>
+</g>
+<path id="Fill 14" fill-rule="evenodd" clip-rule="evenodd" d="M37.9678 27.2867L30.834 23.168L23.7002 27.2867L30.834 31.4054L37.9678 27.2867Z" fill="#3D3E49"/>
+<g id="&#231;&#188;&#150;&#231;&#187;&#132;_3">
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="13" y="25" width="36" height="32">
+<g id="mask 4">
+<path id="Vector_2" d="M13 25.2266H48.6678V56.1159H13V25.2266Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask1)">
+<path id="Fill 16" fill-rule="evenodd" clip-rule="evenodd" d="M45.1017 39.6411L30.835 47.8776L21.917 42.7297V38.6128L30.835 43.7607L45.1017 35.5242V39.6411ZM30.8341 35.5224L13 25.2266V45.8201L30.8341 56.1159L48.6681 45.8201V25.2266L30.8341 35.5224Z" fill="#D0D0D8"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

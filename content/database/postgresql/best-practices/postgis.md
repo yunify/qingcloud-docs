@@ -1,8 +1,14 @@
 ---
-title: "PostGIS 插件的使用"
-description: Test description
-weight: 7
+title: "使用 PostGIS 插件"
+description: 本小节主要介绍如何使用 PostGIS 插件。 
+keywords: PostgreSQL 插件, PostGIS 插件
+data: 2021-05-14T00:38:25+09:00
+weight: 2
+collapsible: false
+draft: false
 ---
+
+数据库的 **root** 用户和新建 PostgreSQL DB 时，设置的密码登录数据库服务器上的 PostgreSQL 数据库，可以采用任意的 PostgreSQL 客户端登录到数据库服务器。
 
 ## 查看 PostGIS 插件信息
 
@@ -17,13 +23,17 @@ FROM pg_available_extensions WHERE name LIKE 'postgis%' or name LIKE 'address%';
 
 ## 新建 PostGIS Database
 
-以数据库的 root 用户和新建 PostgreSQL DB 时设置的密码登录数据库服务器上的 PostgreSQL 数据库，可以采用任意的 PostgreSQL 客户端登录到数据库服务器。
-之后，根据以下脚本创建属于自己的 PostGIS database 。
+根据以下脚本创建属于自己的 PostGIS 数据库。
 
 例如：登录数据库
+
 `psql -U root -h 192.168.100.246 -d postgres`
-其中-h参数值的 ip 地址为 PostgreSQL DB 主节点服务器地址或者是高可用版本集群的 VIP 地址。
-连接 DB 之后，执行以下 sql 创建自己的 PostGIS Database，数据库名为 demo 。
+
+> 其中：
+> 
+> -h参数值的 IP 地址为 PostgreSQL DB 主节点服务器地址或高可用版本集群的 VIP 地址。
+
+连接 DB 之后，执行以下 `sql` 创建 PostGIS Database，数据库名为 `demo` 。
 
 ```sql
 create database demo;
@@ -38,8 +48,7 @@ CREATE EXTENSION postgis_tiger_geocoder;
 CREATE  EXTENSION pgrouting;
 ```
 
->注意：
->启用 PostGIS 必须使用超级用户 root 才有权限执行。
+>启用 PostGIS 必须使用超级用户 **root** 才有权限执行。
 
 ## 查看 PostGIS 的版本信息
 

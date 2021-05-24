@@ -1,74 +1,60 @@
 ---
-title: "快速入门"
-description: test
+title: "快速使用 PolonDB 数据库功能"
+description: 本小节主要介绍如何快速使用 QingCloud PolonDB 。 
+keywords: polondb 数据库
+data: 2021-05-14T00:38:25+09:00
+weight: 10
+collapsible: false
 draft: false
 ---
 
 
 
-## PolonDB 节点介绍
+本小节主要介绍如何快速使用 PolonDB 数据库，包括创建表、管理表、管理视图、管理函数等。
 
-PolonDB 在服务器端口信息栏，提供三个节点 IP
+> PolonDB 数据库所有操作均可以通过**协调器节点**执行。
 
-- 协调器节点
+## 创建普通表
 
-   可以执行任何 SQL 操作的节点
-
-- 高性能节点
-
-   不可以进行创建对象的操作，如： `create table/create view等 `
-
-- 高性能只读节点
-
-   不可以进行写入的操作
-
-   > PolonDB 高阶使用，拥有更详细介绍
-
-
-## PolonDB 业务编写
-
-> 所有操作步骤均可以通过协调器节点执行
-
-- 通过协调器节点创建一个普通表
+通过**协调器节点**创建一个普通表。
 
    ```sql
    create table aa(id int)
    ```
 
+## 转换普通表为分布式表
 
-
-- 通过协调器节点将普通表转换成分布式表
+通过**协调器节点**将普通表转换成分布式表。
 
    ```sql
    select create_distributed_table('aa', 'id')
    ```
 
+## 管理分布式表
 
-
-- 使用分布式表
-
-   > 修改操作在协调器节点和高性能节点均可以执行，查询操作可以在高性能只读节点进行
+修改操作在**协调器节点**和**高性能节点**均可以执行，查询操作可以在**高性能只读节点**进行。
 
    ```sql
    insert into aa select generate_series(1, 10000);
    select count(*) from aa;
    ```
 
-   
+## 管理视图
 
-- 使用视图
+在**协调器节点**执行。
 
-   > 在协调器节点执行
+- 只在协调器节点创建视图。
 
    ```sql
    create view view_aa as select * from aa;
-   -- 只在协调器节点创建
-   
-   select run_command_on_workers($cmd$ create view view_aa as select * from aa $cmd$);
-   -- 在所有节点创建
    ```
 
-   > 可以通过任意节点查询视图
+- 在所有节点创建视图。
+    ```sql  
+   select run_command_on_workers($cmd$ create view view_aa as select * from aa $cmd$);
+   ```
+
+- 可以通过任意节点查询视图。
 
    ```sql
     qingcloud=> select count(*) from view_aa;
@@ -78,25 +64,29 @@ PolonDB 在服务器端口信息栏，提供三个节点 IP
    (1 row)
    ```
 
-- 使用函数
+## 管理函数
 
-   > 在协调器节点执行
+在协调器节点执行。
 
+- 只在协调器节点创建函数。
+   
    ```sql
    CREATE FUNCTION func_aa(a int) RETURNS VOID LANGUAGE SQL AS $$ insert into aa values(1) $$;
-   -- 只在协调器节点创建
-   
-   select run_command_on_workers($cmd$ CREATE FUNCTION func_aa(a int) RETURNS VOID LANGUAGE SQL AS $$ insert into aa values(1) $$ $cmd$);
-   -- 在所有节点创建
    ```
 
-   > 在非高性能只读节点执行
+- 在所有节点创建函数。
+
+    ```sql  
+   select run_command_on_workers($cmd$ CREATE FUNCTION func_aa(a int) RETURNS VOID LANGUAGE SQL AS $$ insert into aa values(1) $$ $cmd$);
+   ```
+
+- 在**非高性能只读节点**执行。
 
    ```sql
    select func_aa();
    ```
 
-   > 在任意节点执行
+- 在任意节点执行。
 
    ```sql
    qingcloud=> select count(*) from aa;
@@ -105,5 +95,4 @@ PolonDB 在服务器端口信息栏，提供三个节点 IP
     10001
    (1 row)
    ```
-
-   
+  
