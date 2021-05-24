@@ -18,7 +18,7 @@ Section2:
 
     - title: NeonSAN
       content: 企业级分布式 SAN (NeonSAN)使用文档
-      url: "/storage/disk/manual/neonsan_volume"
+      url: "/storage/disk/quickstart/create_disk/"
 
 section4:
   children:
