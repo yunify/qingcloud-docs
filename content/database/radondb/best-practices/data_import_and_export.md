@@ -1,19 +1,21 @@
 ---
 title: "数据导入和导出"
-description: Test description
-weight: 3
+description: 本小节主要介绍如何使用 RadonDB 数据导出和导入。 
+keywords: RadonDB, QingCloud, 数据导入,数据导出
+data: 2021-05-14T00:38:25+09:00
+weight: 2
+collapsible: false
+draft: false
 ---
 
 
-RadonDB 目前只支持 go-mydumper 方式的数据导入和导出。
+RadonDB 目前只支持 `go-mydumper` 方式的数据导入和导出。
 
 [XeLabs/go-mydumper](https://github.com/XeLabs/go-mydumper) 是一个使用 go 语言开发的开源工具，与 [maxbube/mydumper](https://github.com/maxbube/mydumper) 格式完全兼容，但是对并行处理进行了优化，性能更加卓越。该工具不仅限于 RadonDB 使用，MySQL 也可以使用。
 
-导入数据到 RadonDB，go-mydumper 会批量并行式导入，非常快捷。
+导入数据到 RadonDB，`go-mydumper` 会批量并行式导入，非常快捷。从 RadonDB 导出数据时，`go-mydumper` 会批量并行流式导出，资源占用率较低。
 
-从 RadonDB 导出数据时，go-mydumper 会批量并行流式导出，资源占用率较低。
-
-## 1. 安装 go-mydumper
+## 安装 go-mydumper
 
 ``` plain
 $ git clone https://github.com/XeLabs/go-mydumper
@@ -59,11 +61,11 @@ Usage: ./bin/myloader -h [HOST] -P [PORT] -u [USER] -p [PASSWORD] -d  [DIR]
         Username with privileges to run the loader
 ```
 
-## 2. 如何导入数据到 RadonDB
+## 导入数据到 RadonDB
 
-### 2.1 从数据源导出数据
+### 从数据源导出数据
 
-首先使用 mydumper 从别的 MySQL 数据源导出数据，比如:
+首先使用 mydumper 从别的 MySQL 数据源导出数据。
 
 ``` plain
 $ ./bin/mydumper -h 192.168.0.2 -P 3306 -u test -p test -db sbtest  -o sbtest.sql
@@ -87,9 +89,9 @@ $ ./bin/mydumper -h 192.168.0.2 -P 3306 -u test -p test -db sbtest  -o sbtest.sq
  2017/10/25 13:13:39.622454 dumper.go:188:        [INFO]        dumping.all.done.cost[46.69sec].allrows[24970977].allbytes[5318557708].rate[108.63MB/s]
 ```
 
-### 2.2 修改 schema
+### 修改 schema
 
-在导出目录 (比如 sbtest.sql) 里找到 \*-schema.sql (比如 sbtest.benchyou0-scehma.sql):
+在导出目录里找到 `\*-schema.sql` ，比如在`sbtest.sql` 里 `sbtest.benchyou0-scehma.sql`。
 
 如果表没有主键或者需要手动指定分区键，则对原语句最后增加 `PARTITION BY HASH (分区键)` 的语法:
 
@@ -119,7 +121,7 @@ CREATE TABLE `benchyou0` (
 ) ENGINE=InnoDB PARTITION BY HASH(id);
 ```
 
-### 2.3 导入数据到 RadonDB
+### 导入数据到 RadonDB
 
 ```plain
 $ ./bin/myloader -h 192.168.0.2 -P 3306 -u radondb -p radondb -d sbtest.sql
@@ -148,8 +150,7 @@ $ ./bin/myloader -h 192.168.0.2 -P 3306 -u radondb -p radondb -d sbtest.sql
  2017/10/25 13:05:52.602573 loader.go:187:        [INFO]        restoring.all.done.cost[95.09sec].allbytes[5120.00MB].rate[53.85MB/s]
 ```
 
-
-## 3. 如何导出 RadonDB 数据
+## 导出 RadonDB 数据
 
 可以使用 mydumper 导出 RadonDB 数据，此过程是流式获取 (select 语句加 `/*+ streaming */` hint) 并导出，基本不占用系统内存。
 
