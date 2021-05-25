@@ -22,9 +22,10 @@ Section2:
       content: 云硬盘计费指南
       url: "/storage/disk/billing/price/"
 
-    - title: 操作指南
-      content: 云硬盘操作指南
-      url: "/storage/disk/manual/basic_operation/"
+    - title: 快速入门
+      content: 云硬盘快速入门
+      url: "/storage/disk/quickstart/create_disk/"
+
 
 
 section4:

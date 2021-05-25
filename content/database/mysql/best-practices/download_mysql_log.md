@@ -1,29 +1,43 @@
 ---
-title: "下载 MySQL日志"
-description: Test description
+title: "下载 MySQL 日志"
+description: 本小节主要介绍如何下载 MySQL Plus 日志。 
+keywords: mysql plus 日志,
+data: 2021-05-14T00:38:25+09:00
+weight: 1
+collapsible: false
 draft: false
-enableToc: false
-weight: 3
 ---
 
-## 步骤一：启动 MySQL 日志服务
 
 MySQL Plus 支持通过 HTTP 服务预览和下载日志，HTTP 服务端口为 `18801` 。
 
-日志服务支持下载 MySQL错误日志 `mysql-error` 和 MySQL慢日志 `mysql-slow`（二者都保留六个日志文件），同时支持下载 MySQL审计日志 `mysql-audit` ， MySQL binlog文件 `mysql-bin` 和 SSL 证书文件 `mysql-cert` 。
+日志服务支持下载 MySQL 错误日志 `mysql-error` 、 MySQL 慢日志 `mysql-slow`、 MySQL 审计日志 `mysql-audit` 、MySQL binlog 文件 `mysql-bin` 和 SSL 证书文件 `mysql-cert` 。
+
+  > 其中，`mysql-error` 和 `mysql-slow` 仅保留六个日志文件。
+
+
+## 启动 MySQL 日志服务
 
 ### 启动服务
 
 1. 登录 QingCloud 管理控制台。
 2. 在 AppCenter 控制台，选择**集群管理**。
 3. 选择 MySQL Plus 目标集群，点击资源 id，进入到集群详情界面。
+   
    ![集群列表](/database/mysql/_images/download_mysql_log_1.png)
+
 4. 在**基本属性**区域，展开操作列框。
+   
 5. 点击**启动日志服务端**。
+   
    ![启动日志服务端](/database/mysql/_images/download_mysql_log_2.png)
+
 6. 配置日志服务相关参数。
+   
    点选运行服务的角色，并勾选需要预览和下载的 MySQL 日志，输入 HTTP 用户名和密码。
+
 7. 点击**提交**，启动日志服务端。
+   
    ![配置日志服务参数](/database/mysql/_images/download_mysql_log_3.png)
 
 ### 预览日志
@@ -40,7 +54,7 @@ MySQL Plus 支持通过 HTTP 服务预览和下载日志，HTTP 服务端口为 
 
 ### 下载日志
 
-进入需要下载的日志目录，点击日志文件进行下载即可.
+进入需要下载的日志目录，点击日志文件进行下载即可。
 
 ![download_mysql_log_6](/database/mysql/_images/download_mysql_log_6.png)
 
@@ -78,7 +92,7 @@ MySQL Plus 支持通过 HTTP 服务预览和下载日志，HTTP 服务端口为 
    wget -r --limit-rate=8m http://192.168.8.6:18801 --http-user=Admin --http-password=Admin123@ --reject="index.html*"
    ```
 
-## 步骤二：下载 general 日志
+## 下载 general 日志
 
 1. 开启 general 日志。
 
