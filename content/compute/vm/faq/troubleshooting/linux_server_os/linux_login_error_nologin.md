@@ -1,6 +1,6 @@
 ---
 
-title: "使用SSH命令登录Linux系统的出现报错"
+title: "使用SSH命令登录Linux系统时出现报错"
 description: Test description
 weight: 40
 draft: false
@@ -37,7 +37,6 @@ enableToc: false
 
 2. 通过救援主机进入源主机系统盘的根目录下，执行如下命令，查看相应用户的默认Shell。
 
-   ****
 
    ```
    cat etc/passwd | grep test
@@ -45,7 +44,6 @@ enableToc: false
 
    系统显示类似如下，登录相应用户的Shell被修改成nologin。
 
-   ****
 
    ```
    test:x:1000:1000::/home/test:/sbin/nologin
@@ -53,31 +51,7 @@ enableToc: false
 
 3. 如果需要修改相关策略配置，操作之前建议先进行文件备份。
 
-4. 执行如下命令，编辑
-
-   ```
-   vi etc/passwd
-   ```
-
-   文件，将相应用户的默认Shell修改为bash，即将
-
-   ```
-   /sbin/nologin
-   ```
-
-   修改为
-
-   ```
-   /bin/bash
-   ```
-
-   ，然后保存并退出即可。
-
-   ****
-
-   ```
-   vi /etc/passwd
-   ```
+4. 执行命令vi /etc/passwd，编辑文件，将相应用户的默认Shell修改为bash，即将/sbin/nologin修改为/bin/bash，然后保存并退出即可。
 
 5. 在客户端再次尝试连接服务器，确认能正常连接。
 

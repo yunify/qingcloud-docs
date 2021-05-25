@@ -1,7 +1,10 @@
 ---
 title: "服务功能"
-description: test
-weight: 4
+description: 本小节主要介绍 Redis Cluster 服务功能。 
+keywords: redis cluster 服务功能
+data: 2021-05-14T00:38:25+09:00
+weight: 15
+collapsible: false
 draft: false
 ---
 
@@ -11,54 +14,10 @@ draft: false
 
 ![切换私网](../../_images/change_vnet.png)
 
-## 在线伸缩
-
-在缓存服务运行过程中，会出现服务能力不足或者容量不够的情况，可以通过扩容来解决，或者服务能力过剩时可以删除节点。在纵向扩容中， 服务需要重启，所以这个时候业务需要停止。在横向伸缩中，数据会发生迁移，但并不影响业务的正常运行。
-
-### 1. 增加集群分片 (shard)
-
-Redis 集群服务每个主节点写的能力与容量都有上限，当写的能力不满足业务需求或达到容量上限时，您可以通过增加节点组即缓存分片来提升写性能以及容量。 每增加一个节点组时将创建一个主节点和其它主节点同样的从节点数。Redis 集群会自动平衡各分片之间的 slots，即会发生 数据迁移，因此增加节点组的时间会有点长。如果事先知道需要增加的分片数建议一次性完成，这样比一次只加一个分片效率更高。 
-
-![](../../_images/add-master.png)
-
-### 2. 增加集群从节点
-
-Redis 集群服务每个主节点可以支持多个从节点。当读的能力不足时，您可以通过增加缓存从节点来提升读性能。 
-
-![](../../_images/add-replica.png)
-
-### 3. 删除集群分片 (shard)
-
-如果写服务能力或容量过剩，也可以删除多余的节点组，即删除主节点和它的所有从节点，删除的过程中系统会自动迁移数据到其它节点中，因此时间会稍长一点。
-
-> **注意 Redis 5.0.5 - QingCloud 1.3.0 及之后的版本在删除 master 节点时添加了限制，以下情况是不允许节点被删除的：**
-
-> 1、集群存在节点状态异常
-
-> 2、存在单节点的 redis 内存使用率大于 95% 
-
-> 3、删除后的平均 redis 内存使用率大于 95% 
-
-### 4. 删除集群从节点
-
-如果读服务能力过剩，您也可以删除多余的从节点。删除的时候需要从每个主节点下选择同样数目的从节点，从而保证整个集群不会是一个“畸形”。
-
-> **注意 Redis 5.0.5 - QingCloud 1.3.0 在删除 master-replica 节点时添加了限制，以下情况是不允许节点被删除的：**
-
-> 集群待删除从节点中包含 redis 角色为主节点
-
-### 5. 增加缓存容量
-
-当缓存容量不足时，您可以通过纵向扩容来提升缓存容量，右键点击集群，选择扩容。
-
-![](../../_images/scale-up.png)
-
->硬盘存储容量只能扩容，不支持减少存储容量。在线扩容期间，缓存服务会被重启。
-
 
 ## 文件下载
 
-`Redis 5.0.5 - QingCloud 2.0.0` 在「配置参数」栏添加了 WebConsole 的服务，您可以通过该服务下载日志、RDB 数据文件和 AOF 文件，该服务默认没有密码，建议在使用时配置密码
+`Redis 5.0.5 - QingCloud 2.0.0` 在「配置参数」栏添加了 WebConsole 的服务，您可以通过该服务下载日志、RDB 数据文件和 AOF 文件，该服务默认没有密码，建议在使用时配置密码。
 
 ![](../../_images/download-files.png)
 
@@ -128,14 +87,11 @@ wget http://[username]:[password]@[ip]/redis/redis-server.log
 
 ![](../../_images/enable-config.png)
 
-
-
 ## 测试
 
 当缓存服务创建完成之后，我们可以进行连接测试。
 
-
-### 1）redis 客户端操作 redis cluster
+### Redis 客户端操作 Redis Cluster
 
 在同一私网下创建一台 Linux 云服务器，下载与集群 redis 版本相同的 redis，这里以 [redis 5.0.5](http://download.redis.io/releases/redis-5.0.5.tar.gz) 版本为例，编译，进入 src 目录执行下面的命令
 
@@ -158,9 +114,7 @@ wget http://[username]:[password]@[ip]/redis/redis-server.log
 ./redis-cli -c -h 192.168.0.6 get a
 ```
 
-
-
-### 2）检查集群状态
+### 检查集群状态
 
 在同一私网中创建一台 Linux 云服务器，您可能需要先装一些依赖包 (如 Ubuntu 下 apt-get install tcl ruby　和　gem install redis)， 然后请 [下载 Redis 4.x](http://download.redis.io/releases/redis-4.0.6.tar.gz)或者[下载 Redis 5.x](http://download.redis.io/releases/redis-5.0.3.tar.gz)（根据版本需求来定），解压后进入 Redis src 目录，执行以下命令　（假设 Redis cluster 其中一个节点的 IP 为 192.168.100.13，端口为 6379)。
 
@@ -240,7 +194,7 @@ Redis 5.x 执行以下命令
 --cluter-to 704514eb7fa135dd003533568ae9f7babda9464e --cluster-slots 1000 --cluster-yes
 ```
 
-### 3）Java 客户端读写数据示例
+### Java 客户端读写数据示例
 
 首先 [下载 Jedis 库和 Apache Commons Pool 依赖库](https://github.com/xetorthio/jedis/wiki/Getting-started)，需要下载 [commons-pool2 的 2.5.0 版本](https://search.maven.org/remotecontent?filepath=org/apache/commons/commons-pool2/2.5.0/commons-pool2-2.5.0.jar)和 [jedis 的 2.9.2 版本](https://search.maven.org/remotecontent?filepath=redis/clients/jedis/2.9.2/jedis-2.9.2.jar)。 把下载下来的 commons-pool2-2.5.0.jar 和 jedis-2.9.2.jar 放到同一目录下如 lib/， 创建 TestRedisCluster.java，内容如下，然后编译、执行该 Java 程序（假设一个分片的主从节点分别是 192.168.100.10， 192.168.100.13， 端口均为 6379）。
 
@@ -295,7 +249,7 @@ public class TestRedisCluster {
 
 >这是示例代码，不承担任何责任。更多的 Redis 客户端请见 [Redis 官方网站](http://redis.io/clients)。
 
-### 4） Hash Tags Keys
+### Hash Tags Keys
 
 Redis 集群采用 CRC16 算法对 key 值哈希到 16384 个 slots 中的一个，因此不同的 key 可能分散到不同的节点中，对于想固定一类 key 值到某一个节点，如按业务分类，可以采用 Hash Tags，下面是从 [Redis 文档](https://redis.io/topics/cluster-spec#keys-hash-tags) 摘录的解释。
 
