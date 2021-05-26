@@ -1,5 +1,5 @@
 ---
-title: "Multipart"
+title: "Abort Multipart Upload"
 date: 2020-11-25T10:08:56+09:00
 description:
 collapsible: false
@@ -7,7 +7,7 @@ draft: false
 weight: 3
 ---
 
-# Abort Multipart Upload
+
 
 终止分段上传，并删除已经上传的分段。该请求需要对存储空间有可写权限。
 
