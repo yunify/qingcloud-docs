@@ -46,13 +46,16 @@ section3:
 section4:
   children:
     - title: 了解：什么是密钥管理服务
-      content: 安全组。
+      content: 可以帮助您轻松创建和管理密钥，保护密钥的保密性、完整性和可用性。
       vice_title: 了解的第一步
       children:
         - title: 产品描述
           url: "intro/intro/"
+        - title: 术语解释
+          url: "intro/glossary/"
     - title: 进阶
       content: 学习如何如何创建、管理、使用密钥管理服务
+      vice_title: 上手的第一步
       children: 
         - title: 创建密钥
           url: "quick_start/quick_start/"

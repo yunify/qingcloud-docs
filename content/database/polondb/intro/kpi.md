@@ -1,10 +1,11 @@
 ---
 title: "性能指标"
-description: Test description
+description: 本小节主要介绍 QingCloud PolonDB 的性能指标。 
+keywords: polondb 性能指标,TPC-C,TPC-B
+data: 2021-05-14T00:38:25+09:00
+weight: 6
+collapsible: false
 draft: false
-weight: 11
-enableToc: false
-keyword: PolonDB, QingCloud, 数据库
 ---
 
 
@@ -35,7 +36,7 @@ TPMC：每分钟事务处理数
 
 节点数量：1 协调器 + 4 Worker 节点 + 1 benchmarkSQL 节点
 
-* TPMC 性能数据
+### TPMC 性能数据
 
 | 连接数 | PolonDB           | PostgreSQL 单机   |
 | :----- | :---------------- | :---------------- |
@@ -72,27 +73,29 @@ QPM：每分钟查询数
 
 节点数量：1 协调器 + 8 Worker 节点 + 1 pgbench 节点
 
-* TPMC 性能数据
+### TPMC 性能数据
 
-| 连接数 | PolonDB           | PostgreSQL 单机   |
-| ------ | ----------------- | ----------------- |
+|<span style="display:inline-block;width:100px">连接数</span>| <span style="display:inline-block;width:240px">PolonDB</span>|<span style="display:inline-block;width:240px">PostgreSQL 单机</span>|
+|:------ |:---------------- |:---------------- |
 | 200    | 52.0 万（520440） | 12.4 万（124680） |
 | 400    | 54.7 万（547020） | 14.0 万（140160） |
 | 800    | 61.4 万（614160） | 13.8 万（138360） |
 | 1000   | 59.7 万（597120） | 9.2 万（92100）   |
 
-* QPM 性能数据
+### QPM 性能数据
+  
+> 只读节点可以充分发挥硬件加倍查询性能。
 
-| 连接数 | PolonDB （只读节点可以充分发挥硬件加倍查询性能） | PostgreSQL 单机   |
-| ------ | ------------------------------------------------ | ----------------- |
+| <span style="display:inline-block;width:100px">连接数</span> | <span style="display:inline-block;width:240px">PolonDB</span>| <span style="display:inline-block;width:240px">PostgreSQL 单机</span> |
+|:------ |:-------------------|:---------------- |
 | 200    | 351.7 万（3517320） + 只读节点 = 703.4 万        | 15.8 万（158940） |
 | 400    | 386.9 万（3869700） + 只读节点 = 773.3 万        | 16.2 万（162720） |
 | 800    | 355.2 万（3552060） + 只读节点 = 710.4 万        | 16.5 万（165300） |
 | 1000   | 339.5 万（3395460） + 只读节点 = 679.0 万        | 16.3 万（163860） |
 
-* 4 个 Worker 节点数据
+### 4 个 Worker 节点数据
 
-| 测试项           | PolonDB           |
+| <span style="display:inline-block;width:300px">测试项</span>          | <span style="display:inline-block;width:300px">PolonDB</span>           |
 | ---------------- | ----------------- |
 | 800 连接（TPMC） | 32.3 万（323340） |
 | 800 连接（QPM）  | 94.2 万（942600） |
