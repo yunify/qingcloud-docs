@@ -53,7 +53,7 @@ qsftpd 支持 Linux、MacOS 和 Windows 操作系统，可访问 GitHub 项目�
 qingstor:
   access_key_id: your_access_key_id
   secret_access_key: your_secret_access_key  
-host: qingstor.com
+  host: qingstor.com
   port: 443
   protocol: https
   log_level: warn
