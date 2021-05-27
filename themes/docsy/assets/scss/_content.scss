@@ -108,6 +108,17 @@
     .lead {
         margin-bottom: 1.5rem;
     }
+
+    details{
+        line-height: 2;
+        > p{
+            margin-left: 23px;
+            line-height: 1.8;
+        }
+        > summary > p{
+            display: contents;
+        }
+    }
 }
 
 .td-title {
