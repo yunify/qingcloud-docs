@@ -1,5 +1,5 @@
 ---
-title: "Multipart"
+title: "Initiate Multipart Upload"
 date: 2020-11-25T10:08:56+09:00
 description:
 collapsible: false
@@ -7,7 +7,7 @@ draft: false
 weight: 3
 ---
 
-# Initiate Multipart Upload
+
 
 用于初始化一个分段上传，该请求会返回一个Upload ID，后续在上传分段时，在请求参数中附加该 Upload ID，则表明分段属于同一个对象。该请求需要对存储空间有可写权限。
 

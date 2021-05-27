@@ -1,5 +1,5 @@
 ---
-title: "Multipart"
+title: "Complete Multipart Upload"
 date: 2020-11-25T10:08:56+09:00
 description:
 collapsible: false
@@ -7,7 +7,7 @@ draft: false
 weight: 3
 ---
 
-# Complete Multipart Upload
+
 
 当分段上传完毕，需要发送此请求结束此分段上传，从而获得一个完整的对象。未调用此接口，分段上传处于未完成的状态，此时调用 GET 请求获得该对象会返回错误。该请求需要对存储空间有可写权限。
 

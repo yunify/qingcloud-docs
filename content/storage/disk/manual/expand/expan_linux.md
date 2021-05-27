@@ -8,9 +8,10 @@ weight: 20
 keyword: 青云
 ---
 
-## 扩容云硬盘容量
+## 扩展云硬盘容量
 
-1. 登录到服务器，执行 `umount` 命令将挂载的目录卸载，然后登录到控制台，将主机与硬盘解除绑定，直至硬盘状态为可用。
+1. 登录到云服务器，执行 `umount` 命令将挂载的目录卸载，然后登录到控制台，将主机与硬盘解除绑定，直至硬盘状态为可用。
+
 
 2. 在云硬盘列表右键点击需要扩容的硬盘，选择**扩容**，弹出**扩容硬盘**界面。
 
@@ -20,160 +21,166 @@ keyword: 青云
 
 4. 将硬盘重新加载到云服务器。
 
-##  EXT 文件系统扩容
 
-### 磁盘裸设备直接初始化的扩容方法 (ext)
+##  扩展EXT 文件系统
 
-**1、扩容前的磁盘容量**
+### 扩展无分区磁盘 (ext)
 
-![图片](/storage/disk/quickstart/_images/image-1568775109191.png)
+1. 执行`df -h`查看扩容前的磁盘容量。
 
-**2、查看磁盘文件系统类型**
+   ![图片](/storage/disk/quickstart/_images/image-1568775109191.png)
 
-![图片](/storage/disk/quickstart/_images/image-1568775112136.png)
+2. 查看磁盘文件系统类型。
 
-**3、使用 `umount` 命令将扩容的磁盘从系统的目录卸载**
+   ![图片](/storage/disk/quickstart/_images/image-1568775112136.png)
 
-**4、执行以下命令，检查扩容后的分区**
+3. 使用 `umount` 命令将扩容的磁盘从系统的目录卸载。
 
-![图片](/storage/disk/quickstart/_images/image-1568775116295.png)
+4. 执行以下命令，检查扩容后的分区。
 
-**5、执行 `resize2fs` 命令扩容文件系统**
+   ![图片](/storage/disk/quickstart/_images/image-1568775116295.png)
 
-![图片](/storage/disk/quickstart/_images/image-1568775120838.png)
+5. 执行 `resize2fs` 命令扩容文件系统。
 
-**6、使用 `mount` 命令将扩容后的磁盘挂载到系统目录，并检查容量变化**
+   ![图片](/storage/disk/quickstart/_images/image-1568775120838.png)
 
-![图片](/storage/disk/quickstart/_images/image-1568775127021.png)
+6. 使用 `mount` 命令将扩容后的磁盘挂载到系统目录，并检查容量变化。
 
-###  磁盘设备存在分区，需要扩容到原有分区的方法 (ext)
+   ![图片](/storage/disk/quickstart/_images/image-1568775127021.png)
 
-**1、查看扩容前的磁盘容量**
+###  扩容磁盘原有分区 (ext)
 
-![图片](/storage/disk/quickstart/_images/image-1568775131616.png)
+1. 查看扩容前的磁盘容量。
 
-**2、使用 `umount` 命令将扩容的磁盘从系统的目录卸载**
+   ![图片](/storage/disk/quickstart/_images/image-1568775131616.png)
 
-**3、使用 parted 工具查看磁盘分区的信息**
+2. 使用 `umount` 命令将扩容的磁盘从系统的目录卸载。
 
-![图片](/storage/disk/quickstart/_images/image-1568775135401.png)
+3. 使用 parted 工具查看磁盘分区的信息。
 
-**4、输入 `unit s` ，按 `Enter` ，设置磁盘的计量单位为磁柱**
+   ![图片](/storage/disk/quickstart/_images/image-1568775135401.png)
 
-**5、输入 `p`，并回车，查看并记录分区的 Start 值**
+4. 输入 `unit s` ，按 `Enter` ，设置磁盘的计量单位为磁柱。
 
-请务必注意：删除分区并新建后，Start 值必须保持不变，否则将会引起数据丢失。
-![图片](/storage/disk/quickstart/_images/image-1568775141798.png)
+5. 输入 `p`，并回车，查看并记录分区的 Start 值。
 
-**6、执行以下命令，删除原有分区**
+   > **注意**：删除分区并新建后，Start 值必须保持不变，否则将会引起数据丢失。
 
-![图片](/storage/disk/quickstart/_images/image-1568775146683.png)
+   ![图片](/storage/disk/quickstart/_images/image-1568775141798.png)
 
-**7、执行以下命令，新建一个主分区，Start 值与原来一致，结束值 100%**
+6. 执行以下命令，删除原有分区。
 
-`mkpart primary 63s 100%`
+   ![图片](/storage/disk/quickstart/_images/image-1568775146683.png)
 
-**如果出现如下图所示的状态，请输入 Ignore**
+7. 执行以下命令，新建一个主分区，Start 值与原来一致，结束值 100%。
 
-![图片](/storage/disk/quickstart/_images/image-1568775150955.png)
+   `mkpart primary 63s 100%`
 
-**8、输入 `p` 查看现有分区信息**
+   如果出现如下图所示的状态，请输入 `Ignore`.
 
-![图片](/storage/disk/quickstart/_images/image-1568775153978.png)
+   ![图片](/storage/disk/quickstart/_images/image-1568775150955.png)
 
-**9、输入 `q` 退出 parted 分区工具**
+8. 输入 `p` 查看现有分区信息。
 
-**10、执行 `partprobe` 命令将分区表同步至文件系统**
+   ![图片](/storage/disk/quickstart/_images/image-1568775153978.png)
 
-**11、执行以下命令，检查扩容后的分区**
+9. 输入 `q` 退出 parted 分区工具。
 
-![图片](/storage/disk/quickstart/_images/image-1568775166562.png)
+10. 执行 `partprobe` 命令将分区表同步至文件系统。
 
-**12、执行 `resize2fs` 命令扩容文件系统**
+11. 执行以下命令，检查扩容后的分区。
 
-![图片](/storage/disk/quickstart/_images/image-1568775181049.png)
+    ![图片](/storage/disk/quickstart/_images/image-1568775166562.png)
 
-**13、使用 `mount` 命令将扩容后的磁盘挂载到系统目录，并检查容量变化**
+12. 执行 `resize2fs` 命令扩容文件系统。
 
-![图片](/storage/disk/quickstart/_images/image-1568775184210.png)
+    ![图片](/storage/disk/quickstart/_images/image-1568775181049.png)
 
-##  XFS 文件系统扩容介绍
+13. 使用 `mount` 命令将扩容后的磁盘挂载到系统目录，并检查容量变化。
 
-### 磁盘裸设备直接初始化的扩容方法 (xfs)
+    ![图片](/storage/disk/quickstart/_images/image-1568775184210.png)
 
-**1、扩容前的容量**
+##  扩展XFS 文件系统
 
-![图片](/storage/disk/quickstart/_images/fnLwIaSkDeorbjtM.png)
+### 扩展无分区磁盘 (xfs)
 
-**2、使用 `umount` 命令将扩容的磁盘从系统的目录卸载**
+1. 执行`df -h`查看扩容前的磁盘容量。
 
-**3、执行以下命令，检查扩容后的分区**
+   ![图片](/storage/disk/quickstart/_images/fnLwIaSkDeorbjtM.png)
 
-![图片](/storage/disk/quickstart/_images/image-1568775189304.png)
-输入结果为 0，说明正常
+2. 使用 `umount` 命令将扩容的磁盘从系统的目录卸载。
 
-**4、使用 `mount` 命令将扩容后的磁盘挂载到系统目录**
+3. 执行以下命令，检查扩容后的分区。
 
-**5、使用 `xfs_growfs` 命令扩容**
+   ![图片](/storage/disk/quickstart/_images/image-1568775189304.png)
+   输入结果为 0，说明正常
 
-![图片](/storage/disk/quickstart/_images/image-1568775190952.png)
+4. 使用 `mount` 命令将扩容后的磁盘挂载到系统目录。
 
-**6、检查扩容后的容量**
+5. 使用 `xfs_growfs` 命令扩容。
 
-![图片](/storage/disk/quickstart/_images/image-1568775196249.png)
+   ![图片](/storage/disk/quickstart/_images/image-1568775190952.png)
 
-### 磁盘设备存在分区，需要扩容到原有分区的方法 (xfs)
+6. 检查扩容后的容量。
 
-**1、查看扩容前的磁盘容量**
+   ![图片](/storage/disk/quickstart/_images/image-1568775196249.png)
 
-![图片](/storage/disk/quickstart/_images/image-1568775199434.png)
+### 扩展磁盘原有分区 (xfs)
 
-**2、使用 `umount` 命令将扩容的磁盘从系统的目录卸载**
+1. 查看扩容前的磁盘容量。
 
-**3、使用 `parted` 工具查看磁盘分区的信息**
+   ![图片](/storage/disk/quickstart/_images/image-1568775199434.png)
 
-![图片](/storage/disk/quickstart/_images/image-1568775201575.png)
+2. 使用 `umount` 命令将扩容的磁盘从系统的目录卸载。
 
-**4、输入 `unit s`，按 `Enter`，设置磁盘的计量单位为磁柱**
+3. 使用 `parted` 工具查看磁盘分区的信息。
 
-**5、输入 `p`，并回车，查看并记录分区的 Start 值**
+   ![图片](/storage/disk/quickstart/_images/image-1568775201575.png)
 
-请务必注意：删除分区并新建后，Start 值必须保持不变，否则将会引起数据丢失。
-![图片](/storage/disk/quickstart/_images/image-1568775203109.png)
+4. 输入 `unit s`，按 `Enter`，设置磁盘的计量单位为磁柱。
 
-**6、执行以下命令，删除原有分区**
+5. 输入 `p`，并回车，查看并记录分区的 Start 值。
 
-![图片](/storage/disk/quickstart/_images/image-1568775204602.png)
+   > **注意**：删除分区并新建后，Start 值必须保持不变，否则将会引起数据丢失。
 
-**7、执行以下命令，新建一个主分区，Start 值与原来一致，结束值 100%**
+   ![图片](/storage/disk/quickstart/_images/image-1568775203109.png)
 
-`mkpart primary 63s 100%`
+6. 执行以下命令，删除原有分区。
 
-**如果出现如下图所示的状态，请输入 `Ignore`**
+   ![图片](/storage/disk/quickstart/_images/image-1568775204602.png)
 
-![图片](/storage/disk/quickstart/_images/image-1568775206304.png)
+7. 执行以下命令，新建一个主分区，Start 值与原来一致，结束值 100%。
 
-**8、输入 `p` 查看现有分区信息**
+   ```
+   mkpart primary 63s 100%
+   ```
 
-![图片](/storage/disk/quickstart/_images/image-1568775207418.png)
+   如果出现如下图所示的状态，请输入 `Ignore`。
 
-**9、输入 `q` 退出 parted 分区工具**
+   ![图片](/storage/disk/quickstart/_images/image-1568775206304.png)
 
-**10、执行 `partprobe` 命令将分区表同步至文件系统**
+8. 输入 `p` 查看现有分区信息。
 
-**11、执行以下命令，检查扩容后的分区**
+   ![图片](/storage/disk/quickstart/_images/image-1568775207418.png)
 
-![图片](/storage/disk/quickstart/_images/image-1568775209585.png)
+9. 输入 `q` 退出 parted 分区工具。
 
-**12、执行 `mount` 命令将分区挂载到系统目录**
+10. 执行 `partprobe` 命令将分区表同步至文件系统。
 
-[root@i-oemhrgx8 ~]# `mount /dev/sdb1 /opt`
+11. 执行以下命令，检查扩容后的分区。
 
-**13、执行 `xfs_growfs` 命令扩容文件系统**
+    ![图片](/storage/disk/quickstart/_images/image-1568775209585.png)
 
-![图片](/storage/disk/quickstart/_images/image-1568775211498.png)
+12. 执行 `mount` 命令将分区挂载到系统目录。
 
-**14、使用 `df` 命令检查容量变化**
+    ```
+    mount /dev/sdb1 /opt
+    ```
 
-![图片](/storage/disk/quickstart/_images/image-1568775213026.png)
+13. 执行 `xfs_growfs` 命令扩容文件系统。
 
+    ![图片](/storage/disk/quickstart/_images/image-1568775211498.png)
+
+14. 使用 `df` 命令检查容量变化。
+
+    ![图片](/storage/disk/quickstart/_images/image-1568775213026.png)
