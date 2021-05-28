@@ -1,7 +1,7 @@
 ---
 title: "验证域名解析是否生效"
 date: 2021-04-07T00:38:25+09:00
-weight: 2
+weight: 8
 description: test
 draft: false
 ---
@@ -16,7 +16,7 @@ draft: false
 
 在 QingCloud DNS 管理面板配置 `simple.example.com` 解析记录如图所示。
 
-![域名验证配置](../_images/dns_rr_1.png)
+![域名验证配置](../../../_images/dns_rr_1.png)
 
 > 注意上方页面提示 `example.com` 的域名服务器地址为**`ns3.routewize.com`** 和 **`ns4.routewize.com`**。
 
