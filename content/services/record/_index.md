@@ -3,6 +3,7 @@ title: "网站备案"
 linkTitle: "网站备案"
 weight: 90
 collapsible: true
+draft: true
 type: "product"
 
 section1:
@@ -15,35 +16,35 @@ Section2:
   title: 用户指南
   children:
     - title: 最新动态
-      content: 最新动态
+      content: 网站备案功能最新动态
       url: "news/product_news/"
 
     - title: 产品简介
-      content: 产品简介
+      content: 网站备案功能简介、术语解释、类型及限制
       url: "intro/intro/"
 
     - title: 计费指南
-      content: 计费指南
+      content: 青云提供免费备案服务
       url: "billing/bill/"
 
     - title: 快速入门
-      content: 快速入门
+      content: 如何快速完成网站备案
       url: "quickstart/quick_start/"
 
     - title: 备案前准备
-      content: 备案前准备
+      content: 备案之前请认真阅读管局备案规则，并按要求准备资料
       url: "prepare/regist/"
 
     - title: 备案操作指南
-      content: 如何进行备案操作。
+      content: 如何进行首次备案、新增接入等备案操作
       url: "manual/first_filing/"
 
     - title: 公安备案和经营性备案
-      content: 公安备案和经营性备案
+      content: 公安备案和经营性备案介绍
       url: "filing/public_filing/"
 
     - title: 政策法规
-      content: 公安备案和经营性备案
+      content: 网站备案相关的政策法规
       url: "policy/effective/"
 
 
@@ -68,7 +69,7 @@ section4:
 
     - title: 入门
       content: 备案准备
-      vice_title: 上手的第一步
+      vice_title: 入门的第一步
       children: 
         - title: 注册青云账号并实名认证
           url: "prepare/regist/"
@@ -115,7 +116,6 @@ section4:
 
 
 ---
-
 
 
 

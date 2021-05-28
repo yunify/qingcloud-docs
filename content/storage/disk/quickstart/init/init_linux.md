@@ -13,7 +13,6 @@ keyword: 青云
 1. 登录到云服务器。
 
 2. 使用 `lsblk` 命令查看磁盘设备名。
-
    ```
    # lsblk -l
    NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
