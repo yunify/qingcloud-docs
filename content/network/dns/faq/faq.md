@@ -1,5 +1,5 @@
 ---
-title: "常见问题"
+title: "DNS 常见问题"
 date: 2021-04-07T00:38:25+09:00
 description: dns 常见问题
 draft: false
@@ -9,7 +9,7 @@ weight: 10
 
 
 
-## QingCloud DNS 支持的解析记录类型有哪些？
+## DNS 支持的解析记录类型有哪些？
 
 ### 解析类型
 
@@ -89,7 +89,7 @@ QingCloud DNS 解析记录 TTL 可以选择1分钟、10分钟、2小时、12小�
 
     若您直接添加子域名，需要先进行主域所有权验证，通过验证后方可添加。
 
-## 为什么NameServer已修改，但接管状态仍未变化？
+## 为什么 NameServer 已修改，但接管状态仍未变化？
 
 - 请先确保您的域名 DNS 服务器地址已经修改为 QingCloud DNS 服务器：`ns1.routewize.com` 和 `ns2.routewize.com` 。
 
