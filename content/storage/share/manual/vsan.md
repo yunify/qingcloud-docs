@@ -1,8 +1,9 @@
 ---
-title: "Virtual SAN 共享存储"
+title: "Virtual SAN"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
+weight: 20
 enableToc: false
 keyword: 青云
 ---
