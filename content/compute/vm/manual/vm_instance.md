@@ -10,19 +10,19 @@ draft: false
 
 登录青云[终端控制台](https://console.qingcloud.com/)
 
-### 步骤一，选择镜像
+### 选择镜像
 
 ![](../../_images/create_instance__1.png)
 
-### 步骤二，选择合适的配置
+### 选择合适的配置
 
 ![](../../_images/create_instance__2.png)
 
-### 步骤三，网络配置
+### 网络配置
 
 ![](../../_images/create_instance__3.png)
 
-### 步骤四，其它配置
+### 其它配置
 
 ![](../../_images/create_instance__4.png)
 
@@ -38,7 +38,7 @@ draft: false
 
 ### 操作指南
 
-1、登录青云[终端控制台](https://console.qingcloud.com/)，切换至“计算”--“云服务器”。在要克隆的云服务器上点击鼠标右键，在弹出的菜单中选择“克隆云服务器”。
+1、登录青云[终端控制台](https://console.qingcloud.com/)，选择 **计算** > **云服务器**，进入**云服务器控制台**。在要克隆的云服务器上点击鼠标右键，在弹出的菜单中选择“克隆云服务器”。
 
 ![](../../_images/clone-01.png)
 
