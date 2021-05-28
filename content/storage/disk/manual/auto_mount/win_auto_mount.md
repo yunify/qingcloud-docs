@@ -1,8 +1,9 @@
 ---
-title: "自动挂载Windows硬盘"
+title: "自动挂载 Windows 硬盘"
 description: test
 draft: false
 weight: 20
+keyword: 青云
 ---
 
 Windows 云服务器挂载硬盘之后，如果云服务器发生重启，硬盘可能没法自动挂载，需要人工登录并进行手动 “联机” 操作， 以下方法可以帮助您设置硬盘自动挂载。
