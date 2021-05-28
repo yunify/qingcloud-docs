@@ -1,10 +1,10 @@
 ---
-title: "网络流量镜像 "
-linkTitle: "网络流量镜像 "
+title: "管理网络流量镜像"
+linkTitle: "管理网络流量镜像"
 date: 2020-02-28T10:08:56+09:00
 description:
 draft: false
-weight: 5
+weight: 60
 
 ---
 

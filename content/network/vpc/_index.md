@@ -1,12 +1,12 @@
 ---
-title: "VPC 专属私有网络"
-linkTitle: "VPC 专属私有网络"
-weight: 10
+title: "VPC 网络"
+linkTitle: "VPC 网络"
+weight: 1
 collapsible: true
 type: "product"
 
 section1:
-  title: VPC 专属私有网络
+  title: VPC 网络
   vice_title: VPC 网络是 QingCloud 环境内用户专属的大型网络空间。在 VPC 网络内，您可以自定义 IP 地址范围、创建子网，并在子网内创建云服务器/数据库/大数据等各种云资源。
   # todo add qingstor introduction video
   # video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
@@ -20,20 +20,20 @@ Section2:
     #   url: "/storage/object-storage/news/history"
 
     - title: 产品简介
-      content: 产品简介
-      url: "/network/vpc/intro/intro"
+      content: 什么是VPC网络
+      url: "/network/vpc/intro/10_intro"
 
     - title: 计费指南
-      content: 计费指南
+      content: VPC网络如何计费
       url: "/network/vpc/billing/price"
 
     - title: 快速入门
       content: 快速入门
-      url: "/network/vpc/quick-start/base"
+      url: "/network/vpc/quick-start/10_qs_net_plan"
 
     - title: 操作指南
       content: 操作指南
-      url: "/network/vpc/manual/base"
+      url: "/network/vpc/manual/vpcnet/10_create_vpc"
 
     - title: 最佳实践
       content: 最佳实践
@@ -65,7 +65,7 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品简介
-          url: "/network/vpc/intro/intro"
+          url: "/network/vpc/intro/10_intro"
 
         - title: 产品优势
           url: "/network/vpc/intro/intro/#vpc-产品优势"
@@ -74,10 +74,9 @@ section4:
       vice_title: 上手的第一步
       children:
         - title: 创建VPC
-          url: "/network/vpc/manual/base"
+          url: "/network/vpc/manual/vpcnet/10_create_vpc"
 
 ---
-
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->
 <!-- section1 为产品index页面 主标题 副标题 video  video_img为视频图片  -->
