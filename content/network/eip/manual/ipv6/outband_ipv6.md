@@ -1,21 +1,30 @@
 ---
 title: "外部绑定公网 IP"
 description: test
+date: 2021-05-26T15:08:56+09:00
 weight: 10
 draft: false
 ---
 
-针对获取到私有网络 IPv6 地址的云服务器，如果想要接入到公网，只需开通 IPv6 的公网访问即可。方法是在云服务器上点击右键，在弹出菜单中依次选择：“公网 IPv6
-” -- “ IPv6 接入公网”，在弹出的对话框中，为 IPv6 公网 IP 选择计费模式，点击“确定”即可。
+## 操作场景
 
-![](../../../_images/log-ipv6-connect.png)
+云服务器通过 VPC的 DHCP 获取 IPv6 地址，然后接入公网，使云服务器同时具备公网和 VPC 内网的访问能力。
 
-接入公网以后，在公网 IP 页面，可查看接入公网的 IPv6 地址详情，以及计费和监控的具体信息：[_IPv6公网 IP_](../ipv6_other_operation/)。
+## 前提条件
 
-![](../../../_images/log-ipv6-eip.png)
+- 已创建开启 IPv6 的VPC网络及私有网络。具体操作可参见[创建支持 IPv4/ IPv6 双栈的网络](/network/eip/quickstart/ipv6_quick_start/#创建支持-ipv4-ipv6-双栈的网络)。
 
-与 IPv4 公网 IP 一样， IPv6 的公网 IP 支持“带宽计费”和“流量计费”两种模式。
+- 已在IPV6 私有网络中创建支持 IPv6 自动化配置的云服务器。具体操作可参见[创建云服务器并加入到启用IPv6的私有网络](/network/eip/quickstart/ipv6_quick_start/#创建云服务器并加入到启用-ipv6-的私有网络)。
 
-我们秉持 IPv6 协议本身“地址无限”的理念， IPv6 地址免费，只对使用流量和带宽收费。
+## 操作步骤
 
+1. 右键点击云服务器，在弹出菜单中依次选择**公网 IPv6** > I**Pv6 接入公网**。
+
+2. 在弹出的对话框中，为 IPv6 公网 IP 选择计费模式，点击**提交**。
+
+   <img src="../../../_images/log-ipv6-connect.png" style="zoom:80%;" />
+
+   接入公网后，可以在 **公网IP** >**公网IPv6** 页面中看到接入公网的 IPv6 地址详情，点击ID号，可进一步查看公网 IP 的计费及监控信息。
+
+   
 

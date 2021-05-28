@@ -1,7 +1,7 @@
 ---
 title: "公网 IP"
 linkTitle: "公网 IP"
-weight: 40
+weight: 10
 collapsible: true
 type: "product"
 
