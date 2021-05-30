@@ -1,5 +1,5 @@
 ---
-title: "Cnetos6 无法使用yum解决办法"
+title: "CentOS 6 无法使用yum解决办法"
 date: 2021-05-16T21:37:25+09:00
 description: Test description
 weight: 50
