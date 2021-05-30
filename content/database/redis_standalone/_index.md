@@ -25,7 +25,7 @@ Section2:
       url: "quickstart/quick_start/"
 
     - title: 操作指南
-      content: 学习上手如何管理 Redis Standalone 集群，以及如何使用 Redis Standalone 提供的相关服务等。
+      content: 学习上手管理和使用 Redis Standalone 集群
       url: "manual/cluster_info/"
 
     - title: 最佳实践

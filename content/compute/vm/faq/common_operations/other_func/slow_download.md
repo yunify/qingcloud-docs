@@ -19,7 +19,8 @@ draft: false
 那么如何知晓自己申请的到的公网IP的速度是否符合正常的速度呢，我们可以通过如下方法进行测试，此处我们仍然以申请了一个5Mbps的公网IP，分配给云服务器为例：
 
 ## Windows云服务器测试公网IP网速
-登陆Windows云服务器，打开浏览器输入如下网站URL地址[www.speedtest.cn](www.speedtest.cn)，点击【测试】，等待测速结束即可获取到公网IP的上下行带宽，参考如下截图：
+登录Windows云服务器，打开浏览器输入如下网站URL地址[www.speedtest.cn](https://www.speedtest.cn/)，点击【测试】，等待测速结束即可获取到公网IP的上下行带宽，参考如下截图：
+
 
 ![Win测网速](/compute/vm/_images/speetest_of_winOS.png)
 
