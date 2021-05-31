@@ -52,7 +52,6 @@ Windows云服务器可以访问公网
 
 - **操作场景**
 
-
 WinSCP工具可以实现在本地与远程计算机之间安全地复制文件。通过 WinSCP 可以直接使用服务器账户密码访问服务器，无需在服务器端做任何配置。
 通常本地Windows计算机将文件上传至Linux服务器一般会采用WinSCP工具。本节为您介绍本地Windows计算机使用WinSCP工具，上传文件至Linux云服务器的操作方法。本例中云服务器操作系统为CentOS。
 
@@ -88,7 +87,6 @@ WinSCP工具可以实现在本地与远程计算机之间安全地复制文件�
 
 - **操作步骤**
 
-
 **上传文件**
 
 #### 3.1.在本地Linux操作系统云服务器上执行以下命令，传输文件到Linux操作系统云服务器。
@@ -117,5 +115,50 @@ scp root@139.198.x.x:/test.txt /home
 根据提示输入登录密码，即可完成文件下载。
 ```
 
+### 4.本地Windows云服务器使用Xftp上传文件到绑定秘钥的Ubuntu云服务器
 
+Xftp是一个功能强大的[SFTP](https://baike.baidu.com/item/SFTP/1184182)、[FTP](https://baike.baidu.com/item/FTP/13839) 文件传输软件。本例中云服务器操作系统为Ubuntu，并且绑定了ssh秘钥
 
+**操作步骤**
+
+#### 4.1.下载并安装Xftp
+
+#### 4.2.启动Xftp，启动后界面如下：
+
+<img src="/compute/vm/_images/upload_file_06.png" width="60%" height="40%">
+
+填写说明：
+
+- 名称：随意填写，方便记忆
+- 主机：云服务器的公网 IP。登录管理控制台即可查看对应云服务器的公网 IP。
+- 协议：默认sftp即可
+- 端口：默认 22。
+- 方法：按照实际情况填写。(本示例选择Public Key)
+
+#### 4.3.点击"确定"，进入到"会话"界面
+
+<img src="/compute/vm/_images/upload_file_07.png" width="60%" height="40%">
+
+#### 4.4.选中"会话"，点击"连接"，输入用户名root(ssh秘钥的用户都是root)
+
+!<img src="/compute/vm/_images/upload_file_08.png" width="60%" height="40%">
+
+#### 4.5.点击"确定"，选中"Public Key"-浏览-用户秘钥
+
+<img src="/compute/vm/_images/upload_file_09.png" width="60%" height="40%">
+
+#### 4.6.导入ssh秘钥私钥
+
+<img src="/compute/vm/_images/upload_file_10.png" width="60%" height="40%">
+
+#### 4.7.选中私钥，点击"确定"
+
+<img src="/compute/vm/_images/upload_file_11.png" width="60%" height="40%">
+
+#### 4.8.点击"确定"
+
+<img src="/compute/vm/_images/upload_file_12.png" width="60%" height="40%">
+
+#### 4.9.登录成功之后，您可以选择左侧本地计算机的文件，拖拽到右侧的远程云服务器，完成文件上传到云服务器。
+
+<img src="/compute/vm/_images/upload_file_13.png" width="60%" height="40%">
