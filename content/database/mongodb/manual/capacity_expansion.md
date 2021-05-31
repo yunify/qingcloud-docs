@@ -15,10 +15,12 @@ draft: false
 
 ![](../../_images/scale1.png)
 
-注解：扩容需要在开机状态下进行，扩容会导致重新选主，请在业务低峰时进行
+> **注意**
+> 
+> 扩容需要在开机状态下进行，扩容会导致重新选主，请在业务低峰时进行。
 
 ## 硬盘自动伸缩
 
-Mongo 应用数据盘被占满会导致 mongod 服务进程挂掉
+Mongo 应用数据盘被占满会导致 mongod 服务进程异常。
 
-我们在 _MongoDB 4.0.3 QingCloud 1.4.0_ 版本中新增了「应用存储空间」自动伸缩的功能，您可以参照 [自动伸缩](https://docs.qingcloud.com/product/operation/autoscaling) 来实现您的自动伸缩自定义
+**MongoDB 4.0.3 QingCloud 1.4.0** 版本新增**应用存储空间**自动伸缩的功能，可自定义 [自动伸缩](https://docs.qingcloud.com/product/operation/autoscaling) 。
