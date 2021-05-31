@@ -1,5 +1,5 @@
 ---
-title: "键值数据库 Redis"
+title: "键值数据库 Redis Cluster"
 linkTitle: "Redis Cluster"
 weight: 08
 collapsible: true
@@ -25,11 +25,11 @@ Section2:
       url: "quickstart/quick_start/"
 
     - title: 操作指南
-      content: 学习上手如何管理 Redis Cluster 集群，以及如何使用 Redis Cluster 提供的相关服务等。
+      content: 学习上手管理和使用 Redis Cluster 集群
       url: "manual/cluster_info/"
 
     - title: 最佳实践
-      content: RadonDB 的最佳实践
+      content: Redis Cluster 的最佳实践
       url: "best-practices/data_transfer/"
 
 section3:

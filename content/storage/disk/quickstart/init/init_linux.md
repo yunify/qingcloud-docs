@@ -13,15 +13,14 @@ keyword: 青云
 1. 登录到云服务器。
 
 2. 使用 `lsblk` 命令查看磁盘设备名。
-
-  ```
-  # lsblk -l
-  NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-  sdb    8:16   0  10G  0 disk 
-  sda    8:0    0  20G  0 disk 
-  sda1   8:1    0  20G  0 part /
-  sdd    8:48   0   1G  0 disk [SWAP]
-  ```
+   ```
+   # lsblk -l
+   NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+   sdb    8:16   0  10G  0 disk 
+   sda    8:0    0  20G  0 disk 
+   sda1   8:1    0  20G  0 part /
+   sdd    8:48   0   1G  0 disk [SWAP]
+   ```
 
 3. 使用 `mkfs` 命令对磁盘进行格式化。
 

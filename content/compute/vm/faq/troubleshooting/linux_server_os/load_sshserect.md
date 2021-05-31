@@ -1,6 +1,6 @@
 ---
 
-title: " 云服务器加载ssh秘钥失败"
+title: " 云服务器加载SSH秘钥失败"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 weight: 20
