@@ -10,7 +10,7 @@ enableToc: false
 
 在 Linux 的使用过程中，有时会遇到文件系统只读的情况，写入时出现 “Read-only file system” 的报错，无法进行写操作。
 
-![](../../../_images/the_solution_of_read-only_file_system_1.png)
+![](../../../_images/the_solution_of_read_only_file_system_1.png)
 
 ## 处理方法
 
@@ -18,9 +18,9 @@ enableToc: false
 
 右键云服务器---创建备份。
 
-![](../../../_images/the_solution_of_read-only_file_system_2.png)
+![](../../../_images/the_solution_of_read_only_file_system_2.png)
 
-![](../../../_images/the_solution_of_read-only_file_system_3.png)
+![](../../../_images/the_solution_of_read_only_file_system_3.png)
 
 ### 2.重新挂载
 
@@ -40,7 +40,7 @@ mount -o remount,rw /dev/vdc
 mount
 ```
 
-![](../../../_images/the_solution_of_read-only_file_system_4.png)
+![](../../../_images/the_solution_of_read_only_file_system_4.png)
 
 #### 2)取消挂载硬盘
 
