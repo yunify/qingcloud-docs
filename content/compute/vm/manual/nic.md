@@ -1,62 +1,57 @@
 ---
-title: "云服务器网卡"
+title: "主机网卡"
 description: test
 draft: false
 ---
 
-# QingCloud 云服务器网卡
+# QingCloud 主机网卡
 
 ## 介绍
 
-对于弹性裸金属服务器来说，网卡就是服务器的网络设备，用于接入以太网络，和其它计算机进行通信。QingCloud 网卡是基于虚拟化技术模拟的网卡设备，此设备是基于虚拟机所在的物理设备。QingCloud 云平台可以将集群内的虚拟网络统一起来，进行再分配。用户毋需关心具体的网卡在什么位置，有需要申请、挂接即可。
+对于物理主机来说，网卡就是服务器的网络设备，用于接入以太网络，和其它计算机进行通信。QingCloud 网卡是基于虚拟化技术模拟的网卡设备，此设备是基于虚拟机所在的物理设备。QingCloud 云平台可以将集群内的虚拟网络统一起来，进行再分配。用户毋需关心具体的网卡在什么位置，有需要申请、挂接即可。
 
 
 > 限制说明
 >
-> 每个 QingCloud 云服务器最多可以绑定 64 张网卡（其中主网卡 1 张，从网卡 63 张），而每个中网络最多可以有 252 张网卡。
+> 每个 QingCloud 主机最多可以绑定 64 张网卡（其中主网卡 1 张，从网卡 63 张），而每个中网络最多可以有 252 张网卡。
 
-## 操作步骤
+## 使用操作
 
-### 前提条件
+登录[QingCloud 云平台控制台](https://console.qingcloud.com/sh1a/nics/)，选择区域Region，在 **计算** --> **网卡** 页面中，会看到如下的操作界面：
+
+![](../_images/nic_ui.png)
+
+### 前提
 
 在进行申请网卡操作之前，需要先建立一个私有网络：
 
-1. 在**云服务器控制台**左侧导航栏，单击**网络** > **私有网络**，然后点击 **创建** 按钮。
+在控制台上选择 **网络**，选中 **私有网络**，然后点击 **创建** 按钮：
 
-![](../../_images/nic_new_vxnet.png)
+![](../_images/nic_new_vxnet.png)
 
-2. 点击右键，将创建的私有网络加入到某个具体的VPC网络，如下图所示。
+这里我们创建一个名称为```create-nic```的私有网络，可以加入到某个具体的VPC网络。
 
-![](../../_images/nic_vxnet_add_vpc.png)
+![](../_images/nic_vxnet_add_vpc.png)
 
-![](../../_images/nic_vxnet_add_vpc_1.png)
+### 创建
 
-### 创建云服务器网卡
+在 **计算** --> **网卡** 页面中，然后点击 **申请**：
 
-1. 登录青云[终端控制台](https://console.qingcloud.com/)，选择 **计算** > **云服务器**，进入**云服务器控制台**。
-2. 在**云服务器控制台**左侧导航栏，单击**计算** > **网卡**。如下所示：
+![](../_images/nic_request_nic.png)
 
-![](../../_images/nic_ui.png)
+此时，需要将新申请的网卡加入到刚刚建立的私有网络 ```create-nic``` 中，如下图所示：
 
-3. 在 **计算** > **网卡** 页面中，点击 **申请**，创建元服务器网卡。
+![](../_images/nic_allocation_vxnet_to_nic.png)
 
-![](../../_images/nic_request_nic.png)
+点击提交，然后返回到网卡申请对话框，此时需要为其分配一个IP地址：
 
-4. 点击**选择私有网络**，将新申请的网卡加入到刚刚建立的私有网络中，如下图所示。
+![](../_images/nic_allocation_internal_ip.png)
 
-![](../../_images/nic_allocation_vxnet_to_nic.png)
-
-5. 点击提交，然后返回到网卡申请对话框，此时需要为其分配一个IP地址：
-
-![](../../_images/nic_allocation_internal_ip.png)
-
-6. 点击提交。
+点击提交。
 
 ### 挂载
 
-建立网卡是为了有效的使用它，那么接下来就将刚才建立的网卡（从）分配到具体的云服务器中。
-
-1. 有一台QingCloud云服务器（操作系统为Ubunt 16.04），只有一张网卡。
+建立网卡是为了有效的使用它，那么接下来就将刚才建立的网卡（从）分配到具体的主机中。现在假设有一台QingCloud主机（操作系统为Ubunt 16.04），其只有一张网卡：
 
 ```
 root@hosta:~# ifconfig
@@ -79,14 +74,11 @@ lo        Link encap:Local Loopback
           RX bytes:31870809 (31.8 MB)  TX bytes:31870809 (31.8 MB)
 ```
 
-2. 登录青云[终端控制台](https://console.qingcloud.com/)，选择 **计算** > **云服务器**，进入**云服务器控制台**。
-3. 在**云服务器控制台**左侧导航栏，单击**计算** > **网卡**。选中刚刚创建的网卡，选择操作 **分配到云服务器**：
+此时，回到网卡的界面，选中刚刚创建的网卡 ```Nic```，然后，选择操作 **分配到主机**：
 
-![](../../_images/nic_allocation_to_host.png)
+![](../_images/nic_allocation_to_host.png)
 
-![](../../_images/nic_allocation_to_host_1.png)
-
-4. 绑定成功之后，我们回到云服务器操作界面，再执行 ```ifconfig``` 的时候，输出内容如下所示。
+稍等几秒，绑定成功之后，我们回到主机操作界面，再执行 ```ifconfig``` 的时候，输出内容如下：
 
 ```
 root@hosta:~# ifconfig
@@ -118,7 +110,7 @@ eth1      Link encap:Ethernet  HWaddr 52:54:12:ec:11:d1
 
 ```
 
-5. 测试网络可用性，以及网关输出，如下所示。
+测试网络可用性，以及网关输出：
 
 ```
 root@hosta:~# route -n
@@ -135,7 +127,7 @@ PING 172.16.1.1 (172.16.1.1) 56(84) bytes of data.
 
 ```
 
-6. 添加网卡成功，如果有更多添加网卡的需求，请按照上面步骤配置即可，或者参考[QingCloud API文档网卡部分](https://docsv3.qingcloud.com/development_docs/api/command_list/nic/attach_nics/)。
+恭喜你，添加网卡成功，如果有更多添加网卡的需求，请按照上面步骤配置即可，或者参考[QingCloud API文档网卡部分](https://docsv3.qingcloud.com/development_docs/api/command_list/nic/attach_nics/)。
 
 ## 应用场景
 
