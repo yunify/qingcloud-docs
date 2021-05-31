@@ -64,7 +64,7 @@ Object 命名规范:
 |-----------|---------|-------------------------------------------------|
 | 北京3区-A  | pek3a   | `https://mybucket1.pek3a.qingstor.com/myobject` |
 | 上海1区-A  | sh1a    | `https://mybucket2.sh1a.qingstor.com/myobject`  |
-| 北京3区-B  | pek3B   | `https://mybucket3.pek3b.qingstor.com/myobject` |
+| 北京3区-B  | pek3b   | `https://mybucket3.pek3b.qingstor.com/myobject` |
 | 广东2区    | gd2     | `https://mybucket4.gd2.qingstor.com/myobject`   |
 | 雅加达区   | ap3     | `https://mybucket5.ap3.qingstor.com/myobject`   |
 

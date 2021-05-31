@@ -1,6 +1,5 @@
 ---
-title: "httpd服务配置ssl"
-date: 2021-05-18T10:28:25+09:00
+title: "httpd 服务配置SSL"
 description: Test description
 weight: 50
 draft: false
@@ -8,7 +7,7 @@ enableToc: false
 ---
 
 
-## 1.在服务器上部署httpd服务（ubuntu为例）
+## 1.在服务器上部署httpd服务（Ubuntu为例）
 
 **1.1 部署httpd服务**
 
@@ -31,9 +30,9 @@ tcp    LISTEN   0    128      *:80  *:*   users:(("apache2",pid=4203,fd=4),("apa
 
 ```
 
-## 2. 配置安装并启用httpd所需的ssl相关组件
+## 2. 配置安装并启用httpd所需的SSL相关组件
 
-### 2.1 安装httpd相关ssl组件，并启用相关模块
+### 2.1 安装httpd相关SSL组件，并启用相关模块
 
 ```
 #ubuntu apt安装会自动安装所需组件，centos还需运行如下命令安装组件：yum install mod_ssl openssl
@@ -48,7 +47,7 @@ Module socache_shmcb already enabled
 Module ssl already enabled                   #这一行表示ssl模块已启用
 ```
 
-### 2.2 配置httpd的ssl
+### 2.2 配置httpd的SSL
 
 创建目录/etc/apache2/ssl,并将申请到的域名证书复制进来。
 
@@ -87,11 +86,9 @@ root@web:/etc/apache2/sites-available# ss -nutlp | grep 443
 tcp    LISTEN   0        128         *:443     *:*      users:(("apache2",pid=20985,fd=6),("apache2",pid=20984,fd=6),("apache2",pid=20981,fd=6))
 ```
 
-## 3 验证
+## 3. 验证
 
 在浏览器中访问证书中的域名<img src="../../_images/https.png" width="100%" height="60%">
 
-## 注意：
-
-这里由于是自签证书，所浏览器认为是不安全的。正式使用的时候需要到相关机构签发ssl证书。签发网址：https://console.qingcloud.com/ssl_certificates
+`注意:这里由于是自签证书，所浏览器认为是不安全的。正式使用的时候需要到相关机构签发SSL证书。签发网址：https://console.qingcloud.com/ssl_certificates`
 
