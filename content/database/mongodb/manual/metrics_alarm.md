@@ -26,7 +26,7 @@ draft: false
 
 - MongoDB 连接数
 
-_MongoDB 4.0.3 QingCloud 1.4.0_ 版本新增了以下监控项
+**MongoDB 4.0.3 QingCloud 1.4.0**_** 及以上版本新增以下监控项。
 
 - WIREDTIGER 内存状态
 
