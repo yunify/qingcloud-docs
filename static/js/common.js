@@ -41,7 +41,7 @@ $(function(){
 			var last = url.substr(start,1);
 			if(last != '/'){
 				//只有青云的链接才加
-				if(url.indexOf('http') == '-1' || url.indexOf('qingcloud') != '-1'){
+				if(url.indexOf('http') == '-1' || url.indexOf('docsv3.qingcloud') != '-1'){
 					$(this).attr('href',url+'/');
 				}
 			}
@@ -49,7 +49,7 @@ $(function(){
 		var reg = new RegExp(/.+#/);
 		if(url != null && url != '' && url != 'undefined' && url.indexOf('#') != '-1' && url.indexOf('/#') == '-1' && reg.test(url)){
 			//只有青云的链接才加
-			if(url.indexOf('http') == '-1' || url.indexOf('qingcloud') != '-1'){
+			if(url.indexOf('http') == '-1' || url.indexOf('docsv3.qingcloud') != '-1'){
 				$(this).attr('href',url.replace('#','/#'));
 			}
 		}
