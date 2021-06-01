@@ -1,5 +1,5 @@
 ---
-title: "主机类型"
+title: "云服务器类型"
 description: test
 draft: false
 weight: 15
