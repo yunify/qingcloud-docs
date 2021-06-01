@@ -1,13 +1,16 @@
 ---
 title: "清理 MySQL binlog 日志"
-description:
-draft: false
+description: 本小节主要介绍如何清理 MySQL Plus binlog 日志。 
+keywords: mysql plus 日志清理, binlog 日志 
+data: 2021-05-14T00:38:25+09:00
 weight: 2
+collapsible: false
+draft: false
 ---
 
 当 MySQL Plus 集群的磁盘使用率大于95%后，集群会显示异常，大部分情况下是因为 binlog 日志过大导致。
 
-可参考如下方案处理。
+本小节主要介绍如何清理 binlog 日志。
 
 ## 步骤一：选择扩容节点磁盘容量
 

@@ -1,9 +1,12 @@
 ---
 title: "计费说明"
-description: test
+description: 本小节主要介绍 QingCloud ChronuDB 计费说明。 
+keywords: chronusdb 计费说明, 
+data: 2021-05-14T00:38:25+09:00
+weight: 1
+collapsible: false
 draft: false
 ---
-
 
 
 ## 充值与计费
@@ -12,7 +15,7 @@ draft: false
 
 青云执行按用量收费原则。您只需为使用的资源付费。费用按秒计算，且不设最低消费指标。
 
-您随时可以在 WEB 控制台中查询消费情况。
+您随时可以在 Web 控制台中查询消费情况。
 
 ## 余额不足提醒
 
