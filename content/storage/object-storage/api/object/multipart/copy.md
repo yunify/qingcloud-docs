@@ -1,5 +1,5 @@
 ---
-title: "Multipart"
+title: "Copy Object Part"
 date: 2020-11-25T10:08:56+09:00
 description:
 collapsible: false
@@ -7,7 +7,7 @@ draft: false
 weight: 3
 ---
 
-# Copy Object Part
+
 
 用于从源存储空间复制一个对象到一个分段，请求参数需要携带初始化分段上传阶段得到的 Upload ID。该请求需要对存储空间有可写权限。
 
