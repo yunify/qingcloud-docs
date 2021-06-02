@@ -8,7 +8,7 @@ type: "product"
 section1:
   title: MySQL Plus
   vice_title: QingCloud MySQL Plus 是一款基于 MySQL 提供的数据库服务，支持一主多从高可用架构，集成 InnoDB + TokuDB 双存储引擎，支持自动备份、监控告警、自动扩容等管理功能。
-  video: "https://pek3a.qingstor.com/workshop/CloudOperation_100P003C201908_MySQLPlus%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8.mp4"
+  video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_myqslplus.mp4"
   video_img: "/images/video.png"
 
 Section2:
