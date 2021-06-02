@@ -16,7 +16,7 @@ keyword: 青云，硬盘
 
 ## 创建硬盘
 
-请参见[创建云硬盘](/storage/disk/quickstart/create_disk/)。
+请参见[购买硬盘](/storage/disk/quickstart/create_disk/)。
 
 ## 修改硬盘属性
 

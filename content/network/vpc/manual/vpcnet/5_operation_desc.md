@@ -13,7 +13,7 @@ weight: 5
 
 如本文开头所说，在 VPC 网络内，您可以自定义 IP 地址范围，且由管理路由器来负责 VPN /隧道/ DNS /端口转发等管理功能，所以在创建 VPC 时，需要设置这两部分属性。
 
-<img src="/network/vpc/_images/501010_创建VPC_包年月.png" alt="501010_创建VPC_包年月" style="zoom:60%;" />
+<img src="/network/vpc/_images/501010_创建VPC1.0.png" alt="501010_创建VPC1.0" style="zoom:60%;" />
 
 其中：
 
