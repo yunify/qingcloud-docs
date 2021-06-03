@@ -11,7 +11,7 @@ enableToc: false
 
 ●Ubuntu Server 20配置多网卡策略，可参考如下方法。
 
-##1.检查服务
+## 1.检查服务
 
 ●Ubuntu在18版本以后加入了Netplan，如果启用第二个网卡需要在Netplan注册。本示例系统版本：Ubuntu Server 20.04.1 LTS 64bit
 
@@ -40,10 +40,10 @@ sudo apt-get update
 ●登录控制台申请网卡，并添加到主机
 
 
-![图片](/content/compute/vm/faq/_images/ubuntu20_1.png)
-![图片](/content/compute/vm/faq/_images/ubuntu20_2.png)
+![图片](../../_images/ubuntu20_1.png)
+![图片](../../_images/ubuntu20_2.png)
 
-●登录到主机查看网卡ip信息，eth1此时没有获取到ip，需要配置下面网卡信息后才会获取到。
+●登录到主机查看网卡IP信息，eth1此时没有获取到IP，需要配置下面网卡信息后才会获取到。
 
 ```
  # ip a
@@ -83,7 +83,7 @@ network:
 
 ```
 
-●执行sudo netplan apply 重启服务，查看网卡eth1网卡获取ip信息
+●执行sudo netplan apply 重启服务，查看网卡eth1网卡获取IP信息
 
 ```
 

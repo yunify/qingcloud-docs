@@ -1,5 +1,5 @@
 ---
-title: "如何配置ntp服务"
+title: "如何配置NTP服务"
 date: 2021-05-18T14:30:25+09:00
 description: Test description
 weight: 50
@@ -48,5 +48,5 @@ NTP服务的时间同步间隔默认是5分钟，您可以根据业务需求自�
 
 <img src="../../_images/ntp/ntptime.png" width="60%" height="60%">
 
-**1.5 重启**服务器**或者重启**ntp**服务【重启方法见上文：启动/关闭NTP服务】**
+**1.5 重启**服务器**或者重启NTP服务【重启方法见上文：启动/关闭NTP服务】**
 
