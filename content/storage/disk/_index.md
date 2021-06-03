@@ -10,7 +10,7 @@ section1:
   vice_title: 青云 QingCloud 平台支持多种块存储类型，包括：企业型SSD本地盘、 容量型云盘、通用型SSD云盘及增强型SSD云盘。
   video: "https://workshop.pek3a.qingstor.com/CloudOperation_100P002C201908_%E8%99%9A%E6%8B%9F%E7%A1%AC%E7%9B%98%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8.mp4"
   video_img: "/storage/disk/_images/video.png"
-
+ 
 Section2:
   title: 用户指南
   children:

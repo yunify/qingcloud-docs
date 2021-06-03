@@ -8,6 +8,8 @@ type: "product"
 section1:
   title: NAT网关
   vice_title: NAT网关为私有网络的云服务器提供了复用公网 IP 的能力，目前支持源 NAT 功能，NAT网关具备高达 10 Gbps 的转发能力以及 Region 级别的多活容灾能力。
+  video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_nat.mp4"
+  video_img: "/network/nat_gateway/_images/video.png"
 
 section2:
   title: 用户指南
