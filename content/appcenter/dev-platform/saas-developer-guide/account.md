@@ -49,9 +49,9 @@ weight: 2
 
 **Header: {'Authorization': 'Bearer ${access_token}'}** 
 
-例如: http://sso.alphacloud.com/sso/check_token/
+例如: http://account.qingcloud.com/sso/check_token/
 
-注：alphacloud 为示意域名，真实域名需根据实际环境决定。
+注：qingcloud 为示意域名，真实域名需根据实际环境决定。
 
 返回值中会包含如下信息:
 
@@ -106,7 +106,7 @@ weight: 2
 
 调用POST /sso/refresh_token/(SSO域)
 
-例如: [http://sso.alphacloud.com/sso/refresh_token/](http://sso.alphacloud.com/sso/check_token/) （[alphacloud](http://sso.alphacloud.com/sso/check_token/) 根据实际部署环境）
+例如: [http://acount.qingcloud.com/sso/refresh_token/](http://acount.qingcloud.com/sso/check_token/) （[qingcloud](http://acount.qingcloud.com/sso/check_token/) 根据实际部署环境）
 
 **Request Parameters**
 

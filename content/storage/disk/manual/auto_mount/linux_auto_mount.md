@@ -1,5 +1,5 @@
 ---
-title: "自动挂载Linux硬盘"
+title: "自动挂载 Linux 硬盘"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false

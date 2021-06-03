@@ -31,6 +31,10 @@ Section2:
       content: 操作指南
       url: "/network/dns/manual/dnsrecord/mgtdomainlist"
 
+    - title: 最佳实践
+      content: 跨区域负载均衡
+      url: "/network/dns/best-practices/cross_region"
+
     - title: 常见问题
       content: 常见问题
       url: "/network/dns/faq/faq"
@@ -72,11 +76,8 @@ section4:
       children:
         - title: 配置域名解析记录
           url: "/network/dns/quickstart/creatrecordset"  
-
-        - title: 验证域名解析是否生效
-          url: "/network/dns/quickstart/checkrecordset" 
         
-        - title: 配置 GSLB 策略
+        - title: 配置 GSLB 实例
           url: "/network/dns/quickstart/creatgslbpolicy"        
 
 

@@ -40,12 +40,18 @@ $(function(){
 			var start = url.length-1;
 			var last = url.substr(start,1);
 			if(last != '/'){
-				$(this).attr('href',url+'/');
+				//只有青云的链接才加
+				if(url.indexOf('http') == '-1' || url.indexOf('docsv3.qingcloud') != '-1'){
+					$(this).attr('href',url+'/');
+				}
 			}
 		}
 		var reg = new RegExp(/.+#/);
 		if(url != null && url != '' && url != 'undefined' && url.indexOf('#') != '-1' && url.indexOf('/#') == '-1' && reg.test(url)){
-			$(this).attr('href',url.replace('#','/#'));
+			//只有青云的链接才加
+			if(url.indexOf('http') == '-1' || url.indexOf('docsv3.qingcloud') != '-1'){
+				$(this).attr('href',url.replace('#','/#'));
+			}
 		}
 
 		//判断是否是外链 外链需在父页面打开

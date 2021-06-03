@@ -7,11 +7,15 @@ type: "product"
 
 section1:
   title: MongoDB
-  vice_title: MongoDB 是一个开源的文档型数据库，具有高性能、高可用等优点。
+  vice_title: MongoDB 是一款开源的文档型数据库，具有高性能、高可用等优点。
 
 Section2:
   title: 用户指南
   children:
+    - title: 最新动态
+      content: 产品动态
+      url: "news/product_news/"   
+
     - title: 产品简介
       content: 产品简介
       url: "intro/introduction/"
