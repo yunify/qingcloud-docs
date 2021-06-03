@@ -1,10 +1,11 @@
 ---
 title: "高可用性"
-description: Test description
+description: 本小节主要介绍 QingCloud PolonDB 高可用性。 
+keywords: polondb 高可用性
+data: 2021-05-14T00:38:25+09:00
+weight: 2
+collapsible: false
 draft: false
-weight: 9
-enableToc: false
-keyword: PolonDB, QingCloud, 数据库
 ---
 
 

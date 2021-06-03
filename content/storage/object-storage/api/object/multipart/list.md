@@ -1,5 +1,5 @@
 ---
-title: "Multipart"
+title: "List Multipart"
 date: 2020-11-25T10:08:56+09:00
 description:
 collapsible: false
@@ -7,7 +7,7 @@ draft: false
 weight: 3
 ---
 
-# List Multipart
+
 
 列出已经上传的分段信息。该请求需要对存储空间有可读权限。
 
