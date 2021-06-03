@@ -65,6 +65,25 @@ weight: 10
 
 ![senior_host](../../quickstart/_images/senior_host.png)
 
-4. 完成云服务器创建及购买流程。
+4. 点击**立即购买**完成云服务器创建及购买流程。
 
 ![buy](../../quickstart/_images/buy.png)
+
+### 确认配置
+
+当计费模式选择预留合约时，点击**立即购买**后会二次确认配置，如下图所示。
+
+![config](../../quickstart/_images/config.png)
+
+## 计费展示
+
+确认配置后会展示所购买云服务器机型和操作系统，云服务器数量及计费模式。
+
+## 完成创建
+
+当计费模式选择为按需计费时，则自动创建资源。
+
+![create](../../quickstart/_images/create.png)
+
+当预留合约选择为预留合约时，则前往合约确认页面，之后创建资源。
+
