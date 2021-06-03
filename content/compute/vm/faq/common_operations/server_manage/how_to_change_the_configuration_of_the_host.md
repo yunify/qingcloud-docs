@@ -13,7 +13,11 @@ enableToc: false
 
 ### 针对按需计费模式的云服务器操作方法
 
-请您在青云控制台的 计算 -> 云服务器 ->右键云服务器id -> 更多操作 -> 更改配置，如下图
+登录 **QingCloud 管理控制台**，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+
+右键云服务器的ID，选择 **更多操作** > **更改配置**，如下图所示：
+
+在左侧的**计算基础服务**导航栏
 
 <img src="../../../_images/homer/vm_pic_01.png" width="80%" height="60%">
 
@@ -21,7 +25,7 @@ enableToc: false
 
 <img src="../../../_images/homer/vm_pic_03.png" width="80%" height="60%">
 
-操作完成之后开机即可
+操作完成之后开机即可。
 
 <img src="../../../_images/homer/vm_pic_04.png" width="80%" height="60%">
 

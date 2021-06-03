@@ -8,9 +8,8 @@ draft: false
 enableToc: false
 ---
 
-
-
-在青云控制台的“计算” -> “SSH 密钥”里面创建一个 SSH 密钥， 然后加载到你的云服务器上并下载私钥文件（例如 ``kp-1234abcd`` ）。
+1. 登录 **QingCloud 管理控制台**，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+2. 在左侧的**计算基础服务**导航栏，选择 **计算** > **SSH 密钥**里面创建一个 SSH 密钥， 然后加载到你的云服务器上并下载私钥文件（例如 ``kp-1234abcd`` ）。
 
 >注解
 在进行 SSH 连接之前，请确保在云服务器对应的防火墙下行规则中打开 TCP 22 号端口的访问。
@@ -53,7 +52,7 @@ enableToc: false
 >注解
 推荐使用 SecureCRT 6.5 及以上版本，低版本会出现私钥无法导入的情况
 
-*   在青云控制台的“安全” -> “SSH 密钥”里创建 SSH 密钥，将这个密钥加载到云服务器上并下载私钥文件，例如 kp-12345678；
+*   在**QingCloud 管理控制台**的 **安全** > **SSH 密钥** 里创建 SSH 密钥，将这个密钥加载到云服务器上并下载私钥文件，例如 kp-12345678；
 *   在 SecureCRT 上创建一个新连接，protocol 是 SSH2，hostname 是 公网IP 地址，username 为 root；
 *   右键选中这个 session，选择 Properties，在 Connection -> SSH2 的 Authentication 面板里面，选中 PublicKey，点击右边的上箭头，将这个选项排到第一位；
 *   继续选中 PublicKey，点击右边的 Properties，选择 Use session public key setting，在下面的 Use identity or certificate file，导入下载的私钥文件 kp-12345678；
@@ -61,7 +60,7 @@ enableToc: false
 
 较低版本的 SecureCRT 可能会遇到无法导入私钥的问题，因为低版本的 SecureCRT 会严格要求私钥需要和公钥共同存在，这种情况下，操作步骤如下：
 
-*   在青云控制台创建 SSH 密钥，将这个密钥加载到云服务器上并下载私钥文件，例如放置于 /path/to/kp-1234abcd ；
+*   在**QingCloud 管理控制台**创建 SSH 密钥，将这个密钥加载到云服务器上并下载私钥文件，例如放置于 /path/to/kp-1234abcd ；
 *   在路径 /path/to/ 下创建新文件 kp-1234abcd.pub；
 *   在 SSH 密钥 kp-1234abcd 的详情页中找到公钥的字符串，并拷贝下来放入 kp-1234abcd.pub 文件中，并且在公钥内容前面加上加密方式，最终文件内容为：ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC90PM9PT........；
 *   在 SecureCRT 上创建一个新连接，protocol 是 SSH2，hostname 是公网 IP 地址，username 为 root；
@@ -75,7 +74,7 @@ enableToc: false
 >
 > 推荐使用 Xshell 5 及以上版本
 
-*   在青云控制台的“安全” -> “SSH 密钥”里创建 SSH 密钥，将这个密钥加载到云服务器上并下载私钥文件，例如 kp-12345678；
+*   在**QingCloud 管理控制台**的 **安全** > **SSH 密钥** 里创建 SSH 密钥，将这个密钥加载到云服务器上并下载私钥文件，例如 kp-12345678；
 *   在 Xshell 上 创建(New) 一个新 会话(Session) ，协议(Protocol) 是 SSH，云服务器(Host) 是公网 IP 地址；
 *   左侧标签中切换到 用户身份验证(Authentication)，右侧表单中 方法(Method) 选择 Public Key ，用户名(Username) 为 root ，点击 用户密钥(User Key) 左侧 浏览(Browse) 按钮；
 *   选择并 导入(Import) 刚才下载的私钥文件 kp-12345678；

@@ -24,7 +24,7 @@ enableToc: false
 
 ![mysql_problem03](../../../_images/mysql_problem03.png)
 
-四、查看青云平台云服务器绑定的安全组中是否放行了3306端口，路径如下：计算 -> 云服务器 ->  i-xxxxxxx  - > 安全组
+四、查看**QingCloud 管理控制台**云服务器绑定的安全组中是否放行了3306端口，路径如下：计算 -> 云服务器 ->  i-xxxxxxx  - > 安全组
 
 ![mysql_problem04](../../../_images/mysql_problem04.jpg)
 
@@ -58,7 +58,7 @@ netstat -ano | findstr :3306
 
 ![mysql_problem10](../../../_images/mysql_problem10.jpg)
 
-四、查看青云平台云服务器绑定的安全组中是否放行了3306端口，路径如下：计算 -> 云服务器 ->  i-xxxxxxx  - > 安全组
+四、查看 **QingCloud 管理控制台**云服务器绑定的安全组中是否放行了3306端口，路径如下：计算 -> 云服务器 ->  i-xxxxxxx  - > 安全组
 
 ![mysql_problem04](../../../_images/mysql_problem04.jpg)
 
