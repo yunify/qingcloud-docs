@@ -23,4 +23,5 @@ draft: false
 
 Mongo 应用数据盘被占满会导致 mongod 服务进程异常。
 
-**MongoDB 4.0.3 QingCloud 1.4.0** 版本新增**应用存储空间**自动伸缩的功能，可自定义 [自动伸缩](https://docs.qingcloud.com/product/operation/autoscaling) 。
+**MongoDB 4.0.3 QingCloud 1.4.0** 版本新增**应用存储空间**自动伸缩的功能，可自定义 [自动伸缩](https://docsv3.qingcloud.com/operation/autoscaling/manual/autoscaling/) 。
+
