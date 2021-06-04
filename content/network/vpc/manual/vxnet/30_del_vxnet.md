@@ -4,7 +4,7 @@ linkTitle: "删除私有网络"
 date: 2021-05-20T10:08:56+09:00
 description:
 draft: false
-weight: 15
+weight: 31
 ---
 
 ## 操作场景
@@ -23,7 +23,7 @@ weight: 15
 
 ## 操作步骤
 
-1. 登录[管理控制台](https://console.qingcloud.com/pek3)。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **私有网络**，进入**私有网络**页面。
 3. 找到需要删除的私有网络，点击**更多操作** > **删除**。
 

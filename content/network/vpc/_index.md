@@ -1,12 +1,12 @@
 ---
-title: "VPC 网络（旧版）"
-linkTitle: "VPC 网络（旧版）"
+title: "VPC 网络"
+linkTitle: "VPC 网络"
 weight: 2
 collapsible: true
 type: "product"
 
 section1:
-  title: VPC 网络（旧版）
+  title: VPC 网络
   vice_title: VPC 网络是 QingCloud 环境内用户专属的大型网络空间。在 VPC 网络内，您可以自定义 IP 地址范围、创建子网，并在子网内创建云服务器/数据库/大数据等各种云资源。
   # todo add qingstor introduction video
   video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_vpc.mp4"
