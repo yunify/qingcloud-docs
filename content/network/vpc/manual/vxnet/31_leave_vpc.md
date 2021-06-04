@@ -4,7 +4,7 @@ linkTitle: "离开 VPC 网络"
 date: 2021-05-20T10:08:56+09:00
 description:
 draft: false
-weight: 12
+weight: 31
 ---
 
 ## 操作场景
@@ -21,7 +21,7 @@ weight: 12
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **私有网络**，进入**私有网络**页面。
 3. 点击待操作的私有网络，选择**离开VPC网络**，弹出确认框。
 4. 点击**确认**。

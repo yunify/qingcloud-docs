@@ -21,7 +21,7 @@ weight: 30
 
 5. 在图形化管理页面，可执行如下操作：
 
-   <img src="/network/vpc_2.0/_images/5030_vpc_fig.png" alt="5030_vpc_fig" style="zoom:70%;" />
+   <img src="/network/vpc_2.0/_images/5030_vpc_fig.png" alt="vpc_fig" style="zoom:70%;" />
 
    1. 连接私有网络：在VPC 网络中创建一个私有网络或连接一个已有的私有网络。
    2. 断开私有网络：断开私有网络与 VPC 的连接。

@@ -9,11 +9,11 @@ weight: 15
 
 ## 操作场景
 
-当您需要 VPC 网络的规格已不适用当前的网络规模，可以对 VPC 进行扩容。
+一个 VPC 网络内至少包含一个私有网络，您也可以在一个 VPC 网络中创建多个私有网络来划分子网，同一个 VPC 内的子网默认私网互通。
 
 ## 创建私有网络并连接
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC网络**，进入**VPC网络**页面。
 
@@ -21,12 +21,12 @@ weight: 15
 
    页面下方默认展示**私有网络**页签。
 
-4. 点击<img src="/network/vpc_2.0/_images/501030_bind_vxnet_2.png" alt="501030_bind_vxnet_2" style="zoom:50%;" />，弹出**创建/连接私有网络**页面。
+4. 点击<img src="/network/vpc_2.0/_images/501030_bind_vxnet_2.png" alt="bind_vxnet_2" style="zoom:50%;" />，弹出**创建/连接私有网络**页面。
 
-   <img src="/network/vpc_2.0/_images/501030_bind_vxnet_3.png" alt="501030_bind_vxnet_3" style="zoom:50%;" />
+   <img src="/network/vpc_2.0/_images/501030_bind_vxnet_3.png" alt="bind_vxnet_3" style="zoom:50%;" />
 
 5. 配置私有网络信息，包括名称、部署方式、IPv4 网络地址、网络 ACL 及其他高级选项。
-   - 工作模式：部署方式：**多可用区部署**即网络中的云服务器可部署在多个可用区，**单可用区部署**即网络的云服务器部署在同一个可用区。若需要做跨可用区容灾，建议选择**多可用区部署**。
+   - 部署方式：**多可用区部署**即网络中的云服务器可部署在多个可用区，**单可用区部署**即网络的云服务器部署在同一个可用区。若需要做跨可用区容灾，建议选择**多可用区部署**。
    - IPv4 网络地址：私有网络的地址范围，需要在 VPC 网络的地址范围内。
    - 网络 ACL：网络访问控制规则。您可以自定义设置网络ACL规则，然后绑定私有网络。
    - 高级选项：点击显示高级选项，可设置管理地址、边界路由器地址、DHCP 起止地址。
@@ -34,7 +34,7 @@ weight: 15
 
 ## 连接已有私有网络
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC网络**，进入**VPC网络**页面。
 
