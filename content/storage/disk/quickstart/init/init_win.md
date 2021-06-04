@@ -1,5 +1,5 @@
 ---
-title: "初始化Windows数据盘"
+title: "初始化 Windows 数据盘"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
