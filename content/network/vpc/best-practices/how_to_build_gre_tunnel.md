@@ -1,9 +1,9 @@
 ---
-title: "青云公有云在不同的可用区搭建GRE隧道"
-linkTitle: "青云公有云在不同的可用区搭建GRE隧道"
+title: "在不同可用区搭建GRE隧道"
+linkTitle: "在不同可用区搭建GRE隧道"
 description:
 draft: false
-weight: 1
+weight: 10
 ---
 
 ## 项目介绍
@@ -15,18 +15,18 @@ weight: 1
 
 VPC1基本信息如下                                                          
 
-- 公网ip:139.198.14.199
-- 资源id:rtr-2803sfzh
+- 公网IP：139.198.14.199
+- 资源id：rtr-2803sfzh
 - 子网：192.168.10.0/24
 - 区域：pek3
 
 VPC2基本信息
 
-- 公网ip:139.198.12.195
+- 公网IP：139.198.12.195
 
-- 资源id:rtr-xxqqwifd
+- 资源id：rtr-xxqqwifd
 - 子网：192.168.20.0/24
-- 区域:pek3a
+- 区域：pek3a
 
 ## 操作步骤如下
 

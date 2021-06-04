@@ -5,9 +5,9 @@ collapsible: false
 weight: 11
 
 product:
-    - time: 2021-04-28
+    - time: 2021-05-28
       title: QingCloud GSLB 正式上线公测
-      content: 青云QingCloud GSLB 已正式上线至公有云平台免费试用，提供异地多活、异地容灾服务，实现全局流量负载均衡，提升云平台业务连续性能。
+      content: 青云QingCloud GSLB 已正式上线至公有云平台免费试用，提供异地多活、异地容灾负载均衡服务，实现全局流量负载均衡，提升云平台业务连续性能。
       url: ../../intro/gslb_function
     
     
