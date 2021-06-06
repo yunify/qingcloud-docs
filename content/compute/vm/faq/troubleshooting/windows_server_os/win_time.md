@@ -1,6 +1,5 @@
 ---
-title: "Windows时间不同步解决办法"
-date: 2020-01-30T00:38:25+09:00
+title: "Windows 时间不同步解决办法"
 description: Test description
 weight: 40
 draft: false
@@ -13,7 +12,7 @@ Windows 系统默认的时间同步间隔是7天，不能自由选择。我们�
 
 ## 操作步骤
 
-1.键盘上按Win+R键(也可以在开始菜单右键然后选择运行)，在运行的输入框里输入"regedit"命令，然后点击确定
+1.键盘上按 Win+R 键(也可以在开始菜单右键然后选择运行)，在运行的输入框里输入"regedit"命令，然后点击确定
 
 ![win_time01](../../../_images/win_time01.jpg)
 

@@ -1,6 +1,5 @@
 ---
 title: "上传自建证书到青云"
-date: 2020-05-24T17:08:56+09:00
 description: test
 weight: 20
 draft: false
@@ -9,7 +8,7 @@ draft: false
 
 ## 1.生成私钥
 
-使用openssl工具生成一个RSA私钥
+使用 OpenSSL 工具生成一个 RSA 私钥
 ```bash
 # openssl genrsa -des3 -out server.key 2048
 Generating RSA private key, 2048 bit long modulus
@@ -20,13 +19,13 @@ Enter pass phrase for server.key:
 Verifying - Enter pass phrase for server.key:
 ```
 
->说明：生成RSA私钥，DES3算法，2048位强度，server.key是秘钥文件名。
+>说明：生成 RSA 私钥，DES3 算法，2048位强度，server.key 是秘钥文件名。  
 >注意：生成私钥，需要提供一个至少4位的密码。
 
 
-## 2.生成CSR（证书签名请求）
+## 2.生成 CSR（证书签名请求）
 
-生成私钥之后，便可以创建CSR文件了。使用OpenSSL实现自签名，具体操作如下：
+生成私钥之后，便可以创建 CSR 文件了。使用 OpenSSL 实现自签名，具体操作如下：
 ```bash
 # openssl genrsa -des3 -out server.key 2048
 Generating RSA private key, 2048 bit long modulus
@@ -52,7 +51,7 @@ Organizational Unit Name (eg, section) []:Remote
 Common Name (eg, your name or your server's hostname) []:test.com.cn
 Email Address []:qingcloud@qingcloud.com.cn
 ```
->说明：需要依次输入国家，地区，城市，组织，组织单位，Common Name和Email。
+>说明：需要依次输入国家，地区，城市，组织，组织单位，Common Name 和 Email。
 
 ## 3.删除私钥中的密码
 
@@ -78,10 +77,10 @@ Getting Private key
 
 ## 5.上传证书
 
-进入控制台【SSL证书服务】界面，选择【上传证书】
+进入控制台【SSL 证书服务】界面，选择【上传证书】
 ![上传证书](../../_images/crt_2_qingcloud_1.png)
 
 ![上传证书](../../_images/crt_2_qingcloud_2.png)
 
-在证书内容中填写server.crt文件中的内容，在私钥中填写server.key文件中的内容，点击【提交】。提交成功后，可以在【我的证书】看到上传的证书
+在证书内容中填写 server.crt 文件中的内容，在私钥中填写 server.key 文件中的内容，点击【提交】。提交成功后，可以在【我的证书】看到上传的证书
 ![上传证书](../../_images/crt_2_qingcloud_3.png)

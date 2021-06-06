@@ -1,6 +1,5 @@
 ---
-title: "Windows云服务器多用户配置管理"
-date: 2021-05-31T00:38:25+09:00
+title: "Windows 云服务器多用户配置管理"
 description: Test description
 weight: 60
 draft: false
@@ -9,19 +8,19 @@ enableToc: false
 
 ## 项目概览
 
-在本项目中，您将了解如何配置Windows云服务器多用户、多终端同时办公。
+在本项目中，您将了解如何配置 Windows 云服务器多用户、多终端同时办公。
 
 ## 环境准备
 
-本实验以Windows Server 2012版本为例，其他版本可以此为参考，开始本实验前，请您先配置好[Windows云服务器配置多用户同时登录](https://docsv3.qingcloud.com/compute/vm/best-practices/windows/win_loggin/)，在此基础上进行后文操作。
+本实验以 Windows Server 2012版本为例，其他版本可以此为参考，开始本实验前，请您先配置好[Windows云服务器配置多用户同时登录](https://docsv3.qingcloud.com/compute/vm/best-practices/windows/win_loggin/)，在此基础上进行后文操作。
 
 ## 配置步骤
 
-* ###  多系统用户多终端配置
+###  多系统用户多终端配置
 
   1、添加用户
 
-  登录Administrator用户在Windows PowerShell执行
+  登录 Administrator 用户在 Windows PowerShell 执行
 
   ```powershell
   net user demo /add								#创建用户
@@ -35,7 +34,7 @@ enableToc: false
 
   ![添加远程登录用户](../../_images/windows_multi_user.assets/添加远程登录用户-1622711225217.gif)
 
-* ### 单系统用户多终端配置
+### 单系统用户多终端配置
 
 > 这里的系统用户指的是默认的Administrator管理员账户，配置好多用户同时登录后，可以直接多终端登录，但同时使用某些软件时会产生错误
 
@@ -55,7 +54,7 @@ enableToc: false
   
   ![image-20210603172240410](../../_images/windows_multi_user.assets/image-20210603172240410.png)
   
-  3、在目标栏的firefox.exe后面添加参数
+  3、在目标栏的 firefox.exe 后面添加参数
   
   > 参数：`--user-data-dir="C:\UserData"`
   

@@ -1,6 +1,5 @@
 ---
 title: "如何使用浏览器插件提交网页错误信息"
-date: 2021-05-31T00:38:25+09:00
 description: Test description
 weight: 60
 draft: false
@@ -11,13 +10,12 @@ enableToc: false
 
 > TimeCat 使用独特的算法，不直接录制视频，而是借鉴工程上一般称之为 Operations Log 的东西，本质上他的实现是通过记录一系列的浏览器事件数据，利用浏览器引擎重新渲染，还原了之前的操作过程，也就达到了“录屏器”的效果。
 >
-> TimeCat 是Chrome上的扩展程序，Edge使用和Chrome一样的内核，Edge同样可以使用此扩展程序，但Firefox、Safari不支持。
+> TimeCat 是 Chrome 上的扩展程序，Edge 使用和 Chrome 一样的内核，Edge 同样可以使用此扩展程序，但 Firefox、Safari 不支持。
 >
-> 离线扩展程序下载：
 
 ### 在 Chrome 浏览器上添加扩展
 
-1、访问chrome://extensions
+1、访问 chrome://extensions
 
 2、打开右上角的开发者模式
 
@@ -29,7 +27,7 @@ enableToc: false
 
 ### 在 Edge 浏览器上添加扩展
 
-1、访问edge://extensions
+1、访问 edge://extensions
 
 2、打开左下角的开发者模式
 
@@ -47,5 +45,5 @@ enableToc: false
 
 ### 提交
 
-通过工单将下载下来的HTML文档发送给我们，我们将为您转给研发同事排查此问题。
+通过工单将下载下来的 HTML 文档发送给我们，我们将为您转给研发同事排查此问题。
 

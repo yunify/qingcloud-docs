@@ -1,22 +1,21 @@
 ---
-title: "配置云服务器为网关服务器(外部绑定公网IP)"
-date: 2021-05-31T21:37:25+09:00
+title: "配置云服务器为网关服务器(外部绑定公网 IP)"
 description: Test description
 weight: 50
 draft: false
 enableToc: false
 ---
 ## 项目概览
-在本项目中，您将了解如何使用云服务器外部绑定公网IP作为网关服务器，让其他云服务器可以使用网关服务访问互联网。
+在本项目中，您将了解如何使用云服务器外部绑定公网 IP 作为网关服务器，让其他云服务器可以使用网关服务访问互联网。
 
 ## 环境准备
 
-* 创建一个VPC网络
-* 创建一个私有网络并加入到VPC网络
+* 创建一个 VPC 网络
+* 创建一个私有网络并加入到 VPC 网络
 * 创建两台云服务器加入到上面创建的私有网络
-* 创建一个公网IP，外部绑定到网关服务器
+* 创建一个公网 IP，外部绑定到网关服务器
 
-**网络拓扑**
+### 网络拓扑
 
 ![image-20210601153545414](../../_images/configure_the_gateway_server.assets/image-20210601153545414.png)
 
@@ -54,7 +53,7 @@ sysctl -p /etc/sysctl.conf
 iptables -t nat -A POSTROUTING -s 172.16.0.0/16 -o eth0 -j MASQUERADE
 ```
 
-### 客户端及DNS配置
+### 客户端及 DNS 配置
 
 #### 路由配置
 
@@ -68,11 +67,11 @@ route add default gw 172.16.0.200
 
 * 方案二：
 
-网络=>VPC网络=>管理配置=>路由推送
+网络=>VPC 网络=>管理配置=>路由推送
 
 ![路由推送](../../_images/configure_the_gateway_server.assets/路由推送.gif)
 
-> VPC中添加路由推送，云服务器需要重启网络
+> VPC 中添加路由推送，云服务器需要重启网络
 
 * 方案三：
 
@@ -88,9 +87,9 @@ route add default gw 172.16.0.200
 ping 114.114.114.114
 ```
 
-> 私有网络的云服务器绑定了公网IP 默认会加一层防火墙，需要手动在安全组中放行一下DNS服务的UDP 53端口，否则无法实现域名解析
+> 私有网络的云服务器绑定了公网 IP 默认会加一层防火墙，需要手动在安全组中放行一下 DNS 服务的 UDP 53端口，否则无法实现域名解析
 
-#### DNS配置
+#### DNS 配置
 
 ![安全组](../../_images/configure_the_gateway_server.assets/安全组.gif)
 

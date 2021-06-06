@@ -1,6 +1,5 @@
 ---
 title: "星型拓扑 ipsec 隧道搭建"
-date: 2021-02-16T10:08:56+09:00
 description:
 draft: false
 weight: 1
@@ -8,59 +7,59 @@ weight: 1
 
 ## 项目背景
 
-客户业务分布在多个可用区，想要通过ipsec隧道的方式来实现多可用区内网互通。
+客户业务分布在多个可用区，想要通过 ipsec 隧道的方式来实现多可用区内网互通。
 
 
 ## 网络现状
 
-### 北京3区VPC(vpc-pek3)
+### 北京3区 VPC (vpc-pek3)
 公网IP：139.198.27.92
 私有网络：192.168.0.0/24
 vm1：192.168.0.5
 
-### 上海1区VPC(vpc-sh1)
+### 上海1区 VPC (vpc-sh1)
 公网IP：139.198.175.48
 私有网络：172.16.0.0/24
 vm2：172.16.0.2
 
-### 广东2区VPC(vpc-gd2)
+### 广东2区 VPC (vpc-gd2)
 公网IP：139.198.123.198
 私有网络：172.26.0.0/24
 vm3：172.26.0.2
 
 ## 实现目的
-vpc-pek3作为星形拓扑中心节点，来实现vm1和vm2互通，vm1和vm3互通，vm2和vm3互通
+vpc-pek3 作为星形拓扑中心节点，来实现 vm1和 vm2互通，vm1和 vm3互通，vm2和 vm3互通
 
 ## 配置步骤
 ### 1、vpc-pek3配置2条隧道
-**隧道1：pek3-sh1**  
+隧道1：pek3-sh1  
 本地网络为：192.168.0.0/24，172.26.0.0/24
 目标网络：172.16.0.0/24
 ![](../_images/ipsec_start_topology2.png)
 ![](../_images/ipsec_start_topology3.png)
 
-**隧道2：pek3-gd2**  
+隧道2：pek3-gd2  
 本地网络为：192.168.0.0/24，172.16.0.0/24
 目标网络：172.26.0.0/24
 ![](../_images/ipsec_start_topology4.png)
 ![](../_images/ipsec_start_topology5.png)
 
 ### 2、vpc-sh1配置1条隧道
-**隧道1：sh1-pek3**  
+隧道1：sh1-pek3  
 本地网络为：172.16.0.0/24
 目标网络：192.168.0.0/24，172.26.0.0/24
 ![](../_images/ipsec_start_topology6.png)
 ![](../_images/ipsec_start_topology7.png)
 
 ### 3、vpc-gd2配置1条隧道
-**隧道1：gd2-pek3**  
+隧道1：gd2-pek3  
 本地网络为：172.26.0.0/24
 目标网络：192.168.0.0/24，172.16.0.0/24
 ![](../_images/ipsec_start_topology8.png)
 ![](../_images/ipsec_start_topology9.png)
 
 ## 验证结果
-1、vm1-vm2可ping通，vm1-vm3可ping通
+1、vm1-vm2可 ping 通，vm1-vm3可 ping 通
 ```
 [root@i-ojv17nyb ~]# ifconfig
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
@@ -88,7 +87,7 @@ PING 172.26.0.2 (172.26.0.2) 56(84) bytes of data.
 64 bytes from 172.26.0.2: icmp_seq=4 ttl=60 time=32.5 ms
 ```
 
-2、vm2-vm3可ping通
+2、vm2-vm3可 ping 通
 ```
 [root@i-cog1yjbd ~]# ifconfig
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500

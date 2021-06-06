@@ -1,22 +1,22 @@
 ---
-title: "Python3语言post请求签名demo"
+title: "Python3 语言 post 请求签名 demo"
 description: 
 draft: false
 
 
 ---
 
-本文示例为Python3语言的post请求的demo.CreateServerCertificate通过get方式请求的时候会超出长度,需要用 post方式请求.
+本文示例为 Python3 语言的 post 请求的 demo.CreateServerCertificate 通过 get 方式请求的时候会超出长度,需要用 post 方式请求.
 
 需要调整的地方为：
 
-1.填写您实际的api秘钥中的access_key_id，secret_access_key
+1.填写您实际的 api 秘钥中的 access_key_id，secret_access_key
 
-2.填写实际的action(具体的api指令)
+2.填写实际的 action (具体的api指令)
 
-3.填写实际的zone(资源区域)
+3.填写实际的 zone (资源区域)
 
-4.根据action填写实际需要的参数
+4.根据 action 填写实际需要的参数
 
 ```
 #!/usr/bin/env python3
@@ -79,7 +79,7 @@ if __name__ == "__main__":
 signature:EvCwxiGZyeri6TIkbMEhyy6YJorTccdd9fo8b5tQabY=
 ```
 
-执行CreateServerCertificate的结果为：
+执行 CreateServerCertificate 的结果为：
 
 ```
 {

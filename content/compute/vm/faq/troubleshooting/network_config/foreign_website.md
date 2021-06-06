@@ -8,7 +8,7 @@ enableToc: false
 
 ## 中国大陆访问国外网站为什么会卡顿缓慢？
 
-   **这是由于服务器位于中国大陆，访问的网站为国外，访问加载时解析的IP首选为国际带宽线路，而国际带宽线路分布在全球各地。访问的过程中不可避免的会出现饶节的情况，因此增加了访问加载的时间。**
+   这是由于服务器位于中国大陆，访问的网站为国外，访问加载时解析的 IP 首选为国际带宽线路，而国际带宽线路分布在全球各地。访问的过程中不可避免的会出现饶节的情况，因此增加了访问加载的时间。
 
 
 
@@ -20,9 +20,9 @@ enableToc: false
 
 ### 解决方法（二）
 
-在不方便更换海外区域的情况下，可以修改DNS解决，如将DNS服务器IP修改为 114.114.114.114 或8.8.8.8
+在不方便更换海外区域的情况下，可以修改 DNS 解决，如将 DNS 服务器 IP 修改为 114.114.114.114 或8.8.8.8
 
-以下为CentOS 7 修改方法：
+以下为 CentOS 7 修改方法：
 
 ```
 # vi /etc/resolv.conf 
@@ -37,9 +37,9 @@ nameserver 114.114.114.114
 
 ### 解决办法 （三）
 
-**(1)使用ping命令判断访问速度最快的服务器IP地址**
+1、使用 ping 命令判断访问速度最快的服务器 IP 地址
 
-以下示例为Windows 访问 GitHub 为例，CMD命令行中ping github.com 域名地址
+以下示例为 Windows 访问 GitHub 为例，CMD 命令行中 ping github.com 域名地址
 
 ```
 C:\Users\Administrator>ping github.com
@@ -68,15 +68,15 @@ C:\Users\Administrator>ping github.com
     最短 = 145ms，最长 = 183ms，平均 = 159ms
 ```
 
-**(2) 重复多次执行ping  github.com ，记录下一跳TTL最小且最稳定的IP地址**
+2、 重复多次执行 ping  github.com ，记录下一跳TTL最小且最稳定的 IP 地址
 
-例如本次示例中TTL值最小的IP 为 13.229.188.59
+例如本次示例中 TTL 值最小的 IP 为 13.229.188.59
 
 
 
-**(3) 修改Hosts文件**
+3、 修改 Hosts文件
 
-Windows为例，打开C:\Windows\System32\drivers\etc\ ，将之前复制的IP地址以如下方式写入hosts文件末行。
+Windows 为例，打开 C:\Windows\System32\drivers\etc\ ，将之前复制的 IP 地址以如下方式写入 hosts 文件末行。
 
 ```
 13.229.188.59  github.com  

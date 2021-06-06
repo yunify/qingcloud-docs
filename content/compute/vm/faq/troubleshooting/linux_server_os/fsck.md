@@ -1,15 +1,14 @@
 ---
-title: "文件系统扫描工具-fsck"
-date: 2020-01-30T00:38:25+09:00
+title: "文件系统扫描工具 fsck"
 description: Test description
 weight: 40
 draft: false
 enableToc: false
 ---
 
-文件系统扫描工具有fsck、fsck.ext2、fsck.ext3、fsck.ext4、fsck.msdos、fsck.cramfs、fsck.ext4dev、fsck.vfat。需要根据不同的文件系统来调用不同的扫描工具，比如ext3的文件系统使用fsck.ext3，ext4文件系统使用fsck.ext4等。
+文件系统扫描工具有 fsck、fsck.ext2、fsck.ext3、fsck.ext4、fsck.msdos、fsck.cramfs、fsck.ext4dev、fsck.vfat。需要根据不同的文件系统来调用不同的扫描工具，比如 ext3 的文件系统使用 fsck.ext3，ext4 文件系统使用 fsck.ext4 等。
 
-注意：fsck扫描文件系统时一定要在单用户模式、修复模式或把设备umount后进行。建议在单用户模式下运行。如果扫描正常运行中的系统，会造成系统文件损坏。
+注意：fsck 扫描文件系统时一定要在单用户模式、修复模式或把设备 umount 后进行。建议在单用户模式下运行。如果扫描正常运行中的系统，会造成系统文件损坏。
 
 下面简单介绍下：fsck.ext4
 
@@ -62,7 +61,7 @@ root
 -V 显示版本信息
 ```
 
-#### 1.通过lsblk指令确认文件系统
+## 1.通过 lsblk 指令确认文件系统
 
 ```
 [root@i-0026uq32 ~]# lsblk -f
@@ -74,7 +73,7 @@ vdc
 └─vdc1 ext4              0c111bfb-e99f-45fd-a400-5b948b5efd25 /mnt/vdc
 ```
 
-#### 2.检查ext4 类型的分区/dev/vdc1
+## 2.检查 ext4 类型的分区 /dev/vdc1
 
 ```
 [root@i-0026uq32 ~]# umount /dev/vdc1
@@ -90,17 +89,17 @@ Memory used: 376k/0k (65k/312k), time:  0.23/ 0.02/ 0.00
 I/O read: 6MB, write: 1MB, rate: 26.20MB/s
 ```
 
-#### 3.修复一般文件系统问题
+## 3.修复一般文件系统问题
 
-##### 3.1.备份数据
+1. 备份数据
 
-##### 3.2.umount卸载硬盘
+2. umount 卸载硬盘
 
-##### 3.3.fsck修复硬盘
+3. fsck 修复硬盘
 
 ```
 fsck.ext4  -y  /dev/vdc1
 ```
 
-##### 3.4.mount挂载硬盘，检查是否修复
+4. mount 挂载硬盘，检查是否修复
 

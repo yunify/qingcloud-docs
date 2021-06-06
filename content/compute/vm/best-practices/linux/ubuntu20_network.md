@@ -1,6 +1,5 @@
 ---
-title: "Ubuntu20 配置多网卡方法"
-date: 2021-04-09T21:37:25+09:00
+title: "Ubuntu 20 配置多网卡方法"
 description: Test description
 weight: 50
 draft: false
@@ -9,13 +8,13 @@ enableToc: false
 ---
 ## 背景信息
 
-●Ubuntu Server 20配置多网卡策略，可参考如下方法。
+Ubuntu Server 20配置多网卡策略，可参考如下方法。
 
 ## 1.检查服务
 
-●Ubuntu在18版本以后加入了Netplan，如果启用第二个网卡需要在Netplan注册。本示例系统版本：Ubuntu Server 20.04.1 LTS 64bit
+Ubuntu 在18版本以后加入了 Netplan，如果启用第二个网卡需要在 Netplan 注册。本示例系统版本：Ubuntu Server 20.04.1 LTS 64bit
 
-●如果执行 sudo netplan apply命令出现,如下报错:
+如果执行 sudo netplan apply 命令出现,如下报错:
 
 ```
 #  sudo netplan apply
@@ -27,7 +26,7 @@ apt install netplan.io
 
 ```
 
-●表示没有安装此服务，需要执行apt-get 服务：
+表示没有安装此服务，需要执行更新 apt-get 服务：
 
 ```
 
@@ -37,13 +36,13 @@ sudo apt-get update
 
 ## 2.添加网卡
 
-●登录控制台申请网卡，并添加到主机
+登录控制台申请网卡，并添加到主机
 
 
 ![图片](../../_images/ubuntu20_1.png)
 ![图片](../../_images/ubuntu20_2.png)
 
-●登录到主机查看网卡IP信息，eth1此时没有获取到IP，需要配置下面网卡信息后才会获取到。
+登录到主机查看网卡 IP 信息，eth1此时没有获取到 IP，需要配置下面网卡信息后才会获取到。
 
 ```
  # ip a
@@ -67,7 +66,7 @@ sudo apt-get update
 
 ## 3.配置网卡文件
 
-●执行 cd /etc/netplan 目录，找到 00-installer-config.yaml 文件，如果没有该文件，可创建一份，并配置如下：
+执行 cd /etc/netplan 目录，找到 00-installer-config.yaml 文件，如果没有该文件，可创建一份，并配置如下：
 
 ```
 # cd /etc/netplan
@@ -83,7 +82,7 @@ network:
 
 ```
 
-●执行sudo netplan apply 重启服务，查看网卡eth1网卡获取IP信息
+执行sudo netplan apply 重启服务，查看网卡 eth1网卡获取 IP 信息
 
 ```
 
@@ -107,7 +106,7 @@ network:
 
 ```
 
-●内网客户端服务器测试网卡是否正常
+内网客户端服务器测试网卡是否正常
 
 ```
  # ping 192.168.126.200

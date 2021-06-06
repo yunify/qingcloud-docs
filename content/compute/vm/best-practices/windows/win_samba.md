@@ -1,5 +1,5 @@
 ---
-title: "Windows云服务器配置samba服务"
+title: "Windows 云服务器配置 samba 服务"
 description: Test description
 draft: false
 ---
@@ -25,7 +25,6 @@ draft: false
 ![](../../_images/win_samba_5.png)
 
 ### 2.安装 samba 服务
-
 在【服务器管理器】中，点击上方的【添加角色和功能】，然后在【功能】处，勾选【SMB 1.0/CIFS 文件共享支持】和【SMB Bandwidth Limit】，点击下一步后，确认下需要安装的服务，然后点击安装。
 
 ![](../../_images/win_samba_6.png)

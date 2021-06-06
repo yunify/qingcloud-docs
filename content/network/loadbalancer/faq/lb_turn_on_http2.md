@@ -1,5 +1,5 @@
 ---
-title: "如何开启HTTP2"
+title: "如何开启 HTTP2"
 description: Test description
 weight: 50
 draft: false

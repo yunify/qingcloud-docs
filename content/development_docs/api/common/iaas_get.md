@@ -1,21 +1,21 @@
 ---
-title: "Python3语言get请求签名demo"
+title: "Python3 语言 get 请求签名 demo"
 description: 
 draft: false
 
 ---
 
-本文示例为Python3语言的get请求类型的demo
+本文示例为 Python3 语言的 get 请求类型的 demo
 
 需要调整的地方为：
 
-1.填写您实际的api秘钥中的access_key_id，secret_access_key
+1.填写您实际的 api 秘钥中的 access_key_id，secret_access_key
 
-2.填写实际的action(具体的api指令)
+2.填写实际的 action (具体的 api 指令)
 
-3.填写实际的zone(资源区域)
+3.填写实际的 zone (资源区域)
 
-4.根据action填写实际需要的参数
+4.根据 action 填写实际需要的参数
 
 ```
 import hmac
@@ -82,7 +82,7 @@ x.getVhost()
 signature是:1i700cIAv0yVLdEJ8H5e%2FBnjFkchoSdVnHmD6Wqpzdw%3D
 ```
 
-执行DescribeInstances的结果为：
+执行 DescribeInstances 的结果为：
 
 ```
 {

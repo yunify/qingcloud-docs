@@ -1,5 +1,5 @@
 ---
-title: "Linux恢复误删除分区"
+title: "Linux 恢复误删除分区"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 weight: 50
@@ -7,7 +7,7 @@ draft: false
 enableToc: false
 ---
 
-> 磁盘分区误删除后，再没有重启云服务器的情况下，使用TestDisk工具恢复分区
+> 磁盘分区误删除后，再没有重启云服务器的情况下，使用 TestDisk 工具恢复分区
 
 ## 故障复现
 
@@ -21,7 +21,7 @@ enableToc: false
 
 如图，当前`/dev/vdc`磁盘只剩下`vdc3`分区，现在按照下面的步骤进行恢复
 
-## 使用TestDisk工具修复
+## 使用 TestDisk 工具修复
 
 > 更多用法详见TestDisk官网：https://www.cgsecurity.org/wiki/TestDisk
 
@@ -48,7 +48,7 @@ yum install -y testdisk
 testdisk /dev/vdc
 ```
 
-2、选择修复磁盘，如下图为/dev/vdc，选择下面的[ Proceed  ]，回车；
+2、选择修复磁盘，如下图为 /dev/vdc，选择下面的[ Proceed  ]，回车；
 
 ![image-20210525175529167](../_images/linux_restore_partition.assets/image-20210525175529167.png)
 
@@ -60,17 +60,17 @@ testdisk /dev/vdc
 
 ![image-20210525175812033](../_images/linux_restore_partition.assets/image-20210525175812033.png)
 
-5、此时只有第三个分区，选择[Quick Search] ，回车(这里保险起见可以先选择Backup备份，避免操作失误)；
+5、此时只有第三个分区，选择[ Quick Search ] ，回车(这里保险起见可以先选择 Backup 备份，避免操作失误)；
 
 ![image-20210525175955035](../_images/linux_restore_partition.assets/image-20210525175955035.png)
 
 可能会弹出一个确认信息，[ Continue  ]回车确认
 
-6、TestDisk分析出磁盘的分区开始块、结束块等信息，选择第一个分区，回车；
+6、TestDisk 分析出磁盘的分区开始块、结束块等信息，选择第一个分区，回车；
 
 ![image-20210525180410198](../_images/linux_restore_partition.assets/image-20210525180410198.png)
 
-7、选择[ Write  ]回车，将原有的分区信息再写回到磁盘中；
+7、选择[  Write  ]回车，将原有的分区信息再写回到磁盘中；
 
 ![image-20210525180518920](../_images/linux_restore_partition.assets/image-20210525180518920.png)
 

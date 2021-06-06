@@ -1,17 +1,19 @@
 ---
-title: "CentOS7系统安装部署LNMP"
+title: "CentOS 7系统安装部署 LNMP"
 description: test
 draft: false
 weight: 10
 
 ---
 
-### 一、安装Nginx
-1、运行以下命令安装Nginx
+### 一、安装 Nginx
+1、运行以下命令安装 Nginx
+
 ```
 yum -y install nginx
 ```
-2、查看安装的Nginx版本
+2、查看安装的 Nginx 版本
+
 ```
 nginx -v
 ```
@@ -20,47 +22,56 @@ nginx -v
 nginx version: nginx/1.16.1
 ```
 
-### 二、安装MySQL
-1、更新yum源
+### 二、安装 MySQL
+1、更新 yum 源
+
 ```
 rpm -Uvh  http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
 ```
-2、安装MySQL
+2、安装 MySQL
+
 ```
 yum -y install mysql-community-server
 ```
-3、查看MySQL版本号，返回版本信息即为安装成功
+3、查看 MySQL 版本号，返回版本信息即为安装成功
+
 ```
 mysql -V
 
 mysql  Ver 14.14 Distrib 5.7.28, for Linux (x86_64) using  EditLine wrapper
 ```
-4、启动MySQL服务
+4、启动 MySQL 服务
+
 ```
 systemctl start mysqld
 ```
-5、设置MySQL服务开机自启
+5、设置 MySQL 服务开机自启
+
 ```
 systemctl enable mysqld
 systemctl daemon-reload
 ```
 
-### 三、安装PHP
-1、添加epel源
+### 三、安装 PHP
+1、添加 epel 源
+
 ```
 yum install \
 https://repo.ius.io/ius-release-el7.rpm \
 https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 ```
-2、添加Webtatic源
+2、添加 Webtatic 源
+
 ```
 rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 ```
-3、安装PHP
+3、安装 PHP
+
 ```
 yum -y install php70w-devel php70w.x86_64 php70w-cli.x86_64 php70w-common.x86_64 php70w-gd.x86_64 php70w-ldap.x86_64 php70w-mbstring.x86_64 php70w-mcrypt.x86_64  php70w-pdo.x86_64   php70w-mysqlnd  php70w-fpm php70w-opcache php70w-pecl-redis php70w-pecl-mongodb
 ```
-4、查看PHP版本，返回以下版本信息即为安装成功
+4、查看 PHP 版本，返回以下版本信息即为安装成功
+
 ```
 php -v
 
@@ -70,8 +81,9 @@ Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
     with Zend OPcache v7.0.33, Copyright (c) 1999-2017, by Zend Technologies   
 ```
 
-### 四、配置Nginx
-1、修改Nginx配置文件，配置支持PHP页面
+### 四、配置 Nginx
+1、修改 Nginx 配置文件，配置支持PHP页面
+
 ```
 vim /etc/nginx/nginx.conf	#打开Nginx配置文件
 
@@ -88,21 +100,24 @@ vim /etc/nginx/nginx.conf	#打开Nginx配置文件
             include fastcgi_params;   #Nginx调用fastcgi接口处理PHP请求。
         }                
 ```
-2、启动Nginx，并设置为开机自启
+2、启动 Nginx，并设置为开机自启
+
 ```
 systemctl start nginx 
 
 systemctl enable nginx 
 ```
 
-### 五、配置MySQL
-1、获取MySQL的root初始密码
+### 五、配置 MySQL
+1、获取 MySQL 的 root 初始密码
+
 ```
 grep 'temporary password' /var/log/mysqld.log	#获取密码"2p/B65d<leSD"
 
 2020-05-13T14:57:47.535748Z 1 [Note] A temporary password is generated for root@localhost: 2p/B65d<leSD
 ```
-2、配置MySQL安全性
+2、配置 MySQL 安全性
+
 ```
 mysql_secure_installation
 
@@ -133,14 +148,16 @@ Success.
 All done!
 ```
 
-### 六、配置PHP
-1、在Nginx网站目录下创建phpinfo.php文件
+### 六、配置 PHP
+1、在 Nginx 网站目录下创建 phpinfo.php 文件
+
 ```
 vi /usr/share/nginx/html/phpinfo.php
 
 <?php echo phpinfo(); ?>	#将此内容写入文件
 ```
-2、启动PHP-FPM并设置开机自启
+2、启动 PHP-FPM 并设置开机自启
+
 ```
 systemctl start php-fpm
 
@@ -148,6 +165,6 @@ systemctl enable php-fpm
 ```
 
 ### 七、测试访问查看效果
-1、打开浏览器，输入云服务器绑定的公网IP+Nginx端口(云服务器在VPC下访问VPC的公网IP+VPC转发端口)。  
+1、打开浏览器，输入云服务器绑定的公网 IP+Nginx 端口(云服务器在 VPC 下访问 VPC 的公网 IP+VPC 转发端口)。  
 `例：http://139.198.x.x/phpinfo.php (nginx默认端口为80)`  
-2、页面打开查看到PHP Version信息即可。
+2、页面打开查看到 PHP Version 信息即可。
