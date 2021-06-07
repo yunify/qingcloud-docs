@@ -19,7 +19,7 @@ weight: 10
 
 ## 修改名称及描述
 
-1. 登录[管理控制台](https://console.qingcloud.com/pek3)。
+1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **私有网络**，进入**私有网络**页面。
 
@@ -27,13 +27,13 @@ weight: 10
 
 4. 重新输入私有网络的名称及描述。
 
-   <img src="/network/vpc/_images/502010_mdfy_vxnet_1.png" alt="502010_mdfy_vxnet_1" style="zoom:40%;" />
+   <img src="/network/vpc_2.0/_images/502010_mdfy_vxnet_1.png" alt="mdfy_vxnet_1" style="zoom:40%;" />
 
 5. 点击**提交**。
 
 ## 绑定及解绑标签
 
-1. 登录[管理控制台](https://console.qingcloud.com/pek3)。
+1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **私有网络**，进入**私有网络**页面。
 3. 右键单击需要操作的私有网络，根据需要执行：
    - 绑定标签：选择**标签** > **绑定**，然后选择需要绑定的标签（可多选），点击**提交**。
@@ -41,7 +41,7 @@ weight: 10
 
 ## 加入及移出项目
 
-1. 登录[管理控制台](https://console.qingcloud.com/pek3)。
+1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **私有网络**，进入**私有网络**页面。
 
