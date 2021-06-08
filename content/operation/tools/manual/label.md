@@ -6,6 +6,10 @@ enableToc: false
 keyword: 标签, QingCloud
 ---
 
+## 快速上手
+
+<video src="https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_label.mp4" controls="controls" width="1000" height="400">您的浏览器不支持播放该视频！</video>
+
 下面为一组云服务器贴标签为例，来描述标签的使用方式。
 
 ## 创建和管理标签
