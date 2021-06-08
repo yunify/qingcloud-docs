@@ -6,6 +6,12 @@ enableToc: false
 keyword: 操作日志, QingCloud
 ---
 
+## 快速上手
+
+<video src="https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_logs.mp4" controls="controls" width="1000" height="400">您的浏览器不支持播放该视频！</video>
+
+
+
 ## 本区操作日志
 
 在青云控制台，打开“运维与管理”->“操作日志”页面，即可看到您近期的操作：
