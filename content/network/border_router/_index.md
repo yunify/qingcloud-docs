@@ -9,7 +9,7 @@ section1:
   title: 边界路由器
   vice_title: 边界路由器是用于连接不同网络的路由器，青云的边界路由器可以连接多种不同的网络场景。
   video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_vpc_router.mp4"
-  video_img: "/network/border_router/_images/video.png"
+  video_img: "/images/video.png"
 
 section2:
   title: 边界路由器 用户文档
