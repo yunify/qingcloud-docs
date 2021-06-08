@@ -26,7 +26,7 @@ pam_unix(sshd:session): session closed for user test.
 
 ## 解决方案
 
-1. 通过救援主机查看和修改云服务器配置文件，救援主机可参考文档[如何使用救援主机](https://docsv3.qingcloud.com/compute/vm/faq/common_operations/server_func/rescue_instance/)。
+1. 通过救援主机查看和修改云服务器配置文件，救援主机可参考文档[如何使用救援主机](/compute/vm/faq/common_operations/server_func/rescue_instance/)。
 
 2. 通过救援主机进入源主机系统盘的根目录下，执行如下命令，查看相应用户的默认 Shell。
 ```

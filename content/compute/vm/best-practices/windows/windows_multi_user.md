@@ -12,7 +12,7 @@ enableToc: false
 
 ## 环境准备
 
-本实验以 Windows Server 2012版本为例，其他版本可以此为参考，开始本实验前，请您先配置好[Windows云服务器配置多用户同时登录](https://docsv3.qingcloud.com/compute/vm/best-practices/windows/win_loggin/)，在此基础上进行后文操作。
+本实验以 Windows Server 2012版本为例，其他版本可以此为参考，开始本实验前，请您先配置好[Windows云服务器配置多用户同时登录](/compute/vm/best-practices/windows/win_loggin/)，在此基础上进行后文操作。
 
 ## 配置步骤
 

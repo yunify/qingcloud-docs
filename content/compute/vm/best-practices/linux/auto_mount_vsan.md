@@ -9,7 +9,7 @@ enableToc: false
 
 ## 背景
 
-用户使用青云 Virtual SAN，按照文档[Virtual SAN 共享存储](https://docsv3.qingcloud.com/storage/share/manual/vsan/#linux)可以正常挂载使用了，但是当云服务器重启后，发现 Virtual SAN无法自动进行挂载。
+用户使用青云 Virtual SAN，按照文档[Virtual SAN 共享存储](/storage/share/manual/vsan/#linux)可以正常挂载使用了，但是当云服务器重启后，发现 Virtual SAN无法自动进行挂载。
 
 ## 解决办法
 

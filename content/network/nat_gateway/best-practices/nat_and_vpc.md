@@ -17,7 +17,7 @@ enableToc: false
 
 ## 1、打通隧道，确保隧道正常
 
-以 IPSec 隧道为例, IPSec 隧道可参考文档：[隧道配置](https://docsv3.qingcloud.com/network/vpc/manual/tunnel/ipsec/)  
+以 IPSec 隧道为例, IPSec 隧道可参考文档：[隧道配置](/network/vpc/manual/tunnel/ipsec/)  
 本端隧道配置如下：  
 <img src="../_images/ipsec.png" width="800px" height="500px">  
 隧道本地公网 IP 为：139.198.174.112，本地内外 IP 为：172.16.1.0/24，测试主机 IP 为：172.16.1.2  
@@ -28,7 +28,7 @@ enableToc: false
 <img src="../_images/ping2.png" width="800px" height="500px">
 
 ## 2、加入 NAT，通过 NAT 网关具备公网能力
-配置 NAT 网关可参考文档：[配置NAT网关](https://docsv3.qingcloud.com/network/NAT_gateway/manual/nat_user_guide/)
+配置 NAT 网关可参考文档：[配置NAT网关](/network/nat_gateway/manual/nat_user_guide/)
 配置完成后可访问公网，但隧道不通，无法通过 VPC 端口转发能力访问云服务器。  
 <img src="../_images/ping3.png" width="800px" height="500px">  
 
