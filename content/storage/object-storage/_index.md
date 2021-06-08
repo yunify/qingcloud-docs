@@ -10,7 +10,7 @@ section1:
   vice_title: QingStor™ 对象存储为用户提供可无限扩展的通用数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。
   # todo add qingstor introduction video
   video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_bucket.mp4"
-  video_img: "/storage/object-storage/_images/video.png"
+  video_img: "/images/video.png"
 
 Section2:
   title: 用户指南

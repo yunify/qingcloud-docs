@@ -11,7 +11,7 @@ weight: 2
 
 ### 创建 NAT 网关
 
-在控制管理平台，登陆工作台后，点击 **VPC 网络 -> NAT网关**。在 **NAT网关**页面，点击**创建**按钮。
+登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在控制台导航栏中，选择 **VPC 网络** > **NAT 网关**。在 **NAT 网关**页面，点击**创建**按钮。
 
 ![](../../_images/create_natgw.png)
 
@@ -19,7 +19,7 @@ weight: 2
 
 ### 配置 NAT 网关
 
-创建NAT网关后，您还可以右键点击您创建的 NAT 网关，将 NAT 网关绑定到新的公网 IP 和私有网络。
+创建 NAT 网关后，您还可以右键点击您创建的 NAT 网关，将 NAT 网关绑定到新的公网 IP 和私有网络。
 
 ![](../../_images/modify_natgw.png)
 
