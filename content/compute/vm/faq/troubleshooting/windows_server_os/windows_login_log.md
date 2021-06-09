@@ -9,16 +9,16 @@ enableToc: false
 
 
 
-1. 通过[远程连接](https://help.aliyun.com/document_detail/25435.htm?spm=a2c4g.11186623.2.7.338b5961kgQ7yx)登录Windows实例，单击 **开始** > **运行**，输入`eventvwr.msc`并单击键盘的 **Enter** 回车按键，打开 **事件查看器**。
+1. 通过[远程连接](https://help.aliyun.com/document_detail/25435.htm?spm=a2c4g.11186623.2.7.338b5961kgQ7yx)登录Windows实例，点击 **开始** > **运行**，输入`eventvwr.msc`并点击键盘的 **Enter** 回车按键，打开 **事件查看器**。
    ![](../../../_images/windowsloginlog1.png)
 
-2. 单击**Windows 日志**，选中 **安全** 并右击，单击 **查找**，打开 **查找** 框。
+2. 点击**Windows 日志**，选中 **安全** 并右击，点击 **查找**，打开 **查找** 框。
    ![](../../../_images/windowsloginlog2.png)
 
 3. 在 **查找内容（N）** 处，输入**登录**进行快速查找登录相关事件。
    ![](../../../_images/windowsloginlog3.png)
 
-4. 双击查找到的事件，单击详细信息，查看 IpAddress 字段和 IpPort 字段信息。
+4. 双击查找到的事件，点击详细信息，查看 IpAddress 字段和 IpPort 字段信息。
 
    > 注：
    >

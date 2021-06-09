@@ -214,6 +214,6 @@ weight: 10
 
 <img src="../../quickstart/_images/create.png" alt="create" style="zoom:25%;" />
 
-当预留合约选择为预留合约时，自动创建资源后，点击![tattoo](../../quickstart/_images/tattoo.png)按钮查看预留合约详细内容。
+当计费模式选择为预留合约时，自动创建资源后，点击![tattoo](../../quickstart/_images/tattoo.png)按钮查看预留合约详细内容。
 
 <img src="../../quickstart/_images/check_creation.png" alt="create" style="zoom: 25%;" />

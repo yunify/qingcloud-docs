@@ -10,11 +10,11 @@ draft: false
 
 第1步：开通OSS
 
-1、登录阿里云控制台，单击左上角选择对象存储OSS，初次使用同意OSS服务条款，进入管理控制台。
+1、登录阿里云控制台，点击左上角选择对象存储OSS，初次使用同意OSS服务条款，进入管理控制台。
 
 ![img](../../_images/ecs2qing.assets/clip_image002.png)
 
-2、左侧单击创建Bucket，选择与保存镜像同一地域的Bucket。切记要选择标准存储，读写权限设置为公共读，并记住Bucket的名字。
+2、左侧点击创建Bucket，选择与保存镜像同一地域的Bucket。切记要选择标准存储，读写权限设置为公共读，并记住Bucket的名字。
 
 ![img](../../_images/ecs2qing.assets/clip_image004.png)
 
@@ -22,7 +22,7 @@ draft: false
 
 ### 第2步：创建镜像
 
-1、控制台页面，单击左上角选择云服务器 ECS，进入云服务器 ECS界面，选择相应的实例，进入实例详情页面。
+1、控制台页面，点击左上角选择云服务器 ECS，进入云服务器 ECS界面，选择相应的实例，进入实例详情页面。
 
 ![img](../../_images/ecs2qing.assets/clip_image006.png)
 
@@ -57,7 +57,7 @@ draft: false
 ![img](../../_images/ecs2qing.assets/clip_image022.png)
 
 
-3、控制台页面，单击左上角选择对象存储，进入对象存储界面，在我们之前创建的bucket里面可以看到导出的镜像，并选择 复制文件url，获得镜像下载链接。
+3、控制台页面，点击左上角选择对象存储，进入对象存储界面，在我们之前创建的bucket里面可以看到导出的镜像，并选择 复制文件url，获得镜像下载链接。
 
 ![img](../../_images/ecs2qing.assets/clip_image026.png)
 

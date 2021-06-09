@@ -11,7 +11,7 @@ enableToc: false
 
 ![图片](/compute/vm/_images/image.png)
 
- 2、通过**QingCloud 管理控制台** > **网络** > 公网ip > **申请**，如果所示：
+ 2、通过**QingCloud 管理控制台** > **网络** > **公网ip** > **申请**，如果所示：
 
 ![图片](/compute/vm/_images/image-1568884014191.png)
 

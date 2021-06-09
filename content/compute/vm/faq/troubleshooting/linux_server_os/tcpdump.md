@@ -123,11 +123,11 @@ tcpdump [ -AbdDefhHIJKlLnNOpqStuUvxX# ] [ -B buffer_size ]
 Windows环境中一般使用免费的较为流行的Wireshark开源工具进行抓包和分析。请参见[Wireshark官方网站](https://www.wireshark.org/)，获取并安装Wireshark工具，然后进行抓包。
 
 1. 安装并打开Wireshark工具。
-2. 依次单击**捕获**>**选项**。
-3. 在**Wireshark 捕获接口**界面中，根据接口名称或对应的IP地址选择需要进行抓包的网卡，然后单击**开始**。
+2. 依次点击**捕获**>**选项**。
+3. 在**Wireshark 捕获接口**界面中，根据接口名称或对应的IP地址选择需要进行抓包的网卡，然后点击**开始**。
    ![](../../../ipwhiz/wireshark.png)
-4. 抓取足量数据包后，依次单击**捕获**>**停止**。
-5. 依次单击**文件**>**保存**，将抓包结果保存到指定文件。
+4. 抓取足量数据包后，依次点击**捕获**>**停止**。
+5. 依次点击**文件**>**保存**，将抓包结果保存到指定文件。
 6. 更多有关Wireshark工具使用和数据分析方法，请参见[Wireshark官方网站](https://www.wireshark.org/download.html)。
 
 ### 抓包分析流程
