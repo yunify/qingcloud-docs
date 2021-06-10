@@ -1,5 +1,5 @@
 ---
-title: "Windows2019安装.net framework3.5"
+title: "Windows 2019安装.net framework3.5"
 
 description: test
 

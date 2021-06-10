@@ -104,7 +104,7 @@ yum -y install iptables-services
 ### 7.配置转发策略
 
 ```
-iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -o eth1 -j SANT --to-source 139.198.127.6
+iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -o eth1 -j SNAT --to-source 139.198.127.6
 service iptables save
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "激活Windows系统云服务器"
 description: test
-weight: 20
+weight: 14
 draft: false
 ---
 
