@@ -67,7 +67,7 @@ section4:
           url: "/compute/vm/manual/connect_instance"
 
         - title: 基于云服务器搭建博客
-          url: "/compute/vm/best-practices/wordpress"
+          url: "/compute/vm/best-practices/linux/wordpress"
 ---
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->

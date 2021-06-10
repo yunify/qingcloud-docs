@@ -14,7 +14,7 @@ https://www.qingcloud.com/consultation
 
 ### 免费试用 1个月云服务器
 
-1. 登录 **QingCloud 管理控制台**，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页，点击云服务器**免费试用**。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页，点击云服务器**免费试用**。
 
 ![free-instance-1](/compute/vm/_images/free-instance-1.png)
 

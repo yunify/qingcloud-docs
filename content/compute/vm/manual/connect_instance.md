@@ -9,7 +9,7 @@ draft: false
 ## 浏览器web连接
 ### 登录 QingCloud 管理控制台
 
-登录 **QingCloud 管理控制台**，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 
 ### 点击图标，打开VNC
 
@@ -38,7 +38,7 @@ draft: false
 
 首先在连接云服务器之前，请确保您的云服务器已经绑定了弹性公网 IP，[防火墙放行](https://docsv3.qingcloud.com/security/security_group/manual/sg_setting/) TCP 22 端口。
 
-登录 **QingCloud 管理控制台**，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 
 点击云服务器的 ID进入配置界面，在左侧选择**绑定资源** > **安全组** 查看防火墙设置。
 
@@ -66,7 +66,7 @@ draft: false
 
 #### 1. 准备密钥
 
-登录 **QingCloud 管理控制台**，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 
 在左侧的**计算基础服务**导航栏，选择 **计算** > **SSH 密钥** 页面, 点击**创建**，创建SSH 密钥，您也可以使用自己原有的密钥。
 

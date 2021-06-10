@@ -89,7 +89,7 @@ draft: false
 
 ### 第2步：制作QingCloud自定义镜像
 
-1、在QingCloud控制台上创建一个硬盘并挂载到下载镜像的云服务器上，注意硬盘的大小需要和原云服务器的系统盘大小一致。
+1、在[QingCloud 管理控制台](https://console.qingcloud.com/login)上创建一个硬盘并挂载到下载镜像的云服务器上，注意硬盘的大小需要和原云服务器的系统盘大小一致。
 
 `fdisk -l`
 
