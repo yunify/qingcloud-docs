@@ -2,7 +2,7 @@
 title: "查看Windows云服务器系统日志"
 description:
 draft: false
-weight: 39
+weight: 13
 ---
 
 Windows日志路径：C:\Windows\System32\winevt\Logs
