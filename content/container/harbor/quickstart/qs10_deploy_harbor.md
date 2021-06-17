@@ -64,6 +64,11 @@ weight: 10
 
 2. 设置 Harbor 服务的基本信息，包括 Harbor 服务的名称、描述、版本、快速配置（存储空间）、计费方式 和可用区。
 
+     > **说明**：
+     >
+     > * 推荐使用 QingStor 对象存储来保证高可用和无限容量。（QingStor 对象存储是 QingCloud 提供的通用海量非结构化数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。）
+     > * 本地存储不支持高可用，且受单磁盘容量限制，仅建议测试使用。
+
      ![basic-info](/container/harbor/_images/harbor-create-basic-setting.png)
 
 ### 第2步：主服务节点设置
@@ -113,7 +118,7 @@ weight: 10
   - **存储根目录**：存储桶里用于存储镜像的根目录名称，默认为空，表示使用整个桶；Harbor 集群创建后将无法更改根目录。
   - **对象存储 URL**：对象存储的 URL 地址，如`https://qingstor.com`，默认会自动转换成兼容 S3 的地址`qingstor.com`。
 
-* **使用 S3 地址**：是否把对象存储 URL 转换成 QingStor 兼容 S3 的地址。**true** 表示不转换，**false** 表示需要转换。
+* **使用 S3 地址**：是否把对象存储 URL 转换成 QingStor 兼容 S3 的地址。**true** 表示对象存储 URL 是 S3 兼容 URL，格式为：http(s)://s3.<region>.your.domain，**false** 表示对象存储 URL 不是 S3 兼容 URL， 格式为：http(s)://your.domain，后台会自动转换成兼容 S3 格式 URL。
 
 * **加载 trivy plugin**：是否加载 trivy plugin 来支持漏洞扫描。 **true** 表示开启加载，**false** 表示不开启。
 
