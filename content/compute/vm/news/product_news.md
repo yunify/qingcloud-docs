@@ -17,7 +17,7 @@ product:
     - time: 2019-10-24 17:50:47
       title: 支持将 ECS 迁移到青云QingCloud
       content:
-      url: /compute/vm/best-practices/ecs2qing/
+      url: /compute/vm/best-practices/linux/ecs2qing
 ---
 
 <!-- 设置上述参数可生成产品动态页  -->
