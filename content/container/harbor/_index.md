@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: "Harbor 镜像仓库"
-  vice_title: QingCloud Harbor 镜像仓库将 Harbor 制作成了 App，能直接在 AppCenter 进行一键部署，并提供了一个高可用、高安全、高性能的镜像仓库方案。
+  vice_title: QingCloud Harbor 镜像仓库将 Harbor 制作成了应用，能直接在 AppCenter 进行一键部署，并提供了一个高可用、高安全、高性能的镜像仓库方案。
 
 section2:
   title: 用户指南
