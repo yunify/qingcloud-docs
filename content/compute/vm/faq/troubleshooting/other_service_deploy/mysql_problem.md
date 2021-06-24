@@ -24,7 +24,7 @@ enableToc: false
 
 ![mysql_problem03](../../../_images/mysql_problem03.png)
 
-四、查看青云平台云服务器绑定的安全组中是否放行了3306端口，路径如下：计算 -> 云服务器 ->  i-xxxxxxx  - > 安全组
+四、查看[QingCloud 管理控制台](https://console.qingcloud.com/login)云服务器绑定的安全组中是否放行了3306端口，路径如下：**计算** > **云服务器** >  **i-xxxxxxx**  -> **安全组**
 
 ![mysql_problem04](../../../_images/mysql_problem04.jpg)
 
@@ -32,7 +32,7 @@ enableToc: false
 
 ![mysql_problem05](../../../_images/mysql_problem05.png)
 
-六、如云服务器是通过VPC网络进行访问，则修改VPC绑定的安全组，并添加端口转发规则，路径如下：网络 -> VPC网络 -> rtr-xxxxxxx  ->  管理配置  -> 添加规则 -> 提交 -> 应用修改，端口转发规则如下图
+六、如云服务器是通过VPC网络进行访问，则修改VPC绑定的安全组，并添加端口转发规则，路径如下：**网络** > **VPC网络** > **rtr-xxxxxxx**  >  **管理配置**  > **添加规则** > **提交** > **应用修改**，端口转发规则如下图
 
 ![mysql_problem06](../../../_images/mysql_problem06.jpg)
 
@@ -58,7 +58,7 @@ netstat -ano | findstr :3306
 
 ![mysql_problem10](../../../_images/mysql_problem10.jpg)
 
-四、查看青云平台云服务器绑定的安全组中是否放行了3306端口，路径如下：计算 -> 云服务器 ->  i-xxxxxxx  - > 安全组
+四、查看 [QingCloud 管理控制台](https://console.qingcloud.com/login)云服务器绑定的安全组中是否放行了3306端口，路径如下：计算 -> 云服务器 ->  i-xxxxxxx  - > 安全组
 
 ![mysql_problem04](../../../_images/mysql_problem04.jpg)
 

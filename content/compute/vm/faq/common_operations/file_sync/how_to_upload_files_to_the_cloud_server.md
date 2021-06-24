@@ -23,6 +23,8 @@ Windows 云服务器具备公网访问能力
 
 2.单击"显示选项"。
 
+>>>>>>> upstream/master
+
 <img src="/compute/vm/_images/upload_file_01.png" width="60%" height="40%">
 
 3.在“常规”页签中，输入云服务器的公网 IP 地址和用户名 “Administrator”。
@@ -35,6 +37,8 @@ Windows 云服务器具备公网访问能力
 
 5.单击"详细信息"。
 
+>>>>>>> upstream/master
+
 6.在“驱动器”多选框列表，勾选要上传到 Windows 云服务器上的文件所在的本地磁盘。
 
 <img src="/compute/vm/_images/upload_file_04.png" width="60%" height="40%">
@@ -42,6 +46,8 @@ Windows 云服务器具备公网访问能力
 7.点击“确定”，登录 Windows 云服务器。
 
 8.单击“开始 > 计算机”。
+
+>>>>>>> upstream/master
 
 在出现的 Windows 云服务器上可看到本地硬盘的信息。
 
@@ -74,6 +80,8 @@ WinSCP 工具可以实现在本地与远程计算机之间安全地复制文件�
 - 密码：购买云服务器设置的密码。
 
 4.单击“登录”，进入 “WinSCP” 文件传输界面。
+
+>>>>>>> upstream/master
 
 5.登录成功之后，您可以选择左侧本地计算机的文件，拖拽到右侧的远程云服务器，完成文件上传到云服务器。
 

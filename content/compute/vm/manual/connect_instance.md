@@ -7,17 +7,17 @@ draft: false
 
 在连接实例前，请确保您的云服务器已经绑定了弹性公网 IP 或者采用NAT转发了相应的端口，并且您的`防火墙`放行了相应端口。
 ## 浏览器web连接
-### 1. 登录 QingCloud 控制台
+### 登录 QingCloud 管理控制台
 
-然后选择您云服务器所在的 Region 或者可用区，点击**计算** --> **云服务器**，进入实例列表。
+登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 
-### 2. 点击图标，打开VNC
+### 点击图标，打开VNC
 
 每个实例 ID （名称）右侧有个显示屏的图标，点击图标将打开一个远程连接 ( VNC ) 的会话
 
 ![](/compute/vm/manual/_images/web-signin.png)
 
-### 3. 输入用户信息
+### 输入用户信息
 
 依次输入用户名和密码即可
 
@@ -38,7 +38,15 @@ draft: false
 
 首先在连接云服务器之前，请确保您的云服务器已经绑定了弹性公网 IP，[防火墙放行](https://docsv3.qingcloud.com/security/security_group/manual/sg_setting/) TCP 22 端口。
 
-![](/compute/vm/manual/_images/fw-ssh-22.png)
+登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+
+点击云服务器的 ID进入配置界面，在左侧选择**绑定资源** > **安全组** 查看防火墙设置。
+
+![](../../_images/fw-ssh-22.png)
+
+添加安全组规则，并放行TCP 22 端口。
+
+![](../../_images/fw-ssh-22_1.png)
 
 #### 2. 打开软件，输入 IP 地址
 
@@ -58,19 +66,21 @@ draft: false
 
 #### 1. 准备密钥
 
-首先，需要在 QingCloud 控制台创建密钥，您也可以使用自己原有的密钥。
+登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 
-![](/compute/vm/manual/_images/creat-sshkey.png)
+在左侧的**计算基础服务**导航栏，选择 **计算** > **SSH 密钥** 页面, 点击**创建**，创建SSH 密钥，您也可以使用自己原有的密钥。
+
+![](../_images/creat-sshkey.png)
 
 #### 2. 云服务器加载上密钥
 
-您可以在创建云服务器时选择密钥
+您可以在创建云服务器时选择密钥。
 
-![](/compute/vm/manual/_images/creat-instance-key.png)
+![](../../_images/creat-instance-key.png)
 
-也可以给现有云服务器加载密钥,右键点击云服务器，选择**SSH 密钥** --> **加载**。
+也可以给现有云服务器加载密钥,右键点击云服务器 ID，选择**SSH 密钥** > **加载**。
 
-![](/compute/vm/manual/_images/add-instance-key.png)
+![](../../_images/add-instance-key.png)
 
 #### 3. 配置好弹性 IP 和防火墙
 

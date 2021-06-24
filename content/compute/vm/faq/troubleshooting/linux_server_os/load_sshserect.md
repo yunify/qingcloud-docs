@@ -8,7 +8,7 @@ enableToc: false
 
 ## 现象
 
-使用青云控制台云服务器加载 SSH 秘钥失败
+使用[QingCloud 管理控制台](https://console.qingcloud.com/login)云服务器加载 SSH 秘钥失败
 
 ![load_sshserect01](../../../_images/load_sshserect01.png)
 
