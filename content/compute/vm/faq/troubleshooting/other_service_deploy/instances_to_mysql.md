@@ -17,7 +17,9 @@ enableToc: false
 
 ![instances_to_mysql02](../../../_images/instances_to_mysql02.jpg)
 
-三、通过 计算基础服务  ->  计算  ->  云服务器，找到购买的云服务器
+三、通过登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+
+​		在左侧的**计算基础服务**导航栏选择 **计算**  >  **云服务器**，找到购买的云服务器
 
  ![instances_to_mysql03](../../../_images/instances_to_mysql03.jpg)
 
