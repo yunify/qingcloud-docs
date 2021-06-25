@@ -2,7 +2,7 @@
 title: "Windows云服务器同步网络时间"
 date: 2021-02-04T20:38:25+09:00
 description: Test description
-weight: 40
+weight: 10
 draft: false
 enableToc: false
 ---
@@ -24,7 +24,6 @@ enableToc: false
 ### 3、点击立即更新，稍等会提示同步成功，最后会发现时间和日期都同步了
 
 <img src="/compute/vm/_images/time3.png" width="60%" height="40%">
-
 
 
 

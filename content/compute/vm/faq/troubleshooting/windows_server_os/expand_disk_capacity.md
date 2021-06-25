@@ -1,10 +1,8 @@
 ---
 title: "扩容磁盘后，实际使用空间并未增加"
-date: 2021-02-19T00:38:25+09:00
 description: Test description
-weight: 60
-draft: false
-enableToc: false
+weight: 5
+
 ---
 
 ## 问题背景

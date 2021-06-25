@@ -1,7 +1,7 @@
 ---
 
-title: "绑定路由表到私有网络"
-linkTitle: "绑定路由表到私有网络"
+title: "绑定路由表"
+linkTitle: "绑定路由表"
 date: 2021-05-20T10:08:56+09:00
 description:
 draft: false
@@ -18,15 +18,15 @@ weight: 30
 
 ## 操作步骤
 
-1. 登录[管理控制台](https://console.qingcloud.com/pek3)。
+1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
-2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
+2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入** VPC 网络**页面。
 
-3. 点击私有网络所属的VPC网络，进入到该 VPC 的私有网络管理页面。
+3. 点击私有网络所属的 VPC 网络，进入到该 VPC 的私有网络管理页面。
 
 5. 在私有网络列表点击需要绑定路由表的私有网络，再点击右侧的**路由表**页签。
 
-   <img src="/network/vpc/_images/502030_bind_route.png" alt="502030_bind_route" style="zoom:50%;" />
+   <img src="/network/vpc_2.0/_images/502030_bind_route.png" alt="bind_route" style="zoom:50%;" />
 
 5. 点击**绑定路由表**，选择要绑定的路由表，点击**提交**，完成绑定。
 

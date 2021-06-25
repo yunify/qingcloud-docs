@@ -7,11 +7,11 @@ draft: false
 enableToc: false
 ---
 
- 1、登录到青云控制台，在云服务器列表里找到这台云服务器，如图
+ 1、登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在云服务器列表里找到这台云服务器，如图所示：
 
 ![图片](/compute/vm/_images/image.png)
 
- 2、通过控制台---网络---公网ip---申请
+ 2、通过 [QingCloud 管理控制台](https://console.qingcloud.com/login)> **网络** > **公网 IP** > **申请**，如果所示：
 
 ![图片](/compute/vm/_images/image-1568884014191.png)
 
