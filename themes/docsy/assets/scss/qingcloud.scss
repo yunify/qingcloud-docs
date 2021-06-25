@@ -71,6 +71,9 @@ header {
             color: #3e464c;
             margin-bottom: 24px
         }
+        .card-title_private {
+            font-size: 14px;
+        }
         .card-text {
             font-size: 14px;
             font-weight: normal;
@@ -423,22 +426,22 @@ footer.footer span.tel {
 
 .icon.icon-email {
     background: transparent 0 0 no-repeat;
-    background-image: url("https://s3.qingcloud.com/static/assets/images/icons/common/footer_icon_mail@3x.svg");
+    background-image: url("https://www.qingcloud.com/static/assets/images/icons/common/footer_icon_mail@3x.svg");
 }
 
 .icon.icon-weibo {
     background: transparent 0 0 no-repeat;
-    background-image: url("https://s3.qingcloud.com/static/assets/images/icons/common/footer_icon_weibo@3x.svg");
+    background-image: url("https://www.qingcloud.com/static/assets/images/icons/common/footer_icon_weibo@3x.svg");
 }
 
 .icon.icon-wechat {
     background: transparent 0 0 no-repeat;
-    background-image: url("https://s3.qingcloud.com/static/assets/images/icons/common/footer_icon_wechat@3x.svg");
+    background-image: url("https://www.qingcloud.com/static/assets/images/icons/common/footer_icon_wechat@3x.svg");
 }
 
 .icon.icon-tel {
     background: transparent 0 0 no-repeat;
-    background-image: url("https://s3.qingcloud.com/static/assets/images/icons/common/footer_icon_phone@3x.svg");
+    background-image: url("https://www.qingcloud.com/static/assets/images/icons/common/footer_icon_phone@3x.svg");
 }
 
 .page-meta-pagination {
