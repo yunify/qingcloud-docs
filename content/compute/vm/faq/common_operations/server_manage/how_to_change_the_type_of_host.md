@@ -13,7 +13,9 @@ enableToc: false
 
 ### 按需计费的云服务器
 
-在青云控制台的 计算 -> 云服务器 ->右键云服务器id -> 更多操作 -> 更改类型，如下图
+登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+
+右键云服务器的ID，选择**更多操作** > 更改类型，如下图：
 
 ![more-types](/compute/vm/_images/more-types.jpg)
 
@@ -27,7 +29,9 @@ enableToc: false
 
 解绑后再对云服务器的类型进行更改，步骤如下：
 
-在青云控制台的 计算 -> 云服务器 ->右键云服务器id -> 更多操作 -> 更改类型，如下图
+登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+
+右键云服务器的ID，选择**更多操作** > 更改类型，如下图：
 
 ![more-types](/compute/vm/_images/more-types.jpg)
 
