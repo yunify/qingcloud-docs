@@ -1,7 +1,7 @@
 ---
 title: "KubeSphere(R)（QKE）"
 linkTitle: "KubeSphere(R)（QKE）"
-weight: 1
+weight: 5
 collapsible: true
 type: "product"
 
@@ -14,7 +14,7 @@ section2:
   children:
   - title: 最新动态
     content: 版本历史
-    url: "/container/qke/history/main"
+    url: "/container/qke/news/prodoct_news"
   - title: 计费指南
     content: 介绍 QKE 集群价格
     url: "/container/qke/pricing/main"
