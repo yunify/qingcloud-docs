@@ -2,17 +2,16 @@
 title: "产品系列"
 description: 本小节主要介绍 MySQL Plus 版本规格。 
 keywords: mysql plus 版本规格, 版本应用场景 
-data: 2021-05-14T00:38:25+09:00
-weight: 4
+weight: 20
 collapsible: false
 draft: false
 ---
 
 
 
-青云MySQL Plus 提供三个系列：基础版、高可用版、金融版。
+QingCloud MySQL Plus 根据 QingCloud AppCenter 功能特点定制了三个功能系列：基础版、高可用版、金融版。
 
-## 版本介绍
+## 系列介绍
 
 |<span style="display:inline-block;width:60px">系列</span> |<span style="display:inline-block;width:320px">版本说明</span>|<span style="display:inline-block;width:240px">适应场景</span> |
 |:----|:----|:----|
@@ -21,11 +20,27 @@ draft: false
 |金融版|面向金融级生产环境推出的三节点数据库版本，采用一主两从的三节点架构，保证数据的强一致性，提供金融级可靠性。|适用于对数据安全性要求非常高的金融、证券、保险等行业的核心数据库。|
 
 
-## 版本规格
+## 系列规格
 
 各系列实例规格如下。
-|<span style="display:inline-block;width:60px">系列</span>|<span style="display:inline-block;width:60px">vCPU </span>|<span style="display:inline-block;width:80px">内存</span> |<span style="display:inline-block;width:100px">vCPU/内存比</span> |<span style="display:inline-block;width:100px">最大IOPS</span> |<span style="display:inline-block;width:200px">存储空间</span> |
+|<span style="display:inline-block;width:60px">系列</span>|<span style="display:inline-block;width:60px">vCPU </span>|<span style="display:inline-block;width:80px">内存</span> |<span style="display:inline-block;width:100px">vCPU/内存比</span> |<span style="display:inline-block;width:100px">最大IOPS</span> |<span style="display:inline-block;width:220px">存储空间</span> |
 |:----|:----|:----|:----|:----|:----|
 |基础版	|1~8|	1GB~32GB|	1:1，1:2，1:4|	500~2500|	基础型：10G~2000G|
-|高可用版|	2~32|	4GB~128GB|	1:2，1:4，1:8|	2000~30000	|SSD企业型：10G~2000G<br/>NeonSAN：100G~10000G|
-|金融版	|2~32	|8GB~256GB|	1:4，1:8	| 2000~30000|	SSD企业型：10G~2000G<br/>NeonSAN：100G~10000G|
+|高可用版|	2~32|	4GB~128GB|	1:2，1:4，1:8|	2000~30000	|SSD企业型：10G~2000G <br> NeonSAN：100G~10000G|
+|金融版	|2~32	|8GB~256GB|	1:4，1:8	| 2000~30000|	SSD企业型：10G~2000G <br> NeonSAN：100G~10000G|
+
+## 支持版本
+
+|<span style="display:inline-block;width:140px">系列</span> |<span style="display:inline-block;width:280px">内核版本</span>|<span style="display:inline-block;width:220px">产品版本</span> |
+|:----|:----|:----|
+|基础版   |<li>MySQL 5.7 <li>MySQL 5.6   |<li>1.0.8  <li>1.0.1|
+|高可用版 |<li>MySQL 8.0  <li>MySQL 5.7 <li>MySQL 5.6 |<li>1.0.8  <li>1.0.7 <li>1.0.6 <li>1.0.1 |
+|金融版   |<li>MySQL 8.0  <li>MySQL 5.7     |  <li>1.0.8  <li>1.0.7 <li>1.0.6 <li>1.0.1|
+
+<!-- 
+|<span style="display:inline-block;width:140px">系列</span> |<span style="display:inline-block;width:140px">云服务器规格</span>|<span style="display:inline-block;width:240px">磁盘性能</span>|<span style="display:inline-block;width:140px">内核</span>|
+|:----|:----|:----|:----|
+|   金融版     |  <li>2核8G <li> 2核16G  <li>4核16G <li> 4核32G  <li>8核32G <li> 8核64G <li> 16核64G<li> 16核128G <li> 32核128G<li> 32核256G <li> 64核256G |  SSD 企业级 <li> 容量 10GB～2000GB <li>I/O 吞吐 128~320MB/s <li>IOPS 2000~30000 <br> <br>企业级分布式 SAN（NeonSAN) <li> 容量 100GB～2000GB <li>I/O 吞吐 128~350MB/s <li>IOPS 2000~50000  |  <li> MySQL 8.0 <li> MySQL 5.7   | 
+|   高可用版     | <li>2核4G <li>2核8G <li> 2核16G  <li>4核8G <li>4核16G <li> 4核32G  <li>8核16G <li>8核32G <li> 8核64G <li> 16核32G <li> 16核64G<li> 16核128G <li> 32核128G   |  SSD 企业级 <li> 容量 10GB～2000GB <li>I/O 吞吐 128~320MB/s <li>IOPS 2000~30000 <br> <br>企业级分布式 SAN（NeonSAN) <li> 容量 100GB～2000GB <li>I/O 吞吐 128~350MB/s <li>IOPS 2000~50000  | <li> MySQL 8.0 <li> MySQL 5.7 <li> MySQL 5.6     | 
+|   基础版     | <li>1核1G <li>1核2G<li>2核4G <li>2核8G  <li>4核8G <li>4核16G <li>8核16G <li>8核32G  |  基础型 <li> 容量 10GB～2000GB <li>I/O 吞吐 36~100MB/s <li>IOPS 500~2500  | <li> MySQL 8.0 <li> MySQL 5.7 <li> MySQL 5.6     | 
+-->

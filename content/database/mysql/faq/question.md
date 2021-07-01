@@ -1,9 +1,10 @@
 ---
 title: "常见问题"
-date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 本小节主要介绍 MySQL Plus 常见问题。 
+keywords: mysql plus 常见问题问
+weight: 10
+collapsible: false
 draft: false
-enableToc: false
 ---
 
 ## CPU 占用率过高怎么办？

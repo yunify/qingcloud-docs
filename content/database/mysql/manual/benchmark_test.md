@@ -3,7 +3,7 @@ title: "基准测试"
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
-weight: 12
+weight: 120
 ---
 
 数据库基准性能测试为 sysbench 0.5。

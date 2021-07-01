@@ -1,7 +1,7 @@
 ---
 title: "异地容灾"
 description: test
-weight: 6
+weight: 60
 draft: false
 ---
 
