@@ -1,7 +1,6 @@
 ---
 title: "光格 SD-WAN 简介"
 linkTitle: "光格 SD-WAN 简介"
-date: 2021-02-08T10:08:56+09:00
 description:
 draft: false
 weight: 1
