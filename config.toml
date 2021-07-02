@@ -103,6 +103,9 @@ algolia_docsearch = false
 # Enable Lunr.js offline search
 offlineSearch = false
 
+# Domain url
+domain = "https://docsv3.qingcloud.com"
+
 # User interface configuration
 [params.ui]
 # Enable to show the side bar menu in its compact state.
@@ -166,3 +169,5 @@ enable = false
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
 
+[outputs]
+  page = ["HTML", "JSON"]
