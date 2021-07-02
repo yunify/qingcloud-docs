@@ -14,6 +14,9 @@ section1:
 Section2:
   title: 用户指南
   children:
+    - title: 动态与公告
+      content: 产品动态和公告
+      url: "news/product_news/"
 
     - title: 产品简介
       content: 产品简介
