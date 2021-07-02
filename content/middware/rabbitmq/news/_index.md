@@ -1,9 +1,7 @@
 ---
-title: "产品简介"
+title: "动态与公告"
 _build:
  render: false 
-draft: false
+weight: 10
 collapsible: true
-weight: 2
 ---
-
