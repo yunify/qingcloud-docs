@@ -1,6 +1,5 @@
 ---
 title: "什么是 RabbitMQ"
-date: 2020-01-30T00:40:25+09:00
 description: 
 draft: false
 enableToc: false

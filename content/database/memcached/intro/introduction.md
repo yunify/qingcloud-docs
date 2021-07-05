@@ -2,7 +2,6 @@
 title: "什么是 Memcached"
 description: 本小节主要介绍 QingCloud Memcached 简要介绍。 
 keywords: Memcached 产品简介, 
-data: 2021-05-14T00:38:25+09:00
 weight: 10
 collapsible: false
 draft: false
