@@ -2,8 +2,7 @@
 title: "性能指标"
 description: 本小节主要介绍 QingCloud PolonDB 的性能指标。 
 keywords: polondb 性能指标,TPC-C,TPC-B
-data: 2021-05-14T00:38:25+09:00
-weight: 6
+weight: 40
 collapsible: false
 draft: false
 ---
