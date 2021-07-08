@@ -25,10 +25,15 @@ section2:
     - title: 操作指南
       content: 操作指南
       url: "manual/nat_user_guide/"
+  
+    - title: 最佳实践
+      content: 操作指南
+      url: "best-practices/nat_and_vpc/"
       
     #- title: 常见问题
      # content: 常见问题
      # url: "faq/nat-faq"
+
 
 section3:
   title: 开发者指南

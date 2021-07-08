@@ -1,7 +1,6 @@
 ---
 title: "基于光盒目录添加内网路由策略"
 linkTitle: "基于光盒目录添加内网路由策略"
-date: 2020-02-28T10:08:56+09:00
 description:
 draft: false
 weight: 60
