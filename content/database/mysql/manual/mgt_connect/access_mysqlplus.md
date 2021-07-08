@@ -2,7 +2,6 @@
 title: "连接数据库"
 description: 本小节主要介绍如何连接 MySQL Plus 数据库。 
 keywords: mysql plus 访问,访问数据库
-data: 2021-05-14T00:38:25+09:00
 weight: 10
 collapsible: false
 draft: false
@@ -13,10 +12,6 @@ draft: false
 MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用内网地址连接数据库，确保数据传输速率的同时兼顾数据安全。
 
 本小节主要介绍如何连接 MySQL Plus 数据库，以终端命令行方式连接数据库。
-
-## 约束限制
-
-- 设置**授权主机**为 IP 的账号，不支持通过外网访问当前集群。
 
 ## 前提条件
 

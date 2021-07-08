@@ -5,9 +5,9 @@ weight: 11
 
 product:
     - time: 2021-06-30
-      title: 支持公网访问
-      content: MySQL Plus 通过在管理控制台申请外网地址和配置访问 IP 白名单，支持使用外网地址访问数据库。
-      url: ../../quickstart/enable_external_network/
+      title: 支持外网地址连接
+      content: MySQL Plus 通过在管理控制台申请外网地址和设置 IP 白名单，支持使用外网地址连接数据库。
+      url: ../../quickstart/set_access_rules/enable_external_network/
 
     - time: 2021-01-31
       title: 1.0.8 版本正式上线
