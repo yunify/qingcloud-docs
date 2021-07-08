@@ -1,7 +1,7 @@
 ---
 title: "扩容集群"
 description: test
-weight: 3
+weight: 30
 draft: false
 ---
 

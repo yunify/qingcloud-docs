@@ -1,7 +1,6 @@
 ---
 title: "光盒简介"
 linkTitle: "光盒简介"
-date: 2021-03-01T10:08:56+09:00
 description:
 draft: false
 weight: 1
