@@ -5,7 +5,7 @@ collapsible: false
 weight: 20
 ---
 
-推流域名和播流域名添加完成后，系统会自动生成一个CNAME值。需要您在 DNS 服务商处完成 CNAME 的配置。
+推流域名和播流域名添加完成后，系统会自动生成一个 CNAME 值。需要您在 DNS 服务商处完成 CNAME 的配置。
 
 ## 前提条件
 
