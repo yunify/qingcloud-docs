@@ -2,7 +2,7 @@
 title: "开启外网访问"
 description: 本小节主要介绍如何快速配置 MySQL Plus 集群访问白名单。 
 keywords: mysql plus 白名单,公网访问,外网访问
-weight: 10
+weight: 14
 collapsible: false
 draft: false
 ---
@@ -68,7 +68,7 @@ draft: false
 
      -IP 白名单不支持为空，不支持重复 IP 地址。
      
-     -支持最多可配置10各 IP 地址或 IP 地址段。
+     -单个集群最多支持10个 IP 地址或 IP 地址段。
 
      -IP 白名单添加0.0.0.0/0，表示任何外网 IP 地址均可连接数据库，请谨慎使用。
 
@@ -82,6 +82,6 @@ draft: false
 
 ## 后续管理
 
- - [管理外网地址](../../../manual/mgt_connect/mgt_external_network)
+ - [管理外网地址](../manual/mgt_connect/mgt_external_network)
   
- - [管理 IP 白名单](../../../manual/mgt_connect/mgt_whitelist)
+ - [管理 IP 白名单](../manual/mgt_connect/mgt_whitelist)

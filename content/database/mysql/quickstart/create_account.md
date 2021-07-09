@@ -1,5 +1,5 @@
 ---
-title: "步骤三：创建数据库账号"
+title: "步骤二：创建数据库账号"
 description: 本小节主要介绍如何快速创建 MySQL Plus 数据库用户账号。 
 keywords: mysql plus 数据库用户账号创建,
 weight: 30

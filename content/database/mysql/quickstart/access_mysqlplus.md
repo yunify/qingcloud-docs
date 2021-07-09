@@ -1,5 +1,5 @@
 ---
-title: "步骤四：连接数据库"
+title: "步骤三：连接数据库"
 description: 本小节主要介绍如何快速连接 MySQL Plus 数据库。 
 keywords: mysql plus 访问,访问数据库
 weight: 40
@@ -13,10 +13,27 @@ MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用
 
 本小节主要介绍如何连接 MySQL Plus 数据库，以终端命令行方式连接数据库。
 
+## 连接方式
+
+- 内网地址连接：通过内网地址连接 MySQL Plus，使用云服务器直接连接云数据库的内网地址，使用内网方式连接数据库网络速度快迟延低。
+
+   内网连接地址系统默认提供，可在 MySQL Plus **连接信息**模块查看。
+
+> **注意：**
+> 
+> - 云服务器和数据库须是同一账号，且在同一个 VPC 内或同在基础网络内。
+> - 对于不同的 VPC 下（包括同账号/不同账号，同地域/不同地域）的云服务器和数据库，通过QingCloud **VPC 网络**的`隧道服务`和 `VPN 服务`，打通云服务器和数据库之间网络。
+
+- 外网地址连接：无法通过内网连接时，可通过外网地址连接云数据库 MySQL。
+  
+  外网地址需[手动申请](../../../mysql/manual/mgt_connect/enable_external_network)，再在 MySQL Plus **连接信息**模块查看。
+  
+  无需外网地址连接数据库时，可[释放外网地址](../../../mysql/manual/mgt_connect/mgt_external_network)。
+
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 MySQL Plus 集群，且集群状态为**活跃**。
+- 已获取数据库可登录账号和密码。
 - 已在服务器安装 MySQL 客户端。
 
 ## 操作步骤
@@ -54,8 +71,7 @@ MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用
 
 |<span style="display:inline-block;width:80px">选项</span> |<span style="display:inline-block;width:240px">说明</span>|<span style="display:inline-block;width:280px">示例</span> |
 |:----|:----|:----|
-|-h           |数据库内网或外网连接地址。       |<li>192.168.00.00<li>gz-cdb
--xx123xx.mysql.qingcloud.link|
+|-h          |数据库内网或外网连接地址。       | <li>192.168.00.00  <li>gz-cdb-xx123xx.mysql.qingcloud.link |
 |-P          |数据库端口号。                 |3306|
 |-u          |用户账号名称。                |test_mysql|
 |-p          |用户账号密码。<li> 为保障密码安全，`-p`一般空密码。在执行命令后输入密码，回车即可。<li>若需填写该参数，`-p`与密码之间不能有空格。            |test_mysql|
