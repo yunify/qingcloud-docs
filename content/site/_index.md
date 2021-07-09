@@ -6,6 +6,6 @@ _build:
 weight: 120
 collapsible: true
 Draft: true
-icon: "/images/icons/index/product-icon-service.svg"
+icon: "/images/icons/index/product-icon-site.svg"
 ---
 
