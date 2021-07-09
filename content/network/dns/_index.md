@@ -70,7 +70,7 @@ section4:
         - title: GSLB 功能特性
           url: "/network/dns/intro/gslb_function"
 
-    - title: 上手：快速使用云解析 DNS
+    - title: 上手：快速使用云解析 DNS      
       content: 云解析 DNS 提供更稳定、更安全、更快速、更精准、更便捷的域名解析管理服务。
       vice_title: 上手的第一步
       children:
@@ -82,7 +82,6 @@ section4:
 
 
 ---
-
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->
 <!-- section1 为产品index页面 主标题 副标题 video  video_img为视频图片  -->

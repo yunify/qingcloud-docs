@@ -1,7 +1,7 @@
 ---
 title: "Zabbix 客户端服务 "
 description: test
-weight: 8
+weight: 80
 draft: false
 ---
 
