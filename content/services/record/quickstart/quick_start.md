@@ -30,10 +30,10 @@ draft: false
 备案是在服务器提供商处提交申请，用户使用青云大陆节点服务器提供互联网信息服务，则需要在青云提交备案申请。
 ![](../../_images/beian_process.png)
 
-1. 登录 QingCloud 管理控制台。
+1. 登录 QingCloud 管理控制台，点击右上角的**备案**，进入ICP备案管理系统。
 
-2. 点击右上角的**备案**，进入ICP备案管理系统。
-![](../../_images/icp_management.png)
+
+    ![](../../_images/icp_management.png)
 
 3. 点击**开始备案**，进入验证备案类型页面。
 ![](../../_images/verify_record_type.png)
