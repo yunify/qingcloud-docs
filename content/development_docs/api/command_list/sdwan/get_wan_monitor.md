@@ -14,7 +14,7 @@ draft: false
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | resource | String | 资源 ID<br/>如果接入点为光盒，使用接入点 ID，类似 wacc-fub9b1eo<br/>如果接入点为专线/网关，使用专线/网关接口 ID，类似 waif-6bm6mt85 | Yes |
-| access_type | String | 接入点类型，有效值为：line、vpc、cpe、connect。 | Yes |
+| access_type | String | 接入点类型，有效值为：vpc, cpe, connect。 | Yes |
 | meters.n | String | 监控项，有效值为：traffic, flow, pps。 | Yes |
 | step | String | 数据间隔时间，有效值为：1m, 5m, 15m, 30m, 1h, 2h, 1d。 | Yes |
 | start_time | TimeStamp | 监控数据的起始 UTC 时间，格式为 2011-07-11T11:07:00Z 或 2011-07-11T11:07:00.520Z | Yes |
