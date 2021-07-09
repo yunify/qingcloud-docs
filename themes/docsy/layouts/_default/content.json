@@ -3,7 +3,7 @@
         {{ range . }}
             {
                 "time": "{{ .time }}",
-                "title": "{{ .title }}",
+                "title": {{ .title | jsonify }},
                 "content": {{ .content | jsonify }} ,
                 {{ if .url }}
                 "url": "{{ $.Param "domain" }}{{ .url }}"
