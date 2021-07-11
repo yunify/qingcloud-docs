@@ -51,11 +51,13 @@ VLC media player 是一款自由、开源的跨平台多媒体播放器，可用
    
 7. 在右下角点击**确定**，完成配置。
 
-8. 在左下角控件框中，点击**开始推流**，进行推流。
+8. 在来源窗口中，选择视频来源，选择**摄像头**或者**桌面**。
+
+9. 在左下角控件框中，点击**开始推流**，进行推流。
 
    ![](../../_images/bp_push_stream.png)
 
-9. 若右下角出现 <img src="../../_images/icon_push.png" style="zoom:50%;" />，则表示推流成功。
+10. 若右下角出现 <img src="../../_images/icon_push.png" style="zoom:50%;" />，则表示推流成功。
 
    ![](../../_images/bp_push_success.png)
 
