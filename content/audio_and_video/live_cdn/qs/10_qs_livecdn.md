@@ -7,7 +7,7 @@ weight: 10
 
 本文档指导您如何快速使用视频直播服务。
 
-<img src="./../_images/qs_flowchart.png" style="zoom:60%;" />
+<img src="../../_images/qs_flowchart.png" style="zoom:60%;" />
 
 操作流程说明，如下表所示。
 
