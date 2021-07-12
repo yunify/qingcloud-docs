@@ -1,5 +1,5 @@
 ---
-title: "创建集群"
+title: "创建 ClickHouse 集群"
 description: 本小节主要介绍如何快速创建 ClickHouse 集群实例。 
 keywords: ClickHouse 实例, 创建集群,创建实例
 weight: 10
