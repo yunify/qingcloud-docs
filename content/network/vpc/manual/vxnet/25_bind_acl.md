@@ -16,17 +16,17 @@ weight: 25
 
 ## 操作步骤
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
-2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC网络**，进入**VPC网络**页面。
+2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 
 3. 点击私有网络所属的 VPC 网络，进入到该 VPC 的私有网络管理页面。
 
-4. 在页面左侧的私有网络列表中，右键单击待绑定网络ACL的私有网络，选择**网络ACL > 绑定**，便可绑定已创建的网络 ACL。
+4. 在页面左侧的私有网络列表中，右键单击待绑定网络ACL的私有网络，选择 **网络 ACL**  > **绑定**，便可绑定已创建的网络 ACL。
 
    <img src="/network/vpc_2.0/_images/502025_bind_acl.png" alt="bind_acl" style="zoom:50%;" />
 
-5. 点击私有网络列表右侧**网络ACL**页签，便可查看到具体的ACL规则。
+5. 点击私有网络列表右侧 **网络 ACL** 页签，便可查看到具体的 ACL 规则。
 
    <img src="/network/vpc_2.0/_images/502025_acl_page.png" alt="acl_page" style="zoom:50%;" />
 
