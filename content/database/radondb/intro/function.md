@@ -2,8 +2,7 @@
 title: "功能特性"
 description: 本小节主要介绍 RadonDB 功能特性。 
 keywords: radondb 功能特性,
-data: 2021-05-14T00:38:25+09:00
-weight: 2
+weight: 20
 collapsible: false
 draft: false
 ---

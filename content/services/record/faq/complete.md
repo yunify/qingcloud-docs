@@ -29,7 +29,7 @@ draft: false
 
 - 方式1. 通过工信部备案管理系统查询并截图。
 
-  1. 登录工信部备案管理系统：https://beian.miit.gov.cn/。
+  1. 登录[工信部备案管理系统](https://beian.miit.gov.cn/)。
 
      ![点击放大](../../_images/beian_gov.png)
 

@@ -12,6 +12,10 @@ section1:
 Section2:
   title: 用户指南
   children:
+    - title: 动态与公告
+      content: 产品动态
+      url: "news/product_news/"
+    
     - title: 产品简介
       content: 产品简介
       url: "intro/introduction/"
@@ -22,7 +26,7 @@ Section2:
 
     - title: 快速入门
       content: 快速入门
-      url: "quickstart/quick_start/"
+      url: "quickstart/create_cluster/"
 
     - title: 操作指南
       content: 学习上手如何管理 PolonDB 集群，以及如何使用 PolonDB 提供的相关服务等。

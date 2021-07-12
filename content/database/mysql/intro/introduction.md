@@ -1,9 +1,8 @@
 ---
 title: "什么是 MySQL Plus"
-date: 2020-01-30T00:38:25+09:00
 description: 本小节主要介绍 MySQL Plus 产品简介
 draft: false
-weight: 1
+weight: 10
 enableToc: false
 keyword: MySQL Plus, QingCloud, 数据库
 ---
