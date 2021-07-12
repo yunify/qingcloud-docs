@@ -1,9 +1,10 @@
 ---
-title: "常见问题"
-date: 2020-01-30T00:38:25+09:00
-description: Test description
+title: "数据库性能"
+description: 本小节主要介绍 MySQL Plus 性能常见问题。 
+keywords: mysql plus 常见问题问
+weight: 10
+collapsible: false
 draft: false
-enableToc: false
 ---
 
 ## CPU 占用率过高怎么办？
@@ -41,3 +42,4 @@ enableToc: false
 建议写业务连接高可用写IP, 读业务连接高可用读IP。
 
 **高可用Proxy IP**必须有Proxy节点才能使用，Proxy会根据读写、只读请求将负载分别分发到主、从节点。
+

@@ -1,0 +1,14 @@
+[
+    {{ with .Params.product }}
+        {{ range . }}
+            {
+                "time": "{{ .time }}",
+                "title": {{ .title | jsonify }},
+                "content": {{ .content | jsonify }} ,
+                {{ if .url }}
+                "url": "{{ $.Param "domain" }}{{ .url }}"
+                {{ end }}
+            },
+        {{ end }}
+    {{ end }}       
+]

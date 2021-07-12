@@ -1,6 +1,5 @@
 ---
 title: "产品动态"
-date: 2020-07-25T15:51:52+09:00
 collapsible: false
 
 product:
