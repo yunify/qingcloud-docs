@@ -1,5 +1,5 @@
 ---
-title: "配置CNAME"
+title: "配置 CNAME"
 draft: false
 collapsible: false
 weight: 20
@@ -81,7 +81,7 @@ weight: 20
 
 1. 在 Windows 系统的运行对话框中，输入 **cmd**，按 **Enter**，打开 DOS窗口。
 
-   ![](../../_images/um_cname_cmd_win.png)
+   <img src="../../_images/um_cname_cmd_win.png" style="zoom:50%;" />
 
 2. 执行以下命令，验证 CNAME 是否配置成功。
 
@@ -93,7 +93,7 @@ weight: 20
 
 1. 打开 Linux/Mac 窗口。
 
-   ![](../../_images/um_cname_cmd_win.png)
+   <img src="../../_images/um_cname_cmd_linux.png" style="zoom:43%;" />
 
 2. 执行以下命令，验证 CNAME 是否配置成功。
 
