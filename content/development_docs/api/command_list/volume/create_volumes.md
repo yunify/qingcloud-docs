@@ -12,10 +12,10 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| size | Integer | 硬盘容量: <br/>* (超高)性能型大小范围是 10-1000GB, 步长是10GB <br/>* 容量型硬盘大小是 100-5000GB, 步长是50GB <br/>* 基础型硬盘大小范围是 10-2000GB, 步长是 10GB <br/> * SSD企业级硬盘大小是 10-2000GB, 步长是 10GB <br/>* 企业级分布式 SAN(NeonSAN)的大小是 100GB-5TB, 步长 100GB | Yes |
+| size | Integer | 硬盘容量: <br/><li>(超高)性能型大小范围是 20-1000GB, 步长是10GB </li><li>容量型硬盘大小是 20-5000GB, 步长是10GB</li><li>基础型硬盘大小范围是 20-2000GB, 步长是 10GB </li><li> SSD企业级硬盘大小是 20-2000GB, 步长是 10GB </li><li>企业级分布式 SAN(NeonSAN)的大小是20GB-5TB, 步长 10GB</li> | Yes |
 | volume_name | String | 硬盘名称 | No |
-| volume_type | Integer | 硬盘类型:<br/>* 性能型是 0 <br/>* 容量型是 2 <br/>* 超高性能型是 3 (只能被超高性能云服务器挂载)，<br/>* 基础型硬盘是 100 (只能被基础型云服务器挂载)，<br/>* SSD 企业级硬盘是 200 (只能被企业型云服务器挂载)，<br/>* 企业级分布式 SAN (NeonSAN) 是 5, <br/>  上面的每个类型的硬盘并不是每个区都有，具体可以通过前端查看  | No |
-| count | Integer | 创建硬盘的数量，默认是1<br/>注解: 每块硬盘的容量是相同的 | No |
+| volume_type | Integer | 硬盘类型:<br/><li>性能型是 0 </li><li>容量型是 2 </li><li>超高性能型是 3 (只能被超高性能云服务器挂载)</li><li> 基础型硬盘是 100 (只能被基础型云服务器挂载)</li><li>SSD 企业级硬盘是 200 (只能被企业型云服务器挂载)</li><li>企业级分布式 SAN (NeonSAN) 是 5</li>上面的每个类型的硬盘并不是每个区都有，具体可以通过前端查看 | No |
+| count | Integer | 创建硬盘的数量，默认是1<br/>创建多块硬盘时，每块硬盘的容量相同。 | No |
 | target_user | String | 目标用户 ID ，可用于主账号为其子账号创建资源。 | No |
 | encryption | Boolean | 创建加密硬盘 | No |
 | cipher_alg | String | 加密使用的算法类型:<br/>目前仅支持 aes256，默认 aes256 | No |
