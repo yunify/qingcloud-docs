@@ -55,7 +55,7 @@ VLC media player 是一款自由、开源的跨平台多媒体播放器，可用
 
    ![](../../_images/bp_video_source.png)
 
-9. 在右下角控件窗口中，点击**开始推流**，进行推流。
+9. 在右下角**控件**窗口中，点击**开始推流**，进行推流。
 
    ![](../../_images/bp_push_stream.png)
 
