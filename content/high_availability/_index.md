@@ -5,6 +5,6 @@ _build:
  render: false 
 weight: 150
 collapsible: true
-icon: "/images/icons/index/product-icon-service.svg"
+icon: "/images/icons/index/product-icon-High-availability.svg"
 ---
 
