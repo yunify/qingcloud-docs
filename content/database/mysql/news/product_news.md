@@ -4,11 +4,16 @@ collapsible: false
 weight: 11
 
 product:
-    - time: 2021-06-30
+    - time: 2021-07-12
       title: 支持外网地址连接
       content: MySQL Plus 通过在管理控制台申请外网地址和设置 IP 白名单，支持使用外网地址连接数据库。
       url: ../../quickstart/set_access_rules/enable_external_network/
 
+    - time: 2021-07-09
+      title: 1.0.9 版本正式上线
+      content: MySQL Plus 1.0.9版本基于 MySQL 5.6、5.7、8.0内核构建。<br>- 新增分析实例节点，支持从主节点同步并分析数据；<br>- 新增重启节点功能，支持重启单个节点服务；<br>- 新增指定 Master 节点功能；<br>- 新增服务地址模块，支持一键查询节点日志服务地址。
+      url: ../../intro/version/
+    
     - time: 2021-01-31
       title: 1.0.8 版本正式上线
       content: MySQL Plus 1.0.8版本基于 MySQL 5.6、5.7、8.0内核构建。<br>- 支持自动重建复制异常从库或只读实例；<br>- 新增 innodb_adaptive_hash_index、performance_schema、innodb_autoinc_lock_mode 配置参数管理；<br>- 优化 max_allowed_packet、slave_pending_jobs_size_max、innodb_log_file_size 配置参数默认值。
