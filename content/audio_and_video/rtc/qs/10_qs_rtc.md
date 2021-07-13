@@ -1,5 +1,5 @@
 ---
-title: "新手指引（Demo体验）"
+title: "新手指引（Demo 体验）"
 draft: false
 collapsible: false
 weight: 20
