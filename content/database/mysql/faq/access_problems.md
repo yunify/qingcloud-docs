@@ -18,9 +18,9 @@ draft: false
 2. 查看集群节点资源状态，检查资源**硬盘使用率**指标是否已超过85%，硬盘空间已不足。
 3. 查看实例连接数检查**全部连接数**等服务指标，并通过`show variables like '%max%connections%';`查看集群最大连接数，确认连接数是否过满。
          
-         - `max_connections` 指允许同时连接的客户端总数。如果设定值为 `default`，表示最大连接数随内存规格变化。
+   -`max_connections` 指允许同时连接的客户端总数。如果设定值为 `default`，表示最大连接数随内存规格变化。
          
-         - `max_user_connections` 指特定 MySQL 账号允许的最大同时连接数。
+   -`max_user_connections` 指特定 MySQL 账号允许的最大同时连接数。
 
 **可能原因** 
 1. MySQL Plus 系统故障、状态异常，以及集群或表被锁定等。

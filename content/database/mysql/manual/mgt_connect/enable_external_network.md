@@ -52,7 +52,7 @@ draft: false
 
 4. 点击**免费申请**，返回集群详情页面。
 
-   <img src=".../../../_images/enable_external_access.png" alt="开启外网访问" style="zoom:50%;" />
+   <img src="../../../_images/enable_external_access.png" alt="开启外网访问" style="zoom:50%;" />
 
 ### 设置 IP 白名单
 
@@ -82,6 +82,6 @@ draft: false
 
 ## 后续管理
 
- - [管理外网地址](../manual/mgt_connect/mgt_external_network)
+ - [管理外网地址](../mgt_external_network)
   
- - [管理 IP 白名单](../manual/mgt_connect/mgt_whitelist)
+ - [管理 IP 白名单](../mgt_whitelist)

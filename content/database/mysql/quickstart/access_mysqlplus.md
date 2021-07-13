@@ -26,9 +26,9 @@ MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用
 
 - 外网地址连接：无法通过内网连接时，可通过外网地址连接云数据库 MySQL。
   
-  外网地址需[手动申请](../../../mysql/manual/mgt_connect/enable_external_network)，再在 MySQL Plus **连接信息**模块查看。
+  外网地址需[手动申请](../../../manual/mgt_connect/enable_external_network)，再在 MySQL Plus **连接信息**模块查看。
   
-  无需外网地址连接数据库时，可[释放外网地址](../../../mysql/manual/mgt_connect/mgt_external_network)。
+  无需外网地址连接数据库时，可[释放外网地址](../../../manual/mgt_connect/mgt_external_network)。
 
 ## 前提条件
 
