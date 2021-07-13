@@ -70,4 +70,4 @@ mysql>
 
 ## 后续管理
 
-- [MySQL Plus 数据库连接不上怎么办？](../../../faq/access_problems.md)
+- [MySQL Plus 数据库连接不上怎么办？](../../../faq/access_problems)
