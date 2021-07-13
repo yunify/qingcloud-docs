@@ -18,7 +18,7 @@ Section2:
       url: "intro/introduction/"
 
     - title: 操作指南
-      content: 查看通知消息和配置通知列表。
+      content: 区域资源和可用区资源的使用。
       url: "manual/area_resource/"
 
 section3:
