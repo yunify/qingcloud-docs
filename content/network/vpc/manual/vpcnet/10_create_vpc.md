@@ -15,7 +15,7 @@ weight: 10
 
 ## 操作步骤
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 
@@ -49,11 +49,11 @@ weight: 10
   </tr>
   <tr>
   	<td>IPv4 地址范围</td>
-  	<td>VPC 的 IPv4 网段。<br>同区域内，VPC 网段不可重叠。VPC 网络创建后，IPv4 网段不可修改。<br></td>
+  	<td>VPC 的 IPv4 网段。<br>VPC 网络创建后，IPv4 网段不可修改。<br></td>
   </tr>
   <tr>
   	<td>IPv6 地址范围</td>
-  	<td>选择是否为 VPC 网络分配 IPv6 网段。<li><b>关闭 IPv6</b>：默认选项，即不分配 IPv6 网段。</li><li><b>系统自动分配</b>：开启 IPv6 功能，并自动为子网分配 IPv6 网段。</li></td>
+  	<td>选择是否为 VPC 网络分配 IPv6 网段。<li><b>关闭 IPv6</b>：默认选项，即不分配 IPv6 网段。</li><li><b>系统自动分配</b>：开启 IPv6 功能，并自动分配 IPv6 网段。</li></td>
   </tr>
    <tr>
   	<td>类型</td>
@@ -64,8 +64,8 @@ weight: 10
   </tr>
  <tr>
   	<td>公网 IP</td>
-    <td>选择是否立即为 VPC 绑定公网。免费型 VPC 不支持此项。
-      <li>购买并绑定：购买一个新的公网 IP 并绑定到此 VPC 网络。选择需要设置公网 IP 的计费模式、带宽上限及 IP 组。 </li>
+    <td>选择是否立即为 VPC 绑定公网 IP。免费型 VPC 不支持此项。
+      <li>购买并绑定：购买一个新的公网 IP 并绑定到此 VPC 网络。选择后需要设置公网 IP 的计费模式、带宽上限及 IP 组。 </li>
       <li>使用已有：若已购买有公网 IP，可选择绑定已有的公网 IP。</li>
       <li>暂不绑定：此处暂不绑定，可在创建 VPC 网络后根据需要进行绑定。具体操作请参见<a href="/network/vpc/manual/vpcnet/26_bind_eip/">绑定公网 IP</a></li>
    </td>
