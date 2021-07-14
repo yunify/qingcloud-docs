@@ -26,7 +26,7 @@ section2:
 
     - title: 操作指南
       content: 本文档介绍实时音视频 RTC 的详细功能及使用。
-      url: "/audio_and_video/rtc/usermanual/10_mgmt_app/10_qs_rtc"
+      url: "/audio_and_video/rtc/usermanual/10_purchase"
 
     - title: 常见问题
       content: 本文档解答您在使用实时音视频 RTC 时遇到的常见问题。
