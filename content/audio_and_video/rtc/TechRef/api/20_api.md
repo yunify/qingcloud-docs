@@ -1,5 +1,5 @@
 ---
-title: "服务端 API 参考"
+title: "API 参考"
 draft: false
 collapsible: false
 weight: 20
