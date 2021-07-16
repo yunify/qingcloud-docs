@@ -125,6 +125,7 @@ ul.timeline {
     left: 0;
 }
 
+
 ul.timeline > li:last-child .timeline-outer-line {
     display:none;
 }
@@ -155,6 +156,28 @@ ul.timeline > li:before {
         font-weight: 500;
         line-height: 1.33;
         color: #1d2c39;
+
+        span {
+            height: 12px;
+            font-size: 12px;
+            color: white;
+            padding: 0.25rem;
+        }
+        .news-tag-0{
+            margin-left: 0.25rem;
+            background: #595657;
+            border-radius: 3px 0px 0px 3px;
+        }
+        .news-tag-1{
+            background: #888888;
+        }
+        .news-tag-2{
+            background: #B4B4B7;
+            border-radius: 0px 3px 3px 0px;
+        }
+        .news-tag-max{
+            border-radius: 0px 3px 3px 0px;
+        }        
     }
     p {
         color: #8493a2;
