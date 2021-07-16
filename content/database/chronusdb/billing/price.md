@@ -1,9 +1,8 @@
 ---
 title: "计费说明"
-description: 本小节主要介绍 QingCloud ChronuDB 计费说明。 
+description: 本小节主要介绍 QingCloud ChronusDB 计费说明。 
 keywords: chronusdb 计费说明, 
-data: 2021-05-14T00:38:25+09:00
-weight: 1
+weight: 10
 collapsible: false
 draft: false
 ---
