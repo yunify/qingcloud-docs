@@ -1,6 +1,6 @@
 ---
-title: "API 参考"
-linkTitle: "API 参考"
+title: "快速入门"
+linkTitle: "快速入门"
 _build:
  render: false 
 weight: 20
