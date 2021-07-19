@@ -1,8 +1,8 @@
 ---
-title: "配置安全组"
+title: "管理安全组"
 description: manual
 draft: false
-weight: 20
+weight: 30
 ---
 
 ### 创建安全组策略
