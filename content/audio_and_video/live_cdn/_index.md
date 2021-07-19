@@ -25,7 +25,7 @@ section2:
       url: "/audio_and_video/live_cdn/qs/10_qs_livecdn"
 
     - title: 操作指南
-      content: 本文档介绍了视频直播的详细功能及使用。
+      content: 本文档介绍了视频直播的详细功能及使用方法。
       url: "/audio_and_video/live_cdn/usermanual/10_create_livevideo"
 
     - title: 最佳实践
