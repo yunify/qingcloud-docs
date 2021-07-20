@@ -1,5 +1,5 @@
 ---
-title: "简介"
+title: "参数介绍"
 description: 本小节主要介绍 QingMR 常用配置项。 
 keywords: QingMR 常用配置项；
 weight: 10

@@ -1,5 +1,5 @@
 ---
-title: "简介"
+title: "使用简介"
 description: 本小节主要介绍 QingMR 数据库使用指南简介。 
 keywords: QingMR 使用简介,
 weight: 10
