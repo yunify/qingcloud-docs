@@ -33,9 +33,9 @@ QingCloud MySQL Plus 根据 QingCloud AppCenter 功能特点定制了三个功�
 
 |<span style="display:inline-block;width:140px">系列</span> |<span style="display:inline-block;width:140px">内核版本</span>|<span style="display:inline-block;width:120px">产品版本</span> |<span style="display:inline-block;width:220px">约束限制</span> |
 |:----|:----|:----|:----|
-|基础版   |<li>MySQL 5.7 <li>MySQL 5.6   |<li>1.0.8  <li>1.0.1|   -    |
-|高可用版 |<li>MySQL 8.0  <li>MySQL 5.7 <li>MySQL 5.6 |<li>1.0.8  <li>1.0.7 <li>1.0.6 <li>1.0.1 |<li>不支持使用 MEMORY 存储引擎，否则将导致复制异常。<li>不支持修改同步状态或直接连上从节点执行写操作。|
-|金融版   |<li>MySQL 8.0  <li>MySQL 5.7     |  <li>1.0.8  <li>1.0.7 <li>1.0.6 <li>1.0.1|<li>仅支持 InnoDB 存储引擎。<li>每个表必须显示提供主键。<li>不支持 savepoints。 <li>不支持修改同步状态或直接连上从节点执行写操作。|
+|基础版   |<li>MySQL 5.7 <li>MySQL 5.6   |<li>1.0.9<li>1.0.8  <li>1.0.1|   -    |
+|高可用版 |<li>MySQL 8.0  <li>MySQL 5.7 <li>MySQL 5.6 |<li>1.0.9<li>1.0.8  <li>1.0.7 <li>1.0.6 <li>1.0.1 |<li>不支持使用 MEMORY 存储引擎，否则将导致复制异常。<li>不支持修改同步状态或直接连上从节点执行写操作。|
+|金融版   |<li>MySQL 8.0  <li>MySQL 5.7     |  <li>1.0.9 <li>1.0.8  <li>1.0.7 <li>1.0.6 <li>1.0.1|<li>仅支持 InnoDB 存储引擎。<li>每个表必须显示提供主键。<li>不支持 savepoints。 <li>不支持修改同步状态或直接连上从节点执行写操作。|
 
 <!-- 
 |<span style="display:inline-block;width:140px">系列</span> |<span style="display:inline-block;width:140px">云服务器规格</span>|<span style="display:inline-block;width:240px">磁盘性能</span>|<span style="display:inline-block;width:140px">内核</span>|
