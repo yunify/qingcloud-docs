@@ -12,7 +12,7 @@ QingStor 对象存储为用户提供可无限扩展的通用数据存储服务�
 
 由于 QingStor 对象存储兼容 AWS S3 API，因此 HDFS 可以通过 AWS S3 API 与 QingStor 对象存储高效集成，以满足更多的大数据计算和存储场景。
 
-有关 QingStor 的更多内容，请参考 [QingStor 对象存储用户指南](https://docs.qingcloud.com/qingstor/guide/index.html)。
+有关 QingStor 的更多内容，请参考 [QingStor 对象存储用户指南](../../../../../storage/object-storage/)。
 
 本小节以 test1 表为例，介绍如何使用 Phoenix 映射HBase 中已有的表。
 
@@ -23,17 +23,20 @@ QingStor 对象存储为用户提供可无限扩展的通用数据存储服务�
 
    可通过 `Web 终端` 或 `连接 vpn` 登录 `HBase 客户端`直接使用，用户名：`ubuntu`，密码：`hbase`，通过 `sudo su` 可以切换到 `root` 用户。
   
-  -QingCloud 1.1 - HBase 1.2.6 版本，增加：
+  - QingCloud 1.1 - HBase 1.2.6 版本，增加：
+
   ```
   export HADOOP_S3=/opt/hadoop/share/hadoop/tools/lib/hadoop-aws-2.7.3.jar,/opt/hadoop/share/hadoop/tools/lib/aws-java-sdk-1.7.4.jar,/opt/hadoop/share/hadoop/tools/lib/jackson-annotations-2.2.3.jar,/opt/hadoop/share/hadoop/tools/lib/jackson-core-2.2.3.jar,/opt/hadoop/share/hadoop/tools/lib/jackson-core-asl-1.9.13.jar,/opt/hadoop/share/hadoop/tools/lib/jackson-databind-2.2.3.jar,/opt/hadoop/share/hadoop/tools/lib/jackson-jaxrs-1.9.13.jar,/opt/hadoop/share/hadoop/tools/lib/jackson-mapper-asl-1.9.13.jar,/opt/hadoop/share/hadoop/tools/lib/jackson-xc-1.9.13.jar
   ```
   
-  -QingCloud 2.0.1 - HBase 2.0.6 版本，增加：
+  - QingCloud 2.0.1 - HBase 2.0.6 版本，增加：
+
   ```
   export HADOOP_S3=/opt/hadoop/share/hadoop/tools/lib/hadoop-aws-2.7.7.jar,/opt/hadoop/share/hadoop/tools/lib/aws-java-sdk-1.7.4.jar,/opt/hadoop/share/hadoop/tools/lib/jackson-annotations-2.2.3.jar,/opt/hadoop/share/hadoop/tools/lib/jackson-core-2.2.3.jar,/opt/hadoop/share/hadoop/tools/lib/jackson-core-asl-1.9.13.jar,/opt/hadoop/share/hadoop/tools/lib/jackson-databind-2.2.3.jar,/opt/hadoop/share/hadoop/tools/lib/jackson-jaxrs-1.9.13.jar,/opt/hadoop/share/hadoop/tools/lib/jackson-mapper-asl-1.9.13.jar,/opt/hadoop/share/hadoop/tools/lib/jackson-xc-1.9.13.jar
   ```
   
   执行：
+  
   ```
   source /root/.bashrc
   ```
