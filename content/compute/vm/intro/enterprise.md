@@ -120,7 +120,7 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 | ec3ne.2xlarge.r1 | 8核  | 8G   | 3.5Gbps  | 400万         | 50μs |
 | ec3ne.3xlarge.r1 | 12核 | 12G  | 5Gbps    | 600万         | 50μs |
 | ec3ne.4xlarge.r1 | 16核 | 16G  | 6Gbps    | 800万         | 50μs |
-| ec3ne.8xlarge.r1 | 32核 | 32G  | 13Gbps   | 200万         | 50μs |
+| ec3ne.8xlarge.r1 | 32核 | 32G  | 13Gbps   | 2400万        | 50μs |
 | ec3ne.large.r2   | 2核  | 4G   | 2Gbps    | 100万         | 50μs |
 | ec3ne.xlarge.r2  | 4核  | 8G   | 2.5Gbps  | 200万         | 50μs |
 | ec3ne.2xlarge.r2 | 8核  | 16G  | 3.5Gbps  | 400万         | 50μs |

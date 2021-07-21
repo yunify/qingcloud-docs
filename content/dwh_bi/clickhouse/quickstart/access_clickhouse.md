@@ -30,6 +30,7 @@ ClickHouse on QingCloud 与原生 ClickHouse 高度兼容，可直接使用 Clic
   ```
 
 - 使用 Docke 非交互式的方式导入数据。
+
     ``` shell
     cat visits_v1.tsv | docker run -i --rm yandex/clickhouse-client -h 高可用IP --port TCP服务端口 --user 用户名 --password 密码 --query "INSERT INTO datasets.visits_v1 FORMAT TSV"
   ```
@@ -37,12 +38,14 @@ ClickHouse on QingCloud 与原生 ClickHouse 高度兼容，可直接使用 Clic
 ## 使用 ClickHouse 客户端
 
 - 使用 clickhouse-client 交互式的方式连接。
+   
    ``` shell
    sudo apt-get install clickhouse-client  #如已安装请忽略
    clickhouse-client -h 高可用IP --port tcp服务端口 --user 用户名  --password 密码
    ```
 
 - 使用 clickhouse-client 非交互式的方式向导入数据。
+   
    ``` shell
    sudo apt-get install clickhouse-client  #如已安装请忽略
    cat visits_v1.tsv | clickhouse-client -h 高可用IP --port TCP服务端口 --user 用户名 --password 密码 --query "INSERT INTO datasets.visits_v1 FORMAT TSV"
@@ -51,11 +54,13 @@ ClickHouse on QingCloud 与原生 ClickHouse 高度兼容，可直接使用 Clic
 ## 使用 curl 
 
 - 使用 curl 访问。
+
    ``` shell
    echo 'SELECT 1' | curl 'http://用户名:密码@高可用IP:端口' -d @-
    ```
 
 - 使用 curl 向导入数据。
+
    ``` shell
    cat visits_v1.tsv | curl 'http://用户名:密码@高可用IP:端口/?query=INSERT+INTO+datasets.visits_v1+FORMAT+FORMAT+TSV' --data-binary @-
    ```
