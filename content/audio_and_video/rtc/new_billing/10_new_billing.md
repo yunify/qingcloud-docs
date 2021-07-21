@@ -19,6 +19,187 @@ RTC 会根据您创建的所有应用所产生的音视频会话时长扣除套�
 >
 >- 若需 H.265 相关服务，请提交工单进行单独申请。
 
+## 服务定价
+
+<table>
+  <tr>
+    <td>
+      分类
+    </td>
+    <td>
+      服务项
+    </td>
+    <td>
+      单价（元/分钟）
+    </td>
+  </tr>
+  <tr>
+    <th rowspan="6">
+      实时音视频通信（非小程序）
+    </th>
+  </tr>
+  <tr>
+    <td>
+      音频
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+  <tr>
+    <td>
+      高清（HD）
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+  <tr>
+    <td>
+      全高清（Full HD）
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+    <tr>
+    <td>
+      2K
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+      <tr>
+    <td>
+      2K+
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+  <tr>
+    <th rowspan="6">
+      实时音视频通信（小程序）
+    </th>
+  </tr>
+  <tr>
+    <td>
+      音频
+    </td>
+  <td>
+      1
+    </td>
+  </tr>
+  <tr>
+    <td>
+      高清（HD）
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+  <tr>
+    <td>
+      全高清（Full HD）
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+    <tr>
+    <td>
+      2K
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+      <tr>
+    <td>
+      2K+
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+   <tr>
+    <th rowspan="6">
+      云录制
+    </th>
+  </tr>
+  <tr>
+    <td>
+      音频
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+  <tr>
+    <td>
+      高清（HD）
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+  <tr>
+    <td>
+      全高清（Full HD）
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+    <tr>
+    <td>
+      2K
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+      <tr>
+    <td>
+      2K+
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+     <tr>
+    <th rowspan="4">
+      旁路推流
+    </th>
+  </tr>
+  <tr>
+    <td>
+      音频
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+  <tr>
+    <td>
+      高清（HD）
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+  <tr>
+    <td>
+      全高清（Full HD）
+    </td>
+    <td>
+      1
+    </td>
+</table>
+
+
+
 ## 计费项
 
 购买的套餐包为资源用量套餐包，通过套餐包资源分钟数可以扣除您在音视频通话时的各种分辨率用量。
