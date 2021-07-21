@@ -19,9 +19,7 @@ HBase on QingCloud AppCenter 集群服务包含 HBase 数据库服务、HDFS 分
 
 ## 系统部署架构
 
-HBase 集群采用的是 Master/Slave 架构，
-
-HBase on QingCloud AppCenter 集群分三种节点类型：主节点 (HBase Master 和 HDFS NameNode)，从节点 (HBase RegionServer 和 HDFS DataNode) 和客户端节点 (HBase Client)。
+HBase 集群采用的是 Master/Slave 架构。HBase on QingCloud AppCenter 集群分三种节点类型：主节点 (HBase Master 和 HDFS NameNode)，从节点 (HBase RegionServer 和 HDFS DataNode) 和客户端节点 (HBase Client)。
 
 用户在 HBase 客户端可通过 HBase Shell、Java API（本地或 MapReduce）、Rest API、Thrift API 或其他工具来访问 HBase。
 

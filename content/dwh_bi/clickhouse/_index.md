@@ -33,7 +33,7 @@ section2:
 
     - title: 操作指南
       content: 学习上手如何创建、查看及应用 ClickHouse 等。
-      url: "manual/set_step/"
+      url: "manual/cluster_info/"
 
 section3:
   title: 开发者指南
