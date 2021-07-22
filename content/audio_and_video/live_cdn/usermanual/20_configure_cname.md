@@ -15,7 +15,9 @@ weight: 20
 
 ## 配置 CNAME
 
-如下**以在青云的云解析 DNS 服务中配置 CNAME 值为例**说明。
+您需要在您的 DNS 服务商处配置 CNAME 值。
+
+如下**以在青云的云解析 DNS 服务中配置 CNAME 值为例**说明，更多关于 DNS 解析记录的配置，请参见[配置解析记录](https://docsv3.qingcloud.com/network/dns/quickstart/creatrecordset/)。
 
 1. 登录 QingCloud 管理控制台。
 
