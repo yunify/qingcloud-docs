@@ -22,50 +22,48 @@ weight: 20
 
 按照以下操作，创建一个 VPC 网络并在 VPC 网络中添加一个私有网络。
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 
-3. 点击**创建 VPC 网络**，弹出**创建 VPC 网络**页面。
-   <img src="/network/vpc_2.0/_images/501010_create_vpc.png" alt="create_vpc" style="zoom:50%;" />
-
-4. 配置VPC网络信息。
+3. 点击**创建 VPC 网络**，打开**创建 VPC 网络**页面。
+   
+4. 配置 VPC 网络基本信息及初始私有网络信息。
 
    > **说明**：
    >
-   > 以下配置为本操作中使用的示例，若您有其他特别需求，可参见[创建 VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)查看参数详细配置说明。
+   > 以下配置为本操作中使用的示例，若您有其他特别需求，可参见[创建 VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)查看详细配置说明。
 
+   <img src="/network/vpc/_images/4020_create_vpc_info.png" alt="基本信息" style="zoom:50%;" />
+
+   **基本信息**：
+
+   - 区域：选择靠近您客户的区域。
    - 名称：输入 VPC 网络的名称。如：vpc-test。
    - IPv4 地址范围：选择 VPC 网络的 IPv4 网段。
    - IPv6 网络地址：选择**关闭 IPv6**。
-
-   - 管理路由器属性
-      - 类型：选择**小型**。
-      - 安全组：使用**缺省安全组**。
+   - 类型：使用**小型**。注意**免费型**不支持绑定公网 IP。
+   - 公网 IP：选择**暂不绑定**。
+   - 安全组：使用默认安全组。
    
-5. 点击**创建**，等待创建完成。
-
-6. 点击已创建好的 VPC，进入 VPC 详情页面。默认展示**私有网络**页签。
-
-7. 在**私有网络**页签区域，点击<img src="/network/vpc_2.0/_images/4020_vpc_add_vxnet_icon.png" alt="vpc_add_vxnet_icon" style="zoom:50%;" />，弹出**创建/连接私有网络**页面。
-
-   <img src="/network/vpc_2.0/_images/501030_bind_vxnet_3.png" alt="bind_vxnet_3" style="zoom:50%;" />
-8. 设置私有网络网络基本信息。
-
-   > **说明**：
-   >以下配置为本操作中使用的示例，若您有其他特别需求，可参见[连接私有网络](/network/vpc/manual/vpcnet/15_bind_vxnet/)查看参数详细配置说明。
-
-   - 私有网络名称：私有网络名称。如：Vxnet-test。
+   <img src="/network/vpc/_images/4020_create_vpc_vxnet.png" alt="初始私有网络" style="zoom:50%;" />
+   
+   **初始私有网络**：
+   
+   - 名称：私有网络名称，如：Vxnet-test。
    - 部署方式：选择**多可用区部署**。
-   - IPv4 网络地址：私有网络的地址范围，需要在 VPC 网络的地址范围内。
+   - IPV4 地址范围：私有网络的地址范围，需要在 VPC 网络的地址范围内。
    - 网络 ACL：选择**无**。
-   - 高级选项：使用默认配置即可。
-9. 点击**提交**。
+   - 高级选项：使用默认设置。
+   
+5. 点击**立即创建**，等待创建完成。
+
 
 ### 步骤2：在私有网络中创建云服务器
 
 按照以下操作，在[步骤1](#步骤1创建-vpc-网络及私有网络)中创建的私有网络中创建云服务器。
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 2. 在顶部菜单栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 3. 点击在[步骤1](#步骤1创建-vpc-网络及私有网络)中已创建好的 VPC 网络，进入 VPC 详情页面。
 4. 在**私有网络** > **资源列表**区，点击**创建资源** > **云服务器**。
@@ -78,7 +76,7 @@ weight: 20
 
 6. 点击**创建**。
 
-   创建完成后，资源列表中将显示云服务信息。
+   创建完成后，资源列表中将显示云服务器信息。
 
 ### 步骤3：申请公网 IP 并绑定到云服务器
 
