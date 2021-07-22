@@ -2,7 +2,7 @@
 title: "查询用户状态"
 description: 
 draft: false
-weight：10
+weight: 10
 ---
 
 查询用户的状态。
