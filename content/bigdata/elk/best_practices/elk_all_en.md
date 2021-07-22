@@ -9,7 +9,7 @@ draft: false
 
 本小节为用户呈现了英文日志从 Logstash 导入到 Elasticsearch ，再通过 Kibana 进行搜索的完整的过程。
 
-> 说明：
+> **说明**：
 >
 > 为了方便测试，此选择了 logstash-http-input 插件输入日志数据，在实际应用中用户可以选择多种 Logstash Input 插件从各种数据源获取日志数据，比如文件、log4j、syslog、QingStor 对象存储、Kafka 等。
 >
@@ -27,4 +27,4 @@ draft: false
 
 2. 参照 [Kibana 基本用法](#kibana-intro) 在浏览器中访问 Kibana 节点并配置 index pattern：点击左侧的 `Discover` 菜单项，显示近期接收到的日志，在搜索栏中输入 `error` ，点击右侧的“搜索”按钮。如图，`error` 被高亮显示，测试成功。
 
-   ![en_search_result](../../../images/en_search_result.png)
+   ![en_search_result](../../images/en_search_result.png)

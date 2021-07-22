@@ -13,7 +13,7 @@ draft: false
 
 1. 把自定义字典上传到可访问到的 HTTP 服务器上，本示例将通过如下命令上传到某个 Logstash 节点，用户也可以放在其他任意 HTTP 服务器，只要 Elasticsearch 节点可以访问到即可：
 
-   > 注意：
+   > **说明**：
    >
    > URL最后的 `/` 不能省略。
 
@@ -98,6 +98,6 @@ draft: false
 
 4. 查看中文分词结果，结果如下图红色部分所示即为成功。即"中国"、"青云"、"优帆科技"被当做固定的中文分词表示。
 
-   ![chinese_split](../../../images/chinese_split.png)
+   ![chinese_split](../../images/chinese_split.png)
 
 5. 可根据实际需要随时更新用户自定义字典，Elasticsearch 会自动检测 HTTP 响应头中的 Last-Modified 和 ETag 的变化，来进行分词字典的热更新。

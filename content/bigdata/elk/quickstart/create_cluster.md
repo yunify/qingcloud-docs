@@ -60,9 +60,9 @@ draft: false
 
 ![es_node_config](../../images/es_node_config.png)
 
-> 注意：
+> **说明**：
 >
-> 企业级分布式 SAN（NeonSAN）目前仅支持 北京3区-B、上海1区-A，广东2区-A 这三个区域。
+> 企业级分布式 SAN（NeonSAN）目前仅支持 `北京3区-B`、`上海1区-A`、`广东2区-A` 这三个区域。
 
 **Elasticsearch 专有主节点设置**
 

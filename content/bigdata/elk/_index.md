@@ -29,8 +29,12 @@ Section2:
       url: "quickstart/create_cluster/"
 
     - title: 操作指南
-      content: 学习上手如何管理 HBase 集群，以及如何使用 HBase 提供的相关服务等。
+      content: 学习上手如何管理 ELK 集群，以及如何使用 ELK 提供的相关服务等。
       url: "manual/cluster_info/"
+
+    - title: 最佳实践
+      content: ELK 服务最佳实践
+      url: "best_practices/elk_all_cn/"
 
 section3:
   title: 开发者指南
@@ -61,7 +65,7 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 创建 ELK
-          url: "quickstart/create_cluster/"
+          url: "quickstart/elk_all_cn/"
 
 
 ---

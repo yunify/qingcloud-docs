@@ -23,10 +23,12 @@ ELK 为用户提供了以下组件，用以服务集群其他组件或直接为�
 
 * [HAProxy](http://www.haproxy.org/) 是一个高性能的负载均衡软件，部署在 Kibana 节点上，为我们提供 Elasticsearch 的负载均衡和故障转移功能。建议用户通过集群的 VIP （绑定在 Kibana 节点上）访问 Elasticsearch 服务（http://[VIP]:9200/)。
 
+  > **说明**：
+  >
   > `ELK 5.5.1 - QingCloud 1.2.8` 及之前版本使用 Nginx 。
 
 * [Keepalived](https://www.keepalived.org) 为 HAProxy 提供故障转移能力，防止 HAProxy 单点失败，确保 http://[VIP]:9200/ 的高可用。
 
-  > 注意：
+  > **说明**：
   >
   > 如需此功能，需要配置两个 Kibana 节点。此组件从版本 `ELK 5.6.16 - QingCloud 1.5.0` 起开始支持。

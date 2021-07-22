@@ -34,7 +34,7 @@ Logstash 支持从 QingStor 对象存储输入数据到 Elasticsearch，或者�
 
    请根据实际情况调整上面的参数，比如按区域就近指定 endpoint 地址等，关于参数的详情可参考其 [官方文档](https://www.elastic.co/guide/en/logstash/6.7/plugins-inputs-s3.html)。
 
-   > 说明：
+   > **说明**：
    >
    > `ELK 5.6.16 - QingCloud 1.5.0` 之前的版本请使用 Logstash Inputs QingStor 插件参考如下示例进行配置：
    >
@@ -56,7 +56,7 @@ Logstash 支持从 QingStor 对象存储输入数据到 Elasticsearch，或者�
 
 4. 参照 [Kibana 基本用法](#kibana-intro) 使用浏览器输入 `http://$KB_IP:5601/` 打开 Kibana 界面，配置 index pattern 后，既可在 Discover 查看到导入的日志。
 
-   > 说明：
+   > **说明**：
    >
    > Logstash 默认的 output 是 Elasticsearch， 并自动配置好了 Elasticsearch 集群的 hosts 选项。如果需要在 output 到 Elasticsearch 的过程中指定其他参数， 可以在`output_es_content`中指定，比如：
    >

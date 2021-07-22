@@ -32,6 +32,8 @@ draft: false
    /usr/share/logstash/bin/logstash-plugin install --no-verify
    ```
 
+   > **说明**：
+   >
    > `ELK 5.5.1 - QingCloud 1.2.0` 及以前版本请使用如下命令：
    >
    > ```bash
@@ -52,7 +54,7 @@ draft: false
    }
    ```
 
-   > 说明：
+   > **说明**：
    >
    > 请参考相关插件的配置参数进行必要的修改，logstash-output-influxdb 相关的配置参数请参考其[文档](https://www.elastic.co/guide/en/logstash/5.5/plugins-outputs-influxdb.html)。
    >

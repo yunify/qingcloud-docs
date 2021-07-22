@@ -9,7 +9,7 @@ draft: false
 
 用户可通过网页 VNC 登录到 Logstash 节点，安装目录在 `/usr/share/logstash`。
 
-> 说明：
+> **说明**：
 >
 > `ELK 5.5.1 - QingCloud 1.2.0` 及以前版本的 Logstash 运行在 Docker 容器的 `/opt/logstash` 目录下，用户需先进入 Docker 容器查看 Logstash 文件：
 >

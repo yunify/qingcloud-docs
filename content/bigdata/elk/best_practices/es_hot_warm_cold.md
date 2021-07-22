@@ -11,7 +11,7 @@ draft: false
 
 ## 节点介绍
 
-![hot-warm-cold-arch](../../../images/hot-warm-cold-arch.png)
+![hot-warm-cold-arch](../../images/hot-warm-cold-arch.png)
 
 * 专有主节点：由于不保存数据，也就不参与索引和查询操作，不会被长 GC 干扰，负载可以保持在较低水平，能极大提高集群的稳定性。
 * 热数据节点：保存近期的 index，承担最频繁的写入和查询操作，可以配置较高的资源，如超高性能主机及硬盘。可以在集群配置参数里 Elasticsearch 节点的参数 node.attr.data（热）做修改，默认为 `hot`。
@@ -19,15 +19,15 @@ draft: false
 
 ## 节点配置
 
-![hot-warm-cold-conf](../../../images/hot-warm-cold-conf.png)
+![hot-warm-cold-conf](../../images/hot-warm-cold-conf.png)
 
 创建好的集群如下图所示：
 
-![hot-warm-cold-nodes](../../../images/hot-warm-cold-nodes.png)
+![hot-warm-cold-nodes](../../images/hot-warm-cold-nodes.png)
 
 如下图所示，假设有三个 index，分别代表热、温、冷 index 数据，它们最初都处于热数据节点上：
 
-![hot-warm-cold-indices](../../../images/hot-warm-cold-indices.png)
+![hot-warm-cold-indices](../../images/hot-warm-cold-indices.png)
 
 可以使用如下命令迁移温数据（名为 `last-month` 的 index，可根据实际情况选择相应的 index）到相应节点上：
 
@@ -49,5 +49,5 @@ PUT /last-year/_settings
 
 下面的动态截屏展示了通过 Kibana 的 Dev Tools 进行温/冷数据迁移的过程：
 
-![hot-warm-cold](../../../images/hot-warm-cold.gif)
+![hot-warm-cold](../../images/hot-warm-cold.gif)
 

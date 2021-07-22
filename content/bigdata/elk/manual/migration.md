@@ -72,7 +72,7 @@ draft: false
    '
    ```
 
-   > 注意：
+   > **说明**：
    >
    > 这里只有 IP 地址需变更为 ELK 集群的某一节点的 IP 地址，其他配置应与第四步中的配置完全相同。
 
@@ -82,7 +82,7 @@ draft: false
    curl -H 'Content-Type: application/json' -XPOST 'http://<ELK集群的某一节点的IP地址>:9200/_snapshot/repo-qingstor/migration-2019.05.13/_restore'
    ```
 
-   > 注意：
+   > **说明**：
    >
    > 目前 QingStor 对象存储只开放了 `北京3区-A`、`北京3区-B`、`上海1区-A` 和 `广东2区`，这些区内的数据迁移是不耗公网网络流量的，其他区借助对象存储迁移是需要耗费公网流量的。
 
@@ -101,7 +101,7 @@ draft: false
    elasticdump --input=http://192.168.0.37:9200 --output=http://192.168.0.24:9200
    ```
 
-   > 说明：
+   > **说明**：
    >
    > 将 192.168.0.37 替换为原青云大数据平台的 Elasticsearch 集群的任意节点的 IP 地址，将 192.168.0.24 替换为 ELK 集群的任意 Elasticsearch 节点的 IP 地址。
 

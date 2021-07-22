@@ -9,7 +9,7 @@ draft: false
 
 本小节为用户呈现了中文日志从 Logstash 导入到 Elasticsearch，再通过 Kibana 进行搜索的完整的过程。
 
-> 注意：
+> **说明**：
 >
 > 从版本 `ELK 5.6.16 - QingCloud 1.5.0` 起已内置用于指定 ik 分词器的模板文件，用户可以直接使用（在 Logstash 节点的 /data/elasticsearch/dicts 目录下）。
 >
@@ -29,7 +29,7 @@ template_overwrite => true
 template => "/data/elasticsearch/dicts/logstash.json"
 ```
 
-> 注意：
+> **说明**：
 >
 > 上述模板文件 logstash.json 只能对之后新创建的 index 生效，无法对已经存在的 index 生效。如果当天的 Logstash index 已经存在，可以备份完里面的数据以后先删除这个 index 再进行下面的操作。
 
@@ -43,4 +43,4 @@ curl -d "中国驻洛杉矶领事馆遭亚裔男子枪击 嫌犯已自首" $LS_I
 
 4. 参照 [Kibana 基本用法](#kibana-intro) 在浏览器中访问 Kibana 节点并配置 index pattern，然后点击左侧的 `Discover` 菜单项，显示近期接收到的日志，在搜索栏中输入“中国”，点击右侧的“搜索”按钮。如图，“中国”被高亮显示并且中间没有空格分隔，测试成功。
 
- ![search_result](../../../images/search_result.png) 
+ ![search_result](../../images/search_result.png) 

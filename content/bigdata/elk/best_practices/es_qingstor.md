@@ -25,7 +25,6 @@ Elasticsearch 可以通过快照（snapshot）将指定 index 甚至整个 clust
      }
    }
    ```
-   
 
 | 参数       | 说明                                                         |
 | ---------- | ------------------------------------------------------------ |
@@ -35,7 +34,7 @@ Elasticsearch 可以通过快照（snapshot）将指定 index 甚至整个 clust
 | secret_key | 青云账号关联的secret_key                                     |
 | bucket     | QingStor上bucket名称my_qingstor_bucket(如果不存在将创建出来) |
 
-> 说明：
+> **说明**：
 >
 > 详细参数说明请参考 [官方文档](https://www.elastic.co/guide/en/elasticsearch/plugins/current/repository-s3-client.html)。
 
@@ -67,7 +66,7 @@ Elasticsearch 可以通过快照（snapshot）将指定 index 甚至整个 clust
    '
    ```
 
-   > 说明：
+   > **说明**：
    >
    > 参数 wait_for_completion 为 true 时表示该命令将会在快照创建完成返回，false 表示该命令将会在快照初始化完成就返回。
 
@@ -99,20 +98,20 @@ Elasticsearch 可以通过快照（snapshot）将指定 index 甚至整个 clust
    '
    ```
 
-   > 注意：
+   > **说明**：
    >
    > 要恢复的 index 必须是集群中处于关闭状态的 index, 处于打开状态的 index 将会提示无法恢复。
 
 6. 快照由于并没有和具体的集群信息绑定，所以也可以恢复到另一个不同的集群，用户可以用这种方法在不同集群之间通过 QingStor 导入导出数据。
 
-   > 注意：
+   > **说明**：
    >
    > 新集群的版本必须和老集群一致或者更新。
 
    - 先在目标集群中生成和源集群同样的 repository（必须使用同样的参数，具体方法请参考步骤1 ）。
    - 在新的集群创建好与老集群相同的 repository 后，就可以通过步骤5中提到的命令（需要把 URL 地址改成新集群里节点的地址）将老集群的数据恢复到新集群上去。
 
-   > 说明：
+   > **说明**：
    >
    > 更详细的有关集群快照的生成和恢复的信息请参考 [Elasticsearch官方文档](https://www.elastic.co/guide/en/elasticsearch/reference/6.7/modules-snapshots.html)。
    >
