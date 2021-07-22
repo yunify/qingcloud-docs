@@ -65,7 +65,7 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 创建 ELK
-          url: "quickstart/elk_all_cn/"
+          url: "quickstart/create_cluster/"
 
 
 ---
