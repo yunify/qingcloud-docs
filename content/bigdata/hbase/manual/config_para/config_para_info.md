@@ -1,5 +1,5 @@
 ---
-title: "简介"
+title: "参数介绍"
 description: 本小节主要介绍 HBase 常用配置项。 
 keywords: HBase 常用配置项；
 weight: 10

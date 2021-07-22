@@ -60,7 +60,7 @@ draft: false
 
 ### 主实例设置（自定义）
 
-集群主实例的硬件配置，包括云服务器规格、磁盘大小等。
+集群主实例的资源配置，包括云服务器规格、磁盘大小等。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
@@ -73,7 +73,7 @@ draft: false
 
 ### 只读实例设置（自定义）
 
-集群只读实例的硬件配置，包括云服务器规格、磁盘大小等。
+集群只读实例的资源配置，包括云服务器规格、磁盘大小等。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
@@ -87,7 +87,7 @@ draft: false
 
 ### proxy 实例设置（自定义）
 
-集群 proxy 实例的硬件配置，包括云服务器规格、磁盘大小等。
+集群 proxy 实例的资源配置，包括云服务器规格、磁盘大小等。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
