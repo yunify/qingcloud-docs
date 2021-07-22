@@ -1,5 +1,5 @@
 ---
-title: "简介"
+title: "日志概述"
 description: 本小节主要介绍 MySQL Plus 日志基本信息。 
 keywords: mysql plus 日志信息；
 weight: 05
