@@ -43,7 +43,7 @@ weight: 20
    >
    > 您也可以在左侧导航栏中，点击**套餐包管理**。在套餐包管理页面，点击 **0 元领取新手套餐包**，领取新手套餐包。
 
-   <img src="../../_images/qs_new_min.png" style="zoom:50%;" />
+   <img src="../../_images/qs_new_min.png" style="zoom:30%;" />
 
 4. 点击**立即领取**，弹出**领取成功**窗口。
 

@@ -1,6 +1,6 @@
 ---
 title: "实时音视频 RTC"
-linkTitle: "RTC"
+linkTitle: "实时音视频 RTC"
 weight: 2
 collapsible: true
 type: "product"
