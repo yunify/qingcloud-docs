@@ -35,13 +35,9 @@ section2:
 section3:
   title: 开发者指南
   children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/development_docs/api/command_list/instance/describe_instances"
-
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: "/development_docs/sdk/"
+      url: "/audio_and_video/rtc/techref/sdk/10_sdk"
 
 
 section4:
