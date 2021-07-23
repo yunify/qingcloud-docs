@@ -29,14 +29,18 @@ keyword: 青云
    > 可根据需要选择NFS协议版本。在客户端操作系统支持的前提下，建议使用 NFS V4 或 V4.1，V4.2协议。V4.x 版本协议比 V3 协议能提供更优的性能和一致性。
 
 4. 执行以下命令进行挂载：
-
-   ```
+   
    Step1：创建挂载目录
-   # mkdir /mnt/${test_create}
+   ```
+   mkdir /mnt/${test_create}
+   ```
    Step2：复制管理控制台上的命令，修改最后的目录
-   # sudo mount -t nfs -o vers=4.0 n0.efs.qingstor.me:/test_create/data /mnt/${test_create}
+   ```
+   sudo mount -t nfs -o vers=4.0 n0.efs.qingstor.me:/test_create/data /mnt/${test_create}
+   ```
    Step3：检查是否成功挂载
-   # mount | grep nfs
+   ```
+   mount | grep nfs
    ```
 
    > 说明：
@@ -46,31 +50,43 @@ keyword: 青云
    > 挂载命令中，**n0**表示NFS协议。
 
 5. 挂载成功后，可在挂载目录下正常写入数据：
-
-   ```
+   
    Step1：进入挂载目录
-   # cd /mnt/${test_create}
+   ```
+   cd /mnt/${test_create}
+   ```
    Step2：获取列表
-   # ls
+   ```
+   ls
+   ```
    Step3：新建文件
-   # touch llll
+   ```
+   touch llll
+   ```
    Step4：写入内容
-   # echo "xxxxx" >> llll 
+   ```
+   echo "xxxxx" >> llll 
+   ```
    Step5：查看文件内容
-   # cat llll 
+   ```
+   cat llll 
    ```
 
 ### 卸载
 
 1. 执行以下命令卸载文件系统：
 
-   ```
    Step1：退出挂载目录
-   # cd
+   ```
+   cd
+   ```
    Step2：卸载
-   # umount /mnt/${test_create} 
+   ```
+   umount /mnt/${test_create} 
+   ```
    Step3：检查是否成功卸载
-   # mount | grep nfs
+   ```
+   mount | grep nfs
    ```
 
 ## SMB共享使用
@@ -85,13 +101,17 @@ keyword: 青云
 
 2. 执行以下命令进行挂载：
 
-   ```
    Step1：创建挂载目录
-   # mkdir /mnt/${test_create}
+   ```
+   mkdir /mnt/${test_create}
+   ```
    Step2：复制以下命令，根据实际情况修改域名、文件系统名称及最后的挂载目录
-   # mount -t cifs -o soft,mfsymlinks,vers=3.0,username=admin,password=qfs8102@qingstor, -l //s0.efs.qingstor.me/${test_create} /mnt/${test_create}
+   ```
+   mount -t cifs -o soft,mfsymlinks,vers=3.0,username=admin,password=qfs8102@qingstor, -l //s0.efs.qingstor.me/${test_create} /mnt/${test_create}
+   ```
    Step 3：检查是否成功挂载
-   # mount | grep cifs
+   ```
+   mount | grep cifs
    ```
 
    > 说明：
@@ -103,30 +123,42 @@ keyword: 青云
 
 3. 挂载成功后，可在挂载目录下正常写入数据：
 
-   ```
    Step1：进入挂载目录
-   # cd /mnt/${test_create}
+   ```
+   cd /mnt/${test_create}
+   ```
    Step2：获取列表
-   # ls
+   ```
+   ls
+   ```
    Step3：新建文件
-   # touch llll
+   ```
+   touch llll
+   ```
    Step4：写入内容
-   # echo "xxxxx" >> llll 
+   ```
+   echo "xxxxx" >> llll 
+   ```
    Step5：查看文件内容
-   # cat llll
+   ```
+   cat llll
    ```
 
 #### 卸载
 
 1. 执行以下命令卸载文件系统：
 
-   ```
    Step1：退出挂载目录
-   # cd
+   ```
+   cd
+   ```
    Step2：卸载
-   # umount /mnt/${test_create} 
+   ```
+   umount /mnt/${test_create} 
+   ```
    Step3：检查是否成功卸载
-   # mount | grep cifs
+   ```
+   mount | grep cifs
    ```
 
 ### Windows下使用
@@ -147,11 +179,13 @@ keyword: 青云
 
 4. 打开**命令行窗口**，执行以下命令挂载文件系统：
 
-   ```
    Step1：复制管理控制台上的命令进行挂载
-   # net use z: \\${s0.efs.qingstor.me}\test-create-test-create 
+   ```
+   net use z: \\${s0.efs.qingstor.me}\test-create-test-create 
+   ```
    Step2：检查是否成功挂载
-   # net use
+   ```
+   net use
    ```
 
    > 说明：
@@ -173,11 +207,13 @@ keyword: 青云
 
 1. 打开**命令行窗口**，执行以下命令卸载文件系统：
 
-   ```
    Step1：卸载文件系统
-   # net use z: /delete
+   ```
+   net use z: /delete
+   ```
    Step2：检查是否成功卸载
-   # net use
+   ```
+   net use
    ```
 
 
@@ -199,7 +235,7 @@ mount: wrong fs type, bad option, bad superblock on //s0.efs.qingstor.me / test_
 1. 执行如下命令安装cifs：
 
    ```
-   # apt install cifs-utils
+   apt install cifs-utils
    ```
 
 2. 安装完成后再次执行挂载命令进行挂载。

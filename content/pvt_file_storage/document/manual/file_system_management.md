@@ -160,18 +160,25 @@ keyword: 青云
 
 3. 挂载步骤2中创建的共享，并进入查看是否有文件，删除查看到的文件。
 
-
-   ```
    Step1：创建挂载目录
-   # mkdir /mnt/${test_create}
+   ``` 
+   mkdir /mnt/${test_create}
+   ```
    Step2：复制管理控制台上的命令，修改最后的目录
-   # sudo mount -t nfs -o vers=3,nolock,proto=tcp n0.efs.qingstor.me:/test-create /mnt/${test_create}
+   ```
+   sudo mount -t nfs -o vers=3,nolock,proto=tcp n0.efs.qingstor.me:/test-create /mnt/${test_create}
+   ```
    Step3：进入挂载目录
-   # cd /mnt/${test_create}
+   ```
+   cd /mnt/${test_create}
+   ```
    Step4：查看文件
-   # ls
+   ```
+   ls
+   ```
    Step5：删除文件
-   # rm -r *
+   ```
+   rm -r *
    ```
 
 4. 登录Portal，进入文件系统详情页面，删除步骤2中创建的共享。
