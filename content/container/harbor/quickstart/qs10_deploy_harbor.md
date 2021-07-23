@@ -17,7 +17,7 @@ weight: 10
 
 1. 创建一个 VPC 网络和关联一个 Vxnet 私有网络。
 
-   创建VPC网络请参 [创建 VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)，关联私有网络请参见[连接私有网络](/network/vpc/manual/vpcnet/15_bind_vxnet/)。
+   创建 VPC 网络请参见[创建 VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)，关联私有网络请参见[连接私有网络](/network/vpc/manual/vpcnet/15_bind_vxnet/)。
 
    > **注意**：
    >
@@ -53,7 +53,7 @@ weight: 10
 ## 操作步骤
 
 1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
-2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **Harbor 私有云镜像仓库**，进入 Harbor 镜像仓库部署页面。
+2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **Harbor 镜像仓库**，进入 Harbor 镜像仓库部署页面。
 3. 点击**立即部署**开始部署。
 
 ### 第1步：基本设置

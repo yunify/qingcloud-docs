@@ -24,8 +24,6 @@ weight: 12
 
    <img src="/container/harbor/_images/man12_expan.png" alt="expan" style="zoom:50%;" />
 
-4. 在左侧的**基本属性**区域，点击<img src="/container/harbor/_images/man05_menu_icon.png" alt="icon" style="zoom:60%;" />图标，选择**清理任务日志**。
-
 5. 勾选（可多选）需要修改配置的节点，然后在下方调整资源配置。
 
 6. 点击**提交**。

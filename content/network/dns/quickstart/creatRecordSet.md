@@ -12,7 +12,7 @@ draft: false
 
 ## 步骤一：添加域名
 
-1. 登录 QingCloud 控制台。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 2. 选择**产品与服务** > **网络服务** > **云解析 DNS**，进入域名列表页。
 
    ![DNS域名列表](../_images/create_domain_1.png)
@@ -21,7 +21,9 @@ draft: false
 
    ![添加域名](../_images/create_domain_2.png)
 
-   > 请注意：您的域名必须真实有效且未被纳入工信部备案黑名单。
+   > **注意**：
+   >
+   > 您的域名必须真实有效且未被纳入工信部备案黑名单。
    >
    > QingCloud DNS 将定期同步[IANA 域名后缀列表](https://www.iana.org/domains/root/db)，若您发现新的域名后缀无法添加，请及时与我们联系。
 
@@ -44,5 +46,8 @@ draft: false
     示例：将 www.eg.com 默认解析指向网站服务器 IP 地址 1.1.1.1 。
 
     ![添加解析信息](../_images/dns_A.png)
+    
+    > **说明**：
+    >
+    > QingCloud DNS 默认提供5条线路，包括**全网默认、中国电信、中国联通、中国移动、港澳台及海外**。若需自定义解析线路，可参考[配置解析线路](../../manual/dnsrecord/setresolline)。
 
-> 注：QingCloud DNS 默认提供5条线路，包括**全网默认、中国电信、中国联通、中国移动、港澳台及海外**。若需自定义解析线路，可参考[配置解析线路](../../manual/dnsrecord/setresolline)。
