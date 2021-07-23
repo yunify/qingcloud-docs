@@ -30,4 +30,3 @@ weight: 50
 6. 在**用量记录**列表中，您可以查看使用详情。
 
    ![](../../_images/um_usage_record.png)
-
