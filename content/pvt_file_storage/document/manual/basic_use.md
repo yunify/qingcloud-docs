@@ -191,7 +191,9 @@ keyword: 青云
    > 说明：
    >
    > + 挂载命令中，**s0**表示SMB协议。
-   >
+   > 
+   > + z:表示挂载目标盘符。
+   > 
    > + 将域名改为任一节点服务器的IP。
    >    若需要使用域名进行挂载，可编辑hosts文件，增加如下信息：
    >
@@ -238,4 +240,4 @@ mount: wrong fs type, bad option, bad superblock on //s0.efs.qingstor.me / test_
    apt install cifs-utils
    ```
 
-2. 安装完成后再次执行挂载命令进行挂载。
+2. 安装完成后再次执行挂载命令进行挂载，详细步骤参考[SMB共享使用](#SMB共享使用)。
