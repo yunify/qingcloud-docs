@@ -46,8 +46,8 @@ keyword: 青云
    > 说明：
    >
    > 挂载命令中，若不指定 -o vers=4.0，操作系统会自动选择最高版本来进行挂载。
-   > 挂载命令中，efs.qingstor.me表示域名，根据不同环境部署时的配置不同，域名会有所不同。
-   > 挂载命令中，**n0**表示NFS协议。
+   > efs.qingstor.me表示域名，根据不同环境部署时的配置不同，域名会有所不同。
+   > **n0**表示NFS协议。
 
 5. 挂载成功后，可在挂载目录下正常写入数据：
    
@@ -61,15 +61,15 @@ keyword: 青云
    ```
    Step3：新建文件
    ```
-   touch llll
+   touch file_name
    ```
    Step4：写入内容
    ```
-   echo "xxxxx" >> llll 
+   echo "xxxxx" >> file_name
    ```
    Step5：查看文件内容
    ```
-   cat llll 
+   cat file_name 
    ```
 
 ### 卸载
@@ -117,8 +117,8 @@ keyword: 青云
    > 说明：
    >
    > 挂载命令中，vers=3.0表示SMB协议版本。
-   > 挂载命令中，efs.qingstor.me表示域名，根据不同环境部署时的配置不同，域名会有所不同。
-   > 挂载命令中，**s0**表示SMB协议。
+   > efs.qingstor.me表示域名，根据不同环境部署时的配置不同，域名会有所不同。
+   > **s0**表示SMB协议。
    > 常见错误及解决方案，详见[附录](#附录)。
 
 3. 挂载成功后，可在挂载目录下正常写入数据：
@@ -133,15 +133,15 @@ keyword: 青云
    ```
    Step3：新建文件
    ```
-   touch llll
+   touch file_name
    ```
    Step4：写入内容
    ```
-   echo "xxxxx" >> llll 
+   echo "xxxxx" >> file_name 
    ```
    Step5：查看文件内容
    ```
-   cat llll
+   cat file_name
    ```
 
 #### 卸载
