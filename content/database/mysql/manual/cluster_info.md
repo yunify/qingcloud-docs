@@ -2,7 +2,7 @@
 title: "集群信息"
 description: test
 weight: 15
-draft: false
+draft: true
 ---
 
 ## 基本属性

@@ -60,7 +60,7 @@ draft: false
 
 ### SQL 节点设置（自定义）
 
-集群 SQL 节点的硬件配置，包括云服务器规格、磁盘大小等。
+集群 SQL 节点的资源配置，包括云服务器规格、磁盘大小等。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
@@ -79,7 +79,7 @@ draft: false
 
 ### 存储节点设置（自定义）
 
-集群存储节点的硬件配置，包括云服务器规格、磁盘大小等。
+集群存储节点的资源配置，包括云服务器规格、磁盘大小等。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
@@ -98,7 +98,7 @@ draft: false
 
 ### 监控节点设置（自定义）
 
-集群监控节点的硬件配置，包括云服务器规格、磁盘大小等。
+集群监控节点的资源配置，包括云服务器规格、磁盘大小等。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
