@@ -20,19 +20,21 @@ weight: 25
 
 ## 操作步骤
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC网络**，进入**VPC网络**页面。
 
 3. 找到需要更改的 VPC 网络，点击**更多操作** > **扩容**。
 
-   <img src="/network/vpc/_images/501026_mdy_type.png" alt="mdy_type" style="zoom:50%;" />
-
 4. 在弹出的页面中，修改类型，点击**提交**。
 
-5. 若修改为免费型 ，将弹出如下提示，仔细阅读提示信息后，点击**确认**。
+   若修改为免费型 ，将在页面下方显示如下图所示提示信息，请仔细阅读提示信息，谨慎修改。
 
-   <img src="/network/vpc/_images/501026_free_prompt.png" alt="prompt" style="zoom:50%;" />
+   <img src="/network/vpc/_images/501025_mdy_type.png" alt="mdy_type" style="zoom:50%;" />
+
+   
+
+   
 
    
 

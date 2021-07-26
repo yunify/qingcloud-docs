@@ -66,7 +66,7 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 | eg3.6xlarge.r4  | 24核 | 96G  | 9Gbps    | 400万         | 91μs |
 | eg3.8xlarge.r4  | 32核 | 128G | 13Gbps   | 400万         | 91μs |
 | eg3.16xlarge.r4 | 64核 | 256G | 25Gbps   | 400万         | 91μs |
-| eg3.24xlarge.r4 | 96核 | 384G | 30Gbps   | 400万         | 91μs |
+| eg3.24xlarge.r4 | 96核 | 384G | 32Gbps   | 400万         | 91μs |
 
 ## 内存型 er3
 
@@ -77,7 +77,7 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 - 第三代英特尔®至强®可扩展处理器（Ice Lake），主频：2.6GHz，睿频：3.4GHz
 - 处理器内存配比1:8
 - 支持 VPC 私有网络和基础网络
-- 网络性能与规格对应，规格越高网络转发性能强，最高可支持12Gbps内网带宽，PPS最高400万
+- 网络性能与规格对应，规格越高网络转发性能强，最高可支持13Gbps内网带宽，PPS最高400万
 - 超低延时，低至91μs
 - I/O优化，最高iops达100k
 - 系统盘支持企业级SSD硬盘，数据盘支持企业级SSD硬盘、容量型和企业级分布式 SAN
@@ -120,7 +120,7 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 | ec3ne.2xlarge.r1 | 8核  | 8G   | 3.5Gbps  | 400万         | 50μs |
 | ec3ne.3xlarge.r1 | 12核 | 12G  | 5Gbps    | 600万         | 50μs |
 | ec3ne.4xlarge.r1 | 16核 | 16G  | 6Gbps    | 800万         | 50μs |
-| ec3ne.8xlarge.r1 | 32核 | 32G  | 13Gbps   | 200万         | 50μs |
+| ec3ne.8xlarge.r1 | 32核 | 32G  | 13Gbps   | 2400万        | 50μs |
 | ec3ne.large.r2   | 2核  | 4G   | 2Gbps    | 100万         | 50μs |
 | ec3ne.xlarge.r2  | 4核  | 8G   | 2.5Gbps  | 200万         | 50μs |
 | ec3ne.2xlarge.r2 | 8核  | 16G  | 3.5Gbps  | 400万         | 50μs |
