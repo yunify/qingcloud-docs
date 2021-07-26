@@ -22,6 +22,8 @@ draft: false
 | interface_name | String | 光盒接口名称, 例如：eth0, eth1 | No |
 | monitor_type | String | 监控类型, 有效值为：internet, pop internet: 表示需要获取访问互联网的监控数据 pop: 表示需要获取访问接入点的监控数据 | No |
 | ha_member_index | String | 光盒双机成员索引 | No |
+
+
 [_公共参数_](../../../parameters/)
 
 **Response Elements**
