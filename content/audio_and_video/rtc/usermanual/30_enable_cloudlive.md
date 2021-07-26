@@ -46,7 +46,7 @@ weight: 30
    <table class="table table-bordered table-striped table-condensed">
      <tr>
        <td>
-         参数
+         <span style="display:inline-block;width:100px">参数</span>
        </td>
        <td>
          参数说明
