@@ -35,7 +35,8 @@ draft: false
 
 ![](../../_images/create_storm_3.png)
 
->注解
+>注意：
+>
 >从节点上启用了 Supervisor 服务并运行 Worker 进程，请在生产环境使用至少 2 个从节点，以实现从节点集群的 HA。从节点作为工作节点，通常需要更高的配置。
 
 ## 步骤四：配置 RPC 节点
@@ -44,7 +45,8 @@ draft: false
 
 ![](../../_images/create_storm_4.png)
 
->注解
+>注意：
+>
 >主节点已经启用了 DRPC 服务，因此低负载时 DRPC 节点不是必须的；如果您需要高负载 RPC 服务，可以添加额外的 RPC 节点。
 
 ## 步骤五：配置 Zookeeper 和网络

@@ -1,156 +1,70 @@
 ---
-title: "创建 QingMR 集群"
-description: 本小节主要介绍如何快速创建 QingMR 集群实例。 
-keywords: QingMR 实例, 创建集群,创建实例
-weight: 10
+title: "性能测试"
+description: 本小节主要介绍性能测试。 
+keywords: Storm, 性能测试
+weight: 40
 collapsible: false
 draft: false
 ---
 
-通过 AppCenter 集群管理控制台，您可以快速创建 QingCloud QingMR 集群。
+参考 [yahoo/streaming-benchmarks](https://github.com/yahoo/streaming-benchmarks)，我们对 Storm 集群做了延迟时间性能测试，以下是测试报告。
 
-本小节主要介绍如何快速创建 QingCloud QingMR 集群。
+## 测试条件
 
-## 前提条件
+北京3区-A，在一个 VPC 网络下创建 Storm 集群、Kafka 集群、Zookeeper 集群、Redis 以及若干主机，具体配置如下表所示。
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且账号已实名认证。
-- 已在网络中创建至少一个 ZooKeeper 集群。
-- 已获取 QingMR 集群操作权限。
+| 资源      | 版本    | 主机类型   | CPU  | 内存 | 存储 | 备注                             |
+| --------- | ------- | ---------- | ---- | ---- | ---- | -------------------------------- |
+| Storm     | 1.0.1   | 超高性能型 | 8核  | 16G  | 10G  | 10个从节点                       |
+| Kafka     | 0.8.2.1 | 超高性能型 | 8核  | 32G  | 30G  | 5个节点                          |
+| Zookeeper | 3.4.6   | 超高性能型 | 4核  | 8G   |      | 为 Storm 和 Kafka 各创建一个集群 |
+| Redis     | 3.0.5   | 超高性能型 |      | 8G   |      | 1个节点                          |
+| Instance  |         | 性能型     | 4核  | 8G   |      | 基于Ubuntu 14.04，运行 Load 脚本 |
 
-## 操作步骤
+## 测试步骤
 
-1. 登录 QingCloud 管理控制台。
-2. 选择**产品与服务** > **大数服务** > **大数据引擎 QingMR**，进入 QingMR 集群管理页面。
-3. 点击**立即部署**或**创建**，进入应用部署页面。
-4. 选择**区域**。
-   根据就近原则，选择实例所在区域。
-5. 配置实例基本属性、应用版本、网络信息、环境参数等信息。
+1. 启动Storm 集群、Kafka 集群、Zookeeper 集群、Redis 以及 Load 主机，并在 Load 主机上安装 [Leiningen](http://leiningen.org/#install) ，并下载 [yahoo/streaming-benchmarks](https://github.com/yahoo/streaming-benchmarks) 中的仓库代码。
 
-   a. [基本设置](#基本设置)
+   其次，在 Kafka 集群中创建 ad-events Topic（分区数为5），并参考 [yahoo/streaming-benchmarks](https://github.com/yahoo/streaming-benchmarks) 中的脚本初始化 Redis 中的数据。
 
-   b.  (可选）节点设置，包括 [HDFS 主节点设置](#hdfs-主节点设置可选)、[主节点设置](#主节点设置可选)、[从节点设置](#从节点设置可选)、[Client 节点设置](#client-节点设置可选)。
+   > 注意：
+   > 每轮测试前都需要重新初始化数据。
 
-   c. [网络设置](#网络设置)
+   由于 [yahoo/streaming-benchmarks](https://github.com/yahoo/streaming-benchmarks) 使用的 Storm 版本为 0.10.0/0.11.0，因此需要修改测试用的 storm.benchmark.AdvertisingTopology 类，具体改法如下所示。
 
-   d. [依赖服务设置](#依赖服务设置)
+   a. 将代码中的 **backtype.storm** 替换为 **org.apache.storm**。
 
-   e. [服务环境参数设置](#服务环境参数设置)
+   b. 将代码中的 **storm.kafka** 替换为 **org.apache.storm.kafka**。
 
-   f. [用户协议](#用户协议)
+   c. 在 **localConf.yaml** 中添加配置参数 **zookeeper.brokerZkPath**，并根据 Kafka 集群配置设置其值，例如: “/kafka/q-cvhyvab7/brokers”。
 
-6. 确认配置和费用信息无误后，点击**提交**，创建集群。
+   d. 按照如下方式，修改代码中使用的 ZkHost。
 
-   集群创建成功后，可在**集群管理**页面，查看和管理 QingMR 集群。
+   ```
+   String brokerZkPath = (String)commonConfig.get("zookeeper.brokerZkPath");
+   ZkHosts hosts = new ZkHosts(zkServerHosts, brokerZkPath);
+   ```
 
-   ![集群列表](../../_images/cluster_list.png)
+   修改完毕，重新编译打包，并部署到 Storm 集群中进行测试。
 
-### 基本设置
+2. 通过在多个主机上同时执行如下类似命令以运行 Load 脚本，并持续运行半小时。
 
-集群名称、网络、版本、计费方式等基本信息配置。
+   ```
+   cd data
+   lein run -r -t 15000 --configPath ../conf/localConf.yaml
+   ```
 
-|<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
-|:----|:----|
-|   UUID     |  系统默认分配的全局唯一标识码，不可修改。  |
-|   名称     |  输入当前集群的名称。 <li> 默认为`QingMR`  |
-|   描述  |  （可选）对集群的简要描述。   |
-|   版本 |  选择集群版本。|
-|   资源配置类型 |  选择集群节点云服务器规格。<li> 可选择**基础型**和**增强型**。<li>选择**自定义**，需自定义集群各节点云服务器规格。|
-|   计费方式 |  选择集群计费方式，可选择按**小时**、**月**、**年**计费。|
-|   可用区 |  选择使用区域。 |
+   > 注意：
+   >
+   > 为产生每秒 450000 个 Tulples，需运行 30 个 Load 主机，每个主机每秒产生 15000 个 Tuples。
 
-![基本设置](../../_images/qingmr_step_1.png)
+3. 运行如下类似命令生成测试结果（seen.txt 和 updated.txt）。
 
-### HDFS 主节点设置（可选）
+   ```
+   cd data
+   lein run -g --configPath ../conf/localConf.yaml
+   ```
 
-集群 HDFS 主节点的资源配置，包括云服务器规格、磁盘大小等。
+## 测试结果
 
-|<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
-|:----|:----|
-|   CPU     |  选择集群节点云服务器 CPU 规格。  |
-|   内存     |  选择集群节点云服务器内存大小。  |
-|   节点类型  |  选择集群节点云服务器类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`和`超高性能型`。|
-|   数据盘类型  |  选择集群节点磁盘类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`和`超高性能型`。|
-|   节点容量 |  配置集群数据和日志存储磁盘大小。磁盘大小决定了数据库最大容量以及 IOPS 能力，请根据业务量，可滑动设置或输入数字配置集群磁盘大小。| 
-
-![HDFS 主节点设置](../../_images/qingmr_step_2.png)
-
-### 主节点设置（可选）
-
-集群主节点的资源配置，包括云服务器规格、磁盘大小等。
-
-|<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
-|:----|:----|
-|   CPU     |  选择集群节点云服务器 CPU 规格。  |
-|   内存     |  选择集群节点云服务器内存大小。  |
-|   节点类型  |  选择集群节点云服务器类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`和`超高性能型`。|
-|   数据盘类型  |  选择集群节点磁盘类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`和`超高性能型`。|
-|   节点容量 |  配置集群数据和日志存储磁盘大小。磁盘大小决定了数据库最大容量以及 IOPS 能力，请根据业务量，可滑动设置或输入数字配置集群磁盘大小。| 
-
-![主节点设置](../../_images/qingmr_step_3.png)
-
-### 从节点设置（可选）
-
-集群从节点的资源配置，包括云服务器规格、磁盘大小等。
-
-|<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
-|:----|:----|
-|   CPU     |  选择集群节点云服务器 CPU 规格。  |
-|   内存     |  选择集群节点云服务器内存大小。  |
-|   节点数量     |  选择集群节点数量个数。 默认3个从节点。 |
-|   节点类型  |  选择集群节点云服务器类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`和`超高性能型`。|
-|   数据盘类型  |  选择集群节点磁盘类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`、`超高性能型`和`企业级分布式 SAN (NeonSAN)`。|
-|   节点容量 |  配置集群数据和日志存储磁盘大小。磁盘大小决定了数据库最大容量以及 IOPS 能力，请根据业务量，可滑动设置或输入数字配置集群磁盘大小。| 
-
-![从节点设置](../../_images/qingmr_step_4.png)
-
-### Client 节点设置（可选）
-
-Client 节点为用户可访问的节点，可以用它来访问 HDFS ，和集群交互如提交 job 等。
-
-集群客户端的资源配置，包括云服务器规格、磁盘大小等。建议选配 Client 节点，否则某些功能无法使用（除非手动下载相关软件包并配置好）。
-
-> **说明**
-> 
-> 节点用户名为 ubuntu ，初始密码为 p12cHANgepwD。
-
-|<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
-|:----|:----|
-|   CPU     |  选择集群节点云服务器 CPU 规格。  |
-|   内存     |  选择集群节点云服务器内存大小。  |
-|   节点数量     |  选择集群节点数量个数。 Client 节点为可选，如不需要可设置`节点数量`为0。|
-|   节点类型  |  选择集群节点云服务器类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`和`超高性能型`。|
-|   数据盘类型  |  选择集群节点磁盘类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`和`超高性能型`。|
-|   节点容量 |  配置集群数据和日志存储磁盘大小。磁盘大小决定了数据库最大容量以及 IOPS 能力，请根据业务量，可滑动设置或输入数字配置集群磁盘大小。|
-
-![客户端设置](../../_images/qingmr_step_5.png)
-
-### 网络设置
-
-通过为集群设置独享私有网络，便于网络**过滤控制**，且不影响其它私有网络的设置，可确保数据库的对不同业务进行网络隔离。数据库集群仅可加入已连接路由器的私有网络，且需确保私有网络的 DHCP 处于**打开**状态。
-
-|<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
-|:----|:----|
-|   私有网络     |  选择私有网络。<li>默认适配同区域已有私有网络。可在下拉框选择已有私有网络。<li>若无可选网络，可点击**创建**，创建依赖网络资源。  |
-|   节点 IP   |  配置节点 IP 地址。<li>默认为`自动分配`。<li> 选择`手动配置`需为各节点配置 IP。  |
-
-![网络设置](../../_images/qingmr_step_6.png)
-
-### 依赖服务设置
-
-选择依赖服务（External Service）后，可以将依赖服务所有节点加入 QingMR 所有节点的 hosts 文件中。 HBase、Hadoop 或者 Spark 集成的场景经常会有这种需求，选定依赖 HBase 集群即可自动添加 hosts ，无需手动添加。
-
-选择已创建的应用服务。
-
-![依赖服务](../../_images/qingmr_step_7.png)
-
-### 服务环境参数设置
-
-集群环境参数配置，可修改集群默认配置。或集群创建成功后，在集群详情页面**配置参数**页签修改参数。
-
-![服务环境参数](../../_images/qingmr_step_8.png)
-
-### 用户协议
-
-阅读**云平台 AppCenter 用户协议**，并勾选用户协议。
-
-![用户协议](../../_images/qingmr_step_9.png)
+![](../../_images/benchmarks.png)

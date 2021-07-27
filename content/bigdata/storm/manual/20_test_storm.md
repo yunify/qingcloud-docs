@@ -44,7 +44,7 @@ VPN 建立后，可通过访问主节点的 8080 端口（例如，[http://stmn-
 
 为了提交 Storm Topology 做测试，需要创建 Storm 客户端节点。用户可以在青云上创建，也可以自己在本地搭建。在青云上创建 Storm 客户端节点, 首先打开映像市场，在工具分类中找到 Storm Client，然后点击使用，选择主机类型、CPU、内存，并将该主机加入 Storm 集群同一私有网络。如果在本地搭建，请安装 Storm 1.0.1、JRE、Python 等软件。
 
-创建完客户端节点之后，需要修改 hosts 文件，请参考 [_查看集群信息_](#view-storm-cluster) 一节关于 hosts 文件的修改方法。
+创建完客户端节点之后，需要修改 hosts 文件，关于 hosts 文件的修改方法，请参考[查看集群信息](#查看集群信息)。
 
 最后，在 ~/.storm 目录下创建 storm.yaml, 并指定 nimbus.seeds 和 drpc.servers，文件内容类似于：
 
@@ -180,7 +180,7 @@ TridentWordCount 使用了 Storm Trident 接口，用于统计单词出现的次
 
 ![](../../_images/ui-event-log.png)
 
-用户可以参考 [_测试二：ReachTopology_](#storm-test-2) 来创建并执行 RPC 客户端。
+用户可以参考[测试二：ReachTopology](#测试二reachtopology) 来创建并执行 RPC 客户端。
 
 ## 测试五：SlidingWindowTopology
 
@@ -198,7 +198,7 @@ Storm 提供了流式窗口 API，支持 Sliding Window 和 Tumbling Window。Sl
 
 TridentKafkaWordCount 包含 kafkaBolt 和 wordCounter 两个 Topology，并对外提供 RPC 服务。其中 kafkaBolt Topology 将产生的数据写入到 Kafka，而 wordCounter Topology 用于读取 Kafka 中的数据，并统计各个单词出现的次数。
 
-首先，请参考 [消息队列指南](https://docsv3.qingcloud.com/middware/kafka/quick-start/quick_start/) 创建 Kafka 集群。为方便描述，假设创建好的 Kafka 集群的 ZooKeeper 连接串为 192.168.100.30:2181/kafka/q-md3ejihc，Broker URL 为192.168.100.9:9092,192.168.100.10:9092。
+首先，请参考[消息队列指南](https://docsv3.qingcloud.com/middware/kafka/quick-start/quick_start/)创建 Kafka 集群。为方便描述，假设创建好的 Kafka 集群的 ZooKeeper 连接串为 192.168.100.30:2181/kafka/q-md3ejihc，Broker URL 为192.168.100.9:9092,192.168.100.10:9092。
 
 其次，在 Kafka 客户端，执行如下命令以创建示例所需要的 test 主题。
 
@@ -241,9 +241,7 @@ kafka-topics.sh --create --zookeeper 192.168.100.30:2181/kafka/q-md3ejihc --repl
    StormSubmitter.submitTopologyWithProgressBar("kafkaBolt", conf, wordCount.buildProducerTopology(wordCount.getProducerConfig()));
    ```
 
-   
-
-3. 因 TransactionalTridentKafkaSpout 在 Storm 1.0.1 中有 Bug（具体请参考 [STORM-1728](https://issues.apache.org/jira/browse/STORM-1728) ），故在本示例中，我们将使用 OpaqueTridentKafkaSpout，请参考下文修改 createKafkaSpout 方法：
+3. 因 TransactionalTridentKafkaSpout 在 Storm 1.0.1 中有 Bug（具体请参考[STORM-1728](https://issues.apache.org/jira/browse/STORM-1728) ），故在本示例中，我们将使用 OpaqueTridentKafkaSpout，请参考下文修改 createKafkaSpout 方法：
 
    ```
    private OpaqueTridentKafkaSpout createKafkaSpout() {
@@ -275,4 +273,4 @@ kafka-topics.sh --create --zookeeper 192.168.100.30:2181/kafka/q-md3ejihc --repl
 
    ![](../../_images/wordCounter-client.png)
 
-   此外，也可参考`消息队列指南 ` 来查看 test 主题中的消息。
+   此外，也可参考[消息队列指南](https://docsv3.qingcloud.com/middware/kafka/quick-start/quick_start/)来查看 test 主题中的消息。

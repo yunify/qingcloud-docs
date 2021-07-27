@@ -1,156 +1,64 @@
 ---
-title: "创建 QingMR 集群"
-description: 本小节主要介绍如何快速创建 QingMR 集群实例。 
+title: "配置 Storm 配置组"
+description: 本小节主要介绍如何配置 Storm 配置组。 
 keywords: QingMR 实例, 创建集群,创建实例
 weight: 10
 collapsible: false
 draft: false
 ---
 
-通过 AppCenter 集群管理控制台，您可以快速创建 QingCloud QingMR 集群。
+通过 Storm 配置组来管理 Storm 服务的配置。Storm 服务和 Storm 配置组是解耦的，您可以创建多个独立的配置组，并应用到不同的 Storm 服务。
 
-本小节主要介绍如何快速创建 QingCloud QingMR 集群。
+> 注意：
+>
+> Storm 服务在运行过程中，也可以随时变更配置组。
 
-## 前提条件
+## 创建新的 Storm 配置组
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且账号已实名认证。
-- 已在网络中创建至少一个 ZooKeeper 集群。
-- 已获取 QingMR 集群操作权限。
+默认情况下，我们会为每个用户创建一个缺省配置组。用户也可以创建新的配置组，如下图所示。
 
-## 操作步骤
+![](../../_images/create_storm_parameter_group.png)
 
-1. 登录 QingCloud 管理控制台。
-2. 选择**产品与服务** > **大数服务** > **大数据引擎 QingMR**，进入 QingMR 集群管理页面。
-3. 点击**立即部署**或**创建**，进入应用部署页面。
-4. 选择**区域**。
-   根据就近原则，选择实例所在区域。
-5. 配置实例基本属性、应用版本、网络信息、环境参数等信息。
+> 注意：
+>
+> 缺省配置组不可以被删除。
 
-   a. [基本设置](#基本设置)
+## 修改配置项
 
-   b.  (可选）节点设置，包括 [HDFS 主节点设置](#hdfs-主节点设置可选)、[主节点设置](#主节点设置可选)、[从节点设置](#从节点设置可选)、[Client 节点设置](#client-节点设置可选)。
+点击该新建的 Storm 配置组，我们可以对每项配置项进行修改，如下图所示。
 
-   c. [网络设置](#网络设置)
+![](../../_images/modify_storm_parameters.png)
 
-   d. [依赖服务设置](#依赖服务设置)
+修改完后，我们需要进行 **保存**，并点击**应用**让新的配置生效。
 
-   e. [服务环境参数设置](#服务环境参数设置)
+> 注意：
+>
+> 当配置发生变化时，将会重启对应的 Storm 服务。
 
-   f. [用户协议](#用户协议)
+## 常用配置项
 
-6. 确认配置和费用信息无误后，点击**提交**，创建集群。
+配置项的详细解释请参见 [Storm 官方文档](https://storm.apache.org/releases/)。
 
-   集群创建成功后，可在**集群管理**页面，查看和管理 QingMR 集群。
-
-   ![集群列表](../../_images/cluster_list.png)
-
-### 基本设置
-
-集群名称、网络、版本、计费方式等基本信息配置。
-
-|<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
-|:----|:----|
-|   UUID     |  系统默认分配的全局唯一标识码，不可修改。  |
-|   名称     |  输入当前集群的名称。 <li> 默认为`QingMR`  |
-|   描述  |  （可选）对集群的简要描述。   |
-|   版本 |  选择集群版本。|
-|   资源配置类型 |  选择集群节点云服务器规格。<li> 可选择**基础型**和**增强型**。<li>选择**自定义**，需自定义集群各节点云服务器规格。|
-|   计费方式 |  选择集群计费方式，可选择按**小时**、**月**、**年**计费。|
-|   可用区 |  选择使用区域。 |
-
-![基本设置](../../_images/qingmr_step_1.png)
-
-### HDFS 主节点设置（可选）
-
-集群 HDFS 主节点的资源配置，包括云服务器规格、磁盘大小等。
-
-|<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
-|:----|:----|
-|   CPU     |  选择集群节点云服务器 CPU 规格。  |
-|   内存     |  选择集群节点云服务器内存大小。  |
-|   节点类型  |  选择集群节点云服务器类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`和`超高性能型`。|
-|   数据盘类型  |  选择集群节点磁盘类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`和`超高性能型`。|
-|   节点容量 |  配置集群数据和日志存储磁盘大小。磁盘大小决定了数据库最大容量以及 IOPS 能力，请根据业务量，可滑动设置或输入数字配置集群磁盘大小。| 
-
-![HDFS 主节点设置](../../_images/qingmr_step_2.png)
-
-### 主节点设置（可选）
-
-集群主节点的资源配置，包括云服务器规格、磁盘大小等。
-
-|<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
-|:----|:----|
-|   CPU     |  选择集群节点云服务器 CPU 规格。  |
-|   内存     |  选择集群节点云服务器内存大小。  |
-|   节点类型  |  选择集群节点云服务器类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`和`超高性能型`。|
-|   数据盘类型  |  选择集群节点磁盘类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`和`超高性能型`。|
-|   节点容量 |  配置集群数据和日志存储磁盘大小。磁盘大小决定了数据库最大容量以及 IOPS 能力，请根据业务量，可滑动设置或输入数字配置集群磁盘大小。| 
-
-![主节点设置](../../_images/qingmr_step_3.png)
-
-### 从节点设置（可选）
-
-集群从节点的资源配置，包括云服务器规格、磁盘大小等。
-
-|<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
-|:----|:----|
-|   CPU     |  选择集群节点云服务器 CPU 规格。  |
-|   内存     |  选择集群节点云服务器内存大小。  |
-|   节点数量     |  选择集群节点数量个数。 默认3个从节点。 |
-|   节点类型  |  选择集群节点云服务器类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`和`超高性能型`。|
-|   数据盘类型  |  选择集群节点磁盘类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`、`超高性能型`和`企业级分布式 SAN (NeonSAN)`。|
-|   节点容量 |  配置集群数据和日志存储磁盘大小。磁盘大小决定了数据库最大容量以及 IOPS 能力，请根据业务量，可滑动设置或输入数字配置集群磁盘大小。| 
-
-![从节点设置](../../_images/qingmr_step_4.png)
-
-### Client 节点设置（可选）
-
-Client 节点为用户可访问的节点，可以用它来访问 HDFS ，和集群交互如提交 job 等。
-
-集群客户端的资源配置，包括云服务器规格、磁盘大小等。建议选配 Client 节点，否则某些功能无法使用（除非手动下载相关软件包并配置好）。
-
-> **说明**
-> 
-> 节点用户名为 ubuntu ，初始密码为 p12cHANgepwD。
-
-|<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
-|:----|:----|
-|   CPU     |  选择集群节点云服务器 CPU 规格。  |
-|   内存     |  选择集群节点云服务器内存大小。  |
-|   节点数量     |  选择集群节点数量个数。 Client 节点为可选，如不需要可设置`节点数量`为0。|
-|   节点类型  |  选择集群节点云服务器类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`和`超高性能型`。|
-|   数据盘类型  |  选择集群节点磁盘类型。<li>`2.5.2-Core`  版本默认为`超高性能型`，无需选择。<li>`1.3.0-Core`和`1.2.1-Core` 版本可选择  `性能型`和`超高性能型`。|
-|   节点容量 |  配置集群数据和日志存储磁盘大小。磁盘大小决定了数据库最大容量以及 IOPS 能力，请根据业务量，可滑动设置或输入数字配置集群磁盘大小。|
-
-![客户端设置](../../_images/qingmr_step_5.png)
-
-### 网络设置
-
-通过为集群设置独享私有网络，便于网络**过滤控制**，且不影响其它私有网络的设置，可确保数据库的对不同业务进行网络隔离。数据库集群仅可加入已连接路由器的私有网络，且需确保私有网络的 DHCP 处于**打开**状态。
-
-|<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
-|:----|:----|
-|   私有网络     |  选择私有网络。<li>默认适配同区域已有私有网络。可在下拉框选择已有私有网络。<li>若无可选网络，可点击**创建**，创建依赖网络资源。  |
-|   节点 IP   |  配置节点 IP 地址。<li>默认为`自动分配`。<li> 选择`手动配置`需为各节点配置 IP。  |
-
-![网络设置](../../_images/qingmr_step_6.png)
-
-### 依赖服务设置
-
-选择依赖服务（External Service）后，可以将依赖服务所有节点加入 QingMR 所有节点的 hosts 文件中。 HBase、Hadoop 或者 Spark 集成的场景经常会有这种需求，选定依赖 HBase 集群即可自动添加 hosts ，无需手动添加。
-
-选择已创建的应用服务。
-
-![依赖服务](../../_images/qingmr_step_7.png)
-
-### 服务环境参数设置
-
-集群环境参数配置，可修改集群默认配置。或集群创建成功后，在集群详情页面**配置参数**页签修改参数。
-
-![服务环境参数](../../_images/qingmr_step_8.png)
-
-### 用户协议
-
-阅读**云平台 AppCenter 用户协议**，并勾选用户协议。
-
-![用户协议](../../_images/qingmr_step_9.png)
+| 参数                                 | 参数说明                                                     |
+| ------------------------------------ | ------------------------------------------------------------ |
+| storm.zookeeper.session.timeout      | Zookeeper客户端的 session 超时时间                           |
+| nimbus.childopts                     | Storm Nimbus 服务的 JVM 参数                                 |
+| supervisor.childopts                 | Storm Supervisor 服务的 JVM 参数                             |
+| worker.childopts                     | Storm Worker 进程的 JVM 参数                                 |
+| drpc.childopts                       | Storm DRPC 服务的 JVM 参数                                   |
+| ui.childopts                         | Storm UI 服务的 JVM 参数                                     |
+| logviewer.childopts                  | Storm Logviewer 服务的 JVM 参数                              |
+| pacemaker.childopts                  | Storm Pacemaker 服务的 JVM 参数                              |
+| worker.heap.memory.mb                | Worker 进程默认堆内存大小                                    |
+| nimbus.task.timeout.secs             | 若 Nimbus 在该时间内未收到 Task 的心跳消息，则会重新调度该 Task |
+| nimbus.supervisor.timeout.secs       | 若 Nimbus 在该时间内未收到 Supervisor 的心跳消息，则认为该节点失效 |
+| nimbus.task.launch.secs              | Task 启动时的超时时间                                        |
+| supervisor.worker.timeout.secs       | 若 Supervisor 在该时间内未收到 Worker 的心跳消息，则会重启该 Worker |
+| supervisor.slots.ports               | Worker 可用的端口列表                                        |
+| supervisor.worker.start.timeout.secs | Worker 启动时的超时时间                                      |
+| topology.worker.max.heap.size.mb     | 应用于 Topology，限定 Worker 最大可用堆内存                  |
+| topology.max.spout.pending           | 指定一个 Spout Task 允许的未确认 Tuple 总数                  |
+| topology.eventlogger.executors       | Event Logger 的进程个数                                      |
+| topology.acker.executors             | Acker 的进程个数                                             |
+| storm.scheduler                      | 全局的任务调度器                                             |
+| storm.cluster.state.store            | 指定用于创建 ClusterState 的工厂                             |
