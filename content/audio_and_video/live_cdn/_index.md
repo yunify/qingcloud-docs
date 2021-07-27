@@ -35,7 +35,34 @@ section2:
     - title: 常见问题
       content: 本文档解答您在使用视频直播时遇到的常见问题。
       url: "/audio_and_video/live_cdn/faq/10_faq_livecdn"
+
+section4:
+  children:
+    - title: 了解：什么是视频直播 ?
+      content: 视频直播为用户提供音视频采集、处理、分发、解码一站式解决方案，为您提供快速接入、高清流畅、高并发、低时延的获得互联网音视频直播服务。
+      vice_title: 了解的第一步
+      children:
+        - title: 产品简介
+          url: "intro/10_livecdn"
+
+        - title: 产品功能
+          url: "intro/20_functions"
+
+        - title: 行业解决方案
+          url: "intro/40_solutions"
+
+    - title: 上手：创建直播域名
+      content: 使用视频直播，首先需要您将已备案的域名添加到视频直播服务中，包含推流域名和播流域名。
+      vice_title: 上手的第一步
+      children:
+        - title: 创建直播域名
+          url: "usermanual/10_create_livevideo"
+
+        - title: 配置 CNAME
+          url: "usermanual/20_configure_cname"
 ---
+
+
 
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->
