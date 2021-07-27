@@ -1,7 +1,6 @@
 ---
 title: "实名认证失败原因及解决办法"
 description: test
-draft: false
 weight: 10
 keyword: 实名认证失败原因, 域名注册, QingCloud, 青云
 ---

@@ -1,7 +1,6 @@
 ---
 title: "域名基本信息查询"
 description: test
-draft: false
 weight: 1
 keyword: 域名基本信息查询, 域名注册, QingCloud
 ---

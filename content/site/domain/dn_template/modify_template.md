@@ -1,7 +1,6 @@
 ---
 title: "修改信息模板"
 description: test
-draft: false
 weight: 6
 keyword: 修改信息模板, 域名注册, QingCloud
 ---

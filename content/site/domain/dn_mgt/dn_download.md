@@ -1,7 +1,6 @@
 ---
 title: "打印/下载域名证书"
 description: test
-draft: false
 weight: 9
 keyword: 下载域名证书, 域名注册, QingCloud
 ---

@@ -1,7 +1,6 @@
 ---
 title: "域名过户"
 description: test
-draft: false
 weight: 11
 keyword: 域名过户, 域名注册, QingCloud
 ---

@@ -1,7 +1,6 @@
 ---
 title: "删除信息模板"
 description: test
-draft: false
 weight: 8
 keyword: 删除信息模板, 域名注册, QingCloud
 ---

@@ -1,8 +1,6 @@
 ---
 title: "域名常用状态解释"
 description: 
-draft: false
-enableToc: false
 weight: 4
 keyword: 域名常用状态, 域名注册, QingCloud, 青云
 ---
