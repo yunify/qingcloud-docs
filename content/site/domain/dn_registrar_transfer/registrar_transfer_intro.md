@@ -1,7 +1,6 @@
 ---
 title: "域名转入介绍"
 description: test
-draft: false
 weight: 2
 keyword: 域名转入介绍, 域名注册, QingCloud
 ---
