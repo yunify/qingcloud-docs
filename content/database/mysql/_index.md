@@ -8,7 +8,7 @@ type: "product"
 section1:
   title: MySQL Plus
   vice_title: QingCloud MySQL Plus 是一款基于 MySQL 提供的数据库服务，支持一主多从高可用架构，集成 InnoDB + TokuDB 双存储引擎，支持自动备份、监控告警、自动扩容等管理功能。
-  video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_myqslplus.mp4"
+  video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_myqslplus_0720.mp4"
   video_img: "/images/video.png"
 
 Section2:
@@ -32,7 +32,7 @@ Section2:
 
     - title: 操作指南
       content: 学习上手如何管理 MySQL Plus 集群，以及如何使用 MySQL Plus 提供的相关服务等。
-      url: "manual/cluster_info/"
+      url: "manual/cluster_lifecycle/cluster_info/"
 
     - title: 最佳实践
       content: 在 MySQL Plus 集群上的实践操作，包括迁移数据、下载日志等。
@@ -60,26 +60,26 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品简介
-          url: "/database/mysql/intro/introduction/"
+          url: "intro/introduction/"
 
         - title: 功能特性
-          url: "/database/mysql/intro/function/"
+          url: "intro/function/"
 
         - title: 产品优势
-          url: "/database/mysql/intro/superiority/"
+          url: "intro/superiority/"
 
     - title: 进阶
       content: 学习如何创建、管理、使用 MySQL Plus 集群
       vice_title: 上手的第一步
       children: 
         - title: 创建 MySQL Plus
-          url: "/database/mysql/quickstart/create_cluster/"
+          url: "quickstart/create_cluster/"
 
         - title: MySQL Plus 集群信息
-          url: "/database/mysql/manual/cluster_info/"
+          url: "manual/cluster_lifecycle/cluster_info/"
 
         - title: MySQL Plus 服务功能
-          url: "/database/mysql/manual/mgt_node/"
+          url: "manual/node_lifecycle/node_info/"
 ---
 
 
