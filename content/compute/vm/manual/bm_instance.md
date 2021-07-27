@@ -20,46 +20,52 @@ draft: false
 
 VPC 直连，提供与云服务器（VM）一致的使用方式，支持弹性伸缩、按需秒级计费及 API 自动化管理，赋予弹性裸金属服务器弹性、灵活与敏捷的云端特性。
 
-## 弹性裸金属服务器使用步骤
+## 操作步骤
 
-一、创建边界路由器
+1. 创建边界路由器 
 
-在 **网络** --> **边界路由器** 页面中, 点击**创建**即可创建边界路由器。
+登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 
-![](/compute/vm/manual/_images/intranet_router.png)
+在左侧的**计算基础服务**导航栏中，选择 **网络** > **边界路由器** 页面, 点击**创建**，创建边界路由器。
 
-二、绑定 VPC 网络
+![](../../_images/intranet_router.png)
 
-在边界路由器详情页, 点击**绑定 VPC 网络**, 选择需要绑定的VPC。
+2. 绑定 VPC 网络
 
-![](/compute/vm/manual/_images/intranet_router_vpc_detail.png)
+点击边界路由器名称，进入边界路由器详情页, 点击**绑定 VPC 网络**, 选择需要绑定的VPC。
 
-三、创建弹性裸金属服务器网络
+![](../_images/intranet_router_vpc_detail.png)
 
-进入刚绑定 VPC 的详情页面，在私有网络界面下点击**创建**，将工作模式设为物理机即可创建弹性裸金属服务器网络。
+![](../_images/intranet_router_vpc_detail_1.png)
 
-![](/compute/vm/manual/_images/bm_vxnet.png)
+3. 创建弹性裸金属服务器网络
 
-四、创建弹性裸金属服务器
+登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+
+在左侧的**计算基础服务**导航栏，选择 **网络** > **私有网络** 页面，点击**创建**，将工作模式设为物理机即可创建弹性裸金属服务器网络。
+
+![](../../_images/bm_vxnet.png)
+
+4. 创建弹性裸金属服务器
 
 弹性裸金属服务器和创建普通云服务器的步骤是类似的，具体步骤如下。
 
-第一步：选择支持弹性裸金属服务器的镜像。
+**步骤1**：选择支持弹性裸金属服务器的镜像。
 
-![](/compute/vm/manual/_images/bm_select_img.png)
+![](../../_images/bm_select_img.png)
 
 >注解
 有些镜像因系统太老，无法支持新硬件，所以无法运行在弹性裸金属服务器上。不含NIC组合功能的Windows镜像，也无法运行在弹性裸金属服务器上。
 
-第二步：选择物理机类型。
+**步骤2**：选择物理机类型。
 
-![](/compute/vm/manual/_images/bm_select_type.png)
+![](../../_images/bm_select_type.png)
 
-第三步：选择或创建弹性裸金属服务器网络。
+**步骤3**：选择或创建弹性裸金属服务器网络。
 
-![](/compute/vm/manual/_images/bm_select_vxnet.png)
+![](../../_images/bm_select_vxnet.png)
 
-第四步：设置云服务器名称、登录方式等信息，然后点击创建。
+**步骤4**：设置云服务器名称、登录方式等信息，然后点击创建。
 
 ![](/compute/vm/manual/_images/bm_set_login.png)
 
@@ -142,8 +148,6 @@ Windows 系统
 
  ![image](/compute/vm/manual/_images/2.png)
 
-
-
 3、	点击“下一步”。
 
  ![image](/compute/vm/manual/_images/3.png)
@@ -151,8 +155,6 @@ Windows 系统
 4、	点击“下一步”。
 
  ![image](/compute/vm/manual/_images/4.png)
-
-
 
 5、	点击“下一步”。
 

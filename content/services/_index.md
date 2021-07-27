@@ -1,7 +1,10 @@
 ---
 title: "服务"
-linkTitle: "服务"
+linkTitle: "Document"
+_build:
+ render: false 
 weight: 110
 collapsible: true
-icon: "/images/icons/compute-icon-storage.svg"
+icon: "/images/icons/index/product-icon-service.svg"
 ---
+

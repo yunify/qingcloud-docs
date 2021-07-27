@@ -5,8 +5,8 @@
     display: flex;
     position: relative;
     padding:  38px 0;
-    align-items: center;
     height: 220px;
+    align-items: center;
     background-color: #3d3e49;
     border-top: 1px solid rgba(255, 255, 255, .1);
     color: #fff;
@@ -33,6 +33,7 @@ main section {
 }
 header {
     min-height: 120px;
+    position: relative;
     nav {
         min-height: 64px;
     }
@@ -69,6 +70,9 @@ header {
             font-weight: 500;
             color: #3e464c;
             margin-bottom: 24px
+        }
+        .card-title_private {
+            font-size: 14px;
         }
         .card-text {
             font-size: 14px;
@@ -121,6 +125,7 @@ ul.timeline {
     left: 0;
 }
 
+
 ul.timeline > li:last-child .timeline-outer-line {
     display:none;
 }
@@ -151,6 +156,28 @@ ul.timeline > li:before {
         font-weight: 500;
         line-height: 1.33;
         color: #1d2c39;
+
+        span {
+            height: 12px;
+            font-size: 12px;
+            color: white;
+            padding: 0.25rem;
+        }
+        .news-tag-0{
+            margin-left: 0.25rem;
+            background: #595657;
+            border-radius: 3px 0px 0px 3px;
+        }
+        .news-tag-1{
+            background: #888888;
+        }
+        .news-tag-2{
+            background: #B4B4B7;
+            border-radius: 0px 3px 3px 0px;
+        }
+        .news-tag-max{
+            border-radius: 0px 3px 3px 0px;
+        }        
     }
     p {
         color: #8493a2;
@@ -255,7 +282,6 @@ ul.timeline > li:before {
             }
         }
     }
-
     .td-sidebar {
 
         .td-sidebar-nav {
@@ -276,15 +302,33 @@ ul.timeline > li:before {
     }
     .td-content {
         position: relative;
-        
-        
-
         .p code {
             color: #ff3860;
         }
     }
-    
+    .has-bg {
+      background-image: url('/images/mask.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .section-has-title {
+      padding-top: 33px;
+      .section-title {
+        margin-bottom: 18px;
+        font-size: 1.75rem;
+        color: #3E464C;
+        img {
+          margin-right: 1rem;
+        }
+        span {
+          &.white {
+            color: white;
+          }
+        }
+      }
+    }
 }
+
 
 /* footer style */
 footer {
@@ -352,12 +396,7 @@ footer.footer a:hover {
 }
 
 footer.footer .copyright {
-    text-align: left;
-    margin: 0 0 3.125rem 0;
-}
-
-footer.footer .copyright {
-    text-align: left;
+    text-align: center;
     margin: 0 0 50px 0;
 }
 footer.footer .level-right .menu-list,
@@ -367,7 +406,7 @@ footer.footer .menu .level-left+.level-right {
 
 footer.footer .copyright figcaption {
     opacity: 0.5;
-    font-size: 0.875rem;
+    font-size: 0.675rem;
     color: #ffffff;
     font-style: normal;
 }
@@ -410,22 +449,22 @@ footer.footer span.tel {
 
 .icon.icon-email {
     background: transparent 0 0 no-repeat;
-    background-image: url("https://s3.qingcloud.com/static/assets/images/icons/common/footer_icon_mail@3x.svg");
+    background-image: url("https://www.qingcloud.com/static/assets/images/icons/common/footer_icon_mail@3x.svg");
 }
 
 .icon.icon-weibo {
     background: transparent 0 0 no-repeat;
-    background-image: url("https://s3.qingcloud.com/static/assets/images/icons/common/footer_icon_weibo@3x.svg");
+    background-image: url("https://www.qingcloud.com/static/assets/images/icons/common/footer_icon_weibo@3x.svg");
 }
 
 .icon.icon-wechat {
     background: transparent 0 0 no-repeat;
-    background-image: url("https://s3.qingcloud.com/static/assets/images/icons/common/footer_icon_wechat@3x.svg");
+    background-image: url("https://www.qingcloud.com/static/assets/images/icons/common/footer_icon_wechat@3x.svg");
 }
 
 .icon.icon-tel {
     background: transparent 0 0 no-repeat;
-    background-image: url("https://s3.qingcloud.com/static/assets/images/icons/common/footer_icon_phone@3x.svg");
+    background-image: url("https://www.qingcloud.com/static/assets/images/icons/common/footer_icon_phone@3x.svg");
 }
 
 .page-meta-pagination {
@@ -784,13 +823,12 @@ ul.product_dynamics_ul{
 
 section.hero.home-body {
     padding-top: 0;
-    height: 300px;
 }
 .slider-bg {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 300px;
+    height: 100%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -812,9 +850,7 @@ section.hero.home-body {
     background-color: transparent;
     margin-top: 76px;
 }
-.section-out .container{
-    margin-top: -6rem;
-}
+
 .container.td-outer{
     z-index: 1;
 }
@@ -912,9 +948,6 @@ main.col-12.col-md-7.col-xl-7{
     }
     .hero-body-index{
         margin-top: 0;
-    }
-    .slider-bg{
-        height: 400px;
     }
     
     .product-learn-icon{
@@ -1085,3 +1118,24 @@ main .td-content thead{
     padding-left: 18px;
     margin: .25rem 0;
 }
+
+.hero .nav-link {
+    z-index: 2;
+    height: 38px;
+    padding: 0;
+    text-align: center;
+    margin-top: -34px;
+    a {
+      padding: 0 20px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0);
+      font-size: 1rem;
+      &:first-child {
+        margin-right: 5rem;
+      }
+      &.active {
+        color: #00a971;
+        border-color: #00a971;
+      }
+    }
+  }

@@ -1,14 +1,13 @@
 ---
-title: "路由表 用户指南"
-linkTitle: "路由表 用户指南"
+title: "使用路由表"
+linkTitle: "使用路由表"
 date: 2020-02-28T10:08:56+09:00
 description:
 draft: false
-weight: 4
+weight: 40
 ---
 
-
-[路由表 ( Routing Table )](https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E8%A1%A8) 可以为资源提供 IP 网络的[路由](https://www.ietf.org/rfc/rfc1812.txt)选择，通过配置`目标网络`及其`下一跳`，指定网络的路由方向，从而实现网络的连通和优化。
+[路由表 ( Routing Table )](https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E8%A1%A8)可以为资源提供 IP 网络的[路由](https://www.ietf.org/rfc/rfc1812.txt)选择，通过配置**目标网络**及其**下一跳**，指定网络的路由方向，从而实现网络的连通和优化。
 
 目前可以支持为私有网络 ( Vxnet ) 和负载均衡器 ( Load Balancer, LB ) 绑定路由表。
 
@@ -16,7 +15,7 @@ weight: 4
 
 场景：私有网络云服务器统一通过 NAT 网关访问互联网，以实现公网 IP 地址的复用和带宽共享。
 
-假设，用户的私有网络“办公网络”（ 192.168.128.0/24 ）内的所有虚拟机希望统一通过 NAT 网关 （ nat-00001 ）访问互联网。[NAT网关配置详情](https://docs.qingcloud.com/product/network/nat_gateway)
+假设，用户的私有网络“办公网络”（ 192.168.128.0/24 ）内的所有虚拟机希望统一通过 NAT 网关 （ nat-00001 ）访问互联网。NAT 网关配置，请参见[NAT网关配置详情](/network/nat_gateway/manual/nat_user_guide/)。
 
 ### 创建路由表
 
@@ -30,7 +29,7 @@ weight: 4
 
 目标网络：即私有网络要访问的目标网络，在本示例中为所有IP地址，即 0.0.0.0/0
 
->注解：  目的网络为 0.0.0.0/0 的路由规则也称`默认路由`
+>**说明**：  目的网络为 0.0.0.0/0 的路由规则也称 **默认路由**。
 
 下一跳类型：本示例中，网络的下一跳类型是 NAT 网关
 
@@ -127,5 +126,4 @@ weight: 4
 一个路由表可以绑定多个相同类型的资源 ；
 
 暂不支持批量绑定和解绑。
-
 

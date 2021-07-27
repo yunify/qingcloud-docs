@@ -1,10 +1,10 @@
 ---
-title: "网络流量镜像 "
-linkTitle: "网络流量镜像 "
+title: "管理网络流量镜像"
+linkTitle: "管理网络流量镜像"
 date: 2020-02-28T10:08:56+09:00
 description:
 draft: false
-weight: 5
+weight: 60
 
 ---
 
@@ -42,9 +42,7 @@ IP 地址只能是基础网络中的一台云服务器的地址，并且在其�
 
 ![](../_images/span_del_member.png)
 
-注解
-
-删除 SPAN 需要先移除其全部成员
+> **说明**：删除 SPAN 需要先移除其全部成员。
 
 ## 修改 SPAN属性
 

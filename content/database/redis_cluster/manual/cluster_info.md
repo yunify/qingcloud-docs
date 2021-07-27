@@ -1,7 +1,10 @@
 ---
 title: "集群信息"
-description: test
-weight: 2
+description: 本小节主要介绍 Redis Cluster 集群信息。 
+keywords: redis cluster 集群信息
+data: 2021-05-14T00:38:25+09:00
+weight: 10
+collapsible: false
 draft: false
 ---
 
@@ -11,7 +14,7 @@ draft: false
 
 ![基本属性](../../_images/overview.png)
 
-### 配置参数
+## 配置参数
 
 在此可以修改环境参数。参数修改完成保存后，集群将重启以应用新的参数配置，所以请在服务压力相对较小的时候修改参数。
 

@@ -8,6 +8,9 @@ type: "product"
 section1:
   title: 自动伸缩
   vice_title: 帮助用户基于监控数据动态地调节资源配置或集群规模，及时应对突增的系统压力，充分利用云计算的弹性特点来调节系统处理能力，且有效降低维护成本。 
+  video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_autoscaling.mp4"
+  video_img: "/images/video.png"
+
 
 section2:
   title: 用户指南

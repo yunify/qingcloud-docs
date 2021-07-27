@@ -1,38 +1,42 @@
 ---
-title: "MySQL Plus"
+title: "关系型数据库 MySQL Plus"
 linkTitle: "MySQL Plus"
-weight: 1
+weight: 01
 collapsible: true
 type: "product"
 
 section1:
   title: MySQL Plus
-  vice_title: 基于 MySQL 提供的数据库服务，支持一主多从高可用架构，集成 InnoDB + TokuDB 双存储引擎，支持自动备份、监控告警等管理功能
-  video: "https://pek3a.qingstor.com/workshop/CloudOperation_100P003C201908_MySQLPlus%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8.mp4"
+  vice_title: QingCloud MySQL Plus 是一款基于 MySQL 提供的数据库服务，支持一主多从高可用架构，集成 InnoDB + TokuDB 双存储引擎，支持自动备份、监控告警、自动扩容等管理功能。
+  video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_myqslplus_0720.mp4"
   video_img: "/images/video.png"
 
 Section2:
   title: 用户指南
   children:
+    - title: 动态与公告
+      content: 产品动态
+      url: "news/product_news/"
+
     - title: 产品简介
       content: 产品简介
-      url: "intro/introduction"
+      url: "intro/introduction/"
 
     - title: 计费指南
       content: 计费指南
-      url: "billing/price"
+      url: "billing/price/"
 
     - title: 快速入门
       content: 快速入门
-      url: "quickstart/quick_start"
+      url: "quickstart/create_cluster/"
 
     - title: 操作指南
-      content: 学习上手如何管理MySQL Plus集群，以及如何使用MySQL Plus提供的相关服务等。
-      url: "manual/cluster_info"
+      content: 学习上手如何管理 MySQL Plus 集群，以及如何使用 MySQL Plus 提供的相关服务等。
+      url: "manual/cluster_lifecycle/cluster_info/"
 
     - title: 最佳实践
-      content: 场景：MySQL Plus的数据迁移
-      url: "best-practices/data_transfer"
+      content: 在 MySQL Plus 集群上的实践操作，包括迁移数据、下载日志等。
+      url: "best-practices/data_transfer/"
 
 section3:
   title: 开发者指南
@@ -52,28 +56,30 @@ section3:
 section4:
   children:
     - title: 了解
-      content: 什么是MySQL Plus
+      content: 什么是 MySQL Plus
+      vice_title: 了解的第一步
       children:
         - title: 产品简介
-          url: "/database/mysql/intro/introduction"
+          url: "intro/introduction/"
 
-        - title: 产品系列
-          url: "/database/mysql/intro/list"
+        - title: 功能特性
+          url: "intro/function/"
 
-        - title: 产品特性
-          url: "/database/mysql/intro/superiority"
+        - title: 产品优势
+          url: "intro/superiority/"
 
     - title: 进阶
-      content: 学习如何如何创建、管理、使用MySQL Plus集群
+      content: 学习如何创建、管理、使用 MySQL Plus 集群
+      vice_title: 上手的第一步
       children: 
-        - title: 创建MySQL Plus
-          url: "/database/mysql/quickstart/quick_start"
+        - title: 创建 MySQL Plus
+          url: "quickstart/create_cluster/"
 
-        - title: MySQL Plus集群信息
-          url: "/database/mysql/manual/cluster_info"
+        - title: MySQL Plus 集群信息
+          url: "manual/cluster_lifecycle/cluster_info/"
 
-        - title: MySQL Plus服务功能
-          url: "/database/mysql/manual/service"
+        - title: MySQL Plus 服务功能
+          url: "manual/node_lifecycle/node_info/"
 ---
 
 

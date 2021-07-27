@@ -7,28 +7,28 @@ type: "product"
 
 section1:
   title: 硬盘
-  vice_title: 青云 QingCloud 平台支持多种块存储类型，包括：基础型、 SSD 企业型、企业级分布式 SAN 、容量型。
+  vice_title: 青云 QingCloud 平台支持多种块存储类型，包括：企业型SSD本地盘、 容量型云盘、通用型SSD云盘及增强型SSD云盘。
   video: "https://workshop.pek3a.qingstor.com/CloudOperation_100P002C201908_%E8%99%9A%E6%8B%9F%E7%A1%AC%E7%9B%98%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8.mp4"
-  video_img: "/storage/disk/_images/video.png"
-
+  video_img: "/images/video.png"
+ 
 Section2:
   title: 用户指南
   children:
-    - title: 基础型硬盘
-      content: 基础型硬盘用户使用文档
-      url: "/storage/disk/manual/basic_volume"
+    - title: 产品简介
+      content: 硬盘简介
+      url: "/storage/disk/intro/introduction/"
 
-    - title: SSD 企业型硬盘
-      content: SSD企业型硬盘用户使用文档
-      url: "/storage/disk/manual/ssd_enterprise_volume"
+    - title: 计费指南
+      content: 硬盘计费指南
+      url: "/storage/disk/billing/price/"
 
-    - title: 容量型硬盘
-      content: 容量型硬盘用户使用文档
-      url: "/storage/disk/manual/capacity_volume"
+    - title: 快速入门
+      content: 硬盘快速入门
+      url: "/storage/disk/quickstart/create_disk/"
 
-    - title: 企业级分布式SAN（NeonSAN）
-      content: 企业级分布式SAN（NeonSAN）硬盘用户使用文档
-      url: "/storage/disk/manual/neonsan_volume"
+    - title: 操作指南
+      content: 硬盘操作指南
+      url: "/storage/disk/manual/basic_operation/"
 
 
 
@@ -39,26 +39,25 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品概述
-          url: "/storage/disk/intro/introduction"
+          url: "/storage/disk/intro/introduction/#产品概述"
 
         - title: 产品优势
-          url: "https://www.qingcloud.com/products/volume/"
+          url: "/storage/disk/intro/introduction/#产品优势"
 
-        - title: 应用场景
-          url: "https://www.qingcloud.com/products/volume/"
+        - title: 产品类型
+          url: "/storage/disk/intro/introduction/#产品类型"
 
     - title: 上手：创建硬盘与部署应用
       content: 硬盘为用户提供可无限扩展的通用数据存储服务。
       vice_title: 上手的第一步
       children: 
-        - title: 创建与使用硬盘
-          url: "/storage/disk/quickstart/quick_start"
+        - title: 购买硬盘
+          url: "/storage/disk/quickstart/create_disk/"
 
-        - title: 云服务器系统盘扩容
-          url: "/storage/disk/quickstart/system_volume_resize"
+        - title: 硬盘扩容
+          url: "/storage/disk/manual/expand/expan_linux/"
 
 ---
-
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->
 <!-- section1 为产品index页面 主标题 副标题 video  video_img为视频图片  -->
