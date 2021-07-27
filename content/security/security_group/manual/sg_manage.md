@@ -1,7 +1,7 @@
 ---
 title: "管理安全组"
 description: manual
-draft: false
+draft: true
 weight: 30
 ---
 
