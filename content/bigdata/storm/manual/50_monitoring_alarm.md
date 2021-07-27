@@ -12,6 +12,7 @@ draft: false
 - Storm 主节点上运行的 Storm UI 服务提供了丰富的集群监控信息，默认端口为 **8080**。 
 
 - 青云提供的 Storm 集群还在各个节点上运行了 Logviewer 服务，该服务允许用户访问各个节点上的日志。拨入到 VPN 网络后，可以访问以下 URL 来浏览 Storm UI 及节点日志。
+
   - [http:/](http:/)/:8080
   - [http:/](http:/)/:8080/daemonlog?file=
 
