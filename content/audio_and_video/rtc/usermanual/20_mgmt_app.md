@@ -106,8 +106,6 @@ weight: 20
        </td>
      </tr>
    </table>
-   
-   
    > 说明：
    >
    > 开启云录制，详细操作请参见[云录制管理](../30_enable_cloudlive/)。
