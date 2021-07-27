@@ -4,9 +4,14 @@ collapsible: false
 weight: 10
 
 product:
-    - time: 2021-07-08
+
+    - time: 2021-07-27
+      title: 增强型SSD云盘上线 
+      content: 1.性能参数：IOPS 可达 100k，最大吞吐 350MB/s，延时低至 0.05ms</br>2.容量范围：450GB - 32000GB</br>3.上线区域：pek3b（北京3区- B）
+      url: /storage/disk/intro/introduction/#硬盘类型
+    - time: 2021-07-27
       title: 硬盘创建流程优化
-      content: 1.支持创建硬盘时挂载到服务器。</br>2.新增硬盘类型，区分本地盘与云盘。</br>3.删除硬盘克隆功能。
+      content: 1.支持创建硬盘时挂载到服务器。</br>2.区分本地盘与云盘，硬盘类型名称变更：“SSD企业级硬盘”更名为“企业型SSD本地盘”；“基础型硬盘”更名为“基础型本地盘”；“企业级分布式SAN（NeonSAN）”更名为“通用型SSD云盘”；“容量型硬盘”更名为“容量型云盘”。</br>3.支持创建硬盘同时绑定硬盘备份策略。
       url: /storage/disk/quickstart/create_disk/
 
     - time: 2020-10-26
