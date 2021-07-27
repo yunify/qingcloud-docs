@@ -17,7 +17,7 @@ section2:
       url: "/audio_and_video/live_cdn/intro/10_livecdn"
 
     - title: 计费指南
-      content: 本文档介绍了视频直播 如何计费。
+      content: 本文档介绍了视频直播如何计费。
       url: "/audio_and_video/live_cdn/new_billing/10_new_billing"  
   
     - title: 快速入门
