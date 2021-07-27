@@ -2,7 +2,7 @@
 title: "配置 Storm 配置组"
 description: 本小节主要介绍如何配置 Storm 配置组。 
 keywords: QingMR 实例, 创建集群,创建实例
-weight: 10
+weight: 60
 collapsible: false
 draft: false
 ---

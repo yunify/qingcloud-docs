@@ -2,7 +2,7 @@
 title: "测试 Storm"
 description: 本小节主要介绍如何快速测试 Storm。 
 keywords: 测试 Storm
-weight: 10
+weight: 20
 collapsible: false
 draft: false
 ---
