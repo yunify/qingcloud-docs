@@ -25,7 +25,7 @@ PostgreSQL 可通过 psql 命令行客户端直接连接，还可以使用图形
    1. 在集群管理页面，点击目标集群 ID，进入集群详情页面。
    2. 在**服务端口信息**模块或节点列表，获取高可用 IP 地址或节点 IP 地址。
    
-   ![获取高可用 IP 地址](../../../_images/check_access_info.png)
+   ![获取高可用 IP 地址](../../_images/check_access_info.png)
 
 2. 访问数据库。
    
