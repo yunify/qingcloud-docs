@@ -1,25 +1,11 @@
 ---
 title: "用户管理"
 description: 
-draft: true
+draft: false
 weight: 40
 ---
 
-### 用户
-
-IAM用户是一个身份实体，它通常代表您的组织中需要访问云资源的人员或应用程序。
-
-通过用户您可以设定访问 QingCloud 资源的访问方式，可以通过控制台或者编程进行访问。
-
-如何创建和使用用户，请参阅：IAM 用户
-
 您可以通过 IAM 用户设定访问方式。
-
-> 注：
->
-> 策略评估时**多条策略叠加取并集**，并**默认拒绝**未定义任何权限的操作；
->
-> 若叠加的策略中针对同一操作定义了不同结论，则**拒绝优先**。
 
 ## 创建用户
 
@@ -131,16 +117,39 @@ IAM用户是一个身份实体，它通常代表您的组织中需要访问云�
 
 您可以管理用户的访问方式，进行密码修改，创建新的 access key 等。
 
-### 控制台密码修改
+### 控制台登陆设置
 
 1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **访问鉴权管理** > **用户**，进入域名列表页。
 
 2. 在列表页选择需要修改密码的用户，点击该用户。
 
-   <img src="../../_images/user11.png" style="zoom:25%;" />
+   <img src="../../_images/user11.png" style="zoom:20%;" />
 
 3. 进入访问方式管理页面，点击**修改**。
 
-   <img src="../../_images/user16.png" style="zoom:25%;" />
+   <img src="../../_images/user16.png" style="zoom:20%;" />
 
-   
+4. 修改控制台信息，可以选择修改用户名称，是否通过控制台访问及控制台密码设置。
+
+   <img src="../../_images/user17.png" style="zoom:40%;" />
+
+### 编程访问设置
+
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **访问鉴权管理** > **用户**，进入域名列表页。
+
+2. 在列表页选择需要修改密码的用户，点击该用户。
+
+   <img src="../../_images/user11.png" style="zoom:20%;" />
+
+3. 进入编程访问页面，创建新的 Access Key。
+
+   <img src="../../_images/user18.png" style="zoom:20%;" />
+
+4. 点击**创建Access Key**，则新的 Access Key 创建成功。
+
+   <img src="../../_images/user19.png" style="zoom:40%;" />
+> 说明：
+>如果需要删除Access Key，则直接在该页面点击**删除**即可。
+>
+> 如果需要禁用某一Access key，则在该页面直接点击**禁用**即可。
+
