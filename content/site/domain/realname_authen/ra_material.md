@@ -1,7 +1,6 @@
 ---
 title: "实名认证所需材料"
 description: test
-draft: false
 weight: 4
 keyword: 实名认证所需材料, 域名注册, QingCloud, 青云
 ---
