@@ -1,5 +1,5 @@
 ---
-title: "在线伸缩"
+gititle: "在线伸缩"
 description: 本小节主要介绍在线伸缩。 
 keywords: Storm,在线伸缩
 weight: 30
