@@ -13,8 +13,6 @@ draft: false
 >
 > 当配置发生变化时，将会重启对应的 Storm 服务。
 
-配置项的详细解释请参见 [Storm 官方文档](https://storm.apache.org/releases/)。
-
 1. 登录 QingCloud 管理控制台。
 
 2. 选择**产品与服务** > **大数据服务** > **Storm 服务**，进入 **Storm** 页面。
@@ -48,3 +46,5 @@ draft: false
 - topology.worker.max.heap.size.mb: 应用于 Topology，限定 Worker 最大可用堆内存
 - topology.eventlogger.executors: Event Logger 的进程个数
 - topology.acker.executors: Acker 的进程个数
+
+配置项的详细解释请参见 [Storm 官方文档](https://storm.apache.org/releases/)。
