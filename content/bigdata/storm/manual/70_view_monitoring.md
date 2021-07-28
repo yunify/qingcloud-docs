@@ -2,7 +2,7 @@
 title: "查看监控信息"
 description: 本小节主要介绍查看监控信息。 
 keywords: Storm,监控
-weight: 60
+weight: 70
 collapsible: false
 draft: false
 ---
