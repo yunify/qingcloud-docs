@@ -21,6 +21,10 @@ Section2:
       content: 云服务器计费指南
       url: "/compute/vm/billing/reserved_contract"
 
+    - title: 快速入门
+      content: 云服务器快速入门
+      url: "/compute/vm/quickstart/quick_start_handbook"
+
     - title: 操作指南
       content: 云服务器操作指南
       url: "/compute/vm/manual/connect_instance"
