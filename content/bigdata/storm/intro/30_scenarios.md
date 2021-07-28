@@ -1,8 +1,8 @@
 ---
-title: "常用应用场景"
-description: 本小节主要介绍 Storm 服务简介。 
-keywords: Storm 产品简介
-weight: 10
+title: "常见应用场景"
+description: 本小节主要介绍 Storm 应用场景。 
+keywords: Storm 应用场景
+weight: 30
 collapsible: false
 draft: false
 ---

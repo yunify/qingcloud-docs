@@ -2,12 +2,14 @@
 title: "部署架构"
 description: 本小节主要介绍 Storm 服务简介。 
 keywords: Storm 产品简介
-weight: 10
+weight: 20
 collapsible: false
 draft: false
 ---
 
-Storm 将实时计算逻辑包装成计算拓扑（Topology），类似 Hadoop 中的 Job，是一组由 Spouts 和 Bolts 通过 Stream Grouping 连接而成的图形结构，被部署到 Storm 集群中持续运行。Storm 集群采用的是 master/slave 架构，青云提供的 Storm 集群服务还包括在线伸缩、监控和告警等功能，帮助您更好地管理集群。如下图所示，青云的 Storm 集群包括如下五种节点类型。
+Storm 将实时计算逻辑包装成计算拓扑（Topology），类似 Hadoop 中的 Job，是一组由 Spouts 和 Bolts 通过 Stream Grouping 连接而成的图形结构，被部署到 Storm 集群中持续运行。
+
+Storm 集群采用的是 master/slave 架构，青云提供的 Storm 集群服务还包括在线伸缩、监控和告警等功能，帮助您更好地管理集群。如下图所示，青云的 Storm 集群包括如下五种节点类型。
 
 ![](../../_images/storm_architecture.png)
 
