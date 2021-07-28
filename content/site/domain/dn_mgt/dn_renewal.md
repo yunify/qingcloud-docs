@@ -1,7 +1,6 @@
 ---
 title: "域名续费"
 description: test
-draft: false
 weight: 7
 keyword: 域名续费, 域名注册, QingCloud
 ---

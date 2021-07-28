@@ -1,7 +1,7 @@
 ---
 title: "产品优势"
 description: Test description
-weight: 2
+weight: 4
 keyword: 产品优势, 域名注册, QingCloud
 ---
 

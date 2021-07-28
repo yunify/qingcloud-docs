@@ -1,7 +1,8 @@
 ---
 title: "支持的域名后缀"
 description: test
-draft: false
+weight: 4
+keyword: 域名后缀, 域名注册, QingCloud
 ---
 
 
