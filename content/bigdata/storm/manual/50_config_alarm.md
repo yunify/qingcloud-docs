@@ -2,7 +2,7 @@
 title: "配置告警"
 description: 本小节主要介绍配置告警。 
 keywords: Storm,告警
-weight: 60
+weight: 50
 collapsible: false
 draft: false
 ---
