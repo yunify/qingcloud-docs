@@ -1,7 +1,6 @@
 ---
 title: "域名转入失败原因"
 description: test
-draft: false
 weight: 6
 keyword: 域名转入失败原因, 域名注册, QingCloud
 ---
