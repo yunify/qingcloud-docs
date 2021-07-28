@@ -1,8 +1,8 @@
 ---
-title: "监测和告警"
-description: 本小节主要介绍 Storm 的监测和告警。 
-keywords: Storm,监测,告警
-weight: 50
+title: "查看监控信息"
+description: 本小节主要介绍查看监控信息。 
+keywords: Storm,监控
+weight: 60
 collapsible: false
 draft: false
 ---
@@ -21,3 +21,18 @@ draft: false
   - [http://stmn-9ss52hui-master:8080](http://stmn-9ss52hui-master:8080)
   - [http://stmn-9ss52hui-master:8000/daemonlog?file=nimbus.log](http://stmn-9ss52hui-master:8000/daemonlog?file=nimbus.log)
   - [http://stmn-2pfpy7bo-rpc:8000/daemonlog?file=drpc.log](http://stmn-2pfpy7bo-rpc:8000/daemonlog?file=drpc.log)
+
+## 查看监控信息
+
+1. 登录 QingCloud 管理控制台。
+
+2. 选择**产品与服务** > **大数据服务** > **Storm 服务**，进入 **Storm** 页面。
+
+3. 点击待修改参数的 Storm ID，进入**集群管理**页面。
+
+4. 选择查看监控信息的节点，查看监控信息。
+
+   ![](../../_images/view_monitor.png)
+
+5. 您可以查看最近 6 小时、最近一天、最近两周、最近一个月、最近 6 个月、自定时间段的节点的 CPU、内存、硬盘使用率、硬盘 IOPS、磁盘吞吐量。
+

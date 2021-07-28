@@ -67,4 +67,4 @@ draft: false
 
 ## 测试结果
 
-![](../../_images/benchmarks.png)
+<img src="../../_images/benchmarks.png" style="zoom:50%;" />

@@ -190,7 +190,7 @@ Storm 提供了流式窗口 API，支持 Sliding Window 和 Tumbling Window。Sl
 /opt/storm/bin/storm jar /opt/storm/examples/storm-starter/storm-starter-topologies-1.0.1.jar org.apache.storm.starter.SlidingWindowTopology SlidingWindowTopology
 ```
 
-通过 Storm UI 可以查看 tumblingavg 的输出，如下图所示：
+通过 Storm UI 可以查看 tumblingavg 的输出，如下图所示。
 
 ![](../../_images/window-log.png)
 
