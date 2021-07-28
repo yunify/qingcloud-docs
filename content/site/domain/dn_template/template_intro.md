@@ -1,7 +1,6 @@
 ---
 title: "信息模板简介"
 description: test
-draft: false
 weight: 2
 keyword: 信息模板简介, 域名注册, QingCloud
 ---
