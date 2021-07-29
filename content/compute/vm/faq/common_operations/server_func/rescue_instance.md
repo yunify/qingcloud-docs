@@ -8,7 +8,13 @@ draft: false
 
 救援云服务器（Rescue Instance）可以对一台故障的云服务器进行人工运维。
 
-在云服务器列表中，鼠标右键要操作的云服务器（必须是关机状态），并点击『救援云服务器』。救援云服务器（假设 ID 为 i-xxxxxxxx ）时，会产生一台新云服务器以 rescue-i-xxxxxxxx 命名，并且被救援云服务器 i-xxxxxxxx 的根盘挂载到了新云服务器 rescue-i-xxxxxxxx 里面。在新云服务器 rescue-i-xxxxxxxx 里面完成运维操作后，在控制台对被救援云服务器 i-xxxxxxxx 执行『取消救援』的操作，即完成云服务器 i-xxxxxxxx 的救援运维工作。
+在云服务器列表中，鼠标右键要操作的云服务器（必须是关机状态），并点击『救援云服务器』。救援云服务器（假设 ID 为 i-xxxxxxxx ）时，会产生一台新云服务器以 rescue-i-xxxxxxxx 命名，并且被救援云服务器 i-xxxxxxxx 的根盘挂载到了新云服务器 rescue-i-xxxxxxxx 里面。在新云服务器 rescue-i-xxxxxxxx 里面完成运维操作后，在控制台对被救援云服务器 i-xxxxxxxx 执行『取消救援』的操作，即完成云服务器 i-xxxxxxxx 的救援运维工作。对于Windows服务器，如果进入了救援云服务器并且将被救服务器的根磁盘进行了联机操作，则在退出救援模式之前必须执行以下操作更新启动项。
+
+```
+bcdedit  /store d:\boot\bcd /set {bootmgr} device partition=D:
+bcdedit  /store d:\boot\bcd /set {default} device partition=E:
+bcdedit  /store d:\boot\bcd /set {default} osdevice partition=E:
+```
 
 ![rescue-vm-instance01](/compute/vm/_images/rescue-vm-instance01.png)
 

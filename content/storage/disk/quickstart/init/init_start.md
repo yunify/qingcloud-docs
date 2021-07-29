@@ -1,6 +1,5 @@
 ---
 title: "初始化及分区方式"
-date: 2021-04-28T15:59:25+09:00
 description: Test description
 draft: false
 enableToc: false
