@@ -1,12 +1,18 @@
 ---
 title: "License 应用"
 description: test
-weight: 3
+weight: 30
 draft: false
 
 ---
 
-## 应用购买
+## 查找 License 应用
+
+
+
+
+
+## 购买 License 应用
 
 青云用户可从 Qingcloud AppCenter 进行应用查看与购买，进入[应用市场](https://appcenter.qingcloud.com/)，在 AppCenter 应用中心购买所需的应用服务。
 
