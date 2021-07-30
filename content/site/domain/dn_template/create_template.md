@@ -1,7 +1,6 @@
 ---
 title: "创建信息模板"
 description: test
-draft: false
 weight: 4
 keyword: 创建信息模板, 域名注册, QingCloud
 ---
