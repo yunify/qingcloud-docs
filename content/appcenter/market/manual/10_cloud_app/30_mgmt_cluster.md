@@ -123,33 +123,85 @@ draft: false
 
 当集群有参数配置时，可在右侧的**配置参数**中对参数进行修改。
 
+> **注意：**
+>
+> 修改配置参数会重启集群，请谨慎操作。
+
 <img src="../../../_images/um_app_config_param.png" style="zoom:50%;" />
 
 ## 配置告警
 
-**绑定和解绑告警策略**
+设置独立通知策略，当集群产生告警，将统一发送至独立配置的通知列表，原告警策略所关联的通知列表将无法收到告警通知，请注意运维业务分配情况。
 
-在告警项中，**选择节点后**，进行相关指标告警策略的绑定或解绑。
+### 设置通知策略
 
-![指标告警策略绑定](/appcenter/market/business-process/_image/cluster_alarm_bind_unbind.png)
+1. 点击**告警**，进入**告警**页面。
 
-![指标告警策略绑定弹框](/appcenter/market/business-process/_image/cluster_alarm_bind.png)
+   <img src="../../../_images/um_app_alarm.png" style="zoom:50%;" />
 
-![指标告警策略解绑](/appcenter/market/business-process/_image/cluster_alarm_unbind1.png)
+2. 点击**设置**，弹出**配置通知策略**窗口。
 
-告警策略无法满足集群或者无策略时，在绑定弹框中，可以快速的**创建和管理指标告警策略**
+   <img src="../../../_images/um_app_set_alarm.png" style="zoom:50%;" />
 
-![快速创建](/appcenter/market/business-process/_image/cluster_alarm_quick_manage.png)
+3. 在**通知列表**下拉列表中，选择通知发送联系人列表。
 
-在集群管理列表配置通知策略后，若当所有指标规则处于告警状态则满足触发条件，不仅在页面的历史信息会展示，同时会对已认证的相关账号发送对应信息
+   > **说明：**
+   >
+   > 若您需要新建通知列表，可点击**新列表**，配置新的联系人列表。
 
-![告警策略规则](/appcenter/market/business-process/_image/cluster_alarm_rule.png)
+   <img src="../../../_images/um_app_config_alarm.png" style="zoom:50%;" />
 
-![通知策略](/appcenter/market/business-process/_image/cluster_alarm_notice.png)
+4. 点击**提交**，完成通知策略设置。
+
+### 绑定指标告警策略
+
+1. 点击**告警**，进入**告警**页面。
+
+   <img src="../../../_images/um_app_alarm.png" style="zoom:50%;" />
+
+2. 勾选待绑定指标告警策略的节点，并点击**绑定指标告警策略**，弹出**选择要绑定的指标告警策略**窗口。
+
+   <img src="../../../_images/um_app_bind_alarm.png" style="zoom:50%;" />
+
+3. 选择待绑定的指标告警策略。
+
+   > **说明：**
+   >
+   > 若您没有创建指标告警策略，点击创建指标告警策略，创建新的指标告警策略，详细操作请参见[告警服务](https://docsv3.qingcloud.com/monitor_service/cloudsat/manual/alarm_service/)。
+
+   ![](/Users/amytan/work/github/qingcloud-docs/content/bigdata/_images/choose_storm_alarm.png)
+
+4. 点击**提交**，完成指标告警策略的绑定。
+
+   在集群管理列表配置通知策略后，若当所有指标规则处于告警状态则满足触发条件，不仅在页面的历史信息会展示，同时会对已认证的相关账号发送对应信息。
+
+   ![](../../../_image/cluster_alarm_rule.png)
+
+   ![](../../../_image/cluster_alarm_notice.png)
 
 ## 管理备份
 
-集群应用部署后，可对集群进行备份；在页面右侧切换到备份，如下界面所示。
+集群应用部署后，可对集群进行备份。
+
+### 创建备份
+
+1. 点击**备份**，进入**备份**页面。
+
+   <img src="../../../_images/um_app_backup.png" style="zoom:50%;" />
+
+2. 点击**创建备份**，弹出**提示**信息。
+
+   <img src="../../../_images/um_app_bak_prompt.png" style="zoom:50%;" />
+
+3. 点击**继续**，进入**创建备份**窗口。
+
+   <img src="../../../_images/um_app_create_bak.png" style="zoom:50%;" />
+
+4. 点击**提交**，进行备份。
+
+### 
+
+
 
 ![集群备份](/appcenter/market/business-process/_image/cluster_create_bak.png)
 
