@@ -1,5 +1,5 @@
 ---
-title: "应用集群"
+title: "应用管理"
 description: 应用管理
 weight: 40
 draft: false
