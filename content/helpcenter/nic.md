@@ -38,7 +38,13 @@ weight: 15
   </p>
 </details>
 
-
+<details>
+<summary><p>
+  3. 主网卡和从网卡的网络类型需要一致吗？
+  </p></summary>
+<p>不需要，主网卡与从网卡的网络类型互不影响。
+  </p>
+</details>
 
 
 
