@@ -16,5 +16,5 @@ draft: false
 >
 > 青云 AppCenter 对所有青云用户开放，可以不用申请成为青云 AppCenter 服务商也能使用。
 >
-> 登录 [应用管理平台](https://appcenter.qingcloud.com/developer) 之后可以创建、管理自己名下所有应用。但未入驻的用户只能创建仅自己可见的应用，无法发布到应用商店供公众使用。
+> 登录 [AppCenter 应用开发](https://appcenter.qingcloud.com/developer)，您可以创建、管理自己名下所有应用。但未入驻的用户只能创建仅自己可见的应用，无法发布到应用商店供公众使用。
 
