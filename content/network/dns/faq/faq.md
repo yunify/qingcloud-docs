@@ -91,7 +91,7 @@ QingCloud DNS 解析记录 TTL 可以选择1分钟、10分钟、2小时、12小�
 
 ## 为什么 NameServer 已修改，但接管状态仍未变化？
 
-- 请先确保您的域名 DNS 服务器地址已经修改为 QingCloud DNS 服务器：`ns1.routewize.com` 和 `ns2.routewize.com` 。
+- 请先确保您的域名 DNS 服务器地址已经修改为 QingCloud DNS 服务器：`ns3.routewize.com` 和 `ns4.routewize.com` 。
 
 - 受限于域名注册商及全球 DNS 缓存时间，变更域名 DNS 服务器一般需要1~3天时间才会生效，请您耐心等待。
 
