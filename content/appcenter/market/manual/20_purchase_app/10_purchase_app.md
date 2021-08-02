@@ -1,7 +1,7 @@
 ---
-title: "购买应用"
-description: 购买应用
-weight: 20
+title: "购买云应用"
+description: 购买云应用
+weight: 10
 draft: false
 ---
 
