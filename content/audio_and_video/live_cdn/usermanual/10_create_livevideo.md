@@ -5,9 +5,11 @@ collapsible: false
 weight: 10
 ---
 
-您需要将已备案的域名添加到青云视频直播服务中，包含推流域名和播流域名。
+使用视频直播服务之前，您需要将已备案的推流域名和播流域名添加到视频直播服务中。
 
-您可以注册备案一个一级域名（例如：example.com），把两个不同的二级域名（例如：anchor.example.com 和 play.example.com）作为直播推流域名和播流域名。注册域名的详细信息，请参考[《域名注册 快速入门》](https://docsv3.qingcloud.com/site/domain/quickstart/quick_start/)。
+添加推流域名和播流域名前，您需要到域名服务提供商处注册域名。以在青云域名注册服务中注册域名为例，详细信息请参见[《域名注册 快速入门》](https://docsv3.qingcloud.com/site/domain/quickstart/quick_start/)。
+
+您可以注册备案一个一级域名（例如：example.com），把两个不同的二级域名（例如：anchor.example.com 和 play.example.com）作为直播推流域名和播流域名。
 
 推流域名与播流域名为一对多的关系。
 
@@ -17,7 +19,7 @@ weight: 10
 
 - 已获取管理控制台的账号和密码。
 
-- 域名已备案。
+- 域名已注册并备案。
 
 - 创建播流域名前已创建可用的推流域名。
 
