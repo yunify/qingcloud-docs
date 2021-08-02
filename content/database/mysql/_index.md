@@ -35,8 +35,8 @@ Section2:
       url: "manual/cluster_lifecycle/cluster_info/"
 
     - title: 最佳实践
-      content: 在 MySQL Plus 集群上的实践操作，包括迁移数据、下载日志等。
-      url: "best-practices/data_transfer/"
+      content: 在 MySQL Plus 集群上的实践操作。
+      url: "best-practices/download_mysql_log/"
 
 section3:
   title: 开发者指南

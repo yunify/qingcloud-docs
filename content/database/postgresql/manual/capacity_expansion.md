@@ -19,4 +19,4 @@ QingCloud PostgreSQL 在集群性能不足时，支持提高集群的配置。
   3. 选择需扩容规格，包括 CPU，内存，磁盘大小。
   4. 点击**提交**，开始扩容。
      
-     ![集群扩容](../_images/pg_cluster_resize1.png)
+     ![集群扩容](../../_images/pg_cluster_resize1.png)
