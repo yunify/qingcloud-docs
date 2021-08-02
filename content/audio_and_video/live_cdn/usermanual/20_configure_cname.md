@@ -83,7 +83,7 @@ weight: 20
 
 1. 在 Windows 系统的运行对话框中，输入 **cmd**，按 **Enter**，打开 DOS窗口。
 
-   <img src="../../_images/um_cname_cmd_win.png" style="zoom:50%;" />
+   <img src="../../_images/um_cname_cmd_win.png" style="zoom:40%;" />
 
 2. 执行以下命令，验证 CNAME 是否配置成功。
 
