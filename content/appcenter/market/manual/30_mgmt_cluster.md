@@ -167,17 +167,17 @@ draft: false
 
    > **说明：**
    >
-   > 若您没有创建指标告警策略，点击创建指标告警策略，创建新的指标告警策略，详细操作请参见[告警服务](https://docsv3.qingcloud.com/monitor_service/cloudsat/manual/alarm_service/)。
+   > 若您没有创建指标告警策略，点击**创建指标告警策略**，创建新的指标告警策略，详细操作请参见[告警服务](https://docsv3.qingcloud.com/monitor_service/cloudsat/manual/alarm_service/)。
 
-   ![](/../../_images/choose_storm_alarm.png)
+   ![](/../../_images/choose_mark_alarm.png)
 
 4. 点击**提交**，完成指标告警策略的绑定。
 
    在集群管理列表配置通知策略后，若当所有指标规则处于告警状态则满足触发条件，不仅在页面的历史信息会展示，同时会对已认证的相关账号发送对应信息。
 
-   ![](../../_image/cluster_alarm_rule.png)
+   ![](../../_images/cluster_alarm_rule.png)
 
-   ![](../../_image/cluster_alarm_notice.png)
+   ![](../../_images/cluster_alarm_notice.png)
 
 ## 管理备份
 
