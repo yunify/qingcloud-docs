@@ -25,7 +25,7 @@ Section2:
 
     - title: 购买应用
       content: 应用使用文档
-      url: "/appcenter/market/manual/10_cloud_app/20_purchase_app"
+      url: "/appcenter/market/manual/20_purchase_app/10_purchase_app"
 
 
 section4:
@@ -42,9 +42,9 @@ section4:
       vice_title: 使用指南
       children: 
         - title: 购买部署使用云应用
-          url: "/appcenter/market/manual/10_cloud_app/20_purchase_app"
-        - title: 开通 SaaS 应用
-          url: "/appcenter/market/manual/20_user-operation-saas"
+          url: "/appcenter/market/manual/20_purchase_app/10_purchase_app"
+        - title: 开通集成应用
+          url: "/appcenter/market/manual/20_purchase_app/20_integrated_app"
 ---
 
 

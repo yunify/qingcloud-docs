@@ -21,27 +21,27 @@ draft: false
 
 1. 登录[云市场](https://marketplace.qingcloud.com/)。
 
-   <img src="../../../_images/um_cloud_market.png" style="zoom:50%;" />
+   <img src="../../_images/um_cloud_market.png" style="zoom:50%;" />
 
 2. 通过搜索功能，搜索您所需的应用。
 
-   <img src="../../../_images/um_find_function.png" style="zoom:50%;" />
+   <img src="../../_images/um_find_function.png" style="zoom:50%;" />
 
 3. 通过应用分类，查找您所需的应用。
 
-   <img src="../../../_images/um_app_classification.png" style="zoom:50%;" />
+   <img src="../../_images/um_app_classification.png" style="zoom:50%;" />
 
 4. 通过交付方式，查找您所需的应用。
 
-   <img src="../../../_images/um_app_payment.png" style="zoom:50%;" />
+   <img src="../../_images/um_app_payment.png" style="zoom:50%;" />
 
 5. 通过热销产品或者新上架商品，查找您所需的应用。
 
-   <img src="../../../_images/um_hot_app.png" style="zoom:50%;" />
+   <img src="../../_images/um_hot_app.png" style="zoom:50%;" />
 
 6. 通过等保合规，查找您所需的应用。
 
-   <img src="../../../_images/um_app_guarantee.png" style="zoom:50%;" />
+   <img src="../../_images/um_app_guarantee.png" style="zoom:50%;" />
 
 ## 管理控制台
 
@@ -53,13 +53,13 @@ draft: false
 
 2. 点击**产品与服务**，弹出**产品与服务**窗口。
 
-   <img src="../../../_images/um_app_product.png" style="zoom:50%;" />
+   <img src="../../_images/um_app_product.png" style="zoom:50%;" />
 
 3. 您可以在当前窗口，查找您所需的应用。
 
 4. 您也可以通过**搜索**功能，搜索您所需的应用。
 
-   <img src="../../../_images/um_app_find.png" style="zoom:50%;" />
+   <img src="../../_images/um_app_find.png" style="zoom:50%;" />
 
 ### 应用中心
 
@@ -67,7 +67,7 @@ draft: false
 
 2. 选择**产品与服务** > **AppCenter** > **应用中心**，进入**应用中心**页面。
 
-   <img src="../../../_images/um_appcenter.png" style="zoom:50%;" />
+   <img src="../../_images/um_appcenter.png" style="zoom:50%;" />
 
 3. 通过**分类**或者**搜索**，查找您所需的应用。
 
@@ -75,12 +75,12 @@ draft: false
    >
    > 您也可以在左侧导航栏中，查找常见的应用。
 
-   <img src="../../../_images/um_appcenter_search.png" style="zoom:50%;" />
+   <img src="../../_images/um_appcenter_search.png" style="zoom:50%;" />
 
 4. 选择您查看的应用，点击**查看详情**，进入应用详细信息页面。
 
-   ![](../../../_images/um_view_details.png)
+   ![](../../_images/um_view_details.png)
 
 5. 您可以根据点击简介、价格、信息以及版本，查看对应的详细信息。
 
-   ![](../../../_images/um_app_details.png)
+   ![](../../_images/um_app_details.png)
