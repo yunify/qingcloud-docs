@@ -41,6 +41,16 @@ MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用
 mysql -h <mysqlServerName> -P <port> -u <userName> -p -D <databaseName> -ssl-ca=<caNme> --ssl-cert=<> 
  ```
 
+> **说明**
+> 
+> 关系型数据库 MySQL Plus 可通过客户端使用以下两种方式连接数据库：
+> 
+> -开启 SSL，可以通过 SSL 方式连接数据库，具有更高的安全性。
+> 
+> -关闭 SSL，可以采用非 SSL 方式连接数据库。
+> 
+> 详细开关 SSL 连接，请参见[SSL 传输加密](../../ssl_trans_encryption)。
+
 |<span style="display:inline-block;width:80px">选项</span> |<span style="display:inline-block;width:240px">说明</span>|<span style="display:inline-block;width:280px">示例</span> |
 |:----|:----|:----|
 |-h           |数据库内网或外网连接地址。       |<li>192.168.00.00<li>gz-cdb-xx123xx.mysql.qingcloud.link|
