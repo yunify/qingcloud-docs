@@ -191,6 +191,12 @@ draft: false
 
 2. 点击**创建备份**，弹出**提示**信息。
 
+   > **注意：**
+   >
+   > a. 备份只能捕获在备份任务开始时已经写入磁盘的数据，不包括当时位于缓存里的数据。
+   >
+   > b. 为了保证数据的完整性，您需要在创建备份前暂停所有文件的**写**操作，直到备份进入**捕获完成**的状态；或者先停止云服务器或解绑硬盘，进行离线备份。
+
    <img src="../../../_images/um_app_bak_prompt.png" style="zoom:50%;" />
 
 3. 点击**继续**，进入**创建备份**窗口。
@@ -199,14 +205,8 @@ draft: false
 
 4. 点击**提交**，进行备份。
 
-### 
-
-
-
-![集群备份](/appcenter/market/business-process/_image/cluster_create_bak.png)
-
-![集群备份提示](/appcenter/market/business-process/_image/cluster_create_bak_tips.png)
+### 更多操作
 
 备份后，可对备份进行删除或者从备份中再次部署购买集群应用。
 
-![集群备份](/appcenter/market/business-process/_image/cluster_bak_operation.png)
+<img src="../../../_images/um_bak_more.png" style="zoom:50%;" />
