@@ -7,7 +7,7 @@ weight: 10
 
 您需要将已备案的域名添加到青云视频直播服务中，包含推流域名和播流域名。
 
-您可以注册备案一个一级域名（例如：example.com），把两个不同的二级域名（例如：anchor.example.com 和 play.example.com）作为直播推流域名和播流域名。
+您可以注册备案一个一级域名（例如：example.com），把两个不同的二级域名（例如：anchor.example.com 和 play.example.com）作为直播推流域名和播流域名。注册域名的详细步骤，请参考[《域名注册 快速入门》](https://docsv3.qingcloud.com/site/domain/quickstart/quick_start/)。
 
 推流域名与播流域名为一对多的关系。
 
