@@ -13,7 +13,7 @@ weight: 10
 
 - 云应用
 
-- 集成应用（SaaS 应用）
+- SaaS
 
-- License 应用
+- License
 - API

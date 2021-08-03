@@ -1,11 +1,11 @@
 ---
-title: "开通集成应用"
-description: 开通集成应用
+title: "开通 SaaS 应用"
+description: 开通 SaaS 应用
 weight: 20
 draft: false
 ---
 
-## 查找集成应用
+## 查找 SaaS 应用
 
 青云QingCloud 为青云用户和 Qingcloud AppCenter 服务商提供了以下方式进行应用查看。
 
@@ -17,9 +17,9 @@ draft: false
 
    <img src="../../../_images/um_saas_appcenter.png" style="zoom:50%;" />
 
-## 开通应用
+## 开通 SaaS 应用
 
-如下**以登录 QingCloud 管理控制台开通集成应用为例**进行说明。
+如下**以登录 QingCloud 管理控制台开通 SaaS 应用为例**进行说明。
 
 1. 在应用详情中，点击**立即开通**，进入**开通应用**页面。
 
