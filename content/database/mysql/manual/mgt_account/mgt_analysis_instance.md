@@ -14,7 +14,6 @@ MySQL Plus 通过接入支持 MaterializeMySQL 引擎的 ClickHouse 数据库，
 
 本小节主要介绍如何创建和删除 MySQL Plus 分析实例账号。
 
-
 ## 前提条件
 
 - 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
