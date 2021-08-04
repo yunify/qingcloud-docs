@@ -22,10 +22,11 @@ weight: 15
 <summary><p>
   1. 一台云服务器上可以绑定几张网卡？
   </p></summary>
-<P>
+<p>
   一个云服务器最多可以绑定 64 张网卡（其中主网卡 1 张，从网卡 63 张），一个网络最多可以有 252 张网卡。
-  </P>
+  </p>
 </details>
+
 
 <details>
 <summary><p>
@@ -37,7 +38,6 @@ weight: 15
   此时，需要您登录服务器手动配置网卡及路由，具体配置方法请参见<a href="/compute/vm/faq/common_operations/net_config/default_route/">网卡路由配置</a>。
   </p>
 </details>
-
 <details>
 <summary><p>
   3. 主网卡和从网卡的网络类型需要一致吗？
