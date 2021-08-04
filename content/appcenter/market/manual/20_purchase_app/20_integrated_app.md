@@ -9,13 +9,13 @@ draft: false
 
 青云QingCloud 为青云用户和 Qingcloud AppCenter 服务商提供了以下方式进行应用查看。
 
-1. 登录[云市场](https://marketplace.qingcloud.com/)，进入云市场，可查看 QingCloud 出品的 SaaS 应用。
+- 登录[云市场](https://marketplace.qingcloud.com/)，进入云市场，可查看 QingCloud 出品的 SaaS 应用。
 
-   ![](../../../_images/um_saas_app.png)
+  ![](../../../_images/um_saas_app.png)
 
-2. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/)，在 AppCenter 控制台的**应用中心**或者**产品与服务**，快速查看所需的集成应用。
+- 登录 [QingCloud 管理控制台](https://console.qingcloud.com/)，在 AppCenter 控制台的**应用中心**或者**产品与服务**，快速查看所需的集成应用。
 
-   <img src="../../../_images/um_saas_appcenter.png" style="zoom:50%;" />
+  <img src="../../../_images/um_saas_appcenter.png" style="zoom:50%;" />
 
 ## 开通 SaaS 应用
 
