@@ -51,7 +51,7 @@ draft: false
 
    <img src="../../_images/um_app_basic.png" style="zoom:40%;" />
 
-5. 点击右上角的<img src="../../../_images/icon_more.png" style="zoom:50%;" />，弹出操作窗口。您可以对应用执行更多的操作。
+5. 点击右上角的<img src="../../_images/icon_more.png" style="zoom:50%;" />，弹出操作窗口。您可以对应用执行更多的操作。
 
    <img src="../../_images/um_app_more_operator.png" style="zoom:50%;" />
 
@@ -67,7 +67,7 @@ draft: false
 
    <img src="../../_images/um_app_rent.png" style="zoom:50%;" />
 
-2. 点击右上角的<img src="../../../_images/icon_more.png" style="zoom:50%;" />，在弹出的窗口中，点击**查看详情**，可查看扣费详情。
+2. 点击右上角的<img src="../../_images/icon_more.png" style="zoom:50%;" />，在弹出的窗口中，点击**查看详情**，可查看扣费详情。
 
    <img src="../../_images/um_app_deduction.png" style="zoom:50%;" />
 
