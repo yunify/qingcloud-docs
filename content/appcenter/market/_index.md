@@ -43,7 +43,7 @@ section4:
       children: 
         - title: 购买部署使用云应用
           url: "/appcenter/market/manual/20_purchase_app/10_purchase_app"
-        - title: 开通集成应用
+        - title: 开通 SaaS 应用
           url: "/appcenter/market/manual/20_purchase_app/20_integrated_app"
 ---
 
