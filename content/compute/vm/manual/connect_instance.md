@@ -70,17 +70,17 @@ draft: false
 
 在左侧的**计算基础服务**导航栏，选择 **计算** > **SSH 密钥** 页面, 点击**创建**，创建SSH 密钥，您也可以使用自己原有的密钥。
 
-![](../_images/creat-sshkey.png)
+<img src="../_images/creat-sshkey.png" style="zoom:33%;" />
 
 #### 2. 云服务器加载上密钥
 
 您可以在创建云服务器时选择密钥。
 
-![](../../_images/creat-instance-key.png)
+<img src="../_images/creat-instance-key1.png" style="zoom:40%;" />
 
 也可以给现有云服务器加载密钥,右键点击云服务器 ID，选择**SSH 密钥** > **加载**。
 
-![](../../_images/add-instance-key.png)
+<img src="../../_images/add-instance-key.png" style="zoom:33%;" />
 
 #### 3. 配置好弹性 IP 和防火墙
 
