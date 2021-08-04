@@ -90,6 +90,10 @@ draft: false
 
 4. 查看网卡配置文件并确认修改。
 
+   ```
+   cat /etc/sysconfig/network-scripts/ifcfg-eth1
+   ```
+
 5. 执行以下命令重启网络服务。
 
    ```
