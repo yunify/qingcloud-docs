@@ -13,7 +13,7 @@ draft: false
 
   ![](../../../_images/um_saas_app.png)
 
-- 登录 [QingCloud 管理控制台](https://console.qingcloud.com/)，在 AppCenter 控制台的**应用中心**或者**产品与服务**，快速查看所需的集成应用。
+- 登录 [QingCloud 管理控制台](https://console.qingcloud.com/)，在 AppCenter 控制台的**应用中心**或者**产品与服务**，快速查看所需的 SaaS 应用。
 
   <img src="../../../_images/um_saas_appcenter.png" style="zoom:50%;" />
 
@@ -33,6 +33,6 @@ draft: false
 
    <img src="../../../_images/um_saas_app_login.png" style="zoom:50%;" />
 
-4. 您也可以点击**应用管理**，在**已安装的应用**页面，点击**立即访问**，访问开通的集成应用。
+4. 您也可以点击**应用管理**，在**已安装的应用**页面，点击**立即访问**，访问开通的 SaaS 应用。
 
    <img src="../../../_images/um_saas_login.png" style="zoom:50%;" />
