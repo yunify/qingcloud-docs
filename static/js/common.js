@@ -28,6 +28,13 @@ function download_pdf(url='',pdf_name=''){
 	window.location.href='/download.php?url='+url+'&pdf_name='+pdf_name;
 }
 
+// 导出所有的pdf
+function download_all_pdf(name='') {
+	var url = window.location.pathname;
+
+	window.location.href="/download.php?&type=all&url="+name + '&pdf_name='+name;
+}
+
 $(function(){
 	//查看链接结尾是否/结尾
 	$('a').each(function(){

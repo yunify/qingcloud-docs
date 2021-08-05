@@ -107,6 +107,20 @@ header {
         }
     }
 }
+
+// 批量下载pdf
+.pdf-all-download-btn {
+	position: absolute;
+	right: 1rem;
+	color: #68747f;
+	&:hover {
+		color: #00a870;
+	}
+	i {
+		padding-bottom: 6px;
+	}
+}
+
 ul.timeline {
     list-style-type: none;
 }
