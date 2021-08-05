@@ -32,6 +32,11 @@ function download_pdf(url='',pdf_name=''){
 function download_all_pdf(name='') {
 	var url = window.location.pathname;
 
+	// 查找标题
+	if (name == '') {
+		name = $('.td-main h1.title').html();
+	}
+
 	window.location.href="/download.php?&type=all&url="+name + '&pdf_name='+name;
 }
 
