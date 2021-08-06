@@ -24,7 +24,7 @@ keyword: 青云，硬盘
 
 3. 单击**创建**，弹出**创建硬盘**窗口。
 
-   <img src="../_images/create_disk.png" alt="创建硬盘" style="zoom:50%;" />
+   <img src="../_images/create_disk0.png" alt="创建硬盘" style="zoom:50%;" />
 
 4. 根据界面提示，配置硬盘基本信息。各项参数说明如下：
 
