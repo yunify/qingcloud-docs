@@ -6,13 +6,14 @@ collapsible: true
 icon: "/images/icons/index/product_icon_anybox.svg"
 
 isPrivate: true
+
 section1:
   children:
     - title: 产品简介
-      url: "https://docs.qingcloud.com/anybox-docs/introduction/"
+      url: "/pvt_anybox/intro/intro/"
 
     - title: 安装指南
-      url: "https://docs.qingcloud.com/anybox-docs/installation/"
+      url: "/pvt_anybox/install/10_prepare/"
 
     - title: 安装指南（1.6.6以上版本）
       url: "https://docs.qingcloud.com/anybox-docs/installation_new/"
