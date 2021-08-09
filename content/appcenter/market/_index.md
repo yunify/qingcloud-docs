@@ -21,11 +21,11 @@ Section2:
 
     - title: 服务商入驻
       content: 服务商入驻
-      url: "/appcenter/market/intro/30_contracts"
+      url: "/appcenter/market/serviceprovider/10_prerequisite"
 
-    - title: 购买应用
-      content: 应用使用文档
-      url: "/appcenter/market/manual/20_purchase_app/10_purchase_app"
+    - title: 操作指南
+      content: 云市场操作指南
+      url: "/appcenter/market/manual/10_find_app"
 
 
 section4:
@@ -41,7 +41,7 @@ section4:
       content: 您可获取到开通、购买、使用云市场的应用。
       vice_title: 使用指南
       children: 
-        - title: 购买部署使用云应用
+        - title: 购买云应用
           url: "/appcenter/market/manual/20_purchase_app/10_purchase_app"
         - title: 开通 SaaS 应用
           url: "/appcenter/market/manual/20_purchase_app/20_integrated_app"

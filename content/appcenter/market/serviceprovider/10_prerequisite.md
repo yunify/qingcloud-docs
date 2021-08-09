@@ -1,7 +1,7 @@
 ---
 title: "入驻须知"
 description: 入驻须知
-weight: 20
+weight: 10
 draft: false
 ---
 

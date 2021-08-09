@@ -10,7 +10,7 @@ draft: false
 1. [注册](https://console.qingcloud.com/signup) 成为青云QingCloud 用户，完成企业认证。
 2. [申请](https://appcenter.qingcloud.com/apply) 成为青云Qingcloud 云市场服务商。
 
-关于入驻需要的企业资质以及需要签署的相关合约，请参见 [入驻须知](../20_prerequisite)。
+关于入驻需要的企业资质以及需要签署的相关合约，请参见 [入驻须知](../10_prerequisite)。
 
 > **注意：**
 >
