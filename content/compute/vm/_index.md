@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: 云服务器
-  vice_title: 云服务器服务是云计算的核心服务，是承载用户业务的核心模块
+  vice_title: 云服务器服务是云计算的核心服务，是承载用户业务的核心模块。
 
 
 Section2:
