@@ -4,6 +4,7 @@
     if(!document.queryCommandSupported('copy')) {
       return;
     }
+
   
     function flashCopyMessage(el, msg) {
       el.textContent = msg;
@@ -28,14 +29,15 @@
   
       if (!containerEl.firstElementChild) {
   
-  
-        copyBtn.className = "copy-btn";
+
+        copyBtn.className = "highlight-copy-btn";
   
   
         var spanTxt = document.createElement("span");
         spanTxt.textContent = containerEl.textContent
         containerEl.innerHTML = ''
         containerEl.appendChild(spanTxt)
+
       }
   
       var codeEl = containerEl.firstElementChild; 
@@ -57,9 +59,11 @@
   
       containerEl.appendChild(copyBtn);
     }
-  
+ 
+
     // Add copy button to code blocks
-    var normalCodeBlock = document.getElementsByTagName('code');
+    //var normalCodeBlock = document.getElementsByTagName('code');
+    var normalCodeBlock = $("pre code");
     if (normalCodeBlock) {
       Array.prototype.forEach.call(normalCodeBlock, addCopyButton);
     }
