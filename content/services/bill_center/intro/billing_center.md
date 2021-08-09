@@ -47,7 +47,7 @@ QingCloud 费用中心为用户提供基于页面的云产品交易和账单管�
       <td style="background:#fff;">查看有效优惠券、过期优惠券及激活优惠券。</td>
 	</tr>
 	<tr >
-	    <td rowspan="5" style="background:#fff;">消费账单</td>
+	    <td rowspan="3" style="background:#fff;">消费账单</td>
 	    <td style="background:#fff;">账单总览</td>
       <td style="background:#fff;">支持按月查看账单概况，包括资源消费、资源抵扣及账单发票情况，并支持账单导出。</td>
 	</tr>
@@ -59,15 +59,16 @@ QingCloud 费用中心为用户提供基于页面的云产品交易和账单管�
 	    <td style="background:#fff;">消费预估</td>
       <td style="background:#fff;">支持根据当前的按需资源、包年包月资源以及即将产生续约操作的预留资源进行费用预估。</td>
 	</tr>
-   <tr>
-	    <td style="background:#fff;">订单管理</td>
+   <tr >
+	    <td rowspan="2" style="background:#fff;">订单管理</td>
+	    <td style="background:#fff;">活动订单管理</td>
       <td style="background:#fff;">支持按照订单状态、产品类型及时间查询订单及查看订单详情。</td>
 	</tr>
 	<tr>
 	    <td style="background:#fff;">续约管理</td>
       <td style="background:#fff;">支持预留合约、包年包月产品的自动及手动续费。</td>
 	</tr>
-  <tr >
+    <tr >
 	    <td rowspan="2" style="background:#fff;">发票管理</td>
 	    <td style="background:#fff;">发票管理</td>
       <td style="background:#fff;">支持申请开具发票及管理发票抬头。</td>
@@ -77,5 +78,6 @@ QingCloud 费用中心为用户提供基于页面的云产品交易和账单管�
       <td style="background:#fff;">支持以添加及保存常用的合同/发票邮寄地址。</td>
 	</tr>
 </table>
+
 
 
