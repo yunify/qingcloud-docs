@@ -5,7 +5,7 @@ weight: 10
 draft: false
 ---
 
-用户可以在[云市场](https://marketplace.qingcloud.com/)购买应用，也可以在[管理控制台](https://console.qingcloud.com/)的**应用中心**选择应用进行部署购买。
+用户可以在[云市场](https://marketplace.qingcloud.com/)购买应用，也可以在[ QingCloud 管理控制台](https://console.qingcloud.com/)的**应用中心**选择应用进行部署购买。
 
 ## 云市场购买
 

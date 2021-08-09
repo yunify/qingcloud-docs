@@ -21,7 +21,7 @@ Section2:
 
     - title: 服务商入驻
       content: 服务商入驻
-      url: "/appcenter/market/intro/20_contracts"
+      url: "/appcenter/market/intro/30_contracts"
 
     - title: 购买应用
       content: 应用使用文档
