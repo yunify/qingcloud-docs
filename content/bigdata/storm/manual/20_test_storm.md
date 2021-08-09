@@ -11,7 +11,7 @@ Storm 创建完成之后可以测试其可用性，由于 Storm 客户端节点�
 
 用户名：root，密码：storm
 
-> 注意：
+> **注意：**
 >
 > 测试需创建 Storm 客户端 节点，如创建集群时未创建该类型节点，可通过 新增节点 增加该节点。
 
@@ -19,7 +19,7 @@ Storm 集群主节点上启动了 Storm UI 服务。Storm UI 服务是一个基�
 
 为了方便测试,使用并熟悉 Storm UI，请查看客户端节点 /etc/hosts 目录下 host 文件配置，建议添加 Storm 节点 host 至本地开发环境的 host 文件中，这样可以更加方便的通过 Storm UI 在本地浏览器上查看日志，建议使用高可用 storm_ui_vip：8080 访问与使用 Storm UI,其中 storm_ui_vip 在您创建好集群后可以在集群左侧栏看到。
 
-> 注意：
+> **注意：**
 >
 > 本指南中所有的测试都是基于 Storm 官方自带的示例 storm-starter 进行的。
 
@@ -110,7 +110,7 @@ public class TestReachTopology {
 java -cp /opt/storm/examples/storm-drpc-client/storm-example-1.1-SNAPSHOT.jar com.qingcloud.TestReachTopology i-9hhwul25
 ```
 
-> 注意：
+> **注意：**
 >
 > 官方这个测试用例较为复杂，需要请求 master 节点的 leader 角色，可以在 Storm UI 上查看到 leaer 角色的 host，当删除 leader 后，需要重新测试此流程。
 

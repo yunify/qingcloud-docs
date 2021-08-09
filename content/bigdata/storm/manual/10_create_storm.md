@@ -9,7 +9,7 @@ draft: false
 
 创建 Storm 集群前，您需要先创建一个 VPC 网络，并在 QingCloud AppCenter 中创建一个 Zookeeper 集群,其他地方创建的 Zookeeper 集群识别不出来， 建议 Storm 与 Zookeeper 在一个私有网络中。
 
->注意：
+>**注意：**
 >
 >为了保障数据安全，Storm 集群需要运行在受管私有网络中。所以在创建一个 Storm 集群之前，至少需要一个路由器（或 VPC 网络）和一个受管私有网络，受管私有网络需要和路由器（或 VPC 网络）连接，并开启 DHCP 服务（默认开启）。
 
@@ -23,7 +23,7 @@ draft: false
 
 4. 根据需要设置 Storm 的名称、描述信息，选择 **Storm 版本**、**计费方式**和**可用区**。
 
-   > 说明：
+   > **说明：**
    >
    > 若首次创建，在 Storm 页面，点击**立即部署**，创建 Storm。
 
@@ -39,7 +39,7 @@ draft: false
 
 <img src="../../_images/create_storm_2.png" style="zoom:50%;" />
 
-> 注意：
+> **注意：**
 >
 > 主节点上运行了 Nimbus、DRPC、UI 等服务，建议在生产环境中使用至少 2 个主节点，以实现主节点集群的 HA。
 >
@@ -55,7 +55,7 @@ draft: false
 
 <img src="../../_images/create_storm_3.png" style="zoom:50%;" />
 
->注意：
+>**注意：**
 >
 >从节点上启用了 Supervisor 服务并运行 Worker 进程，请在生产环境使用至少 2 个从节点，以实现从节点集群的 HA。从节点作为工作节点，通常需要更高的配置。
 
@@ -69,7 +69,7 @@ draft: false
 
 <img src="../../_images/create_storm_4.png" style="zoom:50%;" />
 
-> 注意：
+> **注意：**
 >
 > 主节点已经启用了 DRPC 服务，因此低负载时 DRPC 节点不是必须的；如果您需要高负载 RPC 服务，可以添加额外的 RPC 节点。
 
@@ -85,7 +85,7 @@ draft: false
 
 1. 选择 **VPC 网络**。
 
-   > 说明：
+   > **说明：**
    >
    > 若您没有已创建的 VPC 网络，可点击新建 VPC 网络，创建 VPC 网络。
    >
