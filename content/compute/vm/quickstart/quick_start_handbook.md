@@ -1,7 +1,7 @@
 ---
 title: "快速入门指南"
 description: test
-draft: false
+draft: true
 weight: 5
 ---
 

@@ -111,7 +111,7 @@ weight: 10
 
 **5、测试网卡是否通**
 
-![](../ipwhiz/ipwhiz6.png)
+![](../../_images/ipwhiz/ipwhiz6.png)
 
 **6、配置路由策略永久生效**
 
