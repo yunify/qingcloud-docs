@@ -4,7 +4,6 @@ description: 本小节主要介绍如何获取 PostgreSQL 运行日志。
 keywords: PostgreSQL 运行日志；
 weight: 90
 collapsible: false
-draft: false
 ---
 
 QingCloud PostgreSQL 的日志默认保存30天，每天会自动保存一个日志文件，超过30天系统自动清理。日志的命名规则为`postgresqllog_xx.csv`，`xx`表示在当月的第多少天。

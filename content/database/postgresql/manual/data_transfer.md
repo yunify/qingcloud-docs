@@ -4,8 +4,8 @@ description: 本小节主要介绍 PostgreSQL 离线数据迁移。
 keywords: PostgreSQL 离线数据迁移,
 weight: 01
 collapsible: false
-draft: false
 ---
+
 
 QingCloud PostgreSQL 可通过离线导出数据，再通过 PostgreSQL 支持的方式导入数据，实现 PostgreSQL 的数据迁移。
 
@@ -31,7 +31,7 @@ pg_dump -U <远端数据库账号> -h <远端数据库 IP> -t <表名> <数据�
 > **说明**
 > 
 > 数据库名缺省为数据库用户账号名。
-> 
+
 导出远端数据库全部数据示例：远端数据库 IP 地址为 `192.168.100.246` ，数据库名为 `qingcloud`，目标文件及路径为`/tmp/pgdatabk.sql`。
 
 ```shell
