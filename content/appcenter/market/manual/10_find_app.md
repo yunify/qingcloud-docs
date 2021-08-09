@@ -9,7 +9,7 @@ draft: false
 
 ## 查找方式
 
-青云QingCloud 为青云用户和 Qingcloud AppCenter 服务商提供了以下查找应用的方式。
+青云QingCloud 为青云用户和 QingCloud AppCenter 服务商提供了以下查找应用的方式。
 
 1. 登录[云市场](https://marketplace.qingcloud.com/)。进入青云云市场，查找青云QingCloud 出品的应用。
 

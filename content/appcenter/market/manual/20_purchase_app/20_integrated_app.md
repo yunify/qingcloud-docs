@@ -7,7 +7,7 @@ draft: false
 
 ## 查找 SaaS 应用
 
-青云QingCloud 为青云用户和 Qingcloud AppCenter 服务商提供了以下方式进行应用查看。
+青云QingCloud 为青云用户和 QingCloud AppCenter 服务商提供了以下方式进行应用查看。
 
 - 登录[云市场](https://marketplace.qingcloud.com/)，进入云市场，可查看 QingCloud 出品的 SaaS 应用。
 
