@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: 云服务器
-  vice_title: 云服务器服务是云计算的核心服务，是承载用户业务的核心模块
+  vice_title: 云服务器服务是云计算的核心服务，是承载用户业务的核心模块。
 
 
 Section2:
@@ -20,6 +20,10 @@ Section2:
     - title: 计费指南
       content: 云服务器计费指南
       url: "/compute/vm/billing/reserved_contract"
+
+    - title: 快速入门
+      content: 云服务器快速入门
+      url: "/compute/vm/quickstart/create_vm"
 
     - title: 操作指南
       content: 云服务器操作指南
