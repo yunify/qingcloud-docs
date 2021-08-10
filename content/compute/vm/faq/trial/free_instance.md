@@ -32,11 +32,18 @@ https://www.qingcloud.com/consultation
 
      <img src="../../_images/free-instance-4.png" style="zoom:25%;" />
 
-   - 免费试用78.12元优惠券可用于创建sh1/gd2的基础型1c1g 20g的云服务器，如果创建Linux云服务器，正好支撑1个月；如果创建Windows云服务器，不足以支撑1个月。
+   - 免费试用78.12元优惠券可用于创建sh1/gd2的基础型1c1g 20g的云服务器，如果创建Linux云服务器，正好支撑1个月。
 
-     创建路径：控制台-计算-云服务器
+   - 不支持创建 Windows 云服务器。
 
-     注意：云服务器配置-基础型1c1g 20g系统盘的云服务器；计费方式-按需计费
+     创建路径：**QingCloud 控制台** > **计算** > **云服务器**
+
+     注意：云服务器配置 > 基础型1c1g 20g系统盘的云服务器；计费方式 > 按需计费
+     
+     >说明
+     >
+     >创建云服务器时可以异步选择并绑定 IP，无需单独创建。
+     
 
    ​		<img src="../../_images/free-instance-5.png" style="zoom:25%;" />
 
