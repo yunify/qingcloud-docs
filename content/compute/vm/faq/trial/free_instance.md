@@ -51,13 +51,13 @@ https://www.qingcloud.com/consultation
 
    ​		<img src="../../_images/free-instance-7.png" style="zoom:30%;" />
 
-   ​	    异步选择并绑定 IP。
+   ​		 异步选择并绑定 IP。	
 
-    	 <img src="../../_images/free-instance-12.png" style="zoom:30%;" />
+   ​	<img src="../../_images/free-instance-12.png" style="zoom:30%;" />
 
-    	   点击**立即购买**。
+   ​		点击**立即购买**，创建成功。
 
-    	 <img src="../../_images/free-instance-9.png" style="zoom:30%;" />
+   ​		<img src="../../_images/free-instance-9.png" style="zoom:30%;" />
 
    - 单独创建 IP时，需要分配到云服务器。
 
