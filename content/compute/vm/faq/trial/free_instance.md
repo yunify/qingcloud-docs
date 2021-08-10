@@ -51,7 +51,7 @@ https://www.qingcloud.com/consultation
 
    ​		<img src="../../_images/free-instance-7.png" style="zoom:30%;" />
 
-   ​		 异步选择并绑定 IP。	
+   ​		 选择并绑定 IP。	
 
    ​	<img src="../../_images/free-instance-12.png" style="zoom:30%;" />
 
