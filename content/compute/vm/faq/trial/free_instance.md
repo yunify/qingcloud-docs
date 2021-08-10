@@ -26,40 +26,60 @@ https://www.qingcloud.com/consultation
 
 3. 优惠券使用
 
-   - 免费试用28.8元优惠券,可用于创建sh1/gd2的公网IP，带宽必须是1Mbps
-
-     创建路径：控制台-网络-公网IP
-
-     <img src="../../_images/free-instance-4.png" style="zoom:25%;" />
-
-   - 免费试用78.12元优惠券可用于创建**上海1区**或**广东2区**的**基础型1核1g 20g**的云服务器，如果创建Linux云服务器，正好支撑1个月。
-
-   - 不支持创建 Windows 云服务器。
+   - 免费试用78.12元优惠券可用于创建**上海1区**或**广东2区**的**基础型1核1g 20g**的云服务器，如果创建Linux云服务器，正好支撑1个月。不支持创建 Windows 云服务器。
 
      创建路径：**QingCloud 控制台** > **计算** > **云服务器**
 
      注意：云服务器配置选择**基础型1核1g 20g系统盘**的云服务器；计费方式选择**按需计费**。
-     
+
      云服务器创建详情请参考：[云服务器快速创建流程](/compute/vm/quickstart/create_vm/)
-     
+
      >说明
      >
      >创建云服务器时可以异步选择并绑定 IP，无需单独创建。
-     >
-     >如果单独创建 IP，需要分配到云服务器。
-     
+
+
+   ​		点击**创建**，创建云服务器。
 
    ​		<img src="../../_images/free-instance-5.png" style="zoom:25%;" />
 
+   ​	 	选择计费方式为**按需计费**，选择区域为**上海1区**或**广东2区**。
+
    ​		<img src="../../_images/free-instance-6.png" style="zoom:30%;" />
+
+   ​		选择云服务器配置为**基础型1核1g 20g系统盘**的云服务器。
 
    ​		<img src="../../_images/free-instance-7.png" style="zoom:30%;" />
 
-  4. 再次进入优惠券界面，确认优惠券正常使用
+   ​	    异步选择并绑定 IP。
 
-     ​		<img src="../../_images/free-instance-8.png" style="zoom:25%;" />
+    	 <img src="../../_images/free-instance-12.png" style="zoom:30%;" />
 
-     
+    	   点击**立即购买**。
+
+    	 <img src="../../_images/free-instance-9.png" style="zoom:30%;" />
+
+   - 单独创建 IP时，需要分配到云服务器。
+
+     免费试用28.8元优惠券,可用于创建**上海1区**或**广东2区**的公网IP，带宽必须是1Mbps。
+
+     创建路径：**控制台** > **网络** > **公网IP**
+
+     点击**申请**，创建公网 IP。
+
+     <img src="../../_images/free-instance-4.png" style="zoom:25%;" />
+
+     将创建好的公网 IP 分配到云服务器。
+
+     <img src="../../_images/free-instance-8.png" style="zoom:25%;" />
+
+     选择需要绑定的云服务器。
+
+     <img src="../../_images/free-instance-10.png" style="zoom:30%;" />
+
+     分配完成。
+
+     <img src="../../_images/free-instance-11.png" style="zoom:25%;" />
 
 
 
