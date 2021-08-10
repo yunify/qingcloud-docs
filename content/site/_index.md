@@ -5,7 +5,6 @@ _build:
  render: false 
 weight: 120
 collapsible: true
-Draft: true
 icon: "/images/icons/index/product-icon-site.svg"
 ---
 

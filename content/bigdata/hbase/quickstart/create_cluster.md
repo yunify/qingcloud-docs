@@ -20,12 +20,12 @@ draft: false
 ## 操作步骤
 
 1. 登录 QingCloud 管理控制台。
-2. 选择**产品与服务** > **大数服务** > **HBase 服务**，进入 HBase 集群管理页面。
+2. 选择**产品与服务** > **大数据服务** > **HBase 服务**，进入 HBase 集群管理页面。
 3. 点击**立即部署**，进入应用部署页面。
 4. 选择**区域**。
    根据就近原则，选择实例所在区域。
 5. 配置实例基本属性、应用版本、网络信息、环境参数等信息。
-   
+
    a. [基本设置](#基本设置)
 
    b.  (可选）节点设置，包括 [客户端点设置](#客户端设置可选)、[主节点设置](#主节点设置可选)、[HDFS 主节点设置](#hdfs-主节点设置可选)、[从节点设置](#从节点设置可选)。
@@ -33,13 +33,13 @@ draft: false
    c. [网络设置](#网络设置)
 
    d. [依赖服务设置](#依赖服务设置)
-   
+
    e. [服务环境参数设置](#服务环境参数设置)
 
    f. [用户协议](#用户协议)
 
 6. 确认配置和费用信息无误后，点击**提交**，创建集群。
-   
+
    集群创建成功后，可在**集群管理**页面，查看和管理 HBase 集群。
 
    ![集群列表](../../_images/cluster_list.png)
@@ -62,7 +62,7 @@ draft: false
 
 ### 客户端设置（可选）
 
-集群客户端的硬件配置，包括云服务器规格、磁盘大小等。
+集群客户端的资源配置，包括云服务器规格、磁盘大小等。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
@@ -77,7 +77,7 @@ draft: false
 
 ### 主节点设置（可选）
 
-集群主节点的硬件配置，包括云服务器规格、磁盘大小等。
+集群主节点的资源配置，包括云服务器规格、磁盘大小等。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
@@ -91,7 +91,7 @@ draft: false
 
 ### HDFS 主节点设置（可选）
 
-集群 HDFS 主节点的硬件配置，包括云服务器规格、磁盘大小等。
+集群 HDFS 主节点的资源配置，包括云服务器规格、磁盘大小等。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
@@ -105,7 +105,7 @@ draft: false
 
 ### 从节点设置（可选）
 
-集群从节点的硬件配置，包括云服务器规格、磁盘大小等。
+集群从节点的资源配置，包括云服务器规格、磁盘大小等。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|

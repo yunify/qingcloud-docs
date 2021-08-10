@@ -1,7 +1,6 @@
 ---
 title: "实名认证进度查询"
 description: test
-draft: false
 weight: 8
 keyword: 实名认证进度查询, 域名注册, QingCloud, 青云
 ---

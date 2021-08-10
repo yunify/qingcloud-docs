@@ -1,7 +1,6 @@
 ---
 title: "域名信息修改"
 description: test
-draft: false
 weight: 3
 keyword: 域名信息修改, 域名注册, QingCloud
 ---

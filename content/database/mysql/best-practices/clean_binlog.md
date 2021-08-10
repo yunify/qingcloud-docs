@@ -2,8 +2,7 @@
 title: "清理 MySQL binlog 日志"
 description: 本小节主要介绍如何清理 MySQL Plus binlog 日志。 
 keywords: mysql plus 日志清理, binlog 日志 
-data: 2021-05-14T00:38:25+09:00
-weight: 2
+weight: 02
 collapsible: false
 draft: false
 ---
