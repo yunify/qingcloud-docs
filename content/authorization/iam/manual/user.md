@@ -7,24 +7,6 @@ weight: 40
 
 您可以通过 IAM 用户设定访问方式。
 
-## 前提条件
-
-在登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)的时候，您可以选择直接从QingCloud 控制台进入，也可以选择IAM 用户登录的方式进行登录。
-
-### 控制台登录：
-
-<img src="../../_images/console.png" style="zoom:22%;" />
-
-### IAM 用户登录：
-
-<img src="../../_images/console_iam.png" style="zoom:22%;" />
-
->说明
->
->控制台用户可以通过控制台进入 访问鉴权管理 IAM 服务。
->
->IAM 用户则无法通过控制台进入访问鉴权管理 IAM 服务，登录后直接进入访问鉴权管理 IAM 服务。
-
 ## 创建用户
 
 1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **访问鉴权管理** > **用户**，进入域名列表页。
@@ -167,6 +149,24 @@ weight: 40
 
    <img src="../../_images/user17.png" style="zoom:40%;" />
 
+### 重置密码
+
+当您需要对控制台访问的登录密码进行修改或重置时，可以参考以下内容。
+
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **访问鉴权管理** > **用户**，进入域名列表页。
+
+2. 在列表页选择需要修改密码的用户，点击该用户。
+
+   <img src="../../_images/user11.png" style="zoom:20%;" />
+
+3. 进入访问方式管理页面，点击**修改**。
+
+   <img src="../../_images/user16.png" style="zoom:20%;" />
+
+4. 选择**自定义密码**，进行密码重置。
+
+   <img src="../../_images/user20.png" style="zoom:40%;" />
+
 ### 编程访问设置
 
 1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **访问鉴权管理** > **用户**，进入域名列表页。
@@ -188,4 +188,16 @@ weight: 40
 > 如果需要禁用某一Access key，则在该页面直接点击**禁用**即可。
 >
 > 请及时保存或发送AccessKey信息至用户，弹窗关闭后将无法再次获取该信息，但您可以随时创建新的AccessKey。
+
+## 登录方式
+
+当创建IAM 用户成功后，登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)时，您可以选择直接从QingCloud 控制台进入，也可以选择IAM 用户登录的方式进行登录。
+
+### 控制台登录
+
+<img src="../../_images/console.png" style="zoom:22%;" />
+
+### IAM 用户登录
+
+<img src="../../_images/console_iam.png" style="zoom:22%;" />
 
