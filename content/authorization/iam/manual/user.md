@@ -189,13 +189,9 @@ weight: 40
 >
 > 请及时保存或发送AccessKey信息至用户，弹窗关闭后将无法再次获取该信息，但您可以随时创建新的AccessKey。
 
-## 登录方式
+## IAM 登录
 
 当创建IAM 用户成功后，登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)时，您可以选择直接从QingCloud 控制台进入，也可以选择IAM 用户登录的方式进行登录。
-
-### 控制台登录
-
-<img src="../../_images/console.png" style="zoom:22%;" />
 
 ### IAM 用户登录
 
