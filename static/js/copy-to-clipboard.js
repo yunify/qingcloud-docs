@@ -26,18 +26,17 @@
       var copyBtn = document.createElement("button");
       copyBtn.className = "highlight-copy-btn";
       copyBtn.textContent = "Copy";
-  
+
       if (!containerEl.firstElementChild) {
-  
+
 
         copyBtn.className = "highlight-copy-btn";
-  
   
         var spanTxt = document.createElement("span");
         spanTxt.textContent = containerEl.textContent
         containerEl.innerHTML = ''
         containerEl.appendChild(spanTxt)
-
+		containerEl.parentNode.className = 'highlight';
       }
   
       var codeEl = containerEl.firstElementChild; 

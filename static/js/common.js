@@ -30,14 +30,14 @@ function download_pdf(url='',pdf_name=''){
 
 // 导出所有的pdf
 function download_all_pdf(name='') {
-	var url = window.location.pathname;
+	var url = 'pdf/'+window.location.pathname;
 
 	// 查找标题
 	if (name == '') {
 		name = $('.td-main h1.title').html();
 	}
 
-	window.location.href="/download.php?&type=all&url="+name + '&pdf_name='+name;
+	window.location.href="/download.php?&type=all&url="+url + '&pdf_name='+name;
 }
 
 $(function(){

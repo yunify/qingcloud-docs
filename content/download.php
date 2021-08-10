@@ -24,6 +24,7 @@ class download{
 		exit;
 	}
 
+	/*
 
 	public function downAll()
 	{
@@ -40,12 +41,15 @@ class download{
 
 		}
 	}
+	 */
 }
 
 $o = new download();
 
+/*
 if (isset($_GET['type']) && $_GET['type'] == 'all') {
 	$o->downAll();
 }
+ */
 
 $o->index();
