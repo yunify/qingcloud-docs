@@ -23,7 +23,33 @@ class download{
 		echo $str;
 		exit;
 	}
+
+	/*
+
+	public function downAll()
+	{
+		$url = isset($_GET['url']) ? $_GET['url'] : '';
+
+		if ($url) {
+			$pdf_name = isset($_GET['pdf_name']) ? $_GET['pdf_name'] : '文档';
+
+			$str = file_get_contents('/opt/sh/endpdf/'.$url. '/res.pdf');
+			header('Content-type: application/pdf');
+			header('Content-Disposition: attachment; filename="' . $pdf_name.'.pdf' . '"');
+			echo $str;
+			exit;
+
+		}
+	}
+	 */
 }
 
 $o = new download();
+
+/*
+if (isset($_GET['type']) && $_GET['type'] == 'all') {
+	$o->downAll();
+}
+ */
+
 $o->index();

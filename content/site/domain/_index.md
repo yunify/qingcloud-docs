@@ -1,7 +1,7 @@
 ---
 title: "域名注册"
 linkTitle: "域名注册"
-weight: 1
+weight: 10
 collapsible: true
 type: "product"
 
