@@ -4,7 +4,7 @@ date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
 enableToc: false
-weight: 40
+weight: 20
 ---
 
 当云服务器关机后，只收取系统盘的费用，按照系统盘的占用空间收费，收费标准同硬盘，CPU / 内存则不再收费。
