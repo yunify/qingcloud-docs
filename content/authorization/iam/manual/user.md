@@ -29,7 +29,7 @@ weight: 40
 
     <img src="../../_images/user3.png" alt="图片" style="zoom:25%;" />
 
-    >说明
+    >**说明**
     >
     >请及时保存信息并发送给相应用户，弹窗关闭后将无法再次获取密码信息，但是可以支持再次创建。
     >
@@ -182,7 +182,8 @@ weight: 40
 4. 点击**创建Access Key**，则新的 Access Key 创建成功。
 
    <img src="../../_images/user19.png" style="zoom:40%;" />
-> 说明：
+> **说明**
+>
 > 如果需要删除Access Key，则直接在该页面点击**删除**即可。
 >
 > 如果需要禁用某Access key，则在该页面直接点击**禁用**即可。
