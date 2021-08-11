@@ -191,7 +191,7 @@ weight: 40
 
 ## IAM 登录
 
-当创建IAM 用户成功后，登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)时，您可以选择直接从QingCloud 控制台进入，也可以选择IAM 用户登录的方式进行登录。
+当创建IAM 用户成功后，登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)时，选择IAM 用户入口进行登录。
 
 ### IAM 用户登录
 
