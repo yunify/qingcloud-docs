@@ -1,6 +1,6 @@
 ---
-title: "Kafka服务"
-linkTitle: "Kafka服务"
+title: "Kafka 服务"
+linkTitle: "Kafka 服务"
 weight: 1
 collapsible: true
 type: "product"

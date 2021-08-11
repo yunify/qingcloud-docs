@@ -34,6 +34,8 @@
 				<img class="is-40x40" src="/images/icons/users.svg">
 				<h1 class="title">{{ .title }}</h1>
 			</div>
+			<!--添加导出全部按钮-->
+			<a class="pdf-all-download-btn" onclick="download_all_pdf('{{ .linkTitle  }}')"><i class="fa fa-download"></i>PDF</a> 
 			<div class="row">
 			{{ range .children }}
 				<div class="col-sm-4">
