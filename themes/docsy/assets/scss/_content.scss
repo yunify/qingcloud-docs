@@ -62,6 +62,10 @@
             line-height: 1.71;
             margin-bottom:0;
         }
+        // 补充有序列表中无序转变成有序样式的问题
+		> ul li {
+			list-style: initial;
+		}
     }
 
     > ul li, > ol li {
