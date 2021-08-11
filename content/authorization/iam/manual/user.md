@@ -1,11 +1,7 @@
 ---
 title: "用户管理"
 description: 
-<<<<<<< HEAD
 draft: false
-=======
-draft: true
->>>>>>> upstream/master
 weight: 40
 ---
 
@@ -23,7 +19,6 @@ weight: 40
 
     <img src="../../_images/user2.png" alt="图片" style="zoom:30%;" />
 
-<<<<<<< HEAD
     >说明
     >
     >支持批量创建用户。
@@ -44,12 +39,6 @@ weight: 40
 
     ## 
 
-=======
-4. 创建完成。
-
-    <img src="../../_images/user3.png" alt="图片" style="zoom:25%;" />
-
->>>>>>> upstream/master
 ## 编辑用户
 
 您可以对创建成功的用户进行编辑。
@@ -160,7 +149,6 @@ weight: 40
 
    <img src="../../_images/user17.png" style="zoom:40%;" />
 
-<<<<<<< HEAD
 ### 重置密码
 
 当您需要对控制台访问的登录密码进行修改或重置时，可以参考以下内容。
@@ -179,8 +167,6 @@ weight: 40
 
    <img src="../../_images/user20.png" style="zoom:40%;" />
 
-=======
->>>>>>> upstream/master
 ### 编程访问设置
 
 1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **访问鉴权管理** > **用户**，进入域名列表页。
@@ -197,10 +183,9 @@ weight: 40
 
    <img src="../../_images/user19.png" style="zoom:40%;" />
 > 说明：
-<<<<<<< HEAD
 > 如果需要删除Access Key，则直接在该页面点击**删除**即可。
 >
-> 如果需要禁用某一Access key，则在该页面直接点击**禁用**即可。
+> 如果需要禁用某Access key，则在该页面直接点击**禁用**即可。
 >
 > 请及时保存或发送AccessKey信息至用户，弹窗关闭后将无法再次获取该信息，但您可以随时创建新的AccessKey。
 
@@ -211,9 +196,4 @@ weight: 40
 ### IAM 用户登录
 
 <img src="../../_images/console_iam.png" style="zoom:22%;" />
-=======
->如果需要删除Access Key，则直接在该页面点击**删除**即可。
->
-> 如果需要禁用某一Access key，则在该页面直接点击**禁用**即可。
->>>>>>> upstream/master
 
