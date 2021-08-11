@@ -19,7 +19,7 @@ weight: 40
 
     <img src="../../_images/user2.png" alt="图片" style="zoom:30%;" />
 
-    >说明
+    >**说明**
     >
     >支持批量创建用户。
 
