@@ -9,7 +9,7 @@ weight: 10
 
 ## 基础功能
 
-[使用 Token 鉴权](https://docs.agora.io/cn/Interactive%20Broadcast/token_server)：鉴权是指在用户访问你的系统前，对其进行身份校验。用户在使用 QingCloud RTC 服务，如加入音视频通话时， 使用 Token 对其鉴权。参考该文档可使用文档内提供的代码在服务端生成 Token。
+[使用 Token 鉴权](https://docs.agora.io/cn/Interactive%20Broadcast/token_server)：鉴权是指在用户访问你的系统前，对其进行身份校验。用户在使用 QingCloud 实时音视频 RTC 服务，如加入音视频通话时， 使用 Token 对其鉴权。参考该文档可使用文档内提供的代码在服务端生成 Token。
 
 ## 平台
 
