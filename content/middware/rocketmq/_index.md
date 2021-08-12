@@ -1,6 +1,6 @@
 ---
-title: "RocketMQ服务"
-linkTitle: "RocketMQ服务"
+title: "RocketMQ 服务"
+linkTitle: "RocketMQ 服务"
 weight: 7
 collapsible: true
 type: "product"

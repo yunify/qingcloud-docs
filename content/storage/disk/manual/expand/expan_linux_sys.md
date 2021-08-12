@@ -16,7 +16,7 @@ keyword: 青云
 
 ## 已知限制
 
-- Linux 和 FreeBSD 操作系统支持的范围是 20 到300 GB，Windows 操作系统支持的范围是 50 到 300 GB。
+- FreeBSD操作系统不支持系统盘扩容，Windows 操作系统支持的范围是 50 到 300 GB，其他操作系统支持的范围是 20 到 300 GB。
 
 - 为现有的云服务器进行扩容，必须在操作系统关闭的情形下进行。
 
@@ -35,7 +35,7 @@ keyword: 青云
 
    ![确认系统盘大小](/storage/disk/quickstart/_images/system_disk.png)
 
-2. 关闭操作系统，选择要扩容系统盘的云服务器，在“更多操作”中选择“更改配置”，并按照下图所示，扩展系统磁盘：
+2. 关闭操作系统，选择要扩容系统盘的云服务器，在“更多操作”中选择“调整规格”，并按照下图所示，扩展系统磁盘：
 
    <img src="/storage/disk/quickstart/_images/resize_system_instance.png" alt="扩容硬盘" style="zoom:70%;" />
 

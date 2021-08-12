@@ -16,11 +16,11 @@ Section2:
   children:
     - title: 产品简介
       content: 产品简介
-      url: "intro/introduction"
+      url: "intro/introduction/"
 
     - title: 操作指南
       content: 学习上手如何管理工单服务。
-      url: "manual/cluster_info"
+      url: "manual/operation/"
 
 section3:
   title: 开发者指南

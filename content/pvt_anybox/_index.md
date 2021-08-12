@@ -13,10 +13,10 @@ section1:
       url: "/pvt_anybox/intro/intro/"
 
     - title: 安装指南
-      url: "/pvt_anybox/install/10_prepare/"
+      url: "/pvt_anybox/install/10_overview/"
 
     - title: 安装指南（1.6.6以上版本）
-      url: "https://docs.qingcloud.com/anybox-docs/installation_new/"
+      url: "/pvt_anybox/install1.6/10_overview/"
 
     - title: Mac 端用户手册
       url: "https://docs.qingcloud.com/anybox-docs/mac/"
