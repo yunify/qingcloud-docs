@@ -75,6 +75,12 @@ $(function(){
 		}
 	});
 
+	var current_url = window.location.href;
+	if(current_url.indexOf('docsv3.qingcloud') != '-1'){
+		$('.pdf-all-download-btn').hide();
+	}
+
+
 	$('.product-learn-icon').click(function(){
 		if($(this).attr('src')=='/images/icons/caret-down.svg'){
 			$(this).attr('src','/images/icons/caret-up.svg');
