@@ -30,11 +30,11 @@ Section2:
 
     - title: 操作指南
       content: 学习上手如何管理 PostgreSQL 集群。
-      url: "manual/cluster_info/"
+      url: "manual/cluster_lifecycle/cluster_info/"
 
     - title: 最佳实践
       content: PostgreSQL 的最佳实践
-      url: "best-practices/data_import_and_export/"
+      url: "best-practices/benchmark_test/"
 
 section3:
   title: 开发者指南
@@ -71,7 +71,7 @@ section4:
           url: "quickstart/access_postgresql/"
 
         - title: PostgreSQL 集群信息
-          url: "manual/cluster_info/"
+          url: "manual/cluster_lifecycle/cluster_info/"
 
 ---
 
