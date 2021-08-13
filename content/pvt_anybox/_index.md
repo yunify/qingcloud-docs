@@ -10,22 +10,22 @@ isPrivate: true
 section1:
   children:
     - title: 产品简介
-      url: "/pvt_anybox/intro/intro/"
+      url: /pvt_anybox/intro/intro/
 
     - title: 安装指南
-      url: "/pvt_anybox/install/10_overview/"
+      url: /pvt_anybox/install/10_overview/
 
     - title: 安装指南（1.6.6以上版本）
-      url: "/pvt_anybox/install1.6/10_overview/"
+      url: /pvt_anybox/install1.6/10_overview/
 
     - title: Mac 端用户手册
-      url: "https://docs.qingcloud.com/anybox-docs/mac/"
+      url: /pvt_anybox/mac/intro/10_overview/
 
     - title: Web 端用户手册
-      url: "https://docs.qingcloud.com/anybox-docs/web/"
+      url: /pvt_anybox/web/intro/10_overview/
 
     - title: Windows 端用户手册
-      url: "https://docs.qingcloud.com/anybox-docs/windows/"
+      url: /pvt_anybox/windows/intro/10_overview/
 
 ---
 
