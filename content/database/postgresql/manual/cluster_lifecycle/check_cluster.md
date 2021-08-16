@@ -57,7 +57,7 @@ PostgreSQL 集群创建成功后，可在 AppCenter 查看集群信息，包括�
 > 
 > -务必使用写 IP 执行写请求，以保证切主后不影响业务。
 > 
-> -**Proxy 实例**用于读写分离。Proxy IP 作为集群预留 IP ，如未创建用 **Proxy 实例**该 IP 仍然被占用但是无法访问。
+> -**Proxy 实例**节点用于读写分离，Proxy IP 作为集群预留 IP 。如未创建 **Proxy 实例**节点，该 Proxy IP 仍然被占用但是无法访问。
 
 <img src="../../../_images/check_access_info.png" alt="连接信息" style="zoom:50%;" />
 
