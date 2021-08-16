@@ -14,15 +14,15 @@ Section2:
   children:
     - title: 产品简介
       content: SSL 证书产品文档
-      url: "/security/ssl/intro/introduction"
+      url: "/site/ssl/intro/introduction"
 
     - title: 计费模式
       content: SSL 产品价格
-      url: "/security/ssl/billing/price"
+      url: "/site/ssl/billing/price"
 
     - title: 操作指南
       content: SSL 产品使用文档
-      url: "/security/ssl/manual/user_guide"
+      url: "/site/ssl/manual/user_guide"
 
 section3:
   title: 开发者指南
