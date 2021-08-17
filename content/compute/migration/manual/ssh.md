@@ -74,7 +74,7 @@ keyword: SSH, QingCloud,ssh密钥
 
 3. 查看生成的网络拓扑（在新旧区均可查看该网络拓扑）。
 
-![img](/Users/rosasu/Desktop/qingcloud-iaas-docs/computing/_images/migration_012.gif)
+![img]( /Users/rosasu/Desktop/qingcloud-iaas-docs/computing/_images/migration_012.gif)
 
 4. 基于模板在新区一键创建新的资源。
 

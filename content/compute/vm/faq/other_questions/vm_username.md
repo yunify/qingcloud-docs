@@ -4,7 +4,7 @@ date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
 enableToc: false
-weight: 50
+weight: 70
 ---
 
 您可以在云服务器对应的映像详情页中找到默认的用户名和密码。

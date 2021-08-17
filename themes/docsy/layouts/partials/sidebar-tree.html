@@ -1,5 +1,5 @@
 {{/* We cache this partial for bigger sites and set the active class client side. */}}
-{{ $shouldDelayActive := ge (len .Site.Pages) 2000 }}
+{{ $shouldDelayActive := ge (len .Site.Pages) 5000 }}
 {{ if not .Site.Params.IsConsole }}
 <div class="td-sidebar-section-title" style="padding:8px 0 12px 0;display: flex;">
   <img class="is-40x40" src="/images/icons/book-open.svg">
