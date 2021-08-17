@@ -2,7 +2,6 @@
 title: "配置 GSLB 实例"
 description: 本小节主要介绍如何快速创建 GSLB 实例。 
 keywords: gslb 实例,创建实例
-data: 2021-05-14T00:38:25+09:00
 weight: 2
 collapsible: false
 draft: false
