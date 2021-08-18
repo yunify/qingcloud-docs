@@ -2,14 +2,16 @@
 title: "连接数据库"
 description: 本小节主要介绍如何快速连接 PostgreSQ 数据库。 
 keywords: PostgreSQ 访问,访问数据库
-weight: 20
+weight: 05
 collapsible: false
 draft: false
 ---
 
 
 
-PostgreSQL 可通过 psql 命令行客户端直接连接，还可以使用图形化的数据库客户端连接。图形化客户端包括 pgAdmin 、DbVisualizer 、DBeaver 等。
+PostgreSQL 可通过 psql 命令行客户端直接连接，还可以使用图形化的数据库客户端连接。
+
+图形化客户端包括 pgAdmin 、DbVisualizer 、DBeaver 等。
 
 本小节主要介绍如何连接 PostgreSQ 数据库，以终端命令行方式连接数据库。
 
@@ -19,27 +21,26 @@ PostgreSQL 可通过 psql 命令行客户端直接连接，还可以使用图形
 - 已创建 PostgreSQL 集群，且集群状态为**活跃**。
 - 已在服务器安装数据库客户端。
 
-## 操作步骤
+## 获取连接信息
 
-1. 获取连接信息。
-   1. 在集群管理页面，点击目标集群 ID，进入集群详情页面。
-   2. 在**服务端口信息**模块或节点列表，获取高可用 IP 地址或节点 IP 地址。
+1. 在集群管理页面，点击目标集群 ID，进入集群详情页面。
+2. 在**服务端口信息**模块或节点列表，获取高可用 IP 地址或节点 IP 地址。
+
+> **注意**
+> 
+> 单节点集群仅一个节点，**连接信息**中不呈现高可用 IP。单节点集群的节点 IP 可在**节点列表**获取。
+>
+> 如未创建 **Proxy 实例**节点，高可用 Proxy IP 将无法连接。
+
+![获取高可用 IP 地址](../../../_images/check_access_info.png)
+
+## 访问数据库
    
-    > **注意**
-    > 
-    > 单节点集群仅一个节点，**连接信息**中不呈现高可用 IP。单节点集群的节点 IP 可在**节点列表**获取。
-    >
-    > 如未创建 **Proxy 实例**节点，高可用 Proxy IP 将无法连接。
+连接方式如下：
 
-   ![获取高可用 IP 地址](../../_images/check_access_info.png)
-
-2. 访问数据库。
-   
-   连接方式如下：
-
-   ```bash
-   psql -U <userName> -h <port> -d <serverName> 
-   ```
+```bash
+psql -U <userName> -h <port> -d <serverName> 
+```
 
 |<span style="display:inline-block;width:80px">选项</span> |<span style="display:inline-block;width:240px">说明</span>|<span style="display:inline-block;width:280px">示例</span> |
 |:----|:----|:----|
@@ -48,7 +49,7 @@ PostgreSQL 可通过 psql 命令行客户端直接连接，还可以使用图形
 |-d          |数据库名称。 <br>新建数据库默认名称 `qingcloud`。            | qingcloud |
 |密码          |数据库用户密码。<br>新建数据库默认账号密码`qingcloud1234`              | qingcloud1234 |
 
-## 连接数据库示例
+连接示例:
 
 1. 输入如下命令，并输入密码，访问目标数据库。
    
@@ -60,5 +61,5 @@ PostgreSQL 可通过 psql 命令行客户端直接连接，还可以使用图形
 
 回显如下：
 
-![访问 PG 数据库](../../_images/pglogin.png)  
+![访问 PG 数据库](../../../_images/pglogin.png)  
   
