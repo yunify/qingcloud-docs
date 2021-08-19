@@ -20,7 +20,7 @@ draft: false
 
    ![添加域名](../_images/create_domain_2.png)
 
-   > **注意**：
+   > **注意**
    >
    > 您的域名必须真实有效且未被纳入工信部备案黑名单。
    >
@@ -46,7 +46,7 @@ draft: false
 
     ![添加解析信息](../_images/dns_A.png)
     
-    > **说明**：
+    > **说明**
     >
     > QingCloud DNS 默认提供5条线路，包括**全网默认、中国电信、中国联通、中国移动、港澳台及海外**。若需自定义解析线路，可参考[配置解析线路](../../manual/dnsrecord/setresolline)。
 

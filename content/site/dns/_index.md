@@ -17,7 +17,7 @@ Section2:
   children:
     - title: 最新动态
       content: 产品动态
-      url: "/site/dns/news/product_news"
+      url: "news/product_news"
     
     - title: 产品简介
       content: 产品简介
