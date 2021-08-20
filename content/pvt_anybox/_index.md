@@ -18,6 +18,9 @@ section1:
     - title: 安装指南（1.6.6以上版本）
       url: /pvt_anybox/install1.6/10_overview/
 
+    - title: 管理员手册
+      url: /pvt_anybox/manager/overview/10_overview/
+
     - title: Mac 端用户手册
       url: /pvt_anybox/mac/intro/10_overview/
 

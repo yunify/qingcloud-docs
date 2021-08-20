@@ -1,9 +1,9 @@
 ---
-title: "安装指南（1.6.6以上版本）"
+title: "管理员管理"
 _build:
  render: false 
 description:
 draft: false
 collapsible: true
-weight: 20
+weight: 60
 ---
