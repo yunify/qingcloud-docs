@@ -37,9 +37,9 @@ draft: false
 
 ## 证书品牌 {#brand}
 
-| 品牌 | Symantec | GeoTrust | TrustAsia |
-| --- | --- | --- | --- |
-| 品牌地位 | 全球第一 | 全球第二 | 亚太区专业品牌 |
-| 兼容性 | 最好 | 低于TrustAsia | 低于Symantec |
-| CA安全性方面 | 最高 | 低于 Symantec | 约等于Symantec |
-| 商业保险赔付保障 | 最高175万美元 | 最高150万美元 | 无赔付 |
+| 品牌 | DigiCert | GeoTrust | TrustAsia | LetsEncrypt |
+| --- | --- | --- | --- | --- |
+| 品牌地位 | 全球第一 | 全球第二 | 亚太区专业品牌 | Linux基金会托管 |
+| 兼容性 | 最好 | 低于TrustAsia | 低于Symantec | - |
+| CA安全性方面 | 最高 | 低于 Symantec | 约等于Symantec | 较低 |
+| 商业保险赔付保障 | 最高175万美元 | 最高150万美元 | 无赔付 | 五 |
