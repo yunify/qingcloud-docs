@@ -22,7 +22,7 @@ section1:
       url: /pvt_anybox/manager/overview/10_overview/
 
     - title: Mac 端用户手册
-      url: /pvt_anybox/mac/intro/10_overview/
+      url: /pvt_anybox/mac/10_overview/
 
     - title: Web 端用户手册
       url: /pvt_anybox/web/intro/10_overview/
