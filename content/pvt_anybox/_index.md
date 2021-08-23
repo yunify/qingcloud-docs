@@ -25,10 +25,10 @@ section1:
       url: /pvt_anybox/mac/10_overview/
 
     - title: Web 端用户手册
-      url: /pvt_anybox/web/intro/10_overview/
+      url: /pvt_anybox/web/10_overview/
 
     - title: Windows 端用户手册
-      url: /pvt_anybox/windows/intro/10_overview/
+      url: /pvt_anybox/windows/10_overview/
 
 ---
 

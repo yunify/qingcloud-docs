@@ -46,21 +46,41 @@ draft: false
 
 ## 步骤五：服务环境参数设置
 
-1. 选择已创建的 API 密钥。
+1. 为了更好地方便您使用 ANYBOX 内容协作平台，需要您填写 ANYBOX 访问的相关域名。
 
-   ANYBOX 需要 API 密钥来调用 QingCloud 对象存储 API。请在控制台生成 API 密钥。
+   主域名：访问 ANYBOX 的入口域名（例如： `anybox.com`）
 
-2. 选择前置负载均衡器协议。
+   Account 服务域名：登陆时使用的域名（例如： `account.anybox.com`）
 
-   前置负载均衡器协议，此选项是为使用https访问准备的。
+   控制台域名：进入管理控制台的域名（例如： `admin.anybox.com`）
 
-   如果您想使用https访问部署好的anybox，这个选项可以设置为https。然后在控制台增加一个负载均衡器，并且配置好https证书，做好443–80端口的转发。
+   API 服务域名：内部及 APP 使用（例如：`api.anybox.com`）
 
-   如无以上需求, 保持默认值http即可。
+2. 因为通过公网访问 ANYBOX 服务，因国家法规规定需要使用已备案的域名，也可以使用二级/三级子域名（是在主域名的前面添加自定义名称）。
 
-3. 配置对象存储域名。
+   示例说明：
 
-<img src="../../_images/install_env_set.png" style="zoom:50%;" />
+   例如域名：`dns-example.com`。
+
+   `dns-example.com` 是主域名（也可称托管一级域名），主要指企页名。
+
+   `example.dns-example.com` 是子域名（也可称为托管二级域名）。
+
+   `www.example.dns-example.com` 是子域名的子域（也可称为托管三级域名）。
+
+3. 将准备好的备案域名解析到申请好的公网 IP 地址上。 以上4个域名用户可以定制，但是主域名必须一致，域名确定后无法修改。
+
+   <img src="../../_images/install_env_set.png" style="zoom:50%;" />
+
+4. ANYBOX 需要 API 密钥来调用 QingCloud 对象存储 API，请在控制台生成 API 密钥。
+
+5. 前置负载均衡器协议，此选项是为使用https访问准备。
+
+   若您想使用 HTTPS 访问部署好的 ANYBOX，这个选项可以设置为 HT TPS。
+
+   在控制台增加一个负载均衡器, 并且配置好 HTTPS 证书，做好443–80端口的转发。具体负载均衡器的配置请参考相关文档。
+
+   如无以上需求, 保持默认值 HTTP 即可。
 
 ## 步骤六：用户协议
 
@@ -71,3 +91,10 @@ draft: false
 ## 步骤七：提交
 
 点击**提交**，完成ANYBOX部署。
+
+当 ANYBOX 创建完成之后，您可以查看每个节点的运行状态。当节点的服务状态显示为**正常**状态，表示该节点启动正常。 
+
+当每个节点都启动正常后 ANYBOX 主节点显示为**活跃**状态，表示您已经可以正常使用 ANYBOX 服务了。
+
+<img src="../../_images/install_user_success.png" style="zoom:50%;" />
+

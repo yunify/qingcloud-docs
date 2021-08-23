@@ -7,7 +7,7 @@ draft: false
 
 ## **申请公网 IP** 
 
-如果您需要使用公网IP访问 AnyBox，首先需申请公网 IP 地址。
+如果您需要使用公网IP访问 ANYBOX，首先需申请公网 IP 地址。
 
 1. 登录 QingCloud 管理控制台。
 
@@ -15,11 +15,11 @@ draft: false
 
 3. 点击**申请**，弹出提示信息。
 
-   <img src="/Users/amytan/work/github/qingcloud-docs/content/_images/install_prompt.png" style="zoom:50%;" />
+   <img src="../../_images/install_prompt.png" style="zoom:50%;" />
 
 4. 若确认提示信息没问题，点击继续申请公网 IP，弹出**申请公网 IP** 页面。
 
-   <img src="/Users/amytan/work/github/qingcloud-docs/content/_images/install_apply_ip.png" style="zoom:50%;" />
+   <img src="../../_images/install_apply_ip.png" style="zoom:50%;" />
 
 5. 根据实际情况配置参数。
 
@@ -31,11 +31,11 @@ draft: false
 
 2. 鼠标右键点击申请的公网 IP，弹出功能列表框。
 
-   <img src="/Users/amytan/work/github/qingcloud-docs/content/_images/install_bind_vpc.png" style="zoom:50%;" />
+   <img src="../../_images/install_bind_vpc.png" style="zoom:50%;" />
 
 3. 点击**绑定到 VPC 网络**，弹出选择要绑定的公网 IP 的 VPC 网络窗口。
 
-   <img src="/Users/amytan/work/github/qingcloud-docs/content/_images/install_bind_vpcnet.png" style="zoom:50%;" />
+   <img src="../../_images/install_bind_vpcnet.png" style="zoom:50%;" />
 
 4. 点击**提交**，绑定到 VPC 网络。
 
