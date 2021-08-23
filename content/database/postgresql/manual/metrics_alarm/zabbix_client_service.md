@@ -20,7 +20,7 @@ draft: false
 
 ## 启动 Zabbix 客户端服务
 
-启动 Zabbix 客户端服务，需先在 AppCenter 启用服务客户端，再在 Zabbix 客户端配置数据库相应参数和监控模版，才能正常启用 Zabbix 监控。
+启动 Zabbix 客户端服务，需先在 AppCenter 启用客户端，再在 Zabbix 客户端配置数据库相应参数和监控模版，才能正常启用 Zabbix 监控。
 
 > **注意**
 > 
