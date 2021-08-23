@@ -7,11 +7,11 @@ collapsible: false
 ---
 
 
-PostGIS 是对象关系型数据库 PostgreSQL 的一种插件，PostGIS 提供空间信息服务功能，包括空间对象、空间索引、空间操作函数和空间操作符。且 PostGIS 遵循 OpenGIS 规范。
+PostGIS 是关系型数据库 PostgreSQL 的一种插件，PostGIS 提供空间信息服务功能，包括空间对象、空间索引、空间操作函数和空间操作符。且 PostGIS 遵循 OpenGIS 规范。
 
 ## 约束限制
 
-- 启用 PostGIS 必须使用超级用户 **root** 才有权限执行。**root** 账号密码与新建数据库时设置的密码一致。
+- 启用 PostGIS 必须使用超级用户 **root** 才有权限执行。**root** 账号密码与初始账号默认密码一致。
 
 ## 新建 PostGIS 数据库
 

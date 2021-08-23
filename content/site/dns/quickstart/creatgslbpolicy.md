@@ -2,7 +2,6 @@
 title: "配置 GSLB 实例"
 description: 本小节主要介绍如何快速创建 GSLB 实例。 
 keywords: gslb 实例,创建实例
-data: 2021-05-14T00:38:25+09:00
 weight: 2
 collapsible: false
 draft: false
@@ -57,7 +56,7 @@ draft: false
 10. CNAME 接入域名。
       选择**域名解析**，并进入目标域名管理页面。将**CNAME 接入域名**添加为 CNAME 记录。站点即可接入 GSLB 管理。
 
-    > **说明**：
+    > **说明**
     >
     > 若域名托管在其他解析服务商，则需要登录到相应解析管理控制台，添加 CNAME 记录。
 
