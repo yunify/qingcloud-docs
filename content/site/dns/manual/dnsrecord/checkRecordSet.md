@@ -7,7 +7,7 @@ draft: false
 
 成功添加或修改解析记录后，您可以通过`nslookup`或`dig`等常见命令来验证域名解析是否生效。
 
-> **说明**：
+> **说明**
 >
 > 您可以到互联网上搜索`nslookup`和`dig`命令的使用方法。
 >
@@ -19,7 +19,7 @@ draft: false
 
 ![域名验证配置](../../../_images/dns_rr_1.png)
 
-> **注意**：
+> **注意**
 >
 > 请注意查看页面提示 `example.com` 的域名服务器地址为`ns3.routewize.com` 和 `ns4.routewize.com`。
 
@@ -52,7 +52,7 @@ simple.example.com.600 IN A 139.34.32.100
 simple.example.com.600 IN A 139.34.32.101
 simple.example.com.600 IN A 139.34.32.102
 ```
-> **说明**：
+> **说明**
 >
 > Windows 系统默认安装 `nslookup` ，若您需要在 Windows 系统中使用 `dig` 命令，可自行安装后使用。
 

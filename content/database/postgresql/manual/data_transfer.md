@@ -35,7 +35,7 @@ pg_dump -U <远端数据库账号> -h <远端数据库 IP> -t <表名> <数据�
 导出远端数据库全部数据示例：远端数据库 IP 地址为 `192.168.100.246` ，数据库名为 `qingcloud`，目标文件及路径为`/tmp/pgdatabk.sql`。
 
 ```shell
-pg_dump -U qingcloud -h 192.168.100.246 qingcloud  > /tmp/pgdatabk.sql`
+pg_dump -U qingcloud -h 192.168.100.246 qingcloud  > /tmp/pgdatabk.sql
 ```
 
 ![数据导出](../../_images/pg_datadump.png)
@@ -44,7 +44,7 @@ pg_dump -U qingcloud -h 192.168.100.246 qingcloud  > /tmp/pgdatabk.sql`
 
 ### 从文件导入数据
 
-为确保导入数据权限不受限，建议使用 **root** 用户账号。**root** 用户账号密码与新建数据库的用户命名相同。  
+为确保导入数据权限不受限，建议使用 **root** 账号登录数据库。**root** 账号密码与初始账号默认密码一致。  
 
 1. 创建数据库。
 
@@ -66,7 +66,7 @@ psql -d qingcloud -U root -h 192.168.100.6 -f /tmp/pgdatabk.sql
 
 ### 在线导入数据
 
-根据`pg_dump` 和 `psql` 读写管道的能力，可将数据直接从一个服务器转储一个数据库到另一个服务器。
+根据`pg_dump` 和 `psql` 读写管道的能力，可将数据直接从一个服务器转储数据库到另一个服务器。
   
 ```shell
 pg_dump -U <远端数据库账号> -h <远端数据库 IP> <远端数据库名> -w | psql -d <目标数据库名> -U <目标数据库账号> -h <目标数据库 IP > -W
@@ -76,7 +76,7 @@ pg_dump -U <远端数据库账号> -h <远端数据库 IP> <远端数据库名> 
 
 ```bash
 export PGPASSWORD=qingcloud1234
-#PGPASSWORD为用户新建集群设置的数据库密码
+#PGPASSWORD为数据库初始账号默认密码
 pg_dump -U qingcloud -h 192.168.100.246 qingcloud -w | psql -d qingcloud -U root -h 192.168.100.6 -W
 ```
 
