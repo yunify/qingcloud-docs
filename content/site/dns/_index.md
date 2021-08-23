@@ -17,27 +17,27 @@ Section2:
   children:
     - title: 最新动态
       content: 产品动态
-      url: "/site/dns/news/product_news"
+      url: "news/product_news"
     
     - title: 产品简介
       content: 产品简介
-      url: "/site/dns/intro/introduction"
+      url: "intro/introduction"
 
     - title: 快速入门
       content: 快速入门
-      url: "/site/dns/quickstart/creatrecordset"
+      url: "quickstart/creatrecordset"
 
     - title: 操作指南
       content: 操作指南
-      url: "/site/dns/manual/dnsrecord/mgtdomainlist"
+      url: "manual/dnsrecord/mgtdomainlist"
 
     - title: 最佳实践
       content: 跨区域负载均衡
-      url: "/site/dns/best-practices/cross_region"
+      url: "best-practices/cross_region"
 
     - title: 常见问题
       content: 常见问题
-      url: "/site/dns/faq/faq"
+      url: "faq/faq"
 
 section3:
   title: 开发者指南
@@ -62,23 +62,23 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品简介
-          url: "/site/dns/intro/introduction"
+          url: "intro/introduction"
 
         - title: DNS 功能特性
-          url: "/site/dns/intro/dns_function"
+          url: "intro/dns_function"
         
         - title: GSLB 功能特性
-          url: "/site/dns/intro/gslb_function"
+          url: "intro/gslb_function"
 
     - title: 上手：快速使用云解析 DNS      
       content: 云解析 DNS 提供更稳定、更安全、更快速、更精准、更便捷的域名解析管理服务。
       vice_title: 上手的第一步
       children:
         - title: 配置域名解析记录
-          url: "/site/dns/quickstart/creatrecordset"  
+          url: "quickstart/creatrecordset"  
         
         - title: 配置 GSLB 实例
-          url: "/site/dns/quickstart/creatgslbpolicy"        
+          url: "quickstart/creatgslbpolicy"        
 
 
 ---

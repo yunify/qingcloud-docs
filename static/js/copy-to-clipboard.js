@@ -27,8 +27,7 @@
       copyBtn.className = "highlight-copy-btn";
       copyBtn.textContent = "Copy";
 
-      if (!containerEl.firstElementChild) {
-
+      if (!containerEl.getAttribute('data-lang')) {
 
         copyBtn.className = "highlight-copy-btn";
   
@@ -36,9 +35,9 @@
         spanTxt.textContent = containerEl.textContent
         containerEl.innerHTML = ''
         containerEl.appendChild(spanTxt)
-		containerEl.parentNode.className = 'highlight';
+		    containerEl.parentNode.className = 'highlight';
       }
-  
+      
       var codeEl = containerEl.firstElementChild; 
       
       copyBtn.addEventListener('click', function() {
