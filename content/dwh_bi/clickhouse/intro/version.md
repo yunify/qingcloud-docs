@@ -8,7 +8,7 @@ draft: false
 ---
 
 
-QingCloud ClickHouse 根据QingCloud AppCenter 功能特点，定制`基础版`、`企业版`两个功能系列。随版本迭代，功能不断提升。
+QingCloud ClickHouse 根据 QingCloud AppCenter 功能特点，定制`基础版`、`企业版`两个功能系列。随版本迭代，功能不断提升。
 
 ## 版本历程
 
