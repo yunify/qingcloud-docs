@@ -1,6 +1,6 @@
 ---
 title: "回收站"
-description: 本小节主要介绍如何恢复以删除的 PostgreSQL 集群。 
+description: 本小节主要介绍如何恢复已删除的 PostgreSQL 集群。 
 keywords: PostgreSQL 恢复集群
 weight: 100
 collapsible: false
@@ -11,7 +11,7 @@ draft: false
 
 删除后的集群将被暂时回收到<b>回收站 (Recycle Bin)</b>。若需找回已删除的集群，可将回收站内集群恢复。
 
-本小节主要介绍如何删除集群。
+本小节主要介绍如何恢复已删除集群。
 
 ## 约束限制
 
