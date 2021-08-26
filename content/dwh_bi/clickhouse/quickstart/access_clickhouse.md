@@ -1,5 +1,5 @@
 ---
-title: "连接集群"
+title: "连接数据库"
 description: 本小节主要介绍如何快速访问 ClickHouse 集群。 
 keywords: ClickHouse 实例, 访问集群
 weight: 20
@@ -11,14 +11,15 @@ draft: false
 ClickHouse on QingCloud 与原生 ClickHouse 高度兼容，可直接使用 ClickHouse 的连接方式。
 
 可选用 Docker 、客户端、curl 等方式连接集群和导入数据。
-> **说明：**
+
+> **说明**
 > 
 > 更多使用信息可以参考 [ClickHouse](https://clickhouse.yandex/docs/en/)。
 
 ## 前提条件
 
 - 已创建 ClickHouse 集群，且集群状态为**活跃**。
-
+- 已获取可登录数据库账号和密码。
 - 已获取集群连接信息。
 
 ## 使用 Docker
