@@ -18,7 +18,6 @@ draft: false
 
 ## 数据库建模
 
-
 1. 建立运输数据库。
 
     ```shell
@@ -113,6 +112,7 @@ draft: false
      ```
 
 3. 查询耗油量最低的货车。
+
      ```bash 
      echo "SELECT
          name,

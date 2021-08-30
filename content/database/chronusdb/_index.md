@@ -29,8 +29,8 @@ Section2:
       url: "quickstart/create_cluster/"
 
     - title: 操作指南
-      content: 学习上手如何管理 ChronusDB 集群，以及如何使用 ChronusDB 提供的相关服务等。
-      url: "manual/cluster_info/"
+      content: 学习上手管理 ChronusDB 集群，以及使用 ChronusDB 提供的相关服务。
+      url: "manual/cluster_lifecycle/check_cluster/"
 
     - title: 最佳实践
       content: ChronusDB 的最佳实践
@@ -59,7 +59,10 @@ section4:
       children:
         - title: 产品简介
           url: "intro/introduction/"
-
+        
+        - title: 版本介绍
+          url: "intro/version/"
+    
     - title: 进阶
       content: 学习如何创建、管理、使用 ChronusDB 集群
       vice_title: 上手的第一步
@@ -67,6 +70,11 @@ section4:
         - title: 创建 ChronusDB
           url: "quickstart/create_cluster/"
 
+        - title: 访问 ChronusDB
+          url: "quickstart/access_database/"
+
+        - title: ChronusDB 集群信息
+          url: "manual/cluster_lifecycle/check_cluster/"
 
 ---
 
