@@ -2,10 +2,10 @@
 title: "续费与退订"
 draft: false
 collapsible: false
-weight: 30
+weight: 50
 ---
 
-本文档主要介绍实时音视频 RTC 的如何续费与退订。
+本章节主要介绍实时音视频 RTC 的如何续费与退订。
 
 ## 续费
 

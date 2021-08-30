@@ -49,8 +49,8 @@ weight: 20
 
    <table class="table table-bordered table-striped table-condensed">
      <tr>
-       <td>参数</td>
-       <td>参数说明</td>
+       <th>参数</th>
+       <th>参数说明</th>
      </tr>
      <tr>
        <td>云服务器</td>

@@ -5,21 +5,21 @@ collapsible: false
 weight: 10
 ---
 
-使用视频直播服务之前，您需要将已备案的推流域名和播流域名添加到视频直播服务中。
+使用视频直播服务之前，您需要创建直播域名（包含推流域名和播流域名）。
 
-添加推流域名和播流域名前，您需要到域名服务提供商处注册域名。以在青云域名注册服务中注册域名为例，详细信息请参见[《域名注册 快速入门》](https://docsv3.qingcloud.com/site/domain/quickstart/quick_start/)。
+创建推流域名和播流域名前，您需要到域名服务提供商处注册域名。以在青云域名注册服务中注册域名为例，详细信息请参见[《域名注册 快速入门》](https://docsv3.qingcloud.com/site/domain/quickstart/quick_start/)。
 
 您可以注册备案一个一级域名（例如：example.com），把两个不同的二级域名（例如：anchor.example.com 和 play.example.com）作为直播推流域名和播流域名。
 
 推流域名与播流域名为一对多的关系。
 
-本文档指导您如何快速使用创建直播域名。
+本章节指导您如何快速使用创建直播域名。
 
 ## 前提条件
 
 - 已获取管理控制台的账号和密码。
 
-- 域名已注册并备案。
+- 域名已注册且备案。
 
 - 创建播流域名前已创建可用的推流域名。
 
@@ -45,8 +45,8 @@ weight: 10
 
    <table class="table table-bordered table-striped table-condensed">
      <tr>
-       <td>参数</td>
-       <td>参数说明</td>
+       <th>参数</th>
+       <th>参数说明</th>
      </tr>
      <tr>
        <td>节点类型</td>
@@ -90,8 +90,8 @@ weight: 10
 
    <table class="table table-bordered table-striped table-condensed">
      <tr>
-       <td>参数</td>
-       <td>参数说明</td>
+       <th>参数</th>
+       <th>参数说明</th>
      </tr>
      <tr>
        <td>节点类型</td>

@@ -9,7 +9,7 @@ OBS （Open Broadcaster Software，如下简称 OBS）是一款第三方开源�
 
 VLC media player 是一款自由、开源的跨平台多媒体播放器，可用来播放大多数多媒体文件。
 
-本文档以 OBS 作为主播端，VLC 作为播放端为例进行说明。
+本章节以 OBS 作为主播端，VLC 作为播放端为例进行说明。
 
 ## 准备工作
 

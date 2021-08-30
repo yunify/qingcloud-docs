@@ -5,7 +5,7 @@ collapsible: false
 weight: 10
 ---
 
-本文档指导您如何快速使用视频直播服务。
+本章节指导您如何快速使用视频直播服务。
 
 <img src="../../_images/qs_flowchart.png" style="zoom:60%;" />
 
