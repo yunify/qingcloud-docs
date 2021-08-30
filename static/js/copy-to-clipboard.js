@@ -28,43 +28,37 @@
       copyBtn.textContent = "Copy";
 
       if (!containerEl.getAttribute('data-lang')) {
-
+        
         copyBtn.className = "highlight-copy-btn";
   
         var spanTxt = document.createElement("span");
         spanTxt.textContent = containerEl.textContent
         containerEl.innerHTML = ''
         containerEl.appendChild(spanTxt)
-		    containerEl.parentNode.className = 'highlight';
+      containerEl.parentNode.className = 'highlight';
       }
-      
-      var codeEl = containerEl.firstElementChild; 
-      
+
+
       copyBtn.addEventListener('click', function() {
   
         try {
-          var selection = selectText(codeEl);
-  
+          
+          var selection = selectText(containerEl);
           document.execCommand('copy');
           selection.removeAllRanges();
-  
+      
           flashCopyMessage(copyBtn, 'Copied!')
         } catch(e) {
           console && console.log(e);
           flashCopyMessage(copyBtn, 'Failed :\'(')
         }
       });
-  
-      containerEl.appendChild(copyBtn);
+      containerEl.parentNode.append(copyBtn);
     }
  
-
-    // Add copy button to code blocks
-    //var normalCodeBlock = document.getElementsByTagName('code');
     var normalCodeBlock = $("pre code");
     if (normalCodeBlock) {
       Array.prototype.forEach.call(normalCodeBlock, addCopyButton);
     }
-  
   })();
   
