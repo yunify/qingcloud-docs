@@ -11,17 +11,12 @@ weight: 40
 
 ## 与 IOT 融合
 
-![](../../_images/intro_sd_iot.png)
+<img src="../../_images/intro_sd_iot.png" style="zoom:48%;" />
 
 ## 多云互通
 
+<img src="../../_images/intro_sd_more_cloud.png" style="zoom:48%;" />
 
+## 不同云内网互通
 
-## 不同云之间内网互通
-
-
-
-## 
-
-
-
+![](../../_images/intro_sd_diff_ip.png)

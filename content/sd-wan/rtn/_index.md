@@ -1,5 +1,5 @@
 ---
-title: "SD-WAN"
+title: "RTN"
 linkTitle: "RTN"
 weight: 3
 collapsible: true
@@ -26,7 +26,7 @@ section2:
 
     - title: 操作指南
       content: 本文档介绍了 RTN 的详细功能及使用方法。
-      url: "/sd-wan/rtn/user_guide/cloud_network/10_view_cloud_net"
+      url: "/sd-wan/rtn/user_guide/view_overview/10_view_overview"
 
     - title: 常见问题
       content: 本文档解答您在使用 RTN 时遇到的常见问题。
