@@ -146,23 +146,46 @@ weight: 10
 
 1. 选择**网络** > **VPC 网络**，进入 **VPC 网络**页面。
 
+   <img src="../../_images/qs_vcpe_vpc_list.png" style="zoom:50%;" />
+
 2. 点击 **VPC 01** 的名称，进入 **VPC 01** 的私有网络页面。
 
 3. 选择**管理配置** > **路由推送**，进入**路由推送**页面。
 
+   <img src="../../_images/qs_vcpe_vm_route.png" style="zoom:50%;" />
+
 4. 点击**添加云服务器路由**，弹出**添加云服务器路由**窗口。
 
-   **名称**：输入云服务器路由的名称。
-
-   **私有网络**：选择云服务器所在的私有网络。
-
-   **实例 ID**：选择要添加路由规则的云服务器 ID。
-
-   **默认路由**：云服务器的默认路由 IP。
-
-   **静态路由**：点击**添加静态路由**，**目标网络**填写 **VM 02** 的 IP 地址；路由 IP 填写 **vCPE 01**的 IP 地址。
-
    <img src="../../_images/qs_config_ecs_route.png" style="zoom:50%;" />
+
+   参数说明，如下表所示。
+
+   <table class="table table-bordered table-striped table-condensed">
+     <tr>
+       <th>参数</th>
+       <th>参数说明</th>
+     </tr>
+     <tr>
+       <td>名称</td>
+       <td>输入云服务器路由的名称。</td>
+     </tr>
+     <tr>
+       <td>私有网络</td>
+       <td>选择云服务器所在的私有网络。</td>
+     </tr>
+       <tr>
+       <td>实例 ID</td>
+       <td>选择要添加路由规则的云服务器 ID。</td>
+     </tr>
+     <tr>
+       <td>默认路由</td>
+       <td>云服务器的默认路由 IP。</td>
+     </tr>
+       <tr>
+       <td>静态路由</td>
+         <td>点击<b>添加静态路由</b>，<b>目标网络</b>填写 <b>VM 02</b> 的 IP 地址；路由 IP 填写 <b>vCPE 01</b>的 IP 地址。</td>
+     </tr>
+   </table>
 
 5. 填写完成后，点击☑️，然后点击**提交**，完成 **VM 01** 静态路由的配置。
 
