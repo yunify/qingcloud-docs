@@ -19,7 +19,7 @@ Section2:
 
     - title: 操作指南
       content: 资源共享的使用。
-      url: "manual/area_resource/"
+      url: "manual/create_unit/"
 
 section3:
   title: 开发者指南
