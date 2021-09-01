@@ -23,7 +23,7 @@ ChronusDB `企业版-1.0.7` 和 `基础版-1.0.7` 基于 RadonDB ClickHouse 21.1
 
 ChronusDB `企业版-1.0.6` 和 `基础版-1.0.6` 基于 RadonDB ClickHouse 19.17.6.36 内核开发。
 
-- 新增私网切换功能。  |
+- 新增私网切换功能。
 
 ### v1.0.5
 
@@ -35,7 +35,7 @@ ChronusDB `企业版-1.0.5` 和 `基础版-1.0.5` 基于 RadonDB ClickHouse 内�
 
 ChronusDB `企业版-1.0.4` 和 `基础版-1.0.4` 基于 RadonDB ClickHouse 内核开发。
 
-- Distributed 引擎新增支持 `currentDatabase` 函数。 
+- Distributed 引擎新增支持 `currentDatabase` 函数。
 
 ### v1.0.3
 
@@ -59,4 +59,4 @@ ChronusDB `企业版-1.0` 和 `基础版-1.0` 基于 RadonDB ClickHouse 内核�
 - 支持升降集群节点硬件资源配置。
 - 支持数据的逻辑一致和物理一致两种分布方式。
 - 集群无主协议，业务可连接集群任意 IP 或高可用 IP。
-- 支持毫秒级查询千亿条结构化数据，并支持自定义图形化结果。  |
+- 支持毫秒级查询千亿条结构化数据，并支持自定义图形化结果。

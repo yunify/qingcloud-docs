@@ -24,5 +24,5 @@ QingCloud RadonDB 基于 MySQL 5.7版本构建 Radon 内核，并自研 Xenon �
 
 基于 MySQL 5.7.29-32，Radon v1.1.3，Xenon v1.1.3内核版本构建。
 
-- 新增基于 prometheus 和 grafana 的监控节点，支持通过 Grafana 仪表盘查看监控数据。
+- 新增基于 Prometheus 和 Grafana 的监控节点，支持通过 Grafana 仪表盘查看监控数据。
 - 支持添加、删除和展示监控账号。
