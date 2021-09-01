@@ -31,12 +31,12 @@ Section2:
       url: "quickstart/create_cluster/"
 
     - title: 操作指南
-      content: 学习上手如何管理 RadonDB 集群，以及如何使用 RadonDB 提供的相关服务等。
-      url: "manual/cluster_info/"
+      content: 学习上手管理和使用 RadonDB 集群服务
+      url: "manual/cluster_lifecycle/cluster_info/"
 
     - title: 最佳实践
       content: RadonDB 的最佳实践
-      url: "best-practices/data_import_and_export/"
+      url: "best-practices/performance_test/"
 
 section3:
   title: 开发者指南
@@ -62,6 +62,9 @@ section4:
         - title: 产品简介
           url: "intro/introduction/"
 
+        - title: 集群信息
+          url: "manual/cluster_lifecycle/cluster_info/"
+
     - title: 进阶
       content: 学习如何创建、管理、使用 RadonDB 集群
       vice_title: 上手的第一步
@@ -69,11 +72,8 @@ section4:
         - title: 创建 RadonDB
           url: "quickstart/create_cluster/"
 
-        - title: RadonDB 集群信息
-          url: "manual/cluster_info/"
-
-        - title: RadonDB 服务功能
-          url: "manual/service/"
+        - title: RadonDB SQL 集
+          url: "sql_statements/supported_sql/"
 ---
 
 
