@@ -22,7 +22,7 @@ section2:
   
     - title: 快速入门
       content: 本文档介绍了如何快速使用 RTN。
-      url: "/sd-wan/rtn/qs/10_qs_net_plan"
+      url: "/sd-wan/rtn/qs/10_qs_2vxnet_access"
 
     - title: 操作指南
       content: 本文档介绍了 RTN 的详细功能及使用方法。

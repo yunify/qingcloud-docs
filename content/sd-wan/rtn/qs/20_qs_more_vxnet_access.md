@@ -1,11 +1,13 @@
 ---
-title: "软件接入 VPC"
+title: "CPE 与 vCPE 结合通信"
 draft: false
 collapsible: false
 weight: 20
 ---
 
-本文档指导您如何快速使用 RTN 服务。
+本文档指导您如何通过 vCPE 打通两个 VPC 下的私有网络，VPC 可以是同一个云平台或者不同云平台的 VPC。
+
+
 
 ## 步骤一：创建企业云网
 
