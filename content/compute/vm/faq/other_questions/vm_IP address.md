@@ -1,6 +1,5 @@
 ---
 title: "为什么我的云服务器无法获取 IP 地址？"
-date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
 enableToc: false

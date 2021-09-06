@@ -1,6 +1,5 @@
 ---
 title: "跨区域迁移操作"
-date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
 enableToc: false
@@ -54,9 +53,9 @@ keyword: SSH, QingCloud,ssh密钥
 
    vol-xj2mpzo2               vol-sr2mqjo2
 
-   ![img](/Users/rosasu/Desktop/qingcloud-iaas-docs/computing/_images/migration_006.gif)
+   <img src="../_images/migration_006.png" style="zoom:60%;" />
 
-5. 通过青云控制台在新区查看迁移过来的资源，并验证数据完整性。
+   通过青云控制台在新区查看迁移过来的资源，并验证数据完整性。
 
    **【注意】通过该方法，请勿操作新老区的相关资源，且新区的硬盘保持【可用】状态（即不挂载）。**
 
@@ -74,11 +73,11 @@ keyword: SSH, QingCloud,ssh密钥
 
 3. 查看生成的网络拓扑（在新旧区均可查看该网络拓扑）。
 
-![img]( /Users/rosasu/Desktop/qingcloud-iaas-docs/computing/_images/migration_012.gif)
+    ![](../_images/migration_012.png)
 
 4. 基于模板在新区一键创建新的资源。
 
-![img](/Users/rosasu/Desktop/qingcloud-iaas-docs/computing/_images/migration_014.gif)
+![img](../_images/migration_014.png)
 
 5. 将新区的**主机关机**；
 
@@ -86,7 +85,9 @@ keyword: SSH, QingCloud,ssh密钥
 
    工单里内容示例：
 
-   请协助将北京2区的资源迁移到北京3区C，资源已经基于资源编排工具创建了，并且所有资源都已经关机，请将北京2区的资源迁移到北京3区C，拓扑ID：tp-65v3jzve。 ![img](/Users/rosasu/Desktop/qingcloud-iaas-docs/computing/_images/migration_018.gif)
+   请协助将北京2区的资源迁移到北京3区C，资源已经基于资源编排工具创建了，并且所有资源都已经关机，请将北京2区的资源迁移到北京3区C，拓扑ID：tp-65v3jzve。 
+
+   <img src="../_images/migration_018.png" alt="img" style="zoom:50%;" />
 
 7. 通过青云控制台在新区查看迁移过来的资源，并验证数据完整性。
 

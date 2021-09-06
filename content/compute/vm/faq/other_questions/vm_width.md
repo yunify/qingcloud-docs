@@ -1,6 +1,5 @@
 ---
 title: "青云主机之间的网络带宽是多少？"
-date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
 enableToc: false

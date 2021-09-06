@@ -1,6 +1,5 @@
 ---
 title: "忘记云服务器密码怎么办 ？ "
-date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
 enableToc: false

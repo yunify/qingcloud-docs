@@ -13,11 +13,11 @@ Section2:
   children:
     - title: 产品介绍
       content: 网络访问控制产品简介
-      url: "/security/acl/intro/introduction/"
+      url: "intro/introduction/"
 
     - title: 操作指南
       content: 网络访问控制操作文档
-      url: "/security/acl/manual/acl_manual/"
+      url: "manual/acl_manual/"
 
 section3:
   title: 开发者指南

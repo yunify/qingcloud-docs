@@ -19,7 +19,7 @@ Section2:
 
     - title: 操作指南
       content: 跨区域迁移操作指南
-      url: "/compute/migration/manual/ssh"
+      url: "/compute/migration/manual/migration"
 
     
 
