@@ -14,21 +14,21 @@ enableToc: false
 
 ### 1、安装 strace，通过 strace su 查看是哪一步花费较长时间。
 
-​         CentOS 安装命令：yum install strace
+​         CentOS 安装命令：```yum install strace```
 
-​         Ubuntu 安装命令： apt-get install strace -y
+​         Ubuntu 安装命令： ```apt-get install strace -y```
 
 ### 2、查看 systemd-logind 服务是否正常
 
-​         通过命令：Systemctl status systemd-logind 可以查看服务状态，这种情况服务一般是假死状态（服务是 active ，但一直在重启且启动未成功）或有明显异常报错。
+​         通过命令：```Systemctl status systemd-logind``` 可以查看服务状态，这种情况服务一般是假死状态（服务是 active ，但一直在重启且启动未成功）或有明显异常报错。
 
 ​        参考异常案例：
 
 ![](../../../_images/logintimeout1.png)
 
-### 3、通过 journalctl -xe 查看微服务异常点
+### 3、通过 ```journalctl -xe``` 查看微服务异常点
 
-​    通过命令：journalctl -xe，查看具体哪个微服务异常，从而查找解决办法，常见错误为：
+​    通过命令：```journalctl -xe```，查看具体哪个微服务异常，从而查找解决办法，常见错误为：
 
 [system] Failed to activate service 'org.freedesktop.login1': timed out
 
