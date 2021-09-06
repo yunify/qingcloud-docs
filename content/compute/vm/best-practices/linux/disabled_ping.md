@@ -20,15 +20,13 @@ draft: false
 
 ## 方法二
 
-在/etc/sysctl.conf添加一条参数net.ipv4.icmp_echo_ignore_all=1
+在 `/etc/sysctl.conf` 添加一条参数 `net.ipv4.icmp_echo_ignore_all=1` 
 
 ```bash
-#vi /etc/sysctl.conf
-···
-net.ipv4.icmp_echo_ignore_all=1
-···
-#sysctl -p
-net.ipv4.icmp_echo_ignore_all = 1
+# vi /etc/sysctl.conf
+net.ipv4.icmp_echo_ignore_all = 1   #加入该参数
+
+# sysctl -p    #使参数即时生效
 ```
 
 其实方法二跟方法一实现的原理是一样的，仔细观察可以看到sysctl.conf中的参数为方法一种sys目录下的路径。
