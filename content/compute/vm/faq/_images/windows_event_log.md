@@ -14,7 +14,7 @@ Windows 云服务器登录异常，排查登录日志可参考本操作。
 1.登录云服务器进入桌面。
 
 
-2.选择“开始 > 管理工具 > 事件查看器  
+2.选择 开始 > 管理工具 > 事件查看器  
 
 ![windows_log](/compute/vm/_images/Windows_log2.png)
 
