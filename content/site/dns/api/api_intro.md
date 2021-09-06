@@ -1,7 +1,7 @@
 ---
 title: "简介"
 description: 云解析服务 功能简介
-weight: 1
+weight: 10
 draft: false
 enableToc: false
 keyword: DNS 简介
