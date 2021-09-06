@@ -13,7 +13,7 @@ enableToc: false
 
 ## 配置方式
 
-1. 修改 /etc/docker/daemon.json 文件，在文件添加 registry-mirrors 。如下所示
+1. 修改 ```/etc/docker/daemon.json``` 文件，在文件添加 registry-mirrors 。如下所示
 
    ```
    root@qke-client:~# cp /etc/docker/daemon.json /etc/docker/daemon.json.bak
@@ -25,7 +25,7 @@ enableToc: false
 
 常用的加速地址有：**Docker 中国区官方镜像：https://registry.docker-cn.com**；**网易：http://hub-mirror.c.163.com**；**ustc：https://docker.mirrors.ustc.edu.cn**；**中国科技大学：https://docker.mirrors.ustc.edu.cn**
 
-2. 重启 Docker 。
+2. 重启 Docker 。 
 
    ```
    root@qke-client:~# systemctl restart docker
