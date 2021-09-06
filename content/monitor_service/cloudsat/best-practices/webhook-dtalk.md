@@ -17,19 +17,19 @@ draft: false
 `在安全设置中需添加自定义关键词“QingCloud”、“告警”、“自动伸缩” 、“定时器”。`  
 ![](../best-practices.assets/webhook_dtalk2.png)
 
-### 获取 webhook 地址
+### 二、获取 webhook 地址
 方法1、在创建机器人时获取 webhook 地址。
 ![](../best-practices.assets/webhook_dtalk3.png)  
 方法2、通过群设置—智能群助手—查看机器人对应的 webhook地址。
 ![](../best-practices.assets/webhook_dtalk4.png)
 
-### 设置 webhook 通知地址
+### 三、设置 webhook 通知地址
 在青云控制台—消息中心—消息接收管理—接收人管理中，添加消息接收人，将钉钉机器人的 webhook 地址填写进去后保存。  
 ![](../best-practices.assets/webhook_dtalk5.png)
 验证 webhook 通知地址  
 ![](../best-practices.assets/webhook_dtalk6.png)
 
-### 配置告警服务
+### 四、配置告警服务
 参照文档[告警服务](/monitor_service/cloudsat/manual/alarm_service/)，配置监控告警项。
 
 ## 验证效果
