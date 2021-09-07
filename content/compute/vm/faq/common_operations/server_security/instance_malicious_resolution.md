@@ -27,21 +27,22 @@ enableToc: false
 
 ### IIS配置方法
 
-1、查看是否绑定主机头，如以下截图主机名为空，则表示未绑定主机名。
+1. 查看是否绑定主机头，如以下截图主机名为空，则表示未绑定主机名。
 
  ![](../../../_images/instance_malicious_resolution_1.png)
 
-2、配置IIS网站绑定主机名
+2. 配置IIS网站绑定主机名
 
  ![](../../../_images/instance_malicious_resolution_2.png)
 
-3、验证只能通过绑定的域名访问，其他方式无法访问网站页面即可。
+3. 验证只能通过绑定的域名访问，其他方式无法访问网站页面即可。
 
 ### Nginx配置方法
 
-1、首先打开nginx域名配置文件存放目录：/etc/nginx/nginx.conf （注：不同安装方式nginx路径可能不同，但配置文件写法一样）
+1. 首先打开nginx域名配置文件存放目录：/etc/nginx/nginx.conf （注：不同安装方式nginx路径可能不同，但配置文件写法一样）
 
-2、配置默认站点禁止IP地址访问
+2. 配置默认站点禁止IP地址访问
+
 ```nginx
 server {
         listen 80 default_server;
@@ -50,7 +51,8 @@ server {
         return 403;
 }
 ```
-3、配置网站绑定主机头
+3. 配置网站绑定主机头
+
 ```nginx
 server 
 { 
@@ -61,12 +63,13 @@ server
 	include location.conf;                           #调用其他规则，也可去除
 }
 ```
-4、重启nginx服务器，验证访问效果。
-使用IP访问效果
- ![](../../../_images/instance_malicious_resolution_3.png)
+4. 重启nginx服务器，验证访问效果。
+   使用IP访问效果
+    ![](../../../_images/instance_malicious_resolution_3.png)
 
 ### Tomcat配置方法
-1、修改$TOMCAT_HOME/conf目录下的server.xml文件
+1. 修改$TOMCAT_HOME/conf目录下的server.xml文件
+
 ```shell
 <Engine name="Catalina" defaultHost="你的默认启动域名">
 ```
@@ -82,17 +85,18 @@ server
 ```
 >如果还有其他的域名,再添加一个以上Host内容段内容即可
 
-2、重启Tomcat服务
+2. 重启Tomcat服务
 
 ### Apache配置方法
 Apache中对于每个VirtualHost，都要求有ServerName或者ServerAlias，而且不能为空，具体可以参考[http://httpd.apache.org/docs/1.3/vhosts/name-based.html](http://httpd.apache.org/docs/1.3/vhosts/name-based.html)
 
-1、进入Apache的conf目录，打开httpd.conf文件，找到VirtualHost
+1. 进入Apache的conf目录，打开httpd.conf文件，找到VirtualHost
+
 ```shell
 <VirtualHost *:80>
       DocumentRoot /home/qingcloud #域名对应的-项目目录
       ServerName blog.com	#项目目录对应的-域名
 </VirtualHost>
 ```
-2、重启Apache服务
+2. 重启Apache服务
 

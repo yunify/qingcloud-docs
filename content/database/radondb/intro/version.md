@@ -10,7 +10,19 @@ draft: false
 
 QingCloud RadonDB 基于 MySQL 5.7版本构建 Radon 内核，并自研 Xenon 集群高可用工具。
 
-|<span style="display:inline-block;width:140px">版本</span> |<span style="display:inline-block;width:240px">内核版本</span>|<span style="display:inline-block;width:300px">版本说明</span> |
-|:----|:----|:----|
-| 1.1.4   |<li>MySQL 5.7.29-32 <li>Radon v1.1.4 <li>Xenon v1.1.4   |<li>SQL 节点 Radon 版本升级至 v1.1.4。<li>存储节点 Xenon 版本升级至 v1.1.4。<li>新增 `Lower-case-table-names` 配置参数，支持开启或关闭大小写敏感。 | 
-| 1.1.3 |  <li>MySQL 5.7.29-32  <li>Radon v1.1.3 <li>Xenon v1.1.3  |<li>新增基于 prometheus 和 grafana 的监控节点，支持通过 Grafana 仪表盘查看监控数据。<li>支持添加、删除和展示监控账号。 |
+## 版本历程
+
+### v1.1.4
+
+基于 MySQL 5.7.29-32，Radon v1.1.4，Xenon v1.1.4内核版本构建。
+
+- SQL 节点 Radon 版本升级至 v1.1.4。
+- 存储节点 Xenon 版本升级至 v1.1.4。
+- 新增 `Lower-case-table-names` 配置参数，支持开启或关闭大小写敏感。
+
+### v1.1.3
+
+基于 MySQL 5.7.29-32，Radon v1.1.3，Xenon v1.1.3内核版本构建。
+
+- 新增基于 Prometheus 和 Grafana 的监控节点，支持通过 Grafana 仪表盘查看监控数据。
+- 支持添加、删除和展示监控账号。
