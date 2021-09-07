@@ -24,7 +24,7 @@ enableToc: false
       # zone备注信息
       'remarks': REMARKS
       # 解析线路, 不需要包含默认解析线路,如果使用默认解析线路，可以忽略该参数
-      'zone_views': [{'name': 'dx', 'id': 1}, {'name': 'lt', 'id': 2}]
+      'zone_views': "[{'name': 'dx', 'id': 1}, {'name': 'lt', 'id': 2}]"
   }
   ```
 
@@ -217,12 +217,12 @@ enableToc: false
   ```
   {
       zone_name: ZONE_NAME,
-      zone_views:[
+      zone_views:"[
               {'name': 'cndx', 'id': 20},
               {'name': 'cnlt', 'id': 21},
               {'name': 'cnlt', 'id': 222},
               {'name': 'default', 'id':0}
-          ]
+          ]"
   }
   ```
 

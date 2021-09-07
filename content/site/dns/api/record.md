@@ -24,7 +24,7 @@ enableToc: false
       'type': TYPE,
       'ttl': TTL,
       'record':
-      [
+      "[
           {
               'weight': 0, 'values':[
                       {
@@ -49,7 +49,7 @@ enableToc: false
                       }
                   ]
           }
-      ],
+      ]",
       'mode': MODE_PROPERTY,
       'auto_merge': AUTO_MERGE,
   }
@@ -191,7 +191,7 @@ enableToc: false
       'type': RECORD_TYPE,
       'ttl': TTL,
       'records':
-              [
+              "[
                   [
                       {
                           'weight': WEIGHT,
@@ -210,7 +210,7 @@ enableToc: false
                               ]
                       }
                   ]
-              ],
+              ]",
       'mode': MODE_NAME
   }
   ```
