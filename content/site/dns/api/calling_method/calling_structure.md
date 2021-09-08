@@ -3,6 +3,7 @@ title: "请求结构"
 weight: 2
 draft: false
 enableToc: false
+keyword: QingCloud，DNS API，请求结构，通信协议
 ---
 
 ## 服务地址

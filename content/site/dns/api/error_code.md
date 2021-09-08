@@ -3,6 +3,7 @@ title: "错误码"
 weight: 40
 draft: false
 enableToc: false
+keyword: QingCloud，DNS API，错误码，HTTP状态码
 ---
 
 在请求返回的结果中，HTTP 状态码会表明处理完成后的状态，符合 HTTP 规范所规定的语义。

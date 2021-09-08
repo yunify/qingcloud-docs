@@ -3,6 +3,7 @@ title: "View API"
 weight: 35
 draft: false
 enableToc: false
+keyword: QingCloud，DNS云解析，DNS API，View API，解析线路
 ---
 
 ## DescribeViewList

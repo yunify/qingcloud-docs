@@ -3,6 +3,7 @@ title: "Host API"
 weight: 25
 draft: false
 enableToc: false
+keyword: QingCloud，DNS服务，DNS云解析，DNS API，Host API
 ---
 
 ##  ZoneHosts

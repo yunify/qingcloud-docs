@@ -3,6 +3,7 @@ title: "签名方法"
 weight: 10
 draft: false
 enableToc: false
+keyword: QingCloud，DNS API，Access Key，密钥，签名方法
 ---
 
 本文介绍 API 请求中签名（署名）的生成方法。

@@ -3,6 +3,7 @@ title: "Record API"
 weight: 30
 draft: false
 enableToc: false
+keyword: QingCloud，DNS服务，DNS云解析，DNS API，Record API，解析线路
 ---
 
 ## CreateRecord

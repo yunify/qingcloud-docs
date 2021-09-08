@@ -3,6 +3,7 @@ title: "公共参数"
 weight: 5
 draft: false
 enableToc: false
+keyword: QingCloud，DNS API，API请求，公共参数
 ---
 
 公共参数是所有 API 请求都必需的参数，这里列出公共的 HTTP 头字段。

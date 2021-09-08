@@ -3,6 +3,7 @@ title: "Zone API"
 weight: 20
 draft: false
 enableToc: false
+keyword: QingCloud，DNS服务，DNS云解析，DNS API，Zone API，可用区
 ---
 
 ## CreateZone

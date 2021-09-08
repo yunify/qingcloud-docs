@@ -3,6 +3,7 @@ title: "User API"
 weight: 15
 draft: false
 enableToc: false
+keyword: QingCloud，DNS服务，DNS云解析，DNS API，User API，用户
 ---
 
 ## DescribeUserZones
@@ -30,7 +31,6 @@ enableToc: false
   }
   ```
 
-  
 - 响应： HTTP状态码，成功 200
 
 - 响应数据体：
