@@ -1,0 +1,1 @@
+[{{ range .Site.Pages }}{{ if .Params.Product }}{{ $Page := . }}{{ range .Params.Product }}{"title":{{- .title | jsonify -}},"time":{{- .time | jsonify -}},"content":{{- .content | jsonify -}},"tags":{{- .tags | jsonify -}},"url":"{{- .url | absURL -}}","href":"{{- $Page.Permalink -}}"},{{ end }}{{ end }}{{ end }}]
