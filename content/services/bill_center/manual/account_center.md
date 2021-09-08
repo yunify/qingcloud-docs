@@ -3,7 +3,7 @@ title: "账户总览"
 weight: 5
 description: Test description
 draft: false
-keyword: 账单, 发票, 订单, 充值, 费用
+keyword: 账单, 发票, 订单, 充值, 费用, 余额
 ---
 
 客户通过**账户总览**页面可快速到达常见功能的操作入口。
