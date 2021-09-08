@@ -93,6 +93,12 @@ Access Key 可以在 [青云控制台](https://console.qingcloud.com/access_keys
 
 这两种情况性能上没有差别。建议根据业务需求去使用不同的 Bucket，或者在单个 Bucket 中划分不同的目录来使用。
 
+## Bucket 上传/下载速度
+| 单链接速度 | 内网 | 外网 |
+| :--------: | :------: | :------: |
+| 上传 | 不限制 | 40Mb/s |
+| 下载 | 32Mb/s | 1Mb/s |
+
 ## QingStor 是否支持服务端压缩和解压缩？
 
 对于下载请求，QingStor 支持文本和图片文件的压缩下载 (请求头需要携带 Accept-Encoding: gzip)，但不支持已压缩文件的解压下载。
