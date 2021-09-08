@@ -19,11 +19,11 @@ weight: 40
 
 您可以查看套餐包时长的使用情况。若套餐包时长不足，您可以点击**购买套餐包**，购买套餐包。
 
-<img src="../../_images/um_package_amount.png" style="zoom:50%;" />
+<img src="../../_images/um_package_amount.png" style="zoom:40%;" />
 
 ## 近 30 天套餐时长用量分布占比
 
 您可以查看近 30 天套餐时长用量分布占比。您可以点击**查看更多**，查看更多的关于套餐使用时长情况。
 
-<img src="../../_images/um_latest30_percentage.png" style="zoom:50%;" />
+<img src="../../_images/um_latest30_percentage.png" style="zoom:40%;" />
 
