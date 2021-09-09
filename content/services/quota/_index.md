@@ -16,11 +16,11 @@ Section2:
   children:
     - title: 产品简介
       content: 产品简介
-      url: "intro/introduction"
+      url: "intro/introduction/"
 
     - title: 操作指南
       content: 如何查看申请配额。
-      url: "manual/cluster_info"
+      url: "manual/operation/"
 
 section3:
   title: 开发者指南

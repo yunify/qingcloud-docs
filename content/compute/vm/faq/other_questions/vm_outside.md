@@ -1,6 +1,5 @@
 ---
 title: "为什么我的云服务器不能访问外网？"
-date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
 enableToc: false
