@@ -13,7 +13,7 @@ QingCloud PolonDB 基于 PostgreSQL 和 Citus 构建，是一款能够具备无�
 
 <!--基于 Citus 构建，同时支持在线事务处理（OLTP）及在线分析处理（OLAP）场景。完美适配海量数据实时分析、海量事务处理等应用场景，有着众多独特优势。-->
 
-- Citus 是 PostgreSQL 的扩展（not a fork），采用 shared nothing 架构，节点之间无共享数据，由协调器节点和 Work 节点构成一个数据库集群。相比单机 PostgreSQL，Citus 可以使用更多的 CPU 核心，更多的内存数量，保存更多的数据。通过向集群添加节点，可以轻松的扩展数据库。
+- Citus 是 PostgreSQL 的扩展（not a fork），采用 `shared nothing` 架构，节点之间无共享数据，由协调器节点和 Work 节点构成一个数据库集群。相比单机 PostgreSQL，Citus 可以使用更多的 CPU 核心，更多的内存数量，保存更多的数据。通过向集群添加节点，可以轻松的扩展数据库。
 
 - Citus 支持新版本 PostgreSQL 的特性，并保持与现有工具的兼容。Citus 使用分片技术在多台机器上横向扩展 PostgreSQL。Citus 的查询引擎在这些服务器上采用并行化查询，以便在大型数据集上实现实时的响应。
 

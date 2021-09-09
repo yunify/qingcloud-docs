@@ -1,7 +1,7 @@
 ---
 title: "创建集群"
 description: 本小节主要介绍如何快速创建 PostgreSQL 集群实例。 
-keywords: PostgreSQ 实例, 创建集群,创建实例
+keywords: PostgreSQL 实例, 创建集群,创建实例
 weight: 10
 collapsible: false
 draft: false
@@ -19,7 +19,7 @@ draft: false
 ## 操作步骤
 
 1. 登录 QingCloud 管理工作台。
-2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 PostgreSQ**，进入 PostgreSQL 集群管理页面。
+2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 PostgreSQL**，进入 PostgreSQL 集群管理页面。
 3. 点击**立即部署**，进入应用部署页面。
 4. 选择**区域**。
    根据就近原则，选择实例所在区域。
