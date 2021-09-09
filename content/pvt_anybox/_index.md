@@ -21,14 +21,8 @@ section1:
     - title: 管理员手册
       url: /pvt_anybox/manager/overview/10_overview/
 
-    - title: Mac 端用户手册
-      url: /pvt_anybox/mac/10_overview/
-
-    - title: Web 端用户手册
-      url: /pvt_anybox/web/10_overview/
-
-    - title: Windows 端用户手册
-      url: /pvt_anybox/windows/10_overview/
+    - title: 用户手册
+      url: /pvt_anybox/manual/windows/10_overview/
 
 ---
 

@@ -7,21 +7,21 @@ draft: false
 
 可以查看当前账号所属**工作空间管理员**的工作空间目录。
 
-<img src="../../_images/web_user05.png" style="zoom:50%;" />
+<img src="../../../_images/web_user05.png" style="zoom:50%;" />
 
 ## 新建工作空间
 
 在**我的工作台**页面下，点击**新建工作空间**，即可进入创建新的工作空间的页面。
 
-<img src="../../_images/web_user06.png" style="zoom:50%;" />
+<img src="../../../_images/web_user06.png" style="zoom:50%;" />
 
 ## 共享
 
-1. 将⿏标悬浮在对应工作空间上，点击<img src="../../_images/web_user07.png" style="zoom:50%;" />。
+1. 将⿏标悬浮在对应工作空间上，点击<img src="../../../_images/web_user07.png" style="zoom:50%;" />。
 
 2. 在弹出的共享设置页面添加需要共享的类型、成员、共享说明和对应共享权限，允许被共享者使用此工作空间。
 
-   <img src="../../_images/web_user08.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user08.png" style="zoom:50%;" />
 
    - 被共享类型：可以选择需要共享的成员的属性，如：人员、临时组或部门。
 
@@ -31,9 +31,9 @@ draft: false
 
    - 共享权限：可以对添加的共享者的角色、权限和到期时间进行设置。
 
-   <img src="../../_images/web_user09.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user09.png" style="zoom:50%;" />
 
-   <img src="../../_images/web_user10.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user10.png" style="zoom:50%;" />
 
 ## 工作空间操作
 
@@ -46,7 +46,7 @@ draft: false
 
 2. 点击**完成**，可对此工作空间创建外链，允许外部用户通过链接访问此工作空间。
 
-   <img src="../../_images/web_user16.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user16.png" style="zoom:50%;" />
 
    - 密码：可以对此外链设置访问密码。
 
@@ -78,7 +78,7 @@ draft: false
 
 2. 可以查看此工作空间的创建时间、更新时间、权限和描述信息。
 
-   <img src="../../_images/web_user17.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user17.png" style="zoom:50%;" />
 
 ### 权限
 
@@ -88,11 +88,12 @@ draft: false
 
 3. 可以对指定共享成员进行管理。
 
-   <img src="../../_images/web_user18.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user18.png" style="zoom:50%;" />
+   
    - 搜索：可以根据关键字搜索已共享的成员。
-
+   
    - 添加成员：可以添加新的共享成员。
-
+   
    - 管理：点击 **…**，可以对已共享的成员进行修改权限和删除操作。
 
 ### 删除
@@ -105,7 +106,7 @@ draft: false
    >
    > **我的工作空间**不可删除。删除的工作空间会移至回收站内，可以在回收站对已删除的工作空间进行还原。
 
-   <img src="../../_images/web_user19.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user19.png" style="zoom:50%;" />
 
 ## 文件/文件夹操作
 
@@ -115,7 +116,7 @@ draft: false
 
 3. 对文件进行（共享、下载、移动或复制、收藏、重命名、描述、详情、删除)，对工作空间内的子文件/文件夹进行操作。
 
-   <img src="../../_images/web_user15.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user15.png" style="zoom:50%;" />
 
 ## 共享
 
@@ -141,7 +142,7 @@ draft: false
 
 5. 可以对正在上传的文件进行取消上传操作。
 
-   <img src="../../_images/web_user14.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user14.png" style="zoom:50%;" />
 
 ## 新建
 
@@ -153,7 +154,7 @@ draft: false
 
 4. 点击**新建**，即可新建指定类型的文件。
 
-   <img src="../../_images/web_user13.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user13.png" style="zoom:50%;" />
 
 ## 预览/编辑
 
@@ -178,7 +179,7 @@ draft: false
 
 3. 点击**移动**或**复制**，即可将指定的文件夹移动/复制到该目录下。
 
-   <img src="../../_images/web_user12.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user12.png" style="zoom:50%;" />
 
 ## 收藏
 
@@ -204,7 +205,7 @@ draft: false
 
 2. 可以查看对应保存的历史版本，以及对历史版本进行还原和删除操作。
 
-   <img src="../../_images/web_user11.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user11.png" style="zoom:50%;" />
 
 ## 详情
 

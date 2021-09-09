@@ -7,26 +7,26 @@ draft: false
 
 在文件资源管理器的 ANYBOX 文件夹中，可以查看云端与本地的工作空间同步的所有目录。
 
-<img src="../../_images/mac_user05.png" style="zoom:50%;" />
+<img src="../../../_images/mac_user05.png" style="zoom:50%;" />
 
 ANYBOX文件夹中同步状态包括：
 
-- <img src="../../_images/mac_user06.png" style="zoom:30%;" />：表示文件在云端和本地都有。
+- <img src="../../../_images/mac_user06.png" style="zoom:30%;" />：表示文件在云端和本地都有。
 
-- <img src="../../_images/mac_user07.png" style="zoom:40%;" />：表示文件只在本地存在。
-- <img src="../../_images/mac_user08.png" style="zoom:40%;" />：表示文件只在云端存在。
+- <img src="../../../_images/mac_user07.png" style="zoom:40%;" />：表示文件只在本地存在。
+- <img src="../../../_images/mac_user08.png" style="zoom:40%;" />：表示文件只在云端存在。
 
 在文件资源管理器的 ANYBOX 文件夹中，右键点击需要共享的文件。
 
 鼠标移至在出现的右键功能菜单中的 **ANYBOX** 功能栏，在弹出的文件操作项中，可以对此目录文件进行共享、生成外链、立即同步和查看详情操作。
 
-<img src="../../_images/mac_user09.png" style="zoom:50%;" />
+<img src="../../../_images/mac_user09.png" style="zoom:50%;" />
 
 ## 文件共享
 
 在右键功能菜单中的ANYBOX功能栏弹出的文件操作项中，点击**共享**，即可进入对此文件夹共享的设置页面。
 
-<img src="../../_images/mac_user10.png" style="zoom:50%;" />
+<img src="../../../_images/mac_user10.png" style="zoom:50%;" />
 
 1. 被共享成员类型：可以选择人员、群组、部门来添加指定的成员进行共享。
 2. 添加成员：可以根据选择的成员类型，输⼊成员名称进行搜索选择需要添加的成员。
@@ -37,7 +37,7 @@ ANYBOX文件夹中同步状态包括：
 
 在右键功能菜单中的 ANYBOX 功能栏弹出的文件操作项中，点击**生成外链**，即可进入对此文件/文件夹生成外链的设置页面。
 
-<img src="../../_images/mac_user11.png" style="zoom:50%;" />
+<img src="../../../_images/mac_user11.png" style="zoom:50%;" />
 
 1. 密码：可以设置此外链是否需要密码进行访问，勾选**开启密码保护**，则每次都需要输入对应密码才能访问此链接。
 2. 有效期：可以根据链接要求，设置此外链能访问的有效截止日期。
@@ -52,7 +52,7 @@ ANYBOX文件夹中同步状态包括：
 
 在右键功能菜单中的 ANYBOX 功能栏弹出的文件操作项中，点击**查看详情**，即可进入对此文件/文件夹详情展示页面。
 
-<img src="../../_images/mac_user12.png" style="zoom:50%;" />
+<img src="../../../_images/mac_user12.png" style="zoom:50%;" />
 
 1. 名称：展示此文件夹的名称。
 2. 权限：展示**我**对此文件夹的操作权限。

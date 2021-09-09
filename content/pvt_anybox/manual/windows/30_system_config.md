@@ -15,7 +15,7 @@ draft: false
 
 3. 选择弹出的 ANYBOX 配置页面的**同步**页面，设置需要同步的工作空间。
 
-   <img src="../../_images/win_user01.png" style="zoom:50%;" />  
+   <img src="../../../_images/win_user01.png" style="zoom:50%;" />  
 
 4. 在 ANYBOX 配置的**同步**中，点击勾选需要同步的工作空间。
 
@@ -33,7 +33,7 @@ draft: false
 
 3. 选择弹出的 ANYBOX 配置页面的**设置**页面，即可对 ANYBOX 桌⾯应用程序链接的登录域名、端口进行修改。
 
-   <img src="../../_images/win_user02.png" style="zoom:50%;" />  
+   <img src="../../../_images/win_user02.png" style="zoom:50%;" />  
 
 4. 启用 HTTPS 安全链接。
 

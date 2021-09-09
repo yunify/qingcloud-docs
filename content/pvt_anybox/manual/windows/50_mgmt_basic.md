@@ -13,7 +13,7 @@ draft: false
 
 2. 点击**打开 ANYBOX 网页**，弹出 ANYBOX 的 Web 页面，即可通过浏览器 Web 页面操作 ANYBOX。
 
-   <img src="../../_images/win_user11.png" style="zoom:50%;" />  
+   <img src="../../../_images/win_user11.png" style="zoom:50%;" />  
 
 
 ## 打开本地 ANYBOX 目录
@@ -27,7 +27,7 @@ draft: false
 
 2. 点击**同步记录**，选择弹出的 ANYBOX 的同步记录页面，即可查看当前的同步情况。
 
-   <img src="../../_images/win_user12.png" style="zoom:50%;" />  
+   <img src="../../../_images/win_user12.png" style="zoom:50%;" />  
    
    - 同步完成：展示当前已经同步完成的文件相关信息。
    

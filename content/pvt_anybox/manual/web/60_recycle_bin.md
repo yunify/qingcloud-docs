@@ -7,7 +7,7 @@ draft: false
 
 可以查看当前账号已删除的工作空间、文件和文件夹的相关信息。
 
-<img src="../../_images/web_user22.png" style="zoom:50%;" />
+<img src="../../../_images/web_user22.png" style="zoom:50%;" />
 
 ## 清空回收站
 
@@ -19,7 +19,7 @@ draft: false
    >
    > 从回收站彻底删除的文件不能恢复。
 
-   <img src="../../_images/web_user23.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user23.png" style="zoom:50%;" />
 
 ## 文件管理
 

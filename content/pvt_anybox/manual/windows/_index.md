@@ -1,10 +1,9 @@
 ---
-title: "管理员手册"
-linkTitle: "ANYBOX 管理员手册"
+title: "Windows 端用户手册"
 _build:
  render: false 
 description:
 draft: false
 collapsible: true
-weight: 40
+weight: 20
 ---

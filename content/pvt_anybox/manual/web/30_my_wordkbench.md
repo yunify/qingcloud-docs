@@ -13,7 +13,7 @@ draft: false
 
 2. 可查看当前账号最近使用（包含：预览、编辑、下载、收藏、生成外链、版本恢复、锁定、重命名等操作）过的前20个文件。
 
-   <img src="../../_images/web_user02.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user02.png" style="zoom:50%;" />
 
 ## 我的收藏
 
@@ -21,7 +21,7 @@ draft: false
 
 2. 可查看当前账号收藏的文件、文件夹和工作空间信息。
 
-   <img src="../../_images/web_user03.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user03.png" style="zoom:50%;" />
 
 ## 我的外链
 
@@ -29,6 +29,4 @@ draft: false
 
 2. 可查看当前账号创建的文件、文件夹和工作空间的外链信息。
 
-   <img src="../../_images/web_user04.png" style="zoom:50%;" />
-
-#### 
+   <img src="../../../_images/web_user04.png" style="zoom:50%;" />

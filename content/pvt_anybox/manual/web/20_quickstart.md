@@ -11,4 +11,4 @@ draft: false
 
 登录成功后，会跳转至 ANYBOX 使用的首页。
 
-<img src="../../_images/web_user01.png" style="zoom:50%;" />
+<img src="../../../_images/web_user01.png" style="zoom:50%;" />

@@ -7,7 +7,7 @@ draft: false
 
 可以查看当前账号所属被共享，但无管理员权限的工作空间目录。
 
-<img src="../../_images/web_user20.png" style="zoom:50%;" />
+<img src="../../../_images/web_user20.png" style="zoom:50%;" />
 
 ## 工作空间操作
 
@@ -15,7 +15,7 @@ draft: false
 
 2. 根据对应设置的共享权限匹配对应的操作项（生成外链、编辑、重命名、详情、权限、删除），对共享给我的工作空间进行操作。
 
-   <img src="../../_images/web_user21.png" style="zoom:50%;" />
+   <img src="../../../_images/web_user21.png" style="zoom:50%;" />
 
 ## 文件/文件夹操作
 

@@ -15,7 +15,7 @@ draft: false
 
 3. 选择弹出的 ANYBOX 页面的**同步**页面，设置需要同步的工作空间。
 
-   <img src="../../_images/mac_user03.png" style="zoom:50%;" />  
+   <img src="../../../_images/mac_user03.png" style="zoom:50%;" />  
 
 4. 在 ANYBOX 配置的**同步**中，点击勾选需要同步的工作空间。
 
@@ -31,7 +31,7 @@ draft: false
 
 3. 选择弹出的 ANYBOX 设置页面的**基本**页面，即可对 ANYBOX 桌⾯应用程序链接的登录域名、端口进行修改。
 
-   <img src="../../_images/mac_user04.png" style="zoom:50%;" />  
+   <img src="../../../_images/mac_user04.png" style="zoom:50%;" />  
 
 4. 勾选开机自动启动后，下次登录操作系统时，客户端会自动登录，无需再次输入账号和密码。
 

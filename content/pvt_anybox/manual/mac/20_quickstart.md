@@ -27,11 +27,11 @@ draft: false
 
 2. 输入ANYBOX 链接的登录域名。
 
-   <img src="../../_images/mac_user01.png" style="zoom:50%;" />
+   <img src="../../../_images/mac_user01.png" style="zoom:50%;" />
 
 3. 登录页面输入用户名和密码后即可登录。
 
-   <img src="../../_images/mac_user02.png" style="zoom:50%;" />
+   <img src="../../../_images/mac_user02.png" style="zoom:50%;" />
 
 3. 登录成功后，在系统的右下角会弹出登录成功的提示框，并在 MAC 顶部任务栏通知区域中的会出现一个黑色 ANYBOX 云图标
 

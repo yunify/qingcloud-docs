@@ -29,7 +29,7 @@ draft: false
 
 2. 输入 ANYBOX 链接的登录域名。
 
-   <img src="../../_images/mac_user01.png" style="zoom:50%;" />
+   <img src="../../../_images/mac_user01.png" style="zoom:50%;" />
 
 3. 登录页面输入用户名和密码后即可登录。
 

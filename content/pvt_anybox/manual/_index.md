@@ -1,5 +1,6 @@
 ---
-title: "Mac 端用户手册"
+title: "用户手册"
+linkTitle: "ANYBOX 用户手册"
 _build:
  render: false 
 description:
