@@ -1,6 +1,7 @@
 ---
 title: "系统配置"
 description: 系统配置
+keyword: 青云,anybox,mac 系统配置
 weight: 30
 draft: false
 ---

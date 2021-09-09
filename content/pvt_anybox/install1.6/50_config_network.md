@@ -1,6 +1,7 @@
 ---
 title: "网络配置"
 description: 网络配置
+keyword: 青云,anybox,安装指南,网络配置
 weight: 50
 draft: false
 ---

@@ -1,6 +1,7 @@
 ---
 title: "部署方式"
 description: 部署方式
+keyword: 青云,anybox,部署方式
 weight: 40
 draft: false
 ---

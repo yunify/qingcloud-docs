@@ -1,6 +1,7 @@
 ---
 title: "基础管理"
 description: 基础管理
+keyword: 青云,anybox,mac 基础管理 anybox
 weight: 50
 draft: false
 ---

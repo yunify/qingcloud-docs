@@ -1,6 +1,7 @@
 ---
 title: "准备工作"
 description: 准备工作
+keyword: 青云,anybox,安装准备工作
 weight: 20
 draft: false
 ---

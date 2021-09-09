@@ -1,6 +1,7 @@
 ---
 title: "活动管理"
 description: 活动管理
+keyword: 青云,anybox,活动管理
 weight: 10
 draft: false
 ---

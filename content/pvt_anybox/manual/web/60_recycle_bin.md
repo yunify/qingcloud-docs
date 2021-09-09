@@ -1,6 +1,7 @@
 ---
 title: "管理回收站"
 description: 管理回收站
+keyword: 青云,anybox,回收站,web 文件管理
 weight: 60
 draft: false
 ---

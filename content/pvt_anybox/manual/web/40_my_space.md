@@ -1,6 +1,7 @@
 ---
 title: "管理工作空间"
 description: 管理工作空间
+keyword: 青云,anybox,共享空间,web 创建共享链
 weight: 40
 draft: false
 ---
