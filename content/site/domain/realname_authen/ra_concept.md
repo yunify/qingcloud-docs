@@ -1,7 +1,6 @@
 ---
 title: "实名认证概述"
 description: test
-draft: false
 weight: 2
 keyword: 域名实名认证, 域名注册, QingCloud, 青云
 ---
