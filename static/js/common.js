@@ -28,6 +28,18 @@ function download_pdf(url='',pdf_name=''){
 	window.location.href='/download.php?url='+url+'&pdf_name='+pdf_name;
 }
 
+// 导出所有的pdf
+function download_all_pdf(name='') {
+	var url = 'pdf/'+window.location.pathname;
+
+	// 查找标题
+	if (name == '') {
+		name = $('.td-main h1.title').html();
+	}
+
+	window.location.href="/download.php?&type=all&url="+url + '&pdf_name='+name;
+}
+
 $(function(){
 	//查看链接结尾是否/结尾
 	$('a').each(function(){
@@ -62,6 +74,12 @@ $(function(){
 			}
 		}
 	});
+
+	var current_url = window.location.href;
+	if(current_url.indexOf('docsv3.qingcloud') != '-1'){
+		$('.pdf-all-download-btn').hide();
+	}
+
 
 	$('.product-learn-icon').click(function(){
 		if($(this).attr('src')=='/images/icons/caret-down.svg'){

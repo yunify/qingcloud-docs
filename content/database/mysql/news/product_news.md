@@ -7,7 +7,7 @@ product:
     - time: 2021-07-12
       title: 支持外网地址连接
       content: MySQL Plus 通过在管理控制台申请外网地址和设置 IP 白名单，支持使用外网地址连接数据库。
-      url: ../../quickstart/set_access_rules/enable_external_network/
+      url: ../../manual/mgt_connect/enable_external_network/
 
     - time: 2021-07-09
       title: 1.0.9 版本正式上线

@@ -1,7 +1,8 @@
 ---
 title: "域名命名规则"
 description: test
-draft: false
+weight: 6
+keyword: 域名命名规则, 域名注册, QingCloud
 ---
 
 

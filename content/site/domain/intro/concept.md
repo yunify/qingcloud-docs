@@ -1,9 +1,7 @@
 ---
 title: "基本概念"
 description: 
-draft: false
-enableToc: false
-weight: 1
+weight: 2
 keyword: 域名注册, QingCloud, 青云
 ---
 

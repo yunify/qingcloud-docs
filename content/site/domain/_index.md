@@ -1,8 +1,7 @@
 ---
 title: "域名注册"
 linkTitle: "域名注册"
-weight: 1
-Draft: false
+weight: 10
 collapsible: true
 type: "product"
 
@@ -26,11 +25,9 @@ Section2:
       content: 域名注册快速入门
       url: "/site/domain/quickstart/quick_start/"
     
-
     - title: 域名注册
       content: 域名命名规则，注册建议及支持的域名后缀
       url: "/site/domain/dn_regist/naming_rule/"
-
 
     - title: 域名查询
       content: WHOIS查询
@@ -40,10 +37,17 @@ Section2:
       content: 实名认证的基本概念、所需资料、操作步骤及进度查询
       url: "/site/domain/realname_authen/ra_concept/"
     
+    - title: 信息模版管理
+      content: 信息模版简介及创建、修改、删除操作
+      url: "/site/domain/dn_template/template_intro/"
 
     - title: 域名管理
       content: 域名基本信息查询、修改、续费、过户及证书下载打印
       url: "/site/domain/dn_mgt/dn_info_query/"
+
+    - title: 域名转入
+      content: 域名转入介绍、操作及失败原因
+      url: "/site/domain/dn_registrar_transfer/registrar_transfer_intro/"
 
     - title: 常见问题
       content: 常见问题包括域名注册问题、解析问题、DNS问题、备案问题等
