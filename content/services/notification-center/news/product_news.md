@@ -8,7 +8,7 @@ product:
       title: 消息中心全新改版
       content: 新版消息中心支持用户自定义配置消息接收类型，可屏蔽不重要的消息通知。此外本次消息中心交互全面优化，提供更优体验。
       url: /services/notification-center/manual/notify
-      tag_list:
+      tags:
       - 新功能
       - 体验优化
       zone: 北京三区
@@ -17,7 +17,7 @@ product:
       title: 消息中心新增webhook的消息通知方式
       content: webhook是个开源的通知方式，用户可通过webhook自由选择的与第三方设计平台比如“钉钉”做消息对接，满足不同用户的通知方式。
       url: /services/notification-center/manual/receiver
-      tag_list:
+      tags:
       - 新功能
       - 体验优化
       zone: 北京三区
@@ -26,7 +26,7 @@ product:
       title: 支持消息中心
       content: 消息中心可以为用户提供系统消息的接收和管理，使用户可以及时快捷的接收消息，从而避免信息遗漏造成不必要的损失。
       url: /services/notification-center/intro/introduction
-      tag_list:
+      tags:
       - 新功能
       - 体验优化
       zone: 北京三区
