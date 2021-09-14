@@ -27,7 +27,7 @@ product:
       content:
       url: /compute/vm/best-practices/linux/ecs2qing
       tags:
-      - 新功能1
+      - 新功能
       - 体验优化
       zone: 北京三区
 ---
