@@ -8,7 +8,7 @@ product:
       title: Console工单系统功能优化
       content: 工单是用户与服务团队沟通的重要工具，为了更高效地进行内容沟通，此次从新消息提示、创建工单、工单列表管理、工单服务评价等工单全线流程上优化了用户工单系统。
       url: /services/tickets/intro/introduction
-      tag_list:
+      tags:
       - 新功能
       - 体验优化
       zone: 北京三区
