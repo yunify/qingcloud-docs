@@ -9,7 +9,7 @@ weight: 5
 
 ### 预留合约
 
-预付费模式，按月/年预留资源，享受更优惠价格，适合中长期稳定IT需求。详细说明请参考：[计费指南](/billing/intro/billing_zhinan)。
+预付费模式，按月/年预留资源，享受更优惠价格，适合中长期稳定IT需求。详细说明请参考：[计费指南](/compute/vm/billing/reserved_contract/)。
 
 ### 按需计费
 
