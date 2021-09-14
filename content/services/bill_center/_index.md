@@ -63,7 +63,7 @@ section4:
           url: "manual/account_center/"
   
         - title: 财务管理
-          url: "manual/finance/"
+          url: "manual/finance/recharge"
 
         - title: 消费账单
           url: "manual/bills/"
