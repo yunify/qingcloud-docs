@@ -13,16 +13,12 @@ enableToc: false
 
 1. 遇到磁盘空间不足的报错时候，首先使用`df -h`命令查看磁盘空间使用情况。
 
-   ![](../_images/disk_space1.jpg) 
-
 2. 查看容量用尽的目录，进入到相应的目录中，此处以根目录为例，执行`du -h --max-depth=1`命令。
 
    ```shell
    cd /
    du -h --max-depth=1
    ```
-
-   ![](../_images/disk_space1.jpg) 
 
 3. 定位到占用空间大的目录后，进入到相应的目录，继续执行 `du  -h --max-depth=1`命令。
 

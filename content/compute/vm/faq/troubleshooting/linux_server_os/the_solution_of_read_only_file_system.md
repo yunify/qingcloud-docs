@@ -8,7 +8,7 @@ enableToc: false
 
 ## 问题背景
 
-在 Linux 的使用过程中，有时会遇到文件系统只读的情况，写入时出现 “Read-only file system” 的报错，无法进行写操作。
+在 Linux 的使用过程中，有时会遇到文件系统只读的情况，写入时出现 **Read-only file system** 的报错，无法进行写操作。
 
 ![](../../../_images/the_solution_of_read_only_file_system_1.png)
 
@@ -18,9 +18,9 @@ enableToc: false
 
 右键云服务器---创建备份。
 
-![](../../../_images/the_solution_of_read_only_file_system_2.png)
+<img src="../../../_images/the_solution_of_read_only_file_system_2.png" style="zoom:43%;" />
 
-![](../../../_images/the_solution_of_read_only_file_system_3.png)
+<img src="../../../_images/the_solution_of_read_only_file_system_3.png" style="zoom:55%;" />
 
 ### 重新挂载
 

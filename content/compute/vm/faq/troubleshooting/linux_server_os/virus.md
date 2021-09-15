@@ -39,7 +39,7 @@ enableToc: false
 | /var/log/wtmp | 记录每个用户登录、注销及系统启动和停机事件 |
 | /var/log/utmp | 记录当前登录的每个用户的详细信息 |
 
-> **注意**：
+> **注意**
 >
 > lastlog,wtmp,utmp 是二进制文件不可以直接查看，使用命令 last 或 lastlog，w，users，who等命令查看 
 

@@ -91,7 +91,7 @@ tcpdump [ -AbdDefhHIJKlLnNOpqStuUvxX# ]
   
 - 执行`tcpdump -i any -s 0 -w test.cap`命令，抓取系统内所有接口数据并保存到指定文件。
 
-  > **说明**：
+  > **说明**
   >
   > 您如果通过`cat`、`vim`命令查看保存的文件，都会显示为乱码。此时您可以执行`tcpdump -r test.cap`命令，查看信息。或者您可以使用Wireshark工具查看信息。
 

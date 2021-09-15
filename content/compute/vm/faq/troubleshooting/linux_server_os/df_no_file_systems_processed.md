@@ -18,6 +18,6 @@ df: no file systems processed"
 ```
 ## 解决方法
 
-root 权限下，执行 `#cat /proc/mounts > /etc/mtab` 命令。
+1. root 权限下，执行 `#cat /proc/mounts > /etc/mtab` 命令。
 
-让 /etc/mtab 与 /proc/mount 内容同步，然后再使用 df -h 就可以看到恢复正常了。
+2. 让 /etc/mtab 与 /proc/mount 内容同步，然后再使用 `df -h` 就可以看到恢复正常了。

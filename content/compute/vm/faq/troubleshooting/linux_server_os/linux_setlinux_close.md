@@ -22,26 +22,30 @@ error: Could not get shadow infromation for root.
 可以根据现场环境需求，选择临时或永久关闭 SELinux 服务解决 SSH 连接异常问题。
 
 ### 检查 SELinux 服务状态
-1. 通过 vnc 登录 Linux 实例，执行`/usr/sbin/sestatus -v` 命令，查看当前 SELinux 服务状态。
-   
-   系统显示类似如下。
-   ```
-   SELinux status:       enabled
-   ```
-   
-   > **说明：**如果 `SELinux status`参数是 `enabled`即处于开启状态，是 `disabled`即处于关闭状态。
+通过 vnc 登录 Linux 实例，执行`/usr/sbin/sestatus -v` 命令，查看当前 SELinux 服务状态。
+
+系统显示类似如下。
+```
+SELinux status:       enabled
+```
+
+> **说明**
+>
+> 如果 `SELinux status`参数是 `enabled`即处于开启状态，是 `disabled`即处于关闭状态。
 
 ### 临时关闭 SELinux 服务
 
 登录 Linux 实例，执行`setenforce 0`命令，临时关闭 SELinux 。
 
-> **说明：**临时修改 SELinux 服务状态，属于实时生效无需重启系统或实例。
+> **说明**
+>
+> 临时修改 SELinux 服务状态，属于实时生效无需重启系统或实例。
 
 ### 永久关闭 SELinux 服务
 
 登录 Linux 实例，执行`sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config`命令，永久关闭 SELinux 服务。
 
-> **说明：**
+> **说明**
 >
 > 永久性修改 SELinux 服务状态，需重启系统或实例方可生效。
 >
