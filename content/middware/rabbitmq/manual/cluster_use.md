@@ -16,7 +16,7 @@ keyword:  QingCloud, RabbitMQ, rabbitmq,  消息队列服务, 消息中间件
 
 - Haproxy+Keepalived 节点创建后，监控管理界面默认端口为8100，登录方式：`http://vip:8100` 或 `http://haproxy 节点ip:8100`， 登录帐号：**haproxy**，密码：**haproxy**。您也可以通过**配置参数**修改端口和用户。
 
-- RabbitMQ client 节点登录帐号**client**，密码：**client**。
+- RabbitMQ client 节点登录帐号：**client**，密码：**client**。
 
 ## 查看集群信息
 
