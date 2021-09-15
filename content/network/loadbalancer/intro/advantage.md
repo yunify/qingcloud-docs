@@ -1,11 +1,10 @@
 ---
 title: "产品特性"
-date: 2020-01-30T00:38:25+09:00
 description: Test description
-weight: 40
+weight: 20
 draft: false
 enableToc: false
-keyword: 负载均衡器,
+keyword: QingCloud, 青云, 负载均衡器
 ---
 
 ### 集群节点多活
