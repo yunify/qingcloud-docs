@@ -13,13 +13,15 @@ enableToc: false
 
 ![image-20210218122347304](/compute/vm/_images/nic_loss_ip1.png)
 
-### 1.可以执行命令 dhclient + 网卡名，以eth0例
+## 解决方法
+
+1. 可以执行命令 `dhclient + 网卡名`，以eth0例
 
 ```shell
 dhclient eth0
 ```
 
-### 2.重启网卡
+2. 重启网卡
 
 ```shell
 ifdown eth0

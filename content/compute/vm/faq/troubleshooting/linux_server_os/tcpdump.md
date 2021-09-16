@@ -6,26 +6,23 @@ draft: false
 weight: 40
 ---
 
-
-
-## 概述
-
 本文主要介绍了Linux和Windows环境下如何使用抓包工具进行抓包。
 
 ## 详细信息
 
 如果源服务器访问目标服务器时出现异常，您可以抓包获取最原始的交互数据进行排查分析。
 
-## 抓包步骤
+## 操作步骤
 
-### Linux环境中的抓包工具
+### Linux 环境中的抓包工具
 
-Linux环境中通常使用TCPDump工具进行抓包和分析，TCPDump工具是所有Linux发行版本预装的数据包抓取和分析工具。有关TCPDump工具的获取和安装方法，请参见[TCPDump官方文档](http://www.tcpdump.org/)。
+Linux 环境中通常使用 TCPDump 工具进行抓包和分析，TCPDump 工具是所有 Linux 发行版本预装的数据包抓取和分析工具。有关TCPDump 工具的获取和安装方法，请参见[TCPDump官方文档](http://www.tcpdump.org/)。
 
-关于tcpdump命令的说明如下所示（区分大小写）。
+关于 tcpdump 命令的说明如下所示（区分大小写）。
 
 ```
-tcpdump [ -AbdDefhHIJKlLnNOpqStuUvxX# ] [ -B buffer_size ] 
+tcpdump [ -AbdDefhHIJKlLnNOpqStuUvxX# ] 
+[ -B buffer_size ] 
 [ -c count ] 
 [ -C file_size ] [ -G rotate_seconds ] [ -F file ] 
 [ -i interface ] [ -j tstamp_type ] [ -m module ] [ -M secret ] 
@@ -51,14 +48,10 @@ tcpdump [ -AbdDefhHIJKlLnNOpqStuUvxX# ] [ -B buffer_size ]
 
 关于tcpdump命令常见用法和示例输出的详细信息。
 
-- 执行以下命令，抓取eth0网卡22端口的交互数据。
-
-  ```
-  tcpdump -s 0 -i eth0 port 22
-  ```
+- 执行`tcpdump -s 0 -i eth0 port 22`命令，抓取eth0网卡22端口的交互数据。
 
   系统显示类似如下。
-
+  
   ```
   tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
   listening on eth0, link-type EN10MB (Ethernet), capture size 65535 bytes
@@ -67,15 +60,11 @@ tcpdump [ -AbdDefhHIJKlLnNOpqStuUvxX# ] [ -B buffer_size ]
   20:24:59.415052 IP 172.xx.xx.226.ssh &gt; 42.xx.xx.107.43414: Flags [P.], seq 442700:442864, ack 53, win 141, length 164
   20:24:59.415103 IP 172.xx.xx.226.ssh &gt; 42.xx.xx.107.43414: Flags [P.], seq 442864:443028, ack 53, win 141, length 164
   ```
-
-- 执行以下命令，抓取eth1网卡发送给22端口的交互数据，并在控制台输出详细交互信息。
-
-  ```
-  tcpdump -s 0 -i eth1 -vvv port 22
-  ```
+  
+- 执行`tcpdump -s 0 -i eth1 -vvv port 22`命令，抓取eth1网卡发送给22端口的交互数据，并在控制台输出详细交互信息。
 
   系统显示类似如下。
-
+  
   ```
   tcpdump: listening on eth1, link-type EN10MB (Ethernet), capture size 65535 bytes
   20:24:20.991006 IP (tos 0x10, ttl 64, id 22747, offset 0, flags [DF], proto TCP (6), length 316)
@@ -83,15 +72,11 @@ tcpdump [ -AbdDefhHIJKlLnNOpqStuUvxX# ] [ -B buffer_size ]
   20:24:20.991033 IP (tos 0x0, ttl 53, id 2348, offset 0, flags [DF], proto TCP (6), length 92)
   42.xx.xx.107.43414 &gt; 172.xx.xx.226.ssh: Flags [P.], cksum 0x4759 (correct), seq 1:53, ack 129036, win 15472, length 52
   ```
-
-- 执行以下命令，抓取eth1网卡发送至指定IP地址的PING交互数据，并输出详细交互数据。
-
-  ```
-  tcpdump -s 0 -i eth1 -vvv dst 223.xx.xx.5 and icmp
-  ```
+  
+- 执行`tcpdump -s 0 -i eth1 -vvv dst 223.xx.xx.5 and icmp`命令，抓取eth1网卡发送至指定IP地址的PING交互数据，并输出详细交互数据。
 
   系统显示类似如下。
-
+  
   ```
   tcpdump: listening on eth1, link-type EN10MB (Ethernet), capture size 65535 bytes
   20:26:00.368958 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto ICMP (1), length 84)
@@ -103,14 +88,12 @@ tcpdump [ -AbdDefhHIJKlLnNOpqStuUvxX# ] [ -B buffer_size ]
   20:26:03.372181 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto ICMP (1), length 84)
   172.xx.xx.226 &gt; public1.alidns.com: ICMP echo request, id 55097, seq 344, length 64
   ```
+  
+- 执行`tcpdump -i any -s 0 -w test.cap`命令，抓取系统内所有接口数据并保存到指定文件。
 
-- 执行以下命令，抓取系统内所有接口数据并保存到指定文件。
-
-  ```
-  tcpdump -i any -s 0 -w test.cap
-  ```
-
-  > **说明**：您如果通过`cat`、`vim`命令查看保存的文件，都会显示为乱码。此时您可以执行`tcpdump -r test.cap`命令，查看信息。或者您可以使用Wireshark工具查看信息。
+  > **说明**
+  >
+  > 您如果通过`cat`、`vim`命令查看保存的文件，都会显示为乱码。此时您可以执行`tcpdump -r test.cap`命令，查看信息。或者您可以使用Wireshark工具查看信息。
 
   系统显示类似如下。
 
@@ -120,7 +103,7 @@ tcpdump [ -AbdDefhHIJKlLnNOpqStuUvxX# ] [ -B buffer_size ]
 
 ### Windows环境中的抓包工具
 
-Windows环境中一般使用免费的较为流行的Wireshark开源工具进行抓包和分析。请参见[Wireshark官方网站](https://www.wireshark.org/)，获取并安装Wireshark工具，然后进行抓包。
+Windows 环境中一般使用免费的较为流行的 Wireshark 开源工具进行抓包和分析。请参见[Wireshark官方网站](https://www.wireshark.org/)，获取并安装Wireshark工具，然后进行抓包。
 
 1. 安装并打开Wireshark工具。
 2. 依次点击**捕获**>**选项**。
