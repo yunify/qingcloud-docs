@@ -21,6 +21,9 @@ Section2:
     - title: 操作指南
       content: 如何管理账号
       url: "manual/user_verify/"
+    - title: 常见问题
+      content: 账户常见问题
+      url: "faq/faq/"
 
 section3:
   title: 开发者指南
