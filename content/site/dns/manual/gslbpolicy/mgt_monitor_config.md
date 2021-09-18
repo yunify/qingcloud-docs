@@ -1,7 +1,6 @@
 ---
 title: "管理监控配置"
 description: gslb监控配置。
-date: 2021-04-28T00:38:25+09:00
 weight: 3
 draft: false
 ---
@@ -35,7 +34,7 @@ draft: false
       ![修改 TCP 监控配置](../_image/modify_tcp_monitor.png)
 
     修改 HTTP 监控配置
-     
+    
       ![修改 HTTP 监控配置](../_image/modify_http_monitor.png)
 
 4. 点击**确认修改**，返回实例列表，即成功修改监控配置。
