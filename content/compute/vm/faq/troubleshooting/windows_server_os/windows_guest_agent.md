@@ -13,16 +13,16 @@ enableToc: false
 
 ## 处理方法
 
-### 1.检查 QingCloud Guest Agent 服务
+### 检查 QingCloud Guest Agent 服务
 
-在开始---运行---services.msc，打开服务管理，可以看到 QingCloud Guest Agent 服务，可以重启该服务。
+在**开始** > **运行** > **services.msc**，打开服务管理，可以看到 QingCloud Guest Agent 服务，可以重启该服务。
 
 ![](../../../_images/windows_guest_agent_2.png)
 
 ![](../../../_images/windows_guest_agent_3.png)
 
 
-### 2.拷贝文件并运行服务
+### 拷贝文件并运行服务
 
 如果重启后无法恢复，或是未查询到该服务，可以通过远程桌面的方式在其他该服务正常运行的 Windows 云服务器中拷贝相应的文件，并运行服务。
 
