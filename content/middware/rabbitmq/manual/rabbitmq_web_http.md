@@ -1,5 +1,5 @@
 ---
-title: "rabbitmq web http命令使用示例"
+title: "rabbitmq web http 命令使用示例"
 description: test
 weight: 24
 draft: false
