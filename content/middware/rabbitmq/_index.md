@@ -1,6 +1,6 @@
 ---
-title: "RabbitMQ服务"
-linkTitle: "RabbitMQ服务"
+title: "RabbitMQ 服务"
+linkTitle: "RabbitMQ 服务"
 weight: 4
 collapsible: true
 type: "product"
@@ -50,8 +50,8 @@ section3:
 
 section4:
   children:
-    - title: 了解：什么是RabbitMQ
-      content: RabbitMQ是一个基于AMQP协议，构建于QingCloud云主机之上的分布式消息队列系统。
+    - title: 了解：什么是 RabbitMQ
+      content: RabbitMQ 是一个基于 AMQP 协议，构建于 QingCloud 云主机之上的分布式消息队列系统。
       vice_title: 了解的第一步
       children:
         - title: 产品简介
