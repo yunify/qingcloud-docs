@@ -1,5 +1,5 @@
 ---
-title: "rabbitmqadmin使用示例"
+title: "rabbitmqadmin 使用示例"
 description: test
 weight: 20
 draft: false
