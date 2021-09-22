@@ -30,7 +30,7 @@ Section2:
       url: "manual/cluster_use/"
     - title: 常见问题
       content: RabbitMQ 使用问题
-      url: "manual/cluster_use/"
+      url: "faq/notice/"
 
 
 section3:
@@ -55,7 +55,7 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品简介
-          url: "intro/intro"
+          url: "intro/intro/"
     - title: 上手：RabbitMQ 集群的常见操作
       content: 学习如何创建、管理、使用 RabbitMQ 集群。
       vice_title: 上手的第一步
