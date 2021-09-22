@@ -1,5 +1,5 @@
 ---
-title: "rabbitmqcli使用示例"
+title: "rabbitmqcli 使用示例"
 description: test
 weight: 16
 draft: false
