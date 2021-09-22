@@ -27,9 +27,9 @@ Section2:
       content: 如何使用费用中心
       url: "manual/account_center/"
 
-   # - title: 常见问题
-     # content: 费用中心介绍
-     # url: "manual/account_center/"
+    - title: 常见问题
+      content: 费用常见问题
+      url: "faq/faq/"
 
 section3:
   title: 开发者指南
