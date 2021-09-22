@@ -5,7 +5,7 @@ _build:
  render: false 
 weight: 150
 collapsible: true
-draft: true
+draft: false
 icon: "/images/icons/index/product-icon-resource.svg"
 ---
 

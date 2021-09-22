@@ -75,6 +75,6 @@ draft: false
 1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/sh1a/nics/)。
 2. 点击右上角的![](../../_images/notification-bell.png)图标，进入消息中心。
 3. 在左侧导航栏，选择 **消息接收管理** > **接收人管理**。
-4. 点击未验证的邮箱或手机号码右侧的![icon_yellow](/Users/rosasu/Desktop/icon_yellow.png),重新发送验证。
+4. 点击未验证的邮箱或手机号码右侧的三角图标重新发送验证。
 
 <img src="../../_images/prove_information.png" alt="prove_information" style="zoom:48%;" />
