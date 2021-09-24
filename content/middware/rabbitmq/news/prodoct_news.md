@@ -10,7 +10,6 @@ product:
       url: ../../intro/artic/
       tags: 
       - 新功能
-      - 体验优化
       - 修复问题
 
 
