@@ -4,6 +4,14 @@ collapsible: false
 weight: 5
 
 product:
+    - time: 2021-09-26
+        title: KubeSphere v3.1.1 正式上线
+        content: 1.升级到 Kubernetes 1.20.6。<br>2.升级到 KubeSphere v3.1.1。<br>3.新增了一些集群创建前的检查项，优化了一些创建问题，提升了集群创建成功率。<br>4.取消了对云平台中已下架类型的云硬盘挂载支持。<br>5.集群默认优先挂载容量型云硬盘（vos），提升了集群存储能力。<br>6.修复了一些bug，提升了集群稳定性。
+        url: https://log.qingcloud.com/archives/8459
+        tags:
+        - 修复问题
+        - 体验优化
+        
     - time: 2021-06-09
       title: KubeSphere v3.1.0 正式上线
       content: 1.升级到 Kubernetes 1.19.8。<br>2.升级到 QingCloud CSI v1.2.1。<br>3.升级到 Docker 20.10.6。 <br>4.升级到 containerd 1.4.6。<br>5.内置 KubeSphere v3.1.0。<br>6.新增支持创建集群时选择 hostnic 网络插件。<br>7.新增支持 Kubernetes 审计规则，审计 webhook 的配置。
