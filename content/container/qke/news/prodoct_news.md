@@ -8,6 +8,9 @@ product:
       title: KubeSphere v3.1.1 正式上线
       content: 1.升级到 Kubernetes 1.20.6。<br>2.升级到 KubeSphere v3.1.1。<br>3.新增了一些集群创建前的检查项，优化了一些创建问题，提升了集群创建成功率。 <br>4.取消了对云平台中已下架类型的云硬盘挂载支持。<br>5.集群默认优先挂载容量型云硬盘（vos），提升了集群存储能力。<br>6.修复了一些bug，提升了集群稳定性。
       url: https://log.qingcloud.com/archives/8246
+      tags:
+      - 修复问题
+      - 体验优化
 
     - time: 2021-06-09
       title: KubeSphere v3.1.0 正式上线
