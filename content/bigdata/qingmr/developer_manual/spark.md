@@ -17,7 +17,7 @@ draft: false
 - 如仅以 Spark on YARN 模式提交 Spark 应用或者仅使用 Hadoop 相关功能，则可以选择关闭 Spark Standalone 模式以释放资源。
 - 此选项最好不要和其他配置参数项一起改，单独改动此项然后保存设置是推荐的作法。
 
-![开启关闭 standalone ](../../../_images/switch_standalone.png)
+![开启关闭 standalone ](../../_images/switch_standalone.png)
 
 ## 以 Spark-shell 模式运行 Spark job
 
@@ -79,7 +79,7 @@ bin/spark-submit --master spark://<主节点IP>:7077 examples/src/main/python/pi
 
 可以在配置参数页面切换 Python 版本。  
 
-![切换Python版本](../../../_images/switch_python.png)
+![切换Python版本](../../_images/switch_python.png)
 
 - R
 
@@ -128,13 +128,13 @@ Spark 支持两种应用内调度器 FIFO（默认）和 FAIR。
 3. 右键点击集群，选择**自定义服务**，点击**更新调度器**，选择**主节点**，点击**提交**。
 4. 在配置参数页面切换到相应调度器。
 
-![选择调度器](../../../_images/select_spark_scheduler.png)
+![选择调度器](../../_images/select_spark_scheduler.png)
 
 ## Spark log 清理
 
 可通过如下配置参数控制 Spark Standalone 模式下 Spark worker 节点的 log 清理设置：
 
-![Spark log 清理](../../../_images/spark_log_setting.png)
+![Spark log 清理](../../_images/spark_log_setting.png)
 
 ## 控制 Spark 占用的内存
 
@@ -142,7 +142,7 @@ Spark 支持两种应用内调度器 FIFO（默认）和 FAIR。
 - Spark Standalone 模式的 Spark worker 进程运行在从节点上。
 - 可通过如下参数配置各个进程最大占用的内存。
 
-![Spark 进程占用内存](../../../_images/spark_daemon_memory.png)
+![Spark 进程占用内存](../../_images/spark_daemon_memory.png)
 
 ## 使用 LZO 压缩
 
@@ -169,17 +169,17 @@ hdfs dfs -copyFromLocal ~/lenet5_data /
 
 # 训练模型 (spark standalone 模式下请自行修改 master 参数)
 mkdir ~/model
-/opt/spark/bin/spark-submit --master yarn --deploy-mode client --driver-memory 2g --executor-memory 2g --executor-cores 2 --num-executors 2  --class com.intel.analytics.bigdl.models.lenet.Train $BIGDL_HOME/lib/bigdl-0.8.0-jar-with-dependencies.jar -f hdfs://<主节点ip>:9000/lenet5_data -b 16 --checkpoint ~/model
+/opt/spark/bin/spark-submit --master yarn --deploy-mode client --driver-memory 2g --executor-memory 2g --executor-cores 2 --num-executors 2  --class com.intel.analytics.bigdl.models.lenet.Train $BIGDL_HOME/lib/bigdl-0.14.0-SNAPSHOT-jar-with-dependencies.jar -f hdfs://<主节点ip>:9000/lenet5_data -b 16 --checkpoint ~/model
 ```
 
 - python  
 
 ```shell
-unzip $BIGDL_HOME/lib/bigdl-0.8.0-python-api.zip -d $BIGDL_HOME/lib/bigdl-0.8.0-python-api
+unzip $BIGDL_HOME/lib/bigdl-0.14.0-SNAPSHOT-python-api.zip -d $BIGDL_HOME/lib/bigdl-0.14.0-SNAPSHOT-python-api
 
 # 训练模型 (spark on yarn)
-$BIGDL_HOME/bin/spark-submit-with-bigdl.sh --master yarn --deploy-mode client --driver-memory 2g --executor-memory 2g --executor-cores 2 --num-executors 2 $BIGDL_HOME/lib/bigdl-0.8.0-python-api/bigdl/models/lenet/lenet5.py
+$BIGDL_HOME/bin/spark-submit-with-bigdl.sh --master yarn --deploy-mode client --driver-memory 2g --executor-memory 2g --executor-cores 2 --num-executors 2 $BIGDL_HOME/lib/bigdl-0.14.0-SNAPSHOT-python-api/bigdl/models/lenet/lenet5.py
 
 # 训练模型 (spark standalone)
-$BIGDL_HOME/bin/spark-submit-with-bigdl.sh --master spark://<主节点ip>:7077 --deploy-mode client --driver-memory 2g --executor-memory 2g --executor-cores 2 --num-executors 2 --total-executor-cores 4 $BIGDL_HOME/lib/bigdl-0.8.0-python-api/bigdl/models/lenet/lenet5.py
+$BIGDL_HOME/bin/spark-submit-with-bigdl.sh --master spark://<主节点ip>:7077 --deploy-mode client --driver-memory 2g --executor-memory 2g --executor-cores 2 --num-executors 2 --total-executor-cores 4 $BIGDL_HOME/lib/bigdl-0.14.0-SNAPSHOT-python-api/bigdl/models/lenet/lenet5.py
 ```

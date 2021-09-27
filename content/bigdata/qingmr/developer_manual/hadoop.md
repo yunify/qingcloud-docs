@@ -69,7 +69,7 @@ bin/hdfs dfs -cat /teraValidate/part-r-00000
 
 1. 通过如下配置参数配置 Hadoop 代理用户及其所能代理的 hosts 和 groups ，配置 root 为 proxyuser，该用户能代理任意 host 中任意 group 内的用户：
 
-![Hadoop 代理用户](../../../_images/hadoop_proxy_user.png)
+![Hadoop 代理用户](../../_images/hadoop_proxy_user.png)
 
 > hosts 或 groups 中填写* 代表任意 host 或任意 group 。 hosts 和 groups 中也可以填写以逗号分割的 host name/ip 或者 group 名。详见 hadoop 官方文档[Proxy user setting](http://hadoop.apache.org/docs/r2.7.3/hadoop-project-dist/hadoop-common/Superusers.html)
 
@@ -100,7 +100,7 @@ bin/spark-submit --master yarn --deploy-mode client examples/src/main/python/pi.
 
 6. 查看 YARN applications UI 页面，可以看到虽然是在 root 用户下提交的 job ，但是 user 都显示为 ubuntu。
 
-![YARN applications UI](../../../_images/yarn_ui_proxy.png)
+![YARN applications UI](../../_images/yarn_ui_proxy.png)
 
 ## 更新自定义 YARN 调度器
 
@@ -111,13 +111,13 @@ YARN 支持两种调度器 CapacityScheduler（默认）和 FairScheduler。
 2. 将这两个自定义调度器上传至 HDFS 的 /tmp/hadoop-yarn/ 目录
 3. 右键点击集群，选择`自定义服务`，点击`更新调度器`，选择`主节点`，点击`提交`
 
-![更新调度器](../../../_images/update_scheduler.png)
+![更新调度器](../../_images/update_scheduler.png)
 
-![更新调度器](../../../_images/update_scheduler_submit.png)
+![更新调度器](../../_images/update_scheduler_submit.png)
 
 4. 在配置参数页面切换到相应调度器
 
-![选择调度器](../../../_images/select_scheduler.png)
+![选择调度器](../../_images/select_scheduler.png)
 
 > 注意
 > 
@@ -128,7 +128,7 @@ YARN 支持两种调度器 CapacityScheduler（默认）和 FairScheduler。
 
 QingMR 支持将 YARN log 收集到 HDFS 指定目录，并可指定保持时间、保持目录等，可在配置参数页面配置。
 
-![YARN log 收集](../../../_images/yarn_log_aggregation.png)
+![YARN log 收集](../../_images/yarn_log_aggregation.png)
 
 ##  控制 HDFS、YARN 占用的内存
 
@@ -138,7 +138,7 @@ QingMR 支持将 YARN log 收集到 HDFS 指定目录，并可指定保持时间
 
 YARN 及 HDFS 进程最大占用内存
 
-![YARN heap size](../../../_images/hdfs_yarn_heap_size.png)
+![YARN heap size](../../_images/hdfs_yarn_heap_size.png)
 
 ##  MapReduce 中使用 LZO 压缩
 

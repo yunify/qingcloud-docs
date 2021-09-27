@@ -106,7 +106,7 @@ cd /opt/flink/
 
 Flink 已完成的job存放在 hdfs:///flink/completed-jobs 目录下，默认保存时间 30 天，可以通过以下参数修改。
 
-![日志保存时间](../../../_images/flink_archive.png)
+![日志保存时间](../../_images/flink_archive.png)
 
 FLink historyserver 提供了对已完成的 job 的查看功能，historyserver部署在 HDFS 主节点上，您可以打开 web 浏览器，访问 http://host_name:8082/ 。请将其中 host_name 替换为具体的 HDFS 主节点 IP 地址或主机名。
 
@@ -114,4 +114,4 @@ FLink historyserver 提供了对已完成的 job 的查看功能，historyserver
 
 Flink 日志存放在 /data/flink/log 目录下，默认保存 30 个文件，可以通过以下参数修改。
 
-![日志保存时间](../../../_images/flink_log.png)
+![日志保存时间](../../_images/flink_log.png)
