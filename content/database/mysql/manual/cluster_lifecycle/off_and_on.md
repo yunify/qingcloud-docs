@@ -69,4 +69,4 @@ draft: false
  
    <img src="../../../_images/timer_task_list.png" alt="查看定时任务" style="zoom:50%;" />
 
-更多定时器任务介绍，请参见**定时器**。
+更多定时器任务介绍，请参见[定时器](../../../../../operation/tools/manual/scheduler/)。
