@@ -1,9 +1,8 @@
 ---
-title: "简介"
-date: 2020-12-02T10:08:56+09:00
-description:
+title: "动态与公告"
 _build:
  render: false 
+description:
 draft: false
 collapsible: true
 weight: 10
