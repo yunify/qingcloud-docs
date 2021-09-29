@@ -1,10 +1,27 @@
 ---
 title: "产品动态"
-date: 2020-02-28T10:08:56+09:00
+date: 2021-09-29T10:08:56+09:00
 collapsible: false
 
 product:
-    - time: 2021-9-15 11:52:32
+      - time: 2021-9-27 11:28:32
+      title: 部分区域上架e3类型云服务器
+      content: 新一代企业级云服务器，性能更高。
+      url: /compute/vm/manual/vm_instance
+      tags:
+      - 待发布
+      zone: 北京3区-C、北京3区-D、上海1区-A
+
+    - time: 2021-9-26 11:30:30
+      title: 云硬盘部分区域上架增强型SSD云盘
+      content: 增强型SSD云盘具有超高性能，适用分布式数据库等对IOPS和延时要求极高的服务。为充分利用增强型SSD云盘性能，建议挂载到企业级e3云服务器。
+      url: /compute/vm/manual/connect_instance
+      tags:
+      - 产品上架
+      - 新功能
+      zone: 上海1区、广东2区-B、北京三区-C、北京3区-D
+
+      - time: 2021-9-15 11:52:32
       title: 主机/硬盘批量创建支持自动编号命名
       content: 主机/硬盘上线批量创建时命名自动编号功能，相较于之前的批量创建重复命名的情况，自动编号能极大提升用户体验，便于资源区分，避免用户手动更改命令造成的不便。
       url: /compute/vm/manual/vm_instance
