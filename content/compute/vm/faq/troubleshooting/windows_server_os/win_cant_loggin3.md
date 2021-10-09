@@ -18,5 +18,5 @@ enableToc: false
 
 #### 解决方法
 
-在cmd命令窗口输入**netsh winsock reset**后根据提示重启云服务器后，重新连接云服务器。
+在cmd命令窗口输入`netsh winsock reset`后根据提示重启云服务器后，重新连接云服务器。
 

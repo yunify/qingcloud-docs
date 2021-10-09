@@ -8,7 +8,7 @@ product:
       title: Let’s Encrypt 免费SSL证书上线
       content: Let’s Encrypt 证书简称 LE 证书，是一种永久免费的 SSL证书。Let’s Encrypt 是一个由非营利性组织互联网安全研究小组（ISRG）提供的免费、自动化和开放的证书颁发机构（CA）。借助 Let’s Encrypt 颁发的证书可以为我们的网站免费启用 HTTPS(SSL/TLS) 。
       url: /security/ssl/intro/introduction
-      tag_list:
+      tags:
       - 新功能
       - 体验优化
       zone: 北京三区

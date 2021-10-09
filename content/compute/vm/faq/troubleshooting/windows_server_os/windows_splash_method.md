@@ -10,31 +10,19 @@ enableToc: false
 
 ## 操作步骤
 
-1. 选择 **开始** > **管理工具** > **事件查看器** > **应用程序** 中查看相关事件
+1. 选择 **开始** > **管理工具** > **事件查看器** > **应用程序** 中查看相关事件。
 
 2. 查看事件日志信息，模块发送的错误及时间。
    ![windows_log](/compute/vm/_images/windows_log_11.png)
 
-   
-
 3. 打开 **运行** > **cmd**，进入到错误文件所在目录。
 
-   本例执行如下命令：
-
-   ```
-   cd C:\Program Files (x86)\GifRecord
-   ```
-
-   
+   本例执行`cd C:\Program Files (x86)\GifRecord`命令。
 
 4. 通过命令清理异常文件
 
    ```regsvr32.exe /u```  文件名 ，进行移除，移除后恢复正常。
 
-   本例执行如下命令：
-
-   ```
-   regsvr32.exe /u GifRecord64.dll
-   ```
+   本例执行`regsvr32.exe /u GifRecord64.dll`命令。
 
    

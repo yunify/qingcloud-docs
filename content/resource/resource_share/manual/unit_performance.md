@@ -25,20 +25,20 @@ draft: false
 
    <img src="../../_images/rs_14.png" style="zoom:19%;" />
 
-3. 进入VPC详情：可以进行主机创建，禁止其余有关VPC的操作，IAM鉴权禁止(如红框所示)。
+3. 进入VPC详情：可以进行主机创建，无权进行其余 VPC 有关操作（红框内操作)。
 
    <img src="../../_images/rs_15.png" style="zoom:22%;" />
 
-   点击创建资源选项，进入主机创建流程，创建主机时可选择共享网络。
+4. 点击创建资源选项，进入主机创建流程，创建主机时可选择共享网络。
 
    <img src="../../_images/rs_16.png" style="zoom:43%;" />
 
    1. 创建主机，可选择共享网络：
 
-      <img src="../../_images/rs_17.png" style="zoom:43%;" />
+      <img src="../../_images/rs_17.png" style="zoom:33%;" />
 
    2. 已创建主机，加入共享网络：
 
-      <img src="../../_images/rs_18.png" style="zoom:43%;" />
+      <img src="../../_images/rs_18.png" style="zoom:30%;" />
 
-      <img src="../../_images/rs_19.png" style="zoom:43%;" />
+      <img src="../../_images/rs_19.png" style="zoom:40%;" />

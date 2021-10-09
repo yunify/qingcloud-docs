@@ -19,8 +19,8 @@ Section2:
       url: "intro/introduction/"
 
     - title: 操作指南
-      content: 如何查看申请配额。
-      url: "manual/operation/"
+      content: 如何查看与申请配额。
+      url: "manual/view_quota/"
 
 section3:
   title: 开发者指南
@@ -50,8 +50,10 @@ section4:
       content: 学习如何查看申请配额
       vice_title: 上手的第一步
       children: 
-        - title: 查看申请配额
-          url: "manual/operation/"
+        - title: 查看配额
+          url: "manual/view_quota/"
+        - title: 提升配额
+          url: "/manual/apply_quota/"
 
 
 ---

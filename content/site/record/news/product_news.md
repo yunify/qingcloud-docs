@@ -8,7 +8,7 @@ product:
       title: 青云正式上线电子化核验备案功能
       content: 为了满足用户快速备案的需求，青云特推出支持证件识别和电子化核验的新备案功能。
       url: /services/record/quickstart/quick_start
-      tag_list:
+      tags:
       - 新功能
       - 体验优化
       zone: 北京三区
