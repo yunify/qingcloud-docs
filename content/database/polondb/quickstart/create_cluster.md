@@ -1,5 +1,5 @@
 ---
-title: "创建 PolonDB 集群"
+title: "创建集群"
 description: 本小节主要介绍如何快速创建 PolonDB 集群实例。 
 keywords: PolonDB 实例, 创建集群,创建实例
 weight: 10
