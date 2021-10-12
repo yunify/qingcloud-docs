@@ -1,8 +1,10 @@
 ---
 title: "新手指引（Demo 体验）"
+description: 本章节指导您如何快速使用实时音视频 RTC 服务。
+keyword: 实时音视频 RTC, Demo
 draft: false
 collapsible: false
-weight: 20
+weight: 10
 ---
 
 本章节指导您如何快速使用实时音视频 RTC 服务。
