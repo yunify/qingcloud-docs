@@ -3,17 +3,10 @@ title: "产品动态"
 collapsible: false
 
 product:
-    - time: 2021-10-13
-      title: 支持微信&支付宝购买资源包
-      content: 多用途资源包（互动通信、旁路推流、云录制）可使用微信&支付宝进行扫码支付，轻松便捷是您更方便购买产品资源用量。
-      url: /audio_and_video/rtc/intro/10_rtc
-      tags:
-      - 新功能
-
     - time: 2021-10-12
       title: 新手体验适配移动端
       content: 控制台发起的实时音视频体验链接，您可以发送给任意移动端设备，通过移动端体验音视频通信。
-      url: /audio_and_video/rtc/intro/10_rtc
+      url: /audio_and_video/rtc/qs/10_qs_rtc
       tags:
       - 体验优化
       
