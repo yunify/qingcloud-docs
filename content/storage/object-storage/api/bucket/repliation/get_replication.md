@@ -1,5 +1,5 @@
 ---
-title: "Bucket Replication"
+title: "Get Bucket Replication"
 date: 2020-11-25T10:08:56+09:00
 description:
 collapsible: false
@@ -7,15 +7,9 @@ draft: false
 weight: 3
 ---
 
-# GET Bucket Replication
+该接口用于获取 Bucket 的跨区域复制规则列表。QingStor 对象存储定义跨区域复制为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
 
-获取 Bucket Replication 规则列表, Replication 是存储空间的子资源（subresource), 只有存储空间所有者才能获取.
-
-设置 Replication 请参见 [PUT Bucket Replication](../put_replication/).
-
-删除 Replication 请参见 [DELETE Bucket Replication](../delete_replication/).
-
-## Request Syntax
+## 请求语法
 
 ```http
 GET /?replication HTTP/1.1
@@ -24,36 +18,43 @@ Date: <date>
 Authorization: <authorization-string>
 ```
 
-## Request Parameters
+## 请求参数
 
-> 没有请求参数
+无。
 
-## Request Headers
+## 请求头
 
-> [参见公共请求头](../../../common_header/#请求头字段-request-header)
+此接口仅包含公共请求头。关于公共请求头的更多信息，请参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
 
-## Request Elements
+## 请求消息体
 
-> 没有请求消息体
+无。
 
-## Response Headers
+## 响应头
 
-> [参见公共响应头](../../../common_header/#响应头字段-response-heaader)
+此接口仅包含公共响应头。关于公共响应头的更多信息，请参见 [公共响应头](/storage/object-storage/api/common_header/#响应头字段-response-header)。
 
-## Response Elements
+## 响应体
 
-GET Bucket Replication 的 Response Elements 包括两部分:
-一部分与 PUT Bucket Replication 相同, 参见 PUT Bucket Replication [Request Elements](../put_replication/),
-及 GET Bucket Replication 特有的 Request Elements, 如下表：
+成功调用该 API 后，会返回一个 Json 格式的 Response Body。该 Response Body 包括如下两个部分：
+- 前期设置的的跨区域复制（Replication）规则，这部分可参考 [PUT Bucket Replication](../put_replication#请求体)。
+- 跨区域复制规则中目标 Bucket 所在的 Zone ID，这部分为 GET Bucket Replication 特有的 Response Body。详情如下：
 
-| Name | Type | Description |
+| 名称 | 类型 | 说明 |
 | --- | --- | --- |
-| zone | String | 目标 Bucket 所属的 zone id.
+| zone | String | 目标 Bucket 所在的 Zone ID。|
 
+## 错误码
 
-## Example
+| 错误码 | 错误描述 | HTTP 状态码 |
+| --- | --- | --- |
+| OK | 成功获取跨区域复制（Replication）规则列表 | 200 |
 
-### Example Request
+其他错误码可参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
+
+## 示例
+
+### 请求示例
 
 ```http
 GET /?replication HTTP/1.1
@@ -62,7 +63,7 @@ Date: Mon, 1 Oct 2018 15:04:01 GMT
 Authorization: authorization string
 ```
 
-### Example Response
+### 响应示例
 
 ```http
 HTTP/1.1 200 OK
@@ -106,3 +107,6 @@ x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
 }
 ```
 
+## SDK
+
+此接口所对应的各语言 SDK 可参考 [SDK 文档](/storage/object-storage/sdk/)。
