@@ -32,6 +32,10 @@ Section2:
     #  content: Memcached 的最佳实践
     #  url: "best-practices/data_transfer/"
 
+    - title: 常见问题
+      content: Memcached 常见问题
+      url: "faq/faq_list/"
+
 section3:
   title: 开发者指南
   children:

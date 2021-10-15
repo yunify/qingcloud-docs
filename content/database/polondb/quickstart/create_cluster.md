@@ -1,5 +1,5 @@
 ---
-title: "创建 PolonDB 集群"
+title: "创建集群"
 description: 本小节主要介绍如何快速创建 PolonDB 集群实例。 
 keywords: PolonDB 实例, 创建集群,创建实例
 weight: 10
@@ -60,7 +60,7 @@ draft: false
 
 ### 协调器设置
 
-集群协调器的硬件配置，包括云服务器规格、磁盘大小等。
+集群协调器的资源配置，包括云服务器规格、磁盘大小等。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
@@ -72,7 +72,7 @@ draft: false
 
 ### Worker 节点设置
 
-集群节点的硬件配置，包括云服务器规格、磁盘大小等。
+集群节点的资源配置，包括云服务器规格、磁盘大小等。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|

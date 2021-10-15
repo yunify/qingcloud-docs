@@ -33,7 +33,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateAccessKey
+https://api.qingcloud.com/iaas/?action=CreateSubUser
 &email=masteruser@test.com#subuser1
 &passwd=Passw0rd
 &COMMON_PARAMS

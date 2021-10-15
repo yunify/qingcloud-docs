@@ -23,7 +23,7 @@ MySQL Plus 集群支持创建两种权限类型用户账号：**高级权限**�
 
 |<span style="display:inline-block;width:80px">账号类型</span> |<span style="display:inline-block;width:240px">权限范围</span>|<span style="display:inline-block;width:280px">说明</span> |
 |:----|:----|:----|
-|高级权限账号   |`SUPER`和`GRANT`，以及`ALTER`、`ALTER ROUTINE`、`CREATE`、`CREATE ROUTINE`、`CREATE TEMPORARY TABLES`、`CREATE VIEW`、`DELETE`、`DROP`、`EXECUTE`、`EVENT`、`INDEX`、`INSERT`、`LOCK TABLES`、`PROCESS`、`RELOAD`、`SELECT`、`SHOW DATABASES`、`SHOW VIEW`、`UPDATE`、`TRIGGER`、`REFERENCES` |<li>一个实例中只能创建一个高权限账号，可以管理所有普通账号和数据库。<li>开放了更多权限，可满足个性化和精细化的权限管理需求，例如可按用户分配不同表的查询权限。<li>拥有实例下所有数据库的所有权限。<li>可以断开任意账号的连接。|
+|高级权限账号   |`SUPER`和`GRANT`，以及`ALTER`、`ALTER ROUTINE`、`CREATE`、`CREATE ROUTINE`、`CREATE TEMPORARY TABLES`、`CREATE VIEW`、`DELETE`、`DROP`、`EXECUTE`、`EVENT`、`INDEX`、`INSERT`、`LOCK TABLES`、`PROCESS`、`RELOAD`、`SELECT`、`SHOW DATABASES`、`SHOW VIEW`、`UPDATE`、`TRIGGER`、`REFERENCES` |<li>一个高权限账号可以管理所有普通账号和数据库。<li>开放了更多权限，可满足个性化和精细化的权限管理需求，例如可按用户分配不同表的查询权限。<li>拥有实例下所有数据库的所有权限。<li>可以断开任意账号的连接。|
 |普通权限账号|`ALTER`、`ALTER ROUTINE`、`CREATE`、`CREATE ROUTINE`、`CREATE TEMPORARY TABLES`、`CREATE VIEW`、`DELETE`、`DROP`、`EXECUTE`、`EVENT`、`INDEX`、`INSERT`、`LOCK TABLES`、`PROCESS`、`RELOAD`、`SELECT`、`SHOW DATABASES`、`SHOW VIEW`、`UPDATE`、`TRIGGER`、`REFERENCES`|<li>一个实例可以创建多个账号，具体的数量与实例内核有关 。<li>需要手动给普通账号授予特定数据库的权限。<li>普通账号不能创建和管理其他账号，也不能断开其他账号的连接。|
 
 ## 约束限制
@@ -31,6 +31,7 @@ MySQL Plus 集群支持创建两种权限类型用户账号：**高级权限**�
 - 系统保留 `root` 、`qc_check` 、 `qc_repl` 账号进行自动化运维和数据同步，请勿删除，以免破坏系统的运行。
 - 账号开启**加密认证**后，需在集群需开启 **SSL 传输加密**，该账号才可以连接数据库。
 - 添加账号后，若使用 `Proxy 实例`节点进行读写连接，需要重启 `Proxy 实例`节点同步`主实例`账户信息。
+- 不支持创建同名账号。
 
 ## 前提条件
 
@@ -40,11 +41,11 @@ MySQL Plus 集群支持创建两种权限类型用户账号：**高级权限**�
 ## 操作步骤
 
 1. 登录 QingCloud 管理控制台。
-2. 选择**产品与服务** > **关系型数据库 MySQL Plus**，进入集群管理页面。
+2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 MySQL Plus**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 选择**账号**页签，点击**添加账号**，弹出添加账号窗口。
    
-   ![配置账号信息](../../../_images/set_user_info.png)
+   <img src="../../../_images/set_user_info.png" alt="配置账号信息" style="zoom:50%;" />
 
 5. 配置账号信息，详细参数说明请参见[账号参数](#账号参数)。
 

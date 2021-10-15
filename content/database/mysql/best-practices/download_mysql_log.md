@@ -2,8 +2,7 @@
 title: "下载 MySQL 日志"
 description: 本小节主要介绍如何下载 MySQL Plus 日志。 
 keywords: mysql plus 日志,
-data: 2021-05-14T00:38:25+09:00
-weight: 1
+weight: 01
 collapsible: false
 draft: false
 ---

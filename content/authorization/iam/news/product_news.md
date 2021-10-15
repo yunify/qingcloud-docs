@@ -5,6 +5,15 @@ collapsible: false
 weight: 11
 
 product:
+    - time: 2021-09-26
+      title: 新增IAM用户管理功能
+      content: IAM用户管理功能上线啦。可以将您账户的权限，通过IAM策略，授予您创建的IAM用户。同时支持IAM用户进行编程访问。<br>欢迎大家前来体验！
+      url: https://docsv3.qingcloud.com/authorization/iam/manual/user/
+      tags:
+      - 新功能
+      - 新产品
+      zone: 全局
+
     - time: 2020-11-12
       title: 产品资源类身份支持[上海1区]
       content: 继[广东2区]、[亚太2区-A]之后，产品资源类身份（云服务器和集群信任载体）现已支持[上海1区]啦，以上几个区的云服务器和集群都将可以配置成为产品资源类身份的信任载体资源。<br>欢迎大家前来体验！

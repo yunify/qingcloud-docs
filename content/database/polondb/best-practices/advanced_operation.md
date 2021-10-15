@@ -2,8 +2,7 @@
 title: "高阶使用"
 description: 本小节主要介绍如何使用 QingCloud PolonDB 高阶功能。 
 keywords: polondb 登录节点, run_command_on_shards,run_command_on_workers
-data: 2021-05-14T00:38:25+09:00
-weight: 1
+weight: 10
 collapsible: false
 draft: false
 ---

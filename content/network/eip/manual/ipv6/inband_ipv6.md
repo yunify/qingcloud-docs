@@ -168,6 +168,60 @@ iface eth1 inet6 static
 
 3.查看您的 IP 和 ping6 测试网路的畅通情况。
 
+#### Debian Buster 10.6
+
+1.编辑/etc/network/interfaces文件，添加 eth1 的静态 IPv6 地址配置
+
+```
+auto eth1
+iface eth1 inet6 static
+  address 2402:e7c0:400:80::41
+  netmask 128
+```
+
+2.将配置文件保存之后，使用如下命令将配置应用到网卡 eth1。
+
+```
+root@i-pvr20syg:~# ifup eth1
+```
+
+3.查看您的 IP 和 ping6 测试网路的畅通情况。
+
+```
+root@i-pvr20syg:~# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 52:54:99:c0:74:87 brd ff:ff:ff:ff:ff:ff
+    inet 10.120.75.15/24 brd 10.120.75.255 scope global dynamic eth0
+       valid_lft 81981sec preferred_lft 81981sec
+    inet6 fe80::5054:99ff:fec0:7487/64 scope link 
+       valid_lft forever preferred_lft forever
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 52:54:99:12:48:d2 brd ff:ff:ff:ff:ff:ff
+    inet6 2402:e7c0:400:80::41/128 scope global 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::5054:99ff:fe12:48d2/64 scope link 
+       valid_lft forever preferred_lft forever
+```
+
+```
+root@i-pvr20syg:~# ping6 www.taobao.com
+PING www.taobao.com(240e:cf:9000:1::3fb (240e:cf:9000:1::3fb)) 56 data bytes
+64 bytes from 240e:cf:9000:1::3fb (240e:cf:9000:1::3fb): icmp_seq=1 ttl=49 time=64.1 ms
+64 bytes from 240e:cf:9000:1::3fb (240e:cf:9000:1::3fb): icmp_seq=2 ttl=49 time=63.10 ms
+64 bytes from 240e:cf:9000:1::3fb (240e:cf:9000:1::3fb): icmp_seq=3 ttl=49 time=64.1 ms
+64 bytes from 240e:cf:9000:1::3fb (240e:cf:9000:1::3fb): icmp_seq=4 ttl=49 time=64.0 ms
+64 bytes from 240e:cf:9000:1::3fb (240e:cf:9000:1::3fb): icmp_seq=5 ttl=49 time=64.1 ms
+^C
+--- www.taobao.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 9ms
+rtt min/avg/max/mdev = 63.990/64.061/64.129/0.167 ms
+```
 如有其它 Linux 发行版的需求，欢迎您通过提工单来技术交流。
 
 #### Windows Server 2008/2012/2016

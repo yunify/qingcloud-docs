@@ -3,6 +3,7 @@ title: "多可用区（同城多活）测试"
 description: test
 weight: 29
 draft: false
+keyword:  QingCloud, RabbitMQ, rabbitmq,  消息队列服务, 消息中间件
 ---
 
 ## 背景

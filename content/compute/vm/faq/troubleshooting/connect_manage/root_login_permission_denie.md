@@ -7,13 +7,11 @@ draft: false
 enableToc: false
 ---
 
-
-
 ## 概述
 
 使用root用户通过SSH登录Linux实例时，报“Permission denied, please try again”错误。本文主要介绍如何解决该问题。
 
-
+## 背景信息
 
 当使用SSH登录Linux系统的云服务器时，如果是root用户，即便输入了正确的密码，也会出现类似如下的错误信息。
 
@@ -28,7 +26,7 @@ enableToc: false
 error: Could not get shadow infromation for root.
 ```
 
- 
+## 解决方法
 
 ### 禁止root用户登录引起问题的解决方法
 
@@ -41,36 +39,34 @@ error: Could not get shadow infromation for root.
 
 1. 通过[管理终端](https://help.aliyun.com/document_detail/25433.htm)登录Linux系统的云服务器。
 
-
-1. 通过cat等命令查看`/etc/ssh/sshd_config`配置文件中是否包含类似如下的配置。
+2. 通过cat等命令查看`/etc/ssh/sshd_config`配置文件中是否包含类似如下的配置。
 
    ```
    PermitRootLogin no
    ```
-   
-   > 注：该参数的说明如下。
-   >
-   > - 未配置该参数（默认情况），或者将该参数值配置为“yes”，都允许root用户登录。只有该参数值设置为“no”时，才会禁止root用户登录。
-   >
-   >
-   > - 该参数只会影响root用户的SSH登录，不影响root用户通过[管理终端](https://help.aliyun.com/document_detail/25433.htm)等其它方式登录系统。
 
+> 注：该参数的说明如下。
+>
+> - 未配置该参数（默认情况），或者将该参数值配置为“yes”，都允许root用户登录。只有该参数值设置为“no”时，才会禁止root用户登录。
+>
+>
+> - 该参数只会影响root用户的SSH登录，不影响root用户通过[管理终端](https://help.aliyun.com/document_detail/25433.htm)等其它方式登录系统。
 
-1. 使用vi等编辑器，将该参数值设置为“yes”，或者删除该参数，或者注释（在最开头添加“#”号）整行配置。比如：
+3. 使用vi等编辑器，将该参数值设置为“yes”，或者删除该参数，或者注释（在最开头添加“#”号）整行配置。比如：
 
    ```
    # PermitRootLogin yes
    ```
 
-   > 注：在修改之前建议先对配置文件进行备份。
+> 注：在修改之前建议先对配置文件进行备份。
 
-2. 执行如下命令，重启SSH服务。
+4. 执行如下命令，重启SSH服务。
 
    ```
    service sshd restart
    ```
-   
-3. 尝试再次使用root用户登录服务器。
+
+5. 尝试再次使用root用户登录服务器。
 
 ### SELinux服务引起问题的解决方法
 
@@ -78,29 +74,19 @@ error: Could not get shadow infromation for root.
 
 #### 检查SELinux服务状态
 
-1. 通过
-
-   管理终端
-
-   登录Linux实例，执行如下命令，查看当前SELinux服务状态。
-
-   
+1. 通过管理终端，登录Linux实例，执行如下命令，查看当前SELinux服务状态。
 
    ```
-   /usr/sbin/sestatus -v 
+/usr/sbin/sestatus -v 
    ```
 
-   系统显示类似如下。
-
-   
+2. 系统显示类似如下。
 
    ```
    SELinux status:       enabled
    ```
 
-   > 提示：如果`SELinux status`参数是`enabled`即处于开启状态，是`disabled`即处于关闭状态。
-
- 
+   > 提示：如果`SELinux status`参数是`enabled`即处于开启状态，是`disabled`即处于关闭状态。 
 
 #### 临时关闭SELinux服务
 
@@ -111,8 +97,6 @@ error: Could not get shadow infromation for root.
 ```
 setenforce 0
 ```
-
- 
 
 #### 永久关闭SELinux服务
 

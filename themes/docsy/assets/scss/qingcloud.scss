@@ -107,6 +107,20 @@ header {
         }
     }
 }
+
+// 批量下载pdf
+.pdf-all-download-btn {
+	position: absolute;
+	right: 1rem;
+	color: #68747f;
+	&:hover {
+		color: #00a870;
+	}
+	i {
+		padding-right: 6px;
+	}
+}
+
 ul.timeline {
     list-style-type: none;
 }
@@ -124,6 +138,7 @@ ul.timeline {
 .timeline-outer-line.timeline-product{
     left: 0;
 }
+
 
 ul.timeline > li:last-child .timeline-outer-line {
     display:none;
@@ -155,6 +170,28 @@ ul.timeline > li:before {
         font-weight: 500;
         line-height: 1.33;
         color: #1d2c39;
+
+        span {
+            height: 12px;
+            font-size: 12px;
+            color: white;
+            padding: 0.25rem;
+        }
+        .news-tag-0{
+            margin-left: 0.25rem;
+            background: #595657;
+            border-radius: 3px 0px 0px 3px;
+        }
+        .news-tag-1{
+            background: #888888;
+        }
+        .news-tag-2{
+            background: #B4B4B7;
+            border-radius: 0px 3px 3px 0px;
+        }
+        .news-tag-max{
+            border-radius: 0px 3px 3px 0px;
+        }        
     }
     p {
         color: #8493a2;

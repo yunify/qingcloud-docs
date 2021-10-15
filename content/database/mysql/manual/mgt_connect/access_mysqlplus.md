@@ -2,7 +2,6 @@
 title: "连接数据库"
 description: 本小节主要介绍如何连接 MySQL Plus 数据库。 
 keywords: mysql plus 访问,访问数据库
-data: 2021-05-14T00:38:25+09:00
 weight: 10
 collapsible: false
 draft: false
@@ -13,10 +12,6 @@ draft: false
 MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用内网地址连接数据库，确保数据传输速率的同时兼顾数据安全。
 
 本小节主要介绍如何连接 MySQL Plus 数据库，以终端命令行方式连接数据库。
-
-## 约束限制
-
-- 设置**授权主机**为 IP 的账号，不支持通过外网访问当前集群。
 
 ## 前提条件
 
@@ -32,7 +27,7 @@ MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用
 ### 获取连接信息
 
 1. 登录 QingCloud 管理控制台。
-2. 选择**产品与服务** > **关系型数据库 MySQL Plus**，进入集群管理页面。
+2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 MySQL Plus**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**连接信息**模块，获取内网或外网地址。
    
@@ -45,6 +40,16 @@ MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用
 ```bash
 mysql -h <mysqlServerName> -P <port> -u <userName> -p -D <databaseName> -ssl-ca=<caNme> --ssl-cert=<> 
  ```
+
+> **说明**
+> 
+> 关系型数据库 MySQL Plus 可通过客户端使用以下两种方式连接数据库：
+> 
+> -开启 SSL，可以通过 SSL 方式连接数据库，具有更高的安全性。
+> 
+> -关闭 SSL，可以采用非 SSL 方式连接数据库。
+> 
+> 详细开关 SSL 连接，请参见[SSL 传输加密](../../ssl_trans_encryption)。
 
 |<span style="display:inline-block;width:80px">选项</span> |<span style="display:inline-block;width:240px">说明</span>|<span style="display:inline-block;width:280px">示例</span> |
 |:----|:----|:----|
@@ -75,4 +80,4 @@ mysql>
 
 ## 后续管理
 
-- [MySQL Plus 数据库连接不上怎么办？](../../../faq/access_problems.md)
+- [MySQL Plus 数据库连接不上怎么办？](../../../faq/access_problems)

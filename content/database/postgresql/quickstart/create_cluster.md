@@ -1,25 +1,25 @@
 ---
 title: "创建集群"
-description: 本小节主要介绍如何快速创建 PostgreSQ 集群实例。 
-keywords: PostgreSQ 实例, 创建集群,创建实例
+description: 本小节主要介绍如何快速创建 PostgreSQL 集群实例。 
+keywords: PostgreSQL 实例, 创建集群,创建实例
 weight: 10
 collapsible: false
 draft: false
 ---
 
-通过 AppCenter 集群管理控制台，您可以快速创建 PostgreSQ 集群。
+通过 AppCenter 集群管理控制台，您可以快速创建 PostgreSQL 集群。
 
-本小节主要介绍如何快速创建 PostgreSQ 集群。
+本小节主要介绍如何快速创建 PostgreSQL 集群。
 
 ## 前提条件
 
 - 已获取 QingCloud 管理工作台登录账号和密码，且账号已实名认证。
-- 已获取 PostgreSQ 集群操作权限。
+- 已获取 PostgreSQL 集群操作权限。
 
 ## 操作步骤
 
 1. 登录 QingCloud 管理工作台。
-2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 PostgreSQ**，进入 PostgreSQ 集群管理页面。
+2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 PostgreSQL**，进入 PostgreSQL 集群管理页面。
 3. 点击**立即部署**，进入应用部署页面。
 4. 选择**区域**。
    根据就近原则，选择实例所在区域。
@@ -37,7 +37,7 @@ draft: false
 
 6. 确认配置和费用信息无误后，点击**提交**，创建集群。
    
-   集群创建成功后，可在**集群管理**页面，查看和管理 PostgreSQ 集群。
+   集群创建成功后，可在**集群管理**页面，查看和管理 PostgreSQL 集群。
 
    ![集群列表](../../_images/cluster_list.png)
 
@@ -60,7 +60,7 @@ draft: false
 
 ### 主实例设置（自定义）
 
-集群主实例的硬件配置，包括云服务器规格、磁盘大小等。
+集群主实例的资源配置，包括云服务器规格、磁盘大小等。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
@@ -73,7 +73,7 @@ draft: false
 
 ### 只读实例设置（自定义）
 
-集群只读实例的硬件配置，包括云服务器规格、磁盘大小等。
+集群只读实例的资源配置，包括云服务器规格、磁盘大小等。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
@@ -87,7 +87,7 @@ draft: false
 
 ### proxy 实例设置（自定义）
 
-集群 proxy 实例的硬件配置，包括云服务器规格、磁盘大小等。
+集群 proxy 实例的资源配置，包括云服务器规格、磁盘大小等。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
