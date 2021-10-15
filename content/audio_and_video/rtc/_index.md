@@ -12,6 +12,10 @@ section1:
 section2:
   title: 用户指南
   children:
+    - title: 动态与公告
+      content: 产品动态
+      url: "/audio_and_video/rtc/news/product_news"
+
     - title: 产品简介
       content: 本节介绍什么是实时音视频 RTC。
       url: "/audio_and_video/rtc/intro/10_rtc"

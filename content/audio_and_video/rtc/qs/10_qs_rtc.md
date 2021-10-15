@@ -1,8 +1,10 @@
 ---
 title: "新手指引（Demo 体验）"
+description: 本章节指导您如何快速使用实时音视频 RTC 服务。
+keyword: 实时音视频 RTC, Demo
 draft: false
 collapsible: false
-weight: 20
+weight: 10
 ---
 
 本章节指导您如何快速使用实时音视频 RTC 服务。
@@ -109,23 +111,35 @@ weight: 20
 
 3. 点击 **joinChannel()**，加入频道。
 
-## 步骤六：离开频道
+   加入频道后，您可以将链接分享给好友，邀请好友一起试用。
 
-加入频道后，您可以将链接分享给好友，邀请好友一起试用。
+4. 点击**复制链接**，将链接复制成功后，分享给您的好友。
 
-1. 加入频道后，点击**复制链接**，将链接复制成功后，分享给您的好友。
+   > **说明：**
+   >
+   > 实时音视频 Demo 支持 PC 端和移动端体验音视频通信，您可以将该体验链接发送给任意 PC 端或移动端设备。
 
    ![](../../_images/qs_copy_link.png)
 
-2. 好友打开分享的链接，即可加入频道。
+   好友打开分享的链接，加入频道后，即可成功通信。
 
-   加入频道后，即可成功进行通话。
+   #### **PC 端**
 
    <img src="../../_images/qs_open_link.png" style="zoom:40%;" />
 
-3. 若通话结束，点击 **leaveChannel()**，即可离开频道。
+   #### **移动端**
 
-   ![](../../_images/qs_leave_channel.png)
+   <img src="../../_images/um_demo_mobile.png" style="zoom:40%;" />
+
+## 步骤六：离开频道
+
+- 若通话结束，您可以在页面右下角，点击 **leaveChannel()**，即可离开频道。
+
+  ![](../../_images/qs_leave_channel.png)
+
+- 通过体验链接加入的音视频通信的好友，可点击**离开频道**，离开频道。
+
+  <img src="../../_images/um_leave_demo.png" style="zoom:40%;" />
 
 
 

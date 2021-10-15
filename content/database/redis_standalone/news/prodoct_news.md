@@ -4,7 +4,11 @@ collapsible: false
 weight: 10
 
 product:
-
+    - time: 2021-10-09
+      title: Redis 5.0.11 - QingCloud 3.1.1 正式发布
+      content: 1.Redis 升级到5.0.11版本 ，增强了服务稳定性。<br>2.集成第三方监控，增加 Zabbix 5.x 监控支持。<br>3.修复由于部分情况下的脑裂, 导致的主节点掉线、无法自动故障转移等问题。
+      url: /database/redis_standalone/manual/service/
+      
     - time: 2020-12-28
       title: Redis 5.0.10 - QingCloud 3.0.1 正式发布
       content: 1.升级到 Redis 5.0.10 版本。<br>2.修复某些情况下切换私网后服务异常的问题。<br>3.修复某些情况下升级到 Redis 5.0.8 - QingCloud 3.0.0 版本后服务异常的问题。
