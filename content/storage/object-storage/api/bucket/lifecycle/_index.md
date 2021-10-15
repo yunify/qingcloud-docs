@@ -1,8 +1,6 @@
 ---
-title: "Lifecycle"
+title: "生命周期（Lifecycle）"
 ---
-
-# Bucket Lifecycle
 
 - [PUT Bucket Lifecycle](put_lifecycle/)
 - [GET Bucket Lifecycle](get_lifecycle/)
