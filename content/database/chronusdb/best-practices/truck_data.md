@@ -1,9 +1,8 @@
 ---
 title: "货车数据采集分析"
-description: 本小节主要介绍 QingCloud ChronuDB 采集和分析货车数据的应用。 
+description: 本小节主要介绍 QingCloud ChronusDB 采集和分析货车数据的应用。 
 keywords: chronusdb 货车数据, 
-data: 2021-05-14T00:38:25+09:00
-weight: 3
+weight: 30
 collapsible: false
 draft: false
 ---
@@ -21,13 +20,13 @@ draft: false
 1. 建立运输数据库。
 
     ```shell
-    echo "CREATE DATABASE freight" | curl 'http://ChronusDB 用户名:ChronusDB 密码@高可用 IP:8123/' --data-binary @-
+    $ echo "CREATE DATABASE freight" | curl 'http://ChronusDB 用户名:ChronusDB 密码@高可用 IP:8123/' --data-binary @-
     ```
 
 2. 建立货车信息表，包含货车车队、司机、型号、设备信息、负载能力、油耗能力、正常燃油消耗指标，和经度、维度、高度、年级、实际油耗这些监控项。
     
     ```shell
-     echo "CREATE TABLE freight.truck_metrics_tags
+     $ echo "CREATE TABLE freight.truck_metrics_tags
      (
        time Datetime,
        name LowCardinality(String),
@@ -57,7 +56,7 @@ draft: false
 3. 建立分布式表，以下通过创建使用物理一致分布式表为示例。
 
     ```shell
-     echo "CREATE TABLE freight.truck_metrics_tags_physical_distributed
+     $ echo "CREATE TABLE freight.truck_metrics_tags_physical_distributed
      (
        time Datetime,
        name LowCardinality(String),
@@ -86,7 +85,7 @@ draft: false
 1. 查询某辆货车的最新位置。
 
      ```bash 
-     echo "SELECT
+     $ echo "SELECT
         name,
         driver,
         latitude,
@@ -100,7 +99,7 @@ draft: false
 2. 查询每辆货车的最新位置。
 
      ```bash 
-     echo "SELECT
+     $ echo "SELECT
          name,
          driver,
          longitude,
@@ -114,7 +113,7 @@ draft: false
 3. 查询耗油量最低的货车。
 
      ```bash 
-     echo "SELECT
+     $ echo "SELECT
          name,
          driver,
          fuel_state
@@ -152,7 +151,7 @@ draft: false
 6. 查询驾驶时间较长的货车：在4小时内驾驶时长超过20分钟的货车。
 
      ```bash 
-     echo "SELECT
+     $ echo "SELECT
         name,
         driver,
         toStartOfInterval(time, toIntervalMinute(10)) AS ten_minutes
@@ -169,7 +168,7 @@ draft: false
 7. 查询驾驶时间较长的货车:在过去24小时内行驶超过1小时的货车。
 
      ```bash 
-     echo "SELECT
+     $ echo "SELECT
         name,
         driver,
         toStartOfInterval(time, toIntervalMinute(10)) AS ten_minutes
@@ -186,7 +185,7 @@ draft: false
 8. 查询每支车队的平均油耗与预计油耗之比。
 
      ```bash 
-     echo "SELECT
+     $ echo "SELECT
         fleet,
         avg(fuel_consumption) AS avg_fuel_consumption,
         avg(nominal_fuel_consumption) AS projected_fuel_consumption
@@ -198,7 +197,7 @@ draft: false
 9. 查询每天驾驶时间的平均值。
 
      ```bash 
-     echo "SELECT
+     $ echo "SELECT
         fleet,
         name,
         driver,
@@ -215,7 +214,7 @@ draft: false
 10. 查询每辆货车每车队的平均负荷。
 
      ```bash 
-     echo "SELECT
+     $ echo "SELECT
         fleet,
         model,
         load_capacity,

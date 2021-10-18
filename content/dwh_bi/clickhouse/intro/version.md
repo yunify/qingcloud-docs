@@ -12,6 +12,15 @@ QingCloud ClickHouse 根据 QingCloud AppCenter 功能特点，定制`基础版`
 
 ## 版本历程
 
+### v1.1.7
+
+`企业版-1.1.7` 和 `基础版-1.1.7` 基于 ClickHouse-21.1.3.32 内核版本构建。
+
+- 新增 MaterializeMySQL 引擎，支持实时从 MySQL 同步数据，可极大提升查询性能和数据同步的时效性；
+- 新开放 max_concurrent_queries 参数，支持[修改最大连接数](../../manual/config_para/check_para)；
+- 新增[日志服务功能](../../manual/mgt_log/enable_log_service)，支持查看数据库服务日志；
+- 新增[对象存储服务策略功能](../../manual/cold_warm_storage/storage_info)，支持数据多磁盘存储和冷热数据分层存储。
+
 ### v1.1.6
 
 `企业版-1.1.6` 和 `基础版-1.1.6` 基于 ClickHouse-21.1.3.32 内核版本构建。

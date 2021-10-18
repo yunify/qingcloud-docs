@@ -4,14 +4,23 @@ collapsible: false
 weight: 10
 
 product:
+    - time: 2021-10-30
+      title: ChronusDB 1.0.8 版本正式上线
+      content: 时序数据库 ChronusDB 1.0.8 新上线。<br>- 新增 MaterializeMySQL 引擎，支持实时从 MySQL 同步数据；<br>- 新增对象存储服务策略，支持冷热数据分层存储，降低数据存储成本；<br>- 新开放 max_concurrent_queries 参数，支持修改最大连接数；<br>- 新增日志服务功能，支持在线查看数据库服务日志。
+      url: ../../intro/version/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 全区域
+
     - time: 2021-08-23
       title: ChronusDB 1.0.7 版本正式上线
-      content: 时序数据库 ChronusDB 1.0.7 新上线。<br>- 内核版本升级到 ClickHouse-21.1.3.32。<br>- 支持使用 SQL 管理用户。 <br>- 支持 `query-log` 数据库查询日志。 <br>- 开放 system 库。
+      content: 时序数据库 ChronusDB 1.0.7 新上线。<br>- 内核版本升级到 ClickHouse-21.1.3.32；<br>- 支持使用 SQL 管理用户； <br>- 支持 `query-log` 数据库查询日志。 <br>- 开放 system 库。
       url: ../../intro/version/
 
     - time: 2021-06-30
       title: ChronusDB 1.0.6 版本正式上线
-      content: 时序数据库 ChronusDB 1.0.6 新上线。<br>- 内核版本升级到 ClickHouse-19.17.6.36。<br>- 新增私网切换功能，支持管理私有网络和节点 IP。
+      content: 时序数据库 ChronusDB 1.0.6 新上线。<br>- 内核版本升级到 ClickHouse-19.17.6.36；<br>- 新增私网切换功能，支持管理私有网络和节点 IP。
       url: ../../manual/mgt_connect/mgt_vxnet/
     
     - time: 2021-01-22
