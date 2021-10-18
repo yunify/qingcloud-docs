@@ -2,7 +2,7 @@
 title: "产品动态"
 date: 2021-01-05
 collapsible: false
-weight: 12
+weight: 1
 
 product:
     - time: 2021-01-05
@@ -17,24 +17,23 @@ product:
     - time: 2020-02-23
       title: 新增 Append Object 接口
       content: 用于以追加写的方式上传对象到存储桶，通过 Append Object 接口创建的对象类型为 appendable。
-      # todo update url
       url: /storage/object-storage/api/object/append/
 
     - time: 2019-09-04
       title: List Buckets 接口支持分页
-      url: /storage/object-storage/api/bucket/list_multipart_uploads
+      url: /storage/object-storage/api/service/get/#请求参数
 
     - time: 2018-08-01
       title: 图片处理功能增加部分 Exif 信息支持
-      url: /storage/object-storage/manual/data_process/image_process/
+      url: /storage/object-storage/manual/console/data_process/image_process/
 
     - time: 2018-08-01
       title: List Objects (Bucket Get) 接口 增加 "has_more" 标志
-      url: /storage/object-storage/api/bucket/get
+      url: /storage/object-storage/api/bucket/basic_opt/get/#响应体
 
     - time: 2018-05-16
       title: 上线生命周期功能
-      url: /storage/object-storage/manual/lifecycle
+      url: /storage/object-storage/manual/console/bucket_manage/lifecycle
 
     - time: 2018-05-16
       title: 上线低频存储功能
@@ -64,18 +63,18 @@ product:
 
     - time: 2017-07-19
       title: 新增图片处理功能
-      url: /storage/object-storage/manual/data_process/image_process
+      url: /storage/object-storage/manual/console/data_process/image_process
 
     - time: 2017-06-28
       title: 新增第三方图片鉴黄功能
-      url: /storage/object-storage/manual/data_process/tupu_porn
+      url: /storage/object-storage/manual/console/data_process/tupu_porn
 
     - time: 2017-05-30
       title: 支持分段复制
       url: /storage/object-storage/api/object/multipart/copy
 
     - time: 2017-05-02
-      title: 分段上传改进，支持同一个 object 的并行多个上传过程，相互不影响
+      title: 分段上传改进，支持同一个 Object 的并行多个上传过程，相互不影响
       url: /storage/object-storage/api/object/multipart/upload
 
     - time: 2017-01-13
@@ -83,28 +82,28 @@ product:
       url: /storage/object-storage/api/object/multipart/list
 
     - time: 2016-12-21
-      title: 新增对象抓取 (fetch) 接口
-      url: /storage/object-storage/api/object/fetch
+      title: 新增 Fetch Object 接口
+      url: /storage/object-storage/api/object/basic_opt/fetch
 
     - time: 2016-12-16
       title: 接口 GET Object 支持设置响应头
-      url: /storage/object-storage/api/object/get
+      url: /storage/object-storage/api/object/basic_opt/get
 
     - time: 2016-11-09
       title: 新增对象批量删除接口
-      url: /storage/object-storage/api/object/delete
+      url: /storage/object-storage/api/object/basic_opt/delete
 
     - time: 2016-10-17
       title: 新增对象移动接口
-      url: /storage/object-storage/api/object/move
+      url: /storage/object-storage/api/object/basic_opt/move
 
     - time: 2016-10-17
       title: 支持对象数据加密
-      url: /storage/object-storage/api/common/encryption
+      url: /storage/object-storage/api/object/encryption
 
     - time: 2016-09-28
-      title: 新增存储空间外部镜像设置
-      url: /storage/object-storage/api/bucket/cors
+      title: 新增 Bucket 外部镜像设置
+      url: /storage/object-storage/api/bucket/external_mirror/
 
     - time: 2016-09-12
       title: 新增表单上传
@@ -112,20 +111,20 @@ product:
 
     - time: 2016-08-15
       title: 接口 GET Bucket 响应体增加元素 etag
-      url: /storage/object-storage/api/bucket/get
+      url: /storage/object-storage/api/bucket/basic_opt/get/#响应体
 
     - time: 2016-08-15
       title: 错误返回中，响应体增加元素 request_id
-      url: /storage/object-storage/api/error_code
+      url: /storage/object-storage/api/error_code/#错误返回格式
 
     - time: 2016-08-04
-      title: 新增对象拷贝接口，支持存储空间内和跨存储空间的对象复制操作
+      title: 新增对象拷贝接口，支持 Bucket 内和跨 Bucket 的对象复制操作
       # content: PUT Object - Copy,- |
-      url: /storage/object-storage/api/object/copy
+      url: /storage/object-storage/api/object/basic_opt/copy/
 
     - time: 2016-08-04
-      title: 新增存储空间策略设置接口，支持存储策略
-      url: /storage/object-storage/manual/access_control
+      title: 新增 Bucket 策略设置接口，支持存储策略
+      url: /storage/object-storage/api/bucket/policy/
 
     - time: 2016-08-04
       title: 新增跨域访问控制 (CORS) 接口，支持用户自定义设置 CORS 策略
@@ -137,19 +136,15 @@ product:
 
     - time: 2016-07-15
       title: 默认文件类型由 application/oct-stream 变更为 application/octet-stream
-      url: /storage/object-storage/api/object/put
+      url: /storage/object-storage/api/common_header/#content-type
 
     - time: 2016-07-15
-      title: 接口 List Parts 响应体增加元素 etag
-      url: /storage/object-storage/api/object/multipart/list
-
-    - time: 2016-07-15
-      title: 接口 List Objects 字段名 marker 变更为 next_marker
-      url: /storage/object-storage/api/object/multipart/list
+      title: 接口 List Multipart Parts 响应体增加元素 etag
+      url: /storage/object-storage/api/object/multipart/list/#响应消息体
 
     - time: 2016-07-15
       title: 请求头 Content-MD5 字段值改为 base64 编码
-      url: /storage/object-storage/api/object/put
+      url: /storage/object-storage/api/object/basic_opt/put/#标准-http-头
 
     - time: 2016-06-18
       title: 兼容 AWS S3 接口

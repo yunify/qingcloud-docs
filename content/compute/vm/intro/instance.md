@@ -20,6 +20,8 @@ keyword: 云服务器, QingCloud, 实例, 虚拟机
 
 ## 企业级
 
+计算型，通用型和内存型云服务器统称为e3云服务器。
+
 - ### [计算型 ec3](../../intro/enterprise/#计算型-ec3)
 
 - ### [通用型 eg3](../../intro/enterprise/#通用型-eg3)

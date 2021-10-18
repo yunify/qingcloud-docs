@@ -2,7 +2,7 @@
 title: "HPC高性能计算"
 linkTitle: "HPC高性能计算"
 weight: 2
-draft: true
+draft: false
 collapsible: true
 type: "product"
 
@@ -22,27 +22,27 @@ Section2:
 
     - title: 产品简介
       content: 产品简介
-      url: "intro/intro"
+      url: "/compute/hpc/intro/intro"
 
     - title: 计费指南
       content: 计费指南
-      url: "billing/price"
+      url: "/compute/hpc/billing/price"
 
     - title: 快速入门
       content: 快速入门
-      url: "quick-start/base"
+      url: "/compute/hpc/quick-start/base"
 
     - title: 操作指南
       content: 操作指南
-      url: "manual/base"
+      url: "/compute/hpc/manual/base"
 
     - title: 最佳实践
       content: 最佳实践
-      url: "best-practices/edu"
+      url: "/compute/hpc/best-practices/edu"
 
     - title: 常见问题
       content: 常见问题
-      url: "faq/faq"
+      url: "/compute/hpc/faq/faq"
 
 section3:
   title: 开发者指南
