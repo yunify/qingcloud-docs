@@ -14,10 +14,13 @@ section1:
 Section2:
   title: 用户指南
   children:
+<<<<<<< HEAD
     - title: 动态与公告
       content: 产品动态
       url: "news/product_news/"
 
+=======
+>>>>>>> upstream/master
     - title: 产品简介
       content: 产品简介
       url: "intro/intro/"

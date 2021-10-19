@@ -9,9 +9,12 @@ draft: false
 
 通过 AppCenter 集群管理控制台，您可以快速部署 Deep Learning 应用。本小节主要介绍如何快速部署 Deep Learning 应用。
 
+<<<<<<< HEAD
 <video src="https://appcenter-docs.pek3a.qingstor.com/developer-guide/docs/videos/AppCenter2.0_Training_Fix.mp4" controls="controls">
 您的浏览器不支持 video 标签。
 </video>
+=======
+>>>>>>> upstream/master
 
 ## 前提条件
 

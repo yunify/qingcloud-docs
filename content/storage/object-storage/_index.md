@@ -48,7 +48,7 @@ section3:
 
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: "sdk/python/"
+      url: "/storage/object-storage/sdk/"
       
     - title: S3 兼容
       content: S3 兼容说明
@@ -66,19 +66,22 @@ section4:
         - title: 产品优势
           url: "/storage/object-storage/intro/object-storage/#产品优势"
 
+        - title: 功能简介
+          url: "/storage/object-storage/intro/function_list/"       
 
-    - title: 上手：创建和管理 Bucket 存储空间
-      content: 创建独立的存储空间，管理存储空间的访问权限，设置 CORS 等。
+
+    - title: 上手：创建和管理 Bucket
+      content: 创建独立的 Bucket，管理 Bucket 的访问权限，设置 CORS 等。
       vice_title: 上手的第一步
       children:
-        - title: 创建存储空间 Bucket
-          url: "/storage/object-storage/manual/bucket_manage/"
+        - title: 创建 Bucket
+          url: "/storage/object-storage/manual/console/bucket_manage/basic_opt/"
 
         - title: 通过控制台上传文件
-          url: "/storage/object-storage/manual/object_manage/"
+          url: "/storage/object-storage/manual/console/object_manage/basic_opt/"
 
-        - title: 设置存储空间的访问权限
-          url: "/storage/object-storage/manual/access_control/"
+        - title: 设置 Bucket 的访问权限
+          url: "/storage/object-storage/manual/console/bucket_manage/access_control/"
 ---
 
 
