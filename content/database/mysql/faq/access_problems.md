@@ -2,7 +2,7 @@
 title: "故障排查｜无法连接数据库"
 description: 本小节主要介绍无法连接 MySQL Plus 数据库的排查方案。 
 keyword: mysql plus 无法连接,无法访问
-weight: 20
+weight: 100
 collapsible: false
 draft: false
 ---

@@ -7,10 +7,23 @@ collapsible: false
 draft: false
 
 product:
+    - time: 2021-10-12
+      title: 支持逻辑备份
+      content: MySQL Plus 全新支持基于数据库对象（表、索引、存储过程等）的逻辑备份，并支持恢复集群到指定时间点。
+      url: ../../manual/backup_restoration/backup_info/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 全部
+
     - time: 2021-07-12
       title: MySQL Plus 支持外网地址连接
       content: MySQL Plus 通过在管理控制台申请外网地址和设置 IP 白名单，支持使用外网地址连接数据库。
       url: ../../manual/mgt_connect/enable_external_network/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 全部
 
     - time: 2021-07-09
       title: MySQL Plus 1.0.9 版本正式上线

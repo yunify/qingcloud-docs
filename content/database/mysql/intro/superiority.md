@@ -2,7 +2,7 @@
 title: "产品优势"
 description: 本小节主要介绍 MySQL Plus 产品优势。 
 keyword: mysql plus 产品优势 
-weight: 25
+weight: 30
 collapsible: false
 draft: false
 ---

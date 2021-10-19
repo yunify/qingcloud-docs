@@ -47,8 +47,6 @@ draft: false
   
   https://www.ipip.net/
 
-  https://ifconfig.me/
-
 - 通过命令行查询
 
   执行以下任意一个命令，即可获取本地公网 IP 地址。
@@ -60,7 +58,7 @@ draft: false
    $ curl ifconfig.io
    $ curl myip.ipip.net
    
-   #Windows
+   # Windows
    >telnet cip.cc
    >ftp cip.cc
   ```
