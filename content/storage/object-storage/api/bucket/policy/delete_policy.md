@@ -2,15 +2,9 @@
 title: "DELETE Bucket Policy"
 ---
 
-# DELETE Bucket Policy
+该接口用于删除 Bucket 的访问策略相关设置。QingStor 对象存储定义访问策略为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
 
-删除存储空间的访问策略，Policy 是存储空间的子资源(subresource)，只有存储空间所 有者才能删除。
-
-获取 Policy 请参见 [GET Bucket Policy](../get_policy) 。
-
-设置 Policy 请参见 [PUT Bucket Policy](../put_policy) 。
-
-## Request Syntax
+## 请求语法
 
 ```http
 DELETE /?policy HTTP/1.1
@@ -19,25 +13,33 @@ Date: <date>
 Authorization: <authorization-string>
 ```
 
-## Request Parameters
+## 请求参数
 
-没有请求参数
+无。
 
-## Request Headers
+## 请求头
 
-参见[公共请求头](../../../common_header#请求头字段-request-header)
+此接口仅包含公共请求头。关于公共请求头的更多信息，请参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
 
-## Request Body
+## 请求消息体
 
-没有请求消息体
+无。
 
-## Response Headers
+## 响应头
 
-参见[公共响应头](../../../common_header#响应头字段-request-header)
+此接口仅包含公共响应头。关于公共响应头的更多信息，请参见 [公共响应头](/storage/object-storage/api/common_header/#响应头字段-response-header)。
 
-## Example
+## 错误码
 
-### Example Request
+| 错误码 | 错误描述 | HTTP 状态码 |
+| --- | --- | --- |
+| OK | 成功删除 Bucket 的访问策略（Policy）相关配置 | 204 |
+
+其他错误码可参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
+
+## 示例
+
+### 请求示例
 
 ```http
 DELETE /?policy HTTP/1.1
@@ -46,7 +48,7 @@ Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```
 
-### Example Response
+### 响应示例
 
 ```http
 HTTP/1.1 204 NoContent
@@ -56,3 +58,10 @@ Content-Length: 0
 Connection: close
 x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
 ```
+
+## SDK
+
+此接口所对应的各语言 SDK 可参考 [SDK 文档](/storage/object-storage/sdk/)。
+
+
+

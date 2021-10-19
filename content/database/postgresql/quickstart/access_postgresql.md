@@ -1,7 +1,7 @@
 ---
 title: "连接数据库"
-description: 本小节主要介绍如何快速连接 PostgreSQ 数据库。 
-keywords: PostgreSQ 访问,访问数据库
+description: 本小节主要介绍如何快速连接 PostgreSQL 数据库。 
+keywords: PostgreSQL 访问,访问数据库
 weight: 20
 collapsible: false
 draft: false
@@ -11,7 +11,7 @@ draft: false
 
 PostgreSQL 可通过 psql 命令行客户端直接连接，还可以使用图形化的数据库客户端连接。图形化客户端包括 pgAdmin 、DbVisualizer 、DBeaver 等。
 
-本小节主要介绍如何连接 PostgreSQ 数据库，以终端命令行方式连接数据库。
+本小节主要介绍如何连接 PostgreSQL 数据库，以终端命令行方式连接数据库。
 
 ## 前提条件
 

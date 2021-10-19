@@ -7,13 +7,16 @@ draft: false
 weight: 3
 ---
 
+该 API 接口用于结束一个分段上传，从而获得一个完整的 Object。当一个分段上传完成后，用户未调用该接口，则该分段上传仍然处于未完成的状态，此时调用 GET 请求获得该 Object 会返回错误。
 
 
-当分段上传完毕，需要发送此请求结束此分段上传，从而获得一个完整的对象。未调用此接口，分段上传处于未完成的状态，此时调用 GET 请求获得该对象会返回错误。该请求需要对存储空间有可写权限。
+## 使用须知
 
-> 如果存储空间被设置为对匿名用户可写，则请求不需要携带认证信息。然而如果携带了认证信息，但是认证用户不拥有该存储空间的可写权限，则请求该接口会返回权限错误。
+- 该操作要求请求者对指定的 Bucket 拥有可读权限。
+- 若指定的 Bucket 被设置为匿名用户可写，则请求中可不携带用户认证信息；
+- 若指定的 Bucket 被设置为匿名用户可写，但请求中仍然携带了用户认证信息，则 QingStor 对象存储仍然会对该用户进行认证，当 QingStor 对象存储认证该用户不拥有该 Bucket 的可写权限，该请求返回错误。
 
-## Request Syntax
+## 请求语法
 
 ```http
 POST /<object-name>?upload_id=<upload-id> HTTP/1.1
@@ -22,52 +25,57 @@ Date: <date>
 Authorization: <authorization-string>
 ```
 
-## Request Parameters
+## 请求参数
 
-| Name | Type | Description | Required |
+调用该接口时，用户可在 URL 中添加以下参数用以设置响应头中的响应字段。
+
+| 参数名 | 类型 | 说明 | 是否必须 |
 | --- | --- | --- | --- |
-| upload_id | String | 初始化分段上传时，响应消息体里返回的 upload_id | Yes |
+| upload_id | String | 初始化分段上传时，响应消息体里返回的 `upload_id` | 是 |
 
-## Request Headers
+## 请求消息头
 
-参见[公共请求头](../../../common_header/#请求头字段-request-header)
+### 标准 HTTP 头
 
-对象加密，参见[加密请求头](../../../common/encryption/#加密请求头)
+读取分段上传合并后的 Object 全部内容所需时间较长，为了避免阻塞，QingStor 对象存储服务不会自动为合并后的文件计算 ETag 值，需要用户自行在调用此接口时设置。此处设置的 ETag 值会在用户调用 HEAD Object 接口时，通过响应头返回。
 
-| Name | Type | Description | Required |
+| 字段名 | 类型 | 说明 | 是否必须 |
 | --- | --- | --- | --- |
-| ETag | String | 分段上传合并后的对象，因为读取大文件全部内容所需要时间较长，为了避免阻塞，对象存储服务不会自动为合并后的文件计算 ETag 值，需要用户自行在调用此接口时设置，该值会在调用 HEAD object 接口时，通过响应头返回。该值请使用 HTTP 规范所规定的格式 [https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.19](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.19) | No |
+| ETag | String | 该值请使用 [HTTP 规范](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.19) 所规定的格式。| 否 |
 
-## Request Body
+此接口还需要包含 Host、Date 等公共请求头。详细内容可参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
 
-请求内容为一个json结构，参看下面的 Example。
+### 加密对象
 
-part_number 不一定需要连续，但需要递增。允许在最终合并的分段对象排除掉某些已上传分段。
+若用户操作的 Object 为加密对象，则需提供相应的加密请求头。具体可参考 [加密对象](/storage/object-storage/api/object/encryption) 相关内容，添加相应请求头。
 
-| Name | Type | Description |
+## 请求消息体
+
+调用该 API 需携带如 [请求示例](#请求示例) 中的 Json 消息体。该消息体各字段说明如下：
+
+| 名称 | 类型 | 说明 |
 | --- | --- | --- |
-| object_parts | List | 消息体顶层, 需要按照 part_number 递增排序 |
-| part_number | Integer | 分段序号, 大于等于0, 小于等于10000 |
-| etag        | String  | 可选，对该分段内容的校验码 |
+| object_parts | List | 消息体顶层，需要按照 `part_number` 递增排序 |
+| part_number | Integer | 分段序号，大于等于 0，小于等于 10000 |
+| etag        | String  | 该分段内容的校验码，可选 |
 
-## Status Code
+**备注：**
+- `part_number` 不一定需要连续，但需要递增。
+- 允许用户在最终合并分段时，排除掉某些已上传分段。
 
-成功则返回 201, 失败的返回码参考[错误码列表](../../../error_code/)
+## 响应头
 
-## Response Headers
+若对象被加密，服务端将返回 [加密响应头](/storage/object-storage/api/object/encryption/#加密响应头)。
 
-参见[公共响应头](../../../common_header/#响应头字段-request-header)
+其他公共响应头可参考：[公共响应头](/storage/object-storage/api/common_header/#响应头字段-response-header)。
 
-若对象被加密，服务端将返回[加密响应头](../../../common/encryption/#加密请求头)
+## 错误码
 
-## Response Body
+成功则返回 201，其他错误码可参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
+## 示例
 
-
-## Example
-
-### Example Request
+### 请求示例
 
 ```http
 POST /large-object?upload_id=4d26b37a469230619604ecdc0e314782 HTTP/1.1
@@ -84,7 +92,7 @@ ETag: "0c2f573d81194064b129e940edcefe9b"
 }
 ```
 
-### Example Response
+### 响应示例
 
 ```http
 HTTP/1.1 201 CREATED
@@ -94,3 +102,8 @@ Content-Length: 0
 Connection: close
 x-qs-request-id: 37fed66c441a11e5b95f52542e6ce14b
 ```
+
+## SDK
+
+此接口所对应的各语言 SDK 可参考 [SDK 文档](/storage/object-storage/sdk/)。
+

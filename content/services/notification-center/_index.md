@@ -20,7 +20,7 @@ Section2:
 
     - title: 操作指南
       content: 查看通知消息和配置通知列表。
-      url: "manual/operation/"
+      url: "manual/notiify/"
 
 section3:
   title: 开发者指南
@@ -55,7 +55,6 @@ section4:
 
 
 ---
-
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->
 <!-- section1 为产品index页面 主标题 副标题 video  video_img为视频图片  -->
