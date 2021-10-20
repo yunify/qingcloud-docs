@@ -23,4 +23,8 @@ weight: 2
 
 输入用户名和密码，集群的用户名和密码，点击连接即可，连接上后可以通过本地进行上传、下载、删除文件等等一些列操作。
 
+<<<<<<< HEAD
+![image-20211019161442027](../_images/image-20211019161442027.png)
+=======
 ![image-20211019161442027](/Users/huimiao/Library/Application Support/typora-user-images/image-20211019161442027.png)
+>>>>>>> upstream/master
