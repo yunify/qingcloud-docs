@@ -6,7 +6,7 @@ product:
     - time: 2021-10-15
       title: 支持微信&支付宝购买资源包
       content: 多用途资源包（互动通信、旁路推流、云录制）可使用微信&支付宝进行扫码支付，轻松便捷是您更方便购买产品资源用量。
-      url: /audio_and_video/rtc/qs/10_qs_rtc
+      url: /audio_and_video/rtc/usermanual/10_purchase
       tags:
       - 新功能
 
