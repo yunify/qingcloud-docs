@@ -1,7 +1,7 @@
 ---
 title: "Instance Types"
 description: 
-draft: true
+draft: false
 ---
 
 青云给云服务器定义了几种经典配置
