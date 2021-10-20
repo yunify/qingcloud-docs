@@ -8,17 +8,15 @@ draft: false
 enableToc: false
 ---
 
-#### 问题描述
+## 问题描述
 
 使用MSTSC方式登录Windows云服务器时，系统报错提示“内部错误”。
 
-#### 处理方法
+## 解决方法
 
 1. 在本地主机以管理员身份运行cmd。
 
-2. 执行
-
-   netsh winsock reset
+2. 执行`netsh winsock reset`命令。
 
    ![](../../../_images/win_cant_loggin.png)
 

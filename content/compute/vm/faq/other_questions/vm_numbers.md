@@ -1,6 +1,5 @@
 ---
 title: "如果我有多台云服务器需要访问外网，是不是每台云服务器都需要绑定一个公网 IP？ "
-date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
 enableToc: false

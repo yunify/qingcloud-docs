@@ -28,7 +28,7 @@
 						<div class="timeline-outer-line timeline-product"></div>
 						<div class="col-sm-12 timeline-outer">
 							<p>{{ .time }}</p>
-							<h2 id="{{ .title }}">{{ .title }}{{if .tag_list}}{{ $length := len .tag_list}}{{ range $i,$v:=(first 3 .tag_list)}}<span class="news-tag-{{$i}} {{if eq (add $i 1) $length}}news-tag-max{{end}}">{{$v}}</span>{{ end }}{{ end }}</h2>
+							<h2 id="{{ .title }}">{{ .title }}{{if .tags}}{{ $length := len .tags}}{{ range $i,$v:=(first 3 .tags)}}<span class="news-tag-{{$i}} {{if eq (add $i 1) $length}}news-tag-max{{end}}">{{$v}}</span>{{ end }}{{ end }}</h2>
 							{{if .zone}}
 							<p>适用范围：{{.zone}}</p>
 							{{ end }}
