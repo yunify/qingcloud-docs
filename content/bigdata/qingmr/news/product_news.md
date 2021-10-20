@@ -4,9 +4,17 @@ collapsible: false
 weight: 10
 
 product:
+    - time: 2021-10-12
+      title: QingMR 2.6.0 – Core 版本上线
+      content: QingMR 2.6.0 – Core 版本全新上线。<br>- 升级 Hadoop、Spark、Hive、Flink 至新版本；<br>- 新增 Ranger 组件，支持 Ranger hive 插件对 Hive 的权限控制。
+      url: ../../intro/version/
+      tags:
+      - 新功能
+      zone: 全部
+
     - time: 2020-03-30
       title: QingMR 2.5.2 – Core 版本上线
-      content: QingMR 2.5.2 – Core 版本全新上线。新增 s3.endpoint 配置参数用于指定兼容 S3 的对象存储的 endpoint，主要用于私有云不能访问公有云对象存储的场景。
+      content: QingMR 2.5.2 – Core 版本全新上线。<br>- 新增 s3.endpoint 配置参数用于指定兼容 S3 的对象存储的 endpoint。
       url: ../../intro/version/
 
     - time: 2019-10-30

@@ -92,7 +92,7 @@ hive> SELECT AVG(a.foo) FROM invites a WHERE a.ds='2008-08-15';
 
     在整个集群生效，具体请在配置参数页面进行切换：
 
-![配置hive_engine](../../../_images/hive_engine_switch.png)
+![配置hive_engine](../../_images/hive_engine_switch.png)
 
 - 会话级别的切换  
 

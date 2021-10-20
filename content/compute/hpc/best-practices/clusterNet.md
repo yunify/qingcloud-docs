@@ -13,6 +13,7 @@ weight: 2
 
 1. 在VPC网络产品中，点击创建VPC网络，选择“小型”等网络类型，说明：集群不支持免费型
 
+<<<<<<< HEAD
 ![image-20211019154008325](../_images/image-20211019154008325.png)
 
 2. 系统会自动配置该vpc网络绑定的私有网络，点击创建VPC网络
@@ -22,6 +23,17 @@ weight: 2
 3. 系统将创建小型的VPC网路并绑定了私有网络，状态为活跃时表示创建完成
 
    ![image-20211019154748884](../_images/image-20211019154748884.png)
+=======
+![image-20211019154008325](/Users/huimiao/Library/Application Support/typora-user-images/image-20211019154008325.png)
+
+2. 系统会自动配置该vpc网络绑定的私有网络，点击创建VPC网络
+
+   ![image-20211019154556326](/Users/huimiao/Library/Application Support/typora-user-images/image-20211019154556326.png)
+
+3. 系统将创建小型的VPC网路并绑定了私有网络，状态为活跃时表示创建完成
+
+   ![image-20211019154748884](/Users/huimiao/Library/Application Support/typora-user-images/image-20211019154748884.png)
+>>>>>>> upstream/master
 
 
 
@@ -29,11 +41,19 @@ weight: 2
 
 1. 公网IP页面创建公网IP，选择需要的带宽点击提交，说明：集群仅支持外部绑定模式的IP
 
+<<<<<<< HEAD
    <img src="../_images/image-20211019154855351.png" alt="image-20211019154855351" style="zoom:50%;" />
 
 2. 创建完成后会获得公网的IP
 
    <img src="../_images/image-20211019155022628.png" alt="image-20211019155022628" style="zoom:50%;" />
+=======
+   <img src="/Users/huimiao/Library/Application Support/typora-user-images/image-20211019154855351.png" alt="image-20211019154855351" style="zoom:50%;" />
+
+2. 创建完成后会获得公网的IP
+
+   <img src="/Users/huimiao/Library/Application Support/typora-user-images/image-20211019155022628.png" alt="image-20211019155022628" style="zoom:50%;" />
+>>>>>>> upstream/master
 
 
 
@@ -53,12 +73,17 @@ weight: 2
 
 1. VPC绑定公网IP，选择未分配的公网IP
 
+<<<<<<< HEAD
    <img src="../_images/image-20211019155556218.png" alt="image-20211019155556218" style="zoom:50%;" />
+=======
+   <img src="/Users/huimiao/Library/Application Support/typora-user-images/image-20211019155556218.png" alt="image-20211019155556218" style="zoom:50%;" />
+>>>>>>> upstream/master
 
 2. 配置端口转发，点击VPC详情，选择“管理配置”标签的“端口转发” 页面，点击“添加规则”，填入端口号和内网IP
 
    ，源端口：22022，内网IP：登录节点的内网IP，内网端口22，点击提交
 
+<<<<<<< HEAD
    <img src="../_images/image-20211019155752894.png" alt="image-20211019155752894" style="zoom:50%;" />
 
 3. 配置防火墙放行规则，在vpc详情页面，点击默认的安全组，点击“添加安全组”，选择右侧“ssh”，系统将默认填写规则，指定刚设置的端口号即可，如22022，点击提交
@@ -68,6 +93,17 @@ weight: 2
 
 
 <img src="../_images/image-20211019160112930.png" alt="image-20211019160112930" style="zoom:50%;" />
+=======
+   <img src="/Users/huimiao/Library/Application Support/typora-user-images/image-20211019155752894.png" alt="image-20211019155752894" style="zoom:50%;" />
+
+3. 配置防火墙放行规则，在vpc详情页面，点击默认的安全组，点击“添加安全组”，选择右侧“ssh”，系统将默认填写规则，指定刚设置的端口号即可，如22022，点击提交
+
+   <img src="/Users/huimiao/Library/Application Support/typora-user-images/image-20211019155931144.png" alt="image-2021101915931144" style="zoom:50%;" />
+
+
+
+<img src="/Users/huimiao/Library/Application Support/typora-user-images/image-20211019160112930.png" alt="image-20211019160112930" style="zoom:50%;" />
+>>>>>>> upstream/master
 
 4. 提交完成后，将规则应用到VPC网络即可，就可以通过ip+端口号访问集群的登录节点了，其他登录节点也是通过添加同样的规则，指定不同的端口号即可，
 

@@ -104,6 +104,8 @@ keyword: 青云，硬盘
 
 ## 硬盘预留合约
 
+该页面仅对以往签署预留合约并且合约状态处于“生效中”或“OPEN期”的用户可见。
+
 在硬盘列表，单击硬盘ID后的预留资源图标<img src="../_images/reserve_resource.png" alt="预留资源" style="zoom:50%;" />，进入硬盘绑定的预留合约详情页。
 
 ![硬盘预留合约](../_images/disk_reserve_contract.png)
