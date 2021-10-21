@@ -13,7 +13,7 @@ draft: false
 
 | <span style="display:inline-block;width:60px">系列</span> | <span style="display:inline-block;width:80px">GPU型号</span> | <span style="display:inline-block;width:280px">系列说明</span> | <span style="display:inline-block;width:80px">支持区域</span> |
 | :-------------------------------------------------------- | ------------------------------------------------------------ | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| 入门版                                                    | -                                                            | 搭载第二代英特尔<sub>®<sub>至强<sub>®<sub>可扩展处理器，通过 DL Boosting 的 VNNI 技术及 Intel 优化的深度学习框架（TensorFlow、Caffe、PyTorch 等），在图像分类、图像目标检测、自然语言处理、推荐系统及强化学习等深度学习的性能大幅提升。 | 所有区域                                                     |
+| 入门版                                                    | -                                                            | 搭载第二代英特尔<sub>®</sub>至强<sub>®</sub>可扩展处理器，通过 DL Boosting 的 VNNI 技术及 Intel 优化的深度学习框架（TensorFlow、Caffe、PyTorch 等），在图像分类、图像目标检测、自然语言处理、推荐系统及强化学习等深度学习的性能大幅提升。 | 所有区域                                                     |
 | 基础版                                                    | AMD GPU                                                      | 入门版预装英特尔针对 CPU 优化过的 Caffe ( Intel 1.1 ) 、TensorFlow (1.12.0 )、Keras ( 2.2.4 )、PyTorch ( 1.1.0 ) 最新深度学习框架。面向企业级生产环境推出的双节点数据库版本，采用一主两从的高可用架构，提供数据库的高可用保障。 | -                                                            |
 | 企业版                                                    | NVIDIA Tesla P100                                            | 面向金融级生产环境推出的三节点数据库版本，采用多主单写的三主节点架构，保证数据的强一致性，提供金融级可靠性。 | 上海1区、广东2区、北京3区                                    |
 
