@@ -32,6 +32,10 @@ section2:
       content: 本节介绍实时音视频 RTC 的详细功能及使用。
       url: "/audio_and_video/rtc/usermanual/10_purchase"
 
+    - title: 最佳实践
+      content: 本节介绍了使用实时音视频 RTC 的具体场景。
+      url: "/audio_and_video/rtc/bestpractices/10_multiplayer_video_scene"
+    
     - title: 常见问题
       content: 本节解答您在使用实时音视频 RTC 时遇到的常见问题。
       url: "/audio_and_video/rtc/faq/10_faq_rtc"
