@@ -22,27 +22,27 @@ Section2:
 
     - title: 产品简介
       content: 产品简介
-      url: "/compute/hpc/intro/intro"
+      url: "intro/intro"
 
     - title: 计费指南
       content: 计费指南
-      url: "/compute/hpc/billing/price"
+      url: "billing/price"
 
     - title: 快速入门
       content: 快速入门
-      url: "/compute/hpc/quick-start/base"
+      url: "quick-start/base"
 
     - title: 操作指南
       content: 操作指南
-      url: "/compute/hpc/manual/base"
+      url: "manual/base"
 
     - title: 最佳实践
       content: 最佳实践
-      url: "/compute/hpc/best-practices/edu"
+      url: "best-practices/edu"
 
     - title: 常见问题
       content: 常见问题
-      url: "/compute/hpc/faq/faq"
+      url: "faq/faq"
 
 section3:
   title: 开发者指南
