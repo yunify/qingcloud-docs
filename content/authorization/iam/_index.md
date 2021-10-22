@@ -28,7 +28,7 @@ section2:
 
     - title: 最佳实践
       content: 场景一：免密钥应用开发<br>场景二：跨账号管理协作
-      url: "best-practices/"
+      url: "best-practices/scenario1/"
 
 section4:
   children:
