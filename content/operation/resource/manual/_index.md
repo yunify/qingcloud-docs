@@ -24,3 +24,10 @@ collapsible: true
 
 - [查看我的配额](quota/view_quota)
 - [提升资源配额](quota/apply_quota)
+
+区域及可用区具体操作内容如下所示：
+
+- [区域资源](region/area_resource)
+- [可用区资源](region/region_resource)
+- [可用区资源升级为区域资源](region/region_resource)
+- [其他](region/other)
