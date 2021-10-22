@@ -2,12 +2,11 @@
 title: "GET Bucket ACL"
 ---
 
+该接口用于获取 Bucket 的访问控制列表 (ACL：Access Control List)。
 
-获取存储空间的访问控制列表 (Access Control List)， acl 是存储空间的子资源 (subresource)，只有存储空间的所有者才能获取。
+QingStor 对象存储定义 ACL 为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
 
-设置 ACL 请参见 [PUT Bucket ACL](../put_acl) 。
-
-## Request Syntax
+## 请求语法
 
 ```http
 GET /?acl HTTP/1.1
@@ -16,43 +15,46 @@ Date: <date>
 Authorization: <authorization-string>
 ```
 
-## Request Parameters
+## 请求参数
 
-没有请求参数
+无。
 
-## Request Headers
+## 请求头
 
-参见[公共请求头](../../../common_header#请求头字段-request-header)
+此接口仅包含公共请求头。关于公共请求头的更多信息，请参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
 
+## 请求体
 
-## Request Body
+无。
 
-没有请求消息体
+## 响应头
 
-## Status Code
+此接口仅包含公共响应头。关于公共响应头的更多信息，请参见 [公共响应头](/storage/object-storage/api/common_header/#响应头字段-response-header)。
 
-正常会返回 200,  失败的返回码参考[错误码列表](../../../error_code)
+## 响应体
 
-## Response Headers
+成功调用该 API 后，会返回一个 Json 消息体，其字段说明如下：
 
-参见[公共响应头](../../../common_header#响应头字段-response-header)
-
-## Response Body
-
-正常情况下会有一个 Json 消息体; 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
-
-| Name | Type | Description |
+| 名称 | 类型 | 说明 |
 | --- | --- | --- |
-| owner | String | 存储空间的所有者 |
+| owner | String | Bucket 的所有者 |
 | grantee | String | 被授权者 |
-| type | Enum | 被授权者类型，支持 user, group |
-| id | String | 如果类型是 user，则代表用户 ID |
-| name | String | 如果类型是 user，则代表用户名称，如果类型是 group，则代表组名 |
-| permission | Enum | 访问权限，支持：READ, WRITE, FULL_CONTROL |
+| type | Enum | 被授权者类型。支持 `user` 与 `group` 两种类型 |
+| id | String | 用户 ID。当被授权者类型为 `user` 时，返回该字段 |
+| name | String | 被授权者的用户名称或组名。|
+| permission | Enum | 访问权限。目前支持 `READ`，`WRITE` 与 `FULL_CONTROL` 三种权限 |
 
-## Example
+## 错误码
 
-### Example Request
+| 错误码 | 错误描述 | HTTP 状态码 |
+| --- | --- | --- |
+| OK | 成功获取 Bucket ACL | 200 |
+
+其他错误码可参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
+
+## 示例
+
+### 请求示例
 
 ```http
 GET /?acl HTTP/1.1
@@ -61,7 +63,7 @@ Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```
 
-### Example Response
+### 响应示例
 
 ```http
 HTTP/1.1 200 OK
@@ -103,3 +105,7 @@ x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
     ]
 }
 ```
+
+## SDK
+
+此接口所对应的各语言 SDK 可参考 [SDK 文档](/storage/object-storage/sdk/)。

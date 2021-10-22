@@ -7,28 +7,30 @@ type: "product"
 
 section1:
   title: "RabbitMQ"
-  vice_title: QingCloud RabbitMQ是一个基于AMQP协议，构建于QingCloud云主机之上的分布式消息队列系统，具有灵活路由、事务、高可用队列、消息排序、可视化管理工具等功能。服务器端用Erlang语言编写，天生具备高可用和高并发的特性。
+  vice_title: QingCloud RabbitMQ 是一个基于 AMQP 协议，构建于 QingCloud 云服务器之上的分布式消息队列系统，具有灵活路由、事务、高可用队列、消息排序、可视化管理工具等特性。服务器端用 Erlang 语言编写，天生具备高可用和高并发的特性。
 
 
 Section2:
   title: 用户指南
   children:
     - title: 产品简介
-      content: 产品简介
-      url: "intro/intro"
+      content: 什么是 RabbitMQ
+      url: "intro/intro/"
 
     - title: 计费指南
-      content: 计费指南
-      url: "billing/price"
+      content: RabbitMQ 如何收费
+      url: "billing/price/"
 
     - title: 快速入门
-      content: 快速入门
-      url: "quick-start/quick_start"
+      content: 创建 RabbitMQ 集群
+      url: "quickstart/quick_start/"
 
     - title: 操作指南
-      content: 学习如何管理RabbitMQ集群，以及如何使用RabbitMQ提供的相关服务等。
-      url: "manual/cluster_use"
-
+      content: 如何管理 RabbitMQ 集群，以及如何使用 RabbitMQ 提供的相关服务等
+      url: "manual/cluster_use/"
+    - title: 常见问题
+      content: RabbitMQ 使用问题
+      url: "faq/notice/"
 
 
 section3:
@@ -48,33 +50,22 @@ section3:
 
 section4:
   children:
-    - title: 了解：什么是RabbitMQ
-      content: RabbitMQ是一个基于AMQP协议，构建于QingCloud云主机之上的分布式消息队列系统。
+    - title: 了解：什么是 RabbitMQ
+      content: RabbitMQ 是一个基于 AMQP 协议，构建于 QingCloud 云主机之上的分布式消息队列系统。
       vice_title: 了解的第一步
       children:
         - title: 产品简介
-          url: "/middware/rabbitmq/intro/intro"
-    - title: 上手：RabbitMQ集群的常见操作
-      content: 学习如何创建、管理、使用RabbitMQ集群。
+          url: "intro/intro/"
+    - title: 上手：RabbitMQ 集群的常见操作
+      content: 学习如何创建、管理、使用 RabbitMQ 集群。
       vice_title: 上手的第一步
 
       children: 
-        - title: 创建RabbitMQ
-          url: "/middware/rabbitmq/quick-start/quick_start"
+        - title: 创建 RabbitMQ 集群
+          url: "quickstart/quick_start/"
 
         - title: 集群使用
-          url: "/middware/rabbitmq/manual/cluster_use"
+          url: "manual/cluster_use/"
         
-        - title: rabbitmq management使用示例简介
-          url: "/middware/rabbitmq/manual/rabbitmq_management"
-        
-        - title: rabbitmqcli命令示例简介
-          url: "/middware/rabbitmq/manual/rabbitmqcli"
-        
-        - title: rabbitmqadmin命令行客户端工具示例简介
-          url: "/middware/rabbitmq/manual/rabbitmq_admin"
-        
-        - title: rabbitmq web http命令示例简介
-          url: "/middware/rabbitmq/manual/rabbitmq_web_http"
 ---
 

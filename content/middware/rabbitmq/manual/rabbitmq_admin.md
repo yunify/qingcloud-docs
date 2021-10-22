@@ -1,8 +1,9 @@
 ---
-title: "rabbitmqadmin命令行客户端工具示例简介"
+title: "rabbitmqadmin 使用示例"
 description: test
 weight: 20
 draft: false
+keyword:  QingCloud, RabbitMQ, rabbitmq,  消息队列服务, 消息中间件
 ---
 
 ## 在RabbitMQ管理界面下载

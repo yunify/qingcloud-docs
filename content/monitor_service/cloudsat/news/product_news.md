@@ -8,7 +8,7 @@ product:
       title: 支持自定义监控
       content: 新增自定义监控功能，可满足青云已有用户、非青云用户对基础资源的指标监控需求，可与CloudSAT服务内的其他功能结合使用，形成完整的立体化监控告警服务。
       url: /monitor_service/cloudsat/manual/custom_monitor
-      tag_list:
+      tags:
       - 新功能
       - 体验优化
       zone: 北京三区
@@ -17,7 +17,7 @@ product:
       title: 支持分组管理功能
       content: 新增分组管理功能，用户可根据业务需求对账号内的各类资源进行跨区域、跨资源类型的自定义分组，继而集中管理组内的监控服务，达到分批监控、快速定位的运维目标，有效提升运维效率。
       url: /monitor_service/cloudsat/manual/group_management
-      tag_list:
+      tags:
       - 新功能
       - 体验优化
       zone: 北京三区

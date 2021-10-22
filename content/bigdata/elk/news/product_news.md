@@ -4,6 +4,12 @@ collapsible: false
 weight: 10
 
 product:
+    - time: 2021-09-10
+      title: ELK 7.10.2 - QingCloud 3.0.3 上线
+      content: ELK 7.10.2 - QingCloud 3.0.3 版本基于原生 ELK 7.10.2 构建；<br>- 支持三方告警对接，集成 Prometheus Node 和 Elasticsearch Exporter；<br>- 优化 ES 线程池参数，减少写入被拒绝的可能；<br>- 修复滚动重启不生效、超时等问题。
+      url: ../../intro/version/
+
+
     - time: 2020-03-03
       title: ELK 7.5.1 - QingCloud 3.0.0 上线
       content: ELK 7.5.1 - QingCloud 3.0.0 版本基于 ELK 7.5.1 构建。

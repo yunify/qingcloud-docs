@@ -111,16 +111,10 @@ b. 新建公网 IP
 
 ## 确认配置（可选）
 
-当计费模式选择预留合约时，点击**立即购买**后会二次确认配置，如下图所示。
+当计费模式选择包年包月时，点击**立即购买**后会二次确认配置，如下图所示。
 
 <img src="../../quickstart/_images/config.png" alt="config" style="zoom:33%;" />
 
 ## 完成创建
 
-当计费模式选择为按需计费时，则自动创建资源。
-
 <img src="../../quickstart/_images/create.png" alt="create" style="zoom:25%;" />
-
-当计费模式选择为预留合约时，自动创建资源后，点击![tattoo](../../quickstart/_images/tattoo.png)按钮查看预留合约详细内容。
-
-<img src="../../quickstart/_images/check_creation.png" alt="create" style="zoom: 25%;" />

@@ -1,8 +1,7 @@
 ---
-title: "Logging"
+title: "日志管理（Logging）"
 ---
 
-# Bucket Logging
 
 - [PUT Bucket Logging](put_logging/)
 - [GET Bucket Logging](get_logging/)
