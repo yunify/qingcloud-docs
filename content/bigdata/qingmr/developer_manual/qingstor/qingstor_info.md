@@ -13,4 +13,4 @@ QingStor 对象存储为用户提供可无限扩展的通用数据存储服务�
 
 由于 QingStor 对象存储兼容 AWS S3 API，因此 HDFS 可以通过 AWS S3 API 与 QingStor 对象存储高效集成，以满足更多的大数据计算和存储场景。
 
-有关 QingStor 的更多内容，请参考 [QingStor 对象存储用户指南](../../../../storage/object-storage/)。
+有关 QingStor 的更多内容，请参考 [QingStor 对象存储用户指南](../../../../../storage/object-storage/)。

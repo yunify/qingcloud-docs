@@ -31,4 +31,4 @@ draft: false
 
   监控系统中的事件日志，使用 Storm 检查每条日志信息，把符合匹配规则的消息保存到数据库。一般从类 Kafka 的 MQ 或者基于 HBase 的 timetunnel 中读取实时日志消息，经过一系列处理，最终将处理结果写入到一个分布式存储中，提供给应用程序访问。
 
-  除此之外，官方也列举出了很多公司使用 Storm 的场景，[官方场景参考](http://storm.apache.org/releases/current/Powered-By.html)。
+  除此之外，官方也列举出了很多公司使用 Storm 的场景，[官方场景参考](http://storm.apache.org/)。
