@@ -13,9 +13,10 @@ draft: false
 
 在私有网络页面，点击右键菜单中的“升级为多可用区部署”就能将可用区内私有网络升级为多可用区私有网络， 升级之后，位于不同可用区的虚机/服务均能加入该私有网络。
 
-<img src="../../_images/vxnet_upgrade_to_region.png" style="zoom:40%;" />
+<img src="../_images/vxnet_upgrade_to_region.png" style="zoom:40%;" />
 
-> 注解
+> **说明**
+>
 > 物理主机网络是可用区内资源，只能服务于某个可用区内的物理主机。
 
 ### 公网负载均衡器升级
@@ -25,6 +26,4 @@ draft: false
 1. 在负载均衡器页面，选择右键菜单中的“升级为多可用区部署”， 之后负载均衡器详情页面会提示需要“应用修改”。
 2. 点击应用修改更新负载均衡器，更新后负载均衡器集群节点会在区域内的不同可用区间重新均衡分布，达到同城多活高可用效果。 升级期间业务会有闪断，建议升级时间避开业务高峰。
 
-<img src="../../_images/lbc_upgrade_to_region.png" style="zoom:35%;" />
-
-## 
+<img src="../_images/lbc_upgrade_to_region.png" style="zoom:35%;" />
