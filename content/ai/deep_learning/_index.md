@@ -27,8 +27,8 @@ Section2:
       url: "quickstart/deploy_app/"
 
     - title: 操作指南
-      content: 学习如何管理Kafka集群，以及如何使用Kafka提供的相关服务等。
-      url: "manual/kafka_manager/"
+      content: 学习如何使用deep learning的相关服务等。
+      url: "manual/caffe/"
 
     - title: 常见问题
       content: 常见问题
