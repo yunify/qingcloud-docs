@@ -35,7 +35,7 @@ keyword: 青云，硬盘
   </tr>
    <tr>
     <td>计费模式</td>
-    <td>支持<b>预留合约</b>及<b>按需计费</b>，详情请参见<a href="/storage/disk/billing/price/">计费说明</a>。</td>
+    <td>支持<b>包年包月</b>及<b>按需计费</b>，详情请参见<a href="/storage/disk/billing/price/">计费说明</a>。</td>
   </tr>
    <tr>
     <td>区域及可用区</td>
@@ -60,7 +60,7 @@ keyword: 青云，硬盘
   </tr>
   <tr>
     <td>自动续约</td>
-    <td>若选择预留合约计费模式，则可设置是否开启自动续约以及续约时长。</td>
+    <td>若选择包年包月计费模式，则可设置是否开启自动续约以及续约时长。</td>
   </tr>
 	<tr>
     <td>硬盘名称</td>

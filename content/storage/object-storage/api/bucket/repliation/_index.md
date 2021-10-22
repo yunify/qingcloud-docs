@@ -1,8 +1,6 @@
 ---
-title: "Replication"
+title: "跨区域复制（Replication）"
 ---
-
-# Bucket Replication
 
 - [PUT Bucket Replication](put_replication/)
 - [GET Bucket Replication](get_replication/)
