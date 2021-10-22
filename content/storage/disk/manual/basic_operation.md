@@ -71,7 +71,7 @@ keyword: 青云，硬盘
 
    > **说明**：
    >
-   > 若还未创建项目，可参考[项目使用](/operation/project/manual/management/)进行创建。
+   > 若还未创建项目，可参考[项目使用](/operation/resource/manual/project/management/)进行创建。
 
 2. 选择需要添加到的项目，点击**提交**，即可将硬盘添加到该项目。
 
