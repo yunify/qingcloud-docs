@@ -30,7 +30,7 @@ draft: false
    
 2. 判断并发是否较高。
    
-   -是，则并发太多引起 CPU 占用率过高，建议[扩容 CPU](../../../manual/node_lifecycle/capacity_expansion)。
+   -是，则并发太多引起 CPU 占用率过高，建议[扩容 CPU](../../manual/node_lifecycle/capacity_expansion)。
 
    -否，则建议下载分析慢日志。重点排查涉及聚合(count、sum、avg、max、min), 分组(group by), 排序(sort)等消耗 CPU 资源的运算。
 
