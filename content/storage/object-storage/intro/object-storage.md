@@ -34,7 +34,7 @@ QingStor 对象存储是面向海量非结构化数据的通用数据存储平�
 
 ## 基本概念
 ### Object
-对象，是 QingStor 对象存储中储存的基本数据单元，也是用户操作的基本数据单元。每个 Object 的访问地址有两种风格，详情可参考 [访问域名](#Endpoint)。
+对象，是 QingStor 对象存储中储存的基本数据单元，也是用户操作的基本数据单元。每个 Object 的访问地址有两种风格，详情可参考 [访问域名](#endpoint)。
 
 ### Object Key
 对象名称。其格式为：`<bucket_name>/<dir_name>/<object_name>`。如：`test_bucekt/test.mp3`，`test_bucekt/personal/test.mp3`。

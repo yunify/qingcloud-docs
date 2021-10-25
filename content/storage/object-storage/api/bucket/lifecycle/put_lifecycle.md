@@ -98,7 +98,7 @@ Authorization: <authorization-string>
 | transition | Dict | 用于配置变更存储级别的规则。设置该规则时，需指定 `days` 与 `storage_class` 参数。| 否 |
 | days | Integer | 距离对象最后更新指定天数后执行操作。 | 否 |
 | days_after_initiation | Integer | 在初始化分段上传的指定天数后执行操作。| 否 |
-| storage_class | Integer | 待变更的存储级别。仅支持设置为 `STANDARD_IA`。| 否 |
+| storage_class | String | 待变更的存储级别。仅支持设置为 `STANDARD_IA`。| 否 |
 
 **说明**
 - 生命周期规则总数不能超过 100 条，且每条规则中仅允许存在一种类型的操作。如：指定相同前缀的同一 Bucket 中，过期删除的规则只能有一条。
