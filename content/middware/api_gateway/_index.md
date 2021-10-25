@@ -6,7 +6,7 @@ collapsible: true
 type: "product"
 
 section1:
-  title: API 网关
+  title: API 网关(测试中)
   vice_title: API 网关（API Gateway）基于开源框架 Apache APISIX，提供 API 托管服务，包括 API 的创建、维护、发布、运行、下线等完整生命周期管理，帮助您快速构建以 API 为核心的系统架构，将自身的数据、业务逻辑或功能安全可靠的开放出来。
 
 Section2:
