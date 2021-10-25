@@ -50,4 +50,3 @@ PUT /last-year/_settings
 下面的动态截屏展示了通过 Kibana 的 Dev Tools 进行温/冷数据迁移的过程：
 
 ![hot-warm-cold](../../images/hot-warm-cold.gif)
-
