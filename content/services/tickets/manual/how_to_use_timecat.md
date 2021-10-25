@@ -12,6 +12,7 @@ enableToc: false
 >
 > TimeCat 是 Chrome 上的扩展程序，Edge 使用和 Chrome 一样的内核，Edge 同样可以使用此扩展程序，但 Firefox、Safari 不支持。
 >
+> [点击下载](https://lllidan-bucket0.pek3b.qingstor.com/timecat-chrome.crx)
 
 ### 在 Chrome 浏览器上添加扩展
 
