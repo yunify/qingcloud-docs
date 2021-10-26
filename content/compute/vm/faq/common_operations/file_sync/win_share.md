@@ -4,9 +4,9 @@ description: test
 draft: false
 ---
 
-## 1.Windows  Server端配置
+## Windows  Server端配置
 
-### 1.1 开启必要的服务组件
+### 开启必要的服务组件
 
 我们这里以共享Windows Server 2016系统下的文件为例，进入到【服务器管理器】-【工具】-【服务】
 ![服务](../../../_images/win_share_1.png)
@@ -24,7 +24,7 @@ draft: false
 >注解
 >共享无法开启网络发现主要原因是“网络发现”所依赖的服务没有启用，或者被禁用。
 
-### 1.2 配置网卡选项
+### 配置网卡选项
 
 打开 【控制面板】 –> 【控制面板】 –> 【控制面板】，点击左侧的【更改适配器设置】
 ![更改适配器设置](../../../_images/win_share_5.png)
@@ -41,7 +41,7 @@ draft: false
 确保网络为【当前配置文件】 项下的各个与共享相关的选项都启用了
 ![更改高级共享设置](../../../_images/win_share_9.png)
 
-### 1.3 安装SMB 1.0/CIFS文件共享支持
+### 安装SMB 1.0/CIFS文件共享支持
 
 进入【服务器管理器】，选择【管理】-【添加角色和功能】
 ![添加角色和功能](../../../_images/win_share_10.png)
@@ -55,7 +55,7 @@ draft: false
 等待安装结束
 ![添加角色和功能](../../../_images/win_share_13.png)
 
-### 1.4 配置防火墙入站\出站规则
+### 配置防火墙入站\出站规则
 
 在【网络和共享中心】选择左下角的【Windows防火墙】
 ![配置防火墙入站\出站规则](../../../_images/win_share_14.png)
@@ -69,7 +69,7 @@ draft: false
 找到如下规则，都选择启用
 ![配置防火墙入站\出站规则](../../../_images/win_share_17.png)
 
-### 1.5 创建文件进行共享
+### 创建文件进行共享
 
 在云服务器1中创建一个文件夹client1，右键该文件夹-【属性】
 ![创建文件进行共享](../../../_images/win_share_18.png)
@@ -90,7 +90,7 @@ draft: false
 我们进入client1文件夹，创建一个text文档
 ![创建文件进行共享](../../../_images/win_share_24.png)
 
-## 2 Windows客户端访问
+## Windows客户端访问
 
 我们登陆另一台Windows云服务器，同样需要重复上述1.1-1.4的配置步骤，配置完成后进入到【我的电脑】-【网络】
 ![Windows客户端访问](../../../_images/win_share_25.png)
@@ -108,10 +108,10 @@ draft: false
 
 我们看到云服务器2创建的文件在云服务器1中也可以看到了。至此Windows间的文件共享已完成.
 
-## 3 Linux客户端访问
+## Linux客户端访问
 
 
-### 3.1 安装samba客户端
+### 安装samba客户端
 这里，我们以CentOS 7.7 64bit系统作为客户端
 ```bash
 # yum install samba-client
@@ -141,7 +141,7 @@ Dependency Installed:
 Complete!
 ```
 
-### 3.2 登陆server端
+### 登陆server端
 
 ```bash
 # smbclient //192.168.2.21/client1
@@ -157,7 +157,7 @@ smb: \>l
 ```
 我们看到，已经可以看到server端的文件了。那么我们下一步需要把server端的共享目录挂载到本地
 
-### 3.3 安装cifs-utils软件包
+### 安装cifs-utils软件包
 
 ```bash
 # yum instal cifs-utils
@@ -180,7 +180,7 @@ Dependency Installed:
   keyutils.x86_64 0:1.5.8-3.el7                                           Complete!
 ```
 
-### 3.4 Linux客户端挂载共享文件夹到本地
+### Linux客户端挂载共享文件夹到本地
 ```bash
 # mount -t cifs  //192.168.2.21/client1  /mnt/
 Password for root@//192.168.2.21/client1:  

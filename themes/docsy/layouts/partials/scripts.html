@@ -2,7 +2,8 @@
 <script src="/css/bootstrap.min.js"></script>
 <script src="/js/autocomplete/jquery.autocomplete.js"></script>
 <script src="/js/navbar.js"></script>
-{{ $jsBase := resources.Get "js/base.js" }}
+<script src="/js/copy-to-clipboard.js"></script>
+</script>{{ $jsBase := resources.Get "js/base.js" }}
 {{ $jsAnchor := resources.Get "js/anchor.js" }}
 {{ $jsSearch := resources.Get "js/search.js" | resources.ExecuteAsTemplate "js/search.js" .Site.Home }}
 {{ if .Site.Params.offlineSearch }}

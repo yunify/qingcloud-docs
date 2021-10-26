@@ -1,5 +1,5 @@
 ---
-title: "Bucket Lifecycle"
+title: "Put Bucket Lifecycle"
 date: 2020-11-25T10:08:56+09:00
 description:
 collapsible: false
@@ -7,24 +7,19 @@ draft: false
 weight: 2
 ---
 
-# PUT Bucket Lifecycle
+该接口用于创建或更新 Bucket 的生命周期（Lifecycle）设置。QingStor 对象存储会按照用户所设置的生命周期（Lifecycle）规则，定期对所匹配的对象执行相应的操作。
 
-创建或更新 Bucket Lifecycle 设置，lifecycle 是存储空间的子资源（subresource），
-只有存储空间所有者才能设置。
+目前支持的操作有：
+- Expiration：过期删除对象
+- Abort Incomplete Multipart Uploads：取消未完成的分段上传
+- Transition：变更存储级别
 
-QingStor 对象存储会按照用户所设置的生命周期规则，定期对所匹配的 Object 执行相应的操作。
-目前支持的操作有: 删除对象 (Expiration),
-取消未完成的分段上传 (Abort Incomplete Multipart Uploads), 变更存储级别 (Transition)。
+## 注意事项
 
-> 注意:
->
-> 以防用户误操作，新增或修改的 Lifecycle 规则，至少在创建时间或最后修改时间的 24 小时以后才会开始生效。
+- QingStor 对象存储定义生命周期为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
+- QingStor 对象存储以防用户误操作，对于新增或修改的生命周期规则，将于 24 小时后生效。
 
-获取 Lifecycle 设置请参见 [GET Bucket Lifecycle](../get_lifecycle)
-
-删除 Lifecycle 设置请参见 [DELETE Bucket Lifecycle](../delete_lifecycle)
-
-## Request Syntax
+## 请求语法
 
 ```http
 PUT /?lifecycle HTTP/1.1
@@ -77,51 +72,54 @@ Authorization: <authorization-string>
         }
     ]
 }
-
 ```
 
-## Request Parameters
+## 请求参数
 
-没有请求参数
+无。
 
-## Request Headers
+## 请求头
 
-参见[公共请求头](../../../common_header/#请求头字段-request-header)
+此接口仅包含公共请求头。关于公共请求头的更多信息，请参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
 
-## Status Code
+## 请求体
 
-正常会返回 200,  失败的返回码参考[错误码列表](../../../error_code/)
+调用该 API 需携带如 [请求语法](#请求语法) 中的 Json 消息体。该消息体各字段说明如下：
 
-## Request Body
-
-Json 消息体
-
-| Name | Type | Description | Required |
+| 名称 | 类型 | 说明 | 是否必须 |
 | --- | --- | --- | --- |
-| rule | List | rule 的元素为 Lifecycle 规则。规则为 Dict 类型，有效的键为 "id"、"status"、"filter"、"expiration"、"abort_incomplete_multipart_upload" 和 "transition"。规则总数不能超过 100 条，且每条规则中只允许存在一种类型的操作。同一 bucket, prefix 和 支持操作（ expiration, abort_incomplete_multipart_upload, transition) 不能有重复，否则返回 400 invalid_request 包含重复的规则信息 [参见错误信息](../../../error_code/)。 | Yes |
-| id | String | 规则的标识符。可为任意 UTF-8 编码字符，长度不能超过 255 个字节，在一个 Bucket Lifecycle 中，规则的标识符必须唯一。该字符串可用来描述策略的用途。如果 id 有重复，会返回 400 invalid_request 。| Yes |
-| status | String | 该条规则的状态。其值可为 "enabled" (表示生效) 或 "disabled" (表示禁用)。| Yes |
-| filter | Dict | 用于匹配 Object 的过滤条件，有效的键为 "prefix"。| Yes |
-| prefix | String | 对 Object 名称 前缀为 prefix 的 Object 应用此规则，空字符串表示匹配整个 Bucket 中的 Object。默认值为空字符串。不支持正则表达式。| No |
-| expiration | Dict | 用于删除 Object 的规则，有效的键为 "days"。"days" 必须是正整数，否则返回 400 invalid_request。对于匹配前缀（prefix) 的对象在最后修改时间的指定天数（days）后删除该对象。| No |
-| abort_incomplete_multipart_upload |Dict | 用于取消未完成的分段上传的规则，有效的键为 "days_after_initiation"。"days_after_initiation" 必须是正整数，否则返回 400 invalid_request。| No |
-| transition | Dict | 用于变更存储级别的规则，有效的键为 "days", "storage_class"。days 必须 >= 30, 否则返回 400 invalid_request。对于匹配前缀（prefix) 的对象在最后修改时间的指定天数（days）后变更到低频存储。| No |
-| days | Integer | 在对象最后修改时间的指定天数后执行操作。 | No |
-| days_after_initiation | Integer | 在初始化分段上传的指定天数后执行操作。| Yes |
-| storage_class | Integer | 要变更至的 storage_class，支持的值为 STANDARD_IA"。 | Yes |
+| rule | List | `rule` 的元素为生命周期规则。 | 是 |
+| id | String | 规则的标识符。可为任意 UTF-8 编码字符，长度不能超过 255 个字符。同一个 Bucket 的生命周期中，规则的标识符必须唯一。| 是 |
+| status | String | 生命周期规则的状态。可设置为 `enabled` 或 `disabled`，分别表示生效与禁用，可忽略大小写。| 是 |
+| filter | Dict | 用于设置对象的过滤条件。| 是 |
+| prefix | String | 对象名的前缀。匹配此前缀的对象应用此规则。默认值为空字符串，表示匹配整个 Bucket 中的对象。不支持正则表达式。| 否 |
+| expiration | Dict | 用于配置过期删除对象的规则。设置该规则时，需指定 `days` 参数。| 否 |
+| abort_incomplete_multipart_upload |Dict | 用于配置取消未完成的分段上传的规则。设置该规则时，需指定 `days_after_initiation` 参数。| 否 |
+| transition | Dict | 用于配置变更存储级别的规则。设置该规则时，需指定 `days` 与 `storage_class` 参数。| 否 |
+| days | Integer | 距离对象最后更新指定天数后执行操作。 | 否 |
+| days_after_initiation | Integer | 在初始化分段上传的指定天数后执行操作。| 否 |
+| storage_class | String | 待变更的存储级别。仅支持设置为 `STANDARD_IA`。| 否 |
 
-## Response Headers
+**说明**
+- 生命周期规则总数不能超过 100 条，且每条规则中仅允许存在一种类型的操作。如：指定相同前缀的同一 Bucket 中，过期删除的规则只能有一条。
+- `id` 用来唯一标记生命周期规则，描述该规则的用途。不能与其他生命周期规则 `id` 相重复。
+- 设置 `transition` 规则时，`days` 需大于等于 30 天。
 
-参见[公共响应头](../../../common_header/#响应头字段-response-header)
+## 响应头
 
-## Response Body
+此接口仅包含公共响应头。关于公共响应头的更多信息，请参见 [公共响应头](/storage/object-storage/api/common_header/#响应头字段-response-header)。
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
+## 错误码
 
+| 错误码 | 错误描述 | HTTP 状态码 |
+| --- | --- | --- |
+| OK | 成功设置或修改 Bucket 生命周期规则 | 200 |
 
-## Example
+其他错误码可参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
 
-### Example Request
+## 示例
+
+### 请求示例
 
 ```http
 PUT /?lifecycle HTTP/1.1
@@ -146,7 +144,7 @@ Authorization: authorization string
 }
 ```
 
-### Example Response
+### 响应示例
 
 ```http
 HTTP/1.1 200 OK
@@ -156,3 +154,7 @@ Content-Length: 0
 Connection: close
 x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
 ```
+
+## SDK
+
+此接口所对应的各语言 SDK 可参考 [SDK 文档](/storage/object-storage/sdk/)。

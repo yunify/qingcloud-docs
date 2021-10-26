@@ -20,4 +20,3 @@ QingCloud PostgreSQL 支持如下应用版本。
 - PostgreSQL 10.1 版本，PostGIS 插件的版本是 PostGIS 2.4
   
 - PostgreSQL 11.1 版本，PostGIS 插件的版本是 PostGIS 2.5
-

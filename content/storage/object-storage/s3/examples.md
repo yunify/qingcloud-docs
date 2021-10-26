@@ -3,7 +3,7 @@ title: "使用示例"
 ---
 
 
-大多数基于 AWS S3 开发的工具都有自定义访问地址的方法，下面以一些常用工具为例，说明如何对接 QingStor
+大多数基于 AWS S3 开发的工具都有其自定义访问地址的方法，下面以一些常用工具为例，说明如何对接 QingStor 对象存储。
 
 ### AWS SDK for Python
 
@@ -13,7 +13,7 @@ title: "使用示例"
    > pip install boto
    ```
 
-1. 编写程序:
+2. 编写程序:
 
    ```bash
    > cat boto-to-qingstor.py
@@ -35,7 +35,7 @@ title: "使用示例"
    > pip install awscli
    ```
 
-1. 编辑配置文件:
+2. 编辑配置文件:
 
    ```bash
    > cat ~/.aws/config
@@ -46,7 +46,7 @@ title: "使用示例"
        signature_version = s3v4
    ```
 
-1. 设置访问密钥:
+3. 设置访问密钥:
 
    ```bash
    >  cat ~/.aws/credentials
@@ -55,7 +55,7 @@ title: "使用示例"
    aws_secret_access_key = MnIjI58zC8AX07xotHXcm6grwFgOXhaJQHkTCX2X
    ```
 
-1. 命令行执行:
+4. 命令行执行:
 
    ```bash
    > aws s3api put-object --bucket mybucket --key puppy.jpg --body ~/Pictures/puppy.jpg --endpoint-url 'https://s3.pek3a.qingstor.com' --profile qingstor
@@ -72,7 +72,7 @@ title: "使用示例"
    https://github.com/s3fs-fuse/s3fs-fuse/blob/master/README.md
    ```
 
-1. 设置访问密钥（注意需要设置密钥文件的权限为 600）:
+2. 设置访问密钥:
 
    ```bash
    > cat  /root/.s3fs/credentials
@@ -81,11 +81,12 @@ title: "使用示例"
    > chmod 600 /root/.s3fs/credentials
    ```
 
-   > 假定 ACCESS_KEY_ID 的值为 PLLZOBTTZXGBNOWUFHZZ
-   >
-   > ACCESS_KEY_SECRET 的值为 MnIjI58zC8AX07xotHXcm6grwFgOXhaJQHkTCX2X
+**备注：**
+- 密钥文件填写格式为：ACCESS_KEY_ID：ACCESS_KEY_SECRET
+- 假设 `ACCESS_KEY_ID` 的值为 `PLLZOBTTZXGBNOWUFHZZ`；`ACCESS_KEY_SECRET` 的值为 `MnIjI58zC8AX07xotHXcm6grwFgOXhaJQHkTCX2X`。则填写内容为：`PLLZOBTTZXGBNOWUFHZZ:MnIjI58zC8AX07xotHXcm6grwFgOXhaJQHkTCX2X`
+- 密钥文件的权限需设置为 600。
 
-1. 挂载 bucket 到本地目录:
+3. 挂载 Bucket 至本地目录:
 
    ```bash
    > mkdir -p /mnt/mybucket
@@ -94,7 +95,7 @@ title: "使用示例"
    s3fs           fuse.s3fs 274877906944        0 274877906944   0% /mnt/mybucket
    ```
 
-1. 测试文件系统操作:
+4. 测试文件系统操作:
 
    ```bash
    > echo 'hello world' > /tmp/hello.txt
@@ -106,38 +107,37 @@ title: "使用示例"
    hello world
    ```
 
-1. 配置开机自动挂载 s3fs :
+5. 配置开机自动挂载 s3fs :
 
-   第一步，创建 /etc/passwd-s3fs 文件:
+   Step 1: 创建 `/etc/passwd-s3fs` 文件，可参考前文 **设置访问密钥** 相关内容:
    ```bash
-   > cat <<EOF > /etc/passwd-s3fs
+   > cat /etc/passwd-s3fs
    PLLZOBTTZXGBNOWUFHZZ:MnIjI58zC8AX07xotHXcm6grwFgOXhaJQHkTCX2X
    EOF
    > chmod 600 /etc/passwd-s3fs
    ```
 
-   > 假定 ACCESS_KEY_ID 的值为 PLLZOBTTZXGBNOWUFHZZ
-   >
-   > ACCESS_KEY_SECRET 的值为 MnIjI58zC8AX07xotHXcm6grwFgOXhaJQHkTCX2X
-
-   第二步，修改 /etc/fstab 文件，在 /etc/fstab 中加入如下命令：
+   Step 2: 修改 `/etc/fstab` 文件，在该文件末尾添加如下内容，其中 `your_bucket_name`，`your_mount_point`，`your_url` 需根据实际情况进行填写：
    ```bash
    s3fs#your_bucket_name your_mount_point fuse _netdev,url=your_url,allow_other 0 0
    ```
-   其中上述命令中的 your_xxx 信息需要根据您的 bucket name 等信息填入
-   以下为一个实际例子：
+  
+   **示例：**
    ```bash
    s3fs#mybucket /mnt/mybucket fuse _netdev,url=http://s3.pek3a.qingstor.com,allow_other 0 0
    ```
 
-   第三步，保存 /etc/fstab 文件，执行 mount -a 命令，如果没有报错，则说明设置正常。
+   Step 3: 执行如下命令行挂载，若无报错信息，则说明设置正常。
+   ```bash
+   > mount -a
+   ```
 
-   如果您的系统为 centos6.5 ，还需要执行下面的命令：
+   Step 4: 若客户端操作系统为 Centos 6.5，还需执行如下命令：
    ```bash
    > chkconfig netfs on
    ```
 
-   至此您的系统已经成功的配置了开机自动挂载 s3fs
+   Step 5: 至此您的系统已经成功的配置了开机自动挂载 s3fs。
 
 ### s3cmd
 
@@ -147,7 +147,7 @@ title: "使用示例"
    > pip install s3cmd
    ```
 
-1. 编辑配置文件:
+2. 根据实际情况，编辑如下配置文件的相关字段:
 
    ```bash
    > cat ~/.s3cfg
@@ -159,7 +159,7 @@ title: "使用示例"
    host_bucket = %(bucket)s.s3.pek3a.qingstor.com
    ```
 
-1. 命令行执行:
+3. 执行如下命令行，上传文件至 QingStor 对象存储:
 
    ```bash
    > s3cmd put /tmp/hello.txt s3://mybucket/

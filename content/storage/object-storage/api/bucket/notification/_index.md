@@ -1,8 +1,6 @@
 ---
-title: "Notification"
+title: "事件通知（Notification）"
 ---
-
-# Bucket Notification
 
 - [PUT Bucket Notification](put_notification/)
 - [GET Bucket Notification](get_notification/)

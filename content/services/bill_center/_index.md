@@ -25,11 +25,11 @@ Section2:
 
     - title: 操作指南
       content: 如何使用费用中心
-      url: "manual/account/"
+      url: "manual/account_center/"
 
-   # - title: 常见问题
-     # content: 费用中心介绍
-     # url: "manual/account/"
+    - title: 常见问题
+      content: 费用常见问题
+      url: "faq/faq/"
 
 section3:
   title: 开发者指南
@@ -60,7 +60,7 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 账户总览
-          url: "manual/account/"
+          url: "manual/account_center/"
   
         - title: 财务管理
           url: "manual/finance/"

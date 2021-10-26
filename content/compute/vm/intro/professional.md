@@ -1,11 +1,11 @@
 ---
-title: "专业级主机"
+title: "专业级云服务器"
 date: 2020-01-30T00:40:25+09:00
 description: Test description
 draft: false
 enableToc: false
 weight: 20
-keyword: 云主机, QingCloud, 实例, 虚拟机
+keyword: 云服务器, QingCloud, 实例, 虚拟机
 ---
 
 ## GPU云服务器 g2
@@ -26,12 +26,8 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 
 GPU云服务器 g2 包括的实例规格和性能指标如下：（内网带宽和显存待确定）
 
-| 实例类型             | CPU  | 内存 | GPU                   | 内网带宽 |
-| -------------------- | ---- | ---- | --------------------- | -------- |
-| g2ntp100.4xlarge.r4  | 16核 | 64G  | 1*NVIDIA TESLA P100   | 6 Gbps   |
-| g2ntp100.8xlarge.r4  | 32核 | 128G | 2*NVIDIA TESLA P100   | 12 Gbps  |
-| g2n2080ti.4xlarge.r4 | 16核 | 64G  | 1*GEFORCE RTX 2080 Ti | 6Gbps    |
-| g2n2080ti.4xlarge.r4 | 32核 | 128G | 2*GEFORCE RTX 2080 Ti | 12 Gbps  |
-
-
+| 实例类型            | CPU  | 内存 | GPU                 | 内网带宽 |
+| ------------------- | ---- | ---- | ------------------- | -------- |
+| g2ntp100.4xlarge.r4 | 16核 | 64G  | 1*NVIDIA TESLA P100 | 6 Gbps   |
+| g2ntp100.8xlarge.r4 | 32核 | 128G | 2*NVIDIA TESLA P100 | 12 Gbps  |
 

@@ -37,30 +37,34 @@ draft: false
 
 ## 如何定位本地设备的公网 IP 地址?
 
-通过外网访问 MySQL Plus 数据库前，需要将本地设备的固定公网 IP 添加到白名单。本小节主要介绍如何正确获取本地设备的公网 IP。
+为避免因配置的 IP 白名单有误，导致无法访问数据库。本小节介绍几种获取本地设备公网 IP 的方式。
 
-1. 设置 IP 白名单。
+- 通过浏览器查询
+
+  可在浏览器输入以下任意一个地址，即可查询本地公网 IP 地址。
+
+  https://www.cip.cc/
+  
+  https://www.ipip.net/
+
+  https://ifconfig.me/
+
+- 通过命令行查询
+
+  执行以下任意一个命令，即可获取本地公网 IP 地址。
+  
+  ```bash
+   # UNIX/Linux 
+   $ curl httpbin.org/ip
+   $ curl cip.cc
+   $ curl ifconfig.io
+   $ curl myip.ipip.net
    
-   将本地公网网段或者`0.0.0.0/0`，添加到 MySQL Plus 的白名单，允许全网段可访问数据库。详见[设置 IP 白名单](../../manual/mgt_connect/mgt_whitelist)。
-   
-   > **说明；** 
-   > 
-   > `0.0.0.0/0`表示允许任何服务器连接数据库。验证结束后，建议立即删除。
+   #Windows
+   >telnet cip.cc
+   >ftp cip.cc
+  ```
 
-2. 使用客户端或命令行连接数据库，并获取进程信息。
+## 为何添加账户后，无法通过 Proxy 节点访问？
 
-   1. 连接数据库。
-   
-     ```bash
-     mysql -h<外网连接地址> -P3306 -u <数据库用户账号名>> -p -D <数据库名> 
-     ```
-
-   2. 执行以下命令获取进程信息。在 Host 行获取本地设备的正确 IP 地址。
-
-     ```bash
-     show processlist
-     ```
-
-3. 添加本地设备 IP 地址到白名单。
-   
-   删除步骤一中本地公网网段或者`0.0.0.0/0`，并将步骤二中获取的 IP 地址添加到白名单。
+在有 Proxy 情况下，添加账户后 Proxy 节点是无法感知的，需要重启 Proxy 节点才能感知到新创建的账户。
