@@ -120,7 +120,7 @@ Let's Encrypt 是由 Mozilla、Cisco、Akamai、IdenTrust、EFF 等组织人员�
 
 - 若您的 JDK/JRE 版本属于以下范围：Java 7 < 7u111 或 Java 8 < 8u101，Let's Encrypt 证书将不会被信任并抛出以下异常：
 
-  ```
+  ```plain_text
   About to connect to 'helloworld.letsencrypt.org' on port 443
   javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException
   [... 以下输出省略 ...]
@@ -128,12 +128,12 @@ Let's Encrypt 是由 Mozilla、Cisco、Akamai、IdenTrust、EFF 等组织人员�
 
   此时可以直接升级您的 JDK/JRE update 版本，7u111 及 8u101 之后已将 Let's Encrypt 证书加入信任。若暂时没法升级，可以向 JRE 中导入 Let's Encrypt 证书，步骤如下：
 
-  ```
-  # 下载 Let's Encrypt 中间证书
-  wget https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem
+  ```plain_text
+  # 下载 Let's Encrypt 根证书
+  wget https://letsencrypt.org/certs/isrgrootx1.pem
 
   # 导入证书
-  keytool -trustcacerts -keystore "$JAVA_HOME/jre/lib/security/cacerts" -storepass changeit -noprompt -importcert -alias lets-encrypt-x3-cross-signed -file "lets-encrypt-x3-cross-signed.pem"
+  keytool -trustcacerts -keystore "$JAVA_HOME/jre/lib/security/cacerts" -storepass changeit -noprompt -importcert -alias isrgrootx1 -file "isrgrootx1.pem"
 
   # 出现 Certificate was added to keystore 即可
   ```
