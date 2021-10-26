@@ -16,19 +16,19 @@ keyword: 青云
 
    ![图片](/storage/disk/quickstart/_images/image-1568774923025.png)
 
-3. 登录控制台，从云服务器上卸载硬盘，直至硬盘状态为可用。
+3. 登录控制台，进入硬盘页面，右键点击待卸载的硬盘ID，选择**卸载硬盘**，直至硬盘状态为可用。
 
-   ![图片](/storage/disk/quickstart/_images/image-1568774930715.png)
+   ![expan_win_2](../../_images/expan_win_2.png)
 
-4. 右键点击磁盘 ID 号 ，扩容磁盘容量并提交修改。
+4. 在云硬盘列表右键点击需要扩容的硬盘，选择**扩容**，弹出**扩容硬盘**界面。
 
-   ![图片](/storage/disk/quickstart/_images/image-1568774933959.png)
+   ![expan_win_1](../../_images/expan_win_1.png)
 
-   ![图片](/storage/disk/quickstart/_images/image-1568774937515.png)
+5. 点击“+”或直接输入容量值进行扩容，点击**提交**即可。
 
-5. 将扩容后的磁盘加载到云服务器。
+6. 将扩容后的磁盘加载到云服务器。
 
-6. 打开磁盘管理器，可以看到有未分配的磁盘容量。
+7. 打开磁盘管理器，可以看到有未分配的磁盘容量。
 
    ![图片](/storage/disk/quickstart/_images/image-1568774941054.png)
 
