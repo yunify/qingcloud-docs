@@ -25,7 +25,7 @@ weight: 40
 
 第三方网络配置 GRE 时需要配置目的网络为光盒网络，光盒网络即为第四步 “配置光盒” 中的 LAN 网段。
 
-隧道配置详见[GRE隧道](../../../../../network/vpc/manual/tunnel/gre)和[IPSEC隧道](../../../../../network/vpc/manual/tunnel/ipsec)。
+隧道配置详见[GRE隧道](/network/vpc/manual/tunnel/gre)和[IPSEC隧道](/network/vpc/manual/tunnel/ipsec)。
 
     注意：本指南中以 GRE 隧道为例子，同时也可以使用其他隧道比如 ipsec。
 

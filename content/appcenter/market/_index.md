@@ -8,8 +8,6 @@ type: "product"
 section1:
   title: 云市场
   vice_title: 云市场是为大中小微企业以及个人开发者提供软件应用及产品服务的交易和交付平台，聚合了不同领域类别的优质服务商，为用户降低数字化成本，让用户可轻松查找、测试、购买与部署所需的应用和服务。
-  video: 
-  video_img: hu
 
 Section2:
   title: 用户指南
