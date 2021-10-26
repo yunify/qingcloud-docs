@@ -32,6 +32,10 @@ Section2:
       content: 学习上手管理 QingMR 集群。
       url: "manual/cluster_info/"
 
+    - title: 开发指南
+      content: 学习上手开发 QingMR 组件。
+      url: "developer_manual/basic_info/"
+
 section3:
   title: 开发者指南
   children:

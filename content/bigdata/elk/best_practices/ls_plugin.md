@@ -121,4 +121,3 @@ draft: false
 * logstash-output-webhdfs
 * logstash-output-xmpp
 * logstash-patterns-core
-
