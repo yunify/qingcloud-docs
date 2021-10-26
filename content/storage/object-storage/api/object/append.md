@@ -1,22 +1,16 @@
 ---
 title: "Append Object"
-date: 2020-11-25T10:08:56+09:00
-description:
-collapsible: false
-draft: false
-weight: 3
 ---
 
-
-用于以追加写的方式上传对象到存储桶，通过 Append Object 接口创建的对象类型为 appendable。
+用户可以调用该 API 接口以追加写的方式上传对象到 QingStor 对象存储。通过该接口创建的 Object 类型为 `appendable`。
 
 ## 使用限制
 
-- 每次追加写的数据不能超过 5 GB，Object 的总大小不能超过50TB；
-- 非 appendable 类型的 Object 不能被追加写；
-- appendable 类型的 Object 不支持加密；
+- 每次追加写的数据不能超过 5 GB，Object 的总大小不能超过 50 TB；
+- 非 `appendable` 类型的 Object 不支持被追加写；
+- `appendable` 类型的 Object 不支持加密；
 
-## Request Syntax
+## 请求语法
 
 ```http
 POST /<object-name>?append&position=<position> HTTP/1.1
@@ -25,47 +19,47 @@ Date: <date>
 Authorization: <authorization-string>
 ```
 
-## Request Parameters
+## 请求参数
 
-| Name     | Type    | Description                                                  | Required |
-| -------- | ------- | ------------------------------------------------------------ | -------- |
-| append   | String  | 表示以追加写的方式上传对象                                       | Yes      |
-| position | Integer | 用于指定追加写的位置。首次追加写的position值必须为0，后续追加操作的position等于当前Object大小，当position大于或小于当前object大小时请求会返回400（invalid_argument) | Yes      |
+调用该接口时，可在 URL 中添加如下参数：
 
-## Request Headers
+| 名称 | 类型 | 说明 | 是否必选 |
+| --- | --- | --- | --- |
+| append   | String  | 表示以追加写的方式上传 Object | 是 |
+| position | Integer | 用于指定追加写的位置。首次调用该接口时，指定该值 0，后续调用该接口追加写时，指定该值为前一次返回结果中的 [x-qs-next-append-position](#响应头) 值 | 是      |
 
-参见[公共请求头](../../common_header/#请求头字段)
+## 请求消息头
 
-| Header Name        | Type   | Description                                                  | Required |
-| ------------------ | ------ | ------------------------------------------------------------ | -------- |
-| Content-Length     | String | 本次追加写入的数据的大小                                        | Yes      |
-| Content-Type       | String | 对象的类型, 首次写入的时候指定                                   | No       |
-| Content-MD5 	     | String |	本次追加写入的数据的 MD5 值，用于检查数据在传输过程中是否出错或被篡改 | No       |
-| x-qs-storage-class | String | 指定该对象的存储级别，支持的存储级别为 "STANDARD" 和 "STANDARD_IA"，默认存储级别为"STANDARD"。存储级别错误将返回 400 INVALID_REQUEST; 首次写入的时候指定 | No       |
+| 名称 | 类型 | 说明 | 是否必选 |
+| --- | --- | --- | --- |
+| Content-Length     | String | 本次追加写入的数据的大小。                                        | 是      |
+| Content-Type       | String | Object 类型，首次写入时需指定。                                   | 否       |
+| Content-MD5 	     | String |	本次追加写入的数据的 MD5 值，用于检查数据在传输过程中是否出错或被篡改。 | 否       |
+| x-qs-storage-class | String | 指定该对象的存储级别，首次写入时需指定。默认值为 `STANDARD`。可选值为：<br> - `STANDARD` 表示标准存储；<br> - `STANDARD_IA` 表示低频存储。 | 否  |
 
-## Request Body
+除以上请求头以外，此接口还需要包含 Host、Date 等公共请求头。详细内容可参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
 
-对象实体内容
+## 请求消息体
 
-## Response Headers
+无。
 
-参见[公共响应头](../../common_header/#响应头字段)
+## 响应头
 
-| Header Name               | Type     | Description                                      | Required |
+调用该接口后，QingStor 对象存储会返回如下自定义响应头：
+
+| 名称 | 类型 | 说明 | 是否必选 |
 | ------------------------- | -------- | ------------------------------------------------ | -------- |
-| x-qs-next-append-position | Interger | 下一次请求应当提供的position，即当前Object大小。 | Yes      |
+| x-qs-next-append-position | Interger | 即当前 Object 大小。作为下一次追加写请求参数 `position` 的值。 | 是      |
 
-## Status Code
+除以上响应头以外，其他公共响应头可参考：[公共响应头](/storage/object-storage/api/common_header/#响应头字段-response-header)。
 
-成功则返回 200, 失败的返回码参考[错误码列表](../../error_code/)
+## 错误码
 
-## Response Body
+成功则返回 200，失败的返回码参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 JSON 消息, 参考[错误码列表](../../error_code/)
+## 示例
 
-## Example
-
-### Example Request
+### 请求示例
 
 ```http
 POST /obj-append?append&position=0 HTTP/1.1
@@ -76,7 +70,7 @@ Authorization: authorization string
 [1024 bytes of object data]
 ```
 
-### Example Response
+### 响应示例
 
 ```http
 HTTP/1.1 200 OK
@@ -87,3 +81,8 @@ Connection: close
 x-qs-request-id: 3f2cf9ac3168744d
 x-qs-next-append-position: 1024
 ```
+
+## SDK
+
+此接口所对应的各语言 SDK 可参考 [SDK 文档](/storage/object-storage/sdk/)。
+

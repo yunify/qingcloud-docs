@@ -1,8 +1,8 @@
 ---
-title: "Bucket ACL"
+title: "权限控制（ACL）"
+
 ---
 
-# Bucket ACL
 
-- [PUT Bucket ACL](./put_acl)
-- [GET Bucket ACL](./get_acl)
+- [PUT Bucket ACL](put_acl/)
+- [GET Bucket ACL](get_acl/)

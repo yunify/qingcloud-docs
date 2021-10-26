@@ -1,8 +1,6 @@
 ---
-title: "CORS"
+title: "跨域资源共享（CORS）"
 ---
-
-# Bucket CORS
 
 - [PUT Bucket CORS](put_cors/)
 - [GET Bucket CORS](get_cors/)
