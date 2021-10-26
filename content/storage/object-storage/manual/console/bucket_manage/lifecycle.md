@@ -84,5 +84,5 @@ QingStor 对象存储定义生命周期为 Bucket 的子资源，因此，只有
 |操作|API|说明|
 |--|--|--|
 |设置 Bucket Lifecycle|[PUT Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/put_lifecycle)|用于设置 Bucket 的生命周期规则|
-|获取 Bucket Lifecycle|[GET Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/put_lifecycle)|用于获取已设置的 Bucket 生命周期规则|
-|删除 Bucket Lifecycle|[DELETE Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/put_lifecycle)|用于删除已经设置的 Bucket 策略生命周期规则|
+|获取 Bucket Lifecycle|[GET Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/get_lifecycle)|用于获取已设置的 Bucket 生命周期规则|
+|删除 Bucket Lifecycle|[DELETE Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/delete_lifecycle)|用于删除已经设置的 Bucket 策略生命周期规则|
