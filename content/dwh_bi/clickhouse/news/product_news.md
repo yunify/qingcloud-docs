@@ -4,9 +4,9 @@ collapsible: false
 weight: 10
 
 product:
-    - time: 2021-10-30
+    - time: 2021-11-03
       title: 1.1.7 版本正式上线
-      content: QingCloud ClickHouse 1.1.7 新上线。<br>- 新增 MaterializeMySQL 引擎，支持实时从 MySQL 同步数据；<br>- 新增对象存储服务策略，支持冷热数据分层存储，降低数据存储成本；<br>- 新开放 max_concurrent_queries 参数，支持修改最大连接数；<br>- 新增日志服务功能，支持在线查看数据库服务日志。
+      content: QingCloud ClickHouse 1.1.7 新上线。<br>- 新增 MaterializeMySQL 引擎，支持实时从 MySQL 同步数据；<br>- 新增对象存储服务策略，支持多磁盘数据存储和冷热数据分层存储；<br>- 新开放 max_concurrent_queries 参数，支持修改最大连接数；<br>- 新增日志服务功能，支持在线查看数据库服务日志。
       url: ../../intro/version/
       tags:
       - 新功能

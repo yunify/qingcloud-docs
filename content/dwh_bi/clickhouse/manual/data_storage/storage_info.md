@@ -1,7 +1,7 @@
 ---
 title: "数据存储概述"
-description: 本小节主要介绍 ChronusDB 冷热数据存储基本信息。 
-keywords: ChronusDB 冷热数据存储；冷热存储；冷热分离；数据冷热分类
+description: 本小节主要介绍 ClickHouse 数据存储基本信息。 
+keywords: ClickHouse 冷热数据存储；冷热存储；冷热分离；数据存储策略
 weight: 05
 collapsible: false
 draft: false
@@ -9,7 +9,7 @@ draft: false
 
 
 
-ChronusDB 内核使用 MergeTree 系列表引擎，支持将数据存储到多个对象存储中，提供数据多磁盘存储和数据冷热分层存储的功能，可大大降低海量数据存储的成本。
+ClickHouse 内核使用 MergeTree 系列表引擎，支持将数据存储到多个对象存储中，提供数据多磁盘存储和数据冷热分层存储的功能，可大大降低海量数据存储的成本。
 
 ## 冷热数据
 
@@ -23,7 +23,7 @@ ChronusDB 内核使用 MergeTree 系列表引擎，支持将数据存储到多�
 
 ## 存储策略
 
-ChronusDB 的数据存储提供了三种存储策略。
+ClickHouse 的数据存储提供了三种存储策略。
 
 - 默认存储策略
 
@@ -47,8 +47,8 @@ ChronusDB 的数据存储提供了三种存储策略。
 
 ## 注意事项
 
-- 对象存储策略适用于 ChronusDB `v1.0.8`及以上版本。若低于该版本，请先[升级集群版本](../../cluster_lifecycle/upgrade)。
+- 对象存储策略适用于 ClickHouse `v1.1.7`及以上版本。若低于该版本，请先[升级集群版本](../../cluster_lifecycle/upgrade)。
 
 - 创建对象存储策略，集群将自动重启。为避免数据丢失，请在业务低峰期操作。
 
-- 当多个表共用一个存储策略时，在对象存储桶的数据统一存在同一目录下，不会按照表进行划分目录，可能对运维不友好。
+- 当多个表共用一个存储策略时，在对象存储盘的数据统一存在同一目录下，不会按照表进行划分目录，可能对运维不友好。

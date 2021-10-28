@@ -180,7 +180,7 @@ draft: false
         ten_minutes
      HAVING (avg(velocity) > 1) AND (count(ten_minutes) >= 6)" | curl 'http://<ChronusDB 用户名>:<ChronusDB 密码>@<高可用
      IP>:8123/' --data-binary @-
-
+     ```
 
 8. 查询每支车队的平均油耗与预计油耗之比。
 

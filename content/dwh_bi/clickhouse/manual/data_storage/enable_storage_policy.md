@@ -1,7 +1,7 @@
 ---
 title: "开启对象存储策略"
 description: 本小节主要介绍如何开启对象存储策略。 
-keywords: ChronusDB 开启对象存储策略；冷热存储，冷热存储策略
+keywords: ClickHouse 开启对象存储策略；冷热存储，多磁盘数据存储
 weight: 10
 collapsible: false
 draft: false
@@ -9,12 +9,12 @@ draft: false
 
 
 
-ChronusDB 通过创建对象存储策略，并在创建表时添加语句指定对象存储策略，将冷数据存储到对象存储服务磁盘中，实现数据多磁盘存储。
+ClickHouse 通过配置对象存储策略，并在创建表时添加语句指定对象存储策略，将冷数据存储到对象存储服务磁盘中，实现数据多磁盘存储。
 
-- ChronusDB 对象存储策略默认关闭。
+- ClickHouse 对象存储策略默认关闭。
 - 若需使用数据冷热分离功能，需[配置冷热存储策略](../config_hot_to_cold_storage)。
 
-本小节主要介绍如何开启 ChronusDB 对象存储策略，将数据全部存储在对象存储中。
+本小节主要介绍如何开启 ClickHouse 对象存储策略，将数据全部存储在对象存储中。
 
 > **注意**
 > 
@@ -29,7 +29,7 @@ ChronusDB 通过创建对象存储策略，并在创建表时添加语句指定�
 ## 前提条件
 
 - 已获取管理控制台登录账号和密码，且已获取集群操作权限。
-- 已创建 ChronusDB 集群，且集群状态为**活跃**。
+- 已创建 ClickHouse 集群，且集群状态为**活跃**。
 - 已创建对象存储桶，并获取对象存储地址。
   
   > **注意**
@@ -38,19 +38,19 @@ ChronusDB 通过创建对象存储策略，并在创建表时添加语句指定�
 
 - 已创建并获取 API 密钥。
 
-## 步骤 1：创建对象存储策略
+## 步骤 1：开启对象存储策略
 
-1. 登录管理控制台。
-2. 选择**产品与服务** > **数据库与缓存** > **时序数据库 ChronusDB**，进入集群管理页面。
+1. 登录 QingCloud 管理控制台。
+2. 选择**产品与服务** > **数据仓库与 BI** > **ClickHouse**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**基本属性**模块，点击集群操作下拉菜单。
 5. 展开下拉菜单，点击**创建对象存储策略**，进入存储策略配置窗口。
 
    <img src="../../../_images/enable_bucket_policy.png" alt="启动对象存储策略" style="zoom:50%;" />
 
-6. 配置存储策略信息，详细参数说明请参见[存储策略参数](#存储策略参数)。
+7. 配置存储策略信息，详细参数说明请参见[存储策略参数](#存储策略参数)。
 
-7. 确认配置信息无误后，点击**提交**，返回集群页面。
+8. 确认配置信息无误后，点击**提交**，返回集群页面。
 
    待集群重启，状态切换为**活跃**，即对象存储策略创建完毕。
 
@@ -68,7 +68,7 @@ ChronusDB 通过创建对象存储策略，并在创建表时添加语句指定�
 创建对象存储策略后，执行如下命令将查询到三条存储策略。
 
 ```bash
-$ echo "select  *  from  system.storage_policies" | curl 'http://<ChronusDB 用户名>:<ChronusDB 密码>@<高可用 IP>:8123/' --data-binary @-
+$ echo "select  *  from  system.storage_policies" | curl 'http://<ClickHouse 用户名>:<ClickHouse 密码>@<高可用 IP>:8123/' --data-binary @-
 ```
 
 以创建一个 `ossp` 对象存储策略为例，查询回显信息如下：
@@ -103,10 +103,10 @@ $ echo "select  *  from  system.storage_policies" | curl 'http://<ChronusDB 用�
  SETTINGS storage_policy = '<策略名称>';
 ```
 
-以下示例建表语句，在`ossp`对象存储策略上，将所有数据全部存储到 `ossp` 对象存储磁盘中。
+以下示例建表语句，在`ossp`对象存储策略上，将所有数据全部存储到 `ossp` 对象存储磁盘。
 
 ```bash
-$ echo  "CREATE TABLE test.t_local
+$ echo "CREATE TABLE test.t_local
 (
     EventDate DateTime,
     CounterID UInt32,
@@ -116,5 +116,5 @@ ENGINE = MergeTree()
 PARTITION BY toYYYYMM(EventDate) 
 ORDER BY (CounterID, EventDate)
 SETTINGS storage_policy = 'ossp'"
-| curl 'http://<ChronusDB 用户名>:<ChronusDB 密码>@<高可用 IP>:8123/' --data-binary @-
+| curl 'http://<ClickHouse 用户名>:<ClickHouse 密码>@<高可用 IP>:8123/' --data-binary @-
 ```

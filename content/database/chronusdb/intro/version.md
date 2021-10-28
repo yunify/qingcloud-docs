@@ -2,7 +2,7 @@
 title: "产品版本"
 description: 本小节主要介绍 时序数据库 ChronusDB 主要版本。 
 keywords: chronusdb 版本介绍,系列介绍 
-weight: 20
+weight: 30
 collapsible: false
 draft: false
 ---
@@ -16,7 +16,7 @@ draft: false
 ChronusDB `企业版-1.0.8` 和 `基础版-1.0.8` 基于 RadonDB ClickHouse 21.1.3.32 内核开发。
 
 - 新增 MaterializeMySQL 引擎，支持实时从 MySQL 同步数据，可极大提升查询性能和数据同步的时效性；
-- 新增[对象存储服务策略](../../manual/data_storage/storage_info)，支持数据多磁盘存储和冷热数据分层存储；
+- 新增[对象存储服务策略](../../manual/data_storage/storage_info)，支持数据多磁盘存储和冷热数据分层存储，降低数据存储成本；
 - 新开放 max_concurrent_queries 参数，支持[修改最大连接数](../../manual/config_para/check_para)；
 - 新增[日志服务功能](../../manual/mgt_log/enable_log_service)，支持查看数据库服务日志。
 
