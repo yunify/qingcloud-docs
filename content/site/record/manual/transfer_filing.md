@@ -1,5 +1,5 @@
 ---
-title: "迁移备案"
+title: "迁移备案（即将上线）"
 description: test
 weight: 17
 draft: true
@@ -21,5 +21,4 @@ draft: true
 验证B主体是否有备案，如有备案，1.将qingcloud.com以新增网站的形式录入到B主体下，提交；2.同时把A主体下的qingcloud.com做注销网站操作。两个操作之间建议时间差为1小时。如无备案，1.将qingcloud.com以新增备案的形式录入到B主体下，提交；2.同时把A主体下的qingcloud.com做注销网站操作。两个操作之间建议时间差为1小时。
 
 注意事项：如qingcloud.com和其他多个域名一起备案在一个网站备案号下，第二步操作不要注销网站而是做变更备案，去掉qingcloud.com域名。
-
 
