@@ -1,5 +1,5 @@
 ---
-title: "系列和版本"
+title: "产品版本"
 description: 本小节主要介绍 QingMR 主要系列和版本。 
 keywords: QingMR 版本介绍,系列介绍 
 weight: 20
@@ -9,20 +9,29 @@ draft: false
 
 当前支持的组件及版本如下：
 
-| 版本 | Hadoop | Spark | Hive | Flink |
-| :------ | :------ | :------ | :------ | :------ |
-| QingMR - Core 2.5.2 | 2.9.2 | 2.2.3 | 2.3.5 | 1.9.0 |
-| QingMR - Core 2.0.0 | 2.9.2 | 2.2.3 | 2.3.5 | - |
-| QingMR - Core 1.3.0 | 2.7.3 | 2.2.0 | 2.3.4 | - |
-| QingMR - Core 1.2.1 | 2.7.3 | 2.2.0 | 1.2.2 | - |
+| 版本 | Hadoop | Spark | Hive | Flink | Ranger |
+| :------ | :------ | :------ | :------ | :------ | :------ |
+| QingMR - Core 2.6.0 | 3.1.3 | 2.4.8 | 3.1.2 | 1.13.1 | 2.0.0 |
+| QingMR - Core 2.5.2 | 2.9.2 | 2.2.3 | 2.3.5 | 1.9.0 | - |
+| QingMR - Core 2.0.0 | 2.9.2 | 2.2.3 | 2.3.5 | - | - |
+| QingMR - Core 1.3.0 | 2.7.3 | 2.2.0 | 2.3.4 | - | - |
+| QingMR - Core 1.2.1 | 2.7.3 | 2.2.0 | 1.2.2 | - | - |
 
-> 说明
+> **说明**
 >
-> 备注：Kyligence Enterprise 作为 Kylin 的企业版也是构建在 QingMR 之上。
+> Kyligence Enterprise 作为 Kylin 的企业版也是构建在 QingMR 之上。
+
+## v2.6.0
+
+- 升级 Hadoop、Spark、Hive、Flink 至新版本，升级说明请参见 [版本升级](../../manual/upgrade)。
+
+- 新增 Ranger 组件，支持 Ranger hive 插件，通过 Ranger 对 Hive 的权限控制，详细说明请参见 [Ranger 组件](../../developer_manual/ranger/ranger_info)。
+<!-- 
+- 新增 Zeppelin 组件，支持修改 Notebook 目录。-->
 
 ## v2.5.2
 
-- 新增 s3.endpoint 配置参数用于指定兼容 S3 的对象存储的 endpoint, 主要用于私有云不能访问公有云对象存储的场景。
+- 新增 s3.endpoint 配置参数用于指定兼容 S3 的对象存储的 endpoint，主要用于私有云不能访问公有云对象存储的场景。
 
 ## v2.5.1
 

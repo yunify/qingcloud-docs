@@ -19,11 +19,11 @@ draft: false
 
 <img src="../../quickstart/_images/billing.png" alt="billing" style="zoom:40%;" />
 
-付费模式影响实例的计费和收费规则，不同付费模式的实例遵循的资源状态变化规则也存在差异。目前支持预留合约和按需计费两种计费方式。
+付费模式影响实例的计费和收费规则，不同付费模式的实例遵循的资源状态变化规则也存在差异。目前支持包年包月和按需计费两种计费方式。
 
 | 计费模式 | 说明                                                         |
 | -------- | ------------------------------------------------------------ |
-| 预留合约 | 预付费模式，按月/年预留资源，享受更优惠价格，适合中长期稳定IT需求。详情请参考：[预留合约](/billing/intro/billing_zhinan/#预留合约简介)。 |
+| 包年包月 | 预付费模式，按月/年预留资源，享受更优惠价格，适合中长期稳定IT需求。 |
 | 按需计费 | 后付费模式，以秒为单位计费，适合短期弹性需求，灵活精准，避免浪费。 |
 
 ### 选择区域及可用区
@@ -183,7 +183,7 @@ b. 新建公网 IP
 
 3. 配置网卡多队列
 
-网卡多队列是利用 hash 算法，将网络流量分散到多个网卡队列中，交由多个 CPU 同时处理请求，利用CPU多核特性提高网络处理能力。开启这个功能后，云服务器挂载的网卡会有多队列功能，但是 Linux 系统还需要做相关配置，具体配置请查看[网卡多队列文档](https://docs.qingcloud.com/product/faq/index#nic-multi-queue)。
+网卡多队列是利用 hash 算法，将网络流量分散到多个网卡队列中，交由多个 CPU 同时处理请求，利用CPU多核特性提高网络处理能力。开启这个功能后，云服务器挂载的网卡会有多队列功能，但是 Linux 系统还需要做相关配置，具体配置请查看[网卡多队列文档](../../faq/other_questions/nic_multi)。
 
 4. 配置自动备份
 
@@ -200,16 +200,10 @@ b. 新建公网 IP
 
 ## 确认配置（可选）
 
-当计费模式选择预留合约时，点击**立即购买**后会二次确认配置，如下图所示。
+当计费模式选择包年包月时，点击**立即购买**后会二次确认配置，如下图所示。
 
 <img src="../../quickstart/_images/config.png" alt="config" style="zoom:33%;" />
 
 ## 完成创建
 
-当计费模式选择为按需计费时，则自动创建资源。
-
 <img src="../../quickstart/_images/create.png" alt="create" style="zoom:25%;" />
-
-当计费模式选择为预留合约时，自动创建资源后，点击![tattoo](/Users/rosasu/Desktop/qingcloud-docs/content/compute/quickstart/_images/tattoo.png)按钮查看预留合约详细内容。
-
-<img src="../../quickstart/_images/check_creation.png" alt="create" style="zoom: 25%;" />

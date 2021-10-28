@@ -169,7 +169,7 @@ draft: false
    >
    > 若您没有创建指标告警策略，点击**创建指标告警策略**，创建新的指标告警策略，详细操作请参见[告警服务](https://docsv3.qingcloud.com/monitor_service/cloudsat/manual/alarm_service/)。
 
-   ![](/../../_images/choose_mark_alarm.png)
+   ![](../../_images/choose_mark_alarm.png)
 
 4. 点击**提交**，完成指标告警策略的绑定。
 
