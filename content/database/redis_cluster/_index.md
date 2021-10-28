@@ -7,30 +7,38 @@ type: "product"
 
 section1:
   title: Redis Cluster
-  vice_title: Redis 是一个使用ANSI C编写的开源、支持网络、基于内存、可选持久性的键值对存储数据库。Redis Cluster on QingCloud AppCenter 基于原生的 Redis 提供了 Redis Cluster 的 APP，能够在 AppCenter 进行一键部署。
+  vice_title: Redis Cluster 是由青云 QingCloud 提供的兼容开源 Redis 协议标准的缓存数据库服务，为您提供即开即用、安全可靠、弹性扩容、便捷易用的在线分布式缓存能力。
 
 Section2:
   title: 用户指南
   children:
     - title: 产品简介
-      content: 产品简介
-      url: "intro/introduction/"
+      content: 快速了解 Redis Cluster
+      url: "intro/overview/"
 
     - title: 计费指南
-      content: 计费指南
+      content: Redis Cluster 的计费说明
       url: "billing/price/"
 
     - title: 快速入门
-      content: 快速入门
-      url: "quickstart/quick_start/"
+      content: 快速创建 Redis Cluster 实例 
+      url: "quickstart/create_redis/"
 
     - title: 操作指南
       content: 学习上手管理和使用 Redis Cluster 集群
-      url: "manual/cluster_info/"
+      url: "manual/mgeinstance/startstop/"
 
     - title: 最佳实践
       content: Redis Cluster 的最佳实践
-      url: "best-practices/data_transfer/"
+      url: "best-practices/disaster_recovery/"
+  
+    - title: 性能白皮书
+      content: Redis Cluster 的性能参考
+      url: "perfwp/test_tool/"
+
+    - title: 常见问题
+      content: Redis Cluster 的常见问题
+      url: "faq/security_policy/"
 
 section3:
   title: 开发者指南
@@ -54,22 +62,21 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品简介
-          url: "intro/introduction/"
+          url: "intro/overview/"
 
     - title: 进阶
       content: 学习如何创建、管理、使用 Redis Cluster 集群
       vice_title: 上手的第一步
       children: 
         - title: 创建 Redis Cluster
-          url: "quickstart/quick_start/"
+          url: "quickstart/create_redis/"
 
-        - title: Redis Cluster 集群信息
-          url: "manual/cluster_info/"
+        - title: 连接 Redis Cluster
+          url: "quickstart/cnect_redis/"
 
-        - title: Redis Cluster 服务功能
-          url: "manual/service/"
+        - title: 配置 Redis Cluster
+          url: "manual/cfginstance/changeconfig/"
 ---
-
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->
 <!-- section1 为产品index页面 主标题 副标题 video  video_img为视频图片  -->
