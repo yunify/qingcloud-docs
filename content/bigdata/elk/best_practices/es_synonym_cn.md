@@ -11,19 +11,19 @@ draft: false
 
 ## 操作步骤
 
-1. 按照每行一组同义词、词语之间以 **半角** 逗号 `,` 分隔的格式准备名为 `synonym.txt` 的同义词词典文件，如：
+1. 按照每行一组同义词、词语之间以 **半角** 逗号 `,` 分隔的格式准备名为 `synonym.txt` 的同义词词典文件。
 
    ```bash
    番茄,西红柿 => 西红柿,番茄
    ```
 
-   > **说明**：
+   > **说明**
    >
    > 详细的 synonym.txt 文件配置说明请参考 [官方文档](https://www.elastic.co/guide/en/elasticsearch/reference/6.7/analysis-synonym-tokenfilter.html)。
    
 2. 通过如下命令在 **所有** Elasticsearch 节点和 Elasticsearch 专有主节点上传词典：
 
-   > **注意**：
+   > **注意**
    >
    > URL最后的 `/` 不能省略
 
@@ -35,13 +35,13 @@ draft: false
 
    上传成功后可通过访问 http://$ES_IP/analysis/synonym.txt 来查看同义词文件。
 
-   > **说明**：
+   > **说明**
    >
    > `ELK 5.6.16 - QingCloud 1.5.0` 之前的版本需要重启集群中的 Elasticsearch 节点使词典生效，待集群恢复 `green` 状态（可通过以下命令查看状态，等待 `status` 字段变为 `green` ）：
-   >
-   > ```bash
-   > curl $ES_IP:9200/_cluster/health?pretty
-   > ```
+   
+   ```bash
+   curl $ES_IP:9200/_cluster/health?pretty
+   ```
 
 3. 进行同义词搜索测试。使用如下 bash 脚本测试同义词搜索功能：
 
@@ -136,7 +136,6 @@ draft: false
 
    ![synonym_result](../../images/synonym_result.png)
 
-   > **说明**：
+   > **说明**
    >
    > QingStor 对象存储为用户提供了云端可无限扩展的通用数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。 用户可以将数据、日志、静态资源等多种文件类型，通过多种方式上传至 QingStor 对象存储中，以满足日常数据存储、归档、分析等需求。为了更好的满足用户的需求，青云提供了Elasticsearch、Logstash 等与 QingStor 对象存储的集成功能。
-
