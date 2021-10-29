@@ -29,7 +29,7 @@ weight: 2
 
 1. 公网IP页面创建公网IP，选择需要的带宽点击提交，说明：集群仅支持外部绑定模式的IP
 
-   <img src="(../_images/image-20211019154855351.png" alt="image-20211019154855351" style="zoom:50%;" />
+   <img src="../_images/image-20211019154855351.png" style="zoom:50%;" />
 
 2. 创建完成后会获得公网的IP
 
