@@ -22,7 +22,7 @@ Section2:
 
     - title: 安装指南
       content: 安装指南
-      url: "preparation/preparation_info/"
+      url: "install/preparation/preparation_info/"
 
     - title: 物理资源
       content: 物理资源
@@ -46,7 +46,7 @@ section4:
           url: "intro/introduction/"
 
         - title: 功能特性
-          url: "intro/function/"
+          url: "intro/features/"
 
         - title: 产品优势
           url: "intro/superiority/"

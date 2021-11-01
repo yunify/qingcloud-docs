@@ -12,4 +12,4 @@ draft: false
 
 PolonDB 集群目前支持定制`基础型`、`企业型`两个资源类型，您也可以选择自定义配置资源规格。
 
-版本系列说明，请参见[系列介绍](../../intro/specification)。
+版本系列说明，请参见[系列介绍](../../../intro/specification)。

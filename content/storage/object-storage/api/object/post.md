@@ -11,7 +11,7 @@ title: "Post Object"
 - 若指定的 Bucket 被设置为匿名用户可写，则请求中可不携带用户认证信息
 - 若指定的 Bucket 被设置为匿名用户可写，请求中仍然携带了用户认证信息，则 QingStor 对象存储仍然会对该用户进行认证，当 QingStor 对象存储认证该用户不拥有该 Bucket 的可写权限，该请求返回错误。
 - 若同时有多个上传请求写入同一个对象名称，则最后一个被 QingStor 对象存储处理的请求会覆盖之前上传的对象内容。
-- HTML 的表单设置如下：<br>`action` 为 `http://<bucket-name>.<zone-id>`，其中 `zone-id` 可参考 [Zone](/storage/object-storage/intro/object-storage/#zone)<br> `method` 必须为 `POST` <br> `enctype` 必须为 `multipart/form-data` <br> Object key 在表单项中设置。
+- HTML 的表单设置如下：<br>`action` 为 `http://<bucket-name>.<zone-id>.qingstor.com`，其中 `zone-id` 可参考 [Zone](/storage/object-storage/intro/object-storage/#zone)<br> `method` 必须为 `POST` <br> `enctype` 必须为 `multipart/form-data` <br> Object key 在表单项中设置。
 - 考虑到不是所有网站都默认使用 UTF-8，若您的网站需要以 GBK 或 Big5 展示，我们支持在 `Form` 中声明 `charset` 字段来定义客户端上传的文件名所用编码。QingStor 对象存储服务端在接收到之后，会将其转换为 UTF-8 的格式来存储，以便兼容跨平台的客户端。但由于不是所有字符都能对应到 UTF-8 码表，转换过程仍有可能出现乱码，所以 QingStor 对象存储建议用户最好使用 UTF-8 来作为上传编码。
 
 ## 请求语法

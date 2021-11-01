@@ -104,9 +104,9 @@ weight: 2
 
 **如果请求返回401, 提示id_token过期, 则需要用refresh_token刷新access_token, 成功刷新后执行第一步校验access_token**
 
-调用POST /sso/refresh_token/(SSO域)
+调用 POST /sso/refresh_token/(SSO域)
 
-例如: [http://acount.qingcloud.com/sso/refresh_token/](http://acount.qingcloud.com/sso/check_token/) （[qingcloud](http://acount.qingcloud.com/sso/check_token/) 根据实际部署环境）
+例如: http://account.qingcloud.com/sso/refresh_token/（ QingCloud 根据实际部署环境）
 
 **Request Parameters**
 

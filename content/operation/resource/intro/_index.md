@@ -10,4 +10,5 @@ collapsible: true
 - [什么是项目管理](project_intro/)
 - [什么是资源共享](resource_intro/)
 - [什么是配额管理](quota_intro/)
+- [什么是区域及可用区](region_intro/)
 

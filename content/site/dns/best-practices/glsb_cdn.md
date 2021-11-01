@@ -23,7 +23,7 @@ draft: false
 
 4. 点击**添加**，创建一个 GSLB 实例。
 
-   具体参数配置说明，可参见[配置 GSLB 实例](/network/dns/quickstart/creatgslbpolicy/)，以下为配置示例。
+   具体参数配置说明，可参见[配置 GSLB 实例](/site/dns/quickstart/creatgslbpolicy/)，以下为配置示例。
 
    1. 配置站点。
 
