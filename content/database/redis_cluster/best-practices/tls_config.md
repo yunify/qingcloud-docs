@@ -137,29 +137,37 @@ TLS 当前不支持 I/O 多线程。
 执行以下命令进行验证：
 
 ```
-./src/redis-cli -h <redis_instance_address> -p <port> --tls --cert ./tests/tls/redis.crt --key ./tests/tls/redis.key --cacert ./tests/tls/ca.crt
+./src/redis-cli -h <redis_instance_address> -p <TLS-Port> --tls --cert ./tests/tls/redis.crt --key ./tests/tls/redis.key --cacert ./tests/tls/ca.crt Info Server
 ```
 
 - `<redis_instance_address>`：表示 Redis Cluster 实例的连接地址，请根据实际地址替换。
-- `<port>`：表示 Redis Cluster 实例的端口号，默认为 6379。
+- `<TLS-Port>`：表示 Redis Cluster 实例的 TLS 端口号。
 
 显示如下信息表示 TLS 配置成功：
 
 ```
-cluster_state:ok
-cluster_slots_assigned:16384
-cluster_slots_ok:16384
-cluster_slots_pfail:0
-cluster_slots_fail:0
-cluster_known_nodes:30
-cluster_size:30
-cluster_current_epoch:29
-cluster_my_epoch:16
-cluster_stats_messages_ping_sent:107
-cluster_stats_messages_pong_sent:104
-cluster_stats_messages_sent:211
-cluster_stats_messages_ping_received:104
-cluster_stats_messages_pong_received:107
-cluster_stats_messages_received:211
+redis_version:6.2.5
+redis_git_sha1:00000000
+redis_git_dirty:0
+redis_build_id:12957d9199f59509
+redis_mode:cluster
+os:Linux 4.15.0-58-generic x86_64
+arch_bits:64
+multiplexing_api:epoll
+atomicvar_api:c11-builtin
+gcc_version:7.5.0
+process_id:5186
+process_supervised:no
+run_id:582101ac9ac0314b265439da67d00854d5d19a70
+tcp_port:6379
+server_time_usec:1635753556324954
+uptime_in_seconds:5395
+uptime_in_days:0
+hz:10
+configured_hz:10
+lru_clock:8363604
+executable:/opt/redis/current/redis-server
+config_file:/data/redis/redis.conf
+io_threads_active:0
 ```
 
