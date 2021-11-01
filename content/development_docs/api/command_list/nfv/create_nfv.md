@@ -23,6 +23,8 @@ draft: false
 | security_group | String | 网络组件所加入的私有网络所加载的防火墙ID，若未提供，则默认加载缺省防火墙。 | No |
 | hypervisor | String | 网络组件节点使用的虚拟化方式，可以使用 kvm 或者　lxc。 | No |
 | zone | String | 区域 ID，注意要小写。 | Yes |
+| version | String | 网络组件版本号，1.0或者2.0。 | Yes |
+| vpc_router_id | String | 网络组件绑定的VPC路由ID。 | Yes |
 
 [_公共参数_](../../../parameters/)
 

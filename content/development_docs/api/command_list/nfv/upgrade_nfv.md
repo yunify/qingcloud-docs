@@ -1,12 +1,10 @@
 ---
-title: "DeleteNFVs"
-description: 
+title: "UpgradeNFV"
+description:
 draft: false
 ---
 
-
-
-删除一个或多个网络组件(NFV)。
+将一个或多个网络组件(NFV)版本从1.0升级到2.0。
 
 **Request Parameters**
 
@@ -14,16 +12,15 @@ draft: false
 | --- | --- | --- | --- |
 | nfvs.n | String | 网络组件的 ID 。 | Yes |
 | zone | String | 区域 ID，注意要小写。 | Yes |
-| force | Integer | 是否强制删除0, 1。 | No |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../common/parameters.html#api-common-parameters)
 
 **Response Elements**
 
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| job_id | String | 删除网络组件的job ID号 |
+| job_id | String | 更新一个或多个网络组件(NFV)的job ID号 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
 **Example**
@@ -31,7 +28,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteNFVs
+https://api.qingcloud.com/iaas/?action=UpgradeNFV
 &nfvs.1=nfv-1234abcd
 &COMMON_PARAMS
 ```
@@ -40,7 +37,7 @@ _Example Response_:
 
 ```
 {
-  "action":"DeleteNFVsResponse",
+  "action":"UpgradeNFVResponse",
   "ret_code":0,
   "job_id":"j-0om6hgcokm5"
 }
