@@ -15,7 +15,7 @@ draft: false
    
 2. 判断并发是否较高。
    
-   -是，则并发太多引起 CPU 占用率过高，建议[扩容 CPU](../../../manual/node_lifecycle/capacity_expansion)。
+   -是，则并发太多引起 CPU 占用率过高，建议[扩容 CPU](../../manual/node_lifecycle/capacity_expansion)。
 
    -否，则建议下载分析慢日志。重点排查涉及聚合(count、sum、avg、max、min), 分组(group by), 排序(sort)等消耗 CPU 资源的运算。
 
@@ -33,7 +33,7 @@ draft: false
    >
    > 使用的是 tokudb 存储引擎，SQL 需要改为 `show engine tokudb status\G`。
 
-2. 下载慢日志文件`mysql-slow.log`。详细操作请参考[下载日志](../../../manual/mgt_log/download_log)。
+2. 下载慢日志文件`mysql-slow.log`。详细操作请参考[下载日志](../../manual/mgt_log/download_log)。
 
 3. 分析慢日志中运行很慢的 SQL，看是否能创建索引来优化，减少全表扫描。
 
@@ -58,14 +58,14 @@ key_buffer_size + query_cache_size + tmp_table_size + innodb_buffer_pool_size + 
 
 **解决办法**
 
-- 在[配置参数](../../..//manual/config_para/modify_para)中，修改`innodb_buffer_pool_size`值，减少内存占用。
-- [扩容](../../../manual/node_lifecycle/capacity_expansion)，提高服务器运算能力。
+- 在[配置参数](../../manual/config_para/modify_para)中，修改`innodb_buffer_pool_size`值，减少内存占用。
+- [扩容](../../manual/node_lifecycle/capacity_expansion)，提高服务器运算能力。
 
 ## 业务压力大，内存占用率100%怎么办？
 
 1. 下载并分析慢日志，分析慢日志中运行很慢的 SQL，并优化 SQL。
 
-2. [扩容](../../../manual/node_lifecycle/capacity_expansion)，提高服务器运算能力。
+2. [扩容](../../manual/node_lifecycle/capacity_expansion)，提高服务器运算能力。
 
 ## 磁盘容量报警，未提示磁盘阈值怎么办？
 

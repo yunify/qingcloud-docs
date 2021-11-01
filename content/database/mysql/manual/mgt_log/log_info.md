@@ -18,3 +18,4 @@ MySQL Plus 支持 Caddy Server 日志服务，通过 HTTP 服务预览和下载�
 |mysql-audit   |   审计日志    |  记录 MySQL 审计日志信息。|
 |mysql-bin   |   binlog 文件    |   MySQL binlog 文件信息。|
 |mysql-cert   |   SSL 证书文件    |   MySQL SSL 证书文件信息。|
+|clickhouse.err.log   |   错误日志    |   记录 MySQL 分析实例执行错误信息。|

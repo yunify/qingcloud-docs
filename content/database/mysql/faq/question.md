@@ -13,7 +13,7 @@ draft: false
 
 MySQL Plus 新形态从 1.0.1 版本开始支持审计功能。
 
-使用审计功能可在[配置参数](../../..//manual/config_para/modify_para)中，修改 `Audit_log_policy`、`Audit_log_format`、`Audit_log_rotate_on_size`、`Audit_log_rotations`等参数，配置审计策略。
+使用审计功能可在[配置参数](../../manual/config_para/modify_para)中，修改 `Audit_log_policy`、`Audit_log_format`、`Audit_log_rotate_on_size`、`Audit_log_rotations`等参数，配置审计策略。
 
 ## MySQL 主节点和从节点的作用分别是什么？
 

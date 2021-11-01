@@ -90,6 +90,10 @@ draft: false
 
 数据库的环境参数配置。
 
+- （必选）配置 **启动对象存储服务** 参数：可选择 `true` 或 `false`。设置为 `true` 需同时设置 **Bucket_name** 和 **Access_key_id** 参数。
+
+- 其他参数配置说明，可在创建集群后，在集群**配置参数**页面修改，详细说明请参见[配置参数管理](../../manual/config_para/modify_para)。
+
 ![参数配置](../../_images/base_step_4.png)
 
 ### 用户协议

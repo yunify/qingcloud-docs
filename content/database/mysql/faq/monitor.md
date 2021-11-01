@@ -17,4 +17,4 @@ draft: false
 
 Mysql plus 提供了 Zabbix Agent服务（zabbix 3.4)。
 
-详细使用指导请参见，[Zabbix 客户端服务](../../manual/metrics_alarm/zabbix_client_service)
+详细使用指导请参见，[Zabbix 客户端服务](../../manual/metrics_alarm/zabbix_client_service)。

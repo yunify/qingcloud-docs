@@ -7,13 +7,21 @@ collapsible: false
 draft: false
 
 product:
-    - time: 2021-10-12
-      title: 支持逻辑备份
-      content: MySQL Plus 全新支持基于数据库对象（表、索引、存储过程等）的逻辑备份，并支持恢复集群到指定时间点。
-      url: ../../manual/backup_restoration/backup_info/
+    - time: 2021-11-12
+      title: MySQL Plus 1.1.0 版本正式上线
+      content: MySQL Plus 1.1.0 版本基于 MySQL 5.6、5.7、8.0 内核构建。<br>- 新增逻辑备份和备份回档功能；<br>- 新增分析实例日志查询和下载功能；<br>- 新放开 `Block_encryption_mode`、`Binlog_transaction_dependency_tracking`、`Group_replication_transaction_size_limit`参数；<br>- 支持动态设定 `Max_connections` 参数值；<br>- `Sql_mode` 参数新增 NULL 值选项；<br>- 修复集群自动化运维问题，加强集群高可用稳定性。
+      url: ../../intro/version/
       tags:
       - 新功能
       - 体验优化
+      zone: 全部
+
+    - time: 2021-11-12
+      title: MySQL Plus 支持逻辑备份
+      content: MySQL Plus 1.1.0 版本全新支持基于数据库对象级的逻辑备份，并支持恢复集群到指定时间点。
+      url: ../../manual/backup_restoration/backup_info/
+      tags:
+      - 新功能
       zone: 全部
 
     - time: 2021-07-12

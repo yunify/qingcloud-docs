@@ -11,7 +11,7 @@ draft: false
 
 (binlog,slow-log,error-log,general-log)
 
-- MySQL Plus 支持通过 wget 下载 `slow-log`和 `error-log`，详细操作请参见[下载日志](../../../manual/mgt_log/download_log)。
+- MySQL Plus 支持通过 wget 下载 `slow-log`和 `error-log`，详细操作请参见[下载日志](../../manual/mgt_log/download_log)。
 - `bin-log` 和 `general-log`可通过题工单获取。
 
 ## 如何查看 bin-log?

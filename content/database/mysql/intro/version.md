@@ -11,6 +11,16 @@ draft: false
 
 ## 新形态版本
 
+### 1.1.0版本
+
+兼容 MySQL 8.0、5.7、5.6内核，其中**金融版**产品系列仅支持 MySQL 8.0、5.7内核。
+
+|<span style="display:inline-block;width:140px">版本</span> |<span style="display:inline-block;width:520px">版本说明</span>|
+|:----|:----|
+|   金融版-1.1.0    | <li>新增逻辑备份功能，支持基于数据库对象（表、索引、存储过程等）的逻辑备份，并支持恢复集群到指定时间点。<li>支持在线查看分析实例日志。<li>新开放 `Block_encryption_mode`、`Binlog_transaction_dependency_tracking`、`Group_replication_transaction_size_limit`参数。<li>支持动态设定 `Max_connections` 参数值。<li> `Sql_mode` 参数新增 Null 值选项。  |
+|   高可用版-1.1.0   |  <li>新增逻辑备份功能，支持基于数据库对象（表、索引、存储过程等）的逻辑备份，并支持恢复集群到指定时间点。<li>新开放 `Block_encryption_mode`参数。<li>支持动态设定 `Max_connections` 参数值。 <li> `Sql_mode` 参数新增 Null 值选项。     |
+|   基础版-1.1.0      |  <li>新增逻辑备份功能，支持基于数据库对象（表、索引、存储过程等）的逻辑备份，并支持恢复集群到指定时间点。 <li>支持在线查看分析实例日志。<li>新开放 `Block_encryption_mode`参数。<li>支持动态设定 `Max_connections` 参数值。<li> `Sql_mode` 参数新增 Null 值选项。 |
+
 ### 1.0.9版本
 
 兼容 MySQL 8.0、5.7、5.6内核，其中**金融版**产品系列仅支持 MySQL 8.0、5.7内核。

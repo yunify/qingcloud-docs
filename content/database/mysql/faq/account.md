@@ -1,7 +1,7 @@
 ---
-title: "用户账号"
-description: 本小节主要介绍 MySQL Plus 用户账号常见问题。 
-keywords: mysql plus 用户账号问题
+title: "用户帐号"
+description: 本小节主要介绍 MySQL Plus 用户帐号常见问题。 
+keywords: mysql plus 用户帐号问题
 weight: 20
 collapsible: false
 draft: false
