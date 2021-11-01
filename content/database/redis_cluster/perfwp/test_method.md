@@ -41,7 +41,7 @@ keywords: redis cluster, 性能测试, 测试方法
 | <span style="display:inline-block;width:80px">参数</span> | 参数说明                                                     |
 | --------------------------------------------------------- | ------------------------------------------------------------ |
 | **-h**                                                    | Redis Cluster 实例的内网连接地址。请参见[获取连接地址](../../quickstart/cnect_redis/#获取连接地址)。 |
-| **-p**                                                    | Redis Cluster 实例的服务端口，默认为6379。                   |
+| **-p**                                                    | Redis Cluster 实例的服务端口，默认为 6379，若启用了 TLS，则为 TLS 端口。 |
 | **-a**                                                    | Redis Cluster 实例的密码。无密码时可不填写。<br/><div style="background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;">  <b>说明</b><br/>   如果是使用默认账号，直接填写`<password>`即可。如果是新创建的账号，则填写`<user>:<password>`。例如：账号为`test`，密码为`redis@123`，则填写 `test:redis@123`。</div> |
 | **-n**                                                    | 测试的总请求数量，可设置较大的值以持续压测。                 |
 | **-r**                                                    | 使用随机 key 数量，即使用多少个不同 key。                    |
