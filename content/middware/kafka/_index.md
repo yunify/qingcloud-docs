@@ -12,6 +12,10 @@ section1:
 Section2:
   title: 用户指南
   children:
+    - title: 产品动态
+      content: 产品动态
+      url: "news/prodoct_news/"
+
     - title: 产品简介
       content: 产品简介
       url: "intro/intro/"
@@ -22,11 +26,11 @@ Section2:
 
     - title: 快速入门
       content: 快速入门
-      url: "quick-start/quick_start/"
+      url: "quick-start/creat_cluster/"
 
     - title: 操作指南
       content: 学习如何管理Kafka集群，以及如何使用Kafka提供的相关服务等。
-      url: "manual/kafka_manager/"
+      url: "manual/kafka_manager/access_kafka_manager/"
 
 
 
