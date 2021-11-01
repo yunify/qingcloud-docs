@@ -15,5 +15,5 @@ keyword: QingCloud, 青云, NAT网关, NAT, SNAT, DNAT
 | 大型   | 20万            | 1万                 | 4Mpps        |
 
 
-详细数据可参考 NAT 网关性能测试报告
+详细性能测试数据可参考 NAT 网关[最大连接数测试](../../perfwp/max_connect/)。
 

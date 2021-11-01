@@ -1,7 +1,9 @@
 ---
 title: "ModifyNFVAttributes"
-description: 
+description: 修改网络组件属性
 draft: false
+weight: 15
+keywords: API, NFV, NAT 网关, 网络组件
 ---
 
 
@@ -12,9 +14,9 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| nfv | String | 网络组件的 ID 。 | Yes |
-| zone | String | 区域 ID，注意要小写。 | Yes |
-| nfv_name | String | 网络组件名称。 | No |
+| nfv | String | 网络组件的 ID | Yes |
+| zone | String | 区域 ID，注意要小写 | Yes |
+| nfv_name | String | 网络组件名称 | No |
 | description | String | 描述信息 | No |
 | hypervisor | String | hypervisor 类型，当前支持 kvm 和 bm, 默认是 kvm | No |
 | new_zone | String | 新的区域 | No |

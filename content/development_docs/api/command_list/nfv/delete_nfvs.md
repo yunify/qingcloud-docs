@@ -1,7 +1,9 @@
 ---
 title: "DeleteNFVs"
-description: 
+description: 删除一个或多个网络组件(NFV)
+weight: 20
 draft: false
+keywords: API, NFV, NAT 网关, 网络组件
 ---
 
 
@@ -12,8 +14,9 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| nfvs.n | String | 网络组件的 ID 。 | Yes |
-| zone | String | 区域 ID，注意要小写。 | Yes |
+| nfvs.n | String | 网络组件的 ID | Yes |
+| zone | String | 区域 ID，注意要小写 | Yes |
+| force | Integer | 是否强制删除0, 1 | No |
 
 [_公共参数_](../../../parameters/)
 
@@ -22,7 +25,7 @@ draft: false
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| job_id | String | 删除网络组件的job ID号 |
+| job_id | String | 删除网络组件的 job ID 号 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
 **Example**

@@ -36,7 +36,7 @@ section2:
       
     - title: 常见问题
       content: 常见问题
-      url: "faq/nat-faq"
+      url: "faq/nat_faq"
 
 
 section3:

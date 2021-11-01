@@ -1,7 +1,9 @@
 ---
 title: "NFVLeaveVxnets"
-description: 
+description: 网络组件解绑一个或多个私有网络
 draft: false
+weight: 14
+keywords: API, NFV, NAT 网关, 网络组件, 私有网络
 ---
 
 
@@ -12,8 +14,8 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| nfv | String | 网络组件的 ID 。 | Yes |
-| zone | String | 区域 ID，注意要小写。 | Yes |
+| nfv | String | 网络组件的 ID | Yes |
+| zone | String | 区域 ID，注意要小写 | Yes |
 | vxnets.n | String | 私有网络 ID | Yes |
 
 [_公共参数_](../../../parameters/)

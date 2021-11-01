@@ -1,7 +1,9 @@
 ---
 title: "AssociateEipsToNFV"
-description: 
+description: 绑定公网 IP 地址到某个网络组件
 draft: false
+weight: 4
+keywords: API, NFV, NAT 网关, 网络组件, 公网 IP
 ---
 
 
@@ -12,9 +14,9 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| nfv | String | 网络组件的 ID 号 。 | Yes |
+| nfv | String | 网络组件的 ID 号 | Yes |
 | eips.n | String | 一个或多个要被绑定的公网 IP 地址 | Yes |
-| zone | String | 区域 ID，注意要小写。 | Yes |
+| zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)
 
