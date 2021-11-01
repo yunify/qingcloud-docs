@@ -39,7 +39,7 @@ section2:
 section4:
   children:
     - title: 了解：什么是 SD-WAN ?
-      content: 实时音视频 RTC 是为用户提供全球低延时互动直播、多人音视频的服务，包含低延时直播、屏幕共享、基础美颜、水印、实时录屏、自定义视频源等功能，支持用户快速搭建在线会议、互动课堂、语音电台、互动连麦等服务场景。
+      content: RTN 是 SD-WAN 的全新自研产品，以全软件化形式提供应用即组网。
       vice_title: 了解的第一步
       children:
         - title: 产品简介

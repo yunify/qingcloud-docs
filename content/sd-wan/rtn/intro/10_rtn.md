@@ -1,17 +1,25 @@
 ---
-title: "什么是 RTN"
+title: "什么是 SD-WAN"
 draft: false
 collapsible: false
 weight: 10
 ---
 
-RTN（Software-Defined, Realtime, Dynamic Content）是 SD-WAN 的全新自研产品，以全软件化形式提供应用即组网。
+SD-WAN 是青云的全新自研产品，以全软件化形式提供应用即组网。
 
-RTN 采用全新架构脱离目前骨干网和硬件局限全部软件话形态，骨干网作为**核**提供业务服务如到云服务；外围覆盖全部采用软件化 vpop 组成 fullmesh。
+SD-WAN 采用全新架构脱离目前骨干网和硬件局限全部软件化形态。企业可通过 SD-WAN 一站式接入青云，获得更加可靠、安全的上云体验。
 
-vpop 可有控制器自动化部署，vpop间控制器根据链路质量等级自动调度，结构尽量靠近用户近端。端侧提供轻量级 SDK 方式，适配任何应用及支持 SDK 设备。
+SD-WAN 提供硬件光盒 CPE 设备和镜像 vCPE 软件两种服务形态。
 
-SDK侧只需具备探测及切换能力，增值服务放置在 vpop 侧，如识别/分析/调度。这样的Code Network Services，让我们的能够“Connect Anything”。
+- 光盒 CPE 
+
+    光盒 CPE 可帮助用户最后一公里快速接入到连接云网，支持公 Internet 链路、专线、MPLS/VPN、4G LTE 等多种接入方式，可实时监控隧道质量，具备零部署、即插即用、动态链路切换等特性。
+    
+- vCPE 软件
+
+    vCPE 是 SD-WAN 的软件镜像版，支持部署在本地的服务器、边缘节点服务实例，青云、AWS、Microsoft Azure等云平台的云服务器上。
+
+    部署后，vCPE 作为一个虚拟 CPE 设备帮您将网络接入青云，加密私网带宽可达 300 Mbps以上（1024字节），突破了物理的限制，为您接入上云提供更多的灵活性。
 
 
 
