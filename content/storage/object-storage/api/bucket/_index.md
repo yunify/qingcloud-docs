@@ -13,7 +13,7 @@ collapsible: true
 - [外部镜像（External Mirror）](./external_mirror)
 - [跨域资源共享（CORS）](./cors)
 - [日志管理（Logging）](./logging)
-- [跨区域复制（Replication）](./repliation)
+- [跨区域复制（Replication）](./replication)
 - [事件通知（Notification）](./notification)
 - [自定义域名（CNAME）](./cname)
 - [Bucket 策略（Policy）](./cname)
