@@ -17,11 +17,11 @@ weight: 6
 2. 在**云防火墙控制台**左侧导航栏，单击**安全策略** > **通用管理** > **地址簿**。
 3. 在**地址簿**页面，单击**新增**。
 
-![](../_images/address.png)
+   ![](../_images/address.png)
 
 4. 在**新增地址簿**对话框中，按照以下步骤新增地址簿。
 
-![新增地址簿](../_images/add_address.png)
+   <img src="../_images/add_address.png" alt="新增地址簿" style="zoom:60%;" />
 
 5. 单击**新增**完成创建。
 
@@ -37,11 +37,11 @@ weight: 6
 2. 在**云防火墙控制台**左侧导航栏，单击**安全策略** > **通用管理** > **服务端口**。
 3. 在**服务端口**页面，选择**自定义服务端口**。
 
-![](../_images/server.png)
+   ![](../_images/server.png)
 
 4. 在**新增自定义服务端口**对话框中，按照以下步骤新增自定义服务端口。
 
-![](../_images/default_port.png)
+   <img src="../_images/default_port.png" style="zoom:50%;" />
 
 5. 单击**新增**完成创建。
 
@@ -55,7 +55,7 @@ weight: 6
 2. 在**云防火墙控制台**左侧导航栏，单击**安全策略** > **通用管理** > **应用组**。
 3. 在**应用组**页面，查看应用组集合。
 
-![](../_images/app_group.png)
+   <img src="../_images/app_group.png" style="zoom:60%;" />
 
 
 

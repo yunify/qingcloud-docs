@@ -11,7 +11,7 @@ weight: 1
 
 您可以在**云防火墙控制台**界面，单击左侧导航栏的**业务系统资产**，打开**业务系统资产**页面（如下图所示）。
 
-![](../_images/asset.png)
+<img src="../_images/asset.png" style="zoom:50%;" />
 
 ## 同步资产
 
@@ -19,7 +19,7 @@ weight: 1
 
 您可以在**业务系统资产**界面对您的资产进行同步，如下图所示，点击**同步资产**。
 
-![](../_images/asset_1.png)
+<img src="../_images/asset_1.png" style="zoom:60%;" />
 
 ## 自动保护资产
 
@@ -27,7 +27,7 @@ weight: 1
 
 在该区域，您可以选择自动对新增资产进行保护，如下图所示。
 
-![](../_images/asset_protect.png)
+<img src="../_images/asset_protect.png" style="zoom:60%;" />
 
 ![](../_images/version.png)
 

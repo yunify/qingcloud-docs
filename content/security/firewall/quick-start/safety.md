@@ -21,13 +21,13 @@ weight: 3
 
 可以识别访问控制策略以外的未知风险，对互联网上的恶意流量入侵活动和常规攻击行为进行实时阻断和拦截，并提供精准的威胁检测虚拟补丁，智能阻断入侵风险。
 
-![](../_images/ips.png)
+<img src="../_images/ips.png" style="zoom:60%;" />
 
 ## 流量控制策略
 
 流量控制策略可针对全平台设置内访外和外访内的最大带宽及保障带宽。
 
-![](../_images/data_control.png)
+<img src="../_images/data_control.png" style="zoom:60%;" />
 
 ## 黑白名单
 
