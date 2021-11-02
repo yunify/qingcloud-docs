@@ -103,6 +103,6 @@ RSYSLOGD_OPTIONS=”-c5 -r -x”
 
 ### 查看rsyslog日志
 
-进入3.3配置rsyslog配置的接受日志文件路径，查看日志产生
+进入配置rsyslog配置的接受日志文件路径，查看日志产生
 
 ![](../_images/syslog04.png)
