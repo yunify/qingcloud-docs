@@ -17,24 +17,35 @@ weight: 10
 
 ## 脚本参数说明
 
-vCPE 镜像的部署脚本提供如下可执行参数，如下图所示。
+vCPE 镜像的部署脚本提供如下可执行参数，如下所示。
 
-<img src="../../_images/um_vcpe_script.png" style="zoom:50%;" />
+```
+Usage: install.sh [command] [options]
 
-| 参数           | 参数说明                                                     |
-| -------------- | ------------------------------------------------------------ |
-| **-n**（必选） | SAG vCPE设备的序列号。                                       |
-| **-k**（必选） | SAG vCPE设备的密钥。                                         |
-| **-t**（必选） | 安装SAG vCPE镜像的宿主机所在的平台。取值如下所示：<br />**qingcloud**（默认值）：表示 vCPE 镜像部署在青云的云服务器中。<br />**aws**：表示 vCPE 镜像部署在AWS EC2中。<br />**azure**：表示 vCPE 镜像部署在Microsoft Azure平台的虚拟机中。<br />如果您的 vCPE 镜像部署在本地网络的服务器中，则本参数的取值可为**qingcloud**、**ens**、**aws**、**azure**之外的任意英文字符。 |
-| -w             | WAN口的网卡名称。默认值为eth0。<br />您可以通过 `ifconfig` 或者 `ip -br address` 命令查看宿主机网卡的名称。 |
-| -u             | 卸载 vCPE 镜像。                                             |
-| -h             | 查看脚本的帮助信息。                                         |
-| -p             | 升级 vCPE 镜像。                                             |
-| -c             | 检测宿主机的运行状态。                                       |
-| check          | 获取当前宿主机的部署状态、宿主机的系统信息、vCPE 镜像的版本等信息。 |
-| ping           | 网络连通性测试命令。                                         |
-| traceroute     | 路由跟踪命令，用于确定数据包访问目标时所经过的路径。         |
-| mar            | 结合**ping**和**traceroute**的特性，提供诊断网络连通性的功能。 |
+VCPE install tool 2021.06
+Options:
+    -u          run uninstall process
+    -h          print this help message and exit
+    -p          update an existing installation
+    -c          run service state check
+    -l          license, get license from user console platform
+
+Commands:
+    ping        the standard ping command
+    mtr         the standard mtr command
+    check       display main information
+```
+
+| 参数  | 参数说明                                                     |
+| ----- | ------------------------------------------------------------ |
+| -u    | 卸载 vCPE 镜像。                                             |
+| -h    | 查看脚本的帮助信息。                                         |
+| -p    | 升级 vCPE 镜像。                                             |
+| -c    | 检测宿主机的运行状态。                                       |
+| -l    | vCPE 设备的 License 。                                       |
+| ping  | 网络连通性测试命令。                                         |
+| mtr   | 结合**ping**和**traceroute**的特性，提供诊断网络连通性的功能。 |
+| check | 获取当前宿主机的部署状态、宿主机的系统信息、vCPE 镜像的版本等信息。 |
 
 ## 操作步骤
 
@@ -45,13 +56,13 @@ vCPE 镜像的部署脚本提供如下可执行参数，如下图所示。
    > 关于如何登录宿主机，请咨询您的宿主机提供商。
 
    ```
-   wget -O /root/sag_vcpe_v2.3.0_deployment.sh https://sdwan-oss-shanghai.oss-cn-shanghai.aliyuncs.com/vcpe_vm/sag_vcpe_v2.3.0_deployment.sh
+   wget -O /root/vcpe_deploy.sh https://wan-dev-sw.pek3b.qingstor.com/vcpe_deploy.sh
    ```
 
 2. 执行以下命令，为脚本赋予可执行权限。
 
    ```
-   chmod +x /root/sag_vcpe_v2.3.0_deployment.sh
+   chmod +x /root/vcpe_deploy.sh
    ```
 
 3. 执行脚本。
@@ -63,12 +74,12 @@ vCPE 镜像的部署脚本提供如下可执行参数，如下图所示。
    当您在命令行输入命令行并制定参数时，系统会帮您一键执行部署命令，示例如下所示。
 
    ```
-   /root/sag_vcpe_v2.3.0_deployment.sh -n 序列号 -k 密钥 -t 平台  -w WAN口网卡名称                
+   /root/vcpe_deploy.sh -l License             
    ```
 
    **交互式**
 
-   当您在命令行只输入命令`/root/sag_vcpe_v2.3.0_deployment.sh`而不指定参数时，系统默认您使用交互方式执行命令。
+   当您在命令行只输入命令`/root/vcpe_deploy.sh`而不指定参数时，系统默认您使用交互方式执行命令。
 
    命令执行过程中，需要您根据终端提示信息自行输入参数。
 

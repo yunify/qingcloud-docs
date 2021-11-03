@@ -22,8 +22,14 @@ weight: 10
 ### 准备工作
 
 - 已获取 QingCloud 管理控制台的账号和密码。
+
 - 已创建 VPC 01、VPC 02、Vxnet 01、Vxnet 02、VM 01 和 VM 02。
-- 已部署 vCPE 01 和 vCPE 02，部署 vCPE 的详细操作请参见[部署 vCPE](../../vcpe/30_deploy_script)。
+
+- 已部署且激活 vCPE 01 和 vCPE 02。
+
+  - 部署 vCPE 请参见[部署 vCPE](../../vcpe/30_deploy_script)。
+
+  - 激活 vCPE 请参见[激活 vCPE](../../vcpe/40_active_vcpe)。
 
 ### 步骤一：创建连接云网
 

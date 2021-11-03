@@ -18,7 +18,7 @@ section2:
 
     - title: 产品简介
       content: 功能特性、产品优势、应用场景等
-      url: "intro/10_rtn"
+      url: "intro/10_sdwan"
 
     - title: 计费指南
       content: 计费说明
@@ -27,6 +27,14 @@ section2:
     - title: 快速入门
       content: 快速使用 SD-WAN。
       url: "qs/10_qs_2vxnet_access"
+
+    - title: 光盒使用指南
+      content: 光盒的申请和使用说明。
+      url: "lightbox/10_intro/"
+
+    - title: vCPE 使用指南
+      content: vCPE 使用说明。
+      url: "vcpe/10_vcpe_overview/"
 
     - title: 操作指南
       content: SD-WAN 详细功能说明及使用方法
