@@ -2,7 +2,7 @@
 title: "性能规格"
 description: 本小节主要介绍 PostgreSQL 性能规格。 
 keywords: PostgreSQL, QingCloud, 性能规格
-weight: 4
+weight: 40
 collapsible: false
 draft: false
 ---
@@ -24,6 +24,6 @@ QingCloud PostgreSQL 根据QingCloud AppCenter 功能特点，定制`基础版`�
 各系列实例可自定规格如下。
 |<span style="display:inline-block;width:60px">节点角色</span>|<span style="display:inline-block;width:180px">CPU </span>|<span style="display:inline-block;width:180px">内存</span> |<span style="display:inline-block;width:100px">存储空间</span> |<span style="display:inline-block;width:80px">最大节点数</span> |
 |:----|:----|:----|:----|:----|
-|主实例	|基础型：1～8核 <br> 企业型 e2：2～32核  |   基础型：2～32G <br> 企业型 e2：4～256G   | 10～2000GB|	-  |
-|只读实例| 基础型：1～8核 <br> 企业型 e2：2～32核  |   基础型：2～32G <br> 企业型 e2：4～256G   | 10～2000GB|	5个  |
-|Proxy 实例	|基础型：1～8核 <br> 企业型 e2：2～32核  |   基础型：2～32G <br> 企业型 e2：4～256G   | 10～2000GB| 2个  |
+|主实例	|基础型：1～8核 <br> 企业型 e2：2～32核  |   基础型：2～32G <br> 企业型 e2：4～256G   | 10～2000GB|	 2个  |
+|只读实例| 基础型：1～8核 <br> 企业型 e2：2～32核  |   基础型：2～32G <br> 企业型 e2：4～256G   | 10～2000GB|	0～5个  |
+|Proxy 实例	|基础型：1～8核 <br> 企业型 e2：2～32核  |   基础型：2～32G <br> 企业型 e2：4～256G   | 10～2000GB| 0～2个  |
