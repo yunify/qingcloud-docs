@@ -1,5 +1,5 @@
 ---
-title: "什么是 Clickhouse"
+title: "什么是 ClickHouse"
 description: 本小节主要介绍 Clickhouse 产品简介。 
 keywords: Clickhouse 产品简介,
 weight: 10
@@ -7,7 +7,9 @@ collapsible: false
 draft: false
 ---
 
-ClickHouse 是一款高性能的、面向联机分析处理(OLAP)的、开源的、列式数据库。ClickHouse on QingCloud 是一款深度定制的 ClickHouse 集群应用。具备高性能，支撑PB级数据，提供实时分析，稳定可扩展等特性。适用于数据仓库、BI报表、监控系统、互联网用户行为分析、广告投放业务以及工业、物联网等分析和时序应用场景。
+ClickHouse 是一款高性能的、面向联机分析处理(OLAP)的、开源的、列式数据库。
+
+ClickHouse on QingCloud 是一款深度定制的 ClickHouse 集群应用。具备高性能，支撑PB级数据，提供实时分析，稳定可扩展等特性。适用于数据仓库、BI报表、监控系统、互联网用户行为分析、广告投放业务以及工业、物联网等分析和时序应用场景。
 
 - 自动的集群管理
 
