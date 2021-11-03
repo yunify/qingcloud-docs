@@ -1,5 +1,5 @@
 ---
-title: "监控信息管理"
+title: "管理监控信息"
 draft: false
 collapsible: false
 weight: 50

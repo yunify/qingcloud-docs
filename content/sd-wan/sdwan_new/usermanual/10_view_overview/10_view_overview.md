@@ -2,7 +2,7 @@
 title: "查看概览"
 draft: true
 collapsible: false
-weight: 50
+weight: 10
 ---
 
 您可以通过查看概览页面了解设备状态、告警数据、带宽趋势、接入点 TOP15的带宽使用率和丢包率以及企业云网的全局 WAN 状态和连接状态。

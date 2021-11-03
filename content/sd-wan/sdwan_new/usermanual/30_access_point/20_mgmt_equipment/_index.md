@@ -1,6 +1,6 @@
 ---
-title: "管理连接云网"
-linkTitle: "管理连接云网"
+title: "设备管理"
+linkTitle: "设备管理"
 _build:
  render: false 
 weight: 20
