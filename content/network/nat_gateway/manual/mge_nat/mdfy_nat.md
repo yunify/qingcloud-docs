@@ -31,6 +31,9 @@ keyword: QingCloud, 青云, NAT网关, NAT
      ![](../../../_images/nat_detail_operation.png)
 
    - 将鼠标移到**公网安全组**、**基础网络安全组**的属性值上，可修改安全组的绑定值。
+   >**说明**
+   >
+   >
 
 
 
