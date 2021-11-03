@@ -15,11 +15,11 @@ weight: 4
 2. 在**云防火墙控制台**左侧导航栏，单击**安全策略** > **流量控制策略**。
 3. 在**流量控制策略**页面，单击**新增策略**。
 
-![流量控制策略](../_images/data_control2.png)
+   ![流量控制策略](../_images/data_control2.png)
 
 4. 在**新增流量控制策略**对话框中，按照以下步骤新增流量控制策略。
 
-   ![流量控制策略](../_images/data_control.png)
+   <img src="../_images/data_control.png" alt="流量控制策略" style="zoom:60%;" />
 
    1.  配置说明配置规则参数，详情请参考[参数说明](/security/firewall/manual/flow/#参数说明)。
    2.  单击新增添加流量控制策略。
