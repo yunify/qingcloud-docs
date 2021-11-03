@@ -30,6 +30,10 @@ Section2:
       content: 操作指南
       url: "manual/checkdata"
 
+    - title: 常见问题
+      content: 常见问题
+      url: "faq/faq"
+
 section4:
   children:
     - title: 了解：什么是云防火墙 CFW
