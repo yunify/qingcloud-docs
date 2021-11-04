@@ -13,7 +13,7 @@ draft: false
 
 ## 普通用户
 
-除默认用户外，自 Redis Cluster 6.x 版本起，新增用户 ACL（Access Control List）功能，支持普通用户的创建与权限管理操作。您可以在控制台的**用户管理ACL**页面进行[新增用户](../addusr/)、[删除用户](../deleusr/)、[启用及停用账户](../account/)、[修改用户密码](../account/)及[修改用户访问控制权限](../mdyacl/)等操作。
+除默认用户外，自 Redis Cluster 6.x 版本起，新增用户 ACL（Access Control List）功能，支持普通用户的创建与权限管理操作。您可以在控制台的**用户管理ACL**页面进行[新增用户](../addusr/)、[删除用户](../deleusr/)、[启用及停用帐号](../account/)、[修改用户密码](../account/)及[修改用户访问控制权限](../mdyacl/)等操作。
 
 > **说明**
 >
