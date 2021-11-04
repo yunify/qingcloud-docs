@@ -232,7 +232,7 @@ Service 的 type 设置为 LoadBalancer，然后在 metadata 中增加以下 ann
 - `service.beta.kubernetes.io/qingcloud-load-balancer-type`
   
 > 负载均衡器的承载能力类型，与 [create_loadbalancer](/development_docs/api/command_list/lb/create_loadbalancer/) 接口中的 loadbalancer_type 取值范围相同。
-  
+
 - `service.beta.kubernetes.io/qingcloud-load-balancer-eip-ids`
   
   > 负载均衡器上绑定的 EIP ID，最多支持4个，这个 annotation 表示要创建的是 “公网” 类型的负载均衡器。 EIP 必须是可用的 EIP，系统会自动创建负载均衡器。
@@ -288,11 +288,12 @@ QKE 预安装了 NFS 客户端程序，用户对接 NFS 服务端时应确保 QK
 在 QKE client 节点，执行 Helm 安装命令
 
 ```
-$ helm install --name ks stable/nfs-client-provisioner --set nfs.server=192.168.0.4 --set nfs.path=/data --set image.repository=kubesphere/nfs-client-provisioner --namespace=kube-system
+$ helm install --name-template nfs-csi main/nfs-client-provisioner --set nfs.server=192.168.0.4 --set nfs.path=/data --set image.repository=kubesphere/nfs-client-provisioner --namespace=kube-system
 NAME:   ks
 LAST DEPLOYED: Tue May 14 20:20:44 2020
 NAMESPACE: kube-system
 STATUS: DEPLOYED
+
 ```
 
 > `QKE v1.0.1` 及更早版本请执行下面的命令：
