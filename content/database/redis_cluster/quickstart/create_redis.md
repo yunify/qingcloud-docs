@@ -98,6 +98,8 @@ draft: false
 
 ![服务环境参数设置](../../_images/step4.png)
 
+- 控制台管理 ACL：选择是否由控制台管理 ACL 服务。
+
 - 禁用 FLUSH 命令：是否禁用 FLUSHALL 及 FLUSHDB 命令。为兼容 Redis 5.0.3 - QingCloud 1.2.1 之前的版本，自 Redis 5.0.3 - QingCloud 1.2.1 起添加了此项，默认为**否**，表示不禁用。
 
   > **注意**

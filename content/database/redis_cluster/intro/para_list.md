@@ -21,6 +21,7 @@ Redis Cluster 支持部分参数的配置与修改，不同版本支持的参数
 | 端口                      | Redis 明文端口。设置为 `0` 表示关闭明文端口。                | **✕**       | **✕**       | **✓**     |
 | TLS-Port                  | TLS 加密端口。设置为 `0` 表示关闭加密端口。                  | **✕**       | **✕**       | **✓**     |
 | TLS-Cluster               | Cluster 通信是否使用加密口。<li>设置为`yes`时 Cluster 通信端口为 `TLS-Port + 10000`</li><li>设置为`no`时 Cluster 通信端口为 `端口 + 10000`</li> | **✕**       | **✕**       | **✓**     |
+| 控管台管理 ACL            | 是否由控制台管理 ACL服务。<div style="background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;">  <b>⚠️注意</b><br/>  开启此服务，将删除之前已存在的 ACL 用户。</div> | **✕**       | **✕**       | **✓**     |
 | 最大内存比例              | Redis 最大可用内存占主机内存的比例(%)，范围： 0~95。         | **✓**       | **✓**       | **✓**     |
 | 打开config和save命令      | 是否打开 BGREWRITEAOF、BGSAVE、CONFIG、DEBUG、KEYS、REPLICAOF、SAVE、SHUTDOWN 和 SLAVEOF 命令。<br/><li>0：不打开</li><li>1：打开</li><div style="background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;">  <b>⚠️注意</b><br/>   强烈不建议打开，错误地使用可能会导致服务不可用。</div> | **✓**       | **✓**       | **✓**     |
 | 禁用 FLUSH 命令           | 是否禁用 FLUSHALL 和 FLUSHDB 命令。<br/><li>yes：禁用</li><li>no：不禁用</li><div style="background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;">  <b>⚠️注意</b><br/>   生产环境建议禁用。该项在集群创建后不可被修改。</div> | **✕**       | **✓**       | **✓**     |

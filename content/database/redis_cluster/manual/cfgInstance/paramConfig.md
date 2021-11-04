@@ -24,7 +24,7 @@ keyword: QingCloud，Redis Cluster，数据库
 
    页面显示当前版本所支持的所有参数配置项、参数描述及参数当前值。
 
-   <img src="../../../_images/mdy_paras.png" alt="参数配置" style="zoom:50%;" />
+   <img src="../../../_images/mdy_paras.png" alt="参数配置" />
 
 5. 点击**修改属性**，参数值变为可编辑状态。
 
