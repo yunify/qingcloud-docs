@@ -1,7 +1,7 @@
 ---
 title: "创建 Redis Cluster 实例"
 description: 本小节主要介绍如何快速创建 Redis Cluster。 
-keywords: redis cluster 集群
+keywords: 创建 redis 集群
 weight: 2
 collapsible: false
 draft: false
@@ -15,7 +15,7 @@ draft: false
 
 ## 操作步骤
 
-1. 登录  [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**。
 
    ▪︎ 如果是首次部署，进入 Redis Cluster 应用简介页面，点击**立即部署**进入部署页面。

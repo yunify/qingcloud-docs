@@ -1,10 +1,10 @@
 ---
 title: "资源配置"
-description: Test description
+description: Redis Cluster 提供的资源配置类型。
 draft: false
 weight: 7
 enableToc: false
-keyword: Redis Cluster, QingCloud, 数据库
+keyword: Redis Cluster,  资源配置
 ---
 
 Redis 6.* 版本提供了`多线程生产环境`、`单线程生产环境`、`多线程测试环境`、`单线程测试环境`四种类型的资源配置，满足您不同场景下的业务需求。

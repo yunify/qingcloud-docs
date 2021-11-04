@@ -1,5 +1,6 @@
 ---
 title: "启停帐号" 
+description: 本小节介绍如何启用及停用 ACL 用户。 
 weight: 10
 draft: false
 keywords: redis cluster，访问控制，用户管理 ACL
@@ -13,7 +14,7 @@ Redis Cluster 实例需要为 Redis 6.* 或以上版本。
 
 ## 操作步骤
 
-1. 登录  [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 

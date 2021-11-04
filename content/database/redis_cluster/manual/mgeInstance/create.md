@@ -1,9 +1,9 @@
 ---
 title: "创建集群" 
-keywords: redis 集群，创建 redis 集群
+description: 本小节介绍如何创建 Redis 集群。 
 weight: 1
 draft: false
-keyword: QingCloud，Redis Cluster，数据库
+keywords: QingCloud，Redis Cluster，redis 集群，创建 redis 集群
 ---
 
 本小节主要介绍如何创建 Redis 集群。
@@ -14,7 +14,7 @@ keyword: QingCloud，Redis Cluster，数据库
 
 ## 操作步骤
 
-1. 登录  [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**。
 

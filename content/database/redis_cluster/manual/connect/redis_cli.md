@@ -1,5 +1,6 @@
 ---
 title: "Redis-cli 连接"
+description: 本小节介绍如何通过 redis-cli 连接 Redis 实例。 
 keywords: 连接 redis cluster 实例，redis 部署
 weight: 3
 collapsible: false

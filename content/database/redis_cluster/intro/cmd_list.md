@@ -1,10 +1,10 @@
 ---
 title: "命令支持"
-description: Test description
+description: 不同版本 Redis 支持的命令。 
 draft: false
 weight: 10
 enableToc: false
-keyword: Redis Cluster, QingCloud, 数据库
+keyword: Redis Cluster,  Redis 参考命令
 ---
 
 不同版本的 Redis Cluster 实例对 Redis 命令的支持度有所不同。

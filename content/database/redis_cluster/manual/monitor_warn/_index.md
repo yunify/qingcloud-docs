@@ -7,5 +7,3 @@ collapsible: true
 draft: false
 ---
 
-基本属性
-

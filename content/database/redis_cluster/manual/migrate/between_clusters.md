@@ -1,9 +1,8 @@
 ---
 title: "Redis Cluster 之间迁移"
-keywords: redis cluster，实例信息
 weight: 1
 draft: false
-keyword: QingCloud，Redis Cluster，数据库，redis 迁移
+keywords: QingCloud，Redis Cluster，数据库，redis 迁移
 ---
 
 以将数据从 Redis Cluster A 迁移到 Redis cluster B 为例。

@@ -1,8 +1,9 @@
 ---
 title: "监控指标说明"
+description: 本小节介绍如何 Redis 支持的监控指标。 
 weight: 1
 draft: false
-keyword: QingCloud，Redis Cluster，监控，告警，指标
+keywords: QingCloud，Redis Cluster，监控，告警，指标
 ---
 
 Redis Cluster 提供集群服务和资源性能监控数据。

@@ -2,7 +2,7 @@
 title: "Redis Standlone 迁移到 Redis Cluster"
 weight: 2
 draft: false
-keyword: QingCloud，Redis Cluster，数据库，redis 迁移
+keywords: QingCloud，Redis Cluster，数据库，redis 迁移
 ---
 
  Redis 提供了从 Redis Standalone (包括 2.8.17 版本) 迁移数据到 Redis Cluster　的工具 `redis-trib.rb`。

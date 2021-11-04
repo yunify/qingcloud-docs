@@ -1,5 +1,6 @@
 ---
 title: "测试方法"
+description: 本小节主要介绍 Redis 的性能测试方法。
 weight: 6
 collapsible: false
 draft: false

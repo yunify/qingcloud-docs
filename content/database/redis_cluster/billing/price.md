@@ -1,8 +1,8 @@
 ---
 title: "计费说明"
-description: test
+description: Redis Cluster 计费说明
 draft: false
-keyword: Redis Cluster, QingCloud, 数据库，计费
+keywords: Redis Cluster, QingCloud, 数据库，计费
 ---
 
 ## 费用说明

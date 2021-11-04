@@ -1,9 +1,9 @@
 ---
 title: "删除集群"
-keywords: redis cluster
+description: 本小节介绍如何删除 Redis 集群。 
 weight: 10
 draft: false
-keyword: QingCloud，Redis Cluster，数据库
+keywords: QingCloud，Redis Cluster，数据库，删除集群
 ---
 
 本小节主要介绍如何删除集群。
@@ -20,7 +20,7 @@ keyword: QingCloud，Redis Cluster，数据库
 
 ## 操作步骤
 
-1. 登录  [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 

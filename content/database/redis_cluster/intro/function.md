@@ -1,10 +1,10 @@
 ---
 title: "功能特性"
-description: Test description
+description: Redis 的功能特性。
 draft: false
 weight: 3
 enableToc: false
-keyword: Redis Cluster, QingCloud, 数据库
+keyword: Redis Cluster 功能
 ---
 
 ## 安全性

@@ -1,9 +1,10 @@
 ---
 title: "使用redis-cli查找大key"
+description: 
 draft: false
 weight: 4
 enableToc: false
-keyword: Redis Cluster, QingCloud, 数据库
+keywords: Redis 大 Key
 ---
 
 本文主要介绍如何使用 redis-cli 的“**--bigkeys**”选项查找大Key。

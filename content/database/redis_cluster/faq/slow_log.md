@@ -1,9 +1,10 @@
 ---
 title: "如何配置与查看慢日志"
+description: 如何配置与查看 Redis 慢日志。
 draft: false
 weight: 4
 enableToc: false
-keyword: Redis Cluster, QingCloud, 数据库
+keywords: Redis Cluster, 慢日志
 ---
 
 慢请求引起的连接超时等问题是影响 Redis 服务质量的常见问题，通过查询慢日志能够帮助您快速找到慢请求问题发生的位置，定位发出请求的客户端 IP，为彻底解决超时问题提供可靠的依据。

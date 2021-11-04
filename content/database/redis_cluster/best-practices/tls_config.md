@@ -1,9 +1,10 @@
 ---
 title: "配置 TLS 加密"
+description: 介绍如何为 Redis 配置 TLS 加密。
 weight: 2
 collapsible: false
 draft: false
-keyword: QingCloud, Redis Cluster,  数据库，redis TLS 加密
+keywords: QingCloud, Redis Cluster,  数据库，redis TLS 加密
 ---
 
 ## 应用场景

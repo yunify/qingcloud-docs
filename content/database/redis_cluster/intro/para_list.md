@@ -1,10 +1,10 @@
 ---
 title: "参数支持"
-description: Test description
+description: 不同版本 Redis 支持的参数配置。
 draft: false
 weight: 10
 enableToc: false
-keyword: Redis Cluster, QingCloud, 数据库, redis配置
+keyword: Redis Cluster, QingCloud, 数据库, Redis 参数
 ---
 
 Redis Cluster 支持部分参数的配置与修改，不同版本支持的参数有所区别。

@@ -1,9 +1,10 @@
 ---
 title: "配置集群参数"
+description: 本小节介绍如何配置集群参数。
 weight: 8
 collapsible: false
 draft: false
-keyword: QingCloud，Redis Cluster，数据库
+keywords: QingCloud，Redis Cluster，参数配置
 ---
 
  Redis Cluster 支持自定义部分参数的值，您可以根据自己的业务情况对集群运行参数进行调整，使缓存服务发挥出最优性能。
@@ -14,7 +15,7 @@ keyword: QingCloud，Redis Cluster，数据库
 
 ## 操作步骤
 
-1. 登录  [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 

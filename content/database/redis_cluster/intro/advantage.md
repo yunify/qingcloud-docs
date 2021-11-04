@@ -4,7 +4,7 @@ description: 介绍 Redis Cluster 的优势
 draft: false
 weight: 2
 enableToc: false
-keyword: Redis Cluster, QingCloud, 数据库
+keywords: Redis Cluster, QingCloud, 产品优势
 ---
 
 ## 超高性能

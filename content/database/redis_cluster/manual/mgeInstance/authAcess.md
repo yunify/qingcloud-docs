@@ -1,9 +1,9 @@
 ---
 title: "授权提供商访问"
-keywords: redis cluster，实例信息
+description: 本小节介绍如何授权提供商访问集群节点。 
 weight: 18
 draft: false
-keyword: QingCloud，Redis Cluster，数据库
+keywords: QingCloud，Redis Cluster，授权访问
 ---
 
 介绍如何授权提供商访问集群节点。
@@ -18,14 +18,14 @@ keyword: QingCloud，Redis Cluster，数据库
 
 ## 授权访问
 
-1. 登录  [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 3. 在集群列表，右键单击目标集群，选择**授权提供商访问**，弹出提示对话框。
 4. 点击**确认**。
 
 ## 取消授权
 
-1. 登录  [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 3. 在集群列表，右键单击目标集群，选择**取消授权提供商**，弹出提示对话框。
 4. 点击**确认**。

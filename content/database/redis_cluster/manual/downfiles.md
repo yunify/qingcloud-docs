@@ -1,5 +1,6 @@
 ---
 title: "下载文件"
+description: 本小节介绍如何下载 Redis 日志、RDB 数据文件和 AOF 文件。
 keywords: redis cluster，redis 文件下载
 weight: 50
 draft: false

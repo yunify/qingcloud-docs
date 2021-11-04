@@ -1,10 +1,10 @@
 ---
 title: "什么是 Redis Cluster"
-description: Test description
+description: 介绍什么是 Redis Cluster
 draft: false
 weight: 1
 enableToc: false
-keyword: Redis Cluster, QingCloud, 数据库
+keyword: Redis Cluster, QingCloud,青云, 缓存数据库
 ---
 
 Redis Cluster 是由青云 QingCloud 提供的兼容开源 Redis 协议标准的缓存数据库服务，为您提供即开即用、安全可靠、弹性扩容、便捷易用的在线分布式缓存能力。
