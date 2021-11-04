@@ -52,8 +52,8 @@ Bucket Replication API 见 API 文档:
 
 |操作|API|说明|
 |--|--|--|
-|设置 Bucket Replication|[PUT Bucket Replication](/storage/object-storage/api/bucket/repliation/put_replication)|用于设置 Bucket 跨区域复制规则|
-|获取 Bucket Replication|[GET Bucket Replication](/storage/object-storage/api/bucket/repliation/get_replication)|用于获取已有的 Bucket 跨区域复制规则|
-|删除 Bucket Replication|[DELETE Bucket Replication](/storage/object-storage/api/bucket/repliation/delete_replication)|用于删除已经设置的跨区域复制规则|
+|设置 Bucket Replication|[PUT Bucket Replication](/storage/object-storage/api/bucket/replication/put_replication)|用于设置 Bucket 跨区域复制规则|
+|获取 Bucket Replication|[GET Bucket Replication](/storage/object-storage/api/bucket/replication/get_replication)|用于获取已有的 Bucket 跨区域复制规则|
+|删除 Bucket Replication|[DELETE Bucket Replication](/storage/object-storage/api/bucket/replication/delete_replication)|用于删除已经设置的跨区域复制规则|
 
 

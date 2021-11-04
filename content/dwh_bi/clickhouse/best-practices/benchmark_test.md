@@ -1,8 +1,10 @@
 ---
 title: "性能测试"
-description: 
+description: 本小节主要介绍如何进行 ClickHouse 性能测试。 
+keywords: ClickHouse 性能测试，benchmark
+weight: 100
+collapsible: false
 draft: false
-weight: 8
 ---
 
 
