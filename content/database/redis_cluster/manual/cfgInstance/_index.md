@@ -1,8 +1,11 @@
 ---
-title: "操作指南"
+title: "配置集群"
 _build:
  render: false 
-weight: 50
+weight: 10
 collapsible: true
+draft: false
 ---
+
+
 
