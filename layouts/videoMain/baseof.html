@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}" class="no-js">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body class="td-{{ .Kind }}">
+    <header>
+      {{ partial "navbar.html" . }}
+    </header>
+    <div class="container doc-container-width container-min-height">
+      <div class="td-main">
+		{{ if .Site.Params.IsConsole }}
+			<h1 class="console-tree-title">{{ .CurrentSection.LinkTitle }}</h1>
+		{{ end }}
+        <div class="row flex-xl-nowrap">
+		  
+          <div class="col-12 col-md-3 col-xl-3 td-sidebar d-print-none td-sidebar-menu">
+            {{ partial "sidebar.html" .}}
+          </div>
+          <div class="d-none col-md-2 d-xl-block d-md-block col-xl-2 td-toc d-print-none">
+            {{ partial "toc.html" . }}
+          </div>
+          <main class="col-12 col-md-7 col-xl-7" role="main">
+            {{ partial "version-banner.html" . }}
+            
+            <!-- <div class="page-meta-lastmod text-muted pt-1">{{ partial "page-meta-lastmod.html" . }}</div> -->
+            {{ block "main" . }}{{ end }}
+          </main>
+        </div>
+      </div>
+    </div>
+    {{ partial "footer.html" . }}
+         
+    {{ partial "scripts.html" . }}
+  </body>
+</html>
