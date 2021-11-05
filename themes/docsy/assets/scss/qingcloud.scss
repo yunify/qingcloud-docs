@@ -59,6 +59,15 @@ header {
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.05), 0 10px 20px 0 rgba(76, 94, 112, 0.05);
     border: none;
     position: relative;
+    transform: .8s linear;
+    cursor: pointer;
+
+    &:hover {
+        .play-btn {
+            opacity: 1;
+            transform: scale(1.2);
+        }   
+    }
 
 
     .card-body {
@@ -106,6 +115,85 @@ header {
             padding-right: 6px;
         }
     }
+
+
+    // 视频专区
+    .play-btn {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        width: 30px;
+        height: 30px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        box-sizing: border-box;
+        opacity: 0.5;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .play-btn-subscript {
+        display: inline-block;
+        margin-left: 2px;
+        border-width: 6px 0 6px 6px;
+        border-style: solid;
+        border-color: transparent transparent transparent #443D4E;
+    }
+
+    .adjust_p {
+        color: #ffffff;
+        font-style: normal;
+        font-weight: 500;
+        font-family: PingFang SC;
+        text-align: center;
+    }
+
+    .video_title {
+        position: absolute;
+        margin: 30px 0 0 16px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .time_duration {
+        position: absolute;
+        margin-left: 18px;
+        bottom: 15.2%;
+        margin-bottom: 0;
+        font-family: Roboto;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+
+/* 超一行显示省略号 */
+.textline-1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 超二行显示省略号 */
+.textline-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.video_bottom {
+    margin: 10px 18px 0 18px;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.bg-black {
+    background-color: black;
 }
 
 // 批量下载pdf
@@ -835,6 +923,41 @@ ul.product_dynamics_ul{
     width: 100%;
 }
 
+
+// 关闭按钮的样式
+.video-close {
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    width: 24px;
+    height: 24px;
+    right: 0.6rem;
+    top: 0.5rem;
+    caret-color: transparent;
+}
+
+.video-close::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 20px;
+    background: #ffffff;
+    transform: rotate(45deg);
+    top: calc(50% - 0.45vw);
+    left: 50%;
+}
+
+.video-close:after {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 20px;
+    background: #ffffff;
+    transform: rotate(-45deg);
+    top: calc(50% - 0.45vw);
+    left: 50%;
+}
+
 section.hero.home-body {
     padding-top: 0;
 }
@@ -935,8 +1058,19 @@ section.hero.home-body {
 }
 
 #myModal .modal-dialog{
-    top: 25%;
+    top: 17%;
 }
+
+#myModal .video-modal-dialog {
+    width:700px;
+    height:500px;
+
+    .video-modal-content {
+        height:500px;
+        width:700px;
+    }
+}
+
 
 .hero-body-product {
     height: 180px;
