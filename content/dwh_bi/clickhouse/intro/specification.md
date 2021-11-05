@@ -1,8 +1,8 @@
 ---
-title: "性能规格"
-description: 本小节主要介绍 Clickhouse 性能规格。 
-keywords: Clickhouse, QingCloud, 性能规格
-weight: 40
+title: "产品规格"
+description: 本小节主要介绍 Clickhouse 规格。 
+keywords: Clickhouse, QingCloud，产品规格
+weight: 30
 collapsible: false
 draft: false
 ---

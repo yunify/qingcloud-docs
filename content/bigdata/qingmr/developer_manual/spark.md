@@ -17,7 +17,7 @@ draft: false
 - 如仅以 Spark on YARN 模式提交 Spark 应用或者仅使用 Hadoop 相关功能，则可以选择关闭 Spark Standalone 模式以释放资源。
 - 此选项最好不要和其他配置参数项一起改，单独改动此项然后保存设置是推荐的作法。
 
-![开启关闭 standalone ](../../_images/switch_standalone.png)
+![开启关闭 standalone](../../_images/switch_standalone.png)
 
 ## 以 Spark-shell 模式运行 Spark job
 
