@@ -1,0 +1,167 @@
+<div class="td-content">
+	<div class="td-sidebar-section-title content-index">
+		<img class="is-40x40" src="/images/icons/book-open.svg">
+		<h3 class="doc_vice_title">{{ .CurrentSection.LinkTitle }}</h3>
+		<a href="javascript:;" class="nav-trigger">&nbsp;<span aria-hidden="true"></span></a>
+	</div>
+	<div class="td-page-top">
+		<h1>{{ .Title }}</h1>
+		{{ partial "page-meta-actions.html" .}}
+	</div>
+		
+	<div class="page-meta-lastmod text-muted ">{{ partial "page-meta-lastmod.html" . }}</div>
+
+	<input type="hidden" id="content_console" value="1">
+	<!-- {{ partial "page-meta-actions.html" .}} -->
+	<!--{{ with .Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}-->
+
+	{{ with .Params.description }}<div class="lead"></div>{{ end }}
+	{{ if (and (not .Params.hide_readingtime) (.Site.Params.ui.readingtime.enable)) }}
+	{{ partial "reading-time.html" . }}
+	{{ end }}
+
+	{{ with .Params.section1}}
+	<h2>{{ .title }}</h2>
+	<div class="row">
+		{{ range .children }}
+		<div class="col-sm-4 video-main">
+			<div class="card" data-toggle="modal" data-target="#myModal" data-url="{{ .url }}">
+				<img class="video-bg" src="{{ .poster }}">
+				<p class="adjust_p video_title textline-2">{{ .title }}</p>
+				<div class="play-btn">
+					<div class="play-btn-subscript"></div>
+				</div>
+				<p class="adjust_p time_duration">{{ .time_duration }}</p>
+			</div>
+			<div class="video_bottom textline-2">{{ .description }}</div>
+		</div>
+		{{ end }}
+	</div>
+	{{ end }}
+
+
+	{{ with .Params.section2}}
+	<h2>{{ .title }}</h2>
+	<div class="row">
+		{{ range .children }}
+		<div class="col-sm-4 video-main">
+			<div class="card" data-toggle="modal" data-target="#myModal" data-url="{{ .url }}">
+				<img class="video-bg" src="{{ .poster }}">
+				<p class="adjust_p video_title textline-2">{{ .title }}</p>
+				<div class="play-btn">
+					<div class="play-btn-subscript"></div>
+				</div>
+				<p class="adjust_p time_duration">{{ .time_duration }}</p>
+			</div>
+			<div class="video_bottom textline-2">{{ .description }}</div>
+		</div>
+		{{ end }}
+	</div>
+	{{ end }}
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog video-modal-dialog">
+			<div class="modal-content video-modal-content bg-black">
+				<video id="video" width="500" height="700" class="product-video" autoplay="autoplay" controls="controls" src=""></video>
+				<span class="video-close"></span>
+			</div>
+		</div>
+	</div>
+
+	{{with .Params.product}}
+	<section class="product_dynamics">
+		<div class="container  td-outer product_dynamics">
+			<div class="">
+				<ul class="timeline product_dynamics_ul" id="learn_content">
+					{{ range . }}
+					<li class="row">
+						<div class="timeline-outer-line timeline-product"></div>
+						<div class="col-sm-12 timeline-outer">
+							<p>{{ .time }}</p>
+							<h2 id="{{ .title }}">{{ .title }}{{if .tags}}{{ $length := len .tags}}{{ range $i,$v:=(first 3 .tags)}}<span class="news-tag-{{$i}} {{if eq (add $i 1) $length}}news-tag-max{{end}}">{{$v}}</span>{{ end }}{{ end }}</h2>
+							{{if .zone}}
+							<p>适用范围：{{.zone}}</p>
+							{{ end }}
+							<p class="product_dynamics_p">{{ .content | markdownify  }}</p>
+							{{ if .url}}
+							<a href="{{ .url }}">查看相关文档 <img src="/images/icons/black.svg"></a>
+							{{ end }}
+						</div>
+					</li>
+					{{ end }}
+				</ul>
+			</div>
+		</div>
+	</section>
+	<script src="/js/product_news.js"></script>
+	{{ end }}
+	{{ .Content }}
+	<!-- {{ if (and (not .Params.hide_feedback) (.Site.Params.ui.feedback.enable) (.Site.GoogleAnalytics)) }}
+		{{ partial "feedback.html" .Site.Params.ui.feedback }}
+		<br />
+	{{ end }} -->
+	{{ if (.Site.DisqusShortname) }}
+	<br />
+	{{ partial "disqus-comment.html" . }}
+	{{ end }}
+	<div class="page-meta-pagination border-top">
+		{{with .NextInSection}}
+		<a href="{{.Permalink }}" class="prev pl1" title="{{.Title }} ">
+			上一页: {{.Title}}
+		</a>
+		{{end}}
+
+		{{with .PrevInSection}}
+		<a href="{{.Permalink }}" class="next pr1" title="{{.Title }}">
+			下一页: {{.Title}}
+		</a>
+		{{end}}
+	</div>
+	<div class="page-meta-pagination_word">
+		这篇文档解决了您的问题吗？
+		<div class="doc_fix_click fix-background-like" data-flag='1'>
+			<span>0</span>
+		</div>
+		<div class="doc_fix_click fix-background-unlike" data-flag='0'>
+			<span>0</span>
+		</div>
+		<input type="hidden" id="doc_fix_flag" value="0">
+	</div>
+
+</div>
+
+<script src="/js/content.js"></script>
+<!-- <script src="/js/viewer.min.js"></script> -->
+<!-- <link rel="stylesheet" href="/css/viewer.min.css"> -->
+<script>
+	// var viewer = new Viewer(document.querySelector('.td-content'), {
+	// 	url: 'src'
+	// })
+
+	// 
+	$(".video-bg").each(function () {
+		if ($(this).attr('src') == '') {
+			$(this).attr('src', '/images/video-normal.png')
+		}
+	})
+
+	$('.card').on('click', function () {
+		$("#video").attr('src', $(this).attr('data-url'))
+	});
+
+	$('.video-close').on('click', function () {
+		$('.modal').click()
+	});
+
+
+	$(".card").hover(function () {
+		if ($(this).find(".video-bg").attr('src') == '/images/video-normal.png') {
+			$(this).find(".video-bg").attr('src', "/images/video-hover.png")
+		}
+	}, function () {
+		if ($(this).find(".video-bg").attr('src') == "/images/video-hover.png") {
+			$(this).find(".video-bg").attr('src', "/images/video-normal.png")
+		}
+	})
+
+</script>
