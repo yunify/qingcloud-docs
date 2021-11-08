@@ -15,15 +15,15 @@ weight: 3
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
 
- ![](../../_images/console_main.png)
+ ![](/storage/object-storage/_images/console_main.png)
 
 2. 进入 Bucket 详情页面，点击 **文件**，选择相应的文件后，点击 **右键 > 变更存储级别**：
 
- ![](../../_images/object_file_level1.png)
+ ![](/storage/object-storage/_images/object_file_level1.png)
 
 3. 弹出 **变更存储级别** 对话框，用户根据实际情况以及提示信息，选择相应的存储级别后，点击 **提交** 按钮即可：
 
- ![](../../_images/object_file_level2.png)
+ ![](/storage/object-storage/_images/object_file_level2.png)
 
 ## 相关API
 
