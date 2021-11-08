@@ -259,7 +259,7 @@ Service 的 type 设置为 LoadBalancer，然后在 metadata 中增加以下 ann
 
 ## 挂载云平台块存储
 
-从 `QKE v1.0.1` 版本起内置了 [QingCloud CSI](https://github.com/yunify/qingcloud-csi)，可以动态创建基于 QingCloud IaaS 上的硬盘的 PVC，并挂载到 Pod，当 Pod 迁移时，硬盘会自动随着 Pod 迁移到其他云服务器上。KubeSphere 的存储卷使用方法见[文档](https://kubesphere.com.cn/en/docs/installing-on-linux/introduction/storage-configuration/)。
+从 `QKE v1.0.1` 版本起内置了 [QingCloud CSI](https://github.com/yunify/qingcloud-csi)，可以动态创建基于 QingCloud IaaS 上的硬盘的 PVC，并挂载到 Pod，当 Pod 迁移时，硬盘会自动随着 Pod 迁移到其他云服务器上。KubeSphere 的存储卷使用方法见[文档](https://kubesphere.com.cn/docs/installing-on-linux/persistent-storage-configurations/understand-persistent-storage/)。
 
 ### 使用 NeonSAN 硬盘
 
