@@ -10,7 +10,7 @@ QingStor 对象存储定义对象元数据是附属于对象的数据结构，�
 
 对象元数据包括标准 HTTP 头与自定义元数据。用户在创建对象时，可以在请求头中添加元数据信息。当用户在获取对象时，QingStor 对象存储服务端会返回请求头中添加的元数据信息。
 
-QingStor 对象存储服务端也支持用户对元数据的修改。其中可供修改的元数据包括 `Cache-Control`，`Cache-Control`，`Content-Encoding`，`Content-Type` 以及 `Expires` 等 5 个标准 HTTP 头和用户自定义的元数据。
+QingStor 对象存储服务端也支持用户对元数据的修改。其中可供修改的元数据包括 `Cache-Control`，`Cache-Disposition`，`Content-Encoding`，`Content-Type` 以及 `Expires` 等 5 个标准 HTTP 头和用户自定义的元数据。
 
 ## 注意事项
 
@@ -30,9 +30,9 @@ QingStor 对象存储支持修改的标准 HTTP 头为：
 | 名称 | 类型 | 说明 | 是否必须 |
 | - | - | - | - |
 | Cache-Control | String | 指定请求和响应遵循的缓存机制。了解更多信息见 [RFC2616#14.9](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9)。 | 否 |
-| Cache-Disposition | String | 指定对象下载时的默认文件名。了解更多信息见 [RFC2616#19.5](http://www.w3.org/Protocols/rfc2616/rfc2616-sec19.html#sec19.5.1)。 | 否 |
+| Cache-Disposition | String | 指定对象的访问形式。<br>- inline：直接在浏览器中打开对象。<br>- attachment：将对象下载到本地。 <br>- 了解更多信息见 [RFC2616#19.5](http://www.w3.org/Protocols/rfc2616/rfc2616-sec19.html#sec19.5.1)。 | 否 |
 | Content-Encoding | String | 指定对象的内容编码类型。了解更多信息见 [RFC2616#14.11](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.11)。 | 否 |
-| Content-Type  | String | 指定请求实体的MIME类型。。了解更多信息见 [RFC2616#14.17](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.17)。 | 否 |
+| Content-Type  | String | 指定请求实体的MIME类型。了解更多信息见 [RFC2616#14.17](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.17)。 | 否 |
 | Expires | String | 响应过期的日期和时间。了解更多信息见 [RFC2616#14.21](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.21)。 | 否 |
 
 除以上字段外，其他标准 HTTP 头不支持修改。其他标准 HTTP 头参考 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。

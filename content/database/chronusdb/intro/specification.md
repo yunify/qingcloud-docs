@@ -1,7 +1,7 @@
 ---
-title: "性能规格"
-description: 本小节主要介绍 ChronusDB 性能规格。 
-keywords: ChronusDB, QingCloud, 性能规格
+title: "产品规格"
+description: 本小节主要介绍 ChronusDB 规格。 
+keywords: ChronusDB, 产品规格
 weight: 25
 collapsible: false
 draft: false
