@@ -2,15 +2,14 @@
 title: "删除 NAT 网关"
 draft: false
 weight: 30
-keyword: QingCloud, 青云, NAT网关, NAT
+keywords: QingCloud, 青云, NAT网关, NAT
 ---
 
 在确定无需使用 NAT 网关后，您可以随时将其删除。<!--，包年包月类型的NAT网关不支持删除操作-->。
 
-## 前提条件
+## 注意事项
 
-- DNAT 列表中没有 DNAT 规则，如有请删除。具体操作，请参见[删除 DNAT 规则](../../../manual/mgt_dnat/#删除-dnat-规则)。
-- SNAT 列表中没有 SNAT 规则，如有请删除。具体操作，请参见[删除 SNAT 规则](../../../manual/mgt_snat/#删除-snat-规则)。
+删除 NAT 网关时，会将路由表中指向此 NAT 网关的路由规则一并删除，Internet 转发请求将立即中断，请提前做好网络中断准备。
 
 ##  操作步骤
 
@@ -24,5 +23,6 @@ keyword: QingCloud, 青云, NAT网关, NAT
 
    ![](../../../_images/nat_detail_operation.png)
 
-3. 在弹出的提示框中，点击**确认**。
+3. 在弹出的提示框中，勾选**解绑公网IP并删除已有SNAT及DNAT规则**，点击**删除**。
 
+   

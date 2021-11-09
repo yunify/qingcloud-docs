@@ -2,7 +2,7 @@
 title: "查看监控数据"
 draft: false
 weight: 2
-keyword: QingCloud, 青云, NAT网关, NAT, SNAT, DNAT
+keywords: QingCloud, 青云, NAT网关, NAT, SNAT, DNAT
 ---
 
 创建 NAT 网关后，您可以通过控制台查看监控信息并导出数据。
@@ -24,7 +24,7 @@ keyword: QingCloud, 青云, NAT网关, NAT, SNAT, DNAT
 
 2. 选择时间间隔：查看不同时间粒度的监控数据。
 
-3. 选择公网IP：查看指定公网IP的监视数据或所有公网 IP 的数据总和。
+3. 选择公网IP：查看指定公网 IP 的监控数据或所有公网 IP 的数据总和。
 
 4. 刷新：刷新页面数据。
 
@@ -34,5 +34,5 @@ keyword: QingCloud, 青云, NAT网关, NAT, SNAT, DNAT
 
    ![](../../../_images/export_data.png)
 
-2. 选择时间断、监控粒度及监控指标，点击**导出**。可导出当前页面的监控数据。
+2. 选择时间段、监控粒度及监控指标，点击**导出**。可导出当前页面的监控数据。
 

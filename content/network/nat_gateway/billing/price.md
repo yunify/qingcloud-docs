@@ -2,7 +2,7 @@
 title: "NAT 网关计费说明"
 draft: true
 weight: 1
-keyword: QingCloud, 青云, NAT网关, NAT，费用, 计费
+keywords: QingCloud, 青云, NAT网关, NAT，费用, 计费
 ---
 
 NAT 网关根据您选择 NAT 网关规格和使用时长计费。

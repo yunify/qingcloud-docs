@@ -2,7 +2,7 @@
 title: "监控指标说明"
 draft: false
 weight: 1
-keyword: QingCloud, 青云, NAT网关, NAT, SNAT, DNAT
+keywords: QingCloud, 青云, NAT网关, NAT, SNAT, DNAT
 ---
 
 ## 监控项

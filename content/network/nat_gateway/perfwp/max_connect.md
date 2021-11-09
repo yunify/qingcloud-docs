@@ -3,10 +3,10 @@ title: "最大连接数测试"
 descriptipn: NAT 网关性能测试
 draft: false
 weight: 1
-keyword: QingCloud, 青云, NAT网关, 性能测试, 最大连接数
+keywords: QingCloud, 青云, NAT网关, 性能测试, 最大连接数
 ---
 
-介绍 NAT 网关的性能测试过程及数据。
+介绍 NAT 网关的性能测试方法及结果。
 
 ## 测试环境
 
@@ -45,58 +45,50 @@ keyword: QingCloud, 青云, NAT网关, 性能测试, 最大连接数
 
 8. 登录一个 webservice 节点，将[测试脚本 natgw.py](../../attach/natgw.py/) 上传到节点，然后运行如下命令执行启动测试脚本。
 
-   **python natgw.py -c tag-6ldhogun -s tag-sb0te7z9**
+   ```
+   python natgw.py -c tag-6ldhogun -s tag-sb0te7z9
+   ```
 
    ![](../../_images/perf_4.png)
 
    > **注意**
    >
-   > 1.每个 client 脚本中固定可以新建 25000 个长连接，如果需要增大测试连接数，需要增加 client 数量。
+   > 1.每个 client 脚本中固定可以新建 25,000 个长连接，如果需要增大测试连接数，需要增加 client 数量。
    >
-   > 2.一次测试结束之后需要等server连接全部销毁，才能启动下一次测试，要不然服务端会起不来，具体可以登录到服务端执行netstat -anp | grep 8080 | wc -l, 知道输出为0即可开始下一轮测试
+   > 2.一次测试结束之后需要等 server 连接全部销毁，才能启动下一次测试，要不然服务端会起不来，具体可以登录到服务端执行 `netstat -anp | grep 8080 | wc -l`, 知道输出为0即可开始下一轮测试
    >
-   > 3.每轮测试持续时间大概20-30分钟，需要人工执行 stop 命令结束。
+   > 3.每轮测试持续时间大概 20-30 分钟，需要人工执行 stop 命令结束。
 
 9. 运行如下命令停止测试脚本。
 
-   **python natgw.py -c tag-6ldhogun -s tag-sb0te7z9 -a stop** 
+   ```
+   python natgw.py -c tag-6ldhogun -s tag-sb0te7z9 -a stop
+   ```
+
+   
 
 10. 将[连接数统计脚本 cal.py](../../attach/cal.py/) 上传到节点，然后运行如下命令统计当前连接数。
 
-    **python cal.py -n nfv-r1fiaiqz**
+    ```
+    python cal.py -n nfv-r1fiaiqz
+    ```
+    
+    
     > **说明**
     >
-    > ▪︎ 若执行 cal.py 脚本报错，需要手动登录到 NAT 网关节点，执行 **conntrack -L | grep EST | wc -l** 观察当前连接数，测试开始之后，连接数会逐渐增加，直到达到 NAT 网关规格上限。
+    > ▪︎ 若执行 cal.py 脚本报错，需要手动登录到 NAT 网关节点，执行 `conntrack -L | grep EST | wc -l` 观察当前连接数，测试开始之后，连接数会逐渐增加，直到达到 NAT 网关规格上限。
     >
     > ▪︎ 每个 NAT 节点规格上限 = 规格数 / 节点数。
-
+    
     
 
 ## 测试结果
 
-<!--<!--**小型**-->
-
-<!--根据脚本统计，最大连接数为`10000`。-->
-
-<!--![](../../_images/perf_5.png)-->
-
-<!--**中型**-->
-
-<!--根据脚本统计，最大连接数为`49988`。-->
-
-<!--![](../../_images/perf_6.png)-->
-
-<!--**大型**-->
-
-<!--**说明**-->
-
-<!--在 DevOps 环境中，hyper 节点为虚拟化节点，在实际测试过程中，当连接数变大，hyper 由于文件描述符上限的因素，测试最大连接数只能达到 150000，在实际生产环境中将远高于 150000。-->
-
 根据脚本统计，测试结果如下：
 
-| NAT 网关规格 | 测试结果 |
-| ------------ | -------- |
-| 小型         | 10000    |
-| 中型         | 49988    |
-| 大型         | 200000   |
+| <span style="display:inline-block;width:150px">NAT 网关规格</span> | <span style="display:inline-block;width:200px">测试结果</span> |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 小型                                                         | 10,000                                                       |
+| 中型                                                         | 49,988                                                       |
+| 大型                                                         | 200,000                                                      |
 

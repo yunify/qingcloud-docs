@@ -3,7 +3,7 @@ title: "修改 NAT 网关配置"
 descriptipn: 修改 NAT 网关的基本信息及配置，包括修改名称描述、添加标签、修改安全组等。
 draft: false
 weight: 4
-keyword: QingCloud, 青云, NAT网关, NAT
+keywords: QingCloud, 青云, NAT网关, NAT
 ---
 
 您可以根据实际需求随时修改 NAT 网关的名称、描述、标签、安全组等属性。
@@ -30,10 +30,7 @@ keyword: QingCloud, 青云, NAT网关, NAT
 
      ![](../../../_images/nat_detail_operation.png)
 
-   - 将鼠标移到**公网安全组**、**基础网络安全组**的属性值上，可修改安全组的绑定值。
-   >**说明**
-   >
-   >
+   - 将鼠标移到**公网安全组**、**基础网络安全组**的属性值上，可修改安全组的绑定值。具体操作可参见[修改 NAT 网关安全组](../mdfy_sg/)。
 
 
 

@@ -3,7 +3,7 @@ title: "绑定和解绑私有网络"
 descriptipn: NAT 网关如何绑定私有网络。
 draft: true
 weight: 10
-keyword: QingCloud, 青云, NAT网关, NAT
+keywords: QingCloud, 青云, NAT网关, NAT
 ---
 
 ## 前提条件
