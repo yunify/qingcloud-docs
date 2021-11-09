@@ -16,15 +16,15 @@ ACL 过于广域，对于一些更细粒度的控制无法实现，需要用 Pol
 
 1. 进入 **访问控制** 设置页面，清除所有 ACL 规则，详细操作可参考 [Bucket ACL](/storage/object-storage/manual/console/bucket_manage/access_control/#存储空间访问控制列表bucket-acl)：
 
-![](../_images/policy1.png)
+![](/storage/object-storage/_images/policy1.png)
 
 2. 进入 **存储空间策略** 设置页面，创建规则，设置 Referer 匹配 `*.baidu.com` 访问，也就是设置访问白名单。详细操作可参考 [Bucket Policy](/storage/object-storage/manual/console/bucket_manage/access_control/#存储空间策略bucket-policy)：
 
-![](../_images/policy2.png)
+![](/storage/object-storage/_images/policy2.png)
 
 3. 测试结果如下，直接 curl 访问提示无权限，添加 `--referer` 参数，指定 `www.baidu.com` 之后可以正常访问:
 
-![](../_images/policy3.png)
+![](/storage/object-storage/_images/policy3.png)
 
 
 
@@ -36,15 +36,15 @@ ACL 过于广域，对于一些更细粒度的控制无法实现，需要用 Pol
 
 1. 进入 **访问控制** 设置页面，添加所有用户可读的 ACL 规则，详细操作可参考 [Bucket ACL](/storage/object-storage/manual/console/bucket_manage/access_control/#存储空间访问控制列表bucket-acl)：
 
-![](../_images/policy4.png)
+![](/storage/object-storage/_images/policy4.png)
 
 2. 进入 **存储空间策略** 设置页面，创建规则，设置 Referer 不匹配 `*.baidu.com` 访问，也就是添加访问黑名单。详细操作可参考 [Bucket Policy](/storage/object-storage/manual/console/bucket_manage/access_control/#存储空间策略bucket-policy)：
 
-![](../_images/policy5.png)
+![](/storage/object-storage/_images/policy5.png)
 
 3. 测试结果如下，直接 curl 访问提示无权限，添加 `--referer` 参数，指定 `www.baidu.com` 之后可以正常访问:
 
-![](../_images/policy6.png)
+![](/storage/object-storage/_images/policy6.png)
 
 
 可见，实现的结果和 **案例一** 是一致的。

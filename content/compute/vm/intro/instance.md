@@ -28,11 +28,11 @@ keyword: 云服务器, QingCloud, 实例, 虚拟机
 
 - ### [内存型 er3](../../intro/enterprise/#内存型-er3)
 
-- ### [网络增强计算型 ec3ne](../../intro/enterprise/#网络增强计算型-ec3ne)
+- ### [RDMA网络增强计算型 ec3ne](../../intro/enterprise/#网络增强计算型-ec3ne)
 
-- ### [网络增强通用型 eg3ne](../../intro/enterprise/#网络增强通用型-eg3ne)
+- ### [RDMA网络增强通用型 eg3ne](../../intro/enterprise/#网络增强通用型-eg3ne)
 
-- ### [网络增强内存型 er3ne](../../intro/enterprise/#网络增强内存型-er3ne)
+- ### [RDMA网络增强内存型 er3ne](../../intro/enterprise/#网络增强内存型-er3ne)
 
 - ### [通用型 e2](../../intro/enterprise/#通用型-e2)
 
