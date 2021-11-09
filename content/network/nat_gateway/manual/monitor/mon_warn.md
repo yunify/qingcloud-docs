@@ -16,7 +16,9 @@ keywords: QingCloud, 青云, NAT网关, NAT, SNAT, DNAT
 
 点击**监控**页签，可查看监控数据。
 
-![](../../../_images/moni_warn.png)
+<!--![](../../../_images/moni_warn.png)-->
+
+![](../../../_images/moni_warn_1.png)
 
 1. 选择时间段：通过切换时间区段，可分别查看不同时间段内的监控数据。
 

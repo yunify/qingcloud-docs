@@ -27,7 +27,7 @@ keyword: QingCloud, 青云, NAT网关, NAT
 
 ### 步骤2：加入 NAT，通过 NAT 网关具备公网能力
 
-配置 NAT 网关可参考文档：[配置NAT网关](/network/nat_gateway/manual/nat_user_guide/)
+配置 NAT 网关可参考文档：[配置 NAT 网关](../../quickstart/snat_qs/)
 配置完成后可访问公网，但隧道不通，无法通过 VPC 端口转发能力访问云服务器。  
 <img src="../_images/ping3.png" width="800px" height="500px">  
 
