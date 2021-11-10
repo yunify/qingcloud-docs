@@ -19,7 +19,7 @@ product:
     - time: 2019-04-04
       title: Redis 4.0.6 版本正式上线
       content: 1.采用 Redis Cluster v4.0.6版本构建；<br>2.修复问题。
-      url: /../../intro/redisversion/
+      url: ../../intro/redisversion/
 
 ---
 
