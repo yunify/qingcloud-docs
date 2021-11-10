@@ -88,7 +88,7 @@ weight: 2
 
 黑名单
 
-以下图为例 该条规则的含义是 referer 主域名为 baidu.com ，google.com 以及 www.example.com 发起的请求，都无法访问 png jpg gif 文件。
+以下图为例，该条规则的含义是 referer 主域名为 `baidu.com` ，`google.com` 以及 `www.example.com` 发起的请求，都无法访问 png jpg gif 文件。
 
 ![](/network/cdn/_images/create_access_rule_1.png)
 
@@ -101,7 +101,7 @@ weight: 2
 
 白名单
 
-以下图为例 该条规则表示 referer 中主域名 qingcloud.com 或 www.qingcache.com 者空 referer 可以访问该文件
+以下图为例，该条规则表示 referer 中主域名 `qingcloud.com` 或 `www.qingcache.com` 可以访问该文件。
 
 ![](/network/cdn/_images/create_access_rule_2.png)
 
@@ -188,7 +188,7 @@ weight: 2
 
 ![](/network/cdn/_images/refresh_2.png)
 
-填写需要刷新的文件或者目录的url 需要以 [http://](http://) 或 [https://](https://) 开头
+填写需要刷新的文件或者目录的url 需要以 `http://` 或 `https://` 开头。
 
 **CDN 预取**
 
@@ -200,5 +200,5 @@ weight: 2
 
 ![](/network/cdn/_images/purge_2.png)
 
-填写需要预取的文件 url 需要以 [http://](http://) 或 [https://](https://) 开头
+填写需要预取的文件 url 需要以 `http://` 或 `https://` 开头。
 
