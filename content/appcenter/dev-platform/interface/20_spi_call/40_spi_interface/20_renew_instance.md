@@ -11,7 +11,7 @@ weight: 20
 
 | 字段         | 类型   | 是否必选 | 描述                                                         |
 | ------------ | ------ | -------- | ------------------------------------------------------------ |
-| action       | string | true     | CreateAppInstance                                            |
+| action       | string | true     | RenewAppInstance                                             |
 | instance_id  | string | true     | 实例 ID                                                      |
 | spec         | string | true     | spec 定价规格名称（base64 编码）                             |
 | spec_package | string | true     | spec_package 定价规格套餐（base64  编码）                    |

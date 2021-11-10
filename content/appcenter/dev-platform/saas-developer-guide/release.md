@@ -97,7 +97,7 @@ weight: 4
 
    <img src="/appcenter/dev-platform/_images/um_app_auth_choose.png" style="zoom:50%;" />
 
-#### 接口使用方法
+#### 应用权限接口使用方法
 
 开发者使用应用权限接口的方法，如下所示。
 

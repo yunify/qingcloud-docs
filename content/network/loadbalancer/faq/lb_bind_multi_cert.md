@@ -12,9 +12,9 @@ enableToc: false
 
 ## 前提条件
 
-* 已创建负载均衡器和 HTTPS 监听器，具体步骤可已参考[负载均衡器操作指南](https://docsv3.qingcloud.com/network/loadbalancer/manual/lb_user_guide/)
+* 已创建负载均衡器和 HTTPS 监听器，具体步骤可已参考[负载均衡器操作指南](https://docsv3.qingcloud.com/network/loadbalancer/manual/lb_user_guide/)。
 
-* 已创建 SSL 证书并完成验证，具体步骤可以参考 SSL 证书[购买指南](https://docsv3.qingcloud.com/security/ssl/manual/user_guide/)、[验证指南](https://docsv3.qingcloud.com/security/ssl/manual/manualq/)
+* 已创建 SSL 证书并完成验证，具体步骤可以参考 SSL 证书[购买指南](/site/ssl/manual/user_guide/)、[验证指南](/site/ssl/manual/manualq/)。
 
 ## 操作步骤
 
