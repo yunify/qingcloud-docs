@@ -55,11 +55,11 @@ QingStor 对象存储通过使用对称加密的方法来验证请求者的身�
 
 2. 在 API 密钥主页面，点击 **创建**，按要求输入相关信息后，点击 **提交** 按钮：
 
-![](/storage/object-storage/beat-practices/_images/create_access_key.png)
+![](/storage/object-storage/_images/create_access_key.png)
 
 3. 在随后的对话框中下载密钥文件：
 
-![](/storage/object-storage/beat-practices/_images/down_access_key.png)
+![](/storage/object-storage/_images/down_access_key.png)
 
 4. 用文本查看 API 密钥信息：
 
