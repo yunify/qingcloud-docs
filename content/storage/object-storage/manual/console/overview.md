@@ -24,7 +24,7 @@ weight: 1
 
 登录 [管理控制台](https://console.qingcloud.com/login)，选择 **产品与服务** > **存储服务** > **对象存储**，进入 QingStor 对象存储的主页面。
 
-![](../_images/console_main.png)
+![](/storage/object-storage/_images/console_main.png)
 
 如上图所示，QingStor 对象存储的主页面是 Bucket 列表。
 

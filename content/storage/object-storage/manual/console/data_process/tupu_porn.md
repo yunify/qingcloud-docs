@@ -25,15 +25,15 @@ weight: 3
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
 
- ![](../../_images/console_main.png)
+ ![](/storage/object-storage/_images/console_main.png)
 
 2. 进入 Bucket 详情页面，点击 **数据处理**，选择 **图谱鉴黄**，点击 **点击开启**：
 
- ![](../../_images/data_yellow_pro1.png)
+ ![](/storage/object-storage/_images/data_yellow_pro1.png)
 
 3. 弹出参数设置对话框，根据对话框提示信息，输入对应参数后，点击 **确认**：
 
- ![](../../_images/data_yellow_pro2.png)
+ ![](/storage/object-storage/_images/data_yellow_pro2.png)
 
  **说明：**
    - 接收结果地址：当数据处理完成后，QingStor 对象存储会将处理结果以 HTTP POST 方式向接收结果地址发送。要求该地址在接受成功后返回状态码 200 至 QingStor 对象存储。
@@ -47,27 +47,27 @@ weight: 3
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
 
- ![](../../_images/console_main.png)
+ ![](/storage/object-storage/_images/console_main.png)
 
 2. 进入 Bucket 详情页面，点击 **数据处理**，选择 **图谱鉴黄**，点击 **打开**：
 
- ![](../../_images/data_yellow_pro3.png)
+ ![](/storage/object-storage/_images/data_yellow_pro3.png)
 
 3. 进入 **图谱鉴黄** 详情页面，查看 **结果说明**，用户通过这个页面，可以查看接收到的识别结果中的各个字段的含义：
 
- ![](../../_images/data_yellow_pro4.png)
+ ![](/storage/object-storage/_images/data_yellow_pro4.png)
 
 4. 在 **图谱鉴黄** 详情页面，点击 **价格**，用户可查看该功能的收费标准，详细说明与计费示例参考下图：
 
- ![](../../_images/data_yellow_pro5.png)
+ ![](/storage/object-storage/_images/data_yellow_pro5.png)
 
 5. 在 **图谱鉴黄** 详情页面，点击 **消费记录**，用户可通过选择查询时间段查看各个月份对应的消费记录，结果用堆叠条形图表示，并将监控点的数据呈现在表格中：
 
- ![](../../_images/data_yellow_pro6.png)
+ ![](/storage/object-storage/_images/data_yellow_pro6.png)
 
 6. 在 **图谱鉴黄** 详情页面，点击 **配置**，用户可在该页面设置接收结果地址与文件匹配规则，详情参考下图：
  
- ![](../../_images/data_yellow_pro7.png)
+ ![](/storage/object-storage/_images/data_yellow_pro7.png)
 
 ## 鉴黄结果
 

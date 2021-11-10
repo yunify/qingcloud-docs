@@ -16,19 +16,19 @@ QingStor 对象存储的媒体转码服务，是对储存在 QingStor 对象存�
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
 
- ![](../../_images/console_main.png)
+ ![](/storage/object-storage/_images/console_main.png)
 
 2. 进入 Bucket 详情页面，点击 **数据处理**，选择 **媒体转码**，点击 **开启**：
 
- ![](../../_images/data_trans1.png)
+ ![](/storage/object-storage/_images/data_trans1.png)
 
 3. 进入媒体转码详情页面，点击 **转码任务 > +创建任务**：
 
- ![](../../_images/data_trans2.png)
+ ![](/storage/object-storage/_images/data_trans2.png)
 
 4. 进入媒体转码任务设置页面，用户根据页面提示信息，指定目标文件，即：待操作待文件后，详细页面参数如下，用户根据提示信息，输入相应参数，点击 **提交** 按钮：
 
- ![](../../_images/data_trans3.png)
+ ![](/storage/object-storage/_images/data_trans3.png)
 
  **说明：**
    - 媒体输入：指定待进行转码的，存储在当前 Bucket 中的多媒体文件。目前仅支持格式为：mp3, mp4, flac, ogg, flv 的文件。
@@ -42,21 +42,21 @@ QingStor 对象存储的媒体转码服务，是对储存在 QingStor 对象存�
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
 
- ![](../../_images/console_main.png)
+ ![](/storage/object-storage/_images/console_main.png)
 
 2. 进入 Bucket 详情页面，点击 **数据处理**，选择 **媒体转码**，点击 **开启**：
 
- ![](../../_images/data_trans1.png)
+ ![](/storage/object-storage/_images/data_trans1.png)
 
 3. 进入媒体转码详情页面，点击 **价格**，可查看详细的收费标准以及计费示例：
 
- ![](../../_images/data_trans4.png)
+ ![](/storage/object-storage/_images/data_trans4.png)
 
 4. 在媒体转码详情页面，点击 **消费记录**，可查看详细的消费清单：
 
- ![](../../_images/data_trans5.png)
+ ![](/storage/object-storage/_images/data_trans5.png)
 
 5. 在媒体转码详情页面，点击 **任务统计**，可查看指定时间内的转码任务次数：
 
- ![](../../_images/data_trans6.png)
+ ![](/storage/object-storage/_images/data_trans6.png)
 

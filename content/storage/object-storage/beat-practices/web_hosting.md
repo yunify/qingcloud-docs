@@ -50,7 +50,7 @@ QingStor 对象存储静态网站托管可为企业官网、新闻站点、自�
 
 1. 设置 Bucket 为公开可读：
 
- ![](/storage/object-storage/beat-practices/_images/web_hosting1.png)
+ ![](/storage/object-storage/_images/web_hosting1.png)
 
 
 2. 将网站内容上传至 Bucket。

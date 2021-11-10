@@ -9,7 +9,7 @@ weight: 1
 Bucket 的文件和文件夹按字母序混合排列。控制台可查看文件的名称、类型、大小等信息，并按文件类型展示对应的图标。与 Bucket 列表页相同，文件也可以选择列表视图或文件视图。
 
 在 Bucket 列表页面，点击 Bucket 名，进入 Bucket 文件标签页：
-![](../../_images/object_main.png)
+![](/storage/object-storage/_images/object_main.png)
 
 
 在 Bucket 文件标签页可以查看、创建和删除文件夹，上传、下载、删除文件，也可以将公开读权限的 Bucket 内文件的 URL 分享供其他用户下载。详细操作如下：
@@ -20,19 +20,19 @@ Bucket 的文件和文件夹按字母序混合排列。控制台可查看文件�
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
 
- ![](../../_images/console_main.png)
+ ![](/storage/object-storage/_images/console_main.png)
 
 2. 进入 Bucket 详情页面，点击 **文件 > +新文件夹**：
 
- ![](../../_images/object_create_dir1.png)
+ ![](/storage/object-storage/_images/object_create_dir1.png)
 
 3. 弹出 **新文件夹** 对话框，根据提示信息，输入新建文件夹名称，点击 **提交**：
 
- ![](../../_images/object_create_dir2.png)
+ ![](/storage/object-storage/_images/object_create_dir2.png)
 
 4. 成功创建的文件夹，列表显示：
 
- ![](../../_images/object_create_dir3.png)
+ ![](/storage/object-storage/_images/object_create_dir3.png)
 
 
 ## 上传文件
@@ -43,15 +43,15 @@ Bucket 的文件和文件夹按字母序混合排列。控制台可查看文件�
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
 
- ![](../../_images/console_main.png)
+ ![](/storage/object-storage/_images/console_main.png)
 
 2. 进入 Bucket 详情页面，点击 **文件 > 上传文件**：
 
- ![](../../_images/object_upload_file1.png)
+ ![](/storage/object-storage/_images/object_upload_file1.png)
 
 3. 弹出 **上传文件** 对话框内，根据提示信息，上传文件，上传完成后，点击右上角，关闭对话框：
 
- ![](../../_images/object_upload_file2.png)
+ ![](/storage/object-storage/_images/object_upload_file2.png)
 
  **说明：**
    - 控制台限制了上传单个文件的大小，超过 1GB 的文件，建议使用 API 或 SDK 进行上传。
@@ -63,7 +63,7 @@ Bucket 的文件和文件夹按字母序混合排列。控制台可查看文件�
 
 4. 成功上传的文件，列表显示：
 
- ![](../../_images/object_upload_file3.png)
+ ![](/storage/object-storage/_images/object_upload_file3.png)
 
 
 ## 下载文件
@@ -72,11 +72,11 @@ Bucket 的文件和文件夹按字母序混合排列。控制台可查看文件�
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
 
- ![](../../_images/console_main.png)
+ ![](/storage/object-storage/_images/console_main.png)
 
 2. 进入 Bucket 详情页面，点击 **文件**，选择待下载的文件后，点击 **更多操作 > 下载**，或点击下载图标：
 
- ![](../../_images/object_down_file1.png)
+ ![](/storage/object-storage/_images/object_down_file1.png)
 
 3. 下载后的文件，默认保存在浏览器设置的下载保存目录。
 
@@ -84,15 +84,15 @@ Bucket 的文件和文件夹按字母序混合排列。控制台可查看文件�
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
 
- ![](../../_images/console_main.png)
+ ![](/storage/object-storage/_images/console_main.png)
 
 2. 进入 Bucket 详情页面，点击 **文件**，选择相应的文件后，击查看详情图标：
 
- ![](../../_images/object_file_info1.png)
+ ![](/storage/object-storage/_images/object_file_info1.png)
 
 3. 弹出 **文件详情** 对话框，详细内容如下图：
 
- ![](../../_images/object_file_info2.png)
+ ![](/storage/object-storage/_images/object_file_info2.png)
 
 ## 获取文件 URL 链接
 
@@ -100,15 +100,15 @@ Bucket 的文件和文件夹按字母序混合排列。控制台可查看文件�
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
 
- ![](../../_images/console_main.png)
+ ![](/storage/object-storage/_images/console_main.png)
 
 2. 进入 Bucket 详情页面，点击 **文件**，选择相应的文件后，点击 **查看文件地址** 图标：
 
- ![](../../_images/object_file_url1.png)
+ ![](/storage/object-storage/_images/object_file_url1.png)
 
 3. 在弹出的对话框内，根据需求，可以选择该 URL 的过期时间，并点击 **复制链接** 按钮：
 
- ![](../../_images/object_file_url2.png)
+ ![](/storage/object-storage/_images/object_file_url2.png)
 
  **说明：**
    - 过期时长，是指该链接的有效时长。
@@ -122,15 +122,15 @@ QingStor 对象存储，支持的文件操作包括：另存为，复制剪切�
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
 
- ![](../../_images/console_main.png)
+ ![](/storage/object-storage/_images/console_main.png)
 
 2. 进入 Bucket 详情页面，点击 **文件**，选择相应的文件后，点击 **右键** 查看相关操作：
 
- ![](../../_images/object_file_opt1.png)
+ ![](/storage/object-storage/_images/object_file_opt1.png)
 
 3. 进入 Bucket 详情页面，点击 **文件**，选择相应的文件后，也可点击 **更多操作** 来查看支持的相关操作：
 
- ![](../../_images/object_file_opt2.png)
+ ![](/storage/object-storage/_images/object_file_opt2.png)
 
  **说明：**
    - 复制剪切操作，支持单个文件，也支持同时操作多个文件。
@@ -142,19 +142,19 @@ QingStor 对象存储，支持的文件操作包括：另存为，复制剪切�
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
 
- ![](../../_images/console_main.png)
+ ![](/storage/object-storage/_images/console_main.png)
 
 2. 进入 Bucket 详情页面，点击 **文件**，选择相应的文件后，点击 **右键 > 删除** ：
 
- ![](../../_images/object_file_del1.png)
+ ![](/storage/object-storage/_images/object_file_del1.png)
 
 3. 进入 Bucket 详情页面，点击 **文件**，选择相应的文件后，也可点击 **更多操作 > 删除** 来删除文件：
 
- ![](../../_images/object_file_del2.png)
+ ![](/storage/object-storage/_images/object_file_del2.png)
 
 4. 弹出 **删除文件** 对话框，确认操作无误后，点击 **删除** 按钮：
 
- ![](../../_images/object_file_del3.png)
+ ![](/storage/object-storage/_images/object_file_del3.png)
 
  **说明：**
    - 删除文件后无法恢复，因此需要谨慎执行该操作。
@@ -166,19 +166,19 @@ QingStor 对象存储，支持的文件操作包括：另存为，复制剪切�
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
 
- ![](../../_images/console_main.png)
+ ![](/storage/object-storage/_images/console_main.png)
 
 2. 进入 Bucket 详情页面，点击 **文件**，选择相应的文件夹后，点击 **右键 > 删除** ：
 
- ![](../../_images/object_dir_del1.png)
+ ![](/storage/object-storage/_images/object_dir_del1.png)
 
 3. 进入 Bucket 详情页面，点击 **文件**，选择相应的文件夹后，也可点击 **更多操作 > 删除** 来删除文件：
 
- ![](../../_images/object_dir_del2.png)
+ ![](/storage/object-storage/_images/object_dir_del2.png)
 
 4. 弹出 **删除文件** 对话框，确认操作无误后，点击 **删除** 按钮：
 
- ![](../../_images/object_dir_del3.png)
+ ![](/storage/object-storage/_images/object_dir_del3.png)
 
  **说明：**
    - 删除文件后无法恢复，因此需要谨慎执行该操作。
