@@ -56,15 +56,15 @@ QingStor 对象存储定义生命周期为 Bucket 的子资源，因此，只有
 
 1. 进入 QingStor 对象存储的主页面，选择待设置生命周期的 Bucket，点击 **右键** > **设置**：
 
- ![](../../_images/set_bucket_lifecycle1.png)
+ ![](/storage/object-storage/_images/set_bucket_lifecycle1.png)
 
 2. 进入 Bucket 设置页面，点击 **生命周期** > **添加规则**：
 
- ![](../../_images/set_bucket_lifecycle2.png)
+ ![](/storage/object-storage/_images/set_bucket_lifecycle2.png)
 
 3. 在弹出的 **添加规则** 对话框内，根据页面提示信息，填写相关参数后，点击 **提交** 按钮：
 
- ![](../../_images/set_bucket_lifecycle3.png)
+ ![](/storage/object-storage/_images/set_bucket_lifecycle3.png)
 
  **说明：**
    - **对象前缀：** 用于指定该规则匹配的 Object 名。
@@ -77,12 +77,12 @@ QingStor 对象存储定义生命周期为 Bucket 的子资源，因此，只有
 
 4. 成功创建的生命周期规则，列表显示：
 
- ![](../../_images/set_bucket_lifecycle4.png)
+ ![](/storage/object-storage/_images/set_bucket_lifecycle4.png)
 
 ## 相关API
 
 |操作|API|说明|
 |--|--|--|
 |设置 Bucket Lifecycle|[PUT Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/put_lifecycle)|用于设置 Bucket 的生命周期规则|
-|获取 Bucket Lifecycle|[GET Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/put_lifecycle)|用于获取已设置的 Bucket 生命周期规则|
-|删除 Bucket Lifecycle|[DELETE Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/put_lifecycle)|用于删除已经设置的 Bucket 策略生命周期规则|
+|获取 Bucket Lifecycle|[GET Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/get_lifecycle)|用于获取已设置的 Bucket 生命周期规则|
+|删除 Bucket Lifecycle|[DELETE Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/delete_lifecycle)|用于删除已经设置的 Bucket 策略生命周期规则|

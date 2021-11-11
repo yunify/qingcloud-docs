@@ -14,7 +14,7 @@ weight: 10
 
 #### 网络
 
-为了保障数据安全， QKE 集群需要运行在受管私有网络中。若还未创建 VPC 和私有网络，可根据页面提示创建一个，也可以参考[创建 VPC](//network/vpc/manual/vpcnet/10_create_vpc/) 提前创建好。
+为了保障数据安全， QKE 集群需要运行在受管私有网络中。若还未创建 VPC 和私有网络，可根据页面提示创建一个，也可以参考[创建 VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/) 提前创建好。
 
 ![创建依赖的网络资源](../../_images/create_network.png)
 
@@ -87,7 +87,7 @@ weight: 10
 
 ##### etcd 服务
 
-k8s 集群使用 etcd 作为后端存储，建议使用青云提供的 [etcd 服务](https://console.qingcloud.com/apps/app-fdyvu2wk) 单独部署和管理，以获得更好的可用性和容错性。
+k8s 集群使用 etcd 作为后端存储，建议使用青云提供的 [etcd 服务](/middware/etcd/) 单独部署和管理，以获得更好的可用性和容错性。
 
 > **说明**：
 >
@@ -97,7 +97,7 @@ k8s 集群使用 etcd 作为后端存储，建议使用青云提供的 [etcd 服
 
 > **注意**：
 >
-> 内置 etcd 会占用 QKE 主节点的资源并无法增删节点，生产环境建议独立部署 [etcd 服务](https://console.qingcloud.com/apps/app-fdyvu2wk)。
+> 内置 etcd 会占用 QKE 主节点的资源并无法增删节点，生产环境建议独立部署 [etcd 服务](/middware/etcd/)。
 
 ##### ELK 服务
 
@@ -111,7 +111,7 @@ QKE 集群的日志组件使用 [Elasticsearch](https://github.com/elastic/elast
 
 > **注意**：
 >
-> 内置 Elasticsearch 会占用 k8s 集群的资源并依赖 k8s 进行管理，在 k8s 集群发生故障期间 Elasticsearch 可能无法正常工作。生产环境建议独立部署 [ELK 服务](https://console.qingcloud.com/apps/app-p6au3oyq) 。
+> 内置 Elasticsearch 会占用 k8s 集群的资源并依赖 k8s 进行管理，在 k8s 集群发生故障期间 Elasticsearch 可能无法正常工作。生产环境建议独立部署 [ELK 服务](/bigdata/elk/) 。
 
 #### 服务环境参数设置
 
@@ -309,7 +309,7 @@ kubectl get pods --all-namespaces
 
 ### 自动伸缩
 
-使用 Console 控制台运维工具的[自动伸缩](https://docs.qingcloud.com/product/operation/autoscaling)功能，选择指定的 QKE 集群以及节点类型，操作类型选择“调整应用节点数量”
+使用 Console 控制台运维工具的[自动伸缩](/operation/autoscaling/)功能，选择指定的 QKE 集群以及节点类型，操作类型选择“调整应用节点数量”
 
 ![](../../_images/autoscale-node-qke.png)
 
@@ -350,7 +350,7 @@ kubectl get pods --all-namespaces
 
 ## 监控
 
-使用 Console 控制台运维工具的 [监控Dashboard](/monitor_service/cloudsat/dashboard/intro/intro/) 功能，创建监控面板和图表，选择指定的 QKE 集群、节点以及指标，
+使用 Console 控制台运维工具的 [监控面板 Dashboard](/monitor_service/cloudsat/intro/intro/#dashboard) 功能，创建监控面板和图表，选择指定的 QKE 集群、节点以及指标，
 
 ![](../../_images/dashboard-monitor.png)
 

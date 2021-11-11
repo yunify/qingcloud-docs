@@ -13,8 +13,10 @@
 {{ $editURL = printf "%s/edit/%s/%s/content/%s" $gh_repo $gh_branch $gh_subdir $pathFormatted }}
 {{ end }}
 {{ $issuesURL := printf "%s/issues/new?title=%s" $gh_repo (htmlEscape $.Title )}}
+{{ if ne .Type "videoMain"}}
 <a class="icon-download" onclick="download_pdf('','{{ .Title }}');"><i class="fa fa-download fa-fw"></i> {{ T "post_download_this" }}</a>
 <a class="icon-edit" href="{{ $editURL }}" target="_blank"><i class="fa fa-edit fa-fw"></i> {{ T "post_edit_this" }}</a>
+{{ end }}
 {{ if $gh_project_repo }}
 {{ $project_issueURL := printf "%s/issues/new" $gh_project_repo }}
 <!-- <a href="{{ $project_issueURL }}" target="_blank"><i class="fas fa-tasks fa-fw"></i> {{ T "post_create_project_issue" }}</a> -->

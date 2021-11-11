@@ -13,15 +13,16 @@ weight: 2
 
 1. 在VPC网络产品中，点击创建VPC网络，选择“小型”等网络类型，说明：集群不支持免费型
 
-![image-20211019154008325](/Users/huimiao/Library/Application Support/typora-user-images/image-20211019154008325.png)
+![image-20211019154008325](../_images/image-20211019154008325.png)
 
 2. 系统会自动配置该vpc网络绑定的私有网络，点击创建VPC网络
 
-   ![image-20211019154556326](/Users/huimiao/Library/Application Support/typora-user-images/image-20211019154556326.png)
+   ![image-20211019154556326](../_images/image-20211019154556326.png)
 
 3. 系统将创建小型的VPC网路并绑定了私有网络，状态为活跃时表示创建完成
 
-   ![image-20211019154748884](/Users/huimiao/Library/Application Support/typora-user-images/image-20211019154748884.png)
+   ![image-20211019154748884](../_images/image-20211019154748884.png)
+
 
 
 
@@ -29,11 +30,11 @@ weight: 2
 
 1. 公网IP页面创建公网IP，选择需要的带宽点击提交，说明：集群仅支持外部绑定模式的IP
 
-   <img src="/Users/huimiao/Library/Application Support/typora-user-images/image-20211019154855351.png" alt="image-20211019154855351" style="zoom:50%;" />
+   <img src="../_images/image-20211019154855351.png" style="zoom:50%;" />
 
 2. 创建完成后会获得公网的IP
 
-   <img src="/Users/huimiao/Library/Application Support/typora-user-images/image-20211019155022628.png" alt="image-20211019155022628" style="zoom:50%;" />
+   <img src="../_images/image-20211019155022628.png" alt="image-20211019155022628" style="zoom:50%;" />
 
 
 
