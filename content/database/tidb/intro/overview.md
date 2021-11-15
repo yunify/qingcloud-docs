@@ -4,10 +4,10 @@ description: Test description
 draft: false
 weight: 1
 enableToc: false
-keyword: TiDB, QingCloud, 分布式关系型数据库
+keywords: TiDB, QingCloud, 分布式关系型数据库
 ---
 
-TiDB 是青云基于开源分布式关系型数据库 TiDB 构建的兼具联机事务处理（OLTP）和联机分析处理（OLAP）能力的分布式数据库产品。TiDB 具备水平扩缩容、强一致性的分布式事务、高度兼容 MySQL 等重要特性，适用于高可用、强一致要求较高、数据规模较大等各种应用场景。
+TiDB 分布式数据库是青云基于 PingCap 公司开源的分布式关系型数据库的云上实现，兼具联机事务处理（OLTP）和联机分析处理（OLAP）能力。TiDB 具备水平扩缩容、强一致性的分布式事务、高度兼容 MySQL 协议等重要特性，可广泛适用于高可用、强一致要求较高、数据规模较大等各种应用场景。
 
 ## 为什么选择 TiDB
 
@@ -20,7 +20,7 @@ TiDB 是青云基于开源分布式关系型数据库 TiDB 构建的兼具联机
 
 ## 购买方式
 
- [创建 TiDB 实例](../../quickstart/create_redis/)
+ [创建 TiDB 实例](../../quickstart/create_tidb/)
 
 ## 实例类型
 
@@ -36,7 +36,7 @@ TiDB 数据库提供了`测试型`、`基础性`、`分析增强型`三种类型
 
 ## 产品定价
 
-TiDB 的定价，请参考[详细价格信息](https://www.qingcloud.com/pricing#/RedisCluster)（tidb价格计算器）。
+TiDB 的定价，请参考[详细价格信息](https://www.qingcloud.com/pricing#/tidb)（tidb价格计算器）。
 
-更多关于价格及计费的说明，请参见[计费说明](../../billing/price/)。
+更多关于价格及计费的说明，请参见[计费指南](../../billing/price_overview/)。
 

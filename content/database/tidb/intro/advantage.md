@@ -4,7 +4,7 @@ description: TiDB 的优势特点
 draft: false
 weight: 2
 enableToc: false
-keyword: TiDB, QingCloud, 数据库
+keywords: TiDB, QingCloud, 数据库
 ---
 
 ## 高度兼容 MySQL
@@ -21,5 +21,5 @@ TiDB 的通讯协议与 MySQL 高度兼容，你可以轻松地像使用单机�
 
 ## 一致性的分布式事务
 
-TiDB 作为典型的 OLTP 行存数据库，同时兼具强大的 OLAP 性能，配合 TiSpark，可提供一站式 HTAP 解决方案，一份存储同时处理 OLTP & OLAP、OLAP、OLTP 的工作负载，无需传统繁琐的 ETL 过程。
+TiDB 作为典型的 OLTP 行存数据库，同时兼具强大的 OLAP 性能，配合 TiSpark，可提供一站式 HTAP 解决方案，一份存储同时处理OLAP、OLTP的工作负载，无需传统繁琐的 ETL 过程。
 

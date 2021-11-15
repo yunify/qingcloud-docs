@@ -2,7 +2,7 @@
 title: "查看实例"
 description: 本小节主要介绍如何查看实例。 
 keywords: TiDB 实例，TiDB 分布式数据库
-weight: 1
+weight: 2
 draft: false
 ---
 

@@ -2,7 +2,7 @@
 title: "监控信息"
 _build:
  render: false 
-weight: 30
+weight: 15
 collapsible: true
 draft: false
 ---

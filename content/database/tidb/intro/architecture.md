@@ -4,7 +4,7 @@ description: 介绍 TiDB 的产品架构
 draft: false
 weight: 5
 enableToc: false
-keyword: TiDB, QingCloud, 分布式数据库
+keywords: TiDB, QingCloud, 分布式数据库
 ---
 
 TiDB 分布式数据库将整体架构拆分成了多个模块，各模块之间互相通信，组成完整的 TiDB 系统。

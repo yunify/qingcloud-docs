@@ -18,7 +18,7 @@ Section2:
 
     - title: 计费指南
       content: TiDB 的计费说明
-      url: "billing/price/"
+      url: "billing/price_overview/"
 
     - title: 快速入门
       content: 快速创建 TiDB 实例 
@@ -26,26 +26,23 @@ Section2:
 
     - title: 操作指南
       content: 管理和使用 TiDB 集群
-      url: "manual/mgeinstance/startstop/"
+      url: "manual/mgeinstance/view/"
 
     - title: 最佳实践
       content: 关于 TiDB 的最佳实践
-      url: "best-practices/disaster_recovery/"
+      url: "best-practices/high_concurrency/"
   
-    - title: 性能白皮书
+    - title: 性能测试
       content: TiDB 的性能参考数据
-      url: "perfwp/test_tool/"
+      url: "perfwp/test_method/"
 
     - title: 常见问题
       content: TiDB 使用的常见问题
-      url: "faq/security_policy/"
+      url: "faq/concept_faq/"
 
 section3:
   title: 开发者指南
   children:
-    - title: API 文档
-      content: 如何使用 API 文档
-      url: "/development_docs/api/"
 
     - title: SDK 文档
       content: 如何使用 SDK 文档
@@ -69,13 +66,13 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 部署 TiDB
-          url: "quickstart/create_redis/"
+          url: "quickstart/create_tidb/"
 
-        - title: 连接 Redis Cluster
-          url: "quickstart/cnect_redis/"
+        - title: 查看 TiDB
+          url: "manual/mgeinstance/view/"
 
-        - title: 配置 Redis Cluster
-          url: "manual/cfginstance/changeconfig/"
+        - title: 监控 TiDB
+          url: "manual/monitor/viewmonidata/"
 ---
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->

@@ -4,10 +4,10 @@ description: 介绍 TiDB 不同实例类型的规格及性能参数
 draft: false
 weight: 7
 enableToc: false
-keyword: TiDB, QingCloud, 分布式数据库
+keywords: TiDB, QingCloud, 分布式数据库, 实例类型
 ---
 
-TiDB 数据库提供了`测试型`、`基础性`、`分析增强型`三种类型的实例，不同实例类型使用的节点配置、本地存储和最大组件数量不同，以满足您不同场景下的业务需求。
+TiDB 数据库提供了`测试型`、`基础型`、`分析增强型`三种类型的实例，不同实例类型使用的节点配置、本地存储和最大组件数量不同，以满足您不同场景下的业务需求。
 
 
 

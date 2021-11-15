@@ -1,6 +1,7 @@
 ---
 title: "查看监控数据"
-keywords: 
+description: 本小节主要介绍查看监控信息。 
+keywords: TiDB 实例, 监控信息, 监控数据
 weight: 3
 draft: false
 ---
