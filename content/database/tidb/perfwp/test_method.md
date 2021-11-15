@@ -70,12 +70,12 @@ Sysbench 是一款开源的、模块化的、跨平台的多线程压力测试�
 2. 连接 TiDB 实例。
 
    ```
-   mysql -u root -P 4000 -h <tidb_host> -p <passwd>
+   mysql -u root -P 4000 -h {tidb_host} -p {passwd}
    ```
 
-   ▪︎ `<tidb_host>`：表示 TiDB 实例的 IP 地址，请根据实际地址替换。
+   ▪︎ `{tidb_host}`：表示 TiDB 实例的 IP 地址，请根据实际地址替换。
 
-   ▪︎ `<passwd>`：表示 root 用户密码。若无密码，则无需输入。root 用户密码修改请参见[修改用户密码](../../manual/user_mgt/mdypasswd/)。
+   ▪︎ `{passwd}`：表示 root 用户密码。若无密码，则无需输入。root 用户密码修改请参见[修改用户密码](../../manual/user_mgt/mdypasswd/)。
 
 3. 使用数据库 mysql。
 
@@ -126,7 +126,7 @@ ulimit -a
 2. 添加文件执行权限。
 
    ```
-   chmod +x _data_prepare
+   chmod +x tidb_data_prepare
    ```
 
 3. 查看帮助。
@@ -165,11 +165,11 @@ ulimit -a
       --rand-type=uniform \
       --db-driver=mysql \
       --mysql-db=sbtest \
-      --mysql-host={TIDB_HOST} \
+      --mysql-host={tidb_host} \
       --mysql-port=4000 \
       --mysql-user=root \
       --mysql-password={passwd} \
-   prepare --tables=32 --table-size=10000000
+   prepare --tables=16 --table-size=10000000
    ```
 
    > **说明**
@@ -202,17 +202,17 @@ ANALYZE TABLE sbtest7;
 
   ```
   sysbench oltp_point_select  \
-      --threads=200 \
+      --threads=1500 \
       --time=300  \
       --report-interval=1 \
       --rand-type=uniform \
       --db-driver=mysql \
       --mysql-db=sbtest \
-      --mysql-host={TIDB_HOST} \
+      --mysql-host={tidb_host} \
       --mysql-port=4000 \
       --mysql-user=root \
       --mysql-password={passwd} \
-      run --tables=32  --table-size=10000000
+      run --tables=16  --table-size=10000000
   ```
 
   
@@ -221,17 +221,17 @@ ANALYZE TABLE sbtest7;
 
   ```
   sysbench oltp_update_index  \
-      --threads=200 \
+      --threads=1500 \
       --time=300  \
       --report-interval=1 \
       --rand-type=uniform \
       --db-driver=mysql \
       --mysql-db=sbtest \
-      --mysql-host={TIDB_HOST} \
+      --mysql-host={tidb_host} \
       --mysql-port=4000 \
       --mysql-user=root \
       --mysql-password={passwd} \
-      run --tables=32  --table-size=10000000
+      run --tables=16  --table-size=10000000
   ```
 
   
@@ -240,51 +240,51 @@ ANALYZE TABLE sbtest7;
 
   ```
   sysbench oltp_read_only   \
-      --threads=200 \
+      --threads=1500 \
       --time=300  \
       --report-interval=1 \
       --rand-type=uniform \
       --db-driver=mysql \
       --mysql-db=sbtest \
-      --mysql-host={TIDB_HOST} \
+      --mysql-host={tidb_host} \
       --mysql-port=4000 \
       --mysql-user=root \
       --mysql-password={passwd} \
-      run --tables=32  --table-size=10000000
+      run --tables=16  --table-size=10000000
   ```
 
 - **Write_only 测试命令**
 
   ```
   sysbench oltp_write_only\
-      --threads=200 \
+      --threads=1500 \
       --time=300  \
       --report-interval=1 \
       --rand-type=uniform \
       --db-driver=mysql \
       --mysql-db=sbtest \
-      --mysql-host={TIDB_HOST} \
+      --mysql-host={tidb_host} \
       --mysql-port=4000 \
       --mysql-user=root \
       --mysql-password={passwd} \
-      run --tables=32  --table-size=10000000
+      run --tables=16  --table-size=10000000
   ```
 
 - **Read_write 测试命令**
 
   ```
   sysbench oltp_read_write\
-      --threads=200 \
+      --threads=1500 \
       --time=300  \
       --report-interval=1 \
       --rand-type=uniform \
       --db-driver=mysql \
       --mysql-db=sbtest \
-      --mysql-host={TIDB_HOST} \
+      --mysql-host={tidb_host} \
       --mysql-port=4000 \
       --mysql-user=root \
       --mysql-password={passwd} \
-      run --tables=32  --table-size=10000000
+      run --tables=16  --table-size=10000000
   ```
 
   
@@ -293,17 +293,17 @@ ANALYZE TABLE sbtest7;
 
   ```
   sysbench oltp_update_non_index\
-      --threads=200 \
+      --threads=1500 \
       --time=300  \
       --report-interval=1 \
       --rand-type=uniform \
       --db-driver=mysql \
       --mysql-db=sbtest \
-      --mysql-host={TIDB_HOST} \
+      --mysql-host={tidb_host} \
       --mysql-port=4000 \
       --mysql-user=root \
       --mysql-password={passwd} \
-      run --tables=32  --table-size=10000000
+      run --tables=16  --table-size=10000000
   
   ```
 
@@ -321,8 +321,8 @@ ANALYZE TABLE sbtest7;
 | **\-\-mysql--port**                                        | 数据库服务端口。此处应为 TiDB 实例的服务端口，默认为 4000。  |
 | **\-\-mysql--user**                                        | 数据库登录用户名。此处应为 TiDB 实例的用户名。               |
 | **\-\-mysql--password**                                    | 数据库用户密码。此处应为 TiDB 实例的用户密码。               |
-| **--tables**                                               | 表的数量。                                                   |
-| **--table-size**                                           | 每张表产生的记录行数。                                       |
+| **\-\-tables**                                             | 表的数量。                                                   |
+| **\-\-table-size**                                         | 每张表产生的记录行数。                                       |
 
 
 
