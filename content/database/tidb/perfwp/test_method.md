@@ -37,6 +37,7 @@ Sysbench 是一款开源的、模块化的、跨平台的多线程压力测试�
 2. 执行以下命令，安装 Sysbench。
 
    ```
+   apt-get update
    apt-get install -y automake libtool pkg-config libmysqlclient-dev       
    
    wget https://github.com/akopytov/sysbench/archive/1.0.20.tar.gz
@@ -63,10 +64,9 @@ Sysbench 是一款开源的、模块化的、跨平台的多线程压力测试�
 1. 执行以下命令，安装 MySQL 客户端。
 
    ```
-   apt-get update
    apt  install -y mysql-client-core-5.7
    ```
-
+   
 2. 连接 TiDB 实例。
 
    ```
