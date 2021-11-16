@@ -1,6 +1,6 @@
 ---
 title: "产品功能"
-description: Test description
+description: TiDB 提供的功能
 draft: false
 weight: 3
 enableToc: false

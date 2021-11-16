@@ -7,9 +7,9 @@ enableToc: false
 keywords: TiDB, QingCloud, 分布式关系型数据库
 ---
 
-TiDB 分布式数据库是青云基于 PingCap 公司开源的分布式关系型数据库的云上实现，兼具联机事务处理（OLTP）和联机分析处理（OLAP）能力。TiDB 具备水平扩缩容、强一致性的分布式事务、高度兼容 MySQL 协议等重要特性，可广泛适用于高可用、强一致要求较高、数据规模较大等各种应用场景。
+分布式数据库 TiDB 是青云基于 PingCap 公司开源的分布式关系型数据库的云上实现，兼具联机事务处理（OLTP）和联机分析处理（OLAP）能力。TiDB 具备水平扩缩容、强一致性的分布式事务、高度兼容 MySQL 协议等重要特性，可广泛适用于高可用、强一致要求较高、数据规模较大等各种应用场景。
 
-## 为什么选择 TiDB
+## 为什么选择 QingCloud TiDB
 
 - TiDB 部署在 QingCloud 云端，提供完善的基础设施规划、网络安全保障和系统维护服务，让您只需要专注于业务创新。
 
@@ -20,7 +20,7 @@ TiDB 分布式数据库是青云基于 PingCap 公司开源的分布式关系型
 
 ## 购买方式
 
- [创建 TiDB 实例](../../quickstart/create_tidb/)
+ [创建 TiDB 实例](http://console.qingcloud.com/tidb/create)
 
 ## 实例类型
 

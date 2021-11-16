@@ -5,12 +5,11 @@ weight: 10
 
 product:
     - time: 2021-10-30
-      title: TiDB 全新上线
-      content: XXX
+      title: 分布式数据库 TiDB 全新上线
+      content: 青云 QingCloud 分布式数据库 TiDB 通过 AppCenter 管理平台以独立应用方式提供服务。TiDB v.5.1.1 版本基于XXX构建。<br>- 提供xxx；<br>- 支持xxx等功能；<br>- 支持自动水平和横向扩容；<br>- 支持xxx等。
       url: ../../intro/overview/
       tags:
       - 新产品
-      - 新功能
-      zone: 北京三区
+      zone: 北京3区，上海1区，广东2区
 ---
 
