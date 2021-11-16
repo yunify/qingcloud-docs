@@ -46,6 +46,10 @@ keyword: 云服务器, QingCloud, 实例, 虚拟机
 
 - ### [GPU云服务器 g2](../../intro/professional/#gpu云服务器-g2)
 
+- ### [GPU云服务器 g3](../../intro/professional/#gpu云服务器-g3)
+
+- ### [弹性裸金属云服务器 bm3](../../intro/professional/#弹性裸金属云服务器-bm3)
+
 
 ## 其他类型
 
