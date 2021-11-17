@@ -8,10 +8,6 @@ draft: false
 
 如果您忘记账户密码、需要修改旧密码，可以重新设置密码。
 
-## 前提条件
-
-Redis Cluster 实例需要为 Redis 6.0 或以上版本。
-
 ## 操作步骤
 
 1. 登录 QingCloud 管理控制台。

@@ -1,5 +1,5 @@
 ---
-title: "TiDB 高并发写入场景最佳实践践"
+title: "TiDB 高并发写入场景最佳实践"
 description: 本小节主要介绍 
 keywords: TiDB 最佳实践
 weight: 2

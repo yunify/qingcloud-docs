@@ -24,7 +24,7 @@ draft: false
 
 ### 购买信息设置
 
-![](../../_images/create_bug_info.png)
+![](../../../_images/create_bug_info.png)
 
 | <span style="display:inline-block;width:100px">参数</span> | 说明                                                         |
 | ---------------------------------------------------------- | ------------------------------------------------------------ |
@@ -33,7 +33,7 @@ draft: false
 
 ### 配置信息设置
 
-![](../../_images/create_setting_info.png)
+![](../../../_images/create_setting_info.png)
 
 | <span style="display:inline-block;width:120px">参数</span> | 说明                                                         |
 | ---------------------------------------------------------- | ------------------------------------------------------------ |
@@ -43,7 +43,7 @@ draft: false
 
 ### 实例设置
 
-![](../../_images/create_instance_setting.png)
+![](../../../_images/create_instance_setting.png)
 
 | <span style="display:inline-block;width:120px">参数</span> | <span style="display:inline-block;width:600px">说明</span>   |
 | ---------------------------------------------------------- | ------------------------------------------------------------ |
