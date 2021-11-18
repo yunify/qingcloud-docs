@@ -2,7 +2,7 @@
 title: "测试连接"
 description: SaaS
 draft: false
-weight: 70
+weight: 60
 ---
 
 在调用其他 SPI 前都会先调用测试连接，网络通畅后会进行后续 SPI 调用， 接入方需实现这个 SPI。

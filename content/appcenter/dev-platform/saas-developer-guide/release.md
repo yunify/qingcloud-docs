@@ -29,11 +29,7 @@ weight: 3
 
    **通知 URL**： 实现 SPI 接口的地址，**必须是HTTPS地址**。购买应用、应用续费、应用过期、资源释放、套餐升级的通知 URL 地址需要保持一致。
 
-   **价格**：此处为 License 价格，可以定义最多 20 种价格计划，有效期支持按月或者按年设置。
-
-   目前 AppCenter SaaS 应用内嵌云平台 Newbilling 计费系统，支持包年包月计费方式。
-
-   包年包月：从订单支付成功开始计费，本次收所有合约期的费用，一直到合约期结束，根据产品属性和购买时间来收费。
+   **价格**：此处为 SaaS 价格，可以定义最多 20 种价格计划，有效期支持按月或者按年设置。
 
    <img src="/appcenter/dev-platform/_images/um_app_set.png" style="zoom:50%;" />
 
@@ -42,10 +38,6 @@ weight: 3
 1. 点击**应用信息**页签，进入**应用信息**页面。
 
    ![](/appcenter/dev-platform/_images/um_app_info01.png)
-
-   ![](/appcenter/dev-platform/_images/um_app_info02.png)
-
-   ![](/appcenter/dev-platform/_images/um_app_info03.png)
 
 2. 输入应用相关详细信息。
 
@@ -65,7 +57,7 @@ weight: 3
 
    **服务支持**：填写用户使用中遇到的问题可以寻求支持的联系方式。
 
-   **服务条款**：《服务条款》支持 Markdown 编辑模式和外部链接模式（直接输入链接地址）。
+   **产品附件说明**：用于告知用户该产品对用户履行的责任或注意事项。支持 Markdown 编辑模式和外部链接模式（直接输入链接地址）。
 
    **应用分类**：对应用进行分类, 会影响到应用在 appcenter 首页出现的位置。
 
@@ -131,6 +123,11 @@ params: {"owner":"appCenter","action":"DescribeIAMApiActionsByTag"}
 
 如该应用有设置应用权限，则会提示先授权应用权限，才能访问该应用。
 
+## 上传测试报告
+
+需要按照要求完成自测报告后，并上传自测报告。点击下载 [SaaS 自测报告](https://marketplace.pek3a.qingstor.com/Self-testReport/SaaS%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E8%80%85%E8%87%AA%E6%B5%8B%E6%8A%A5%E5%91%8AV0.1.docx)。
+
+<img src="/appcenter/dev-platform/_images/um_saas_selftest.png" style="zoom:50%;" />
 
 ## 提交应用审核
 

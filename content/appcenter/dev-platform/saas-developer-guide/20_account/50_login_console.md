@@ -2,10 +2,10 @@
 title: "免密登录控制台"
 description: SaaS
 draft: false
-weight: 60
+weight: 50
 ---
 
-用户界面点击立即访问按钮，前端会获取到当前用户的token然后写携带token跳转到 服务商提供的地址 authUrl?token={usertoken}
+用户界面点击立即访问按钮，前端会获取到当前用户的 token，然后写携带 token 跳转到服务商提供的地址 authUrl?token={usertoken}
 
 > **说明：**
 >
@@ -14,3 +14,4 @@ weight: 60
 > - 获取了用户 token 后，服务商即可访问青云 API。
 
 ![](/appcenter/dev-platform/_images/um_sec_login.png)
+
