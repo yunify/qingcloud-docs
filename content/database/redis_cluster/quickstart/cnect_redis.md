@@ -11,7 +11,7 @@ Redis Cluster 支持多种连接方式，本文将为您介绍如何使用 redis
 
 ## 获取连接地址
 
-[Redis Cluster 实例创建](/database/redis_cluster/quickstart/createredis/)完成后，您可以在 Redis Cluster 的节点管理页面，查看到 Redis 节点的 IP 地址，此 IP 地址即为连接地址，连接任意一个主节点均可。
+[Redis Cluster 实例创建](../create_redis/)完成后，您可以在 Redis Cluster 的节点管理页面，查看到 Redis 节点的 IP 地址，此 IP 地址即为连接地址，连接任意一个主节点均可。
 
 <img src="../../_images/connect_ip.png" alt="连接地址" style="zoom:67%;" />
 

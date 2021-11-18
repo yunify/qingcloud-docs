@@ -7,7 +7,7 @@ product:
     - time: 2021-10-28 10:18:32
       title: 北京3区-B开放弹性裸金属服务器3.0
       content: QingCloud 弹性裸金属服务器(Bare Metal)，提供高性能、资源独享、安全隔离的专属弹性裸金属服务器，同时具备云资源的敏捷性、灵活性与高可用。满足各类应用对高性能及稳定性的需求，同时提供完整的设备管理权限及运维服务。弹性裸金属BM3提供超强算力，兼具弹性体验，应用场景丰富，支持承载企业核心业务、大规模数据分析，构建高性能专属容器云、物理与虚拟化混合架构。
-      url: /compute/vm/manual/gpu_instance/
+      url: /compute/vm/manual/vm_instance/
       tags:
       - 新产品
       - 新规格
@@ -16,7 +16,7 @@ product:
     - time: 2021-10-08 11:28:32
       title: 部分区域上架e3类型云服务器
       content: e3云服务器搭载第三代英特尔®至强®可扩展处理器（Ice Lake），计算、存储、网络性能全面提升。采用独享 CPU 模式，提供 96C384G 高规格配置。超低存储和网络时延，满足数据库、缓存在高并发场景需求，并且性价比极高，助力企业以更低成本上云。
-      url: /compute/vm/manual/vm_instance
+      url: /compute/vm/manual/vm_instance/
       tags:
       - 新产品
       - 新规格
@@ -25,7 +25,7 @@ product:
     - time: 2021-9-26 11:30:30
       title: 云硬盘部分区域上架增强型SSD云盘
       content: 增强型SSD云盘具有超高性能，适用分布式数据库等对IOPS和延时要求极高的服务。为充分利用增强型SSD云盘性能，建议挂载到企业级e3云服务器。
-      url: /compute/vm/manual/connect_instance
+      url: /storage/disk/quickstart/create_disk/
       tags:
       - 新产品
       - 新功能
