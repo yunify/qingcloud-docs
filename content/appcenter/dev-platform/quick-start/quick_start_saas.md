@@ -1,21 +1,13 @@
 ---
-title: "集成（SaaS）应用"
+title: "SaaS 应用"
 description: SaaS
 draft: false
 ---
 
-# 快速入门
-
-
-## Saas应用示例
-
-以下链接中包含示例代码: [SaaS 应用示例](https://github.com/yanshanlangren/sample_qc_ap)
-
-## 主要流程
-
-青云QingCloud AppCenter 创建一个 SaaS 应用的主要流程，如下所示。
+AppCenter 创建一个 SaaS 应用的主要流程，如下所示。
 
 - [应用与平台账户对接](/appcenter/dev-platform/saas-developer-guide/account)
+- [SPI 接口开发](/appcenter/dev-platform/saas-developer-guide/40_interface/10_spi_overview/)
 - [创建应用](/appcenter/dev-platform/saas-developer-guide/release/#创建应用)
   - [设置应用信息](/appcenter/dev-platform/saas-developer-guide/release/#设置应用信息)
   - [设置应用权限](/appcenter/dev-platform/saas-developer-guide/release/#设置应用权限)
