@@ -47,12 +47,14 @@ weight: 10
 > 超出 2K+ 的集合分辨率，按照 2K+ 计算。
 
 <table>
-  <tr>
-    <td>分类</td>
-    <td>资源项</td>
-    <td>集合分辨率</td>
-    <td>价格（元/千分钟）</td>
-  </tr>
+  <thead>
+    <tr>
+      <th>分类</th>
+      <th>资源项</th>
+      <th>集合分辨率</th>
+      <th>价格（元/千分钟）</th>
+    </tr>
+  </thead>
   <tr>
     <td rowspan ="5">实时音视频通信</td>
     <td>音频</td>
