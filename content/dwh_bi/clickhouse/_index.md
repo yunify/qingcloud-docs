@@ -39,6 +39,10 @@ section2:
       content: ClickHouse 最佳实践
       url: "best-practices/benchmark_test/"
 
+    - title: API 参考
+      content: ClickHouse API 参考
+      url: "api/overview/"
+
 section3:
   title: 开发者指南
   children:

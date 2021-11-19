@@ -37,7 +37,7 @@ $ echo "CREATE TABLE test.t_local
 (
    EventDate DateTime,
    CounterID UInt32,
-   UserID UInt32,
+   UserID UInt32
 )
 ENGINE = MergeTree()
 PARTITION BY toYYYYMM(EventDate) 
