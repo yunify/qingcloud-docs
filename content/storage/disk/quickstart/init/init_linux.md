@@ -26,12 +26,11 @@ keyword: 青云
    ```
    # mkfs.ext4 /dev/sdb
    ```
-
-   ![图片](/storage/disk/quickstart/_images/image-1568774979615.png)
+   ![init_linux_1](/storage/disk/_images/init_linux_1.png)
 
 4. 使用 lsblk 命令查看格式化后的分区的信息。
 
-   ![图片](/storage/disk/quickstart/_images/image-1568774983933.png)
+   ![init_linux_2](/storage/disk/_images/init_linux_2.png)
 
 5. 使用 `mount` 命令将磁盘挂载到主机。
 
@@ -39,7 +38,7 @@ keyword: 青云
    # mount /dev/sdb /mnt
    ```
 
-6. 使用 `df` 命令查看磁盘是否挂载成功。
+6. 使用 `df` 命令查看磁盘是否挂载成功.
 
    ```
    # df -h
@@ -53,15 +52,15 @@ keyword: 青云
 
 1. 使用 `fdisk -l` 命令列出所有磁盘分区。
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775005129.png)
+   ![init_linux_3](/storage/disk/_images/init_linux_3.png)
 
 2. 使用 `fdisk /dev/sdd` 命令对磁盘进行分区。
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775009154.png)
+   ![init_linux_4](/storage/disk/_images/init_linux_4.png)
 
 3. 输入 `n`， 按 **Enter**，开始新建分区。
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775012633.png)
+   ![init_linux_5](/storage/disk/_images/init_linux_5.png)
 
    表示磁盘有两种分区类型：
 
@@ -71,31 +70,31 @@ keyword: 青云
 
 4. 以创建一个主分区为例，输入 `p`，按 **Enter**，开始创建一个主分区。
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775017438.png)
+   ![init_linux_6](/storage/disk/_images/init_linux_6.png)
 
    【Partition number】表示主分区编号，可以选择1-4，选择1号分区，回车显示
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775021385.png)
+   ![init_linux_7](/storage/disk/_images/init_linux_7.png)
 
    【First cylinder】表示初始柱面区域，可以选择1 - 13054，默认为1。
 
 5. 以选择默认初始磁面值 1 为例，表示从第一个柱面开始划分，按 **Enter**。
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775025430.png)
+   ![init_linux_8](/storage/disk/_images/init_linux_8.png)
 
    【Last cylinder】表示截止柱面区域， +cylinders or +size{K，M，G} （1 - 13054， default 13054）： +后面单位可以接M，G，K（记得要大写）表示划分您所加的空间，也可以是柱面数，注意不能超过该磁盘剩余的空间否则无效。
 
 6. 以选择默认截止磁面为例，按 **Enter**。
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775030738.png)
+   ![init_linux_9](/storage/disk/_images/init_linux_9.png)
 
 7. 输入 `p`，按 **Enter**，查看新建分区的详细信息。
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775036420.png)
+   ![init_linux_10](/storage/disk/_images/init_linux_10.png)
 
 8. 确认分区的信息无误，输入 `wq` 保存并退出。
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775040323.png)
+   ![init_linux_11](/storage/disk/_images/init_linux_11.png)
 
 9. 使用 `partprobe` 同步分区表至操作系统
 
@@ -109,11 +108,11 @@ keyword: 青云
     # mkfs.ext4 /dev/sdd1
     ```
 
-    ![图片](/storage/disk/quickstart/_images/image-1568775044404.png)
+    ![init_linux_12](/storage/disk/_images/init_linux_12.png)
 
 11. 使用 `mount` 命令挂载到目录
 
-    ![图片](/storage/disk/quickstart/_images/image-1568775049276.png)
+    ![init_linux_13](/storage/disk/_images/init_linux_13.png)
 
 ## 硬盘容量大于2TB
 
@@ -123,7 +122,7 @@ keyword: 青云
    # lsblk
    ```
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775054733.png)
+   ![init_linux_14](/storage/disk/_images/init_linux_14.png)
 
 2. 使用 parted 命令对磁盘进行分区，回显信息类似如下图，以/dev/sdc为例，命令格式如下：
 
@@ -131,11 +130,11 @@ keyword: 青云
    # parted /dev/sdc
    ```
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775061556.png)
+   ![init_linux_15](/storage/disk/_images/init_linux_15.png)
 
 3. 输入 `p`，按 **Enter**，查看当前磁盘分区形式。
 
-   ![图片](/storage/disk/quickstart/_images/Irm6z9nYCsEbWSda.png)
+   ![init_linux_16](/storage/disk/_images/init_linux_16.png)
 
    “Partition Table”为“unknown”表示磁盘分区形式未知，新的数据盘还未设置分区形式。
 
@@ -148,7 +147,7 @@ keyword: 青云
 
    输入`p`回车显示
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775068945.png)
+   ![init_linux_17](/storage/disk/_images/init_linux_17.png)
 
    >  **注意**：
    >
@@ -172,23 +171,23 @@ keyword: 青云
 
    例如，此处将 start 设置为 1024k, 结束值为 100%, 就会出现该报警提示：
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775097514.png)
+   ![init_linux_18](/storage/disk/_images/init_linux_18.png)
 
    此时输入 `Ignore`
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775100805.png)
+   ![init_linux_19](/storage/disk/_images/init_linux_19.png)
 
 7. 输入 `p`，按 **Enter**，查看新建分区的详细信息。
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775076476.png)
+   ![init_linux_20](/storage/disk/_images/init_linux_20.png)
 
 8. 确认分区的信息无误，输入`q`退出parted 工具。
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775080498.png)
+   ![init_linux_21](/storage/disk/_images/init_linux_21.png)
 
 9. 使用 `lsblk` 查看分区信息
 
-   ![图片](/storage/disk/quickstart/_images/image-1568775084337.png)
+   ![init_linux_22](/storage/disk/_images/init_linux_22.png)
 
 10. 使用 `partprobe` 同步分区表至操作系统。
 
@@ -202,5 +201,5 @@ keyword: 青云
     # mkfs.ext4 /dev/sdc1
     ```
 
-    ![图片](/storage/disk/quickstart/_images/image-1568775088216.png)
+    ![init_linux_23](/storage/disk/_images/init_linux_23.png)
 
