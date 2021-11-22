@@ -18,13 +18,10 @@ weight: 10
 2. 在控制台导航栏中，选择**产品与服务** > **存储服务** > **云硬盘**，进入**硬盘**页面。
 
 3. 选择计费模式为**包年包月**的硬盘，右键点击该硬盘ID，选择**到期转按需**。
-
-   ![图片](/storage/disk/billing/_images/change1_1.jpg)
-
-
-   ![图片](/storage/disk/billing/_images/change1_2.png)
+   ![change1_1](/storage/disk/_images/change1_1.png)
 
 4. 点击**到期转按需**，确认变更计费模式即可。
+   ![change1_2](/storage/disk/_images/change1_2.png)
  
 
 ## 撤销修改计费模式
@@ -33,8 +30,8 @@ weight: 10
 
 1. 在**硬盘**界面，右键点击需要撤销计费模式修改的硬盘，选择**撤销修改计费模式**。
 
-   ![图片](/storage/disk/billing/_images/change1_3.png)
+   ![change1_3](/storage/disk/_images/change1_3.png)
 
-2. 在弹出的**撤销修改计费模式**的窗口，选择**撤销设置**确认即可。
+2. 在弹出的**撤销修改计费模式**的窗口，选择**撤销设置**进行确认即可。
 
-   ![图片](/storage/disk/billing/_images/change1_4.png)
+   ![change1_4](/storage/disk/_images/change1_4.png)

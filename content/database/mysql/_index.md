@@ -38,6 +38,10 @@ Section2:
       content: 在 MySQL Plus 集群上的实践操作。
       url: "best-practices/download_mysql_log/"
 
+    - title: API 参考
+      content: MySQL Plus API 参考
+      url: "api/overview/"
+
 section3:
   title: 开发者指南
   children:

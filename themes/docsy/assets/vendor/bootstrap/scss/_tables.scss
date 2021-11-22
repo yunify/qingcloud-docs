@@ -2,9 +2,14 @@
 // Basic Bootstrap table
 //
 
-.table {
-  width: 100%;
+.table, ol li table {
   margin-bottom: $spacer;
+  width: 100%;
+  // max-width: 65em; 
+  border: 1px solid #dedede;
+  margin: 15px auto;
+  border-collapse: collapse;
+  empty-cells: show;
   background-color: $table-bg; // Reset for nesting within parents with `background-color`.
 
   th,
@@ -76,10 +81,14 @@
 //
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 
-.table-striped {
-  tbody tr:nth-of-type(#{$table-striped-order}) {
+.table-striped, ol li {
+  tbody tr:nth-of-type(1) {
+    // background-color: $table-accent-bg;
+  }
+  thead {
     background-color: $table-accent-bg;
   }
+  
 }
 
 
@@ -147,7 +156,7 @@
 
   &.table-striped {
     tbody tr:nth-of-type(odd) {
-      background-color: $table-dark-accent-bg;
+      // background-color: $table-dark-accent-bg;
     }
   }
 
@@ -173,7 +182,7 @@
 
     &#{$infix} {
       @include media-breakpoint-down($breakpoint) {
-        display: block;
+        display: auto;
         width: 100%;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
