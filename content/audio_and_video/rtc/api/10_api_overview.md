@@ -31,15 +31,15 @@ rtc.api.qingcloud.com
 
 2. 在右上角账户名称下拉列表中，点击 **API 密钥**，进入 **API 密钥**页面。
 
-   <img src="../../../_images/um_api_accesskey.png" style="zoom:50%;" />
+   <img src="../../_images/um_api_accesskey.png" style="zoom:50%;" />
 
 3. 点击**创建**，弹出**创建 API 密钥**窗口。
 
-   <img src="../../../_images/um_api_create_key.png" style="zoom:50%;" />
+   ![](../../_images/um_api_create_accesskey.png)
 
-4. 输入密钥名称和描述信息，点击**提交**，弹出**下载 API 密钥的私钥**窗口。
+4. 输入密钥**名称**和**描述**信息，点击**提交**，弹出**下载 API 密钥的私钥**窗口。
 
-   <img src="../../../_images/um_api_private_prompt.png" style="zoom:50%;" />
+   <img src="../../_images/um_api_create_key.png" style="zoom:50%;" />
 
 5. 点击**下载**，下载私钥。
 
@@ -49,9 +49,11 @@ rtc.api.qingcloud.com
    >
    > 为了保障您的安全，这是获取 API 私钥的唯一途径，请及时下载并妥善保管您的私钥。
 
-### 步骤二：对body进行md5消息摘要计算
+   <img src="../../_images/um_api_private_prompt.png" style="zoom:50%;" />
 
-1. 将body转换为byte（字节）
+### 步骤二：对 body 进行 md5 消息摘要计算
+
+1. 将 body 转换为 byte（字节）。
 
 2. 如果是 GET 请求，body 则为 None。
 
@@ -149,7 +151,7 @@ print(canonical_query_string({"c1": 4, "a": 1, "b": 2, "c": 3}))
    print(sign_sha256(secret_key, "your string sign result"))
    ```
 
-## 完整 Pathon 示例
+## 完整 Python 示例
 
 ```
 import json
@@ -158,7 +160,6 @@ from urllib.parse import quote
 import hmac
 import base64
 import requests
-
 
 def body_hex_md5(body: dict):
     body = json.dumps(body)
@@ -247,7 +248,6 @@ def main():
                   data=request_body, 
                   headers=request_headers
                   )
-
 
 if __name__ == '__main__':
     main()
