@@ -404,6 +404,7 @@ ul.timeline > li:before {
     }
     .td-content {
         position: relative;
+        overflow: auto;
         .p code {
             color: #ff3860;
         }
@@ -1215,13 +1216,13 @@ main.col-12.col-md-7.col-xl-7{
 .fix-background-like{
     background-image: url(/images/icons/like.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 20% 20%;
 }
 
 .fix-background-unlike{
     background-image: url(/images/icons/Point-out.svg);
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-position-x: 20%;
     background-position-y: 65%;
     margin-left: 1.5rem;
 }
