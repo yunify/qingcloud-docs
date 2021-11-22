@@ -1,5 +1,5 @@
 ---
-title: "创建文件存储 epfs"
+title: "创建文件存储 EPFS"
 date: 2020-01-30T00:39:25+09:00
 description: Test description
 draft: false
@@ -10,7 +10,7 @@ weight: 1
 
 ## 前提条件
 
-文件存储 efps仅能在济南1区创建。
+文件存储 EPFS 仅能在济南1区创建。
 
 ## 操作步骤
 
@@ -32,15 +32,19 @@ weight: 1
 
    ![](../_images/efps4.png)
 
-6. 点击创建的挂载点进入如下界面
+6. 可以对当前挂载点进行扩容操作，根据需要进行扩容。
+
+   <img src="../_images/efps20.png" style="zoom:50%;" />
+
+7. 点击创建的挂载点进入如下界面
 
    ![](../_images/efps5.png)
 
-   进入文件系统界面，可以查看基本属性，包括共享目录，配额，使用率，创建时间，gid/uid。
+8. 进入文件系统界面，可以查看基本属性，包括共享目录，配额，使用率，创建时间，gid/uid。
 
    ![](../_images/efps6.png)
 
-7. 在权限组点击添加规则，跳出如下界面：
+9. 在权限组点击添加规则，跳出如下界面：
 
    ![](../_images/efps7.png)
 

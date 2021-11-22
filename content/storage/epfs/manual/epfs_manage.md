@@ -1,5 +1,5 @@
 ---
-title: "文件存储 epfs 文件管理"
+title: "文件存储 EPFS 文件管理"
 date: 2020-01-30T00:39:25+09:00
 description: Test description
 draft: false
@@ -8,7 +8,7 @@ weight: 15
 keyword: 镜像, QingCloud
 ---
 
-对efps 挂载点的文件进行操作。
+对EPFS 挂载点的文件进行操作。
 
 ## 操作步骤
 

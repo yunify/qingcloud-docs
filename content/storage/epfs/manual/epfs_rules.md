@@ -1,5 +1,5 @@
 ---
-title: "添加文件存储 epfs 规则"
+title: "添加文件存储 EPFS 规则"
 date: 2020-01-30T00:39:25+09:00
 description: Test description
 draft: false
