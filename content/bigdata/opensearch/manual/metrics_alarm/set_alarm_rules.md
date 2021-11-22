@@ -1,7 +1,7 @@
 ---
 title: "设置监控告警"
 description: 本小节主要介绍如何设置 OpenSearch 监控告警。 
-keyword: OpenSearch 监控告警
+keyword: 监控告警,OpenSearch,搜索引擎,大数据
 weight: 20
 collapsible: false
 draft: false
