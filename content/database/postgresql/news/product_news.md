@@ -7,6 +7,24 @@ collapsible: false
 draft: false
 
 product:
+    - time: 2021-11-30
+      title: PostgreSQL PG11-高可用版-V1.0.8 版本正式上线
+      content: PostgreSQL PG11-高可用版-V1.0.8 新上线。<br>- 新增灾备管理功能，支持集群异地灾备。
+      url: ../../intro/edition/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 全区域
+
+    - time: 2021-11-30
+      title: PostgreSQL PG9.6/PG10-高可用版-V1.1.6 版本正式上线
+      content: PostgreSQL PG9.6-高可用版-V1.1.6、PG10-高可用版-V1.1.6 新上线。<br>- 新增灾备管理功能，支持集群异地灾备。
+      url: ../../intro/edition/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 全区域
+
     - time: 2021-11-03
       title: PostgreSQL PG11-高可用版-V1.0.7 版本正式上线
       content: PostgreSQL PG11-高可用版-V1.0.7 新上线。<br>- 新增“是否开启半同步模式”配置参数，支持自动切换主从节点数据同步流模式；<br>-  优化从库重建方式，从根据“节点IP”修改为根据“节点ID”方式；<br>- 修复不合理的 CPU 内存组合问题；<br>- 修复“节点详情”页面，角色描述异常问题。
