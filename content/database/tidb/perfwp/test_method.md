@@ -200,6 +200,7 @@ ANALYZE TABLE sbtest7;
 
 - **Point select 测试命令**
 
+
   ```
   sysbench oltp_point_select  \
       --threads=1500 \
@@ -329,6 +330,9 @@ ANALYZE TABLE sbtest7;
 
 
 ## 测试结果
+> **说明**
+>
+> 以下测试结果中， `oltp_point_select` 的测试结果是对单个 TiDB 压测后，再进行求和所得出的结果。而本文中对于 `oltp_point_select` 的测试方式，是使用了 Proxy 的情况，因此得出的实际测试结果会低于以下给出的测试结果。
 
 | <span style="display:inline-block;width:150px">测试类型</span> | <span style="display:inline-block;width:150px">TPS</span> | <span style="display:inline-block;width:150px">QPS</span> | <span style="display:inline-block;width:150px">95%-LATENCY</span> |
 | ------------------------------------------------------------ | --------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------ |
