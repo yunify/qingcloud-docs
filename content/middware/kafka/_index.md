@@ -26,11 +26,11 @@ Section2:
 
     - title: 快速入门
       content: 快速入门
-      url: "quick-start/creat_cluster/"
+      url: "quick-start/create_cluster/"
 
     - title: 操作指南
       content: 学习如何管理Kafka集群，以及如何使用Kafka提供的相关服务等。
-      url: "manual/kafka_manager/access_kafka_manager/"
+      url: "manual/cluster_manager/cluster_info/"
 
 
 
@@ -63,10 +63,10 @@ section4:
 
       children: 
         - title: 创建Kafka
-          url: "/middware/kafka/quick-start/quick_start"
+          url: "/middware/kafka/quick-start/create_cluster/"
 
         - title: 集群使用
-          url: "/middware/kafka/manual/cluster_use"
+          url: "/middware/kafka/manual/cluster_manager/cluster_info/"
 
     
 ---

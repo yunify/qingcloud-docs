@@ -6,9 +6,9 @@ weight: 20
 draft: false
 ---
 
-在使用 Kafka 进行消息收发之前，需要先创建 Topic。您可以通过 Kafka Manager 创建 Topic，也可以通过客户端命令行创建 Topic。
-
 本小节主要介绍如何通过 Kafka Manager 创建 Topic。
+
+您也可以通过客户端命令行创建 Topic，具体操作请参见 [Kafka 客户端命令行方式创建 Topic](../../manual/kafka_client/kafka_client_topic/#创建-topic)。
 
 ## 前提条件
 

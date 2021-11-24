@@ -6,9 +6,9 @@ weight: 20
 draft: false
 ---
 
-除了可以使用 Kafka Manager 管理、修改 Topic 配置、监控集群，也可以使用客户端节点（Kafka 客户端或您自己安装的其它客户端），通过命令行形式管理和使用集群。
-
 本小节主要介绍如何通过 Kafka 客户端命令行对 Topic 进行管理。
+
+您也可以通过 Kafka Manager 管理和修改 Topic 配置，详细操作请参见[Kafka Manager > Topic 管理](../../kafka_manager/kafka_manager_topic)。
 
 ## 创建 Topic
 

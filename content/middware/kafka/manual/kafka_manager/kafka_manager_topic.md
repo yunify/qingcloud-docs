@@ -5,9 +5,9 @@ weight: 30
 draft: false
 ---
 
-您可以通过 Kafka Manager 管理和修改 Topic 配置，也可以通过客户端节点使用命令行对 Topic 进行管理（详细操作请参见[Kafka 客户端命令行](../../kafka_client/)）。
-
 本小节主要介绍通过 Kafka Manager 管理和修改 Topic 配置。
+
+您也可以通过客户端节点使用命令行对 Topic 进行管理，详细操作请参见[Kafka 客户端命令行 > Topic 管理](../../kafka_client/kafka_client_topic/)。
 
 ## 创建 Topic
 

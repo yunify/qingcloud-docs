@@ -7,8 +7,6 @@ collapsible: false
 draft: false
 ---
 
-在管理控制台，支持修改 Kafka 集群的配置参数。
-
 本小节主要介绍如何修改 Kafka 集群的配置参数。
 
 ## 注意事项

@@ -9,7 +9,7 @@ draft: false
 
 ## 前提条件
 
-已创建 Kafka 集群，且Kafka 集群状态为**活跃**。。
+已创建 Kafka 集群，且Kafka 集群状态为**活跃**。
 
 ## 操作步骤
 
