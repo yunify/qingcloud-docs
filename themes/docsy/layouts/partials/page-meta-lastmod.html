@@ -1,13 +1,7 @@
-<!-- {{if .Params.date}}
-	{{ T "post_last_mod"}} {{  .Params.date.Format "2006-01-02" }}
-{{else}}
-	{{ T .GitInfo.AuthorDate}}
-{{end}} -->
-{{ $date := now }}
-{{ if .GitInfo }}
-  {{ $date = .GitInfo.AuthorDate }}
-{{ end }}
 
-<div class="date">
- 更新时间 {{ $date.Format "2006-01-02" }}
-</div>
+{{if .Params.date}}
+ {{ T "post_last_mod"}} {{  .Params.date.Format "2006-01-02" }}
+{{else}}
+ {{ T "post_last_mod"}} {{  .Site.Params.time_format_default }}
+{{end}}
+
