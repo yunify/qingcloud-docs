@@ -1,5 +1,7 @@
+
 {{if .Params.date}}
  {{ T "post_last_mod"}} {{  .Params.date.Format "2006-01-02" }}
 {{else}}
  {{ T "post_last_mod"}} {{  .Site.Params.time_format_default }}
 {{end}}
+
