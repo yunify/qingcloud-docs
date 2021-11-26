@@ -33,6 +33,3 @@ keyword: QingCloud，Redis Cluster，数据库，redis 迁移
    ```
 
    其中： Redis Standalone 的主节点 IP 为 192.168.100.11，端口为 6379。Redis Cluster 其中一个节点的 IP 为 192.168.100.20，端口为 6379。
-
-##
-
