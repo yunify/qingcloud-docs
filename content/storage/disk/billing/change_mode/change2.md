@@ -19,14 +19,13 @@ weight: 15
 
 3. 右键点击计费模式为**按需计费**的硬盘，选择**按需转包年包月**。
 
-   ![](./_images/change2_1.png)
-   ![图片](/storage/disk/billing/_images/change2_1.png)
+   ![change2_1](/storage/disk/_images/change2_1.png)
 
 4. 在**按需转包年包月**窗口。用户可根据需要自主选择硬盘资源的购买时长、是否开启自动续费以及续费时长。
    > **说明**：
    > 自动续费只支持按月或按年进行续费。
 
-   ![图片](/storage/disk/billing/_images/change2_2.png)
+   ![change2_2](/storage/disk/_images/change2_2.png)
    
 5. 点击**立即支付**，确认变更计费模式。一经确认，包年包月的计费模式会立刻生效。
    

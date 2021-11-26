@@ -1,17 +1,16 @@
 ---
 title: "最新动态"
-date: 2020-02-28T10:08:56+09:00
 collapsible: false
 
 product:
-    - time: 2021-5-15 17:50:47
+    - time: 2021-10-26 14:50:47
       title: 青云正式上线电子化核验备案功能
-      content: 为了满足用户快速备案的需求，青云特推出支持证件识别和电子化核验的新备案功能。
-      url: /services/record/quickstart/quick_start
+      content: 青云在2021年10月摒弃了老旧邮寄幕布的核验方式，申请了电子核验资格，备案流程全面升级，采用电子核验方式，帮助用户更便捷的申请备案，节省备案时间。<br>新的备案系统支持以下备案类型：首次备案、新增网站、新增接入；其他备案类型将陆续上线。
+      url: /site/record/quickstart/quick_start/
       tags:
       - 新功能
       - 体验优化
-      zone: 北京三区
+      zone: 中国大陆地区
 
 
 ---

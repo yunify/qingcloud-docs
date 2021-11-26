@@ -50,7 +50,7 @@ QingStor 对象存储静态网站托管可为企业官网、新闻站点、自�
 
 1. 设置 Bucket 为公开可读：
 
- ![](/storage/object-storage/beat-practices/_images/web_hosting1.png)
+ ![](/storage/object-storage/_images/web_hosting1.png)
 
 
 2. 将网站内容上传至 Bucket。
@@ -73,7 +73,7 @@ QingStor 对象存储静态网站托管可为企业官网、新闻站点、自�
 将静态内容单独拆分出来进行托管，是目前普遍的网站优化手段，QingStor 对象存储静态网站托管可帮助提升网站的整体运行效率，并降低使用成本。
 
 - 降低 Web 服务器负载，静态文件访问负载全部通过 CDN
-- 通过 QingStor™ 对象存储可与 QingCloud 大数据平台无缝集成，高效进行网站各项数据分析应用
+- 通过 QingStor 对象存储可与 QingCloud 大数据平台无缝集成，高效进行网站各项数据分析应用
 - Web 服务可直接将海量非结构化数据存储至对象存储，降低存储成本
 - 配合 CDN 使用，降低流量成本，提高静态内容响应速度
 - 无限水平扩展的海量存储空间，无需考虑存储架构升级

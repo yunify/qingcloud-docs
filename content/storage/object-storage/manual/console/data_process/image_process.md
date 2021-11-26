@@ -16,15 +16,15 @@ QingStor 对象存储目前暂不支持对加密图片进行处理，且处理�
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
 
- ![](../../_images/console_main.png)
+ ![](/storage/object-storage/_images/console_main.png)
 
 2. 进入 Bucket 详情页面，点击 **数据处理**，选择 **图片处理**，点击 **打开**：
 
- ![](../../_images/data_image_pro1.png)
+ ![](/storage/object-storage/_images/data_image_pro1.png)
 
 3. 进入 **图片处理** 详情页面，图片处理详情界面分为预览、操作面板以及处理参数三个部分。各部分操作简单直观，如下图所示：
 
- ![](../../_images/data_image_pro2.png)
+ ![](/storage/object-storage/_images/data_image_pro2.png)
 
  **各部分功能说明：**
    - 预览：显示经过当前操作处理后得到的示例图片以及该图片的基本信息，目前提供三张常用尺寸的示例图片，用户可根据需要切换不同的示例图片。

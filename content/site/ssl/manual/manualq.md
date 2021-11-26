@@ -3,7 +3,7 @@ title: "验证指南"
 description: SSL 证书验证
 keyword: SSL, DNS, 证书, 域名
 draft: false
-weight: 2
+weight: 10
 ---
 
 
