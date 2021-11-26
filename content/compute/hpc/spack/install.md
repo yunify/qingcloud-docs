@@ -7,9 +7,11 @@ draft: false
 weight: 5
 ---
 
-## 使用spack安装软件
+安装软件有两种目录：
+1. 集群内用户都可用，需要在 opt 下创建spack； 
+2. 仅自己可用，需要在 “home\用户目录“ 下创建spack目录，下面以这个为例讲解安装过程。
 
-### 在加目录下创建.spack目录
+### 创建.spack目录
 
 ![img](../_images/spack-root.png)
 
