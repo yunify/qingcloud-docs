@@ -10,6 +10,7 @@ $(function () {
         time_line.each(function (index) {
           $(this).attr("id", `timeline-outer${index}`);
           var time_p = $(this).find("p");
+          $(this).attr("id", `timeline-outer${index}`);
           const time = timeStamp2String(time_p[0]?.innerHTML);
           result +=
             '<li><a  href="#' +
