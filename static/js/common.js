@@ -214,9 +214,9 @@ function funScroll() {
   var top = $(document).scrollTop();
   var titles = $("main h2");
   var titles_h3 = $("main h3");
-  // var timeLine = $("main .timeline-outer");
 
-  // console.log("timeLine: ", timeLine);
+  var timeLine = $("main .timeline-outer");
+
   //遍历所有的div
   titles.each(function (index) {
     var thisTop = $(this).offset().top;
@@ -226,17 +226,16 @@ function funScroll() {
       $('#TableOfContents ul a[href="' + anchor + '"]').addClass("active");
     }
   });
-  //产品动态时间轴
 
-  // timeLine.each(function (index) {
-  //   var thisTop = $(this).offset().top;
-  //   $(this).attr("id", `timeline-outer${index}`);
-  //   if (top >= thisTop - 80) {
-  //     var anchor = $(this).attr("id");
-  //     $('#TableOfContents ul a[class="active"]').removeClass("active");
-  //     $('#TableOfContents ul a[href="#' + anchor + '"]').addClass("active");
-  //   }
-  // });
+  timeLine.each(function (index) {
+    var thisTop = $(this).offset().top;
+    $(this).attr("id", `timeline-outer${index}`);
+    if (top >= thisTop - 80) {
+      var anchor = $(this).attr("id");
+      $('#TableOfContents ul a[class="active"]').removeClass("active");
+      $('#TableOfContents ul a[href="#' + anchor + '"]').addClass("active");
+    }
+  });
 
   //遍历所有的div
   titles_h3.each(function (index) {
