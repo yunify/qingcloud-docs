@@ -171,3 +171,6 @@ enable = false
 
 [outputs]
   page = ["HTML", "JSON"]
+
+[frontmatter]
+   lastmod = [":git", "publishDate"]
