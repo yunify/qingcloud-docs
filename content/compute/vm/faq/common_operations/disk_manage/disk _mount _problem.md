@@ -3,8 +3,6 @@ title: "云服务器挂载硬盘时注意事项"
 date: 2021-02-22T22:21:25+09:00
 weight: 30
 draft: false
-enableToc: false
-
 ---
 
 ##  云服务器挂载硬盘类型

@@ -3,7 +3,6 @@ title: "CentOS 6 无法使用 yum 解决办法"
 description: Test description
 weight: 50
 draft: false
-enableToc: false
 
 ---
 
