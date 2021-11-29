@@ -214,7 +214,6 @@ function funScroll() {
   var top = $(document).scrollTop();
   var titles = $("main h2");
   var titles_h3 = $("main h3");
-
   var timeLine = $("main .timeline-outer");
 
   //遍历所有的div
@@ -227,7 +226,9 @@ function funScroll() {
     }
   });
 
+  //产品动态的active
   timeLine.each(function (index) {
+    console.log("index: ", index);
     var thisTop = $(this).offset().top;
     $(this).attr("id", `timeline-outer${index}`);
     if (top >= thisTop - 80) {
