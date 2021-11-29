@@ -10,9 +10,9 @@ keyword: 青云
 
 ## 操作场景
 
-青云 QingCloud 一直秉承云计算的理念，即云服务器的系统是临时的，随时可以关闭和销毁，而并不影响业务可用性，所以并不建议用户将数据放在系统盘（即操作系统启动程序所在磁盘）。
+青云 QingCloud 一直秉承云计算的理念，即云服务器的系统是临时的，随时可以关闭和销毁，而不影响业务可用性，所以并不建议用户将数据放在系统盘（即操作系统启动程序所在磁盘）。
 
-但用户确有需求，青云 QingCloud 也为云服务器增加了系统盘扩容的功能，用户可以对已有的云服务器系统盘进行扩容。
+若用户确有需求，青云 QingCloud 也为云服务器增加了系统盘扩容的功能，用户可以对已有的云服务器系统盘进行扩容操作。
 
 ## 已知限制
 
@@ -33,15 +33,15 @@ keyword: 青云
 
 1. 确认当前系统盘的大小。
 
-   ![确认系统盘大小](/storage/disk/quickstart/_images/system_disk.png)
+   ![expen_linux_sys_1](/storage/disk/_images/expen_linux_sys_1.png)
 
-2. 关闭操作系统，选择要扩容系统盘的云服务器，在“更多操作”中选择“调整规格”，并按照下图所示，扩展系统磁盘：
+2. 关闭操作系统，选择要扩容系统盘的云服务器，在**更多操作**中选择**调整规格**。点击“+”或直接输入容量值，对系统磁盘进行扩容操作：
 
-   <img src="/storage/disk/quickstart/_images/resize_system_instance.png" alt="扩容硬盘" style="zoom:70%;" />
+   ![expen_linux_sys_2](/storage/disk/_images/expen_linux_sys_2.png)
 
 3. 启动云服务器，并查看更改后的结果：
 
-   ![启动云服务器](/storage/disk/quickstart/_images/after_resize.png)
+   ![expen_linux_sys_3](/storage/disk/_images/expen_linux_sys_3.png)
 
    确认修改成功。
 
