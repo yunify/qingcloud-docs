@@ -173,4 +173,4 @@ enable = false
   page = ["HTML", "JSON"]
 
 [frontmatter]
-   lastmod = [":git", "publishDate"]
+   lastmod = ["lastmod", ":fileModTime", "publishDate"]
