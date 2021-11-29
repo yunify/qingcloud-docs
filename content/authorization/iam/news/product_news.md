@@ -1,3 +1,11 @@
+  - time: 2021-11-25 17:50:47
+      title: 消息中心全新改版
+      content: AppCenter对接IAM已经上线啦。可将AppCenter集群的权限下发给IAM用户与身份，进行AppCenter集群的管理与维护。
+      url: https://docsv3.qingcloud.com/authorization/iam/manual/user/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 北京三区
 ---
 title: "产品动态"
 date: 2020-09-13
