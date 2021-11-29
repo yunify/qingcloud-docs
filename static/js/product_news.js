@@ -5,14 +5,18 @@ $(function () {
   if (TopPageTitle[0]?.innerHTML?.includes("产品动态")) {
     if ($("#TableOfContents li").length == 0) {
       var time_line = $("section.product_dynamics .timeline-outer");
-      var h2_title = $("section.product_dynamics h2");
       if (time_line.length > 0) {
         var result = "<ul>";
         time_line.each(function (index) {
-          var h2_id = $(h2_title[index]).attr("id");
+          $(this).attr("id", `timeline-outer${index}`);
           var time_p = $(this).find("p");
           const time = timeStamp2String(time_p[0]?.innerHTML);
-          result += '<li><a href="#' + h2_id + '">' + time + "</a></li>";
+          result +=
+            '<li><a  href="#' +
+            `timeline-outer${index}` +
+            '">' +
+            time +
+            "</a></li>";
         });
         result += "</ul>";
         $("#TableOfContents").html(result);
