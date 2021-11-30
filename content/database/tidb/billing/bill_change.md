@@ -1,7 +1,7 @@
 ---
 title: "费用变更"
 description: 介绍 TiDB 的计费变更规则。
-keywords: 青云, TiDB, 计, 费用变更
+keywords: 青云, TiDB, 计费, 费用变更
 weight: 10
 draft: false
 ---
