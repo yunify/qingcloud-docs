@@ -14,7 +14,7 @@ draft: false
  <thead><tr><th>计费项</th><th>计费说明</th></tr></thead>
  <tr><td>TiDB 实例</td><td>提供包年包月和按需计费两种方式。实例根据您选择的实例规格及数量进行收费。同一实例下的实例规格计费方式与存储计费方式保持一致。</td></tr>
  <tr><td>数据存储空间</td><td>提供包年包月和按需计费两种方式。存储根据您选择的存储空间大小进行收费。同一实例下的实例规格计费方式与存储计费方式保持一致。</td></tr>
- <tr><td>数据备份空间</td><td>除 TiDB 实例配置费用外，若用户需要进行数据备份，备份空间将额外收费费用。<br/>分布式数据库 TiDB 使用 QingStor 对象存储作为备份空间，价格请参见<a href="/storage/object-storage/billing/price/">对象存储计费说明</a></td></tr>
+ <tr><td>数据备份空间</td><td>除 TiDB 实例配置费用外，若用户需要进行数据备份，备份空间将额外收费费用。<br/>分布式数据库 TiDB 使用 QingStor 对象存储作为备份空间，价格请参见<a href="/storage/object-storage/billing/price/">对象存储计费说明</a>。</td></tr>
 </table>
 
 <!--TiDB 服务费用详情，请参见 [TiDB 产品价格详情](链接待补充)。-->
