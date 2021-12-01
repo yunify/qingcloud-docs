@@ -1,6 +1,8 @@
 ---
 title: "计费说明"
-description:
+description: 本小节主要介绍 RocketMQ 的计费说明。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,价格,计费,费用,RocketMQ,rocketMQ,
+weight: 10
 draft: false
 ---
 

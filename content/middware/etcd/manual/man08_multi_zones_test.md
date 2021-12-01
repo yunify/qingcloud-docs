@@ -1,8 +1,9 @@
 ---
 title: "多可用区部署测试"
-draft: false
-enableToc: false
+description: 本小节主要介绍 etcd 多可用区部署测试步骤。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,etcd,操作指南,部署测试,多可用区
 weight: 8
+draft: false
 ---
 
 
@@ -13,8 +14,8 @@ weight: 8
 
 ## 注意事项
 
-1. 单节点 etcd 集群仅做开发测试使用，正式使用建议至少 3 节点。 etcd 集群代理节点可根据实际情况创建。
-2. **节点**的状态监控界面中 etcd_server_has_leader 表示当前节点是否有 leader ，**1** 表示有，处于无 leader 状态的集群是不能提供服务的，集群会自动重新选举。
+- 单节点 etcd 集群仅做开发测试使用，正式使用建议至少 3 节点。 etcd 集群代理节点可根据实际情况创建。
+- **节点**的状态监控界面中 etcd_server_has_leader 表示当前节点是否有 leader ，**1** 表示有，处于无 leader 状态的集群是不能提供服务的，集群会自动重新选举。
    <img src="/middware/etcd/images/node_status.png" alt="node_status" style="zoom:50%;" />
 
 ## 测试环境

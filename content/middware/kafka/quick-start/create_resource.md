@@ -1,7 +1,7 @@
 ---
 title: "步骤二：创建 Topic"
-date: 2021-11-15T00:40:25+09:00
-description: 创建资源
+description: 通过 Kafka Manager 创建 Topic。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,创建topic,快速入门
 weight: 20
 draft: false
 ---
