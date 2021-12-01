@@ -1,6 +1,7 @@
 ---
 title: "概述"
-description:   
+description: 介绍 IAM 策略模拟器操作流程。
+keywords: 青云, IAM , 策略模拟器, 策略配置  
 draft: false
 weight: 21
 ---
@@ -17,7 +18,7 @@ weight: 21
 
 例如，您可以允许您的云服务器中创建的应用通过集成 QingCloud 官方 SDK 获取身份凭证信息，随后即可在应用中直接调用 QingCloud API/CLI 以访问其他资源。
 
-请参阅：[最佳实践①：免密钥应用开发](../../best-practices/scenario1#最佳实践①：免密钥应用开发)
+请参阅：[最佳实践①：免密钥应用开发](../../best-practices/scenario1#最佳实践①：免密钥应用开发)。
 
 ### 精细权限
 
@@ -25,4 +26,4 @@ weight: 21
 
 例如，您可以允许您的子账户 A 通过代入您赋予的身份完全访问您账户中的弹性云服务器服务（支持创建、启停或销毁云服务器等），而同时允许 QingCloud 系统中的另一个账户 B 通过代入您赋予的身份仅具备查看某个特定云服务器信息的权限。
 
-请参阅：[最佳实践②：跨账号管理协作](../../best-practices/scenario2#最佳实践②：跨账号管理协作)
+请参阅：[最佳实践②：跨账号管理协作](../../best-practices/scenario2#最佳实践②：跨账号管理协作)。

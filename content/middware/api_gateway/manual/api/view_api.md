@@ -3,7 +3,8 @@
 title: "查看 API"
 linkTitle: "查看 API"
 date: 2021-05-25T10:08:56+09:00
-description:
+description: 本小节主要介绍如何查看 API。 
+keywords: API_Gateway, QingCloud, 查看 API
 draft: false
 weight: 42
 ---

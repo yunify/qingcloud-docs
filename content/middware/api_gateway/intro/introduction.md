@@ -2,7 +2,8 @@
 title: "什么是 API 网关"
 linkTitle: "什么是 API 网关"
 date: 2021-05-11T10:08:56+09:00
-description:
+description: 本小节主要介绍 API 网关最新产品动态。 
+keywords: API_Gateway, QingCloud, 产品介绍, 产品功能
 draft: false
 weight: 10
 ---

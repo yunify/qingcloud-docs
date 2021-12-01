@@ -1,7 +1,7 @@
 ---
 title: "专享实例"
 description: 本小节主要介绍 API 网关专享实例性能规格。 
-keywords: API_Gateway, QingCloud, 性能规格
+keywords: API_Gateway, QingCloud, 性能规格, 专享实例
 weight: 20
 collapsible: false
 draft: false

@@ -1,6 +1,7 @@
 ---
 title: "资源标识符 QRN"
-description: 
+description: 介绍资源标识符 QRN
+keywords: 青云, IAM , 资源标识符, QRN
 draft: false
 weight: 42
 ---
@@ -15,6 +16,8 @@ QingCloud 资源名称 (QRN) 被用来作为 QingCloud 资源的唯一标识。�
 |:---:|
 |qrn:partition:<span style="color:red">*service:region:account-id:resource*</span>|
 
+> **说明**
+>
 > 以上是 QRN 的一般格式，具体组成部分和值取决于 QingCloud 服务。
 >
 > 要使用 QRN，请将示例 QRN 中的<span style="color:red">*红色斜体*</span>文本替换为您自己的信息。

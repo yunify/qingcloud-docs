@@ -2,7 +2,8 @@
 title: "管理实例"
 linkTitle: "管理实例"
 date: 2021-05-18T10:08:56+09:00
-description:
+description: 本小节主要介绍如何管理 API 网关实例。 
+keywords: API_Gateway, QingCloud, 管理实例
 draft: false
 weight: 10
 ---

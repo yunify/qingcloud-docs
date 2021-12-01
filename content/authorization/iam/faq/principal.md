@@ -1,6 +1,7 @@
 ---
 title: "信任载体"
-description:
+description: 介绍 IAM 信任载体。
+keywords: 青云, IAM , 信任载体
 draft: false
 weight: 41
 ---
@@ -33,7 +34,9 @@ weight: 41
 
    ![demo1_SuccessAttachInstance](../../_images/demo1_SuccessAttachInstance.png)
 
-   > 注：同一个身份可以添加多个对应信任载体类型的资源作为信任实体，但任意资源都只能关联到一个身份上。
+   > **说明**
+   >
+   > 同一个身份可以添加多个对应信任载体类型的资源作为信任实体，但任意资源都只能关联到一个身份上。
    >
    > 因此您可能会遇到资源添加不成功的情况，此时您需要去检查下该云服务器/集群是否已关联到别的身份上并考虑直接[更换身份](../../manual/role#为信任载体资源更换身份)。  
 
@@ -41,7 +44,9 @@ weight: 41
 
    ![demo1_DescribeAccountRole](../../_images/demo1_DescribeAccountRole.png)
 
-   > 注：账户类信任载体，身份与账户为一一对应关系，不可更改；点击“解除信任”将删除身份，对方将不再能使用此身份辅助您管理 QingCloud 云平台。
+   > **说明**
+   >
+   > 账户类信任载体，身份与账户为一一对应关系，不可更改；点击“解除信任”将删除身份，对方将不再能使用此身份辅助您管理 QingCloud 云平台。
 
 ## 如何解除信任
 
