@@ -2,7 +2,6 @@
 title: "扩容集群"
 description: 本小节主要介绍如何扩容 QingCloud MongoDB 集群。 
 keywords: mongodb 扩容集群, 自动伸缩
-data: 2021-05-14T00:38:25+09:00
 weight: 15
 collapsible: false
 draft: false

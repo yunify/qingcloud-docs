@@ -2,7 +2,6 @@
 title: "数据迁移"
 description: 本小节主要介绍如何在 Redis Standalone 迁移数据。 
 keywords: redis standalone 数据迁移
-data: 2021-05-14T00:38:25+09:00
 weight: 1
 collapsible: false
 draft: false

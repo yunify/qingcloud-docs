@@ -2,7 +2,6 @@
 title: "功能特性"
 description: 本小节主要介绍 Redis Standalone 功能特性。 
 keywords: redis standalone 功能特性
-data: 2021-05-14T00:38:25+09:00
 weight: 1
 collapsible: false
 draft: false

@@ -2,7 +2,6 @@
 title: "同城多活测试"
 description: 本小节主要介绍 Redis Standalone 同城多活。 
 keywords: redis standalone 同城多活,多可用区测试
-data: 2021-05-14T00:38:25+09:00
 weight: 90
 collapsible: false
 draft: false

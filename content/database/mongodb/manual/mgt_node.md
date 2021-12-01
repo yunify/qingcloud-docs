@@ -2,7 +2,6 @@
 title: "节点管理"
 description: 本小节主要介绍如何管理 QingCloud MongoDB 集群节点。 
 keywords: mongodb 节点管理, 
-data: 2021-05-14T00:38:25+09:00
 weight: 40
 collapsible: false
 draft: false

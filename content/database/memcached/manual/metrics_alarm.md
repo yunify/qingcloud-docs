@@ -2,7 +2,6 @@
 title: "监控指标和告警"
 description: 本小节主要介绍如何管理 Memcached 监控指标和告警。 
 keywords: memcached 监控指标,监控告警
-data: 2021-05-14T00:38:25+09:00
 weight: 40
 collapsible: false
 draft: false

@@ -2,7 +2,6 @@
 title: "版本介绍"
 description: 本小节主要介绍 QingCloud MongoDB 主要版本功能。 
 keywords: mongodb 版本介绍, 
-data: 2021-05-14T00:38:25+09:00
 weight: 4
 collapsible: false
 draft: false

@@ -1,13 +1,13 @@
 ---
 title: "使用redis-cli查找大key"
-description: 
+description: 如何如何使用 redis-cli 查找大 Key。
 draft: false
 weight: 4
 enableToc: false
 keywords: Redis 大 Key
 ---
 
-本文主要介绍如何使用 redis-cli 的“**--bigkeys**”选项查找大Key。
+本文主要介绍如何使用 redis-cli 的 “**--bigkeys**” 选项查找大 Key。
 
 ## 背景信息
 

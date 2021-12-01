@@ -3,7 +3,6 @@ title: "配置项管理"
 enableToc: false
 description: 本小节主要介绍 QingCloud MongoDB 配置项管理。 
 keywords: mongodb 配置项,连接数 
-data: 2021-05-14T00:38:25+09:00
 weight: 30
 collapsible: false
 draft: false

@@ -2,7 +2,6 @@
 title: "快速创建 Memcached 集群"
 description: 本小节主要介绍如何快速创建 Memcached。 
 keywords: memcached 实例
-data: 2021-05-14T00:38:25+09:00
 weight: 1
 collapsible: false
 draft: false

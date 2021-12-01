@@ -1,6 +1,7 @@
 ---
 title: "功能问题"
-keywords: Memcached, QingCloud 
+description: 本小节主要介绍Memcached 与 Redis 之间的区别。
+keywords: Memcached, redis 区别 
 weight: 10
 collapsible: false
 draft: false
@@ -8,7 +9,7 @@ draft: false
 
 ##  Memcached 与 Redis 有何区别，如何选择？
 
-青云的缓存服务支持 Redis 和 Memcached。Redis 和 Memcached 都是非常受欢迎的开源内存数据库，相对关系型数据库，Redis 和 Memcached 使用都简单，且具备高性能。
+ AppCenter 缓存服务支持 Redis 和 Memcached。Redis 和 Memcached 都是非常受欢迎的开源内存数据库，相对关系型数据库，Redis 和 Memcached 使用都简单，且具备高性能。
 
 同为 Key-Value 数据库，我们该如何选择？
 

@@ -2,7 +2,6 @@
 title: "什么是 MongoDB"
 description: 本小节主要介绍什么是 QingCloud MongoDB 。 
 keywords: mongodb 产品简介, 
-data: 2021-05-14T00:38:25+09:00
 weight: 1
 collapsible: false
 draft: false

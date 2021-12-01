@@ -2,7 +2,6 @@
 title: "升级版本"
 description: 本小节主要介绍如何升级 QingCloud MongoDB 集群版本。 
 keywords: mongodb 升级版本试, 
-data: 2021-05-14T00:38:25+09:00
 weight: 20
 collapsible: false
 draft: false

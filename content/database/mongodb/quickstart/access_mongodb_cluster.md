@@ -2,7 +2,6 @@
 title: "快速访问 MongoDB 集群"
 description: 本小节主要介绍如何快速访问 QingCloud MongoDB 集群实例。 
 keywords: mongodb 集群访问,
-data: 2021-05-14T00:38:25+09:00
 weight: 2
 collapsible: false
 draft: false

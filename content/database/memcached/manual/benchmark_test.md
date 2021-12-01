@@ -2,7 +2,6 @@
 title: "连接测试"
 description: 本小节主要介绍 Memcached 连接测试。 
 keywords: memcached 测试
-data: 2021-05-14T00:38:25+09:00
 weight: 90
 collapsible: false
 draft: false
