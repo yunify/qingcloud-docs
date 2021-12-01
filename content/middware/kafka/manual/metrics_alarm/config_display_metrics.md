@@ -1,7 +1,11 @@
 ---
 title: "监控指标"
 description: 本小节主要介绍 Kafka 主要支持哪些监控指标。 
+<<<<<<< HEAD
 keyword: Kafka 监控指标
+=======
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka 监控指标,Kafka
+>>>>>>> 260d2251 (etcd,kafka,rabbitmq,rocketmq *:SEO)
 weight: 10
 collapsible: false
 draft: true
