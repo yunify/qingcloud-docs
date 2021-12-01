@@ -1,14 +1,13 @@
 ---
-title: "创建工作空间"
-description: 本小节主要介绍。 
+title: "删除计算集群"
+description: 本小节主要介绍如何。 
 keywords: 
-weight: 20
+weight: 50
 collapsible: false
 draft: false
 ---
 
 
-本小节主要介绍。
 
 ## 约束限制
 

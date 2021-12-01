@@ -7,9 +7,9 @@ type: "product"
 
 section1:
   title: 大数据工作台
-  vice_title: QingCloud MySQL Plus 是一款基于 MySQL 提供的数据库服务，支持一主多从高可用架构，集成 InnoDB + TokuDB 双存储引擎，支持自动备份、监控告警、自动扩容等管理功能。
-  video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_myqslplus_0720.mp4"
-  video_img: "/images/video.png"
+  vice_title: QingCloud 大数据工作台提供一站式智能大数据开发平台，实现数据在云平台各产品之间快速流转，支撑上层业务应用，消除企业数据孤岛，统一调度和计算；帮助传统企业专注于数据价值的挖掘和探索，提升用户数据洞察能力。
+  video: ""
+  video_img: ""
 
 Section2:
   title: 用户指南
@@ -28,15 +28,15 @@ Section2:
 
     - title: 快速入门
       content: 快速入门
-      url: "quickstart/create_cluster/"
+      url: "quickstart/summary/"
 
     - title: 操作指南
-      content: 学习上手如何管理 MySQL Plus 集群，以及如何使用 MySQL Plus 提供的相关服务等。
-      url: "manual/cluster_lifecycle/cluster_info/"
+      content: 学习如何使用大数据工作台，以及大数据工作台提供的数据开发、监控运维等功能。
+      url: "manual/workspace_list"
 
     - title: 最佳实践
-      content: 在 MySQL Plus 集群上的实践操作。
-      url: "best-practices/download_mysql_log/"
+      content: 在大数据工作台上的实践操作。
+      url: "best-practices/best_practices/"
 
 section3:
   title: 开发者指南
@@ -72,14 +72,14 @@ section4:
       content: 学习如何使用大数据工作台
       vice_title: 上手的第一步
       children: 
-        - title: 创建 MySQL Plus
-          url: "quickstart/create_cluster/"
+        - title: 创建工作空间
+          url: "prepare/create_workspace/"
 
-        - title: MySQL Plus 集群信息
-          url: "manual/cluster_lifecycle/cluster_info/"
+        - title: 新增数据源
+          url: "quickstart/add_origin_data/"
 
-        - title: MySQL Plus 服务功能
-          url: "manual/node_lifecycle/node_info/"
+        - title: 创建作业
+          url: "quickstart/create_job/"
 ---
 
 

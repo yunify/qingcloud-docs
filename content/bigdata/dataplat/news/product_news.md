@@ -7,7 +7,7 @@ product:
     - time: 2021-12-31
       title: 第一次正式发布
       content: 
-      url: ../../manual/mgt_connect/enable_external_network/
+      url: ../../manual/
 
 ---
 
