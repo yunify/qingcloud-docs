@@ -4,7 +4,6 @@ date: 2021-02-19T00:38:25+09:00
 description: Test description
 weight: 10
 draft: false
-enableToc: false
 ---
 
 ## 1.打开windows云服务器远程桌面，关闭系统自带防火墙
