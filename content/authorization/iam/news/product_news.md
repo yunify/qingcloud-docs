@@ -11,7 +11,6 @@ product:
       url: https://docsv3.qingcloud.com/authorization/iam/manual/user/
       tags:
       - 新功能
-      - 新产品
       zone: 全局
       
     - time: 2021-09-26
@@ -19,7 +18,6 @@ product:
       content: IAM用户管理功能上线啦。可以将您账户的权限，通过IAM策略，授予您创建的IAM用户。同时支持IAM用户进行编程访问。<br>欢迎大家前来体验！
       url: https://docsv3.qingcloud.com/authorization/iam/manual/user/
       tags:
-      - 新功能
       - 新产品
       zone: 全局
 
