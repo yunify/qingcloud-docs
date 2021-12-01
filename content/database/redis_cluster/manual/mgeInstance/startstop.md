@@ -3,7 +3,7 @@ title: "启停集群"
 description: 本小节介绍如何启动及关闭集群。 
 weight: 5
 draft: false
-keywords: QingCloud，Redis Cluster，数据库，redis 集群，启动集群，关闭集群
+keyword: QingCloud，Redis Cluster，数据库，redis 集群，启动集群，关闭集群
 ---
 
 本小节主要介绍如何关闭、开启以及重启 Redis 集群。

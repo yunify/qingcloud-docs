@@ -1,7 +1,7 @@
 ---
 title: "删除集群"
 description: 本小节主要介绍如何删除 MongoDB Cluster 集群。 
-keywords: MongoDB Cluster 删除集群
+keyword: MongoDB Cluster 删除集群
 weight: 90
 collapsible: false
 draft: false

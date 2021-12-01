@@ -1,7 +1,7 @@
 ---
 title: "添加账号"
 description: 本小节主要介绍如何添加 ClickHouse 数据库账号。 
-keywords: ClickHouse 账号添加；创建账号
+keyword: ClickHouse 账号添加；创建账号
 weight: 10
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "管理镜像"
 description: 本小节主要介绍青立方® 超融合易捷版 管理镜像。 
-keywords: 青立方® 超融合易捷版，删除镜像，修改镜像
+keyword: 青立方® 超融合易捷版，删除镜像，修改镜像
 weight: 25
 collapsible: false
 draft: false

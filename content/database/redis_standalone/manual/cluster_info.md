@@ -1,7 +1,7 @@
 ---
 title: "集群信息"
 description: 本小节主要介绍 Redis Standalone 集群信息。 
-keywords: redis standalone 集群信息
+keyword: redis standalone 集群信息
 weight: 10
 collapsible: false
 draft: false

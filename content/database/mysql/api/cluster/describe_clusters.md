@@ -1,7 +1,7 @@
 ---
 title: "DescribeClusters"
 description: 本小节主要介绍 MySQL Plus 获取集群信息的接口。 
-keywords: mysql plus 获取集群信息，获取集群信息
+keyword: mysql plus 获取集群信息，获取集群信息
 weight: 28
 collapsible: false
 draft: false

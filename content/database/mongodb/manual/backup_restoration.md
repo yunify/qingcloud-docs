@@ -1,7 +1,7 @@
 ---
 title: "备份恢复"
 description: 本小节主要介绍如何备份恢复 QingCloud MongoDB 数据试。 
-keywords: mongodb 备份恢复, 
+keyword: mongodb 备份恢复, 
 weight: 50
 collapsible: false
 draft: false

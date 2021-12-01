@@ -1,7 +1,7 @@
 ---
 title: "什么是 PolonDB"
 description: 本小节主要介绍 QingCloud PolonDB 简要介绍。 
-keywords: polondb 架构图,产品简介
+keyword: polondb 架构图,产品简介
 weight: 10
 collapsible: false
 draft: false

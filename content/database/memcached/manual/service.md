@@ -1,7 +1,7 @@
 ---
 title: "服务功能"
 description: 本小节主要介绍 Memcached 服务功能。 
-keywords: memcached 服务功能
+keyword: memcached 服务功能
 weight: 15
 collapsible: false
 draft: false

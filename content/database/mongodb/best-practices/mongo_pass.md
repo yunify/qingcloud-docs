@@ -1,7 +1,7 @@
 ---
 title: "MongoDB Paas 文档"
 description: 本小节主要介绍 QingCloud MongoDB 使用简介。 
-keywords: mongodb 使用简介, 
+keyword: mongodb 使用简介, 
 weight: 1
 collapsible: false
 draft: false

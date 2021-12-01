@@ -1,7 +1,7 @@
 ---
 title: "安装自定义 Filter "
 description: 本小节主要介绍如何安装自定义 Filter 。 
-keywords: HBase 自定义Filter ,
+keyword: HBase 自定义Filter ,
 weight: 55
 collapsible: false
 draft: false

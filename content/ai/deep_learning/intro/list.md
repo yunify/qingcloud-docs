@@ -1,7 +1,7 @@
 ---
 title: "产品系列"
 description: 本小节主要介绍 Deep Learning 产品系列。 
-keywords: Deep Learning 产品系列和版本规格 
+keyword: Deep Learning 产品系列和版本规格 
 weight: 20
 collapsible: false
 draft: false

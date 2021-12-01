@@ -1,7 +1,7 @@
 ---
 title: "什么是 HashData"
 description: 本小节主要介绍 HashData 产品简介。 
-keywords: HashData 产品简介,
+keyword: HashData 产品简介,
 weight: 10
 collapsible: false
 draft: false

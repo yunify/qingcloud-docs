@@ -1,7 +1,7 @@
 ---
 title: "配置参数管理"
 description: 本小节主要介绍如何管理 Redis Standalone 配置参数。 
-keywords: redis standalone 配置参数
+keyword: redis standalone 配置参数
 weight: 25
 collapsible: false
 draft: false

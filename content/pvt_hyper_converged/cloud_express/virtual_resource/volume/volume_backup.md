@@ -1,7 +1,7 @@
 ---
 title: "创建硬盘备份"
 description: 本小节主要介绍青立方® 超融合易捷版 创建硬盘备份。 
-keywords: 青立方® 超融合易捷版创建硬盘备份
+keyword: 青立方® 超融合易捷版创建硬盘备份
 weight: 30
 collapsible: false
 draft: false

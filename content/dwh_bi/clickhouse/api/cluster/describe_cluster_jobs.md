@@ -1,7 +1,7 @@
 ---
 title: "DescribeClusterJobs"
 description: 本小节主要介绍 ClickHouse 获取集群操作日志的接口。 
-keywords: ClickHouse 获取集群操作日志，获取集群操作日志
+keyword: ClickHouse 获取集群操作日志，获取集群操作日志
 weight: 32
 collapsible: false
 draft: false

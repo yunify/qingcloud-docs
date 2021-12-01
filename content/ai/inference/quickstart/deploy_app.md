@@ -1,7 +1,7 @@
 ---
 title: "部署 Inference Engine 应用"
 description: 本小节主要介绍如何快速部署 Inference Engine 应用。 
-keywords: 
+keyword: 
 weight: 10
 collapsible: false
 draft: false

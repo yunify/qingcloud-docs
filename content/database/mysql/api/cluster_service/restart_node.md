@@ -1,7 +1,7 @@
 ---
 title: "restart_node"
 description: 本小节主要介绍 MySQL Plus 重启节点接口。 
-keywords: mysql plus 重启节点,restart_node
+keyword: mysql plus 重启节点,restart_node
 weight: 10
 collapsible: false
 draft: false

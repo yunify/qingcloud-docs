@@ -1,7 +1,7 @@
 ---
 title: "监控指标与告警"
 description: 本小节主要介绍管理 QingCloud MongoDB 监控指标与告警。 
-keywords: mongodb 监控指标,监控告警 
+keyword: mongodb 监控指标,监控告警 
 weight: 60
 collapsible: false
 draft: false

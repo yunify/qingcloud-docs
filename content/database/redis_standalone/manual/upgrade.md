@@ -1,7 +1,7 @@
 ---
 title: "版本升级"
 description: 本小节主要介绍如何升级 Redis Standalone 集群版本。 
-keywords: redis standalone 升级版本
+keyword: redis standalone 升级版本
 weight: 35
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "查看指标告警"
 description: 本小节介绍如何查看指标告警状态。 
-keywords: QingCloud，Redis Cluster，数据库，监控，告警，指标
+keyword: QingCloud，Redis Cluster，数据库，监控，告警，指标
 weight: 4
 draft: false
 ---

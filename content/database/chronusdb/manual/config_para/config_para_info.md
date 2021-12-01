@@ -1,7 +1,7 @@
 ---
 title: "参数介绍"
 description: 本小节主要介绍 ChronusDB 常用配置项。 
-keywords: ChronusDB 常用配置项；
+keyword: ChronusDB 常用配置项；
 weight: 10
 collapsible: false
 draft: false

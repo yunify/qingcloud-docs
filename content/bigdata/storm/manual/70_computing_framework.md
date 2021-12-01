@@ -1,7 +1,7 @@
 ---
 title: "流式计算框架对比分析"
 description: 本小节主要介绍流式计算框架对比分析。 
-keywords: Storm,流式计算框架对比分析
+keyword: Storm,流式计算框架对比分析
 weight: 70
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "节点管理"
 description: 本小节主要介绍如何管理 Redis Standalone 集群节点。 
-keywords: redis standalone 节点管理
+keyword: redis standalone 节点管理
 weight: 20
 collapsible: false
 draft: false

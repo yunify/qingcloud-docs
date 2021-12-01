@@ -1,7 +1,7 @@
 ---
 title: "功能问题"
 description: 本小节主要介绍Memcached 与 Redis 之间的区别。
-keywords: Memcached, redis 区别 
+keyword: Memcached, redis 区别 
 weight: 10
 collapsible: false
 draft: false

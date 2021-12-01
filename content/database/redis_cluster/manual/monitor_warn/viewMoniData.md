@@ -3,7 +3,7 @@ title: "查看监控数据"
 description: 本小节介绍如何查看监控数据。 
 weight: 3
 draft: false
-keywords: QingCloud，Redis Cluster，数据库，监控
+keyword: QingCloud，Redis Cluster，数据库，监控
 ---
 
 您可以通过控制台查看最近6小时、最近两周、最近一个月及自定义时间等多个时间段的 Redis 监控数据，以帮助您掌握 Redis 服务的运行状况。

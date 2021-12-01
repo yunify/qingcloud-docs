@@ -1,7 +1,7 @@
 ---
 title: "步骤三：启动训练环境"
 description: 本小节主要介绍如何快速连接 MySQL Plus 数据库。 
-keywords: mysql plus 访问,访问数据库
+keyword: mysql plus 访问,访问数据库
 weight: 40
 collapsible: false
 draft: false

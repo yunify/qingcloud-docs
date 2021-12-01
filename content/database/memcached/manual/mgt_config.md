@@ -1,7 +1,7 @@
 ---
 title: "配置参数管理"
 description: 本小节主要介绍如何管理 Memcached 配置参数。 
-keywords: Memcached 配置参数
+keyword: Memcached 配置参数
 weight: 30
 collapsible: false
 draft: false

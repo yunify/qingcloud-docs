@@ -1,7 +1,7 @@
 ---
 title: "扩容集群"
 description: 本小节主要介绍如何扩容 Redis Standalone 集群。 
-keywords: redis standalone 扩容集群
+keyword: redis standalone 扩容集群
 weight: 30
 collapsible: false
 draft: false

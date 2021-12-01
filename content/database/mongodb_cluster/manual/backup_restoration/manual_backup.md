@@ -1,7 +1,7 @@
 ---
 title: "创建手动备份"
 description: 本小节主要如何创建 MongoDB Cluster 数据手动备份。 
-keywords: MongoDB Cluster 数据手动备份；
+keyword: MongoDB Cluster 数据手动备份；
 weight: 10
 collapsible: false
 draft: false

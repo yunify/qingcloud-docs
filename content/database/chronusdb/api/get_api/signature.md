@@ -1,7 +1,7 @@
 ---
 title: "签名认证"
 description: 本小节主要介绍如何进行 ChronusDB 集群 api 签名方式。 
-keywords: ChronusDB 签名方式；api 签名方式
+keyword: ChronusDB 签名方式；api 签名方式
 draft: false
 weight: 10
 collapsible: false

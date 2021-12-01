@@ -1,7 +1,7 @@
 ---
 title: "start_zabbix"
 description: 本小节主要介绍 MySQL Plus 开启 Zabbix 监控服务接口。 
-keywords: mysql plus 开启 zabbix 监控服务,start_zabbix，zabbix 监控
+keyword: mysql plus 开启 zabbix 监控服务,start_zabbix，zabbix 监控
 weight: 60
 collapsible: false
 draft: false

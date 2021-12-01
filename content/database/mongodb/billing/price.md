@@ -1,7 +1,7 @@
 ---
 title: "计费说明"
 description: 本小节主要介绍 MongoDB 计费说明。 
-keywords: mongodb 计费说明, 
+keyword: mongodb 计费说明, 
 weight: 1
 collapsible: false
 draft: false

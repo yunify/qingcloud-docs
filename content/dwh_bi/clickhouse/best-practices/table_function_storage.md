@@ -1,7 +1,7 @@
 ---
 title: "导入和导出数据（s3Cluster）"
 description: 本小节主要介绍如何通过表函数方式，导入导出数据。 
-keywords: ClickHouse 导入和导出数据；表函数，table function
+keyword: ClickHouse 导入和导出数据；表函数，table function
 weight: 10
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "修改配置参数"
 description: 本小节主要介绍如何修改 Kyligence 配置参数。 
-keywords: Kyligence 修改账号；
+keyword: Kyligence 修改账号；
 weight: 25
 collapsible: false
 draft: false

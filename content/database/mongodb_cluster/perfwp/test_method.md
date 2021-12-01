@@ -1,7 +1,7 @@
 ---
 title: "测试方法"
 description: 本小节主要介绍 MongoDB Cluster 的性能测试方法。
-keywords: MongoDB Cluster, 性能测试, 测试方法
+keyword: MongoDB Cluster, 性能测试, 测试方法
 weight: 30
 collapsible: false
 draft: false

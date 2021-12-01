@@ -1,7 +1,7 @@
 ---
 title: "公共参数"
 description: 本小节主要介绍如何进行 ClickHouse 集群 api 公共参数。 
-keywords: ClickHouse 公共参数；api 公共参数
+keyword: ClickHouse 公共参数；api 公共参数
 draft: false
 weight: 20
 collapsible: false

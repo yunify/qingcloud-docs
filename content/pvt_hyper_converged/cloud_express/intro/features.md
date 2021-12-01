@@ -1,7 +1,7 @@
 ---
 title: "功能特性"
 description: 本小节主要介绍 青立方® 超融合易捷版 产品特性。 
-keywords: 青立方® 超融合易捷版产品特性, 功能简介 
+keyword: 青立方® 超融合易捷版产品特性, 功能简介 
 weight: 15
 collapsible: false
 draft: false

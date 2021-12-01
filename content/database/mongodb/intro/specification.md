@@ -1,7 +1,7 @@
 ---
 title: "实例规格"
 description: 本小节主要介绍 QingCloud MongoDB 实例主机和磁盘规格。 
-keywords: mongodb 实例规格 
+keyword: mongodb 实例规格 
 weight: 5
 collapsible: false
 draft: false

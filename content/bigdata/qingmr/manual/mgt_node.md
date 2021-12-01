@@ -1,7 +1,7 @@
 ---
 title: "节点管理"
 description: 本小节主要介绍如何管理 QingCloud QingMR 集群即诶单。 
-keywords: QingMR 在线伸缩,节点管理
+keyword: QingMR 在线伸缩,节点管理
 weight: 15
 collapsible: false
 draft: false

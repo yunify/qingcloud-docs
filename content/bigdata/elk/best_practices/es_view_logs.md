@@ -1,7 +1,7 @@
 ---
 title: "Elasticsearch 日志查看"
 description: 本小节主要介绍 Elasticsearch 集群日志查看。
-keywords: Elasticsearch 日志查看,
+keyword: Elasticsearch 日志查看,
 weight: 35
 collapsible: false
 draft: false

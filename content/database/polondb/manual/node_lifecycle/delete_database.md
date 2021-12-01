@@ -1,7 +1,7 @@
 ---
 title: "删除数据库"
 description: 本小节主要介绍如何删除 PolonDB 节点数据库。 
-keywords: PolonDB 节点删除；删除数据库
+keyword: PolonDB 节点删除；删除数据库
 weight: 25
 collapsible: false
 draft: false

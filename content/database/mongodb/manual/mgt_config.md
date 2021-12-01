@@ -2,7 +2,7 @@
 title: "配置项管理"
 enableToc: false
 description: 本小节主要介绍 QingCloud MongoDB 配置项管理。 
-keywords: mongodb 配置项,连接数 
+keyword: mongodb 配置项,连接数 
 weight: 30
 collapsible: false
 draft: false

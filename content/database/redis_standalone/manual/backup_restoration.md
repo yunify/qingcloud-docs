@@ -1,7 +1,7 @@
 ---
 title: "备份恢复"
 description: 本小节主要介绍 Redis Standalone 备份恢复数据。 
-keywords: redis standalone 备份恢复
+keyword: redis standalone 备份恢复
 weight: 60
 collapsible: false
 draft: false

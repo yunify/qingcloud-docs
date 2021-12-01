@@ -1,7 +1,7 @@
 ---
 title: "连接集群"
 description: 本小节主要介绍如何连接 ZooKeeper 数据库。 
-keywords: ZooKeeper 访问,访问数据库
+keyword: ZooKeeper 访问,访问数据库
 weight: 05
 collapsible: false
 draft: false

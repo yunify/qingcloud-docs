@@ -1,7 +1,7 @@
 ---
 title: "快速创建 MongoDB 集群"
 description: 本小节主要介绍如何快速创建 QingCloud MongoDB 集群实例。 
-keywords: mongodb 集群实例,mongodb 实例 
+keyword: mongodb 集群实例,mongodb 实例 
 weight: 1
 collapsible: false
 draft: false

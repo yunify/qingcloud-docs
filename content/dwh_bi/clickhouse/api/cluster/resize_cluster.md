@@ -1,7 +1,7 @@
 ---
 title: "ResizeCluster"
 description: 本小节主要介绍 ClickHouse 扩容集群规格接口。 
-keywords: ClickHouse 扩容集群规格
+keyword: ClickHouse 扩容集群规格
 weight: 104
 collapsible: false
 draft: false

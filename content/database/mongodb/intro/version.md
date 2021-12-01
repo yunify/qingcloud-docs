@@ -1,7 +1,7 @@
 ---
 title: "版本介绍"
 description: 本小节主要介绍 QingCloud MongoDB 主要版本功能。 
-keywords: mongodb 版本介绍, 
+keyword: mongodb 版本介绍, 
 weight: 4
 collapsible: false
 draft: false

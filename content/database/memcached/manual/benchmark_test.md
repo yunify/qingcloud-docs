@@ -1,7 +1,7 @@
 ---
 title: "连接测试"
 description: 本小节主要介绍 Memcached 连接测试。 
-keywords: memcached 测试
+keyword: memcached 测试
 weight: 90
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "日志管理"
 description: 本小节主要介绍如何管理 Redis Standalone 日志。 
-keywords: redis standalone 日志管理
+keyword: redis standalone 日志管理
 weight: 70
 collapsible: false
 draft: false

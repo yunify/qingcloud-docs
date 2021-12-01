@@ -1,7 +1,7 @@
 ---
 title: "运维管理"
 description: 本小节主要介绍青立方® 超融合易捷版运维管理。 
-keywords: 青立方® 超融合易捷版运维管理
+keyword: 青立方® 超融合易捷版运维管理
 weight: 30
 collapsible: false
 draft: false

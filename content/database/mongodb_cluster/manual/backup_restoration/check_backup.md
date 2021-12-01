@@ -1,7 +1,7 @@
 ---
 title: "查看备份"
 description: 本小节主要如何设置 MongoDB Cluster 数据逻辑备份策略。 
-keywords: MongoDB Cluster 数据逻辑备份策略；
+keyword: MongoDB Cluster 数据逻辑备份策略；
 weight: 30
 collapsible: false
 draft: false

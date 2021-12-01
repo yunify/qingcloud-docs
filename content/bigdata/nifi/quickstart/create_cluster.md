@@ -1,7 +1,7 @@
 ---
 title: "创建 Nifi 集群"
 description: 本小节主要介绍如何快速创建 Nifi 集群实例。 
-keywords: Nifi 实例, 创建集群,创建实例
+keyword: Nifi 实例, 创建集群,创建实例
 weight: 10
 collapsible: false
 draft: false
