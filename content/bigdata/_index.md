@@ -27,8 +27,8 @@ Section1:
     - title: ZooKeeper 服务
       url: "/bigdata/zookeeper/intro/introduction"
 
-    - title: Strom 服务
-      url: "/bigdata/strom/intro/10_introduction"
+    - title: Storm 服务
+      url: "/bigdata/storm/intro/10_introduction"
 
     - title: Kyligence 服务
       url: "/bigdata/kyligence/intro/introduction"

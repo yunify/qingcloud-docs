@@ -22,7 +22,7 @@ ClickHouse 通过创建表函数 [s3Cluster Table Function](https://clickhouse.c
   
   > **注意**
   > 
-  > 对象存储服务与集群需在同一区域；若不在同一区域，可通过[边界路由器](../../../../../network/border_router/)或 [VPN](../../../../../network/vpc/manual/vpn/) 等方式打通网络。
+  > 对象存储服务与集群需在同一区域；若不在同一区域，可通过[边界路由器](/network/border_router/)或 [VPN](/network/vpc/manual/vpn/) 等方式打通网络。
 
 - 已创建并获取 API 密钥。
 

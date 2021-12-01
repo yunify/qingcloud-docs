@@ -28,8 +28,6 @@ draft: false
 |offset | Integer | 数据偏移量。默认为 0。 | No
 |limit | Integer | 返回数据长度。默认为20，最大100。 | No　|
 
-[_公共参数_](../../../../parameters/)
-
 ## 响应消息
 
 |<span style="display:inline-block;width:100px">参数</span> |<span style="display:inline-block;width:100px">类型</span>|<span style="display:inline-block;width:380px">描述</span>|

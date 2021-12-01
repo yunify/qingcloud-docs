@@ -33,8 +33,8 @@ Section1:
     - title: 键值数据库 Redis Standalone
       url: "/database/redis_standalone/intro/introduction"
 
-    - title: 键值数据库 Redis
-      url: "/database/redis_cluster/intro/introduction"
+    - title: 键值数据库 Redis Cluster
+      url: "/database/redis_cluster/intro/overview"
 
     - title: 键值数据库 Memcached
       url: "/database/memcached/intro/introduction"

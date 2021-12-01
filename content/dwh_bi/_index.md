@@ -7,7 +7,6 @@ weight: 9
 collapsible: true
 icon: "/images/icons/index/product-icon-bi.svg"
 
-
 Section1:
   children:
     - title: ClickHouse
