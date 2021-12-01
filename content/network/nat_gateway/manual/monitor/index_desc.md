@@ -1,5 +1,6 @@
 ---
 title: "监控指标说明"
+descriptipn: 介绍 NAT 网关支持的监控指标。
 draft: false
 weight: 1
 keywords: QingCloud, 青云, NAT网关, NAT, SNAT, DNAT

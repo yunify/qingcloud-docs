@@ -1,5 +1,6 @@
 ---
 title: "删除 NAT 网关"
+descriptipn: 介绍如何删除 NAT 网关。
 draft: false
 weight: 30
 keywords: QingCloud, 青云, NAT网关, NAT

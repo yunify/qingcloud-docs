@@ -32,7 +32,7 @@ section2:
   
     - title: 最佳实践
       content: 操作指南
-      url: "best-practices/nat_and_vpc/"
+      url: "best-practices/multi_nat_access_internet/"
       
     - title: 常见问题
       content: 常见问题

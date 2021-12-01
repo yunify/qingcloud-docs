@@ -1,5 +1,6 @@
 ---
 title: "管理 DNAT 规则"
+descriptipn: 介绍如何进行 DNAT 规则的添加、修改、删除等操作。
 draft: false
 weight: 30
 keywords: QingCloud, 青云, NAT网关, NAT, SNAT, DNAT

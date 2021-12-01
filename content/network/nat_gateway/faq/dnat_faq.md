@@ -1,5 +1,6 @@
 ---
 title: "DNAT 规则 FAQ"
+descriptipn: 介绍 DNAT 相关常见问题。
 draft: false
 weight: 5
 keywords: QingCloud, 青云, NAT网关, DNAT, 常见问题
