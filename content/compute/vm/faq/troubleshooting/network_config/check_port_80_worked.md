@@ -4,7 +4,6 @@ date: 2020-01-30T00:39:25+09:00
 description: Test description
 weight: 10
 draft: false
-enableToc: false
 
 ---
 

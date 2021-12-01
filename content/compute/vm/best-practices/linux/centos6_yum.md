@@ -4,7 +4,7 @@ date: 2021-02-04T20:38:25+09:00
 description: Test description
 weight: 40
 draft: false
-enableToc: false
+
 ---
 
 ## 问题背景

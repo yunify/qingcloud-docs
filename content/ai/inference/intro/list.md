@@ -2,7 +2,6 @@
 title: "部署方式"
 description: 本小节主要介绍 Inference Engine的三种部署方式。 
 draft: false
-enableToc: false
 weight: 20
 keyword: inference
 ---
