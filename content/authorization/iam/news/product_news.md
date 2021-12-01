@@ -11,7 +11,6 @@ product:
       url: https://docsv3.qingcloud.com/authorization/iam/manual/user/
       tags:
       - 新功能
-      - 新产品
       zone: 全局
 
     - time: 2020-11-12
