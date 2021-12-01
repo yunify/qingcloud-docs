@@ -19,19 +19,19 @@ QingStor 对象存储支持修改的对象元数据包括部分标准 HTTP 头�
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
 
- ![](../../_images/console_main.png)
+ ![](/storage/object-storage/_images/console_main.png)
 
 2. 进入 Bucket 详情页面，点击 **文件**，选择相应的文件后，点击 **右键 > 修改对象元数据**：
 
- ![](../../_images/object_modify_meta1.png)
+ ![](/storage/object-storage/_images/object_modify_meta1.png)
 
 3. 弹出 **修改对象元数据** 对话框，用户根据实际需求，选择待修改的 **键**，并给定相应的值后，点击 **添加** 按钮即可：
 
- ![](../../_images/object_modify_meta2.png)
+ ![](/storage/object-storage/_images/object_modify_meta2.png)
 
 4. 对象元数据列表显示。若需删除某项元数据，直接点击元数据列表的 **删除** 按钮即可：
 
- ![](../../_images/object_modify_meta3.png)
+ ![](/storage/object-storage/_images/object_modify_meta3.png)
 
 5. 点击右上角，退出对话框。
 

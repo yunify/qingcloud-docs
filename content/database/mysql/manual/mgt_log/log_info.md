@@ -9,7 +9,7 @@ draft: false
 
 
 
-MySQL Plus 支持通过 HTTP 服务预览和下载日志，HTTP 服务端口为 `18801` 。
+MySQL Plus 支持 Caddy Server 日志服务，通过 HTTP 服务预览和下载日志，HTTP 服务端口为 `18801` 。
 
 |<span style="display:inline-block;width:80px">日志标记</span> |<span style="display:inline-block;width:240px">日志类型</span>|<span style="display:inline-block;width:280px">说明</span> |
 |:----|:----|:----|

@@ -30,6 +30,10 @@ Section2:
       content: 操作指南
       url: "manual/checkdata"
 
+    - title: 常见问题
+      content: 常见问题
+      url: "faq/faq"
+
 section4:
   children:
     - title: 了解：什么是云防火墙 CFW
@@ -46,10 +50,9 @@ section4:
       vice_title: 上手的第一步
       children:
         - title: 创建CFW安全策略
-          url: "manual/base/#安全策略"
+          url: "manual/cfw"
 
 ---
-
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->
 <!-- section1 为产品index页面 主标题 副标题 video  video_img为视频图片  -->

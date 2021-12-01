@@ -3,7 +3,7 @@ title: "SSL 证书 DNS 验证"
 description: 如何配置 DNS 验证
 keyword: SSL, DNS, 证书, 域名
 draft: false
-weight: 39
+weight: 50
 ---
 
 1. 配置 DNS 验证，可参考[验证指南](../manualq/)。
