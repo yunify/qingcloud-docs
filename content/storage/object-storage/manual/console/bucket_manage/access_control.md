@@ -33,15 +33,15 @@ Bucket Policy 对于储存于 QingStor 对象存储的资源的访问控制粒�
 ### 操作步骤
 1. 进入 QingStor 对象存储的主页面，选择待设置 Policy 的 Bucket，点击 **右键** > **设置**：
 
- ![](../../_images/set_bucket_policy1.png)
+ ![](/storage/object-storage/_images/set_bucket_policy1.png)
 
 2. 进入 Bucket 设置页面，点击 **存储空间策略** > **添加规则**：
 
- ![](../../_images/set_bucket_policy2.png)
+ ![](/storage/object-storage/_images/set_bucket_policy2.png)
 
 3. 在弹出的 **规则设置** 对话框内，根据页面提示信息，填写相关参数后，点击 **保存** 按钮：
 
- ![](../../_images/set_bucket_policy3.png)
+ ![](/storage/object-storage/_images/set_bucket_policy3.png)
 
  **说明：**
    - **操作：** 指定该 Bucket 策略支持的 API 操作。
@@ -54,7 +54,7 @@ Bucket Policy 对于储存于 QingStor 对象存储的资源的访问控制粒�
 
 4. 成功创建的存储空间策略，列表显示：
 
- ![](../../_images/set_bucket_policy4.png)
+ ![](/storage/object-storage/_images/set_bucket_policy4.png)
 
 ### 相关API
 
@@ -76,15 +76,15 @@ Bucket 拥有者默认拥有所有权限，另外可配置公开读或公开写(
 ### 操作步骤
 1. 进入 QingStor 对象存储的主页面，选择待设置访问控制列表的 Bucket，点击 **右键** > **设置**：
 
- ![](../../_images/set_bucket_acl1.png)
+ ![](/storage/object-storage/_images/set_bucket_acl1.png)
 
 2. 进入 Bucket 设置页面，点击 **访问控制** > **添加用户**：
 
- ![](../../_images/set_bucket_acl2.png)
+ ![](/storage/object-storage/_images/set_bucket_acl2.png)
 
 3. 在弹出的 **Bucket 访问控制** 对话框内，根据需求，填写相关参数后，点击 **提交** 按钮：
 
- ![](../../_images/set_bucket_acl3.png)
+ ![](/storage/object-storage/_images/set_bucket_acl3.png)
 
  **说明：**
    - 若需将相应的权限开放给所有人，即允许匿名访问，可以选择 **所有用户** 。
@@ -109,31 +109,31 @@ Bucket CORS 可以对请求来源的域名和请求头进行控制。详细操�
 ### 操作步骤
 1. 进入 QingStor 对象存储的主页面，选择待设置 CORS 的 Bucket，点击 **右键** > **设置**：
 
- ![](../../_images/set_bucket_cors1.png)
+ ![](/storage/object-storage/_images/set_bucket_cors1.png)
 
 2. 进入 Bucket 设置页面，点击 **CORS** > **添加请求源**：
 
- ![](../../_images/set_bucket_cors2.png)
+ ![](/storage/object-storage/_images/set_bucket_cors2.png)
 
 3. 在弹出的 **添加请求源** 对话框内，根据页面提示，填写相关参数后，点击 **提交** 按钮：
 
- ![](../../_images/set_bucket_cors3.png)
+ ![](/storage/object-storage/_images/set_bucket_cors3.png)
 
 4. 用户也可通过点击 **导入请求源**，将其他 Bucket 已设置的 CORS 源，导入当前 Bucket 中：
 
- ![](../../_images/set_bucket_cors4.png)
+ ![](/storage/object-storage/_images/set_bucket_cors4.png)
 
 5. 在弹出的 **导入请求源** 对话框内，选择源 Bucket 与源冲突时的解决方式后，点击 **提交** 按钮：
 
- ![](../../_images/set_bucket_cors5.png)
+ ![](/storage/object-storage/_images/set_bucket_cors5.png)
 
 6. 当成功创建 CORS 规则后，用户可根据需求，选择是否 **开启 Vary：Origin** 参数：
 
- ![](../../_images/set_bucket_cors6.png)
+ ![](/storage/object-storage/_images/set_bucket_cors6.png)
 
 7. 在弹出的 **提示** 对话框内，确认操作无误后，点击 **确认** 按钮：
 
- ![](../../_images/set_bucket_cors7.png)
+ ![](/storage/object-storage/_images/set_bucket_cors7.png)
 
 
 ### 相关API

@@ -2,12 +2,15 @@
 {{ $shouldDelayActive := ge (len .Site.Pages) 5000 }}
 {{ if not .Site.Params.IsConsole }}
 <div class="td-sidebar-section-title" style="padding:8px 0 12px 0;display: flex;">
+  {{ .Params.section }}
   <img class="is-40x40" src="/images/icons/book-open.svg">
   <h3 class="doc_vice_title">{{ .CurrentSection.LinkTitle }}</h3>
 </div>
 {{ end }}
 <div id="td-sidebar-menu" class="td-sidebar__inner{{ if $shouldDelayActive }} d-none{{ end }}">
+
   {{ with .Params.section }}
+  {{ .title}}
   <div class="field has-addons has-addons-centered select-field">
     <div class="control">
       <div class="select is-small">
@@ -22,8 +25,16 @@
   {{ end }}
   <nav class="collapse td-sidebar-nav pt-2" id="td-section-nav">
     <div class="nav-item dropdown d-block ">
+
+      {{ $type := .Type}}
+
+      {{ if eq $type "videoMain"}}
+      {{ $slice := (split .CurrentSection "/") }}
+      {{ $type = index $slice 1 }}
+      {{ end }}
+
       {{ $root := . }}
-      {{ range (.Site.GetPage "section" .Type).Pages }}
+      {{ range (.Site.GetPage "section" $type).Pages }}
       {{ template "render-menu" (dict "ctx" . "root" $root "depth" 0)}}
       {{ end }}
     </div>

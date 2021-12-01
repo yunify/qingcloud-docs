@@ -4,7 +4,7 @@ linkTitle: "作业管理"
 date: 2021-10-15T10:08:56+09:00
 description:
 draft: false
-weight: 3
+weight: 10
 ---
 
 作业是用户在EHPC集群中提交的一个计算任务，作业在 EHPC 集群的队列中运行，并输出结果。集群会对其中的作业进行统一的调度管理。

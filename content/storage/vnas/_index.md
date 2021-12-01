@@ -15,7 +15,7 @@ Section2:
   children:
     - title: Virtual NAS
       content: Virtual NAS 产品使用文档
-      url: "/storage/vnas/manual/vnas"
+      url: "/storage/vnas/manual/vnas_basic_operation"
 
 
 section4:
@@ -32,13 +32,13 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 如何创建 Virtual NAS 服务器
-          url: "/storage/vnas/manual/vnas/#创建-virtual-nas-服务器"
+          url: "/storage/vnas/manual/vnas_basic_operation/#创建 vNAS 服务器"
 
         - title: 如何创建共享存储目标
-          url: "/storage/vnas/manual/vnas/#创建共享存储目标"          
+          url: "/storage/vnas/manual/vnas_basic_operation/#创建共享存储目标"          
 
         - title: 如何在不同的操作系统上使用共享存储目标
-          url: "/storage/vnas/manual/vnas/#linux-客户端配置及访问"
+          url: "/storage/vnas/manual/linux_basic_use/"
 ---
 
 
