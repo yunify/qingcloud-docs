@@ -51,8 +51,8 @@ QKE 支持自定义部分参数的值，您可以根据自己的业务情况对�
 | Proxy Mode                   | 选择一种 Proxy Mode（ipvs 或 iptables）。                    | 集群创建后无法修改。                                         |
 | 网卡插件                     | 选择网卡插件（calico 或 flannel）。                          | 集群创建后无法修改。                                         |
 | 云服务器 hosts 记录          | 自定义添加到 `/etc/hosts` 文件的记录，多条记录用逗号分割。比如 `192.168.2.2 host1,192.168.2.3 host2`。 | -                                                            |
-| registry-mirrors             | 完整的 Docker 镜像服务地址，比如 `https://mirror.harbor.local`，多个地址之间用空格隔开。 | -                                                            |
-| insecure-registries          | 需要通过非安全的 HTTP 或不受信任的 HTTPS 访问的 Docker 仓库，比如 `mirror.harbor.local`，多个地址通过空格切分。 | -                                                            |
+| registry-mirrors             | 完整的 Docker 镜像服务地址，比如 `https://mirror.harbor.local`，多个地址之间用空格分隔。 | -                                                            |
+| insecure-registries          | 需要通过非安全的 HTTP 或不受信任的 HTTPS 访问的 Docker 仓库，比如 `mirror.harbor.local`，多个地址通过空格分隔。 | -                                                            |
 | Docker 网桥地址              | Docker 网桥的 IP 地址和子网掩码，请按照标准的 CIDR 格式填写。默认为 `172.30.0.1/16`。 | 修改此项需要通过集群菜单依次重启所有 k8s 节点（包括主节点、基础型节点、企业型节点和 GPU 节点），请在业务低谷时操作。 |
 | Docker 清理天数              | 每天凌晨 2 点 35 分自动清理指定天数之前创建的 Docker 容器、镜像、网络等闲置资源。<br/>默认为 `3` 表示只清理创建时间超过 3 天（72 小时）的闲置资源；`0` 表示不自动清理 (范围: 0 - 30)。 | -                                                            |
 | Pod 网段                     | Pod 网段，请按照标准的 CIDR 格式填写。例如：`10.10.0.0/16`。 | 集群创建后无法修改。                                         |
