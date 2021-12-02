@@ -1,5 +1,5 @@
 ---
-title: "配置 Docker 镜像加速"
+title: "如何配置 Docker 镜像加速"
 description: 介绍如何配置配置 Docker 镜像加速。
 weight: 20
 draft: false
