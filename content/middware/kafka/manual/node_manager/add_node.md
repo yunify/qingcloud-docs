@@ -1,11 +1,7 @@
 ---
 title: "新增节点"
 description: 本小节主要介绍如何新增 Kafka 集群节点。 
-<<<<<<< HEAD
-keyword: kafaka 节点添加；新增节点
-=======
 keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,kafaka 节点添加,Kafka,新增节点
->>>>>>> 260d2251 (etcd,kafka,rabbitmq,rocketmq *:SEO)
 weight: 10
 collapsible: false
 draft: false

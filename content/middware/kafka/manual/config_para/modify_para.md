@@ -1,11 +1,7 @@
 ---
 title: "修改配置参数"
 description: 本小节主要介绍如何修改 Kafka 配置参数。 
-<<<<<<< HEAD
-keyword: Kafka 修改参数；
-=======
 keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka 修改参数,Kafka
->>>>>>> 260d2251 (etcd,kafka,rabbitmq,rocketmq *:SEO)
 weight: 15
 collapsible: false
 draft: false

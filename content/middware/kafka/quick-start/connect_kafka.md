@@ -41,7 +41,7 @@ kafka-console-producer.sh --broker-list {连接地址} --topic {Topic 名称}
   	*host_ip* 为 Kafka 节点的 IP 地址，*port* 为客户端节点的访问端口 9092。   
   	若 Kafka 节点地址为：192.168.0.1, 192.168.0.2, 192.168.0.3, 则连接地址为：192.168.0.1:9092,192.168.0.2:9092,192.168.0.3:9092   
 
-- Topic 名称：在[步骤二：创建 Topic](../creat_resource) 创建的 Topic 名称。
+- Topic 名称：在[步骤二：创建 Topic](../create_resource) 创建的 Topic 名称。
 
 输入需要发送的消息内容，按 **Enter** 发送消息，每一行的内容都将作为一条消息发送到 Kafka。   
 
