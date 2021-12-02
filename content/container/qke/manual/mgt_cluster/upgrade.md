@@ -34,7 +34,7 @@ keyword: 青云, QingCloud, 云计算, 升级 QKE
 
 3. 在集群列表，右键单击目标集群，选择**升级**。
 
-   <img src="../../../../_images/upgrade.png" alt="升级集群"/>
+   <img src="../../../_images/upgrade.png" alt="升级集群"/>
 
 4. 选择需要升级的目标版本，下方对应显示版本特性。
 

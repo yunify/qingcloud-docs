@@ -1,5 +1,5 @@
 ---
-title: "配置集群参数"
+title: "配置参数"
 description: 介绍如何修改 QKE 集群参数。
 draft: false
 weight: 5

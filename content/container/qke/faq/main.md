@@ -10,21 +10,17 @@ keyword: 青云, QingCloud, QKE, 常见问题
 
 如果 VPC 选择 172.30.0.0/16，需要修改 Docker 默认网段，避免冲突。
 
-> ![集群参数](../../_images/cluster_params.png)
-
 | 参数 | 默认值
 | --- | ---
 | Docker 网桥地址	| 172.30.0.1/16
 
-## 修改 [安装 KubeSphere]
+## 集群创建后能否安装 KubeSphere？
 
-[安装 KubeSphere] 参数在创建集群后无法修改，请在创建集群前规划好集群用途。
+不能。如果您需要安装 KubeSphere，需要在创建集群时设置参数**安装 KubeSphere** 为**true** 。该参数在创建集群后无法修改，请在创建集群前规划好集群用途。
 
-> ![集群参数](../../_images/cluster_params.png)
-
-| 参数 | 默认值
-| --- | ---
-| 安装 KubeSphere | 选择是否安装 KubeSphere，默认为 true 表示安装
+| 参数 | 默认值|
+| --- | ---|
+| 安装 KubeSphere | 选择是否安装 KubeSphere，默认为 true 表示安装。 |
 
 ## 云服务器类型与存储类型
 
@@ -45,13 +41,17 @@ spec:
 >
 > ![存储类型](../../_images/sc.png)
 
-## 镜像仓库连通性
+## 镜像仓库无法连通
 
 k8s 上的工作负载需要拉取 Docker 镜像，请确保集群所在私网能够访问相应的镜像仓库。
 
-> 如果使用公网镜像仓库，比如 docker.io，请确保 VPC 绑定了公网 IP。  
+- 如果使用公网镜像仓库，比如 docker.io，请确保 VPC 绑定了公网 IP。  
 
-> 如果使用私有镜像仓库，比如青云提供的 [Harbor 镜像仓库](https://docs.qingcloud.com/product/container/harbor.html)，请确保 QKE 所有节点可以访问到 Harbor 的负载均衡器地址。注意：如果 Harbor 后端使用的是 QingStor 对象存储，还要确保 QKE 所有节点可以访问到 QingStor 对象存储。
+- 如果使用私有镜像仓库，比如青云提供的 [Harbor 镜像仓库](https://docsv3.qingcloud.com/container/harbor/intro/introduction/)，请确保 QKE 所有节点可以访问到 Harbor 的负载均衡器地址。
+
+  > **注意**
+  >
+  > 如果 Harbor 后端使用的是 QingStor 对象存储，还要确保 QKE 所有节点可以访问到 QingStor 对象存储。
 
 ## 防火墙
 

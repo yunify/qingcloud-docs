@@ -25,7 +25,7 @@ keyword: 青云, QingCloud, 云计算, 云监控, Dashboard
 
 4. 选择面板（若无请创建），点击**创建图表**，弹出**创建监控图表**页面。
 
-   ![](../../../../_images/dashboard-monitor.png)
+   ![](../../../_images/dashboard-monitor.png)
 
 5. 配置监控图表参数。
 
@@ -43,5 +43,5 @@ keyword: 青云, QingCloud, 云计算, 云监控, Dashboard
 
    面板显示所配置的指标监控图。
 
-   ![](../../../../_images/dashboard-monitor-2.png)
+   ![](../../../_images/dashboard-monitor-2.png)
 

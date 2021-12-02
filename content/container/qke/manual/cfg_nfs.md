@@ -2,7 +2,7 @@
 title: "对接 NFS 服务端"
 description: 
 draft: false
-weight: 40
+weight: 60
 keyword: 青云, QingCloud, 云计算, 容器, QKE
 ---
 

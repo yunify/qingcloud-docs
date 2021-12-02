@@ -23,7 +23,7 @@ keyword: 青云, QingCloud, 云计算, QKE, 节点, 扩容
 
 3. 在集群列表，右键单击目标集群，选择**扩容集群**，弹出**扩容集群**窗口。
 
-   ![](../../../../_images/change_node_cfg.png)
+   ![](../../../_images/change_node_cfg.png)
 
 4. 勾选需要变更的节点角色，然后在下方分别修改节点配置。
 

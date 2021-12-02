@@ -38,7 +38,7 @@ keyword: 青云, QingCloud, 云计算, QKE, 监控
 
    节点列表下方展示所选节点的监控图。
 
-   <img src="../../../../_images/node_moni.png" alt="指标监控" style="zoom:50%;" />
+   <img src="../../../_images/node_moni.png" alt="指标监控" style="zoom:50%;" />
 
    - 通过切换**服务**或**资源**，可分别查看对应节点服务和资源监控指标状态。
 

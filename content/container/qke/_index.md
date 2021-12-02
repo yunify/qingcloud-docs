@@ -28,7 +28,7 @@ section2:
     url: "quickstart/create_qke/"
   - title: 操作指南
     content: 介绍如何管理和使用 QKE 集群
-    url: "manual/qke/paras_cfg/"
+    url: "manual/mgt_cluster/paras_cfg/"
   - title: 最佳实践
     content: QKE 最佳实践
     url: "best-practice/docker_deployment/"

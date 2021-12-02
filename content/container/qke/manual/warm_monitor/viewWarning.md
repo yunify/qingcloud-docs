@@ -26,7 +26,7 @@ draft: false
 
    下方展示所选节点的告警策略及告警历史记录。
 
-   <img src="../../../../_images/view_warning.png" alt="查看告警" style="zoom:50%;" />
+   <img src="../../../_images/view_warning.png" alt="查看告警" style="zoom:50%;" />
 
    
 

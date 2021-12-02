@@ -17,7 +17,7 @@ weight: 20
 
 3. 点击**创建**，创建自动伸缩策略。
 
-   ![](../../../../_images/auto_node_policy.png)
+   ![](../../../_images/auto_node_policy.png)
 
 4. 配置伸缩策略。
 
@@ -33,7 +33,7 @@ weight: 20
 
    自动跳转到规则配置页面，可分别设置增加及减少节点的规则。
 
-   ![](../../../../_images/autoscale-node-metric.png)
+   ![](../../../_images/autoscale-node-metric.png)
 
 6. 点击**定义触发条件**，设置**监控周期**及**告警规则**，点击**提交**。
 

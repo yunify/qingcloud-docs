@@ -15,7 +15,7 @@ keyword: 青云, QingCloud, 云计算, kubectl, K8s
 
 ## 通过负载均衡器
 
-对于高可用的 QKE （三个主节点）或配置了**K8s apiserver EIP **的集群，可通过负载均衡器连接集群。
+对于高可用的 QKE （三个主节点）或配置了**K8s apiserver EIP** 的集群，可通过负载均衡器连接集群。
 
 ### 步骤一：安装 kubectl
 

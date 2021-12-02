@@ -25,7 +25,7 @@ QKE 监控告警是通过云监控服务 CloudSat 为集群服务器的资源和
 
 4. 点击**告警**页签，进入告警配置页面。
 
-   <img src="../../../../_images/warning.png" alt="告警页面" />
+   <img src="../../../_images/warning.png" alt="告警页面" />
 
 ### 绑定指标告警策略
 
@@ -61,7 +61,7 @@ QKE 监控告警是通过云监控服务 CloudSat 为集群服务器的资源和
 
 3. 点击**下一步**，配置告警规则。
 
-   <img src="../../../../_images/create_warning_policy_2.png" style="zoom:45%;" />
+   <img src="../../../_images/create_warning_policy_2.png" style="zoom:45%;" />
 
    点击**添加规则**，并可配置指标规则阈值和告警级别，一个策略可添加多条指标规则。
 

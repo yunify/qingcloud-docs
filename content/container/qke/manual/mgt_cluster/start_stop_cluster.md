@@ -58,7 +58,7 @@ weight: 10
 
    3. 点击**提交**，返回定时器列表页面。
 
-      <img src="../../../../_images/timer.png" alt="创建定时器"/>
+      <img src="../../../_images/timer.png" alt="创建定时器"/>
 
 4. 创建定时任务。
 
@@ -70,7 +70,7 @@ weight: 10
 
       任务**类型**选择`开启集群`或`关闭集群`，**资源**选择目标 QKE 集群。
 
-      <img src="../../../../_images/timer_auto_start.png" alt="定时启动"/>
+      <img src="../../../_images/timer_auto_start.png" alt="定时启动"/>
 
    3. 点击**提交**，返回定时器任务列表页面。
 
