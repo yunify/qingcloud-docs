@@ -39,6 +39,6 @@ keyword: 云计算, 青云, QingCloud, 文件存储, EPFS
 
    ![](/storage/epfs/_images/epfs17.png)
 
-7. 选择该文件夹，点击 **更多操作** > **删除**，可删除该文件夹：
+7. 选择文件夹，点击 **更多操作** > **删除**，可删除该文件夹：
 
    ![](/storage/epfs/_images/epfs19.png)
