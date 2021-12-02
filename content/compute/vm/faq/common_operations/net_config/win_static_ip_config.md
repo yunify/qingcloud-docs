@@ -4,7 +4,6 @@ date: 2020-01-30T00:38:25+09:00
 description: Test description
 weight: 60
 draft: false
-enableToc: false
 ---
 
 登录到Windows云服务器---网络和共享中心---更改适配器设置----右键以太网卡---属性---Internet版本协议4---使用下面的ip地址---确定
