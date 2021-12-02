@@ -3,7 +3,6 @@ title: "如何配置 NTP 服务"
 description: Test description
 weight: 50
 draft: false
-enableToc: false
 ---
 
 

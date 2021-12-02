@@ -3,7 +3,6 @@ title: "关闭Linux云服务器内部防火墙"
 date: 2020-03-07T00:38:25+09:00
 description: Test description
 draft: false
-enableToc: false
 ---
 
 ## 背景介绍
