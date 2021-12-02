@@ -2,7 +2,7 @@
 title: "跨账号管理协作"
 date: 2020-02-28T10:08:56+09:00
 description: 介绍 IAM 跨账号管理协作
-keywords: 青云, IAM , 跨账号管理, 账号协作
+keyword: 青云, IAM , 跨账号管理, 账号协作
 draft: false
 weight: 52
 ---

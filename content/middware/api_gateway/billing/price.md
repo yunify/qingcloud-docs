@@ -3,7 +3,7 @@ title: "计费说明"
 linkTitle: "计费说明"
 date: 2021-05-24T10:08:56+09:00
 description: 本小节主要介绍 API 网关计费说明。 
-keywords: API_Gateway, QingCloud, 计费说明, 计费模式, 价格明细
+keyword: API_Gateway, QingCloud, 计费说明, 计费模式, 价格明细
 draft: false
 weight: 2
 ---

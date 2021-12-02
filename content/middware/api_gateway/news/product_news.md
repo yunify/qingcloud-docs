@@ -2,7 +2,7 @@
 title: "产品动态"
 collapsible: false
 description: 本小节主要介绍 API 网关最新产品动态。 
-keywords: API_Gateway, QingCloud, 产品动态, 最新动态
+keyword: API_Gateway, QingCloud, 产品动态, 最新动态
 weight: 10
 
 product:

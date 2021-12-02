@@ -1,7 +1,7 @@
 ---
 title: "概述"
 description: 介绍 IAM 策略模拟器操作流程。
-keywords: 青云, IAM , 策略模拟器, 策略配置  
+keyword: 青云, IAM , 策略模拟器, 策略配置  
 draft: false
 weight: 21
 ---

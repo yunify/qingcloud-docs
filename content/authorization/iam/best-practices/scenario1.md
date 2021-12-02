@@ -2,7 +2,7 @@
 title: "免密钥应用开发"
 date: 2020-02-28T10:08:56+09:00
 description: 介绍免密钥应用开发
-keywords: 青云, IAM , 应用开发, 密钥
+keyword: 青云, IAM , 应用开发, 密钥
 draft: false
 weight: 51
 ---

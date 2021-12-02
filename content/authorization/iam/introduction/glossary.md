@@ -1,7 +1,7 @@
 ---
 title: "名词解释"
 description: 介绍 IAM 专有名词。
-keywords: 青云, IAM , 术语库, 名词解释
+keyword: 青云, IAM , 术语库, 名词解释
 draft: false
 weight: 22
 ---

@@ -1,7 +1,7 @@
 ---
 title: "什么是账户中心"
 description: 介绍青云账户中心。
-keywords: 青云, 账户中心, 管理账户
+keyword: 青云, 账户中心, 管理账户
 draft: false
 weight: 5
 keyword: 账户中心, QingCloud

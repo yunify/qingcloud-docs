@@ -2,7 +2,7 @@
 title: "支持的服务类别列表"
 date: 2020-02-28T10:08:56+09:00
 description: 介绍 IAM 支持的服务类别。
-keywords: 青云, IAM , 服务类别
+keyword: 青云, IAM , 服务类别
 draft: false
 weight: 44
 ---

@@ -3,7 +3,7 @@ title: "创建专享实例"
 linkTitle: "创建专享实例"
 date: 2021-05-18T10:08:56+09:00
 description: 本小节主要介绍如何创建专享实例。 
-keywords: API_Gateway, QingCloud, 专享实例
+keyword: API_Gateway, QingCloud, 专享实例
 draft: false
 weight: 10
 ---

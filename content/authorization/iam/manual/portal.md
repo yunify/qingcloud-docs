@@ -1,7 +1,7 @@
 ---
 title: "产品入口"
 description: 介绍 IAM 产品入口。
-keywords: 青云, IAM , 产品入口
+keyword: 青云, IAM , 产品入口
 draft: false
 weight: 31
 ---

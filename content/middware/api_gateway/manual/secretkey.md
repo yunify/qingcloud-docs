@@ -4,7 +4,7 @@ title: "密钥管理"
 linkTitle: "密钥管理"
 date: 2021-05-25T10:08:56+09:00
 description: 本小节主要介绍 API 网关密钥管理流程。 
-keywords: API_Gateway, QingCloud, 密钥管理
+keyword: API_Gateway, QingCloud, 密钥管理
 draft: false
 weight: 60
 ---

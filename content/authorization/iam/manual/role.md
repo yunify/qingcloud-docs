@@ -1,7 +1,7 @@
 ---
 title: "身份管理"
 description: 介绍 IAM 如何进行身份管理。
-keywords: 青云, IAM , 身份管理, 信任载体
+keyword: 青云, IAM , 身份管理, 信任载体
 draft: false
 weight: 32
 ---

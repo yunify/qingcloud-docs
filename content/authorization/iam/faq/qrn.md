@@ -1,7 +1,7 @@
 ---
 title: "资源标识符 QRN"
 description: 介绍资源标识符 QRN
-keywords: 青云, IAM , 资源标识符, QRN
+keyword: 青云, IAM , 资源标识符, QRN
 draft: false
 weight: 42
 ---

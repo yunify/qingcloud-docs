@@ -1,7 +1,7 @@
 ---
 title: "JSON 编辑格式及参数说明"
 description: 介绍 JSON 编辑格式及参数说明。
-keywords: 青云, JSON , JSON 格式, IAM, 参数说明
+keyword: 青云, JSON , JSON 格式, IAM, 参数说明
 date: 2020-02-28T10:08:56+09:00
 description: 
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "信任载体"
 description: 介绍 IAM 信任载体。
-keywords: 青云, IAM , 信任载体
+keyword: 青云, IAM , 信任载体
 draft: false
 weight: 41
 ---

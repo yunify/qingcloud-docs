@@ -1,7 +1,7 @@
 ---
 title: "用户管理"
 description: 介绍 IAM 用户管理流程。
-keywords: 青云, IAM , 用户管理, 访问方式
+keyword: 青云, IAM , 用户管理, 访问方式
 draft: false
 weight: 40
 ---

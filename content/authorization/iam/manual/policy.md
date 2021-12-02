@@ -1,7 +1,7 @@
 ---
 title: "策略管理"
 description: 介绍 IAM 策略管理操作流程。
-keywords: 青云, IAM , 策略管理, 策略配置
+keyword: 青云, IAM , 策略管理, 策略配置
 draft: false
 weight: 33
 ---

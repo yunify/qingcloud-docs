@@ -1,7 +1,7 @@
 ---
 title: "操作日志"
 description: 介绍 IAM 操作日志模块。
-keywords: 青云, IAM , 操作日志, IAM 操作记录
+keyword: 青云, IAM , 操作日志, IAM 操作记录
 draft: false
 weight: 100
 ---

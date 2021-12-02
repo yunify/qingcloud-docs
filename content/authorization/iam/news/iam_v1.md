@@ -1,7 +1,7 @@
 ---
 title: "IAM V1.0 版发布概要"
 description: IAM V1.0 版本发布说明
-keywords: 青云, IAM , IAM V1.0, 发布说明, 版本说明
+keyword: 青云, IAM , IAM V1.0, 发布说明, 版本说明
 date: 2020-06-16
 description: 
 draft: false

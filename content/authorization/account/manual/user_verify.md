@@ -1,7 +1,7 @@
 ---
 title: "账号认证"
 description: 介绍账户认证流程。
-keywords: 青云, 账户中心, 账户认证, 认证
+keyword: 青云, 账户中心, 账户认证, 认证
 weight: 05
 draft: false
 ---
