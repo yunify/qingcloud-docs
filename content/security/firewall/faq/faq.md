@@ -3,6 +3,7 @@ title: "常见问题"
 description: test
 draft: false
 weight: 1
+keyword: 青云, QingCloud, 云计算, 云防火墙常见问题
 ---
 
 1. ### 云防火墙各个版本的区别？

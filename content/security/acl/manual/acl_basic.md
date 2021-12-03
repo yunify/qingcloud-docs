@@ -4,6 +4,7 @@ description: manual
 draft: false
 weight: 50
 draft: false
+keyword: 青云, QingCloud, 云计算, 安全策略, 基础网络安全策略
 ---
 
 网络访问控制下还支持用户修改基础网络安全策略，用户可以通过基础网络安全策略定义青云 QingCloud 环境内的您的基础网络是否开放给其他用户。
