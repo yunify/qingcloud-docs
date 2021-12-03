@@ -1,15 +1,7 @@
 ---
 title: "删除集群"
 description: 本小节主要介绍如何删除 Kafka 集群。 
-<<<<<<< HEAD
 keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,删除集群
-=======
-<<<<<<< HEAD
-keyword: Kafka 删除集群
-=======
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,删除集群
->>>>>>> 260d2251 (etcd,kafka,rabbitmq,rocketmq *:SEO)
->>>>>>> fec76348c596bf37366547a19a95b34667f9c31e
 weight: 50
 collapsible: false
 draft: false

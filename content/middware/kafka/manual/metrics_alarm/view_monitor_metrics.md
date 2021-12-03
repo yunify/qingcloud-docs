@@ -1,15 +1,7 @@
 ---
 title: "查看资源和服务监控"
 description: 本小节主要介绍 Kafka 主要支持哪些监控指标。 
-<<<<<<< HEAD
 keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka 监控指标,Kafka,资源监控,服务监控
-=======
-<<<<<<< HEAD
-keyword: Kafka 监控指标
-=======
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka 监控指标,Kafka,资源监控,服务监控
->>>>>>> 260d2251 (etcd,kafka,rabbitmq,rocketmq *:SEO)
->>>>>>> fec76348c596bf37366547a19a95b34667f9c31e
 weight: 40
 collapsible: false
 draft: false
