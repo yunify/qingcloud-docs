@@ -10,7 +10,7 @@ keyword: 青云，硬盘
 
 ##  操作场景
 
-您可以在购买云服务器时同时购买硬盘，也可单独购买硬盘。
+青云QingCloud 支持用户在购买云服务器的同时购买硬盘，也可单独购买硬盘。
 
 本章节旨在指导用户单独购买硬盘。
 
@@ -19,12 +19,10 @@ keyword: 青云，硬盘
 1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **存储服务** > **云硬盘**，进入**硬盘**页面。
-
-   <img src="../_images/disk_page.png" alt="硬盘" style="zoom:50%;" />
+   ![create_disk_1](/storage/disk/_images/create_disk_1.png)
 
 3. 单击**创建**，弹出**创建硬盘**窗口。
-
-   <img src="../_images/create_disk.png" alt="创建硬盘" style="zoom:50%;" />
+   ![create_disk_2](/storage/disk/_images/create_disk_2.png)
 
 4. 根据界面提示，配置硬盘基本信息。各项参数说明如下：
 

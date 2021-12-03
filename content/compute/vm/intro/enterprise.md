@@ -3,7 +3,6 @@ title: "企业级云服务器"
 date: 2020-01-30T00:40:25+09:00
 description: Test description
 draft: false
-enableToc: false
 weight: 15
 keyword: 云服务器, QingCloud, 实例, 虚拟机
 ---
@@ -97,9 +96,9 @@ keyword: 云服务器, QingCloud, 实例, 虚拟机
 | er3.6xlarge.r8 | 24核 | 192G | 9Gbps    | 400万         | 91μs |
 | er3.8xlarge.r8 | 32核 | 256G | 13Gbps   | 400万         | 91μs |
 
-## 网络增强计算型 ec3ne
+## RDMA网络增强计算型 ec3ne
 
-独享 CPU 模式，采用第三代英特尔®至强®可扩展处理器（Ice Lake），和上一代相比综合性能大幅提升，网络优化实例，尤其适合网络包收发场景如NFV/SD-WAN、直播、游戏等，和数据分析、批量计算、视频编码等计算密集型应用程序
+独享 CPU 模式，采用第三代英特尔®至强®可扩展处理器（Ice Lake），和上一代相比综合性能大幅提升，网络优化实例，尤其适合网络包收发场景如NFV/SD-WAN、直播、游戏等，和数据分析、批量计算、视频编码等计算密集型应用程序。
 
 特点：
 
@@ -133,7 +132,7 @@ keyword: 云服务器, QingCloud, 实例, 虚拟机
 | ec3ne.6xlarge.r2 | 24核 | 48G  | 9Gbps    | 1200万        | 50μs |
 | ec3ne.8xlarge.r2 | 32核 | 64G  | 13Gbps   | 2400万        | 50μs |
 
-## 网络增强通用型 eg3ne 
+## RDMA网络增强通用型 eg3ne 
 
 独享 CPU 模式，采用第三代英特尔®至强®可扩展处理器（Ice Lake），和上一代相比综合性能大幅提升，网络优化实例，尤其适合网络包收发场景如NFV/SD-WAN、直播、游戏等，和企业网站和Web服务器、企业级应用、中小型数据库及缓存服务器等。
 
@@ -164,7 +163,7 @@ keyword: 云服务器, QingCloud, 实例, 虚拟机
 | eg3ne.16xlarge.r4 | 64核 | 256G | 25Gbps   | 2400万        | 50μs |
 | eg3ne.24xlarge.r4 | 96核 | 384G | 30Gbps   | 2400万        | 50μs |
 
-## 网络增强内存型 er3ne 
+## RDMA网络增强内存型 er3ne 
 
 独享 CPU 模式，采用第三代英特尔®至强®可扩展处理器（Ice Lake），和上一代相比综合性能大幅提升，网络优化实例，尤其适合网络包收发场景如NFV/SD-WAN、直播、游戏等，和缓存及大数据分析等高内存需求场景。
 

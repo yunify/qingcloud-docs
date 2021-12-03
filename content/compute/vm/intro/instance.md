@@ -3,7 +3,6 @@ title: "云服务器"
 date: 2020-01-30T00:40:25+09:00
 description: Test description
 draft: false
-enableToc: false
 weight: 1
 keyword: 云服务器, QingCloud, 实例, 虚拟机
 ---
@@ -28,11 +27,11 @@ keyword: 云服务器, QingCloud, 实例, 虚拟机
 
 - ### [内存型 er3](../../intro/enterprise/#内存型-er3)
 
-- ### [网络增强计算型 ec3ne](../../intro/enterprise/#网络增强计算型-ec3ne)
+- ### [RDMA网络增强计算型 ec3ne](../../intro/enterprise/#网络增强计算型-ec3ne)
 
-- ### [网络增强通用型 eg3ne](../../intro/enterprise/#网络增强通用型-eg3ne)
+- ### [RDMA网络增强通用型 eg3ne](../../intro/enterprise/#网络增强通用型-eg3ne)
 
-- ### [网络增强内存型 er3ne](../../intro/enterprise/#网络增强内存型-er3ne)
+- ### [RDMA网络增强内存型 er3ne](../../intro/enterprise/#网络增强内存型-er3ne)
 
 - ### [通用型 e2](../../intro/enterprise/#通用型-e2)
 
@@ -45,6 +44,10 @@ keyword: 云服务器, QingCloud, 实例, 虚拟机
 ## 专业级
 
 - ### [GPU云服务器 g2](../../intro/professional/#gpu云服务器-g2)
+
+- ### [GPU云服务器 g3](../../intro/professional/#gpu云服务器-g3)
+
+- ### [弹性裸金属云服务器 bm3](../../intro/professional/#弹性裸金属云服务器-bm3)
 
 
 ## 其他类型

@@ -3,7 +3,6 @@ title: "resolv 文件的 DNS 被重置怎么办？"
 description: Test description
 weight: 40
 draft: false
-enableToc: false
 ---
 
 ## 概述

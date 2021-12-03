@@ -53,12 +53,12 @@ weight: 50
 第四步：创建边界路由器。
 
 
-WEB 控制台，在顶部的导航栏里搜索**边界路由器**，进入详情页面后，点击**创建**即可创建边界路由器。详细操作可参考[边界路由器操作指南](../../../../../network/border_router/manual/border_user_guide)。
+WEB 控制台，在顶部的导航栏里搜索**边界路由器**，进入详情页面后，点击**创建**即可创建边界路由器。详细操作可参考[边界路由器操作指南](/network/border_router/manual/border_user_guide)。
 
 第五步：将边界路由器绑定 VPC 网络。
 
 
-创建 VPC 网络， 点击创建好的边界路由器进入边界路由器详情页，然后点击**绑定 VPC 网络**， 选择创建好的 VPC ，点击 **提交**将内网路由和 VPC 绑定，同时将 VPC 绑定一个公网IP。公网IP的详细文档参考[公网IP](../../../../../network/eip)。
+创建 VPC 网络， 点击创建好的边界路由器进入边界路由器详情页，然后点击**绑定 VPC 网络**， 选择创建好的 VPC ，点击 **提交**将内网路由和 VPC 绑定，同时将 VPC 绑定一个公网IP。公网IP的详细文档参考[公网IP](/network/eip)。
 
 ![](../../_images/intranet_router_vpc_detail.jpg)
 

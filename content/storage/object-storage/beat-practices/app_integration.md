@@ -297,7 +297,7 @@ QingStor 对象存储提供了一个签名服务器的 [样例](https://github.c
 
 若用户需自己开发签名服务，需要注意：
 
-- 签名服务需要考虑 [JavaScript 客户端的特例](/storage/object-storage/api/signature/)
+- 签名服务需要考虑 [JavaScript 客户端的特例](/storage/object-storage/api/practices/signature/#针对-javascript-客户端的特殊考虑)
 
 - 签名服务需要把计算签名时所有的时间戳，返回给客户端，客户端根据这个时间戳设置 `Date` 头字段（一般客户端）或 `x-qs-date` 头字段（JavaScript客户端）
 

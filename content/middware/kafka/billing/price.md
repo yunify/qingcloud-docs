@@ -1,20 +1,21 @@
 ---
 title: "计费说明"
+date: 2021-11-01T00:40:25+09:00
 description:
 draft: false
 ---
 
 ## 费用说明
 
-Kafka创建页面上的**费用预览**计费仅包括集群基础资源（CPU、RAM、磁盘）费用，集群创建完成之后绑定的公网 IP 资源、VPC网络资源等费用将会另外计算。使用Kafka时用户扩容后的资源费用也将另外计算。Kafka基础资源费用的计算周期以Kafka集群创建时间为起点，以Kafka集群销毁时间为终点。
+Kafka 创建页面上的**费用预览**计费仅包括集群基础资源（CPU、RAM、磁盘）费用，集群创建完成之后绑定的公网 IP 资源、VPC 网络资源等费用将会另外计算。使用 Kafka 时用户扩容后的资源费用也将另外计算。Kafka 基础资源费用的计算周期以 Kafka 集群创建时间为起点，以 Kafka 集群销毁时间为终点。
 
-除了支持弹性计费，Kafka也支持包年、包月等[合约方式](https://docsv3.qingcloud.com/billing/intro/billing_zhinan/)。
+除了支持弹性计费，Kafka 也支持包年、包月等[合约方式](/services/bill_center/bill_guide/reserved/)。
 
 ## 价格影响因素
 
 ### 磁盘类型
 
-不同的磁盘类型对应着不同的性能，会有相应的价格，详情请参考[磁盘价格文档](https://docsv3.qingcloud.com/storage/disk/billing/price/)。
+不同的磁盘类型对应着不同的性能，会有相应的价格，详情请参考[磁盘价格文档](/storage/disk/billing/price/)。
 
 | 磁盘类型  |                             指标                             |                  备注                  |
 | :-------: | :----------------------------------------------------------: | :------------------------------------: |

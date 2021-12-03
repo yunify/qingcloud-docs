@@ -4,7 +4,7 @@ linkTitle: "节点管理"
 date: 2021-10-15T10:08:56+09:00
 description:
 draft: false
-weight: 2
+weight: 5
 ---
 
 HPC 集群由多种类型的节点组成，包括：管控节点，计算节点，登录节点，所有的节点组成了集群

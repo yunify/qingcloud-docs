@@ -55,18 +55,25 @@ weight: 14
   <tr>
   	<td>上海</td>
     <td>
-      <li><a  href="https://yunify-qingcloud-docs.pek3b.qingstor.com/docs/2.%E6%89%BF%E8%AF%BA%E4%B9%A6-%E4%B8%8A%E6%B5%B7%E5%B8%82%E4%BA%92%E8%81%94%E7%BD%91%E4%BF%A1%E6%81%AF%E6%9C%8D%E5%8A%A1%E5%A4%87%E6%A1%88%E6%89%BF%E8%AF%BA%E4%B9%A6%EF%BC%882021%E7%89%88%EF%BC%89.docx">上海市互联网信息服务备案承诺书（2021版）</a></li>
-      <li><a  href="https://yunify-qingcloud-docs.pek3b.qingstor.com/docs/%E4%B8%8A%E6%B5%B7%E4%B8%8D%E6%B6%89%E5%8F%8A%E6%96%87%E5%8C%96%E6%83%85%E5%86%B5%E8%AF%B4%E6%98%8E%E4%B9%A6.docx">上海不涉及文化情况说明书</a></li>
+      <a  href="https://yunify-qingcloud-docs.pek3b.qingstor.com/docs/%E4%B8%8A%E6%B5%B7%E4%B8%8D%E6%B6%89%E5%8F%8A%E6%96%87%E5%8C%96%E6%83%85%E5%86%B5%E8%AF%B4%E6%98%8E%E4%B9%A6.docx">上海不涉及文化情况说明书</a>
     </td>
   </tr>
   <tr>
   	<td>四川</td>
   	<td><a  href="https://yunify-qingcloud-docs.pek3b.qingstor.com/docs/%E5%9B%9B%E5%B7%9D%E6%B6%89%E5%8F%8A%E9%87%91%E8%9E%8D%E7%B1%BB%E6%83%85%E5%86%B5%E8%AF%B4%E6%98%8E%E4%B9%A6%E6%A8%A1%E6%9D%BF.docx">四川涉及金融类情况说明书</a></td>
   </tr>
+  <tr>
+    <td>广东</td>
+    <td>
+      <li><a  href="https://yunify-qingcloud-docs.pek3b.qingstor.com/docs/%E5%A4%87%E6%A1%88%E8%80%85%E6%89%BF%E8%AF%BA%E4%B9%A6%E6%A8%A1%E7%89%88-%EF%BC%88%E4%B8%AA%E4%BA%BA%EF%BC%89.docx">广东省互联网信息服务备案承诺书（个人）</a></li>
+      <li><a  href="https://yunify-qingcloud-docs.pek3b.qingstor.com/docs/%E5%A4%87%E6%A1%88%E8%80%85%E6%89%BF%E8%AF%BA%E4%B9%A6%E6%A8%A1%E7%89%88-%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%89%20.docx">广东省互联网信息服务备案承诺书（单位）</a></li>
+    </td>
+  </tr>
 </table>
 
 
 
+<!--<li><a  href="https://yunify-qingcloud-docs.pek3b.qingstor.com/docs/2.%E6%89%BF%E8%AF%BA%E4%B9%A6-%E4%B8%8A%E6%B5%B7%E5%B8%82%E4%BA%92%E8%81%94%E7%BD%91%E4%BF%A1%E6%81%AF%E6%9C%8D%E5%8A%A1%E5%A4%87%E6%A1%88%E6%89%BF%E8%AF%BA%E4%B9%A6%EF%BC%882021%E7%89%88%EF%BC%89.docx">上海市互联网信息服务备案承诺书（2021版）</a></li>-->
 
 ## 营业执照
 
@@ -88,9 +95,15 @@ weight: 14
 
 ## 承诺书
 
-承诺书填写说明模板请参考图片：
+根据地方要求仅广东省所在区域需要填写以下互联网信息备案承诺书，其他省市备案系统会自动生成对应区域的备案承诺书。承诺书填写说明模板请参考以下图片:
 
-![](../../_images/commitment.png)
+- 个人
+
+  <img src="../../_images/person.png" style="zoom:80%;" /> 
+
+- 单位
+
+  <img src="../../_images/group.png" style="zoom:80%;" /> 
 
 ## 网站建设方案书
 

@@ -18,11 +18,11 @@ qsctl 是 QingStor 对象存储提供的客户端高级命令行工具，用于�
 ### 下载安装
 1. 直接[点击此处](https://releases.qingstor.dev/#qsctl)，根据客户端操作系统版本，下载相应安装包。当前 qsctl 最新版本为 v2.4.3，若无特殊要求，建议下载最新版本。
 
- ![](../_images/qsctl_install1.png)
+ ![](/storage/object-storage/_images/qsctl_install1.png)
 
 2. 本地解压安装包后，即可运行：
 
- ![](../_images/qsctl_install2.png)
+ ![](/storage/object-storage/_images/qsctl_install2.png)
 
 ### 修改配置
 
@@ -248,8 +248,8 @@ qsctl ls qs://mybucket -R
    - `-R` 参数用于递归地显示文件夹及其子文件夹下的对象。
    - 若不指定`-R` 参数，Bucket 若有文件夹时，则仅显示文件夹名，不显示文件夹内的文件。
    - 输出内容如下所示：
-   ![](../_images/qsctl_ls1.png)
-   ![](../_images/qsctl_ls2.png)
+   ![](/storage/object-storage/_images/qsctl_ls1.png)
+   ![](/storage/object-storage/_images/qsctl_ls2.png)
 
 
 3. 以列出指定 Bucket `mybucket` 下所有对象的详细信息:
@@ -261,7 +261,7 @@ qsctl ls qs://mybucket -lRh
    - `-l` 参数用于显示文件的详细信息。
    - `-h` 参数用于转换文件的大小。
    - 输出内容如下所示：
-   ![](../_images/qsctl_ls3.png)
+   ![](/storage/object-storage/_images/qsctl_ls3.png)
 
 ### 移动文件
 
@@ -274,7 +274,7 @@ qsctl ls qs://mybucket -lRh
 qsctl stat qs://mybucket
 ```
  **输出结果：**
- ![](../_images/qsctl_stat1.png)
+ ![](/storage/object-storage/_images/qsctl_stat1.png)
 
 
 2. 查看指定 QingStor 对象信息:
@@ -282,7 +282,7 @@ qsctl stat qs://mybucket
 qsctl stat qs://mybucket/dir/to/test
 ```
  **输出结果：**
- ![](../_images/qsctl_stat2.png)
+ ![](/storage/object-storage/_images/qsctl_stat2.png)
 
 
 3. 查看指定 QingStor 对象信息，并自定义格式输出:
@@ -290,7 +290,7 @@ qsctl stat qs://mybucket/dir/to/test
 qsctl stat qs://mybucket/dir/to/test --format="name:%n, size:%s"
 ```
  **输出结果：**
- ![](../_images/qsctl_stat3.png)
+ ![](/storage/object-storage/_images/qsctl_stat3.png)
 
  **说明：**`format` 参数用于传入格式化输出字符串。其中可用的有:
   - `%F` (文件类型)
@@ -340,7 +340,7 @@ qsctl shell
 
 2. 命令行界面如下下图所示：
 
- ![](../_images/qsctl_shell1.png)
+ ![](/storage/object-storage/_images/qsctl_shell1.png)
 
 3. 根据提示，进行相关操作即可。在命令行中，QingStor 对象存储新增了对历史命令和自动补全的支持。详细说明如下：
   - 在行开头可以自动提示补全可用命令；

@@ -36,4 +36,4 @@ goofys --endpoint https://s3.<zone>.qingstor.com <bucket_name> <mount_point>
 
 5. `df -Th` 查看结果
 
-![image-20210523151936393](../_images/linux_uses_object_storage_as_a_local_disk.assets/image-20210523151936393.png)
+![image-20210523151936393](/storage/object-storage/_images/linux_uses_object_storage_as_a_local_disk.png)
