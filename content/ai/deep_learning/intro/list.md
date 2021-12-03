@@ -1,7 +1,7 @@
 ---
 title: "产品系列"
 description: 本小节主要介绍 Deep Learning 产品系列。 
-keyword: Deep Learning 产品系列和版本规格 
+keyword: 人工智能，深度学习，Deep Learning，产品系列，入门版，基础版，企业版
 weight: 20
 collapsible: false
 draft: false

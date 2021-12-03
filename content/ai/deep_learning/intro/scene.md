@@ -1,7 +1,7 @@
 ---
 title: "应用场景"
 description: 本小节主要介绍深度学习平台的应用场景。 
-keyword: Deep Learnling 应用场景 
+keyword: 人工智能，深度学习，Deep Learning，应用场景
 weight: 35
 collapsible: false
 draft: false

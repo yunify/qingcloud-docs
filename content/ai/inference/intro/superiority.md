@@ -1,8 +1,8 @@
 ---
 title: "产品优势"
 description: 本小节主要介绍推理引擎的优势。 
-keyword: Deep Learnling 产品优势 
-weight: 30
+keyword: 人工智能，推理引擎，Inference Engine，产品优势
+weight: 20
 collapsible: false
 draft: false
 ---

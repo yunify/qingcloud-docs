@@ -1,7 +1,9 @@
 ---
 title: "Deep Learning 性能测试"
-description: test
+description: 本小节主要介绍 Deep Learning 性能测试
+keyword: 人工智能，深度学习，Deep Learning，性能白皮书，性能测试
 weight: 40
+collapsible: false
 draft: false
 ---
 
