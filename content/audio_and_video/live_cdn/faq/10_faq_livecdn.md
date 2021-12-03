@@ -1,5 +1,7 @@
 ---
 title: "常见问题"
+keyword: 云计算, 青云, QingCloud, 常见问题, CNAME, 视频直播
+description: 本章节介绍视频直播相关的问题。
 draft: false
 collapsible: false
 weight: 10

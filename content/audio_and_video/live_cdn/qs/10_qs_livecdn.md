@@ -1,5 +1,7 @@
 ---
 title: "入门指引"
+keyword: 云计算, 青云, QingCloud, 视频直播, 快速入门
+description: 本章节介绍如何快速使用视频直播服务。
 draft: false
 collapsible: false
 weight: 10

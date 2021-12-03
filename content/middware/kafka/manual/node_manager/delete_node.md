@@ -1,7 +1,15 @@
 ---
 title: "删除节点"
 description: 本小节主要介绍如何删除 Kafka 节点。 
+<<<<<<< HEAD
 keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka 节点删除,删除节点,Kafka
+=======
+<<<<<<< HEAD
+keyword: Kafka 节点删除；删除节点
+=======
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka 节点删除,删除节点,Kafka
+>>>>>>> 260d2251 (etcd,kafka,rabbitmq,rocketmq *:SEO)
+>>>>>>> fec76348c596bf37366547a19a95b34667f9c31e
 weight: 15
 collapsible: false
 draft: false

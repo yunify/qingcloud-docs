@@ -1,7 +1,8 @@
 ---
 title: "申请光盒"
 linkTitle: "申请光盒"
-description:
+keyword: 云计算, 青云, QingCloud,SD-WAN,申请光盒
+description: 本章节介绍如何申请光盒。
 draft: false
 weight: 1
 ---

@@ -6,6 +6,15 @@ _build:
 weight: 4
 collapsible: true
 icon: "/images/icons/product-icon-AppCenter.svg"
+
+section1:
+  children:
+    - title: 云市场
+      url: "/appcenter/market/intro/10_introduction/"
+
+    - title: 应用开发平台
+      url: "/appcenter/dev-platform/introduction/introduction/"
+
 ---
 
 <!--

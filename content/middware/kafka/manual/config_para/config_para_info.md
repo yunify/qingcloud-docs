@@ -1,7 +1,15 @@
 ---
 title: "参数介绍"
 description: 本小节主要介绍 Kafka 常用配置项。 
+<<<<<<< HEAD
 keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka 常用配置项,Kafka,参数含义
+=======
+<<<<<<< HEAD
+keyword: Kafka 常用配置项；
+=======
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka 常用配置项,Kafka,参数含义
+>>>>>>> 260d2251 (etcd,kafka,rabbitmq,rocketmq *:SEO)
+>>>>>>> fec76348c596bf37366547a19a95b34667f9c31e
 weight: 10
 collapsible: false
 draft: false

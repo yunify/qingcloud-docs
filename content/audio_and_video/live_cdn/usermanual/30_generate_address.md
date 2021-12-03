@@ -1,5 +1,7 @@
 ---
 title: "生成流地址"
+keyword: 云计算, 青云, QingCloud, 视频直播, 生成流地址
+description: 本章节介绍如何生成流地址。
 draft: false
 collapsible: false
 weight: 30
