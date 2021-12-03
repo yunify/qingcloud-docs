@@ -1,5 +1,7 @@
 ---
 title: "基本概念"
+keyword: 云计算, 青云, QingCloud, 视频直播, 推流, 播流, CNAME
+description: 本章节介绍视频直播相关的基本概念。
 draft: false
 collapsible: false
 weight: 50

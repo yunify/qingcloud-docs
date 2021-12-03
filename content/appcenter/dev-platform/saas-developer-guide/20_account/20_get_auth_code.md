@@ -19,11 +19,12 @@ GET
 
 ### 请求参数
 
-| Parameter     | Type   | Description | Required | 说明                                   |
-| ------------- | ------ | ----------- | -------- | -------------------------------------- |
-| response_type | string | 授权类型    | Yes      | 固定值：code                           |
-| client_id     | string | 客户端 ID   | Yes      | 与 app id 相同                         |
-| State         | string | 状态        | No       | 可以指定任意值，认证服务器会返回这个值 |
+| Parameter     | Type   | Description          | Required | 说明                                   |
+| ------------- | ------ | -------------------- | -------- | -------------------------------------- |
+| response_type | string | 授权类型             | Yes      | 固定值：code                           |
+| client_id     | string | 客户端 ID            | Yes      | 与 app id 相同                         |
+| state         | string | 状态                 | No       | 可以指定任意值，认证服务器会返回这个值 |
+| redirect_url  | string | 登录成功后跳转的连接 | Yes      | -                                      |
 
 ### 示例说明
 

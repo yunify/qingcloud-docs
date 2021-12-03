@@ -1,7 +1,8 @@
 ---
 title: "基于光盒目录添加内网路由策略"
 linkTitle: "基于光盒目录添加内网路由策略"
-description:
+keyword: 云计算, 青云, QingCloud,SD-WAN,光盒,内网路由策略
+description: 本章节介绍基于光盒目录添加内网路由策略。
 draft: false
 weight: 60
 ---
