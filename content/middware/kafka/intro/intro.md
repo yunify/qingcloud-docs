@@ -1,11 +1,9 @@
 ---
-title: "什么是Kafka"
-date: 2021-11-01T00:40:25+09:00
-description: 
+title: "什么是 Kafka"
+description: 本小节主要介绍什么是 Kafka。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,产品简介
 weight: 10
 draft: false
-enableToc: false
-keyword: 
 ---
 
 [Kafka](http://kafka.apache.org/) 是一种高吞吐量、低延迟、高可靠的分布式发布订阅消息系统。被广泛应用于网站活动追踪、日志监控、流式计算、事件采集、数据存储等应用场景。

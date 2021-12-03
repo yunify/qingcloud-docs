@@ -1,8 +1,9 @@
 ---
 title: "计费说明"
+description: 本小节主要介绍 etcd 计费说明。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,etcd,价格,计费,费用
 draft: false
 enableToc: false
-keyword: 价格，计费
 weight: 10
 ---
 
