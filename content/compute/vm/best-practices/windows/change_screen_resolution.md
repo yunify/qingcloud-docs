@@ -3,7 +3,6 @@ title: "调整屏幕分辨率"
 description: Test description
 weight: 10
 draft: false
-enableToc: false
 ---
 
 ## 1.通过 vnc (Web 终端)或者远程桌面连接 Windows 云服务器
