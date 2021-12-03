@@ -1,5 +1,7 @@
 ---
 title: "功能特性"
+keyword: 云计算, 青云, QingCloud, 视频直播, 推流协议, 播流协议, 直播监控
+description: 本章节介绍视频直播相关的功能。
 draft: false
 collapsible: false
 weight: 20

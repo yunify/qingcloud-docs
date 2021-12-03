@@ -1,5 +1,7 @@
 ---
 title: "应用管理"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,应用管理
+description: 本章节介绍应用管理的作用，获取 APP ID, App 证书和临时 Token等，便于开启 RTC 服务。
 draft: false
 collapsible: false
 weight: 20

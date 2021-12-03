@@ -1,5 +1,7 @@
 ---
 title: "概述"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,API 概述
+description: 本章节介绍实时音视频 RTC 的 API 概述。
 draft: false
 collapsible: false
 weight: 10

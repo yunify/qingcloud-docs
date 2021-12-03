@@ -1,5 +1,7 @@
 ---
 title: "什么是视频直播"
+keyword: 云计算, 青云, QingCloud, 视频直播, 视频采集, 视频处理, 视频分发
+description: 本章节介绍什么是视频直播。
 draft: false
 collapsible: false
 weight: 10
