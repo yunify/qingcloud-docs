@@ -8,6 +8,7 @@ $(function () {
       if (time_line.length > 0) {
         var result = "<ul>";
         time_line.each(function (index) {
+          $(this).attr("id", `timeline-outer${index}`);
           var time_p = $(this).find("p");
           $(this).attr("id", `timeline-outer${index}`);
           const time = timeStamp2String(time_p[0]?.innerHTML);
