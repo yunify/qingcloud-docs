@@ -1,7 +1,7 @@
 ---
 title: "数据重分布"
 description: 本小节主要介绍如存储节点数据重分布。 
-keywords: RadonDB 数据重分布
+keyword: RadonDB 数据重分布
 weight: 25
 collapsible: false
 draft: false

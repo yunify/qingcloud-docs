@@ -1,7 +1,7 @@
 ---
 title: "DescribeClusterEnvironment"
 description: 本小节主要介绍 MySQL Plus 获取节点环境变量接口。 
-keywords: mysql plus 获取节点环境变量
+keyword: mysql plus 获取节点环境变量
 weight: 122
 collapsible: false
 draft: false

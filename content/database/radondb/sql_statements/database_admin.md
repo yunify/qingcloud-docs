@@ -1,7 +1,7 @@
 ---
 title: "Database Administration"
 description: 本小节主要介绍 RadonDB 支持的 Database Administration 语法。 
-keywords: radondb SQL 集,
+keyword: radondb SQL 集,
 weight: 30
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "查看集群信息"
 description: 本小节主要介绍如何查看 MySQL Plus 集群信息。 
-keywords: mysql plus 集群信息
+keyword: mysql plus 集群信息
 weight: 10
 collapsible: false
 draft: false

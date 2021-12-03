@@ -1,7 +1,7 @@
 ---
 title: "连接数据库"
 description: 本小节主要介绍如何快速访问 ChronusDB 数据库。 
-keywords: ChronusDB 实例, 访问数据库
+keyword: ChronusDB 实例, 访问数据库
 weight: 10
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "共享备份"
 description: 本小节主要如何共享 MongoDB Cluster 数据备份。 
-keywords: MongoDB Cluster 共享备份；
+keyword: MongoDB Cluster 共享备份；
 weight: 80
 collapsible: false
 draft: false

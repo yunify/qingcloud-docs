@@ -1,7 +1,7 @@
 ---
 title: "计费说明"
 description: 本小节主要介绍 MongoDB Cluster 计费说明。 
-keywords: MongoDB Cluster 计费说明, 
+keyword: MongoDB Cluster 计费说明, 
 weight: 10
 collapsible: false
 draft: false

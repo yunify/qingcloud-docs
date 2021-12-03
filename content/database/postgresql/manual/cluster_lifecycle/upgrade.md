@@ -1,7 +1,7 @@
 ---
 title: "版本升级"
 description: 本小节主要介绍如何升级 PostgreSQL 集群。 
-keywords: PostgreSQL 升级集群；
+keyword: PostgreSQL 升级集群；
 weight: 15
 collapsible: false
 draft: false

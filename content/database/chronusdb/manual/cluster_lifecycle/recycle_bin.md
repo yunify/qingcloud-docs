@@ -1,7 +1,7 @@
 ---
 title: "回收站"
 description: 本小节主要介绍如何恢复已删除的 ChronusDB 集群。 
-keywords: ChronusDB 恢复集群
+keyword: ChronusDB 恢复集群
 weight: 100
 collapsible: false
 draft: false

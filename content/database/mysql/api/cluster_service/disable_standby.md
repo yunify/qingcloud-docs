@@ -1,7 +1,7 @@
 ---
 title: "stop_standby"
 description: 本小节主要介绍 MySQL Plus 关闭灾备接口。 
-keywords: mysql plus 关闭灾备,stop_standby
+keyword: mysql plus 关闭灾备,stop_standby
 weight: 41
 collapsible: false
 draft: false

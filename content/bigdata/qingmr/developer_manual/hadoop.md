@@ -1,7 +1,7 @@
 ---
 title: "Hadoop 使用指南 "
 description: 本小节主要介绍 Hadoop 使用指南。 
-keywords: qingmr Hadoop,
+keyword: qingmr Hadoop,
 weight: 20
 collapsible: false
 draft: false

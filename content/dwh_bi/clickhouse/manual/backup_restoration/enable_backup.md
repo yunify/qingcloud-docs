@@ -1,7 +1,7 @@
 ---
 title: "创建备份"
 description: 本小节主要如何创建 ClickHouse 数据备份。 
-keywords: ClickHouse 数据备份；
+keyword: ClickHouse 数据备份；
 weight: 10
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "Flink on Zeppelin"
 description: 本小节主要介绍如何在 Zeppelin 上使用 Flink。 
-keywords: qingmr 在 Zeppelin 上使用 Flink
+keyword: qingmr 在 Zeppelin 上使用 Flink
 weight: 20
 collapsible: false
 draft: true

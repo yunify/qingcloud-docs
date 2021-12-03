@@ -1,7 +1,7 @@
 ---
 title: "SSL 传输加密"
 description: 本小节主要介绍如何管理 SSL 传输加密。 
-keywords: mysql plus 传输加密
+keyword: mysql plus 传输加密
 weight: 21
 collapsible: false
 draft: false

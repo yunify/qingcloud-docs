@@ -1,7 +1,7 @@
 ---
 title: "产品版本"
 description: 本小节主要介绍 MongoDB Cluster 主要版本。 
-keywords: MongoDB Cluster 版本介绍， 
+keyword: MongoDB Cluster 版本介绍， 
 weight: 40
 collapsible: false
 draft: false

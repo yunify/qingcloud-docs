@@ -1,7 +1,7 @@
 ---
 title: "开启自动备份"
 description: 本小节主要如何开启 ZooKeeper 数据自动备份。 
-keywords: ZooKeeper 数据自动备份；
+keyword: ZooKeeper 数据自动备份；
 weight: 20
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "产品咨询"
 description: 本小节主要介绍 MongoDB Cluster 分片节点问题。 
-keywords: MongoDB Cluster 分片，分片节点，Shard
+keyword: MongoDB Cluster 分片，分片节点，Shard
 weight: 10
 collapsible: false
 draft: false

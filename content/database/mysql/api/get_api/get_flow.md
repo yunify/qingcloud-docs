@@ -1,7 +1,7 @@
 ---
 title: "调用流程"
 description: 本小节主要介绍 API 调用流程。 
-keywords: mysql plus API 调用流程；调用流程
+keyword: mysql plus API 调用流程；调用流程
 draft: true
 weight: 05
 collapsible: false

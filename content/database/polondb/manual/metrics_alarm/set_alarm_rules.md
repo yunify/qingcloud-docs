@@ -1,7 +1,7 @@
 ---
 title: "设置监控告警"
 description: 本小节主要介绍如何设置 PolonDB 资源监控告警。 
-keywords: PolonDB 监控告警
+keyword: PolonDB 监控告警
 weight: 20
 collapsible: false
 draft: false

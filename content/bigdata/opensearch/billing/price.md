@@ -1,7 +1,7 @@
 ---
 title: "计费说明"
 description: 本小节主要介绍 QingCloud ELK 计费说明。 
-keywords: ELK 计费说明, 
+keyword: ELK 计费说明, 
 weight: 10
 collapsible: false
 draft: false

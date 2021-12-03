@@ -1,7 +1,7 @@
 ---
 title: "标签"
 description: 本小节主要介绍青立方® 超融合易捷版标签。 
-keywords: 青立方® 超融合易捷版，标签
+keyword: 青立方® 超融合易捷版，标签
 weight: 50
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "查看硬盘信息"
 description: 本小节主要介绍青立方® 超融合易捷版 查看硬盘信息。 
-keywords: 青立方® 超融合易捷版，查看硬盘信息
+keyword: 青立方® 超融合易捷版，查看硬盘信息
 weight: 35
 collapsible: false
 draft: false

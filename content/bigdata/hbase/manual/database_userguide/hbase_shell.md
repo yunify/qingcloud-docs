@@ -1,7 +1,7 @@
 ---
 title: "HBase Shell 基本操作"
 description: 本小节主要介绍HBase Shell 基本操作使用指南。 
-keywords: HBase shell,
+keyword: HBase shell,
 weight: 15
 collapsible: false
 draft: false

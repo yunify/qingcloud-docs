@@ -1,7 +1,7 @@
 ---
 title: "新增节点"
 description: 本小节主要介绍如何新增 Kafka 集群节点。 
-keywords: kafaka 节点添加；新增节点
+keyword: kafaka 节点添加；新增节点
 weight: 10
 collapsible: false
 draft: false

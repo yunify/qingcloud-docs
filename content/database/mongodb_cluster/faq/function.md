@@ -1,7 +1,7 @@
 ---
 title: "功能咨询"
 description: 本小节主要介绍 MongoDB Shareded 连接常见问题。 
-keywords: MongoDB Shareded 连接问题
+keyword: MongoDB Shareded 连接问题
 weight: 15
 collapsible: false
 draft: false

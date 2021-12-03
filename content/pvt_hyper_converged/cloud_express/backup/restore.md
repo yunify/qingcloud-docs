@@ -1,7 +1,7 @@
 ---
 title: "基于备份创建资源"
 description: 本小节主要介绍青立方® 超融合易捷版基于备份创建资源。 
-keywords: 青立方® 超融合易捷版基于备份创建资源
+keyword: 青立方® 超融合易捷版基于备份创建资源
 weight: 20
 collapsible: false
 draft: false

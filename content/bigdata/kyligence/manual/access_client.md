@@ -1,7 +1,7 @@
 ---
 title: "连接集群"
 description: 本小节主要介绍如何连接 Kyligence。 
-keywords: Kyligence 访问,
+keyword: Kyligence 访问,
 weight: 05
 collapsible: false
 draft: false

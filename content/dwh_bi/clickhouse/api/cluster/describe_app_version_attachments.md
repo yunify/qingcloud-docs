@@ -1,7 +1,7 @@
 ---
 title: "DescribeAppVersionAttachments"
 description: 本小节主要介绍获取 ClickHouse 应用配置文件的接口。 
-keywords: ClickHouse 应用配置文件，获取应用配置文件
+keyword: ClickHouse 应用配置文件，获取应用配置文件
 weight: 12
 collapsible: false
 draft: false

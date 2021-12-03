@@ -1,7 +1,7 @@
 ---
 title: "DeleteClusterNodes"
 description: 本小节主要介绍 MySQL Plus 删除节点接口。 
-keywords: mysql plus 删除节点
+keyword: mysql plus 删除节点
 weight: 102
 collapsible: false
 draft: false

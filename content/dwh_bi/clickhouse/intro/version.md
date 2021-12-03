@@ -1,7 +1,7 @@
 ---
 title: "产品版本"
 description: 本小节主要介绍 ClickHouse 版本规格。 
-keywords: ClickHouse, QingCloud, 版本规格
+keyword: ClickHouse, QingCloud, 版本规格
 weight: 40
 collapsible: false
 draft: false

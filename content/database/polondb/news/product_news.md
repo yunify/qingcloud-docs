@@ -1,7 +1,10 @@
 ---
 title: "产品动态"
+description: 本小节主要介绍 PolonDB 产品动态
+keyword: 数据库，PolonDB，分布式数据库，PostgreSQL，产品动态
+weight: 05
 collapsible: false
-weight: 10
+draft: false
 
 product:  
     - time: 2020-06-15

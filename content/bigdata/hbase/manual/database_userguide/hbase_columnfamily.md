@@ -1,7 +1,7 @@
 ---
 title: "HBase 压缩和数据块编码"
 description: 本小节主要介绍 HBase 压缩和数据块编码指南。 
-keywords: HBase 压缩,数据库编码
+keyword: HBase 压缩,数据库编码
 weight: 25
 collapsible: false
 draft: false
