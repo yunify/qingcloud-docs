@@ -1,7 +1,7 @@
 ---
 title: "镜像概述"
 description: 本小节主要介绍青立方® 超融合易捷版 镜像。 
-keywords: 青立方® 超融合易捷版，镜像
+keyword: 青立方® 超融合易捷版，镜像
 weight: 05
 collapsible: false
 draft: false

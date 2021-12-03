@@ -1,7 +1,7 @@
 ---
 title: "下载与上传镜像"
 description: 本小节主要介绍青立方® 超融合易捷版下载与上传镜像。 
-keywords: 青立方® 超融合易捷版下载与上传镜像
+keyword: 青立方® 超融合易捷版下载与上传镜像
 weight: 35
 collapsible: false
 draft: false

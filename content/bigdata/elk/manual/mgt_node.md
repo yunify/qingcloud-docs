@@ -1,7 +1,7 @@
 ---
 title: "节点管理"
 description: 本小节主要介绍如何管理 ELK 节点。 
-keywords: ELK 在线伸缩,节点管理
+keyword: ELK 在线伸缩,节点管理
 weight: 15
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "ChangeClusterVxnet"
 description: 本小节主要介绍 ClickHouse 交换私有 IP 接口。 
-keywords: ClickHouse 交换私有 IP，交换私有 IP 接口
+keyword: ClickHouse 交换私有 IP，交换私有 IP 接口
 weight: 134
 collapsible: false
 draft: false

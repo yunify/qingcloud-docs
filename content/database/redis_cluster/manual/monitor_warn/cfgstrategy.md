@@ -3,7 +3,7 @@ title: "配置指标告警策略"
 description: 本小节介绍如何查配置指标告警。 
 weight: 5
 draft: false
-keywords: QingCloud，Redis Cluster，监控，告警，指标
+keyword: QingCloud，Redis Cluster，监控，告警，指标
 ---
 
 Redis Cluster 监控告警是通过云监控服务 CloudSat 为集群服务器的资源和服务提供监控告警管理。当绑定的监控项超过阈值时将触发告警，并通过短信、邮件等形式发送告警通知。

@@ -1,7 +1,7 @@
 ---
 title: "切换私有网络"
 description: 本小节主要介绍如何切换 ChronusDB 集群私有网络。 
-keywords: chronusdb 私有网络,
+keyword: chronusdb 私有网络,
 weight: 20
 collapsible: false
 draft: false

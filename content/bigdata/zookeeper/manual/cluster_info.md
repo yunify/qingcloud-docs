@@ -1,7 +1,7 @@
 ---
 title: "集群信息"
 description: 本小节主要介绍如何查看 QingCloud ZooKeeper 集群信息。 
-keywords: ZooKeeper 集群信息
+keyword: ZooKeeper 集群信息
 weight: 10
 collapsible: false
 draft: false

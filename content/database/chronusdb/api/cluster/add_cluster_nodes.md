@@ -1,7 +1,7 @@
 ---
 title: "AddClusterNodes"
 description: 本小节主要介绍 ChronusDB 新增节点接口。 
-keywords: ChronusDB 新增节点
+keyword: ChronusDB 新增节点
 weight: 100
 collapsible: false
 draft: false

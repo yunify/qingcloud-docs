@@ -1,7 +1,7 @@
 ---
 title: "ExchangeClusterReservedIps"
 description: 本小节主要介绍 ChronusDB 交换预留 IP 接口。 
-keywords: ChronusDB 交换预留 IP, ExchangeClusterReservedIps
+keyword: ChronusDB 交换预留 IP, ExchangeClusterReservedIps
 weight: 136
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "UpdateClusterEnvironment"
 description: 本小节主要介绍 MySQL Plus 更新节点环境变量接口。 
-keywords: mysql plus 修改节点环境变量，更新节点环境变量
+keyword: mysql plus 修改节点环境变量，更新节点环境变量
 weight: 120
 collapsible: false
 draft: false

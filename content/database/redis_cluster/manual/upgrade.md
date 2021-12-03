@@ -1,7 +1,7 @@
 ---
 title: "升级集群"
 description: 本小节介绍如何升级 Redis 集群。 
-keywords: redis cluster，集群，升级
+keyword: redis cluster，集群，升级
 weight: 15
 draft: false
 ---

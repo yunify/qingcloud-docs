@@ -1,7 +1,7 @@
 ---
 title: "集群概述"
 description: 本小节主要介绍 PolonDB 集群基本信息。 
-keywords: PolonDB 集群信息；
+keyword: PolonDB 集群信息；
 weight: 05
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "DescribeAppVersions"
 description: 本小节主要介绍 ChronusDB 获取集群应用版本的接口。 
-keywords: ChronusDB 集群应用版本，获取集群应用版本
+keyword: ChronusDB 集群应用版本，获取集群应用版本
 weight: 24
 collapsible: false
 draft: false

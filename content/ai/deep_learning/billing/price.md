@@ -1,6 +1,9 @@
 ---
 title: "计费说明"
-description:
+description: 本小节主要介绍 深度学习 计费说明。 
+keyword: 计费说明, 人工智能，深度学习，Deep Learning
+weight: 10
+collapsible: false
 draft: false
 ---
 

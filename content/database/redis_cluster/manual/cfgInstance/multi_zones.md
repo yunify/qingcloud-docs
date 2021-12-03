@@ -4,7 +4,7 @@ description: 本小节介绍如何
 weight: 5
 collapsible: false
 draft: false
-keywords: QingCloud，Redis Cluster，数据库，多可用区
+keyword: QingCloud，Redis Cluster，数据库，多可用区
 ---
 
 若您需要提高容灾能力时，您可以将单可用区部署的集群升级为多可用区部署。

@@ -3,7 +3,7 @@ title: "删除集群"
 description: 本小节介绍如何删除 Redis 集群。 
 weight: 10
 draft: false
-keywords: QingCloud，Redis Cluster，数据库，删除集群
+keyword: QingCloud，Redis Cluster，数据库，删除集群
 ---
 
 本小节主要介绍如何删除集群。

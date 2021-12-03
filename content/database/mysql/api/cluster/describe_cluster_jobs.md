@@ -1,7 +1,7 @@
 ---
 title: "DescribeClusterJobs"
 description: 本小节主要介绍 MySQL Plus 获取集群操作日志的接口。 
-keywords: mysql plus 获取集群操作日志，获取集群操作日志
+keyword: mysql plus 获取集群操作日志，获取集群操作日志
 weight: 32
 collapsible: false
 draft: false
@@ -27,8 +27,6 @@ draft: false
 |verbose | Integer | 是否返回冗长的信息。目前 verbose 只支持为 0。 | No
 |offset | Integer | 数据偏移量。默认为 0。 | No
 |limit | Integer | 返回数据长度。默认为20，最大100。 | No　|
-
-[_公共参数_](../../../../parameters/)
 
 ## 响应消息
 

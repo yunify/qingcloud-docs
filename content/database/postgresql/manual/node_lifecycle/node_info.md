@@ -1,7 +1,7 @@
 ---
 title: "节点概述"
 description: 本小节主要介绍 PostgreSQL 节点基本信息。 
-keywords: PostgreSQL 节点信息；
+keyword: PostgreSQL 节点信息；
 weight: 01
 collapsible: false
 draft: false

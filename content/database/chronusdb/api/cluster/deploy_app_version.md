@@ -1,7 +1,7 @@
 ---
 title: "DeployAppVersion"
 description: 本小节主要介绍部署 ChronusDB 指定版本的集群接口。 
-keywords: ChronusDB 部署集群，部署集群 API
+keyword: ChronusDB 部署集群，部署集群 API
 weight: 10
 collapsible: false
 draft: false

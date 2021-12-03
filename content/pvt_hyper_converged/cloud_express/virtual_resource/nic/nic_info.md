@@ -1,7 +1,7 @@
 ---
 title: "虚拟网卡概述"
 description: 本小节主要介绍青立方® 超融合易捷版 虚拟网卡。 
-keywords: 青立方® 超融合易捷版，虚拟网卡
+keyword: 青立方® 超融合易捷版，虚拟网卡
 weight: 05
 collapsible: false
 draft: false

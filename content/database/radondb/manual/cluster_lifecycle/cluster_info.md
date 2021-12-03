@@ -1,7 +1,7 @@
 ---
 title: "集群概述"
 description: 本小节主要介绍 RadonDB 集群基本信息。 
-keywords: RadonDB 集群信息；
+keyword: RadonDB 集群信息；
 weight: 05
 collapsible: false
 draft: false

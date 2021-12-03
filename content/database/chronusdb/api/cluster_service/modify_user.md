@@ -1,7 +1,7 @@
 ---
 title: "modify_users"
 description: 本小节主要介绍 ChronusDB 修改用户信息接口。 
-keywords: ChronusDB 添加用户,modify_user
+keyword: ChronusDB 添加用户,modify_user
 weight: 21
 collapsible: false
 draft: false

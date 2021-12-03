@@ -1,7 +1,7 @@
 ---
 title: "start_log_server"
 description: 本小节主要介绍 MySQL Plus 开启日志服务接口。 
-keywords: mysql plus 开启日志服务,start_log_server
+keyword: mysql plus 开启日志服务,start_log_server
 weight: 50
 collapsible: false
 draft: false

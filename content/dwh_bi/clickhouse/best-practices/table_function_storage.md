@@ -1,7 +1,7 @@
 ---
 title: "导入和导出数据（s3Cluster）"
 description: 本小节主要介绍如何通过表函数方式，导入导出数据。 
-keywords: ClickHouse 导入和导出数据；表函数，table function
+keyword: ClickHouse 导入和导出数据；表函数，table function
 weight: 10
 collapsible: false
 draft: false
@@ -22,7 +22,7 @@ ClickHouse 通过创建表函数 [s3Cluster Table Function](https://clickhouse.c
   
   > **注意**
   > 
-  > 对象存储服务与集群需在同一区域；若不在同一区域，可通过[边界路由器](../../../../../network/border_router/)或 [VPN](../../../../../network/vpc/manual/vpn/) 等方式打通网络。
+  > 对象存储服务与集群需在同一区域；若不在同一区域，可通过[边界路由器](/network/border_router/)或 [VPN](/network/vpc/manual/vpn/) 等方式打通网络。
 
 - 已创建并获取 API 密钥。
 

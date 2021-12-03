@@ -1,7 +1,7 @@
 ---
 title: "del_user"
 description: 本小节主要介绍 MySQL Plus 删除用户帐号接口。 
-keywords: mysql plus 删除用户帐号,sdel_user
+keyword: mysql plus 删除用户帐号,sdel_user
 weight: 22
 collapsible: false
 draft: false

@@ -3,7 +3,7 @@ title: "配置告警通知策略"
 description: 本小节介绍如何配置告警通知。
 weight: 8
 draft: false
-keywords: Redis Cluster，数据库，告警，指标
+keyword: Redis Cluster，数据库，告警，指标
 ---
 
 Redis 支持针对配置的告警监控项设置独立通知策略。设置独立通知策略后，当集群产生告警，将统一发送至独立配置的通知列表。

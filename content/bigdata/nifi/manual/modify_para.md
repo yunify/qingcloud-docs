@@ -1,7 +1,7 @@
 ---
 title: "修改配置参数"
 description: 本小节主要介绍如何修改 Nifi 配置参数。 
-keywords: Nifi 修改账号；
+keyword: Nifi 修改账号；
 weight: 30
 collapsible: false
 draft: false

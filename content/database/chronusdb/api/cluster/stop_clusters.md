@@ -1,7 +1,7 @@
 ---
 title: "StopClusters"
 description: 本小节主要介绍获取 ChronusDB 关闭集群的接口。 
-keywords: ChronusDB 关闭集群，关闭集群
+keyword: ChronusDB 关闭集群，关闭集群
 weight: 16
 collapsible: false
 draft: false

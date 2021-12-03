@@ -1,8 +1,7 @@
 ---
 title: "服务功能"
 description: 本小节主要介绍 Redis Standalone 服务功能。 
-keywords: redis standalone 服务功能
-data: 2021-05-14T00:38:25+09:00
+keyword: redis standalone 服务功能
 weight: 15
 collapsible: false
 draft: false

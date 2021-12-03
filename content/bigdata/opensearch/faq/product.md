@@ -1,7 +1,7 @@
 ---
 title: "原生 OpenSearch"
 description: 本小节主要介绍原生 OpenSearch 常见问题。 
-keywords: OpenSearch 常见问题
+keyword: OpenSearch 常见问题
 weight: 10
 collapsible: false
 draft: false
