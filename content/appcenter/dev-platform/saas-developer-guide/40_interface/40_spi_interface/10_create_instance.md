@@ -23,6 +23,7 @@ weight: 10
 | period       | string  | true     | 定价-套餐有效期<br />参数组成：值_时间单位<br />例如：<li>1_year</li><li>1_day</li><li>1_month</li> |
 | cloud_info   | string  | true     | 当前云环境访问域名，接入方后续对接会用到。<br />json 字符串格式，通过 base64 编码传输。<br /><code># 以下为青云公有云服务地址 {   ``"sso_server"``: ``"https://account.qingcloud.com"``,   ``"api_server"``: ``"https://api.qingcloud.com" }</code><br />参数说明：<br />sso_server：青云 SSO 服务访问地址。<br />api_server：青云平台 API 访问地址。<br />**注意：**<br />接入系统所有对接操作都需要从这个参数重获取访问地址。 |
 | debug        | boolean | false    | 如果该值为 true，则表示当前实例用于调试。不会进行实例的计费操作。 |
+| order_id     | string  | true     | 订单 ID，可用于接口重试时的去重处理。                        |
 | time_stamp   | string  | true     | 时间戳，格式：ISO8601<br />示例：2021-06-22T09:15:03Z<br />URL 编码后：2021-06-22T09%3A15%3A03Z |
 | signature    | String  | true     | 签名                                                         |
 
@@ -47,6 +48,7 @@ weight: 10
   ``"spec"``: ``"5aWX6aSQ5ZCN56ewMQ=="``,
   ``"cloud_info"``: ``"eyJhcGlfc2VydmVyIjogImFwaS5xaW5nY2xvdWQuY29tOjc3NzciLCAic3NvX3NlcnZlciI6ICJzc28ucWluZ2Nsb3VkLmNvbSJ9"``,
   ``"period"``: ``"1_day"``,
+  ``"order_id"``:`` "appor-xxxxx",
   ``"app_id"``: ``"app-xxxxx"
 }  
 ```

@@ -20,6 +20,7 @@ weight: 30
 | spec         | string | true     | spec 定价规格名称（base64 编码）                             |
 | spec_package | string | true     | spec_package 定价规格套餐（base64  编码）                    |
 | period       | string | true     | 定价-套餐有效期<br />参数组成：值_时间单位<br />例如：<li>1_year</li><li>1_day</li><li>1_month</li> |
+| order_id     | string | true     | 订单 ID，可用于接口重试时的去重处理                          |
 | time_stamp   | string | true     | 时间戳，格式：ISO8601<br />示例：2021-06-22T09:15:03Z<br />URL 编码后：2021-06-22T09%3A15%3A03Z |
 | signature    | String | true     | 签名                                                         |
 
@@ -39,6 +40,7 @@ weight: 30
   ``"signature"``: ``"FDylNIKrzn5/IAAIghBQtr3IZxoXtyVizExghkF01EA="``,
   ``"action"``: ``"UpgradeAppInstance"``,
   ``"time_stamp"``: ``"2021-06-23T07:24:07Z"``,
+  ``"order_id"``: ``"appor-xxxxx",
   ``"spec"``: ``"5aWX6aSQ5ZCN56ewMQ=="
 }
 ```

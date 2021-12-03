@@ -1,6 +1,7 @@
 ---
 title: "如何使用多人视频场景的优化策略"
-keyword: 多人视频通话,优化策略, 视频分辨率
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,多人视频通话,优化策略, 视频分辨率
+description: 本章节介绍如何使用多人视频场景的优化策略。
 draft: false
 collapsible: false
 weight: 10

@@ -1,5 +1,7 @@
 ---
 title: "停止录制任务"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,api接口, 停止录制任务
+description: 使用实时音视频 RTC 的 API 接口停止录制任务。
 draft: false
 collapsible: false
 weight: 20

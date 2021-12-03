@@ -3,6 +3,7 @@ title: "VPC 和私有网络 Vxnet 的网络 ACL 配置和操作"
 description: manual
 draft: false
 weight: 30
+keyword: 青云, QingCloud, 云计算, 私有网络Vxnet, 绑定和解绑网络ACL
 ---
 
 为了方便您使用网络 ACL，我们在 VPC 和私有网络 Vxnet 页面中也增加了网络 ACL ，您可以查看相关的网络 ACL 配置，并进行一定的操作。因为网络 ACL 可以绑定多个私有网络 Vxnet，所以在网络 ACL 绑定给多个私有网络时，请您谨慎增删或者修改规则，建议您在复制后的网络 ACL 中修改。
