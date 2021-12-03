@@ -1,7 +1,7 @@
 ---
 title: "DeleteClusters"
 description: 本小节主要介绍 ChronusDB 删除集群的接口。 
-keywords: ChronusDB 删除集群，删除集群
+keyword: ChronusDB 删除集群，删除集群
 weight: 20
 collapsible: false
 draft: false

@@ -1,7 +1,9 @@
 ---
 title: "附表2"
-description: test
+description: 本小节主要介绍 Deep Learning 组件版本
+keyword: 人工智能，深度学习，Deep Learning，组件版本，深度学习框架，PYthon 版本，TensorFlow 版本，下载地址
 weight: 65
+collapsible: false
 draft: false
 ---
 

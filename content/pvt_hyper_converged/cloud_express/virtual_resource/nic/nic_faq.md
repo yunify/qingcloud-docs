@@ -1,7 +1,7 @@
 ---
 title: "常见问题"
 description: 本小节主要介绍虚拟网卡常见问题。 
-keywords: 虚拟网卡，常见问题
+keyword: 虚拟网卡，常见问题
 weight: 50
 collapsible: false
 draft: false

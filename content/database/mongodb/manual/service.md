@@ -1,8 +1,7 @@
 ---
 title: "服务功能"
 description: 本小节主要介绍 QingCloud MongoDB 基准测试。 
-keywords: mongodb 基准测试, 
-data: 2021-05-14T00:38:25+09:00
+keyword: mongodb 基准测试, 
 weight: 10
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "分片键配置选型"
 description: 本小节主要介绍如何选择 MongoDB Cluster 的分片键。 
-keywords: MongoDB Cluster 分片键, 分片键选择 
+keyword: MongoDB Cluster 分片键, 分片键选择 
 weight: 10
 collapsible: false
 draft: true

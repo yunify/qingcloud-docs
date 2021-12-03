@@ -1,7 +1,7 @@
 ---
 title: "查看计算节点详情"
 description: 本小节主要介绍青立方® 超融合易捷版 查看计算节点详情。 
-keywords: 青立方® 超融合易捷版，查看计算节点详情
+keyword: 青立方® 超融合易捷版，查看计算节点详情
 weight: 20
 collapsible: false
 draft: false

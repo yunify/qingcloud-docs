@@ -1,9 +1,10 @@
 ---
 title: "部署方式"
-description: 本小节主要介绍 Inference Engine的三种部署方式。 
+description: 本小节主要介绍 Inference Engine的三种模式。 
+keyword: 人工智能，推理引擎，Inference Engine，部署模式
+weight: 10
+collapsible: false
 draft: false
-weight: 20
-keyword: inference
 ---
 
 Inference Engine 有 3 种部署方式。

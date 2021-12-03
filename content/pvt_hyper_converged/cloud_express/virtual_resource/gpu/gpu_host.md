@@ -1,7 +1,7 @@
 ---
 title: "挂载设备至主机"
 description: 本小节主要介绍青立方® 超融合易捷版 挂载设备至主机。 
-keywords: 青立方® 超融合易捷版，挂载设备至主机
+keyword: 青立方® 超融合易捷版，挂载设备至主机
 weight: 20
 collapsible: false
 draft: false

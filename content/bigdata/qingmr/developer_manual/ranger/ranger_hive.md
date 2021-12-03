@@ -1,7 +1,7 @@
 ---
 title: "Ranger 集成 Hive"
 description: 本小节主要介绍如何通过 Ranger 集成 Hive。 
-keywords: qingmr 通过 Ranger 集成 Hive
+keyword: qingmr 通过 Ranger 集成 Hive
 weight: 20
 collapsible: false
 draft: false

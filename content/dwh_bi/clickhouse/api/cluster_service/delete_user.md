@@ -1,7 +1,7 @@
 ---
 title: "remove_users"
 description: 本小节主要介绍 ClickHouse 删除用户帐号接口。 
-keywords: ClickHouse 删除用户帐号,del_user
+keyword: ClickHouse 删除用户帐号,del_user
 weight: 22
 collapsible: false
 draft: false

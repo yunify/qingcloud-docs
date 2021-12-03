@@ -1,7 +1,7 @@
 ---
 title: "configuring_SSL"
 description: 本小节主要介绍 MySQL Plus 提升灾备接口。 
-keywords: mysql plus 提升灾备,configuring_SSL
+keyword: mysql plus 提升灾备,configuring_SSL
 weight: 14
 collapsible: false
 draft: false

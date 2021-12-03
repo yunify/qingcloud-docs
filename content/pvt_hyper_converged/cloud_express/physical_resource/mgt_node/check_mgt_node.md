@@ -1,7 +1,7 @@
 ---
 title: "查看管理节点"
 description: 本小节主要介绍青立方® 超融合易捷版 查看管理节点。 
-keywords: 青立方® 超融合易捷版，查看管理节点
+keyword: 青立方® 超融合易捷版，查看管理节点
 weight: 05
 collapsible: false
 draft: false

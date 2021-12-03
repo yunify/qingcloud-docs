@@ -1,7 +1,7 @@
 ---
 title: "MapReduce 导入数据到 HBase"
 description: 本小节主要介绍如何通过 MapReduce 导入数据到 HBase。 
-keywords: HBase 导入数据,MapReduce
+keyword: HBase 导入数据,MapReduce
 weight: 35
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "定时器"
 description: 本小节主要介绍青立方® 超融合易捷版定时器。 
-keywords: 青立方® 超融合易捷版，定时器
+keyword: 青立方® 超融合易捷版，定时器
 weight: 05
 collapsible: false
 draft: false

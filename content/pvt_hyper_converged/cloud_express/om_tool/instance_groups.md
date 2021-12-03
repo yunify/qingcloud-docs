@@ -1,7 +1,7 @@
 ---
 title: "安置策略组"
 description: 本小节主要介绍青立方® 超融合易捷版 安置策略组。 
-keywords: 安置策略组,
+keyword: 安置策略组,
 weight: 10
 collapsible: false
 draft: false

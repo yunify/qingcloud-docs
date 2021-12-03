@@ -1,7 +1,7 @@
 ---
 title: "参数介绍"
 description: 本小节主要介绍 MySQL Plus 常用配置项。 
-keywords: MySQL Plus 常用配置项；
+keyword: MySQL Plus 常用配置项；
 weight: 10
 collapsible: false
 draft: false

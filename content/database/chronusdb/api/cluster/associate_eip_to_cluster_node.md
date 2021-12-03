@@ -1,7 +1,7 @@
 ---
 title: "AssociateEipToClusterNode"
 description: 本小节主要介绍 ChronusDB 集群绑定公网 IP 接口。 
-keywords: ChronusDB 绑定公网 IP，绑定公网 IP 接口
+keyword: ChronusDB 绑定公网 IP，绑定公网 IP 接口
 weight: 130
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "DeleteClusters"
 description: 本小节主要介绍 MySQL Plus 删除集群的接口。 
-keywords: mysql plus 删除集群，删除集群
+keyword: mysql plus 删除集群，删除集群
 weight: 20
 collapsible: false
 draft: false

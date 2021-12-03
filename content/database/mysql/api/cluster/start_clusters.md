@@ -1,7 +1,7 @@
 ---
 title: "StartClusters"
 description: 本小节主要介绍获取 MySQL Plus 启动集群的接口。 
-keywords: mysql plus 启动集群，启动集群
+keyword: mysql plus 启动集群，启动集群
 weight: 14
 collapsible: false
 draft: false

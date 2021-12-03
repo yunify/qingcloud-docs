@@ -1,7 +1,7 @@
 ---
 title: "start_standby"
 description: 本小节主要介绍 MySQL Plus 启动灾备接口。 
-keywords: mysql plus 启动灾备,start_standby
+keyword: mysql plus 启动灾备,start_standby
 weight: 40
 collapsible: false
 draft: false

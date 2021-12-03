@@ -1,7 +1,7 @@
 ---
 title: "节点概述"
 description: 本小节主要介绍 RadonDB 节点基本信息。 
-keywords: RadonDB 节点信息；
+keyword: RadonDB 节点信息；
 weight: 01
 collapsible: false
 draft: false
