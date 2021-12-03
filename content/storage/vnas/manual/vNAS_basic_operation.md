@@ -3,7 +3,6 @@ title: "vNAS基本操作"
 date: 2021-11-22T17:08:56+09:00
 description: Test description
 draft: false
-enableToc: false
 weight: 10
 keyword: 青云，文件存储
 ---
@@ -14,7 +13,7 @@ QingCloud 为您提供的 vNAS 服务是基于标准的 NFS 和 Samba（CIFS）�
 >
 > 在 vNAS 服务器上加载硬盘，通过创建共享存储目标与其进行绑定，即可将数据开放给云服务器客户端。一块硬盘只能和一个共享存储目标绑定；如果硬盘上存在多个分区，则无法和共享存储目标进行绑定；建议您使用空白硬盘，在 vNAS 服务器上进行数据文件的共享。
 
-## 创建vNAS 服务器
+## 创建 vNAS 服务器
 
 1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 

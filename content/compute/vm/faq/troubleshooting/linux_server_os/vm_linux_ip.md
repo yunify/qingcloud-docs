@@ -3,7 +3,6 @@ title: "如何为 Linux 云服务器配置静态 IP 地址？ "
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
-enableToc: false
 weight: 80
 ---
 

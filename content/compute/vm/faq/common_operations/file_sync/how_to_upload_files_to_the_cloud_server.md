@@ -3,7 +3,6 @@
 description: Test description
 weight: 40
 draft: false
-enableToc: false
 ---
 
 客户购买了云服务器，希望将将本地文件上传至云服务器中，以下文档会介绍不同操作系统的场景下，如何将文件同步到云服务器中

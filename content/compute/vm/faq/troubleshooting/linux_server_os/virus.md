@@ -4,7 +4,6 @@ date: 2021-05-28T00:38:25+09:00
 description: Test description
 weight: 40
 draft: false
-enableToc: false
 ---
 
 当我们在控制台监控中发现，CPU 或者内存跑满了的现象时，我们需要进入主机内部排查一下

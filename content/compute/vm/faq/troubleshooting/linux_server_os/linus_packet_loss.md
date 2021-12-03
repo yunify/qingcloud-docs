@@ -3,7 +3,6 @@ title: "Linux实例网站访问丢包延时高"
 description: Test description
 weight: 40
 draft: false
-enableToc: false
 ---
 
 ## 背景介绍
