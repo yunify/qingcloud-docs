@@ -1,7 +1,7 @@
 ---
 title: "备份回滚"
 description: 本小节主要介绍青立方® 超融合易捷版 备份回滚。 
-keywords: 备份回滚,
+keyword: 备份回滚,
 weight: 30
 collapsible: false
 draft: false

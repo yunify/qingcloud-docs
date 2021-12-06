@@ -1,7 +1,7 @@
 ---
 title: "创建数据库"
 description: 本小节主要介绍如何创建 PolonDB 节点数据库。 
-keywords: PolonDB 节点添加；新增节点
+keyword: PolonDB 节点添加；新增节点
 weight: 20
 collapsible: false
 draft: false

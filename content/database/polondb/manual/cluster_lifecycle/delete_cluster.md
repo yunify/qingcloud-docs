@@ -1,7 +1,7 @@
 ---
 title: "删除集群"
 description: 本小节主要介绍如何删除 PolonDB 集群。 
-keywords: PolonDB 删除集群
+keyword: PolonDB 删除集群
 weight: 90
 collapsible: false
 draft: false

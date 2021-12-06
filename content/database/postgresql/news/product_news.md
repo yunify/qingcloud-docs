@@ -1,7 +1,10 @@
 ---
 title: "产品动态"
+description: 本小节主要介绍 PostgreSQL 产品动态
+keyword: 数据库，PostgreSQL，关系型数据库，产品动态
+weight: 05
 collapsible: false
-weight: 10
+draft: false
 
 product:
     - time: 2021-11-03

@@ -1,7 +1,7 @@
 ---
 title: "Logstash-input-syslog 插件使用说明"
 description: 本小节主要介绍 Logstash-input-syslog 插件使用说明。
-keywords: Logstash-input-syslog,
+keyword: Logstash-input-syslog,
 weight: 55
 collapsible: false
 draft: false

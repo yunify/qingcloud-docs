@@ -1,7 +1,7 @@
 ---
 title: "PostGIS 插件"
 description: 本小节主要介绍如何使用 PostGIS 插件。 
-keywords: PostgreSQL 插件, PostGIS 插件
+keyword: PostgreSQL 插件, PostGIS 插件
 weight: 45
 collapsible: false
 ---

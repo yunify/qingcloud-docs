@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL 大对象迁移"
 description: 本小节主要介绍如何迁移大对象数据到 PolonDB 数据库。 
-keywords: polondb 迁入数据
+keyword: polondb 迁入数据
 weight: 20
 collapsible: false
 draft: false

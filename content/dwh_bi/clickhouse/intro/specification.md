@@ -1,7 +1,7 @@
 ---
 title: "产品规格"
 description: 本小节主要介绍 Clickhouse 规格。 
-keywords: Clickhouse, QingCloud，产品规格
+keyword: Clickhouse, QingCloud，产品规格
 weight: 30
 collapsible: false
 draft: false

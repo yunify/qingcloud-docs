@@ -1,7 +1,7 @@
 ---
 title: "DissociateEipFromClusterNode"
 description: 本小节主要介绍 ClickHouse 集群节点绑定公网 IP 接口。 
-keywords: ClickHouse 节点绑定公网 IP，节点绑定公网 IP 接口
+keyword: ClickHouse 节点绑定公网 IP，节点绑定公网 IP 接口
 weight: 132
 collapsible: false
 draft: false

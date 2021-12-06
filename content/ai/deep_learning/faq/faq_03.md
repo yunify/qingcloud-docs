@@ -1,11 +1,18 @@
 ---
-title: "运行 GPU 版容器，为什么会出现错误 libcuda.so.1: cannot open shared object file: No such file or directory？"
-linkTitle: "运行 GPU 版容器，为什么会出现错误 libcuda.so.1: cannot open shared object file: No such file or directory？"
-date: 2021-02-16T10:08:56+09:00
-description:
+title: "运行 GPU 版容器，提示错误 libcuda.so.1"
+linkTitle: "运行 GPU 版容器，错误 libcuda.so.1"
+description: 本小节主要介绍运行 GPU 版容器，错误 libcuda.so.1。 
+keyword: 人工智能，深度学习，Deep Learning，GPU 版容器，错误 libcuda.so.1
+weight: 20
+collapsible: false
 draft: false
-weight: 10
 ---
+
+## 问题现象
+
+运行 GPU 版容器，提示错误 libcuda.so.1: cannot open shared object file: No such file or directory？
+
+## 解决办法
 
 该错误因容器无法加载 CUDA 的链接库，可能是两个原因导致的:
 

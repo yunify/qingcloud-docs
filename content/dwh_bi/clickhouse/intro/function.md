@@ -1,7 +1,7 @@
 ---
 title: "功能特性"
 description: 本小节主要介绍 Clickhouse 功能特性。 
-keywords: Clickhouse 功能特性,
+keyword: Clickhouse 功能特性,
 weight: 15
 collapsible: false
 draft: false

@@ -1,9 +1,10 @@
 ---
 title: "什么是推理引擎"
-description: inference engine 
-draft: false
+description: 本小节主要介绍什么是推理引擎。 
+keyword: 人工智能，推理引擎，Inference Engine，产品简介
 weight: 10
-keyword: inference
+collapsible: false
+draft: false
 ---
 
 ## 产品介绍

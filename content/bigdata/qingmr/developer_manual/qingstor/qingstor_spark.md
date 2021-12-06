@@ -1,7 +1,7 @@
 ---
 title: "Spark 与 QingStor 集成"
 description: 本小节主要介绍如何 Spark 与 QingStor 对象存储集成。 
-keywords: qingmr ，Spark 与 QingStor ，Spark 对象存储集成,
+keyword: qingmr ，Spark 与 QingStor ，Spark 对象存储集成,
 weight: 30
 collapsible: false
 draft: false

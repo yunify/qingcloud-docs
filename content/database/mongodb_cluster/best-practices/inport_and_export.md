@@ -1,7 +1,7 @@
 ---
 title: "数据导入与导出"
 description: 本小节主要介绍如何进行 MongoDB 数据导入和导出。 
-keywords: MongoDB 数据导入和导出；数据导入；数据导出
+keyword: MongoDB 数据导入和导出；数据导入；数据导出
 weight: 30
 collapsible: false
 draft: false

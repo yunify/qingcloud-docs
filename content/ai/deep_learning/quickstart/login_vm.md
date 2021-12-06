@@ -4,7 +4,7 @@ description: 本小节主要介绍如何快速创建 MySQL Plus 数据库用户�
 keywords: mysql plus 数据库用户账号创建,
 weight: 30
 collapsible: false
-draft: false
+draft: true
 ---
 
 本小节主要介绍如何创建 MySQL Plus 数据库用户账号。

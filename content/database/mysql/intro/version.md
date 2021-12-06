@@ -1,7 +1,7 @@
 ---
 title: "产品版本"
 description: 本小节主要介绍 MySQL Plus 主要版本。 
-keywords: mysql plus 版本介绍， 
+keyword: mysql plus 版本介绍， 
 weight: 25
 collapsible: false
 draft: false

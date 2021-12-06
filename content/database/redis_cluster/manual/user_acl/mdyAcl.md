@@ -1,7 +1,7 @@
 ---
 title: "修改权限控制字符串"
 description: 本小节介绍如何修改 ACL 用户权限字符串。
-keywords: redis cluster，访问控制，权限字符串，用户管理 ACL
+keyword: redis cluster，访问控制，权限字符串，用户管理 ACL
 weight: 5
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: "监控告警"
 description: 本小节主要介绍如何设置 ELK 监控告警
-keywords: ELK 监控告警
+keyword: ELK 监控告警
 weight: 25
 collapsible: false
 draft: false

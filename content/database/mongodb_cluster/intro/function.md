@@ -1,7 +1,7 @@
 ---
 title: "功能特性"
 description: 本小节主要介绍 MongoDB Cluster 产品特性。 
-keywords: MongoDB Cluster 产品特性, 功能简介 
+keyword: MongoDB Cluster 产品特性, 功能简介 
 weight: 15
 collapsible: false
 draft: false

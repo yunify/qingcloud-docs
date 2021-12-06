@@ -1,7 +1,7 @@
 ---
 title: "删除账号"
 description: 本小节主要介绍如何删除 RadonDB 数据库账号。 
-keywords: RadonDB 删除账号；
+keyword: RadonDB 删除账号；
 weight: 15
 collapsible: false
 draft: false

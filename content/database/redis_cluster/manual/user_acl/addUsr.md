@@ -3,7 +3,7 @@ title: "新增用户"
 description: 本小节介绍如何修改 ACL 用户密码。 
 weight: 2
 draft: false
-keywords: redis cluster，访问控制，用户管理 ACL
+keyword: redis cluster，访问控制，用户管理 ACL
 ---
 
 介绍如何新增用户。

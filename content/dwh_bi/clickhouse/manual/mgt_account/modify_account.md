@@ -1,7 +1,7 @@
 ---
 title: "修改账号"
 description: 本小节主要介绍如何添加 ClickHouse 数据库账号。 
-keywords: ClickHouse 账号修改；修改账号信息
+keyword: ClickHouse 账号修改；修改账号信息
 weight: 11
 collapsible: false
 draft: false

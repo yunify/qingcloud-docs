@@ -1,7 +1,9 @@
 ---
 title: "部署模型"
-description: test
+description: 本小节主要介绍推理引擎部署模型。 
+keyword: 人工智能，推理引擎，Inference Engine，部署模型
 weight: 10
+collapsible: false
 draft: false
 ---
 

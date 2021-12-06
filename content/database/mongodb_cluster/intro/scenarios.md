@@ -1,7 +1,7 @@
 ---
 title: "应用场景"
 description: 本小节主要介绍 MongoDB Cluster 应用场景。 
-keywords: MongoDB Cluster 应用场景 
+keyword: MongoDB Cluster 应用场景 
 weight: 16
 collapsible: false
 draft: false

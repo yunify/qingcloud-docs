@@ -1,7 +1,10 @@
 ---
 title: "产品动态"
-collapsible: false
+description: 本小节主要介绍推理引擎产品动态。 
+keyword: 人工智能，推理引擎，Inference Engine，产品动态
 weight: 10
+collapsible: false
+draft: false
 
 product:
 

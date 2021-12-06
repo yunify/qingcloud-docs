@@ -1,7 +1,7 @@
 ---
 title: "创建 ELK 集群"
 description: 本小节主要介绍如何快速创建 ELK 集群。 
-keywords: ELK 实例, 部署 ELK
+keyword: ELK 实例, 部署 ELK
 weight: 10
 collapsible: false
 draft: false

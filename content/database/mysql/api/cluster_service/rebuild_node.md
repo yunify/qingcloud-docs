@@ -1,7 +1,7 @@
 ---
 title: "rebuildme"
 description: 本小节主要介绍 MySQL Plus 重建节点接口。 
-keywords: mysql plus 重建节点,rebuildme
+keyword: mysql plus 重建节点,rebuildme
 weight: 11
 collapsible: false
 draft: false
