@@ -1,7 +1,7 @@
 ---
 title: "V2V 迁移指南"
 description: 本小节主要介绍青立方® 超融合易捷版 V2V 迁移指南。 
-keywords: 青立方® 超融合易捷版，V2V迁移指南
+keyword: 青立方® 超融合易捷版，V2V迁移指南
 weight: 40
 collapsible: false
 draft: false

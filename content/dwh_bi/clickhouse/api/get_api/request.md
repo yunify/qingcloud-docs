@@ -1,7 +1,7 @@
 ---
 title: "构造请求"
 description: 本小节主要介绍如何构造 ClickHouse API 请求。 
-keywords: ClickHouse 请求；api 请求，构造请求
+keyword: ClickHouse 请求；api 请求，构造请求
 draft: false
 weight: 20
 collapsible: false

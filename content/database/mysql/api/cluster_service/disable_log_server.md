@@ -1,7 +1,7 @@
 ---
 title: "stop_log_server"
 description: 本小节主要介绍 MySQL Plus 关闭日志服务接口。 
-keywords: mysql plus 关闭日志服务,stop_log_server
+keyword: mysql plus 关闭日志服务,stop_log_server
 weight: 51
 collapsible: false
 draft: false

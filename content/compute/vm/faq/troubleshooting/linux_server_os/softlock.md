@@ -4,7 +4,6 @@ date: 2021-02-19T00:38:25+09:00
 description: Test description
 weight: 10
 draft: false
-enableToc: false
 ---
 
 ## 背景说明
@@ -28,5 +27,4 @@ echo 30 > /proc/sys/kernel/watchdog_thresh
 sysctl -w kernel.watchdog_thresh=30
 
 ```
-
 

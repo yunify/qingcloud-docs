@@ -4,7 +4,6 @@ title: "自建MySQL无法远程访问排查思路"
 description: Test description
 weight: 20
 draft: false
-enableToc: false
 ---
 
 ## 概述

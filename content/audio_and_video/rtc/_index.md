@@ -45,7 +45,12 @@ section3:
   children:
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: "/audio_and_video/rtc/techref/sdk/10_sdk"
+      url: "/audio_and_video/rtc/sdk/10_sdk"
+
+    - title: API 文档
+      content: 如何使用 API 文档
+      url: "/audio_and_video/rtc/api/10_api_overview"
+
 
 
 section4:

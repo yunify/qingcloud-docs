@@ -1,7 +1,7 @@
 ---
 title: "产品版本"
 description: 本小节主要介绍 PostgreSQL 版本规格。 
-keywords: PostgreSQL, QingCloud, 版本规格
+keyword: PostgreSQL, QingCloud, 版本规格
 weight: 30
 collapsible: false
 draft: false

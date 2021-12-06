@@ -1,7 +1,7 @@
 ---
 title: "删除节点"
 description: 本小节主要介绍如何删除 MongoDB Cluster 节点实例。 
-keywords: MongoDB Cluster 节点删除；删除节点
+keyword: MongoDB Cluster 节点删除；删除节点
 weight: 15
 collapsible: false
 draft: false

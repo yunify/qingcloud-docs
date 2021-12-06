@@ -1,7 +1,7 @@
 ---
 title: "返回结构"
 description: 本小节主要介绍 MySQL Plus API 返回结构。 
-keywords: mysql plus 返回结构；API 返回结构
+keyword: mysql plus 返回结构；API 返回结构
 draft: false
 weight: 30
 collapsible: false

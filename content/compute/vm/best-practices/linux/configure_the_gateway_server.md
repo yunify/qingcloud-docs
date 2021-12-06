@@ -3,7 +3,6 @@ title: "配置云服务器为网关服务器(外部绑定公网 IP)"
 description: Test description
 weight: 50
 draft: false
-enableToc: false
 ---
 ## 项目概览
 在本项目中，您将了解如何使用云服务器外部绑定公网 IP 作为网关服务器，让其他云服务器可以使用网关服务访问互联网。

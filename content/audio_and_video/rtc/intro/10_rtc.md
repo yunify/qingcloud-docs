@@ -1,5 +1,7 @@
 ---
 title: "什么是实时音视频 RTC"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC
+description: 本章节介绍什么是音视频 RTC。
 draft: false
 collapsible: false
 weight: 10

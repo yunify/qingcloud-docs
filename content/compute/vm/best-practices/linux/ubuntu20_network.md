@@ -3,7 +3,6 @@ title: "Ubuntu 20 配置多网卡方法"
 description: Test description
 weight: 50
 draft: false
-enableToc: false
 
 ---
 ## 背景信息

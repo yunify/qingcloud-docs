@@ -1,7 +1,7 @@
 ---
 title: "delete_oss_policies"
 description: 本小节主要介绍 ChronusDB 删除存储策略接口。 
-keywords: ChronusDB 删除存储策略,删除存储策略
+keyword: ChronusDB 删除存储策略,删除存储策略
 weight: 65
 collapsible: false
 draft: false

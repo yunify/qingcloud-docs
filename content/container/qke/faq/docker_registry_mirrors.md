@@ -1,42 +1,50 @@
 ---
-title: "配置 Docker 镜像加速"
-date: 2021-07-31T21:37:25+09:00
-description: Test description
-weight: 50
+title: "如何配置 Docker 镜像加速"
+description: 介绍如何配置配置 Docker 镜像加速。
+weight: 20
 draft: false
-enableToc: false
+keyword: 青云, QingCloud, 云计算, QKE, 云服务器, Docker
 ---
 
-## 背景
+## 操作场景
 
-国内从 DockerHub 拉取镜像有时会遇到困难，此时可以配置镜像加速器。
+国内从 DockerHub 拉取镜像有时会遇到困难，此时通过配置镜像加速器来解决该问题。
 
-## 配置方式
+## 操作步骤
 
-1. 修改 ```/etc/docker/daemon.json``` 文件，在文件添加 registry-mirrors 。如下所示
+1. 修改 `/etc/docker/daemon.json` 文件，在文件添加 `registry-mirrors` 。如下所示
 
    ```
-   root@qke-client:~# cp /etc/docker/daemon.json /etc/docker/daemon.json.bak
-   root@qke-client:~# cat /etc/docker/daemon.json 
    {
    	"registry-mirrors": ["https://docker.mirrors.ustc.edu.cn/"] 
    }
    ```
 
-常用的加速地址有：**Docker 中国区官方镜像：https://registry.docker-cn.com**；**网易：http://hub-mirror.c.163.com**；**ustc：https://docker.mirrors.ustc.edu.cn**；**中国科技大学：https://docker.mirrors.ustc.edu.cn**
+   > **说明**
+   >
+   > 常用的加速地址有：
+   >
+   > - Docker 中国区官方镜像：https://registry.docker-cn.com
+   > - 网易：http://hub-mirror.c.163.com
+   > - ustc：https://docker.mirrors.ustc.edu.cn
+   > - 中国科技大学：https://docker.mirrors.ustc.edu.cn
 
-2. 重启 Docker 。 
+ 2. 重启 Docker。 
 
-   ```
-   root@qke-client:~# systemctl restart docker
-   ```
+    ```
+    systemctl restart docker
+    ```
 
 3. 检查是否配置成功。
 
    ```
-   root@qke-client:~# docker info |grep -A 1  Mirrors 
+   docker info |grep -A 1  Mirrors 
+   ```
+
+   预期显示：
+
+   ```
     Registry Mirrors:
      https://docker.mirrors.ustc.edu.cn/
    ```
 
-   

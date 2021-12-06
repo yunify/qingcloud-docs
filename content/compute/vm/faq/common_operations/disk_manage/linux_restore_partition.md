@@ -4,7 +4,6 @@ date: 2020-01-30T00:38:25+09:00
 description: Test description
 weight: 50
 draft: false
-enableToc: false
 ---
 
 > 磁盘分区误删除后，再没有重启云服务器的情况下，使用 TestDisk 工具恢复分区

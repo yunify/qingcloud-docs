@@ -1,7 +1,7 @@
 ---
 title: "同步 QingStor 事件通知"
 description: 本小节主要介绍如何同步 QingStor 事件通知。 
-keywords: ClickHouse 同步事件通知；对象存储服务事件通知，QingStor 事件通知，桶事件通知
+keyword: ClickHouse 同步事件通知；对象存储服务事件通知，QingStor 事件通知，桶事件通知
 weight: 20
 collapsible: false
 draft: true

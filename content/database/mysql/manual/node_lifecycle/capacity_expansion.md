@@ -1,7 +1,7 @@
 ---
 title: "扩容节点"
 description: 本小节主要介绍如何扩容 MySQL Plus 集群。 
-keywords: mysql plus 扩容节点；
+keyword: mysql plus 扩容节点；
 weight: 05
 collapsible: false
 draft: false

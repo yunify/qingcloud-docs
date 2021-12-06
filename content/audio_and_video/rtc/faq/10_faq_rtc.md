@@ -1,5 +1,7 @@
 ---
 title: "常见问题"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,开启对象存储, 录制视频播放
+description: 本章节介绍使用实时音视频 RTC 遇到的常见问题。
 draft: false
 collapsible: false
 weight: 10

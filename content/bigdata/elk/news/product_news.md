@@ -1,7 +1,10 @@
 ---
 title: "产品动态"
+description: 本小节主要介绍 ELK 产品动态
+keyword: 大数据，Elasticsearch，ELK，产品动态
+weight: 05
 collapsible: false
-weight: 10
+draft: false
 
 product:
     - time: 2021-09-10

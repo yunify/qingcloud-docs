@@ -1,10 +1,11 @@
 ---
 title: "如何查看深度学习平台的 GPU 使用率？"
-linkTitle: "如何查看深度学习平台的 GPU 使用率？"
-date: 2021-02-16T10:08:56+09:00
-description:
+linkTitle: "查看深度学习平台的 GPU 使用率？"
+description: 本小节主要介绍如何查看深度学习平台的 GPU 使用率？
+keyword: 人工智能，深度学习，Deep Learning，GPU 使用率
+weight: 30
+collapsible: false
 draft: false
-weight: 20
 ---
 
 - 在容器或主机中运行 nvidia-smi 查看 GPU 设备是否正常，也可以使用 `watch -n 0.5 nvidia-smi` 动态的查看 GPU 的使用情况。

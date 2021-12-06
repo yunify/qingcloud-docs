@@ -1,7 +1,7 @@
 ---
 title: "单实例升级为多副本"
 description: 本小节主要介绍如何进行 MongoDB 单实例数据备份与恢复。 
-keywords: MongoDB 单实例数据；单实例备份；单实例数据恢复
+keyword: MongoDB 单实例数据；单实例备份；单实例数据恢复
 weight: 20
 collapsible: false
 draft: false

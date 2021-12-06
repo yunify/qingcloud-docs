@@ -1,11 +1,10 @@
 ---
 title: "企业级分布式 SAN"
 date: 2021-05-21T00:38:25+09:00
-description: Test description
+description: 本小节主要介绍企业级分布式 SAN。
 draft: false
-enableToc: false
-weight: 10
-keyword: 青云
+weight: 1
+keyword: 云计算, 青云, QingCloud, 共享存储, Virtual SAN, NeonSAN
 ---
 
 ## 简介

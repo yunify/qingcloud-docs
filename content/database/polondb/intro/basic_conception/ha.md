@@ -1,7 +1,7 @@
 ---
 title: "高可用性"
 description: 本小节主要介绍 QingCloud PolonDB 高可用性。 
-keywords: polondb 高可用性
+keyword: polondb 高可用性
 weight: 2
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "go-mydumper 方式"
 description: 本小节主要介绍如何使用 RadonDB 数据导出和导入。 
-keywords: RadonDB, QingCloud, 数据导入,数据导出
+keyword: RadonDB, QingCloud, 数据导入,数据导出
 weight: 10
 collapsible: false
 draft: false
