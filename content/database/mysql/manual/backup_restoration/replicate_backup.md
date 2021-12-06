@@ -1,7 +1,7 @@
 ---
 title: "跨区域复制备份"
 description: 本小节主要如何跨区域复制 MySQL Plus 数据备份。 
-keywords: MySQL Plus 跨区域复制备份；
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,跨区域复制备份
 weight: 70
 collapsible: false
 draft: false

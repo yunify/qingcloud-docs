@@ -1,7 +1,7 @@
 ---
 title: "从备份恢复集群"
 description: 本小节主要如何从备份恢复 MySQL Plus 集群。 
-keywords: MySQL Plus 从备份恢复集群；
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,从备份恢复集群
 weight: 50
 collapsible: false
 draft: false

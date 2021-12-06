@@ -1,7 +1,7 @@
 ---
 title: "删除集群"
 description: 本小节主要介绍如何删除 MySQL Plus 集群。 
-keyword: mysql plus 删除集群
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,删除集群
 weight: 90
 collapsible: false
 draft: false

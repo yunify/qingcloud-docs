@@ -1,7 +1,7 @@
 ---
 title: "回迁业务至源集群"
 description: 本小节主要介绍如何回迁业务至源集群。 
-keyword: mysql plus 回迁业务至源集群
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,回迁业务至源集群
 weight: 25
 collapsible: false
 draft: false

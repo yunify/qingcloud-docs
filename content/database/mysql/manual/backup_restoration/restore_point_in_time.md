@@ -1,7 +1,7 @@
 ---
 title: "恢复集群到指定时间"
 description: 本小节主要如何恢复 MySQL Plus 集群到指定时间。 
-keywords: MySQL Plus 恢复集群到指定时间；
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,恢复集群到指定时间
 weight: 40
 collapsible: false
 draft: false

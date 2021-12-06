@@ -1,7 +1,7 @@
 ---
 title: "停止灾备"
 description: 本小节主要介绍如何停止集群灾备。 
-keyword: mysql plus 停止灾备
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,停止灾备
 weight: 30
 collapsible: false
 draft: false

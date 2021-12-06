@@ -1,7 +1,7 @@
 ---
 title: "产品优势"
 description: 本小节主要介绍 MySQL Plus 产品优势。 
-keyword: mysql plus 产品优势 
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,产品优势 
 weight: 30
 collapsible: false
 draft: false
@@ -10,7 +10,7 @@ draft: false
 
 ## 多副本同步复制，确保金融级强一致性
 
-QingCloud MySQL Plus 采用一主两从的初始节点架构设计，并通过 MySQL 5.7 版本中的 semi-sync 特性实现数据的多副本同步复制，确保至少一个从节点与主节点始终保持数据的完全一致，提供金融级数据强一致性。
+MySQL Plus 采用一主两从的初始节点架构设计，并通过 MySQL 5.7 版本中的 semi-sync 特性实现数据的多副本同步复制，确保至少一个从节点与主节点始终保持数据的完全一致，提供金融级数据强一致性。
 
 多个从节点的设置将极大的屏蔽掉单点故障带来的影响，确保集群内始终有从节点保有全量数据。
 
@@ -22,7 +22,7 @@ QingCloud MySQL Plus 采用一主两从的初始节点架构设计，并通过 M
 
 ## 支持双存储引擎，优化存储成本
 
-在支持原有 InnoDB 引擎的同时，QingCloud MySQL Plus 同时支持 TokuDB 存储引擎。TokuDB 采用更先进的索引算法（Fractal Tree Indexing），实现更高的压缩比，帮助用户提升存储空间的利用率，从而降低存储成本。
+在支持原有 InnoDB 引擎的同时，MySQL Plus 同时支持 TokuDB 存储引擎。TokuDB 采用更先进的索引算法（Fractal Tree Indexing），实现更高的压缩比，帮助用户提升存储空间的利用率，从而降低存储成本。
 
 规模的数据量如果采用 TokuDB，相比 InnoDB，存储空间将降低大约一半。TokuDB 更适合用于需要大规模存储空间，但没有超大规模并发读取压力的使用场景，如大数据分析等。
 

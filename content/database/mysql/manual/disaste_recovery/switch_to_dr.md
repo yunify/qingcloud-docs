@@ -1,7 +1,7 @@
 ---
 title: "切换业务至灾备集群"
 description: 本小节主要介绍如何切换业务至灾备集群。 
-keyword: mysql plus 切换业务至灾备集群
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,切换业务至灾备集群
 weight: 20
 collapsible: false
 draft: false

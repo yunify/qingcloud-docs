@@ -1,7 +1,7 @@
 ---
 title: "产品咨询"
 description: 本小节主要介绍 MySQL Plus 产品功能常见问题。 
-keyword: mysql plus 产品功能
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,产品功能,产品问题
 weight: 05
 collapsible: false
 draft: false

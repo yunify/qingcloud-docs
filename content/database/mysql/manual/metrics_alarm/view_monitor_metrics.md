@@ -1,7 +1,7 @@
 ---
 title: "查看资源和服务监控"
 description: 本小节主要介绍 MySQL Plus 主要支持哪些监控指标。 
-keyword: mysql plus 监控指标
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,监控指标
 weight: 40
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "设置自动备份"
 description: 本小节主要如何开启 MySQL Plus 数据自动备份。 
-keyword: MySQL Plus 数据自动备份；
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,数据自动备份
 weight: 20
 collapsible: false
 draft: false

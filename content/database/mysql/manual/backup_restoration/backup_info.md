@@ -1,7 +1,7 @@
 ---
 title: "备份概述"
 description: 本小节主要如何开启 MySQL Plus 备份概述。 
-keywords: MySQL Plus 备份概述；
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,备份概述
 weight: 01
 collapsible: false
 draft: false
@@ -44,6 +44,8 @@ MySQL Plus 逻辑备份主要面向容器计算和形态的集群，通过配置
 > **注意**
 > 
 > 根据集群计算和存储类型，一个集群仅支持一种备份方式。
+> 
+> 默认备份方式为 **快照备份**。
 <!--
 > -KSV + SSD 类型集群支持**快照备份**方式。
 > 

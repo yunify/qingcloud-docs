@@ -1,7 +1,7 @@
 ---
 title: "产品系列"
 description: 本小节主要介绍 MySQL Plus 版本规格。 
-keyword: mysql plus 版本规格, 版本应用场景 
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,版本规格,版本应用场景 
 weight: 20
 collapsible: false
 draft: false
@@ -9,7 +9,7 @@ draft: false
 
 
 
-QingCloud MySQL Plus 根据 QingCloud AppCenter 功能特点定制了三个功能系列：基础版、高可用版、金融版。
+MySQL Plus 根据 AppCenter 功能特点定制了三个功能系列：基础版、高可用版、金融版。
 
 ## 系列介绍
 

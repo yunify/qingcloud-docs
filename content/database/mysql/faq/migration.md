@@ -1,7 +1,7 @@
 ---
 title: "数据管理"
 description: 本小节主要介绍 MySQL Plus 数据管理常见问题。 
-keywords: mysql plus 数据 迁移，备份，订阅问题
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,数据迁移，备份，订阅问题
 weight: 30
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "查看备份"
 description: 本小节主要如何设置 MySQL Plus 数据逻辑备份策略。 
-keywords: MySQL Plus 数据逻辑备份策略；
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,数据逻辑备份策略
 weight: 30
 collapsible: false
 draft: false

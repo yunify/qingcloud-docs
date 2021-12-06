@@ -1,7 +1,9 @@
 ---
 title: "Zabbix 客户端服务 "
-description: test
+description: 小节主要介绍如何设置 zabbix 监控告警。 
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,监控指标,zabbix,多位监控
 weight: 50
+collapsible: false
 draft: false
 ---
 
@@ -12,7 +14,7 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 MySQL Plus 集群，且集群状态为**活跃**。
 - 已安装 Zabbix 客户端，并下载 [Percona Zabbix Templates](https://releases-qs.pek3a.qingstor.com/zabbix/zbx_export_templates.xml?response-content-disposition=attachment)。
 

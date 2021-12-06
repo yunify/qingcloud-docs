@@ -1,7 +1,7 @@
 ---
 title: "配置参数"
 description: 本小节主要介绍 MySQL Plus 配置参数常见问题。 
-keywords: mysql plus 配置参数问题
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,配置参数问题
 weight: 50
 collapsible: false
 draft: false

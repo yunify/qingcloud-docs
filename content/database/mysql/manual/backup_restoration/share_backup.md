@@ -1,7 +1,7 @@
 ---
 title: "共享备份"
 description: 本小节主要如何共享 MySQL Plus 数据备份。 
-keywords: MySQL Plus 共享备份；
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,共享备份,
 weight: 80
 collapsible: false
 draft: false

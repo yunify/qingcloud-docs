@@ -1,7 +1,7 @@
 ---
 title: "用户帐号"
 description: 本小节主要介绍 MySQL Plus 用户帐号常见问题。 
-keywords: mysql plus 用户帐号问题
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,用户帐号问题
 weight: 20
 collapsible: false
 draft: false

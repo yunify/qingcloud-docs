@@ -1,7 +1,7 @@
 ---
 title: "下载 MySQL 日志"
 description: 本小节主要介绍如何下载 MySQL Plus 日志。 
-keyword: mysql plus 日志,
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,日志,
 weight: 01
 collapsible: false
 draft: false

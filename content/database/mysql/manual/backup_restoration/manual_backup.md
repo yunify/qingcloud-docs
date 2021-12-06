@@ -1,10 +1,12 @@
 ---
 title: "创建手动备份"
 description: 本小节主要如何创建 MySQL Plus 数据手动备份。 
-keywords: MySQL Plus 数据手动备份；
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,数据手动备份
 weight: 10
 collapsible: false
 draft: false
+alias: 
+   - /database/mysql/manual/backup_restoration/enable_backup/
 ---
 
 
@@ -13,7 +15,7 @@ MySQL Plus 提供数据备份管理，集群备份创建成功后，可基于备
 
 - MySQL Plus 集群硬盘可以创建多条备份链，每条备份链可包括一个**全量备份**和多个**增量备份**，支持从任意备份点恢复数据。
 
-- 为确保集群数据的全量备份，MySQL Plus 还提供数据自动备份管理，通过设置自动备份时间，启动定时备份数据。
+- 为确保集群数据的全量备份，MySQL Plus 还提供数据自动备份管理，通过设置[自动备份](../auto_backup)时间，启动定时备份数据。
 
 > **注意**
 > 

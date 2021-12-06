@@ -1,7 +1,7 @@
 ---
 title: "日志管理"
 description: 本小节主要介绍 MySQL Plus 日志管理常见问题。 
-keywords: mysql plus 日志管理
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,日志管理问题,日志问题
 weight: 90
 collapsible: false
 draft: false

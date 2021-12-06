@@ -1,7 +1,7 @@
 ---
 title: "扩容和升级"
 description: 本小节主要介绍 MySQL Plus 扩容和升级常见问题。 
-keywords: mysql plus 扩容，升级问题
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,扩容,升级问题
 weight: 40
 collapsible: false
 draft: false

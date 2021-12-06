@@ -1,7 +1,7 @@
 ---
 title: "回收站"
 description: 本小节主要介绍如何恢复已删除的 MySQL Plus 集群。 
-keyword: mysql plus 恢复集群
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,恢复集群
 weight: 100
 collapsible: false
 draft: false

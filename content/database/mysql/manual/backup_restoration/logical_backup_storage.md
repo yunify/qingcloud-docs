@@ -1,7 +1,7 @@
 ---
 title: "设置存储策略"
 description: 本小节主要如何设置 MySQL Plus 备份存储策略。 
-keywords: MySQL Plus 启用对象存储服务；设置备份存储策略
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,启用对象存储服务,设置备份存储策略
 weight: 25
 collapsible: false
 draft: false
