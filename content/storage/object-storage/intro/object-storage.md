@@ -1,6 +1,8 @@
 ---
 title: "对象存储"
 date: 2020-11-25
+description: 本小节主要介绍对象存储简介相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 draft: false
 weight: 1
 ---

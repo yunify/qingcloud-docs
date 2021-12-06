@@ -1,6 +1,7 @@
 ---
 title: "Linux 使用对象存储作为本地盘"
-description:
+description: 本小节主要介绍 Linux 使用对象存储作为本地盘相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 draft: false
 weight: 3
 ---
