@@ -1,5 +1,7 @@
 ---
 title: "创建直播域名"
+keyword: 云计算, 青云, QingCloud, 视频直播, 创建直播域名
+description: 本章节介绍如何创建直播域名。
 draft: false
 collapsible: false
 weight: 10

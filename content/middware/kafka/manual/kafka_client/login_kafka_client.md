@@ -1,6 +1,7 @@
 ---
 title: "登录 Kafka 客户端"
-description: 登录 Kafka 客户端
+description: 登录 Kafka 客户端。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,client,客户端
 weight: 10
 draft: false
 ---

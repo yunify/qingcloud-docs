@@ -1,5 +1,7 @@
 ---
 title: "行业解决方案"
+keyword: 云计算, 青云, QingCloud, 视频直播, 解决方案, 直播电商, 在线教育, 自媒体行业, 政企宣传
+description: 本章节介绍视频直播的行业解决方案。
 draft: false
 collapsible: false
 weight: 40

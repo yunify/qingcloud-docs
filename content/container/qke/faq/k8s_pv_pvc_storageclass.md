@@ -8,6 +8,7 @@ keyword: 青云, QingCloud, QKE, Kubernetes, 持久化存储, PVC
 
 PVC 是 Kubernetes 中一种比较常见的持久化存储方案，其后端一般是独立的存储系统如 NFS、iSCSI、cephfs 、glusterfs 等。本文将简单阐述这一套存储体系的大致内容。
 
+
 ## 基本概念
 
 在学习 Kubernetes 的持久化存储体系之前，您需要先了解以下几个概念：
@@ -16,7 +17,9 @@ PVC 是 Kubernetes 中一种比较常见的持久化存储方案，其后端一�
 
   
 
+
   所谓容器的 Volume，其实就是将一个宿主机上的目录，跟一个容器里的目录绑定挂载在一起。在 Kubernets 中，卷的类型有很多，不同类型的卷的功能都不一样，具体可以参照文档：[Kubernetes 中文文档-Kubernetes Volume](http://docs.kubernetes.org.cn/429.html#i)。
+
 
 - **PV** 
 
