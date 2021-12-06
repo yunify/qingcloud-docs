@@ -122,7 +122,7 @@ keyword: 青云, QingCloud, 云计算, 创建, QKE 集群, 节点配置
 
 ![](../../_images/create-external-service.png)
 
-- **etcd 服务**：k8s 集群使用 etcd 作为后端存储。
+- **etcd 服务**：Kubernetes 集群使用 etcd 作为后端存储。
 
   建议使用青云提供的 [etcd 服务](/middware/etcd/) 单独部署和管理，以获得更好的可用性和容错性。点击**快捷创建**即可创建 etcd 服务集群。etcd 集群和 QKE 集群需部署在同一 VPC 下。
 
@@ -136,7 +136,7 @@ keyword: 青云, QingCloud, 云计算, 创建, QKE 集群, 节点配置
 
 > **注意**
 >
-> 内置 etcd 会占用 QKE 主节点的资源并无法增删节点；内置 Elasticsearch 会占用 k8s 集群的资源并依赖 k8s 进行管理，在 k8s 集群发生故障期间 Elasticsearch 可能无法正常工作。故生产环境下，建议您独立部署 [etcd 服务](/middware/etcd/) 及  [ELK 服务](/bigdata/elk/)。
+> 内置 etcd 会占用 QKE 主节点的资源并无法增删节点；内置 Elasticsearch 会占用 Kubernetes 集群的资源并依赖 kKubernetes 进行管理，在 Kubernetes 集群发生故障期间 Elasticsearch 可能无法正常工作。故生产环境下，建议您独立部署 [etcd 服务](/middware/etcd/) 及  [ELK 服务](/bigdata/elk/)。
 
 
 

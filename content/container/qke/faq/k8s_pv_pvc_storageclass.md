@@ -6,7 +6,7 @@ weight: 10
 keyword: 青云, QingCloud, QKE, Kubernetes, 持久化存储, PVC
 ---
 
-PVC 是 k8s 中一种比较常见的持久化存储方案，其后端一般是独立的存储系统如 NFS、iSCSI、cephfs 、glusterfs 等。本文将简单阐述这一套存储体系的大致内容。
+PVC 是 Kubernetes 中一种比较常见的持久化存储方案，其后端一般是独立的存储系统如 NFS、iSCSI、cephfs 、glusterfs 等。本文将简单阐述这一套存储体系的大致内容。
 
 ## 基本概念
 
@@ -16,7 +16,7 @@ PVC 是 k8s 中一种比较常见的持久化存储方案，其后端一般是�
 
   
 
-  所谓容器的 Volume，其实就是将一个宿主机上的目录，跟一个容器里的目录绑定挂载在一起。在k8s 中，卷的类型有很多，不同类型的卷的功能都不一样，具体可以参照文档：[Kubernetes Volume _ Kubernetes(K8S)中文文档_Kubernetes中文社区](http://docs.kubernetes.org.cn/429.html#i)。
+  所谓容器的 Volume，其实就是将一个宿主机上的目录，跟一个容器里的目录绑定挂载在一起。在 Kubernets 中，卷的类型有很多，不同类型的卷的功能都不一样，具体可以参照文档：[Kubernetes 中文文档-Kubernetes Volume](http://docs.kubernetes.org.cn/429.html#i)。
 
 - **PV** 
 
@@ -136,7 +136,7 @@ PVC 可以理解为持久化存储的“接口”，它提供了对某种持久�
 
 **Volume Controller**
 
-前面说到，PVC 必须和 PV 绑定之后才能被 pod 使用。但是这个绑定操作应该由谁来完成呢？其实在 k8s 中运行着一个单独的控制器 Volume Controller，它所维护的一个名叫 PersistentVolumeController 的控制循环，专门负责这个操作。
+前面说到，PVC 必须和 PV 绑定之后才能被 pod 使用。但是这个绑定操作应该由谁来完成呢？其实在 Kubernetes 中运行着一个单独的控制器 Volume Controller，它所维护的一个名叫 PersistentVolumeController 的控制循环，专门负责这个操作。
 
 PersistentVolumeController 会不断地查看当前每一个 PVC，是不是已经处于 Bound（已绑定）状态。如果不是，那它就会遍历所有的、可用的 PV，并尝试将其与这个 PVC 进行绑定。而所谓将一个 PV 与 PVC 进行“绑定”，其实就是将这个 PV 对象的名字，填在了 PVC 对象的 spec.volumeName 字段上。
 
