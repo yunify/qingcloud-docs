@@ -1,7 +1,7 @@
 ---
 title: "启动灾备"
 description: 本小节主要介绍如何启动 PostgreSQL 灾备。 
-keywords: PostgreSQL 异地容灾，异地灾备
+keyword: PostgreSQL 异地容灾，异地灾备
 weight: 10
 collapsible: false
 draft: false
