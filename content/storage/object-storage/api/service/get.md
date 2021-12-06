@@ -1,5 +1,7 @@
 ---
 title: "GET Service"
+description: 本小节主要介绍 GET Service 相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
 该 API 用于获取请求者名下的所有 Bucket 列表。

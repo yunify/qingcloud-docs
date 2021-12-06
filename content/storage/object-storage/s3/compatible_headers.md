@@ -1,5 +1,7 @@
 ---
 title: "兼容公共头"
+description: 本小节主要介绍兼容公共头相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
 

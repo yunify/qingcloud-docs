@@ -1,5 +1,7 @@
 ---
 title: "图片格式转换"
+description: 本小节主要介绍图片格式转换接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, 图片格式转换
 ---
 
 用户可以调用该 API 接口将原始图片转换为目标格式。根据 [前文](/storage/object-storage/api/object/image_process/#图片格式) 相关内容，我们知道，该操作支持的图片格式为：`jpeg`，`png`，`webp`，`tiff`。

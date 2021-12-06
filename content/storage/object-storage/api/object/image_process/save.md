@@ -1,5 +1,7 @@
 ---
 title: "图片另存"
+description: 本小节主要介绍图片另存接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, 图片另存
 ---
 
 用户可以调用该 API 接口将图片另存到 QingStor 对象存储的 Bucket 中，主要用于方便用户保存各种处理后的图片。
