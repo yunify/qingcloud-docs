@@ -1,10 +1,10 @@
 ---
 title: "产品限制"
-description: Test description
+description: 介绍如负载均衡器的相关配额限制。
+keyword: 青云, QingCloud, 网络, 负载均衡器, 限制, 配额
 weight: 40
 draft: false
 enableToc: false
-keyword: QingCloud, 青云, 负载均衡器
 ---
 
 本文介绍负载均衡器（LB）实例的配额限制，以及如何申请更高配额。

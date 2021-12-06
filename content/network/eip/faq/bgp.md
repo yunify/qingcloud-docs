@@ -2,8 +2,8 @@
 title: "BGP多线资源分布"
 draft: false
 weight: 8
-enableToc: false
-keyword: QingCLoud, 青云, 公网IP, 弹性EIP, 
+description: 介绍青云各区域的BGP多线资源分布。
+keyword: QingCLoud, 青云, 公网IP, 弹性EIP
 ---
 
 - 北京一区：BGP多线，包括：电信、联通、移动（铁通）、教育网、鹏博士（长宽、电信通等）、歌华等。
