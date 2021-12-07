@@ -1,5 +1,7 @@
 ---
 title: "行业解决方案"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,在线教育, 视频会议, 远程医疗, 金融保险, 娱乐社交
+description: 本章节介绍实时音视频 RTC 的行业解决方案。
 draft: false
 collapsible: false
 weight: 40

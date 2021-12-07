@@ -1,10 +1,10 @@
 ---
 title: "Linux客户端配置及访问"
 date: 2021-11-22T17:08:56+09:00
-description: Test description
+description: 本小节主要介绍Linux客户端配置及访问的相关操作。
 draft: false
-weight: 20
-keyword: 青云，文件存储
+weight: 2
+keyword: 云计算, 青云, QingCloud, 文件存储, Virtual NAS, vNAS
 ---
 
 ## 安装客户端软件

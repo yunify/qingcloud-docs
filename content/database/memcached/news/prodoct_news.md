@@ -1,7 +1,10 @@
 ---
 title: "产品动态"
+description: 本小节主要介绍 Memcached 产品动态
+keyword: 数据库，Memcached，产品动态
+weight: 05
 collapsible: false
-weight: 10
+draft: false
 
 product:
 

@@ -1,7 +1,9 @@
 ---
 title: "附表1"
-description: test
+description: 本小节主要介绍 Deep Learning 附表2
+keyword: 人工智能，深度学习，Deep Learning，数据集，模型和数据
 weight: 60
+collapsible: false
 draft: false
 ---
 

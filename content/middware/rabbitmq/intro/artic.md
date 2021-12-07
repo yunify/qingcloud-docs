@@ -1,10 +1,10 @@
 ---
 title: "产品架构"
-description: 
+description: RabbitMQ 服务的部署架构。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,RabbitMQ,rabbitmq,消息队列服务,消息中间件,产品架构,产品简介
 draft: false
 weight: 4
 enableToc: false
-keyword:  QingCloud, RabbitMQ, 消息队列服务, 消息中间件
 ---
 
 RabbitMQ 服务的部署架构如下图所示。

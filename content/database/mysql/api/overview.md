@@ -1,7 +1,7 @@
 ---
 title: "概述"
 description: 本小节主要介绍如何进行 MySQL Plus 集群 api 概述。 
-keywords: mysql plus 概述；api 概述
+keyword: mysql plus 概述；api 概述
 draft: false
 weight: 05
 collapsible: false

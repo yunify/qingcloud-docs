@@ -1,7 +1,7 @@
 ---
 title: "什么是 QingMR"
 description: 本小节主要介绍 QingMR 服务简介。 
-keywords: QingMR 产品简介, 
+keyword: QingMR 产品简介, 
 weight: 10
 collapsible: false
 draft: false

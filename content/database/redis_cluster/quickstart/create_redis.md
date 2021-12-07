@@ -1,7 +1,7 @@
 ---
 title: "创建 Redis Cluster 实例"
 description: 本小节主要介绍如何快速创建 Redis Cluster。 
-keywords: 创建 redis 集群
+keyword: 创建 redis 集群
 weight: 2
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "mysqldump 方式"
 description: 本小节主要介绍 RadonDB 数据迁移。 
-keywords: RadonDB 数据迁移,
+keyword: RadonDB 数据迁移,
 weight: 30
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "步骤一：创建集群"
 description: 本小节主要介绍如何快速创建 MySQL Plus 数据库。 
-keywords: mysql plus 实例创建,集群创建
+keyword: mysql plus 实例创建,集群创建
 weight: 10
 collapsible: false
 draft: false

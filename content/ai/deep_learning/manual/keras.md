@@ -1,7 +1,9 @@
 ---
 title: "Keras 使用指南"
-description: test
+description: 本小节主要介绍 Keras 使用指南
+keyword: 人工智能，深度学习，Deep Learning，Keras 使用指南
 weight: 35
+collapsible: false
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "产品系列"
 description: 本小节主要介绍 PolonDB 性能规格。 
-keywords: PolonDB, QingCloud, 性能规格
+keyword: PolonDB, QingCloud, 性能规格
 weight: 20
 collapsible: false
 draft: false

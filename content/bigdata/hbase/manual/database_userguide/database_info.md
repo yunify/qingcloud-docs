@@ -1,7 +1,7 @@
 ---
 title: "使用简介"
 description: 本小节主要介绍 HBase 数据库使用指南简介。 
-keywords: HBase 使用简介,
+keyword: HBase 使用简介,
 weight: 10
 collapsible: false
 draft: false

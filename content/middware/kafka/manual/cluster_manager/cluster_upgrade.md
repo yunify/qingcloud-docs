@@ -1,7 +1,7 @@
 ---
 title: "版本升级"
-date: 2021-11-15T00:40:25+09:00
-description: Kafka 集群版本升级
+description: 当 Kafka 发布新版本后，系统将自动检测到有版本待升级。目前仅支持离线升级，升级前需要关闭集群，业务将被中断，请在业务低峰期进行升级操作。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,升级
 weight: 21
 draft: false
 ---

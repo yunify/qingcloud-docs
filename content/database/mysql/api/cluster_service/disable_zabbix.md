@@ -1,7 +1,7 @@
 ---
 title: "stop_zabbix"
 description: 本小节主要介绍 MySQL Plus 关闭 Zabbix 监控服务接口。 
-keywords: mysql plus 关闭 zabbix 监控服务,stop_zabbix，zabbix 监控
+keyword: mysql plus 关闭 zabbix 监控服务,stop_zabbix，zabbix 监控
 weight: 60
 collapsible: false
 draft: false

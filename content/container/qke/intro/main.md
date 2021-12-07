@@ -3,7 +3,7 @@ title: "什么是 QKE"
 description: 介绍 QKE 服务功能及版本
 draft: false
 enableToc: false
-keywords: Kubernetes, KubeSphere
+keyword: Kubernetes, KubeSphere
 weight: 10
 ---
 

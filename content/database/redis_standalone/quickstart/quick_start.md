@@ -1,8 +1,7 @@
 ---
 title: "快速创建 Redis Standalone 实例"
 description: 本小节主要介绍如何快速创建 Redis Standalone 实例。 
-keywords: redis standalone 实例创建
-data: 2021-05-14T00:38:25+09:00
+keyword: redis standalone 实例创建
 weight: 1
 collapsible: false
 draft: false

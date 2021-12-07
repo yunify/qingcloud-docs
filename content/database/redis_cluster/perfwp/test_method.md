@@ -4,7 +4,7 @@ description: 本小节主要介绍 Redis 的性能测试方法。
 weight: 6
 collapsible: false
 draft: false
-keywords: redis cluster, 性能测试, 测试方法
+keyword: redis cluster, 性能测试, 测试方法
 ---
 
 本文介绍使用 redis-benchmark 进行 Redis Cluster 性能测试的具体方法。

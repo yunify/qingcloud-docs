@@ -1,7 +1,7 @@
 ---
 title: "切换私有网络"
-date: 2021-11-03T00:40:25+09:00
-description: test
+description: 切进换私有网络，即对 Kafka 集群中的节点行网络迁移。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,切换网络,切换私有网络,迁移网络
 weight: 30
 draft: false
 ---

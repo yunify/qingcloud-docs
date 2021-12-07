@@ -1,7 +1,7 @@
 ---
 title: "设置自动备份策略"
 description: 本小节主要如何开启 MongoDB Cluster 数据自动备份。 
-keywords: MongoDB Cluster 数据自动备份；
+keyword: MongoDB Cluster 数据自动备份；
 weight: 20
 collapsible: false
 draft: false

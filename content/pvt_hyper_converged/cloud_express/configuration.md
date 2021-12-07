@@ -1,7 +1,7 @@
 ---
 title: "配置中心"
 description: 本小节主要介绍青立方® 超融合易捷版配置中心。 
-keywords: 青立方® 超融合易捷版，配置中心
+keyword: 青立方® 超融合易捷版，配置中心
 weight: 90
 collapsible: false
 draft: false

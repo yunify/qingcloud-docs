@@ -1,10 +1,10 @@
 ---
 title: "vNAS性能测试"
 date: 2021-11-22T17:08:56+09:00
-description: Test description
+description: 本小节主要介绍vNAS性能测试。
 draft: false
-weight: 40
-keyword: 青云，文件存储
+weight: 4
+keyword: 云计算, 青云, QingCloud, 文件存储, Virtual NAS, vNAS, 性能测试
 ---
 
 NFS 和 Samba（CIFS）网络共享存储的 IO 性能对当前网络状况有很大的依赖性，即使 vNAS 服务器和客户端同在一个私有网络内部，可能因弹性裸金属服务器所处网络区域的不同，在 IO 性能上会有不同的表现：

@@ -1,7 +1,7 @@
 ---
 title: "查看资源和服务监控"
 description: 本小节主要介绍如何查看 Nifi 监控信息。 
-keywords: Nifi 监控告警
+keyword: Nifi 监控告警
 weight: 40
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "监控告警"
 description: 本小节主要介绍青立方® 超融合易捷版监控告警。 
-keywords: 青立方® 超融合易捷版，监控告警
+keyword: 青立方® 超融合易捷版，监控告警
 weight: 30
 collapsible: false
 draft: false

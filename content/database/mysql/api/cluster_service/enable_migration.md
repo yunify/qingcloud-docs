@@ -1,7 +1,7 @@
 ---
 title: "migrate_data"
 description: 本小节主要介绍 MySQL Plus 在线迁移接口。 
-keywords: mysql plus 在线迁移,migrate_data
+keyword: mysql plus 在线迁移,migrate_data
 weight: 30
 collapsible: false
 draft: false

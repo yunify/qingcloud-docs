@@ -1,7 +1,9 @@
 ---
 title: "负载均衡"
-description: test
+description: 本小节主要介绍推理引擎负载均衡。 
+keyword: 人工智能，推理引擎，Inference Engine，负载均衡
 weight: 50
+collapsible: false
 draft: false
 ---
 

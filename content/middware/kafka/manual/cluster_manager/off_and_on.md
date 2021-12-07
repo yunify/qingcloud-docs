@@ -1,7 +1,7 @@
 ---
 title: "启停集群"
 description: 本小节主要介绍如何开启和关闭 Kafka 集群。 
-keywords: Kafka 开启；关闭
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka 开启,关闭集群,Kafka
 weight: 40
 collapsible: false
 draft: false

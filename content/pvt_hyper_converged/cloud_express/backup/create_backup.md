@@ -1,7 +1,7 @@
 ---
 title: "创建备份"
 description: 本小节主要介绍青立方® 超融合易捷版创建备份。 
-keywords: 青立方® 超融合易捷版创建备份
+keyword: 青立方® 超融合易捷版创建备份
 weight: 10
 collapsible: false
 draft: false

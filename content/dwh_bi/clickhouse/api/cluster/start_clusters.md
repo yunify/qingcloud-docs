@@ -1,7 +1,7 @@
 ---
 title: "StartClusters"
 description: 本小节主要介绍获取 ClickHouse 启动集群的接口。 
-keywords: ClickHouse 启动集群，启动集群
+keyword: ClickHouse 启动集群，启动集群
 weight: 14
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "删除备份"
 description: 本小节主要介绍青立方® 超融合易捷版 删除备份。 
-keywords: 删除备份,
+keyword: 删除备份,
 weight: 40
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "管理外网地址"
 description: 本小节主要介绍如何释放 MySQL Plus 外网地址。 
-keywords: mysql plus 外网连接管理,
+keyword: mysql plus 外网连接管理,
 weight: 15
 collapsible: false
 draft: false

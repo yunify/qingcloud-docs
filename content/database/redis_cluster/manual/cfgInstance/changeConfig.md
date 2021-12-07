@@ -4,7 +4,7 @@ description: 本小节介绍如何变更 Redis 节点的资源配置。
 weight: 1
 collapsible: false
 draft: false
-keywords: QingCloud，Redis Cluster，数据库
+keyword: QingCloud，Redis Cluster，数据库
 ---
 
 Redis Cluster 支持变更集群节点的配置，如变更云服务器类型、I/O 线程、内存规格等，以满足不同的性能和容量需求。

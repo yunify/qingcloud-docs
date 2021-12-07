@@ -1,7 +1,9 @@
 ---
 title: "深度学习平台启动指南"
-description: test
+description: 本小节主要介绍 Deep Learning 启动指南
+keyword: 人工智能，深度学习，Deep Learning，启动指南，激活 VirtualEnv，启动环境 ，启动容器
 weight: 15
+collapsible: false
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "返回结构"
 description: 本小节主要介绍 ClickHouse API 返回结构。 
-keywords: ClickHouse 返回结构；API 返回结构
+keyword: ClickHouse 返回结构；API 返回结构
 draft: false
 weight: 30
 collapsible: false

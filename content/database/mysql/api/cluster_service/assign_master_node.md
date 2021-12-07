@@ -1,7 +1,7 @@
 ---
 title: "assignmaster"
 description: 本小节主要介绍 MySQL Plus 指定主节点接口。 
-keywords: mysql plus 指定主节点,assignmaster
+keyword: mysql plus 指定主节点,assignmaster
 weight: 13
 collapsible: false
 draft: false

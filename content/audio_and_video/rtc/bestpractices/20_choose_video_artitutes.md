@@ -1,9 +1,10 @@
 ---
 title: "如何选择视频分辨率、帧率、码率"
-keyword: 多人视频通话,选择视频属性,选择视频分辨率
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,多人视频通话,选择视频属性,选择视频分辨率
+description: 本章节介绍如何选择视频分辨率、帧率、码率。
 draft: false
 collapsible: false
-weight: 10
+weight: 20
 ---
 
 通常情况下，视频属性的选择需要根据产品的实际情况确定。

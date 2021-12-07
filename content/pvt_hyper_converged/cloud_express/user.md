@@ -1,7 +1,7 @@
 ---
 title: "用户管理"
 description: 本小节主要介绍青立方® 超融合易捷版用户管理。 
-keywords: 青立方® 超融合易捷版，用户，管理用户，创建用户，删除用户
+keyword: 青立方® 超融合易捷版，用户，管理用户，创建用户，删除用户
 weight: 80
 collapsible: false
 draft: false

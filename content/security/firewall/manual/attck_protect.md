@@ -5,6 +5,7 @@ date: 2020-02-28T10:08:56+09:00
 description:
 draft: false
 weight: 3
+keyword: 入侵防御策略,Attack, Application, Common, 基础网络安全策略
 ---
 
 在入侵防御策略中，可以从四个事件集进行策略设置，分别是**Attack（攻击事件集）**、**Application（应用事件集）**、**Common（常规事件集）** 和 **All（最大事件集）**，如下图所示。

@@ -1,7 +1,7 @@
 ---
 title: "UpdateClusterEnvironment"
 description: 本小节主要介绍 ClickHouse 更新节点环境变量接口。 
-keywords: ClickHouse 修改节点环境变量，更新节点环境变量
+keyword: ClickHouse 修改节点环境变量，更新节点环境变量
 weight: 120
 collapsible: false
 draft: false

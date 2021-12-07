@@ -1,7 +1,8 @@
 ---
 title: "WAN 接入点"
 linkTitle: "WAN 接入点"
-description:
+keyword: 云计算, 青云, QingCloud,SD-WAN, WAN 接入点
+description: 本章节介绍什么是 WAN 接入点。
 draft: false
 weight: 20
 ---

@@ -1,7 +1,7 @@
 ---
 title: "数据库连接"
 description: 本小节主要介绍 MySQL Plus 连接常见问题。 
-keywords: mysql plus 连接问题
+keyword: mysql plus 连接问题
 weight: 15
 collapsible: false
 draft: false

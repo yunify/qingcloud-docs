@@ -1,7 +1,7 @@
 ---
 title: "创建防火墙"
 description: 本小节主要介绍青立方® 超融合易捷版 防火墙。 
-keywords: 青立方® 超融合易捷版，创建防火墙
+keyword: 青立方® 超融合易捷版，创建防火墙
 weight: 10
 collapsible: false
 draft: false

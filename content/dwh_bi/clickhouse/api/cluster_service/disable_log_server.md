@@ -1,7 +1,7 @@
 ---
 title: "stop_caddy"
 description: 本小节主要介绍 ClickHouse 关闭日志服务接口。 
-keywords: ClickHouse 关闭日志服务,stop_log_server
+keyword: ClickHouse 关闭日志服务,stop_log_server
 weight: 51
 collapsible: false
 draft: false
