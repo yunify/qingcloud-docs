@@ -1,8 +1,7 @@
 ---
 title: "VPN 服务"
-linkTitle: "VPN 服务"
-date: 2020-02-28T10:08:56+09:00
-description:
+keyword: 青云, QingCloud, VPC, VPN, OpenVPN, PPTP, L2TP
+description: VPN 使用指导
 draft: false
 weight: 35
 ---

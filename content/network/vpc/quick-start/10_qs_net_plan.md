@@ -1,8 +1,7 @@
 ---
 title: "网络规划"
-linkTitle: "网络规划"
-date: 2021-05-18T10:08:56+09:00
-description:
+keyword: 青云, QingCloud, VPC, VPC 网络, 网络规划
+description: 介绍如何规划 VPC 网路及私有网络的数量及网段。
 draft: false
 weight: 10
 ---
