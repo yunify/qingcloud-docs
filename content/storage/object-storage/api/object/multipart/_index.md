@@ -1,5 +1,7 @@
 ---
 title: "Multipart 分段"
+description: 本小节主要介绍 Multipart 分段接口相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Multipart
 ---
 
 - [Initiate Multipart Upload 初始化分段上传](initiate/)

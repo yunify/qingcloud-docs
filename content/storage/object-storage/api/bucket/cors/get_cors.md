@@ -1,7 +1,8 @@
 ---
 title: "Get Bucket CORS"
 date: 2020-11-26T10:08:56+09:00
-description:
+ddescription: 本小节主要介绍 Get Bucket CORS 接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 collapsible: false
 draft: false
 weight: 3

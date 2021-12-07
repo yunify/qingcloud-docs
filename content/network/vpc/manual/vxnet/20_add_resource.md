@@ -1,8 +1,7 @@
 ---
 title: "在私有网络中创建资源"
-linkTitle: "在私有网络中创建资源"
-date: 2021-05-20T10:08:56+09:00
-description:
+keyword: 青云, QingCloud, VPC, VPC 网络, 私有网络
+description: 介绍如何在私有网络中创建云服务器、共享存储等资源。
 draft: false
 weight: 20
 ---

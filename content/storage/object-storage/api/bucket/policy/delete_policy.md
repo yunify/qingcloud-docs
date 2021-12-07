@@ -1,5 +1,7 @@
 ---
 title: "DELETE Bucket Policy"
+description: 本小节主要介绍 DELETE Bucket Policy 接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 ---
 
 该接口用于删除 Bucket 的访问策略相关设置。QingStor 对象存储定义访问策略为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。

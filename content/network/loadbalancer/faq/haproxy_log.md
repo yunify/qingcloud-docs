@@ -1,6 +1,7 @@
 ---
 title: "rsyslog 日志分析"
-description: test
+description: 介绍负载均衡器的 syslog 日志分析。
+keyword: 青云, QingCloud, 网络, 负载均衡器, 日志分析
 draft: false
 ---
 
