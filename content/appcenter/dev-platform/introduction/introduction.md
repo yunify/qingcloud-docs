@@ -1,6 +1,7 @@
 ---
 title: "简介"
-date: 2020.11.11T00:00:00+09:00
+description: AppCenter 云应用开发平台简介。
+keyword: QingCloud, 青云, AppCenter, 云应用开发
 draft: false
 collapsible: false
 weight: 1

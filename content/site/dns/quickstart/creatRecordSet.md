@@ -1,6 +1,7 @@
 ---
 title: "配置域名解析记录"
-description: test
+description: 介绍如何快速域名配置解析记录。
+keyword: QingCloud, 青云, DNS, 域名解析
 weight: 1
 draft: false
 ---
