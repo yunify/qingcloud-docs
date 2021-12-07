@@ -1,6 +1,6 @@
 ---
-title: "数据上云"
-linkTitle: 数据上云
+title: "数据源管理"
+linkTitle: 数据源管理
 _build:
  render: false 
 weight: 20
