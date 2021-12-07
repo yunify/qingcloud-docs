@@ -1,5 +1,7 @@
 ---
 title: "Post Object"
+description: 本小节主要介绍 Post Object 接口相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
 若用户需通过 HTML 表单上传的方式向 Bucket 上传一个 Object，可调用该接口。
