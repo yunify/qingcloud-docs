@@ -121,7 +121,7 @@ ulimit -a
 
 **方案一：**
 
-1. 下载导入脚本 [tidb_data_prepare](../../attach/tidb_data_prepare)。
+1. 下载导入二进制文件 [tidb_data_prepare](/database/tidb/perfwp/attach/tidb_data_prepare)。
 
 2. 添加文件执行权限。
 
