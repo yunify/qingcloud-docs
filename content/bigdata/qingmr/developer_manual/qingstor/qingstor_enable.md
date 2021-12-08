@@ -1,7 +1,7 @@
 ---
 title: "开启 QingStor 集成"
 description: 本小节主要介绍如何开启 QingStor 集成。 
-keywords: qingmr ，QingStor 集成,
+keyword: qingmr ，QingStor 集成,
 weight: 20
 collapsible: false
 draft: false

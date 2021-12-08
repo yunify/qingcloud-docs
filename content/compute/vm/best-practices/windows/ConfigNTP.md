@@ -1,9 +1,9 @@
 ---
 title: "如何配置 NTP 服务"
-description: Test description
+description: 如何配置NTP服务
 weight: 50
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，ntp
 ---
 
 

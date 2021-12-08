@@ -1,7 +1,7 @@
 ---
 title: "什么是 RadonDB"
 description: 本小节主要介绍 RadonDB 产品简介。 
-keywords: radondb 产品简介,
+keyword: radondb 产品简介,
 weight: 10
 collapsible: false
 draft: false

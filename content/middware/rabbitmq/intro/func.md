@@ -1,10 +1,10 @@
 ---
 title: "产品优势"
-description: 
+description: RabbitMQ 服务的产品优势。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,HAProxy + Keepalived,RabbitMQ,rabbitmq,消息队列服务,消息中间件,产品优势,产品简介
 draft: false
 weight: 2
 enableToc: false
-keyword: QingCloud，RabbitMQ，消息队列服务，HAProxy + Keepalived
 ---
 
 ## 金融级数据强一致性

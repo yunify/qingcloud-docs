@@ -1,5 +1,7 @@
 ---
 title: "产品动态"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,最新动态
+description: 本章节介绍实时音视频 RTC 的最新动态。
 collapsible: false
 
 product:

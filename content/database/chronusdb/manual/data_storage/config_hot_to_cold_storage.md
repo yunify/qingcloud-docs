@@ -1,7 +1,7 @@
 ---
 title: "配置冷热存储策略"
 description: 本小节主要介绍如何配置冷热存储策略。 
-keywords: ChronusDB TTL 存储规则，TTL，冷热存储策略
+keyword: ChronusDB TTL 存储规则，TTL，冷热存储策略
 weight: 20
 collapsible: false
 draft: false
@@ -36,7 +36,7 @@ $ echo "CREATE TABLE test.t_local
 (
    EventDate DateTime,
    CounterID UInt32,
-   UserID UInt32,
+   UserID UInt32
 )
 ENGINE = MergeTree()
 PARTITION BY toYYYYMM(EventDate) 

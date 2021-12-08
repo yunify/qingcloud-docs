@@ -1,7 +1,7 @@
 ---
 title: "开启对象存储策略"
 description: 本小节主要介绍如何开启对象存储策略。 
-keywords: ClickHouse 开启对象存储策略；冷热存储，多磁盘数据存储
+keyword: ClickHouse 开启对象存储策略；冷热存储，多磁盘数据存储
 weight: 10
 collapsible: false
 draft: false
@@ -110,7 +110,7 @@ $ echo "CREATE TABLE test.t_local
 (
     EventDate DateTime,
     CounterID UInt32,
-    UserID UInt32,
+    UserID UInt32
 )
 ENGINE = MergeTree()
 PARTITION BY toYYYYMM(EventDate) 

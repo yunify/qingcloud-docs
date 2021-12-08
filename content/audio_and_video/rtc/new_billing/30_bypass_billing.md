@@ -1,5 +1,7 @@
 ---
 title: "旁路推流计费"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,旁路推流计费
+description: 本章节介绍旁路推流的计费说明。
 draft: false
 collapsible: false
 weight: 30

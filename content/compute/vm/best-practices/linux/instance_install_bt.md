@@ -1,7 +1,8 @@
 ---
 title: "安装使用宝塔面板"
-description: test
+description: 宝塔面板
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，宝塔面板
 ---
 
 ## 文档背景

@@ -1,7 +1,7 @@
 ---
 title: "Data Manipulation"
 description: 本小节主要介绍 RadonDB 支持的 Data Manipulation 语句。 
-keywords: radondb SQL 集,
+keyword: radondb SQL 集,
 weight: 20
 collapsible: false
 draft: false

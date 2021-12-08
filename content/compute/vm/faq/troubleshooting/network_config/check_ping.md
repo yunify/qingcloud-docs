@@ -1,10 +1,9 @@
 ---
 title: "ping 不通或丢包时如何进行链路测试"
-description: Test description
+description: ping 不通或丢包时如何进行链路测试
 weight: 10
 draft: false
-enableToc: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，ping不通
 ---
 
 ## 问题描述

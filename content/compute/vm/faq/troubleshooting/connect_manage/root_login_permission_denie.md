@@ -1,10 +1,10 @@
 ---
 title: "root用户通过ssh登录Linux实例报“Permission denied, please try again”"
 date: 2021-03-30T00:38:25+09:00
-description: Test description
+description: root用户通过ssh登录Linux报错
 weight: 40
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，ssh，登录失败
 ---
 
 ## 概述

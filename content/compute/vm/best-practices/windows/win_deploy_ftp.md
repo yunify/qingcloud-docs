@@ -4,7 +4,7 @@ date: 2020-01-30T00:38:25+09:00
 description: Test description
 weight: 60
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，FTP
 ---
 
 **ftp server下载地址**

@@ -1,7 +1,7 @@
 ---
 title: "重建节点"
 description: 本小节主要介绍如重建启节点。 
-keywords: mysql plus 重建节点
+keyword: mysql plus 重建节点
 weight: 25
 collapsible: false
 draft: false

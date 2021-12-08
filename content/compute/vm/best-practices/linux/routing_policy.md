@@ -1,8 +1,8 @@
 ---
 title: "配置多网卡路由策略"
-description: test
+description: 如何配置多网卡路由策略
 draft: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，多网卡路由
 ---
 
 ## 网卡介绍

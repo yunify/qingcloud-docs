@@ -1,5 +1,7 @@
 ---
 title: "产品动态"
+keyword: 云计算, 青云, QingCloud,SD-WAN,最新动态
+description: 本章节介绍 SD-WAN 的最新动态。
 collapsible: false
 
 product:

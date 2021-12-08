@@ -1,5 +1,7 @@
 ---
 title: "计费概述"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,音视频计费,旁路推流计费,云录制计费
+description: 本章节介绍实时音视频 RTC 的计费说明。
 draft: false
 collapsible: false
 weight: 10
@@ -47,12 +49,14 @@ weight: 10
 > 超出 2K+ 的集合分辨率，按照 2K+ 计算。
 
 <table>
-  <tr>
-    <td>分类</td>
-    <td>资源项</td>
-    <td>集合分辨率</td>
-    <td>价格（元/千分钟）</td>
-  </tr>
+  <thead>
+    <tr>
+      <th>分类</th>
+      <th>资源项</th>
+      <th>集合分辨率</th>
+      <th>价格（元/千分钟）</th>
+    </tr>
+  </thead>
   <tr>
     <td rowspan ="5">实时音视频通信</td>
     <td>音频</td>

@@ -1,10 +1,9 @@
 ---
 title: "CentOS 6 无法使用 yum 解决办法"
-description: Test description
+description: CentOS6 无法使用yum
 weight: 50
 draft: false
-enableToc: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，cent0S6
 ---
 
 

@@ -4,7 +4,7 @@ description: 本小节介绍如何调整 Redis 分片数量来扩、缩容。
 weight: 2
 collapsible: false
 draft: false
-keywords: QingCloud，Redis Cluster，数据库，分片
+keyword: QingCloud，Redis Cluster，数据库，分片
 ---
 
 Redis Cluster 支持通过调整分片节点的数量来达到扩、缩容的目的，操作过程中，数据会发生迁移，但不影响业务的正常运行。

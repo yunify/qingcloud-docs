@@ -1,9 +1,9 @@
 ---
 title: "网卡多队列 Nic Multi Queue 功能如何使用"
-description: Test description
+description: 网卡多队列 Nic Multi Queue 功能如何使用
 draft: false
-enableToc: false
 weight: 210
+keyword: 云计算, 青云, QingCloud, 云服务器，网卡多队列
 ---
 
 ## 背景介绍

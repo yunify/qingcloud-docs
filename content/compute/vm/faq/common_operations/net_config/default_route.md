@@ -1,7 +1,8 @@
 ---
 title: "多网卡默认路由配置"
-description: test
+description: 如何进行多网卡默认路由配置
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，多网卡，路由配置
 ---
 
 ## 操作场景

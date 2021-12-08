@@ -1,7 +1,7 @@
 ---
 title: "操作日志"
 description: 本小节主要介绍青立方® 超融合易捷版操作日志。 
-keywords: 青立方® 超融合易捷版，操作日志
+keyword: 青立方® 超融合易捷版，操作日志
 weight: 20
 collapsible: false
 draft: false

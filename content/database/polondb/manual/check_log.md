@@ -1,7 +1,7 @@
 ---
 title: "查看数据库日志"
 description: 本小节主要介绍如何查看 QingCloud PolonDB 数据库日志。 
-keywords: polondb 日志
+keyword: polondb 日志
 weight: 90
 collapsible: false
 draft: false

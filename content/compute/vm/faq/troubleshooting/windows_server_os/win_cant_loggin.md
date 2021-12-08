@@ -2,10 +2,10 @@
 
 title: "远程登录提示“内部错误”"
 date: 2020-04-08T00:38:25+09:00
-description: Test description
+description: 远程登录提示内部错误
 weight: 20
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，远程登录
 ---
 
 ## 问题描述

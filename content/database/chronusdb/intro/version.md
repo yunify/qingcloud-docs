@@ -1,7 +1,7 @@
 ---
 title: "产品版本"
 description: 本小节主要介绍 时序数据库 ChronusDB 主要版本。 
-keywords: chronusdb 版本介绍,系列介绍 
+keyword: chronusdb 版本介绍,系列介绍 
 weight: 30
 collapsible: false
 draft: false

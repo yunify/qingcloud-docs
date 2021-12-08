@@ -1,7 +1,7 @@
 ---
 title: "Grafana 监控"
 description: 本小节主要介绍在 grafana 查看 RadonDB 服务监控指标。 
-keywords: RadonDB 监控指标
+keyword: RadonDB 监控指标
 weight: 50
 collapsible: false
 draft: false

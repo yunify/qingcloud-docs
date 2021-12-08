@@ -1,7 +1,7 @@
 ---
 title: "通过 SSH 密钥访问主机"
 description: 本小节主要介绍青立方® 超融合易捷版 通过 SSH 密钥访问主机。 
-keywords: 青立方® 超融合易捷版，通过 SSH 密钥访问主机
+keyword: 青立方® 超融合易捷版，通过 SSH 密钥访问主机
 weight: 20
 collapsible: false
 draft: false

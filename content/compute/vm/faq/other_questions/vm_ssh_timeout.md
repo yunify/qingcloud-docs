@@ -1,9 +1,9 @@
 ---
 title: "SSH 客户端连接 timeout 问题 ？ "
-description: Test description
+description: SSH 客户端连接 timeout
 draft: false
-enableToc: false
 weight: 120
+keyword: 云计算, 青云, QingCloud, 云服务器，timeout
 ---
 
 ssh 的默认配置为了安全考虑，当发现客户端一段时间内没有输入，就会断开这个 session， 这给使用者带来些许不便。解决这个问题有两种办法：

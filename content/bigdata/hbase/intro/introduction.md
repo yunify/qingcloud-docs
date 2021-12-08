@@ -1,7 +1,7 @@
 ---
 title: "什么是 HBase"
 description: 本小节主要介绍 HBase 服务简介。 
-keywords: HBase 产品简介, 
+keyword: HBase 产品简介, 
 weight: 10
 collapsible: false
 draft: false

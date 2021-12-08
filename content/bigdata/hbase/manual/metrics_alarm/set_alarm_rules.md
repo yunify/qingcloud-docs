@@ -1,7 +1,7 @@
 ---
 title: "设置监控告警"
 description: 本小节主要介绍如何设置 HBase 监控告警。 
-keywords: HBase 监控告警
+keyword: HBase 监控告警
 weight: 20
 collapsible: false
 draft: false

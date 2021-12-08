@@ -1,6 +1,7 @@
 ---
 title: "用户管理"
-description: 
+description: 介绍 IAM 用户管理流程。
+keyword: 青云, IAM , 用户管理, 访问方式
 draft: false
 weight: 40
 ---
@@ -35,9 +36,8 @@ weight: 40
     >
     >创建成功后可以进行批量赋予权限。
     >
-    >
+    
 
-    ## 
 
 ## 编辑用户
 

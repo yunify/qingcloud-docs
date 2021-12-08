@@ -1,7 +1,7 @@
 ---
 title: "集群组件说明"
 description: 本小节主要介绍 ELK 主要集群组件。 
-keywords: ELK 集群组件, 
+keyword: ELK 集群组件, 
 weight: 25
 collapsible: false
 draft: false

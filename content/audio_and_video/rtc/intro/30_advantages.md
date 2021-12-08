@@ -1,5 +1,7 @@
 ---
 title: "产品优势"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,全球覆盖, 高品质音视频, 超低延时, 云端无限量录制, 多类型客户端 SDK
+description: 本章节介绍实时音视频 RTC 的产品优势。
 draft: false
 collapsible: false
 weight: 30

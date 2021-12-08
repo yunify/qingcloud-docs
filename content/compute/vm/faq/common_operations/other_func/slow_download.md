@@ -1,8 +1,9 @@
 ---
 title: "云服务器测试带宽速度"
-description: test
+description: 云服务器如何测试带宽速度
 weight: 20
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，带宽
 ---
 
 

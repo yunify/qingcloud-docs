@@ -1,9 +1,9 @@
 ---
 title: "设置镜像队列 HA"
-description: test
+description: 本小姐主要介绍如何设置镜像队列 HA。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,RabbitMQ,rabbitmq,消息队列服务,消息中间件,镜像队列 HA
 weight: 25
 draft: false
-keyword:  QingCloud, RabbitMQ, 消息队列服务, 消息中间件
 ---
 
 官网参考地址：[https://www.rabbitmq.com/ha.html](https://www.rabbitmq.com/ha.html)

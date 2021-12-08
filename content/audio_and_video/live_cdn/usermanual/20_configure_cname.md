@@ -1,5 +1,7 @@
 ---
 title: "配置 CNAME"
+keyword: 云计算, 青云, QingCloud, 视频直播, 配置 CNAME
+description: 本章节介绍如何配置 CNAME。
 draft: false
 collapsible: false
 weight: 20
@@ -47,31 +49,13 @@ weight: 20
 
    配置说明，如下表所示。
 
-   <table class="table table-bordered table-striped table-condensed">
-     <tr>
-       <th>参数</th>
-       <th>参数说明</th>
-     </tr>
-     <tr>
-       <td>云服务器</td>
-       <td>若您使用的为该域名的子域名生成的推流/播放域名，则配置子域名前缀（例如：play.mylivecom，前缀为 play）。若您使用的为不同的一级域名生成的推流/播放域名，则此处配置<b>@</b>。</td>
-     </tr>
-     <tr>
-       <td>线路</td>
-       <td>选择<b>全网默认</b>。</td>
-     <tr>
-       <td>类型</td>
-       <td>选择 <b>CNAME</b>。</td>
-     </tr>
-        <tr>
-       <td>记录值</td>
-          <td>配置<b>步骤 3</b> 获取的 CNAME 值。</td>
-     </tr>
-          <tr>
-       <td>其他参数</td>
-       <td>您可以根据自己的实际情况填写。</td>
-     </tr>
-   </table>
+   | 参数     | 参数说明                                                     |
+   | -------- | ------------------------------------------------------------ |
+   | 云服务器 | 若您使用的为该域名的子域名生成的推流/播放域名，则配置子域名前缀（例如：play.mylivecom，前缀为 play）。<br />若您使用的为不同的一级域名生成的推流/播放域名，则此处配置@。 |
+   | 线路     | 选择**全网默认**。                                           |
+   | 类型     | 选择 **CNAME**。                                             |
+   | 记录值   | 配置**步骤 3** 获取的 CNAME 值。                             |
+   | 其他参数 | 您可以根据自己的实际情况填写。                               |
    
 8. 配置完成后，点击**添加**。完成 CNAME 值的配置。
 

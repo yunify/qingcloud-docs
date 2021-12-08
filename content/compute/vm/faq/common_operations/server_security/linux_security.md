@@ -1,10 +1,9 @@
 ---
 title: "Linux 操作系统安全设置"
-description: Test description
+description: 如何对Linux 云服务器的操作系统进行安全设置
 weight: 50
 draft: false
-enableToc: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，安全设置
 ---
 
 ## 账号和口令

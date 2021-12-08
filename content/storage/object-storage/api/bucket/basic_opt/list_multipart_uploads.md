@@ -1,5 +1,7 @@
 ---
 title: "List Multipart Uploads"
+description: 本小节主要介绍 List Multipart Uploads 接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
 该接口用于获取 Bucket 内正在进行的分段上传对象的列表。列表按照对象名称的 `alphanumeric` 顺序从小到大排序。

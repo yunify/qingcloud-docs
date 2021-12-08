@@ -1,7 +1,7 @@
 ---
 title: "连接数据库"
 description: 本小节主要介绍如何快速连接 PostgreSQL 数据库。 
-keywords: PostgreSQL 访问,访问数据库
+keyword: PostgreSQL 访问,访问数据库
 weight: 20
 collapsible: false
 draft: false

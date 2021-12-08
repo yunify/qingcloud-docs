@@ -1,7 +1,7 @@
 ---
 title: "修改节点信息"
 description: 本小节主要介绍青立方® 超融合易捷版 修改节点信息。 
-keywords: 青立方® 超融合易捷版，修改节点信息
+keyword: 青立方® 超融合易捷版，修改节点信息
 weight: 15
 collapsible: false
 draft: false

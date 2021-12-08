@@ -1,7 +1,8 @@
 ---
 title: "Linux云服务器配置MySQL"
-description: Test description
+description: Linux配置musql
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，mySQL
 ---
 
 ## 背景介绍
