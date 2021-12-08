@@ -18,7 +18,7 @@ TiDB 支持的监控指标如下表。
 | 可用内存                                                     | 5分钟                                                        | GB     | 分别统计 TiDB、PD、TiKV、TiFlash 的剩余可用内存。            |
 | 延迟                                                         | 5分钟                                                        | ms     | 分别统计在所有 SQL 响应请求中， 99.9%、99% 及 90% 的 SQL 请求响应的延迟时间。 |
 | TiDB 总连接数                                                | 5分钟                                                        | counts | TiDB 的总连接数。                                            |
-| TiKV 平均 Leder 数                                           | 5分钟                                                        | counts | 统计每个 TiKV 上平均有多少个 [Leader](../../../intro/term/#leaderfollowerlearner)。 |
+| TiKV 平均 Leader 数                                           | 5分钟                                                        | counts | 统计每个 TiKV 上平均有多少个 [Leader](../../../intro/term/#leaderfollowerlearner)。 |
 | TiKV 平均  Region 数                                         | 5分钟                                                        | counts | 统计每个 TiKV 上平均有多少个 [Region](../../../intro/term/#regionpeerraft-group)。 |
 
 
