@@ -96,12 +96,7 @@
                       {{ end }}
                     
                     </div>
-                    {{ $page_list := (union (where .Pages ".Params._build.render" "!=" false) .Sections).ByWeight }}
-                    {{ $length := len $page_list}}
-                    {{if gt $length 5}}
-                      <div id="unfold">查看更多</div>
-                      <!-- <div id="fold">收起</div> -->
-                    {{end}}
+                  
                 </div>
               </div>
             </div>

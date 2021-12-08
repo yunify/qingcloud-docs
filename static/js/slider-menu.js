@@ -5,6 +5,23 @@ $(function () {
 
   findActiveItem();
 
+  // $("mobile-slider-menu-block-nav").on("scroll", () => {
+  //   let a = $("mobile-slider-menu-block-nav").offset().top;
+  //   console.log("ssdas", a);
+  // });
+
+  $(window).scroll(() => {
+    let top = $("#mobile-slider-menu-block-nav").offset().top;
+    if (top > 327) {
+      $("#mobile-slider-menu-block-nav").addClass(
+        "moblie-slider-menu-scroll-nav"
+      );
+    } else {
+      $("#mobile-slider-menu-block-nav").removeClass(
+        "moblie-slider-menu-scroll-nav"
+      );
+    }
+  });
   $("#slider-menu-block").on("click", "a", function (ev) {
     currentHash = decodeURI($(this).attr("href"));
     findActiveItem();

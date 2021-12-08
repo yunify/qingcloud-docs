@@ -23,22 +23,21 @@ $(function () {
       $(item.target).addClass("active").siblings().removeClass("active");
     });
 
-  console.log("isMobile(): ", isMobile());
+  initPage();
+
   $(window).resize(() => {
     initPage();
   });
 
-  initPage = () => {
-    console.log("isMobile(): ", isMobile());
+  function initPage() {
     if (isMobile()) {
-      $("#unfold").show();
-      $("#fold").show();
+      $("#mobile-slider-menu-block-nav").css("display", "flex");
+      $("#right-nav-menu").css("display", "block");
     } else {
-      $("#unfold").css("display", "none");
-      console.log('$("#unfold"): ', $("#unfold"));
-      $("#fold").css("dispaly", "none");
+      $("#right-nav-menu").css("display", "none");
+      $("#mobile-slider-menu-block-nav").css("display", "none");
     }
-  };
+  }
 
   // 判断是否是移动端
   function isMobile() {
