@@ -1,7 +1,7 @@
 ---
 title: "退订合约" 
 description: 本小节主要介绍如何退订包年包月合约。 
-keywords: TiDB 计费，计费模式，按需计费
+keyword: QingCloud, 青云, 云计算, TiDB 计费,计费模式,按需计费
 weight: 15
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: "删除用户"
 description: 本小节主要介绍如何删除用户。 
-keywords: TiDB 实例, 用户管理, 删除用户
+keyword: QingCloud, 青云, 云计算, TiDB 实例, 用户管理, 删除用户
 weight: 12
 draft: false
 ---

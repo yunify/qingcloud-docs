@@ -1,7 +1,7 @@
 ---
 title: "基于备份新建实例"
 description: 本小节介绍如何根据备份新建 TiDB 实例。
-keywords: 根据备份创建, 创建实例
+keyword: QingCloud, 青云, 云计算, 根据备份创建, 创建实例
 weight: 30
 collapsible: false
 draft: false

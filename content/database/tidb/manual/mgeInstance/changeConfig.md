@@ -1,7 +1,7 @@
 ---
 title: "更改配置"
 description: 本小节主要介绍如何变更TiDB实例的规格配置。 
-keywords: TiDB 实例，TiDB 分布式数据库，实例规格
+keyword: QingCloud, 青云, 云计算, TiDB 实例,TiDB 分布式数据库,实例规格
 weight: 10
 collapsible: false
 draft: false

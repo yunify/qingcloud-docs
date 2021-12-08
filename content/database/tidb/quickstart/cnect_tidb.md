@@ -1,7 +1,7 @@
 ---
 title: "连接 TiDB 实例"
 description: 本小节主要介绍如何连接TiDB数据库。 
-keywords: TiDB 实例，
+keyword: QingCloud, 青云, 云计算, TiDB 实例, 连接
 weight: 5
 collapsible: false
 draft: false

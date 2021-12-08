@@ -1,7 +1,7 @@
 ---
 title: "删除备份"
 description: 本小节主要介绍如何删除TiDB备份。 
-keywords: TiDB 删除备份；
+keyword: QingCloud, 青云, 云计算, TiDB 删除备份；
 weight: 40
 collapsible: false
 draft: false

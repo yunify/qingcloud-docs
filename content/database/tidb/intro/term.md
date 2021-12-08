@@ -4,7 +4,7 @@ description: Test description
 draft: false
 weight: 12
 enableToc: false
-keywords: TiDB, PD, TiKV, TiFlash
+keyword: QingCloud, 青云, 云计算, TiDB, PD, TiKV, TiFlash
 ---
 
 本文为您介绍分布式数据库 TiDB 的相关术语。

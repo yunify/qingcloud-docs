@@ -4,7 +4,7 @@ description: TiDB 的应用场景
 draft: false
 weight: 4
 enableToc: false
-keywords: TiDB, QingCloud, 数据库
+keyword: QingCloud, 青云, 云计算, TiDB, QingCloud, 数据库
 ---
 
 ## 海量数据场景

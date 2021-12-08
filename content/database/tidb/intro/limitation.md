@@ -4,7 +4,7 @@ description: Test description
 draft: false
 weight: 10
 enableToc: false
-keyword: Redis Cluster, QingCloud, 数据库
+keyword:  QingCloud, 青云, 云计算, TiDB, 数据库
 ---
 
 TiDB 实例在创建或运行等状态下将会被限制某些操作，建议您在使用 TiDB 之前，提前认真阅读并了解以下使用限制与说明。

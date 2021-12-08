@@ -1,7 +1,7 @@
 ---
 title: "修改用户权限"
 description: 本小节主要介绍如何修改 TiDB 用户的权限。 
-keywords: TiDB 实例, 用户管理, 用户权限
+keyword: QingCloud, 青云, 云计算, TiDB 实例, 用户管理, 用户权限
 weight: 5
 draft: false
 ---

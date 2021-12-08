@@ -1,7 +1,7 @@
 ---
 title: "概述"
 description: 本小节主要介绍用户管理基本概念。 
-keywords: TiDB 实例，用户管理
+keyword: QingCloud, 青云, 云计算, TiDB 实例, 用户管理
 weight: 1
 draft: false
 ---

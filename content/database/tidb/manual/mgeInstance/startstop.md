@@ -1,7 +1,7 @@
 ---
 title: "启停实例" 
 description: 本小节主要介绍如何快速启用及停用TiDB实例。 
-keywords: TiDB 实例，TiDB 分布式数据库，启动实例，关闭实例
+keyword: QingCloud, 青云, 云计算, TiDB 实例，TiDB 分布式数据库,启动实例，关闭实例
 weight: 5
 draft: false
 

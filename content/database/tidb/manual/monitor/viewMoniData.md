@@ -1,7 +1,7 @@
 ---
 title: "查看监控数据"
 description: 本小节主要介绍查看监控信息。 
-keywords: TiDB 实例, 监控信息, 监控数据
+keyword: QingCloud, 青云, 云计算, TiDB 实例, 监控信息, 监控数据
 weight: 3
 draft: false
 ---

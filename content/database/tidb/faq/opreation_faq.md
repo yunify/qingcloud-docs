@@ -1,7 +1,7 @@
 ---
 title: "操作使用类 FAQ"
 description: 本小节主要介绍 TiDB 操作使用中的常见问题。
-keywords: TiDB, 常见问题, FAQ
+keyword: QingCloud, 青云, 云计算, TiDB, 常见问题, FAQ
 draft: false
 weight: 5
 ---
