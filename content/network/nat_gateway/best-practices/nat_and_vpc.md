@@ -3,7 +3,7 @@ title: "NAT 网关配合 VPC 使用"
 description: Test descrIPtion
 weight: 5
 draft: true
-keyword: QingCloud, 青云, NAT网关, NAT
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT
 ---
 
 ## 应用场景

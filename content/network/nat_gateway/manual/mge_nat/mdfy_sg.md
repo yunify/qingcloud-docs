@@ -3,7 +3,7 @@ title: "修改 NTA 网关安全组"
 descriptipn: 如何修改 NAT 网关的安全组。
 draft: false
 weight: 22
-keywords: QingCloud, 青云, NAT网关, NAT，安全组
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT，安全组
 ---
 
 NAT 网关创建后，支持随时修改 NAT 网关的公网安全组及基础网络安全组。

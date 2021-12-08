@@ -3,7 +3,7 @@ title: "产品优势"
 descriptipn: 青云NAT网关产品优势
 draft: false
 weight: 5
-keywords: QingCloud, 青云, NAT网关, NAT, 产品优势
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT, 产品优势
 ---
 
 NAT 网关具有以下几大优势：

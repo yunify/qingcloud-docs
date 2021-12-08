@@ -3,7 +3,7 @@ title: "新旧版功能对比"
 descriptipn: NAT 网关新版与旧版的功能对比
 draft: false
 weight: 2
-keywords: QingCloud, 青云, NAT网关, NAT, SNAT, DNAT
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT, SNAT, DNAT
 ---
 
 本文介绍新版 NAT 网关 (NATGW v2.0) 与旧版 NAT 网关 (NATGW v1.0) 的功能差异。

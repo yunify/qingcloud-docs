@@ -3,7 +3,7 @@ title: "配置指向 NAT 网关的路由"
 descriptipn: 配置路由表，路由到NAT网关。
 draft: false
 weight: 3
-keywords: QingCloud, 青云, NAT网关, NAT
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT
 ---
 
 创建 NAT 网关后，需要配置路由规则，将私有网络流量指向 NAT 网关。

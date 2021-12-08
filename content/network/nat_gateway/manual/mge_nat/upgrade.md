@@ -3,7 +3,7 @@ title: "升级 NAT 网关版本"
 descriptipn: 如何修改升级 NAT 网关版本。
 draft: false
 weight: 25
-keywords: QingCloud, 青云, NAT网关, NAT，升级
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT，升级
 ---
 
 NAT 网关发布新版本后，系统将自动检测到有版本待滚动升级，并支持在线升级到最新版本。

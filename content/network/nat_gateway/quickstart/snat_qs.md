@@ -3,7 +3,7 @@ title: "通过 SNAT 功能实现访问公网服务"
 descriptipn: 通过 NAT 网关的 SNAT 功能云服务器访问公网。
 draft: false
 weight: 10
-keywords: QingCloud, 青云, NAT网关, NAT, SNAT, DNAT
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT, SNAT, DNAT
 ---
 
 您可以使用 NAT 网关的 SNAT 功能，为 VPC 中无公网 IP 的云服务器提供访问互联网的代理服务。

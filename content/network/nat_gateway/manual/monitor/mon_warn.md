@@ -3,7 +3,7 @@ title: "查看监控数据"
 descriptipn: 介绍如何查看 NAT 监控信息并导出数据。
 draft: false
 weight: 2
-keywords: QingCloud, 青云, NAT网关, NAT, SNAT, DNAT
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT, SNAT, DNAT
 ---
 
 创建 NAT 网关后，您可以通过控制台查看监控信息并导出数据。

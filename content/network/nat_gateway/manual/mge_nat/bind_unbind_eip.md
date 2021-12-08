@@ -3,7 +3,7 @@ title: "绑定和解绑公网 IP"
 descriptipn: NAT 网关如何绑定公网 IP。
 draft: false
 weight: 5
-keywords: QingCloud, 青云, NAT网关, NAT, 公网
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT, 公网
 ---
 
 您可以在创建 NAT 网关时绑定公网 IP，也可以在创建 NAT 网关后绑定或解绑公网 IP。

@@ -3,7 +3,7 @@ title: "什么是 NAT 网关"
 descriptipn: 青云NAT网关产品介绍
 draft: false
 weight: 1
-keywords: QingCloud, 青云, NAT网关, NAT, SNAT, DNAT
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT, SNAT, DNAT
 ---
 
 NAT 网关 (Network Address Transmition Gateway) 是一个分布式的网络地址转换服务，可以为私有网络的云服务器提供复用公网 IP 的能力，用户的多个私有网络可以通过一个统一的 NAT 网关访问公网或提供互联网服务。

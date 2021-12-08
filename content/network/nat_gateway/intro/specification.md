@@ -3,7 +3,7 @@ title: "产品规格"
 descriptipn: 青云NAT网关产品规格、最大连接数
 draft: false
 weight: 7
-keywords: QingCloud, 青云, NAT网关, NAT, SNAT, DNAT
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT, SNAT, DNAT
 ---
 
 不同规格的 NAT 网关会影响 SNAT 最大连接数和流量转发能力，但不会影响 DNAT 性能。您可以根据业务需求灵活选择规格。

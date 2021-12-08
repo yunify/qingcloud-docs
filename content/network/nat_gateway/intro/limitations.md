@@ -3,7 +3,7 @@ title: "约束与限制"
 descriptipn: 青云NAT网关使用限制
 draft: false
 weight: 7
-keywords: QingCloud, 青云, NAT网关, NAT
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT
 ---
 
 介绍 NAT 网关在产品功能和服务性能上的限制，以及如何申请更高配额。

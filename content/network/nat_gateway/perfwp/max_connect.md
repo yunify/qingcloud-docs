@@ -3,7 +3,7 @@ title: "最大连接数测试"
 descriptipn: NAT 网关性能测试
 draft: false
 weight: 1
-keywords: QingCloud, 青云, NAT网关, 性能测试, 最大连接数
+keyword: QingCloud, 云计算, 青云, NAT网关, 性能测试, 最大连接数
 ---
 
 介绍 NAT 网关的性能测试方法及结果。

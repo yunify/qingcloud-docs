@@ -4,7 +4,7 @@ descriptipn: NAT 网关实例常见问题
 draft: false
 weight: 1
 enableToc: false
-keywords: QingCloud, 青云, NAT网关, NAT, 常见问题
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT, 常见问题
 ---
 
 ## NAT 网关与 VPC 网络所提供的公网访问功能有何区别？

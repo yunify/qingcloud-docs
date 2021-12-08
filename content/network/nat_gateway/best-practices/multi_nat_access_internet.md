@@ -3,7 +3,7 @@ title: "多 NAT 网关实现外网访问分流"
 descriptipn: 私有网络内主机，通过不同的公网IP访问不同的外部公网地址。
 draft: false
 weight: 10
-keyword: QingCloud, 青云, NAT网关, NAT
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT
 ---
 
 本文介绍如何根据私有网络的目标地址让私有网络内的云服务器走不同的出口，以满足境内境外流量分流等场景需求。

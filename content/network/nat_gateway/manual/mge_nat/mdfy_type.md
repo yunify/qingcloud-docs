@@ -3,7 +3,7 @@ title: "调整 NAT 网关规格"
 descriptipn: 如何修改 NAT 网关的规格类型。
 draft: false
 weight: 20
-keywords: QingCloud, 青云, NAT网关, NAT
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT
 ---
 
 NAT 网关创建后，支持随时对 NAT 网关的规格进行变更。

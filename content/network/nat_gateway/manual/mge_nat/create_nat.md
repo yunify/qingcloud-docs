@@ -3,7 +3,7 @@ title: "创建 NAT 网关"
 descriptipn: 如何创建 NAT 网关。
 draft: false
 weight: 1
-keywords: QingCloud, 青云, NAT网关, NAT
+keyword: QingCloud, 云计算, 青云, NAT网关, NAT
 ---
 
 ## 前提条件

@@ -3,7 +3,7 @@ title: "DNAT 规则 FAQ"
 descriptipn: 介绍 DNAT 相关常见问题。
 draft: false
 weight: 5
-keywords: QingCloud, 青云, NAT网关, DNAT, 常见问题
+keyword: QingCloud, 云计算, 青云, NAT网关, DNAT, 常见问题
 ---
 
 ## DNAT 规则中，公网端口可以使用 80 及 443 端口吗？
