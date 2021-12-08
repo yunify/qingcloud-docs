@@ -54,7 +54,7 @@ draft: false
 
 ### 日志配置
 
-日志级别支持：TRACE、DEBUG、INFO、WARN、ERROR。
+日志级别支持：TRACE、DEBUG、INFO、WARN、ERROR，默认为 INFO。
 
 ### 可选配置
 

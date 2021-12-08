@@ -22,7 +22,7 @@ draft: false
 4. 在目标工作空间单击**云上加工** > **网络配置**，进入网络配置页面。
 5. 单击**创建网络**，进入创建网络页面。
    
-   <img src="../../_images/create_net.png" alt="创建网络" style="zoom:50%;" />
+   <img src="../../../_images/create_net.png" alt="创建网络" style="zoom:50%;" />
 
 6. 配置相关参数，参数详细说明请参见 [网络配置参数](#mysql-数据库配置参数)。
 7. 单击**新建**，开始创建网络。

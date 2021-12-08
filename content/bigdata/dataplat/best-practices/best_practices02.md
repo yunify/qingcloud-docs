@@ -1,5 +1,5 @@
 ---
-title: "实时计算 uv、pv、转化率等指标（使用 Jar 作业）"
+title: "实时计算 uv、pv、转化率（Jar 作业）"
 description: 本小节主要介绍。 
 keywords: 
 weight: 20
@@ -14,28 +14,26 @@ draft: false
 1. 申请 ClickHouse 实例。
 2. 在 ClickHouse 实例中，创建表。
 
-```sql
-create table visitor_stats
-(
-    stt     DateTime,
-    edt     DateTime,
-    vc      String,
-    ch      String,
-    ar      String,
-    is_new  String,
-    uv_ct   UInt64,
-    pv_ct   UInt64,
-    sv_ct   UInt64,
-    uj_ct   UInt64,
-    dur_sum UInt64,
-    ts      UInt64
-) engine = ReplacingMergeTree(ts)
-        PARTITION BY toYYYYMMDD(stt)
-        ORDER BY (stt, edt, is_new, vc, ch, ar)
-        SETTINGS index_granularity = 8192;
-```
-
-
+    ```sql
+    create table visitor_stats
+    (
+        stt     DateTime,
+        edt     DateTime,
+        vc      String,
+        ch      String,
+        ar      String,
+        is_new  String,
+        uv_ct   UInt64,
+        pv_ct   UInt64,
+        sv_ct   UInt64,
+        uj_ct   UInt64,
+        dur_sum UInt64,
+        ts      UInt64
+    ) engine = ReplacingMergeTree(ts)
+            PARTITION BY toYYYYMMDD(stt)
+            ORDER BY (stt, edt, is_new, vc, ch, ar)
+            SETTINGS index_granularity = 8192;
+    ```
 
 ## 创建工作空间
 
@@ -43,11 +41,60 @@ create table visitor_stats
 
 ## 创建计算集群
 
+1. 在目标工作空间选择**云上加工** > **计算集群**，进入计算集群列表页面。
+2. 单击**创建集群**，进入创建计算集群页面。
+3. 配置集群相关参数，参数详细介绍请参见[创建计算集群 > 参数说明](../../manual/data_development/cluster/create_cluster/)。
+4. 配置完成后，单击**确定**，开始创建计算集群。
+
 ## 上传 Jar 包
 
-解压[product-demo.zip](https://wiki.yunify.com/download/attachments/91871362/product-demo.zip?version=1&modificationDate=1638683201473&api=v2)，将flink-demo.jar上传到资源管理中。
+### 获取程序包
+
+下载 [product-demo.zip](https://wiki.yunify.com/download/attachments/91871362/product-demo.zip?version=1&modificationDate=1638683201473&api=v2) 文件并解压。
+
+flink-demo.jar 路径为：/product-demo/src/main/resources/flink-demo.jar
+
+### 上传程序包
+
+1. 登录管理控制台。
+2. 选择**产品与服务** > **大数据服务** > **大数据工作台**，进入概览页面。
+3. 在左侧导航选择**工作空间**，进入工作空间页面。
+4. 在目标工作空间单击**云上加工** > **资源管理**，进入资源管理页面。
+5. 单击**上传程序包**，进入上传程序包页面。
+   
+   <img src="/bigdata/dataplat/_images/upload_procedure.png" alt="上传程序包" style="zoom:50%;" />
+
+6. 输入程序包显示名称和描述信息后，单击**添加程序包**，选择 flink-demo.jar 文件。
+7. 单击**上传**，开始上传程序包。
 
 ## 创建 Jar 包作业
+
+1. 在目标工作空间选择**云上加工** > **实时计算**，进入实时计算页面。
+2. 单击**创建作业**，进入创建作业页面。
+   
+   <img src="/bigdata/dataplat/_images/choose_model_jar.png" alt="选择模式" style="zoom:50%;" />
+
+3. 选择 代码开发-Jar 模式。
+4. 单击**下一步**，填写作业名称，并选择作业依赖的计算集群。
+   
+   <img src="/bigdata/dataplat/_images/job_basic.png" alt="填写信息" style="zoom:50%;" />
+
+5. 配置完成后，单击**确定**，开始创建作业。
+
+## 编写 Jar 作业
+
+1. 单击作业名称，进入开发面板。
+2. 配置 Jar 包作业的程序入口、程序所需要的参数。
+   
+   <img src="/bigdata/dataplat/_images/job_jar_edit.png" alt="配置 Jar 作业" style="zoom:50%;" />
+
+   - 引用 Jar 包：选择已上传到资源管理的 Jar 程序包。
+   - 运行函数入口：运行主类。
+   - 运行参数：Kafka 的连接信息。
+
+3. 配置完成后，单击**保存**保存配置；单击**发布**，发布作业。
+
+
 
 
 
