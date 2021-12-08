@@ -1,7 +1,7 @@
 ---
 title: "修改域名服务器"
-description: dns域名服务器。
-date: 2021-04-28T00:38:25+09:00
+description: 本小节主要介绍如何修改域名 DNS 服务器。
+keyword: QingCloud, 青云, DNS, 域名服务器
 weight: 2
 draft: false
 ---

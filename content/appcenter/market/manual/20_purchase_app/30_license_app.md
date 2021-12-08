@@ -1,6 +1,7 @@
 ---
 title: "购买 License 应用"
 description: 购买 License 应用
+keyword: QingCloud, 青云, AppCenter, 云市场, License 应用
 weight: 30
 draft: false
 ---

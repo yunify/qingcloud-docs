@@ -1,6 +1,7 @@
 ---
 title: "Metadata 服务"
-date: 2020-11-11T00:00:00+09:00
+description: 介绍 AppCenter 的 metadata 服务。
+keyword: QingCloud, 青云, AppCenter, metadata
 draft: false
 collapsible: false
 weight: 4
