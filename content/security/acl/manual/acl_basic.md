@@ -1,6 +1,6 @@
 ---
 title: "基础网络安全策略"
-description: manual
+description: 基础网络安全策略介绍
 draft: false
 weight: 50
 draft: false
