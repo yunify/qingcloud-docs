@@ -11,10 +11,13 @@ weight: 5
 - 客户端接入地址：mysql://instance:4000
 
 - TiDB DashBoard：http://instance:2379/dashboard
+    初始用户名及密码：root/数据库 root 用户的密码
 
 - Grafana：http://instance:3000/
+    初始用户名及密码：admin/admin
 
 - Prometheus：http://instance:9090/ 
+    无需密码
 
 ## TiDB 是否支持 XA？
 

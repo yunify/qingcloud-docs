@@ -13,7 +13,7 @@ TiDB 是一个分布式NewSQL数据库。它支持水平弹性扩展、ACID 事�
 ## TiDB、TiKV、Placement Driver (PD) 主要作用是什么？
 
 - TiDB 是 Server 计算层，主要负责 SQL 的解析、制定查询计划、生成执行器。
--  TiKV 是分布式 Key-Value 存储引擎，用来存储真正的数据，简而言之，TiKV 是 TiDB 的存储引擎。
+- TiKV 是分布式 Key-Value 存储引擎，用来存储真正的数据，简而言之，TiKV 是 TiDB 的存储引擎。
 - PD 是 TiDB 集群的管理组件，负责存储 TiKV 的元数据，同时也负责分配时间戳以及对 TiKV 做负载均衡调度。
 
 更多相关信息请参考 [TiDB 基本概念](/database/tidb/intro/term/)。
