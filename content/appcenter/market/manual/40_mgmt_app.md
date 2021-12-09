@@ -1,6 +1,7 @@
 ---
 title: "应用管理"
-description: 应用管理
+description: 介绍如何管理应用。
+keyword: QingCloud, 青云, AppCenter, 应用管理 
 weight: 40
 draft: false
 ---

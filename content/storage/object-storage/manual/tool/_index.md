@@ -3,6 +3,8 @@ title: "客户端工具"
 linkTitle: "客户端工具"
 weight: 2
 collapsible: true
+description: 本小节主要介绍 客户端工具 相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
 QingStor 对象存储提供了多种命令行和 GUI 工具，便于用户高效操作、管理对象存储资源，迁移数据至 QingStor 对象存储。

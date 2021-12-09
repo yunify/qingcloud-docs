@@ -1,9 +1,9 @@
 ---
 title: "公网IP网络延迟增大"
-description: test
+description: 介绍如何排查和处理公网IP网络延迟增大。
 weight: 5
 draft: false
-keyword: QingCLoud, 青云, 公网IP, 弹性EIP, 
+keyword: QingCLoud, 青云, 公网IP, 弹性EIP, 延迟
 ---
 
 公网 IP 作为青云平台各个资源访问互联网的桥梁，经常会出现通过云服务器访问互联网或者互联网访问云服务响应慢，有延迟的情况，本文将介绍如何处理云服务器公网 IP 网络延迟大的情况。

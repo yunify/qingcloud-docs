@@ -1,6 +1,7 @@
 ---
 title: "Cluster 配置"
-description: 
+description: 将 Kafka 集群配置添加到 Kafka Manager。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,集群配置,Kafka Manager
 weight: 20
 draft: false
 ---

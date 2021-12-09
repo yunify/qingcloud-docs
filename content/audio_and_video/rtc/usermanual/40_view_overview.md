@@ -1,5 +1,7 @@
 ---
 title: "查看概览"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,查看概览
+description: 本章节介绍如何查看实时音视频 RTC 的概览页面。
 draft: false
 collapsible: false
 weight: 40

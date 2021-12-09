@@ -1,10 +1,9 @@
 ---
 title: "创建 etcd 集群"
-draft: false
-enableToc: false
-keyword: etcd 
+description: 本小节主要介绍如何创建 etcd 集群。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,etcd,创建集群 
 weight: 10
-
+draft: false
 ---
 
 
@@ -26,7 +25,7 @@ weight: 10
 
 ### etcd 节点配置
 
-> **说明**：
+> **说明**
 >
 > 仅选择自定义部署时才需要配置。
 
@@ -46,7 +45,7 @@ weight: 10
 
 选择VPC 网络、私有网络、安全组及节点 IP。
 
-> **说明**：
+> **说明**
 >
 > 若无可选的 VPC 网络或私有网络，请根据界面提示新建。
 
@@ -56,7 +55,7 @@ weight: 10
 
 - **etcd autocompact**：表示自动清理历史数据的时间间隔，单位是小时，比如 1 表示每隔一小时清理一次数据；默认为 0 表示不自动清除。
 
-  > **说明**：
+  > **说明**
   >
   > 每次对 etcd 键值的更新或设置操作都会被记录在数据文件中，可开启定时自动进行数据清理以防止性能下降和空间耗尽。相关原理可参考官方说明文档 [Compaction](https://github.com/etcd-io/etcd/blob/release-3.2/Documentation/op-guide/maintenance.md#history-compaction)。
 
@@ -78,7 +77,7 @@ etcd 创建完成之后，您可以查看每个节点的运行状态。当节点
 
   起始端口设置为目标端口，协议根据需求选择（UDP/TCP)。
 
-  > **说明**：
+  > **说明**
   >
   > 添加后需要点击**应用修改**将设置同步，否则不会生效。
 
@@ -90,7 +89,7 @@ etcd 创建完成之后，您可以查看每个节点的运行状态。当节点
 
 源端口选择协议，端口，然后填入私网 IP 的地址，协议和端口。
 
-  > **说明**：
+  > **说明**
   >
   > 添加后点击**应用修改**将设置同步，否则不会生效。
 
@@ -102,9 +101,9 @@ etcd 创建完成之后，您可以查看每个节点的运行状态。当节点
 
 现假设客户端和 etcd 在同一私有网络，etcd 集群有三个节点，IP 地址分别为192.168.100.10、192.168.100.11、192.168.100.12， 您可以通过如下命令连接 etcd：
 
-> **说明**：
+> **说明**
 >
-> etcdctl 支持 v2 和 v3 两个版本，以下以 v3 为例，详细说明请查阅[官方文档](https://github.com/etcd-io/etcd/tree/v3.2.24/etcdctl)。
+> etcdctl 支持 v2 和 v3 两个版本，以下以 v3 为例，详细说明请查阅[官方文档](https://github.com/etcd-io/etcd/tree/v3.2.24/etcdctl)。
 
 ```
 # ETCDCTL_API=3 ./etcdctl --endpoints http://192.168.100.10:2379,http://192.168.100.11:2379,http://192.168.100.12:2379 endpoint health

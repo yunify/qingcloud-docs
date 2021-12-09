@@ -1,8 +1,9 @@
 ---
 title: "安全设计"
-description: SaaS
+description: SPI 接口的安全设计
+keyword: QingCloud, 青云, AppCenter, 云应用开发平台, SaaS 
 draft: false
-weight: 30
+weight: 40
 ---
 
 青云 app 平台会在每次请求中附上 signature、SPI 接口需对 signature 进行校验。若校验失败，则视该通知消息无效。

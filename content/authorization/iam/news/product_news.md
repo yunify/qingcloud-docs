@@ -1,6 +1,8 @@
 ---
 title: "产品动态"
 date: 2020-09-13
+description: 介绍 IAM 的最新动态。
+keyword: 青云, IAM, 最新动态, 产品动态
 collapsible: false
 weight: 11
 

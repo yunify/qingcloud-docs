@@ -1,5 +1,7 @@
 ---
 title: "计费说明"
+keyword: 云计算, 青云, QingCloud, 视频直播, 计费方式
+description: 本章节介绍视频直播的计费说明。
 draft: false
 collapsible: false
 weight: 10

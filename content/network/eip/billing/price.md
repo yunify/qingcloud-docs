@@ -1,7 +1,7 @@
 ---
 title: "计费指南"
-linkTitle: "计费指南"
-description:
+keyword: 青云, QingCloud, 网络, 公网 IP, 计费, 价格
+description: 介绍公网IP的计费模式、价格及其他费用相关信息。
 draft: false
 weight: 1
 ---

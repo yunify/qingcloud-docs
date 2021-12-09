@@ -1,6 +1,7 @@
 ---
 title: "管理健康监控"
-description: gslb健康检查。
+description: 本小节主要介绍如何关闭和开启 GSLB 实例健康监控。
+keyword: QingCloud, 青云, DNS, GSLB 实例, 健康监控
 weight: 4
 draft: false
 ---

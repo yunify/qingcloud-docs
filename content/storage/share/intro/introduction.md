@@ -1,10 +1,9 @@
 ---
 title: "共享存储"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 本小节主要介绍共享存储简介。
 draft: false
-enableToc: false
-keyword: 青云
+keyword: 云计算, 青云, QingCloud, 共享存储, Virtual SAN, NeonSAN
 ---
 
 

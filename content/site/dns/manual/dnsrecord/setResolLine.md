@@ -1,9 +1,9 @@
 ---
 title: "配置解析线路"
-description: dns配置解析线路
+description: 本小节主要介绍如何配置自定义解析线路。
+keyword: QingCloud, 青云, DNS, 解析路线
 weight: 4
 draft: false
-keyword: DNS解析线路,
 ---
 
 

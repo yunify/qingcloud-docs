@@ -1,9 +1,9 @@
 ---
 title: "如何开启 HTTP2"
-description: Test description
+description: 如何开启负载均衡器的 HTTP2 支持。
+keyword: 青云, QingCloud, 网络, 负载均衡器, HTTP2
 weight: 50
 draft: false
-enableToc: false
 ---
 
 ## 背景介绍

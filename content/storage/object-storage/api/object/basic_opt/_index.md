@@ -1,6 +1,8 @@
 ---
 title: "基础操作"
 weight: 1
+description: 本小节主要介绍 Object 基础操作相关 API 内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Object
 ---
 
 
