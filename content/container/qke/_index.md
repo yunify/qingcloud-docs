@@ -44,7 +44,7 @@ section4:
     vice_title: 了解的第一步
     children:
     - title: 产品简介
-      url: "/intro/main/"
+      url: "intro/main/"
     - title: 产品主页
       url: "https://www.qingcloud.com/products/kubesphereqke/"
 
