@@ -289,4 +289,4 @@ mysql> SELECT host,user FROM user;
 
 通过云服务器绑定的公网IPv4进行连接，已正常连接。
 
-![](../mysql_install/mysql_install19.png)
+![](../../_images/mysql_install/mysql_install19.png)
