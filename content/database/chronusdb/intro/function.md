@@ -1,7 +1,7 @@
 ---
 title: "功能特性"
 description: 本小节主要介绍 ChronuDB 简要主要功能特性。 
-keywords: chronusdb 功能特性, 
+keyword: chronusdb 功能特性, 
 weight: 15
 collapsible: false
 draft: false

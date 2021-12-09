@@ -1,7 +1,7 @@
 ---
 title: "创建镜像"
 description: 本小节主要介绍青立方® 超融合易捷版 创建镜像。 
-keywords: 青立方® 超融合易捷版，创建镜像
+keyword: 青立方® 超融合易捷版，创建镜像
 weight: 20
 collapsible: false
 draft: false

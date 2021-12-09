@@ -1,7 +1,7 @@
 ---
 title: "产品优势"
 description: 本小节主要介绍 ChronusDB 产品优势。 
-keywords: ChronusDB 产品优势 
+keyword: ChronusDB 产品优势 
 weight: 20
 collapsible: false
 draft: false

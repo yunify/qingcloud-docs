@@ -3,7 +3,7 @@ title: "授权提供商访问"
 description: 本小节介绍如何授权提供商访问集群节点。 
 weight: 18
 draft: false
-keywords: QingCloud，Redis Cluster，授权访问
+keyword: QingCloud，Redis Cluster，授权访问
 ---
 
 介绍如何授权提供商访问集群节点。

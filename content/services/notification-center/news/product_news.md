@@ -1,15 +1,23 @@
 ---
 title: "产品动态"
-date: 2020-02-28T10:08:56+09:00
+date: 2021-11-17T10:08:56+09:00
 collapsible: false
 
 product:
+    - time: 2021-11-17 08:00:00
+      title: 消息中心新增异步任务状态变更通知
+      content: 消息中心新增了灾难迁移、克隆任务、跨区复制任务、备份任务、捕获镜像等任务失败的通知以及备份任务成功的通知，用户可以在消息中心配置界面自行选择是否接收此类消息。
+      url: /services/notification-center/manual/notify
+      tags:
+      - 新功能
+      zone: 全局
+      
     - time: 2021-09-26 17:00:00
       title: 消息中心财务消息新增微信服务号通知方式
       content: 部分重要的财务通知新增了微信服务号的通知方式，用户可关注微信服务号通过微信实时接收财务通知。
       url: /services/notification-center/manual/notify
       tags:
-      - 待发布
+      - 新功能
       zone: 全局
       
     - time: 2021-07-02 17:50:47

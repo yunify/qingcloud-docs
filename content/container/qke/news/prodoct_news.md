@@ -4,13 +4,12 @@ collapsible: false
 weight: 5
 
 product:
-    - time: 2021-11-12
+    - time: 2021-12-02
       title: KubeSphere v3.1.1 patch版本发布
       content: 1.更正了部分可能导致集群创建失败的内部逻辑，提升了集群创建成功率。 <br>2.修复了因csi组件限制值过小导致集群持续报警的问题，校准了集群的报警能力。<br>3.更正了部分集群组件的版本，保证了相关功能的可用性和稳定性。<br>4.降低了磁盘消耗，降低了因磁盘可用容量不足导致集群升级失败的几率。<br>5.支持强制删除集群节点的能力，增强了集群可维护性。
       url: https://log.qingcloud.com/archives/8536
       tags:
       - 修复问题
-      - 待发布
       
     - time: 2021-09-26
       title: KubeSphere v3.1.1 正式上线

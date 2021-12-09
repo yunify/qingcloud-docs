@@ -3,7 +3,6 @@ title: "云服务器"
 date: 2020-01-30T00:40:25+09:00
 description: Test description
 draft: false
-enableToc: false
 weight: 1
 keyword: 云服务器, QingCloud, 实例, 虚拟机
 ---
@@ -45,6 +44,10 @@ keyword: 云服务器, QingCloud, 实例, 虚拟机
 ## 专业级
 
 - ### [GPU云服务器 g2](../../intro/professional/#gpu云服务器-g2)
+
+- ### [GPU云服务器 g3](../../intro/professional/#gpu云服务器-g3)
+
+- ### [弹性裸金属云服务器 bm3](../../intro/professional/#弹性裸金属云服务器-bm3)
 
 
 ## 其他类型

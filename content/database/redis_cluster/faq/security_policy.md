@@ -1,10 +1,10 @@
 ---
 title: "如何配置安全策略"
-description: 介绍如何为 Redis 配置完全策略。
+description: 如何为 Redis 配置完全策略。
 draft: false
 weight: 2
 enableToc: false
-keywords: Redis Cluster 安全策略
+keyword: Redis Cluster 安全策略
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "什么是 Kyligence"
 description: 本小节主要介绍 Kyligence 服务简介。 
-keywords: Kyligence 产品简介, 
+keyword: Kyligence 产品简介, 
 weight: 10
 collapsible: false
 draft: false

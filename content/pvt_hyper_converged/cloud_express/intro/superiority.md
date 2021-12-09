@@ -1,7 +1,7 @@
 ---
 title: "产品优势"
 description: 本小节主要介绍 青立方® 超融合易捷版 产品优势。 
-keywords: 青立方® 超融合易捷版 产品优势 
+keyword: 青立方® 超融合易捷版 产品优势 
 weight: 20
 collapsible: false
 draft: false

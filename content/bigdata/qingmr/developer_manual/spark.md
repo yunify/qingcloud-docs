@@ -1,7 +1,7 @@
 ---
 title: "Spark 使用指南"
 description: 本小节主要介绍Spark 基本操作使用指南。 
-keywords: qingmr Spark,
+keyword: qingmr Spark,
 weight: 15
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "产品版本"
 description: 本小节主要介绍 PolonDB 主要产品版本。 
-keywords: polondb 版本介绍,系列介绍 
+keyword: polondb 版本介绍,系列介绍 
 weight: 25
 collapsible: false
 draft: false

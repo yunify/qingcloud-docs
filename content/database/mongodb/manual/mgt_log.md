@@ -1,8 +1,7 @@
 ---
 title: "日志管理"
 description: 本小节主要介绍管理 QingCloud MongoDB 集群日志。 
-keywords: mongodb 集群日志, 
-data: 2021-05-14T00:38:25+09:00
+keyword: mongodb 集群日志, 
 weight: 80
 collapsible: false
 draft: false

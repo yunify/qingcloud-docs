@@ -1,7 +1,7 @@
 ---
 title: "Logstash 与 QingStor 对象存储集成"
 description: 本小节主要介绍 Logstash 与 QingStor 对象存储集成。
-keywords: Logstash 对象存储集成,
+keyword: Logstash 对象存储集成,
 weight: 40
 collapsible: false
 draft: false

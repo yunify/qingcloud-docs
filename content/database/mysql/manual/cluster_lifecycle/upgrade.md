@@ -1,7 +1,7 @@
 ---
 title: "版本升级"
 description: 本小节主要介绍如何升级 MySQL Plus 集群。 
-keywords: mysql plus 升级集群；
+keyword: mysql plus 升级集群；
 weight: 15
 collapsible: false
 draft: false

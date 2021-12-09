@@ -1,7 +1,9 @@
 ---
 title: "查看日志"
-description: test
+description: 本小节主要介绍推理引擎查看日志。 
+keyword: 人工智能，推理引擎，Inference Engine，查看日志，API 访问日志，推理引擎日志
 weight: 30
+collapsible: false
 draft: false
 ---
 

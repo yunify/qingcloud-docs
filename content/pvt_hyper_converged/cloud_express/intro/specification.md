@@ -1,7 +1,7 @@
 ---
 title: "硬件规格"
 description: 本小节主要介绍 青立方® 超融合易捷版 硬件规格。 
-keywords: 青立方® 超融合易捷版  硬件规格， 
+keyword: 青立方® 超融合易捷版  硬件规格， 
 weight: 30
 collapsible: false
 draft: false

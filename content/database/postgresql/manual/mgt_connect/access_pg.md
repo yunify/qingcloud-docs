@@ -1,7 +1,7 @@
 ---
 title: "连接数据库"
 description: 本小节主要介绍如何快速连接 PostgreSQ 数据库。 
-keywords: PostgreSQ 访问,访问数据库
+keyword: PostgreSQ 访问,访问数据库
 weight: 05
 collapsible: false
 draft: false

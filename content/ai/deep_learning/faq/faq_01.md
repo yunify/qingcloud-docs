@@ -1,10 +1,11 @@
 ---
 title: "容器中 TensorBoard 或者 jupyter 服务已经启动，如何访问？"
-linkTitle: "容器中 TensorBoard 或者 jupyter 服务已经启动，如何访问？"
-date: 2021-02-16T10:08:56+09:00
-description:
+linkTitle: "TensorBoard 或者 jupyter 服务"
+description: 本小节主要介绍 容器中 TensorBoard 或者 jupyter 服务已经启动，如何访问？。 
+keyword: 人工智能，深度学习，Deep Learning，TensorBoard 服务，jupyter 服务，如何访问，已经启动
+weight: 10
+collapsible: false
 draft: false
-weight: 1
 ---
 
 有两种方法，但首先需要在容器启动时进行端口映射，将容器的8888端口（jupyter 服务）或者6006端口（tensorboard 服务）映射到宿主机 host_ip 的相应端口 host_port。

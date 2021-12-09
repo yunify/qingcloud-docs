@@ -14,5 +14,5 @@ keyword: 配额管理, QingCloud
 
 ![](../_images/asking-for-quato.png)
 
-在工单页面，您需要告知我们申请提高配额的理由。提交的工单通过我们的审理之后，我们会更新您的配额并进行通知。关于工单的详细操作，可参见[工单服务](../../../tickets/manual/operation/)。
+在工单页面，您需要告知我们申请提高配额的理由。提交的工单通过我们的审理之后，我们会更新您的配额并进行通知。关于工单的详细操作，可参见[工单服务](/services/tickets/manual/operation/)。
 

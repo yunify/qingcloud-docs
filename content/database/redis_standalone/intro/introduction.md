@@ -1,8 +1,7 @@
 ---
 title: "什么是 Redis Standalone"
 description: 本小节主要介绍 Redis Standalone 产品简介。 
-keywords: redis standalone 产品简介
-data: 2021-05-14T00:38:25+09:00
+keyword: redis standalone 产品简介
 weight: 1
 collapsible: false
 draft: false

@@ -2,7 +2,7 @@
 title: "Liunx 中 vi 快捷键编辑"
 description: Test description
 draft: false
-enableToc: falshu
+
 ---
 
 ## 1.操作系统快捷方式

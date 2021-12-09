@@ -1,7 +1,9 @@
 ---
 title: "训练和推理"
-description: test
+description: 本小节主要介绍 Deep Learning 训练和推理
+keyword: 人工智能，深度学习，Deep Learning，训练和推理，图像分类，人脸识别，目标检测
 weight: 45
+collapsible: false
 draft: false
 ---
 

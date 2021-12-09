@@ -1,7 +1,7 @@
 ---
 title: "表特殊操作"
 description: 本小节主要介绍 PolonDB 数据库表特殊操作。 
-keywords: polondb 表操作
+keyword: polondb 表操作
 weight: 20
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "ELK 中文日志搜索"
 description: 本小节主要介绍 ELK 中文日志搜索场景。 
-keywords: ELK 日志搜索,
+keyword: ELK 日志搜索,
 weight: 05
 collapsible: false
 draft: false

@@ -3,7 +3,6 @@ title: "删除文件后磁盘空间不释放"
 description: Test description
 weight: 20
 draft: false
-enableToc: false
 ---
 
 ## 问题现象

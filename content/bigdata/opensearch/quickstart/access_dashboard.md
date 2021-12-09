@@ -1,7 +1,7 @@
 ---
 title: "访问 OpenSearch Dashboards"
 description: 本小节主要介绍如何访问 Dashboard。 
-keywords: OpenSearch 可视化工具,访问 Dashboard，可视化平台
+keyword: OpenSearch 可视化工具,访问 Dashboard，可视化平台
 weight: 20
 collapsible: false
 draft: false

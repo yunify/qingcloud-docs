@@ -1,7 +1,7 @@
 ---
 title: "增删节点"
 description: 本小节主要介绍如何新增 ChronusDB 节点实例。 
-keywords: ChronusDB 节点添加；新增节点
+keyword: ChronusDB 节点添加；新增节点
 weight: 10
 collapsible: false
 draft: false

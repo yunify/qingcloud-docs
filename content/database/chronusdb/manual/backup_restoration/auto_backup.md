@@ -1,7 +1,7 @@
 ---
 title: "开启自动备份"
 description: 本小节主要如何开启 ChronusDB 数据自动备份。 
-keywords: ChronusDB 数据自动备份；
+keyword: ChronusDB 数据自动备份；
 weight: 20
 collapsible: false
 draft: false

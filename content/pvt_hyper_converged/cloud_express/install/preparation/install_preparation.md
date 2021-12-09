@@ -1,7 +1,7 @@
 ---
 title: "准备工作：硬件环境检查"
 description: 本小节主要介绍青立方® 超融合易捷版 硬件环境检查。 
-keywords: 青立方® 超融合易捷版，硬件环境检查
+keyword: 青立方® 超融合易捷版，硬件环境检查
 weight: 10
 collapsible: false
 draft: false

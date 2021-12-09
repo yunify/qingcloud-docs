@@ -1,7 +1,7 @@
 ---
 title: "关闭日志服务"
 description: 本小节主要介绍如何关闭 ChronusDB 日志服务。 
-keywords: ChronusDB关闭日志服务
+keyword: ChronusDB关闭日志服务
 weight: 30
 collapsible: false
 draft: false

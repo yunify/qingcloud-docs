@@ -4,7 +4,6 @@ title: "Windows 云服务器硬盘初始化"
 description: Test description
 weight: 40
 draft: false
-enableToc: false
 ---
 
 ### 硬盘容量小于 2TB 的操作方法

@@ -3,7 +3,7 @@ title: "创建集群"
 description: 本小节介绍如何创建 Redis 集群。 
 weight: 1
 draft: false
-keywords: QingCloud，Redis Cluster，redis 集群，创建 redis 集群
+keyword: QingCloud，Redis Cluster，redis 集群，创建 redis 集群
 ---
 
 本小节主要介绍如何创建 Redis 集群。

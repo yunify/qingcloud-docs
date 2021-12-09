@@ -1,7 +1,7 @@
 ---
 title: "Zabbix 客户端服务 "
 description: 本小节主要介绍 PostgreSQL 开启zabbix客户端。 
-keywords: PostgreSQL zabbix客户端
+keyword: PostgreSQL zabbix客户端
 weight: 50
 collapsible: false
 draft: false

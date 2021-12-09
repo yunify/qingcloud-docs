@@ -1,7 +1,7 @@
 ---
 title: "创建 Storm"
 description: 本小节主要介绍如何快速创建 Storm。 
-keywords: 创建 Storm
+keyword: 创建 Storm
 weight: 10
 collapsible: false
 draft: false
