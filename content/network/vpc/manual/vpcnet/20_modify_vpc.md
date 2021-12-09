@@ -1,8 +1,7 @@
 ---
 title: "修改 VPC 基本信息"
-linkTitle: "修改 VPC 基本信息"
-date: 2021-05-19T10:08:56+09:00
-description:
+description: 介绍如何修改 VPC 网络的名称、描述、标签及所属项目。
+keyword: 青云, QingCloud, VPC, VPC 网络
 draft: false
 weight: 20
 ---

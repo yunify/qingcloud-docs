@@ -1,6 +1,7 @@
 ---
 title: "选择解析模式"
-description: dns解析模式
+description: 本小节介绍 DNS 四种解析模式的使用场景及配置示例。
+keyword: QingCloud, 青云, DNS, 解析模式
 weight: 5
 draft: false
 ---

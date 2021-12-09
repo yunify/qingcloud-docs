@@ -2,7 +2,7 @@
 title: "Host API"
 weight: 25
 draft: false
-enableToc: false
+description: DNS Host API 接口说明。
 keyword: QingCloud，DNS服务，DNS云解析，DNS API，Host API
 ---
 

@@ -1,8 +1,7 @@
 ---
 title: "修改 VPC 规格类型"
-linkTitle: "修改 VPC 规格类型"
-date: 2021-05-19T10:08:56+09:00
-description:
+keyword: 青云, QingCloud, VPC, VPC 网络
+description: 介绍如何修改 VPC 的规格类型。
 draft: false
 weight: 25
 ---

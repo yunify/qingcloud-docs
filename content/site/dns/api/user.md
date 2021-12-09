@@ -2,7 +2,7 @@
 title: "User API"
 weight: 15
 draft: false
-enableToc: false
+description: DNS User API 接口说明。
 keyword: QingCloud，DNS服务，DNS云解析，DNS API，User API，用户
 ---
 
