@@ -1,10 +1,10 @@
 ---
 title: "Linux云服务器之间配置SSH互信（SSH免密码登录）"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: Linux的ssh互信
 weight: 40
 draft: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，ssh互信
 ---
 
 ## 操作场景

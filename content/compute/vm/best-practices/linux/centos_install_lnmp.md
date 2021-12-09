@@ -1,9 +1,9 @@
 ---
 title: "CentOS 7系统安装部署 LNMP"
-description: test
+description: centos 7部署 lnmp
 draft: false
 weight: 10
-
+keyword: 云计算, 青云, QingCloud, 云服务器，centos7，LNMP
 ---
 
 ### 一、安装 Nginx

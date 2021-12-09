@@ -1,8 +1,8 @@
 ---
 title: "跨区域迁移操作"
-description: Test description
+description: 如何进行跨区域迁移
 draft: false
-keyword: SSH, QingCloud,ssh密钥
+keyword: 云计算, 青云, QingCloud, 跨区域迁移
 ---
 
 迁移流程请参考[跨区域迁移方案](../../intro/migration/)。

@@ -1,8 +1,9 @@
 ---
 title: "云服务器快速创建流程"
-description: test
+description: 如何进行快速创建云服务器
 draft: false
 weight: 10
+keyword: 云计算, 青云, QingCloud, 云服务器，快速创建
 ---
 
 青云支持快速创建并购买云服务器，详情请参考[云服务器创建指南](../../manual/vm_instance/)。

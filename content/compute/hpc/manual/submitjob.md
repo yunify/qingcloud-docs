@@ -2,7 +2,8 @@
 title: "提交作业"
 linkTitle: "提交作业"
 date: 2021-11-1T10:08:56+09:00
-description:
+description: hpc 提交作业
+keyword: 云计算, 青云, QingCloud, HPC，提交作业
 draft: false
 weight: 2
 ---

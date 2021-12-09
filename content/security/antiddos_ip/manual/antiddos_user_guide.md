@@ -1,6 +1,6 @@
 ---
 title: "高防IP操作指南"
-description: manual
+description: 高防IP操作方式
 draft: false
 keyword: 高防IP, 高防IP实例, 添加转发策略
 ---

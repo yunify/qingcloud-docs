@@ -2,7 +2,8 @@
 title: "计费指南"
 linkTitle: "计费指南"
 date: 2021-10-15T10:08:56+09:00
-description:
+description: hpc计费指南
+keyword: 云计算, 青云, QingCloud, hpc，计费
 draft: false
 weight: 2
 ---

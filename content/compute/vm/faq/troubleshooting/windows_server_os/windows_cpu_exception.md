@@ -1,8 +1,8 @@
 ---
 title: "CPU使用率过高"
-description: Test description
+description: CPU使用率过高怎么解决
 weight: 10
-
+keyword: 云计算, 青云, QingCloud, 云服务器，CPU
 
 ---
 
