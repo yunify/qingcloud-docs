@@ -41,7 +41,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，宝塔面板
 ![](../../_images/install_bt_2.png)
 
 ### 宝塔面板使用青云平台证书
-用户在青云平台申请了SSL证书（[申请SSL证书步骤](https://docsv3.qingcloud.com/security/ssl/manual/user_guide/)），需要在宝塔中部署的网站中使用
+用户在青云平台申请了SSL证书，需要在宝塔中部署的网站中使用
 
 **1、下载已经签发的证书**  
 下载下来后会有一个.pem和.key文件
