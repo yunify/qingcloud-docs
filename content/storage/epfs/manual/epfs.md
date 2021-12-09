@@ -15,8 +15,7 @@ weight: 1
 
 1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择 **产品与服务** > **存储** > **文件存储 EPFS**，进入 **文件存储 EPFS** 页签：
 
-
-1. ![](/storage/epfs/_images/epfs1.png)
+   ![](/storage/epfs/_images/epfs1.png)
 
 2. 点击 **立即开通**，进入开通文件存储 EPFS 页面，点击 **确定开通**，开通文件存储 EPFS 服务：
 

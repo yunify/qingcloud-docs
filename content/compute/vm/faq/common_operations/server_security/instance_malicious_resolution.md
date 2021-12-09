@@ -86,7 +86,7 @@ server
 2. 重启Tomcat服务
 
 ### Apache配置方法
-Apache中对于每个VirtualHost，都要求有ServerName或者ServerAlias，而且不能为空，具体可以参考[http://httpd.apache.org/docs/1.3/vhosts/name-based.html](http://httpd.apache.org/docs/1.3/vhosts/name-based.html)
+Apache中对于每个VirtualHost，都要求有ServerName或者ServerAlias，而且不能为空，具体可以参考http://httpd.apache.org/docs/1.3/vhosts/name-based.html。
 
 1. 进入Apache的conf目录，打开httpd.conf文件，找到VirtualHost
 
