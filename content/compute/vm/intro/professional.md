@@ -13,7 +13,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，专业级
 
 > **说明**：
 >
-> 北京3区-A  北京3区-B 北京3区-D 上海1区-A 支持开通 NVIDIA Tesla P100  GPU云服务器。
+> 在北京3区-A、北京3区-B、北京3区-D、上海1区-A四个区域，支持开通 NVIDIA Tesla P100  GPU云服务器。
 
 特点：
 
