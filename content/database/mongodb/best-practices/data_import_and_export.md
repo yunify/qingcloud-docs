@@ -1,8 +1,7 @@
 ---
 title: "数据导入和导出"
 description: 本小节主要介绍 QingCloud MongoDB 数据导入和导出应用。 
-keywords: mongodb 数据导入,数据导出 
-data: 2021-05-14T00:38:25+09:00
+keyword: mongodb 数据导入,数据导出 
 weight: 2
 collapsible: false
 draft: false

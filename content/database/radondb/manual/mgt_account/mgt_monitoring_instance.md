@@ -1,7 +1,7 @@
 ---
 title: "监控账号"
 description: 本小节主要介绍如何管理 RadonDB 监控账号。 
-keywords: RadonDB 监控账号
+keyword: RadonDB 监控账号
 weight: 30
 collapsible: false
 draft: false

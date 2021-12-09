@@ -1,7 +1,7 @@
 ---
 title: "UpdateClusterEnvironment"
 description: 本小节主要介绍 ChronusDB 更新节点环境变量接口。 
-keywords: ChronusDB 修改节点环境变量，更新节点环境变量
+keyword: ChronusDB 修改节点环境变量，更新节点环境变量
 weight: 120
 collapsible: false
 draft: false

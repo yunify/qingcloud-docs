@@ -1,7 +1,7 @@
 ---
 title: "在浏览器中开启摄像头和麦克风权限"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,浏览器, 开启摄像头和麦克风的权限
 description: 本章节指导您如何在浏览器中开启摄像头和麦克风的权限。
-keyword: 实时音视频 RTC, 浏览器, 开启摄像头和麦克风的权限
 draft: false
 collapsible: false
 weight: 20

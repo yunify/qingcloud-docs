@@ -1,7 +1,7 @@
 ---
 title: "步骤三：生产消费消息"
-description: 生产消费消息
-date: 2021-11-15T00:40:25+09:00
+description: 在命令行模式下连接 Kafka，并通过 Kafka 生产消费消息。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,生产消息,消费消息,快速入门
 weight: 30
 draft: false
 ---
@@ -41,7 +41,7 @@ kafka-console-producer.sh --broker-list {连接地址} --topic {Topic 名称}
   	*host_ip* 为 Kafka 节点的 IP 地址，*port* 为客户端节点的访问端口 9092。   
   	若 Kafka 节点地址为：192.168.0.1, 192.168.0.2, 192.168.0.3, 则连接地址为：192.168.0.1:9092,192.168.0.2:9092,192.168.0.3:9092   
 
-- Topic 名称：在[步骤二：创建 Topic](../creat_resource) 创建的 Topic 名称。
+- Topic 名称：在[步骤二：创建 Topic](../create_resource) 创建的 Topic 名称。
 
 输入需要发送的消息内容，按 **Enter** 发送消息，每一行的内容都将作为一条消息发送到 Kafka。   
 

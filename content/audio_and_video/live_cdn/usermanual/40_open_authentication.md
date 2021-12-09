@@ -1,5 +1,7 @@
 ---
 title: "开启鉴权"
+keyword: 云计算, 青云, QingCloud, 视频直播, 开启鉴权
+description: 本章节介绍如何开启鉴权。
 draft: false
 collapsible: false
 weight: 40

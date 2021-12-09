@@ -1,27 +1,32 @@
 ---
-title: "关闭/开启 PTR"
-description: Test description
-weight: 40
+title: "开启/关闭 PTR 记录"
+description: 介绍如何在 DNS 服务中开启及关闭 PTR 记录。
+keyword: 青云, QingCloud, VPC 网络, DNS, PTR
 draft: false
-enableToc: false
+weight: 40
 ---
 
 ## 文档背景
-DNS 服务器里面有两个区域，即“正向查找区域”和“反向查找区域”，正向查找区域就是通常所说的域名解析，反向查找区域即是 IP 反向解析，它得到作用是通过查找 IP 地址的 PTR 记录来得到该 IP 地址指向的域名。要成功得到域名就必须有该 IP 地址的 PTR 记录。PTR 及记录是邮件交换记录的一种，邮件交换记录中有A记录和 PTR 记录，A记录解析名字到地址，PTR 记录解析地址到名字。
 
-青云 VPC 网络的内网 DNS 服务功能可以对 VPC 内部提供域名解析的服务，可以开启/关闭内网 DNS 服务。同时支持开启/关闭 PTR 解析类型-反向 DNS 解析。
+DNS 服务器里面有两个区域，即“正向查找区域”和“反向查找区域”，正向查找区域就是通常所说的域名解析，反向查找区域即是 IP 反向解析，它得到作用是通过查找 IP 地址的 PTR 记录来得到该 IP 地址指向的域名。要成功得到域名就必须有该 IP 地址的 PTR 记录。PTR 及记录是邮件交换记录的一种，邮件交换记录中有 A 记录和 PTR 记录，A 记录解析名字到地址，PTR 记录解析地址到名字。
+
+青云 VPC 网络内网 DNS 服务功能可以对 VPC 内部提供域名解析的服务，可以开启/关闭内网 DNS 服务。同时支持开启/关闭 PTR 解析类型-反向 DNS 解析。
 
 路径：网络-VPC网络-管理配置-DNS服务
 
 ![ptr_1](../_images/ptr_1.png)
 
-`注意：`  
-`1.关闭 DNS 功能, 需要让云服务器重新获取 DHCP 解析, 更新本地 DNS 地址后才能生效。`  
-`2.开启 DNS 功能, 需要让云服务器重新获取 DHCP 解析, 更新本地 DNS 地址后才能生效。`  
-`3.关闭/开启 DNS 功能，开启/关闭 PTR 功能后，都需要点击 vi etc/passwd 的应用修改。`  
+>**注意**
+>
+>1.关闭 DNS 功能, 需要让云服务器重新获取 DHCP 解析, 更新本地 DNS 地址后才能生效。
+>2.开启 DNS 功能, 需要让云服务器重新获取 DHCP 解析, 更新本地 DNS 地址后才能生效。
+>3.关闭/开启 DNS 功能，开启/关闭 PTR 功能后，都需要点击 vi etc/passwd 的应用修改。
 
 ## 示例场景
-### 1.例如设置域名 aa.localdomain 解析到 192.168.8.2，开启 PTR 记录测试结果如下：
+
+以下以设置域名 aa.localdomain 解析到 192.168.8.2 为例
+
+开启 PTR 记录后，测试结果如下：
 
 ```
 [root@i-0026uq32 ~]# ping aa
@@ -34,7 +39,7 @@ PING aa.localdomain (192.168.8.2) 56(84) bytes of data.
 rtt min/avg/max/mdev = 0.014/0.027/0.041/0.014 ms
 ```
 
-通过 dig 测试域名解析和 PTR 反向解析记录
+通过 dig 测试域名解析和 PTR 反向解析记录：
 
 ```
 [root@i-0026uq32 ~]# dig aa.localdomain
@@ -96,7 +101,7 @@ localhost.		604800	IN	AAAA	::1
 ;; MSG SIZE  rcvd: 148
 ```
 
-### 2.例如设置域名 aa.localdomain 解析到 192.168.8.2，关闭 PTR 记录测试结果如下：
+关闭 PTR 记录，测试结果如下：
 
 ```
 [root@i-ets7af6q ~]# dig -x 192.168.8.2

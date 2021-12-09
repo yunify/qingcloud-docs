@@ -1,7 +1,7 @@
 ---
 title: "设置监控告警"
 description: 本小节主要介绍如何设置 Kafka 监控告警。 
-keywords: Kafka 监控告警
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka 监控告警,Kafka,告警策略
 weight: 20
 collapsible: false
 draft: false

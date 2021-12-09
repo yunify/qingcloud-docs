@@ -1,7 +1,7 @@
 ---
 title: "DescribeClusterNodes"
 description: 本小节主要介绍 MySQL Plus 获取集群节点信息的接口。 
-keywords: mysql plus 获取集群节点信息，获取集群节点信息
+keyword: mysql plus 获取集群节点信息，获取集群节点信息
 weight: 30
 collapsible: false
 draft: false

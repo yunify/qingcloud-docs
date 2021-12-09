@@ -1,7 +1,7 @@
 ---
 title: "场景一：一体机初始化"
 description: 本小节主要介绍青立方® 超融合易捷版 场景一：一体机初始化。 
-keywords: 青立方® 超融合易捷版，场景一：一体机初始化
+keyword: 青立方® 超融合易捷版，场景一：一体机初始化
 weight: 15
 collapsible: false
 draft: false

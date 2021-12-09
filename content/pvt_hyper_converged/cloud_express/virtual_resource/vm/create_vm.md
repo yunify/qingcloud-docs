@@ -1,7 +1,7 @@
 ---
 title: "创建虚拟机"
 description: 本小节主要介绍青立方® 超融合易捷版 创建虚拟机。 
-keywords: 青立方® 超融合易捷版，创建虚拟机
+keyword: 青立方® 超融合易捷版，创建虚拟机
 weight: 10
 collapsible: false
 draft: false

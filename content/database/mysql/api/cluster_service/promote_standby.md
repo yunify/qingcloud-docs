@@ -1,7 +1,7 @@
 ---
 title: "promote_standby"
 description: 本小节主要介绍 MySQL Plus 提升灾备接口。 
-keywords: mysql plus 提升灾备,promote_standby
+keyword: mysql plus 提升灾备,promote_standby
 weight: 42
 collapsible: false
 draft: false

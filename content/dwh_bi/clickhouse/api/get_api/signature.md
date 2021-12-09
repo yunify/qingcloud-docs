@@ -1,7 +1,7 @@
 ---
 title: "签名认证"
 description: 本小节主要介绍如何进行 ClickHouse 集群 api 签名方式。 
-keywords: ClickHouse 签名方式；api 签名方式
+keyword: ClickHouse 签名方式；api 签名方式
 draft: false
 weight: 10
 collapsible: false

@@ -1,7 +1,7 @@
 ---
 title: "关闭 Ranger 权限控制"
 description: 本小节主要介绍如何关闭 Ranger 权限控制。 
-keywords: qingmr 关闭 Ranger 权限控制
+keyword: qingmr 关闭 Ranger 权限控制
 weight: 40
 collapsible: false
 draft: false

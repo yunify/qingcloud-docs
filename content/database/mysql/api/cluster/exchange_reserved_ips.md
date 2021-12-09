@@ -1,7 +1,7 @@
 ---
 title: "ExchangeClusterReservedIps"
 description: 本小节主要介绍 MySQL Plus 交换预留 IP 接口。 
-keywords: mysql plus 交换预留 IP, ExchangeClusterReservedIps
+keyword: mysql plus 交换预留 IP, ExchangeClusterReservedIps
 weight: 136
 collapsible: false
 draft: false

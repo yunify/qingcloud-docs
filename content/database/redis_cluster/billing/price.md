@@ -2,7 +2,7 @@
 title: "计费说明"
 description: Redis Cluster 计费说明
 draft: false
-keywords: Redis Cluster, QingCloud, 数据库，计费
+keyword: Redis Cluster, QingCloud, 数据库，计费
 ---
 
 ## 费用说明

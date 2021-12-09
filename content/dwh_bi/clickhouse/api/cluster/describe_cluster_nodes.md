@@ -1,7 +1,7 @@
 ---
 title: "DescribeClusterNodes"
 description: 本小节主要介绍 ClickHouse 获取集群节点信息的接口。 
-keywords: ClickHouse 获取集群节点信息，获取集群节点信息
+keyword: ClickHouse 获取集群节点信息，获取集群节点信息
 weight: 30
 collapsible: false
 draft: false

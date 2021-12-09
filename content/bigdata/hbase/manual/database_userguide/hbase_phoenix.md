@@ -1,7 +1,7 @@
 ---
 title: "Phoenix 使用指南"
 description: 本小节主要介绍 Phoenix 使用指南。 
-keywords: HBase Phoenix 使用指南,
+keyword: HBase Phoenix 使用指南,
 weight: 40
 collapsible: false
 draft: false

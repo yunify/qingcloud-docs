@@ -2,7 +2,7 @@
 title: "View API"
 weight: 35
 draft: false
-enableToc: false
+description: DNS View API 接口说明。
 keyword: QingCloud，DNS云解析，DNS API，View API，解析线路
 ---
 

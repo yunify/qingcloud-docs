@@ -1,6 +1,7 @@
 ---
 title: "集群管理"
-description: 集群管理
+description: 介绍如何进行集群管理操作。
+keyword: QingCloud, 青云, AppCenter, 集群
 weight: 30
 draft: false
 ---

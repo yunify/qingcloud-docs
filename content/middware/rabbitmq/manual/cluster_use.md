@@ -1,9 +1,10 @@
 ---
 title: "集群使用"
-description: test
+description: 本小节主要介绍 RabbitMQ 集群的使用，包括查看集群信息、扩容集群等。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,RabbitMQ,rabbitmq,消息队列服务,消息中间件,操作指南,集群使用
 weight: 8
 draft: false
-keyword:  QingCloud, RabbitMQ, rabbitmq,  消息队列服务, 消息中间件
+
 ---
 
 ## 使用 rabbitmq_management 和 Haproxy web 监控管理工具管理集群

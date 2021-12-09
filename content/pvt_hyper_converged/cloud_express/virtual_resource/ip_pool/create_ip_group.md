@@ -1,7 +1,7 @@
 ---
 title: "创建 IP 池"
 description: 本小节主要介绍青立方® 超融合易捷版 IP 池。 
-keywords: 青立方® 超融合易捷版，创建 IP 池
+keyword: 青立方® 超融合易捷版，创建 IP 池
 weight: 10
 collapsible: false
 draft: false

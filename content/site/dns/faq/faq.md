@@ -1,9 +1,8 @@
 ---
 title: "DNS 常见问题"
-date: 2021-04-07T00:38:25+09:00
-description: dns 常见问题
+description: 本小节主要介绍 DNS 常见问题
+keyword: QingCloud, 青云, DNS, FAQ 
 draft: false
-enableToc: false
 weight: 10
 ---
 

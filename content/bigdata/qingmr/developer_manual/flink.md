@@ -1,7 +1,7 @@
 ---
 title: "Flink 使用指南"
 description: 本小节主要介绍Flink 使用指南。 
-keywords: qingmr flink,
+keyword: qingmr flink,
 weight: 35
 collapsible: false
 draft: false

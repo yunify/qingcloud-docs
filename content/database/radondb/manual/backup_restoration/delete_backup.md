@@ -1,7 +1,7 @@
 ---
 title: "删除备份"
 description: 本小节主要如何删除 RadonDB 备份。 
-keywords: RadonDB 删除备份；
+keyword: RadonDB 删除备份；
 weight: 30
 collapsible: false
 draft: false

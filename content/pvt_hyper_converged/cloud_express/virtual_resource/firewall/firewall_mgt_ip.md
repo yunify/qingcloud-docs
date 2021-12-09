@@ -1,7 +1,7 @@
 ---
 title: "管理 IP/端口组"
 description: 本小节主要介绍青立方® 超融合易捷版 管理 IP/端口组。 
-keywords: 青立方® 超融合易捷版，管理 IP/端口组
+keyword: 青立方® 超融合易捷版，管理 IP/端口组
 weight: 20
 collapsible: false
 draft: false

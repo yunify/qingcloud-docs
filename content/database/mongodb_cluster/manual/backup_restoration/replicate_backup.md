@@ -1,7 +1,7 @@
 ---
 title: "跨区域复制备份"
 description: 本小节主要如何跨区域复制 MongoDB Cluster 数据备份。 
-keywords: MongoDB Cluster 跨区域复制备份；
+keyword: MongoDB Cluster 跨区域复制备份；
 weight: 70
 collapsible: false
 draft: false

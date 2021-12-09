@@ -1,7 +1,7 @@
 ---
 title: "回收站"
 description: 本小节主要介绍青立方® 超融合易捷版回收站。 
-keywords: 青立方® 超融合易捷版，回收站
+keyword: 青立方® 超融合易捷版，回收站
 weight: 60
 collapsible: false
 draft: false

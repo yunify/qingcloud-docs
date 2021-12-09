@@ -1,7 +1,7 @@
 ---
 title: "RunClusterCustomService"
 description: 本小节主要介绍 MySQL Plus 自定义服务接口。 
-keywords: MySQL Plus 自定义服务,自定义服务
+keyword: MySQL Plus 自定义服务,自定义服务
 weight: 200
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "Topic 管理"
-date: 2021-11-03T00:40:25+09:00
-description: test
+description: 通过 Kafka 客户端命令行对 Topic 进行管理。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,Topic,client
 weight: 20
 draft: false
 ---

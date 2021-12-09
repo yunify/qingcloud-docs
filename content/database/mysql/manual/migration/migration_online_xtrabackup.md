@@ -1,7 +1,7 @@
 ---
 title: "在线迁移: xtrabackup 方式"
 description: 本小节主要介绍如何通过 xtrabackup 方式在线迁移。 
-keywords: xtrabackup 方式在线迁移
+keyword: xtrabackup 方式在线迁移
 weight: 20
 collapsible: false
 draft: false

@@ -1,5 +1,7 @@
 ---
 title: "兼容接口"
+description: 本小节主要介绍兼容接口相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
 所有请求参数的默认值，将与原生接口保持一致，而非遵守 AWS S3 接口的规定。

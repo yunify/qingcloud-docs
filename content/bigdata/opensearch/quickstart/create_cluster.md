@@ -1,7 +1,7 @@
 ---
 title: "创建 OpenSearch 集群"
 description: 本小节主要介绍如何快速创建 OpenSearch 集群。 
-keywords: OpenSearch 实例创建,集群创建
+keyword: OpenSearch 实例创建,集群创建
 weight: 10
 collapsible: false
 draft: false

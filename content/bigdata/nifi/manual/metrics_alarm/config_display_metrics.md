@@ -1,7 +1,7 @@
 ---
 title: "监控指标"
 description: 本小节主要介绍 Nifi 主要支持哪些监控指标。 
-keywords: Nifi 监控指标
+keyword: Nifi 监控指标
 weight: 10
 collapsible: false
 draft: false

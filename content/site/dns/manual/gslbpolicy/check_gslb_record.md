@@ -1,6 +1,7 @@
 ---
 title: "查看告警日志"
-description: 负载均衡告警、告警日志
+description: 介绍何查看 GSLB 实例告警日志。
+keyword: QingCloud, 青云, DNS, GSLB 实例, 告警日志
 weight: 5
 draft: false
 ---

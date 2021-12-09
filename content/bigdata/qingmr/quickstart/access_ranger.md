@@ -1,7 +1,7 @@
 ---
 title: "配置 Hive 的访问权限"
 description: 本小节主要介绍如何快速使用 Ranger 组件。 
-keywords: QingMR 实例, Ranger 组件
+keyword: QingMR 实例, Ranger 组件
 weight: 40
 collapsible: false
 draft: false

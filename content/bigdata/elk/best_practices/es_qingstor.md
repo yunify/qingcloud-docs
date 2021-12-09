@@ -1,7 +1,7 @@
 ---
 title: "Elasticsearch 与 QingStor 对象存储集成"
 description: 本小节主要介绍 Elasticsearch  与 QingStor 对象存储集成。
-keywords: Elasticsearch 对象存储,QingStor
+keyword: Elasticsearch 对象存储,QingStor
 weight: 25
 collapsible: false
 draft: false

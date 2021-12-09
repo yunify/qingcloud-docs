@@ -1,7 +1,7 @@
 ---
 title: "Elasticsearch 同义词搜索"
 description: 本小节主要介绍 Elasticsearch 同义词词典配置与同义词搜索。
-keywords: Elasticsearch 同义词,
+keyword: Elasticsearch 同义词,
 weight: 20
 collapsible: false
 draft: false

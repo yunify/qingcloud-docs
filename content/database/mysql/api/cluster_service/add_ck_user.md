@@ -1,7 +1,7 @@
 ---
 title: "add_ck_user"
 description: 本小节主要介绍 MySQL Plus 添加分析实例帐号接口。 
-keywords: mysql plus 添加 ClickHouse 帐号,add_ck_user，添加分析实例帐号
+keyword: mysql plus 添加 ClickHouse 帐号,add_ck_user，添加分析实例帐号
 weight: 21
 collapsible: false
 draft: false
