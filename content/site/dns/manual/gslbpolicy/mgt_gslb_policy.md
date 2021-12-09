@@ -1,6 +1,7 @@
 ---
 title: "管理实例列表"
-description: gslb实例管理，包括查看实例信息、修改实例备注、删除实例等。
+description: 介绍 GSLB 实例管理操作，包括查看实例信息、修改实例备注、删除实例等。
+keyword: QingCloud, 青云, DNS, GSLB 实例
 weight: 1
 draft: false
 ---

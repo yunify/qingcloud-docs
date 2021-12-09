@@ -1,6 +1,7 @@
 ---
 title: "查找应用"
-description: 
+description: 介绍如何查找云应用。
+keyword: QingCloud, 青云, AppCenter, 云市场, 云应用
 weight: 10
 draft: false
 ---

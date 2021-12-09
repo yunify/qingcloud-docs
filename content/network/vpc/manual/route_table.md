@@ -1,8 +1,7 @@
 ---
 title: "使用路由表"
-linkTitle: "使用路由表"
-date: 2020-02-28T10:08:56+09:00
-description:
+keyword: 青云, QingCloud, VPC, VPC 网络, 路由表, 路由规则
+description: 介绍路由表的使用方法，包括常见路由表、添加路由表规则等。
 draft: false
 weight: 40
 ---

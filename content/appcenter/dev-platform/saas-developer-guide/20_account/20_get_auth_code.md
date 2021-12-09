@@ -1,6 +1,7 @@
 ---
 title: "获取授权码"
-description: SaaS
+description: 获取授权码的接口说明
+keyword: QingCloud, 青云, AppCenter, 云应用开发平台, SaaS
 draft: false
 weight: 20
 ---

@@ -1,8 +1,7 @@
 ---
 title: "计费指南"
-linkTitle: "计费指南"
-date: 2020-02-28T10:08:56+09:00
-description:
+keyword: 青云, QingCloud, 网络, 负载均衡器, 计费, 价格
+description: 介绍负载均衡器的计费方式与价格。
 draft: false
 weight: 2
 ---
