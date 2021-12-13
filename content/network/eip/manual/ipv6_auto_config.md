@@ -1,14 +1,14 @@
 ---
 title: "开启云服务器 IPv6 自动化配置"
-date: 2021-05-26T17:08:56+09:00
-description: test
+description: 介绍如何开启云服务器 IPv6 自动化配置。
+keyword: QingCLoud, 青云, 公网IP, IPv6
 weight: 40
 draft: false
 ---
 
 ## 操作场景
 
-对于使用不支持 IPv6 自动化配置的镜像所启动的云服务器，通过对云服务器进行手动配置， 也可以开启 IPv6 自动化配置 。
+对于使用不支持 IPv6 自动化配置的镜像所启动的云服务器，通过对云服务器进行手动配置，也可以开启 IPv6 自动化配置。
 
 青云的网络采用了 DHCPv6，用户云服务器需要以 DHCPv6 的方式获取到 IPv6 地址，并通过[Network Discovery Protocol](https://tools.ietf.org/html/rfc4861)里的 **Router Advertisement** 机制来自动路由寻址。
 

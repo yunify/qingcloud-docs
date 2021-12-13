@@ -1,9 +1,9 @@
 ---
 title: "公网IP带宽占用高"
-description: Test description
+description: 公网IP带宽占用高怎么解决
 weight: 50
 draft: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，公网IP，带宽
 ---
 
 ## 解决方法

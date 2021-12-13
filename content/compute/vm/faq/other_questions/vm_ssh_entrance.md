@@ -1,8 +1,9 @@
 ---
 title: "如何使用 SSH 密钥来访问云服务器？ "
-description: Test description
+description: 如何使用SSH密钥登录云服务器
 draft: false
 weight: 110
+keyword: 云计算, 青云, QingCloud, 云服务器，SSH
 ---
 
 您需要创建一个 SSH 密钥， 然后加载到你的云服务器上并下载私钥文件（例如 ``kp-1234abcd`` ），详情请参考 [SSH 密钥操作指南](/compute/ssh/manual/ssh)。

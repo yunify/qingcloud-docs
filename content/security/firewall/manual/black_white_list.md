@@ -2,9 +2,10 @@
 title: "黑白名单"
 linkTitle: "黑白名单"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: 云防火墙黑白名单
 draft: false
 weight: 5
+keyword: 云服务器, QingCloud，安全，黑白名单
 ---
 
 黑白名单用于记录或放行指定 IP 的访问请求，即设置 IP 黑白名单。

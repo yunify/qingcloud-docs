@@ -1,9 +1,10 @@
 ---
 title: "网络异常时如何抓取数据包"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: 网络异常如何抓取数据包
 draft: false
 weight: 40
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，网络异常，数据包
 ---
 
 本文主要介绍了Linux和Windows环境下如何使用抓包工具进行抓包。

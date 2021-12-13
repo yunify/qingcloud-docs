@@ -1,7 +1,8 @@
 ---
 title: "非root用户配置SSH密钥登录"
-description: Test description
+description: 非root配置ssh密钥登录方式
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，ssh，非root
 ---
 
 # 背景介绍

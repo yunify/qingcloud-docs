@@ -1,6 +1,6 @@
 ---
 title: "网络 ACL 基本操作"
-description: manual
+description: 网络acl基本介绍
 draft: false
 weight: 10
 keyword: 青云, QingCloud, 云计算, 网络 ACL 基本操作, ACL 配置

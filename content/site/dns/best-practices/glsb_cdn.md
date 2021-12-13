@@ -1,7 +1,8 @@
 ---
 title: "GSLB 实现 CDN 源站容灾切换"
+description: 本小节主要介绍如何使用 GSLB 实现 CDN 源站容灾切换。
+keyword: QingCloud, 青云, DNS, GSLB, CDN, 源站容灾
 weight: 2
-collapsible: false
 draft: false
 ---
 

@@ -1,8 +1,9 @@
 ---
 title: "磁盘空间容量不足"
-description: Test description
+description: 磁盘空间容量不足如何处理
 weight: 50
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，磁盘容量
 ---
 ## 问题现象
 

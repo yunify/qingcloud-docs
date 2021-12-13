@@ -1,7 +1,8 @@
 ---
 title: "扩容swap大小"
-description: test
+description: 扩容swap的大小
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，扩容，swap
 ---
 
 ### 第1步：在根目录下新建一个文件夹swap

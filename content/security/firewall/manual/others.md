@@ -2,9 +2,10 @@
 title: "产品设置"
 linkTitle: "产品设置"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: 云防火墙产品设置介绍
 draft: false
 weight: 8
+keyword: 云服务器, QingCloud，安全，云防火墙，产品设置，通用设置，版本 
 ---
 
 产品设置包括通用设置和版本查看。用户可针对通用模块进行常规设置以及我的版本中配额使用情况的查看，实时掌握当前服务的资源使用情况。

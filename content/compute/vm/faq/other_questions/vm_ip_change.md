@@ -1,8 +1,9 @@
 ---
 title: "为什么我的云服务器的私有 IP 会发生变化？ "
-description: Test description
+description: 云服务器的私有 IP发生变化
 draft: false
 weight: 140
+keyword: 云计算, 青云, QingCloud, 云服务器，IP
 ---
 
 仅在 SDN1.0 的区中，基础网络（vxnet-0）的 IP 可能会发生变化。在 SDN2.0 的区中，在云服务器运行期间，基础网络的 IP 不会变化。

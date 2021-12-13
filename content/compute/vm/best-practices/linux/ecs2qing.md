@@ -1,9 +1,9 @@
 ---
 title: "将ECS迁移到青云QingCloud"
 date: 2021-03-09T10:08:56+09:00
-description: test
+description: 阿里ecs迁移到青云
 draft: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，ecs
 ---
 
 ### 从阿里云ECS导出镜像

@@ -1,9 +1,10 @@
 ---
 title: "Linux云服务器开启SSH会话保持"
 date: 2021-01-30T00:38:25+09:00
-description: Test description
+description: Linux云服务器开启ssh会话保持
 weight: 40
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，ssh，会话保持
 ---
 
 ## **操作场景**
