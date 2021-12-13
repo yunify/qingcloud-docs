@@ -1,7 +1,6 @@
 {{ $links := .Site.Params.links }}
 <footer class="bg-dark footer d-print-none">
-  <div class="container td-outer {{ if and (ne .Params.LinkTitle " Document") (ne .Params.type "product"
-    )}}doc-container-width {{ end }}">
+  <div class="container td-outer {{ if and (ne .Params.LinkTitle "Document") (ne .Params.type "product" )}}doc-container-width {{ end }}">
     <div class="is-multiline is-centered">
       <div class="">
         <div class="columns is-multiline column-block">
