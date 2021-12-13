@@ -1,9 +1,9 @@
 ---
 title: "Ubuntu 20 配置多网卡方法"
-description: Test description
+description: 如何在 Ununtu 20上配置多网卡
 weight: 50
 draft: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，Ubuntu 20，多网卡
 ---
 ## 背景信息
 

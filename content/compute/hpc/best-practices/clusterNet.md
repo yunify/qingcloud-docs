@@ -2,7 +2,8 @@
 title: "集群网络配置实践"
 linkTitle: "多种网络配置"
 date: 2021-10-15T10:08:56+09:00
-description:
+description: 集群网络配置操作
+keyword: 云计算, 青云, QingCloud, hpc，集群网络配置实践
 draft: false
 weight: 2
 ---

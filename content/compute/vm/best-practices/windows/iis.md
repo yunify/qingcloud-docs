@@ -1,9 +1,10 @@
 ---
 title: "Windows云服务器安装IIS Web服务"
 date: 2021-03-07T10:08:56+09:00
-description:
+description: 如何在Windows云服务器上安装 IIS web服务
 draft: false
 weight: 39
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，IIS
 ---
 
 1.开始-服务器管理器

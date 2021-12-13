@@ -1,9 +1,10 @@
 ---
 title: "将从青云控制台下载的 crt 证书转换成 pem"
 date: 2020-05-14T17:08:56+09:00
-description: test
+description: 将从青云控制台下载的 crt 证书转换成 pem
 draft: false
 weight: 40
+keyword: 云计算, 青云, QingCloud, crt
 ---
 
 在云服务器部署 https 业务的时候，需要填写 SSL 证书的路径，而这个证书需要是 pem 格式的，例如下图：

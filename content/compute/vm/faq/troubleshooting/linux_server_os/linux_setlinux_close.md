@@ -1,8 +1,9 @@
 ---
 title: " Linux 系统因开启 SELinux 导致登录错误"
-description: Test description
+description: Linux 系统因开启 SELinux 导致登录错误
 weight: 40
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，SELinux
 ---
 
 

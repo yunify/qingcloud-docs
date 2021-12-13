@@ -1,10 +1,10 @@
 ---
 title: "按需转包年包月"
 date: 2021-09-06T00:38:25+09:00
-description: test
+description: 本小节主要介绍如何将硬盘资源的计费模式由按需计费修改为包年包月的计费模式。
 draft: false
-enableToc: false
 weight: 15
+keyword: 云计算, 青云, QingCloud, 云硬盘, 计费方式变更, 按需转包年包月
 ---
 
 ## 相关说明
@@ -22,7 +22,7 @@ weight: 15
    ![change2_1](/storage/disk/_images/change2_1.png)
 
 4. 在**按需转包年包月**窗口。用户可根据需要自主选择硬盘资源的购买时长、是否开启自动续费以及续费时长。
-   > **说明**：
+   > **说明：**  
    > 自动续费只支持按月或按年进行续费。
 
    ![change2_2](/storage/disk/_images/change2_2.png)

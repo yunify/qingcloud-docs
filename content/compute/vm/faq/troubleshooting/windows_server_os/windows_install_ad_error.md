@@ -1,8 +1,9 @@
 ---
 title: "Windows Server 安装 AD 域服务报错：请求添加或删除指定服务器上的功能失败"
-description: test
+description: Windows Server 安装 AD 域服务报错：请求添加或删除指定服务器上的功能失败
 weight: 6
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，server
 ---
 
 ## 问题背景

@@ -1,7 +1,8 @@
 ---
 title: "nginx配置SSL"
-description: test
+description: nginx如何配置ssl
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，nginx，ssl
 ---
 
 ## 背景

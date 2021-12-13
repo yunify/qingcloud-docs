@@ -1,9 +1,10 @@
 ---
 title: "基于合约创建云服务器"
 date: 2020-02-12T21:08:00+09:00
-description: Test description
+description: 如何基于合约创建云服务器
 draft: false
 weight: 40
+keyword: 云计算, 青云, QingCloud, 云服务器，合约
 ---
 
 ## 背景

@@ -1,9 +1,10 @@
 ---
 title: "修改windows云服务器远程桌面的访问端口"
 date: 2021-02-19T00:38:25+09:00
-description: Test description
+description: 如何修改Windows云服务器的远程桌面的访问端口
 weight: 10
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，远程桌面，端口
 ---
 
 ## 1.打开windows云服务器远程桌面，关闭系统自带防火墙
