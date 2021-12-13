@@ -1,7 +1,7 @@
 ---
 title: "什么是 Storm"
 description: 本小节主要介绍 Storm 服务简介。 
-keywords: Storm 产品简介
+keyword: Storm 产品简介
 weight: 10
 collapsible: false
 draft: false

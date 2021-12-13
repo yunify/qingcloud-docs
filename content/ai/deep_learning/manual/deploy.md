@@ -1,7 +1,9 @@
 ---
 title: "部署 Deep Learning 服务"
-description: test
-weight: 5
+description: 本小节主要介绍 Deep Learning 部署指南
+keyword: 人工智能，深度学习，Deep Learning，部署服务，部署集群，创建集群
+weight: 05
+collapsible: false
 draft: false
 ---
 

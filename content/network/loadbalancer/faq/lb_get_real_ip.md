@@ -1,8 +1,8 @@
 ---
 title: "获取来访者的真实 IP"
-description: Test description
+description: 介绍如何获取来访者的真实 IP 的两种方法。
+keyword: 青云, QingCloud, 网络, 负载均衡器, 真实 IP
 draft: false
-enableToc: falshu
 ---
 
 ## 方法一

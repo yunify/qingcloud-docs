@@ -1,5 +1,7 @@
 ---
 title: "数据加密"
+description: 本小节主要介绍数据加密接口相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, 数据加密
 ---
 
 该 API 接口用于对用户上传的 Object 进行加密处理。QingStor 对象存储支持由用户提供密钥的加密方式，对上传的 Object 进行加密。

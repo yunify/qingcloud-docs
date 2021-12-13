@@ -1,7 +1,7 @@
 ---
 title: "Logstash 自定义插件"
 description: 本小节主要介绍 Logstash 如何自定义插件。
-keywords: Logstash 自定义插件,
+keyword: Logstash 自定义插件,
 weight: 45
 collapsible: false
 draft: false

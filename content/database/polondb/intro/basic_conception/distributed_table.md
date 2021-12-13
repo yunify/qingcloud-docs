@@ -1,7 +1,7 @@
 ---
 title: "表"
 description: 本小节主要介绍 QingCloud PolonDB 的分布式表。 
-keywords: polondb 分布式表,本地表,分布式表,参考表
+keyword: polondb 分布式表,本地表,分布式表,参考表
 weight: 5
 collapsible: false
 draft: false

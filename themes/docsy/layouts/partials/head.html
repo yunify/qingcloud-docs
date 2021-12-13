@@ -3,6 +3,9 @@
 {{ with .Params.keyword }}
 <meta name="keywords" content="{{ . }}">
 {{ end }}
+{{ with .Params.description }}
+<meta name="description" content="{{ . }}">
+{{ end }}
 {{ hugo.Generator }}
 {{ if eq (getenv "HUGO_ENV") "production" }}
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">

@@ -1,10 +1,13 @@
 ---
 title: "计费说明"
-description:
+description: 本小节主要介绍 推理引擎 计费说明。 
+keyword: 计费说明, 人工智能，推理引擎，Inference Engine
+weight: 10
+collapsible: false
 draft: false
 ---
 
-Deep Learning 服务根据用户选择使用的资源不同进行收费。具体计费方式和计费项如下表所示。
+Inference Engine 服务根据用户选择使用的资源不同进行收费。具体计费方式和计费项如下表所示。
 
 | 产品系列 | 计费方式         | 计费项                                                       |
 | -------- | ---------------- | ------------------------------------------------------------ |

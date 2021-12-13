@@ -1,7 +1,7 @@
 ---
 title: "数据迁移"
 description: 本小节主要介绍如何迁移数据至 ZooKeeper 集群。 
-keywords: ZooKeeper 数据迁移,
+keyword: ZooKeeper 数据迁移,
 weight: 04
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "start_caddy"
 description: 本小节主要介绍 ClickHouse 开启日志服务接口。 
-keywords: ClickHouse 开启日志服务,start_caddy
+keyword: ClickHouse 开启日志服务,start_caddy
 weight: 50
 collapsible: false
 draft: false

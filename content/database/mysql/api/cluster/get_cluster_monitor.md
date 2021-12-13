@@ -1,7 +1,7 @@
 ---
 title: "GetClusterMonitor"
 description: 本小节主要介绍 MySQL Plus 扩容集群规格接口。 
-keywords: mysql plus 扩容集群规格
+keyword: mysql plus 扩容集群规格
 weight: 106
 collapsible: false
 draft: false

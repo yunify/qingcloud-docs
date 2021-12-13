@@ -1,7 +1,7 @@
 ---
 title: "标记状态"
 description: 本小节主要介绍青立方® 超融合易捷版 标记状态。 
-keywords: 青立方® 超融合易捷版，标记状态
+keyword: 青立方® 超融合易捷版，标记状态
 weight: 10
 collapsible: false
 draft: false

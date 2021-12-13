@@ -1,7 +1,7 @@
 ---
 title: "开启对象存储策略"
 description: 本小节主要介绍如何开启对象存储策略。 
-keywords: ChronusDB 开启对象存储策略；冷热存储，冷热存储策略
+keyword: ChronusDB 开启对象存储策略；冷热存储，冷热存储策略
 weight: 10
 collapsible: false
 draft: false

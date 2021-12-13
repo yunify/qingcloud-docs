@@ -1,7 +1,7 @@
 ---
 title: "安装系统准备"
 description: 本小节主要介绍青立方® 超融合易捷版 安装准备。 
-keywords: 青立方® 超融合易捷版，安装准备
+keyword: 青立方® 超融合易捷版，安装准备
 weight: 05
 collapsible: false
 draft: false

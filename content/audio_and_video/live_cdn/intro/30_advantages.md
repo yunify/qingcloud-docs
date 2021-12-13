@@ -1,5 +1,7 @@
 ---
 title: "产品优势"
+keyword: 云计算, 青云, QingCloud, 视频直播, 优势, 多节点加速, 多直播源接入, 直播防盗
+description: 本章节介绍视频直播产品的优势。
 draft: false
 collapsible: false
 weight: 30

@@ -1,7 +1,7 @@
 ---
 title: "连接问题"
-date: 2021-11-12T00:40:25+09:00
-description: 连接问题
+description: Kafka 连接常见问题。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,连接Kafka,访问 Kafka,跨VPC访问
 weight: 10
 draft: false
 ---

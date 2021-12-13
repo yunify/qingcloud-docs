@@ -1,7 +1,7 @@
 ---
 title: "性能测试"
 description: 本小节主要介绍如何执行 RadonDB 性能测试。 
-keywords: radondb 性能测试,
+keyword: radondb 性能测试,
 weight: 10
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "SSH 密钥概述"
 description: 本小节主要介绍青立方® 超融合易捷版SSH 密钥。 
-keywords: 青立方® 超融合易捷版，SSH 密钥
+keyword: 青立方® 超融合易捷版，SSH 密钥
 weight: 05
 collapsible: false
 draft: false

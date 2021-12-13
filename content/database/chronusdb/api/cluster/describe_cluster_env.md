@@ -1,7 +1,7 @@
 ---
 title: "DescribeClusterEnvironment"
 description: 本小节主要介绍 ChronusDB 获取节点环境变量接口。 
-keywords: ChronusDB 获取节点环境变量
+keyword: ChronusDB 获取节点环境变量
 weight: 122
 collapsible: false
 draft: false

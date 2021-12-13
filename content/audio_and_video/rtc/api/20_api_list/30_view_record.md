@@ -1,5 +1,7 @@
 ---
 title: "查询录制"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,查询录制任务
+description: 本章节介绍如何使用实时音视频 RTC 的 API 接口查询录制。
 draft: false
 collapsible: false
 weight: 30

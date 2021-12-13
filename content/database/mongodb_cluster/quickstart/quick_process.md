@@ -1,7 +1,7 @@
 ---
 title: "基本流程"
 description: 本小节主要介绍如何快速创建 MongoDB Cluster 数据库。 
-keywords: MongoDB Cluster 
+keyword: MongoDB Cluster 
 weight: 10
 collapsible: false
 draft: true

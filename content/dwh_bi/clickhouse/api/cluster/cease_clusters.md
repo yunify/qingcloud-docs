@@ -1,7 +1,7 @@
 ---
 title: "CeaseClusters"
 description: 本小节主要介绍 ClickHouse 彻底删除集群的接口。 
-keywords: ClickHouse 彻底删除集群，删除集群
+keyword: ClickHouse 彻底删除集群，删除集群
 weight: 18
 collapsible: false
 draft: false

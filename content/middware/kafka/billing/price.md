@@ -1,7 +1,8 @@
 ---
 title: "计费说明"
-date: 2021-11-01T00:40:25+09:00
-description:
+description: 本小节主要介绍 Kafka 的计费说明。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,价格,计费,费用,Kafka
+weight: 10
 draft: false
 ---
 

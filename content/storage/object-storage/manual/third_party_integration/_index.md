@@ -1,7 +1,8 @@
 ---
 title: "第三方数据集成"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: 本小节主要介绍第三方数据集成相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 draft: false
 weight: 3
 collapsible: true

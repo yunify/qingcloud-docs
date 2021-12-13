@@ -3,7 +3,7 @@ title: "启停帐号"
 description: 本小节介绍如何启用及停用 ACL 用户。 
 weight: 10
 draft: false
-keywords: redis cluster，访问控制，用户管理 ACL
+keyword: redis cluster，访问控制，用户管理 ACL
 ---
 
 您可以根据实际需要停用帐号和启用帐号，停用后，帐号将不可登录。

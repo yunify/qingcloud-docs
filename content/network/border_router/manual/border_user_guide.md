@@ -1,6 +1,7 @@
 ---
 title: "操作指南"
-date: 2020-12-01T00:38:25+09:00
+description: 介绍如何创建、关联边界路由器。
+keyword: QingCloud, 青云, 网络, 边界路由器
 draft: false
 weight: 2
 ---
@@ -93,5 +94,6 @@ weight: 2
 >
 >边界路由器静态静态路由个数默认最大额度为 10。
 
-边界路由器静态路由应用场景可见[专线经 VPC 访问公网](/sd-wan/sdwan/quick-start/line_connect_eip/)和[光盒经 VPC 访问第三方网络](/sd-wan/sdwan/quick-start/cpe_connect_tunnel/)。
 
+
+边界路由器静态路由应用场景可见[专线经 VPC 访问公网](/sd-wan/sdwan/quick-start/line_connect_eip/)和[光盒经 VPC 访问第三方网络](/sd-wan/sdwan/quick-start/cpe_connect_tunnel/)。

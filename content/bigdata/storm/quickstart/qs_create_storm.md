@@ -1,7 +1,7 @@
 ---
 title: "快速入门"
 description: 本小节主要介绍如何快速使用 Storm。 
-keywords: 快速入门,Storm
+keyword: 快速入门,Storm
 weight: 10
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "修改计费模式" 
 description: 本小节介绍如何修改 Redis 计费模式。 
-keywords: redis 计费，计费模式，按需计费
+keyword: redis 计费，计费模式，按需计费
 weight: 15
 draft: false
 ---

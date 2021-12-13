@@ -1,7 +1,7 @@
 ---
 title: "创建用户账号"
 description: 本小节主要介绍如何添加 Polon 数据库账号。 
-keywords: PolonDB 账号添加；创建账号
+keyword: PolonDB 账号添加；创建账号
 weight: 10
 collapsible: false
 draft: false

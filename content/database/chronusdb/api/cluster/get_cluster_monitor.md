@@ -1,7 +1,7 @@
 ---
 title: "GetClusterMonitor"
 description: 本小节主要介绍 ChronusDB 扩容集群规格接口。 
-keywords: ChronusDB 扩容集群规格
+keyword: ChronusDB 扩容集群规格
 weight: 106
 collapsible: false
 draft: false

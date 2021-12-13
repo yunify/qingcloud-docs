@@ -1,7 +1,7 @@
 ---
 title: "重启节点"
 description: 本小节主要介绍如何重启节点。 
-keywords: PolonDB 重启节点
+keyword: PolonDB 重启节点
 weight: 40
 collapsible: false
 draft: false

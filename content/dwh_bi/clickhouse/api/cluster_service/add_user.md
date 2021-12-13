@@ -1,7 +1,7 @@
 ---
 title: "add_users"
 description: 本小节主要介绍 ClickHouse 添加用户接口。 
-keywords: ClickHouse 添加用户,add_user
+keyword: ClickHouse 添加用户,add_user
 weight: 20
 collapsible: false
 draft: false

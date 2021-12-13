@@ -1,5 +1,7 @@
 ---
 title: "用量统计"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,用量统计
+description: 本章节介绍实时音视频 RTC 的用量统计。
 draft: false
 collapsible: false
 weight: 50

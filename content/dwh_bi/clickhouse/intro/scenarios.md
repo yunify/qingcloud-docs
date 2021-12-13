@@ -1,7 +1,7 @@
 ---
 title: "应用场景"
 description: 本小节主要介绍 ClickHouse 应用场景。 
-keywords: ClickHouse 应用场景 
+keyword: ClickHouse 应用场景 
 weight: 16
 collapsible: false
 draft: false
