@@ -1,9 +1,10 @@
 ---
 title: "卸载硬盘"
-description: Test description
+description: 本小节主要介绍云硬盘的卸载相关操作。
 draft: false
 enableToc: false
 weight: 50
+keyword: 云计算, 青云, QingCloud, 云硬盘, 卸载
 ---
 
 本节旨在指导用户将挂载到云服务器的数据盘进行卸载。
