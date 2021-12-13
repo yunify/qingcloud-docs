@@ -1,7 +1,7 @@
 ---
 title: "退订合约"
 description: 本小节主要介绍如何退订 QingMR 集群包年/包月合约。 
-keywords: 云计算,大数据,青云,QingCloud,QingMR,退订
+keyword: 云计算,大数据,青云,QingCloud,QingMR,退订
 weight: 70
 collapsible: false
 draft: false

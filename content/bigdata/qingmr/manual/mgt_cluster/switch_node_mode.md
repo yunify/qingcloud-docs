@@ -1,7 +1,7 @@
 ---
 title: "更改服务器类型"
 description: 本小节主要介绍如何更改 QingMR 集群的服务器类型。 
-keywords: 云计算,大数据,青云,QingCloud,QingMR,QingMR 集群更改服务器类型
+keyword: 云计算,大数据,青云,QingCloud,QingMR,QingMR 集群更改服务器类型
 weight: 50
 collapsible: false
 draft: false

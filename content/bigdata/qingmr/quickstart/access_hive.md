@@ -1,7 +1,7 @@
 ---
 title: "提交 Hive SQL"
 description: 本小节主要介绍如何快速使用 Hive 组件。 
-keywords: 云计算,大数据,青云,QingCloud,QingMR,QingMR 实例,Hive组件,快速入门,Hive sql
+keyword: 云计算,大数据,青云,QingCloud,QingMR,QingMR 实例,Hive组件,快速入门,Hive sql
 weight: 50
 collapsible: false
 draft: false

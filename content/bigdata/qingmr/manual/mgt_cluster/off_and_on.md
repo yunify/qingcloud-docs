@@ -1,7 +1,7 @@
 ---
 title: "启停集群"
 description: 本小节主要介绍如何开启和关闭 QingMR 集群。 
-keywords: 云计算,大数据,青云,QingCloud,QingMR,QingMR 开启,关闭
+keyword: 云计算,大数据,青云,QingCloud,QingMR,QingMR 开启,关闭
 weight: 30
 collapsible: false
 draft: false

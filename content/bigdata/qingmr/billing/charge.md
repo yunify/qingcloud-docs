@@ -1,7 +1,7 @@
 ---
 title: "到期与欠费"
 description: 本小节主要介绍 QingCloud QingMR 到期与欠费说明。 
-keywords: 云计算, 大数据, 青云, QingCloud, QingMR, 到期, 欠费 
+keyword: 云计算, 大数据, 青云, QingCloud, QingMR, 到期, 欠费 
 weight: 30
 collapsible: false
 draft: false

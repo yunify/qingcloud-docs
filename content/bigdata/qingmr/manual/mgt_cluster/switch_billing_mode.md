@@ -1,7 +1,7 @@
 ---
 title: "切换计费模式"
 description: 本小节主要介绍如何切换 QingMR 集群的计费模式。 
-keywords: 云计算,大数据,青云,QingCloud,QingMR,QingMR 集群切换计费模式
+keyword: 云计算,大数据,青云,QingCloud,QingMR,QingMR 集群切换计费模式
 weight: 40
 collapsible: false
 draft: false

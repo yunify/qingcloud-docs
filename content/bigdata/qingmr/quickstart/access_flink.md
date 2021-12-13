@@ -1,7 +1,7 @@
 ---
 title: "提交 Flink job"
 description: 本小节主要介绍如何快速使用Flink组件。 
-keywords: 云计算,大数据,青云,QingCloud,QingMR,QingMR 实例,Flink组件,Flink作业,快速入门,Flink job
+keyword: 云计算,大数据,青云,QingCloud,QingMR,QingMR 实例,Flink组件,Flink作业,快速入门,Flink job
 weight: 30
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "扩容节点"
 description: 本小节主要介绍如何扩容 QingMR 集群。 
-keywords: 云计算,大数据,青云,QingCloud,QingMR,QingMR 扩容节点,QingMR 在线伸缩
+keyword: 云计算,大数据,青云,QingCloud,QingMR,QingMR 扩容节点,QingMR 在线伸缩
 weight: 05
 collapsible: false
 draft: false

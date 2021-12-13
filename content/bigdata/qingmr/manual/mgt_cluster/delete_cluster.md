@@ -1,7 +1,7 @@
 ---
 title: "删除集群"
 description: 本小节主要介绍如何删除 QingMR 集群。 
-keywords: 云计算,大数据,青云,QingCloud,QingMR,删除集群
+keyword: 云计算,大数据,青云,QingCloud,QingMR,删除集群
 weight: 90
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "删除节点"
 description: 本小节主要介绍如何删除 QingMR 节点实例。 
-keywords: 云计算,大数据,青云,QingCloud,QingMR,节点删除,删除节点
+keyword: 云计算,大数据,青云,QingCloud,QingMR,节点删除,删除节点
 weight: 15
 collapsible: false
 draft: false

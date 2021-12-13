@@ -1,7 +1,7 @@
 ---
 title: "提交 Spark job"
 description: 本小节主要介绍如何快速使用 Spark 组件。 
-keywords: 云计算,大数据,青云,QingCloud,QingMR,QingMR 实例,Spark组件,Spark作业,快速入门
+keyword: 云计算,大数据,青云,QingCloud,QingMR,QingMR 实例,Spark组件,Spark作业,快速入门
 weight: 20
 collapsible: false
 draft: false
