@@ -3,6 +3,7 @@ title: "可用区资源"
 description: test
 weight: 10
 draft: false
+keyword: 可用区资源, QingCloud, 青云
 ---
 
 青云平台的主机，设备，硬盘，网络镜像流量，私网负载均衡器 均为单可用区内的资源。

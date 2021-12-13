@@ -2,6 +2,7 @@
 title: "各地管局政策要求"
 description: test
 weight: 2
+keyword: 各地管局政策要求, QingCloud, 青云
 ---
 
 管局备案要求规定了备案信息填写要求、所需提交的资料、备案信息变更和转移规则。

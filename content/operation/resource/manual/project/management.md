@@ -1,9 +1,10 @@
 ---
 title: "项目使用"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: test
 draft: false
 weight: 1
+keyword: 项目使用, QingCloud, 青云
 ---
 
 项目的作用包括资源分组、资源授权共享、用量消费统一查询等。本文档介绍在控制台如何对项目进行查看、创建、删除、修改、切换等操作。

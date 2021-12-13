@@ -1,9 +1,10 @@
 ---
 title: "创建模板"
-description: 
+description: test
 date: 2020-12-10T00:39:25+09:00
 draft: false
 weight: 5
+keyword: 创建模板, QingCloud, 青云
 ---
 
 用户有 5 种方式创建一个新模板：

@@ -4,6 +4,7 @@ date: 2020-12-01T00:38:25+09:00
 description: test
 weight: 10
 draft: false
+keyword: 自定义监控, QingCloud, 青云, 自定义监控上报数据规范
 ---
 
 目前上报自定义监控数据通过cloudsat中UploadMonitorData接口进行上报，需遵循自定义监控上报url构造规范和接口数据规范。用户可以通过UploadMonitorData接口上报自定义的数据，然后进行监控数据分析和告警。
@@ -70,7 +71,7 @@ table th:first-of-type {
 |参数名称	|  参数值	|  是否必须  | 示例| 备注|
 | :-: | :-: | :-: | :-: | :-: |
  | Content-Type |	application/json	|  是  | 'Content-Type': 'application/json' | 不可缺少|
- 
+
 
 **请求body格式例如**：
 ```

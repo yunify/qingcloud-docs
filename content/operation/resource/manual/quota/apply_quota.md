@@ -3,7 +3,7 @@ title: "提升资源配额"
 description: test
 weight: 3
 draft: false
-keyword: 配额管理, QingCloud
+keyword: 配额管理, QingCloud, 提升资源配额, 青云
 ---
 
 

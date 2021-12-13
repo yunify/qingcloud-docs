@@ -2,6 +2,7 @@
 title: "宁夏管局要求"
 description: test
 weight: 30
+keyword: 宁夏管局要求, QingCloud, 青云
 ---
 
 

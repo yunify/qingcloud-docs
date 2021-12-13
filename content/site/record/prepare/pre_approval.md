@@ -2,6 +2,7 @@
 title: "前置审批"
 description: test
 weight: 10
+keyword: 前置审批, QingCloud, 青云
 ---
 
 前置审批是指企业注册成立或者增加经营项目涉及到需要政府部门审批的项目,必须经过有关部门的许可后方可注册成立或者开始经营。

@@ -2,6 +2,7 @@
 title: "CLI配置"
 description: test
 draft: false
+keyword: CLI配置, QingCloud, 青云, CLI文档
 ---
 
 

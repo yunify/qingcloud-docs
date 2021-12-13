@@ -4,6 +4,7 @@ description: Test description
 weight: 60
 draft: false
 enableToc: false
+keyword: 如何使用浏览器插件提交网页错误信息, QingCloud, 青云, 添加扩展
 ---
 
 ## 安装 TimeCat 

@@ -4,6 +4,7 @@ date: 2020-12-01T00:38:25+09:00
 description: test
 weight: 4
 draft: false
+keyword: Dashboard, QingCloud, 青云, 监控面板
 ---
 
 Dashboard提供了多资源类型、跨指标类型、跨分区的自定义集中监控服务，用户可根据业务需求，将各类维度的数据集中在同一个面板下，进行统一可视化监控。

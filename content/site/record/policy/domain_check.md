@@ -2,6 +2,7 @@
 title: "域名核验规则"
 description: test
 weight: 6
+keyword: 域名核验规则, QingCloud, 青云
 ---
 
 

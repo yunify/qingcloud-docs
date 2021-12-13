@@ -3,7 +3,7 @@ title: "回收站"
 description: Test description
 draft: false
 enableToc: false
-keyword: 回收站, QingCloud
+keyword: 回收站, QingCloud, 删除云服务器, 恢复云服务器
 ---
 
 

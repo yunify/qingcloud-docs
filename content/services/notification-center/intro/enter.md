@@ -3,7 +3,7 @@ title: "如何访问"
 description: how to enter
 draft: false
 weight: 6
-keyword: 消息中心, QingCloud
+keyword: 消息中心, QingCloud, 青云
 ---
 
 您可以通过以下方式进入消息中心：
