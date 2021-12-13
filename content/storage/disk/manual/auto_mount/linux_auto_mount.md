@@ -1,7 +1,7 @@
 ---
 title: "自动挂载 Linux 硬盘"
 date: 2021-09-23T00:38:25+09:00
-description: 本小节主要介绍Linux系统如何配置云硬盘的自动自动挂载。
+description: 本小节主要介绍Linux系统如何配置云硬盘的自动挂载。
 draft: false
 weight: 10
 keyword: 云计算, 青云, QingCloud, 云硬盘, linux,自动挂载
