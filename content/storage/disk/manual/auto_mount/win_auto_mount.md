@@ -1,9 +1,9 @@
 ---
 title: "自动挂载 Windows 硬盘"
-description: test
+description: 本小节主要介绍Windows系统如何配置云硬盘的自动自动挂载。
 draft: false
 weight: 20
-keyword: 青云
+keyword: 云计算, 青云, QingCloud, 云硬盘, Windows,自动挂载
 ---
 
 

@@ -1,10 +1,10 @@
 ---
 title: "初始化 Linux 数据盘"
-description: Test description
+description: 本小节主要介绍如何对Linux系统下的数据盘进行初始化操作。
 draft: false
 enableToc: false
 weight: 105
-keyword: 青云
+keyword: 云计算, 青云, QingCloud, 云硬盘,初始化,linux,数据盘
 ---
 
 ## 直接初始化

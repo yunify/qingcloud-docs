@@ -1,10 +1,9 @@
 ---
 title: "备份硬盘"
-description: Test description
+description: 本小节主要介绍对云硬盘创建备份的相关操作。
 draft: false
-enableToc: false
 weight: 40
-keyword: 青云
+keyword: 云计算, 青云, QingCloud, 云硬盘, 创建备份
 ---
 
 ## 备份须知

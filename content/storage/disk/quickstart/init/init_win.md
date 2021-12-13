@@ -1,10 +1,10 @@
 ---
 title: "初始化 Windows 数据盘"
-description: Test description
+description: 本小节主要介绍如何对Windows系统下的数据盘进行初始化操作。
 draft: false
 enableToc: false
 weight: 110
-keyword: 青云
+keyword: 云计算, 青云, QingCloud, 云硬盘,初始化,Windows,数据盘
 ---
 
 ##  硬盘容量小于 2TB
