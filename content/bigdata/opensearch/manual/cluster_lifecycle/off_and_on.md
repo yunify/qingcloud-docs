@@ -1,7 +1,7 @@
 ---
 title: "启停集群"
 description: 本小节主要介绍如何开启和关闭 OpenSearch 集群。 
-keywords: OpenSearch 开启；关闭
+keyword: OpenSearch 开启；关闭
 weight: 20
 collapsible: false
 draft: false

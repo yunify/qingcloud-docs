@@ -1,7 +1,7 @@
 ---
 title: "什么是 ZooKeeper"
 description: 本小节主要介绍 ZooKeeper 服务简介。 
-keywords: ZooKeeper 产品简介, 
+keyword: ZooKeeper 产品简介, 
 weight: 10
 collapsible: false
 draft: false

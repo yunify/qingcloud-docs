@@ -1,10 +1,10 @@
 ---
 title: "Linux云服务器网卡丢失IP"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: Linux云服务器网卡丢失IP
 weight: 50
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，网卡，IP
 ---
 
 ## 问题背景

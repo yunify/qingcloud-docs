@@ -1,9 +1,10 @@
 ---
 title: "添加规则子集"
-description: manual
+description: 如何添加规则子集
 draft: false
 weight: 50
 draft: false
+keyword: 云服务器, QingCloud，安全，安全组，规则子集
 ---
 
 规则子集是一组安全规则的集合，您可以依据自身业务将安全策略分为多组。使用安全组策略时，通过绑定规则子集的方式来实现多组安全策略的批量引用，绑定后该安全组将会应用子集内的所有规则。每个安全组最多可同时绑定 10 个规则子集。

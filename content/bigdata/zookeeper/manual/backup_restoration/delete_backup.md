@@ -1,7 +1,7 @@
 ---
 title: "删除备份"
 description: 本小节主要如何删除 ZooKeeper 备份。 
-keywords: ZooKeeper 删除备份；
+keyword: ZooKeeper 删除备份；
 weight: 30
 collapsible: false
 draft: false

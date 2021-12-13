@@ -1,7 +1,7 @@
 ---
 title: "RecoverClusters"
 description: 本小节主要介绍 MySQL Plus 从回收站恢复集群的接口。 
-keywords: mysql plus 从回收站恢复集群，从回收站恢复集群
+keyword: mysql plus 从回收站恢复集群，从回收站恢复集群
 weight: 22
 collapsible: false
 draft: false

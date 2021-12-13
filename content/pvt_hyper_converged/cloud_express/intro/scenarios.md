@@ -1,7 +1,7 @@
 ---
 title: "应用场景"
 description: 本小节主要介绍 青立方® 超融合易捷版 应用场景。 
-keywords: 青立方® 超融合易捷版， 版本应用场景 
+keyword: 青立方® 超融合易捷版， 版本应用场景 
 weight: 25
 collapsible: false
 draft: false

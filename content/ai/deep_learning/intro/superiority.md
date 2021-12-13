@@ -1,7 +1,7 @@
 ---
 title: "产品优势"
 description: 本小节主要介绍深度学习平台的优势。 
-keywords: Deep Learnling 产品优势 
+keyword: 人工智能，深度学习，Deep Learning，产品优势
 weight: 30
 collapsible: false
 draft: false

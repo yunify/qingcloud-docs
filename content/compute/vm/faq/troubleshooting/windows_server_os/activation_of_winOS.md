@@ -2,7 +2,7 @@
 title: "激活 Windows 系统云服务器"
 weight: 1
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，激活
 ---
 
 ## 操作步骤

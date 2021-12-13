@@ -1,7 +1,7 @@
 ---
 title: "公有云连接概述"
 description: 本小节主要介绍青立方® 超融合易捷版公有云连接。 
-keywords: 青立方® 超融合易捷版，公有云，连接
+keyword: 青立方® 超融合易捷版，公有云，连接
 weight: 05
 collapsible: false
 draft: false

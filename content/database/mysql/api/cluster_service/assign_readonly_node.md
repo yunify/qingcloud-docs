@@ -1,7 +1,7 @@
 ---
 title: "set_readonly"
 description: 本小节主要介绍 MySQL Plus 只读节点接口。 
-keywords: mysql plus 只读节点,set_readonly
+keyword: mysql plus 只读节点,set_readonly
 weight: 12
 collapsible: false
 draft: false

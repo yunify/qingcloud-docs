@@ -1,7 +1,7 @@
 ---
 title: "API 概览"
 description: 本小节主要介绍 MySQL Plus 集群 主要 api。 
-keywords: mysql plus 概览；api 概览
+keyword: mysql plus 概览；api 概览
 draft: false
 weight: 06
 collapsible: false

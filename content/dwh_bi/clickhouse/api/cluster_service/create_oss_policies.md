@@ -1,7 +1,7 @@
 ---
 title: "create_oss_policies"
 description: 本小节主要介绍 ClickHouse 创建存储策略接口。 
-keywords: ClickHouse 创建存储策略,创建存储策略
+keyword: ClickHouse 创建存储策略,创建存储策略
 weight: 60
 collapsible: false
 draft: false

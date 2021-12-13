@@ -1,11 +1,10 @@
 ---
 title: "Ubuntu安装图形化桌面"
 date: 2021-02-15T21:37:25+09:00
-description: Test description
+description: Ubuntu如何安装图形化桌面
 weight: 50
 draft: false
-enableToc: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，Ubuntu
 ---
 
 ## 1、准备环境

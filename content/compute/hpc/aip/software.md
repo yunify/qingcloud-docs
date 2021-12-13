@@ -2,7 +2,8 @@
 title: "集群管理"
 linkTitle: "集群管理"
 date: 2021-11-26T10:08:56+09:00
-description:
+description: 集群管理状态
+keyword: 云计算, 青云, QingCloud, hpc，aip，集群管理
 draft: false
 weight: 1
 ---

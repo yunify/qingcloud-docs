@@ -1,9 +1,9 @@
 ---
 title: "Windows 时间不同步解决办法"
-description: Test description
+description: windows 时间不同步如何解决
 weight: 40
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，时间
 ---
 
 ## 概述

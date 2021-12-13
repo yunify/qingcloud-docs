@@ -1,7 +1,7 @@
 ---
 title: "删除用户"
 description: 本小节介绍如何删除 ACL 用户。 
-keywords: redis cluster，访问控制，用户管理 ACL
+keyword: redis cluster，访问控制，用户管理 ACL
 weight: 12
 draft: false
 ---

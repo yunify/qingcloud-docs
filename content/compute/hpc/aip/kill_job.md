@@ -1,6 +1,7 @@
 ---
 title: "杀作业"
 linkTitle: "杀作业"
+keyword: 云计算, 青云, QingCloud, aip，杀死作业
 date: 2021-11-26T10:08:56+09:00
 description:
 draft: false

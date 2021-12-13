@@ -1,7 +1,7 @@
 ---
 title: "数据库性能"
 description: 本小节主要介绍 MySQL Plus 性能常见问题。 
-keywords: mysql plus 常见问题问
+keyword: mysql plus 常见问题问
 weight: 10
 collapsible: false
 draft: false

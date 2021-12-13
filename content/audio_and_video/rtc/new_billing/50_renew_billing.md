@@ -1,5 +1,7 @@
 ---
 title: "续费与退订"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,续费, 退订
+description: 本章节介绍实时音视频 RTC 的续费与退订。
 draft: false
 collapsible: false
 weight: 50

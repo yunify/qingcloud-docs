@@ -1,7 +1,7 @@
 ---
 title: "集群概述"
 description: 本小节主要介绍 MongoDB Cluster 集群基本信息。 
-keywords: MongoDB Cluster 集群信息；
+keyword: MongoDB Cluster 集群信息；
 weight: 05
 collapsible: false
 draft: false

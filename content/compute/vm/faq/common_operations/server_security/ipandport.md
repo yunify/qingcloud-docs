@@ -1,10 +1,10 @@
 ---
 title: "配置IP/端口集合"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 如何配置IP/端口集合
 weight: 20
-draft: false
-enableToc: false 
+draft: false 
+keyword: 云计算, 青云, QingCloud, 云服务器，IP/端口集合
 ---
 
 ## 产品概述

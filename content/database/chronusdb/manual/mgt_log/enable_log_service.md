@@ -1,7 +1,7 @@
 ---
 title: "开启日志服务"
 description: 本小节主要介绍如何开启 ChronusDB 日志服务。 
-keywords: ChronusDB 开启日志服务；
+keyword: ChronusDB 开启日志服务；
 weight: 10
 collapsible: false
 draft: false

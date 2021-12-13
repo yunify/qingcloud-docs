@@ -1,7 +1,9 @@
 ---
 title: "TensorFlow 使用指南"
-description: test
+description: 本小节主要介绍 TensorFlow 使用指南
+keyword: 人工智能，深度学习，Deep Learning，TensonFlow，使用指南
 weight: 25
+collapsible: false
 draft: false
 ---
 

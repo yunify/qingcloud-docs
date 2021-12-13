@@ -1,11 +1,10 @@
 ---
 title: "Virtual SAN"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 本小节主要介绍Virtual SAN。
 draft: false
-weight: 20
-enableToc: false
-keyword: 青云
+weight: 2
+keyword: 云计算, 青云, QingCloud, 共享存储, Virtual SAN, NeonSAN
 ---
 
 # 简介
@@ -17,7 +16,7 @@ keyword: 青云
 
 > 注解
 > 
-> 如果将一块硬盘通过 Virtual SAN 服务挂载到多台云服务器上，那么必须通过分布式文件系统（Distributed File System）的支持才可以并行读写，可以使用青云已经推出的 [_NAS 服务_](https://docsv3.qingcloud.com/storage/vnas/manual/vnas) 。
+> 如果将一块硬盘通过 Virtual SAN 服务挂载到多台云服务器上，那么必须通过分布式文件系统（Distributed File System）的支持才可以并行读写，可以使用青云已经推出的 [_NAS 服务_](/storage/vnas/intro/introduction) 。
 
 ## 创建 Virtual SAN 服务器
 

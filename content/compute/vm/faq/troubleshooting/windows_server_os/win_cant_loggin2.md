@@ -2,11 +2,10 @@
 
 title: "远程连接报错：您的连接已丢失"
 date: 2020-04-08T00:38:25+09:00
-description: Test description
+description: 远程连接报错，您的连接已丢失
 weight: 20
 draft: false
-enableToc: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，远程连接
 ---
 
 ## 问题描述

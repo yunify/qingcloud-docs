@@ -1,7 +1,7 @@
 ---
 title: "从备份恢复集群"
 description: 本小节主要如何从备份恢复 MongoDB Cluster 集群。 
-keywords: MongoDB Cluster 从备份恢复集群；
+keyword: MongoDB Cluster 从备份恢复集群；
 weight: 50
 collapsible: false
 draft: false

@@ -1,11 +1,8 @@
 ---
 title: "什么是公网 IP"
-linkTitle: "什么是公网 IP"
-date: 2021-05-26T10:08:56+09:00
-description: Test description
+description: 公网 IP 产品介绍。
 weight: 5
 draft: false
-enableToc: false
 keyword: 青云，公网 IP，QingCloud
 ---
 公网 IP 是在互联网上合法的静态 IP 地址。在 QingCloud 系统中，公网 IP 地址与账户而非特定的资源关联，因此可以将申请到的公网 IP 地址与任意云服务器（包括私有网络内的云服务器）/路由器/负载均衡器绑定，并且可以解绑、再分配到其他资源上。

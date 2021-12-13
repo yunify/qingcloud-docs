@@ -1,7 +1,7 @@
 ---
 title: "部署架构"
 description: 本小节主要介绍 Storm 部署架构。 
-keywords: Storm 产品简介
+keyword: Storm 产品简介
 weight: 20
 collapsible: false
 draft: false

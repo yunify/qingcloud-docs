@@ -1,9 +1,9 @@
 ---
 title: "文件系统扫描工具 fsck"
-description: Test description
+description: 如何使用文件系统扫描工具
 weight: 40
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，fsck
 ---
 
 文件系统扫描工具有 fsck、fsck.ext2、fsck.ext3、fsck.ext4、fsck.msdos、fsck.cramfs、fsck.ext4dev、fsck.vfat。需要根据不同的文件系统来调用不同的扫描工具，比如 ext3 的文件系统使用 fsck.ext3，ext4 文件系统使用 fsck.ext4 等。

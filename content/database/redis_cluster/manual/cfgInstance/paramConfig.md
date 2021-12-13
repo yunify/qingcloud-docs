@@ -4,7 +4,7 @@ description: 本小节介绍如何配置集群参数。
 weight: 8
 collapsible: false
 draft: false
-keywords: QingCloud，Redis Cluster，参数配置
+keyword: QingCloud，Redis Cluster，参数配置
 ---
 
  Redis Cluster 支持自定义部分参数的值，您可以根据自己的业务情况对集群运行参数进行调整，使缓存服务发挥出最优性能。

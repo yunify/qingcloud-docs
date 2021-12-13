@@ -1,7 +1,7 @@
 ---
 title: "小型 PostgreSQL 数据库迁移"
 description: 本小节主要介绍如何迁移小型数据到 PolonDB 数据库。 
-keywords: polondb 迁入数据
+keyword: polondb 迁入数据
 weight: 10
 collapsible: false
 draft: false

@@ -1,11 +1,10 @@
 ---
 title: "扩容 Linux 数据盘"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 本小节主要介绍对Linux系统下的数据盘进行扩容。
 draft: false
-enableToc: false
 weight: 20
-keyword: 青云
+keyword:  云计算, 青云, QingCloud, 云硬盘, linux, 扩容,数据盘
 ---
 
 ## 扩展云硬盘容量
@@ -63,7 +62,9 @@ keyword: 青云
 
 5. 输入 `p`，并回车，查看并记录分区的 Start 值。
 
-   > **注意**：删除分区并新建后，Start 值必须保持不变，否则将会引起数据丢失。
+   > **注意**：
+   >
+   > 删除分区并新建后，Start 值必须保持不变，否则将会引起数据丢失。
 
    ![expan_linux_9](/storage/disk/_images/expan_linux_9.png)
 
@@ -140,7 +141,9 @@ keyword: 青云
 
 5. 输入 `p`，并回车，查看并记录分区的 Start 值。
 
-   > **注意**：删除分区并新建后，Start 值必须保持不变，否则将会引起数据丢失。
+   > **注意**：  
+   >
+   > 删除分区并新建后，Start 值必须保持不变，否则将会引起数据丢失。
 
    ![expan_linux_22](/storage/disk/_images/expan_linux_22.png)
 

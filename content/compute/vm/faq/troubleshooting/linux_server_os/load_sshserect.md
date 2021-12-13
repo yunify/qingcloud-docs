@@ -1,14 +1,14 @@
 ---
-title: " 云服务器加载 SSH 秘钥失败"
-description: Test description
+title: " 云服务器加载 SSH 密钥失败"
+description: 云服务器加载 SSH 密钥失败
 weight: 20
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，SSH
 ---
 
 ## 问题介绍
 
-使用[QingCloud 管理控制台](https://console.qingcloud.com/login)云服务器加载 SSH 秘钥失败
+使用[QingCloud 管理控制台](https://console.qingcloud.com/login)云服务器加载 SSH 密钥失败
 
 ![load_sshserect01](../../../_images/load_sshserect01.png)
 
@@ -21,7 +21,7 @@ systemctl restart gapd  #Centos
 service gapd restart    #Ubuntu
 ```
 
-2. 在控制台重新加载 SSH 秘钥
+2. 在控制台重新加载 SSH 密钥
 
 ![load_sshserect02](../../../_images/load_sshserect02.jpg)
 

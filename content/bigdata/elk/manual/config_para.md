@@ -1,7 +1,7 @@
 ---
 title: "配置参数"
 description: 本小节主要介绍如何修改 ELK 配置参数。 
-keywords: hbase 修改账号；
+keyword: hbase 修改账号；
 weight: 20
 collapsible: false
 draft: false

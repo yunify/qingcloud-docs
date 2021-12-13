@@ -1,7 +1,7 @@
 ---
 title: "Others"
 description: 本小节主要介绍 RadonDB 支持的 其他语法。 
-keywords: radondb SQL 集,
+keyword: radondb SQL 集,
 weight: 70
 collapsible: false
 draft: false

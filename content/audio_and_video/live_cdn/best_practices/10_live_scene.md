@@ -1,5 +1,7 @@
 ---
 title: "视频直播功能实践"
+keyword: 云计算, 青云, QingCloud, 视频直播, 功能实践, OBS, VLC
+description: 本章节介绍通过配置 OBS 主播端和 LVC 播放端的方式，为您展示视频直播功能。
 draft: false
 collapsible: false
 weight: 40

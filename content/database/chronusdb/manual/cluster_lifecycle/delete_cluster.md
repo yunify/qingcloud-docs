@@ -1,7 +1,7 @@
 ---
 title: "删除集群"
 description: 本小节主要介绍如何删除 ChronusDB 集群。 
-keywords: ChronusDB 删除集群
+keyword: ChronusDB 删除集群
 weight: 90
 collapsible: false
 draft: false

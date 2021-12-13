@@ -2,7 +2,7 @@
 title: "Windows 重置网络"
 weight: 6
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，重置网络
 ---
 
 ## 概述

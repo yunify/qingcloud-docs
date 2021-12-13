@@ -1,7 +1,7 @@
 ---
 title: "备份概述"
 description: 本小节主要如何开启 MongoDB Cluster 备份概述。 
-keywords: MongoDB Cluster 备份概述；
+keyword: MongoDB Cluster 备份概述；
 weight: 01
 collapsible: false
 draft: false

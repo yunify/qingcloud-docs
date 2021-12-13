@@ -1,11 +1,10 @@
 ---
 title: "Windows 客户端配置及访问"
 date: 2021-11-22T17:08:56+09:00
-description: Test description
+description: 本小节主要介绍Windows 客户端配置及访问的相关操作。
 draft: false
-enableToc: false
-weight: 30
-keyword: 青云，文件存储
+weight: 3
+keyword: 云计算, 青云, QingCloud, 文件存储, Virtual NAS, vNAS
 ---
 
 ## 客户端连接共享存储目标

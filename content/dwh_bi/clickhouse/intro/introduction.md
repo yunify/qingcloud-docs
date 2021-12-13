@@ -1,7 +1,7 @@
 ---
 title: "什么是 ClickHouse"
 description: 本小节主要介绍 Clickhouse 产品简介。 
-keywords: Clickhouse 产品简介,
+keyword: Clickhouse 产品简介,
 weight: 10
 collapsible: false
 draft: false

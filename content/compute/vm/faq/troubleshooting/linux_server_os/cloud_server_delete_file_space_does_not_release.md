@@ -1,9 +1,9 @@
 ---
 title: "删除文件后磁盘空间不释放"
-description: Test description
+description: 删除文件后如何释放磁盘空间
 weight: 20
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，删除文件，释放空间
 ---
 
 ## 问题现象

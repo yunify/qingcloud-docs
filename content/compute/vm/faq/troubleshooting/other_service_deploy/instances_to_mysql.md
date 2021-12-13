@@ -1,10 +1,10 @@
 ---
-title: "活动主机内网连接活动数据库"
+title: "活动云服务器内网连接活动数据库"
 date: 2021-01-30T00:38:25+09:00
-description: Test description
+description: 活动云服务器内网连接活动数据库
 weight: 40
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，数据库
 ---
 
 ## 概述

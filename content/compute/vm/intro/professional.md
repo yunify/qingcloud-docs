@@ -1,20 +1,23 @@
 ---
 title: "专业级云服务器"
 date: 2020-01-30T00:40:25+09:00
-description: Test description
+description: 专业级云服务器介绍
 draft: false
-enableToc: false
 weight: 20
-keyword: 云服务器, QingCloud, 实例, 虚拟机
+keyword: 云计算, 青云, QingCloud, 云服务器，专业级
 ---
 
 ## GPU云服务器 g2
 
 具备 GPU 加速计算能力的实例，可同时提供 GPU 和 CPU 计算资源，大幅提高机器学习及科学计算等大规模计算框架的运行速度，为搭建人工智能及高性能计算平台提供基础架构支持。主要应用场景包括人工智能深度学习、高性能计算、图形图像处理等领域。
 
+> **说明**：
+>
+> 在北京3区-A、北京3区-B、北京3区-D、上海1区-A四个区域，支持开通 NVIDIA Tesla P100  GPU云服务器。
+
 特点：
 
-- 两种GPU类型可选（NVIDIA Tesla P100、GEFORCE RTX 2080 Ti），专门为计算加速场景优化设计，可提供3584个并行计算核心，单精度浮点运算能力达9.3TFLOPS，双精度浮点运算能力达4.7TFLOPS。
+- GPU类型为NVIDIA Tesla P100，专门为计算加速场景优化设计，可提供3584个并行计算核心，单精度浮点运算能力达9.3TFLOPS，双精度浮点运算能力达4.7TFLOPS。
 - CPU采用第二代英特尔®至强®金牌6240处理器，主频：2.6GHz，睿频最高可达3.9GHz
 - 配有全新的 Intel Advanced Vector Extension (AVX-512) 指令集，在深度学习的多种场景性能提升4倍
 - 处理器内存配比1:4

@@ -1,7 +1,7 @@
 ---
 title: "存储池管理"
 description: 本小节主要介绍青立方® 超融合易捷版 存储池管理。 
-keywords: 青立方® 超融合易捷版，存储池管理
+keyword: 青立方® 超融合易捷版，存储池管理
 weight: 20
 collapsible: false
 draft: false

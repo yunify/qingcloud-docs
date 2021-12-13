@@ -1,7 +1,7 @@
 ---
 title: "Logstash 自定义启动配置文件"
 description: 本小节主要介绍 Logstash 如何自定义启动配置文件。
-keywords: Logstash 自定义启动配置文件,
+keyword: Logstash 自定义启动配置文件,
 weight: 50
 collapsible: false
 draft: false

@@ -1,6 +1,7 @@
 ---
 title: "云应用入门指南"
-date: 2020.11.11T00:00:00+09:00
+description: 云应用入门
+keyword: QingCloud, 青云, AppCenter, 云应用开发平台
 draft: false
 collapsible: false
 weight: 2

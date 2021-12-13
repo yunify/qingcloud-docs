@@ -1,5 +1,7 @@
 ---
 title: "图片信息"
+description: 本小节主要介绍图片信息接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, 图片信息
 ---
 
 用户可以调用该 API 接口获取图片的基本信息和部分 [Exif](https://en.wikipedia.org/wiki/Exif) 信息。

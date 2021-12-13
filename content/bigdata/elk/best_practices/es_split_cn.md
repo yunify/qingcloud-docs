@@ -1,7 +1,7 @@
 ---
 title: "Elasticsearch 获取中文分词"
 description: 本小节主要介绍 Elasticsearch 使用 IK Analysis 插件和自定义字典进行中文分词。
-keywords: Elasticsearch 中文分词,
+keyword: Elasticsearch 中文分词,
 weight: 15
 collapsible: false
 draft: false

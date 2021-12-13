@@ -1,6 +1,7 @@
 ---
 title: "账号安全指南"
-description: verify
+description: 介绍账户安全设置指南。
+keyword: 青云, 账户中心, 账户安全, 安全设置, 安全指南
 weight: 10
 draft: false
 ---

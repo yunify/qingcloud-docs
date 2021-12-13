@@ -1,11 +1,10 @@
 ---
 title: "企业级云服务器"
 date: 2020-01-30T00:40:25+09:00
-description: Test description
+description: 企业级云服务器介绍
 draft: false
-enableToc: false
 weight: 15
-keyword: 云服务器, QingCloud, 实例, 虚拟机
+keyword: 云计算, 青云, QingCloud, 云服务器，企业级
 ---
 
 ## 计算型 ec3

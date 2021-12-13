@@ -1,7 +1,7 @@
 ---
 title: "启停集群"
 description: 本小节主要介绍如何开启和关闭 ChronusDB 集群。 
-keywords: ChronusDB 开启；关闭
+keyword: ChronusDB 开启；关闭
 weight: 20
 collapsible: false
 draft: false

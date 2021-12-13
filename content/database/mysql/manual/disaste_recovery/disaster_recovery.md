@@ -1,7 +1,7 @@
 ---
 title: "启动异地灾备"
 description: 本小节主要介绍如何创建异地灾备。 
-keywords: mysql plus 异地容灾，异地灾备
+keyword: mysql plus 异地容灾，异地灾备
 weight: 10
 collapsible: false
 draft: false

@@ -1,8 +1,7 @@
 ---
 title: "Zabbix-Agent 服务管理"
 description: 本小节主要介绍如何管理 Zabbix-Agent 服务。 
-keywords: mongodb Zabbix-Agent 服务, 
-data: 2021-05-14T00:38:25+09:00
+keyword: mongodb Zabbix-Agent 服务, 
 weight: 65
 collapsible: false
 draft: false

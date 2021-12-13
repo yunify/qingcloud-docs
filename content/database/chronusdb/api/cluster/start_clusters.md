@@ -1,7 +1,7 @@
 ---
 title: "StartClusters"
 description: 本小节主要介绍获取 ChronusDB 启动集群的接口。 
-keywords: ChronusDB 启动集群，启动集群
+keyword: ChronusDB 启动集群，启动集群
 weight: 14
 collapsible: false
 draft: false

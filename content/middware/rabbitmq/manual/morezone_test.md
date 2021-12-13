@@ -1,14 +1,15 @@
 ---
 title: "多可用区（同城多活）测试"
-description: test
+description: 本小节主要介绍多可用区，同城双活的测试方法。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,QingCloud,RabbitMQ,rabbitmq,消息队列服务,消息中间件,操作指南,多可用区,同城多活
 weight: 29
 draft: false
-keyword:  QingCloud, RabbitMQ, rabbitmq,  消息队列服务, 消息中间件
+
 ---
 
 ## 背景
 
-- [青云QingCloud 升级区域（Region）架构 轻松实现同城多活](https://log.qingcloud.com/archives/3981)
+[青云QingCloud 升级区域（Region）架构 轻松实现同城多活](https://log.qingcloud.com/archives/3981)
 
 ## 测试结果
 

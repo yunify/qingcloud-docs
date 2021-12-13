@@ -1,8 +1,8 @@
 ---
 title: "重置Windows云服务器密码"
-description: test
+description: 如何重置Windows云服务器的密码
 draft: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，密码
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "修复工具 HBCK 2"
 description: 本小节主要介绍 HBase 2.0 修复工具 hbck2 使用指南。 
-keywords: HBase 使用简介,
+keyword: HBase 使用简介,
 weight: 30
 collapsible: false
 draft: false

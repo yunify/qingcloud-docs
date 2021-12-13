@@ -1,8 +1,9 @@
 ---
 title: "什么是 etcd 服务"
+description: 本小节主要介绍什么是 etcd 服务。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,etcd,产品简介
 draft: false
 enableToc: false
-keyword: etcd，
 weight: 10
 ---
 

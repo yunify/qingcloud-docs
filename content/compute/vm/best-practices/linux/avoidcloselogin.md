@@ -1,10 +1,10 @@
 ---
 title: "配置Linux云服务器免密登录"
 date: 2021-02-15T21:37:25+09:00
-description: Test description
+description: 配置linux云服务器
 weight: 50
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux云服务器，登录
 ---
 
 
