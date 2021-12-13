@@ -1,7 +1,7 @@
 ---
 title: "查看资源和服务监控"
-description: 本小节主要介绍 PostgreSQL 主要支持哪些监控指标。 
-keyword: PostgreSQL 监控指标
+description: 本小节主要介绍如何查看 PostgreSQL 监控信息。 
+keyword: PG,查看监控,PostgreSQL,关系型数据库,数据库
 weight: 40
 collapsible: false
 draft: false
@@ -9,9 +9,9 @@ draft: false
 
 
 
-PostgreSQL 监控告警是通过 QingCloud 云监控告警服务为集群服务器的资源和服务提供监控管理。当集群监控项超过阈值时触发告警，并通过短信、邮件等形式发送告警通知。
+PostgreSQL 监控告警是通过云监控告警服务为集群服务器的资源和服务提供监控管理。当集群监控项超过阈值时触发告警，并通过短信、邮件等形式发送告警通知。
 
-QingCloud 提供的云监控 CloudSat，可对 PostgreSQL 的运行状态进行日常监控。您可以通过 CloudSat 管理控制台，一站式监控和告警 PostgreSQL 各类服务、资源指标。您可以在 PostgreSQL 集群详情页面，查看主实例监控和查看备实例监控。
+云监控 CloudSat，可对 PostgreSQL 的运行状态进行日常监控。您可以通过 CloudSat 管理控制台，一站式监控和告警 PostgreSQL 各类服务、资源指标。您可以在 PostgreSQL 集群详情页面，查看主实例监控和查看备实例监控。
 
 > **注意**
 > 
@@ -19,7 +19,7 @@ QingCloud 提供的云监控 CloudSat，可对 PostgreSQL 的运行状态进行�
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群查看权限。
+- 已获取管理控制台登录账号和密码，且已获取集群查看权限。
 - 已创建 PostgreSQL 集群，集群状态为**活跃**，且服务状态为**正常**。 
   
    > **说明**
@@ -71,9 +71,9 @@ QingCloud 提供的云监控 CloudSat，可对 PostgreSQL 的运行状态进行�
 
    **实时监控为关闭时**
 
-   <img src="../../../_images/manual_service_monitor.png" style="zoom:50%;" />
+   <img src="../../../_images/manual_monitor.png" style="zoom:50%;" />
 
    **实时监控为开启时**
 
-   <img src="../../../_images/manual_service_monitor_realtime.png" style="zoom:50%;" />
+   <img src="../../../_images/manual_monitor_realtime.png" style="zoom:50%;" />
    

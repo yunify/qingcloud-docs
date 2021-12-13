@@ -1,7 +1,7 @@
 ---
 title: "灾备概述"
 description: 本小节主要介绍 PostgreSQL 灾备概述。 
-keyword: PostgreSQL 灾备，使用限制，使用说明
+keyword: 灾备,使用限制,使用说明,PostgreSQL,关系型数据库,数据库
 weight: 05
 collapsible: false
 draft: false

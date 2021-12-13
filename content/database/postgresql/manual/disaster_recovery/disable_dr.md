@@ -1,7 +1,7 @@
 ---
 title: "停止灾备"
 description: 本小节主要介绍如何停止 PostgreSQL 集群灾备。 
-keyword: PostgreSQL 停止灾备
+keyword: 停止灾备,PostgreSQL,关系型数据库,数据库
 weight: 30
 collapsible: false
 draft: false

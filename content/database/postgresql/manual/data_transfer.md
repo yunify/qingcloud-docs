@@ -1,7 +1,7 @@
 ---
 title: "数据迁移"
 description: 本小节主要介绍 PostgreSQL 离线数据迁移。 
-keyword: PostgreSQL 离线数据迁移,
+keyword: 离线数据迁移,PostgreSQL,关系型数据库,数据库
 weight: 01
 collapsible: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: "删除备份"
 description: 本小节主要如何删除 PostgreSQL 备份。 
-keyword: PostgreSQL 删除备份；
+keyword: 删除备份,PostgreSQL,关系型数据库,数据库
 weight: 30
 collapsible: false
 draft: false

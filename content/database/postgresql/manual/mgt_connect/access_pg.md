@@ -1,7 +1,7 @@
 ---
 title: "连接数据库"
-description: 本小节主要介绍如何快速连接 PostgreSQ 数据库。 
-keyword: PostgreSQ 访问,访问数据库
+description: 本小节主要介绍如何快速连接 PostgreSQL 数据库。 
+keyword: 访问,访问数据库,PostgreSQL,关系型数据库,数据库
 weight: 05
 collapsible: false
 draft: false
@@ -9,17 +9,15 @@ draft: false
 
 
 
-PostgreSQL 可通过 psql 命令行客户端直接连接，还可以使用图形化的数据库客户端连接。
+PostgreSQL 可通过 psql 命令行客户端直接连接，还可以使用图形化的数据库客户端连接。图形化客户端包括 pgAdmin 、DbVisualizer 、DBeaver 等。
 
-图形化客户端包括 pgAdmin 、DbVisualizer 、DBeaver 等。
-
-本小节主要介绍如何连接 PostgreSQ 数据库，以终端命令行方式连接数据库。
+本小节主要介绍如何连接 PostgreSQL 数据库，以终端命令行方式连接数据库。
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 PostgreSQL 集群，且集群状态为**活跃**。
-- 已在服务器安装数据库客户端。
+- 已在服务器安装数据库客户端，且服务器与数据库之间网络畅通。可通过[边界路由器](/network/border_router/)或 [VPN](/network/vpc/manual/vpn/) 等方式打通网络。
 
 ## 获取连接信息
 
@@ -44,7 +42,7 @@ psql -U <userName> -h <port> -d <serverName>
 
 |<span style="display:inline-block;width:80px">选项</span> |<span style="display:inline-block;width:240px">说明</span>|<span style="display:inline-block;width:280px">示例</span> |
 |:----|:----|:----|
-|-U           |数据库用户账号名。<br>新建数据库默认账号名 `pguser`。      | pguser |
+|-U           |数据库用户账号名。<br>- 新建数据库默认账号名 `pguser`。<br>- 获取更多用户信息，请参见[用户管理](../../mgt_account/user_account)。      | pguser |
 |-h          |数据库节点的 IP 或者双节点集群的 VIP。                 |192.168.100.0|
 |-d          |数据库名称。 <br>新建数据库默认名称 `qingcloud`。            | qingcloud |
 |密码          |数据库用户密码。<br>新建数据库默认账号密码`qingcloud1234`              | qingcloud1234 |

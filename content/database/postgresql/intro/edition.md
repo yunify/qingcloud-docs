@@ -1,7 +1,7 @@
 ---
 title: "产品版本"
 description: 本小节主要介绍 PostgreSQL 版本规格。 
-keyword: PostgreSQL, 版本规格
+keyword: 版本规格,PostgreSQL,关系型数据库,数据库
 weight: 30
 collapsible: false
 draft: false
@@ -33,27 +33,31 @@ PostgreSQL 定制`基础版`、`高可用版`两个功能系列。
 基于 PostgreSQL 11.1 内核版本分别构建的高可用版。
 
 - 新增[灾备管理](../../manual/disaster_recovery/dr_info)功能，支持集群异地灾备。
+- 新增[账号管理](../../manual/mgt_account/user_account)功能，支持在线创建、修改、查看和删除数据库用户账号。
+- 优化[监控项字段](../../manual/metrics_alarm/config_display_metrics)，提升用户体验。
 
 ### PG9.6/PG10-高可用版-V1.1.6
 
 基于 PostgreSQL 10.1、9.6.3内核版本分别构建的高可用版。
 
 - 新增[灾备管理](../../manual/disaster_recovery/dr_info)功能，支持集群异地灾备。
+- 新增[账号管理](../../manual/mgt_account/user_account)功能，支持在线创建、修改、查看和删除数据库用户账号。
+- 优化[监控项字段](../../manual/metrics_alarm/config_display_metrics)，提升用户体验。
 
 ### PG11-高可用版-V1.0.7
 
 基于 PostgreSQL 11.1 内核版本分别构建的高可用版。
 
-- 新增**是否开启半同步模式**[配置参数](../../manual/config_para/config_para_info)，支持自动切换主从节点数据同步流模式；
-- 优化从库重建方式，从根据**节点IP**修改为根据**节点ID**方式；
-- 修复不合理的 CPU 内存组合问题；
+- 新增**是否开启半同步模式**[配置参数](../../manual/config_para/config_para_info)，支持自动切换主从节点数据同步流模式。
+- 优化从库重建方式，从根据**节点IP**修改为根据**节点ID**方式。
+- 修复不合理的 CPU 内存组合问题。
 - 修复**节点详情**页面，角色描述异常问题。
   
 ### PG9.6/PG10-高可用版-V1.1.5
 
 基于 PostgreSQL 10.1、9.6.3内核版本分别构建的高可用版。
 
-- 新增**是否开启半同步模式**[配置参数](../../manual/config_para/config_para_info)，支持自动切换主从节点数据同步流模式；
-- 优化从库重建方式，从根据**节点IP**修改为根据**节点ID**方式；
-- 修复不合理的 CPU 内存组合问题；
+- 新增**是否开启半同步模式**[配置参数](../../manual/config_para/config_para_info)，支持自动切换主从节点数据同步流模式。
+- 优化从库重建方式，从根据**节点IP**修改为根据**节点ID**方式。
+- 修复不合理的 CPU 内存组合问题。
 - 修复**节点详情**页面，角色描述异常问题。

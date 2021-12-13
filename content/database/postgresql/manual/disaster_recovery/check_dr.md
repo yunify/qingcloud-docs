@@ -1,7 +1,7 @@
 ---
 title: "查看灾备状态"
 description: 本小节主要介绍如何查看 PostgreSQL 灾备状态。 
-keyword: PostgreSQL 灾备状态
+keyword: 灾备状态,PostgreSQL,关系型数据库,数据库
 weight: 20
 collapsible: false
 draft: false
