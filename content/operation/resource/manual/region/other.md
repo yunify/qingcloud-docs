@@ -3,6 +3,7 @@ title: "其他"
 description: test
 weight: 30
 draft: false
+keyword: AppCenter, QingCloud, 青云
 ---
 
 ## 运维与监控

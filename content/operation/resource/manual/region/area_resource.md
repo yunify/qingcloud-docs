@@ -3,6 +3,7 @@ title: "区域资源"
 description: test
 weight: 2
 draft: false
+keyword: 区域资源, QingCloud, 青云, VPC专属私有网络
 ---
 
 青云平台的VPC、VPC专属私有网络(VxNet)、公网负载均衡器 (Load Balancer) 和弹性公网EIP (Elastic IP) 均为区域资源，即能多可用区使用/部署， 在页面左侧导航处相应资源均带有“MZ” (Multiple Zone)标记。

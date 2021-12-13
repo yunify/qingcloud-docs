@@ -2,6 +2,7 @@
 title: "备案短信核验"
 description: test
 weight: 8
+keyword: 备案短信核验, QingCloud, 青云
 ---
 
 

@@ -2,6 +2,7 @@
 title: "甘肃管局要求"
 description: test
 weight: 13
+keyword: 甘肃管局要求, QingCloud, 青云
 ---
 
 

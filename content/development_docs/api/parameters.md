@@ -4,6 +4,7 @@ description: Test description
 draft: false
 weight: 4
 collapsible: false
+keyword: 公共参数, QingCloud, 青云
 ---
 
 公共参数是所有 API 请求都必需的参数。

@@ -1,7 +1,8 @@
 ---
 title: "Python3 语言 get 请求签名 demo"
-description: 
+description: test 
 draft: false
+keyword: Python3 语言 get 请求签名 demo, QingCloud, 青云
 
 ---
 

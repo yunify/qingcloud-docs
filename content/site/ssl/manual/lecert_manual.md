@@ -1,9 +1,8 @@
 ---
 title: "LE证书操作"
-description: 如何使用LE证书
+description: manual
 draft: false
 weight: 20   
-keyword: 云计算, 青云, QingCloud，LE
 ---
 
 ## 证书购买

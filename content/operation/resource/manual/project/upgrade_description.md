@@ -1,9 +1,10 @@
 ---
 title: "升级资源组"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: test
 draft: false
 weight: 5
+keyword: 升级资源组, QingCloud, 青云
 ---
 项目是原资源协作（Collaboration）升级而来的功能。项目功能上线后，原有资源协作功能下线，但资源组、用户组等概念会保留，具体的使用方式升级为项目功能，用户组的入口也发生了变化。以下列出资源协作的各种概念在升级为项目后的对比：
 

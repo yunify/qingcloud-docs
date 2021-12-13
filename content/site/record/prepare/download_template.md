@@ -2,6 +2,7 @@
 title: "下载备案材料模版"
 description: test
 weight: 14
+keyword: 下载备案材料模板, QingCloud, 青云
 ---
 
 备案材料的相关模版下载链接如下：

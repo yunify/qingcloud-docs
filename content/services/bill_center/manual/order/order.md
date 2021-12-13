@@ -3,7 +3,7 @@ title: "活动订单管理"
 weight: 5
 description: Test description
 draft: false
-keyword: 账单, 发票, 订单, 充值, 费用
+keyword: 活动订单管理, 发票, 订单操作, 充值, 费用
 ---
 
 **活动订单管理**支持查询不同状态、不同产品类型的活动订单情况，以及进行订单支付、再次购买等操作。

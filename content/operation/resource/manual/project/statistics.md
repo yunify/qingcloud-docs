@@ -1,9 +1,10 @@
 ---
 title: "消费与用量"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: test
 draft: false
 weight: 4
+keyword: 消费与用量, QingCloud, 青云, 消费查询
 ---
 项目将资源聚集起来，除了在操作上起到隔离与授权作用外，还可以在统计上组合计算。对项目的组合统计，包括消费查询、消费预估和用量统计。
 

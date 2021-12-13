@@ -3,6 +3,7 @@ title: "共享效果"
 description: test
 weight: 20
 draft: false
+keyword: 共享效果, QingCloud, 青云
 ---
 
 ## **共享资源拥有者**

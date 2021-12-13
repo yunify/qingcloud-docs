@@ -2,6 +2,7 @@
 title: "注册青云账号并实名认证"
 description: test
 weight: 2
+keyword: 注册青云账号并实名认证, QingCloud, 青云
 ---
 
 
