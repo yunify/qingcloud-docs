@@ -2,7 +2,7 @@
 title: "实名认证概述"
 description: test
 weight: 2
-keyword: 域名实名认证, 域名注册, QingCloud, 青云
+keyword: 域名实名认证, 域名注册, QingCloud, 青云, 域名
 ---
 
 
