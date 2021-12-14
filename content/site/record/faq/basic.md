@@ -2,6 +2,7 @@
 title: "备案基础知识"
 description: Test description
 weight: 2
+keyword: 备案基础知识, QingCloud, 青云, 备案
 ---
 
 

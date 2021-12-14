@@ -1,10 +1,10 @@
 ---
 title: "计费说明"
 date: 2021-09-06T00:38:25+09:00
-description: test
+description: 本小节主要介绍云硬盘的计费模式。
 draft: false
-enableToc: false
 weight: 1
+keyword: 云计算, 青云, QingCloud, 云硬盘, 计费说明
 ---
 
 ## 计费模式

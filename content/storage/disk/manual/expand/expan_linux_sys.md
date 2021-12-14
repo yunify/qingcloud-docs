@@ -1,11 +1,10 @@
 ---
 title: "扩容系统盘"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 本小节主要介绍对Linux系统盘的扩容。
 draft: false
-enableToc: false
 weight: 40
-keyword: 青云
+keyword: 云计算, 青云, QingCloud, 云硬盘, linux, 扩容,系统盘
 ---
 
 ## 操作场景
@@ -23,7 +22,7 @@ keyword: 青云
 - 扩容仅支持单向的增加，而不可以缩减。
 - 扩容前，请务必确认您所使用的操作系统以及文件系统是否支持，否则，有可能会出现系统无法启动，数据无法访问的情形。
 
->**警告**：
+>**警告**：  
 >
 >扩容前，请务必做好备份工作，以防误操作导致数据丢失。
 
