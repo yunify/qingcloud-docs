@@ -30,7 +30,7 @@ draft: false
 4. 在**基本属性**模块，点击集群操作下拉菜单。
 5. 展开下拉菜单，点击**合约退订**，弹出退订/销毁窗口。
    
-   <img src="../../../_images/subscribe.png" alt="合约退订" style="zoom:50%;" />
+   <img src="../../../_images/subscribe.png" alt="合约退订" style="zoom:100%;" />
 
 6. 选择是否销毁资源。
 
