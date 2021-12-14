@@ -3,7 +3,7 @@ title: "财务管理"
 weight: 8
 description: Test description
 draft: false
-keyword: 账单, 发票, 订单, 充值, 费用
+keyword: 财务管理, 优惠券, 钱包, 青云, QingCloud, 用户服务
 ---
 
 财务管理提供钱包及优惠券的管理功能。

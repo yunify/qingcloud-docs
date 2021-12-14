@@ -1,9 +1,10 @@
 ---
 title: "错误码"
-description: 
+description: test
 draft: false
 collapsible: false
 weight: 8
+keyword: 错误码, QingCloud, 青云, 客户端错误码, API
 ---
 
 当请求发生错误时，服务器会返回错误码 ( ret_code ) 和错误信息 ( message )，完整的错误码如下表。

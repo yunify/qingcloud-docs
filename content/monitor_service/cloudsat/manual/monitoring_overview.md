@@ -4,6 +4,7 @@ date: 2020-12-01T00:38:25+09:00
 description: test
 weight: 3
 draft: false
+keyword: 监控, QingCloud, 青云, CloudSat
 ---
 
 ## 监控概览操作步骤
