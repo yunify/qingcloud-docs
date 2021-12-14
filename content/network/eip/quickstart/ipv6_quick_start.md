@@ -1,8 +1,7 @@
 ---
 title: "搭建 IPv6 网络并开通公网访问"
-linkTitle: "搭建 IPv6 网络并开通公网访问"
-date: 2021-05-26T10:08:56+09:00
-description: test
+description: 介绍如何搭建 IPv6 网络并开通公网访问。
+keyword: QingCLoud, 青云, 公网IP, IPv6 网络
 draft: false
 ---
 

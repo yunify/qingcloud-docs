@@ -2,7 +2,7 @@
 title: "Record API"
 weight: 30
 draft: false
-enableToc: false
+description: DNS Record API 接口说明。
 keyword: QingCloud，DNS服务，DNS云解析，DNS API，Record API，解析线路
 ---
 

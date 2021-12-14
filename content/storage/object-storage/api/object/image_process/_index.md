@@ -1,5 +1,7 @@
 ---
 title: "图片处理"
+description: 本小节主要介绍图片处理相关 API 内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
 用户可以调用该 API 接口对存储于 QingStor 对象存储上的图片进行各种基本处理。

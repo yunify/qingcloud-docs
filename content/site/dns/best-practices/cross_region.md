@@ -1,9 +1,8 @@
 ---
 title: "GSLB 跨区域负载均衡"
 description: 本小节主要介绍如何使用 GSLB 实现跨地域负载均衡。 
-keyword: gslb 跨区域负载均衡,流量平均分配,流量加权分配 
+keyword: QingCloud, 青云, DNS, GSLB 跨区域负载均衡, 流量平均分配, 流量加权分配 
 weight: 1
-collapsible: false
 draft: false
 ---
 

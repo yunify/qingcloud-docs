@@ -1,7 +1,8 @@
 ---
 title: "云服务器网卡"
-description: test
+description: 云服务器网卡介绍
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，网卡
 ---
 
 ## 介绍

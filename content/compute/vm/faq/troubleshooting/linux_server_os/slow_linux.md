@@ -1,7 +1,8 @@
 ---
 title: "Linux云服务器系统卡顿"
-description: test
+description: Linux 云服务器系统卡顿
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，卡顿
 ---
 
 本文档适用于系统运维工程师，通过本文档可以根据CPU/内存占用率异常增高导致的Linux云服务器卡顿有一个清晰的排查思路。

@@ -3,6 +3,8 @@ title: "最佳实践"
 linkTitle: "最佳实践"
 weight: 7
 collapsible: true
+description: 本小节主要介绍最佳实践相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, 最佳实践
 ---
 
 

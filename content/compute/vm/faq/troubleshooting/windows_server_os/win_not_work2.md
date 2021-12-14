@@ -2,6 +2,7 @@
 title: "远程控制 Windows 出现凭据无法工作问题"
 weight: 12
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，报错
 ---
 
 ## 问题背景

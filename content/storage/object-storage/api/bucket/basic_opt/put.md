@@ -1,7 +1,8 @@
 ---
 title: "PUT Bucket"
 date: 2021-08-17T10:08:56+09:00
-description:
+description: 本小节主要介绍 PUT Bucket 接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 collapsible: false
 draft: false
 weight: 1

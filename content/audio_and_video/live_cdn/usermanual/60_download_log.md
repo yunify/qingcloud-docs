@@ -1,5 +1,7 @@
 ---
 title: "下载日志"
+keyword: 云计算, 青云, QingCloud, 视频直播, 下载日志
+description: 本章节介绍如何下载日志。
 draft: false
 collapsible: false
 weight: 60

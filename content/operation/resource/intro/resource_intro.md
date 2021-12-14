@@ -3,7 +3,7 @@ title: "什么是资源共享"
 description: Test description
 draft: false
 weight: 2
-keyword: 消息中心, QingCloud
+keyword: 资源共享, QingCloud, 青云, 云计算
 
 ---
 

@@ -1,9 +1,10 @@
 ---
 title: "如何开启 Windows 的共享功能？ "
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 如何开启 windows 的共享功能
 draft: false
 weight: 160
+keyword: 云计算, 青云, QingCloud, 云服务器，共享功能
 ---
 
 Windows SMB (Server Message Block) 很容易感染病毒和被黑客袭击，请谨慎使用。 推荐使用 FTP 方式传文件，如果一定要用共享，建议复制完文件就关闭共享。

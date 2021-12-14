@@ -2,7 +2,7 @@
 title: "域名注册建议"
 description: test
 weight: 2
-keyword: 域名注册建议, 域名注册, QingCloud
+keyword: 域名注册建议, 域名注册, QingCloud, 域名
 ---
 
 

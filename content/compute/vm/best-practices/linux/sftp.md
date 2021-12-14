@@ -1,8 +1,9 @@
 ---
 title: "开启SFTP"
-description: test
+description: 开启SFTP
 weight: 20
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，SFTP
 ---
 
 SFTP工具可以用来打开一次安全互动的 FTP 会话。它与 FTP 相似，只不过，它使用安全、加密的连接。它的一般语法是：sftp username@hostname.com。一旦通过验证，你可以使用一组和使用 FTP 相似的命令。

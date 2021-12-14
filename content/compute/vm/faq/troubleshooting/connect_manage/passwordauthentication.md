@@ -1,9 +1,10 @@
 ---
 title: "Linux云服务器密钥登录下如何开启密码登录"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 密钥登录的情况下云服务器如何开启密码登录
 weight: 50
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，密码登录
 ---
 
 ## 操作背景

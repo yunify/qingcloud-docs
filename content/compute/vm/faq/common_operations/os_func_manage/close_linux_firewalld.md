@@ -1,8 +1,9 @@
 ---
 title: "关闭Linux云服务器内部防火墙"
 date: 2020-03-07T00:38:25+09:00
-description: Test description
+description: 如何关闭Linux云服务器内部防火墙
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，内部防火墙
 ---
 
 ## 背景介绍

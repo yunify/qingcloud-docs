@@ -1,7 +1,8 @@
 ---
 title: "Linux云服务器搭建FTP并使用对象存储"
-description: Test description
+description: 如何用Linux云服务器搭建FTP并且使用对象存储
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，FTP，对象存储
 ---
 
 # 背景介绍

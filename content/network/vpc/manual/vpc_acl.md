@@ -1,8 +1,7 @@
 ---
 title: "网关过滤控制(ACL)"
-linkTitle: "网关过滤控制(ACL)"
-date: 2020-02-28T10:08:56+09:00
-description:
+keyword: 青云, QingCloud, VPC, 网关过滤控制, ACL
+description: 介绍如何使用网关过滤控制功能。
 draft: false
 weight: 70
 

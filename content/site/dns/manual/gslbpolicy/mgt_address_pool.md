@@ -1,6 +1,7 @@
 ---
 title: "管理解析策略"
-description: GSLB 站点信息，解析策略
+description: 本小节主要介绍如何管理策略配置。
+keyword: QingCloud, 青云, DNS, GSLB 实例, 解析策略
 weight: 2
 draft: false
 ---

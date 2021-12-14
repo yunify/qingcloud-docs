@@ -1,8 +1,9 @@
 ---
 title: "购买指南"
-description: manual
+description: 如何购买ssl证书
 draft: false
 weight: 1
+keyword: 云计算, 青云, QingCloud,SSL，购买指南
 ---
 
 

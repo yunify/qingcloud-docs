@@ -3,7 +3,7 @@ title: "定时器"
 description: Test description
 draft: false
 enableToc: false
-keyword: 定时器
+keyword: 定时器, 青云, QingCloud, 定时器概念, 云计算
 ---
 
 ## 定时器概念

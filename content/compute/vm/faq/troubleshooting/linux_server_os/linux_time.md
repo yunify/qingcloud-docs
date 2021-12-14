@@ -1,8 +1,9 @@
 ---
 title: "Linux 时间不同步解决办法"
-description: Test description
+description: 解决 Linux 时间不同步的问题
 weight: 40
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，时间
 ---
 
 本文以 CentOS 7.9系统为例介绍如何解决 Linux 系统时间不同步

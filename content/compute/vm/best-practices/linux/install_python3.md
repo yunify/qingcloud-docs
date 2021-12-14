@@ -1,9 +1,9 @@
 ---
 title: "CentOS7系统安装Python3"
-description: test
+description: centos7安装python3
 draft: false
 weight: 10
-
+keyword: 云计算, 青云, QingCloud, 云服务器，centos7，python3
 ---
 
 ### 1.查看一下python2在哪个目录
