@@ -5,6 +5,8 @@ keywords:
 weight: 10
 collapsible: false
 draft: false
+aliases:
+    - /bigdata/dataplat/manual/operation_maintence/online/released_job/
 ---
 
 ## 前提条件

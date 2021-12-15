@@ -5,6 +5,8 @@ keywords:
 weight: 20
 collapsible: false
 draft: false
+aliases:
+    - /bigdata/dataplat/manual/operation_maintence/online/job_instance/
 ---
 
 您可以通过作业实例页面查看周期性作业的作业实例状态，并对作业实例执行恢复、终止等操作。

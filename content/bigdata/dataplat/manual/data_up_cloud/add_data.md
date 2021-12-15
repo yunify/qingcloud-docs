@@ -5,6 +5,8 @@ keywords:
 weight: 20
 collapsible: false
 draft: false
+aliases:
+    - /bigdata/dataplat/manual/data_up_cloud/source_data/add_data/
 ---
 
 
@@ -15,7 +17,7 @@ draft: false
 1. 登录管理控制台。
 2. 选择**产品与服务** > **大数据服务** > **大数据工作台**，进入大数据工作台概览页面。
 3. 在左侧导航选择**工作空间**，进入工作空间页面。
-4. 在目标工作空间单击**数据上云**，默认进入数据源列表页面。
+4. 在目标工作空间单击**数据源管理**，默认进入数据源列表页面。
 5. 单击**新增数据源**，进入新增数据源页面。
    
    <img src="/bigdata/dataplat/_images/choose_database.png" alt="选择数据库" style="zoom:50%;" />

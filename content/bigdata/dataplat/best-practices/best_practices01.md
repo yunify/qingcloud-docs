@@ -11,10 +11,13 @@ draft: false
 
 ## 准备 Kafka 环境
 
+详细操作请参见：[创建 Kafka 集群](/middware/kafka/quick-start/create_cluster/)。
+
 ## 准备 ClickHouse 环境
 
-1. 申请 ClickHouse 实例。
-2. 在 ClickHouse 实例中，创建表。
+1. [创建 ClickHouse 集群](/dwh_bi/clickhouse/quickstart/create_cluster/)。
+2. [连接 ClickHouse](/dwh_bi/clickhouse/quickstart/access_clickhouse/)。
+3. 连接成功后，执行以下命令，创建所需数据库表。
 
   ```sql
   create table output_uv
@@ -48,13 +51,47 @@ draft: false
 
 ## 创建工作空间
 
+1. 登录管理控制台。
+2. 选择**产品与服务** > **大数据服务** > **大数据工作台**，进入大数据工作台概览页面。
+3. 在左侧导航选择**工作空间**，进入工作空间页面。
+4. 选择相应的区域，单击**创建工作空间**，填写工作空间名称和描述信息。
+   
+   <img src="../../_images/cteate_workspace.png" alt="创建工作空间" style="zoom:50%;" />
+
+5. 单击**创建**，开始创建工作空间。    
+   工作空间创建成功后，即可在工作空间页面查看相应内容。
+
+
 ## 配置网络
+
+1. 在目标工作空间单击**数据开发** > **网络配置**，进入网络配置页面。
+2. 单击**创建网络**，进入创建网络页面。
+   
+   <img src="../../_images/create_net.png" alt="创建网络" style="zoom:50%;" />
+
+3. 填写网络名称，选择 VPC 网络和私有网络。
+4. 单击**确定**，开始创建网络。
 
 ## 创建计算集群
 
+1. 在目标工作空间选择**数据开发** > **计算集群**，进入计算集群列表页面。
+2. 单击**创建集群**，进入创建计算集群页面。
+3. 配置集群相关参数，参数详细介绍请参见[创建计算集群 > 参数说明](../../manual/data_development/cluster/create_cluster/)。
+4. 配置完成后，单击**确定**，开始创建计算集群。
+
 ## 创建 SQL 作业
 
+1. 在目标工作空间选择**数据开发** > **实时计算**，进入实时计算页面。
+2. 单击**创建作业**，进入创建作业页面。
+   
+   <img src="/bigdata/dataplat/_images/choose_model.png" alt="选择模式" style="zoom:50%;" />
 
+3. 选择 SQL 模式。
+4. 单击**下一步**，填写作业名称，并选择作业依赖的计算集群。
+   
+   <img src="/bigdata/dataplat/_images/job_basic.png" alt="填写信息" style="zoom:50%;" />
+
+5. 配置完成后，单击**确定**，开始创建作业。
 
 ## 创建 Flink 任务到集群
 

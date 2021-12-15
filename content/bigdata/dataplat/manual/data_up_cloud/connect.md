@@ -2,7 +2,7 @@
 title: "网络连通"
 description: 本小节主要介绍大数据工作台如何保证在数据集成和数据开发工作时，数据源与计算集群的网络连通性。 
 keywords: 
-weight: 30
+weight: 90
 collapsible: false
 draft: false
 ---
