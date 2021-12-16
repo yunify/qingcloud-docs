@@ -32,6 +32,10 @@ draft: false
 
 ## 修改计算集群
 
+> **说明**
+> 
+> 仅支持修改`停止`状态的计算集群。
+
 点击操作列的**修改**，进入修改计算集群页面，集群相关参数请参见[创建集群](bigdata/databench/manual/data_development/cluster/add_cluster/)。
 
 ## 停用计算集群
