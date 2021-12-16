@@ -1,5 +1,7 @@
 ---
 title: "JSON 编辑格式及参数说明"
+description: 介绍 JSON 编辑格式及参数说明。
+keyword: 青云, JSON , JSON 格式, IAM, 参数说明
 date: 2020-02-28T10:08:56+09:00
 description: 
 draft: false
@@ -16,7 +18,9 @@ weight: 43
 
 策略**语句（statement）**核心元素：**资源（resource）**、**操作（action）** 和 **效力（effect）**。
 
-> 注：元素保留字仅支持小写。
+> **说明**
+>
+> 元素保留字仅支持小写。
 
 1. 语句（statement）
 
@@ -66,8 +70,10 @@ weight: 43
 
     描述策略语句产生的结果是“允许（allow）”还是“拒绝（deny）”，该元素是必填项。
 
-    > 注：若同一个操作被同时赋予两种效力，最终产生的结果为“拒绝”。
-
+    > **说明**
+    >
+    > 若同一个操作被同时赋予两种效力，最终产生的结果为“拒绝”。
+    
     ```json
     "effect": "allow"
     ```

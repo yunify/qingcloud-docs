@@ -1,10 +1,10 @@
 ---
 title: "如何启用 SSH 密码登录 Linux 云服务器？ "
 date: 2020-01-30T00:38:25+09:00
-description: Test description
-draft: false
-enableToc: false
+description: 如何用 SSH 密码登录 Linux 云服务器
+draft: false 
 weight: 100
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，SSH
 ---
 
 为了安全方面的考量，青云官方提供的 Linux 映像都禁用了 SSH 密码登录。 当然，您完全可以自行启用密码登录， 但请一定记得修改操作系统用户密码为复杂字串，否则极不安全。

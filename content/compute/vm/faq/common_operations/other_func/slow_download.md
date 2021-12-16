@@ -1,8 +1,9 @@
 ---
 title: "云服务器测试带宽速度"
-description: test
+description: 云服务器如何测试带宽速度
 weight: 20
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，带宽
 ---
 
 
@@ -22,7 +23,7 @@ draft: false
 
 ### Windows云服务器测试公网IP网速
 
-登陆 Windows 云服务器，打开浏览器输入如下网站URL地址[www.speedtest.cn](www.speedtest.cn)，点击【测试】，等待测速结束即可获取到公网IP的上下行带宽，参考如下截图：
+登陆 Windows 云服务器，打开浏览器输入如下网站URL地址www.speedtest.cn，点击【测试】，等待测速结束即可获取到公网IP的上下行带宽，参考如下截图：
 
 ![Win测网速](/compute/vm/_images/speetest_of_winOS.png)
 

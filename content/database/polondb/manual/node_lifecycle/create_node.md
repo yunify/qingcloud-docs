@@ -1,7 +1,7 @@
 ---
 title: "新增节点"
 description: 本小节主要介绍如何新增 PolonDB 节点实例。 
-keywords: PolonDB 节点添加；新增节点
+keyword: PolonDB 节点添加；新增节点
 weight: 10
 collapsible: false
 draft: false

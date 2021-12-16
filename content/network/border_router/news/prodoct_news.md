@@ -1,6 +1,8 @@
 ---
 title: "产品动态"
 collapsible: false
+description: 边界路由器的产品动态
+keyword: QingCloud, 青云, 网络, 边界路由器, 产品动态
 weight: 10
 
 product:

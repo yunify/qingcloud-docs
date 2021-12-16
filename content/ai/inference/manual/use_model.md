@@ -1,7 +1,9 @@
 ---
 title: "使用模型"
-description: test
+description: 本小节主要介绍推理引擎使用模型。 
+keyword: 人工智能，推理引擎，Inference Engine，使用模型
 weight: 20
+collapsible: false
 draft: false
 ---
 

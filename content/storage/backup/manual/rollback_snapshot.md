@@ -1,11 +1,10 @@
 ---
 title: "备份回滚"
 date: 2021-05-08T00:38:25+09:00
-description: Test description
+description: 本小节主要介绍备份回滚相关操作。
 draft: false
-enableToc: false
-weight: 40
-keyword: 青云
+weight: 4
+keyword: 云计算, 青云, QingCloud, 备份, 备份操作
 ---
 
 ## 操作场景

@@ -1,5 +1,7 @@
 ---
 title: "Delete Multiple Objects"
+description: 本小节主要介绍 Delete Multiple Objects 接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, 删除对象, QingStor
 ---
 
 该接口用于从指定的 Bucket 中批量删除对象。此 API 需调用者对 Bucket 拥有写权限，匿名用户默认无法调用该 API。

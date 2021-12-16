@@ -1,7 +1,7 @@
 ---
 title: "资源图形化"
 description: 本小节主要介绍青立方® 超融合易捷版 资源图形化。 
-keywords: 青立方® 超融合易捷版，存资源图形化
+keyword: 青立方® 超融合易捷版，存资源图形化
 weight: 25
 collapsible: false
 draft: false

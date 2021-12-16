@@ -2,7 +2,8 @@
 title: "快速入门"
 linkTitle: "快速入门"
 date: 2021-10-15T10:08:56+09:00
-description:
+description: hpc 如何快速入门
+keyword: 云计算, 青云, QingCloud, HPC，快速入门
 draft: false
 weight: 1
 ---

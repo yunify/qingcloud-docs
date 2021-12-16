@@ -2,6 +2,7 @@
 title: "准备待备案域名"
 description: test
 weight: 4
+keyword: 准备待备案域名, QingCloud, 青云, 备案
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "启动日志同步"
 description: 本小节主要介绍如何启动 RadonDB 日志服务。 
-keywords: RadonDB 启动日志服务；
+keyword: RadonDB 启动日志服务；
 weight: 10
 collapsible: false
 draft: false

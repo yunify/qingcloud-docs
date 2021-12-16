@@ -1,7 +1,7 @@
 ---
 title: "在线迁移: mysqldump 方式"
 description: 本小节主要介绍如何通过 mysqldump 方式在线迁移。 
-keywords: mysqldump 方式在线迁移
+keyword: mysqldump 方式在线迁移
 weight: 10
 collapsible: false
 draft: false

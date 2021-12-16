@@ -36,6 +36,10 @@ Section2:
       content: ChronusDB 的最佳实践
       url: "best-practices/db_use/"
 
+    - title: API 参考
+      content: ChronusDB API 参考
+      url: "api/overview/"
+
 section3:
   title: 开发者指南
   children:

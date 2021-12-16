@@ -1,7 +1,7 @@
 ---
 title: "回收站"
 description: 本小节主要介绍如何恢复以删除的 MongoDB Cluster 集群。 
-keywords: MongoDB Cluster 恢复集群
+keyword: MongoDB Cluster 恢复集群
 weight: 100
 collapsible: false
 draft: false

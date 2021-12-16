@@ -1,10 +1,10 @@
 ---
 title: "什么是深度学习平台"
-description: 
-draft: false
-enableToc: false
+description: 本小节主要介绍什么是深度学习平台
+keyword: 人工智能，深度学习，Deep Learning，产品简介，caffe，TensorFlow，PyTorch，Keras
 weight: 10
-keyword: 
+collapsible: false
+draft: false
 ---
 
 本文档仅对应青云深度学习平台 2.0 版本。

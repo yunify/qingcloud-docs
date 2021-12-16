@@ -1,7 +1,8 @@
 ---
 title: "自有镜像跨区复制"
-description: test
+description: 自由镜像的跨区域复制
 draft: false
+keyword: 云计算, 青云, QingCloud, 镜像，自有镜像，跨区域复制
 ---
 
 

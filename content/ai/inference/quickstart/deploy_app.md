@@ -1,8 +1,8 @@
 ---
 title: "部署 Inference Engine 应用"
 description: 本小节主要介绍如何快速部署 Inference Engine 应用。 
-keywords: 
-weight: 10
+keyword: 人工智能，推理引擎，Inference Engine，部署应用，部署服务，创建集群，创建应用
+weight: 50
 collapsible: false
 draft: false
 ---
@@ -13,7 +13,7 @@ draft: false
 ## 前提条件
 
 - 已获取 QingCloud 管理控制台登录账号和密码。
-- 已创建 [VPC 网络](https://docsv3.qingcloud.com/network/vpc/manual/vpcnet/10_create_vpc/)和[私有网络](https://docsv3.qingcloud.com/network/vpc/manual/vxnet/05_create_vxnet/)，且私有网络已加入 VPC 网络。
+- 已创建 [VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)和[私有网络](/network/vpc/manual/vxnet/05_create_vxnet/)，且私有网络已加入 VPC 网络。
 
 ## 操作步骤
 

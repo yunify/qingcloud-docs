@@ -1,7 +1,7 @@
 ---
 title: "查看资源和服务监控"
 description: 本小节主要介绍 PostgreSQL 主要支持哪些监控指标。 
-keywords: PostgreSQL 监控指标
+keyword: PostgreSQL 监控指标
 weight: 40
 collapsible: false
 draft: false

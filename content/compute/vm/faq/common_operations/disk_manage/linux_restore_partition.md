@@ -1,10 +1,10 @@
 ---
 title: "Linux 恢复误删除分区"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: Linux 云服务器误删除的分区如何恢复
 weight: 50
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，恢复误删分区
 ---
 
 > 磁盘分区误删除后，再没有重启云服务器的情况下，使用 TestDisk 工具恢复分区

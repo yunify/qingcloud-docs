@@ -1,15 +1,16 @@
 ---
 title: " Windows 开启音频功能"
-description:
+description: 如何在Windows 云服务器上开启音频功能
 draft: false
 weight: 40
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，音频
 ---
 
 ## 适用场景
 
 适用于云服务器需播放音频，如淘宝后台，消息提醒等。
 
-
+目前暂不支持windows 2008镜像。
 
 ## 配置方法
 

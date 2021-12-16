@@ -1,7 +1,8 @@
 ---
 title: "消费说明"
 date: 2021-05-26T10:08:56+09:00
-description:
+description: 本小节主要介绍消费说明相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 draft: false
 weight: 21
 ---

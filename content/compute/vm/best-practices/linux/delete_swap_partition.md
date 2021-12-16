@@ -1,7 +1,8 @@
 ---
 title: "屏蔽Swap分区"
-description: test
+description: 屏蔽swap的分区
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，屏蔽swap
 ---
 
 在部署业务时，会遇到使用脚本来部署的场景，如果此时业务部署脚本将程序部署在/dev/vdb或者/dev/sdb，会与云服务器的Swap分区发生冲突，此时我们需要临时屏蔽Swap分区来避免冲突。

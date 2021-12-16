@@ -1,8 +1,9 @@
 ---
 title: "创建安全组"
-description: manual
+description: 如何创建安全组
 draft: false
 weight: 10
+keyword: 云服务器, QingCloud，安全，安全组
 ---
 
 为了加强位于基础网络 vxnet-0 中的云服务器或路由器的安全性，可以在云服务器或路由器之前放置一个安全组(Security Group)。

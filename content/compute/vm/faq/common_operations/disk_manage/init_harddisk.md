@@ -1,10 +1,10 @@
 ---
 
 title: "Windows 云服务器硬盘初始化"
-description: Test description
+description: 如何对Windows云服务器进行初始化操作
 weight: 40
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，初始化
 ---
 
 ### 硬盘容量小于 2TB 的操作方法

@@ -1,7 +1,7 @@
 ---
 title: "产品优势"
 description: 本小节主要介绍 MongoDB Cluster 产品优势。 
-keywords: MongoDB Cluster 产品优势 
+keyword: MongoDB Cluster 产品优势 
 weight: 25
 collapsible: false
 draft: false

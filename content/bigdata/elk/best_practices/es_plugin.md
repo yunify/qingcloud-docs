@@ -1,7 +1,7 @@
 ---
 title: "Elasticsearch 插件列表"
 description: 本小节主要介绍 Elasticsearch 集成插件列表。
-keywords: Elasticsearch 插件列表,
+keyword: Elasticsearch 插件列表,
 weight: 36
 collapsible: false
 draft: false

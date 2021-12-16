@@ -1,10 +1,9 @@
 ---
 title: "详解 Linux 中的日志及用日志来排查错误的方法"
-description: Test description
+description: 详解 Linux 中的日志及用日志来排查错误的方法
 weight: 40
 draft: false
-enableToc: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，日志
 ---
 
 许多有价值的日志文件都是由 Linux 自动地为你创建的。你可以在 /var/log 目录中找到它们。下面是在一个典型的 Ubuntu 系统中这个目录的样子：

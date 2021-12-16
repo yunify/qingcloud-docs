@@ -1,7 +1,7 @@
 ---
 title: "管理解析记录"
-description: dns管理解析记录，包括修改解析记录、删除解析记录。
-date: 2021-04-28T00:38:25+09:00
+description: 本小节主要介绍如何管理解析记录，包括修改解析记录、删除解析记录。
+keyword: QingCloud, 青云, DNS, 解析记录
 weight: 3
 draft: false
 ---

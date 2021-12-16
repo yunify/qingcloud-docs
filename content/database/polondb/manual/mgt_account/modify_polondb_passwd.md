@@ -1,7 +1,7 @@
 ---
 title: "修改用户密码"
 description: 本小节主要介绍如何修改用户密码。 
-keywords: polondb 用户密码
+keyword: polondb 用户密码
 weight: 20
 collapsible: false
 draft: false

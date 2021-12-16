@@ -1,7 +1,8 @@
 ---
 title: "Python3 语言 post 请求签名 demo"
-description: 
+description: test
 draft: false
+keyword: Python3, QingCloud, 青云, API, 请求签名
 
 
 ---

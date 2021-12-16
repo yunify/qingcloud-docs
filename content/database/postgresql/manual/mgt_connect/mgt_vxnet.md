@@ -1,7 +1,7 @@
 ---
 title: "切换私有网络"
 description: 本小节主要介绍如何切换 PostgreSQL 集群私有网络。 
-keywords: PostgreSQL 私有网络,
+keyword: PostgreSQL 私有网络,
 weight: 25
 collapsible: false
 ---

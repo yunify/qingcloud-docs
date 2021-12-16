@@ -1,8 +1,9 @@
 ---
 title: "创建 RabbitMQ 集群"
-description: 
+description: 本文指导您如何快速创建 RabbitMQ 集群。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,RabbitMQ,rabbitmq,消息队列服务,消息中间件,创建集群
+weight: 10
 draft: false
-keyword:  QingCloud, RabbitMQ, 消息队列服务, 消息中间件
 ---
 
 本文指导您如何快速创建 RabbitMQ 集群。
@@ -17,7 +18,7 @@ keyword:  QingCloud, RabbitMQ, 消息队列服务, 消息中间件
 
   > **说明**
   >
-  > 多个 RabbitMQ 集群支持使用同一个etcd。
+  > 多个 RabbitMQ 集群支持使用同一个 etcd。
 
 当然，您也可以选择在创建 RabbitMQ 集群过程中，根据界面提示入口再进行创建。
 
@@ -38,7 +39,6 @@ keyword:  QingCloud, RabbitMQ, 消息队列服务, 消息中间件
    > **说明**
    >
    > - 建议尽量选择靠近您客户所在的区域，以减少网络延时。
-   >
    > - 目前仅`北京三区`支持**多可用区部署**方式，若您的业务需要同城多活提供更高的容灾能力，则需要选择`北京三区`。
 
 ### 基本设置

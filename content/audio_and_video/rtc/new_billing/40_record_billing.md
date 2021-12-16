@@ -1,5 +1,7 @@
 ---
 title: "云录制计费"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,云录制计费
+description: 本章节云录制的计费。
 draft: false
 collapsible: false
 weight: 40

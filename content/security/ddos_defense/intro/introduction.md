@@ -1,7 +1,7 @@
 ---
 title: "DDOS防护简介"
 date: 2020-12-01T00:38:25+09:00
-description: Test description
+description: DDOS防护介绍
 draft: false
 enableToc: false
 keyword: 云服务器, QingCloud, DDOS防护, DDOS

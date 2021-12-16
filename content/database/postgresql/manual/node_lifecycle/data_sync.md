@@ -1,7 +1,7 @@
 ---
 title: "变更数据同步模式"
 description: 本小节主要介绍如何变更节点数据同步模式。 
-keywords: PostgreSQL 变更节点数据同步模式
+keyword: PostgreSQL 变更节点数据同步模式
 weight: 30
 collapsible: false
 draft: false

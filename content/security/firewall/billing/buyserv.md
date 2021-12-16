@@ -3,9 +3,10 @@
 title: "购买云防火墙服务"
 linkTitle: "购买云防火墙服务"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: 如何购买云防火墙服务
 draft: false
 weight: 2
+keyword: 购买云防火墙服务, 云防火墙服务
 ---
 
 云防火墙服务只支持包年包月的购买方式。您需要选择合适的服务版本、规格、购买时长，并一次性完成预付费。

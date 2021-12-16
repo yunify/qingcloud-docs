@@ -1,10 +1,9 @@
 ---
 title: "Linux部署FTP服务"
-description: Test description
+description: linux如何部署ftp服务
 weight: 50
 draft: false
-enableToc: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，ftp
 ---
 
 ## 准备环境

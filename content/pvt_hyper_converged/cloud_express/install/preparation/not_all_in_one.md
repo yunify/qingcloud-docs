@@ -1,7 +1,7 @@
 ---
 title: "场景二：非一体机安装系统"
 description: 本小节主要介绍青立方® 超融合易捷版 非一体机安装系统。 
-keywords: 青立方® 超融合易捷版，非一体机安装系统
+keyword: 青立方® 超融合易捷版，非一体机安装系统
 weight: 20
 collapsible: false
 draft: false

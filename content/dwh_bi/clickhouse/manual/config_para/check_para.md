@@ -1,7 +1,7 @@
 ---
 title: "修改配置参数"
 description: 本小节主要介绍如何修改 ClickHouse 配置参数。 
-keywords: ClickHouse 修改账号；
+keyword: ClickHouse 修改账号；
 weight: 15
 collapsible: false
 draft: false

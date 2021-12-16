@@ -1,18 +1,17 @@
 ---
 title: "备份硬盘"
-description: Test description
+description: 本小节主要介绍对云硬盘创建备份的相关操作。
 draft: false
-enableToc: false
 weight: 40
-keyword: 青云
+keyword: 云计算, 青云, QingCloud, 云硬盘, 创建备份
 ---
 
 ## 备份须知
 
 当你对正在运行的云服务器或者已经绑定的硬盘做在线备份时，需要注意以下几点：
 
-*   备份只能捕获在备份任务开始时已经写入磁盘的数据，不包括当时位于缓存里的数据。
-*   为了保证数据的完整性，你需要在创建备份前暂停所有文件的写操作，直到备份进入”捕获完成”的状态。或者先停止云服务器或解绑硬盘，进行离线备份。
+*   备份只能捕获在备份任务开始时已经写入磁盘的数据，不包括当时位于缓存内的数据。
+*   为了保证数据的完整性，需要在创建备份前暂停所有文件的写操作，直到备份进入”捕获完成”的状态。也可停止云服务器或解绑硬盘后，进行离线备份。
 
 ## 操作步骤
 
@@ -26,22 +25,22 @@ keyword: 青云
 
 4. 若是首次创建备份，则点击**创建备份**。
 
-   ![备份硬盘](/storage/disk/manual/_images/硬盘详情.png)
+   ![create_snapshot_1](/storage/disk/_images/create_snapshot_1.png)
 
-   若是基于备份链再次创建备份，则在备份链结构示意图上，点击![创建备份按钮](/storage/disk/manual/_images/创建备份按钮.png)。
+   若是基于备份链再次创建备份，则在备份链结构示意图上，点击![创建备份按钮](/storage/disk/_images/创建备份按钮.png)。
 
-   ![备份链上创建备份](/storage/disk/manual/_images/备份链上创建备份.png)
+   ![create_snapshot_2](/storage/disk/_images/create_snapshot_2.png)
 
 5. 在提示框中，点击**继续**。
 
 6. 输入备份名称，点击**提交**，开始创建。
 
-   ![创建硬盘硬盘](/storage/disk/manual/_images/创建硬盘备份.png)
+   ![create_snapshot_3](/storage/disk/_images/create_snapshot_3.png)
 
    创建成功后，生成备份记录，如下图所示。
 
-   ![备份记录](/storage/disk/manual/_images/create_basic_13.png)
+   ![create_snapshot_4](/storage/disk/_images/create_snapshot_4.png)
 
 ## 后续管理
 
-云硬盘备份后，后续可以根据需要修改和删除备份，还可基于备份点进行回滚、导出、复制等操作，具体操作请参见[更多备份相关操作](/storage/backup/manual/backup/)。
+云硬盘备份后，后续可以根据需要对备份进行修改或删除，还可基于备份点进行回滚、导出、复制等操作，详细请参见[更多备份相关操作](/storage/backup/manual/backup/)。

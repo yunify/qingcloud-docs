@@ -1,7 +1,7 @@
 ---
 title: "HBase PE 测试"
 description: 本小节主要介绍 HBase PE 使用指南。 
-keywords: HBase pe,
+keyword: HBase pe,
 weight: 20
 collapsible: false
 draft: false

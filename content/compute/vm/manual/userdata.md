@@ -1,7 +1,8 @@
 ---
 title: "自定义数据"
-description: test
+description: 自定义数据介绍
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，自定义数据
 ---
 
 # User Data 指南

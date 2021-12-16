@@ -1,7 +1,7 @@
 ---
 title: "配置公有云接入"
 description: 本小节主要介绍青立方® 超融合易捷版配置公有云接入。 
-keywords: 青立方® 超融合易捷版配置公有云接入
+keyword: 青立方® 超融合易捷版配置公有云接入
 weight: 20
 collapsible: false
 draft: false

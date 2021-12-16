@@ -1,7 +1,7 @@
 ---
 title: "修改账号"
 description: 本小节主要介绍如何修改 ChronusDB 数据库账号。 
-keywords: chronusdb 修改账号；
+keyword: chronusdb 修改账号；
 weight: 15
 collapsible: false
 draft: false

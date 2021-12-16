@@ -1,6 +1,8 @@
 ---
 title: "产品动态"
 collapsible: false
+description: 云解析 DNS 产品动态。 
+keyword: QingCloud, 青云, DNS, 产品动态
 weight: 11
 
 product:

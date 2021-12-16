@@ -1,7 +1,7 @@
 ---
 title: "产品系列"
 description: 本小节主要介绍 MySQL Plus 版本规格。 
-keywords: mysql plus 版本规格, 版本应用场景 
+keyword: mysql plus 版本规格, 版本应用场景 
 weight: 20
 collapsible: false
 draft: false

@@ -1,8 +1,9 @@
 ---
 title: "Windows 云服务器安装.NET Framework 4.5"
 date: 2020-04-02T17:08:56+09:00
-description: test
+description: 如何在 Windows 云服务器安装.NET Framework 4.5
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，Framework 4.5
 ---
 
 .NET Framework 4.5为轻松便捷的构架和运行应用程序提供了全面而一致的编程模型，这些应用程序可针对包括台式PC、服务器、智能手机以及公共云和专有云在内的各种不同平台而构造。

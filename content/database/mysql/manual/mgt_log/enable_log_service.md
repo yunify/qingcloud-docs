@@ -1,7 +1,7 @@
 ---
 title: "启动日志服务"
 description: 本小节主要介绍如何启动 MySQL Plus 日志服务。 
-keywords: mysql plus 启动日志服务；
+keyword: mysql plus 启动日志服务；
 weight: 10
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "Storm 集群测试"
 description: 本小节主要介绍如何快速进行 Storm 集群测试。 
-keywords: 测试 Storm
+keyword: 测试 Storm
 weight: 20
 collapsible: false
 draft: false

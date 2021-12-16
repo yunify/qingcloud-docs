@@ -1,7 +1,7 @@
 ---
 title: "删除备份"
 description: 本小节主要如何删除 MongoDB Cluster 备份。 
-keywords: MongoDB Cluster 删除备份；
+keyword: MongoDB Cluster 删除备份；
 weight: 90
 collapsible: false
 draft: false

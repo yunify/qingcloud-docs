@@ -1,10 +1,9 @@
 ---
 title: "SSH密钥"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 密钥连接云服务器
 draft: false
-enableToc: false
-keyword: SSH, QingCloud,ssh密钥
+keyword: 云计算, 青云, QingCloud, SSH，密钥操作
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "开关主节点只读"
 description: 本小节主要介绍如何开关主实例节点只读启。 
-keywords: mysql plus 主实例节点只读
+keyword: mysql plus 主实例节点只读
 weight: 35
 collapsible: false
 draft: false

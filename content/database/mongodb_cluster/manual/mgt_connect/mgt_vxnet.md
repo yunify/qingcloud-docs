@@ -1,7 +1,7 @@
 ---
 title: "切换私有网络"
 description: 本小节主要介绍如何切换 MongoDB Cluster 集群私有网络。 
-keywords: MongoDB Cluster 私有网络,
+keyword: MongoDB Cluster 私有网络,
 weight: 25
 collapsible: false
 draft: false

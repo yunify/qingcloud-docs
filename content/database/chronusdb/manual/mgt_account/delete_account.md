@@ -1,7 +1,7 @@
 ---
 title: "删除账号"
 description: 本小节主要介绍如何删除 ChronusDB 数据库账号。 
-keywords: chronusdb 删除账号；
+keyword: chronusdb 删除账号；
 weight: 20
 collapsible: false
 draft: false

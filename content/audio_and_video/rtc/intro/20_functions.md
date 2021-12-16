@@ -1,5 +1,7 @@
 ---
 title: "功能特性"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC, 视频互动直播, 旁路推流, 屏幕共享, 云录制
+description: 本章节介绍实时音视频 RTC 的功能特性。
 draft: false
 collapsible: false
 weight: 20
