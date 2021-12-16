@@ -10,7 +10,7 @@ icon: "/images/icons/index/product-icon-bigdata.svg"
 Section1:
   children:
     - title: 大数据工作台
-      url: "/bigdata/dataplat/intro/introduction/"
+      url: "/bigdata/databench/intro/introduction/"
 
     - title: 大数据引擎 QingMR
       url: "/bigdata/qingmr/intro/introduction"
