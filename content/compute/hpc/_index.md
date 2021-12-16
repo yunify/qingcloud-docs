@@ -44,6 +44,10 @@ Section2:
       content: 常见问题
       url: "faq/faq"
 
+    - title: 作业实战
+      content: lammps实战
+      url: "work/Lammps"
+
 section3:
   title: 开发者指南
   children:
