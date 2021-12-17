@@ -1,8 +1,8 @@
 ---
 title: "计费说明"
 draft: false
-enableToc: false
-keyword: 价格，计费
+description: 青云 Docker 公有镜像仓库计费说明。
+keyword: 青云, QingCloud, 云计算, Docker, 镜像仓库，价格，计费
 weight: 10
 ---
 

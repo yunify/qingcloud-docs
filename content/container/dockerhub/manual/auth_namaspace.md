@@ -1,7 +1,8 @@
 ---
 title: "命名空间授权"
+description: 如何对不同的命名空间向不同用户进行授权。
+keyword: 青云, QingCloud, 云计算, Docker, 镜像仓库，命名空间
 draft: false
-enableToc: false
 weight: 6
 ---
 
