@@ -33,7 +33,6 @@ draft: false
 - **多种数据源支持**：支持 MySQL、PostgreSQL、ClickHouse、HBase、Kafka、FTP、HDFS等多种数据源。
 - **提供全托管式 Flink 集群**：仅通过 SQL 语句即可提交 Flink 任务，并支持按照任务进行监控。
 
-
 **常见问题**
 
 在常见问题区域，为您提供了使用大数据工作台时的常见问题，方便您自行快速排查并解决问题。
