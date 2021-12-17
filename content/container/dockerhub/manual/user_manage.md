@@ -1,7 +1,8 @@
 ---
 title: "管理用户"
+description: Docker 镜像仓库用户管理，包括创建、修改与删除用户。
+keyword: 青云, QingCloud, 云计算, Docker, 镜像仓库，用户
 draft: false
-enableToc: false
 weight: 12
 ---
 

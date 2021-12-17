@@ -1,6 +1,6 @@
 ---
 title: "何种情况下需要手动配置网络"
-keyword: 青云, QingCloud, VPC, 配置网络
+keyword: QingCloud, 青云, 云计算, VPC, 配置网络
 description: 什么情况下需要手动配置网络
 draft: false
 weight: 2
