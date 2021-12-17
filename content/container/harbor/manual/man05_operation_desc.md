@@ -1,7 +1,8 @@
 ---
 title: "集群管理操作概述"
 draft: false
-enableToc: false
+description: Harbor 集群管理操作。
+keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库, 镜像仓库, 集群
 weight: 5
 ---
 

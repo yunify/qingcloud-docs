@@ -1,6 +1,6 @@
 ---
 title: "在不同可用区搭建 GRE 隧道"
-keyword: 青云, QingCloud, VPC, VPC 网络, GRE 隧道
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, GRE 隧道
 description: 介绍如何在不同可用区搭建GRE隧道。
 draft: false
 weight: 10

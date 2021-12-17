@@ -1,6 +1,8 @@
 ---
 title: "产品动态"
 collapsible: false
+description: 青云弹性容器实例 QCI 产品动态。
+keyword: 青云, QingCloud, 云计算, QCI, 容器
 
 product:
     - time: 2020-07-25 15:51:52

@@ -1,8 +1,8 @@
 ---
 title: "如何配置 SSL 证书"
-description: "常见问题"
 draft: false
-enableToc: false
+description: 介绍如何配置 HTTPS 访问 Harbor。
+keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库, 证书, SSL, HTTPS
 weight: 5
 ---
 

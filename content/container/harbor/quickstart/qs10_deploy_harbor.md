@@ -1,10 +1,9 @@
 ---
 title: "部署 Harbor 镜像仓库"
 draft: false
-enableToc: false
-keyword: Harbor, 私有镜像仓库，镜像仓库，容器
+description: 介绍如何部署 Harbor 镜像仓库。
+keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库，镜像仓库，容器
 weight: 10
-
 ---
 
 ## 操作场景
