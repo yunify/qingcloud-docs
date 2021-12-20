@@ -127,6 +127,13 @@ draft: false
     INSERT INTO es_stu SELECT id,name,score FROM students;
     ```
 
+## 调度配置
+
+1. 选择已创建好的作业，点击右侧的**调度设置**，进入调度配置页面。    
+   在该页面可以查看作业的基础属性，包括业务名称、业务 ID、业务描述。基础属性在调度配置页面均不可修改。
+2. 设置调度策略。详细操作请参见[设置调度策略](../../manual/data_development/job/scheduling_job)。
+3. 设置完成后，点击**确定**，完成调度设置操作。
+
 ## 验证结果
 
 1. 进入 Kibana 页面，详细操作可参见[访问 Kibana](/bigdata/elk/manual/cluster_info/#kibana-基本用法)。
