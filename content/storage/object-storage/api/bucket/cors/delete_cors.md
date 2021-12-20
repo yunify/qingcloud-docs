@@ -39,7 +39,7 @@ Authorization: <authorization-string>
 
 | 错误码 | 错误描述 | HTTP 状态码 |
 | --- | --- | --- |
-| OK | 成功获取 CORS | 204 |
+| OK | 成功删除 CORS | 204 |
 
 其他错误码可参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
 

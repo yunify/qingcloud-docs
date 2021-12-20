@@ -2,7 +2,7 @@
 title: "域名信息查询"
 description: test
 weight: 7
-keyword: 域名信息查询, WHOIS, 域名注册, QingCloud
+keyword: 域名信息查询, WHOIS, 域名注册, QingCloud, 域名
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: "青云 VPC 端口转发至非青云云服务器"
-keyword: 青云, QingCloud, VPC, VPC 网络, 端口转发
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 端口转发
 description: 使用 VPC 端口转发功能将流量转发至非青云云服务器。
 draft: false
 weight: 15

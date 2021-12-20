@@ -1,6 +1,6 @@
 ---
 title: "Windows 客户端拨入 VPN 实现跨 VPC 内网互通"
-keyword: 青云, QingCloud, VPC, VPC 网络, 
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 
 description: Windows 客户端拨入 VPN 实现跨 VPC 内网互通
 draft: false
 weight: 20

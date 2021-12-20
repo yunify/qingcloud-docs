@@ -1,6 +1,6 @@
 ---
 title: "修改 VPC 规格类型"
-keyword: 青云, QingCloud, VPC, VPC 网络
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络
 description: 介绍如何修改 VPC 的规格类型。
 draft: false
 weight: 25

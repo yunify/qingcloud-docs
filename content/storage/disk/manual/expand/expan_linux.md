@@ -106,8 +106,8 @@ Linux 系统下的数据盘扩容主要包括两部分：
 
 4. 输入 `unit s` ，按 `Enter` 键，设置磁盘的计量单位为磁柱。
 
-5. 输入 `p`，按 `Enter` 键，查看并记录分区的 Start 值。
 
+5. 输入 `p`，按 `Enter` 键，查看并记录分区的 Start 值。
    ![expan_linux_9](/storage/disk/_images/expan_linux_9.png)
 
 6. 执行如下命令，删除原有分区。

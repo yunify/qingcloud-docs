@@ -3,7 +3,7 @@ title: "主要功能"
 description: main function
 draft: false
 weight: 4
-keyword: 消息中心, QingCloud
+keyword: 消息中心, QingCloud, 青云, 用户服务
 ---
 
 消息中心主要包括站内消息、消息接收配置和接收人管理三个功能。

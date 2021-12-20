@@ -140,7 +140,7 @@ bm3 类型云服务器仅支持在北京3区创建，选择北京3区。
 
 ### 创建 NeonSAN 硬盘
 
-请参考： [企业级分布式 SAN (NeonSAN)](https://docsv3.qingcloud.com/storage/disk/manual/neonsan_volume)
+请参考： [企业级分布式 SAN (NeonSAN)](https://docsv3.qingcloud.com/storage/share/manual/neonsan_volume)
 
 ### 创建 VSAN，并将 NeoSAN 硬盘挂载到 VSAN 上
 

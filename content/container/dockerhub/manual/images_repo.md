@@ -1,7 +1,8 @@
 ---
 title: "管理镜像仓库"
+description: Docker 镜像仓库管理，包括创建、修改与删除镜像仓库。
+keyword: 青云, QingCloud, 云计算, Docker, 镜像仓库
 draft: false
-enableToc: false
 weight: 8
 ---
 
