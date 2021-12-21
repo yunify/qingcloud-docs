@@ -1,9 +1,10 @@
 ---
 
 title: "Windows云服务器磁盘脱盘"
-description: Test description
+description: windows 云服务器磁盘脱盘
 weight: 17
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，磁盘
 ---
 
 ## 问题背景

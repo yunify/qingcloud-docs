@@ -39,7 +39,7 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品概述
-          url: "/compute/migration/intro/ssh"
+          url: "/compute/migration/intro/migration"
 
 
     - title: 上手：如何进行跨区域迁移
@@ -47,7 +47,7 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 跨区域迁移方案
-          url: "/compute/migration/manual/ssh"
+          url: "/compute/migration/manual/migration"
 
 ---
 

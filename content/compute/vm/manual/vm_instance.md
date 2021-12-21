@@ -1,7 +1,8 @@
 ---
 title: "云服务器操作指南"
-description: test
+description: 如何创建云服务器
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，创建
 ---
 
 青云支持快速创建并购买云服务器，详情请参阅本篇文档。

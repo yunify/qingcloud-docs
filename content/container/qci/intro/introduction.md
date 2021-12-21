@@ -1,13 +1,10 @@
 ---
 title: "什么是弹性容器实例"
-date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 什么是弹性容器实例 QCI, QCI 产品简介
+keyword: 青云, QingCloud, 云计算, QCI, 容器, 弹性容器实例
 draft: false
-enableToc: false
-keyword: 青云
+weight: 10
 ---
-
-# 弹性容器实例
 
 近年来，随着容器技术的广泛普及，容器技术与云原生这些术语也越来越频繁地进入到人们的视野。由于 Serverless 与容器技术天然的亲和性， Serverless 容器运行服务顺理成章地成为了践行容器技术以及云原生生态的必经之路。
 

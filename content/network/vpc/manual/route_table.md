@@ -1,6 +1,6 @@
 ---
 title: "使用路由表"
-keyword: 青云, QingCloud, VPC, VPC 网络, 路由表, 路由规则
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 路由表, 路由规则
 description: 介绍路由表的使用方法，包括常见路由表、添加路由表规则等。
 draft: false
 weight: 40

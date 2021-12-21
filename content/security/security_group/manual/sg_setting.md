@@ -1,8 +1,9 @@
 ---
 title: "配置安全组"
-description: manual
+description: 如何配置安全组
 draft: false
 weight: 20
+keyword: 云服务器, QingCloud，安全，配置安全组
 ---
 
 ### 创建安全组策略

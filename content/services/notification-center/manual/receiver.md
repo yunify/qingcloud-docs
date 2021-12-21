@@ -3,6 +3,7 @@ title: "接收人管理"
 description: test
 weight: 20
 draft: false
+keyword: 接收人管理, QingCloud, 青云, 修改接收人, 删除接收人, 用户服务
 ---
 
 ## 新增接收人

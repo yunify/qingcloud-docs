@@ -2,7 +2,8 @@
 title: "客户端上传下载文件"
 linkTitle: "大文件管理"
 date: 2021-10-15T10:08:56+09:00
-description:
+description: 从客户端上传下载文件
+keyword: 云计算, 青云, QingCloud, hpc，客户端上传
 draft: false
 weight: 2
 ---

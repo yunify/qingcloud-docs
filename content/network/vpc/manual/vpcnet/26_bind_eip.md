@@ -1,6 +1,6 @@
 ---
 title: "绑定公网 IP"
-keyword: 青云, QingCloud, VPC, VPC 网络
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络
 description: 介绍如何为 VPC 网络绑定公网 IP。
 draft: false
 weight: 26

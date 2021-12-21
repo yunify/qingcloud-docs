@@ -1,9 +1,10 @@
 ---
 title: "免费试用云服务器"
 date: 2021-03-07T10:08:56+09:00
-description:
+description: 如何免费使用云服务器
 draft: false
 weight: 39
+keyword: 云计算, 青云, QingCloud, 云服务器，免费试用
 ---
 
 ## 前提条件

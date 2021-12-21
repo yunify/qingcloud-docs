@@ -1,10 +1,10 @@
 ---
 title: "初始化 Linux 数据盘"
-description: Test description
+description: 本小节主要介绍如何对Linux系统下的数据盘进行初始化操作。
 draft: false
 enableToc: false
 weight: 105
-keyword: 青云
+keyword: 云计算, 青云, QingCloud, 云硬盘,初始化,linux,数据盘
 ---
 
 ## 直接初始化
@@ -48,7 +48,7 @@ keyword: 青云
    /dev/sdb        9.8G   23M  9.2G   1% /mnt
    ```
 
-## 硬盘容量小于2TB
+## 分区后初始化（硬盘容量小于2TB）
 
 1. 使用 `fdisk -l` 命令列出所有磁盘分区。
 
@@ -82,7 +82,7 @@ keyword: 青云
 
    ![init_linux_8](/storage/disk/_images/init_linux_8.png)
 
-   【Last cylinder】表示截止柱面区域， +cylinders or +size{K，M，G} （1 - 13054， default 13054）： +后面单位可以接M，G，K（记得要大写）表示划分您所加的空间，也可以是柱面数，注意不能超过该磁盘剩余的空间否则无效。
+   【Last cylinder】表示截止柱面区域， +cylinders or +size{K，M，G} （1 - 13054， default 13054）： +后面单位可以接 M，G，K（记得要大写）表示划分您所加的空间，也可以是柱面数，注意不能超过该磁盘剩余的空间否则无效。
 
 6. 以选择默认截止磁面为例，按 **Enter**。
 
@@ -114,7 +114,7 @@ keyword: 青云
 
     ![init_linux_13](/storage/disk/_images/init_linux_13.png)
 
-## 硬盘容量大于2TB
+## 分区后初始化（硬盘容量大于2TB）
 
 1. 使用 lsblk 命令列出所有磁盘分区，如 sdc 为新增磁盘。
 
@@ -138,7 +138,7 @@ keyword: 青云
 
    “Partition Table”为“unknown”表示磁盘分区形式未知，新的数据盘还未设置分区形式。
 
-4. 磁盘分区形式有 MBR 和 GPT 两种，大于 2 TB的磁盘容量，这里采用 GPT 分区方式。输入如下命令，设置磁盘分区形式。
+4. 磁盘分区形式有 MBR 和 GPT 两种，大于 2 TB 的磁盘容量，这里采用 GPT 分区方式。输入如下命令，设置磁盘分区形式。
 
    ```
    # mklabel gpt
@@ -151,11 +151,10 @@ keyword: 青云
 
    >  **注意**：
    >
-   >  ▪︎ MBR 支持的磁盘最大容量为 2 TB，如果您需要使用大于 2 TB的磁盘容量，分区形式请采用GPT 。
-   >
-   >  ▪︎ 当磁盘已经投入使用后，此时切换磁盘分区形式时，磁盘上的原有数据将会清除，因此请在磁盘初始化时谨慎选择磁盘分区形式。
+   > MBR 支持的磁盘最大容量为 2 TB，如果您需要使用大于 2 TB的磁盘容量，分区形式请采用 GPT；  
+   > 当磁盘已经投入使用后，此时切换磁盘分区形式时，磁盘上的原有数据将会清除，因此请在磁盘初始化时谨慎选择磁盘分区形式。
 
-5. 输入`unit s`，按 **Enter**，设置磁盘的计量单位为磁柱。
+5. 输入 `unit s`，按 **Enter**，设置磁盘的计量单位为磁柱。
 
 6. 以整个磁盘创建一个分区为例，执行以下命令，按 **Enter**。
 
@@ -163,7 +162,7 @@ keyword: 青云
    # mkpart data 2048s 100%
    ```
 
-   “data”表示磁盘分区名称，“2048s”表示磁盘起始磁柱值，“100%” 表示磁盘截止磁柱值，此处仅供参考，您可以根据业务需要自行规划磁盘分区数量及容量。
+   “data” 表示磁盘分区名称，“2048s” 表示磁盘起始磁柱值，“100%” 表示磁盘截止磁柱值，此处仅供参考，用户可以根据业务需要自行规划磁盘分区数量及容量。
 
    > **说明**：
    >
@@ -177,11 +176,11 @@ keyword: 青云
 
    ![init_linux_19](/storage/disk/_images/init_linux_19.png)
 
-7. 输入 `p`，按 **Enter**，查看新建分区的详细信息。
+7. 输入 `p`，按 **Enter**，查看新建分区的详细信息。
 
    ![init_linux_20](/storage/disk/_images/init_linux_20.png)
 
-8. 确认分区的信息无误，输入`q`退出parted 工具。
+8. 确认分区的信息无误，输入 `q` 退出 parted 工具。
 
    ![init_linux_21](/storage/disk/_images/init_linux_21.png)
 
