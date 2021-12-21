@@ -43,7 +43,7 @@ keyword: QingCloud, 云计算, 青云, NAT网关, 性能测试, 最大连接数
 
 7. 点击**应用修改**更新 NAT 网关。
 
-8. 登录一个 webservice 节点，将[测试脚本 natgw.py](../../attach/natgw.py/) 上传到节点，然后运行如下命令执行启动测试脚本。
+8. 登录一个 webservice 节点，将[测试脚本 natgw.py](/network/nat_gateway/attach/natgw.py/) 上传到节点，然后运行如下命令执行启动测试脚本。
 
    ```
    python natgw.py -c tag-6ldhogun -s tag-sb0te7z9
@@ -67,7 +67,7 @@ keyword: QingCloud, 云计算, 青云, NAT网关, 性能测试, 最大连接数
 
    
 
-10. 将[连接数统计脚本 cal.py](../../attach/cal.py/) 上传到节点，然后运行如下命令统计当前连接数。
+10. 将[连接数统计脚本 cal.py](/network/nat_gateway/attach/cal.py/) 上传到节点，然后运行如下命令统计当前连接数。
 
     ```
     python cal.py -n nfv-r1fiaiqz
