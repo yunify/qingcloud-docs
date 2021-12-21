@@ -1,9 +1,9 @@
 ---
 title: "安置策略组"
 date: 2020-01-30T00:36:25+09:00
-description: Test description
+description: 安置策略组创建过程
 draft: false
-keyword: 安置策略组, QingCloud
+keyword: 云计算, 青云, QingCloud, 创建安置策略组
 ---
 
 

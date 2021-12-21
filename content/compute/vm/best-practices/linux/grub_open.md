@@ -1,9 +1,10 @@
 ---
 title: "开启 Linux 启动项"
 date: 2020-08-19T17:08:56+09:00
-description: test
+description: 开启Linux的启动选项
 weight: 20
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，启动
 ---
 
 有时需要修改内核参数来进行调试或者优化，但是修改不当又容易导致云服务器启动失败，下面举例说明几个操作系统如何在启动的时候进入启动项，临时修改一些内核的参数

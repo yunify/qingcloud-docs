@@ -2,9 +2,10 @@
 title: "访问控制策略"
 linkTitle: "访问控制策略"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: 访问控制策略介绍
 draft: false
 weight: 2
+keyword: 云服务器, QingCloud，安全，访问控制策略
 ---
 
 访问控制策略包括互联网防火墙，可以创建**内访外控制策略**和**外访内控制策略**，来对流量访问控制进行管理，有效降低您资产被入侵的风险。

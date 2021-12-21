@@ -3,7 +3,7 @@ title: "备案类型"
 description: Test description
 weight: 10
 enableToc: false
-keyword: 备案类型, QingCloud
+keyword: 备案类型, QingCloud, 青云, 备案
 ---
 
 

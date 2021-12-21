@@ -2,9 +2,10 @@
 title: "安全策略"
 linkTitle: "安全策略"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: 如何查看安全策略
 draft: false
 weight: 3
+keyword: 云服务器, QingCloud，安全，云防火墙，安全策略
 ---
 
 云防火墙产品提供四种安全策略来保证用户资产的安全。

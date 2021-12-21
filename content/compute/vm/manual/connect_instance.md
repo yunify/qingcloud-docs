@@ -1,7 +1,8 @@
 ---
 title: "连接实例"
-description: test
+description: 如何连接实例
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，连接实例
 ---
 
 

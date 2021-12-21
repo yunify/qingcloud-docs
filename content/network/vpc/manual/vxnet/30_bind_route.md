@@ -1,7 +1,7 @@
 ---
 
 title: "绑定路由表"
-keyword: 青云, QingCloud, VPC, VPC 网络, 私有网络, 路由表
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 私有网络, 路由表
 description: 介绍如何为私有网络绑定或解绑路由表。
 draft: false
 weight: 30

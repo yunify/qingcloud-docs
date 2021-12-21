@@ -1,8 +1,9 @@
 ---
 title: "Linux实例网站访问丢包延时高"
-description: Test description
+description: Linux实例网站访问丢包延时高
 weight: 40
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，丢包，延时
 ---
 
 ## 背景介绍

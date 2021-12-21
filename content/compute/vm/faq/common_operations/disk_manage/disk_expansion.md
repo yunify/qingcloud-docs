@@ -1,9 +1,10 @@
 ---
 title: "云服务器怎么扩容磁盘"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 如何对云服务器进行磁盘扩容
 weight: 50
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，扩容磁盘
 ---
 
 ## 问题现象

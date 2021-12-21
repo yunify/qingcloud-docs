@@ -2,7 +2,8 @@
 title: "常见问题"
 linkTitle: "常见问题"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: hpc常见问题
+keyword: 云计算, 青云, QingCloud, hpc，常见问题
 draft: false
 weight: 2
 ---

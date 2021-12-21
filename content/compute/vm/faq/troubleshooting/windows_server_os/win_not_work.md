@@ -2,6 +2,7 @@
 title: "启用密码保护共享导致 Windows 系统远程访问出现“凭据无法工作”错误"
 weight: 11
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，报错
 ---
 
 ## 问题背景

@@ -1,10 +1,9 @@
 ---
 title: "硬盘基本操作"
-description: Test description
+description: 本小节主要介绍云硬盘的基本操作。
 draft: false
-enableToc: false
 weight: 10
-keyword: 青云，硬盘
+keyword: 云计算, 青云, QingCloud, 云硬盘, 基本操作指南
 ---
 
 ## 进入硬盘页面
@@ -76,8 +75,7 @@ keyword: 青云，硬盘
 
    ![basic_operation_7](/storage/disk/_images/basic_operation_7.png)
 
-   > **说明**：
-   >
+   > **说明：**  
    > 若还未创建项目，可参考[项目使用](/operation/resource/manual/project/management/)进行创建。
 
 2. 选择需要添加到的项目，点击**提交**，即可将硬盘添加到该项目。

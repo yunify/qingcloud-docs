@@ -1,7 +1,8 @@
 ---
 title: "LVM逻辑卷VG卷组丢失的处理流程"
-description: test
-draft: false找回
+description: LVM逻辑卷VG卷组丢失的处理流程
+draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，lvm
 ---
 
 LVM是通过将物理的磁盘或磁盘分区创建成物理卷（PV），多个物理卷添加创建为一个卷组（VG），然后在卷组的基础上创建逻辑卷（LVM），进而在逻辑卷上去创建文件系统，这种在硬盘或分区和文件系统之下的磁盘管理机制大大提高了对磁盘管理的灵活性，也是当前企业Linux环境下实现对磁盘分区管理的方式。

@@ -1,7 +1,7 @@
 ---
 title: "SSL 证书 DNS 验证"
 description: 如何配置 DNS 验证
-keyword: SSL, DNS, 证书, 域名
+keyword: 云计算, 青云, QingCloud, SSL，DNS，证书，域名
 draft: false
 weight: 50
 ---

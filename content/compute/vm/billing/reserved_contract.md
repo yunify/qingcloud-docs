@@ -1,7 +1,8 @@
 ---
 title: "计费模式"
-description: test
+description: 云服务器的计费模式
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，计费模式
 ---
 
 ## 计费模式

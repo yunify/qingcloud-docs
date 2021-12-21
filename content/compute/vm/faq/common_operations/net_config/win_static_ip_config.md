@@ -1,9 +1,10 @@
 ---
 title: "Windows云服务器配置静态IP地址"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 如何配置Windows云服务器的静态IP
 weight: 60
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，静态IP
 ---
 
 登录到Windows云服务器---网络和共享中心---更改适配器设置----右键以太网卡---属性---Internet版本协议4---使用下面的ip地址---确定

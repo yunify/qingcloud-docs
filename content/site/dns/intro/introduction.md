@@ -1,10 +1,9 @@
 ---
 title: "什么是云解析 DNS "
-description: DNS description
+description: 云解析 DNS 产品介绍。
+keyword: QingCloud, 青云, DNS, 功能简介
 weight: 10
 draft: false
-enableToc: false
-keyword: DNS 服务,
 ---
 
 

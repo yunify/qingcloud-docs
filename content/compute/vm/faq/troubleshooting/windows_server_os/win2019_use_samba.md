@@ -1,8 +1,9 @@
 ---
 title: "Windows Server 无法访问 samba 服务"
-description: Test description
+description: Windows Server 无法访问 samba 服务
 weight: 60
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，samba
 ---
 
 

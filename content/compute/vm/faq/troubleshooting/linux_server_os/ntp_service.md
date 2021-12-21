@@ -1,10 +1,10 @@
 ---
 title: "Linux云服务器同步NTP时间"
 date: 2021-03-10T21:37:25+09:00
-description: Test description
+description: Linux 云服务器如何同步时间
 weight: 50
 draft: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，NTP时间
 ---
 
 ## 背景介绍

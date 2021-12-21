@@ -1,10 +1,9 @@
 ---
 title: "DNS 功能特性"
-description: 云解析服务 功能简介
+description: 云解析 DNS 服务的功能及解析类型介绍。
+keyword: QingCloud, 青云, DNS, 功能简介
 weight: 20
 draft: false
-enableToc: false
-keyword: DNS 功能简介
 ---
 
 ## 功能简介

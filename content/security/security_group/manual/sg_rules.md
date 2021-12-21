@@ -1,9 +1,10 @@
 ---
 title: "添加安全组规则"
-description: manual
+description: 如何添加安全组规则
 draft: false
 weight: 40
 draft: false
+keyword: 云服务器, QingCloud，安全，安全组规则
 ---
 
 您可以通过添加安全组规则，允许或禁止安全组内的云服务器实例对公网或私网的访问。

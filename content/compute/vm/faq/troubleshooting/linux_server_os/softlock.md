@@ -1,9 +1,10 @@
 ---
 title: "Soft lockup说明"
 date: 2021-02-19T00:38:25+09:00
-description: Test description
+description: soft lockup说明
 weight: 10
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，softlockup
 ---
 
 ## 背景说明

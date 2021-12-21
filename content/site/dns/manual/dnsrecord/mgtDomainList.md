@@ -1,6 +1,7 @@
 ---
 title: "管理域名列表"
-description: dns管理域名列表，包括查看和删除域名，以及管理域名备注等。
+description: 本小节主要介绍如何管理域名列表，包括查看和删除域名，以及管理域名备注。
+keyword: QingCloud, 青云, DNS, 域名列表
 weight: 1
 draft: false
 ---

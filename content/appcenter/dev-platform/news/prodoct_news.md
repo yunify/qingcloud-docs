@@ -1,5 +1,7 @@
 ---
 title: "产品动态"
+description: 介绍 AppCenter 云应用开发品台的动态。
+keyword: QingCloud, 青云, AppCenter, 云应用开发
 collapsible: false
 weight: 10
 
