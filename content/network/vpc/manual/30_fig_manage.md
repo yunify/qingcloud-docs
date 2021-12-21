@@ -1,7 +1,7 @@
 ---
 
 title: "图形化操作"
-keyword: 青云, QingCloud, VPC, VPC 网络, 私有网络, 图形化
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 私有网络, 图形化
 description: 介绍 VPC 网络支持的图形化管理功能。
 draft: false
 weight: 30

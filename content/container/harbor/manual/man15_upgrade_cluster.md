@@ -1,7 +1,8 @@
 ---
 title: "升级集群"
 draft: false
-enableToc: false
+description: 介绍如何升级 Harbor 集群。
+keyword: 青云, QingCloud, 云计算, Harbor, 镜像仓库, 升级集群
 weight: 15
 ---
 
@@ -34,7 +35,6 @@ weight: 15
 7. 点击**升级**，等待升级成功。
 
      ![](/container/harbor/_images/man15_upgrade.png)
-
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "修改私有网络基本信息"
-keyword: 青云, QingCloud, VPC, VPC 网络, 私有网络
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 私有网络
 description: 介绍如何修改私有网络的名称、描述、标签、项目等基本信息。
 draft: false
 weight: 10
