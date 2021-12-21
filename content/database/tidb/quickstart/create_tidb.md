@@ -38,8 +38,8 @@ draft: false
 | <span style="display:inline-block;width:120px">参数</span> | 说明                                                         |
 | ---------------------------------------------------------- | ------------------------------------------------------------ |
 | 版本                                                       | TiDB 的版本。                                                |
-| 实例规格                                                   | 支持**测试型**、**基础型**及**分析增强型**，不同类型使用的节点规格、本地存储和最大组件数量不同。<br/><li>选择**基础型**时，需要设置 TiKV 组件的节点数量，范围为3～9；</li><li>选择**分析增强型**时，需要设置 TiFlash 以及 TiKV 组件的节点数量。其中， TiFlash 节点数量范围为1～3，TiKV 节点数量为3～9。</li>规格及组件详细说明请参考[实例类型](../../intro/instance_type/)。 |
-| 私有网络                                                   | 选择实例部署的 VPC 网络及私有网络。不同实例可以使用相同或不同的 VPC 网络和私有网络。<li>若您已经创建有 VPC 网络和私有网络，可重复使用，不需要多次创建；</li><li>若您没有可用的 VPC 网络及私有网络，请根据界面提示进行创建。</li>VPC 创建的具体操作请参见[创建 VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)。<br/><div style="background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;">  <b>说明</b>：<li>选择的 VPC 网络与 TiDB 实例在相同的区域。</li><li>请勿选择免费型的 VPC，目前暂不支持在免费型 VPC 中创建 TiDB 实例。</li></div> |
+| 实例规格                                                   | 支持**测试型**、**基础型**及**分析增强型**，不同类型使用的节点规格、本地存储和最大组件数量不同。<br/><ul><li>选择**基础型**时，需要设置 TiKV 组件的节点数量，范围为3～9；</li><li>选择**分析增强型**时，需要设置 TiFlash 以及 TiKV 组件的节点数量。其中， TiFlash 节点数量范围为1～3，TiKV 节点数量为3～9。</li></ul>规格及组件详细说明请参考[实例类型](../../intro/instance_type/)。 |
+| 私有网络                                                   | 选择实例部署的 VPC 网络及私有网络。不同实例可以使用相同或不同的 VPC 网络和私有网络。<ul><li>若您已经创建有 VPC 网络和私有网络，可重复使用，不需要多次创建；</li><li>若您没有可用的 VPC 网络及私有网络，请根据界面提示进行创建。</li></ul>VPC 创建的具体操作请参见[创建 VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)。<br/><div style="background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;">  <b>说明</b>：<ul><li>选择的 VPC 网络与 TiDB 实例在相同的区域。</li><li>请勿选择免费型的 VPC，目前暂不支持在免费型 VPC 中创建 TiDB 实例。</li></ul></div> |
 
 ### 实例设置
 
@@ -50,7 +50,7 @@ draft: false
 | 实例名称                                                   | TiDB 实例名称。                                              |
 | 描述                                                       | TiDB 实例的描述信息。                                        |
 | 数据容量自动扩容                                           | **测试型**实例不支持该项设置。<br/>默认关闭状态，点击进行开启。开启后，当剩余存储容量不足 30% 时，您将收到警告通知，持续 90 分钟以上时会触发自动扩容。 |
-| 对象存储                                                   | 默认关闭状态，点击进行开启。开启表示需要启动对象存储服务来存储备份数据。开启对象存储，需要指定存储 Bucket 及 API 密钥，若未创建，请根据界面提示进行创建。<br>创建对象存储桶（Bucket）的详细操作，请参见[创建 Bucket](/storage/object-storage/manual/bucket_manage/#创建-bucket)。 |
+| 对象存储                                                   | 默认关闭状态，点击进行开启。开启表示需要启动对象存储服务来存储备份数据。开启对象存储，需要指定存储 Bucket 及 API 密钥，若未创建，请根据界面提示进行创建。<br/>创建对象存储桶（Bucket）的详细操作，请参见[创建 Bucket](/storage/object-storage/manual/bucket_manage/#创建-bucket)。 |
 
 4. 所有信息配置完成后，点击**立即购买**，进入**实例列表**页面。
 
