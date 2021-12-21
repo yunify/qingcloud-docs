@@ -17,19 +17,19 @@ weight: 30
 
 **Request Parameters**
 
-| Parameter name | Type | Description | Required |
+| Parameter name | Type | Description              | Required |
 | --- | --- | --- | --- |
-| cluster_id     | string | true        | 需要获取作业列表的集群id |
-| jobs_status    | string | false       | 作业状态                 |
-| limit          | int    | false       | 集合限制                 |
-| offset         | int    | false       | 集合偏移量               |
-| queue_name     | string | false       | 要过滤的队列名称         |
-| reverse        | int    | false       | 是否按排序键反转进行排序 |
-| run_user       | string | false       | 运行作业的用户           |
-| search_word    | string | false       | 搜索关键词               |
-| sort_key       | string | false       | 排序键排序               |
-| timestamp      | string | true        | 执行当前api的时间戳      |
-| zone           | string | true        | 所属区域id               |
+| cluster_id     | string | 需要获取作业列表的集群id | true |
+| jobs_status    | string | 作业状态                 | false            |
+| limit          | int    | 集合限制                 | false            |
+| offset         | int    | 集合偏移量               | false          |
+| queue_name     | string | 要过滤的队列名称         | false    |
+| reverse        | int    | 是否按排序键反转进行排序 | false |
+| run_user       | string | 运行作业的用户           | false      |
+| search_word    | string | 搜索关键词               | false          |
+| sort_key       | string | 排序键排序               | false          |
+| timestamp      | string | 执行当前api的时间戳      | true |
+| zone           | string | 所属区域id               | true           |
 
 [_公共参数_](../../../parameters/)
 

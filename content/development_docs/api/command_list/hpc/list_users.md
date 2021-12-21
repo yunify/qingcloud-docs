@@ -17,15 +17,15 @@ weight: 15
 
 **Request Parameters**
 
-| Parameter name | Type | Description | Required |
-| --- | --- | --- | --- |
-| cluster_id     | string | false       | 需要查询的hpc集群id       |
-| limit          | int    | false       | 集合限制                  |
-| offset         | int    | false       | 集合偏移量                |
-| search_word    | string | false       | 模糊查询 支持keys：[name] |
-| timestamp      | string | true        | 运行当前api时间戳         |
-| user_id        | string | false       | 用户id                    |
-| zone           | string | true        | 所属区域id                |
+| Parameter name | Type | Description               | Required |
+| :-- | --- | --- | --- |
+| cluster_id     | string | 需要查询的hpc集群id       | false  |
+| limit          | int    | 集合限制                  | false             |
+| offset         | int    | 集合偏移量                | false           |
+| search_word    | string | 模糊查询 支持keys：[name] | false |
+| timestamp      | string | 运行当前api时间戳         | true     |
+| user_id        | string | 用户id                    | false               |
+| zone           | string | 所属区域id                | true            |
 
 [_公共参数_](../../../parameters/)
 

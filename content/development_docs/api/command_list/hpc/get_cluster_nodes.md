@@ -17,18 +17,18 @@ weight: 25
 
 **Request Parameters**
 
-| Parameter name | Type | Description | Required |
+| Parameter name | Type | Description                      | Required |
 | --- | --- | --- | --- |
-| cluster_id     | string | false       | 需要查询节点的hpc集群id          |
-| limit          | int    | false       | 集合的限制                       |
-| offset         | int    | false       | 集群偏移量                       |
-| reverse        | int    | false       | 排序 0：ASC 1:EDSC               |
-| search_word    | string | false       | 模糊查询 支持 keys:[name]        |
-| sort_key       | string | false       | 排序键，默认为排序为节点创建时间 |
-| status         | string | false       | 集群节点的状态                   |
-| timestamp      | string | true        | 使用获取节点api时间戳            |
-| verbose        | int    | false       | 集群节点的详细操作工作           |
-| zone           | string | true        | 所属区域id                       |
+| cluster_id     | string | 需要查询节点的hpc集群id          | false     |
+| limit          | int    | 集合的限制                       | false                  |
+| offset         | int    | 集群偏移量                       | false                  |
+| reverse        | int    | 排序 0：ASC 1:EDSC               | false          |
+| search_word    | string | 模糊查询 支持 keys:[name]        | false   |
+| sort_key       | string | 排序键，默认为排序为节点创建时间 | false |
+| status         | string | 集群节点的状态                   | false              |
+| timestamp      | string | 使用获取节点api时间戳            | true        |
+| verbose        | int    | 集群节点的详细操作工作           | false      |
+| zone           | string | 所属区域id                       | true                  |
 
 [_公共参数_](../../../parameters/)
 
