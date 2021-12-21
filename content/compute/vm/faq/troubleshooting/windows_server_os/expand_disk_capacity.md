@@ -1,8 +1,8 @@
 ---
 title: "扩容磁盘后，实际使用空间并未增加"
-description: Test description
+description: 扩容磁盘后，为什么实际使用空间没有增加
 weight: 5
-
+keyword: 云计算, 青云, QingCloud, 云服务器，扩容
 ---
 
 ## 问题背景

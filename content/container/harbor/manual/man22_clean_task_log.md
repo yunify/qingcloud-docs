@@ -1,7 +1,8 @@
 ---
 title: "清理任务日志"
 draft: false
-enableToc: false
+description: 介绍如何清理任务节点的日志。
+keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库, 镜像仓库, 日志清理
 weight: 22
 ---
 

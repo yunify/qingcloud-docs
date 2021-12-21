@@ -1,6 +1,6 @@
 ---
 title: "DDOS防护操作指南"
-description: manual
+description: 如何创建DDOS防护
 draft: false
 keyword: DDOS, 创建DDOS防护
 ---

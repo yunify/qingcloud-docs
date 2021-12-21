@@ -3,6 +3,7 @@ title: "消息接受配置"
 description: test
 weight: 15
 draft: false
+keyword: 消息接受配置, QingCloud, 青云, 财务, 运维消息, 配置消息, 用户服务
 ---
 
 ## 消息类别介绍

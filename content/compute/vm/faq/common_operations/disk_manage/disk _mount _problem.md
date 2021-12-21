@@ -1,8 +1,10 @@
 ---
 title: "云服务器挂载硬盘时注意事项"
 date: 2021-02-22T22:21:25+09:00
+description: 云服务器在挂载硬盘时需要注意什么
 weight: 30
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，挂载硬盘
 ---
 
 ##  云服务器挂载硬盘类型

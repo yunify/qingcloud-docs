@@ -1,11 +1,10 @@
 ---
 title: "扩容 Windows 数据盘"
 date: 2020-0-30T00:38:25+09:00
-description: Test description
+description: 本小节主要介绍对Windows系统下的数据盘进行扩容。
 draft: false
-enableToc: false
 weight: 30
-keyword: 青云
+keyword: 云计算, 青云, QingCloud, 云硬盘, Windows, 扩容,数据盘
 ---
 
 ## 扩展云硬盘容量

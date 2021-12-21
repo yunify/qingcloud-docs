@@ -3,7 +3,7 @@ title: "云服务器重启后自动挂载 Virtual SAN"
 description: Test description
 weight: 50
 draft: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，重启挂载 Virtual SAN
 ---
 
 ## 背景

@@ -1,7 +1,8 @@
 ---
 title: "修改配置参数"
 draft: false
-enableToc: false
+description: 介绍如何修改 Harbor 参数。
+keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库, 镜像仓库, 参数配置
 weight: 8
 ---
 

@@ -2,7 +2,8 @@
 title: "常见问题"
 linkTitle: "常见问题"
 date: 2021-11-26T10:08:56+09:00
-description:
+description: spack 常见问题
+keyword: 云计算, 青云, QingCloud, spack，常见问题
 draft: false
 weight: 10
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Web应用防火墙简介"
 date: 2020-12-01T00:38:25+09:00
-description: Test description
+description: WAF简介
 draft: false
 enableToc: false
 keyword: Web应用防火墙, WAF

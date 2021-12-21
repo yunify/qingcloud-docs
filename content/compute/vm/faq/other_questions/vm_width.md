@@ -1,8 +1,9 @@
 ---
-title: "青云主机之间的网络带宽是多少？"
-description: Test description
+title: "青云云服务器之间的网络带宽是多少？"
+description: 云服务器之间的网络带宽
 draft: false
 weight: 190
+keyword: 云计算, 青云, QingCloud, 云服务器，网络带宽
 ---
 
 为了保证用户之间的公平，青云对云服务器之间的网络带宽限制为：

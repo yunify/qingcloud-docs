@@ -1,9 +1,10 @@
 ---
 title: "设置云服务器禁 ping"
 date: 2020-08-20T17:08:56+09:00
-description: test
+description: 设置云服务器的禁 ping
 weight: 20
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，禁ping
 ---
 
 正常情况下，可以直接在云服务器上绑定一个安全组，添加一个 ICMP 协议的拒绝上行规则也可以。

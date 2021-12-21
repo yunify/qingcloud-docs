@@ -1,9 +1,10 @@
 ---
-title: "青云主机之间的网络带宽是多少？ "
+title: "青云云服务器之间的网络带宽是多少？ "
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 云服务器之间的网络带宽是多少
 draft: false
 weight: 190
+keyword: 云计算, 青云, QingCloud, 云服务器，带宽
 ---
 
 Windows SMB (Server Message Block) 很容易感染病毒和被黑客袭击，请谨慎使用。 推荐使用 FTP 方式传文件，如果一定要用共享，建议复制完文件就关闭共享。

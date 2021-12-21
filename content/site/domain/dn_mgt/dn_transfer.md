@@ -2,7 +2,7 @@
 title: "域名过户"
 description: test
 weight: 11
-keyword: 域名过户, 域名注册, QingCloud
+keyword: 域名过户, 域名注册, QingCloud, 域名
 ---
 
 

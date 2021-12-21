@@ -18,9 +18,6 @@ Section1:
     - title: OpenSearch 服务
       url: "/bigdata/opensearch/intro/introduction"
 
-    - title: Nifi 服务
-      url: "/bigdata/nifi/intro/introduction"
-
     - title: HBase 服务
       url: "/bigdata/hbase/intro/introduction"
 

@@ -1,8 +1,9 @@
 ---
 title: "Windows实例网络访问丢包延时高"
-description: Test description
+description: Windows 实例网络访问丢包延时高
 weight: 15
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，网络访问
 ---
 
 ## 背景介绍

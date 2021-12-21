@@ -1,6 +1,6 @@
 ---
 title: "VPN 服务"
-keyword: 青云, QingCloud, VPC, VPN, OpenVPN, PPTP, L2TP
+keyword: QingCloud, 青云, 云计算, VPC, VPN, OpenVPN, PPTP, L2TP
 description: VPN 使用指导
 draft: false
 weight: 35

@@ -1,6 +1,6 @@
 ---
 title: "VPC 和私有网络 Vxnet 的网络 ACL 配置和操作"
-description: manual
+description: VPC 和私有网络 Vxnet 的网络 ACL 配置和操作
 draft: false
 weight: 30
 keyword: 青云, QingCloud, 云计算, 私有网络Vxnet, 绑定和解绑网络ACL
