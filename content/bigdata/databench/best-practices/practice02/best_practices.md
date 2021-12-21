@@ -1,5 +1,5 @@
 ---
-title: "实时计算 uv、pv、转化率（SQL 作业）"
+title: "数据开发"
 description: 本小节主要介绍。 
 keywords: 
 weight: 15
@@ -8,6 +8,8 @@ draft: false
 ---
 
 本小节为您介绍如何对接网站的点击流数据，并对点击流数据进行实时分析，计算出 uv、pv、转化率等指标。
+
+<img src="/bigdata/databench/_images/process_practice01.png" alt="实践流程" style="zoom:30%;" />
 
 ## 准备 Kafka 环境
 

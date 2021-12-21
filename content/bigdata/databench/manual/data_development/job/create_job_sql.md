@@ -9,6 +9,8 @@ draft: false
 
 本小节主要介绍如何创建并开发 SQL 作业。
 
+<img src="/bigdata/databench/_images/process_job_sql.png" alt="开发 SQL 作业" style="zoom:50%;" />
+
 ## 前提条件
 
 - 已获取管理控制台登录账号和密码，且账号已实名认证。

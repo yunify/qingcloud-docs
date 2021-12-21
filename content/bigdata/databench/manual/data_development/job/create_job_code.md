@@ -9,6 +9,8 @@ draft: false
 
 代码开发模式支持三种代码格式，Jar、Python、Scala。本小节主要介绍如何创建代码开发作业。
 
+<img src="/bigdata/databench/_images/process_job_jar.png" alt="开发 Jar 作业" style="zoom:50%;" />
+
 ## 前提条件
 
 - 已获取管理控制台登录账号和密码，且账号已实名认证。
