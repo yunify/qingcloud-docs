@@ -1,7 +1,7 @@
 ---
 title: "开启/关闭 PTR 记录"
 description: 介绍如何在 DNS 服务中开启及关闭 PTR 记录。
-keyword: 青云, QingCloud, VPC 网络, DNS, PTR
+keyword: QingCloud, 青云, 云计算, VPC 网络, DNS, PTR
 draft: false
 weight: 40
 ---

@@ -1,8 +1,8 @@
 ---
 title: "错误码"
+description: DNS API 错误码。
 weight: 40
 draft: false
-enableToc: false
 keyword: QingCloud，DNS API，错误码，HTTP状态码
 ---
 

@@ -2,7 +2,8 @@
 title: "创建集群"
 linkTitle: "创建集群"
 date: 2021-11-24T10:08:56+09:00
-description:
+description: 创建集群
+keyword: 云计算, 青云, QingCloud, HPC，创建集群
 draft: false
 weight: 1
 ---

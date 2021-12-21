@@ -1,9 +1,10 @@
 ---
 title: "更换云服务器操作系统"
 date: 2021-03-07T10:08:56+09:00
-description:
+description: 如何更换云服务器操作系统
 draft: false
 weight: 39
+keyword: 云计算, 青云, QingCloud, 云服务器，操作系统
 ---
 
 ## 问题背景

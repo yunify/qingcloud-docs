@@ -42,7 +42,7 @@ Authorization: <authorization-string>
 | 名称 | 类型 | 说明 | 是否必选 |
 | --- | --- | --- | --- |
 | action   | String  | 对图片的一组操作。 | 是 |
-| operation | String | 对图片的基本操作。详情请参考 [图片操作](#操作类型)。<br>- 每个 `operation` 可以有多个键值对作为参数，多个键值对之间使用分隔符 `,` 隔开；<br>- 多个 `operation` 之间使用分隔符 `｜` 隔开。 | 是      
+| operation | String | 对图片的基本操作。详情请参考前文内容。<br>- 每个 `operation` 可以有多个键值对作为参数，多个键值对之间使用分隔符 `,` 隔开；<br>- 多个 `operation` 之间使用分隔符 `｜` 隔开。 | 是      
 | k | Char | `operation` 的参数名 | 是      |
 | v | Integer | `operation` 的参数值 | 是      |
 

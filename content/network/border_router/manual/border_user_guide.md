@@ -1,7 +1,7 @@
 ---
 title: "操作指南"
 description: 介绍如何创建、关联边界路由器。
-keyword: QingCloud, 青云, 网络, 边界路由器
+keyword: QingCloud, 青云, 云计算, 网络, 边界路由器
 draft: false
 weight: 2
 ---

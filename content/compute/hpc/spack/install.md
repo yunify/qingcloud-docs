@@ -2,7 +2,8 @@
 title: "软件安装"
 linkTitle: "软件安装"
 date: 2021-11-26T10:08:56+09:00
-description:
+description: spack 的软件安装
+keyword: 云计算, 青云, QingCloud, HPC，spack，软件安装
 draft: false
 weight: 5
 ---

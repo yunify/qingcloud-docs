@@ -1,8 +1,9 @@
 ---
 title: "resolv 文件的 DNS 被重置怎么办？"
-description: Test description
+description: resolv 文件的 DNS 被重置怎么办？
 weight: 40
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，DNS
 ---
 
 ## 概述

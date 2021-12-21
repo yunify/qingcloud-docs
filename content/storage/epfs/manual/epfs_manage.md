@@ -3,7 +3,8 @@ title: "文件存储 EPFS 文件管理"
 date: 2020-01-30T00:39:25+09:00
 description: 本小节主要介绍如何对文件存储 EPFS 进行文件管理
 draft: false
-weight: 3
+enableToc: false
+weight: 15
 keyword: 云计算, 青云, QingCloud, 文件存储, EPFS
 ---
 
@@ -30,10 +31,10 @@ keyword: 云计算, 青云, QingCloud, 文件存储, EPFS
 5. 选择文件，点击 **更多操作** > **下载**，可下载该文件：
 
    ![](/storage/epfs/_images/epfs16.png)
-
 > **说明**
 >
 > 如需下载文件，只可对单个文件进行下载，无法批量下载文件，也无法对文件夹进行下载。
+
 
 6. 选择文件，点击 **更多操作** > **删除**，可删除该文件：
 

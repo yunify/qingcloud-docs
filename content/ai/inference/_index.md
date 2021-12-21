@@ -60,8 +60,6 @@ section4:
         - title: 部署 Deep Learning 应用
           url: "/ai/deep_learning/quickstart/deploy_app/"
 
-        - title: 集群使用
-          url: "/ai/deep_learning/manual/cluster_use"
 
     
 ---

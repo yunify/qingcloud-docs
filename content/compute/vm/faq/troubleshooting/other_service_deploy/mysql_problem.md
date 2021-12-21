@@ -1,9 +1,10 @@
 ---
 
 title: "自建MySQL无法远程访问排查思路"
-description: Test description
+description: 自建MySQL无法远程访问排查思路
 weight: 20
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，MySQL
 ---
 
 ## 概述

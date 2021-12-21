@@ -1,6 +1,7 @@
 ---
 title: "通知中心"
-date: 2020-11-11T00:00:00+09:00
+description: 介绍如何查看和发送通知。
+keyword: QingCloud, 青云, AppCenter, 云应用开发平台
 draft: false
 collapsible: false
 weight: 4

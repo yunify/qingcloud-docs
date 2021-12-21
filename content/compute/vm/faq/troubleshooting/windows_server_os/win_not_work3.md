@@ -2,6 +2,7 @@
 title: "远程控制Windows 远程桌面无法连接"
 weight: 13
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，远程桌面
 ---
 
 ## 问题背景

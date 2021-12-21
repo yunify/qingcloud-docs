@@ -2,7 +2,7 @@
 title: "域名DNS修改"
 description: test
 weight: 5
-keyword: 域名DNS修改, 域名注册, QingCloud
+keyword: 域名DNS修改, 域名注册, QingCloud, 域名
 ---
 
 

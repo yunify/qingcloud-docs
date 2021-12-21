@@ -1,7 +1,8 @@
 ---
 title: "重置 Harbor 密码"
 draft: false
-enableToc: false
+description: 介绍如何重置 Harbor 密码。
+keyword: 青云, QingCloud, 云计算, Harbor, 重置密码, 私有镜像仓库, 镜像仓库, 
 weight: 20
 ---
 

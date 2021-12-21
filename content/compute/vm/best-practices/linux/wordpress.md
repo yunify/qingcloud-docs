@@ -1,7 +1,8 @@
 ---
 title: "使用云服务器搭建一个基于LNMP的Wordpress博客"
-description: test
+description: 如何使用云服务器搭建一个基于LNMP的Wordpress博客
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，LNMP，wordpress
 ---
 
 ## 项目概览

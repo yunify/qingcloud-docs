@@ -2,9 +2,10 @@
 title: "流量控制策略"
 linkTitle: "流量控制策略"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: 流量控制策略介绍
 draft: false
 weight: 4
+keyword: 云服务器, QingCloud，安全，流量控制策略
 ---
 
 可以通过限制内外访问的最大带宽，帮助用户更加合理使用资源。

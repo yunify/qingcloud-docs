@@ -1,7 +1,7 @@
 ---
 title: "产品动态"
 collapsible: false
-keyword: 青云, QingCloud, VPC, VPC 网络, 产品动态
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 产品动态
 weight: 10
 
 product:

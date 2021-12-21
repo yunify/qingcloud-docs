@@ -1,9 +1,10 @@
 ---
-title: "为什么我的 Windows 主机远程桌面连接不上？ "
+title: "为什么我的 Windows 云服务器远程桌面连接不上？ "
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 解决Windows云服务器远程无法连接的问题
 draft: false
 weight: 150
+keyword: 云计算, 青云, QingCloud, 云服务器，远程桌面
 ---
 
 ## 打开RDP服务

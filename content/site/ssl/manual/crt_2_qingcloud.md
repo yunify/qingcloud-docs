@@ -1,8 +1,9 @@
 ---
 title: "上传自建证书到青云"
-description: test
+description: 如何上传自建证书
 weight: 30
 draft: false
+keyword: 云计算, 青云, QingCloud，自建证书
 ---
 
 

@@ -1,9 +1,10 @@
 ---
 title: "Linux云服务器查看CPU和内存信息"
 date: 2021-01-30T00:38:25+09:00
-description: Test description
+description: Linux云服务器查看CPU和内存信息
 weight: 40
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，CPU
 ---
 
 ## **概述**

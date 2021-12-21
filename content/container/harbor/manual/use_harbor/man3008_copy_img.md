@@ -1,7 +1,8 @@
 ---
 title: "配置镜像复制"
 draft: false
-enableToc: false
+description: 介绍如何配置镜像复制规则。
+keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库, 镜像仓库,镜像复制
 weight: 8
 ---
 

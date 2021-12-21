@@ -1,7 +1,7 @@
 ---
 title: "快速入门"
 description: test
-keyword: 域名注册, QingCloud, 青云
+keyword: 域名注册, QingCloud, 青云, 域名
 ---
 
 

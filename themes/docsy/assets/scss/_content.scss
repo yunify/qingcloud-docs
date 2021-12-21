@@ -91,11 +91,18 @@
         }
     }
 
+
+
     > ul li {
         list-style: disc;
         margin-left: 1em;
-
     }
+    
+    ul li {
+        list-style: disc;
+        margin-left: 1em;
+    }
+
     strong {
         font-weight: $font-weight-bold;
     }

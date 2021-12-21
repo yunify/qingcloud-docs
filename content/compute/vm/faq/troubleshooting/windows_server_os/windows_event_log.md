@@ -2,6 +2,7 @@
 title: "Windows 查看本地登录日志"
 weight: 17
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，日志
 ---
 ## 问题描述
 Windows 云服务器登录异常，排查登录日志可参考本操作。

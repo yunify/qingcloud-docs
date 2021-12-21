@@ -1,6 +1,7 @@
 ---
 title: "测试连接"
-description: SaaS
+description: 介绍测试连接的请求参数、响应参数和示例说明。
+keyword: QingCloud, 青云, AppCenter, 云应用开发平台, SaaS, SPI
 draft: false
 weight: 60
 ---

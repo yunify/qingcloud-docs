@@ -2,7 +2,7 @@
 title: "删除信息模板"
 description: test
 weight: 8
-keyword: 删除信息模板, 域名注册, QingCloud
+keyword: 删除信息模板, 域名注册, QingCloud, 域名
 ---
 
 

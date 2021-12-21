@@ -1,8 +1,9 @@
 ---
 title: "调整屏幕分辨率"
-description: Test description
+description: 如何调整屏幕分辨率
 weight: 10
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，屏幕分辨率
 ---
 
 ## 1.通过 vnc (Web 终端)或者远程桌面连接 Windows 云服务器
