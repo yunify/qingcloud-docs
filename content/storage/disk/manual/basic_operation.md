@@ -19,6 +19,7 @@ keyword: 云计算, 青云, QingCloud, 云硬盘, 基本操作指南
 
 1. 在云硬盘列表右键点击需要修改的硬盘，选择**修改**，弹出**修改硬盘[*硬盘ID*号]属性**界面。
 
+
    ![basic_operation_1](/storage/disk/_images/basic_operation_1.png)
 
 2. 编辑硬盘的属性，包括名称和描述，然后点击**修改**。
@@ -35,6 +36,7 @@ keyword: 云计算, 青云, QingCloud, 云硬盘, 基本操作指南
 ## 克隆硬盘
 
 1. 在云硬盘列表右键点击需要克隆的硬盘，选择**克隆硬盘**，弹出**克隆硬盘**界面。
+
    ![basic_operation_3](/storage/disk/_images/basic_operation_3.png)
 
 2. 编辑克隆硬盘的属性，包括名称以及拷贝数量，点击**提交**即可。
@@ -46,18 +48,17 @@ keyword: 云计算, 青云, QingCloud, 云硬盘, 基本操作指南
 ### 创建标签
 
 1. 在**硬盘**页面，点击**标签**，选择**创建标签**。
+
    ![basic_operation_4](/storage/disk/_images/basic_operation_4.png)
 
 2. 输入标签名称，选择标签颜色，点击**提交**。
-   ![basic_operation_5](/storage/disk/_images/basic_operation_5.png)
-   
+   ![basic_operation_5](/storage/disk/_images/basic_operation_5.png)  
 
 ###  绑定标签
 
 1. 在云硬盘列表右键点击需要绑定标签的硬盘，选择**标签** > **绑定**，弹出**选择标签**页面。
 
    ![basic_operation_6](/storage/disk/_images/basic_operation_6.png)
-
 
 2. 在标签列表中勾选要绑定的标签，点击**提交**。
 
@@ -72,6 +73,7 @@ keyword: 云计算, 青云, QingCloud, 云硬盘, 基本操作指南
 ## 加入项目
 
 1. 在云硬盘列表右键点击需要加入到项目的硬盘，选择**项目** > **加入**，弹出**添加到项目**页面。
+
 
    ![basic_operation_7](/storage/disk/_images/basic_operation_7.png)
 
