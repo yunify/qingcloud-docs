@@ -3,7 +3,7 @@ title: "UpdateDnatRule"
 description: 更新 DNAT 规则
 draft: false
 weight: 30
-keywords: API, NFV, NAT 网关, 网络组件, DNAT
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, DNAT
 ---
 
 更新 DNAT 规则。

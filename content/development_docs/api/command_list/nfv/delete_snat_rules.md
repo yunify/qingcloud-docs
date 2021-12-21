@@ -3,7 +3,7 @@ title: "DeleteSnatRules"
 description: 删除 SNAT 规则
 draft: false
 weight: 34
-keywords: API, NFV, NAT 网关, 网络组件, SNAT
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, SNAT
 ---
 
 删除 SNAT 规则。

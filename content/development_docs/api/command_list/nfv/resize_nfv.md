@@ -3,7 +3,7 @@ title: "ResizeNFV"
 description: 调整网络组建规格类型
 draft: false
 weight: 8
-keywords: API, NFV, NAT 网关, 网络组件
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 ---
 
 

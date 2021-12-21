@@ -3,7 +3,7 @@ title: "ModifyNFVSecurityGroups"
 description: 
 draft: false
 weight: 16
-keywords: API, NFV, NAT 网关, 网络组件, 安全组
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 安全组
 ---
 
 

@@ -3,7 +3,7 @@ title: "UpdateNFVs"
 description: 更新网络组件
 draft: false
 weight: 5
-keywords: API, NFV, NAT 网关, 网络组件
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 ---
 
 

@@ -3,7 +3,7 @@ title: "AddDnatRules"
 description: 新增 DNAT 规则
 draft: false
 weight: 22
-keywords: API, NFV, NAT 网关, 网络组件, DNAT
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, DNAT
 ---
 
 新增 DNAT 规则。

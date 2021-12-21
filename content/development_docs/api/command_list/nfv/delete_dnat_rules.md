@@ -3,7 +3,7 @@ title: "DeleteDnatRules"
 description: 删除 DNAT 规则
 draft: false
 weight: 35
-keywords: API, NFV, NAT 网关, 网络组件, DNAT
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, DNAT
 ---
 
 删除 DNAT 规则。

@@ -3,7 +3,7 @@ title: "StartNFVs"
 description: 启动网络组件(NFV)
 draft: false
 weight: 10
-keywords: API, NFV, NAT 网关, 网络组件
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 ---
 
 

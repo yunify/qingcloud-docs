@@ -3,7 +3,7 @@ title: "DescribeNFVs"
 description: 获取一个或多个网络组件的信息
 draft: false
 weight: 2
-keywords: API, NFV, NAT 网关, 网络组件
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 ---
 
 获取一个或多个网络组件的信息。

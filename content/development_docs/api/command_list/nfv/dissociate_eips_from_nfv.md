@@ -3,7 +3,7 @@ title: "DissociateEipsFromNFV"
 description: 网络组件解绑一个或多个公网 IP
 draft: false
 weight: 3
-keywords: API, NFV, NAT 网关, 网络组件, 公网 IP
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 公网 IP
 ---
 
 

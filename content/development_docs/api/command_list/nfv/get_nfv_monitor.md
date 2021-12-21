@@ -3,7 +3,7 @@ title: "GetNFVMonitor"
 description: 获取网络组件的监控数据
 draft: false
 weight: 21
-keywords: API, NFV, NAT 网关, 网络组件, 监控
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 监控
 ---
 
 

@@ -3,7 +3,7 @@ title: "UpgradeNFV"
 description: 升级网络组件
 draft: false
 weight: 12
-keywords: API, NFV, NAT 网关, 网络组件, 升级版本
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 升级版本
 ---
 
 将一个或多个网络组件(NFV)版本从 1.0  升级到 2.0。

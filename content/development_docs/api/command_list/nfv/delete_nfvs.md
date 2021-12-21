@@ -3,7 +3,7 @@ title: "DeleteNFVs"
 description: 删除一个或多个网络组件(NFV)
 weight: 20
 draft: false
-keywords: API, NFV, NAT 网关, 网络组件
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 ---
 
 

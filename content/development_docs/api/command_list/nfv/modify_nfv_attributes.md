@@ -3,7 +3,7 @@ title: "ModifyNFVAttributes"
 description: 修改网络组件属性
 draft: false
 weight: 15
-keywords: API, NFV, NAT 网关, 网络组件
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 ---
 
 

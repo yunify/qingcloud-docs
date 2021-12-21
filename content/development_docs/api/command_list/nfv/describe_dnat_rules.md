@@ -3,7 +3,7 @@ title: "DescribeDnatRules"
 description: 查询 DNAT 规则
 draft: false
 weight: 26
-keywords: API, NFV, NAT 网关, 网络组件, DNAT
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, DNAT
 ---
 
 查询 DNAT 规则。

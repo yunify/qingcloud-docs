@@ -3,7 +3,7 @@ title: "AssociateEipsToNFV"
 description: 绑定公网 IP 地址到某个网络组件
 draft: false
 weight: 4
-keywords: API, NFV, NAT 网关, 网络组件, 公网 IP
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 公网 IP
 ---
 
 

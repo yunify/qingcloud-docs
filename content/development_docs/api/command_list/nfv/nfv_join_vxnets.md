@@ -3,7 +3,7 @@ title: "NFVJoinVxnets"
 description: 网络组件绑定一个或多个私有网络
 draft: false
 weight: 13
-keywords: API, NFV, NAT 网关, 网络组件, 私有网络
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 私有网络
 ---
 
 

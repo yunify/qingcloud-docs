@@ -3,7 +3,7 @@ title: "DescribeSnatRules"
 description: 查询 SNAT 规则
 draft: false
 weight: 25
-keywords: API, NFV, NAT 网关, 网络组件, SNAT
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, SNAT
 ---
 
 查询 SNAT 规则。

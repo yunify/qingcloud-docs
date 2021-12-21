@@ -3,7 +3,7 @@ title: "UpdateSnatRule"
 description: 更新 SNAT 规则
 draft: false
 weight: 29
-keywords: API, NFV, NAT 网关, 网络组件, SNAT
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, SNAT
 ---
 
 更新 SNAT 规则。

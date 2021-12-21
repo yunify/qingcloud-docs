@@ -3,7 +3,7 @@ title: "NFVLeaveVxnets"
 description: 网络组件解绑一个或多个私有网络
 draft: false
 weight: 14
-keywords: API, NFV, NAT 网关, 网络组件, 私有网络
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 私有网络
 ---
 
 
