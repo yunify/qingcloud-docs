@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: NAT网关
-  vice_title: NAT 网关 (Network Address Transmition Gateway) 是一个分布式的网络地址转换服务，可以为私有网络的主机提供复用公网 IP 的能力，用户的多个私有网络可以通过一个统一的 NAT 网关访问公网或提供互联网服务。
+  vice_title: NAT 网关 (Network Address Transmition Gateway) 是一个分布式的网络地址转换服务，可以为私有网络的云服务器提供复用公网 IP 的能力，用户的多个私有网络可以通过一个统一的 NAT 网关访问公网或提供互联网服务。
  # video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_nat.mp4"
  # video_img: "/images/video.png"
 
