@@ -2,7 +2,7 @@
 title: "资源管理概述"
 description:  
 keywords: 
-weight: 10
+weight: 5
 collapsible: false
 draft: false
 ---

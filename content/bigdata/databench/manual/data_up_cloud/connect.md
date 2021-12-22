@@ -1,5 +1,5 @@
 ---
-title: "网络连通"
+title: "网络连通方案"
 description: 本小节主要介绍大数据工作台如何保证在数据集成和数据开发工作时，数据源与计算集群的网络连通性。 
 keywords: 
 weight: 90
@@ -7,17 +7,22 @@ collapsible: false
 draft: false
 ---
 
-大数据工作台通过**计算集群**进行数据集成和数据开发工作。需要保障来源数据源、目标数据源与计算集群间的网络连通性。
+大数据工作台通过**计算集群**进行数据集成和数据开发工作。在进行数据集成或数据开发之前，请确保计算集群与来源数据源、目标数据源之前网络互通。
 
 <img src="../../../_images/net_connect.png" alt="网络连通" style="zoom:80%;" />
 
-目前在大数据工作台中，计算集群仅支持 flink session 集群模式，用户独享。仅支持部署在您的私有 VPC 下。
+目前在大数据工作台中：
 
-针对于数据源所处的网络情况，您需要在云平台上完成网络联通性方案操作，保障网络联通性来进行数据集成和数据开发工作。
+- 计算集群仅支持 Flink Session 集群模式，用户独享。
+- 计算集群仅支持部署在 VPC 私有网络中。
 
-| 数据源所在网络           | 计算集群                                                     |
+您可以根据数据源所在的网络环境，选择相应的网络连接方案来实现计算集群与数据源的网络连通性。
+
+| 数据源所在网络环境        | 网络连通方案                                |
 | :------------- | ------------------------------------------------------------ |
-| 具备公网访问能力 |  部署计算集群选择的 VPC 需要绑定 EIP，保证公网联通性。如使用青云 MySQL Plus 开放公网访问功能，需将 VPC 绑定的 EIP 添加到白名单中。              |
-| 在青云平台 VPC 中    |<li>部署计算集群选择同 region 同 VPC，内网互通。推荐使用此方式。<li>部署计算集群选择不同 region 或 不同 VPC，需要将两个 VPC 通过隧道或边界路由器的方式连通。 |
-| 在青云平台基础网络中    |暂不支持在基础网络中的数据源。 |
-| 在本地 IDC 机房，或其他云环境    | 需要先连通本地或云环境与青云计算集群 VPC 的网络环境，通过 VPN 或边界路由器的方案。  |
+| 具备公网访问能力 |为计算集群绑定的 VPC 配置公网 IP，保证公网连通性。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b><br>如果使用青云 MySQL Plus 的公网访问功能，还需将 VPC 绑定的公网 IP 添加到数据库白名单中。详细操作请参见[MySQL 白名单管理](/database/mysql/manual/mgt_connect/mgt_whitelist/)。</span>              |
+| 在青云 **VPC 私有网络**（与工作空间在同一区域）  |<li>（**推荐**）计算集群绑定与数据源相同的 VPC，内网互通。  <li>计算集群绑定不同的 VPC，需要通过[IP Sec 隧道](/network/vpc/manual/tunnel/ipsec/)、[GRE 隧道](/network/vpc/manual/tunnel/gre/)或[边界路由器](/network/border_router/manual/border_user_guide/)的方式连通两个 VPC。 |
+| 在青云 **VPC 私有网络**（与工作空间在不同区域）  |通过[IP Sec 隧道](/network/vpc/manual/tunnel/ipsec/)、[GRE 隧道](/network/vpc/manual/tunnel/gre/)或[边界路由器](/network/border_router/manual/border_user_guide/)的方式，使计算集群与数据源网络互通。 |
+| 在青云**基础网络**    |**暂不支持在基础网络**中的数据源。 |
+| 在本地 IDC 机房，或其他云环境     | 通过 [VPN](/network/vpc/manual/vpn/) 或[边界路由器](/network/border_router/manual/border_user_guide/)方式，使计算集群与本地 IDC 或其他云环境网络互通。  |
+

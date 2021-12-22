@@ -28,6 +28,6 @@ draft: false
 
 ## 后续步骤
 
-- 工作空间创建完成后，您就可以在工作空间执行[数据源管理](../../data_up_cloud/data_summary/)、[数据开发](../../data_development/summary/)和[运维中心](../../operation_maintence/summary/)等操作。
+- 工作空间创建完成后，您就可以在工作空间执行[数据源管理](../../manual/data_up_cloud/data_summary/)、[数据开发](../../manual/data_development/summary/)和[运维中心](../../manual/operation_maintence/summary/)等操作。
 - 您也可以先通过学习[快速入门](../../quickstart/summary)，快速了解大数据工作台的使用。
 
