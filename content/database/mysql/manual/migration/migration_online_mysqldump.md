@@ -1,7 +1,7 @@
 ---
 title: "在线迁移: mysqldump 方式"
 description: 本小节主要介绍如何通过 mysqldump 方式在线迁移。 
-keyword: mysqldump 方式在线迁移
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,mysqldump 方式在线迁移
 weight: 10
 collapsible: false
 draft: false

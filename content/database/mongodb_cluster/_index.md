@@ -1,7 +1,7 @@
 ---
 title: "文档数据库 MongoDB Cluster"
 linkTitle: "MongoDB Cluster"
-weight: 06
+weight: 08
 collapsible: true
 type: "product"
 
@@ -35,6 +35,14 @@ Section2:
     - title: 最佳实践
       content: MongoDB Cluster 的最佳实践
       url: "best-practices/single_to_multi/"
+
+    - title: 性能白皮书
+      content: 性能白皮书
+      url: "perfwp/test_tool/"
+
+    - title: 常见问题
+      content: 常见问题
+      url: "faq/product/"
 
 section3:
   title: 开发者指南
