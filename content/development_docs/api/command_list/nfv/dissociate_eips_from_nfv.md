@@ -1,20 +1,22 @@
 ---
 title: "DissociateEipsFromNFV"
-description: 
+description: 网络组件解绑一个或多个公网 IP
 draft: false
+weight: 3
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 公网 IP
 ---
 
 
 
-从一个网络组件解绑一个或多个公网IP。
+从一个网络组件解绑一个或多个公网 IP。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| nfv | String | 网络组件的 ID 。 | Yes |
-| zone | String | 区域 ID，注意要小写。 | Yes |
-| eips.n | String | 将要解绑的公网IP的ID | Yes |
+| nfv | String | 网络组件的 ID | Yes |
+| zone | String | 区域 ID，注意要小写 | Yes |
+| eips.n | String | 将要解绑的公网 IP 的 ID | Yes |
 
 [_公共参数_](../../../parameters/)
 

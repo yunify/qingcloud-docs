@@ -7,32 +7,36 @@ type: "product"
 
 section1:
   title: NAT网关
-  vice_title: NAT网关为私有网络的云服务器提供了复用公网 IP 的能力，目前支持源 NAT 功能，NAT网关具备高达 10 Gbps 的转发能力以及 Region 级别的多活容灾能力。
-  video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_nat.mp4"
-  video_img: "/images/video.png"
+  vice_title: NAT 网关 (Network Address Transmition Gateway) 是一个分布式的网络地址转换服务，可以为私有网络的云服务器提供复用公网 IP 的能力，用户的多个私有网络可以通过一个统一的 NAT 网关访问公网或提供互联网服务。
+ # video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_nat.mp4"
+ # video_img: "/images/video.png"
 
 section2:
   title: 用户指南
   children:
     - title: 产品简介
-      content: 产品简介
+      content: 什么是 NAT 网关
       url: "intro/nat_gateway/"
 
-    #- title: 计费指南
-     # content: 计费指南
-     # url: "billing/price"
+    - title: 计费指南
+      content: NAT 网关计费说明
+      url: "billing/nat_price/"
+
+    - title: 快速入门
+      content: 使用 NAT 网关上网
+      url: "quickstart/snat_qs/"
       
     - title: 操作指南
       content: 操作指南
-      url: "manual/nat_user_guide/"
+      url: "manual/mge_nat/create_nat/"
   
     - title: 最佳实践
       content: 操作指南
-      url: "best-practices/nat_and_vpc/"
+      url: "best-practices/multi_nat_access_internet/"
       
-    #- title: 常见问题
-     # content: 常见问题
-     # url: "faq/nat-faq"
+    - title: 常见问题
+      content: 常见问题
+      url: "faq/nat_faq"
 
 
 section3:
