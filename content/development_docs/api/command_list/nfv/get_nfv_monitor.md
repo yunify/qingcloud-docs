@@ -1,7 +1,9 @@
 ---
 title: "GetNFVMonitor"
-description: 
+description: 获取网络组件的监控数据
 draft: false
+weight: 21
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 监控
 ---
 
 
@@ -12,7 +14,7 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| resource | String | 监控数据的资源ID 。 | Yes |
+| resource | String | 监控数据的资源 ID | Yes |
 | zone | String | 区域 ID，注意要小写。 | Yes |
 | meters.n | String | 监控项类型，如 traffic、interface等 | Yes |
 | step | String | 数据间隔时间，有效值为：5m, 15m, 2h, 1d 。<br/>(m 表示分钟，h 表示小时，d 表示天)<br/>注解<br/>若请求最近15天以内的数据，数据间隔最小可以到5m；若请求15天以上的数据，数据间隔可选2h 或 1d | Yes |
