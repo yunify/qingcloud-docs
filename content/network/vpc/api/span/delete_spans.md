@@ -1,16 +1,14 @@
 ---
 title: "DeleteSpans"
-description: 
+description: 删除一个或多个SPAN
 keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
-weight:
+weight: 12
 draft: false
 ---
 
+删除一个或多个 SPAN。
 
-
-删除一个或多个SPAN
-
-删除SPAN的前提是没有资源依赖这个SPAN。请在删除SPAN之前，先删除所有SPAN成员。
+删除 SPAN 的前提是没有资源依赖这个 SPAN。请在删除 SPAN 之前，先删除所有 SPAN成 员。
 
 **Request Parameters**
 
@@ -19,7 +17,7 @@ draft: false
 | spans.n | String | SPAN ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

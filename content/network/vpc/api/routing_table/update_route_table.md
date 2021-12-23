@@ -1,14 +1,12 @@
 ---
 title: "UpdateRouteTable"
-description: 
+description: 使路由表的修改生效。
 keyword: QingCloud, 青云, 云计算, VPC, 路由表
-weight: 
+weight: 10
 draft: false
 ---
 
-
-
-使路由表的修改生效
+使路由表的修改生效。
 
 **Request Parameters**
 
@@ -17,7 +15,7 @@ draft: false
 | action | String | 请求动作，可选值：UpdateRouteTable | Yes |
 | routing_table | String | 路由表的ID | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

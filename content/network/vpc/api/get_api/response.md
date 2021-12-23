@@ -41,9 +41,9 @@ API 的返回结果为 JSON 结构，这是一个 `DescribeInstances` 的 API �
       "transition_status":"",
       "instance_name":"",
       "instance_type":"c1m1",
-      "create_time":"2013-08-28T14:26:03Z",
+      "create_time":"2021-08-28T14:26:03Z",
       "status":"running",
-      "status_time":"2013-08-28T14:26:03Z",
+      "status_time":"2021-08-28T14:26:03Z",
       "image":{
         "processor_type":"64bit",
         "platform":"linux",

@@ -1,14 +1,14 @@
 ---
 title: "RemoveSpanMembers"
-description: 
+description: 删除 SPAN 成员。
 keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
-weight:
+weight: 7
 draft: false
 ---
 
 
 
-给SPAN删除成员，成员可以是instance id或vxnet id。
+给 SPAN 删除成员，成员可以是 instance id 或 vxnet id。
 
 **Request Parameters**
 
@@ -18,7 +18,7 @@ draft: false
 | resources.n | String | SPAN成员，可以是instance id或vxnet id | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

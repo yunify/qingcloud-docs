@@ -1,12 +1,10 @@
 ---
 title: "DescribeVxnetInstances"
-description: 
+description: 获取私有网络中的云服务器。
 keyword: QingCloud, 青云, 云计算, VPC, 私有网络
-weight: 
+weight: 6
 draft: false
 ---
-
-
 
 获取私有网络中的云服务器。
 
@@ -25,7 +23,7 @@ draft: false
 | limit | Integer | 返回数据长度，默认为20，最大100 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

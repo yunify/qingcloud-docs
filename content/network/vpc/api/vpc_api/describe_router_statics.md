@@ -1,23 +1,21 @@
 ---
 title: "DescribeRouterStatics"
-description: 
-keyword: QingCloud, 青云, 云计算, VPC, 创建
-weight: 
+description: 获取 VPC 网络的规则。
+keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络,  VPC 网络规则
+weight: 24
 draft: false
 ---
 
+获取 VPC 网络的规则。
 
-
-获取路由器的规则。
-
-可根据路由器规则ID，路由器ID，规则类型等作为过滤条件，来获取路由器规则列表。 如果不指定任何过滤条件，默认返回你所拥有的所有路由器规则。
+可根据 VPC 网络规则ID， VPC 网络ID，规则类型等作为过滤条件，来获取 VPC 网络规则列表。 如果不指定任何过滤条件，默认返回你所拥有的所有 VPC 网络规则。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| router_statics.n | String | 路由器规则ID | No |
-| router | String | 路由器ID | No |
+| router_statics.n | String |  VPC 网络规则ID | No |
+| router | String |  VPC 网络ID | No |
 | vxnet | String | 私有网络ID | No |
 | static_type | String | 规则类型。支持的规则类型有：<br/>*   1：端口转发规则<br/>*   2：VPN 规则<br/>*   3：DHCP 选项<br/>*   4：二层 GRE 隧道<br/>*   5：过滤控制<br/>*   6：三层 GRE 隧道<br/>*   7：三层 IPsec 隧道<br/>*   8：私网DNS | No |
 | verbose | Integer | 是否返回冗长的信息，目前只支持verbose=0。 | No |
@@ -25,15 +23,15 @@ draft: false
 | limit | Integer | 返回数据长度，默认为20，最大100 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| router_static_set | Array | JSON 格式的路由器规则列表 |
-| total_count | Integer | 根据过滤条件得到的路由器规则总数 |
+| router_static_set | Array | JSON 格式的 VPC 网络规则列表 |
+| total_count | Integer | 根据过滤条件得到的 VPC 网络规则总数 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
 **Example**

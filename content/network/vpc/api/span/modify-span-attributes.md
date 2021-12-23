@@ -1,14 +1,12 @@
 ---
 title: "ModifySpanAttributes"
-description: 
+description: 修改SPAN属性。
 keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
-weight:
+weight: 5
 draft: false
 ---
 
-
-
-修改SPAN属性， 包括ip地址，流量类型
+修改 SPAN 属性， 包括ip地址，流量类型。
 
 **Request Parameters**
 
@@ -22,7 +20,7 @@ draft: false
 | tunnel_key | Integer | 数据封装使用的密钥， 默认0 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

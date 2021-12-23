@@ -1,29 +1,25 @@
 ---
 title: "PowerOffRouters"
-description: 
-keyword: QingCloud, 青云, 云计算, VPC, 创建
-weight: 
-draft: false
+description: 关闭一台或多台 VPC 网络。
+keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络
+weight: 8
+draft: true
 ---
 
+关闭一台或多台 VPC 网络。
 
+ VPC 网络只有在运行 active 状态才能被关闭，如果处于非运行状态，则返回错误信息。
 
-关闭一台或多台路由器。
-
-路由器只有在运行 active 状态才能被关闭，如果处于非运行状态，则返回错误信息。
-
-注解
-
-关闭路由器之后，路由器将不再收费。
+注解：关闭 VPC 网络之后， VPC 网络将不再收费。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| routers.n | String | 路由器ID | Yes |
+| routers.n | String |  VPC 网络ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

@@ -1,24 +1,22 @@
 ---
 title: "LeaveRouter"
-description: 
-keyword: QingCloud, 青云, 云计算, VPC, 创建
-weight: 
+description: 将一个或多个受管私有网络从一台 VPC 网络上断开。
+keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络
+weight: 11
 draft: false
 ---
 
-
-
-将一个或多个受管私有网络从一台路由器上断开。
+将一个或多个受管私有网络从一台 VPC 网络上断开。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| vxnets.n | String | 需要从路由器上断开的受管私有网络ID | Yes |
-| router | String | 受管私有网络需要断开的路由器ID | Yes |
+| vxnets.n | String | 需要从 VPC 网络上断开的受管私有网络ID | Yes |
+| router | String | 受管私有网络需要断开的 VPC 网络ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

@@ -1,14 +1,12 @@
 ---
 title: "ModifyRouteTableAttributes"
-description: 
+description: 修改一个路由表的配置。
 keyword: QingCloud, 青云, 云计算, VPC, 路由表
-weight: 
+weight: 3
 draft: false
 ---
 
-
-
-修改一个路由表的配置
+修改一个路由表的配置。
 
 **Request Parameters**
 
@@ -18,7 +16,7 @@ draft: false
 | routing_table | String | 路由表的ID | Yes |
 | routing_table_name | String | 路由表的名称 | No |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

@@ -1,31 +1,29 @@
 ---
 title: "JoinRouter"
-description: 
-keyword: QingCloud, 青云, 云计算, VPC, 创建
-weight: 
+description: 将一个受管私有网络连接到一台 VPC 网络。
+keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络
+weight: 10
 draft: false
 ---
 
+将一个受管私有网络连接到一台 VPC 网络。这样受管私有网络可以被 VPC 网络管理起来， 受管私有网络里的云服务器也将获得 DHCP 自动分配地址的能力。
 
-
-将一个受管私有网络连接到一台路由器。这样受管私有网络可以被路由器管理起来， 受管私有网络里的云服务器也将获得 DHCP 自动分配地址的能力。
-
-只有受管私有网络才能连接到路由器，一个受管私有网络可以且仅可以连接到一台路由器。 受管私有网络可以连接到状态为 active 和 poweroffed 的路由器。
+只有受管私有网络才能连接到 VPC 网络，一个受管私有网络可以且仅可以连接到一台 VPC 网络。 受管私有网络可以连接到状态为 active 和 poweroffed 的 VPC 网络。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| vxnet | String | 需要连接路由器的受管私有网络ID | Yes |
-| router | String | 受管私有网络需要连接的路由器ID | Yes |
-| ip_network | String | 受管私有网络的网段，目前支持的网段为 192.168.x.0/24 和 172.16.x.0/24，需要满足 [CIDR格式](http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)<br/>注解<br/>同一个路由器下管理的受管私有网络的网段不能重复。 | Yes |
-| features | Integer | 路由器需要开启的功能，默认为1，目前这个值只能填1，表示开启DHCP服务。 | No |
-| manager_ip | String | 路由器的管理IP | No |
+| vxnet | String | 需要连接 VPC 网络的受管私有网络ID | Yes |
+| router | String | 受管私有网络需要连接的 VPC 网络ID | Yes |
+| ip_network | String | 受管私有网络的网段，目前支持的网段为 192.168.x.0/24 和 172.16.x.0/24，需要满足 [CIDR格式](http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)<br/>注解<br/>同一个 VPC 网络下管理的受管私有网络的网段不能重复。 | Yes |
+| features | Integer |  VPC 网络需要开启的功能，默认为1，目前这个值只能填1，表示开启DHCP服务。 | No |
+| manager_ip | String |  VPC 网络的管理IP | No |
 | dyn_ip_start | String | DHCP服务分配开始IP | No |
 | dyn_ip_end | String | DHCP服务分配终止IP | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

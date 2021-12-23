@@ -1,18 +1,18 @@
 ---
 title: "CopyRouterStatics"
-description: 
-keyword: QingCloud, 青云, 云计算, VPC, 创建
-weight:
+description: 把源 VPC 网络的路由规则复制给目的 VPC 网络。
+keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络, 路由规则
+weight: 23
 draft: false
 ---
 
+把源 VPC 网络的路由规则复制给目的 VPC 网络。
 
-
-把源路由器的路由规则复制给目的路由器。 如果源路由器和目的路由器都属于网络2.0，且自身的网络地址不同，那么复制IPsec隧道规则时， 会修改规则里的目标网络地址，以适配目的路由器。
+ 如果源 VPC 网络和目的 VPC 网络都属于网络2.0，且自身的网络地址不同，那么复制IPsec隧道规则时， 会修改规则里的目标网络地址，以适配目的 VPC 网络。
 
 **Request Parameters**
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

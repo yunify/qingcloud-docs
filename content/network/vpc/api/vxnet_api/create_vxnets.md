@@ -1,8 +1,8 @@
 ---
 title: "CreateVxnets"
-description: 
-keyword: QingCloud, 青云, 云计算, VPC, 创建
-weight: 
+description: 创建新的私有网络。
+keyword: QingCloud, 青云, 云计算, VPC, 私有网络
+weight: 1
 draft: false
 ---
 
@@ -25,7 +25,7 @@ draft: false
 | zone | String | 区域 ID，注意要小写 | Yes |
 | target_user | String | 目标用户 ID ，可用于主账号为其子账号创建资源。 | No |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

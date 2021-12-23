@@ -1,12 +1,10 @@
 ---
 title: "DescribeVxnets"
-description: 
+description: 获取私有网络列表。
 keyword: QingCloud, 青云, 云计算, VPC, 私有网络
-weight: 
+weight: 2
 draft: false
 ---
-
-
 
 可根据私有网络ID作过滤条件，获取私有网络列表。 如果不指定任何过滤条件，默认返回你所拥有的所有私有网络。
 
@@ -23,7 +21,7 @@ draft: false
 | limit | Integer | 返回数据长度，默认为20，最大100 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

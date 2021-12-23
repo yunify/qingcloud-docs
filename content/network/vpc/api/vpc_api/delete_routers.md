@@ -1,29 +1,29 @@
 ---
 title: "DeleteRouters"
-description: 
-keyword: QingCloud, 青云, 云计算, VPC, 创建
-weight: 
+description: 删除一台或多台 VPC 网络。
+keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络
+weight: 15
 draft: false
 ---
 
 
 
-删除一台或多台路由器。
+删除一台或多台 VPC 网络。
 
-销毁路由器的前提，是此路由器已建立租用信息（租用信息是在创建路由器成功后， 几秒钟内系统自动建立的）。所以正在创建的路由器（状态为 pending ）， 以及刚刚创建成功但还没有建立租用信息的路由器，是不能被销毁的。
+销毁 VPC 网络的前提，是此 VPC 网络已建立租用信息（租用信息是在创建 VPC 网络成功后， 几秒钟内系统自动建立的）。所以正在创建的 VPC 网络（状态为 pending ）， 以及刚刚创建成功但还没有建立租用信息的 VPC 网络，是不能被销毁的。
 
 警告
 
-被删除的路由器会被立即系统回收，不具有可恢复的功能。
+被删除的 VPC 网络会被立即系统回收，不具有可恢复的功能。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| routers.n | String | 路由器ID | Yes |
+| routers.n | String |  VPC 网络ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

@@ -1,14 +1,12 @@
 ---
 title: "UpdateSpan"
-description: 
+description: SPAN 变更应用到所有云服务器。
 keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
-weight:
+weight: 10
 draft: false
 ---
 
-
-
-在修改SPAN属性后使用，应用变更到所有云服务器
+在修改 SPAN 属性后使用，应用变更到所有云服务器。
 
 **Request Parameters**
 
@@ -17,7 +15,7 @@ draft: false
 | span | String | SPAN ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

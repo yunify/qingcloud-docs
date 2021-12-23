@@ -1,29 +1,25 @@
 ---
 title: "PowerOnRouters"
-description: 
-keyword: QingCloud, 青云, 云计算, VPC, 创建
-weight: 
-draft: false
+description: 启动一台或多台 VPC 网络。
+keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络
+weight: 9
+draft: true
 ---
 
+启动一台或多台 VPC 网络。
 
+ VPC 网络只有在关闭 poweroffed 状态才能被启动，如果处于非关闭状态，则返回错误信息。
 
-启动一台或多台路由器。
-
-路由器只有在关闭 poweroffed 状态才能被启动，如果处于非关闭状态，则返回错误信息。
-
-注解
-
-启动路由器之后，路由器将开始收费。
+注解：启动 VPC 网络之后， VPC 网络将开始收费。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| routers.n | String | 路由器ID | Yes |
+| routers.n | String |  VPC 网络ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

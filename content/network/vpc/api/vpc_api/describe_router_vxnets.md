@@ -1,29 +1,27 @@
 ---
 title: "DescribeRouterVxnets"
-description: 
-keyword: QingCloud, 青云, 云计算, VPC, 创建
-weight: 
+description: 获取 VPC 网络管理的私有网络列表。
+keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络, 私有网络
+weight: 12
 draft: false
 ---
 
+获取 VPC 网络管理的私有网络列表。
 
-
-获取路由器管理的私有网络列表。
-
-可根据路由器ID，私有网络ID，等作为过滤条件，来获取私有网络列表。
+可根据 VPC 网络ID，私有网络ID，等作为过滤条件，来获取私有网络列表。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| router | String | 路由器ID, “*” 表示显示所有路由器 | Yes |
+| router | String |  VPC 网络ID, “*” 表示显示所有 VPC 网络 | Yes |
 | vxnet | String | 私有网络ID | No |
 | verbose | Integer | 是否返回冗长的信息，目前只支持verbose=0。 | No |
 | offset | Integer | 数据偏移量，默认为0 | No |
 | limit | Integer | 返回数据长度，默认为20，最大100 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 
@@ -38,14 +36,14 @@ draft: false
 
 | Name | Type | Description |
 | --- | --- | --- |
-| router_id | String | 路由器ID |
+| router_id | String |  VPC 网络ID |
 | vxnet_id | String | 私有网络ID |
 | manager_ip | String | 私有网络管理地址 |
 | ip_network | String | 私有网络 DHCP 地址范围 |
 | dyn_ip_start | String | 私有网络 DHCP 起始地址 |
 | dyn_ip_end | String | 私有网络 DHCP 终止地址 |
 | features | Integer | 私有网络开启的功能标记位<br/> “0” 表示不开启 DHCP 和内网 DNS 功能。<br/> “1” 表示只开启 DHCP 地址分配功能。<br/> “2” 表示只开启内网 DNS 功能。<br/> “3” 表示同时开启 DHCP 地址分配和内网 DNS 功能。 |
-| create_time | TimeStamp | 私有网络连接路由器的创建时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
+| create_time | TimeStamp | 私有网络连接 VPC 网络的创建时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
 
 **Example**
 

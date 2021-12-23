@@ -1,12 +1,10 @@
 ---
 title: "ModifyRouteAttributes"
-description: 
+description: 修改一条路由表规则。
 keyword: QingCloud, 青云, 云计算, VPC, 路由表
-weight: 
+weight: 24
 draft: false
 ---
-
-
 
 修改一条路由表规则。
 
@@ -21,7 +19,7 @@ draft: false
 | nexthop_type | String | 路由表规则的下一跳类型, 可选值：2,3,4 <br> 2 - 路由器，nexthop取值应该是路由器的ID <br> 3 - IP地址，nexthop取值应该是IP地址 <br> 4 - NAT网关的ID | No |
 | route_table_rule_name | String | 路由表规则名称  | No |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

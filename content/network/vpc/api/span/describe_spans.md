@@ -1,16 +1,14 @@
 ---
 title: "DescribeSpans"
-description: 
+description: 获取一个或多个 SPAN 的配置。
 keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
-weight:
+weight: 2
 draft: false
 ---
 
+获取一个或多个 SPAN 的配置。
 
-
-获取一个或多个SPAN的配置。
-
-可根据SPAN ID，名称， ip地址作过滤条件，来获取SPAN列表。 如果不指定任何过滤条件，默认返回你的所有SPAN。
+可根据 SPAN ID，名称， IP 地址作过滤条件，来获取 SPAN 列表。 如果不指定任何过滤条件，默认返回你的所有 SPAN。
 
 **Request Parameters**
 
@@ -24,7 +22,7 @@ draft: false
 | limit | Integer | 返回数据长度，默认为20，最大100 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

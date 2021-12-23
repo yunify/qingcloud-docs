@@ -1,14 +1,12 @@
 ---
 title: "DissociateRouteTable"
-description: 
+description: 将路由表和资源解绑。
 keyword: QingCloud, 青云, 云计算, VPC, 路由表
-weight: 
+weight: 6
 draft: false
 ---
 
-
-
-将路由表和资源解绑
+将路由表和资源解绑。
 
 **Request Parameters**
 
@@ -18,7 +16,7 @@ draft: false
 | resource | String | 资源ID, 可以是负载均衡器ID，也可以是私有网络ID | Yes |
 | routing_table | String | 路由表ID | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

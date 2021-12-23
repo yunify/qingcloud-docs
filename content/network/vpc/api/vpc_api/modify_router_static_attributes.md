@@ -1,20 +1,18 @@
 ---
 title: "ModifyRouterStaticAttributes"
-description: 
-keyword: QingCloud, 青云, 云计算, VPC, 创建
-weight: 
+description: 修改某条 VPC 网络规则。
+keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络
+weight: 27
 draft: false
 ---
 
-
-
-修改某条路由器规则。修改规则后，需要执行 [_UpdateRouters_](../update_routers/) 来使规则生效。
+修改某条 VPC 网络规则。修改规则后，需要执行 [_UpdateRouters_](../update_routers/) 来使规则生效。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| router_static | String | 需要修改的路由器规则 ID | Yes |
+| router_static | String | 需要修改的 VPC 网络规则 ID | Yes |
 | router_static_name | String | 规则名称 | No |
 | statics.n.val1 | String | 请参考 [_AddRouterStatics_](../add_router_statics/) 对应参数说明。 | No |
 | statics.n.val2 | String | 请参考 [_AddRouterStatics_](../add_router_statics/) 对应参数说明。 | No |
@@ -24,14 +22,14 @@ draft: false
 | statics.n.val6 | String | 请参考 [_AddRouterStatics_](../add_router_statics/) 对应参数说明。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| router_static | Array | 修改的路由器规则ID |
+| router_static | Array | 修改的 VPC 网络规则ID |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
 **Example**

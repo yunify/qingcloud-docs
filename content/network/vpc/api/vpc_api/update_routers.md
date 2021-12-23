@@ -1,27 +1,25 @@
 ---
 title: "UpdateRouters"
-description: 
-keyword: QingCloud, 青云, 云计算, VPC, 创建
-weight: 
+description: 更新一台或多台 VPC 网络的配置信息。
+keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络
+weight: 7
 draft: false
 ---
 
+更新一台或多台 VPC 网络的配置信息。当配置发生变更之后，需要执行本操作使配置生效。
 
+可以使 VPC 网络配置发生变更的操作为 [_AddRouterStatics_](../add_router_statics/) 和 [_DeleteRouterStatics_](../delete_router_statics/) 和 [_ModifyRouterAttributes_](../modify_router_attributes/)。
 
-更新一台或多台路由器的配置信息。当配置发生变更之后，需要执行本操作使配置生效。
-
-可以使路由器配置发生变更的操作为 [_AddRouterStatics_](../add_router_statics/) 和 [_DeleteRouterStatics_](../delete_router_statics/) 和 [_ModifyRouterAttributes_](../modify_router_attributes/)。
-
-只有在处于 active 状态的路由器才能支持此操作，如果处于非活跃状态，则返回错误信息。
+只有在处于 active 状态的 VPC 网络才能支持此操作，如果处于非活跃状态，则返回错误信息。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| routers.n | String | 路由器ID | Yes |
+| routers.n | String |  VPC 网络ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

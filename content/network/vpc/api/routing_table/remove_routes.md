@@ -1,14 +1,12 @@
 ---
 title: "RemoveRoutes"
-description: 
+description: 删除一条或者多条路由表规则。
 keyword: QingCloud, 青云, 云计算, VPC, 路由表
-weight: 
+weight:  25
 draft: false
 ---
 
-
-
-删除一条或者多条路由表规则
+删除一条或者多条路由表规则。
 
 **Request Parameters**
 
@@ -17,7 +15,7 @@ draft: false
 | action | String | 请求动作，可选值：RemoveRoutes | Yes |
 | routing_table_rules.n | String | 一个或者多个路由表规则的ID | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

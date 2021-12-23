@@ -1,8 +1,8 @@
 ---
 title: "LeaveVxnet"
-description: 
+description: 将云服务器从私有网络中断开。
 keyword: QingCloud, 青云, 云计算, VPC, 私有网络
-weight: 
+weight: 4
 draft: false
 ---
 
@@ -18,7 +18,7 @@ draft: false
 | instances.n | String | 要离开的云服务器 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

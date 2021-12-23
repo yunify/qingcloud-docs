@@ -1,18 +1,18 @@
 ---
 title: "JoinVxnet"
-description: 
+description: 将云服务器加入到私有网络。
 keyword: QingCloud, 青云, 云计算, VPC, 私有网络
-weight: 
+weight: 3
 draft: false
 ---
 
-
-
 将云服务器加入到私有网络。当需要云服务器加入私有网络时指定 IP 地址，只支持单台云服务器加入。
 
-警告
+> **说明**
+>
+> 一台云服务器最多只能加入一个受管网络。
 
-一台云服务器最多只能加入一个受管网络 ( 包括基础网络vxnet-0 )
+
 
 **Request Parameters**
 
@@ -22,7 +22,7 @@ draft: false
 | instances.n | String | 加入到网络的云服务器 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

@@ -1,14 +1,12 @@
 ---
 title: "CreateRouteTable"
-description: 
+description: 创建一个路由表。
 keyword: QingCloud, 青云, 云计算, VPC, 路由表
-weight: 
+weight: 1
 draft: false
 ---
 
-
-
-创建一个路由表
+创建一个路由表。
 
 **Request Parameters**
 
@@ -19,7 +17,7 @@ draft: false
 | routing_table_type | Integer | 路由表类型，可选值：0 | Yes|
 | rtable_rtype | Integer | 路由表对应的资源类型，可选值：1,2 <br> 1 - 负载均衡器 <br> 2 - 私有网络 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

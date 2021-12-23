@@ -1,23 +1,21 @@
 ---
 title: "DeleteRouterStatics"
-description: 
-keyword: QingCloud, 青云, 云计算, VPC, 创建
-weight: 
+description: 删除一条或多条 VPC 网络规则。
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络规则
+weight: 30
 draft: false
 ---
 
-
-
-删除一条或多条路由器规则。在删除路由器规则之后，你需要执行 [_UpdateRouters_](../update_routers/) 来使规则删除生效。
+删除一条或多条 VPC 网络规则。在删除 VPC 网络规则之后，你需要执行 [_UpdateRouters_](../update_routers/) 来使规则删除生效。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| router_statics.n | String | 路由器规则ID | Yes |
+| router_statics.n | String |  VPC 网络规则ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 
@@ -25,7 +23,7 @@ draft: false
 | --- | --- | --- |
 | action | String | 响应动作 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
-| router_statics | Array | 删掉的路由器规则ID列表 |
+| router_statics | Array | 删掉的 VPC 网络规则ID列表 |
 
 **Example**
 

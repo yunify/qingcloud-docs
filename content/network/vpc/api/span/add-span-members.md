@@ -1,8 +1,8 @@
 ---
 title: "AddSpanMembers"
-description: 
+description: 给SPAN添加成员。
 keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
-weight: 
+weight: 6
 draft: false
 ---
 
@@ -18,7 +18,7 @@ draft: false
 | resources.n | String | SPAN成员，可以是instance id或vxnet id | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

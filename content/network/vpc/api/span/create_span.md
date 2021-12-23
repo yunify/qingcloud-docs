@@ -1,14 +1,14 @@
 ---
 title: "CreateSpan"
-description: 
+description: 创建一个SPAN。
 keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
-weight:
+weight: 1
 draft: false
 ---
 
 
 
-创建一个SPAN.
+创建一个 SPAN。
 
 **Request Parameters**
 
@@ -21,7 +21,7 @@ draft: false
 | tunnel_key | Integer | 数据封装使用的密钥， 默认0 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

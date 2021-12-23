@@ -1,14 +1,12 @@
 ---
 title: "DeleteRouteTables"
-description: 
+description: 删除一个或者多个路由表。
 keyword: QingCloud, 青云, 云计算, VPC, 路由表
-weight: 
+weight: 15
 draft: false
 ---
 
-
-
-删除一个或者多个路由表
+删除一个或者多个路由表。
 
 **Request Parameters**
 
@@ -17,7 +15,7 @@ draft: false
 | action | String | 请求动作，可选值：DeleteRouteTables | Yes |
 | routing_tables.n | String | 一个或者多个路由表的ID | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

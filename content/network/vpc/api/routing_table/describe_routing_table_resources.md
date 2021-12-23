@@ -1,14 +1,12 @@
 ---
 title: "DescribeRoutingTableResources"
-description: 
+description: 获取路由表以及资源的对应关系。
 keyword: QingCloud, 青云, 云计算, VPC, 路由表
-weight: 
+weight: 7
 draft: false
 ---
 
-
-
-获取路由表以及资源的对应关系
+获取路由表以及资源的对应关系。
 
 **Request Parameters**
 
@@ -18,7 +16,7 @@ draft: false
 | rtables.n | String | 一个或多个路由表的ID | No |
 | resources.n | String | 一个或多个资源的ID，比如路由器ID，NAT网关的ID，负载均衡器的ID | No |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

@@ -1,61 +1,75 @@
 ---
 title: "API 概览"
 description: 本小节主要介绍 VPC 网络所提供的 API。 
-keyword: VPC, API 概览
+keyword: QingCloud, 青云, 云计算, VPC, API 概览
 draft: false
 weight: 06
 ---
 
 VPC 网络提供以下 API 接口供您使用。
 
-## 集群接口
+## VPC 网络接口
 
-|<span style="display:inline-block;width:240px">参数</span> |<span style="display:inline-block;width:320px">描述</span>|
-| :--- |  :--- | 
-| [DeployAppVersion](../cluster/deploy_app_version)    |  部署指定应用版本的集群。       |
-| [DescribeAppVersionAttachments](../cluster/describe_app_version_attachments)    |  获取应用版本的配置文件。       |
-| [StartClusters](../cluster/start_clusters)    |  启动集群。       |
-| [RestartClusterService](../cluster/restart_cluster_service)    |  重启集群。       |
-| [StopClusters](../cluster/stop_clusters)    |  关闭集群。       |
-| [CeaseClusters](../cluster/cease_clusters)    |  彻底删除集群。       |
-| [DeleteClusters](../cluster/delete_clusters)    |  删除集群。       |
-| [RecoverClusters](../cluster/recover_clusters)    |  从回收站恢复集群。       |
-| [DescribeAppVersions](../cluster/describe_app_versions)    |  获取应用版本信息。       |
-| [DescribeClusterDisplayTabs](../cluster/describe_cluster_display_tabs)    |  获取集群 Display Tab 信息。       |
-| [DescribeClusters](../cluster/describe_clusters)    |  获取集群信息。       |
-| [DescribeClusterNodes](../cluster/describe_cluster_nodes)    |  获取集群节点信息。       |
-| [DescribeClusterJobs](../cluster/describe_cluster_jobs)    |  获取集群操作日志。       |
-| [AddClusterNodes](../cluster/add_cluster_nodes)    |  新增集群节点。       |
-| [DeleteClusterNodes](../cluster/delete_cluster_nodes)    |  删除集群节点。       |
-| [ResizeCluster](../cluster/resize_cluster)    |  扩容集群规格。       |
-| [GetClusterMonitor](../cluster/get_cluster_monitor)    |  查看节点监控数据。       |
-| [UpdateClusterEnvironment](../cluster/update_cluster_env)    |  修改节点环境变量。       |
-| [DescribeClusterEnvironment](../cluster/describe_cluster_env)    |  获取集群节点环境变量。       |
-| [AssociateEipToClusterNode](../cluster/associate_eip_to_cluster_node)    |  为集群节点绑定公网 IP。       |
-| [DissociateEipFromClusterNode](../cluster/dissociate_eip_from_cluster_node)    |  绑定公网 IP。       |
-| [ChangeClusterVxnet](../cluster/change_cluster_vxnet)    |  切换集群私有 IP。       |
-| [ExchangeClusterReservedIps](../cluster/exchange_reserved_ips)    | 交换集群预留 IP。       |
-| [RunClusterCustomService](../cluster/custom_service)    |  自定义服务。       |
+| API                                                          | 说明                                    |
+| :----------------------------------------------------------- | :-------------------------------------- |
+| [CreateRouters](../vpc_api/create_routers/)                  | 创建 VPC 网络。                         |
+| [DescribeRouters](../vpc_api/describe_routers/)              | 获取 VPC 网络列表。                     |
+| [ModifyRouterAttributes](../vpc_api/modify_router_attributes/) | 修改 VPC 网络的配置。                   |
+| [UpdateRouters](../vpc_api/update_routers/)                  | 更新 VPC 网络配置后，使配置生效。       |
+| [JoinRouter](../vpc_api/join_router/)                        | 将私有网络加入 VPC 网络。               |
+| [LeaveRouter](../vpc_api/leave_router/)                      | 私有网络离开 VPC 网络。                 |
+| [DescribeRouterVxnets](../vpc_api/describe_router_vxnets/)   | 获取 VPC 网络下的私有网络。             |
+| [DeleteRouters](../vpc_api/delete_routers/)                  | 删除 VPC 网络。                         |
+| [AddRouterStatics](../vpc_api/add_router_statics/)           | 增加一项或多项 VPC 网络规则。           |
+| [AddRouterStaticEntries](../vpc_api/add_router_static_entries/) | 增加一条 VPC  网络规则条目。            |
+| [CopyRouterStatics](../vpc_api/copy_router_statics/)         | 把源 VPC  网络规则复制给目的 VPC 网络。 |
+| [DescribeRouterStatics](../vpc_api/describe_router_statics/) | 获取 VPC 网络的规则。                   |
+| [DescribeRouterStaticEntries](../vpc_api/describe_router_static_entries/) | 获取 VPC 网络规则条目。                 |
+| [ModifyRouterStaticAttributes](../vpc_api/modify_router_static_attributes/) | 修改 VPC 网络规则。                     |
+| [ModifyRouterStaticEntryAttributes](../vpc_api/modify_router_static_entry_attributes/) | 修改 VPC 网络路由规则条目属性。         |
+| [DeleteRouterStatics](../vpc_api/delete_router_statics/)     | 删除一项或多项 VPC 网络规则。           |
+| [DeleteRouterStaticEntries](../vpc_api/delete_router_static_entries/) | 删除一条或多条 VPC 网络规则条目。       |
 
-## 自定义服务接口
+## 私有网络接口
 
-|<span style="display:inline-block;width:240px">参数</span> |<span style="display:inline-block;width:320px">描述</span>|
-| :--- |  :--- | 
-| [restart_node](../cluster_service/restart_node)    |  重启某一类型节点。       |
-| [rebuildme](../cluster_service/rebuild_node)    |  重建某一类型节点。       |
-| [set_readonly](../cluster_service/assign_readonly_node)    |  开关主实例节点只读。       |
-| [assignmaster](../cluster_service/assign_master_node)    |  指定主节点。       |
-| [configuring_SSL](../cluster_service/config_ssl_node)    |  开启 SSL 传输加密。       |
-| [add_user](../cluster_service/add_user)    | 创建数据库用户帐号。       |
-| [add_ck_user](../cluster_service/add_ck_user)    |  创建分析实例用户帐号。       |
-| [del_user](../cluster_service/delete_user)    |  删除数据库用户帐号。       |
-| [del_ck_user](../cluster_service/delete_ck_user)    |  删除分析实例用户帐号。       |
-| [migrate_data](../cluster_service/enable_migration)    |  开启数据在线迁移服务。       |
-| [stop_migrate](../cluster_service/disable_migration)    |  停止数据在线迁移服务。       |
-| [start_standby](../cluster_service/enable_standby)    |  开启异地灾备服务。       |
-| [stop_standby](../cluster_service/disable_standby)    |  关闭异地灾备服务。       |
-| [promote_standby](../cluster_service/promote_standby)    | 提升灾备。         |
-| [start_log_server](../cluster_service/enable_log_server)    |  开启 Caddy Server 日志服务。       |
-| [stop_log_server](../cluster_service/disable_log_server)    |  关闭 Caddy Server 日志服务。       |
-| [start_zabbix](../cluster_service/enable_zabbix)    |  开启 Zabbix 监控服务。       |
-| [stop_zabbix](../cluster_service/disable_zabbix)    |  关闭 Zabbix 监控服务。        |
+| API                                                          | 说明                         |
+| :----------------------------------------------------------- | :--------------------------- |
+| [CreateVxnets](../vxnet_api/create_vxnets/)                  | 创建私有网络。               |
+| [DescribeVxnets](../vxnet_api/describe_vxnets/)              | 获取私有网络列表。           |
+| [JoinVxnet](../vxnet_api/join_vxnet/)                        | 将云服务器绑定到私有网络。   |
+| [LeaveVxnet](../vxnet_api/leave_vxnet/)                      | 将云服务器从私有网络中解绑。 |
+| [DescribeVxnetInstances](../vxnet_api/describe_vxnet_instances/) | 获取私有网络中的云服务器。   |
+| [ModifyVxnetAttributes](../vxnet_api/modify_vxnet_attributes/) | 修改私有网络的名称和描述。   |
+| [DeleteVxnets](../vxnet_api/delete_vxnets/)                  | 删除私有网络。               |
+
+
+
+## 路由表接口
+
+| API                                                          | 说明                               |
+| :----------------------------------------------------------- | :--------------------------------- |
+| [CreateRouteTable](../routing_table/create_route_table/)     | 创建路由表。                       |
+| [DescribeRouteTables](../routing_table/describe_route_tables/) | 获取路由表的配置信息。             |
+| [ModifyRouteTableAttributes](../routing_table/modify_route_table_attributes/) | 修改一个路由表的配置。             |
+| [AssociateRouteTable](../routing_table/associate_route_table/) | 将路由表绑定到某个资源。           |
+| [DissociateRouteTable](../routing_table/dissociate_route_table/) | 将路由表与资源解绑。               |
+| [DescribeRoutingTableResources](../routing_table/describe_routing_table_resources/) | 获取路由表以及资源的对应关系。     |
+| [UpdateRouteTable](../routing_table/update_route_table/)     | 使路由表的配置修改生效。           |
+| [DeleteRouteTables](../routing_table/delete_route_tables/)   | 删除路由表。                       |
+| [AddRoutes](../routing_table/add_routes/)                    | 创建一条路由表规则。               |
+| [DescribeRoutes](../routing_table/describe_routes/)          | 获取一个或者多个路由表的配置信息。 |
+| [ModifyRouteAttributes](../routing_table/modify_route_attributes/) | 修改一条路由表规则。               |
+| [RemoveRoutes](../routing_table/remove_routes/)              | 删除一条或者多条路由表规则。       |
+
+## 网络流量镜像接口
+
+| API                                                     | 说明                                                 |
+| :------------------------------------------------------ | :--------------------------------------------------- |
+| [CreateSpan](../span/create_span/)                      | 创建一个 SPAN。                                      |
+| [DescribeSpans](../span/describe_spans/)                | 获取一个或多个 SPAN 的配置。                         |
+| [ModifySpanAttributes](../span/modify-span-attributes/) | 修改 SPAN 属性。                                     |
+| [AddSpanMembers](../span/add-span-members/)             | 添加 SPAN 成员，成员可以是 instance id 或 vxnet id。 |
+| [RemoveSpanMembers](../span/remove-span-members/)       | 移除 SPAN 成员。                                     |
+| [UpdateSpan](../span/update-span/)                      | 修改 SPAN 属性后，应用变更到所有云服务器。           |
+| [DeleteSpans](../span/delete_spans/)                    | 删除一个或多个 SPAN。                                |
+

@@ -1,14 +1,12 @@
 ---
 title: "DescribeRouteTables"
-description: 
+description: 获取一个或者多个路由表的配置信息。
 keyword: QingCloud, 青云, 云计算, VPC, 路由表
-weight: 
+weight: 2
 draft: false
 ---
 
-
-
-获取一个或者多个路由表的配置信息
+获取一个或者多个路由表的配置信息。
 
 **Request Parameters**
 
@@ -20,7 +18,7 @@ draft: false
 | rtable_rtype | Integer | 路由表对应的资源类型，可选值：1,2 <br> 1 - 负载均衡器 <br> 2 - 私有网络 | No |
 | verbose | Integer | 是否返回冗长的信息，如果为1，则返回路由表相关的详细信息 | No |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

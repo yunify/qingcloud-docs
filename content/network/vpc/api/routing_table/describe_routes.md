@@ -1,14 +1,12 @@
 ---
 title: "DescribeRoutes"
-description: 
+description: 获取一个或者多个路由表的配置信息。
 keyword: QingCloud, 青云, 云计算, VPC, 路由表
-weight: 
+weight: 22
 draft: false
 ---
 
-
-
-获取一个或者多个路由表的配置信息
+获取一个或者多个路由表的配置信息。
 
 **Request Parameters**
 
@@ -20,7 +18,7 @@ draft: false
 | routing_table_rules.n | String | 一个或者多个路由表规则的ID | No |
 | routing_table | String | 路由表ID | No |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 
