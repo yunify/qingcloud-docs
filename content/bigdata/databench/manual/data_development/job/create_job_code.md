@@ -28,7 +28,7 @@ draft: false
    <img src="/bigdata/databench/_images/choose_model_jar.png" alt="选择 Jar 开发模式" style="zoom:50%;" />
 
 6. 选择代码开发模式，选择开发语言。
-7. 点击**下一步**，填写作业相关信息。
+7. 点击**下一步**，填写作业相关参数，详细说明请参见[创建作业参数说明](#创建作业参数说明)。
    
    <img src="/bigdata/databench/_images/job_basic.png" alt="填写信息" style="zoom:50%;" />
 

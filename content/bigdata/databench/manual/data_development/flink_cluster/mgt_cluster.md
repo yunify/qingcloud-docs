@@ -34,7 +34,8 @@ draft: false
 
 > **说明**
 > 
-> 仅支持修改`停止`状态的计算集群。
+> - 仅支持修改`停止`状态的计算集群。
+> - 不支持修改计算集群的版本。
 
 点击操作列的**修改**，进入修改计算集群页面，集群相关参数请参见[创建集群](bigdata/databench/manual/data_development/cluster/add_cluster/)。
 

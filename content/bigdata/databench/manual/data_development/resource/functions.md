@@ -2,12 +2,12 @@
 title: "函数包管理"
 description:  
 keywords: 
-weight: 30
+weight: 20
 collapsible: false
 draft: false
 ---
 
-本小节主要介绍函数包的相关操作。
+本小节主要介绍函数包的相关操作。函数包用于 SQL/Python/Scala 模式的实时作业开发中。
 
 ## 约束限制
 

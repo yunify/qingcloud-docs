@@ -4,7 +4,7 @@ description: 本小节主要介绍。
 keywords: 
 weight: 20
 collapsible: false
-draft: false
+draft: true
 ---
 
 用于读取页面点击流日志，根据渠道、版本、地区、新老用户四个维度 统计独立访客数(uv)、页面访问数(pv)、页面进入次数(sv)、用户跳出次数(uj)、持续访问时间(du) 并按照窗口写入到clickhouse供后续的分析处理展示。
