@@ -14,7 +14,7 @@ draft: false
 ## 前提条件
 
 - TiDB 实例状态为**运行中**。
-- 已在参数配置中启用**对象存储**，详情操作请参见[修改配置参数](../../cfginstance/paramconfig/)。
+- 已在参数配置中启用**对象存储**，详情操作请参见[修改配置参数](/database/tidb/manual/paramconfig/)。
 
 ## 操作步骤
 

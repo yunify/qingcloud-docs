@@ -13,7 +13,7 @@ draft: false
 
 - TiDB 实例状态为**运行中**。
 
-- 已在参数配置中启用**对象存储**。配置方法请参见[修改配置参数](../../cfginstance/paramconfig/)。
+- 已在参数配置中启用**对象存储**。配置方法请参见[修改配置参数](/database/tidb/manual/paramconfig/)。
 
 - 已创建备份，且备份状态为**成功**。备份创建请参见[创建备份](../create_backup/)。
 

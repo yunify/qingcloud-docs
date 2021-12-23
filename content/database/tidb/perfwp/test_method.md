@@ -14,7 +14,7 @@ draft: false
 | <span style="display:inline-block;width:120px">测试环境信息</span> | 说明                                                         |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | TiDB 实例配置                                                | 本次测试以[**基础型实例**](../../intro/instance_type/)为例。<br/>TiKV 节点数量：`3` |
-| 测试机器配置                                                 | 采用[计算型云服务器](compute/vm/intro/enterprise/#计算型-e2)，实例规格： `e2.8xlarge.r2`，类型：`计算型e2`，32核CPU，64G内存 ， 磁盘20G ，操作系统：`Ubuntu 18.04.5 LTS` |
+| 测试机器配置                                                 | 采用[计算型云服务器](/compute/vm/intro/enterprise/#计算型-e2)，实例规格： `e2.8xlarge.r2`，类型：`计算型e2`，32核CPU，64G内存 ， 磁盘20G ，操作系统：`Ubuntu 18.04.5 LTS` |
 
 
 
