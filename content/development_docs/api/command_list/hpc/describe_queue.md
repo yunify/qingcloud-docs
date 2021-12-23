@@ -17,12 +17,12 @@ weight: 5
 
 **Request Parameters**
 
-| Parameter name | Type | Description | Required |
+| Parameter name | Type | Description             | Required |
 | --- | --- | --- | --- |
-| cluster_id     | string | true        | 当前集群id              |
-| id             | string | true        | 队列专属id              |
-| timestamp      | string | true        | 进行当前api操作的时间戳 |
-| zone           | string | true        | 所属区域id              |
+| cluster_id     | string | 当前集群id              | true          |
+| id             | string | 队列专属id              | true          |
+| timestamp      | string | 进行当前api操作的时间戳 | true |
+| zone           | string | 所属区域id              | true          |
 
 [_公共参数_](../../../parameters/)
 
