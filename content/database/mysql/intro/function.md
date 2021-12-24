@@ -1,7 +1,7 @@
 ---
 title: "功能特性"
 description: 本小节主要介绍 MySQL Plus 产品特性。 
-keyword: mysql plus 产品特性, 功能简介 
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,产品特性,功能简介 
 weight: 15
 collapsible: false
 draft: false

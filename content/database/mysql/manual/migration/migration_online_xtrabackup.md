@@ -1,7 +1,7 @@
 ---
 title: "在线迁移: xtrabackup 方式"
 description: 本小节主要介绍如何通过 xtrabackup 方式在线迁移。 
-keyword: xtrabackup 方式在线迁移
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,xtrabackup 方式在线迁移
 weight: 20
 collapsible: false
 draft: false

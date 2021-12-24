@@ -1,7 +1,7 @@
 ---
 title: "步骤三：连接数据库"
 description: 本小节主要介绍如何快速连接 MySQL Plus 数据库。 
-keyword: mysql plus 访问,访问数据库
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,访问,访问数据库
 weight: 40
 collapsible: false
 draft: false
@@ -43,8 +43,8 @@ MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用
 ## 获取连接信息
 
 1. 在集群管理页面，点击目标集群 ID，进入集群详情页面。
-   
-2. 在**连接信息**模块，获取内网或外网地址。
+
+2. 访问数据库。
    
     > **注意**
     > 
@@ -93,4 +93,4 @@ mysql>
 
 ## 后续管理
 
-- [MySQL Plus 数据库连接不上怎么办？](../../faq/access_problems)
+- [MySQL Plus 数据库连接不上怎么办？](../../trouble/access_problems)

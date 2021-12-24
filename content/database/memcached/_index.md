@@ -1,7 +1,7 @@
 ---
 title: "键值数据库 Memcached"
 linkTitle: "Memcached"
-weight: 09
+weight: 14
 collapsible: true
 type: "product"
 
