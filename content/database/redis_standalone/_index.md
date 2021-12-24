@@ -1,7 +1,7 @@
 ---
 title: "键值数据库 Redis Standalone"
 linkTitle: "Redis Standalone"
-weight: 07
+weight: 10
 collapsible: true
 type: "product"
 

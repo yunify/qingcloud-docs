@@ -1,7 +1,7 @@
 ---
 title: "扩容节点"
 description: 本小节主要介绍如何扩容 MySQL Plus 集群。 
-keyword: mysql plus 扩容节点；
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,扩容节点；
 weight: 05
 collapsible: false
 draft: false
@@ -78,4 +78,4 @@ MySQL Plus 支持对运行中的数据库服务进行在线扩容，调整 CPU�
    
    自动扩容后，可在策略**历史记录**中查看历史扩容记录。
 
-更多自动伸缩操作说明，请参见**自动伸缩**。
+更多自动伸缩操作说明，请参见[自动伸缩](/operation/autoscaling/)。

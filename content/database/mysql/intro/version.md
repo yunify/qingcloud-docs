@@ -1,15 +1,25 @@
 ---
 title: "产品版本"
 description: 本小节主要介绍 MySQL Plus 主要版本。 
-keyword: mysql plus 版本介绍， 
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,版本介绍,
 weight: 25
 collapsible: false
 draft: false
 ---
 
-分布式数据库 MySQL Plus 基于 QingCloud AppCenter 功能特点，已切换至新形态版本，具备高可用、高性能数据库服务能力，提供更稳定更高性能 MySQL 数据库服务。
+关系型数据库 MySQL Plus 基于 AppCenter 功能特点，已切换至新形态版本，具备高可用、高性能数据库服务能力，提供更稳定更高性能 MySQL 数据库服务。
 
 ## 新形态版本
+
+### 1.1.0版本
+
+兼容 MySQL 8.0、5.7、5.6内核，其中**金融版**产品系列仅支持 MySQL 8.0、5.7内核。
+
+|<span style="display:inline-block;width:140px">版本</span> |<span style="display:inline-block;width:520px">版本说明</span>|
+|:----|:----|
+|   金融版-1.1.0    | <li>新增逻辑备份功能，支持基于数据库对象（表、存储过程等）的逻辑备份，并支持恢复集群到指定时间点。<li>支持在线查看分析实例日志。<li>新开放 `Block_encryption_mode`、`Binlog_transaction_dependency_tracking`、`Group_replication_transaction_size_limit`参数。<li>支持动态设定 `Max_connections` 参数值。<li> `Sql_mode` 参数新增 Null 值选项。  |
+|   高可用版-1.1.0   |  <li>新增逻辑备份功能，支持基于数据库对象（表、存储过程等）的逻辑备份，并支持恢复集群到指定时间点。<li>新开放 `Block_encryption_mode`参数。<li>支持动态设定 `Max_connections` 参数值。 <li> `Sql_mode` 参数新增 Null 值选项。     |
+|   基础版-1.1.0      |  <li>新增逻辑备份功能，支持基于数据库对象（表、存储过程等）的逻辑备份，并支持恢复集群到指定时间点。 <li>支持在线查看分析实例日志。<li>新开放 `Block_encryption_mode`参数。<li>支持动态设定 `Max_connections` 参数值。<li> `Sql_mode` 参数新增 Null 值选项。 |
 
 ### 1.0.9版本
 
@@ -17,8 +27,8 @@ draft: false
 
 |<span style="display:inline-block;width:140px">版本</span> |<span style="display:inline-block;width:520px">版本说明</span>|
 |:----|:----|
-|   金融版-1.0.9    | <li>新增**分析实例**节点，支持从主节点同步并分析数据；<li>新增**重启节点**功能，支持重启单个节点服务；<li>新增指定 Master 节点功能； <li>新增**服务地址**模块，支持一键查询节点日志服务地址。  |
-|   高可用版-1.0.9   |  <li>新增**分析实例**节点，支持从主节点同步并分析数据；<li>新增**重启节点**功能，支持重启单个节点服务； <li>新增**服务地址**模块，支持一键查询节点日志服务地址。   |
+|   金融版-1.0.9    | <li>新增**分析实例**节点，支持 HTAP 方案将 ClickHouse 作为 MySQL Plus 的一个分析实例，实现从主节点同步并分析数据；<li>新增**重启节点**功能，支持重启单个节点服务；<li>新增指定 Master 节点功能； <li>新增**服务地址**模块，支持一键查询节点日志服务地址。  |
+|   高可用版-1.0.9   |  <li>新增**分析实例**节点支持 HTAP 方案将 ClickHouse 作为 MySQL Plus 的一个分析实例，实现从主节点同步并分析数据；<li>新增**重启节点**功能，支持重启单个节点服务； <li>新增**服务地址**模块，支持一键查询节点日志服务地址。   |
 |   基础版-1.0.9      |   <li>新增**服务地址**模块，支持一键查询节点日志服务地址。   |
 
 ### 1.0.8版本

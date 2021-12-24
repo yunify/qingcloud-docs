@@ -1,7 +1,7 @@
 ---
 title: "集群概述"
 description: 本小节主要介绍 MySQL Plus 集群基本信息。 
-keyword: mysql plus 集群信息；
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,集群信息；
 weight: 05
 collapsible: false
 draft: false
