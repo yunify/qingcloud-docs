@@ -34,7 +34,7 @@ GET
 sso 访问地址可通过 cloud_info.sso_server 获取。
 
 ```
-https:``//account.qingcloud.com/sso/oauth2?response_type=code&client_id=app-8r2f7oyr
+https://account.qingcloud.com/sso/oauth2?response_type=code&client_id=app-8r2f7oyr
 ```
 
 **登录成功**
@@ -42,7 +42,7 @@ https:``//account.qingcloud.com/sso/oauth2?response_type=code&client_id=app-8r2f
 URL 会携带 code 参数
 
 ```
-http:``//console.qingcloud.com/app/app-8r2f7oyr/apply?code=FPNRDSJGKEZZPFIDIWTA
+http://console.qingcloud.com/app/app-8r2f7oyr/apply?code=FPNRDSJGKEZZPFIDIWTA
 ```
 
 <img src="/appcenter/dev-platform/_images/um_spi_success.png" style="zoom:50%;" />
