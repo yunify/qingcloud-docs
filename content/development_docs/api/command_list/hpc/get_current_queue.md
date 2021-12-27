@@ -17,17 +17,17 @@ weight: 35
 
 **Request Parameters**
 
-| Parameter name | Type | Description | Required |
+| Parameter name | Type | Description                                                  | Required |
 | --- | --- | --- | --- |
-| belong         | int    | false       | 队列的所属类型 0：shared；1：private； -1：all ；default：all |
-| cluster_id     | string | true        | 专属队列所属的集群id                                         |
-| limit          | string | false       | 集合限制                                                     |
-| offset         | int    | false       | 集合偏移量                                                   |
-| reverse        | int    | false       | 是否按照排序反转进行排序                                     |
-| search_word    | string | false       | 模糊查询 支持 可是：[resource_id，name]                      |
-| sort_key       | string | false       | 按排序键排序                                                 |
-| timestamp      | string | true        | 使用当前api时间戳                                            |
-| zone_id        | string | true        | 所属区域id                                                   |
+| belong         | int    | 队列的所属类型 0：shared；1：private； -1：all ；default：all | false |
+| cluster_id     | string | 专属队列所属的集群id                                         | true                                    |
+| limit          | string | 集合限制                                                     | false                                                |
+| offset         | int    | 集合偏移量                                                   | false                                              |
+| reverse        | int    | 是否按照排序反转进行排序                                     | false                                |
+| search_word    | string | 模糊查询 支持 可是：[resource_id，name]                      | false                 |
+| sort_key       | string | 按排序键排序                                                 | false                                            |
+| timestamp      | string | 使用当前api时间戳                                            | true                                       |
+| zone_id        | string | 所属区域id                                                   | true                                              |
 
 [_公共参数_](../../../parameters/)
 

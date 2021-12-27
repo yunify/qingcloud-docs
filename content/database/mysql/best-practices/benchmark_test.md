@@ -1,7 +1,7 @@
 ---
 title: "基准测试"
 description: 本小节主要介绍如何进行 MySQL Plus 集群基准测试。 
-keyword: mysql plus 基准测试；
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,基准测试；
 weight: 05
 collapsible: false
 draft: false

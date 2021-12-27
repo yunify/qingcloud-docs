@@ -7,14 +7,35 @@ collapsible: false
 draft: false
 
 product:
+    - time: 2021-12-21
+      title: MySQL Plus 1.1.0 版本正式上线
+      content: MySQL Plus 1.1.0 版本基于 MySQL 5.6、5.7、8.0 内核构建。<br>- 新增逻辑备份和备份回档功能；<br>- 新增分析实例日志查询和下载功能；<br>- 新放开 `Block_encryption_mode`、`Binlog_transaction_dependency_tracking`、`Group_replication_transaction_size_limit`参数；<br>- 支持动态设定 `Max_connections` 参数值；<br>- `Sql_mode` 参数新增 NULL 值选项；<br>- 修复集群自动化运维问题，加强集群高可用稳定性。
+      url: ../../intro/version/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 全部
+
+    - time: 2021-12-21
+      title: MySQL Plus 支持逻辑备份
+      content: MySQL Plus 1.1.0 版本全新支持基于数据库对象级的逻辑备份，并支持恢复集群到指定时间点。
+      url: ../../manual/backup_restoration/backup_info/
+      tags:
+      - 新功能
+      zone: 全部
+
     - time: 2021-07-12
       title: MySQL Plus 支持外网地址连接
       content: MySQL Plus 通过在管理控制台申请外网地址和设置 IP 白名单，支持使用外网地址连接数据库。
       url: ../../manual/mgt_connect/enable_external_network/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 全部
 
     - time: 2021-07-09
       title: MySQL Plus 1.0.9 版本正式上线
-      content: MySQL Plus 1.0.9版本基于 MySQL 5.6、5.7、8.0内核构建。<br>- 新增分析实例节点，支持从主节点同步并分析数据；<br>- 新增重启节点功能，支持重启单个节点服务；<br>- 新增指定 Master 节点功能；<br>- 新增服务地址模块，支持一键查询节点日志服务地址。
+      content: MySQL Plus 1.0.9版本基于 MySQL 5.6、5.7、8.0内核构建。<br>- 新增分析实例节点，支持 HTAP 方案将 ClickHouse 作为 MySQL Plus 的一个分析实例，实现从主节点同步并分析数据；<br>- 新增重启节点功能，支持重启单个节点服务；<br>- 新增指定 Master 节点功能；<br>- 新增服务地址模块，支持一键查询节点日志服务地址。
       url: ../../intro/version/
     
     - time: 2021-01-31
