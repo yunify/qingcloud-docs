@@ -1,10 +1,10 @@
 ---
 title: "Windows云服务器常见系统配置"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: Windows 云服务器的常见系统配置有哪些
 weight: 60
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，常见系统配置
 ---
 
 ## 服务器命名符合通用命名规则

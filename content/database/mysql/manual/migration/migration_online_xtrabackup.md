@@ -1,7 +1,7 @@
 ---
 title: "在线迁移: xtrabackup 方式"
 description: 本小节主要介绍如何通过 xtrabackup 方式在线迁移。 
-keywords: xtrabackup 方式在线迁移
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,xtrabackup 方式在线迁移
 weight: 20
 collapsible: false
 draft: false
@@ -25,7 +25,6 @@ draft: false
 - 目前支持在线迁移的 MySQL 版本为 5.6 、5.7 、8.0。若远端 MySQL 内核低于5.6版本，请参考[离线迁移](../data_transfer)。
 - 仅支持集群内核大版本一致之间在线迁移，不支持跨内核大版本间迁移。例如从 MySQL-5.6 迁移到 MySQL-5.7，不支持迁移到 MySQL-5.7.18-14 及以前的版本迁移。
 - 仅支持在线迁移在同一 VPC 下的集群，并且需要 MySQL 内核版本保持一致。
-- 在线迁移过程中，自动备份功能将失效，建议暂时关闭自动备份。
 - 在线迁移过程中，禁止向远端集群和本集群执行任何操作，包括 DDL 语句、控制台管理等。
 - 在线迁移过程中，仅在**主实例**节点运行。若存在**只读实例**节点，将迁移失败；**Proxy 实例**节点，不影响在线迁移。
 

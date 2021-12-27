@@ -1,23 +1,16 @@
 ---
-title: "Bucket CORS"
+title: "Get Bucket CORS"
 date: 2020-11-26T10:08:56+09:00
-description:
+ddescription: 本小节主要介绍 Get Bucket CORS 接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 collapsible: false
 draft: false
 weight: 3
 ---
 
-# GET Bucket CORS
+该接口用于获取 Bucket 的跨源资源共享策略，只有 Bucket 的所有者才能调用该 API。
 
-获取存储空间的跨源资源共享(cors)策略, cors 只有存储空间的所有者才能获取。
-
-设置 cors 请参见 [PUT Bucket CORS](../put_cors) 。
-
-删除 cors 请参见 [DELETE Bucket CORS](../delete_cors) 。
-
-发起 Object OPTIONS 请参见 [OPTIONS Object](../../../object/options/) 。
-
-## Request Syntax
+## 请求语法
 
 ```http
 GET /?cors HTTP/1.1
@@ -26,44 +19,48 @@ Date: <date>
 Authorization: <authorization-string>
 ```
 
-## Request Parameters
+## 请求参数
 
-没有请求参数
+无。
 
-## Request Headers
+## 请求头
 
-[参见公共请求头](../../../common_header/#请求头字段-request-header)
+此接口仅包含公共请求头。关于公共请求头的更多信息，请参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
 
-## Request Body
+## 请求消息体
 
-没有请求消息体
+无。
 
-## Status Code
+## 响应头
 
-正常会返回 200,  失败的返回码参考[错误码列表](../../../error_code/)
+此接口仅包含公共响应头。关于公共响应头的更多信息，请参见 [公共响应头](/storage/object-storage/api/common_header/#响应头字段-response-header)。
 
+## 响应体
 
-## Response Headers
+成功调用该 API 后，会返回一个 Json 消息体，其字段说明如下：
 
-[参见公共响应头](../../../common_header/#响应头字段-request-header)
-
-## Response Body
-
-正常情况下会有一个 Json 消息体; 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
-
-| Name | Type | Description |
+| 名称 | 类型 | 说明 |
 | --- | --- | --- |
-| cors_rules | Array | 跨源的规则配置，每组配置项中的元素解释如下。 |
-| allowed_origin | String | 用户所期望的跨源请求来源,可以用 ‘*’ 来进行通配。 |
-| allowed_methods | Array | 设置源所允许的 HTTP 方法。可指定以下值的组合: “GET”, “PUT”, “POST”, “DELETE”, “HEAD”, 或者使用 ‘*’ 来进行设置。 |
-| allowed_headers | Array | 设置源所允许的 HTTP header 。 可以用 ‘*’ 来进行通配。 |
-| expose_headers | Array | 设置客户能够从其应用程序（例如，从 JavaScript XMLHttpRequest 对象）进行访问的HTTP 响应头。 |
-| max_age_seconds | Integer | 设置在预检请求(Options)被资源、HTTP 方法和源识别之后，浏览器将为预检请求缓存响应的时间（以秒为单位）。 |
-| resp_vary | String | 设置决定是否返回Vary: Origin头。其值可以为 “enabled” (表示返回Vary: Origin头) 或 “disabled” (表示不返回), 忽略大小写. 默认值为 “disabled”. |
+| cors_rules | Array | CORS 规则配置，每组配置项中的元素解释如下。 |
+| allowed_origin | String | 用户设置的跨源请求来源，返回 `*` 表示通配。 |
+| allowed_methods | Array | 设置的源所允许的 HTTP 方法。返回 `*` 表示通配。 |
+| allowed_headers | Array | 设置的源所允许的 HTTP 头。返回 `*` 表示通配。  |
+| expose_headers | Array | 客户能够从其应用程序（例如，从 JavaScript XMLHttpRequest 对象）进行访问的HTTP 响应头。 |
+| max_age_seconds | Integer | 在预检请求(Options)被资源、HTTP 方法和源识别之后，浏览器将为预检请求缓存响应的时间（单位：秒）。 |
+| resp_vary | String | 是否返回 `Vary: Origin`头。返回值为：<br>- `enabled` 表示返回 `Vary: Origin` 头； <br>- `disabled` 表示不返回 `Vary: Origin` 头| 否 |
 
-## Example
 
-### Example Request
+## 错误码
+
+| 错误码 | 错误描述 | HTTP 状态码 |
+| --- | --- | --- |
+| OK | 成功获取 CORS | 200 |
+
+其他错误码可参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
+
+## 示例
+
+### 请求示例
 
 ```http
 GET /?cors HTTP/1.1
@@ -72,7 +69,7 @@ Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```
 
-### Example Response
+### 响应示例
 
 ```http
 HTTP/1.1 200 OK
@@ -120,3 +117,7 @@ x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
     ]
 }
 ```
+
+## SDK
+
+此接口所对应的各语言 SDK 可参考 [SDK 文档](/storage/object-storage/sdk/)。

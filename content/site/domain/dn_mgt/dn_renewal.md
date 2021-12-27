@@ -2,7 +2,7 @@
 title: "域名续费"
 description: test
 weight: 7
-keyword: 域名续费, 域名注册, QingCloud
+keyword: 域名续费, 域名注册, QingCloud, 域名
 ---
 
 
@@ -25,7 +25,7 @@ keyword: 域名续费, 域名注册, QingCloud
 
 3. 根据域名使用需求，选择合适的续费年限，点击**立即续费**。
 
-   ![](/Users/huyaobo/Desktop/hugo/qingcloud-docs/content/site/domain/_images/dn_renewal.png)
+   ![](../../_images/dn_renewal.png)
 
 
 

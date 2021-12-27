@@ -2,16 +2,17 @@
 title: "查看资产状态"
 linkTitle: "查看资产状态"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: 如何查看资产状态
 draft: false
 weight: 1
+keyword: 云服务器, QingCloud，安全，资产状态
 ---
 
-业务系统资产显示了用户当前所有的公网EIP信息，可以查看当前资产的防护状态，并且可以同步更新资产到云防火墙进行防护的操作。除此之外，还可以对资产设置进行自动保护。
+业务系统资产显示了用户当前的公网 IP 信息（目前仅支持北京三区公网IP），可以查看当前资产的防护状态，并且可以同步更新资产到云防火墙进行防护的操作。除此之外，还可以对资产设置进行自动保护。
 
 您可以在**云防火墙控制台**界面，单击左侧导航栏的**业务系统资产**，打开**业务系统资产**页面（如下图所示）。
 
-![](../_images/asset.png)
+<img src="../_images/asset.png" style="zoom:50%;" />
 
 ## 同步资产
 
@@ -19,7 +20,7 @@ weight: 1
 
 您可以在**业务系统资产**界面对您的资产进行同步，如下图所示，点击**同步资产**。
 
-![](../_images/asset_1.png)
+<img src="../_images/asset_1.png" style="zoom:60%;" />
 
 ## 自动保护资产
 
@@ -27,7 +28,7 @@ weight: 1
 
 在该区域，您可以选择自动对新增资产进行保护，如下图所示。
 
-![](../_images/asset_protect.png)
+<img src="../_images/asset_protect.png" style="zoom:60%;" />
 
 ![](../_images/version.png)
 

@@ -1,7 +1,7 @@
 ---
 title: "Elasticsearch 日志查看"
 description: 本小节主要介绍 Elasticsearch 集群日志查看。
-keywords: Elasticsearch 日志查看,
+keyword: Elasticsearch 日志查看,
 weight: 35
 collapsible: false
 draft: false
@@ -23,6 +23,5 @@ draft: false
 
 2. 任务执行成功后可通过浏览器访问`http://< Logstash 节点IP>/logs/`查看对应 ES 节点的日志。
 
-   > **说明**：
+   > **说明**
    > 如存在多个 Logstash 节点请在集群详情页面切换到参数配置界面，配置 Elasticsearch 节点的 `logstash_node_ip` 配置项。
-

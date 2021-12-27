@@ -1,8 +1,9 @@
 ---
 title: "Linux云服务器配置多网卡"
-description: test
+description: Linux配置多网卡
 draft: false
 weight: 10
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，多网卡
 ---
 
 ### 多网卡说明
@@ -111,7 +112,7 @@ weight: 10
 
 **5、测试网卡是否通**
 
-![](../ipwhiz/ipwhiz6.png)
+![](../../_images/ipwhiz/ipwhiz6.png)
 
 **6、配置路由策略永久生效**
 

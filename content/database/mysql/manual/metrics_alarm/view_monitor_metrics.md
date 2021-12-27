@@ -1,7 +1,7 @@
 ---
 title: "查看资源和服务监控"
 description: 本小节主要介绍 MySQL Plus 主要支持哪些监控指标。 
-keywords: mysql plus 监控指标
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,监控指标
 weight: 40
 collapsible: false
 draft: false
@@ -11,7 +11,7 @@ draft: false
 
 MySQL Plus 监控告警是通过 QingCloud 云监控告警服务为集群服务器的资源和服务提供监控管理。当集群监控项超过阈值时触发告警，并通过短信、邮件等形式发送告警通知。
 
-QingCLoud 提供的云监控 CloudSat，可对 MySQL Plus 的运行状态进行日常监控。您可以通过 CloudSat 管理控制台，一站式监控和告警 MySQL Plus 各类服务、资源指标。您可以在 MySQL Plus 集群详情页面，查看主实例监控和查看备实例监控。
+QingCloud 提供的云监控 CloudSat，可对 MySQL Plus 的运行状态进行日常监控。您可以通过 CloudSat 管理控制台，一站式监控和告警 MySQL Plus 各类服务、资源指标。您可以在 MySQL Plus 集群详情页面，查看主实例监控和查看备实例监控。
 
 > **注意**
 > 

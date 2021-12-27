@@ -1,11 +1,10 @@
 ---
-title: "入门级主机"
+title: "入门级云服务器"
 date: 2020-01-30T00:40:25+09:00
-description: Test description
+description: 入门级云服务器介绍
 draft: false
-enableToc: false
 weight: 10
-keyword: 云主机, QingCloud, 实例, 虚拟机
+keyword: 云计算, 青云, QingCloud, 入门级云服务器
 ---
 
 ## **基础型 s1** 
@@ -18,7 +17,7 @@ keyword: 云主机, QingCloud, 实例, 虚拟机
 - 网络性能与规格对应，规格越高网络转发性能强，最高可支持1.2Gbps内网带宽
 - 支持 VPC 私有网络和基础网络
 - 系统盘支持基础型
-- 数据盘支持基础型、容量型和企业级分布式 SAN
+- 数据盘支持基础型本地盘、容量型云盘、通用型 SSD 云盘和增强型 SSD 云盘。
 
 备注：
 

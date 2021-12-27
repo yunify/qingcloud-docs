@@ -1,9 +1,9 @@
 ---
 title: "文件系统扫描工具 fsck"
-description: Test description
+description: 如何使用文件系统扫描工具
 weight: 40
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，fsck
 ---
 
 文件系统扫描工具有 fsck、fsck.ext2、fsck.ext3、fsck.ext4、fsck.msdos、fsck.cramfs、fsck.ext4dev、fsck.vfat。需要根据不同的文件系统来调用不同的扫描工具，比如 ext3 的文件系统使用 fsck.ext3，ext4 文件系统使用 fsck.ext4 等。
@@ -12,25 +12,27 @@ enableToc: false
 
 下面简单介绍下：fsck.ext4
 
-语法：
+## 基本信息
+
+### 语法
 
 ```
 fsck.ext4[必要参数][选择参数][设备代号]
 ```
 
-执行权限：
+### 执行权限
 
 ```
 root
 ```
 
-功能：
+### 功能
 
 ```
 针对ext4型文件系统进行检测修复
 ```
 
-必要参数：
+### 必要参数
 
 ```
 -a 非互交模式，自动修复
@@ -52,7 +54,7 @@ root
 -y 关闭互动模式
 ```
 
-选择参数：
+### 选择参数
 
 ```
 -b<分区第一个磁区地址>  指定分区的第一个磁区的起始地址/Super Block
@@ -61,7 +63,9 @@ root
 -V 显示版本信息
 ```
 
-## 1.通过 lsblk 指令确认文件系统
+## 操作步骤
+
+### 通过 lsblk 指令确认文件系统
 
 ```
 [root@i-0026uq32 ~]# lsblk -f
@@ -73,7 +77,7 @@ vdc
 └─vdc1 ext4              0c111bfb-e99f-45fd-a400-5b948b5efd25 /mnt/vdc
 ```
 
-## 2.检查 ext4 类型的分区 /dev/vdc1
+### 检查 ext4 类型的分区 /dev/vdc1
 
 ```
 [root@i-0026uq32 ~]# umount /dev/vdc1
@@ -89,7 +93,7 @@ Memory used: 376k/0k (65k/312k), time:  0.23/ 0.02/ 0.00
 I/O read: 6MB, write: 1MB, rate: 26.20MB/s
 ```
 
-## 3.修复一般文件系统问题
+### 修复一般文件系统问题
 
 1. 备份数据
 

@@ -1,0 +1,33 @@
+---
+title: "什么是 OpenSearch"
+description: 本小节主要介绍 OpenSearch 简介。 
+keyword: OpenSearch 产品简介, 
+weight: 10
+collapsible: false
+draft: false
+---
+
+
+OpenSearch 是一种托管服务，支持在 AppCenter 管理并升级，为用户提供实时日志处理、全文搜索和数据分析等基础能力。QingCloud OpenSearch 提供与开源版本 Elasticsearch OSS 7.10 的广泛兼容性。
+
+- OpenSearch 是一个全面开源搜索和分析引擎，用例包括日志分析、实时应用程序监控、点击流分析等，更多说明请参考[原生 OpenSearch](https://opensearch.org/docs/)。
+
+- OpenSearch 提供集群管理功能。支持在线管理 OpenSearch 集群节点、监控集群和节点信息，以及管理节点配置参数。
+
+## 热-温-冷数据架构
+
+**热-温-冷**数据架构即基于时间创建索引（index）和数据分层存储结构，持续把温/冷数据从热数据节点迁移到相应的数据节点。**热-温-冷**数据架构常用于在大规模数据分析场景（例如时间数据分析场景），以提高数据的处理效率，以及降低海量数据存储成本。
+
+- Master 节点
+
+  负责处理集群管理和状态，提高了整体稳定性。Master 节点不保存数据，也不参与搜索和索引操作，不会被长 GC 干扰，负载可以保持在较低水平，能极大提高集群的稳定性。
+
+- 热数据节点
+  
+  负责处理集群中所有索引，承担最频繁的写入和查询操作。由于索引是 CPU 和 I/O 密集型操作，对计算和存储服务器的性能要求比较高，如超高性能主机及硬盘。
+
+- 温/冷数据节点
+  
+  负责处理只读索引，会接收少量的查询请求。温/冷数据节点可以配置一般性能的资源，通常配备通用本地磁盘。
+
+![hot-warm-cold](../../_images/hot_warm_cold_arch.png)

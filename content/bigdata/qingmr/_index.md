@@ -29,8 +29,12 @@ Section2:
       url: "quickstart/create_cluster/"
 
     - title: 操作指南
-      content: 学习上手如何管理 QingMR 集群，以及如何使用 QingMR 提供的相关服务等。
+      content: 学习上手管理 QingMR 集群。
       url: "manual/cluster_info/"
+
+    - title: 开发指南
+      content: 学习上手开发 QingMR 组件。
+      url: "developer_manual/basic_info/"
 
 section3:
   title: 开发者指南

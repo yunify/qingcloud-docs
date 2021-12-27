@@ -1,8 +1,8 @@
 ---
 title: "开启长连接"
-description: Test description
+description: 介绍如何开启监听长连接。
+keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 长连接
 draft: false
-enableToc: falshu
 ---
 
 ## HTTP 监听开启长连接

@@ -1,7 +1,7 @@
 ---
 title: "删除节点"
 description: 本小节主要介绍如何删除 MySQL Plus 节点实例。 
-keywords: mysql plus 节点删除；删除节点
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,节点删除；删除节点
 weight: 15
 collapsible: false
 draft: false
@@ -18,6 +18,7 @@ draft: false
 ## 约束限制
 
 - `基础版`集群不支持删除节点。
+- 不支持删除`主实例`节点。
 - 一次仅能删除一个节点。若需删除多个节点，需等到上个节点删除后才能删除下一个节点，否则将导致数据会丢失。
 
 ## 前提条件

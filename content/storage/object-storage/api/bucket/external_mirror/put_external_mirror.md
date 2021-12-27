@@ -1,29 +1,24 @@
 ---
-title: "Bucket External Mirror"
+title: "Put Bucket External Mirror"
 date: 2020-11-26T10:08:56+09:00
-description:
+description: 本小节主要介绍 Put Bucket External Mirror 接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 collapsible: false
 draft: false
 weight: 3
 ---
 
-# PUT Bucket External Mirror
+该接口用于设置 Bucket 的外部镜像源站（External Mirror Source Site），只有 Bucket 的所有者才能调用该 API。
 
-设置存储空间的外部镜像源站(external mirror source site)，external mirror source site 只有存储空间的所有者才能设置。
+对于设置了外部镜像源站的 Bucket，当请求的对象在 Bucket 中不存在时，QingStor 服务端会把对象名称（Object Key）拼接在外部镜像源站末尾后作为抓取的源链接，再从源站抓取，并将抓取到的结果写入至 QingStor 对象存储 Bucket 中。
 
-对于设置了外部镜像源站的 Bucket，当请求的对象在 Bucket 中不存在时，服务端把对象名称拼接在外部镜像源站后作为抓取的源链接， 然后自动从源站抓取（回源），并写入到 Bucket 当中。在回源过程中，请求这个对象的客户端，有可能会下载到源站文件，也有可能收到 重定向到源站相应路径的 302 请求。在回源完成后，客户端能够直接从 Bucket 中获取这个对象。
+从源站抓取数据，称之为回源。在回源的过程中，请求该对象的客户端，可能会下载到源站文件，也可能收到重定向到源站相应路径的 302 请求。在回源完成后，客户端就能够直接从 QingStor 对象存储的 Bucket 中获取该对象。
 
-> 注意:
->
-> 当同一对象已经被下载到 Bucket 之后，如果源站的相应文件内容发生变化时，系统并不会自动更新这个对象。
->
-> 因为 QingStor 在 Put object 时需要知道文件大小，所以需要源站在提供下载文件时能返回 Content-Length 头，否则将回源失败。
+**注意:**
+- 在 QingStor 对象存储完成回源后，源站的相应文件内容发生变化时，QingStor 对象存储并不会自动更新该对象。
+- QingStor 对象存储的 [Put Object](/storage/object-storage/api/object/basic_opt/put/) 接口需要输入文件大小，故，源站在提供下载文件时需返回 `Content-Length` 头，否则回源将失败。
 
-获取 external mirror source site 请参见 [GET Bucket External Mirror](../get_external_mirror) 。
-
-删除 external mirror source site 请参见 [DELETE Bucket External Mirror](../delete_external_mirror) 。
-
-## Request Syntax
+## 请求语法
 
 ```http
 PUT /?mirror HTTP/1.1
@@ -36,33 +31,44 @@ Authorization: <authorization-string>
 }
 ```
 
-## Request Parameters
+## 请求参数
 
-没有请求参数
+无。
 
-## Request Headers
+## 请求头
 
-参见[公共请求头](../../../common_header/#请求头字段-request-header)
+此接口仅包含公共请求头。关于公共请求头的更多信息，请参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
 
-## Request Body
+## 请求体
 
-Json 消息体
+调用该 API 需携带如 [请求语法](#请求语法) 中的 Json 消息体。该消息体各字段说明如下：
 
-| Name | Type | Description | Required |
+| 名称 | 类型 | 说明 | 是否必须 |
 | --- | --- | --- | --- |
-| source_site | String | 外部镜像回源的源站。源站形式为 `<protocol>://<host>[:port]/[path]` 。 protocol的值可为 “http” 或 “https”，默认为 “http”。port 默认为 protocol 对应的端口。path 可为空。 如果存储空间多次设置不同的源站，该存储空间的源站采用最后一次设置的值。 | Yes |
+| source_site | String | 外部镜像回源的源站。 | 是 |
 
-## Response Headers
+源站的填写格式为 `<protocol>://<host>[:port]/[path]`。各参数说明如下：
 
-参见[公共响应头](../../../common_header/#响应头字段-request-header)
+- `protocol` 的值为 `http` 或 `https`，默认值为 `http`。
+- `port` 默认为 `protocol` 对应的端口。
+- `path` 可为空。
+- 若同一 QingStor 对象存储的 Bucket 多次设置不同的源站，则该 Bucket 的源站采用最后一次设置的值。
 
-## Response Body
+## 响应头
 
-没有响应内容
+此接口仅包含公共响应头。关于公共响应头的更多信息，请参见 [公共响应头](/storage/object-storage/api/common_header/#响应头字段-response-header)。
 
-## Example
+## 错误码
 
-### Example Request
+| 错误码 | 错误描述 | HTTP 状态码 |
+| --- | --- | --- |
+| OK | 成功设置外部镜像 | 200 |
+
+其他错误码可参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
+
+## 示例
+
+### 请求示例
 
 ```http
 PUT /?mirror HTTP/1.1
@@ -74,7 +80,7 @@ Authorization: authorization string
 }
 ```
 
-### Example Response
+### 响应示例
 
 ```http
 HTTP/1.1 200 OK
@@ -84,3 +90,7 @@ Content-Length: 0
 Connection: close
 x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
 ```
+
+## SDK
+
+此接口所对应的各语言 SDK 可参考 [SDK 文档](/storage/object-storage/sdk/)。

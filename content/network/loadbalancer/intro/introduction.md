@@ -1,11 +1,9 @@
 ---
 title: "什么是负载均衡"
-date: 2020-01-30T00:38:25+09:00
-description: Test description
-weight: 30
+description: 青云负载均衡器产品介绍。
+keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 类型, 原理
+weight: 10
 draft: false
-enableToc: false
-keyword: 负载均衡器,
 ---
 
 ## 负载均衡器

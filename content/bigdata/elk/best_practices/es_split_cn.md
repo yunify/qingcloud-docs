@@ -1,7 +1,7 @@
 ---
 title: "Elasticsearch 获取中文分词"
 description: 本小节主要介绍 Elasticsearch 使用 IK Analysis 插件和自定义字典进行中文分词。
-keywords: Elasticsearch 中文分词,
+keyword: Elasticsearch 中文分词,
 weight: 15
 collapsible: false
 draft: false
@@ -13,7 +13,7 @@ draft: false
 
 1. 把自定义字典上传到可访问到的 HTTP 服务器上，本示例将通过如下命令上传到某个 Logstash 节点，用户也可以放在其他任意 HTTP 服务器，只要 Elasticsearch 节点可以访问到即可：
 
-   > **说明**：
+   > **说明**
    >
    > URL最后的 `/` 不能省略。
 
@@ -29,7 +29,7 @@ draft: false
 
 2. 在集群详情页面中切换到配置参数标签页，选择"Elasticsearch节点"进行参数配置，设置 `remote_ext_dict` 设置项为用户自定义字典的可访问 URL（如示例的 `http://$LS_IP/dicts/mydict.dic`）后保存, 然后在集群列表页面 **重启** 集群中的 Elasticsearch 节点。
 
-3. 执行如下命令测试中文分词功能：
+3. 执行如下命令测试中文分词功能。
 
    ```bash
    INDEX=chinese-news # 可根据实际情况调整

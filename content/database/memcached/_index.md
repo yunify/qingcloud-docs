@@ -1,7 +1,7 @@
 ---
 title: "键值数据库 Memcached"
 linkTitle: "Memcached"
-weight: 09
+weight: 14
 collapsible: true
 type: "product"
 
@@ -31,6 +31,10 @@ Section2:
     # - title: 最佳实践
     #  content: Memcached 的最佳实践
     #  url: "best-practices/data_transfer/"
+
+    - title: 常见问题
+      content: Memcached 常见问题
+      url: "faq/faq_list/"
 
 section3:
   title: 开发者指南

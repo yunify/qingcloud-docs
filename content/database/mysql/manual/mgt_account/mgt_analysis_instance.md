@@ -1,7 +1,7 @@
 ---
 title: "分析实例账号"
 description: 本小节主要介绍如何管理 MySQL Plus 分析实例账号。 
-keywords: mysql plus 分析实例账号
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,分析实例账号
 weight: 30
 collapsible: false
 draft: false
@@ -13,7 +13,6 @@ MySQL Plus 通过接入支持 MaterializeMySQL 引擎的 ClickHouse 数据库，
 为使用新增的分析实例节点，需单独创建分析实例账号，通过分析实例账号和密码访问 ClickHouse 数据库。
 
 本小节主要介绍如何创建和删除 MySQL Plus 分析实例账号。
-
 
 ## 前提条件
 

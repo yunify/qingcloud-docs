@@ -1,13 +1,14 @@
 ---
 title: "PUT Bucket ACL"
+description: 本小节主要介绍 PUT Bucket ACL 接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, PUT Bucket ACL, QingStor
 ---
 
+该接口用于设置或修改 Bucket 的访问控制列表 (ACL：Access Control List)。
 
-设置存储空间的访问控制列表 (Access Control List)，acl 是存储空间的子资源 (subresource)，只有存储空间的所有者才能设置。
+QingStor 对象存储定义 ACL 为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
 
-获取 ACL 请参见 [GET Bucket ACL](../get_acl) 。
-
-## Request Syntax
+## 请求语法
 
 ```http
 PUT /?acl HTTP/1.1
@@ -35,41 +36,42 @@ Authorization: <authorization-string>
 }
 ```
 
-## Request Parameters
+## 请求参数
 
-没有请求参数
+无。
 
-## Request Headers
+## 请求头
 
-参见[公共请求头](../../../common_header#请求头字段-request-header)
+此接口仅包含公共请求头。关于公共请求头的更多信息，请参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
 
-## Request Body
+## 请求体
 
-Json 消息体
+调用该 API 需携带如 [请求语法](#请求语法) 中的 Json 消息体。该消息体各字段说明如下：
 
-| Name | Type | Description |
+| 名称 | 类型 | 说明 |
 | --- | --- | --- |
-| acl | List | 支持设置 0 到多个被授权者 |
-| grantee | Dict | 支持 user, group 两种类型，当设置 user 类型时，需要给出 user id；当设置 group 类型时，目前只支持 QS_ALL_USERS，代表所有用户 |
-| permission | String | 支持三种权限为 READ, WRITE, FULL_CONTROL |
+| acl | List | 访问控制列表。 支持设置同时设置或修改多个被授权者|
+| grantee | Dict | 权限赋予的对象 |
+| type | String | 支持 `user` 与 `group` 两种类型 |
+| id | String | 用户 ID。当 `type` 设置为 `user` 时，该参数有效 |
+| name | String | 用户组名。当 `type` 设置为 `group` 时，该参数有效，且目前仅支持 `QS_ALL_USERS`，代表所有用户 |
+| permission | String | 操作权限。目前支持 `READ`，`WRITE` 与 `FULL_CONTROL` 三种权限|
 
+## 响应头
 
-## Status Code
+此接口仅包含公共响应头。关于公共响应头的更多信息，请参见 [公共响应头](/storage/object-storage/api/common_header/#响应头字段-response-header)。
 
-正常会返回 200,  失败的返回码参考[错误码列表](../../../error_code/)
+## 错误码
 
-## Response Headers
+| 错误码 | 错误描述 | HTTP 状态码 |
+| --- | --- | --- |
+| OK | 成功设置或修改 Bucket ACL | 200 |
 
-参见[公共响应头](../../../common_header#响应头字段-response-header)
+其他错误码可参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
 
-## Response Body
+## 示例
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
-
-
-## Example
-
-### Example Request
+### 请求示例
 
 ```http
 PUT /?acl HTTP/1.1
@@ -98,7 +100,7 @@ Authorization: authorization string
 }
 ```
 
-### Example Response
+### 响应示例
 
 ```http
 HTTP/1.1 200 OK
@@ -108,3 +110,7 @@ Content-Length: 0
 Connection: close
 x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
 ```
+
+## SDK
+
+此接口所对应的各语言 SDK 可参考 [SDK 文档](/storage/object-storage/sdk/)。

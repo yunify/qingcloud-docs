@@ -2,6 +2,7 @@
 title: "CLI安装"
 description: test
 draft: false
+keyword: CLI安装, QingCloud, 青云, CLI
 ---
 
 

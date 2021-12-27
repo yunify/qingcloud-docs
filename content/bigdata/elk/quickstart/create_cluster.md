@@ -1,7 +1,7 @@
 ---
 title: "创建 ELK 集群"
 description: 本小节主要介绍如何快速创建 ELK 集群。 
-keywords: ELK 实例, 部署 ELK
+keyword: ELK 实例, 部署 ELK
 weight: 10
 collapsible: false
 draft: false
@@ -14,7 +14,7 @@ draft: false
 ## 操作步骤
 
 1. 登录 QingCloud 管理控制台。
-2. 选择**产品与服务** > **大数服务** > **ELK 服务**，进入 ELK 集群管理页面。
+2. 选择**产品与服务** > **大数据服务** > **ELK 服务**，进入 ELK 集群管理页面。
 3. 点击**立即部署**，进入应用部署页面。
 4. 选择**区域**。
    根据就近原则，选择实例所在区域。

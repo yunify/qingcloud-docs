@@ -4,6 +4,7 @@ description: Test description
 draft: false
 weight: 6
 collapsible: false
+keyword: 秘钥签名, QingCloud, 青云, 签名方法, API
 ---
 
 这里介绍 API 请求中签名 ( signature ) 的生成方法。您可以根据实际情况选择使用 **API 密钥** 或 [IAM](../../../authorization/iam/) **身份** 来完成签名。

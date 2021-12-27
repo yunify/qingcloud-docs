@@ -1,25 +1,22 @@
 ---
 title: "Post Object"
-date: 2020-11-26T10:08:56+09:00
-collapsible: false
-draft: false
-weight: 3
+description: 本小节主要介绍 Post Object 接口相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
+若用户需通过 HTML 表单上传的方式向 Bucket 上传一个 Object，可调用该接口。
 
-通过 HTML 表单上传的方式向存储空间上传一个对象，此操作要求请求者对存储空间拥有可写权限。
+## 使用须知
 
-该方式开发难度较小，但是由于浏览器自身的限制，没有断点续传、上传进度等用户友好的功能。因此大文件或多个文件上传不建议通过这种方式实现。
+- 此操作要求请求者对 Bucket 拥有可写权限。
+- 该方式开发难度较小，但是由于浏览器自身的限制，没有断点续传、上传进度等用户友好的功能。因此当文件大于 20M 或多个文件上传时，不建议使用该接口。
+- 若指定的 Bucket 被设置为匿名用户可写，则请求中可不携带用户认证信息
+- 若指定的 Bucket 被设置为匿名用户可写，请求中仍然携带了用户认证信息，则 QingStor 对象存储仍然会对该用户进行认证，当 QingStor 对象存储认证该用户不拥有该 Bucket 的可写权限，该请求返回错误。
+- 若同时有多个上传请求写入同一个对象名称，则最后一个被 QingStor 对象存储处理的请求会覆盖之前上传的对象内容。
+- HTML 的表单设置如下：<br>`action` 为 `http://<bucket-name>.<zone-id>.qingstor.com`，其中 `zone-id` 可参考 [Zone](/storage/object-storage/intro/object-storage/#zone)<br> `method` 必须为 `POST` <br> `enctype` 必须为 `multipart/form-data` <br> Object key 在表单项中设置。
+- 考虑到不是所有网站都默认使用 UTF-8，若您的网站需要以 GBK 或 Big5 展示，我们支持在 `Form` 中声明 `charset` 字段来定义客户端上传的文件名所用编码。QingStor 对象存储服务端在接收到之后，会将其转换为 UTF-8 的格式来存储，以便兼容跨平台的客户端。但由于不是所有字符都能对应到 UTF-8 码表，转换过程仍有可能出现乱码，所以 QingStor 对象存储建议用户最好使用 UTF-8 来作为上传编码。
 
-> 如果存储空间被设置为对匿名用户可写，则请求不需要携带认证信息。然而如果携带了认证信息，但是认证用户不拥有该存储空间的可写权限，则请求该接口会返回权限错误。
-
-设置 HTML 的表单 `action` 为 `http://.pek3a.qingstor.com/` 上传的到对应的 Bucket，Object key 需要在表单项中设置。表单的 `method` 必须为 `POST`，`enctype` 必须为 `multipart/form-data`.
-
-如果多个上传请求同时写入同一个对象名称（object key），最后一个被处理的请求会覆盖之前上传的对象内容。
-
-> **考虑到不是所有网站都默认使用 UTF-8，如果你的网站需要以 GBK 或 Big5 展示，我们支持在 Form 中声明 charset 字段来定义客户端上传的文件名所用编码, 服务端在接收到之后会转换为 UTF-8 来存储，以便兼容跨平台的客户端。但由于不是所有字符都能对应到 UTF-8 码表，转换过程仍有可能出现乱码，所以我们建议最好使用 UTF-8 来作为上传编码。**
-
-## Request Syntax
+## 请求语法
 
 ```http
 POST / HTTP/1.1
@@ -28,47 +25,47 @@ Content-Type: multipart/form-data; boundary=XXXXXX
 Content-Length: length
 ```
 
-## Request Parameters
+## 请求参数
 
-没有请求参数
+无。
 
-## Request Headers
+## 请求消息头
 
-没有用户可以自定义的请求头
+此接口仅包含公共请求头。关于公共请求头的更多信息，请参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
 
-## Request Form Fields
+## 表单项字段
 
-> 如果要给对象附带支持的标准 HTTP 头或自定义元数据，参见[如何通过表单项创建对象元数据](../../metadata/#如何通过HTML表单创建对象元数据)
-
-| Field Name | Type | Description | Required |
+| 表单字段 | 类型 | 描述 | 是否必须 |
 | --- | --- | --- | --- |
-| access_key_id | String | Access Key ID。如果该 Bucket 没有公开写权限，必须指定 `access_key_id`。如果表单含有 `policy`，则必须设置 `access_key_id`。| No |
-| signature | String | 签名认证信息，用 secret key 对 base64 编码后的 `policy` 字符串进行 HMAC-SHA256 签名即可。 上传的 `signature` 使用 base64 编码。如果表单含有 `access_key_id`，则必须设置 `signature`。| No |
-| content-type | String | 指定上传的文件类型，如果用户上传的文件的类型和本项不一致，则返回错误。 | No |
-| charset | String | 指定上传的文件名编码，比如 `UTF-8`, `GBK` 等。必须与网页开头的 `<meta http-equiv="Content-Type" content="text/html;charset=***">` 一致。如果不指定，默认尝试用 UTF-8 对上传文件名进行解码。 | No |
-| key | String | 上传文件的 object key. `key` 可以普通字符串，也可以是一个模板。模板可以使用一些内置的变量，使用 `${builtin}` 来引用内置变量. 例如 `user/tom/${filename}`。关于内置变量，请参见 [Builtin Variables](#builtin-variables) . `key` 不可以使用 `/` 开头。| Yes |
-| policy | String | policy 必须包含表单项 `file` 前面的所有表单项，除 `access_key_id`，`policy` 和 `signature` 表单项外。 使用 UTF-8 编码，类型为 JSON object，key 为表单项的 name，value 为表单项的 value。 上传的 `policy` 需要对 JSON object 进行 base64 的编码，签名也是对 base64 编码后的字符串进行签名。由于 `policy` 一般由 web 服务端计算出来，用途在于防止在浏览器端未经允许篡改 `key` 等表单元素。如果有不方便进行签名的表单项，可以将他们放在 `file` 的后边。如果存储空间对匿名用户可写，则不需要设置 `policy`。 | No |
-| redirect | String | 请求结果重定向 URL。重定向跳转时，会在 URL 后面添加 query string，包含 `status`, `code`， `message`，`request_id` 四个参数. 例如，设置 `redirect` 为 http://.com/callback，请求成功后会以状态码 `302` 重定向到: <http://.com/callback?status=201&code=created&message=Object+created&request_id=XXXXXX> | No |
-| file | Binary | 待上传的文件，必须作为最后一项有效表单项（位于 file 后面的表单项会被丢弃，所以不能作为签名的部分）。 | Yes |
-| x-qs-storage-class | String | 指定该对象的存储级别，支持的存储级别为 "STANDARD" 和 "STANDARD_IA"，默认存储级别为"STANDARD"。存储级别错误将返回 400 INVALID_REQUEST | No |
+| access_key_id | String | Access Key ID。若该 Bucket 没有公开写权限，或含有 `policy`，则必须指定 `access_key_id`。| 否 |
+| signature | String | 签名认证信息。用 Secret Key 对 base64 编码后的 `policy` 字符串进行 HMAC-SHA256 签名即可。若表单含有 `access_key_id`，则必须设置该字段。| 否 |
+| content-type | String | 指定上传的文件类型，若用户上传的文件类型与本设置不一致，返回错误。 | 否 |
+| charset | String | 指定上传的文件名的编码方式。必须与网页开头的 `<meta http-equiv="Content-Type" content="text/html;charset=***">` 中 `charset` 的设置一致。若不指定，QingStor 对象存储默认使用 `UTF-8` 对上传的文件名进行解码。 | 否 |
+| key | String | 上传文件的 Object Key。有如下限制：<br> - 不可以使用 `/` 开头。<br> - 可以为普通字符串，也可以是一个模板。<br> - 模板可以使用一些内置的变量，例如 `user/tom/${filename}`。 | 是 |
+| policy | String | 设置上传文件的访问策略，由多个表单项组成。规则如下：<br> - 将 `file` 之前的，除 `access_key_id`，`policy` 和 `signature` 以外的所有表单项。以 `JSON Object` 的格式，UTF-8 编码后进行组装；<br> - 对以上内容进行 Base64 编码；<br> - 若指定 Bucket 对匿名用户可写，则无需设置该字段。<br> - 若有不方便签名的表单项，需将其放置在表单项 `file` 的之后。 | 否 |
+| redirect | String | 请求结果重定向 URL。重定向跳转时，会在该 URL 后面添加 Query String，包含 `status`，`code`，`message`，`request_id` 四个参数。 <br> 示例：设置 `redirect` 为 `http://.com/callback`，请求成功后会以状态码 `302` 重定向至: `http://.com/callback?status=201&code=created&message=Object+created&request_id=XXXXXX` | 否 |
+| file | Binary | 待上传的文件，必须作为最后一个有效表单项。位于该项后面的表单项将被丢弃，故，该项后面的表单项不能作为签名的部分。 | 是 |
+| x-qs-storage-class | String | 指定该对象的存储级别。默认值为 `STANDARD`，可选值为：<br> - `STANDARD` 表示标准存储。<br> - `STANDARD_IA` 表示低频存储 | 否 |
 
-## Status Code
+**备注：**
+- 若要给对象附带支持可修改的元数据，可在表单项里，添加相关字段。详细内容，可参见 [可修改的元数据](/storage/object-storage/api/metadata/#可修改的元数据)。
+- 表单项 `key`，若指定为模板，使用内置变量时，如 `user/tom/${filename}`，其中的 `${filename}` 参考 [内置变量说明](#内置变量)。
 
-该 API 为幂等操作. 上传成功返回 201; 假如有重定向则返回 302. 失败的返回码参考[错误码列表](../../error_code/)
+## 请求消息体
 
-## Response Body
+无。
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
+## 响应头
 
+此接口仅包含公共响应头。关于公共响应头的更多信息，请参见 [公共响应头](/storage/object-storage/api/common_header/#响应头字段-response-header)。
 
-## Response Headers
+## 错误码
 
-参见[公共响应头](../../common_header/#响应头字段-response-header)
+该 API 为幂等操作. 上传成功返回 201; 假如有重定向则返回 302. 失败的返回码参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
 
-## Example
+## 示例
 
-### Signature Example (python)
-
+**Signature 字段示例：**
 ```python
 import hmac
 import json
@@ -86,8 +83,7 @@ h.update(policy)
 signature = b64encode(h.digest()).strip()
 ```
 
-### Example HTML for form uploading
-
+**HTML 上传对象：**
 ```html
 <!DOCTYPE html>
 <html>
@@ -106,7 +102,7 @@ signature = b64encode(h.digest()).strip()
 </html>
 ```
 
-### Example Policy
+**Policy 字段示例：**
 
 未编码的 JSON 格式 policy 如下:
 
@@ -120,7 +116,7 @@ signature = b64encode(h.digest()).strip()
 eyJrZXkiOiAidXNlci90b20vJHtmaWxlbmFtZX0iLCAicmVkaXJlY3QiOiAiaHR0cDovLzxteWRvbWFpbj4uY29tL2NhbGxiYWNrIn0=
 ```
 
-### Example Request
+### 请求示例
 
 ```http
 POST / HTTP/1.1
@@ -161,7 +157,7 @@ Upload to QingStor
 --1234567890--
 ```
 
-### Example Response
+### 响应示例
 
 ```http
 HTTP/1.1 302 Found
@@ -174,8 +170,16 @@ x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
 Location: http://.com/callback?status=201&code=created&message=Object+created&request_id=aa08cf7a43f611e5886952542e6ce14b
 ```
 
-## Builtin Variables
+## SDK
 
-| Name | Description |
+此接口所对应的各语言 SDK 可参考 [SDK 文档](/storage/object-storage/sdk/)。
+
+
+
+
+
+## 内置变量
+
+| 名字 | 描述 |
 | --- | --- |
-| filename | 用户上传文件的文件名 (默认为空)。如果文件名包含目录，只保留最后一个 “\” 或 “/” 之后的文件名。 |
+| filename | 用户上传文件的文件名，默认为空。若该文件名中包含有目录，则仅需保留最后一个 `\` 或 `/` 之后的内容 |

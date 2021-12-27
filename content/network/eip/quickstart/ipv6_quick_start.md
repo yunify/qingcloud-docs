@@ -1,8 +1,7 @@
 ---
 title: "搭建 IPv6 网络并开通公网访问"
-linkTitle: "搭建 IPv6 网络并开通公网访问"
-date: 2021-05-26T10:08:56+09:00
-description: test
+description: 介绍如何搭建 IPv6 网络并开通公网访问。
+keyword: QingCloud, 青云, 云计算, 公网IP, IPv6 网络
 draft: false
 ---
 
@@ -82,7 +81,7 @@ IPv4 过渡到 IPv6 的方案，大体分为三类：双栈、隧道和转换。
 
 > **说明**：
 >
-> 在选择镜像时，镜像名称后带有**IPv6**标识即表示支持 IPv6 自动化配置。若从其他的镜像启动的云服务器， 则未针对 DHCPv6 进行配置， 该云服务器的网络接口无法自动获取/识别 IPv6 相关网络配置，需手动配置该云服务器，参考[开启云服务器 IPv6 自动化配置 ](/network/eip/manual/ipv6/ipv6_auto_config/)。
+> 在选择镜像时，镜像名称后带有**IPv6**标识即表示支持 IPv6 自动化配置。若从其他的镜像启动的云服务器， 则未针对 DHCPv6 进行配置， 该云服务器的网络接口无法自动获取/识别 IPv6 相关网络配置，需手动配置该云服务器，参考[开启云服务器 IPv6 自动化配置 ](../../manual/ipv6_auto_config/)。
 
 ![](../../_images/log-ipv6-instance.png)
 

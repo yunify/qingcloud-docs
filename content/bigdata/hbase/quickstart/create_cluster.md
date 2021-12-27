@@ -1,7 +1,7 @@
 ---
 title: "创建 HBase 集群"
 description: 本小节主要介绍如何快速创建 HBase 集群实例。 
-keywords: HBase 实例, 创建集群,创建实例
+keyword: HBase 实例, 创建集群,创建实例
 weight: 10
 collapsible: false
 draft: false
@@ -17,10 +17,11 @@ draft: false
 - 已在网络中创建至少一个 ZooKeeper 集群。
 - 已获取 HBase 集群操作权限。
 
+
 ## 操作步骤
 
 1. 登录 QingCloud 管理控制台。
-2. 选择**产品与服务** > **大数服务** > **HBase 服务**，进入 HBase 集群管理页面。
+2. 选择**产品与服务** > **大数据服务** > **HBase 服务**，进入 HBase 集群管理页面。
 3. 点击**立即部署**，进入应用部署页面。
 4. 选择**区域**。
    根据就近原则，选择实例所在区域。

@@ -1,7 +1,7 @@
 ---
 title: "Elasticsearch 热-温-冷数据架构"
 description: 本小节主要介绍 Elasticsearch  与 QingStor 对象存储集成。
-keywords: Elasticsearch 对象存储,QingStor
+keyword: Elasticsearch 对象存储,QingStor
 weight: 30
 collapsible: false
 draft: false
@@ -50,4 +50,3 @@ PUT /last-year/_settings
 下面的动态截屏展示了通过 Kibana 的 Dev Tools 进行温/冷数据迁移的过程：
 
 ![hot-warm-cold](../../images/hot-warm-cold.gif)
-

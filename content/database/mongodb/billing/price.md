@@ -1,8 +1,7 @@
 ---
 title: "计费说明"
-description: 本小节主要介绍 QingCloud MongoDB 计费说明。 
-keywords: mongodb 计费说明, 
-data: 2021-05-14T00:38:25+09:00
+description: 本小节主要介绍 MongoDB 计费说明。 
+keyword: mongodb 计费说明, 
 weight: 1
 collapsible: false
 draft: false

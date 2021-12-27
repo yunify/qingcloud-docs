@@ -2,23 +2,21 @@
 
 title: "远程登录提示“内部错误”"
 date: 2020-04-08T00:38:25+09:00
-description: Test description
+description: 远程登录提示内部错误
 weight: 20
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，远程登录
 ---
 
-#### 问题描述
+## 问题描述
 
 使用MSTSC方式登录Windows云服务器时，系统报错提示“内部错误”。
 
-#### 处理方法
+## 解决方法
 
 1. 在本地主机以管理员身份运行cmd。
 
-2. 执行
-
-   netsh winsock reset
+2. 执行`netsh winsock reset`命令。
 
    ![](../../../_images/win_cant_loggin.png)
 

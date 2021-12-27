@@ -1,6 +1,7 @@
 ---
 title: "基准测试"
-description: test
+description: 本小节主要介绍 什么是 RocketMQ 的基准测试。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,RocketMQ,rocketMQ,基准测试
 weight: 29
 draft: false
 ---
@@ -11,7 +12,7 @@ draft: false
 | :--------- | :------- | :------- |
 | CPU利用率  | `~ 90%`  | 4核心    |
 | 内存使用率 | `~ 50%`  | 总内存8G |
-| TPS        | `~ 2000` |          |
+| TPS        | `~ 2000` | -        |
 
 ## 测试环境
 

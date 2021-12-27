@@ -2,9 +2,10 @@
 title: "访问控制策略"
 linkTitle: "访问控制策略"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: 访问控制策略介绍
 draft: false
 weight: 2
+keyword: 云服务器, QingCloud，安全，访问控制策略
 ---
 
 访问控制策略包括互联网防火墙，可以创建**内访外控制策略**和**外访内控制策略**，来对流量访问控制进行管理，有效降低您资产被入侵的风险。
@@ -16,13 +17,11 @@ weight: 2
 3. 在**互联网防火墙**页面，单击**内访外**页签。
 4. 在**内访外**页签中，单击**新增策略**。
 
-![](../_images/add_in.png)
+   ![](../_images/add_in.png)
 
 5. 在**新增内访外控制策略**对话框中，参考[参数说明](/security/firewall/manual/cfw/#参数说明)配置规则参数，之后单击**新增**完成访问控制策略的创建。
 
-   ![内访外控制策略](../_images/in_to_out.png)
-
-
+   <img src="../_images/in_to_out.png" alt="内访外控制策略" style="zoom:50%;" />
 
 
 ## 创建外访内控制策略
@@ -32,7 +31,7 @@ weight: 2
 3. 在**互联网防火墙**页面，单击**外访内**页签。
 4. 在**外访内**页签中，单击**新增策略**。
 
-![外访内控制策略](../_images/out_to_in.png)
+   <img src="../_images/out_to_in.png" alt="外访内控制策略" style="zoom:50%;" />
 
 5. 配置说明配置规则参数，详情请参加[参数说明](/security/firewall/manual/cfw/#参数说明)。 		
 

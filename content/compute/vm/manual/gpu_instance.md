@@ -1,7 +1,8 @@
 ---
 title: "GPU 云服务器"
-description: test
+description: GPU 云服务器介绍
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，GPU云服务器
 ---
 
 为了满足用户对高性能计算、视频处理或图形渲染的需求，青云特推出GPU云服务器给有需求的用户使用，用户可以在青云控制台上进行GPU云服务器的创建和使用。
@@ -32,8 +33,6 @@ draft: false
 一、创建GPU云服务器
 
 创建GPU云服务器和创建普通云服务器的步骤是相同的，选择 GPU 云服务器，根据需要选择 GPU 的类型和数量，按照页面向导完善其他信息后即可创建 GPU 云服务器。
-
-![](../../_images/create_gpu_instance.png)
 
 GPU云服务器用户可以根据需要选择使用的操作系统，推荐使用Ubuntu Server 16.04.4 LTS 64bit。
 

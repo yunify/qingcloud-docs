@@ -1,22 +1,18 @@
 ---
-title: "Bucket Lifecycle"
+title: "Get Bucket Lifecycle"
 date: 2020-11-25T10:08:56+09:00
-description:
+description: 本小节主要介绍 Get Bucket Lifecycle 接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 collapsible: false
 draft: false
 weight: 2
 ---
 
-# GET Bucket Lifecycle
+该接口用于获取 Bucket 的生命周期（Lifecycle）设置。
 
-获取 Bucket Lifecycle 设置，lifecycle 是存储空间的子资源（subresource），
-只有存储空间所有者才能获取。
+QingStor 对象存储定义生命周期（Lifecycle）为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
 
-更新 Lifecycle 设置请参见 [PUT Bucket Lifecycle](../put_lifecycle)
-
-删除 Lifecycle 设置请参见 [DELETE Bucket Lifecycle](../delete_lifecycle)
-
-## Request Syntax
+## 请求语法
 
 ```http
 GET /?lifecycle HTTP/1.1
@@ -25,42 +21,48 @@ Date: <date>
 Authorization: <authorization-string>
 ```
 
-## Request Parameters
+## 请求参数
 
-没有请求参数
+无。
 
-## Request Headers
+## 请求头
 
-参见[公共请求头](../../../common_header/#请求头字段-request-header)
+此接口仅包含公共请求头。关于公共请求头的更多信息，请参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
 
-## Request Body
+## 请求体
 
-没有请求消息体
+无。
 
-## Status Code
+## 响应头
 
-正常会返回 200,  失败的返回码参考[错误码列表](../../../error_code/)
+此接口仅包含公共响应头。关于公共响应头的更多信息，请参见 [公共响应头](/storage/object-storage/api/common_header/#响应头字段-response-header)。
 
-## Response Headers
+## 响应体
 
-参见[公共响应头](../../../common_header/#响应头字段-response-heaader)
+成功调用该 API 后，会返回一个 Json 格式的 Response Body。该 Response Body 包括如下两个部分：
+- 前期设置的的生命周期规则，这部分可参考 [PUT Bucket Lifecycle](../put_lifecycle#request-body)。
+- 生命周期规则创建的时间以及状态，这部分为 GET Bucket Lifecycle 特有的 Response Body。详情如下：
 
-## Response Body
-
-正常情况下会有一个 Json 消息体; 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
-
-GET Bucket Lifecycle 的 Response Body 包括两部分:
-一部分与 PUT Bucket Lifecycle 相同, 参见 PUT Bucket Lifecycle [Request Body](../put_lifecycle#request-body),
-及 GET Bucket Lifecycle 特有的 Request Body, 如下表：
-
-| Name | Type | Description |
+| 名称 | 类型 | 说明 |
 | --- | --- | --- |
-| state | String | 可能返回的值为 “unchecked” 和 “ready”, 表示对规则创建之前的资源 (对象和分段上传) 应用此规则所处的状态, "ready" 表示已经应用完毕，“unchecked” 表示还未应用或正在应用。|
-| created | Integer | 规则创建时间，UNIX 时间戳，精确到秒。|
+| state | String | 用于标识该生命周期规则的执行状态。|
+| created | Integer | 用于标识该生命周期规则的创建时间。|
 
-## Example
+**说明**
+- `state` 字段返回值为 `unchecked` 与 `ready`。`unchecked` 表示该规则还未应用或正在应用；`ready` 表示该规则已经应用完毕。
+- `created` 字段格式为 UNIX 时间戳，精确到秒。
 
-### Example Request
+## 错误码
+
+| 错误码 | 错误描述 | HTTP 状态码 |
+| --- | --- | --- |
+| OK | 成功获取 Bucket 生命周期规则 | 200 |
+
+其他错误码可参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
+
+## 示例
+
+### 请求示例
 
 ```http
 GET /?lifecycle HTTP/1.1
@@ -69,7 +71,7 @@ Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```
 
-### Example Response
+### 响应示例
 
 ```http
 HTTP/1.1 200 OK
@@ -96,3 +98,7 @@ x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
     ]
 }
 ```
+
+## SDK
+
+此接口所对应的各语言 SDK 可参考 [SDK 文档](/storage/object-storage/sdk/)。

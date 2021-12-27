@@ -1,21 +1,17 @@
 ---
 title: "Cpp SDK 快速指南"
+description: 本小节主要介绍 Cpp SDK 快速指南相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
 
-在开始使用 SDK 之前，请确认您已经了解 [青云 QingStor 对象存储基本概念](https://docs.qingcloud.com/qingstor/api/common/overview.html) ，如 Zone，Service，Bucket，Object 等。
+在开始使用 SDK 之前，请确认您已经了解 [QingStor 对象存储基本概念](/storage/object-storage/intro/object-storage/#基本概念)，如 Zone，Service，Bucket，Object 等。
 
-## 准备工作
+使用 SDK 之前请先在 [管理控制台](https://console.qingcloud.com/access_keys/) 申请 access key 。
 
-## 快速开始
+## 配置文件
 
-使用 SDK 之前请先在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请 access key 。
-
-### 配置文件
-
-在使用 SDK 之前，我们需要创建一个本地的配置文件。也可以在初始化 SDK 时通过 QsConfig::LoadConfigFile() 方法来指定具体的配置文件路径。
-
-配置文件同时支持 `host` ，`port` 等参数的配置，只需要添加对应配置项即可，全部的可配置项如下:
+在使用 SDK 之前，我们需要创建一个本地的配置文件。也可以在初始化 SDK 时通过调用 `load_config_from_filepath()` 方法来指定具体的配置文件路径。配置文件内可配置项如下所示:
 
 ```yaml
     access_key_id: 'ACCESS_KEY_ID_EXAMPLE'
@@ -31,7 +27,7 @@ title: "Cpp SDK 快速指南"
 
 ### 初始化 SDK
 
-在使用 SDK 之前，需要先初始化全局资源，同时通过一些全局配置参数，指定 SDK 相关的设置:
+1. 在使用 SDK 之前，需要先初始化全局资源，同时通过一些全局配置参数，指定 SDK 相关的设置:
 
 ``` c
     // 由入参分别指定 SDK 输出日志的路径、日志级别、 SDK 的 init 过程和 shutdown 过程是否自动初始化和清理 curl 库的全局资源。
@@ -46,10 +42,9 @@ title: "Cpp SDK 快速指南"
     QingStor::InitializeSDK(sdkOptions);
 ```
 
-调用 SDK 接口前，需要先指定访问的 Bucket 和 Zone 信息，创建访问句柄。
-你有两种创建访问句柄的方式:
+2. 调用 SDK 接口前，需要先指定访问的 Bucket 和 Zone 信息，创建访问句柄。QingStor 对象存储提供两种创建访问句柄的方式:
 
-1.你可以通过指定配置文件地址，来创建访问句柄。
+ **方式一：** 通过指定配置文件地址，来创建访问句柄。
 
 ``` c
     QingStor::QsConfig qsConfig;
@@ -59,7 +54,7 @@ title: "Cpp SDK 快速指南"
     context->pQsBucket = new Bucket(qsConfig, "yourbucketname", "yourzone");
 ```
 
-2.你也可以通过指定 config 结构，设置具体 config 参数，来创建访问句柄。
+ **方式二：** 可以通过指定 config 结构，设置具体 config 参数，来创建访问句柄。
 
 ``` c
     QingStor::QsConfig qsConfig;
@@ -82,9 +77,6 @@ title: "Cpp SDK 快速指南"
 
 ### 获取账户下的 Bucket 列表
 
-之前我们创建了一个 Bucket ，接下来我们将会示范如何获取账户下所有
-Buckets。
-
 ``` c
     ListBucketsInput input;
     ListBucketsOutput output;
@@ -104,8 +96,6 @@ Buckets。
 ```
 
 ### 上传一个 Object
-
-接下来我们将会演示如何在 Bucket 中上传一个 Object：
 
 ``` c
     PutObjectInput input;
@@ -372,10 +362,7 @@ Buckets。
 
 ### 获取 Bucket 的访问控制列表
 
-QingStor 对象存储支持存储空间访问控制列表 (Bucket ACL),
-为存储空间级别的访问控制，用户可将存储空间的读、写、或读写权限开放给单个或多个
-QingCloud 用户。下面我们将会演示如何通过 API 接口来获取和设置 Bucket
-ACL。
+QingStor 对象存储支持 Bucket ACL，是 Bucket 级别的访问控制，用户可将 Bucket 的读、写、或读写权限开放给单个或多个青云 QingCloud 用户。下面我们将演示如何通过 API 接口来获取和设置 Bucket ACL。
 
 ``` c
     GetBucketACLInput input;
@@ -432,6 +419,4 @@ ACL。
 
 ### 更多操作
 
-所有的 API 调用接口均与上面的示例相似，您可以访问 [青云 QingStor 对象存储
-API 文档](https://docs.qingcloud.com/qingstor/api/index.html)
-来了解更多讯息。
+所有的 API 调用接口均与上面的示例相似，用户可以查看 [QingStor 对象存储API 文档](/storage/object-storage/api/) 来了解更多信息。

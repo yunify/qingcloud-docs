@@ -1,8 +1,7 @@
 ---
 title: "使用虚拟 IP "
-linkTitle: "虚拟 IP "
-date: 2020-02-28T10:08:56+09:00
-description:
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 虚拟 IP
+description: 介绍如何使用虚拟 IP 搭建高可用主备集群。
 draft: false
 weight: 50
 

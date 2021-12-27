@@ -1,32 +1,27 @@
 ---
 title: "Java SDK"
+description: 本小节主要介绍 Java SDK 快速指南相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
 
-QingStor Java SDK 已在 GitHub 开源，下文为简要使用文档。更多详细信息请参见 [GitHub 项目页面](https://github.com/yunify/qingstor-sdk-java)，
-和[Java SDK API 文档](https://qingstor.github.io/qingstor-sdk-java/)。Java SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，
-各个调用的均与具体的 [Qingstor Restful API](https://docs.qingcloud.com/qingstor/api/) 对应，
-返回码、请求头、错误码等规定请参照具体 API 文档的描述。
+QingStor 对象存储的 Java SDK 已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/yunify/qingstor-sdk-java) 和 [Java SDK API 文档](https://github.com/qingstor/qingstor-sdk-java/blob/master/README_zh-CN.md)。
 
-SDK 示例请参见 [SDK Example](https://github.com/qingstor/qingstor-sdk-java/blob/master/docs/examples_zh-CN.md) 
+Java SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，各接口调用的均与 QingStor 对象存储的 API 相对应。其返回码、请求头、错误码等规定请参照具体的 [Qingstor Restful API 文档](/storage/object-storage/api/)。
+
+SDK 示例请参见 [SDK Example](https://github.com/qingstor/qingstor-sdk-java/blob/master/docs/examples_zh-CN.md)。
+
+使用 SDK 之前请先在 [管理控制台](https://console.qingcloud.com/access_keys/) 申请 Access key。
 
 ## 安装
 
-可以下载源码:
+1. 可以直接访问 GitHub 的 [Release 页面](https://github.com/qingstor/qingstor-sdk-java/releases) 下载压缩包，也可以执行如下命令行下载源码:
 
 ```bash
 > git clone git@github.com:qingstor/qingstor-sdk-java.git
 ```
 
-也可以访问 GitHub 的 [release 页面](https://github.com/qingstor/qingstor-sdk-java/releases) 下载压缩包
-
-## 快速开始
-
-使用 SDK 之前请先在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请 access key 。
-
-### 安装
-
-在 gradle/maven 中将版本替换为你需要的版本, 推荐使用最新的版本.
+2. 在 gradle/maven 中将版本替换为您需要的版本，QingStor 对象存储推荐使用最新的版本。
 
 Gradle:
 
@@ -46,9 +41,9 @@ Maven:
 </dependency>
 ```
 
-### 初始化服务
+## 初始化服务
 
-发起请求前首先建立需要初始化服务:
+发起请求前需要初始化服务。以下代码初始化了一个 QingStor Service。
 
 ```java
 import com.qingstor.sdk.config.EnvContext;
@@ -58,9 +53,11 @@ EvnContext env = new EnvContext("ACCESS_KEY_ID", "SECRET_ACCESS_KEY");
 QingStor stor = new QingStor(env);
 ```
 
-上面代码初始化了一个 QingStor Service,
-其中用于创建 `stor` 对象的 `env` 承载了用户的认证信息及 SDK 配置,
-`stor` 对象用于操作 QingStor 对象存储服务，如调用 Service 级别的 API 或创建指定的 Bucket 对象来调用 Bucket 和 Object 级别的 API。
+**说明：**
+- 代码行中的 `env` 承载了用户的认证信息及 SDK 配置；
+- 代码行中的 `stor` 用于操作 QingStor 对象存储服务，如调用 Service 级别的 API 或创建指定的 Bucket 对象来调用 Bucket 和 Object 级别的 API。
+
+## 代码示例
 
 ### 获取账户下的 Bucket 列表
 
@@ -70,7 +67,7 @@ ListBucketsOutput listOutput = stor.listBuckets(null);
 
 ### 创建 Bucket
 
-初始化并创建 Bucket, 需要指定 Bucket 名称和所在 Zone:
+初始化并创建 Bucket，需要指定 Bucket 名称和所在 Zone:
 
 ```java
 // 您要在哪个 zone 创建/操作 bucket.
@@ -83,7 +80,6 @@ if (output.getStatueCode() == 201) {
 }
 ```
 
-`bucket` 对象绑定了指定 bucket，提供一系列针对该 bucket 的对象存储操作。
 
 ### 获取 Bucket 中存储的 Object 列表
 
@@ -94,7 +90,8 @@ List<KeyModel> objectKeys = listObjectsOutput.getKeys();
 
 ### 创建一个 Object
 
-例如一个文件:
+
+#### 上传一个文件
 
 ```java
 String objKey = "object_name";
@@ -108,6 +105,43 @@ input.setContentLength(f.length());
 Bucket.PutObjectOutput putObjectOutput = bucket.putObject(objKey, input);
 ```
 
+#### 上传一个流式文件
+
+流式上传前计算流的 MD5 值，详细内容如下：
+
+```java
+    private void put(String key, InputStream body) throws QSException {
+        Bucket.PutObjectInput input = new Bucket.PutObjectInput();
+        try {
+            MessageDigest md5 = MessageDigest.getInstance("MD5");
+            // 这里只起示例作用, 如果 body size 有可能非常大, 按一定 size 做拆分以分段
+            // 上传形式来分 part 计算 md5 上传才是比较经济的方式.
+            byte[] data = body.readAllBytes();
+            String contentMD5 = Base64.getEncoder().encodeToString(md5.digest(data));
+            input.setContentMD5(contentMD5);
+            // 此时 stream 已经被 consume 掉, 但对象存储 server side 也需要读取 body 内容,
+            //  所以在 setBodyInputStream 之前,  可以通过:
+            //  1. 流已经读取为 bytes array, 直接构造 ByteArrayInputStream 即可;
+            // body = new ByteArrayInputStream(data);
+            //  2. 如果流支持 markSupported(), 可以重设到流的开始.
+            //  下面是方式 2 的示例:
+            body.reset();
+            input.setBodyInputStream(body);
+        } catch (NoSuchAlgorithmException | IOException e) {
+            throw new QSException("");
+        }
+        Bucket.PutObjectOutput output = bucket.putObject(key, input);
+        System.out.println(output.getStatueCode());
+        if (output.getStatueCode() == 201) {
+            System.out.println(output.getETag());
+        } else {
+            System.out.println(output.getCode());
+            System.out.println(output.getMessage());
+        }
+        System.out.println(output.getRequestId());
+    }
+```
+
 ### 删除一个 Object
 
 ```java
@@ -115,9 +149,9 @@ Bucket.DeleteObjectOutput deleteObjectOutput = bucket.deleteObject("test_file");
 ```
 
 ### 本地时间和网络时间不同步
-如果用户本地时间与网络时间不同步会因签名原因造成请求失败。您还需要从服务端获取网络时间。
+如果用户本地时间与网络时间不同步会因签名原因造成请求失败。用户还需要从服务端获取网络时间。
 
-下面是一个关于**服务端**如何返回正确时间到客户端的示例。
+1. 获取服务端时间：
 
 ```java
 Calendar instance = Calendar.getInstance(TimeZone.getTimeZone("Asia/Beijing"));
@@ -125,7 +159,7 @@ String gmtTime = QSSignatureUtil.formatGmtDate(instance.getTime());
 return gmtTime;
 ```
 
-在您从服务端获取到正确时间后，您需要在调用 ``` reqHandler.sendAsync(); ``` 方法前将时间设置到 SDK 中。
+2. 将获取到的服务端时间设置到 SDK 中：
 
 ```java
 reqHandler.getBuilder().setHeader(QSConstant.HEADER_PARAM_KEY_DATE, gmtTime);

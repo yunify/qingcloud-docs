@@ -1,9 +1,8 @@
 ---
 title: "ChronusDB 使用示例"
 description: 本小节主要介绍 QingCloud ChronuDB 创建数据库、创建表、查询数据、删除表等。 
-keywords: chronusdb 创建数据库,创建表,删除表,查询表 
-data: 2021-05-14T00:38:25+09:00
-weight: 1
+keyword: chronusdb 创建数据库,创建表,删除表,查询表 
+weight: 10
 collapsible: false
 draft: false
 ---
@@ -216,6 +215,6 @@ $ echo 'DROP TABLE test.t_local' | curl 'http://default:ck123@139.198.190.141:81
 ### 删除数据库
 
 ```bash
-echo 'DROP DATABASE test' | curl 'http://default:ck123@139.198.190.141:8123/' --data-binary @-
+$ echo 'DROP DATABASE test' | curl 'http://default:ck123@139.198.190.141:8123/' --data-binary @-
 192.168.0.35	9090	0		0	0
 ```

@@ -1,13 +1,18 @@
 ---
 title: "GET Service"
+description: 本小节主要介绍 GET Service 相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
+该 API 用于获取请求者名下的所有 Bucket 列表。
 
-获取请求者名下的所有存储空间 (Bucket) 列表。 不支持匿名请求，请先注册青云账号并创建 Access Key 后才能调用此 API 。
+## 使用限制
 
-> 请求可以发向对象存储服务的 global endpoint (qingstor.com) 列出所有区域的 Bucket; 也可以发向某个区域的 zone endpoint (如 pek3.qingstor.com), 列出特定区域的 Bucket
+- 该 API 不支持匿名请求，请先注册青云账号并 [创建 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key) 后才能调用此 API。
+- 该请求可以用于查询 QingStor 对象存储的 Global Endpoint 下所有区域的 Bucket。Global Endpoint 为：`qingstor.com`。
+- 该请求也可以用于查询 QingStor 对象存储某个区域的 [Zone Endpoint](/storage/object-storage/intro/object-storage/#zone) (如 pek3.qingstor.com)，列出特定区域的 Bucket。
 
-## Request Syntax
+## 请求语法
 
 ```http
 GET / HTTP/1.1
@@ -16,49 +21,49 @@ Date: <date>
 Authorization: <authorization-string>
 ```
 
-## Request Parameters
+## 请求参数
 
-放在 URL 中的参数 :
+调用该接口时，用户可在 URL 中添加以下参数对响应内容做出限制。
 
-| Parameter name | Type | Description | Required |
+| 参数名 | 类型 | 说明 | 是否必须 |
 | --- | --- | --- | --- |
-| offset | Integer | 列取的游标, 默认 0。| No |
-| limit | Integer | 限定此次返回 bucket 的最大数量，默认值为 200。| No |
+| offset | Integer | 列取游标。默认值为 0，表示从头开始列取。 | 否 |
+| limit | Integer | 限定此次返回 Bucket 的最大数量，默认值为 200。 | 否 |
 
+## 请求消息头
 
-## Request Headers
+该 API 接口支持如下消息头：
 
-[参见公共请求头](../../common_header#请求头字段-request-header)
-
-| Header Name | Type | Description | Required |
+| 字段 | 类型 | 说明 | 是否必须 |
 | --- | --- | --- | --- |
-| Location | Enum | 限定存储空间的区域(zone)，目前支持 pek3a, sh1a | No |
+| Location | Enum | 限定 Bucket 所在的区域。目前支持：`pek3a`，`sh1a`。 | 否 |
 
-## Request Body
+除以上请求头以外，此接口还需要包含 Host、Date 等公共请求头。详细内容可参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
 
-没有请求消息体
+## 请求消息体
 
-## Status Code
+无。
 
-正常会返回 200,  失败的返回码参考[错误码列表](../../error_code/)
+## 响应头
 
+此接口仅包含公共响应头。关于公共响应头的更多信息，请参见 [公共响应头](/storage/object-storage/api/common_header/#响应头字段-response-header)。
 
-## Response Headers
+## 响应体
 
-[参见公共响应头](../../common_header#响应头字段-request-header)
+成功调用该 API 后，会返回一个 Json 消息体，其字段说明如下：
 
-## Response Body
+| 名称 | 类型 | 说明 | 
+| - | - | - | 
+| count | Int | Bucket 数量 |
+| buckets | List | Bucket 元信息列表 |
 
-正常情况下会有一个 Json 消息体; 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
+## 错误码
 
-| Name | Type | Description |
-| --- | --- | --- |
-| count | Int | 存储空间的数量 |
-| buckets | List | 存储空间元信息列表 |
+正常会返回 200，失败的返回码参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
 
-## Example
+## 示例
 
-### Example Request
+### 请求示例
 
 ```http
 GET / HTTP/1.1
@@ -67,7 +72,7 @@ Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```
 
-### Example Response
+### 响应示例
 
 ```http
 HTTP/1.1 200 OK
@@ -95,3 +100,7 @@ x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
   ]
 }
 ```
+
+## SDK
+
+此接口所对应的各语言 SDK 可参考 [SDK 文档](/storage/object-storage/sdk/)。

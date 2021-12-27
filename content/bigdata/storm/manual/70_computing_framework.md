@@ -1,13 +1,13 @@
 ---
 title: "流式计算框架对比分析"
 description: 本小节主要介绍流式计算框架对比分析。 
-keywords: Storm,流式计算框架对比分析
+keyword: Storm,流式计算框架对比分析
 weight: 70
 collapsible: false
 draft: false
 ---
 
-> 注意：
+> **注意：**
 >
 > Storm 支持 Storm Core 和 Storm Trident 两种编程模式。
 
@@ -42,7 +42,7 @@ Flink 和 Kafka Stream 目前在生产环境中比较少见，主要针对 Storm
 - 如果一个项目除了实时计算之外，还包括了离线批处理、交互式查询等业务功能，而且实时计算中，可能还会牵扯到高延迟批处理、交互式查询等功能，那么可以选择 Spark 生态，用 Spark Core 开发离线批处理，用 Spark SQL 开发交互式查询，用 Spark Streaming 开发实时计算，三者可以无缝整合，给系统提供非常高的可扩展性。
 - 吞吐量很大，海量数据场景。
 
-> 注意：
+> **注意：**
 >
 > 同时建议大数据场景下，使用混合架构可以更好的满足各种业务需求。
 

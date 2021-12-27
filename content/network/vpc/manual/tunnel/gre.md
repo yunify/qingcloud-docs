@@ -1,11 +1,9 @@
 ---
 title: "GRE 隧道"
-linkTitle: "GRE 隧道"
-date: 2020-02-28T10:08:56+09:00
-description:
+description: 介绍 GRE 隧道的使用操作。
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, GRE 隧道
 draft: false
 weight: 1
-
 ---
 
 

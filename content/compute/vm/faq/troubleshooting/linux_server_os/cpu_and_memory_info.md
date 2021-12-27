@@ -1,21 +1,23 @@
 ---
 title: "Linux云服务器查看CPU和内存信息"
 date: 2021-01-30T00:38:25+09:00
-description: Test description
+description: Linux云服务器查看CPU和内存信息
 weight: 40
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，CPU
 ---
 
-### **概述**
+## **概述**
 
 本文主要介绍在Linux系统的云服务器中，如何查看CPU和内存信息。
 
->说明：
+>**说明**
 >
 >总核心数 = 物理CPU颗数 * 每颗CPU上核心数
 >
 >总线程数（逻辑CPU数） = 物理CPU颗数 * 每颗CPU上核心数 * 每颗核心数上的线程  或者 总线程数（逻辑CPU数） = 总核心数 * 每颗核心数上的线程
+
+## 操作步骤
 
 通过如下命令，可以查看Linux系统的云服务器CPU和内存相关信息。
 

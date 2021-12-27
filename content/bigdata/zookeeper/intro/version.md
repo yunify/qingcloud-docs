@@ -1,7 +1,7 @@
 ---
 title: "系列和版本"
 description: 本小节主要介绍 ZooKeeper 主要系列和版本。 
-keywords: ZooKeeper 版本介绍,系列介绍 
+keyword: ZooKeeper 版本介绍,系列介绍 
 weight: 20
 collapsible: false
 draft: false

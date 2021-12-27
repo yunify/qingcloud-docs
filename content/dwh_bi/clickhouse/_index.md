@@ -33,7 +33,15 @@ section2:
 
     - title: 操作指南
       content: 学习上手如何创建、查看及应用 ClickHouse 等。
-      url: "manual/cluster_info/"
+      url: "manual/cluster_lifecycle/check_cluster/"
+
+    - title: 最佳实践
+      content: ClickHouse 最佳实践
+      url: "best-practices/benchmark_test/"
+
+    - title: API 参考
+      content: ClickHouse API 参考
+      url: "api/overview/"
 
 section3:
   title: 开发者指南
@@ -54,6 +62,7 @@ section4:
   children:
     - title: 了解
       content: 什么是 ClickHouse
+      vice_title: 了解的第一步
       children:
         - title: 产品简介
           url: "intro/introduction/"
@@ -70,6 +79,9 @@ section4:
 
         - title: 访问 ClickHouse
           url: "quickstart/access_clickhouse/"
+
+        - title: ClickHouse 集群信息
+          url: "manual/cluster_lifecycle/check_cluster/"
   
  
 ---

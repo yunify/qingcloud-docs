@@ -3,8 +3,7 @@ title: "捕获镜像"
 date: 2020-01-30T00:39:25+09:00
 description: Test description
 draft: false
-enableToc: false
-keyword: 镜像, QingCloud
+keyword: 云计算, 青云, QingCloud, 镜像，捕获镜像
 ---
 
 

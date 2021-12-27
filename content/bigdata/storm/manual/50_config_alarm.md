@@ -1,7 +1,7 @@
 ---
 title: "配置告警"
 description: 本小节主要介绍配置告警。 
-keywords: Storm,告警
+keyword: Storm,告警
 weight: 50
 collapsible: false
 draft: false
@@ -25,7 +25,7 @@ draft: false
 
 6. 在**通知列表**下拉列表中，选择通知发送联系人列表。
 
-   > 说明：
+   > **说明：**
    >
    > 若您需要新建通知列表，可点击**新列表**，配置新的联系人列表。
 
@@ -49,7 +49,7 @@ draft: false
 
 6. 选择待绑定的指标告警策略。
 
-   > 说明：
+   > **说明：**
    >
    > 若您没有创建指标告警策略，点击创建指标告警策略，创建新的指标告警策略，详细操作请参见[告警服务](https://docsv3.qingcloud.com/monitor_service/cloudsat/manual/alarm_service/)。
 

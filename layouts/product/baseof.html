@@ -34,6 +34,8 @@
 				<img class="is-40x40" src="/images/icons/users.svg">
 				<h1 class="title">{{ .title }}</h1>
 			</div>
+			<!--添加导出全部按钮-->
+			<a class="pdf-all-download-btn" onclick="download_all_pdf('{{ .linkTitle  }}')"><i class="fa fa-download"></i>PDF</a> 
 			<div class="row">
 			{{ range .children }}
 				<div class="col-sm-4">
@@ -50,6 +52,37 @@
 							<a href="{{ .url }}" class="card-link">了解更多 →</a>
 						</div>
 						<a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}','{{ .title }}');"><i class="fa fa-download"></i>PDF</a>
+					</div>
+				</div>
+			{{ end }}
+			</div>
+		</div>
+	</section>
+	{{ end }}
+	<!-- 视频专区-->
+	{{ with .Params.sectionVideo }}
+	<section class="section is-grey-background">
+		<div class="container  td-outer">
+			<div class="title-wrapper">
+				<img class="is-40x40" src="/images/icons/video.svg">
+				<h1 class="title">{{ .title }}</h1>
+			</div>
+			<!--添加导出全部按钮-->
+			<div class="row">
+			{{ range .children }}
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-body-product">
+							<h5 class="card-title">{{ .title }}</h5>
+							{{ if .content }}
+								<p class="card-text">{{ .content | markdownify }}</p>
+							{{ else if .content_child }}
+								{{ range .content_child }}
+									<p class="card-text">{{ . }}</p>
+								{{ end }}
+							{{ end }}
+							<a href="{{ .url }}" class="card-link">了解更多 →</a>
+						</div>
 					</div>
 				</div>
 			{{ end }}
@@ -121,9 +154,10 @@
 {{ end }}
 {{ with .Params.section1 }}
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" style="max-width: 800px;">
-			<div class="modal-content">
-				<video id="video" width="800" height="400" class="product-video" controls="controls" src="{{ .video }}"></video>
+        <div class="modal-dialog video-modal-dialog" style="max-width: 700px;">
+			<div class="modal-content video-modal-content bg-black">
+				<video id="video"width="500" height="700" class="product-video" controls="controls" src="{{ .video }}"></video>
+				<span class="video-close"></span>
 			</div>
 		</div>
 </div>
@@ -134,4 +168,14 @@
     {{ partial "footer.html" . }}
     {{ partialCached "scripts.html" . }}
   </body>
+
+  <script>
+	$(function () {
+
+		$(document).on('click', '.video-close',function () {
+			$('.modal').click()
+		});
+	})
+</script>
+
 </html>

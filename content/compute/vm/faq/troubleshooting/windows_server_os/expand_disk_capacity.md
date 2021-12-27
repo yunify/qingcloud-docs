@@ -1,8 +1,8 @@
 ---
 title: "扩容磁盘后，实际使用空间并未增加"
-description: Test description
+description: 扩容磁盘后，为什么实际使用空间没有增加
 weight: 5
-
+keyword: 云计算, 青云, QingCloud, 云服务器，扩容
 ---
 
 ## 问题背景
@@ -11,13 +11,13 @@ weight: 5
 
 ## 处理方案
 
-### 1.打开磁盘管理，请参考以下步骤。
+### 打开磁盘管理，请参考以下步骤。
 
-开始-运行-diskmgmt.msc打开磁盘管理器，如截图所示。
+**开始** > **运行-diskmgmt.msc打开磁盘管理器**，如截图所示。
 
 <img src="../../../_images/homer/disk_01.png" width="80%" height="60%">
 
-### 2.发现有未分配的磁盘容量，右键C盘-扩展卷，请参考以下的流程处理即可。
+### 发现有未分配的磁盘容量，右键C盘-扩展卷，请参考以下的流程处理即可。
 
 <img src="../../../_images/homer/disk_02.png" width="80%" height="60%">
 

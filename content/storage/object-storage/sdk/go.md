@@ -1,44 +1,43 @@
 ---
 title: "Go SDK"
 date: 2020-11-25T10:08:56+09:00
-description:
+description: 本小节主要介绍 Go SDK 快速指南相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 collapsible: false
 draft: false
 weight: 3
 ---
 
 
-QingStor Go SDK 已在 GitHub 开源，下文为简要使用文档。更多详细信息请参见 [GitHub 项目页面](https://github.com/qingstor/qingstor-sdk-go) ，和[Godoc](https://godoc.org/github.com/qingstor/qingstor-sdk-go)。
+QingStor 对象存储的 Go SDK 已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/qingstor/qingstor-sdk-go)  和 [Godoc](https://godoc.org/github.com/qingstor/qingstor-sdk-go)。
+
+使用 SDK 之前请先在 [管理控制台](https://console.qingcloud.com/access_keys/) 申请 Access key。
 
 ## 安装
 
-可以直接使用 `go get` 安装:
+可以直接访问 GitHub 的 [release 页面](https://github.com/qingstor/qingstor-sdk-go/releases) 下载压缩包进行安装，也可通过如下步骤进行安装：
+
+1. 执行如下命令行，使用 `go get` 安装:
 
 ```bash
 > go get -u github.com/qingstor/qingstor-sdk-go
 ```
 
-安装之后，可以查看命令行的文档
+2. 安装完成后，可执行如下命令行查看相关文档
 
 ```bash
 > godoc github.com/qingstor/qingstor-sdk-go
 ```
 
-也可以访问 GitHub 的 [release 页面](https://github.com/qingstor/qingstor-sdk-go/releases) 下载压缩包
+**备注：**
 
-> **要求使用 Go 1.5 或以上的 Go 版本，如果版本是 1.5 还需要设置 GO15VENDOREXPERIMENT=1**
+- 要求使用 Go 1.5 或以上的 Go 版本。
+- 若版本为 1.5 还需设置 `GO15VENDOREXPERIMENT=1`。
+- 从 Go SDK v3.0 版本起，Go SDK 也支持 go module 引入，可以在项目中的 `go.mod` 文件中引入指定版本的 SDK 即可。
 
-> 从 v3.0 版本起，Go SDK 也支持 go module 引入，可以在项目中的 `go.mod` 文件中引入指定版本的 SDK 即可。
+## 初始化服务
 
-## 快速开始
-
-使用 SDK 之前请先在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请 access key 。
-
-## 代码示例
-
-### 初始化服务
-
-发起请求前首先建立需要初始化服务:
+发起请求前需要初始化服务。以下代码初始化了一个 QingStor Service。
 
 ```go
 import (
@@ -51,8 +50,7 @@ configuration, _ := config.New("ACCESS_KEY_ID", "SECRET_ACCESS_KEY")
 qsService, _ := qs.Init(configuration)
 ```
 
-上面代码初始化了一个 QingStor Service
-
+## 代码示例
 ### 获取账户下的 Bucket 列表
 
 ```go

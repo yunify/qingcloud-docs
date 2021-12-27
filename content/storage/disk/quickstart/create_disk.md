@@ -1,16 +1,16 @@
 ---
 title: "步骤1：购买硬盘"
-description: Test description
+date: 2021-09-23T00:38:25+09:00
+description: 本小节主要介绍购买和创建云硬盘的相关操作。
 draft: false
-enableToc: false
 weight: 20
-keyword: 青云，硬盘
+keyword: 云计算, 青云, QingCloud, 云硬盘,购买硬盘,创建硬盘
 
 ---
 
 ##  操作场景
 
-您可以在购买云服务器时同时购买硬盘，也可单独购买硬盘。
+青云QingCloud 支持用户在购买云服务器的同时购买硬盘，也可单独购买硬盘。
 
 本章节旨在指导用户单独购买硬盘。
 
@@ -19,12 +19,10 @@ keyword: 青云，硬盘
 1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **存储服务** > **云硬盘**，进入**硬盘**页面。
-
-   <img src="../_images/disk_page.png" alt="硬盘" style="zoom:50%;" />
+   ![create_disk_1](/storage/disk/_images/create_disk_1.png)
 
 3. 单击**创建**，弹出**创建硬盘**窗口。
-
-   <img src="../_images/create_disk.png" alt="创建硬盘" style="zoom:50%;" />
+   ![create_disk_2](/storage/disk/_images/create_disk_2.png)
 
 4. 根据界面提示，配置硬盘基本信息。各项参数说明如下：
 
@@ -35,7 +33,7 @@ keyword: 青云，硬盘
   </tr>
    <tr>
     <td>计费模式</td>
-    <td>支持<b>预留合约</b>及<b>按需计费</b>，详情请参见<a href="/storage/disk/billing/price/">计费说明</a>。</td>
+    <td>支持<b>包年包月</b>及<b>按需计费</b>，详情请参见<a href="/storage/disk/billing/price/">计费说明</a>。</td>
   </tr>
    <tr>
     <td>区域及可用区</td>
@@ -60,7 +58,7 @@ keyword: 青云，硬盘
   </tr>
   <tr>
     <td>自动续约</td>
-    <td>若选择预留合约计费模式，则可设置是否开启自动续约以及续约时长。</td>
+    <td>若选择包年包月计费模式，则可设置是否开启自动续约以及续约时长。</td>
   </tr>
 	<tr>
     <td>硬盘名称</td>

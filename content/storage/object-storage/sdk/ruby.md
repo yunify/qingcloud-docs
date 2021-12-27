@@ -1,24 +1,29 @@
 ---
 title: "Ruby SDK"
 date: 2020-11-25T10:08:56+09:00
-description:
+description: 本小节主要介绍 Ruby SDK 快速指南相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 collapsible: false
 draft: false
 weight: 13
 ---
 
 
-QingStor Ruby SDK 已在 GitHub 开源，下文为简要使用文档。更多详细信息请参见 [https://github.com/qingstor/qingstor-sdk-ruby](https://github.com/qingstor/qingstor-sdk-ruby) 。
+QingStor 对象存储的 Ruby SDK 已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/qingstor/qingstor-sdk-ruby)。
+
+使用 SDK 之前请先在 [管理控制台](https://console.qingcloud.com/access_keys/) 申请 Access key。
 
 ## 安装
 
-直接 Ruby Gem 安装:
+QingStor 对象存储提供两个安装方式，用户可根据需求选用。
+
+**方式一：** 直接 Ruby Gem 安装:
 
 ```bash
 > gem install qingstor-sdk
 ```
 
-从源码安装:
+**方式二：** 从源码安装:
 
 ```bash
 > git clone git@github.com:qingstor/qingstor-sdk-ruby.git
@@ -27,13 +32,10 @@ QingStor Ruby SDK 已在 GitHub 开源，下文为简要使用文档。更多详
 > bundle exec rake install
 ```
 
-## 快速开始
 
-使用 SDK 之前请先在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请 access key 。
+## 初始化服务
 
-### 初始化服务
-
-发起请求前首先建立需要初始化服务:
+发起请求前需要初始化服务。以下代码初始化了一个 QingStor Service。
 
 ```ruby
 require 'qingstor/sdk'
@@ -42,7 +44,7 @@ config = QingStor::SDK::Config.init 'ACCESS_KEY_ID', 'SECRET_ACCESS_KEY'
 qs_service = QingStor::SDK::Service.new config
 ```
 
-上面代码初始化了一个 QingStor Service
+## 代码示例
 
 ### 获取账户下的 Bucket 列表
 

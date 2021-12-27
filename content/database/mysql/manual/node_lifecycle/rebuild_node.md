@@ -1,20 +1,21 @@
 ---
 title: "重建节点"
 description: 本小节主要介绍如重建启节点。 
-keywords: mysql plus 重建节点
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,重建节点
 weight: 25
 collapsible: false
 draft: false
 ---
 
 
-MySQL Plus 支持重建只读实例节点，更新只读节点中同步的数据。
+MySQL Plus 支持重建`只读实例`节点，更新只读节点中同步的数据。
 
 本小节主要介绍如何重建 MySQL Plus 数据库节点。
 
 ## 约束限制
 
 - `基础版`集群不支持重建节点。
+- 仅支持重建`只读实例`节点。
 
 ## 前提条件
 

@@ -2,7 +2,7 @@
 title: "创建信息模板"
 description: test
 weight: 4
-keyword: 创建信息模板, 域名注册, QingCloud
+keyword: 创建信息模板, 域名注册, QingCloud, 域名
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "查看资源和服务监控"
 description: 本小节主要介绍如何查看 QingMR 监控信息。 
-keywords: QingMR 监控告警
+keyword: QingMR 监控告警
 weight: 40
 collapsible: false
 draft: false
@@ -69,7 +69,7 @@ YARN、HDFS、Spark 和 Hive 提供了丰富的监控信息。如果需要通过
 
 > 说明
 >
-> Flink YARN Session WEB UI 展示的是此 Session 正在运行的 job 和 1 小时内的已完成 job，可以通过此 WEB UI 向 Flink YARN Session 提交 job。 `JobManager-Web-Interface` 为 JobManager 地址，详见 [创建 Flink YARN Session](../../database_userguide/qingmr_flink)。
+> Flink YARN Session WEB UI 展示的是此 Session 正在运行的 job 和 1 小时内的已完成 job，可以通过此 WEB UI 向 Flink YARN Session 提交 job。 `JobManager-Web-Interface` 为 JobManager 地址，详见 [创建 Flink YARN Session](../../../developer_manual/flink)。
 
 - http://< HDFS-MASTER-IP >:8082 (从 QingMR 2.5.0 开始支持)
 

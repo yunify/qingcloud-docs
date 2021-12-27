@@ -29,8 +29,8 @@ Section2:
       url: "quickstart/create_cluster/"
 
     - title: 操作指南
-      content: 学习上手如何管理 PolonDB 集群，以及如何使用 PolonDB 提供的相关服务等。
-      url: "manual/mofiy_parameter/"
+      content: 学习上手管理和使用 PolonDB 集群
+      url: "manual/cluster_lifecycle/cluster_info/"
 
     - title: 最佳实践
       content: PolonDB 的最佳实践
@@ -61,11 +61,17 @@ section4:
           url: "intro/introduction/"
 
     - title: 进阶
-      content: 学习如何管理、使用 PolonDB 集群
+      content: 学习如何创建、管理、使用 PolonDB 集群
       vice_title: 上手的第一步
       children: 
+        - title: 创建 PolonDB
+          url: "quickstart/create_cluster/"
+
+        - title: 访问 PolonDB
+          url: "quickstart/access_polondb/"
+        
         - title: 管理 PolonDB
-          url: "manual/general_operation/"
+          url: "manual/cluster_lifecycle/check_cluster/"
 
 
 ---

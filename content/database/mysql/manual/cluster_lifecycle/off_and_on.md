@@ -1,8 +1,8 @@
 ---
 title: "启停集群"
 description: 本小节主要介绍如何开启和关闭 MySQL Plus 集群。 
-keywords: mysql plus 开启；关闭
-weight: 15
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,开启；关闭
+weight: 20
 collapsible: false
 draft: false
 ---
@@ -69,4 +69,4 @@ draft: false
  
    <img src="../../../_images/timer_task_list.png" alt="查看定时任务" style="zoom:50%;" />
 
-更多定时器任务介绍，请参见**定时器**。
+更多定时器任务介绍，请参见[定时器](../../../../../operation/tools/manual/scheduler/)。

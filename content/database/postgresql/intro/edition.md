@@ -1,8 +1,8 @@
 ---
 title: "产品版本"
 description: 本小节主要介绍 PostgreSQL 版本规格。 
-keywords: PostgreSQL, QingCloud, 版本规格
-weight: 3
+keyword: PostgreSQL, QingCloud, 版本规格
+weight: 30
 collapsible: false
 draft: false
 ---
@@ -24,4 +24,4 @@ QingCloud PostgreSQL 根据QingCloud AppCenter 功能特点，定制`基础版`�
 |<span style="display:inline-block;width:140px">版本</span> |<span style="display:inline-block;width:300px">内核版本</span>|<span style="display:inline-block;width:240px">产品版本</span> |
 |:----|:----|:----|
 |基础版   |<li>PostgreSQL 9.6.3 ，PostGIS 2.3 <li>PostgreSQL 10.1 ，PostGIS 2.4   |<li>PG10-基础版-V1.1.0 <li> PG9.6-基础版-V1.1.0 | 
-|高可用版 |<li>PostgreSQL 9.6.3 ，PostGIS 2.3 <li>PostgreSQL 10.1 ，PostGIS 2.4  <li>PostgreSQL 11.1 ，PostGIS 2.5 |<li>PG11-高可用版-V1.0.6 <li>PG10-高可用版-V1.1.4<li> PG9.6-高可用版-V1.1.4 <li>PG10-高可用版-V1.1.1<li> PG9.6-高可用版-V1.1.1 |
+|高可用版 |<li>PostgreSQL 9.6.3 ，PostGIS 2.3 <li>PostgreSQL 10.1 ，PostGIS 2.4  <li>PostgreSQL 11.1 ，PostGIS 2.5 |<li>PG11-高可用版-V1.0.7 <li>PG10-高可用版-V1.1.5<li> PG9.6-高可用版-V1.1.5 <li>PG11-高可用版-V1.0.6 <li>PG10-高可用版-V1.1.4<li> PG9.6-高可用版-V1.1.4 <li>PG10-高可用版-V1.1.1<li> PG9.6-高可用版-V1.1.1 |

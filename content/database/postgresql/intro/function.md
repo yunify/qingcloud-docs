@@ -1,8 +1,8 @@
 ---
 title: "功能特性"
 description: 本小节主要介绍 PostgreSQL 功能特性。 
-keywords: PostgreSQL, QingCloud, 功能特性
-weight: 2
+keyword: PostgreSQL, QingCloud, 功能特性
+weight: 20
 collapsible: false
 draft: false
 ---

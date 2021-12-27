@@ -1,6 +1,6 @@
 ---
-title: "Kafka服务"
-linkTitle: "Kafka服务"
+title: "Kafka 服务"
+linkTitle: "Kafka 服务"
 weight: 1
 collapsible: true
 type: "product"
@@ -12,6 +12,10 @@ section1:
 Section2:
   title: 用户指南
   children:
+    - title: 产品动态
+      content: 产品动态
+      url: "news/prodoct_news/"
+
     - title: 产品简介
       content: 产品简介
       url: "intro/intro/"
@@ -22,11 +26,11 @@ Section2:
 
     - title: 快速入门
       content: 快速入门
-      url: "quick-start/quick_start/"
+      url: "quick-start/create_cluster/"
 
     - title: 操作指南
       content: 学习如何管理Kafka集群，以及如何使用Kafka提供的相关服务等。
-      url: "manual/kafka_manager/"
+      url: "manual/cluster_manager/cluster_info/"
 
 
 
@@ -59,10 +63,10 @@ section4:
 
       children: 
         - title: 创建Kafka
-          url: "/middware/kafka/quick-start/quick_start"
+          url: "/middware/kafka/quick-start/create_cluster/"
 
         - title: 集群使用
-          url: "/middware/kafka/manual/cluster_use"
+          url: "/middware/kafka/manual/cluster_manager/cluster_info/"
 
     
 ---

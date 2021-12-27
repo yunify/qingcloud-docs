@@ -1,8 +1,9 @@
 ---
 title: "操作日志"
-description: 
+description: 介绍 IAM 操作日志模块。
+keyword: 青云, IAM , 操作日志, IAM 操作记录
 draft: false
-weight: 35
+weight: 100
 ---
 
 为了明确告知客户的账户身份何时被创建、修改和代入使用，IAM 产品提供了**操作日志**模块来记录产品关键操作轨迹，以供您对数据发生变动时进行审查和回溯。

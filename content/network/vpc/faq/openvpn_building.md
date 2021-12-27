@@ -1,6 +1,7 @@
 ---
-title: "在Windows客户端中配置OpenVPN"
-description: test
+title: "在 Windows 客户端中配置 OpenVPN"
+description: 介绍如何在 Windows 云服务器中部署 OpenVPN 客户端。
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, Windows, OpenVPN 
 draft: false
 weight: 20
 ---
@@ -11,7 +12,7 @@ weight: 20
 
 ### 1、下载openvpn客户端windows版本
 
-<a href="https://myftp-server.pek3b.qingstor.com/openvpn-install-2.4.7-I603.exe" target="_blank">点击下载到本地</a>
+<a href="https://openvpn.net/vpn-client/" target="_blank">点击前往下载页面</a>
 
 ### 2、安装openvpn步骤
 

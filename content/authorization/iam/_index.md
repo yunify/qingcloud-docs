@@ -17,6 +17,10 @@ section2:
     - title: 最新动态
       content: 2020-11-12 产品资源类身份支持[上海1区]<br>2020-09-13 产品资源类身份支持[亚太2区-A]
       url: "news/product_news"
+  
+    - title: 产品介绍
+      content: 访问鉴权管理相关产品介绍。
+      url: "introduction/glossary"
 
     - title: 操作指南
       content: 学习上手如何管理身份和策略，如何使用策略模拟器，以及查看操作日志等。
@@ -24,7 +28,7 @@ section2:
 
     - title: 最佳实践
       content: 场景一：免密钥应用开发<br>场景二：跨账号管理协作
-      url: "best-practices/"
+      url: "best-practices/scenario1/"
 
 section4:
   children:

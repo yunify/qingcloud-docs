@@ -2,20 +2,22 @@
 title: "ModifyNFVSecurityGroups"
 description: 
 draft: false
+weight: 16
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 安全组
 ---
 
 
 
-修改一个网络组件的一个或多个防火墙。
+修改一个网络组件的一个或多个安全组。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | vxnets.n | String | 私有网络 ID | Yes |
-| security_group | String | 防火墙 ID | Yes |
-| nfv | String | 网络组件的 ID 。 | No |
-| zone | String | 区域 ID，注意要小写。 | No |
+| security_group | String | 安全组 ID | Yes |
+| nfv | String | 网络组件的 ID | No |
+| zone | String | 区域 ID，注意要小写 | No |
 
 [_公共参数_](../../../parameters/)
 
@@ -24,7 +26,7 @@ draft: false
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| job_id | String | 修改一个网络组件的一个或多个防火墙 job ID 号 |
+| job_id | String | 修改一个网络组件的一个或多个安全组 job ID 号 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
 **Example**

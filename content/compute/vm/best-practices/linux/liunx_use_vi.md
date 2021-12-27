@@ -1,8 +1,8 @@
 ---
 title: "Liunx 中 vi 快捷键编辑"
-description: Test description
+description: Linux中的 vi 快捷键
 draft: false
-enableToc: falshu
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux。快捷键编辑
 ---
 
 ## 1.操作系统快捷方式

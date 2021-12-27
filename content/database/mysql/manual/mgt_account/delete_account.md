@@ -1,7 +1,7 @@
 ---
 title: "删除账号"
 description: 本小节主要介绍如何删除 MySQL Plus 数据库账号。 
-keywords: mysql plus 删除账号；
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,删除账号；
 weight: 15
 collapsible: false
 draft: false

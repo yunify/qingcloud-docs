@@ -1,55 +1,68 @@
 ---
 title: "List Locations"
+description: 本小节主要介绍 List Locations 相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
+该 API 用于获取 QingStor 对象存储所有部署区域的列表。
 
-获取 QingStor 的所有(部署区域) 列表。
-支持匿名请求。
+## 使用限制
 
-> **请求只能发向对象存储服务的 global 地址，也就是 `qingstor.com`。**
+- 该 API 支持匿名请求。
+- 使用该 API 时，请求只能发送至 QingStor 对象存储服务的 Globan Endpoint，即：`qingstor.com`。
 
-## Request Syntax
+## 请求语法
+
+```http
+GET /?location&lang=zh-cn HTTP/1.1
+Host: qingstor.com
+```
+
+## 请求参数
+
+调用该接口时，用户可在 URL 中添加以下参数：
+
+| 参数名 | 类型 | 说明 | 是否必须 |
+| --- | --- | --- | --- |
+| lang | String | 返回 Location Name 的语言，默认是英文 `en-us`，可选值为：<br>- 中文：`zh-cn`/`zh_CN` <br>- 英文：`en-us`/`en_US`。| 否 |
+
+## 请求消息头
+
+仅包含 Host 消息头，无其他消息头。
+
+## 请求消息体
+
+无。
+
+## 响应头
+
+此接口仅包含公共响应头。关于公共响应头的更多信息，请参见 [公共响应头](/storage/object-storage/api/common_header/#响应头字段-response-header)。
+
+## 响应体
+
+成功调用该 API 后，会返回一个 Json 消息体，其字段说明如下：
+
+| 名称 | 类型 | 说明 | 
+| - | - | - | 
+| locations | List |  Location 列表|
+| id | String | `Location` 的健值，Location ID。 |
+| name | String | `Location` 的健值，根据请求参数 `lang` 指定语言的翻译。 |
+| endpoint | String | `Location` 的健值，Location Endpoint，如 Location ID 为 pek3a 的 Endpoint 是 pek3a.qingstor.com。 |
+
+## 错误码
+
+仅返回 200。
+
+## 示例
+
+### 请求示例
 
 ```http
 GET /?location&lang=zh-cn HTTP/1.1
 Host: qingstor.com
 ```
 
-## Request Headers
-
-没有请求头
-
-## Request Parameters
-
-| Parameter name | Type | Description | Required |
-| - | - | - | - |
-| lang | String | 返回 location name 的语言, 默认是英文 (`en-us`), 目前支持中文 (`zh-cn`/`zh_CN`) 和英文 (`en-us`/`en_US`)。| No |
-
-## Status Code
-
-总是返回 200
-
-## Response Headers
-
-[参见公共响应头](../../common_header#响应头字段-request-header)
-
-## Response Body
-
-Json 消息体
-
-| Name | Type | Description |
-| - | - | - |
-| locations | List | 返回 location 列表，每个 location 是键为 id, name, endpoint 及其相应的值的字典。|
-| id | String | location id。 |
-| name | String | location name相应语言（取决于lang参数）的翻译。|
-| endpoint | String | location endpoint, 如 location id 为 pek3a 的 endpoint 是 pek3a.qingstor.com。 |
-
-**Examples**
-
-```http
-GET /?location&lang=zh-cn HTTP/1.1
-Host: qingstor.com
-```
+### 响应示例
 
 ```http
 HTTP/1.1 200 OK
@@ -74,3 +87,7 @@ x-qs-request-id: dc05ee1cb7ea11e7b8da5254dda2bdf5
     ]
 }
 ```
+
+## SDK
+
+此接口所对应的各语言 SDK 可参考 [SDK 文档](/storage/object-storage/sdk/)。

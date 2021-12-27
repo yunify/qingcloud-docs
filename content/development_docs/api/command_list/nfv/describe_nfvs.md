@@ -1,10 +1,10 @@
 ---
 title: "DescribeNFVs"
-description: 
+description: 获取一个或多个网络组件的信息
 draft: false
+weight: 2
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 ---
-
-
 
 获取一个或多个网络组件的信息。
 
@@ -12,19 +12,19 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| nfvs.n | String | 一个或多个网络组件的 ID 。 | No |
-| nfv_type | Integer | 网络组件的类型，值为 1 时表示过滤 NAT 网关。 | No |
-| vxnets.n | String | 一个或多个私有网络的 ID 号 。 | No |
+| nfvs.n | String | 一个或多个网络组件的 ID | No |
+| nfv_type | Integer | 网络组件的类型，值为 1 时表示过滤 NAT 网关 | No |
+| vxnets.n | String | 一个或多个私有网络的 ID 号 | No |
 | status.n | String | 网络组件的状态：pending，active, stopped, suspended, deleted, ceased等。 | No |
-| verbose | Integer | 是否显示网络组件的详细信息，0 表示不显示，1 为显示 。 | No |
-| reverse | Integer | 逆序输出 。 | No |
-| offset | Integer | 网络组件的 ID 。 | No |
-| limit | Integer | 网络组件的 ID 。 | No |
-| root_user | String | 网络组件的 ID 。 | No |
-| owner | String | 网络组件的 ID 。 | No |
-| search_word | String |  搜索关键字，可以是网络组件 ID ,网络组件名称 。 | No |
-| sort_key | String | 网络组件的 ID 。 | No |
-| zone | String | 区域 ID，注意要小写。 | Yes |
+| verbose | Integer | 是否显示网络组件的详细信息，0 表示不显示，1 为显示 | No |
+| reverse | Integer | 逆序输出 | No |
+| offset | Integer | 网络组件的 ID | No |
+| limit | Integer | 网络组件的 ID | No |
+| root_user | String | 网络组件的 ID | No |
+| owner | String | 网络组件的 ID | No |
+| search_word | String | 搜索关键字，可以是网络组件 ID ，网络组件名称 | No |
+| sort_key | String | 网络组件的 ID | No |
+| zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)
 
@@ -33,8 +33,8 @@ draft: false
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| total_count | int | 存在的nfv的数量 |
-| nfv_set | list | 每个nfv对应的具体信息 |
+| total_count | int | 存在的 NFV 的数量 |
+| nfv_set | list | 每个 NFV 对应的具体信息 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
 **Example**

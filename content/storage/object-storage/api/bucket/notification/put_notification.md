@@ -1,25 +1,21 @@
 ---
-title: "Bucket Notification"
+title: "Put Bucket Notification"
 date: 2020-11-25T10:08:56+09:00
-description:
+description: 本小节主要介绍 Put Bucket Notification 接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 collapsible: false
 draft: false
 weight: 2
 ---
 
-# PUT Bucket Notification
+该接口用于设置 Bucket 的事件通知及处理策略。事件通知提供了一种机制，使得当某些指定的事件在 Bucket 中发生时，会触发通知或者事件处理。
 
-设置 QingStor 存储空间的事件通知及处理的策略。
+**使用说明**
 
-Bucket Notificaiton 提供了一种机制，使得当某些指定的事件在 QingStor 中发生时，触发通知或者事件处理。
+- QingStor 对象存储定义事件通知为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
+- 若设置多个通知规则，QingStor 对象存储会对每个规则逐一进行检查匹配，将可能触发多个事件。
 
-获取 Bucket Notification 请参见 [GET Bucket Notification](../get_notification/) 。
-
-删除 Bucket Notification 请参见 [DELETE Bucket Notification](../delete_notification/) 。
-
-> **若设置多个通知规则，每个规则都将逐一进行检查，将可能触发多个事件。**
-
-## Request Syntax
+## 请求语法
 
 ```http
 PUT /?notification HTTP/1.1
@@ -45,55 +41,53 @@ Authorization: <authorization-string>
 }
 ```
 
-## Request Body
+## 请求参数
 
-Json 消息体
+无。
 
-|Name|Type|Description|Required|
+## 请求头
+
+此接口仅包含公共请求头。关于公共请求头的更多信息，请参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
+
+## 请求消息体
+
+调用该 API 需携带如 [请求语法](#请求语法) 中的 Json 消息体。该消息体各字段说明如下：
+
+| 名称 | 类型 | 说明 | 是否必须 |
+| --- | --- | --- | --- |
+| notifications | Array | Bucket 的事件通知配置规则。各配置说明如下。 | 是 |
+| id | String | 规则的标识符。 | 是 |
+| event_types | Array | 事件的类型，当该类型的事件发生时，对应的操作被触发。可设定的值如下：<br> - create_object: 创建对象完成 <br> - delete_object: 删除对象完成 <br> - abort_multipart: 终止分段上传 <br> - complete_multipart: 完成分段上传 | 是 |
+| object_filters | List or String  | 对象名匹配规则。| 否 |
+| cloudfunc | String  | 事件处理云服务，接收通知中触发的事件并进行处理。目前支持: <br> - tupu-porn: [图谱鉴黄服务](/storage/object-storage/manual/console/data_process/tupu_porn/) <br> - notifier: 通知服务, 将 QingStor 事件推送到 notify_url <br> - image: [图片基本处理服务](/storage/object-storage/manual/console/data_process/image_process/)| 是 |
+| notify_url | String  | 接受通知事件处理结果的 URL。当事件处理完成后，其结果将会以 POST 方式向该 URL 发送。若 POST 超时，QingStor 对象存储将会重试。目前超时时间为 5s，重试间隔为 1s。| 否 |
+
+**说明**
+
+当用户设置 `cloudfunc` 为 `image` 时，`cloudfunc_args` 参数有效，其键值说明如下。QingStor 对象存储将按照指定的图片处理规则对图片进行处理，并将处理结果另存回 QingStor 对象存储的 Bucket。
+
+| 名称 | 类型 | 说明 | 是否必须 |
 | - | - | - | - |
-| notifications | Array | bucket notification 的配置规则，配置项中的元素解释见下 |  Yes |
-| id | String | 通知配置的标识 | Yes |
-| event_types | Array | 事件的类型，每当该类型的事件被触发时，发出通知。<br> 目前支持的类型为: <br> - "create_object": 创建对象完成 <br> - "delete_object": 删除对象完成 <br> - "abort_multipart": 终止分段上传 <br> - "complete_multipart": 完成分段上传 | Yes |
-| object_filters | List or String | 对象名匹配规则(glob patterns) | no |
-| cloudfunc | String | 事件处理云服务，接收通知中触发的事件并进行处理。目前支持: <br> - tupu-porn: [图谱鉴黄服务](../../../../manual/data_process/tupu_porn/) <br> - notifier: 通知服务, 将 QingStor 事件推送到 notify_url <br> - image: [图片基本处理服务](../../../../manual/data_process/image_process/)| Yes |
-| cloudfunc_args | Object | 提供给 cloudfunc 的自定义参数 | No |
-| notify_url | String | 通知事件处理结果的 url ，当事件处理完成后，会将处理结果以 POST 方式向 notify_url 请求。如果 POST 超时，将会重试，超时时间是 5s， 重试间隔为 1s。| No |
+| action | String | 图片的具体操作参数, 见 [图片基本处理服务](/storage/object-storage/manual/console/data_process/image_process/) | 是 |
+| key_prefix | String | 处理结果存回 QingStor 对象存储的 Bucket 的对象名称前缀，默认为 `gen` | 否 |
+| key_seprate | String | 分隔符，默认为 `_`。处理结果的对象名为： `key_prefix` + `key_seprate` + `origin_object` | 否 |
+| save_bucket | String | 处理结果存回 QingStor 对象存储的目前 Bucket 名称，默认为当前对象所在的 Bucket | 否 |
 
-### 图片基本处理服务参数
+## 响应头
 
-当设置 cloudfunc 为 image 时, 需要设置 cloudfunc_args 为以下参数，对象存储将按照指定的图片处理规则对图片进行处理，并将结果另存回对象存储。
+此接口仅包含公共响应头。关于公共响应头的更多信息，请参见 [公共响应头](/storage/object-storage/api/common_header/#响应头字段-response-header)。
 
-|Name|Type|Description|Required|
-| - | - | - | - |
-| action | String | 图片的具体操作参数, 见 [图片基本处理服务](../../../../manual/data_process/image_process/) | Yes |
-| key_prefix | String | 处理后 object 名称的前缀, 默认为 "gen" | No |
-| key_seprate | String | key_prefix 和 object 之间的分隔符，默认为 "_"，处理后新的 object 为 <key_prefix><key_seprate><origin_object> | No |
-| save_bucket | String | 另存为的目标 bucket 名称，默认为当前 object 所在 bucket | No |
+## 错误码
 
-## Request Parameters
+| 错误码 | 错误描述 | HTTP 状态码 |
+| --- | --- | --- |
+| OK | 成功设置 Bucket 事情通知 | 200 |
 
-没有请求参数
+其他错误码可参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
 
-## Request Headers
+## 示例
 
-参见[公共请求头](../../../common_header/#请求头字段-request-header)
-
-## Status Code
-
-正常会返回 200,  失败的返回码参考[错误码列表](../../../error_code/)
-
-## Response Headers
-
-参见[公共响应头](../../../common_header/#响应头字段-request-header)
-
-## Response Body
-
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
-
-
-## Example
-
-### Example Request
+### 请求示例
 
 ```http
 PUT /?notification HTTP/1.1
@@ -118,7 +112,7 @@ Content-Length: 125
 }
 ```
 
-### Example Response
+### 响应示例
 
 ```http
 HTTP/1.1 200 OK
@@ -128,3 +122,7 @@ Content-Length: 0
 Connection: close
 x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
 ```
+
+## SDK
+
+此接口所对应的各语言 SDK 可参考 [SDK 文档](/storage/object-storage/sdk/)。

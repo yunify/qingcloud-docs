@@ -1,7 +1,7 @@
 ---
 title: "什么是 QingMR"
 description: 本小节主要介绍 QingMR 服务简介。 
-keywords: QingMR 产品简介, 
+keyword: QingMR 产品简介, 
 weight: 10
 collapsible: false
 draft: false
@@ -14,7 +14,7 @@ QingMR 提供 Spark 与 MapReduce 两种数据处理框架，并由 YARN 作为�
 
 ## 集成服务
 
-青云 QingCloud 大数据相关服务将会统一在 QingMR 下。 目前已经集成了:
+青云 QingCloud 大数据相关服务将会统一在 QingMR 下。目前已经集成了:
 
 - 分布式文件系统 HDFS
 
@@ -25,3 +25,5 @@ QingMR 提供 Spark 与 MapReduce 两种数据处理框架，并由 YARN 作为�
 - 数据仓库工具 Hive
 
 - 极速海量数据 OLAP 分析引擎 Kylin
+
+- 集中式安全管理框架 Ranger

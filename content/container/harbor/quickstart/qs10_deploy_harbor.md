@@ -1,10 +1,9 @@
 ---
 title: "部署 Harbor 镜像仓库"
 draft: false
-enableToc: false
-keyword: Harbor, 私有镜像仓库，镜像仓库，容器
+description: 介绍如何部署 Harbor 镜像仓库。
+keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库，镜像仓库，容器
 weight: 10
-
 ---
 
 ## 操作场景
@@ -34,7 +33,7 @@ weight: 10
    > - 可创建私有或公有负载均衡器，若是公有，需要先申请公网IP；若是私有则只能用于内网访问。
    > - 监听器的监听协议可选 **HTTP** 或 **HTTPS** 。
    >
-   > - 若选择 **HTTPS** 协议，则需要在配置监听器时[添加服务器证书](/container/harbor/faq/use_ssl_certifcate/)，并在 **高级选项** > **附加HTTP头字段** 勾选**负载均衡器监听协议**（通过 X-Forwarded-Proto 头字段获取负载均衡器的监听协议）。
+   > - 若选择 **HTTPS** 协议，则需要在配置监听器时[添加服务器证书](/container/harbor/faq/faq05_use_ssl_certifcate/)，并在 **高级选项** > **附加HTTP头字段** 勾选**负载均衡器监听协议**（通过 X-Forwarded-Proto 头字段获取负载均衡器的监听协议）。
 
    <img src="/container/harbor/_images/qs_10_create_monitor.png" alt="monitor" style="zoom:50%;" />
 

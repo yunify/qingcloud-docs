@@ -1,19 +1,21 @@
 ---
 title: "端口无法连接"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 端口无法连接如何解决
 weight: 40
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，端口连接
 ---
+
+## 背景信息
 
 访问端口失败，telnet端口不通，服务无法连接。
 
 ![](/compute/vm/_images/telnet.png)
 
+## 操作步骤
 
-
-**查看云服务器服务端口是否正常启动，端口处于监听状态**
+### 查看云服务器服务端口是否正常启动，端口处于监听状态
 
 以下均以常见的80端口为例：
 
@@ -21,7 +23,7 @@ enableToc: false
 
 ![](/compute/vm/_images/netstat80no.png)
 
-未发现80端口处于监听状态，http服务未启动，需先将http服务启动：
+### 未发现80端口处于监听状态，http服务未启动，需先将http服务启动
 
 ![](/compute/vm/_images/starthttpd.png)
 

@@ -1,7 +1,7 @@
 ---
 title: "Logstash 自定义启动配置文件"
 description: 本小节主要介绍 Logstash 如何自定义启动配置文件。
-keywords: Logstash 自定义启动配置文件,
+keyword: Logstash 自定义启动配置文件,
 weight: 50
 collapsible: false
 draft: false
@@ -15,15 +15,14 @@ draft: false
 
 用户通过上述方法修改 logstash.conf 配置文件后，需执行 `/usr/share/logstash/sbin/restart.sh` 重启 Logstash 服务。
 
-> **说明**：
+> **说明**
 >
 > 如显示 `[=[Restart]=] Can't lock the file.`，则表示其他操作正在执行，请稍后再次尝试重启命令；
 >
 > 如果重启失败，可查看位于 `/data/logstash/logs/logstash-plain.log` 和 `/var/log/syslog` 的日志文件排查原因。
 
-> **说明**：
+> **说明**
 >
 > `ELK 5.5.1 - QingCloud 1.2.0` 及以前版本请使用如下命令：
 >
 > `sudo docker exec -it $(docker ps -q) restart.sh`
-

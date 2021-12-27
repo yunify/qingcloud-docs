@@ -1,5 +1,7 @@
 ---
 title: "兼容公共头"
+description: 本小节主要介绍兼容公共头相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
 
@@ -32,8 +34,8 @@ title: "兼容公共头"
 | ETag | 兼容 |
 | Server | 将设置为 QingStor |
 | x-amz-delete-marker | 未兼容 |
-| x-amz-id-2 | 将设置与响应头 x-amz-request-id 相同 |
-| x-amz-request-id | 将设置与原生响应头 x-qs-request-id 相同 |
+| x-amz-id-2 | 将设置与响应头 `x-amz-request-id` 相同 |
+| x-amz-request-id | 将设置与原生响应头 `x-qs-request-id` 相同 |
 | x-amz-version-id | 未兼容 |
 
 > 更多请参考 AWS S3 文档 [Common Response Headers](http://docs.aws.amazon.com/AmazonS3/latest/API/ErrorResponses.html)

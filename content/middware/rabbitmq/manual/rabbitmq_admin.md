@@ -1,6 +1,7 @@
 ---
-title: "rabbitmqadmin命令行客户端工具示例简介"
-description: test
+title: "rabbitmqadmin 使用示例"
+description: 本小节主要介绍如何使用 rabbitmqadmin。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,QingCloud,RabbitMQ,rabbitmq,消息队列服务,消息中间件,操作指南,rabbitmqadmin
 weight: 20
 draft: false
 ---
@@ -33,7 +34,9 @@ chmod +x rabbitmqadmin
 
 ## 定义一个queue
 
-> **提示**：durable=true仅表示该队列持久化，并不表示队列中的消息已经持久化。
+> **提示**
+> 
+> durable=true仅表示该队列持久化，并不表示队列中的消息已经持久化。
 
 ```
 ./rabbitmqadmin declare queue name=test durable=true

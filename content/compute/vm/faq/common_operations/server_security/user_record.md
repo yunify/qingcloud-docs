@@ -1,22 +1,19 @@
 ---
 title: "Linux系统下查看系统用户登录记录"
 date: 2021-04-09T21:37:25+09:00
-description: Test description
+description: 如何在Linux系统下查看系统用户登记的记录
 weight: 30
 draft: false
-enableToc: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，用户登记
 ---
 
 ## 背景信息
 
 如需查看Linux系统用户登录记录，可参考下面方法。
 
-
-
 ##  相关命功能如下所示
 
-**●who命令显示当前登录用户的信息**
+**who命令显示当前登录用户的信息**
 
 ```
 [root@i-xxxxxxx ~]# who
@@ -24,9 +21,7 @@ root     pts/0        2021-04-10 14:07 (192.168.xxx.xxxx)
 
 ```
 
-
-
-**●w命令显示当前登录的用户名并显示该用户当前执行的任务**
+**w命令显示当前登录的用户名并显示该用户当前执行的任务**
 
 ```
 [root@i-xxxxxxx ~]# w
@@ -36,7 +31,7 @@ root     pts/0    192.168.255.254  14:07    2.00s  0.04s  0.00s w
 
 ```
 
-**●users命令显示当前登录的用户名**
+**users命令显示当前登录的用户名**
 
 ```
 [root@i-xxxxxxxx~]# users
@@ -44,7 +39,7 @@ root
 
 ```
 
-**●last命令显示当前与过去登录系统的用户信息**
+**last命令显示当前与过去登录系统的用户信息**
 
 ```
 [root@i-xxxxxxxx ~]# lastb
@@ -55,7 +50,7 @@ btmp begins Thu Apr  1 09:58:34 2021
 
 ```
 
-**●lastlog命令显示用户最后一次登录的信息**
+**lastlog命令显示用户最后一次登录的信息**
 
 ```
 [root@i-xxxxxxxx ~]# lastlog
@@ -72,7 +67,7 @@ mail                                       **从未登录过**
 
 ```
 
-**●secure文件查看登录记录**
+**secure文件查看登录记录**
 
 ```
 [root@i-xxxxxxxx ~]# cat /var/log/secure

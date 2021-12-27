@@ -1,7 +1,7 @@
 ---
 title: "Logstash 插件列表"
 description: 本小节主要介绍 Logstash 集成插件列表。
-keywords: Logstash 插件列表,
+keyword: Logstash 插件列表,
 weight: 56
 collapsible: false
 draft: false
@@ -121,4 +121,3 @@ draft: false
 * logstash-output-webhdfs
 * logstash-output-xmpp
 * logstash-patterns-core
-

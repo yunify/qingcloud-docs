@@ -1,6 +1,8 @@
 ---
 title: "产品动态"
 collapsible: false
+description: 本小节主要介绍硬盘产品动态
+keyword: 云计算, 青云, QingCloud, 云硬盘,本地盘, 产品动态, SSD
 weight: 10
 
 product:

@@ -1,11 +1,9 @@
 ---
 title: "应用场景"
-date: 2020-01-30T00:38:25+09:00
-description: Test description
-weight: 50
+description: 介绍如负载均衡器的应用场景。
+keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器应用场景
+weight: 30
 draft: false
-enableToc: false
-keyword: 负载均衡器应用场景
 ---
 
 ### 构建高可用业务架构

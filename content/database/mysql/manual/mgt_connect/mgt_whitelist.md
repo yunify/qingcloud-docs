@@ -1,7 +1,7 @@
 ---
 title: "管理 IP 白名单"
 description: 本小节主要介绍如何修改 MySQL Plus 集群访问白名单。 
-keywords: mysql plus 白名单管理,
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,白名单管理,
 weight: 20
 collapsible: false
 draft: false

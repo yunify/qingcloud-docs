@@ -1,10 +1,9 @@
 ---
 title: "云服务器网卡"
-description: test
+description: 云服务器网卡介绍
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，网卡
 ---
-
-# QingCloud 云服务器网卡
 
 ## 介绍
 
@@ -24,32 +23,32 @@ draft: false
 1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 2. 在左侧的**计算基础服务**导航栏，点击**网络** > **私有网络**，然后点击 **创建** 按钮。
 
-![](../../_images/nic_new_vxnet.png)
+<img src="../../_images/nic_new_vxnet.png" style="zoom:45%;" />
 
 3. 点击右键，将创建的私有网络加入到某个具体的VPC网络，如下图所示。
 
-![](../../_images/nic_vxnet_add_vpc.png)
+<img src="../../_images/nic_vxnet_add_vpc.png" style="zoom:50%;" />
 
-![](../../_images/nic_vxnet_add_vpc_1.png)
+<img src="../../_images/nic_vxnet_add_vpc_1.png" style="zoom:50%;" />
 
 ### 创建云服务器网卡
 
 1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 2. 在左侧的**计算基础服务**导航栏，点击**计算** > **网卡**。如下所示：
 
-![](../../_images/nic_ui.png)
+<img src="../../_images/nic_ui.png" style="zoom:25%;" />
 
 3. 在 **计算** > **网卡** 页面中，点击 **申请**，创建元服务器网卡。
 
-![](../../_images/nic_request_nic.png)
+<img src="../../_images/nic_request_nic.png" style="zoom:50%;" />
 
 4. 点击**选择私有网络**，将新申请的网卡加入到刚刚建立的私有网络中，如下图所示。
 
-![](../../_images/nic_allocation_vxnet_to_nic.png)
+<img src="../../_images/nic_allocation_vxnet_to_nic.png" style="zoom:50%;" />
 
 5. 点击提交，然后返回到网卡申请对话框，此时需要为其分配一个IP地址：
 
-![](../../_images/nic_allocation_internal_ip.png)
+<img src="../../_images/nic_allocation_internal_ip.png" style="zoom:50%;" />
 
 6. 点击提交。
 
@@ -83,9 +82,9 @@ lo        Link encap:Local Loopback
 2. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 3. 在左侧的**计算基础服务**导航栏，点击**计算** > **网卡**。选中刚刚创建的网卡，选择操作 **分配到云服务器**：
 
-![](../../_images/nic_allocation_to_host.png)
+<img src="../../_images/nic_allocation_to_host.png" style="zoom:50%;" />
 
-![](../../_images/nic_allocation_to_host_1.png)
+<img src="../../_images/nic_allocation_to_host_1.png" style="zoom:50%;" />
 
 4. 绑定成功之后，我们回到云服务器操作界面，再执行 ```ifconfig``` 的时候，输出内容如下所示。
 

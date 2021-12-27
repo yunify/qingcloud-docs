@@ -1,11 +1,10 @@
 ---
-title: "其它类型主机"
+title: "其它类型云服务器"
 date: 2020-01-30T00:40:25+09:00
-description: Test description
+description: 其他类型的云服务器介绍
 draft: false
-enableToc: false
 weight: 25
-keyword: 云主机, QingCloud, 实例, 虚拟机
+keyword: 云计算, 青云, QingCloud, 云服务器
 ---
 
 ## 性能型

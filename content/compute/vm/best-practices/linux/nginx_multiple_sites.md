@@ -1,7 +1,8 @@
 ---
 title: "nginx配置多个站点使用同一端口"
-description: test
+description: nginx配置多个站点如何使用同一个端口
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，nginx
 ---
 
 ## 背景

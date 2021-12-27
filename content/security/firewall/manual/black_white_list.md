@@ -2,12 +2,13 @@
 title: "黑白名单"
 linkTitle: "黑白名单"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: 云防火墙黑白名单
 draft: false
 weight: 5
+keyword: 云服务器, QingCloud，安全，黑白名单
 ---
 
-黑白名单用于记录或放行指定IP或域名的访问请求，即设置IP/域名黑白名单。
+黑白名单用于记录或放行指定 IP 的访问请求，即设置 IP 黑白名单。
 
 ## 创建黑名单
 
@@ -16,11 +17,11 @@ weight: 5
 3. 在**黑白**页面，单击**黑名单**页签。
 4. 在**黑名单**页签中，单击**新增**。
 
-![](../_images/blacklist.png)
+   ![](../_images/blacklist.png)
 
 5. 在**新增黑名单**对话框中，按照以下步骤新增新增黑名单。  
 
-   ![黑名单](../_images/black_list.png)
+   <img src="../_images/black_list.png" alt="黑名单" style="zoom:60%;" />
 
 6. 创建完成后，单击**确定**完成创建。
 
@@ -31,12 +32,11 @@ weight: 5
 3. 在**黑白**页面，单击**白名单**页签。
 4. 在**白名单**页签中，单击**新增**。
 
-![](../_images/whitelist.png)
+   ![](../_images/whitelist.png)
 
 5. 在**新增白名单**对话框中，按照以下步骤新增白名单。  
 
-   ![白名单](../_images/white_list.png)
+   <img src="../_images/white_list.png" alt="白名单" style="zoom:60%;" />
 
 6. 创建完成后，单击**确定**完成创建。
-
 

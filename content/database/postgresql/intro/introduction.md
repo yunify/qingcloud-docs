@@ -1,8 +1,8 @@
 ---
 title: "什么是 PostgreSQL"
 description: 本小节主要介绍 PostgreSQL 产品简介。 
-keywords: PostgreSQL, QingCloud, 产品简介
-weight: 1
+keyword: PostgreSQL, QingCloud, 产品简介
+weight: 10
 collapsible: false
 draft: false
 ---
@@ -20,4 +20,3 @@ QingCloud PostgreSQL 支持如下应用版本。
 - PostgreSQL 10.1 版本，PostGIS 插件的版本是 PostGIS 2.4
   
 - PostgreSQL 11.1 版本，PostGIS 插件的版本是 PostGIS 2.5
-

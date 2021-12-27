@@ -1,6 +1,7 @@
 ---
 title: "实例管理"
-date: 2020-11-11T00:00:00+09:00
+description: 介绍实例管理操作。
+keyword: QingCloud, 青云, AppCenter, 集群, 实例
 draft: false
 collapsible: false
 weight: 9

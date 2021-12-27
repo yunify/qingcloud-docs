@@ -1,7 +1,7 @@
 ---
 title: "交换预留 IP"
 description: 本小节主要介绍如何交换 MySQL Plus 集群预留 IP。 
-keywords: mysql plus 交换预留 IP,
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,交换预留 IP,
 weight: 45
 collapsible: false
 draft: false

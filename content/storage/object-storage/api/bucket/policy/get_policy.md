@@ -1,16 +1,12 @@
 ---
 title: "GET Bucket Policy"
+description: 本小节主要介绍 GET Bucket Policy 接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 ---
 
-# GET Bucket Policy
+该接口用于获取 Bucket 的访问策略相关设置。QingStor 对象存储定义访问策略为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
 
-获取存储空间的访问策略，Policy 是存储空间的子资源(subresource)，只有存储空间所 有者才能获取。
-
-设置 Policy 请参见 [PUT Bucket Policy](../put_policy) 。
-
-删除 Policy 请参见 [DELETE Bucket Policy](../delete_policy) 。
-
-## Request Syntax
+## 请求语法
 
 ```http
 GET /?policy HTTP/1.1
@@ -19,33 +15,41 @@ Date: <date>
 Authorization: <authorization-string>
 ```
 
-## Request Parameters
+## 请求参数
 
-没有请求参数
+无。
 
-## Request Headers
+## 请求头
 
-参见[公共请求头](../../../common_header#请求头字段-request-header)
+此接口仅包含公共请求头。关于公共请求头的更多信息，请参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
 
-## Request Body
+## 请求消息体
 
-没有请求消息体
+无。
 
-## Response Headers
+## 响应头
 
-参见[公共响应头](../../../common_header#响应头字段-request-header)
+此接口仅包含公共响应头。关于公共响应头的更多信息，请参见 [公共响应头](/storage/object-storage/api/common_header/#响应头字段-response-header)。
 
-## Response Body
+## 响应消息体
 
-正常情况下会有一个 Json 消息体; 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
+成功调用该 API 后，会返回一个 Json 消息体，其字段说明如下：
 
-| Name | Type | Description |
+| 名称 | 类型 | 说明 | 
+| - | - | - | 
+| statement | Dict | 指定 Bucket 的访问策略 |
+
+## 错误码
+
+| 错误码 | 错误描述 | HTTP 状态码 |
 | --- | --- | --- |
-| statement | Dict | 该bucket的访问策略 |
+| OK | 成功获取 Bucket 的访问策略相关配置 | 200 |
 
-## Example
+其他错误码可参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
 
-### Example Request
+## 示例
+
+### 请求示例
 
 ```http
 GET /?policy HTTP/1.1
@@ -54,7 +58,7 @@ Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```
 
-### Example Response
+### 响应示例
 
 ```http
 HTTP/1.1 200 OK
@@ -95,3 +99,7 @@ x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
     ]
 }
 ```
+
+## SDK
+
+此接口所对应的各语言 SDK 可参考 [SDK 文档](/storage/object-storage/sdk/)。

@@ -1,8 +1,7 @@
 ---
 title: "快速创建 Memcached 集群"
 description: 本小节主要介绍如何快速创建 Memcached。 
-keywords: memcached 实例
-data: 2021-05-14T00:38:25+09:00
+keyword: memcached 实例
 weight: 1
 collapsible: false
 draft: false
@@ -11,7 +10,7 @@ draft: false
 
 ## 前提条件
 
-已创建一个 VPC 网络和关联一个私有网络，操作指导请参见 [VPC 指南](../../../../network/vpc/quick-start/base/)。
+已创建一个 VPC 网络和关联一个私有网络，操作指导请参见[创建 VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)。
 
 ## 操作步骤
 

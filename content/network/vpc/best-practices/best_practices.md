@@ -1,8 +1,7 @@
 ---
-title: "跨越VPC，大规模安全自由组网"
-linkTitle: "跨越VPC，大规模安全自由组网"
-date: 2020-02-28T10:08:56+09:00
-description:
+title: "跨越 VPC，大规模安全自由组网"
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 跨 VPC 组网
+description: 介绍如何跨越 VPC，大规模安全自由组网。
 draft: false
 weight: 1
 ---
@@ -75,19 +74,17 @@ VPN 服务也是基于 Internet 的传输加密方式，在单台机器而非整
 
 重申一下，本文中跨越 VPC 并不是因为 VPC 不够强大，相反青云 QingCloud 的 VPC 由于采用了 DVR 技术, VPC 内最多可以有63504个云服务器。
 
-如开篇所述，为了满足业务和安全的要求，网络规模非常庞大，安全策略异常复杂的情况，青云 QingCloud 还设计开发了[内网路由器](https://docs.qingcloud.com/product/network/intranet_router)。
+如开篇所述，为了满足业务和安全的要求，网络规模非常庞大，安全策略异常复杂的情况，青云 QingCloud 还设计开发了[内网路由器](/network/border_router/intro/border_router/)。
 
 ![](../_images/best_5.jpg)
 
-内网路由器可以将企业内网从单一路由的 VPC 网络，扩展为一个虚拟的自治系统[( Autonomous Systems )](https://en.wikipedia.org/wiki/Autonomous_system_(Internet))。
+内网路由器可以将企业内网从单一路由的 VPC 网络，扩展为一个虚拟的自治系统(Autonomous Systems)。
 在这个架构图中，我们做了两个重要的改进，以便真正去适用大规模复杂的网络：
 1.青云的虚拟路由器是分布在各个物理计算节点的分布式路由器 DVR (Distributed Virtual Router)，由于数据包并未真正汇聚到某个虚拟路由器中，所以避免了单点故障和单点性能瓶颈。
 
 2.内网路由器运行在物理交换机上，性能和稳定性都远远强于虚拟路由器，物理交换机之间还存在bonding，防止单点故障。
 
-通过内网路由器实现不同 VPC 之间的私有网络直接三层互通，所以`内网路由器`是整个虚拟网络的[核心路由器。](https://baike.baidu.com/item/%E6%A0%B8%E5%BF%83%E8%B7%AF%E7%94%B1%E5%99%A8/5901585?fr=aladdin)
-
-所以青云 QingCloud 的网络，在逻辑上和物理网络基本已经没有区别，而且完全摆脱了命令行，一样管理您的 “自治网络” 。
+通过内网路由器实现不同 VPC 之间的私有网络直接三层互通，所以`内网路由器`是整个虚拟网络的核心路由器。所以青云 QingCloud 的网络，在逻辑上和物理网络基本已经没有区别，而且完全摆脱了命令行，一样管理您的 “自治网络” 。
 
 ![](../_images/best_6.jpg)
 
@@ -110,7 +107,7 @@ VPN 服务也是基于 Internet 的传输加密方式，在单台机器而非整
 
 ![](../_images/best_9.jpg)
 
-完整的操作步骤请见[详情](https://docs.qingcloud.com/product/sd_wan/quick_start/vpc_connect_vpc)
+完整的操作步骤请见 [VPC 跨区互联](/sd-wan/sdwan/quick-start/vpc_connect_vpc/)。
 
 >青云内网路由器除了作为公有云的核心路由器，也可以作为公有云的“边界路由”，与私有云的边界设备打通，构建“`云网一体化`”方案。
 
@@ -133,7 +130,7 @@ VPN 服务也是基于 Internet 的传输加密方式，在单台机器而非整
 ## 综述
 在青云 QingCloud ，可以利用内网路由器的“核心路由”能力，跨越不同地域的多个VPC进行组网，帮助 B 端客户实现真正的大规模、安全、多容灾的服务网络。
 
-内网路由器运行在物理交换机上，可以将内网路由器`绑定到 VPC `加强 VPC 的内网PPS和带宽性能。
+内网路由器运行在物理交换机上，可以将内网路由器`绑定到 VPC` 加强 VPC 的内网PPS和带宽性能。
 
 私有云用户也可以通过 SD-WAN 或专线与公有云中的内网路由器打通，构建混合云和云网一体化的企业`WAN`网。
 

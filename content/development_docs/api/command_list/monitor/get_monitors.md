@@ -7,7 +7,7 @@ draft: false
 
 
 批量获取多个资源的多个监控数据，一次请求总数不能超过 100 个资源。
-支持的资源类型和监控项可参考 [_GetMonitor_](./get_monitor.html)
+支持的资源类型和监控项可参考 [_GetMonitor_](/development_docs/api/command_list/monitor/get_monitor/)
 
 
 **Request Parameters**

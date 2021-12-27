@@ -1,6 +1,7 @@
 ---
 title: "RocketMQ Console使用示例"
-description: test
+description: 本小节主要介绍如何使用 RocketMQ Console。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,RocketMQ,rocketMQ,topic
 weight: 12
 draft: false
 ---
@@ -11,7 +12,7 @@ draft: false
 
 ![](../../_images/console.png)
 
-下面列举几个常见操作，详情可参见[官方使用文档](https://github.com/apache/rocketmq-externals/blob/master/rocketmq-console/doc/1_0_0/UserGuide_CN.md)。
+下面列举几个常见操作，详情可参见[官方使用文档](https://github.com/apache/rocketmq-dashboard/blob/master/docs/1_0_0/UserGuide_CN.md)。
 
 > **注意**：通过此控制台可以对集群中的实际数据进行增删改，请谨慎操作。
 

@@ -1,7 +1,7 @@
 ---
 title: "配置参数"
 description: 本小节主要介绍如何配置参数。 
-keywords: Storm，配置参数
+keyword: Storm，配置参数
 weight: 40
 collapsible: false
 draft: false
@@ -9,7 +9,7 @@ draft: false
 
 配置参数是在部署应用时填写，成为集群配置项的变量。有的配置项是公共的，有的作用于其中的一个或多个角色。您可以在这里修改参数，以更新集群配置。
 
-> 注意：
+> **注意：**
 >
 > 当配置发生变化时，将会重启对应的 Storm 服务。
 

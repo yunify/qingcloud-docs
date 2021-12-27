@@ -1,25 +1,17 @@
 ---
 title: "IIS搭建的网站显示“500 - 内部服务器错误”"
 date: 2021-03-30T00:38:25+09:00
-description: Test description
+description: IIS搭建的网站显示“500 - 内部服务器错误”
 weight: 12
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，IIS
 ---
-
-
-
-
 
 ## 概述
 
 Windows实例使用IIS作为Web服务的网站，访问时出现“500 - 内部服务器错误”，如下图所示。此报错并没有输出具体的错误项，给排查问题带来一些困难。本文主要介绍如何显示程序的真实报错，以便针对性分析网站错误。
 
-
-
 ![](../../../_images/500erro1.png)
-
-
 
 ## 详细信息
 

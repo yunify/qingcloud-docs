@@ -1,11 +1,10 @@
 ---
 title: "基于备份制作镜像"
 date: 2021-05-08T00:38:25+09:00
-description: Test description
+description: 本小节主要介绍基于备份制作镜像相关操作。
 draft: false
-enableToc: false
-weight: 50
-keyword: 青云
+weight: 5
+keyword: 云计算, 青云, QingCloud, 备份, 备份操作, 镜像
 ---
 
 ## 操作场景

@@ -1,9 +1,8 @@
 ---
 title: "基础设施 CPU 数据收集分析"
 description: 本小节主要介绍 QingCloud ChronuDB 在基础设施 CPU 数据收集和分析的应用。 
-keywords: chronusdb 数据收集,数据分析,cpu 数据 
-data: 2021-05-14T00:38:25+09:00
-weight: 2
+keyword: chronusdb 数据收集,数据分析,cpu 数据 
+weight: 20
 collapsible: false
 draft: false
 ---
@@ -17,13 +16,13 @@ draft: false
 1. 建立监控数据库。
 
    ```bash
-   echo "CREATE DATABASE monitor" | curl 'http://ChronusDB用户名:ChronusDB密码@高可用IP:8123/' --data-binary @-
+   $ echo "CREATE DATABASE monitor" | curl 'http://ChronusDB用户名:ChronusDB密码@高可用IP:8123/' --data-binary @-
    ```
 
 2. 建立CPU监控表，表中主要包含时间、云服务器名、CPU 型号等标签信息和 CPU 常见监控指标。
 
    ```bash
-   echo "CREATE TABLE monitor.cpu_tags_metrics
+   $ echo "CREATE TABLE monitor.cpu_tags_metrics
     (
       time DateTime DEFAULT now(),
       hostname LowCardinality(String),
@@ -55,7 +54,7 @@ draft: false
 3. 建立分布式表，以下示例用逻辑一致分布方式。
    
    ```bash
-     echo "CREATE TABLE monitor.  
+     $ echo "CREATE TABLE monitor.  
        cpu_tags_metrics_logical_distributed
      (
        time DateTime DEFAULT now(),
@@ -88,7 +87,7 @@ draft: false
 1. 指定五个云服务器，查询八小时内所有CPU指标的最大值。
 
     ```bash
-     echo "SELECT
+     $ echo "SELECT
        toStartOfHour(time) AS hour,
        max(usage_user) AS max_usage_user,
        max(usage_system) AS max_usage_system,
@@ -109,7 +108,7 @@ draft: false
 2. 查询12小时内，所有云服务器 5 个 CPU 指标的平均值。
 
      ```bash
-     echo "SELECT
+     $ echo "SELECT
        toStartOfHour(time) AS hour,
        avg(usage_user) AS mean_usage_user,
        avg(usage_system) AS mean_usage_system,
@@ -129,7 +128,7 @@ draft: false
 3. 查询某时刻前五分钟 CPU `usage_user` 的最大值。
     
      ```bash
-     echo "SELECT
+     $ echo "SELECT
        toStartOfMinute(time) AS minute,
         max(usage_user)
      FROM monitor.cpu_tags_metrics_logical_distributed
@@ -142,7 +141,7 @@ draft: false
 4. 查询一定时段内，所有云服务器 CPU 过载情况。
 
     ```bash
-     echo "SELECT *
+     $ echo "SELECT *
      FROM monitor.cpu_tags_metrics_logical_distributed
      PREWHERE (usage_user > 90.) AND (time >= '2019-01-01 00:16:22') AND (time < '2019-01-01 12:16:22')" | curl 'http://<ChronusDB用户名>:<ChronusDB密码>@<高可用IP>:8123/' --data-binary @-
      ```
@@ -150,7 +149,7 @@ draft: false
 5. 查询一定时段内，某些云服务器 CPU 过载情况。
 
     ```bash
-     echo "SELECT *
+     $ echo "SELECT *
      FROM monitor.cpu_tags_metrics_logical_distributed
      PREWHERE (usage_user > 90.) AND (time >= '2019-01-01 00:08:59') AND (time < '2019-01-01 12:08:59') AND (hostname IN ('host_9', 'host_5', 'host_1', 'host_7', 'host_2'))" | curl 'http://<ChronusDB用户名>:<ChronusDB密码>@<高可用IP>:8123/' --data-binary @-
      ```
@@ -158,7 +157,7 @@ draft: false
 6. 查询每台云服务器最近的监控记录。
 
     ```bash
-     echo "SELECT DISTINCT
+     $ echo "SELECT DISTINCT
         hostname,
         usage_user,
         usage_system,
@@ -179,7 +178,7 @@ draft: false
 7. 查询某台云服务器 CPU 在指定时段内，每分钟 `usage_user` 的最大值。
     
     ```bash
-     echo "SELECT
+     $ echo "SELECT
         toStartOfMinute(time) AS minute,
         max(usage_user) AS max_usage_user
      FROM monitor.cpu_tags_metrics_logical_distributed

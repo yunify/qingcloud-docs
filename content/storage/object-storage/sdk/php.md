@@ -1,9 +1,13 @@
 ---
 title: "PHP SDK"
+description: 本小节主要介绍 PHP SDK 快速指南相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
 
-QingStor PHP SDK 已在 GitHub 开源，下文为简要使用文档。更多详细信息请参见 [https://github.com/yunify/qingstor-sdk-php](https://github.com/yunify/qingstor-sdk-php) 。
+QingStor 对象存储的 PHP SDK 已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/yunify/qingstor-sdk-php)。
+
+使用 SDK 之前请先在 [管理控制台](https://console.qingcloud.com/access_keys/) 申请 Access key。
 
 ## 安装
 
@@ -13,13 +17,10 @@ QingStor PHP SDK 已在 GitHub 开源，下文为简要使用文档。更多详�
 > composer require yunify/qingstor-sdk
 ```
 
-## 快速开始
 
-使用 SDK 之前请先在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请 access key 。
+## 初始化服务
 
-### 初始化服务
-
-发起请求前首先建立需要初始化服务:
+发起请求前需要初始化服务。以下代码初始化了一个 QingStor Service。
 
 ```php
 use QingStor\SDK\Service\QingStor;
@@ -29,7 +30,7 @@ $config = new Config("ACCESS_KEY_ID", "SECRET_ACCESS_KEY");
 $service = new QingStor($config);
 ```
 
-上面代码初始化了一个 QingStor Service
+## 代码示例
 
 ### 获取账户下的 Bucket 列表
 

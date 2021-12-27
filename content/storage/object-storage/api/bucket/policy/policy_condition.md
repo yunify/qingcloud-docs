@@ -1,16 +1,10 @@
 ---
 title: "Bucket Policy Condition"
+description: 本小节主要介绍 Bucket Policy Conditio 接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 ---
 
-# Bucket Policy Condition
-
-存储空间策略生效的条件。支持"字符串条件运算符"，和"Null 条件运算符"。
-
-设置 Policy 请参见 [PUT Bucket Policy](../put_policy) 。
-
-获取 Policy 请参见 [GET Bucket Policy](../get_policy) 。
-
-删除 Policy 请参见 [DELETE Bucket Policy](../delete_policy) 。
+该接口用于设置 Bucket 的访问策略（Policy）生效的条件。支持 **字符串条件运算符**，和 **Null 条件运算符**。
 
 condition的基本格式
 
