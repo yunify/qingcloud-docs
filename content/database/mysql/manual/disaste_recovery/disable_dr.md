@@ -1,7 +1,7 @@
 ---
 title: "停止灾备"
 description: 本小节主要介绍如何停止集群灾备。 
-keyword: mysql plus 停止灾备
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,停止灾备
 weight: 30
 collapsible: false
 draft: false
@@ -20,11 +20,11 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 MySQL Plus**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。  
 4. 在**基本属性**模块，点击集群操作下拉菜单。
