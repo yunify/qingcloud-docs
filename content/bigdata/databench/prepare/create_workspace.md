@@ -19,15 +19,15 @@ draft: false
 1. 登录管理控制台。
 2. 选择**产品与服务** > **大数据服务** > **大数据工作台**，进入大数据工作台概览页面。
 3. 在左侧导航选择**工作空间**，进入工作空间页面。
-4. 选择相应的区域，单击**创建工作空间**，填写工作空间名称和描述信息。
+4. 选择相应的区域，点击**创建工作空间**，填写工作空间名称和描述信息。
    
-   <img src="../../_images/cteate_workspace.png" alt="创建工作空间" style="zoom:50%;" />
+   <img src="../../_images/create_workspace.png" alt="创建工作空间" style="zoom:50%;" />
 
-5. 单击**创建**，开始创建工作空间。   
-   工作空间创建成功后，即可在工作空间页面查看相应内容。
+5. 点击**创建**，开始创建工作空间。   
+   工作空间创建完成后，即可在工作空间页面查看相应内容。
 
 ## 后续步骤
 
-- 工作空间创建完成后，您就可以在工作空间执行[数据源管理](../../manual/data_up_cloud/data_summary/)、[数据开发](../../manual/data_development/summary/)和[运维中心](../../manual/operation_maintence/summary/)等操作。
-- 您也可以先通过学习[快速入门](../../quickstart/summary)，快速了解大数据工作台的使用。
+- 工作空间创建完成后，您就可以从工作空间进入[数据源管理](../../manual/data_up_cloud/data_summary/)、[数据开发](../../manual/data_development/summary/)和[运维中心](../../manual/operation_maintence/summary/)模块，执行相应操作。
+- 您也可以先学习[快速入门](../../quickstart/summary)，快速完成一个完整的数据开发操作。
 

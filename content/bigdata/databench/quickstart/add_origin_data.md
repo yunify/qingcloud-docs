@@ -4,7 +4,7 @@ description: 本小节主要介绍如何新增数据源。
 keywords: 
 weight: 10
 collapsible: false
-draft: false
+draft: true
 ---
 
 本小节以新增 MySQL 数据源为例介绍如何新增数据源。

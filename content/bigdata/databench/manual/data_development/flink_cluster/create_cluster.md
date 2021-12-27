@@ -2,25 +2,26 @@
 title: "创建计算集群"
 description: 本小节主要介绍如何创建计算集群。 
 keywords: 
-weight: 20
+weight: 10
 collapsible: false
 draft: false
 ---
 
 大数据工作台通过**计算集群**进行数据集成和数据开发工作。
 
+您可以在计算集群列表页面创建计算集群，查看该工作空间下所有的计算集群，并对计算集群进行启动、停用、修改、删除等操作。
+
 本小节主要介绍如何创建计算集群。
 
 ## 约束限制
 
-- 单个用户最多可创建 5 个计算集群。
+- 单个用户在同一区域下最多可创建 5 个计算集群。
 - 计算集群目前仅支持创建 Flink Session 集群，用户独享。
 - 计算集群仅支持部署在 VPC 私有网络。
 
 ## 前提条件
 
-- 已获取管理控制台登录账号和密码，且账号已实名认证。
-- 已创建工作空间。
+- 已完成[准备工作](../../../../prepare/create_account)，准备好账号和工作空间。
 - 计算集群依赖 VPC 网络资源，在创建计算集群前，建议先[创建网络](../../network/create_network)。
 
 ## 操作步骤
@@ -41,6 +42,8 @@ draft: false
 | 版本       | 计算集群的版本，通过下拉框进行选择。              |
 | 重启策略    | 重启策略是指在 Flink Task 发生故障时，如何处理作业。包括`No Restarts:不重启`、`Fixed Delay:固定延迟`、`Failure Rate:故障率`，默认为`不重启`。<li>`不重启`：故障发生时不重启计算作业实例。 <li>`固定延迟`：选择该选项后，您还需要配置**尝试重启次数**和**重启时间间隔**。如果重启次数超过了配置的**尝试重启次数**，作业将运行失败。<li>`故障率`：选择该选项后，您还需要配置配置**检查故障率时间间隔**、**时间间隔内最大失败次数**、**重启时间间隔**。当时间间隔内发生故障的次数超过设置的最大失败次数，作业将运行失败。 <span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b> 如果您没有配置该参数，则按 Apache Flink 默认的重启策略，即当有 Task 失败时，如果没有开启 Checkpoint，JobManager 进程不会重启。如果开启了 Checkpoint，则 JobManager 进程会重启。 </span>             |
 
+<img src="../../../../_images/cluster_basic.png" alt="基础属性" style="zoom:50%;" />
+
 ### 资源配置
 
 | 参数           | 参数说明                                                     |
@@ -51,13 +54,24 @@ draft: false
 
 总计算资源 CU=TM 数量 * TM 规格 + JM 规格
 
+> **说明**
+> 
+> - 单计算集群 CU 不能超过 8。
+> - 单个用户在同一区域下计算集群总 CU 不能超过 12。
+
+<img src="../../../../_images/cluster_resource.png" alt="资源配置" style="zoom:50%;" />
+
 ### 网络配置
 
-通过下拉框选择已创建好的网络。若无可选网络，可点击**新建 VPC 网络**，创建新的网络资源。 
+通过下拉框选择已创建好的网络。若无可选网络，可点击**绑定 VPC**，创建新的网络资源。 
+
+<img src="../../../../_images/cluster_net.png" alt="网络配置" style="zoom:50%;" />
 
 ### 日志配置
 
 日志级别支持：`TRACE`、`DEBUG`、`INFO`、`WARN`、`ERROR`，默认为 `INFO`。
+
+<img src="../../../../_images/cluster_log.png" alt="日志配置" style="zoom:50%;" />
 
 ### 可选配置
 
@@ -67,4 +81,6 @@ Host 别名和 Flink 参数均为可选配置，请根据实际情况进行选�
 | :------------- | ------------------------------------------------------------ |
 | Host 别名       | 配置 IP 地址和 Host 名称。支持批量输入和单条输入。批量输入时，IP 地址和 Host 名称用空格分隔，多条配置换行输入。               |
 | Flink 参数      | 配置 Flink 参数，Yaml 格式。支持批量输入和单条输入。批量输入时，多个参数换行输入。              |
+
+<img src="../../../../_images/cluster_other.png" alt="可选配置" style="zoom:50%;" />
 
