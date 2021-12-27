@@ -12,6 +12,8 @@ keyword: QingCloud, 云计算, 青云, NAT网关, NAT
 
 私有网络内的云服务器，通过不同的青云公网地址访问不同的外部公网地址，实现双公网 IP 分流。
 
+<img src="../../_images/multi_nat_access_net.png" style="zoom:50%;" />
+
 ## 操作步骤
 
 ### 步骤一：创建两个 NAT 网关并分别绑定两个公网 IP
