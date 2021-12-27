@@ -7,10 +7,10 @@ product:
     - time: 2021-12-21 18:00:00
       title: 线下打款支持招商银行专属账号功能通知
       content: 为帮助用户缩短线下打款时财务人员手工干预造成的流程时间过长甚至造成用户业务暂停，同时为了减少财务和销售等事务性的工作。青云新增了支持招商银行专属账号的功能，可为每个用户（此处的用户包括：主账户或者独立计费的子账户）提供一个专属账户，用户可通过该专属账号进行打款。
+      qingCloudZhiUrl: https://log.qingcloud.com/archives/8618
       url: /services/bill_center/manual/finance/
       tags:
       - 新功能
-      - 体验优化
       zone: 全局
 
 
