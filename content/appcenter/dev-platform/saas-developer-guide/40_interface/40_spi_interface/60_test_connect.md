@@ -25,21 +25,22 @@ weight: 60
 ### 示例说明
 
 ```
-请求参数：
+// 参数：
 {
-  ``"action"``: ``"TestConnection"``,
-  ``"time_stamp"``: ``"2021-06-23T07:11:23Z"``,    ``"signature"``:``"MB/9ZhsVQkeAe016lrZuSwjN14lWnfRjakaL29IjiQ0="
+    "action": "TestConnection",
+    "time_stamp": "2021-06-23T07:11:23Z",
+    "signature": "MB/9ZhsVQkeAe016lrZuSwjN14lWnfRjakaL29IjiQ0="
 }
 ```
 
 ```
 GET 请求
-http:``//127.0.0.1/test/spi?action=TestConnection&time_stamp=2021-06-23T07%3A10%3A45Z&signature=ng%2B9i4PSisUNB8W74OcQkH4DfcyyVenSfTw4tmmbJso%3D
+http://127.0.0.1/test/spi?action=TestConnection&time_stamp=2021-06-23T07%3A10%3A45Z&signature=ng%2B9i4PSisUNB8W74OcQkH4DfcyyVenSfTw4tmmbJso%3D
 ```
 
 ```
-响应：
+// 响应：
 {
- ``"success"``: ``true
+  "success": true
 }
 ```

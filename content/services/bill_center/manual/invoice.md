@@ -3,7 +3,7 @@ title: "发票管理"
 weight: 12
 description: Test description
 draft: false
-keyword: 发票管理, 发票申请发票, 青云, QingCloud, 用户服务
+keyword: QingCloud, 青云, 云计算, 费用中心,发票管理, 发票申请发票
 ---
 
 客户想要对青云产品消费的金额进行报销等操作时，可以申请开具发票。开票信息中填写的公司（或个人）视为实际交易的法律主体。
