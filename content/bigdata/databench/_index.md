@@ -19,24 +19,24 @@ Section2:
       url: "news/product_news/"
 
     - title: 产品简介
-      content: 产品简介
+      content: 大数据工作台提供一站式智能大数据开发平台，帮助传统企业专注于数据价值的挖掘和探索，提升用户数据洞察能力。
       url: "intro/introduction/"
 
     - title: 计费指南
-      content: 计费指南
+      content: 大数据工作台按计算集群的 CU 数进行计费，且支持两种按需计费和合约计费两种模式，用户可根据业务实际需求进行选择。（公测期间限时免费）
       url: "billing/price/"
 
     - title: 快速入门
-      content: 快速入门
+      content: 快速入门模块将指引用户完成一个完整的数据开发和运维操作，从而快速了解并使用大数据工作台。
       url: "quickstart/summary/"
 
     - title: 操作指南
-      content: 学习如何使用大数据工作台，以及大数据工作台提供的数据开发、监控运维等功能。
-      url: "manual/workspace_list"
+      content: 操作指南模块提供大数据工作台详细的操作指导，包括数据源管理、计算集群管理、作业开发、作业调度、资源管理、函数管理、运维中心等功能。
+      url: "manual/overview/"
 
     - title: 最佳实践
-      content: 在大数据工作台上的实践操作。
-      url: "best-practices/best_practices/"
+      content: 最佳实践模块按场景提供操作样例，帮助用户进一步了解大数据工作台的使用场景和操作步骤。
+      url: "best-practices/practice01/summary/"
 
 section3:
   title: 开发者指南
