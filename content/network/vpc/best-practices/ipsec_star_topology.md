@@ -1,6 +1,6 @@
 ---
 title: "星型拓扑 IPSEC 隧道搭建"
-keyword: 青云, QingCloud, VPC, VPC 网络, IPSEC 隧道
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, IPSEC 隧道
 description: 介绍如何搭建 星型拓扑 IPSEC 隧道。
 draft: false
 weight: 1

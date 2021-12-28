@@ -1,7 +1,7 @@
 ---
 title: "下载 MySQL 日志"
 description: 本小节主要介绍如何下载 MySQL Plus 日志。 
-keyword: mysql plus 日志,
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,日志,
 weight: 01
 collapsible: false
 draft: false
@@ -12,32 +12,27 @@ MySQL Plus 支持通过 HTTP 服务预览和下载日志，HTTP 服务端口为 
 
 日志服务支持下载 MySQL 错误日志 `mysql-error` 、 MySQL 慢日志 `mysql-slow`、 MySQL 审计日志 `mysql-audit` 、MySQL binlog 文件 `mysql-bin` 和 SSL 证书文件 `mysql-cert` 。
 
-  > 其中，`mysql-error` 和 `mysql-slow` 仅保留六个日志文件。
-
+> **说明**
+> 
+> `mysql-error` 和 `mysql-slow` 仅保留六个日志文件。
 
 ## 启动 MySQL 日志服务
 
 ### 启动服务
 
 1. 登录 QingCloud 管理控制台。
-2. 在 AppCenter 控制台，选择**集群管理**。
-3. 选择 MySQL Plus 目标集群，点击资源 id，进入到集群详情界面。
-   
-   ![集群列表](/database/mysql/_images/download_mysql_log_1.png)
+2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 MySQL Plus**，进入集群管理页面。
+3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
+4. 在**基本属性**模块，点击集群操作下拉菜单。
+5. 展开下拉菜单，点击**启动日志服务端**，进入集群日志服务配置窗口。
 
-4. 在**基本属性**区域，展开操作列框。
-   
-5. 点击**启动日志服务端**。
-   
-   ![启动日志服务端](/database/mysql/_images/download_mysql_log_2.png)
+   <img src="../../_images/enable_log_server.png" alt="启动日志服务" style="zoom:50%;" />
 
-6. 配置日志服务相关参数。
-   
-   点选运行服务的角色，并勾选需要预览和下载的 MySQL 日志，输入 HTTP 用户名和密码。
+7. 配置日志服务信息，点选运行服务的角色，并勾选需要预览和下载的 MySQL 日志，输入 HTTP 用户名和密码。
 
-7. 点击**提交**，启动日志服务端。
-   
-   ![配置日志服务参数](/database/mysql/_images/download_mysql_log_3.png)
+8. 确认配置信息无误后，点击**提交**，返回集群页面。
+
+   待集群状态切换为**活跃**，则成功启动日志服务端。
 
 ### 预览日志
 

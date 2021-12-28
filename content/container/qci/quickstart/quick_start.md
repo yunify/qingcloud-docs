@@ -1,10 +1,9 @@
 ---
 title: "弹性容器实例 (QCI) 的使用"
-date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 介绍如何使用弹性容器实例 QCI。 
+keyword: 青云, QingCloud, 云计算, QCI, 容器
 draft: false
-enableToc: false
-keyword: 青云
+weight: 10
 ---
 
 ## 容器组的使用指南

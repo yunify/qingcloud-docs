@@ -26,7 +26,7 @@ keyword: 云计算, 青云, QingCloud, 共享存储, Virtual SAN, NeonSAN
 
 2. 点击**创建**按钮开始创建。进入如下页面：
 
-   ![](/storage/share/manual/_images/create_s2_server.png)
+   ![](/storage/share/_images/vsan1.png)
 
 3. 设置如下基本信息。
 
@@ -47,7 +47,7 @@ keyword: 云计算, 青云, QingCloud, 共享存储, Virtual SAN, NeonSAN
 
 1. 点击创建成功的 Virtual SAN 服务器。 进入 Virtual SAN 服务器的详细信息页面，点击 **创建目标门户组**，进入如下界面。
 
-![](/storage/share/manual/_images/create_s2_server_target.png)
+![](/storage/share/_images/vsan2.png)
 
 | <div style="width: 50pt">参数名称</div> | 参数说明                                                     |
 | --------------------------------------- | ------------------------------------------------------------ |
@@ -56,13 +56,13 @@ keyword: 云计算, 青云, QingCloud, 共享存储, Virtual SAN, NeonSAN
 
 2. 创建成功后，点击**添加存储**，进入如下界面。
 
-![](../_images/create_s2_server_backstore.png)
+![](/storage/share/_images/vsan3.png)
 
 3. 添加 iSCSI 客户端（可选）。在Virtual SAN 服务器的详细信息页面，点击**操作** > **设置iSCSI客户端**，进入如下界面。
 
    为了 Virtual SAN 的安全性，可以指定 iSCSI 客户端登录到目标，即设置 iSCSI 客户端的 initiator name。
 
-![](../_images/set_s2_server_initiators.png)
+![](/storage/share/_images/vsan4.png)
 
 4. 创建完成后，点击**应用修改**。Virtual SAN 服务端即设置完成。
 
@@ -193,7 +193,7 @@ vi /var/lib/iscsi/nodes/<目标IQN>/<Virtual SAN 服务器IP>/default
 
 一个典型的 Oracle RAC 由多个数据库节点和共享硬盘组成。DB 客户端使用 scan-cluster 域名访问数据，负载均衡由 Oracle 自己控制。
 
-![](../_images/oracle_rac_topo.png)
+![](/storage/share/_images/vsan5.png)
 
 ### 安装前准备
 
@@ -240,7 +240,7 @@ Oracle RAC 需要云服务器加入两个网络，分别用于对外提供服务
 2.  点击“关闭DHCP服务”，并再次启动
 3.  弹出对话框如图。把254改成100, 然后提交
 
-![](../_images/oracle_rac_dhcp.png)
+![](/storage/share/_images/vsan6.png)
 
 > 注解
 > 
@@ -256,7 +256,7 @@ Oracle RAC 需要云服务器加入两个网络，分别用于对外提供服务
 
 加入所需的网络后，需要到云服务器的桌面上配置下自管网络的 IP 地址
 
-![](../_images/oracle_rac_private_ip.png)
+![](/storage/share/_images/vsan7.png)
 
 > 注解
 > 
@@ -270,7 +270,7 @@ Oracle RAC 对外提供的地址是 scan-cluster 域名，Oracle 会管理 scan-
 
 启动私网DNS，并为scan-cluster和每个节点定义私网域名。
 
-![](../_images/oracle_rac_enable_dns.png)
+![](/storage/share/_images/vsan8.png)
 
 > 注解
 > 
@@ -599,32 +599,32 @@ Press ENTER key to continue after execution of "/tmp/CVU_12.1.0.1.0_grid/runfixu
 
 以 grid 用户登录图形界面，执行 “grid/runInstaller”进入 OUI 图形安装界面。请按以下截图选择:
 
-![](../_images/grid1.png)
-![](../_images/grid2.png)
-![](../_images/grid3.png)
-![](../_images/grid4.png)
-![](../_images/grid5.png)
+![](/storage/share/_images/grid1.png)
+![](/storage/share/_images/grid2.png)
+![](/storage/share/_images/grid3.png)
+![](/storage/share/_images/grid4.png)
+![](/storage/share/_images/grid5.png)
 
 由于 Grid安装包从/etc/hosts 中读取本地节点 (Local node) 名字，跟系统设置可能不匹配。如果提示 [INS-40907] Local node not included in the list of host names for grid installation 错误，请检查是否完成了本文“修改 /etc/hosts” 一节所需的配置。
 
-![](../_images/grid6.png)
-![](../_images/grid7.png)
-![](../_images/grid8.png)
-![](../_images/grid9.png)
-![](../_images/grid10.png)
+![](/storage/share/_images/grid6.png)
+![](/storage/share/_images/grid7.png)
+![](/storage/share/_images/grid8.png)
+![](/storage/share/_images/grid9.png)
+![](/storage/share/_images/grid10.png)
 
 如果 VSAN 挂载的硬盘已经被分区或者格式化，Grid 安装包会忽略所有 VSAN 的硬盘，导致硬盘列表里面不显示硬盘。请确保挂载的硬盘都是新硬盘。
 
-![](../_images/grid11.png)
-![](../_images/grid12.png)
-![](../_images/grid13.png)
-![](../_images/grid14.png)
-![](../_images/grid15.png)
-![](../_images/grid16.png)
+![](/storage/share/_images/grid11.png)
+![](/storage/share/_images/grid12.png)
+![](/storage/share/_images/grid13.png)
+![](/storage/share/_images/grid14.png)
+![](/storage/share/_images/grid15.png)
+![](/storage/share/_images/grid16.png)
 
 这一步会再次检查环境。会发现两个问题，点 “fix & check again”按钮，会得到提示，在两个节点上面用 root 运行一个脚本。请按提示执行，然后重新检查环境。
 
-![](../_images/grid17.png)
+![](/storage/share/_images/grid17.png)
 
 > 注解
 > 
@@ -632,11 +632,11 @@ Press ENTER key to continue after execution of "/tmp/CVU_12.1.0.1.0_grid/runfixu
 
 为了继续安装，请勾上”Ingore All”忽略这个错误，然后下一步。
 
-![](../_images/grid18.png)
+![](/storage/share/_images/grid18.png)
 
 安装到 79% 时，会提示以root用户到两个节点运行脚本。这里必须从 node1 开始执行，全部执行完了，然后再去 node2 执行。其中第二个脚本需要十多分钟的时间执行。
 
-![](../_images/grid19.png)
+![](/storage/share/_images/grid19.png)
 
 脚本执行完成后，到安装界面继续，并完成安装。安装完成后，以 grid 用户运行下面命令确认集群已启动
 
@@ -673,12 +673,12 @@ ora.scan1.vip  ora....ip.type ONLINE    ONLINE    i-xjrahmmp
 
 以 oracle 用户登录，执行 database/runInstaller 进入图形安装界面。
 
-![](../_images/db1.png)
-![](../_images/db2.png)
-![](../_images/db3.png)
-![](../_images/db4.png)
-![](../_images/db5.png)
-![](../_images/db6.png)
+![](/storage/share/_images/db1.png)
+![](/storage/share/_images/db2.png)
+![](/storage/share/_images/db3.png)
+![](/storage/share/_images/db4.png)
+![](/storage/share/_images/db5.png)
+![](/storage/share/_images/db6.png)
 
 然后开始安装，最后也会提示用 root 用户身份在两个节点执行脚本，执行完后结束安装。
 
@@ -696,14 +696,14 @@ ora.scan1.vip  ora....ip.type ONLINE    ONLINE    i-xjrahmmp
 
 以 oracle 用户登录图形界面，执行 dbca ，进入 DBCA 图形界面
 
-![](../_images/create_db1.png)
-![](../_images/create_db2.png)
-![](../_images/create_db3.png)
-![](../_images/create_db4.png)
-![](../_images/create_db5.png)
-![](../_images/create_db6.png)
-![](../_images/create_db7.png)
-![](../_images/create_db8.png)
+![](/storage/share/_images/create_db1.png)
+![](/storage/share/_images/create_db2.png)
+![](/storage/share/_images/create_db3.png)
+![](/storage/share/_images/create_db4.png)
+![](/storage/share/_images/create_db5.png)
+![](/storage/share/_images/create_db6.png)
+![](/storage/share/_images/create_db7.png)
+![](/storage/share/_images/create_db8.png)
 
 下一步选中创建 sample schema ， 然后后面几步全部默认，完成数据库创建。
 

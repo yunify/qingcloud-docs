@@ -23,7 +23,7 @@ draft: false
 
 ## v2.6.0
 
-- 升级 Hadoop、Spark、Hive、Flink 至新版本，升级说明请参见 [版本升级](../../manual/upgrade)。
+- 升级 Hadoop、Spark、Hive、Flink 至新版本，升级说明请参见 [版本升级](../../manual/mgt_cluster/upgrade)。
 
 - 新增 Ranger 组件，支持 Ranger hive 插件，通过 Ranger 对 Hive 的权限控制，详细说明请参见 [Ranger 组件](../../developer_manual/ranger/ranger_info)。
 <!-- 

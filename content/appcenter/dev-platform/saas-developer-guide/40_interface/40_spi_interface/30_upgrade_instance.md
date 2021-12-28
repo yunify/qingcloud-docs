@@ -34,26 +34,26 @@ weight: 30
 ### 示例说明
 
 ```
-请求：
+// 参数：
 {
-  ``"period"``: ``"1_day"``,
-  ``"instance_id"``: ``"ff0f3b68-d3f3-11eb-aa00-acde48001122"``,
-  ``"signature"``: ``"FDylNIKrzn5/IAAIghBQtr3IZxoXtyVizExghkF01EA="``,
-  ``"action"``: ``"UpgradeAppInstance"``,
-  ``"time_stamp"``: ``"2021-06-23T07:24:07Z"``,
-  ``"order_id"``: ``"appor-xxxxx",
-  ``"spec"``: ``"5aWX6aSQ5ZCN56ewMQ=="
+    "period": "1_day",
+    "instance_id": "ff0f3b68-d3f3-11eb-aa00-acde48001122",
+    "signature": "FDylNIKrzn5/IAAIghBQtr3IZxoXtyVizExghkF01EA=",
+    "action": "UpgradeAppInstance",
+    "time_stamp": "2021-06-23T07:24:07Z",
+    "order_id": "appor-xxxxx",
+    "spec": "5aWX6aSQ5ZCN56ewMQ=="
 }
 ```
 
 ```
 GET 请求：
-http:``//127.0.0.1/test/spi?period=1_day&instance_id=ff0f3b68-d3f3-11eb-aa00-acde48001122&signature=FDylNIKrzn5%2FIAAIghBQtr3IZxoXtyVizExghkF01EA%3D&action=UpgradeAppInstance&time_stamp=2021-06-23T07%3A24%3A07Z&spec=5aWX6aSQ5ZCN56ewMQ%3D%3D
+http://127.0.0.1/test/spi?period=1_day&instance_id=ff0f3b68-d3f3-11eb-aa00-acde48001122&signature=FDylNIKrzn5%2FIAAIghBQtr3IZxoXtyVizExghkF01EA%3D&action=UpgradeAppInstance&time_stamp=2021-06-23T07%3A24%3A07Z&spec=5aWX6aSQ5ZCN56ewMQ%3D%3D
 ```
 
 ```
-响应：
+// 响应：
 {
- ``"success"``: ``true
+  "success": true
 }
 ```

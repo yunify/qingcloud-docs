@@ -2,7 +2,7 @@
 title: "产品动态"
 collapsible: false
 description: 介绍 CDN 服务产品动态。
-keyword: QingCloud, 青云, 网络, CDN 服务,产品动态
+keyword: QingCloud, 青云, 云计算, 网络, CDN 服务,产品动态
 weight: 10
 
 product:

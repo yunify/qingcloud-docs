@@ -1,7 +1,7 @@
 ---
 title: "分析实例账号"
 description: 本小节主要介绍如何管理 MySQL Plus 分析实例账号。 
-keyword: mysql plus 分析实例账号
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,分析实例账号
 weight: 30
 collapsible: false
 draft: false
