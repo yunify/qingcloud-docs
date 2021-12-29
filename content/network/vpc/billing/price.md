@@ -2,7 +2,7 @@
 title: "VPC 网络计费"
 linkTitle: "VPC 网络计费"
 description: VPC 网络计费说明。
-keyword: 青云, QingCloud, VPC, VPC 网络, 计费
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 计费
 draft: false
 weight: 2
 ---

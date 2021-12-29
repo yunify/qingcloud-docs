@@ -1,6 +1,8 @@
 ---
 title: "产品动态"
 collapsible: false
+description: Harbor 镜像仓库产品发布动态。
+keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库，镜像仓库
 weight: 10
 
 product:

@@ -1,7 +1,8 @@
 ---
 title: "创建镜像仓库"
+description: 介绍如何创建一个镜像仓库。
 draft: false
-enableToc: false
+keyword: 青云, QingCloud, 云计算, Docker, 镜像仓库, 命名空间
 weight: 1
 ---
 

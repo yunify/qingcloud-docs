@@ -2,7 +2,7 @@
 title: "修改信息模板"
 description: test
 weight: 6
-keyword: 修改信息模板, 域名注册, QingCloud
+keyword: 修改信息模板, 域名注册, QingCloud, 域名
 ---
 
 

@@ -4,7 +4,7 @@ weight: 9
 description: Test description
 draft: false
 enableToc: false
-keyword: 账单, 发票, 订单, 充值
+keyword: QingCloud, 青云, 云计算, 费用中心,合约申请记录, 续费合约
 ---
 
 预留合约是一种预付费模式，用户根据自身对云资源的使用需求，一次性支付一个月、多个月或多年的费用。在合约期内，您可以根据业务需求，随时更改绑定的资源，也可以对合约进行配置升级、迁移、续约等操作。合约到期后若未续费将被回收。

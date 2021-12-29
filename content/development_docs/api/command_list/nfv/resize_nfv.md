@@ -1,7 +1,9 @@
 ---
 title: "ResizeNFV"
-description: 
+description: 调整网络组建规格类型
 draft: false
+weight: 8
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 ---
 
 
@@ -12,9 +14,9 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| nfv | String | 网络组件的 ID 。 | Yes |
-| nfv_spec | Integer | 网络组件的规则，可以是 1-3 。 | Yes |
-| zone | String | 区域 ID，注意要小写。 | Yes |
+| nfv | String | 网络组件的 ID | Yes |
+| nfv_spec | Integer | 网络组件的规则，可以是 1-3 | Yes |
+| zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../../parameters/)
 
@@ -23,7 +25,7 @@ draft: false
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| job_id | String | 缩容或者扩容网络组件的job ID号 |
+| job_id | String | 缩容或者扩容网络组件的 job ID 号 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
 **Example**

@@ -16,7 +16,7 @@ MySQL Plus 云数据库是基于 MySQL 提供的高可用、高性能数据库�
 
 ## 调用 API
 
-MySQL Plus 开放的所有资源操作相关的 API，支持通过 HTTPS GET 方式进行调用的。
+MySQL Plus 开放的所有资源操作相关的 API，支持通过 HTTPS GET 方式进行调用。
 
 在调用 API 前，需要先申请API 密钥，获取 API 密钥 ID ( access_key_id ) 和 API 密钥私钥 ( secret_access_key )。
 

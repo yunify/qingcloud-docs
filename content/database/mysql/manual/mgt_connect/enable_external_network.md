@@ -1,7 +1,7 @@
 ---
 title: "开启外网访问"
 description: 本小节主要介绍如何快速配置 MySQL Plus 集群访问白名单。 
-keyword: mysql plus 白名单,公网访问,外网访问
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,白名单,公网访问,外网访问
 weight: 14
 collapsible: false
 draft: false

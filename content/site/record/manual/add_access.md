@@ -2,6 +2,7 @@
 title: "新增接入"
 description: test
 weight: 5
+keyword: 新增接入, QingCloud, 青云, 备案
 ---
 
 

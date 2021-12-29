@@ -1,6 +1,6 @@
 ---
 title: "删除 VPC 网络"
-keyword: 青云, QingCloud, VPC, VPC 网络
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络
 description: 介绍如何删除 VPC 网络。
 draft: false
 weight: 35

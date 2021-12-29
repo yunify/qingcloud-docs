@@ -3,6 +3,7 @@ title: "编辑共享单元"
 description: test
 weight: 10
 draft: false
+keyword: 编辑共享单元, QingCloud, 青云, 云计算
 ---
 
 资源所有者可以在共享单元列表中编辑已创建的共享单元详情。

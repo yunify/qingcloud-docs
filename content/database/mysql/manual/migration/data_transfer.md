@@ -1,7 +1,7 @@
 ---
 title: "离线迁移"
 description: 本小节主要介绍 MySQL Plus 离线数据迁移。 
-keyword: mysql plus 离线数据迁移,
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,离线数据迁移,
 weight: 30
 collapsible: false
 draft: false
