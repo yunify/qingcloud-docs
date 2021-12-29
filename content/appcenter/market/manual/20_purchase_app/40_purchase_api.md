@@ -1,5 +1,5 @@
 ---
-title: "购买 API 服务"
+title: "购买 API 商品"
 description: 介绍如何在云市场及应用中心购买 API 商品。
 keyword: QingCloud, 青云, AppCenter, 云市场, 购买商品, 购买应用, API 服务
 weight: 40
