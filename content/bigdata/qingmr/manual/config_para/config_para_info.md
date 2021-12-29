@@ -7,8 +7,6 @@ collapsible: false
 draft: false
 ---
 
-
-
 在 AppCenter 集群管理控制台，支持对 QingMR 常用配置参数的管理。
 
 本小节主要介绍 AppCenter 中各 QingMR 配置参数的含义。 
