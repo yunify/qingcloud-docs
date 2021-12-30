@@ -1,7 +1,7 @@
 ---
 title: "创建备份"
 description: 本小节主要如何创建 PostgreSQL 数据备份。 
-keyword: PostgreSQL 数据备份；
+keyword: 数据备份,PostgreSQL,关系型数据库,数据库
 weight: 10
 collapsible: false
 draft: false
