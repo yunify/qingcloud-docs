@@ -19,7 +19,7 @@ draft: false
 | :--- | :--- | :--- | :--- |
 | action        | String | 响应动作。<li>取值 `RunClusterCustomService`  | Yes      |
 | cluster        | String | 集群 ID。<li>取值示例 `cl-ouhutv70`  | Yes      |
-| role           | String | 节点角色类型。 <li><li>取值 `readinstance`表示只读实例节点。 | Yes      |
+| role           | String | 节点角色类型。 <li>取值 `readinstance`表示只读实例节点。 | Yes      |
 | service        | String | 自定义服务类型。<li>取值 `rebuildme`，表示重建集群服务。 | Yes      |
 | service_params | String | 自定义服务功能配置参数。<br> 取值示例 {"node_id":"cln-peanv086"} <br>- `node_id` 表示集群节点 ID。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>该配置参数输入格式，需为 URL 编码 JSON 格式。</li></span>  | Yes |
 

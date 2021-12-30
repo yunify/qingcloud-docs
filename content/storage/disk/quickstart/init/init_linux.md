@@ -199,6 +199,7 @@ keyword: 云计算, 青云, QingCloud, 云硬盘,初始化,linux,数据盘
 
    ![init_linux_16](/storage/disk/_images/init_linux_16.png)
 
+
    > **说明：**
    >
    > **Partition Table**：为 “unknow” 表示磁盘分区形式未知，新的数据盘还未设置分区形式。
@@ -220,12 +221,15 @@ keyword: 云计算, 青云, QingCloud, 云硬盘,初始化,linux,数据盘
 
 5. 输入 `unit s`，按 `Enter` 键，设置磁盘的计量单位为磁柱。
 
+
 6. 输入如下内容，按 `Enter` 键，为整个磁盘创建一个分区。
 
    ```
    mkpart primary 2048s 100%
    ```
+   
    其中，“primary” 表示磁盘分区名称，“2048s” 表示磁盘起始磁柱值，“100%” 表示磁盘截止磁柱值，此处仅供参考，用户可以根据业务需要自行规划磁盘分区数量及容量。
+
 
    > **说明**：
    >
@@ -241,6 +245,7 @@ keyword: 云计算, 青云, QingCloud, 云硬盘,初始化,linux,数据盘
 8. 确认分区的信息无误后，键入 `q` 退出 parted 工具。
 
    ![init_linux_19](/storage/disk/_images/init_linux_19.png)
+
 
 9. 执行 `lsblk` 命令, 查看分区信息
 
