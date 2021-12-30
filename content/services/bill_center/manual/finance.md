@@ -1,7 +1,7 @@
 ---
 title: "财务管理"
 weight: 8
-description: Test description
+description: 介绍如何进行账户充值、汇款集优惠券的使用。
 draft: false
 keyword: QingCloud, 青云, 云计算, 财务管理, 优惠券, 钱包, 充值, 线下汇款
 ---

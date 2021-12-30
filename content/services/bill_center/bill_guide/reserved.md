@@ -1,7 +1,7 @@
 ---
 title: "预留合约计费"
 weight: 9
-description: Test description
+description: 详细介绍预留合约计费模式相关功能特性、计费方法、合约操作等。
 draft: false
 enableToc: false
 keyword: QingCloud, 青云, 云计算, 费用中心,合约申请记录, 续费合约
