@@ -14,11 +14,11 @@ API 类商品接入后，用户可以在云市场购买您的 API 类商品，�
 
 - 已入驻云市场。具体操作请参见[服务商入驻流程](/appcenter/market/serviceprovider/20_contracts/)。
 
-- 已在青云 API 网关上部署您的 API 服务，具体请参考 [API 网关文档](/middware/api_gateway/manual/create_apiservice/)。
+- 已在青云 API 网关上部署您的 API 服务。具体操作请参考 [API 网关文档](/middware/api_gateway/manual/create_apiservice/)。
 
 ## 上架流程
 
-1. 服务商发布 API 服务至 API 网关，操作详情可参见 API网关文档。
+1. 服务商发布 API 服务至 API 网关，操作详情可参见 [API 网关文档](/middware/api_gateway/manual/create_apiservice/)。
 
 2. 服务商发布 API 服务商品，并提交审核。
 
