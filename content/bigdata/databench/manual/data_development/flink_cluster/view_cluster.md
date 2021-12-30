@@ -2,7 +2,7 @@
 title: "查看计算集群详情"
 description: 本小节主要介绍如何。 
 keywords: 
-weight: 50
+weight: 20
 collapsible: false
 draft: false
 ---

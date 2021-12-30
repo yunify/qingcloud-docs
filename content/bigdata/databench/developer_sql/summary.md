@@ -1,6 +1,6 @@
 ---
-title: "内置 Connector 概览"
-description: 本小节主要介绍运维中心功能。 
+title: "概述"
+description: 本小节主要介绍 Flink 内置 Connector。 
 keywords: 
 weight: 1
 collapsible: false

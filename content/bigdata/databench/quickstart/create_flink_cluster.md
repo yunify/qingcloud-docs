@@ -24,7 +24,7 @@ draft: false
 
 ### 基础属性
 
-| 参数           | 参数说明                                                     |
+| <span style="display:inline-block;width:180px">参数</span>  | <span style="display:inline-block;width:700px">参数说明</span>  |
 | :------------- | ------------------------------------------------------------ |
 | 名称       | 计算集群的名称，您可以自定义。               |
 | 版本       | 计算集群的版本，通过下拉框进行选择。              |
@@ -34,7 +34,7 @@ draft: false
 
 ### 资源配置
 
-| 参数           | 参数说明                                                     |
+| <span style="display:inline-block;width:180px">参数</span>  | <span style="display:inline-block;width:700px">参数说明</span>  |
 | :------------- | ------------------------------------------------------------ |
 | TM 数量       | Flink 的 TaskManager 的数量。               |
 | TM 规格       | Flink 的 TaskManager 的 CPU 和内存规格。              |
@@ -60,7 +60,7 @@ draft: false
 
 Host 别名和 Flink 参数均为可选配置，请根据实际情况进行选配。
 
-| 参数           | 参数说明                                                     |
+| <span style="display:inline-block;width:180px">参数</span>  | <span style="display:inline-block;width:700px">参数说明</span>  |
 | :------------- | ------------------------------------------------------------ |
 | Host 别名       | 配置 IP 地址和 Host 名称。支持批量输入和单条输入。批量输入时，IP 地址和 Host 名称用空格分隔，多条配置换行输入。               |
 | Flink 参数      | 配置 Flink 参数，Yaml 格式。支持批量输入和单条输入。批量输入时，多个参数换行输入。              |
