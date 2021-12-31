@@ -1,11 +1,11 @@
 ---
 title: "无法连接数据库"
 description: 本小节主要介绍无法连接 MySQL Plus 数据库的排查方案。 
-keyword: 数据库,MySQL PLus,关系型数据库,MySQL,无法连接,无法访问
+keyword: 无法连接,无法访问,数据库,MySQL PLus,关系型数据库,MySQL
 weight: 05
 collapsible: false
 draft: false
-alias: 
+aliases: 
    - /database/mysql/faq/access_problems/
 ---
 
