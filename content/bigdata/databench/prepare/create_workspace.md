@@ -2,7 +2,7 @@
 title: "创建工作空间"
 description: 本小节主要介绍如何创建工作空间。 
 keywords: 工作空间
-weight: 10
+weight: 30
 collapsible: false
 draft: false
 ---

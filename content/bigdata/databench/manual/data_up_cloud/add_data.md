@@ -30,7 +30,7 @@ aliases:
 
    <img src="/bigdata/databench/_images/set_database.png" alt="配置数据源" style="zoom:50%;" />
 
-7. 配置配置数据源[基本信息](#基本信息)。
+7. 配置数据源[基本信息](#基本信息)。
 8. 配置数据源连接信息。数据源不同，需要配置的连接信息也不同。
    
    - [MySQL 连接信息](#连接信息-mysqlpostgresqlclickhouse)
