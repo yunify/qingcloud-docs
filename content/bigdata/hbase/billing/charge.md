@@ -1,7 +1,7 @@
 ---
 title: "到期与欠费"
-description: 本小节主要介绍 QingCloud QingMR 到期与欠费说明。 
-keyword: 云计算,大数据,青云,QingCloud,QingMR,到期,欠费 
+description: 本小节主要介绍 QingCloud HBase 到期与欠费说明。 
+keyword: 云计算,大数据,HBase,到期,欠费 
 weight: 30
 collapsible: false
 draft: false
@@ -9,12 +9,12 @@ draft: false
 
 ## 到期说明
 
-**包年/包月**的 QingMR 集群续费方式默认为`到期不续费`，即到期后集群不会自动续费。若到期未续费，集群资源会自动变更为按需计费模式。  
+**包年/包月**的 HBase 集群续费方式默认为`到期不续费`，即到期后集群不会自动续费。若到期未续费，集群资源会自动变更为按需计费模式。  
 
 > **注意**
 > 
 > 按需计费相比包年/包月单价更高，建议您提前对集群进行续费。
-> QingMR 集群目前支持手动续费，详细操作请参见[续费集群](../../manual/mgt_cluster/renew_manual)。
+> HBase 集群目前支持手动续费，详细操作请参见[续费集群](../../manual/mgt_cluster/renew_manual)。
 
 ## 欠费说明
 
