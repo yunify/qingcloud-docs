@@ -1,13 +1,13 @@
 ---
 title: "退款说明"
-description: 本小节主要介绍 QingCloud QingMR 退款说明。 
-keyword: 云计算,大数据,青云,QingCloud,QingMR,退款,退订
+description: 本小节主要介绍 QingCloud HBase 退款说明。 
+keyword: 云计算,大数据,HBase,退款,退订
 weight: 40
 collapsible: false
 draft: false
 ---
 
-本小节主要介绍 QingMR 退款说明及相关操作。
+本小节主要介绍 HBase 退款说明及相关操作。
 
 ## 退订
 
