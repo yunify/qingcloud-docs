@@ -1,6 +1,6 @@
 ---
-title: "作业实例"
-description: 本小节主要介绍如何管理作业实例。 
+title: "查看作业实例"
+description: 本小节主要介绍如何查看作业实例。 
 keywords: 
 weight: 20
 collapsible: false
@@ -26,6 +26,8 @@ aliases:
 5. 在左侧导航选择**流式计算运维** > **作业实例**，进入作业实例页面。
    
    **实例状态**：包括`准备资源`、`运行中`、`失败重试`、`已暂停`、`已终止`、`运行成功`、`运行超时`、`运行失败`。
+
+   <img src="/bigdata/databench/_images/job_instance02.png" alt="查看关联实例" style="zoom:50%;" />
 
 
 

@@ -7,15 +7,16 @@ collapsible: false
 draft: false
 ---
 
-当系统内置函数无法您的业务需求时，您可以编写自定义函数 UDF（User-Defined Functions）插入自己的处理代码，并在查询中进行使用，从而满足业务的多样化需求。
+当系统内置函数无法支撑您的业务需求时，您可以编写自定义函数 UDF（User-Defined Functions）插入自己的处理代码，并在查询中进行使用，从而满足业务的多样化需求。
 
 大数据工作台支持如下自定义函数：
- - [UDF](../udf/)（User-Defined Functions），自定义标量函数，输入单个数据行，输出一个数据行。
- - [UDTF](../udtf/)（User-Defined Table Functions），自定义表值函数，用来解决输入一行输出多行（On-to-many maping）的需求。
- - [UDTTF](../udttf/)（User-Defined Temporal Table Functions），自定义时态表函数，通过一个时间属性来确定表数据的版本。
+ - [UDF](../udf/)（User-Defined Functions，自定义标量函数）：输入单个数据行，输出一个数据行。
+ - [UDTF](../udtf/)（User-Defined Table Functions，自定义表值函数）：输入一行输出多行（On-to-many maping）。
+ - [UDTTF](../udttf/)（User-Defined Temporal Table Functions，自定义时态表函数）：通过一个时间属性来确定表数据的版本。
 
 ## 注意事项
 
 - 自定义函数的性能低于系统内置函数，若系统内置函数能满足业务需求，建议您优先使用系统内置函数。
-- 在 SQL 作业中使用自定义函数时，如果计算的数据量过大并且存在倾斜，会导致作业占用的内存超出默认分配的内存。此时，您可以在 Session 级别设置 set odps.sql.udf.joiner.jvm.memory=xxxx; 属性来解决此问题。
 - 当自定义函数的名称与系统内置函数的名称相同时，系统默认会调用自定义函数，若您希望调用系统内置函数，需要在函数名称前增加“::”符号。
+- 在 SQL 作业中使用自定义函数时，如果计算的数据量过大并且存在倾斜，会导致作业占用的内存超出默认分配的内存。此时，您可以在 Session 级别设置 set odps.sql.udf.joiner.jvm.memory=xxxx; 属性来解决此问题。
+

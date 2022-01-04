@@ -26,17 +26,35 @@ UDTF 函数适用于一进多出的业务场景，即函数的输入与输出是
    
    <img src="/bigdata/databench/_images/create_function_node.png" alt="新建函数节点" style="zoom:50%;" />
 
-6. 选择函数语言后，点击**下一步**。
-7. 配置函数名，函数名需与实现名保持一致。
-8. 配置函数代码。
+6. 选择函数语言后，点击**下一步**，配置函数节点。
+7. 配置基础属性。
+
+   - 函数名：函数名需与实现名保持一致。
+   - 描述信息：函数的描述信息。
+
+8. 配置特有属性。不同的语言，需要配置的参数也不同。
+    
+   - [选择 Java 语言](#java)
+   - [选择 Python 语言](#python)
+   - [选择 Scala 语言](#scala)
+
 9. 点击**确定新建**，开始创建函数节点。
-10. 创建完成后回到函数管理页面，可以看到已创建好的函数节点。   
-    - 编辑函数节点：点击函数操作列的**编辑**，可修改**函数名**和**函数语句**。
-    - 删除函数节点：点击函数操作列的**删除**，可删除函数。
+    
+    创建完成后回到函数管理页面，可以看到已创建好的函数节点。 
 
-## UDTF 示例
+### Java
 
-### Python UDTF 语句示例
+在**引用 Jar 包**下拉框中选择已上传的 Jar 包资源。也可以点击**上传资源**，立即上传新的 Jar 包资源。
+
+<img src="/bigdata/databench/_images/create_udf_java.png" alt="新建函数节点-udf-java" style="zoom:50%;" />
+
+### Python
+
+在 **Python 语句**中输 入 Python 代码。
+
+<img src="/bigdata/databench/_images/create_udf_python.png" alt="新建函数节点-udf-python" style="zoom:50%;" />
+
+#### Python UDTF 语句示例
 
 ```python
 class Split(TableFunction):
@@ -51,7 +69,13 @@ st_env.register_function($qc$_udf_name_$qc$, udtf(Split(), DataTypes.STRING(), [
 >
 > $qc$_udf_name_$qc$ 是一个占位符，当使用函数时，会替换成创建函数时所填写的名字。
 
-### Scala UDTF 语句示例
+### Scala
+
+在 **Scala 语句**中输 入 Scala 代码。
+
+<img src="/bigdata/databench/_images/create_udf_scala.png" alt="新建函数节点-udf-scala" style="zoom:50%;" />
+
+#### Scala UDTF 语句示例
 
 ```scala
 import org.apache.flink.table.annotation.DataTypeHint
@@ -70,3 +94,18 @@ class SplitFunction extends TableFunction[Row] {
 stenv.registerFunction($qc$_udf_name_$qc$, new SplitFunction())
 ```
 
+## 编辑 UDTF 函数节点
+
+若您需要修改函数名称、描述信息、函数代码，您可以执行以下步骤。
+
+1. 点击函数操作列的**编辑**，进入编辑函数节点页面。
+2. 根据实际情况修改**函数名**、**描述**和**特有属性**。
+
+## 删除 UDTF 函数节点
+
+> **注意**
+>
+> 删除函数后，相关作业、任务将无法正常运行，且该操作无法撤回，请谨慎操作。
+
+- **单个删除**：在需要删除的函数节点的操作列，点击**删除**，在弹出的提示框中点击**删除**。    
+- **批量删除**：勾选需要删除的函数节点，点击列表上方的**删除**，在弹出的提示框中点击**删除**。
