@@ -7,11 +7,9 @@ collapsible: false
 draft: false
 ---
 
-
-
 ## 查看集群详情
 
-![查看服务详情](../../_images/cluster_detail.png)
+![查看服务详情](../../../_images/cluster_detail.png)
 
 创建成功后，点击集群列表页面相应集群可查看集群详情。
 
@@ -24,4 +22,4 @@ draft: false
 
 进入集群详情页面后，点击**服务详情**，即可查看各节点的运行服务。
 
-![查看服务详情](../../_images/service_detail.png)
+![查看服务详情](../../../_images/service_detail.png)
