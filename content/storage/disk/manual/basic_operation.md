@@ -92,7 +92,7 @@ keyword: 云计算, 青云, QingCloud, 云硬盘, 基本操作指南
 
    ![basic_operation_9](/storage/disk/_images/basic_operation_9.png)
 
-硬盘 IOPS 及硬盘吞吐量实时监控数据默认为关闭状态，点击右侧关闭按钮便可切换为开启状态，查看硬盘 IOPS 和吞吐量实时数据。默认显示最近6小时数据，可选择查看最近一天、最近两周、最近一个月和最近6个月的数据。
+硬盘 IOPS 及硬盘吞吐量实时监控数据默认为关闭状态，点击右侧关闭按钮便可切换为开启状态，查看硬盘 IOPS 和吞吐量实时数据。默认显示最近 6 小时数据，可选择查看最近一天、最近两周、最近一个月和最近 6 个月的数据。
 
 还可点击硬盘使用率右侧的 **查看监控图** 来查看硬盘使用率。
 
@@ -116,9 +116,9 @@ keyword: 云计算, 青云, QingCloud, 云硬盘, 基本操作指南
 
 >**说明**：
 >
->该页面仅对以往签署预留合约并且合约状态处于“生效中”或“OPEN期”的用户可见。
+>该页面仅对以往签署预留合约并且合约状态处于“生效中”或“OPEN 期”的用户可见。
 
-在硬盘列表，单击硬盘ID后的预留资源图标<img src="/storage/disk/_images/reserve_resource.png" alt="预留资源" style="zoom:50%;" />，进入硬盘绑定的预留合约详情页。
+在硬盘列表，单击硬盘 ID 后的预留资源图标<img src="/storage/disk/_images/reserve_resource.png" alt="预留资源" style="zoom:50%;" />，进入硬盘绑定的预留合约详情页。
 
 ![basic_operation_12](/storage/disk/_images/basic_operation_12.png)
 

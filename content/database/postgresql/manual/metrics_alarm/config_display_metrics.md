@@ -1,13 +1,14 @@
 ---
 title: "监控指标"
-description: 本小节主要介绍 PostgreSQL 主要支持哪些监控指标。 
-keyword: PostgreSQL 监控指标
+description: 本小节主要介绍 PostgreSQL 主要的监控指标。 
+keyword: PG,监控指标
 weight: 10
 collapsible: false
 draft: false
 ---
 
 PostgreSQL 提供集群服务和资源性能监控指标和告警信息。
+
 - 服务监控指标统计了 PostgreSQL 中的相关信息，可用于定位分析数据库的性能。
 
 - 资源监控指标统计了云服务器的资源信息，如 CPU 使用率、硬盘 IOPS 情况等，可用于查看系统性能是否到达瓶颈。
@@ -24,7 +25,7 @@ PostgreSQL 提供集群服务和资源性能监控指标和告警信息。
 | 连接数 | 5分钟 | counts | 统计当前连接到 PostgreSQL 的总连接数。<br>以个为单位。 |
 | 事务总数 | 5分钟 | counts | 统计当前 PostgreSQL 的事务总数。<br>以次为单位。 |
 | 等待事务数 | 5分钟 | counts| 统计当前 PostgreSQL 的等待事务总数。<br>以次为单位。 |
-| 死锁数 | 5分钟 | counts | 统计当PostgreSQL 的死锁总数。<br>以个为单位。 |
+| 死锁数 | 5分钟 | counts | 统计当 PostgreSQL 的死锁总数。<br>以个为单位。 |
 
 ## 支持的资源监控指标
 
