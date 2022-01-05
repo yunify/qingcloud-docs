@@ -44,3 +44,6 @@ draft: false
   - **推荐**扫码认证（即时完成认证），请参见[个人认证](/authorization/account/manual/account_aut/account_boss/#扫码认证推荐)。
   - 企业证件认证（1-3个工作日），请参见[企业证件认证](/authorization/account/manual/account_aut/account_boss/#企业证件认证)。
 
+## 修改实名认证信息
+
+实名认证通过之后，如果您想修改实名认证信息，请您在控制台[提交工单](https://console.qingcloud.com/tickets/)，技术支持工程师会协助您完成实名认证信息的修改。
