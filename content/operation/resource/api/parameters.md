@@ -3,7 +3,7 @@ title: "公共参数"
 description: 本小节主要介绍项目 api 公共参数。 
 keyword: 项目公共参数；api 公共参数
 draft: false
-weight: 20
+weight: 10
 collapsible: false
 
 ---

@@ -44,7 +44,8 @@ https://api.qingcloud.com/iaas/?action=ModifyProjectAttributes
 &description=
 &meta=[{"color":"#324558"}]
 &project_id=pj-wijjziy3
-&owner=usr-g8ZyBo6l&zone=testing
+&owner=usr-g8ZyBo6l
+&zone=testing
 ```
 
 ### 响应示例
