@@ -3,6 +3,6 @@ title: "集群管理"
 linkTitle: "集群管理"
 _build:
  render: false 
-weight: 15
+weight: 10
 collapsible: true
 ---
