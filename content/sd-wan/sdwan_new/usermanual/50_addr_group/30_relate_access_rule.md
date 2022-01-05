@@ -19,7 +19,7 @@ weight: 30
 
 2. 选择**产品与服务** > **SD-WAN** > **SD-WAN**，进入**概览**页面。
 
-   <img src="/Users/amytan/work/github/qingcloud-docs/content/sd-wan/_images/qs_cloud_network.png" style="zoom:50%;" />
+   <img src="../../../_images/qs_cloud_network.png" style="zoom:50%;" />
 
 3. 在左侧导航栏中，点击**地址簿**，进入**地址簿**页面。
 
@@ -27,7 +27,7 @@ weight: 30
 
 4. 点击已新增的地址簿，进入地址簿详细信息页面。
 
-5. 点击关联访问控制规则，进入关联访问控制规则页面。
+5. 点击**关联访问控制规则**，进入关联访问控制规则页面。
 
    
 

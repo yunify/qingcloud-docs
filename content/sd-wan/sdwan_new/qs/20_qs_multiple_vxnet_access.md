@@ -1,5 +1,5 @@
 ---
-title: "不同 VPC 下 Vxnet 通信（多对多 ）"
+title: "分支互联"
 draft: false
 collapsible: false
 weight: 10
@@ -13,7 +13,7 @@ weight: 10
 
 如下**以 QingCloud 上创建的 VPC、私有网络、云服务器为例**进行说明。
 
-### 网络规划
+## 网络规划
 
 如下多对多网络通信的网络规划是基于[不同 VPC 下 Vxnet 通信（1对1）](../10_qs_2vxnet_access)的网络规划新增新网段网卡，并将网卡分配给同一个 VPC 下的 vCPE。网卡分配完成后，配置相关路由通告和默认路由，从而实现不同 VPC 下 Vxnet 的多对多通信。
 
@@ -21,7 +21,7 @@ weight: 10
 
 <img src="../../_images/qs_vcpe_multiple.png" style="zoom:48%;" />
 
-### 准备工作
+## 准备工作
 
 - 已获取 QingCloud 管理控制台的账号和密码。
 
@@ -30,6 +30,14 @@ weight: 10
 - 已部署且激活 vCPE 01 和 vCPE 02。
 
   部署 vCPE 请参见[部署 vCPE](../../vcpe/30_deploy_script)。
+
+## 操作步骤
+
+1. 基于 1 对 1 通信完成配置
+2. 申请网卡并分配到主机
+3. 配置云服务器静态路由
+4. 通过 BGP 将私有网络通告
+5. 验证网络连通性
 
 ### 步骤一：基于 1 对 1 通信完成配置
 

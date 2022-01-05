@@ -1,8 +1,8 @@
 ---
 title: "共享策略"
-draft: false
+draft: true
 collapsible: false
-weight: 20
+weight: 40
 ---
 
 您可以通过添加共享策略的方式，可实现主网与共享云网、共享云网与共享云网间的网络互通。

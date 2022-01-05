@@ -5,18 +5,25 @@ collapsible: false
 weight: 40
 ---
 
-## 与 SD-NaaS 结合应用加速
+## 企业上云
 
-<img src="../../_images/intro_sd_naas.png" style="zoom:48%;" />
+您可以在企业总部、分支机构、数据中心等场所部署光盒 CPE，并通过本地互联网就近接入 VPE 接入点，从而形成专属的广域网。若业务在不同的公有云上，则通过 vCPE（virtual CPE）接入 VPE 接入点，从而实现企业用户与公有云的连接。
 
-## 与 IOT 融合
+> **说明**
+>
+> 就近接入 VPE 接入点：光盒 CPE 和 vCPE 会实时检测 VPE 接入点的延迟，并选择最优路线接入连接云网。
 
-<img src="../../_images/intro_sd_iot.png" style="zoom:48%;" />
+![](../../_images/enterprise_cloud.png)
 
-## 多云互通
+## 分支互联
 
-<img src="../../_images/intro_sd_more_cloud.png" style="zoom:48%;" />
+在企业总部、分支机构、数据中心等场所部署光盒 CPE，通过互联网链路与就近的 VPE 接入点进行虚拟隧道对接，从而实现企业总部、分支办公网络、数据中心专属广域网的连接。
 
-## 不同云内网互通
+部署在总部与分支机构的光盒 CPE，通过控制器进行集中纳管，实现光盒 CPE 的统一配置、一键下发、快速部署。
 
-![](../../_images/intro_sd_diff_ip.png)
+光盒 CPE 设备支持 HA 主备模式部署增加可靠性。
+
+![](../../_images/branch_interconnection.png)
+
+
+

@@ -1,5 +1,5 @@
 ---
-title: "初始化 Windows 数据盘"
+title: "初始化数据盘(Windows)"
 description: 本小节主要介绍如何对Windows系统下的数据盘进行初始化操作。
 draft: false
 enableToc: false
@@ -23,7 +23,7 @@ keyword: 云计算, 青云, QingCloud, 云硬盘,初始化,Windows,数据盘
 
    ![init_win_4](/storage/disk/_images/init_win_4.png)
 
-4. 右键单击磁盘上未分配的区域，选择【新建简单卷】，然后按照提示操作即可。
+4. 右键单击磁盘上未分配的区域，选择**新建简单卷**，然后按照提示操作即可。
 
    ![init_win_5](/storage/disk/_images/init_win_5.png)
 
@@ -53,7 +53,7 @@ keyword: 云计算, 青云, QingCloud, 云硬盘,初始化,Windows,数据盘
 
    ![init_win_13](/storage/disk/_images/init_win_13.png)
 
-3. 右键单击磁盘上未分配的区域，选择【新建简单卷】，然后按照提示操作即可。
+3. 右键单击磁盘上未分配的区域，选择**新建简单卷**，然后按照提示操作即可。
 
    ![init_win_14](/storage/disk/_images/init_win_14.png)
 

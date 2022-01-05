@@ -31,24 +31,11 @@ weight: 10
 
    参数说明，如下表所示。
 
-   <table class="table table-bordered table-striped table-condensed">
-     <tr>
-   		<th>参数</td>
-   		<th>参数说明</td>
-   	</tr>
-     <tr>
-   		<td>操作行为</td>
-       <td>用户的操作行为。</td>
-   	</tr>
-     <tr>
-   		<td>状态</td>
-   		<td>操作的状态。</td>
-   	</tr>
-     <tr>
-   		<td>操作时间</td>
-       <td>操作的时间。</td>
-   	</tr>
-   </table>
+   | 参数     | 参数说明         |
+   | -------- | ---------------- |
+   | 操作行为 | 用户的操作行为。 |
+   | 状态     | 操作的状态。     |
+   | 操作时间 | 操作的时间。     |
 
 ## 相关操作
 

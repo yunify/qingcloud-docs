@@ -1,5 +1,5 @@
 ---
-title: "SD-WAN（New）"
+Connectiontitle: "SD-WAN（New）"
 linkTitle: "SD-WAN"
 weight: 3
 collapsible: true

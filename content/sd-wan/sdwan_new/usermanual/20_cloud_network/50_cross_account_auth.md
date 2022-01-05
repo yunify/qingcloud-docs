@@ -1,8 +1,8 @@
 ---
 title: "跨账号授权"
-draft: false
+draft: true
 collapsible: false
-weight: 40
+weight: 50
 ---
 
 支持资源共享，默认情况下不通，通过跨账号授权的方式，使不同账号下的网络互通更灵活。

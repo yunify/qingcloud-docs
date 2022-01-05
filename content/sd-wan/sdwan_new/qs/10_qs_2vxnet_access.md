@@ -1,5 +1,5 @@
 ---
-title: "不同 VPC 下 Vxnet 通信（1 对 1）"
+title: "企业上云"
 draft: false
 collapsible: false
 weight: 10
@@ -32,10 +32,6 @@ weight: 10
 ### 步骤一：创建连接云网
 
 1. 登录 QingCloud 管理控制台。
-
-2. 选择**产品与服务** > **SD-WAN** > **SD-WAN**，进入 **SD-WAN** 的**概览**页面。
-
-   <img src="../../_images/qs_overview_entrance.png" style="zoom:50%;" />
 
 3. 在左侧导航栏中，点击**连接云网**，进入**连接云网**页面。
 

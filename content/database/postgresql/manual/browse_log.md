@@ -1,7 +1,7 @@
 ---
 title: "日志管理"
 description: 本小节主要介绍如何获取 PostgreSQL 运行日志。 
-keyword: PostgreSQL 运行日志；
+keyword: 运行日志,日志管理,PostgreSQL,关系型数据库,数据库
 weight: 90
 collapsible: false
 ---
