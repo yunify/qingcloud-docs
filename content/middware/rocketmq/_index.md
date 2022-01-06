@@ -14,7 +14,7 @@ Section2:
   children:
     - title: 产品简介
       content: 产品简介
-      url: "intro/intro"
+      url: "intro/introduction"
 
     - title: 计费指南
       content: 计费指南
@@ -22,14 +22,14 @@ Section2:
 
     - title: 快速入门
       content: 快速入门
-      url: "quick-start/quick_start"
+      url: "quickstart/create_cluster"
 
     - title: 操作指南
-      content: 学习如何管理RocketMQ集群，以及如何使用RocketMQ提供的相关服务等。
+      content: 学习如何管理 RocketMQ 集群，以及如何使用 RocketMQ 提供的相关服务等。
       url: "manual/cluster_use"
      
     - title: 常见问题
-      content: RocketMQ使用常见问题
+      content: RocketMQ 使用常见问题
       url: "faq/how_get_log"
 
 
@@ -55,21 +55,21 @@ section4:
       vice_title: 了解的第一步      
       children:
         - title: 产品简介
-          url: "/middware/rocketmq/intro/intro"
-    - title: 上手：RocketMQ集群的常见操作
-      content: 学习如何创建、管理、使用RocketMQ集群。
+          url: "/middware/rocketmq/intro/introduction"
+    - title: 上手：RocketMQ 集群的常见操作
+      content: 学习如何创建、管理、使用 RocketMQ 集群。
       vice_title: 上手的第一步
 
       children: 
-        - title: 创建RocketMQ
-          url: "/middware/rocketmq/quick-start/quick_start"
+        - title: 创建 RocketMQ
+          url: "/middware/rocketmq/quickstart/create_cluster"
 
         - title: 集群使用
           url: "/middware/rocketmq/manual/cluster_use"
         
-        - title: RocketMQ Console使用示例
-          url: "/middware/rocketmq/manual/rocketmq_console"
-        - title: RocketMQ CLI命令示例
-          url: "/middware/rocketmq/manual/rocketmq_cli"
+        - title: RocketMQ Console
+          url: "/middware/rocketmq/rocketmq_console/access"
+        - title: RocketMQ CLI
+          url: "/middware/rocketmq/rocketmq_cli/login_client"
 ---
 

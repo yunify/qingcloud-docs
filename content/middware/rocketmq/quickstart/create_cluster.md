@@ -1,12 +1,12 @@
 ---
-title: "创建 RocketMQ 集群"
+title: "步骤一：创建 RocketMQ 集群"
 description: 本小节主要介绍如何创建 RocketMQ 集群。
 keyword: 云计算,大数据,消息队列,中间件,RocketMQ,rocketMQ,创建集群,快速入门
 weight: 10
 draft: false
 ---
 
-创建RocketMQ集群前，您需要先创建一个VPC网络。
+创建 RocketMQ 集群前，您需要先创建一个 VPC 网络。
 
 > **说明**
 > 
