@@ -41,7 +41,7 @@ draft: false
 
 3. 输入本人身份证姓名和身份证号码，并勾选**我已阅读并同意《青云QingCloud云服务使用协议》实名认证条款**。
 
-   <img src="../../../_images/account_person_12.png" style="zoom:50%;"/>
+   <img src="../../../_images/account_person_12.png" style="zoom:40%;"/>
 
 4. 点击**下一步：人脸验证**。
 
