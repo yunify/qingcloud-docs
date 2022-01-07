@@ -26,7 +26,7 @@ draft: false
 
 ## 费用充值
 
-帐户余额不足时，请及时充值，以保障资源的正常使用。    
+账号余额不足时，请及时充值，以保障资源的正常使用。    
 青云账号支持多种充值途径：支付宝、网上银行、微信支付、线下银行转账。可在[充值页面](https://console.qingcloud.com/finance/wallet/)选择。    
 如果需要发票，请到[发票管理](https://console.qingcloud.com/finance/invoices/)提出申请。
 
