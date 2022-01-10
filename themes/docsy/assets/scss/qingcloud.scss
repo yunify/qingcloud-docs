@@ -612,6 +612,8 @@ footer.footer span.tel {
     -ms-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-align: inherit !important;
+
 }
 
 span.menu__title[data-depth='0'] {
@@ -649,7 +651,6 @@ span.menu__title[data-depth='0'] {
     line-clamp: 2;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    -moz-box-orient: inherit;
     overflow:hidden;
 }
 
@@ -666,8 +667,7 @@ span.menu__title[data-depth='0'] {
     display: -ms-flexbox;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    overflow:hidden;
-    -moz-box-orient: inherit;
+    overflow: hidden;
 }
 
 .menu__title[data-depth='4'] {
