@@ -54,7 +54,7 @@ UDTF 函数适用于一进多出的业务场景，即函数的输入与输出是
 
 <img src="/bigdata/databench/_images/create_udf_python.png" alt="新建函数节点-udf-python" style="zoom:50%;" />
 
-#### Python UDTF 语句示例
+#### 示例
 
 ```python
 class Split(TableFunction):
@@ -75,7 +75,7 @@ st_env.register_function($qc$_udf_name_$qc$, udtf(Split(), DataTypes.STRING(), [
 
 <img src="/bigdata/databench/_images/create_udf_scala.png" alt="新建函数节点-udf-scala" style="zoom:50%;" />
 
-#### Scala UDTF 语句示例
+#### 示例
 
 ```scala
 import org.apache.flink.table.annotation.DataTypeHint

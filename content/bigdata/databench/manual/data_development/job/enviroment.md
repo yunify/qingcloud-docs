@@ -1,6 +1,6 @@
 ---
-title: "配置环境参数"
-description: 本小节主要介绍如何。 
+title: "配置运行参数"
+description: 本小节主要介绍如何配置运行参数。 
 keywords: 
 weight: 50
 collapsible: false

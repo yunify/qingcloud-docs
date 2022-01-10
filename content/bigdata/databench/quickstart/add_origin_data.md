@@ -24,19 +24,19 @@ draft: true
    
    <img src="../../_images/choose_database.png" alt="选择数据库" style="zoom:50%;" />
 
-6. 选择一个数据库，单击数据库名称，进入所选数据库的配置页面。本文以 MySQL 为例。
+6. 选择一个数据库，点击数据库名称，进入所选数据库的配置页面。本文以 MySQL 为例。
 
    <img src="../../_images/set_database.png" alt="配置数据库" style="zoom:50%;" />
 
 7. 配置数据库相关参数，参数详细说明请参见 [MySQL 数据库配置参数](#mysql-数据库配置参数)。
 8. 点击**开始测试**，测试数据源的可用性。
-9. 单击**确定**，开始新增数据源。
+9. 点击**确定**，开始新增数据源。
 
 ## MySQL 数据库配置参数
 
 ### 基本信息
 
-| <span style="display:inline-block;width:180px">参数</span>  | <span style="display:inline-block;width:700px">参数说明</span>  |
+| <span style="display:inline-block;width:140px">参数</span>  | <span style="display:inline-block;width:520px">参数说明</span>  |
 | :------------- | ------------------------------------------------------------ |
 | 数据源连接方式 | 当前仅支持**连接串模式**，即通过 IP 端口、用户名密码进行连接。 |
 | 数据源名称     | 新增数据源的名称，您可以自定义。                             |
@@ -44,7 +44,7 @@ draft: true
 
 ### 连接信息
 
-| <span style="display:inline-block;width:180px">参数</span>  | <span style="display:inline-block;width:700px">参数说明</span>  |
+| <span style="display:inline-block;width:140px">参数</span>  | <span style="display:inline-block;width:520px">参数说明</span>  |
 | :--------- | ---------------------------------------------- |
 | 网络连接方式   | 选择网络连接方式，支持内网和公网两种方式。                   |
 | 网络配置   | 通过下拉框选择已创建好的网络。若无可选网络，可点击**绑定 VPC**，创建依赖网络资源。                  |

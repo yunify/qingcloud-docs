@@ -14,7 +14,7 @@ draft: false
 3. 在左侧导航选择**工作空间**，进入工作空间页面。
 4. 选择相应的区域，点击**创建工作空间**，填写工作空间名称和描述信息。
    
-   <img src="/bigdata/databench/_images/cteate_workspace.png" alt="创建工作空间" style="zoom:50%;" />
+   <img src="/bigdata/databench/_images/create_workspace.png" alt="创建工作空间" style="zoom:50%;" />
 
 5. 点击**创建**，开始创建工作空间。    
    工作空间创建成功后，即可在工作空间页面查看相应内容。
@@ -33,7 +33,7 @@ draft: false
 
 1. 在目标工作空间选择**数据开发** > **计算集群**，进入计算集群列表页面。
 2. 点击**创建集群**，进入创建计算集群页面。
-3. 配置集群相关参数，参数详细介绍请参见[创建计算集群 > 参数说明](../../../manual/data_development/flink_cluster/create_cluster/)。
+3. 配置集群相关参数，参数详细介绍请参见[创建计算集群](../../../manual/data_development/flink_cluster/create_cluster/)。
 4. 配置完成后，点击**确定**，开始创建计算集群。
 
 ## 上传 Jar 包

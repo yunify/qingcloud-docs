@@ -35,7 +35,7 @@ aliases:
 
 ### 网络配置参数
 
-| <span style="display:inline-block;width:180px">参数</span>  | <span style="display:inline-block;width:700px">参数说明</span>  |
+| <span style="display:inline-block;width:140px">参数</span>  | <span style="display:inline-block;width:520px">参数说明</span>  |
 | :------------- | ------------------------------------------------------------ |
 | 网络名称 |  网络名称，您可以自定义。              |
 | VPC 网络    |  选择 VPC 网络。<li>默认适配同区域已有的 VPC 网络。可在下拉框选择已有 VPC 网络。<li>若无可选 VPC 网络，可点击**新建 VPC 网络**，创建依赖网络资源。  |

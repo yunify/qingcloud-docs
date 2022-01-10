@@ -48,7 +48,7 @@ aliases:
 
 ### 基本信息
 
-| <span style="display:inline-block;width:180px">参数</span>  | <span style="display:inline-block;width:700px">参数说明</span>  |
+| <span style="display:inline-block;width:140px">参数</span>  | <span style="display:inline-block;width:520px">参数说明</span>  |
 | :------------- | ---------------------------------------------------------- |
 | 数据源连接方式   | 当前仅支持`连接串模式`，即通过 IP 端口、用户名密码进行连接。 |
 | 数据源名称     | 新增数据源的名称，您可以自定义。                            |
@@ -56,7 +56,7 @@ aliases:
 
 ### 连接信息-MySQL、PostgreSQL、ClickHouse
 
-| <span style="display:inline-block;width:180px">参数</span>  | <span style="display:inline-block;width:700px">参数说明</span>  |
+| <span style="display:inline-block;width:140px">参数</span>  | <span style="display:inline-block;width:520px">参数说明</span>  |
 | :--------- | -------------------------------------------- |
 | 网络连接方式   | 选择网络连接方式，支持`内网`和`公网`两种方式，推荐使用`内网`方式。                   |
 | 网络配置   | 网络连接方式选择`内网`时，才需要配置此参数。<br>通过下拉框选择已创建好的网络。若无可选网络，可点击**绑定 VPC**，创建依赖网络资源。               |
@@ -68,7 +68,7 @@ aliases:
 
 ### 连接信息-HBase
 
-| <span style="display:inline-block;width:180px">参数</span>  | <span style="display:inline-block;width:700px">参数说明</span>  |
+| <span style="display:inline-block;width:140px">参数</span>  | <span style="display:inline-block;width:520px">参数说明</span>  |
 | :--------- | -------------------------------------------- |
 | 网络连接方式   | 选择网络连接方式，支持`内网`和`公网`两种方式，推荐使用`内网`方式。                   |
 | 网络配置   | 网络连接方式选择`内网`时，才需要配置此参数。<br>通过下拉框选择已创建好的网络。若无可选网络，可点击**绑定 VPC**，创建依赖网络资源。               |
@@ -77,15 +77,15 @@ aliases:
 
 ### 连接信息-Kafka
 
-| <span style="display:inline-block;width:180px">参数</span>  | <span style="display:inline-block;width:700px">参数说明</span>  |
+| <span style="display:inline-block;width:140px">参数</span>  | <span style="display:inline-block;width:520px">参数说明</span>  |
 | :--------- | -------------------------------------------- |
 | 网络连接方式   | 选择网络连接方式，支持`内网`和`公网`两种方式，推荐使用`内网`方式。                   |
 | 网络配置   | 网络连接方式选择`内网`时，才需要配置此参数。<br>通过下拉框选择已创建好的网络。若无可选网络，可点击**绑定 VPC**，创建依赖网络资源。               |
-| Broker 连接列表（Broker List）   | kafka 的连接地址。                   |
+| Broker 连接列表（Broker List）   | Kafka 的连接地址。                   |
 
 ### 连接信息-FTP
 
-| <span style="display:inline-block;width:180px">参数</span>  | <span style="display:inline-block;width:700px">参数说明</span>  |
+| <span style="display:inline-block;width:140px">参数</span>  | <span style="display:inline-block;width:520px">参数说明</span>  |
 | :--------- | -------------------------------------------- |
 | 网络连接方式   | 选择网络连接方式，支持`内网`和`公网`两种方式，推荐使用`内网`方式。                   |
 | 网络配置   | 网络连接方式选择`内网`时，才需要配置此参数。<br>通过下拉框选择已创建好的网络。若无可选网络，可点击**绑定 VPC**，创建依赖网络资源。               |
@@ -96,7 +96,7 @@ aliases:
 
 ### 连接信息-HDFS
 
-| <span style="display:inline-block;width:180px">参数</span>  | <span style="display:inline-block;width:700px">参数说明</span>  |
+| <span style="display:inline-block;width:140px">参数</span>  | <span style="display:inline-block;width:520px">参数说明</span>  |
 | :--------- | -------------------------------------------- |
 | 网络连接方式   | 选择网络连接方式，支持`内网`和`公网`两种方式，推荐使用`内网`方式。                   |
 | 网络配置   | 网络连接方式选择`内网`时，才需要配置此参数。<br>通过下拉框选择已创建好的网络。若无可选网络，可点击**绑定 VPC**，创建依赖网络资源。               |
