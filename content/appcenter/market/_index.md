@@ -14,16 +14,20 @@ Section2:
   children:
 
     - title: 云市场简介
-      content: 云市场简介
-      url: "/appcenter/market/intro/10_introduction"
+      content: 什么是云市场
+      url: "intro/10_introduction"
 
     - title: 服务商入驻
       content: 服务商入驻
-      url: "/appcenter/market/serviceprovider/10_prerequisite"
+      url: "serviceprovider/10_prerequisite"
 
-    - title: 操作指南
-      content: 云市场操作指南
-      url: "/appcenter/market/manual/10_find_app"
+    - title: 服务商操作指南
+      content: 服务商操作指南
+      url: "manual/10_find_app"
+
+    - title: 买家操作指南
+      content: 买家操作指南
+      url: "provider_guide/publish_api_goods"
 
 
 section4:
@@ -33,18 +37,17 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 云市场简介
-          url: "/appcenter/market/intro/10_introduction"
+          url: "intro/10_introduction"
       
     - title: 上手：使用应用
       content: 您可获取到开通、购买、使用云市场的应用。
       vice_title: 使用指南
       children: 
         - title: 购买云应用
-          url: "/appcenter/market/manual/20_purchase_app/10_purchase_app"
+          url: "manual/20_purchase_app/10_purchase_app"
         - title: 开通 SaaS 应用
-          url: "/appcenter/market/manual/20_purchase_app/20_integrated_app"
+          url: "manual/20_purchase_app/20_integrated_app"
 ---
-
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->
 <!-- section1 为产品index页面 主标题 副标题 video  video_img为视频图片  -->

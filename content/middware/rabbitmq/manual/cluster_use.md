@@ -9,7 +9,7 @@ draft: false
 
 ## 使用 rabbitmq_management 和 Haproxy web 监控管理工具管理集群
 
-- RabbitMQ 每个节点都安装了rabbitmq_management 插件，登录方式：`http://节点IP:15672`，如果创建了负载均衡器节点，则建议使用 `http://vip:1567` 或者 `http://haproxy节点ip:15672` 进行登录，登录帐号：**guest**，密码：**guest**， 该用户为超级管理员。
+- RabbitMQ 每个节点都安装了rabbitmq_management 插件，登录方式：`http://节点IP:15672`，如果创建了负载均衡器节点，则建议使用 `http://vip:15672` 或者 `http://haproxy节点ip:15672` 进行登录，登录帐号：**guest**，密码：**guest**， 该用户为超级管理员。
 
   > **注意**
   >

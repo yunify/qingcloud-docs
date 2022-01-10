@@ -1,7 +1,7 @@
 ---
 title: "功能特性"
 description: 本小节主要介绍 PostgreSQL 功能特性。 
-keyword: PostgreSQL, QingCloud, 功能特性
+keyword: 功能特性,PostgreSQL,关系型数据库,数据库
 weight: 20
 collapsible: false
 draft: false
@@ -9,7 +9,7 @@ draft: false
 
 
 
-QingCloud PostgreSQL 提供如下功能特性。 
+PostgreSQL 提供如下功能特性。
 
 - 高可用版可在主实例主从架构的基础上，创建读写分离实例和最多5个只读实例。
 
