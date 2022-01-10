@@ -1,13 +1,11 @@
 ---
-title: "什么是实时音视频 RTC"
-keyword: 云计算, 青云, QingCloud, 实时音视频 RTC
-description: 本章节介绍什么是音视频 RTC。
+title: "什么是云点播"
+keyword: 云计算, 青云, QingCloud, 云点播
+description: 本章节介绍什么是云点播。
 draft: false
 collapsible: false
 weight: 10
 ---
 
-实时音视频 RTC 是为用户提供全球低延时互动直播、多人音视频的服务，包含低延时直播、屏幕共享、基础美颜、水印、实时录屏、自定义视频源等功能，支持用户快速搭建在线会议、互动课堂、语音电台、互动连麦等服务场景。
-
-![](../../_images/rtc_schematic.png)
+云点播是集音视频上传、转码、加速播放、分发播放于一体的音视频点播服务。借助青云QingCloud 云点播服务，您可以快速的搭建安全、可定制的点播平台。
 
