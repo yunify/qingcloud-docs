@@ -648,6 +648,7 @@ span.menu__title[data-depth='0'] {
     -webkit-line-clamp: 2;
     overflow:hidden;
     -webkit-box-orient: vertical;
+    -moz-box-orient: inherit;
 }
 
 .menu__title[data-depth='3'] {
@@ -662,6 +663,7 @@ span.menu__title[data-depth='0'] {
     -webkit-line-clamp: 2;
     overflow:hidden;
     -webkit-box-orient: vertical;
+    -moz-box-orient: inherit;
 }
 
 .menu__title[data-depth='4'] {
