@@ -4,6 +4,8 @@ keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 路由表
 description: 路由表包括默认路由表及自定义路由表。
 draft: false
 weight: 1
+aliases:
+      - /network/vpc/manual/route_table/
 ---
 
 路由表可以为资源提供 IP 网络的路由选择，通过配置**目标网络**及其**下一跳**，指定网络的路由方向，从而实现网络的连通和优化。
