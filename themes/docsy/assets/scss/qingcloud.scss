@@ -612,6 +612,8 @@ footer.footer span.tel {
     -ms-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-align: inherit !important;
+
 }
 
 span.menu__title[data-depth='0'] {
@@ -640,12 +642,32 @@ span.menu__title[data-depth='0'] {
     letter-spacing: normal;
     color: #939ea9;
     margin-left: 0;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow:hidden;
 }
 
 .menu__title[data-depth='3'] {
     font-size: 12px;
     margin-left: 0.2rem;
     line-height: 1;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 2;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .menu__title[data-depth='4'] {
