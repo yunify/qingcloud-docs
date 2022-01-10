@@ -14,49 +14,45 @@ section2:
   children:
     - title: 动态与公告
       content: 产品动态
-      url: "/audio_and_video/rtc/news/product_news"
+      url: "/audio_and_video/vod/news/product_news"
 
     - title: 产品简介
       content: 本节介绍什么是实时音视频 RTC。
-      url: "/audio_and_video/rtc/intro/10_rtc"
+      url: "/audio_and_video/vod/intro/10_vod"
 
     - title: 计费指南
       content: 本节介绍实时音视频 RTC 如何计费。
-      url: "/audio_and_video/rtc/new_billing/10_new_billing"  
+      url: "/audio_and_video/vod/Bp/10_new_billing"  
   
     - title: 快速入门
       content: 本节介绍如何快速使用音视频 RTC。
-      url: "/audio_and_video/rtc/qs/10_qs_rtc"
+      url: "/audio_and_video/vod/qs/10_qs_vod"
 
     - title: 操作指南
       content: 本节介绍实时音视频 RTC 的详细功能及使用。
-      url: "/audio_and_video/rtc/usermanual/10_purchase"
-
-    - title: 最佳实践
-      content: 本节介绍了使用实时音视频 RTC 的具体场景。
-      url: "/audio_and_video/rtc/bestpractices/10_multiplayer_video_scene"
+      url: "/audio_and_video/vod/um/10_purchase"
     
     - title: 常见问题
       content: 本节解答您在使用实时音视频 RTC 时遇到的常见问题。
-      url: "/audio_and_video/rtc/faq/10_faq_rtc"
+      url: "/audio_and_video/vod/faq/10_faq_vod"
 
 section3:
   title: 开发者指南
   children:
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: "/audio_and_video/rtc/sdk/10_sdk"
+      url: "/audio_and_video/vod/sdk/10_sdk"
 
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/audio_and_video/rtc/api/10_api_overview"
+      url: "/audio_and_video/vod/api/10_api_overview"
 
 
 
 section4:
   children:
-    - title: 了解：什么是实时音视频 RTC ?
-      content: 实时音视频 RTC 是为用户提供全球低延时互动直播、多人音视频的服务，包含低延时直播、屏幕共享、基础美颜、水印、实时录屏、自定义视频源等功能，支持用户快速搭建在线会议、互动课堂、语音电台、互动连麦等服务场景。
+    - title: 了解：什么是云点播 ?
+      content: 云点播是集音视频上传、转码、加速播放、媒资处理、分发播放为一体的一站式服务。
       vice_title: 了解的第一步
       children:
         - title: 产品简介
@@ -73,10 +69,10 @@ section4:
       vice_title: 上手的第一步
       children:
         - title: 创建应用
-          url: "usermanual/20_mgmt_app"
+          url: "um/20_mgmt_app"
 
         - title: 开启云录制
-          url: "usermanual/30_enable_cloudlive"
+          url: "um/30_enable_cloudlive"
 
 ---
 
