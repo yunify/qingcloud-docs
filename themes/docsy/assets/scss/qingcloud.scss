@@ -640,12 +640,28 @@ span.menu__title[data-depth='0'] {
     letter-spacing: normal;
     color: #939ea9;
     margin-left: 0;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow:hidden;
+    -webkit-box-orient: vertical;
 }
 
 .menu__title[data-depth='3'] {
     font-size: 12px;
     margin-left: 0.2rem;
     line-height: 1;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow:hidden;
+    -webkit-box-orient: vertical;
 }
 
 .menu__title[data-depth='4'] {
