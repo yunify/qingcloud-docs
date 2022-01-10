@@ -643,12 +643,14 @@ span.menu__title[data-depth='0'] {
     margin-bottom: 8px;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-clamp: 2;
     display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    line-clamp: 2;
     -webkit-line-clamp: 2;
-    overflow:hidden;
     -webkit-box-orient: vertical;
     -moz-box-orient: inherit;
+    overflow:hidden;
 }
 
 .menu__title[data-depth='3'] {
@@ -660,9 +662,11 @@ span.menu__title[data-depth='0'] {
     text-overflow: ellipsis;
     line-clamp: 2;
     display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     -webkit-line-clamp: 2;
-    overflow:hidden;
     -webkit-box-orient: vertical;
+    overflow:hidden;
     -moz-box-orient: inherit;
 }
 
