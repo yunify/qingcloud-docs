@@ -1,5 +1,5 @@
 ---
-title: "License 商品接入"
+title: "License 类商品接入"
 description: 
 keyword: QingCloud, 青云, 云计算, 云市场, 商品接入
 weight: 40
