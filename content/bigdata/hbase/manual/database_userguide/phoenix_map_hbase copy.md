@@ -1,7 +1,7 @@
 ---
 title: "Phoenix 映射 HBase 中已有的表"
 description: 本小节主要介绍如何用 Phoenix 映射 HBase 中已有的表。 
-keywords: HBase Phoenix 映射,
+keyword: HBase Phoenix 映射,
 weight: 45
 collapsible: false
 draft: false

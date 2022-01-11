@@ -1,7 +1,7 @@
 ---
-title: "数据存储概述"
+title: "概述"
 description: 本小节主要介绍 ChronusDB 冷热数据存储基本信息。 
-keywords: ChronusDB 冷热数据存储；冷热存储；冷热分离；数据冷热分类
+keyword: ChronusDB 冷热数据存储；冷热存储；冷热分离；数据冷热分类
 weight: 05
 collapsible: false
 draft: false

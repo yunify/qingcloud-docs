@@ -1,7 +1,7 @@
 ---
 title: "执行命令"
 description: 本小节介绍 Redis 的默认禁用命令及如何在控制台执行。 
-keywords: redis cluster，命令
+keyword: redis cluster，命令
 weight: 27
 draft: false
 ---

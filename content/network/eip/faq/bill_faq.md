@@ -2,8 +2,8 @@
 title: "费用问题"
 draft: false
 weight: 15
-enableToc: false
-keyword: QingCLoud, 青云, 公网IP, 弹性EIP, 
+description: 公网 IP 费用常见问题
+keyword: QingCloud, 青云, 云计算, 公网IP, 弹性EIP
 ---
 
 ## 公网 IP 流量计费的具体统计方法是什么？

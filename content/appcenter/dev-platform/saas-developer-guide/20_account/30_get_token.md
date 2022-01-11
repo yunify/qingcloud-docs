@@ -1,6 +1,7 @@
 ---
 title: "获取 access_token"
-description: SaaS
+description: 获取 access_token 接口说明
+keyword: QingCloud, 青云, AppCenter, 云应用开发平台, SaaS
 draft: false
 weight: 30
 ---
@@ -32,8 +33,8 @@ POST
 | Parameter name   | Type   | Description                                     | Required |
 | ---------------- | ------ | ----------------------------------------------- | -------- |
 | access_token     | string | 访问令牌                                        | Yes      |
-| Expires_in       | int    | 过期时间，单位（秒）                            | Yes      |
-| Token_type       | string | 令牌类型（bear/JWT）                            | Yes      |
-| Refresh_tokenYes | string | 更新令牌（token_issuer 为 iam_jwt，不返回此值） | No       |
+| expires_in       | int    | 过期时间，单位（秒）                            | Yes      |
+| token_type       | string | 令牌类型（bear/JWT）                            | Yes      |
+| refresh_tokenYes | string | 更新令牌（token_issuer 为 iam_jwt，不返回此值） | No       |
 
 ![](/appcenter/dev-platform/_images/um_spi_post.png)

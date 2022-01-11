@@ -1,7 +1,7 @@
 ---
 title: "数据库连接"
 description: 本小节主要介绍 MySQL Plus 连接常见问题。 
-keywords: mysql plus 连接问题
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,连接问题
 weight: 15
 collapsible: false
 draft: false
@@ -47,8 +47,6 @@ draft: false
   
   https://www.ipip.net/
 
-  https://ifconfig.me/
-
 - 通过命令行查询
 
   执行以下任意一个命令，即可获取本地公网 IP 地址。
@@ -60,7 +58,7 @@ draft: false
    $ curl ifconfig.io
    $ curl myip.ipip.net
    
-   #Windows
+   # Windows
    >telnet cip.cc
    >ftp cip.cc
   ```

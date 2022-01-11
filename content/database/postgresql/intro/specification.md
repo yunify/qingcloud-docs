@@ -1,7 +1,7 @@
 ---
 title: "性能规格"
 description: 本小节主要介绍 PostgreSQL 性能规格。 
-keywords: PostgreSQL, QingCloud, 性能规格
+keyword: 性能规格,PostgreSQL,关系型数据库,数据库
 weight: 40
 collapsible: false
 draft: false

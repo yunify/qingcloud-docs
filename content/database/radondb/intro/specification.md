@@ -1,7 +1,7 @@
 ---
 title: "性能规格"
 description: 本小节主要介绍 RadonDB 性能规格。 
-keywords: RadonDB, QingCloud, 性能规格
+keyword: RadonDB, QingCloud, 性能规格
 weight: 40
 collapsible: false
 draft: false

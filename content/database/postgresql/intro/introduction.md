@@ -1,7 +1,7 @@
 ---
 title: "什么是 PostgreSQL"
 description: 本小节主要介绍 PostgreSQL 产品简介。 
-keywords: PostgreSQL, QingCloud, 产品简介
+keyword: 产品简介,PostgreSQL,关系型数据库,数据库
 weight: 10
 collapsible: false
 draft: false

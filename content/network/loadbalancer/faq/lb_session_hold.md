@@ -1,8 +1,8 @@
 ---
-title: "LB 会话保持"
-description: Test description
+title: "负载均衡器会话保持"
+description: 介绍负载均衡器会话保持的作用及相关原理、概念。
+keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 会话保持
 draft: false
-enableToc: falshu
 ---
 
 ## LB 会话保持的作用

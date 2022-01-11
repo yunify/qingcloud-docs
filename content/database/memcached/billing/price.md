@@ -1,6 +1,9 @@
 ---
 title: "计费说明"
-description: test
+description: 本小节主要介绍 Memcached 计费说明。 
+keyword: Memcached 计费说明, 
+weight: 10
+collapsible: false
 draft: false
 ---
 

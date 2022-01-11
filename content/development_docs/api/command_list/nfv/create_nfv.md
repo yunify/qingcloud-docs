@@ -1,7 +1,9 @@
 ---
 title: "CreateNFV"
-description: 
+description: 创建一个网络组件(NFV)
 draft: false
+weight: 1
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 ---
 
 
@@ -12,17 +14,19 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| nfv_type | Integer | 网络组件的类型，值为 1 时代表创建 NAT 网关 。 | Yes |
-| nfv_spec | Integer | 网络组件的规格，可以是 1-3 。<br/> 1 - 流量转发能力 1Mpps  <br/> 2 - 流量转发能力 2Mpps <br/> 3 - 流量转发能力 4Mpps| Yes |
-| vxnets.n | String | 私有网络 ID，一个网络组件根据规格的大小可加入 2 - 4 个私有网络。 | No |
-| eips.n | String | 要绑定的公网 IP 地址， 一个网络组件可绑定的公网 IP 地址不超过10个。 | No |
-| description | String | 网络组件的描述信息。 | No |
-| place_group | String | 网络组件节点使用的安置组。 | No |
-| repl | Integer | 网络组件使用的副本策略。 | No |
-| nfv_name | String | 网络组件名称。 | No |
-| security_group | String | 网络组件所加入的私有网络所加载的防火墙ID，若未提供，则默认加载缺省防火墙。 | No |
-| hypervisor | String | 网络组件节点使用的虚拟化方式，可以使用 kvm 或者　lxc。 | No |
-| zone | String | 区域 ID，注意要小写。 | Yes |
+| nfv_type | Integer | 网络组件的类型，值为 1 时代表创建 NAT 网关 | Yes |
+| nfv_spec | Integer | 网络组件的规格，可以是 1-3 ：<br/> 1 - 流量转发能力 1Mpps  <br/> 2 - 流量转发能力 2Mpps <br/> 3 - 流量转发能力 4Mpps | Yes |
+| vxnets.n | String | 私有网络 ID，一个网络组件根据规格的大小可加入 2 - 4 个私有网络 | No |
+| eips.n | String | 要绑定的公网 IP 地址， 一个网络组件可绑定的公网 IP 地址不超过10个 | No |
+| description | String | 网络组件的描述信息 | No |
+| place_group | String | 网络组件节点使用的安置组 | No |
+| repl | Integer | 网络组件使用的副本策略 | No |
+| nfv_name | String | 网络组件名称 | No |
+| security_group | String | 网络组件所加入的私有网络所加载的安全组 ID，若未提供，则默认加载缺省安全组。 | No |
+| hypervisor | String | 网络组件节点使用的虚拟化方式，可以使用 kvm 或者 lxc。 | No |
+| zone | String | 区域 ID，注意要小写 | Yes |
+| version | String | 网络组件版本号，1.0 或者 2.0 | Yes |
+| vpc_router_id | String | 网络组件绑定的 VPC 路由 ID | Yes |
 
 [_公共参数_](../../../parameters/)
 

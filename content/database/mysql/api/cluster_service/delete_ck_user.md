@@ -1,7 +1,7 @@
 ---
 title: "del_ck_user"
 description: 本小节主要介绍 MySQL Plus 删除分析示例帐号接口。 
-keywords: mysql plus 删除 ClickHouse 帐号,add_ck_user，删除分析实例帐号
+keyword: mysql plus 删除 ClickHouse 帐号,add_ck_user，删除分析实例帐号
 weight: 23
 collapsible: false
 draft: false

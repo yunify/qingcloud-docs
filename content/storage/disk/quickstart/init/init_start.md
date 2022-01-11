@@ -1,10 +1,10 @@
 ---
 title: "初始化及分区方式"
-description: Test description
+description: 本小节主要介绍云硬盘的初始化和分区方式。
 draft: false
 enableToc: false
 weight: 100
-keyword: 青云
+keyword: 云计算, 青云, QingCloud, 云硬盘,初始化,数据盘,分区
 ---
 
 硬盘加载至云服务器后，需要登录云服务器对数据盘进行格式化、分区及创建文件系统等初始化操作，磁盘才可正常使用。
@@ -23,6 +23,6 @@ keyword: 青云
 
 | 分区形式 | 支持最大磁盘容量 | 支持分区数量 | 分区工具    |
 | :------- | :---------------------------------- | :-------------------------------- | :---------------------------------------------------------- |
-| MBR      |   2TB  | 4 个主分区  <br>或3 个主分区和 1 个扩展分区 | Windows 操作系统：磁盘管理 <br>Linux 操作系统：  fdisk 工具或 parted 工具 |
-| GPT      | 18EB  目前云硬盘支持的<br>最大容量为50TB | 不限制分区数量    | Windows 操作系统：磁盘管理  <br>Linux 操作系统：parted 工具或 gdisk工具 |
+| MBR      |   2 TB  | 4 个主分区  <br>或 3 个主分区和 1 个扩展分区 | Windows 操作系统：磁盘管理 <br>Linux 操作系统：  fdisk 工具或 parted 工具 |
+| GPT      | 18 EB  目前云硬盘支持的<br>最大容量为 50 TB | 不限制分区数量    | Windows 操作系统：磁盘管理  <br>Linux 操作系统：parted 工具或 gdisk 工具 |
 

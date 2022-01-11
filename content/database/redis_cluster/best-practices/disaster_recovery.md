@@ -4,7 +4,7 @@ description: 介绍 Redis Cluster 的容灾方案。
 weight: 1
 collapsible: false
 draft: false
-keywords: QingCloud, Redis Cluster 数据库，多可用区部署，容灾
+keyword: QingCloud, Redis Cluster 数据库，多可用区部署，容灾
 ---
 
 ## 应用场景

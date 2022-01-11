@@ -1,7 +1,7 @@
 ---
 title: "新增节点"
 description: 本小节主要介绍如何新增 PostgreSQL 节点实例。 
-keywords: PostgreSQL 节点添加；新增节点
+keyword: 节点添加,新增节点,PostgreSQL,关系型数据库,数据库
 weight: 10
 collapsible: false
 draft: false

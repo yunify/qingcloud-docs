@@ -1,8 +1,7 @@
 ---
 title: "扩容集群"
 description: 本小节主要介绍如何扩容 Memcached 集群。 
-keywords: memcached 扩容集群
-data: 2021-05-14T00:38:25+09:00
+keyword: memcached 扩容集群
 weight: 20
 collapsible: false
 draft: false

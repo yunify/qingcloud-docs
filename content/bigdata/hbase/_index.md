@@ -30,7 +30,7 @@ Section2:
 
     - title: 操作指南
       content: 学习上手如何管理 HBase 集群，以及如何使用 HBase 提供的相关服务等。
-      url: "manual/cluster_info/"
+      url: "manual/mgt_cluster/cluster_info/"
 
 section3:
   title: 开发者指南

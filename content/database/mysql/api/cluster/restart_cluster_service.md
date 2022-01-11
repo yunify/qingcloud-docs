@@ -1,7 +1,7 @@
 ---
 title: "RestartClusterService"
 description: 本小节主要介绍获取 MySQL Plus 重启集群的接口。 
-keywords: mysql plus 重启集群，重启集群
+keyword: mysql plus 重启集群，重启集群
 weight: 15
 collapsible: false
 draft: false

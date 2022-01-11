@@ -1,7 +1,7 @@
 ---
 title: "连接数据库"
 description: 本小节主要介绍如何连接 MySQL Plus 数据库。 
-keywords: mysql plus 访问,访问数据库
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,访问,访问数据库
 weight: 10
 collapsible: false
 draft: false
@@ -28,6 +28,12 @@ MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用
 2. [访问数据库](#访问数据库)。
 
 ### 获取连接信息
+
+> **注意**
+> 
+> 单节点集群仅一个节点，**连接信息**中不呈现高可用 IP。单节点集群的节点 IP 可在**节点列表**获取。
+> 
+> 如未创建 **Proxy 实例**节点，高可用 Proxy IP 将无法连接。
 
 1. 登录 QingCloud 管理控制台。
 2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 MySQL Plus**，进入集群管理页面。
@@ -91,4 +97,4 @@ mysql>
 
 ## 后续管理
 
-- [MySQL Plus 数据库连接不上怎么办？](../../../faq/access_problems)
+- [MySQL Plus 数据库连接不上怎么办？](../../../trouble/access_problems)

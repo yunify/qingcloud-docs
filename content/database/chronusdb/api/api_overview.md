@@ -1,7 +1,7 @@
 ---
 title: "API 概览"
 description: 本小节主要介绍 ChronusDB 集群 主要 api。 
-keywords: ChronusDB 概览；api 概览
+keyword: ChronusDB 概览；api 概览
 draft: false
 weight: 06
 collapsible: false

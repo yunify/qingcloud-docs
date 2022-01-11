@@ -4,7 +4,7 @@ description: Redis Cluster 应用场景
 draft: false
 weight: 4
 enableToc: false
-keywords: Redis Cluster, 应用场景
+keyword: Redis Cluster, 应用场景
 ---
 
 在很多大型电商网站、视频直播和游戏行业等应用中，都存在大规模数据访问，对数据查询效率要求高，且数据结构简单，不涉及太多关联查询的情况。这些场景使用 Redis，在速度上相对传统磁盘数据库有很大优势，能够有效减少数据库磁盘 IO，提高数据查询效率，减轻管理维护工作量，降低数据库存储成本。

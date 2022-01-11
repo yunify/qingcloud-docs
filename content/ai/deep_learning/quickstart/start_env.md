@@ -1,10 +1,10 @@
 ---
 title: "步骤三：启动训练环境"
 description: 本小节主要介绍如何快速连接 MySQL Plus 数据库。 
-keywords: mysql plus 访问,访问数据库
+keyword: mysql plus 访问,访问数据库
 weight: 40
 collapsible: false
-draft: false
+draft: true
 ---
 
 MySQL Plus 支持通过内网地址和外网地址连接数据库，推荐使用内网地址连接数据库，确保数据传输速率的同时兼顾数据安全。

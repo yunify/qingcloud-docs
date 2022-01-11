@@ -1,7 +1,7 @@
 ---
 title: "启停集群"
 description: 本小节主要介绍如何开启和关闭 PostgreSQL 集群。 
-keywords: PostgreSQL 开启；关闭
+keyword: 开启集群,关闭集群,PostgreSQL,关系型数据库,数据库
 weight: 20
 collapsible: false
 draft: false
@@ -13,11 +13,11 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 
 ## 开启集群
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 PostgreSQL**，进入集群管理页面。
 3. 勾选目标集群，点击操作栏**启动**，弹出启动集群确认窗口。
 
@@ -29,7 +29,7 @@ draft: false
 
 ## 关闭集群
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 PostgreSQL**，进入集群管理页面。
 3. 勾选目标集群，点击操作栏**关闭**，弹出关闭集群确认窗口。
 
@@ -41,7 +41,7 @@ draft: false
 
 ## 定时启停集群
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **运维与管理** > **定时器**，进入定时器列表页面。
 3. 配置定时器基本信息。
    
@@ -69,4 +69,4 @@ draft: false
  
    <img src="../../../_images/timer_task_list.png" alt="查看定时任务" style="zoom:50%;" />
 
-更多定时器任务介绍，请参见[定时器](../../../../../operation/tools/manual/scheduler/)。
+更多定时器任务介绍，请参见[定时器](/operation/tools/manual/scheduler/)。

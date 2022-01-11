@@ -1,7 +1,8 @@
 ---
 title: "子账号配额管理"
-description: verify
-weight: 15
+description: 账户中心子账号配额管理操作流程。
+keyword: 青云, 账户中心, 子账号, 配额管理
+weight: 40
 draft: false
 ---
 

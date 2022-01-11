@@ -2,7 +2,8 @@
 title: "创建专享实例"
 linkTitle: "创建专享实例"
 date: 2021-05-18T10:08:56+09:00
-description:
+description: 本小节主要介绍如何创建专享实例。 
+keyword: API_Gateway, QingCloud, 专享实例
 draft: false
 weight: 10
 ---
@@ -19,11 +20,13 @@ weight: 10
 
 1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
-2. 在控制台导航栏中，选择**产品与服务** > **消息队列与中间件** > **API 网关** ，进入**API 网关**页面。
+2. 在控制台导航栏中，选择**产品与服务** > **消息队列与中间件** > **API Gateway** ，进入**API 网关**页面。
 
 3. 点击**实例管理** > **创建专享实例**，进入实例创建页面。
 
 4. 填写实例购买信息。
+
+   ![create_apig1](../_images/create_apig1.png)
 
    **实例计费模式**：支持『预留合约』与『按需付费』两种计费方式。
 

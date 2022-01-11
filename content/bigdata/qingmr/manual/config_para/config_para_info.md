@@ -1,13 +1,11 @@
 ---
 title: "参数介绍"
 description: 本小节主要介绍 QingMR 常用配置项。 
-keywords: QingMR 常用配置项；
+keyword: QingMR 常用配置项；
 weight: 10
 collapsible: false
 draft: false
 ---
-
-
 
 在 AppCenter 集群管理控制台，支持对 QingMR 常用配置参数的管理。
 

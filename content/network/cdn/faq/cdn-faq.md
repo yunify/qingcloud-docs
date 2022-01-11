@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
-date: 2020-11-23T10:08:56+09:00
-description:
+description: 介绍 CDN 服务的常见问题及解决办法。
+keyword: QingCloud, 青云, 云计算, 网络, CDN, 常见问题
 draft: false
 weight: 81
 ---

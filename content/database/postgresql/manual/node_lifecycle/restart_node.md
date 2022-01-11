@@ -1,7 +1,7 @@
 ---
 title: "重启节点"
 description: 本小节主要介绍如何重启节点。 
-keywords: PostgreSQL 重启节点
+keyword: 重启节点,PostgreSQL,关系型数据库,数据库
 weight: 20
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "扩容节点"
 description: 本小节主要介绍如何扩容 PolonDB 集群。 
-keywords: PolonDB 扩容节点；
+keyword: PolonDB 扩容节点；
 weight: 05
 collapsible: false
 draft: false
@@ -78,4 +78,4 @@ PolonDB 支持对运行中的数据库服务进行在线扩容，调整 CPU、�
    
    自动扩容后，可在策略**历史记录**中查看历史扩容记录。
 
-更多自动伸缩操作说明，请参见[自动伸缩](https://docsv3.qingcloud.com/operation/autoscaling/)。
+更多自动伸缩操作说明，请参见[自动伸缩](../../../../../operation/autoscaling/)。

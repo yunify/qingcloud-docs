@@ -1,7 +1,7 @@
 ---
 title: "查看集群信息"
-date: 2021-11-10T00:40:25+09:00
-description: test
+description: 在集群创建完毕后，可以在控制台查看已创建的集群信息。
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,集群信息
 weight: 10
 draft: false
 ---

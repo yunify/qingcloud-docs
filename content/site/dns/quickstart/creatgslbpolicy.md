@@ -1,7 +1,7 @@
 ---
 title: "配置 GSLB 实例"
 description: 本小节主要介绍如何快速创建 GSLB 实例。 
-keywords: gslb 实例,创建实例
+keyword: QingCloud, 青云, DNS, gslb 实例, 创建实例
 weight: 2
 collapsible: false
 draft: false

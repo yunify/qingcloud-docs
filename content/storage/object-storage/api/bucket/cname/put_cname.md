@@ -1,7 +1,8 @@
 ---
 title: "Put Bucket CNAME"
 date: 2020-11-25T10:08:56+09:00
-description:
+description: 本小节主要介绍 Put Bucket CNAME 接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 collapsible: false
 draft: false
 weight: 2
@@ -49,9 +50,8 @@ Authorization: <authorization-string>
 | 错误码 | 错误描述 | HTTP 状态码 |
 | --- | --- | --- |
 | OK | 成功设置 Bucket 域名别名 | 200 |
-| domain_not_recorded | 域名没有备案 |  |
-| cname_record_not_added | 域名没有成功注册或生效 |  |
-| domain_occupied | 域名已经被使用 |  |
+| cname_error | 域名没有备案 | 400 |
+
 
 其他错误码可参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
 

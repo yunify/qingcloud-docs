@@ -1,7 +1,7 @@
 ---
 title: "DescribeClusterDisplayTabs"
 description: 本小节主要介绍 MySQL Plus 彻底删除集群的接口。 
-keywords: mysql plus 彻底删除集群，删除集群
+keyword: mysql plus 彻底删除集群，删除集群
 weight: 26
 collapsible: false
 draft: false

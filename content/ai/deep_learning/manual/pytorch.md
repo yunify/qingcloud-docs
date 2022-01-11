@@ -1,7 +1,9 @@
 ---
 title: "PyTorch 使用指南"
-description: test
+description: 本小节主要介绍 PyTorch 使用指南
+keyword: 人工智能，深度学习，Deep Learning，PyTorch，使用指南
 weight: 30
+collapsible: false
 draft: false
 ---
 

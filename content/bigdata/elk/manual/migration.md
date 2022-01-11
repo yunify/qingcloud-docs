@@ -1,7 +1,7 @@
 ---
 title: "数据迁移"
 description: 本小节主要介绍如何迁移 QingCloud ELK 数据。 
-keywords: ELK 数据迁移
+keyword: ELK 数据迁移
 weight: 05
 collapsible: false
 draft: false

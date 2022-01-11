@@ -1,10 +1,9 @@
 ---
 title: "GSLB 功能特性"
-description: 云解析服务 功能简介
+description: GSLB 的功能简介
+keyword: QingCloud, 青云, DNS, GSLB, 功能简介
 weight: 20
 draft: false
-enableToc: false
-keyword: GSLB 功能简介
 ---
 
 

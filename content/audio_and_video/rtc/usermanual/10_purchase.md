@@ -1,5 +1,7 @@
 ---
 title: "购买套餐包"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,购买套餐包
+description: 本章节介绍如何购买实时音视频 RTC 的套餐包。
 draft: false
 collapsible: false
 weight: 10

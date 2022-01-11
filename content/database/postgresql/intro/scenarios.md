@@ -1,7 +1,7 @@
 ---
 title: "应用场景"
 description: 本小节主要介绍 PostgreSQL 应用场景。 
-keywords: PostgreSQL 应用场景 
+keyword: 应用场景,PostgreSQL,关系型数据库,数据库
 weight: 25
 collapsible: false
 draft: false

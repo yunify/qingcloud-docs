@@ -1,7 +1,7 @@
 ---
 title: "切换主节点"
 description: 本小节主要介绍如何指定主节点。 
-keywords: mysql plus 切换主节点
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,切换主节点
 weight: 30
 collapsible: false
 draft: false

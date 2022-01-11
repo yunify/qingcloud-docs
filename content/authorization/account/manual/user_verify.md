@@ -1,8 +1,10 @@
 ---
 title: "账号认证"
-description: verify
-weight: 05
+description: 介绍账户认证流程。
+keyword: 青云, 账户中心, 账户认证, 认证
+weight: 10
 draft: false
+
 ---
 
 注册为青云用户后，您需要完成账号的认证，才能获得创建资源所需的初始配额。账号认证类型包含：个人认证和企业认证。
@@ -16,7 +18,7 @@ draft: false
 
 账号认证流程如下：
 
-1. 从控制台顶部导航 **用户头像** > **账户设置**，进入用户信息页；
+1. 从控制台顶部导航 **用户头像** > **账户设置**，进入用户基本信息页；
 2. 点击用户信息页的 **认证信息** 标签页，进入用户认证；
 3. 默认的认证类型为个人认证，如需要企业认证，则点击 **升级为企业用户**；
 4. 按要求字段填写信息，并上传相应图片，提交即可等待认证完成。
@@ -31,26 +33,17 @@ draft: false
 >
 >如果您没有完成认证，帐户设置右侧会有一个红点提示。
 
-## 个人认证
+实名认证类型主要有以下几类：
 
-如果您是个人用户，可以申请个人认证。只需要提供您的个人基本资料，以及身份证照片、个人正面肖像照即可。
+- 个人用户
+  - **推荐**支付宝快速认证（即时完成认证），请参见[支付宝快速认证](/authorization/account/manual/account_aut/account_person/#支付宝快速认证推荐)。
+  - **推荐**扫码认证（即时完成认证），请参见[个人认证](/authorization/account/manual/account_aut/account_person/#扫码认证推荐)。
+  - 证件认证（1-3个工作日），请参见[证件认证](/authorization/account/manual/account_aut/account_person/#证件认证)。
+- 企业用户
+  - **推荐**支付宝快速认证（即时完成认证），请参见[支付宝快速认证](/authorization/account/manual/account_aut/account_boss/#支付宝快速认证推荐)。
+  - **推荐**扫码认证（即时完成认证），请参见[个人认证](/authorization/account/manual/account_aut/account_boss/#扫码认证推荐)。
+  - 企业证件认证（1-3个工作日），请参见[企业证件认证](/authorization/account/manual/account_aut/account_boss/#企业证件认证)。
 
-![](../../_images/user-verify-normal-user-info.png)
+## 修改实名认证信息
 
-身份证需要上传人像那一面的照片，肖像照请提供近三个月个人大头照，照片仅用于与身份证对比。
-
-![](../../_images/user-verify-image.png)
-
->**说明**
->
->您的个人信息和照片，仅用于身份认证。平台不会泄露您的个人隐私。
-
-## 企业认证
-
-企业用户可以通过企业认证，获得更多的配额、更大额的注册优惠，以及专业免费的点对点咨询服务。除了个人认证所需的联系人信息外，还需提供企业名称、组织机构代码、营业执照、税务登记证照片等。
-
-![](../../_images/user-verify-enterprise-user-info.png)
-
->**说明**
->
->认证审核会在 3 个工作日内完成。如果您有特殊情况急需完成认证，请通过工单联系我们，加速办理。
+实名认证通过之后，如果您想修改实名认证信息，请您在控制台[提交工单](https://console.qingcloud.com/tickets/)，技术支持工程师会协助您完成实名认证信息的修改。

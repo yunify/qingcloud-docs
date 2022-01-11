@@ -1,7 +1,7 @@
 ---
 title: "查看日志及数据文件"
-date: 2021-11-01T00:40:25+09:00
-description: 在线查看日志、文件
+description: 在线查看 Kafka 日志、文件
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,查看日志
 weight: 70
 draft: false
 ---

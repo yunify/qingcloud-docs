@@ -1,7 +1,7 @@
 ---
 title: "Logstash 安装插件"
 description: 本小节主要介绍 Logstash 插件安装使用方法。
-keywords: Logstash 安装插件,
+keyword: Logstash 安装插件,
 weight: 40
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "重建节点"
 description: 本小节主要介绍如重建启节点。 
-keywords: PostgreSQL 重建节点
+keyword: 重建节点,PostgreSQL,关系型数据库,数据库
 weight: 25
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "连接 Redis Cluster 实例"
 description: 本小节主要介绍连接 Redis 实例。 
-keywords: redis cluster 实例，redis 部署
+keyword: redis cluster 实例，redis 部署
 weight: 5
 collapsible: false
 draft: false

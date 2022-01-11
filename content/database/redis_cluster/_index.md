@@ -1,7 +1,7 @@
 ---
 title: "键值数据库 Redis Cluster"
 linkTitle: "Redis Cluster"
-weight: 08
+weight: 12
 collapsible: true
 type: "product"
 

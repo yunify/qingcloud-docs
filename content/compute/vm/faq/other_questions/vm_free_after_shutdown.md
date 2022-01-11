@@ -1,8 +1,9 @@
 ---
 title: "云服务器关机后云服务器是否收费"
-description: Test description
+description: 云服务器关机后是否收费
 draft: false
 weight: 20
+keyword: 云计算, 青云, QingCloud, 云服务器，关机费用
 ---
 
 当云服务器关机后，只收取系统盘的费用，按照系统盘的占用空间收费，收费标准同硬盘，CPU / 内存则不再收费。

@@ -1,5 +1,7 @@
 ---
 title: "基本概念"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC, APP 证书, Token 鉴权, 频道, 旁路推流,集合分辨率
+description: 本章节介绍实时音视频 RTC 的基本概念。
 draft: false
 collapsible: false
 weight: 50

@@ -1,7 +1,7 @@
 ---
 title: "使用 Web Installer 安装"
 description: 本小节主要介绍青立方® 超融合易捷版 使用 Web Installer 安装。 
-keywords: 使用 Web Installer 安装,
+keyword: 使用 Web Installer 安装,
 weight: 20
 collapsible: false
 draft: false

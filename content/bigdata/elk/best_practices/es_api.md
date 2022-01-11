@@ -1,7 +1,7 @@
 ---
 title: "Elasticsearch API 说明"
 description: 本小节主要介绍 Elasticsearch API 使用说明。
-keywords: Elasticsearch 插件列表,
+keyword: Elasticsearch 插件列表,
 weight: 37
 collapsible: false
 draft: false

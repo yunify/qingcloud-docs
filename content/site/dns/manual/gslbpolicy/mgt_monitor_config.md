@@ -1,6 +1,7 @@
 ---
 title: "管理监控配置"
-description: gslb监控配置。
+description: 介绍如何管理监控配置，包括查看监控配置、修改监控规则、修改调度策略。
+keyword: QingCloud, 青云, DNS, GSLB 实例, 监控
 weight: 3
 draft: false
 ---

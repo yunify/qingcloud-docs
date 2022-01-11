@@ -1,7 +1,7 @@
 ---
 title: "Ranger 概述"
 description: 本小节主要介绍如 Ranger 插件简要说明。 
-keywords: qingmr  Ranger
+keyword: qingmr  Ranger
 weight: 10
 collapsible: false
 draft: false
@@ -27,4 +27,4 @@ Ranger 主要由三个组件组成：
   
    Ranger 提供了一个用户同步工具。这些用户和用户组的信息被存储在 Ranger Admin 的数据库中，可以在定义策略时使用。
 
-QingMR 支持将集群中的 Hive 组件集成到 Ranger，以控制相关权限，
+QingMR 支持将集群中的 Hive 组件集成到 Ranger，以控制相关权限。

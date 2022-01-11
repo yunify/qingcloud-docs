@@ -1,7 +1,7 @@
 ---
 title: "基准测试"
 description: 本小节主要介绍如何进行 PostgreSQL 集群基准测试。 
-keywords: PostgreSQL 基准测试；
+keyword: 基准测试,PostgreSQL,关系型数据库,数据库
 weight: 05
 collapsible: false
 ---

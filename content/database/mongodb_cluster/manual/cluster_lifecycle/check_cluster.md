@@ -1,7 +1,7 @@
 ---
 title: "查看集群信息"
 description: 本小节主要介绍如何查看 MongoDB Cluster 集群信息。 
-keywords: MongoDB Cluster 集群信息
+keyword: MongoDB Cluster 集群信息
 weight: 10
 collapsible: false
 draft: false

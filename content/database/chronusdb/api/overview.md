@@ -1,7 +1,7 @@
 ---
 title: "概述"
 description: 本小节主要介绍如何进行 ChronusDB 集群 api 概述。 
-keywords: ChronusDB 概述；api 概述
+keyword: ChronusDB 概述；api 概述
 draft: false
 weight: 05
 collapsible: false
@@ -16,7 +16,7 @@ ChronusDB 是一款基于 ClickHouse 定制的高效、安全、易用时序数�
 
 ## 调用 API
 
-ChronusDB 开放的所有资源操作相关的 API，支持通过 HTTPS GET 方式进行调用的。
+ChronusDB 开放的所有资源操作相关的 API，支持通过 HTTPS GET 方式进行调用。
 
 在调用 API 前，需要先申请API 密钥，获取 API 密钥 ID ( access_key_id ) 和 API 密钥私钥 ( secret_access_key )。
 

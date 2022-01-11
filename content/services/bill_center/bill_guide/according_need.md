@@ -1,13 +1,11 @@
 ---
 title: "按需计费"
 weight: 7
-description: Test description
+description: 介绍按需计费模式的适用场景及计费原则。
 draft: false
 enableToc: false
-keyword: 账单, 发票, 订单, 充值
+keyword: QingCloud, 青云, 云计算, 费用中心, 账单, 发票, 订单, 充值, 计费规则, 按需计费
 ---
-
-
 
 按需计费是一种后付费模式，即先按需申请资源使用，在结算时会按您的实际资源使用量收取费用。
 

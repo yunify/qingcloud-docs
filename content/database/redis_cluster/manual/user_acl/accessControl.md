@@ -1,7 +1,7 @@
 ---
 title: "权限控制字符串"
 description: 本小节介绍如何设置 ACL 规则。 
-keywords: redis cluster，redis ACL，访问控制
+keyword: redis cluster，redis ACL，访问控制
 weight: 4
 draft: false
 ---

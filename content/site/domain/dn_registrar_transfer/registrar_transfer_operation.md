@@ -2,7 +2,7 @@
 title: "域名转入操作"
 description: test
 weight: 4
-keyword: 域名转入操作, 域名注册, QingCloud
+keyword: 域名转入操作, 域名注册, QingCloud, 域名
 ---
 
 

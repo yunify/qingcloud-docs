@@ -1,7 +1,7 @@
 ---
 title: "下载日志"
 description: 本小节主要介绍如何下载日志。 
-keywords: RadonDB 下载日志
+keyword: RadonDB 下载日志
 weight: 20
 collapsible: false
 draft: false

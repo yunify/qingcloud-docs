@@ -1,7 +1,7 @@
 ---
 title: "Ranger 集成 Hive"
 description: 本小节主要介绍如何通过 Ranger 集成 Hive。 
-keywords: qingmr 通过 Ranger 集成 Hive
+keyword: qingmr 通过 Ranger 集成 Hive
 weight: 20
 collapsible: false
 draft: false
@@ -57,7 +57,7 @@ Ranger 中对 Hive 的表或列级别的权限控制，即针对 HiveServer2 的
 
 2. 在 **Access Manager** > **Service Manager** 页面，添加 Hive Service。
    
-   配置服务参数，详细参数说明参见[Service 参数](#service-参数).
+   配置服务参数，详细参数说明参见[Service 参数](#service-参数)。
    
    <img src="../../../_images/service_para.png" alt="Service 参数" style="zoom:50%;" />
 

@@ -1,7 +1,7 @@
 ---
 title: "Hive 使用指南"
 description: 本小节主要介绍 Hive 使用指南。 
-keywords: qingmr hive
+keyword: qingmr hive
 weight: 25
 collapsible: false
 draft: false

@@ -1,7 +1,8 @@
 ---
 title: "管理命名空间"
+description: Docker 镜像仓库命名空间管理，包括创建、授权、修改与删除命名空间。
+keyword: 青云, QingCloud, 云计算, Docker, 镜像仓库，命名空间
 draft: false
-enableToc: false
 weight: 5
 ---
 

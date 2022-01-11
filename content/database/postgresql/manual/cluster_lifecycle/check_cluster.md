@@ -1,24 +1,24 @@
 ---
 title: "查看集群信息"
 description: 本小节主要介绍如何查看 PostgreSQL 集群信息。 
-keywords: PostgreSQL 集群信息
+keyword: 集群信息,PostgreSQL,关系型数据库,数据库
 weight: 10
 collapsible: false
 draft: false
 ---
 
 
-PostgreSQL 集群创建成功后，可在 AppCenter 查看集群信息，包括集群基本属性、服务端口信息、租赁信息、节点信息、配置参数、告警配置、备份信息、角色详情等。
+PostgreSQL 集群创建成功后，可在 AppCenter 查看集群信息，包括集群基本属性、服务端口信息、租赁信息、节点信息、配置参数、告警配置、备份信息、角色详情、账号等。
 
 本小节主要介绍如何查看集群信息。
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群查看权限。
+- 已获取管理控制台登录账号和密码，且已获取集群查看权限。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 PostgreSQL**，进入集群管理页面。
 
    可查看当前区域集群列表，以及集群基本信息。
@@ -97,9 +97,21 @@ PostgreSQL 集群创建成功后，可在 AppCenter 查看集群信息，包括�
 	
 - `standby`表示数据库从库。
 
+- `disaster-primary` 表示灾备集群主节点。即当前集群为灾备集群，从源集群同步数据。
+
+  > **说明**
+  > 
+  > 灾备集群 `standby` 节点，依然从 `disaster-primary` 同步数据。
+
 - `unknown`表示集群状态不稳定，暂未识别主备库状态。
 
 <img src="../../../_images/node_role.png" alt="角色详情" style="zoom:50%;" />
+
+### 账号
+
+在**账号**页面，可以查看和管理数据库用户账号。
+
+<img src="../../../_images/user_list.png" alt="用户账号列表" style="zoom:50%;" />
 
 ### 租赁信息
 

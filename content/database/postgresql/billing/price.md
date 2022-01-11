@@ -1,7 +1,7 @@
 ---
 title: "计费说明"
-description: 本小节主要介绍 QingCloud PostgreSQL 计费说明。 
-keywords: postgresql 计费说明, 
+description: 本小节主要介绍 PostgreSQL 计费说明。 
+keyword: 计费说明,PostgreSQL,关系型数据库,数据库
 weight: 10
 collapsible: false
 draft: false

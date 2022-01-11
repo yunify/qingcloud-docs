@@ -1,5 +1,7 @@
 ---
 title: "计费概述"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC,音视频计费,旁路推流计费,云录制计费
+description: 本章节介绍实时音视频 RTC 的计费说明。
 draft: false
 collapsible: false
 weight: 10

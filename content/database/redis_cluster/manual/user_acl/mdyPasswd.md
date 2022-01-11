@@ -1,7 +1,7 @@
 ---
 title: "修改用户密码"
 description: 本小节介绍如何修改 ACL 用户密码。 
-keywords: redis cluster，访问控制，用户管理 ACL
+keyword: redis cluster，访问控制，用户管理 ACL
 weight: 8
 draft: false
 ---

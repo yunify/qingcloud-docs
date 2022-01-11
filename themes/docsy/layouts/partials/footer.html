@@ -1,115 +1,258 @@
 {{ $links := .Site.Params.links }}
-<footer class="bg-dark py-5 d-print-none footer">
+<footer class="bg-dark footer d-print-none">
   <div class="container td-outer {{ if and (ne .Params.LinkTitle "Document") (ne .Params.type "product" )}}doc-container-width {{ end }}">
-    <div class="row is-multiline is-centered">
-      <div class="col-sm is-3 is-12-mobile">
-        <figure class="copyright">
-          <img src="https://www.qingcloud.com/static/assets/images/icons/common/footer_logo.svg" alt="logo">
-          <figcaption>© QingCloud Techonologies 2021</figcaption>
-        </figure>
-        <div class="is-flex-desktop" style="align-items: center">
-          <div class="qc-wechat-qrcode">
-            <figure>
-              <img src="https://www.qingcloud.com/static/assets/images/qc_wechat_qrcode.png">
+    <div class="is-multiline is-centered">
+      <div class="">
+        <div class="columns is-multiline column-block">
+          <div class="column logo-block">
+            <figure class="copyright">
+              <img src="https://www.qingcloud.com/static/assets/images/icons/common/footer_logo.gif?v=1636707447"
+                alt="logo" />
+              <figcaption>QingCloud Technologies<br>股票代码：688316</figcaption>
             </figure>
           </div>
-          <div class="menu">
-            <ul class="menu-list">
-              <li>
-                <span class="tel"><i class="icon is-small icon-tel"></i> 400-8576-886</span>
-              </li>
-              <li>
-                <a href="mailto:contactus@yunify.com"><i class="icon is-small icon-email"></i> 邮箱</a>
-              </li>
-              <li>
-                <a href="http://weibo.com/u/3563234355"><i class="icon is-small icon-weibo"></i> 微博</a>
-              </li>
-            </ul>
+          <div class="column">
+            <div class="menu">
+              <h3 class="menu-label">热门推荐<span></span></h3>
+              <ul class="menu-list">
+                <li>
+                  <a href="https://www.qingcloud.com/products/instances">云服务器</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/products/ehpc">高性能计算</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/products/kubesphereqke">QKE容器引擎</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/products/domain">域名注册</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/products/rtc">实时音视频RTC</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column">
+            <div class="menu">
+              <h3 class="menu-label">关于青云<span></span></h3>
+              <ul class="menu-list">
+                <li>
+                  <a href="https://www.qingcloud.com/aboutus">企业介绍</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/company-activities/enterprise-activity">企业动态</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/products/news">产品动态</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/newbrand">品牌理念</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/case-study-list">客户案例</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/jobs">加入我们</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column">
+            <div class="menu">
+              <h3 class="menu-label">自研生态<span></span></h3>
+              <ul class="menu-list">
+                <li>
+                  <a href="https://www.qingcloud.com/hybridcloud-connection">混合云</a>
+                </li>
+                <li>
+                  <a href="//kubesphere.qingcloud.com/">KubeSphere容器</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/products/hyper-converged-hardware">青立方超融合</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/products/qingstor">QingStor存储</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/products/enterprisecloud">云平台</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/products/sdwan">SD-WAN</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column">
+            <div class="menu">
+              <h3 class="menu-label">服务支持<span></span></h3>
+              <ul class="menu-list">
+                <li>
+                  <a href="//docsv3.qingcloud.com">文档中心</a>
+                </li>
+                <li>
+                  <a href="//activity.qingcloud.com/school">知行学院</a>
+                </li>
+                <li>
+                  <a href="//console.qingcloud.com/tickets">工单管理</a>
+                </li>
+                <li>
+                  <a href="//docsv3.qingcloud.com/development_docs/api">API中心</a>
+                </li>
+                <li>
+                  <a href="//docsv3.qingcloud.com/development_docs/sdk">SDK文档</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/nonprofits">公益支持</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/startup">创业扶持</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column contact-block">
+            <div class="wechat-block">
+              <div class="content">
+                <p>随时了解最新活动与资讯</p>
+                <p><i class="icon icon-scan"></i>关注青云公众号、小程序</p>
+              </div>
+              <div class="qc-wechat-qrcode">
+                <figure>
+                  <img src="https://www.qingcloud.com/static/assets/images/qc_wechat_qrcode.png?v=20211103">
+                </figure>
+                <figure>
+                  <img src="https://www.qingcloud.com/static/assets/images/qc_wechat_applet.png?v=20211103">
+                </figure>
+              </div>
+            </div>
+            <div class="menu">
+              <h3 class="menu-label">联系我们</h3>
+              <ul class="menu-list">
+                <li>
+                  <span class="tel"><i class="icon is-small icon-tel-new"></i> 400-8576-886</span>
+                </li>
+                <li>
+                  <a class="contact" onclick="qimoChatClick()" data-gio="{id: 'advisoryClick'}"><i
+                      class="icon is-small icon-contact"></i> 在线客服 (08:00-23:00) </a>
+                </li>
+                <li>
+                  <a href="mailto:contactus@yunify.com"><i class="icon is-small icon-email-new"></i> 邮箱
+                    contactus@yunify.com</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm is-2 is-12-mobile">
-        <div class="menu">
-          <h3 class="menu-label">关于我们</h3>
-          <ul class="menu-list">
-            <li>
-              <a href="https://www.qingcloud.com/aboutus">公司概况</a>
-            </li>
-            <li>
-              <a href="https://www.qingcloud.com/company-activities/enterprise-activity/">企业动态</a>
-            </li>
-            <li>
-              <a href="https://www.qingcloud.com/case_news">案例新闻</a>
-            </li>
-            <li>
-              <a href="https://www.qingcloud.com/press">媒体报道</a>
-            </li>
-            <li>
-              <a href="https://www.qingcloud.com/jobs">加入我们</a>
-            </li>
-            <li>
-              <a href="https://www.qingcloud.com/contactus">联系我们</a>
-            </li>
-          </ul>
+        <div class="columns is-multiline row-block is-hidden-mobile">
+          <div class="column is-full">
+            <div class="menu">
+              <h3 class="menu-label">快捷入口:</h3>
+              <ul class="menu-list">
+                <li>
+                  <a href="//console.qingcloud.com">控制台</a>
+                </li>
+                <li>
+                  <a href="//marketplace.qingcloud.com">云市场</a>
+                </li>
+                <li>
+                  <a href="//points.qingcloud.com">积分商城</a>
+                </li>
+                <li>
+                  <a href="//cic.qingcloud.com">CIC大会</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/partners">合作伙伴</a>
+                </li>
+                <li>
+                  <a href="//kubesphere.com.cn">KubeSphere开源社区</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column is-full">
+            <div class="menu">
+              <h3 class="menu-label">企业应用:</h3>
+              <ul class="menu-list">
+                <li>
+                  <a href="//marketplace.qingcloud.com/details/prod-xt00q6hj?compId=comp_5W8lP7EygAE0">自助建站</a>
+                </li>
+                <li>
+                  <a href="//marketplace.qingcloud.com/details/prod-fy0x98i7">短信服务</a>
+                </li>
+                <li>
+                  <a href="//marketplace.qingcloud.com/details/prod-2ur98hib?compId=comp_nO62Pp6q8WV4">小程序搭建</a>
+                </li>
+                <li>
+                  <a href="https://www.qingcloud.com/solutions/gradedprotection/">等保服务</a>
+                </li>
+                <li>
+                  <a
+                    href="//marketplace.qingcloud.com/details/prod-211vvbmf?compId=comp_K4G1RvK77zO0&amp;strategyId=stg_7rWXwY3gg4Dl">主机安全</a>
+                </li>
+                <li>
+                  <a href="//marketplace.qingcloud.com/details/prod-27pykkw6">音视频服务</a>
+                </li>
+                <li>
+                  <a
+                    href="//marketplace.qingcloud.com/details/prod-w3n32kr7?compId=comp_xxrkX29DZyV4&amp;strategyId=stg_yOEOPr07jV6D">商标注册</a>
+                </li>
+                <li>
+                  <a
+                    href="//marketplace.qingcloud.com/details/prod-gznxo62h?compId=comp_zL06k0RxmR2w&amp;strategyId=stg_yzJKyZXnQXBp">语音识别</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-sm is-2 is-12-mobile">
-        <div class="menu">
-          <h3 class="menu-label">账户管理</h3>
-          <ul class="menu-list">
-            <li>
-              <a href="https://console.qingcloud.com/finance/wallet/">充值付款</a>
-            </li>
-            <li>
-              <a href="https://console.qingcloud.com/finance/invoices/">发票管理</a>
-            </li>
-            <li>
-              <a href="https://console.qingcloud.com/finance/billing/">账单管理</a>
-            </li>
-          </ul>
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备13019086号</a>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502030190"><img
+                src="https://www.qingcloud.com/static/assets/images/ghs.png"
+                style="vertical-align: middle">&nbsp;<span>京公网安备11010502030190</span></a>
+            <a style="color: #d3d3db; "> 代理域名注册服务机构：新网</a>
+          </div>
         </div>
-      </div>
-      <div class="col-sm is-2 is-12-mobile">
-        <div class="menu">
-          <h3 class="menu-label">服务支持</h3>
-          <ul class="menu-list">
-            <li>
-              <a href="https://beian.qingcloud.com/icp">备案流程</a>
-            </li>
-            <li>
-              <a href="//status.qingcloud.com/">服务状态</a>
-            </li>
-            <li>
-              <a href="https://www.qingcloud.com/terms">服务条款</a>
-            </li>
-            <li>
-              <a href="https://docs.qingcloud.com">使用文档</a>
-            </li>
-            <li>
-              <a href="https://docs.qingcloud.com/product/faq/">常见问题</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm is-2 is-12-mobile">
-        <div class="menu">
-          <h3 class="menu-label">合作与生态</h3>
-          <ul class="menu-list">
-            <li>
-              <a href="https://www.qingcloud.com/partners">合作伙伴</a>
-            </li>
-            <li>
-              <a href="https://www.qingcloud.com/startup">创业扶持</a>
-            </li>
-            <li>
-              <a href="https://www.qingcloud.com/nonprofits">公益支持</a>
-            </li>
-            <li>
-              <a href="https://community.qingcloud.com/">青云社区</a>
-            </li>
-          </ul>
-        </div>
+        <!-- <div class="static-button-icon qimo-btn">
+          <div class="hexagon" onclick="qimoChatClick()" data-gio="{id: 'advisoryClick'}">
+            <div class="static-group-button-item"></div>
+          </div>
+          <div class="square">
+            <a target="_blank" href="https://partner.quanxiangyun.com/qingcloud/register?site=qingcloud_pc_website"
+              class="square-item cooperation">
+              <figure class="image"></figure>
+              <p>合作</p>
+            </a>
+            <a target="_blank" href="https://docsv3.qingcloud.com/" class="square-item documents">
+              <figure class="image"></figure>
+              <p>文档</p>
+            </a>
+            <a target="_blank" href="/pricing-regulation" class="square-item pricing">
+              <figure class="image"></figure>
+              <p>定价</p>
+            </a>
+          </div>
+          <div id="back-to-top" class="show">
+            <figure class="image"></figure>
+          </div>
+        </div> -->
       </div>
     </div>
+  </div>
+  <!-- <div class="footer-beian">
+
+
+    <a href="https://www.qingcloud.com/partners">京ICP备13019086号</a>
+
+    <a href="https://www.qingcloud.com/startup">
+      <img src="https://www.qingcloud.com/static/assets/images/ghs.png" />
+      京公网安备11010502030190</a>
+
+    <div>代理域名注册服务机构：新网</div>
+
+
+    </ul>
+  </div> -->
   </div>
 </footer>

@@ -1,10 +1,10 @@
 ---
 title: "步骤1：购买硬盘"
-description: Test description
+date: 2021-09-23T00:38:25+09:00
+description: 本小节主要介绍购买和创建云硬盘的相关操作。
 draft: false
-enableToc: false
 weight: 20
-keyword: 青云，硬盘
+keyword: 云计算, 青云, QingCloud, 云硬盘,购买硬盘,创建硬盘
 
 ---
 
@@ -73,7 +73,7 @@ keyword: 青云，硬盘
   </tr>
     <tr>
     <td>硬盘数量</td>
- 		<td>需要创建的云硬盘数量。默认至少1块，支持同时创建多块。</td>
+ 		<td>需要创建的云硬盘数量。默认至少 1 块，支持同时创建多块。</td>
   </tr>
 </table>
 

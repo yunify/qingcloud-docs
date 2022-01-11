@@ -1,11 +1,10 @@
 ---
 title: "加密"
 date: 2021-05-28T00:40:25+09:00
-description: Test description
+description: 如何进行云服务器加密
 draft: false
 weight: 2
-keyword: 加密, QingCloud, 解密
-
+keyword: 云计算, 青云, QingCloud, 云服务器，加密
 ---
 
 数据加密适用于数据安全或法规合规等场景，帮助您加密保护存储在青云云服务器上的数据。无需自建和维护密钥管理基础设施，就能保护数据的隐私性和自主性，为业务数据提供安全的存储空间。 被加密的可以是系统盘，数据盘，及加密的系统盘/数据盘生成的镜像，备份。

@@ -1,7 +1,8 @@
 ---
 title: "qsctl"
 date: 2021-05-17T10:08:56+08:00
-description:
+description: 本小节主要介绍 qsctl 相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, qsctl
 draft: false
 weight: 1
 ---

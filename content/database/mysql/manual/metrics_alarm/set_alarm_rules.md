@@ -1,7 +1,7 @@
 ---
 title: "设置监控告警"
 description: 本小节主要介绍如何设置 MySQL Plus 监控告警。 
-keywords: mysql plus 监控告警
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,监控告警
 weight: 20
 collapsible: false
 draft: false

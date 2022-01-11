@@ -1,5 +1,7 @@
 ---
 title: "List Locations"
+description: 本小节主要介绍 List Locations 相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
 该 API 用于获取 QingStor 对象存储所有部署区域的列表。

@@ -1,7 +1,7 @@
 ---
 title: "查看资源和服务监控"
 description: 本小节主要介绍如何查看 QingMR 监控信息。 
-keywords: QingMR 监控告警
+keyword: QingMR 监控告警
 weight: 40
 collapsible: false
 draft: false
@@ -44,38 +44,43 @@ YARN、HDFS、Spark 和 Hive 提供了丰富的监控信息。如果需要通过
 
 - http://< 主节点IP >:8088
 
-![YARN](../../../_images/yarn_monitoring.png)
+  ![YARN](../../../_images/yarn_monitoring.png)
 
 - http://< 主节点IP >:8088/ui2  ( yarn 新版 UI，从 QingMR 2.0.0 开始支持)
 
-![YARN](../../../_images/yarn_monitoring_ui2.png)
+  ![YARN](../../../_images/yarn_monitoring_ui2.png)
 
 - http://< HDFS-MASTER-IP >:50070
 
-![YARN](../../../_images/hdfs_monitoring.png)
+  ![YARN](../../../_images/hdfs_monitoring.png)
 
 - http://< 主节点IP >:8080
 
-![YARN](../../../_images/spark_monitoring.png)
+  ![YARN](../../../_images/spark_monitoring.png)
 
 - http://< 主节点IP >:10002 (从 QingMR 1.3.0 开始支持)
 
-![HIVE_SERVER2](../../../_images/hive_server2_monitoring.png)
-> HiveServer2 WEB UI 展示的 sessions 和 queries 仅包含以 beeline 远程模式或其他方式提交到 HiveServer2 服务的任务
+  ![HIVE_SERVER2](../../../_images/hive_server2_monitoring.png)
+
+  > **说明**
+  > 
+  > HiveServer2 WEB UI 展示的 sessions 和 queries 仅包含以 beeline 远程模式或其他方式提交到 HiveServer2 服务的任务
 
 - http://< JobManager-Web-Interface > (从 QingMR 2.5.0 开始支持)
 
-![Flink session WEB UI](../../../_images/flink_session_dashboard.png)
+  ![Flink session WEB UI](../../../_images/flink_session_dashboard.png)
 
-> 说明
->
-> Flink YARN Session WEB UI 展示的是此 Session 正在运行的 job 和 1 小时内的已完成 job，可以通过此 WEB UI 向 Flink YARN Session 提交 job。 `JobManager-Web-Interface` 为 JobManager 地址，详见 [创建 Flink YARN Session](../../../developer_manual/flink)。
+  > **说明**
+  >
+  > Flink YARN Session WEB UI 展示的是此 Session 正在运行的 job 和 1 小时内的已完成 job，可以通过此 WEB UI 向 Flink YARN Session 提交 job。 `JobManager-Web-Interface` 为 JobManager 地址，详见 [创建 Flink YARN Session](../../../developer_manual/flink)。
 
 - http://< HDFS-MASTER-IP >:8082 (从 QingMR 2.5.0 开始支持)
 
-![Flink historyserver WEB UI](../../../_images/flink_dashboard.png)
+  ![Flink historyserver WEB UI](../../../_images/flink_dashboard.png)
 
-> Flink historyserver WEB UI 展示的是已完成 job 信息，包括向 Flink YARN Session 提交的 job，和 Standalone Flink job。
+  > **说明**
+  > 
+  > Flink historyserver WEB UI 展示的是已完成 job 信息，包括向 Flink YARN Session 提交的 job，和 Standalone Flink job。
 
 ## 查看资源监控指标
 

@@ -1,7 +1,7 @@
 ---
 title: "外部绑定公网 IP"
-description: test
-date: 2021-05-26T15:08:56+09:00
+description: 介绍如何外部绑定 IPv6 公网 IP。
+keyword: QingCloud, 青云, 云计算, 公网IP, 外部绑定
 weight: 10
 draft: false
 ---

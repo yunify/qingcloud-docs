@@ -1,7 +1,7 @@
 ---
 title: "配置参数"
 description: 本小节主要介绍如何配置参数。 
-keywords: Storm，配置参数
+keyword: Storm，配置参数
 weight: 40
 collapsible: false
 draft: false

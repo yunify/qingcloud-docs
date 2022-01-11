@@ -1,13 +1,13 @@
 ---
 title: "数据迁移"
 description: 本小节主要介绍 PostgreSQL 离线数据迁移。 
-keywords: PostgreSQL 离线数据迁移,
+keyword: 离线数据迁移,PostgreSQL,关系型数据库,数据库
 weight: 01
 collapsible: false
 ---
 
 
-QingCloud PostgreSQL 可通过离线导出数据，再通过 PostgreSQL 支持的方式导入数据，实现 PostgreSQL 的数据迁移。
+PostgreSQL 可通过离线导出数据，再通过 PostgreSQL 支持的方式导入数据，实现 PostgreSQL 的数据迁移。
 
 > **注意**
 > 
@@ -17,7 +17,7 @@ QingCloud PostgreSQL 可通过离线导出数据，再通过 PostgreSQL 支持�
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - PostgreSQL 集群状态为**活跃**。
 - 已获取远端 PostgreSQL 数据库信息。
 

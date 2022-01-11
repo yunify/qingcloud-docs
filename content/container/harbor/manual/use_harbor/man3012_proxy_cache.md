@@ -1,7 +1,8 @@
 ---
 title: "配置代理缓存"
 draft: false
-enableToc: false
+description: 介绍如何使用代理缓存从 Harbor 或非 Harbor 仓库中拉取镜像。
+keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库, 镜像仓库, 镜像代理
 weight: 12
 ---
 
