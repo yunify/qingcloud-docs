@@ -1224,6 +1224,14 @@ main.col-12.col-md-7.col-xl-7 {
 
 @media (min-width: 1200px) {
     .doc-container-width {
+        max-width: 1440px;
+    }
+    .container {
+        max-width: 1440px;
+    }
+}
+@media (max-width: 1440px) {
+    .container {
         max-width: 1260px;
     }
 }
