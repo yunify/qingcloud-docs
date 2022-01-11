@@ -2,8 +2,10 @@
 title: "API 类商品接入"
 description: 
 keyword: QingCloud, 青云, 云计算, 云市场, API 接入
-weight: 20
+weight: 10
 draft: false
+aliases: 
+    - /appcenter/market/provider_guide/publish_api_goods/
 ---
 
 API 类商品接入后，用户可以在云市场购买您的 API 类商品，通过商品包含的地址及密钥来使用相关服务。
@@ -32,7 +34,7 @@ API 类商品接入后，用户可以在云市场购买您的 API 类商品，�
 
 2. 在左侧导航栏，选择**商品** > **商品管理**，然后点击**发布商品**。
 
-   <img src="../../_images/saler_pub_goods.png"/>
+   <img src="../../../_images/saler_pub_goods.png"/>
 
 3. 配置商品接入信息。
 
@@ -83,7 +85,10 @@ API 类商品接入后，用户可以在云市场购买您的 API 类商品，�
 
    点击**预览**，可预览商品上架后的展示页面。
 
-9. 云市场后台审核通过后，进入**商品管理**页面，在对应 API 商品的**操作**列点击**上架**，即可完成 API 商品上架。
+9. 进入**商品管理**页面，在**待上架**商品列表，可看到商品**上架状态**为`上架审核中`。
+
+   <img src="../../../_images/to_release.png"/>
+   
+10. 待云市场后台审核通过后（商品**上架状态**变为`上架审核通过`），在对应 API 商品的**操作**列点击**上架**，即可完成 API 商品上架。
 
    至此，API 商品可开始进行售卖。
-
