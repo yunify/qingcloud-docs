@@ -1,7 +1,7 @@
 ---
 title: "退订"
-description: 本小节主要介绍如何退订 QingMR 集群包年/包月合约。 
-keyword: 云计算,大数据,青云,QingCloud,QingMR,退订
+description: 本小节主要介绍如何退订 HBase 集群包年/包月合约。 
+keyword: 云计算,大数据,HBase,退订
 weight: 70
 collapsible: false
 draft: false
@@ -20,17 +20,17 @@ draft: false
 ## 前提条件
 
 - 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
-- QingMR 集群计费模式为包年/包月。
+- HBase 集群计费模式为包年/包月。
 
 ## 操作步骤
 
 1. 登录 QingCloud 管理控制台。
-2. 选择**产品与服务** > **大数据服务** > **大数据引擎 QingMR**，进入集群管理页面。
+2. 选择**产品与服务** > **大数据服务** > **HBase 服务**，进入 HBase 列表页面。
 3. 点击目标集群 ID，进入集群详情页面。
 4. 在**基本属性**模块，点击集群操作下拉菜单。
 5. 展开下拉菜单，点击**合约退订**，弹出退订/销毁窗口。
    
-   <img src="../../../_images/subscribe.png" alt="合约退订" style="zoom:100%;" />
+   <img src="../../../_images/unsubscribe.png" alt="合约退订" style="zoom:50%;" />
 
 6. 选择是否销毁资源。
 
