@@ -47,6 +47,9 @@ $(function () {
 
   $("#right-nav-menu").on("click", (ev) => {
     $("#right-nav-menu").css("transform", "translateX(100vw)");
+    $("#right-nav-menu .content-block").css({
+      transform: "translateX(100vw)",
+    });
     const currentTitle = decodeURI(currentHash)?.includes('#')?decodeURI(currentHash)?.slice(1,decodeURI(currentHash).length):decodeURI(currentHash)
     $("#mobile-slider-menu-block-nav .current-title")[0].innerHTML =
     currentTitle
@@ -56,6 +59,10 @@ $(function () {
 
   $(".mobile-slider-menu-block-nav-icon").on("click", () => {
     $("#right-nav-menu").css({
+      transform: "translateX(0px)",
+      // transition: "all 0.5s ease",
+    });
+    $("#right-nav-menu .content-block").css({
       transform: "translateX(0px)",
       transition: "all 0.5s ease",
     });
