@@ -14,15 +14,15 @@
 }
 
 nav.navbar {
-    background-color: rgba(48, 48, 58, .2);
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    background-color: rgba(48, 48, 58, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     min-height: 25px;
 
     .container {
         justify-content: flex-start;
         min-height: 25px;
     }
-    &:last-child{
+    &:last-child {
         border-bottom: none;
     }
 }
@@ -60,8 +60,8 @@ nav.navbar {
     position: relative;
 }
 
-.navbar .field .control+.control a::after {
-    content: "";
+.navbar .field .control + .control a::after {
+    content: '';
     width: 0;
     height: 16px;
     position: absolute;
@@ -75,7 +75,7 @@ nav.navbar {
     width: 200px;
     height: 36px;
     border-radius: 4px;
-    background: rgba(255, 255, 255, .05);
+    background: rgba(255, 255, 255, 0.05);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -83,8 +83,8 @@ nav.navbar {
     -ms-flex-align: center;
     align-items: center;
     margin-right: 18px;
-    -webkit-transition: .3s linear;
-    transition: .3s linear;
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
 }
 
 .navbar .search input {
@@ -150,7 +150,7 @@ nav.navbar {
 }
 
 .navmenu::before {
-    content: "mobile";
+    content: 'mobile';
     display: none;
 }
 
@@ -189,7 +189,7 @@ nav.navbar {
 
 .navmenu .nav-trigger span::after,
 .navmenu .nav-trigger span::before {
-    content: "";
+    content: '';
     left: 0;
     -webkit-transition: -webkit-transform 0.2s;
     transition: -webkit-transform 0.2s;
@@ -247,7 +247,7 @@ nav.navbar {
 
 .navmenu .content .menu-list {
     list-style: none;
-    margin: 0
+    margin: 0;
 }
 
 .navmenu .content .menu-list a {
@@ -256,8 +256,8 @@ nav.navbar {
     word-break: break-all;
 }
 
-.navbar .search-mobile .search-mobile-icon{
-    display:none;
+.navbar .search-mobile .search-mobile-icon {
+    display: none;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -266,8 +266,8 @@ nav.navbar {
         border-bottom: none;
         padding: 0.5rem 0 0.5rem 0;
     }
-    
-    header{
+
+    header {
         background-color: #3d3e49;
     }
 
@@ -277,24 +277,24 @@ nav.navbar {
         width: 100%;
         margin: 30px 0px 20px;
     }
-    
 
-    .navbar-item.logo{
+    .navbar-item.logo {
         padding-left: 0;
     }
 
-    .navbar .search-mobile{
+    .navbar .search-mobile {
         z-index: 10;
     }
-    .navbar .search-mobile .search-mobile-icon{
-        display:block;
+    .navbar .search-mobile .search-mobile-icon {
+        display: block;
         text-align: right;
     }
-    .navbar .search-mobile form{
-        display:none;
+    .navbar .search-mobile form {
+        display: none;
     }
 
-    .control.has-icons-left .icon, .control.has-icons-right .icon{
+    .control.has-icons-left .icon,
+    .control.has-icons-right .icon {
         z-index: 0;
     }
 
@@ -331,7 +331,8 @@ nav.navbar {
     }
 
     .navbar .search .icon-search {
-        background: url(/static/assets/images/menu/search-dark.svg) center no-repeat;
+        background: url(/static/assets/images/menu/search-dark.svg) center
+            no-repeat;
     }
 
     .navmenu {
@@ -356,7 +357,7 @@ nav.navbar {
     }
 
     .navmenu .dropdown-list .dropdown {
-        display: block
+        display: block;
     }
 
     .navmenu .dropdown-list .dropdown .label {
@@ -367,11 +368,11 @@ nav.navbar {
         padding: 10px 0;
         margin: 0;
         border-bottom: solid 1px rgba(0, 0, 0, 0.12);
-        position: relative
+        position: relative;
     }
 
-    .navmenu .dropdown-list ul>li.dropdown:last-child>.label {
-        border-bottom: solid 1px transparent
+    .navmenu .dropdown-list ul > li.dropdown:last-child > .label {
+        border-bottom: solid 1px transparent;
     }
 
     .navmenu .dropdown-list .dropdown .is-hidden-desktop.content {
@@ -394,11 +395,11 @@ nav.navbar {
     }
 
     .dropdown .columns {
-        margin: 0
+        margin: 0;
     }
 
     .dropdown .column {
-        padding: 0
+        padding: 0;
     }
 
     .navmenu .dropdown-list .dropdown .menu {
@@ -416,7 +417,7 @@ nav.navbar {
         border-bottom: solid 1px rgba(0, 0, 0, 0.12);
         padding: 10px 0;
         margin: 0;
-        position: relative
+        position: relative;
     }
 
     .navmenu .dropdown-list .dropdown .menu .menu-list {
@@ -434,7 +435,7 @@ nav.navbar {
         display: block;
     }
 
-    .navmenu .dropdown-list .dropdown>.label {
+    .navmenu .dropdown-list .dropdown > .label {
         font-weight: 600;
     }
 
@@ -450,7 +451,7 @@ nav.navbar {
         border: 2px solid #dee0e6;
         border-right: 0;
         border-top: 0;
-        content: " ";
+        content: ' ';
         display: block;
         height: 0.75rem;
         pointer-events: none;
@@ -478,7 +479,7 @@ nav.navbar {
         transform: rotate(-45deg);
     }
 
-    .navmenu .dropdown-list .dropdown.has-submenu.is-active>.label::after,
+    .navmenu .dropdown-list .dropdown.has-submenu.is-active > .label::after,
     .navmenu .dropdown-list .menu-wrap.is-active .menu-title-block::after,
     .navmenu .dropdown-list .menu.is-active .menu-label::after {
         -webkit-transform: rotate(135deg);
@@ -500,18 +501,23 @@ nav.navbar {
         border-bottom: solid 1px rgba(0, 0, 0, 0.12);
     }
 
-    .navmenu .dropdown-list .dropdown:last-child .content .menu:last-child .menu-label {
-        border-bottom: solid 1px transparent
+    .navmenu
+        .dropdown-list
+        .dropdown:last-child
+        .content
+        .menu:last-child
+        .menu-label {
+        border-bottom: solid 1px transparent;
     }
 
-    .dropdown.is-active .content>.menu-list {
+    .dropdown.is-active .content > .menu-list {
         display: block;
         text-align: left;
         margin-left: 20px;
     }
 
     #sub-menu-more.is-active .menu-list {
-        display: block
+        display: block;
     }
 
     .navmenu .dropdown .content .menu-wrap .menu {
@@ -541,10 +547,9 @@ nav.navbar {
         text-align: center;
     }
 
-    .navmenu .btn-group .button+.button {
+    .navmenu .btn-group .button + .button {
         margin-left: 12px;
     }
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -566,11 +571,11 @@ nav.navbar {
         text-align: center;
         background-color: #3d3e49;
     }
-    .nav-wrapper-index{
+    .nav-wrapper-index {
         background-color: transparent;
     }
     .navmenu::before {
-        content: "desktop";
+        content: 'desktop';
     }
 
     .navmenu .logo {
@@ -641,7 +646,7 @@ nav.navbar {
         transition: opacity 0.2s;
     }
 
-    .navmenu .dropdown-list>ul {
+    .navmenu .dropdown-list > ul {
         position: relative;
         z-index: 1;
         height: 100%;
@@ -655,7 +660,8 @@ nav.navbar {
         -webkit-transition: width 0.2s, height 0.2s, -webkit-transform 0.2s;
         transition: width 0.2s, height 0.2s, -webkit-transform 0.2s;
         transition: transform 0.2s, width 0.2s, height 0.2s;
-        transition: transform 0.2s, width 0.2s, height 0.2s, -webkit-transform 0.2s;
+        transition: transform 0.2s, width 0.2s, height 0.2s,
+            -webkit-transform 0.2s;
     }
 
     .navmenu.is-dropdown-visible .dropdown-list .dropdown-triangle {
@@ -706,7 +712,7 @@ nav.navbar {
         font-weight: 500;
         color: #3f464d;
         padding-bottom: 20px;
-        border-bottom: 1px solid rgba(161, 166, 171, .4);
+        border-bottom: 1px solid rgba(161, 166, 171, 0.4);
         text-align: left;
     }
 
@@ -716,7 +722,7 @@ nav.navbar {
         text-align: left;
         color: #3e464c;
         padding-bottom: 0.625rem;
-        border-bottom: solid 1px rgba(161, 166, 171, .2);
+        border-bottom: solid 1px rgba(161, 166, 171, 0.2);
     }
 
     .navmenu .content .menu .menu-list {
@@ -736,14 +742,13 @@ nav.navbar {
         align-items: center;
     }
 
-
     .navmenu .content .menu .menu-list a {
         padding: 8px 0px;
         color: #68747f;
     }
 
     .navmenu .content .menu .menu-list a:hover {
-        color: #00a971
+        color: #00a971;
     }
 
     .navmenu .content {
@@ -779,7 +784,7 @@ nav.navbar {
         color: #00a971;
     }
 
-    .navmenu .content li+li {
+    .navmenu .content li + li {
         margin-top: 0;
     }
 
@@ -789,7 +794,12 @@ nav.navbar {
         left: 0;
         height: 1px;
         width: 1px;
-        background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(121deg, rgba(31, 31, 51, 0.95), rgba(30, 30, 51, 0.7) 100%);
+        background-image: linear-gradient(#ffffff, #ffffff),
+            linear-gradient(
+                121deg,
+                rgba(31, 31, 51, 0.95),
+                rgba(30, 30, 51, 0.7) 100%
+            );
         opacity: 0;
         -webkit-transition: opacity 0.2s;
         transition: opacity 0.2s;
@@ -858,7 +868,7 @@ nav.navbar {
 
     .navmenu .dropdown-list .tabs ul {
         margin: 0;
-        border-right: 1px solid rgba(161, 166, 171, .2);
+        border-right: 1px solid rgba(161, 166, 171, 0.2);
         border-bottom: none;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -925,50 +935,60 @@ nav.navbar {
     .navmenu .dropdown-list .tabs .icon-public {
         width: 30px;
         height: 30px;
-        background: url(/static/assets/images/menu/public.svg?v=1) center no-repeat;
+        background: url(/static/assets/images/menu/public.svg?v=1) center
+            no-repeat;
     }
 
     .navmenu .dropdown-list .tabs ul li.is-active .icon-public:after {
-        background: url(/static/assets/images/menu/public-active.svg?v=1) center no-repeat;
+        background: url(/static/assets/images/menu/public-active.svg?v=1) center
+            no-repeat;
     }
 
     .navmenu .dropdown-list .tabs .icon-enterprise {
         width: 30px;
         height: 30px;
-        background: url(/static/assets/images/menu/enterprise.svg) center no-repeat;
+        background: url(/static/assets/images/menu/enterprise.svg) center
+            no-repeat;
     }
 
     .navmenu .dropdown-list .tabs ul li.is-active .icon-enterprise:after {
-        background: url(/static/assets/images/menu/enterprise-active.svg) center no-repeat;
-
+        background: url(/static/assets/images/menu/enterprise-active.svg) center
+            no-repeat;
     }
 
     .navmenu .dropdown-list .tabs .icon-solution {
-        background: url(/static/assets/images/menu/solution.svg?v=1) center no-repeat;
+        background: url(/static/assets/images/menu/solution.svg?v=1) center
+            no-repeat;
     }
 
     .navmenu .dropdown-list .tabs ul li.is-active .icon-solution:after {
-        background: url(/static/assets/images/menu/solution-active.svg) center no-repeat;
-
+        background: url(/static/assets/images/menu/solution-active.svg) center
+            no-repeat;
     }
 
-
     .navmenu .dropdown-list .tabs .icon-solution-general {
-        background: url(/static/assets/images/menu/solution-general.svg) center no-repeat;
+        background: url(/static/assets/images/menu/solution-general.svg) center
+            no-repeat;
     }
 
     .navmenu .dropdown-list .tabs ul li.is-active .icon-solution-general:after {
-        background: url(/static/assets/images/menu/solution-general-active.svg) center no-repeat;
-
+        background: url(/static/assets/images/menu/solution-general-active.svg)
+            center no-repeat;
     }
 
     .navmenu .dropdown-list .tabs .icon-solution-industry {
-        background: url(/static/assets/images/menu/solution-industry.svg) center no-repeat;
+        background: url(/static/assets/images/menu/solution-industry.svg) center
+            no-repeat;
     }
 
-    .navmenu .dropdown-list .tabs ul li.is-active .icon-solution-industry:after {
-        background: url(/static/assets/images/menu/solution-industry-active.svg) center no-repeat;
-
+    .navmenu
+        .dropdown-list
+        .tabs
+        ul
+        li.is-active
+        .icon-solution-industry:after {
+        background: url(/static/assets/images/menu/solution-industry-active.svg)
+            center no-repeat;
     }
 
     .navmenu .dropdown-list .tab-content {
@@ -1008,7 +1028,7 @@ nav.navbar {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        border-bottom: solid 1px rgba(161, 166, 171, .2);
+        border-bottom: solid 1px rgba(161, 166, 171, 0.2);
         padding-bottom: 10px;
         margin-bottom: 10px;
         position: relative;
@@ -1027,7 +1047,8 @@ nav.navbar {
         top: 2px;
         width: 16px;
         height: 16px;
-        background: url(/static/assets/images/menu/computing.svg?v=1) left center no-repeat;
+        background: url(/static/assets/images/menu/computing.svg?v=1) left
+            center no-repeat;
     }
 
     .navmenu .menu.is-medium .menu-logo .logo {
@@ -1052,58 +1073,71 @@ nav.navbar {
     }
 
     .navmenu .menu-logo .logo-computing {
-        background: url(/static/assets/images/menu/computing.svg?v=1) left center no-repeat;
+        background: url(/static/assets/images/menu/computing.svg?v=1) left
+            center no-repeat;
     }
 
     .navmenu .menu-logo .logo-stroage {
-        background: url(/static/assets/images/menu/storage.svg?v=1) left center no-repeat;
+        background: url(/static/assets/images/menu/storage.svg?v=1) left center
+            no-repeat;
     }
 
     .navmenu .menu-logo .logo-network {
-        background: url(/static/assets/images/menu/network.svg?v=1) left center no-repeat;
+        background: url(/static/assets/images/menu/network.svg?v=1) left center
+            no-repeat;
     }
 
     .navmenu .menu-logo .logo-database {
-        background: url(/static/assets/images/menu/database.svg?v=1) left center no-repeat;
+        background: url(/static/assets/images/menu/database.svg?v=1) left center
+            no-repeat;
     }
 
     .navmenu .menu-logo .logo-iot {
-        background: url(/static/assets/images/menu/iot.svg) left center no-repeat;
+        background: url(/static/assets/images/menu/iot.svg) left center
+            no-repeat;
     }
 
     .navmenu .menu-logo .logo-ai {
-        background: url(/static/assets/images/menu/ai.svg?v=1) left center no-repeat;
+        background: url(/static/assets/images/menu/ai.svg?v=1) left center
+            no-repeat;
     }
 
     .navmenu .menu-logo .logo-bigdata {
-        background: url(/static/assets/images/menu/bigdata.svg?v=1) left center no-repeat;
+        background: url(/static/assets/images/menu/bigdata.svg?v=1) left center
+            no-repeat;
     }
 
     .navmenu .menu-logo .logo-manage {
-        background: url(/static/assets/images/menu/manage.svg?v=1) left center no-repeat;
+        background: url(/static/assets/images/menu/manage.svg?v=1) left center
+            no-repeat;
     }
 
     .navmenu .menu-logo .logo-basic {
-        background: url(/static/assets/images/menu/basic.svg?v=1) left center no-repeat;
+        background: url(/static/assets/images/menu/basic.svg?v=1) left center
+            no-repeat;
     }
 
     .navmenu .menu-logo .logo-middleware {
-        background: url(/static/assets/images/menu/middleware.svg?v=1) left center no-repeat;
+        background: url(/static/assets/images/menu/middleware.svg?v=1) left
+            center no-repeat;
     }
 
     .navmenu .menu-logo .logo-container {
-        background: url(/static/assets/images/menu/container.svg?v=1) left center no-repeat;
+        background: url(/static/assets/images/menu/container.svg?v=1) left
+            center no-repeat;
     }
 
     .navmenu .menu-logo .logo-security {
-        background: url(/static/assets/images/menu/security.svg?v=1) left center no-repeat;
+        background: url(/static/assets/images/menu/security.svg?v=1) left center
+            no-repeat;
     }
 
     .navmenu .menu-logo .icon-hot,
     .navmenu .menu-list .icon-hot {
         width: 28px;
         height: 13px;
-        background: url(/static/assets/images/menu/hot.svg?v=2) left center no-repeat;
+        background: url(/static/assets/images/menu/hot.svg?v=2) left center
+            no-repeat;
         margin-left: 5px;
         display: inline-block;
     }
@@ -1112,7 +1146,8 @@ nav.navbar {
     .navmenu .menu-list .icon-new {
         width: 28px;
         height: 13px;
-        background: url(/static/assets/images/menu/new.svg?v=2) left center no-repeat;
+        background: url(/static/assets/images/menu/new.svg?v=2) left center
+            no-repeat;
         margin-left: 5px;
         display: inline-block;
     }
@@ -1120,56 +1155,65 @@ nav.navbar {
     .navmenu .menu-logo .qingcloud-logo {
         width: 93px;
         height: 29px;
-        background: url(/static/assets/images/menu/qing-cloud.svg?v=2) left center no-repeat;
+        background: url(/static/assets/images/menu/qing-cloud.svg?v=2) left
+            center no-repeat;
     }
 
     .navmenu .menu-logo .qing3-logo {
         width: 61px;
         height: 24px;
-        background: url(/static/assets/images/menu/qing-3.svg?v=3) left center no-repeat;
+        background: url(/static/assets/images/menu/qing-3.svg?v=3) left center
+            no-repeat;
     }
 
     .navmenu .menu-logo .qingstor-logo {
         width: 95px;
         height: 29px;
-        background: url(/static/assets/images/menu/qing-stor.svg?v=2) left center no-repeat;
+        background: url(/static/assets/images/menu/qing-stor.svg?v=2) left
+            center no-repeat;
     }
 
     .navmenu .menu-logo .kubesphere-logo {
         width: 102px;
         height: 29px;
-        background: url(/static/assets/images/menu/kube-sphere.svg?v=2) left center no-repeat;
+        background: url(/static/assets/images/menu/kube-sphere.svg?v=2) left
+            center no-repeat;
     }
 
     .navmenu .menu-logo .sdwan-logo {
         width: 71px;
         height: 29px;
-        background: url(/static/assets/images/menu/sd-wan.svg?v=2) left center no-repeat;
+        background: url(/static/assets/images/menu/sd-wan.svg?v=2) left center
+            no-repeat;
     }
 
     .navmenu .menu-logo .ifcloud-logo {
         width: 86px;
         height: 29px;
-        background: url(/static/assets/images/menu/if-cloud.svg?v=2) left center no-repeat;
+        background: url(/static/assets/images/menu/if-cloud.svg?v=2) left center
+            no-repeat;
     }
 
     .navmenu .menu-logo .randondb-logo {
         width: 81px;
         height: 26px;
         margin-top: -3px;
-        background: url(/static/assets/images/menu/radon-db.svg?v=2) left center no-repeat;
+        background: url(/static/assets/images/menu/radon-db.svg?v=2) left center
+            no-repeat;
     }
 
     .navmenu .menu-logo .openpitrix-logo {
         width: 83px;
         height: 26px;
-        background: url(/static/assets/images/menu/open-pitrix.svg?v=2) left center no-repeat;
+        background: url(/static/assets/images/menu/open-pitrix.svg?v=2) left
+            center no-repeat;
     }
 
     .navmenu .menu-logo .worklyai-logo {
         width: 78px;
         height: 18px;
-        background: url(/static/assets/images/menu/workly-ai.svg) left center no-repeat;
+        background: url(/static/assets/images/menu/workly-ai.svg) left center
+            no-repeat;
     }
 
     #sub-menu-product .content.is-masonry {
@@ -1195,13 +1239,13 @@ nav.navbar {
     }
 
     #sub-menu-about {
-        width: 165px
+        width: 165px;
     }
 
     #sub-menu-support .content.is-masonry {
         width: 550px;
         -webkit-column-count: 2;
-        column-count: 2
+        column-count: 2;
     }
 
     #sub-menu-more .content {
@@ -1224,22 +1268,22 @@ nav.navbar {
     padding-left: 1rem;
 }
 
-nav.navbar .container .media-content{
+nav.navbar .container .media-content {
     margin-left: auto;
 }
 
-.crumb-last-color{
+.crumb-last-color {
     color: #c6c8cf;
 }
-.control.has-icons-right .icon.is-right{
+.control.has-icons-right .icon.is-right {
     height: 1.969em;
 }
 
-.navbar-item.logo{
-    z-index: 1000;
+.navbar-item.logo {
+    z-index: 2;
 }
 
-.navbar.navmenu.navbar-index{
+.navbar.navmenu.navbar-index {
     min-height: 25px;
     border-bottom: 0;
 }
