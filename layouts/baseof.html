@@ -1,17 +1,5 @@
 <!doctype html>
 <html exec=1 lang="{{ .Site.Language.Lang }}" class="no-js">
-  <div id="right-nav-menu">
-    <div class="content-block">
-      {{ $sections := .Sections.ByWeight }}
-      {{ range $sections }}
-      {{ if not .Params.isPrivate }}
-      {{ if not .Params.not_show}}
-        <div  class="slider-title" ><a href="#{{ .Params.title }}" >{{ .Params.title }}</a></div>
-      {{ end }}
-      {{ end }}
-      {{ end }}
-    </div>
-  </div>
 <head>
   {{ partial "head.html" . }}
 </head>
@@ -51,11 +39,22 @@
   </header>
 
   <main role="main" class="td-main">
-
+    <div id="right-nav-menu">
+      <div class="content-block">
+        {{ $sections := .Sections.ByWeight }}
+        {{ range $sections }}
+        {{ if not .Params.isPrivate }}
+        {{ if not .Params.not_show}}
+          <div  class="slider-title" ><a href="#{{ .Params.title }}" >{{ .Params.title }}</a></div>
+        {{ end }}
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
     <section class="section is-grey-background section-out container-min-height section-has-title">
       <div class="container  td-outer new-main-block">
         <div class="row" id="content">
-          <div class="col-sm-2" id="slider-menu-block">
+          <div class="col-12 col-md-3 col-xl-3 td-sidebar d-print-none td-sidebar-menu" id="slider-menu-block">
             {{ $sections := .Sections.ByWeight }}
             {{ range $sections }}
             {{ if not .Params.isPrivate }}
@@ -67,7 +66,7 @@
           </div>
           <div class="col-sm-2 td-sidebar-section-title" id="mobile-slider-menu-block-nav" >
             <div class="current-title">计算</div>
-            <div class="mobile-slider-menu-title">目录    <a href="javascript:;" class="nav-trigger mobile-slider-menu-block-nav-icon">&nbsp;<span aria-hidden="true"></span></a></div>
+            <div class="mobile-slider-menu-title">目录  <img src="/images/mobile-right-menu-icon.png" class="mobile-slider-menu-block-nav-icon" /> </div>
           </div>
 
           <!-- <div class="col-sm-2"></div> -->

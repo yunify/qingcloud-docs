@@ -47,7 +47,6 @@ $(function () {
       "iPhone",
       "SymbianOS",
       "Windows Phone",
-      "iPad",
       "iPod",
     ];
     var mobile_flag = false;
