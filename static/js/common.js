@@ -228,7 +228,6 @@ function funScroll() {
 
   //产品动态的active
   timeLine.each(function (index) {
-    console.log("index: ", index);
     var thisTop = $(this).offset().top;
     $(this).attr("id", `timeline-outer${index}`);
     if (top >= thisTop - 80) {
