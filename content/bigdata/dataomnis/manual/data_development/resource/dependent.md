@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-本小节主要介绍依赖包的相关操作。依赖包作为环境参数依赖，用于 SQL/Python/Scala 模式的实时作业开发中。
+本小节主要介绍依赖包的相关操作。依赖包作为运行参数依赖，用于 SQL/Python/Scala 模式的实时作业开发中。
 
 ## 约束限制
 
