@@ -60,8 +60,6 @@ draft: false
 
 您可以通过**编辑**功能修改依赖包的显示名称和描述信息。
 
-点击操作列的**编辑**，在编辑依赖包对话框中修改相关信息后，点击**确认**。
-
 1. 选择目标依赖包，点击操作列的**编辑**，进入编辑依赖包页面。
 
    <img src="/bigdata/dataomnis/_images/edit_dependent.png" alt="编辑依赖包" style="zoom:50%;" />
