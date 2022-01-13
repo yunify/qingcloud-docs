@@ -1,6 +1,5 @@
 <!doctype html>
 <html exec=1 lang="{{ .Site.Language.Lang }}" class="no-js">
-
 <head>
   {{ partial "head.html" . }}
 </head>
@@ -29,103 +28,86 @@
           </div>
         </div>
       </div>
-      {{ if $has_private }}
+      <!-- {{ if $has_private }}
       <div class="nav-link" id="nav-link-box">
         <a href="#public" class="active">公有云服务</a>
         <a href="#private">私有云服务</a>
       </div>
-      {{end}}      
+      {{end}}       -->
       <section>
         {{ end }}
   </header>
 
   <main role="main" class="td-main">
-    <section class="section is-grey-background section-out container-min-height section-has-title" id="public">
-      <div class="container  td-outer">
-        <div class="section-title">
-          <!--
-            <img src="/images/public-img.png" />
-          -->
-          <span>公有云服务</span>
-        </div>
+    <div id="right-nav-menu">
+      <div class="content-block">
+        {{ $sections := .Sections.ByWeight }}
+        {{ range $sections }}
+        {{ if not .Params.isPrivate }}
+        {{ if not .Params.not_show}}
+          <div  class="slider-title" ><a href="#{{ .Params.title }}" >{{ .Params.title }}</a></div>
+        {{ end }}
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    <section class="section is-grey-background section-out container-min-height section-has-title">
+      <div class="container  td-outer new-main-block">
         <div class="row" id="content">
-          {{ $sections := .Sections.ByWeight }}
-          {{ range $sections }}
-          {{ if not .Params.isPrivate }}
-          {{ if not .Params.not_show}}
-          <div class="col-md-3">
-            <div class="card">
-              <div class="card-body">
-                <div class="card-title"><img src="{{ .Params.icon }}" class="card-title-img">{{ .Params.title }}</div>
-                <!-- {{ $page_list := (union (where .Pages ".Params._build.render" "!=" false) .Sections).ByWeight }}
-                {{ $length := len $page_list}}
-                {{ range $page_list }}
-                <p class="card-text"><a href="{{ .RelPermalink }}" class="card-link">{{ .Params.title }}</a></p>
-                {{ end }} -->
-                {{if .Params.section1}}
-                  {{ with .Params.section1 }}
-                  {{ range .children }}
-                  <p class="card-text"><a href="{{ .url }}" class="card-link">{{ .title }}</a></p>
-                  {{ end }}
-                  {{ end }}
-                {{else}}
-                    {{ $page_list := (union (where .Pages ".Params._build.render" "!=" false) .Sections).ByWeight }}
-                    {{ $length := len $page_list}}
-                    {{ range $page_list }}
-                    <p class="card-text"><a href="{{ .RelPermalink }}" class="card-link">{{ .Params.title }}</a></p>
-                    {{ end }}
-                {{ end }}
+          <div class="col-12 col-md-3 col-xl-3 td-sidebar d-print-none td-sidebar-menu" id="slider-menu-block">
+            {{ $sections := .Sections.ByWeight }}
+            {{ range $sections }}
+            {{ if not .Params.isPrivate }}
+            {{ if not .Params.not_show}}
+              <div  class="slider-title" ><a href="#{{ .Params.title }}" >{{ .Params.title }}</a></div>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+          </div>
+          <div class="col-sm-2 td-sidebar-section-title" id="mobile-slider-menu-block-nav" >
+            <div class="current-title">计算</div>
+            <div class="mobile-slider-menu-title">目录  <img src="/images/mobile-right-menu-icon.png" class="mobile-slider-menu-block-nav-icon" /> </div>
+          </div>
+
+          <!-- <div class="col-sm-2"></div> -->
+            <div class="col-sm">
+            {{ $sections := .Sections.ByWeight }}
+            {{ range $sections }}
+            {{ if not .Params.isPrivate }}
+            {{ if not .Params.not_show}}
+            <div class="col-md">
+              <div class="new-card-block">
+                <div class="">
+                  <div class="card-title" id="{{ .Params.title }}"><img src="{{ .Params.icon }}" class="card-title-img">{{ .Params.title }}</div>
+                    <div class="row new-card">
+                      {{if .Params.section1}}
+                        {{ with .Params.section1 }}
+                        {{ range .children }}
+                        <p class="card-text col-md-3"><a href="{{ .url }}" class="card-link">{{ .title }}</a></p>
+                        {{ end }}
+                        {{ end }}
+                      {{else}}
+                        {{ $page_list := (union (where .Pages ".Params._build.render" "!=" false) .Sections).ByWeight }}
+                        {{ $length := len $page_list}}
+                        {{ range $page_list }}
+                        <p class="card-text col-md-3"><a href="{{ .RelPermalink }}" class="card-link">{{ .Params.title }}</a></p>
+                        {{ end }}
+                      {{ end }}
+                    
+                    </div>
+                  
+                </div>
               </div>
             </div>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+            <script src="/js/index.js"></script>
           </div>
-          {{ end }}
-          {{ end }}
-          {{ end }}
-          <script src="/js/index.js"></script>
+          <script src="/js/slider-menu.js"></script>
         </div>
       </div>
     </section>
-    {{ if $has_private }}
-    <section class="section is-grey-background section-out container-min-height section-has-title has-bg" id="private">
-      <div class="container  td-outer">
-        <div class="section-title">
-          <!--
-            <img src="/images/private-img.png" />
-          -->
-          <span class="white">私有云产品</span>
-        </div>
-        <div class="row" id="content1">
-          {{ $sections := .Sections.ByWeight }}
-          {{ range $sections }}
-          {{if .Params.isPrivate }}
-          {{ if not .Params.not_show}}
-          <div class="col-md-3">
-            <div class="card">
-              <div class="card-body">
-                <div class="card-title card-title_private"><img src="{{ .Params.icon }}" class="card-title-img">{{ .Params.title }}</div>
-                {{if .Params.section1}}
-                    {{ with .Params.section1 }}
-                    {{ range .children }}
-                    <p class="card-text"><a href="{{ .url }}" class="card-link">{{ .title }}</a></p>
-                    {{ end }}
-                    {{ end }}
-                {{else}}
-                    {{ $page_list := (union (where .Pages ".Params._build.render" "!=" false) .Sections).ByWeight }}
-                    {{ $length := len $page_list}}
-                    {{ range $page_list }}
-                    <p class="card-text"><a href="{{ .RelPermalink }}" class="card-link">{{ .Params.title }}</a></p>
-                    {{ end }}
-                {{ end }}
-              </div>
-            </div>
-          </div>
-          {{ end }}
-          {{ end }}
-          {{ end }}
-        </div>
-      </div>
-    </section>
-    {{end}}
     {{ block "main" . }}{{ end }}
   </main>
 
