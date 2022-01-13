@@ -1,6 +1,6 @@
 ---
-title: "快速入门"
-linkTitle: "快速入门"
+title: "作业管理"
+linkTitle: "作业管理"
 _build:
  render: false 
 weight: 30

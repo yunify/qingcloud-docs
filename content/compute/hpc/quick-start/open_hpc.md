@@ -1,15 +1,15 @@
 ---
 title: "步骤一：开通服务"
 linkTitle: "快速入门"
-description: 本章节介绍如何快速使用高性能计算 HPC
+description: 本章节介绍如何快速使用弹性高性能计算 EHPC
 keyword: 云计算, 青云, QingCloud, HPC，快速入门
 draft: false
 weight: 10
 ---
 
-使用高性能计算 HPC 前，您需要开通高性能计算 HPC 服务。
+使用高性能计算 HPC 前，您需要开通弹性高性能计算 EHPC 服务。
 
-本章节介绍如何开通高性能计算 HPC 服务。
+本章节介绍如何开通弹性高性能计算 EHPC 服务。
 
 ## 前提条件
 
@@ -21,7 +21,7 @@ weight: 10
 
 1. 登录 QingCloud 管理控制台。
 
-2. 选择**产品与服务** > **计算** > **高性能计算 HPC**，进入**高性能计算 HPC** 页面。
+2. 选择**产品与服务** > **计算** > **弹性高性能计算 EHPC**，进入**弹性高性能计算 EHPC** 页面。
 
    ![](../../_images/qs_open_service.png)
 

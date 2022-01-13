@@ -1,16 +1,16 @@
 ---
-title: "SSH 登录配置"
-linkTitle: "SSH 登录配置"
+title: "远程登录"
+linkTitle: "远程登录"
 date: 2021-11-1T10:08:56+09:00
 description: hpc SSH 登录配置
-keyword: 云计算, 青云, QingCloud, HPC，ssh登录
+keyword: 云计算, 青云, QingCloud, HPC，远程登录
 draft: false
-weight: 3
+weight: 20
 ---
 
 ## CLI/SSH提交
 
-青云EHPC集群包含登录节点、管控节点和计算节点，其中登录节点可以绑定公网IP进行外部访问，用户可以通过SSH的方式连接到集群的登录节点，以及使用sftp等相关文件管理的客户端
+EHPC 集群包含登录节点、管控节点和计算节点，其中登录节点可以绑定公网IP进行外部访问，用户可以通过SSH的方式连接到集群的登录节点，以及使用sftp等相关文件管理的客户端
 
 > **注意**：
 >
