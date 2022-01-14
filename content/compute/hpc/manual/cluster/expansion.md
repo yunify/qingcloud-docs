@@ -5,7 +5,7 @@ date: 2021-11-1T10:08:56+09:00
 description: hpc SSH 登录配置
 keyword: 云计算, 青云, QingCloud, HPC，扩容缩容
 draft: false
-weight: 40
+weight: 30
 ---
 
 扩容/缩容集群指的是修改集群内节点的配置，降低配置时价格为负数，表示系统会退还费用。

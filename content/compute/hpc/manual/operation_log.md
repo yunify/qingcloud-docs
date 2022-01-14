@@ -4,7 +4,7 @@ linkTitle: "操作日志"
 description: 本章节介绍如何查看操作日志内容
 keyword: 云计算, 青云, QingCloud, HPC，操作日志
 draft: false
-weight: 60
+weight: 90
 ---
 
 本章节介绍如何查看操作日志内容。
