@@ -22,7 +22,7 @@ weight: 40
 
    ![](../../_images/qs_ehpc_list.png)
 
-2. 点击**提交作业**，进入提交作业页面。
+2. 点击**提交作业**，进入**提交作业**页面。
 
    ![](../../_images/qs_ehpc_submit.png)
 
