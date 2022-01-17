@@ -9,6 +9,8 @@ draft: false
 
 ## 准备 ClickHouse 环境
 
+本实践以 QingCloud ClickHouse 为例。
+
 1. [创建 ClickHouse 集群](/dwh_bi/clickhouse/quickstart/create_cluster/)。
 2. [连接 ClickHouse](/dwh_bi/clickhouse/quickstart/access_clickhouse/)。
 2. 连接成功后，执行以下命令，创建所需数据库表。

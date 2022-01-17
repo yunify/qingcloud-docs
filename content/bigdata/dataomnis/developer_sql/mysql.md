@@ -39,7 +39,7 @@ CREATE TABLE mysql_table (
 
 | 参数                         | 是否必填 | 默认值 | 数据类型 | 描述                                                         |
 | :--------------------------- | :------- | :----- | :------- | :----------------------------------------------------------- |
-| connector                    | 是       | 无     | String   | 固定值为 `mysql`。                                           |
+| connector                    | 是       | 无     | String   | 固定值为 `jdbc`。                                           |
 | url                          | 是       | 无     | String   | MySQL 服务的 URL 地址。                                      |
 | username                     | 是       | 无     | String   | MySQL 服务用户名。                                           |
 | password                     | 是       | 无     | String   | MySQL 服务密码。                                             |

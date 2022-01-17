@@ -9,7 +9,7 @@ draft: false
 
 ## 准备 MySQL 数据源
 
-本小节以 QingCloud MySQL Plus 为例，为您介绍如何创建数据库、如何建表并写入数据。
+本实践以 QingCloud MySQL Plus 为例，为您介绍如何创建数据库、如何建表并写入数据。
 
 1. [创建 MySQL Plus 集群](/database/mysql/quickstart/create_cluster/)。
 2. [创建数据库账号](/database/mysql/quickstart/create_cluster/)。
@@ -34,6 +34,6 @@ draft: false
 
 ## 准备 Elasticsearch 环境
 
-本小节以 QingCloud ELK 服务为例，QingCloud ELK 服务对 Elasticsearch、Kibana 与 Logstash（后两者为可选）三者进行了很好的集成。
+本实践以 QingCloud ELK 服务为例，QingCloud ELK 服务对 Elasticsearch、Kibana 与 Logstash（后两者为可选）三者进行了很好的集成。
 
 详细操作请参见：[创建 ELK 集群](/bigdata/elk/quickstart/create_cluster/)。
