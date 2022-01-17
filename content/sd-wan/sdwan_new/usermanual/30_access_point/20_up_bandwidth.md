@@ -28,11 +28,9 @@ draft: false
 
 4. 勾选待提升带宽上限的接入点。
 
-   ![](../../../_images/um_equip_details.png)
-
 5. 点击**提升带宽**，弹出**提升带宽**窗口。
 
-   ![](../../../_images/um_up_bandwidth.png)
+   <img src="../../../_images/um_up_bandwidth.png" style="zoom:50%;" />
 
 6. 根据需要调整带宽后，点击**确定**，完成提升带宽上限的操作。
 

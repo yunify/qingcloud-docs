@@ -13,7 +13,7 @@ draft: false
 
 通过 MapReduce 服务来批量导入 HDFS 中数据到 HBase。
 
-可通过 DistCp 命令来拷贝不同 HDFS 中的数据，关于 DistCp 更多的详细信息，可参考 [DistCp](http://hadoop.apache.org/docs/r2.7.7/hadoop-distcp/DistCp.html)
+可通过 DistCp 命令来拷贝不同 HDFS 中的数据，关于 DistCp 更多的详细信息，可参考 [DistCp](http://hadoop.apache.org/docs/r2.7.7/hadoop-distcp/DistCp.html)。
 
 ## 前提条件 
 
@@ -70,7 +70,7 @@ draft: false
 
 方案一 MapReduce 代码如下，先创建表，在 Map 中完成数据解析，在 Reduce 中完成入库。Reduce的个数相当于入库线程数。
 
-> **说明：**
+> **说明**
 > 
 > 可自行修改 `job.setNumReduceTasks()` 中 Reduce 数目。
 

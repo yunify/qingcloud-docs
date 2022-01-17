@@ -6,6 +6,6 @@ draft: false
 weight: 50
 ---
 
-关于光盒 CPE 连 VPC 的详细信息，请参见[光盒 CPE 连 VPC](../../../sdwan/quick-start/cpe_connect_vpc)。
+- 关于使用光盒 CPE 快速上云的详细信息，请参见[企业快速上云](../../qs/10_qs_2vxnet_access)。
+- 关于使用光盒 CPE 实现企业分支互联的详细信息，请参见[企业分支互联](../../qs/20_qs_multiple_vxnet_access/)。
 
-关于光盒经 VPC 访问第三方网络的详细信息，请参见[光盒 CPE 盒经 VPC 访问第三方网络](../../../sdwan/quick-start/cpe_connect_tunnel)。 

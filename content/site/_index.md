@@ -5,7 +5,7 @@ _build:
  render: false 
 weight: 120
 collapsible: true
-icon: "/images/icons/index/product-icon-site.svg"
+icon: "/images/icons/index/product_icon_www.svg"
 
 
 section1:
