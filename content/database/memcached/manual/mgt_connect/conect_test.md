@@ -10,9 +10,15 @@ draft: false
 
 
 
-当缓存服务创建完成之后，我们可以进行连接测试。可同时连接到多节点进行查询和写入，Memcached 的客户端会根据 Hash 算法来自动计算数据的存放节点位置。
+当 Memcached 缓存服务创建完成之后，可以进行连接测试。
 
-测试代码(需要预先安装 python 以及 python-memcached ):
+可同时连接到多节点进行查询和写入，Memcached 的客户端会根据 Hash 算法来自动计算数据的存放节点位置。
+
+## 前提条件
+
+- 已安装 python 以及 python-memcached。
+
+## 测试代码
 
 ```python
 import memcache
