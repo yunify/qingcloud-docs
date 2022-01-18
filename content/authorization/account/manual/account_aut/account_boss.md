@@ -2,9 +2,8 @@
 title: "企业认证"
 description: 介绍账户认证流程。
 keyword: 青云, 账户中心, 账户认证, 认证
-weight: 20
+weight: 30
 draft: false
-
 ---
 
 企业用户可以通过企业认证，获得更多的配额、更大额的注册优惠，以及专业免费的点对点咨询服务。除了个人认证所需的联系人信息外，还需提供企业名称、组织机构代码、营业执照、税务登记证照片等。
@@ -29,7 +28,7 @@ draft: false
 
 3. 点击上传企业营业执照，根据提示信息输入企业信息，并勾选**我已阅读并同意《青云QingCloud云服务使用协议》实名认证条款**。
 
-   <img src="../../../_images/account_boss_12.png" style="zoom:50%;"/>
+   <img src="../../../_images/account_boss_12.png" style="zoom:40%;"/>
 
 4. 点击**下一步**。
 
