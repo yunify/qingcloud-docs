@@ -2,7 +2,7 @@
 title: "合同管理"
 weight: 20
 description: 本章节介绍合同管理相关内容
-draft: true
+draft: false
 keyword: 合同管理, 合同申请, 青云, QingCloud, 用户服务
 ---
 
@@ -24,11 +24,11 @@ keyword: 合同管理, 合同申请, 青云, QingCloud, 用户服务
 
   QingCloud 服务协议：是由 QingCloud 云计算服务网站（https://www.qingcloud.com/）的所有及运营方北京青云科技股份有限公司（下称“QingCloud”）与用户就 QingCloud 提供且用户使用的“QingCloud 云计算服务”而签订的对双方具有约束力的协议。
 
-- 消费合同
-
-  附带消费记录的协议，适用于消费后报销。
-
 - 充值合同
+
+  附带充值记录的协议，适用于充值后报销。
+
+- 消费合同
 
   附带消费记录的协议，适用于消费后报销。
 
