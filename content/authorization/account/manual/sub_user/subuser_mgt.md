@@ -10,6 +10,10 @@ draft: false
 
 本小节为您介绍如何管理青云QingCloud 子账号。
 
+## 前提条件
+
+已获取 QingCloud 管理控制台登录账号和密码。
+
 ## 创建子账号
 
 1. 登录 QingCloud 管理控制台。

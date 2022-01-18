@@ -2,7 +2,7 @@
 title: "企业认证"
 description: 介绍账户认证流程。
 keyword: 青云, 账户中心, 账户认证, 认证
-weight: 20
+weight: 30
 draft: false
 ---
 

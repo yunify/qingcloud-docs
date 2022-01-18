@@ -22,7 +22,7 @@ draft: false
 
 1. 在[青云QingCloud登录](https://console.qingcloud.com/login)页面，输入手机号/邮箱、密码。
 
-   <img src="../../_images/user_login_phone.png" style="zoom:50%;" />
+   <img src="../../_images/user_login_phone.png" style="zoom:40%;" />
 
    > **说明**
    >
@@ -33,9 +33,7 @@ draft: false
 
 ## 短信登录
 
-使用您注册青云QingCloud 账号时填写的手机号和收到的验证码登录青云QingCloud，短信登录适用于用户忘记密码的情况下。
-
-通过短信登录方法如下：
+使用您注册青云QingCloud 账号时填写的手机号和收到的验证码登录青云QingCloud，短信登录适用于用户忘记密码的情况下。通过短信登录方法如下：
 
 1. 在[青云QingCloud登录](https://console.qingcloud.com/login)页面，选择**短信登录**，输入手机号。
 
@@ -49,21 +47,28 @@ draft: false
 
 ## 微信扫码登录
 
-通过微信扫描页面二维码即可登录青云QingCloud，无需重复输入帐号信息。
-
-通过微信扫码登录方法如下：
+通过微信扫描页面二维码即可登录青云QingCloud，无需重复输入帐号信息。通过微信扫码登录方法如下：
 
 1. 在[青云QingCloud登录](https://console.qingcloud.com/login)页面，点击账号登录页面右上角的二维码，切换至微信扫码登录页面。
-
-   <img src="../../_images/user_login_weixin.png" style="zoom:50%;" />
-
 2. 使用微信扫描页面二维码，扫描成功后，若微信未绑定青云QingCloud 账号，则进入绑定账号页面。
-
-   1. 输入手机号或邮箱、验证码。
+   1. 输入手机号和验证码。
    2. 点击**确定**，完成微信与青云QingCloud 账号的绑定。
    3. 绑定成功后，即可直接登录青云QingCloud。
-
 3. 若微信已绑定青云QingCloud 账号，在微信中点击同意即可登录青云QingCloud。
 
 ## 子账号登录
+
+若青云QingCloud 账号创建了多个子账号，则可使用子账号登录。子账号登录方法如下：
+
+1. 在[青云QingCloud登录](https://console.qingcloud.com/login)页面，点击下方的**子账号登录**，进入子账号登录页面。
+
+   <img src="../../_images/user_login_subuser.png" style="zoom:40%;" />
+
+2. 输入邮箱和密码。
+
+   > **说明**
+   >
+   > 在子账号登录页面，支持使用主账号的邮箱登录。
+
+3. 点击**登录**，进入青云QingCloud 页面。
 
