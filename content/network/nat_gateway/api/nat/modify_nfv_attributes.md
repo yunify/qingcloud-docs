@@ -22,7 +22,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 | new_zone | String | 新的区域 | No |
 | cluster_mode | String | 新的集群模式 | No |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

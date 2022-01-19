@@ -28,7 +28,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 | version | String | 网络组件版本号，1.0 或者 2.0 | Yes |
 | vpc_router_id | String | 网络组件绑定的 VPC 路由 ID | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 
