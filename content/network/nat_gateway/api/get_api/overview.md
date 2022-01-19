@@ -1,7 +1,7 @@
 ---
 title: "使用前必读"
-description: VPC API 调用概述。 
-keyword: QingCloud, 青云, 云计算, VPC, 请求, API 调用, 概述
+description: API 调用概述。 
+keyword: QingCloud, 青云, 云计算, NAT 网关, 请求, API 调用, 概述
 draft: false
 weight: 1
 ---

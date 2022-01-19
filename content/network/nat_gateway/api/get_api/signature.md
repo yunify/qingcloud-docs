@@ -1,7 +1,7 @@
 ---
 title: "签名认证"
 description: 介绍 API 签名方法。 
-keyword: QingCloud, 青云, 云计算, VPC, API 调用, 签名
+keyword: QingCloud, 青云, 云计算, NAT 网关, API 调用, 签名
 draft: false
 weight: 30
 ---
