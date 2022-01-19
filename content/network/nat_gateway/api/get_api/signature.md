@@ -33,7 +33,7 @@ weight: 30
 }
 ```
 
-> **注解**
+> **说明**
 >
 > 使用上述的 AccessKey 和 Request 调试你的代码， 当得到跟后面一致的签名结果后(即表示你的代码是正确的)， 可再换为你自己的 AccessKey 和其他 API 请求。
 
@@ -85,9 +85,9 @@ weight: 30
 
 > **注意**
 > 
-> -编码时空格要转换成 “%20” , 而不是 “+”。
+> - 编码时空格要转换成 “%20” , 而不是 “+”。
 > 
-> -转码部分的字符要用大写，如 ”:” 应转成 “%3A”，而不是 “%3a”。
+> - 转码部分的字符要用大写，如 ”:” 应转成 “%3A”，而不是 “%3a”。
 
 ### 步骤 3: 构造 URL 请求
 
@@ -103,9 +103,9 @@ access_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64
 
 > **注意**
 > 
-> “\n” 是换行符，不要将 “\” 转义。即不使用 “\\n” 。
+> - “\n” 是换行符，不要将 “\” 转义。即不使用 “\\n” 。
 > 
->  php、ruby 等语言，请用 “\n” , 而不是 ‘\n’。
+>  - php、ruby 等语言，请用 “\n” , 而不是 ‘\n’。
 
 假设 HTTP 请求方法为 GET 请求的uri路径为 “/iaas/” 。则被签名串示例如下：
 
@@ -207,13 +207,13 @@ curl -i -H "Accept: application/json" http://169.254.169.254/latest/meta-data/se
 
 返回信息：
 
-```json
+```
 "{\"jti\":\"0z7dO3oN03byx1CepBDTyl\",\"id_token\":\"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY3IiOiIxIiwiYXVkIjoiaWFtIiwiYXpwIjoiaWFtIiwiY29ucyI6ImFkbWluIiwiY3VpZCI6ImlhbXItejU3dm42anIiLCJlaXNrIjoieUxjcFViRXZVOWZQZmJSQTA2eUFQMUtMS21keVpoX1JueDJmNmRmeFZZZz0iLCJleHAiOjE1OTAzMTk1MjMsImlhdCI6MTU5MDMxNTkyMywiaXNzIjoic3RzIiwianRpIjoiMHo3ZE8zb04wM2J5eDFDZXBCRFR5bCIsIm5iZiI6MCwib3JnaSI6ImFwcC0xMjM0NTY3OCIsIm93dXIiOiJ1c3ItQ29qOGFIZ24iLCJwcmVmIjoicXJuOnFpbmdjbG91ZDppYW06Iiwicm91ciI6InVzci1Db2o4YUhnbiIsInJ0eXAiOiJyb2xlIiwic3ViIjoic3RzIiwidHlwIjoiSUQifQ.YrCnvySApej2zHsn9cfn3D7tgOahDzeTP1TRBVMZ_3TyToo-H7hB2_mx_J_Qy1NY5K-WykYE4NFxqVN7PqsnAmskqAnRM2D7Gza_PffO7ajEJhtVF7Fo7nsmPKs7y1kryQ2Rvj3ABBJThHjQDtYVsk_pLUio5P0Nl9zb1sSswN4\",\"access_key\":\"0z7dO3oN03byx1CepBDTyl\",\"secret_key\":\"5qlKnUc3esKJp3G\",\"expiration\":1590319523}"
 ```
 
 为了查看方便，将参数之间用回车分隔开如下：
 
-```json
+```
 "jti":"0z7dO3oN03byx1CepBDTyl",
 "id_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY3IiOiIxIiwiYXVkIjoiaWFtIiwiYXpwIjoiaWFtIiwiY29ucyI6ImFkbWluIiwiY3VpZCI6ImlhbXItejU3dm42anIiLCJlaXNrIjoieUxjcFViRXZVOWZQZmJSQTA2eUFQMUtMS21keVpoX1JueDJmNmRmeFZZZz0iLCJleHAiOjE1OTAzMTk1MjMsImlhdCI6MTU5MDMxNTkyMywiaXNzIjoic3RzIiwianRpIjoiMHo3ZE8zb04wM2J5eDFDZXBCRFR5bCIsIm5iZiI6MCwib3JnaSI6ImFwcC0xMjM0NTY3OCIsIm93dXIiOiJ1c3ItQ29qOGFIZ24iLCJwcmVmIjoicXJuOnFpbmdjbG91ZDppYW06Iiwicm91ciI6InVzci1Db2o4YUhnbiIsInJ0eXAiOiJyb2xlIiwic3ViIjoic3RzIiwidHlwIjoiSUQifQ.YrCnvySApej2zHsn9cfn3D7tgOahDzeTP1TRBVMZ_3TyToo-H7hB2_mx_J_Qy1NY5K-WykYE4NFxqVN7PqsnAmskqAnRM2D7Gza_PffO7ajEJhtVF7Fo7nsmPKs7y1kryQ2Rvj3ABBJThHjQDtYVsk_pLUio5P0Nl9zb1sSswN4",
 "access_key":"0z7dO3oN03byx1CepBDTyl",

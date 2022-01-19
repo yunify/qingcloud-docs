@@ -20,7 +20,7 @@ weight: 40
 
 API 的返回结果为 JSON 结构，这是一个 `DescribeInstances` 的 API 请求返回：
 
-```json
+```
 {
   "action":"DescribeInstancesResponse",
   "instance_set":[
