@@ -5,7 +5,12 @@ collapsible: false
 weight: 30
 ---
 
-DNAT 将公网 IP 映射给私有网络的云服务器使用，外部网络可以通过映射后的地址访问内部网络，从而使内部网络可以对外提供服务。
+DNAT 包含公网 DNAT 和私网 DNAT，详细的功能说明和使用场景如下表所示。
+
+| <span style="display:inline-block;width:80px">类型</span> | 功能说明                                                     | 场景                                                         | 说明                                    |
+| --------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------- |
+| 公网 DNAT                                                 | 将公网 IP 映射为私有网络 IP，外部网络可以通过映射后的地址访问内部网络，从而使内部网络可以对外提供服务。 | 用户需要通过 Internet 访问内部服务。<br />                   | 当协议选择为 “ALL”时，不区分内/外端口。 |
+| 私网 DNAT                                                 | 将内部私有网络 IP 映射为一个指定私有网络IP（该指定私有网络 IP 在网络中不能存在冲突）。 | <ul><li>需要云上隐藏真实云下内部私网 IP 。</li><li>分支之间本地网络存在冲突，搭配 SNAT 功能解决云上和云下有双向互访需求。</li></ul> | 当协议选择为 “ALL”时，不区分内/外端口。 |
 
 ## 前提条件
 
@@ -70,13 +75,17 @@ DNAT 将公网 IP 映射给私有网络的云服务器使用，外部网络可�
 
   <img src="../../../../_images/um_dnat_note02.png" style="zoom:50%;" />
 
-  <img src="../../../../_images/um_dnat_note03.png" style="zoom:50%;" />
+  添加完成的安全组规则，如下图所示。
+
+  <img src="../../../../_images/um_dnat_note03.png" style="zoom:40%;" />
 
 - 若需要指定 IP 或者 IP 段访问源端口的服务，可以配置安全组的源 IP（相当于白名单）。
 
-  <img src="../../../../_images/um_dnat_note04.png" style="zoom:50%;" />
+  <img src="../../../../_images/um_dnat_note04.png" style="zoom:40%;" />
 
-  <img src="../../../../_images/um_dnat_note05.png" style="zoom:50%;" />
+  添加的安全组规则，如下图所示。
+  
+  <img src="../../../../_images/um_dnat_note05.png" style="zoom:40%;" />
 
 ## 测试连通性
 
@@ -106,7 +115,7 @@ telnet ip 端口
 
 2. 在已添加的静态路由所在行的**操作**列中，点击**修改**，弹出**修改 DNAT 规则**窗口。
 
-   <img src="../../../../_images/um_modify_snat.png" style="zoom:50%;" />
+   <img src="../../../../_images/um_modify_snat.png" style="zoom:40%;" />
 
 3. 修改完成后，点击**确定修改**，完成 DNAT 规则的修改。
 

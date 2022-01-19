@@ -1,12 +1,14 @@
 ---
-title: "申请光盒"
-linkTitle: "申请光盒"
+title: "申请光盒设备"
+linkTitle: "创建连接云网"
 description:
 draft: false
-weight: 30
+weight: 20
 ---
 
-使用光盒接入前，请先到管理控制台申请光盒设备。
+使用 SD-WAN 前，需要申请光盒 CPE 设备。
+
+本章节介绍如何申请光盒设备。
 
 ## 前提条件
 
@@ -20,13 +22,13 @@ weight: 30
 
 3. 在左侧导航栏中，点击**物理光盒**，进入物理光盒页面。
 
-   ![](../../_images/apply_cpe.png)
+   ![](../../../_images/apply_cpe.png)
 
 5. 点击**申请光盒**。
 
 6. 在弹出的申请光盒页面，选择光盒的**型号**、**购买类型**、**租用期限**，并输入您的联系信息等。
 
-   ![](../../_images/apply_cpe_info.png)
+   ![](../../../_images/apply_cpe_info.png)
 
 7. 点击**提交申请**。
 
@@ -36,9 +38,9 @@ weight: 30
 
 9. 点击**立即支付**，请根据提示信息进行在线付款。
 
-   ![](../../_images/to_pay_cpe.png)
+   ![](../../../_images/to_pay_cpe.png)
 
    付款之后，光盒管理人员会将光盒寄出，同时界面上会显示光盒状态为**物流中**。您可以点击**查看物流**，查看实时物流状态。收到光盒后即可开始使用。
 
-   ![](../../_images/delivering_cpe.png)
+   ![](../../../_images/delivering_cpe.png)
 

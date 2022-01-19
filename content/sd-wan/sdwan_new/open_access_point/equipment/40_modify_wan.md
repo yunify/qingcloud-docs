@@ -19,13 +19,13 @@ weight: 40
 
 3. 点击待修改端口所在行的修改，弹出**修改WAN 配置**窗口。
 
-   <img src="../../_images/equip_modify_wan.png" style="zoom:50%;" />
+   <img src="../../../_images/equip_modify_wan.png" style="zoom:50%;" />
 
 4. 修改相关参数。
 
    **动态IP**
 
-   <img src="../../_images/equip_modify_dynamic_ip.png" style="zoom:50%;" />
+   <img src="../../../_images/equip_modify_dynamic_ip.png" style="zoom:50%;" />
 
    | 参数     | 参数说明                                                     |
    | -------- | ------------------------------------------------------------ |
@@ -37,7 +37,7 @@ weight: 40
 
    **静态 IP**
 
-   ![](../../_images/equip_modify_static_ip.png)
+   ![](../../../_images/equip_modify_static_ip.png)
 
    | 参数     | 参数说明                                                     |
    | -------- | ------------------------------------------------------------ |

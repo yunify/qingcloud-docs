@@ -2,7 +2,7 @@
 title: "创建 vCPE 接入点"
 draft: false
 collapsible: false
-weight: 10
+weight: 30
 ---
 
 您可以在 SD-WAN 管理控制台创建 vCPE 接入点，您可以通过创建 vCPE 接入点获取的序列号，部署了 vCPE 镜像的宿主机。
@@ -11,7 +11,8 @@ weight: 10
 
 ## 前提条件
 
-已获取控制台的账号和密码。
+- 已获取管理控制台的账号和密码。
+- 已创建连接云网。
 
 ## 操作步骤
 
@@ -19,15 +20,15 @@ weight: 10
 
 2. 选择**产品与服务** > **SD-WAN** > **SD-WAN**，进入**连接云网**页面。
 
-   <img src="../../_images/qs_cloud_network.png" style="zoom:50%;" />
+   <img src="../../../_images/qs_cloud_network.png" style="zoom:50%;" />
 
 3. 在左侧导航栏中，点击**接入点**，进入**接入点**页面。
 
-   <img src="../../_images/qs_light_access.png" style="zoom:50%;" />
+   <img src="../../../_images/qs_light_access.png" style="zoom:50%;" />
 
 4. 点击**创建接入点**，弹出**创建接入点**窗口。
 
-   <img src="../../_images/qs_light_access_config.png" style="zoom:50%;" />
+   <img src="../../../_images/qs_light_access_config.png" style="zoom:50%;" />
 
 5. 配置**基本信息**，**接入类型**选择为 **vCPE**。其他参数说明如下表所示。
 
@@ -51,13 +52,13 @@ weight: 10
    
 7. 点击**立即创建**，弹出**接入点创建成功**提示窗口。
 
-   <img src="../../_images/qs_vcpe_access_success.png" style="zoom:50%;" />
+   <img src="../../../_images/qs_vcpe_access_success.png" style="zoom:50%;" />
 
 8. 您可以根据提示信息，了解如何组网、获取序列号等。
 
 9. 获取后续配置信息后，点击**知道了**，进入**我的订单**页面。
 
-   <img src="../../_images/um_order_confirm.png" style="zoom:50%;" />
+   <img src="../../../_images/um_order_confirm.png" style="zoom:50%;" />
 
 10. 确认订单无误后，选择支付方式为**余额支付**、**支付宝支付**或者**微信支付**。
 

@@ -2,7 +2,7 @@
 title: "部署 vCPE"
 draft: false
 collapsible: false
-weight: 10
+weight: 40
 ---
 
 在创建云服务器后，您需要通过 SD-WAN 提供的脚本在宿主机中部署 vCPE 镜像。
@@ -87,17 +87,17 @@ Commands:
 
      命令执行过程中，需要您根据终端提示信息自行输入参数。
 
-     <img src="../../_images/um_deploy_vcpe_Interactive.png" style="zoom:50%;" />
+     <img src="../../../_images/um_deploy_vcpe_Interactive.png" style="zoom:50%;" />
 
 4. 执行脚本时，系统会自动检测部署环境是否满足要求。
 
    若部署环境相关的组件不完整，系统会出现如下提示信息。请输入：yes，系统将自动为您安装相关组件。
 
-   <img src="../../_images/um_deploy_vcpe_misscomponent.png" style="zoom:50%;" />
+   <img src="../../../_images/um_deploy_vcpe_misscomponent.png" style="zoom:50%;" />
 
    若部署环境满足要求，则会直接开始部署 vCPE 镜像。镜像部署完成后，系统会出现如下提示信息。
 
-   <img src="../../_images/um_deploy_vcpe_complet.png" style="zoom:50%;" />
+   <img src="../../../_images/um_deploy_vcpe_complet.png" style="zoom:50%;" />
 
 5. 查看部署结果。
 
@@ -107,7 +107,7 @@ Commands:
 
    若系统未包含如下两个容器，则说明部署失败，请提交工单至 SD-WAN 团队进行处理。
 
-   <img src="../../_images/um_deploy_vcpe_success.png" style="zoom:50%;" />
+   <img src="../../../_images/um_deploy_vcpe_success.png" style="zoom:50%;" />
 
 ## 自有镜像方式
 
@@ -123,11 +123,11 @@ vCPE 以自有镜像的模式提供给用户。
 
 2. 选择**产品与服务** > **云服务器**，进入**云服务器**页面。
 
-   ![](../../_images/um_vcpe_ecs_list.png)
+   ![](../../../_images/um_vcpe_ecs_list.png)
 
 3. 点击**创建云服务器**，弹出**创建云服务器**窗口。
 
-   <img src="../../_images/um_vcpe_ecs_win.png" style="zoom:50%;" />
+   <img src="../../../_images/um_vcpe_ecs_win.png" style="zoom:50%;" />
 
 4. 在**选择镜像**页面，**镜像提供方**选择**自有**，**镜像**选择为 `wan-base-1231`。
 
@@ -145,9 +145,11 @@ vCPE 以自有镜像的模式提供给用户。
 
    若回显信息如下所示，则说明绑定 License 成功。您只需要登录设备控制台绑定 License，即可激活设备。
    
-   <img src="../../_images/um_bind_image_license.png" style="zoom:50%;" />
+   <img src="../../../_images/um_bind_image_license.png" style="zoom:50%;" />
 
 ## 后续操作
 
-创建 vCPE 接入点并部署 vCPE 后，您还需要激活设备，更多详细操作请参见[激活设备](../40_bind_license)。 
+创建 vCPE 接入点并部署 vCPE 后，软件 vCPE 则被激活。
+
+若您还需要启用**高可用**添加备用设备，或者**更换设备**，则需要激活设备，更多详细操作请参见[激活设备](../40_bind_license)。 
 

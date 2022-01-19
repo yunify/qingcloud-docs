@@ -13,7 +13,8 @@ weight: 30
 
 - 针对 vCPE 接入点
 
-  创建完成接入点后，需要登录设备控制台，绑定 License 才能激活设备。
+  - 创建完成接入点后，需要登录设备控制台，绑定 License 才能激活设备。
+  - 若您还需要添加**备用设备**，且需要激活设备，则登录设备控制台绑定 License 即可激活。
 
 本章节介绍如何绑定序列号并激活设备。
 
@@ -23,33 +24,33 @@ weight: 30
 - 已获取设备管理控制台的账号和密码。
 - 光盒已上电。
 
-## 获取序列号
+## 获取序列号/License
 
 1. 登录 QingCloud 管理控制台。
 
 2. 选择**产品与服务** > **SD-WAN** > **SD-WAN**，进入**概览**页面。
 
-   <img src="../../_images/qs_cloud_network.png" style="zoom:50%;" />
+   <img src="../../../_images/qs_cloud_network.png" style="zoom:50%;" />
 
 3. 在左侧导航栏中，点击**接入点**，进入**接入点**页面。
 
-   <img src="../../_images/qs_light_access.png" style="zoom:50%;" />
+   <img src="../../../_images/qs_light_access.png" style="zoom:50%;" />
 
 4. 点击创建的接入点，进入接入点详情页面。
 
-   <img src="../../_images/um_equip_achive_num.png" style="zoom:50%;" />
+   <img src="../../../_images/um_equip_achive_num.png" style="zoom:50%;" />
 
 5. 点击复制按钮，拷贝序列号。
 
-## 绑定序列号激活设备
+## 激活设备
 
 1. 登录设备管理控制台。
 
-2. 在设备管理页面，点击**绑定序列号**，弹出输入序列号文本框。
+2. 在设备管理页面，点击**绑定序列号/License**，弹出输入序列号文本框。
 
-   <img src="../../_images/um_equip_mgmt_num.png" style="zoom:50%;" />
+   <img src="../../../_images/um_equip_mgmt_num.png" style="zoom:50%;" />
 
-3. 在文本框中，输入获取的**序列号**，点击**确定**。
+3. 在文本框中，输入获取的**序列号/License**，点击**确定**。
 
-   输入序列号后，即可激活设备。
+   输入序列号/License后，即可激活设备。
 

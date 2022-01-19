@@ -15,7 +15,7 @@ weight: 20
 
 进入**设备管理**页面，您可以查看设备相关信息。
 
-<img src="../../_images/um_equip_mgmt_details.png" style="zoom:50%;" />
+<img src="../../../_images/um_equip_mgmt_details.png" style="zoom:50%;" />
 
 | 参数     | 参数说明                     |
 | -------- | ---------------------------- |
@@ -32,7 +32,7 @@ weight: 20
 
 进入进入**设备管理**页面，您可以查看链路相关状态。
 
-<img src="../../_images/um_equip_status.png" style="zoom:50%;" />
+<img src="../../../_images/um_equip_status.png" style="zoom:50%;" />
 
 | 参数       | 参数说明                   |
 | ---------- | -------------------------- |
@@ -45,7 +45,7 @@ weight: 20
 
 进入进入**设备管理**页面，您可以查设备的相关状态。
 
-<img src="../../_images/um_equip_status_details.png" style="zoom:50%;" />
+<img src="../../../_images/um_equip_status_details.png" style="zoom:50%;" />
 
 | 参数       | 参数说明     |
 | ---------- | ------------ |
@@ -57,7 +57,7 @@ weight: 20
 
 进入进入**设备管理**页面，您可以查端口的相关信息。
 
-![](../../_images/um_equip_port.png)
+![](../../../_images/um_equip_port.png)
 
 | 参数         | 参数说明                        |
 | ------------ | ------------------------------- |
