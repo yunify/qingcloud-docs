@@ -20,7 +20,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, DNAT
 | protocol| String | 协议类型, tcp 或者 udp。 | Yes |
 | eip_id| String | 公网 IP 的 ID。 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

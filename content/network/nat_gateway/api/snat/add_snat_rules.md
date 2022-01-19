@@ -18,7 +18,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, SNAT
 | target_type | Integer | 目标类型：0 VXNET, 1 主机 | Yes |
 | eip_ids.n | String | 一个或多个要被绑定的公网 IP 地址 | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

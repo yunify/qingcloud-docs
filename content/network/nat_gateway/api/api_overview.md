@@ -17,7 +17,7 @@ NAT 网关提供以下 API 接口供您使用。
 | [DissociateEipsFromNFV](../nat/dissociate_eips_from_nfv/)    | 解绑 NAT 网关的公网 IP。  |
 | [AssociateEipsToNFV](../nat/associate_eips_to_nfv/)          | 绑定公网 IP 到 NAT 网关。 |
 | [UpdateNFVs](../nat/update_nfvs/)                            | 更新 NAT 网关。           |
-| [ResizeNFV](../vpc_api/leave_router/)                        | NAT 网关扩缩容。          |
+| [ResizeNFV](../nat/resize_nfv/)                              | NAT 网关扩缩容。          |
 | [StartNFVs](../nat/start_nfvs/)                              | 启动 NAT 网关。           |
 | [StopNFVs](../nat/stop_nfvs/)                                | 关闭 NAT 网关。           |
 | [UpgradeNFV](../nat/upgrade_nfv/)                            | 升级 NAT 网关版本。       |
