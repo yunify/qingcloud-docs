@@ -1,7 +1,7 @@
 ---
 title: "登录 Kafka 客户端"
 description: 登录 Kafka 客户端。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,client,客户端
+keyword: 云计算,大数据,消息队列,中间件,Kafka,client,客户端
 weight: 10
 draft: false
 ---
@@ -10,7 +10,7 @@ draft: false
 
 ## 前提条件
 
-已创建 Kafka 集群，且Kafka 集群状态为**活跃**。
+已创建 Kafka 集群，且 Kafka 集群状态为**活跃**。
 
 ## 操作步骤
 
