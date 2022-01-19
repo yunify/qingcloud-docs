@@ -1,14 +1,14 @@
 ---
-title: "DissociateEipsFromNFV"
-description: 网络组件解绑一个或多个公网 IP
+title: "NFVLeaveVxnets"
+description: 网络组件解绑一个或多个私有网络
 draft: false
-weight: 3
-keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 公网 IP
+weight: 14
+keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 私有网络
 ---
 
 
 
-从一个网络组件解绑一个或多个公网 IP。
+一个网络组件解绑一个或多个私有网络。
 
 **Request Parameters**
 
@@ -16,16 +16,16 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 公�
 | --- | --- | --- | --- |
 | nfv | String | 网络组件的 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
-| eips.n | String | 将要解绑的公网 IP 的 ID | Yes |
+| vxnets.n | String | 私有网络 ID | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| job_id | String | 从一个网络组件解绑一个或多个公网IP job ID 号 |
+| job_id | String | 网络组件解绑私有网络的 job ID 号 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
 **Example**
@@ -33,10 +33,10 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 公�
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DissociateEipsFromNFV
+https://api.qingcloud.com/iaas/?action=NFVLeaveVxnets
 &nfv=nfv-1234abcd
-&eips.1=eip-ek3scgap
-&eips.2=eip-ek4scgam
+&vxnets.1=vxnet-123
+&vxnets.2=vxnet-234
 &COMMON_PARAMS
 ```
 
@@ -44,7 +44,7 @@ _Example Response_:
 
 ```
 {
-  "action":"DissociateEipsFromNFVResponse",
+  "action":"NFVLeaveVxnetsResponse",
   "ret_code":0,
   "job_id":"j-1234abcd"
 }

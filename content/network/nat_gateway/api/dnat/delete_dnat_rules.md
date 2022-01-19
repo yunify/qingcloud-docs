@@ -15,7 +15,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, DNAT
 | natgw_id | String | NAT 网关的 ID 。 | Yes |
 | dnat_ids.n | String | 一个或多个待删除的 DNAT ID | Yes |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

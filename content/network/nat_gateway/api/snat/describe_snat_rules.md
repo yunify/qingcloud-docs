@@ -21,7 +21,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, SNAT
 | offset | String | 查询偏移量 | No |
 | search_word | String | 模糊查询字段，支持资源 ID,  eip ID 以及 SNAT 名称 | No |
 
-[_公共参数_](../../common/parameters.html#api-common-parameters)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

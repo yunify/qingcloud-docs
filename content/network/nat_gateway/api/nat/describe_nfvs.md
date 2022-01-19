@@ -26,7 +26,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 | sort_key | String | 网络组件的 ID | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 
