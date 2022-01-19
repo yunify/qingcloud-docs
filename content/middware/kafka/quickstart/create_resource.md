@@ -21,8 +21,8 @@ draft: false
 
    > **说明**
    > 
-   > - 客户端节点 IP，如果使用的版本是Kafka 0.10.2.1 - QingCloud 1.1.6，可使用集群内任意节点的IP。
-   > - 端口可以在集群配置参数进行设置，默认为 9000。
+   > - 客户端节点 IP，如果使用的版本是Kafka 0.10.2.1 - QingCloud 1.1.6，可使用集群内任意节点的 IP。
+   > - 端口可以在集群配置参数进行设置，默认为 `9000`。
 
    <img src="../../_images/clusters.png" alt="Kafka clusters" style="zoom:40%;" />  
 
@@ -37,5 +37,5 @@ draft: false
 
     <img src="../../_images/create_topic.png" alt="Create topic" style="zoom:50%;" />
 
-4. 配置完成后，单击 **Create**，完成 Topic 创建操作。
+4. 配置完成后，点击 **Create**，完成 Topic 创建操作。
 

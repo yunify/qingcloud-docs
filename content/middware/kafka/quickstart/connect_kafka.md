@@ -34,7 +34,8 @@ draft: false
 在客户端节点执行以下命令，向 Topic 发送消息。
 
 ```shell
-kafka-console-producer.sh --broker-list {连接地址} --topic {Topic 名称}
+cd /opt/kafka/current/bin
+./kafka-console-producer.sh --broker-list {连接地址} --topic {Topic 名称}
 ```
 
 - 连接地址：所连接的 Kafka 集群的地址，格式为 host_ip1:port,host_ip2:port,host_ip3:port。    
@@ -48,7 +49,8 @@ kafka-console-producer.sh --broker-list {连接地址} --topic {Topic 名称}
 **示例**   
 
 ```shell
-$ kafka-console-producer.sh --broker-list 192.168.0.1:9092,192.168.0.2:9092,192.168.0.3:9092 --topic test
+$ cd /opt/kafka/current/bin
+./kafka-console-producer.sh --broker-list 192.168.0.1:9092,192.168.0.2:9092,192.168.0.3:9092 --topic test
 >hi
 >hello world
 >how are you
@@ -59,7 +61,8 @@ $ kafka-console-producer.sh --broker-list 192.168.0.1:9092,192.168.0.2:9092,192.
 在客户端执行以下命令，消费 Topic 消息。   
 
 ```shell
-kafka-console-consumer.sh --broker-list {连接地址} --topic {Topic 名称} --from-beginning
+cd /opt/kafka/current/bin
+./kafka-console-consumer.sh --broker-list {连接地址} --topic {Topic 名称} --from-beginning
 ```
 
 - 连接地址：与发送消息的连接地址相同。
@@ -68,7 +71,8 @@ kafka-console-consumer.sh --broker-list {连接地址} --topic {Topic 名称} --
 
 **示例**       
 ```shell
-$ kafka-console-consumer.sh --bootstrap-server 192.168.0.1:9092,192.168.0.2:9092,192.168.0.3:9092 --topic test --from-beginning
+$ cd /opt/kafka/current/bin
+./kafka-console-consumer.sh --bootstrap-server 192.168.0.1:9092,192.168.0.2:9092,192.168.0.3:9092 --topic test --from-beginning
 hi
 hello world
 how are you
