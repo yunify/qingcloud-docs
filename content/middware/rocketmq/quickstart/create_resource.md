@@ -13,7 +13,7 @@ draft: false
 ## 前提条件
 
 - 已创建 RocketMQ 集群。
-- 若通过本地浏览器访问 Kafka Manager，则需要配置 [VPN](/network/vpc/manual/vpn/)，确保本地可以访问集群网络。
+- 若通过本地浏览器访问 RocketMQ 控制台，则需要配置 [VPN](/network/vpc/manual/vpn/)，确保本地可以访问集群网络。
 
 ## 访问 RocketMQ 控制台
 

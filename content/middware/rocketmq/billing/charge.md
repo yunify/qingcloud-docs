@@ -1,7 +1,7 @@
 ---
 title: "到期与欠费"
 description: 本小节主要介绍 QingCloud RocketMQ 到期与欠费说明。 
-keyword: 云计算,大数据,RocketMQ,到期,欠费 
+keyword: 云计算,大数据,消息队列,中间件,RocketMQ,到期,欠费 
 weight: 30
 collapsible: false
 draft: false
@@ -14,7 +14,7 @@ draft: false
 > **注意**
 > 
 > 按需计费相比包年/包月单价更高，建议您提前对集群进行续费。
-> RocketMQ 集群目前支持手动续费，详细操作请参见[续费集群](../../manual/mgt_cluster/renew_manual)。
+> RocketMQ 集群目前支持手动续费和自动续费，详细操作请参见[续费](../../manual/mgt_cluster/renewal)。
 
 ## 欠费说明
 

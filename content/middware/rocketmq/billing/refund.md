@@ -1,7 +1,7 @@
 ---
 title: "退款说明"
 description: 本小节主要介绍 QingCloud RocketMQ 退款说明。 
-keyword: 云计算,大数据,RocketMQ,退款,退订
+keyword: 云计算,大数据,消息队列,中间件,RocketMQ,退款,退订
 weight: 40
 collapsible: false
 draft: false
@@ -9,15 +9,15 @@ draft: false
 
 本小节主要介绍 RocketMQ 退款说明及相关操作。
 
-## 合约退订
+## 退订
 
-创建**包年/包月**集群后，您可以随时退订包年/包月合约，成功退订合约并删除集群资源后将进行退款。
+创建**包年/包月**集群后，您可以随时退订包年/包月集群，成功退订并删除集群资源后将进行退款。
 
 - 退订规则：若购买时使用优惠券，优惠券不予退回。
 - 退订费用：原配置合约价格（含折扣）- 优惠券 - 已使用的合约价格。
 - 退还方式：退订后费用将以余额的形式返还至您的账户。
 
-合约退订操作，请参见[退订合约](../../manual/mgt_cluster/unsubscribe)。
+合约退订操作，请参见[退订](../../manual/mgt_cluster/unsubscribe)。
 
 ## 停止计费
 

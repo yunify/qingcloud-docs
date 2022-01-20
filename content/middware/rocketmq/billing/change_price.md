@@ -1,7 +1,7 @@
 ---
 title: "费用变更"
 description: 本小节主要介绍 QingCloud RocketMQ 费用变更说明。 
-keyword: 云计算,大数据,RocketMQ,费用变更
+keyword: 云计算,大数据,消息队列,中间件,RocketMQ,费用变更
 weight: 20
 collapsible: false
 draft: false

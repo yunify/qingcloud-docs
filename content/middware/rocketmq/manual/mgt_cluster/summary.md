@@ -1,7 +1,7 @@
 ---
 title: "集群概述"
 description: 本小节主要介绍 RocketMQ 集群基本信息。 
-keyword: 数据库,MySQL PLus,关系型数据库,MySQL,集群信息；
+keyword: 云计算,大数据,消息队列,中间件,RocketMQ,集群信息,
 weight: 05
 collapsible: false
 draft: false
