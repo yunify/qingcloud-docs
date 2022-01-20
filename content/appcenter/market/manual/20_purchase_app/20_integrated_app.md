@@ -1,5 +1,5 @@
 ---
-title: "开通 SaaS 应用"
+title: "购买 SaaS 应用"
 description: 介绍如何在青云上开通 SaaS 应用。
 keyword: QingCloud, 青云, AppCenter, 云市场, SaaS 应用
 weight: 20
@@ -18,11 +18,11 @@ draft: false
 
   <img src="../../../_images/um_saas_appcenter.png" style="zoom:50%;" />
 
-## 开通 SaaS 应用
+## 购买 SaaS 应用
 
 如下**以登录 QingCloud 管理控制台开通 SaaS 应用为例**进行说明。
 
-1. 在应用详情中，点击**立即开通**，进入**开通应用**页面。
+1. 在应用详情中，点击**立即开通** (或 **立即购买**），进入应用开通或应用购买页面。
 
    <img src="../../../_images/um_open_saasapp.png" style="zoom:40%;" />
 

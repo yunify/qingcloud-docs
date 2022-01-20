@@ -1,7 +1,7 @@
 ---
 title: "创建集群"
 description: 本小节主要介绍如何快速创建 PostgreSQL 集群实例。 
-keyword: PostgreSQL 实例, 创建集群,创建实例
+keyword: 实例,创建集群,创建实例,PostgreSQL,关系型数据库,数据库
 weight: 10
 collapsible: false
 draft: false

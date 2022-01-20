@@ -11,7 +11,7 @@ draft: false
 
 在 AppCenter 集群管理控制台，支持对 HBase 常用配置参数的管理。
 
-> **说明：**
+> **说明**
 > 
 > 更多配置参数说明，请参见 [HBase 官方配置文件](http://hbase.apache.org/book.html#config.files)
 
@@ -19,7 +19,7 @@ draft: false
 
 ## 支持的配置参数
 
-|<span style="display:inline-block;width:80px">版本</span> |<span style="display:inline-block;width:120px">取之范围</span>|<span style="display:inline-block;width:420px">版本说明</span>|
+|<span style="display:inline-block;width:80px">参数</span> |<span style="display:inline-block;width:120px">取值范围</span>|<span style="display:inline-block;width:420px">参数说明</span>|
 |:----|:----|:----|
 |   fs.trash.interval    |       >= 0  |  表示被永久删除前在回收站中保留的分钟数，配置为0表示不开启回收站功能。  |
 |   dfs.replication      |  1~10        |   表示默认副本数。  |

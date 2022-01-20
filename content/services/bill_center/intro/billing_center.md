@@ -1,9 +1,9 @@
 ---
 title: "费用中心介绍"
 weight: 5
-description: Test description
+description: 费用中心功能简介。
 draft: false
-keyword: 费用中心介绍, 发票, 订单, 青云, 账单, 用户服务
+keyword: QingCloud, 青云, 云计算, 费用中心, 发票, 订单, 账单
 ---
 
 QingCloud 费用中心为用户提供基于页面的云产品交易和账单管理能力，您可以通过费用中心清晰地了解自己的订单、账单和消费明细等相关信息，您还可以进行续约、退订、发票管理等操作。
@@ -65,10 +65,10 @@ QingCloud 费用中心为用户提供基于页面的云产品交易和账单管�
       <td style="background:#fff;">支持按照订单状态、产品类型及时间查询订单及查看订单详情。</td>
 	</tr>
 	<tr>
-	    <td style="background:#fff;">续约管理</td>
+	    <td style="background:#fff;">续费管理</td>
       <td style="background:#fff;">支持预留合约、包年包月产品的自动及手动续费。</td>
 	</tr>
-    <tr >
+  <tr >
 	    <td rowspan="2" style="background:#fff;">发票管理</td>
 	    <td style="background:#fff;">发票管理</td>
       <td style="background:#fff;">支持申请开具发票及管理发票抬头。</td>
@@ -77,6 +77,16 @@ QingCloud 费用中心为用户提供基于页面的云产品交易和账单管�
 	    <td style="background:#fff;">邮寄地址管理</td>
       <td style="background:#fff;">支持以添加及保存常用的合同/发票邮寄地址。</td>
 	</tr>
+    <tr >
+	    <td rowspan="2" style="background:#fff;">合同管理</td>
+	    <td style="background:#fff;">合同管理</td>
+      <td style="background:#fff;">支持创建框架合同、充值合同和消费合同。</td>
+	</tr>
+	<tr>
+	    <td style="background:#fff;">甲方信息管理</td>
+      <td style="background:#fff;">支持保存甲方信息，包含通讯地址、联系人、联系电话和电子邮箱等。</td>
+	</tr>
 </table>
+
 
 

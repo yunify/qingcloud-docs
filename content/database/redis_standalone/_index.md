@@ -24,7 +24,7 @@ Section2:
 
     - title: 快速入门
       content: 快速入门
-      url: "quickstart/quick_start/"
+      url: "quickstart/create_cluster/"
 
     - title: 操作指南
       content: 学习上手管理和使用 Redis Standalone 集群
@@ -63,7 +63,7 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 创建 Redis Standalone
-          url: "quickstart/quick_start/"
+          url: "quickstart/create_cluster/"
 
         - title: Redis Standalone 集群信息
           url: "manual/cluster_info/"
