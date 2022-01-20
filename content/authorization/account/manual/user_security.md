@@ -84,7 +84,7 @@ draft: false
 
 <img src="../../_images/user_security_notify.png" style="zoom:50%;" />
 
-## 登陆失败锁定
+## 登录失败锁定
 
 若您选择启用该功能，您的账号在同一终端 6 小时内登录失败 5 次后，该账号在此终端将被锁定登录 24 小时。
 
