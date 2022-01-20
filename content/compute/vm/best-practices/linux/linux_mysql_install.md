@@ -246,7 +246,7 @@ netstat -ano | findstr 3306
 
 ### 2. 本地登录MySQL
 
-使用默认密码登陆MySQL。
+使用默认密码登录MySQL。
 
 ```shell
 mysql -u root -p
