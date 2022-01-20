@@ -23,7 +23,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，带宽
 
 ### Windows云服务器测试公网IP网速
 
-登陆 Windows 云服务器，打开浏览器输入如下网站URL地址www.speedtest.cn，点击【测试】，等待测速结束即可获取到公网IP的上下行带宽，参考如下截图：
+登录 Windows 云服务器，打开浏览器输入如下网站URL地址www.speedtest.cn，点击【测试】，等待测速结束即可获取到公网IP的上下行带宽，参考如下截图：
 
 ![Win测网速](/compute/vm/_images/speetest_of_winOS.png)
 

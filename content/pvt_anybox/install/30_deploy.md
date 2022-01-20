@@ -51,7 +51,7 @@ draft: false
 
    主域名：访问 ANYBOX 的入口域名（例如： `anybox.com`）
 
-   Account 服务域名：登陆时使用的域名（例如： `account.anybox.com`）
+   Account 服务域名：登录时使用的域名（例如： `account.anybox.com`）
 
    控制台域名：进入管理控制台的域名（例如： `admin.anybox.com`）
 
