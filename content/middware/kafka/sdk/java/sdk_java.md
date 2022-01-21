@@ -59,11 +59,11 @@ draft: false
 
 2. 创建 Kafka 配置文件 **kafka.properties**，并配置相关信息。
 
-| <span style="display:inline-block;width:140px">参数</span> | <span style="display:inline-block;width:520px">参数说明</span> |
-| :--------------------------------------------------------- | :----------------------------------------------------------- |
-| bootstrap.servers                                          | Kafka 连接地址。若 Kafka 节点地址为：192.168.0.1, 192.168.0.2, 192.168.0.3, 则连接地址为：192.168.0.1:9092,192.168.0.2:9092,192.168.0.3:9092。 |
-| topic                                                      | 消息的 Topic。                                               |
-| group.id                                                   | 订阅消息的 Group。您可以自定义，系统将会自动创建一个 Group。 |
+    | <span style="display:inline-block;width:140px">参数</span> | <span style="display:inline-block;width:520px">参数说明</span> |
+    | :--------------------------------------------------------- | :----------------------------------------------------------- |
+    | bootstrap.servers                                          | Kafka 连接地址。若 Kafka 节点地址为：192.168.0.1, 192.168.0.2, 192.168.0.3, 则连接地址为：192.168.0.1:9092,192.168.0.2:9092,192.168.0.3:9092。 |
+    | topic                                                      | 消息的 Topic。                                               |
+    | group.id                                                   | 订阅消息的 Group。您可以自定义，系统将会自动创建一个 Group。 |
 
    ```properties
    ## 配置接入点
