@@ -4,6 +4,13 @@ collapsible: false
 weight: 5
 
 product:
+    - time: 2022-01-25
+      title: KubeSphere v3.2.1 正式上线
+      content: 1.升级到 Kubernetes 1.21.5。 <br>2.升级到 KubeSphere v3.2.1。<br>3.升级到 Docker 20.10.8。<br>4.新增了对GPU资源调度管理功能的支持，支持可视化创建GPU工作负载、调度GPU资源任务等。<br>5.自定义监控支持Grafana，强化可观测性。<br>6.新增支持存储卷克隆、快照和扩展等功能，提供更方便的持久化存储运维。
+      url: https://log.qingcloud.com/archives/8736
+      tags:
+      - 新功能
+    
     - time: 2021-12-02
       title: KubeSphere v3.1.1 patch版本发布
       content: 1.更正了部分可能导致集群创建失败的内部逻辑，提升了集群创建成功率。 <br>2.修复了因csi组件限制值过小导致集群持续报警的问题，校准了集群的报警能力。<br>3.更正了部分集群组件的版本，保证了相关功能的可用性和稳定性。<br>4.降低了磁盘消耗，降低了因磁盘可用容量不足导致集群升级失败的几率。<br>5.支持强制删除集群节点的能力，增强了集群可维护性。
