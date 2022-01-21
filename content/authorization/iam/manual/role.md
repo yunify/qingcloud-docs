@@ -188,7 +188,7 @@ IAM 身份的凭证是具备有效期的，表示代入该身份的会话最长�
 
 ## 使用身份
 
-当 QingCloud IAM 身份创建成功后，您可以通过下载[QingCloud 官方 SDK](https://docs.qingcloud.com/product/sdk/)来更新您应用中的认证代码来调用身份，账户类身份也可以通过登陆 QingCloud 控制台 UI 面板执行“切换身份”操作。
+当 QingCloud IAM 身份创建成功后，您可以通过下载[QingCloud 官方 SDK](https://docs.qingcloud.com/product/sdk/)来更新您应用中的认证代码来调用身份，账户类身份也可以通过登录 QingCloud 控制台 UI 面板执行“切换身份”操作。
 
 更多操作详情及注意事项，请参见：[如何代入身份使用？](../../faq/assume_role)
 
