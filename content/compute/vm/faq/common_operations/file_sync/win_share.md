@@ -93,7 +93,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，文件共享
 
 ## Windows客户端访问
 
-我们登陆另一台Windows云服务器，同样需要重复上述1.1-1.4的配置步骤，配置完成后进入到【我的电脑】-【网络】
+我们登录另一台Windows云服务器，同样需要重复上述1.1-1.4的配置步骤，配置完成后进入到【我的电脑】-【网络】
 ![Windows客户端访问](../../../_images/win_share_25.png)
 
 可以看到2台云服务器已经位于同一个网络中，其中i-t8j3zdhd是之前创建了共享文件夹1的云服务器，双击i-t8j3zdhd云服务器，我们可以看到共享的文件夹client1和文件夹中的文件text
@@ -104,7 +104,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，文件共享
 现在我们测试下客户端云服务器2的写入权限，在上边的文件路径中，我们创建一个文档text2
 ![Windows客户端访问](../../../_images/win_share_28.png)
 
-然后我们登陆云服务器1，直接进入到C盘-client文件夹
+然后我们登录云服务器1，直接进入到C盘-client文件夹
 ![Windows客户端访问](../../../_images/win_share_29.png)
 
 我们看到云服务器2创建的文件在云服务器1中也可以看到了。至此Windows间的文件共享已完成.
@@ -142,7 +142,7 @@ Dependency Installed:
 Complete!
 ```
 
-### 登陆server端
+### 登录server端
 
 ```bash
 # smbclient //192.168.2.21/client1

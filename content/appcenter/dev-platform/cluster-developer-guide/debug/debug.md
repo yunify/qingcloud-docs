@@ -19,7 +19,7 @@ weight: 11
 
 在云服务器里修改 toml 或 tmpl 文件后，可以通过 service confd restart 重启服务刷新配置或 执行 /opt/qingcloud/app-agent/bin/confd -onetime 刷新配置。
 
-> 注：用户的实例默认情况下开发者是没有权限通过 vnc 登陆的，需要用户授权。
+> 注：用户的实例默认情况下开发者是没有权限通过 vnc 登录的，需要用户授权。
 
 ## 日志查看
 

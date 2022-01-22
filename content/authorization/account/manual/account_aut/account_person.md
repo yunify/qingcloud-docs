@@ -2,9 +2,8 @@
 title: "个人认证"
 description: 介绍账户认证流程。
 keyword: 青云, 账户中心, 账户认证, 认证
-weight: 10
+weight: 20
 draft: false
-
 ---
 
 如果您是个人用户，可以申请个人认证。只需要提供您的个人基本资料，以及身份证照片、个人正面肖像照即可。
@@ -41,7 +40,7 @@ draft: false
 
 3. 输入本人身份证姓名和身份证号码，并勾选**我已阅读并同意《青云QingCloud云服务使用协议》实名认证条款**。
 
-   <img src="../../../_images/account_person_12.png" style="zoom:50%;"/>
+   <img src="../../../_images/account_person_12.png" style="zoom:40%;"/>
 
 4. 点击**下一步：人脸验证**。
 
