@@ -37,7 +37,7 @@ weight: 25
 | Name | Type | Sample value | Description |
 | --- | --- | --- | --- |
 | action | string | HpcClusterListClusterResponse | 响应动作名称 |
-| total_count | int | 1 | 集群中节点个数<br>创建集群后默认有一个登录节点，如果用户有再新增节点，对应值就>1</br>可增加节点类型为：登陆节点、计算节点、管控节点。 |
+| total_count | int | 1 | 集群中节点个数<br>创建集群后默认有一个登录节点，如果用户有再新增节点，对应值就>1</br>可增加节点类型为：登录节点、计算节点、管控节点。 |
 | ret_code | int | 0 | 执行成功与否，成功为0，其他值则为错误代码 |
 
 **Response Item**

@@ -60,6 +60,7 @@ touch qsctl_config.yaml
 access_key_id: 'ACCESS_KEY_ID_EXAMPLE'
 secret_access_key: 'SECRET_ACCESS_KEY_EXAMPLE'
 
+zone: 'zone_name'
 host: 'qingstor.com'
 port: 443
 protocol: 'https'
@@ -67,7 +68,8 @@ protocol: 'https'
 
  **说明：**
    - `access_key_id` 与 `secret_access_key` 根据步骤 1 中下载的 API 密钥进行填写。
-   - `host`，`port` 与 `protocol` 参数为待访问的 QingStor 对象存储的域名，端口号及协议类型。公有云维持默认即可，私有云环境需根据实际情况进行填写。
+   - `zone`，`host`，`port` 与 `protocol` 参数为待访问的 QingStor 对象存储的区域名，域名，端口号及协议类型。公有云维持默认即可，私有云环境需根据实际情况进行填写。
+   - `host` 参数为待访问的 QingStor 对象存储域名，该域名 URL 不包含 Zone 字段。
    - 配置文件默认使用 HTTPS 访问方式，若需修改为 HTTP 访问方式，可按照如下内容填写：
 
       ```yaml
