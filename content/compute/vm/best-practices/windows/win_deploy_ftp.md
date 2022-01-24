@@ -45,7 +45,7 @@ https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
 ![图片](/compute/vm/_images/image-1568884218566.png)
 
- 4、配置TLS安全认证登陆
+ 4、配置TLS安全认证登录
 
 ![图片](/compute/vm/_images/image-1568884220221.png)
 

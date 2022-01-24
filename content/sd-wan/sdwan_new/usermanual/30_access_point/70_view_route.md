@@ -21,4 +21,4 @@ weight: 70
 
 5. 点击**路由信息**，进入**路由信息**页面。
 
-   <img src="../../../_images/um_security_list.png" style="zoom:50%;" />
+   <img src="../../../_images/um_route_list.png" style="zoom:50%;" />

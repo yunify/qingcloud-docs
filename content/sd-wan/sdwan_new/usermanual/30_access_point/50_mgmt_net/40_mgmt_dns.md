@@ -54,21 +54,21 @@ weight: 40
 
 1. 进入**网络管理** > **DNS 解析** 页面。
 
-   <img src="../../../../_images/qs_vcpe_bgp_list.png" style="zoom:50%;" />
+   <img src="../../../../_images/qs_vcpe_dns_list.png" style="zoom:50%;" />
 
 2. 在已添加的静态路由所在行的**操作**列中，点击**修改**，域名所在行变更为可编辑状态。
-
-   <img src="../../../../_images/um_modify_snat.png" style="zoom:50%;" />
 
 3. 修改完成后，点击**确定**，完成 DNS 解析的修改。
 
    若页面弹出**编辑成功**提示信息，则说明修改 DNS 解析成功。
+   
+4. 点击**应用修改**，使配置生效。
 
 ### 删除 DNS 解析
 
 1. 进入**网络管理** > **DNS 解析** 页面。
 
-   <img src="../../../../_images/qs_vcpe_bgp_list.png" style="zoom:50%;" />
+   <img src="../../../../_images/qs_vcpe_dns_list.png" style="zoom:50%;" />
 
 2. 在已添加的静态路由所在行的**操作**列中，点击**删除**，弹出**删除 DNS 解析**窗口。
 
@@ -77,4 +77,6 @@ weight: 40
 3. 点击**确定**，完成 DNS 解析的删除操作。
 
    若页面弹出**删除成功**提示信息，则说明删除 DNS 解析成功。
+   
+4. 点击**应用修改**，使删除生效。
 

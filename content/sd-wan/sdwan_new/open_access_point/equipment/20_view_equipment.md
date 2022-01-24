@@ -1,7 +1,7 @@
 ---
 title: "查看设备信息"
-draft: false
 collapsible: false
+draft: true
 weight: 20
 ---
 

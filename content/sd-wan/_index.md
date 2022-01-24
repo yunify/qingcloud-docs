@@ -13,7 +13,7 @@ Section1:
     - title: 光盒
       url: "/sd-wan/light-box/intro/intro/"
 
-    - title: SD-WAN(NEW)
+    - title: SD-WAN（新版）
       url: "/sd-wan/sdwan_new/intro/10_sdwan/"
 
 ---

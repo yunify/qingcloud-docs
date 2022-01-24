@@ -23,7 +23,7 @@ weight: 40
 
 3. 在左侧导航栏中，点击**接入点**，进入**接入点**页面。
 
-   <img src="../../../../_images/um_access_point_list.png" style="zoom:50%;" />
+   <img src="../../../../_images/qs_light_access.png" style="zoom:50%;" />
 
 4. 点击已创建的接入点的名称，进入接入点详细信息页面。
 
@@ -39,11 +39,13 @@ weight: 40
 
 7. 在**端口角色**下拉列表中，选择端口角色，可选择为 **WAN**、**LAN** 或者 **ROUTE**。
 
-   <img src="/Users/amytan/work/github/qingcloud-docs/content/sd-wan/_images/um_port_role_choose.png" style="zoom:50%;" />
+   <img src="../../../../_images/um_port_role_choose.png" style="zoom:50%;" />
 
 8. 选择完成后，点击**确定**，完成端口角色修改。
 
    若页面弹出**编辑成功**提示信息，则说明修改端口角色成功。
+   
+9. 点击**应用修改**，使修改生效。
 
 
 

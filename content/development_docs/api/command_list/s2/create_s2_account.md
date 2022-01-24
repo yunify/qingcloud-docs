@@ -8,7 +8,7 @@ draft: false
 
 创建vnas服务访问资源账号
 
-访问vnas类型共享服务的NFS和SMB协议的资源，用户需要定义登陆账号，并将账号和S2 Group权限组进行绑定。
+访问vnas类型共享服务的NFS和SMB协议的资源，用户需要定义登录账号，并将账号和S2 Group权限组进行绑定。
 
 此操作完成后需要调用 [_UpdateS2Servers_](../update_s2_servers/) 以应用到共享存储服务器上。
 

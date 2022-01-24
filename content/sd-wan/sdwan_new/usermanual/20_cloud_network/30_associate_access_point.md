@@ -3,6 +3,7 @@ title: "查看关联接入点"
 draft: false
 collapsible: false
 weight: 30
+draft: true
 ---
 
 您可以查看连接云网关联的接入点信息及设备相关信息。
@@ -24,7 +25,9 @@ weight: 30
    > **说明：**
    >
    > 若您没有创建接入点，您可以点击**创建接入点**，创建接入点。
-
+   >
+   > 点击**设备管理**，可查看关于设备的更多信息。
+   
    <img src="../../../_images/um_cloud_access_point.png" style="zoom:50%;" />
    
    | 参数     | 参数说明                                       |

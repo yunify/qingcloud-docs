@@ -18,13 +18,13 @@ weight: 60
 
 2. 选择**产品与服务** > **SD-WAN** > **SD-WAN**，进入**连接云网**页面。
 
-   <img src="../../../_images/um_wan_edit.png" style="zoom:50%;" />
+   <img src="../../../_images/qs_cloud_network.png" style="zoom:50%;" />
 
 3. 点击目标连接云网所在行的**操作**列的**修改**，弹出**修改连接云网**窗口。
 
    <img src="../../../_images/um_wan_modify.png" style="zoom:50%;" />
 
-4. 修改连接云网的名称和描述信息。
+4. 修改连接云网的**名称**和**描述**信息。
 
 5. 点击**修改连接云网**，完成连接云网的名称和描述的修改。
 
