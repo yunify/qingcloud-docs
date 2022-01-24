@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 
 product:
-    - time: 2021-01-18
+    - time: 2022-01-18
       title: Redis 6.2.5 - v1.0.0 发布上线
       content: Redis Standalone 全新版本形态上线，基于 Redis 6.2.5 版本构建。<br>-  新增四种资源配置类型，适配研发测试及生产环境。支持 I/O 多线程，显著提升性能。<br>- 新增 TLS 加密传输功能，有效防止数据传输被监听。<br>- 新增 ACL 管理功能，可针对不同用户授予不同的命令及数据权限。<br>- 新增 Redis Exporter 配置参数和组件，支持对接 Prometheus，提供基于 Exporter 的 Redis 服务状态监控功能。<br>- 新增 Node Exporter 配置参数和组件，支持对接 Prometheus，提供基于 Exporter 的资源状态监控功能。
       url: ../../intro/version/
