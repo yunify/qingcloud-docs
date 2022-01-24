@@ -47,7 +47,7 @@ Bucket Policy 对于储存于 QingStor 对象存储的资源的访问控制粒�
  **说明：**
    - **操作：** 指定该 Bucket 策略支持的 API 操作。
    - **资源：** 指定该 Bucket 策略生效的资源范围。
-      - 缺损时，说明该规则对 Bucket 列表页的所有 Bucket 生效；
+      - 缺省时，说明该规则对 Bucket 列表页的所有 Bucket 生效；
       - 以 `<bucket-name>/` 为前缀，说明该规则仅对 `<bucket-name>/` 所指定的 Bucket 内相应资源生效；
       - 若需针对指定 Bucket 内所有资源生效，需填写 `<bucket-name>/*`。
    - **响应动作：** 当策略成功匹配用户的请求时，是允许还是拒绝该请求。

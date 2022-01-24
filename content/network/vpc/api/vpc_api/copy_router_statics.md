@@ -8,9 +8,17 @@ draft: false
 
 把源 VPC 网络的路由规则复制给目的 VPC 网络。
 
- 如果源 VPC 网络和目的 VPC 网络都属于网络2.0，且自身的网络地址不同，那么复制IPsec隧道规则时， 会修改规则里的目标网络地址，以适配目的 VPC 网络。
+如果源 VPC 网络和目的 VPC 网络都属于网络 2.0，且自身的网络地址不同，那么复制 IPsec 隧道规则时， 会修改规则里的目标网络地址，以适配目的 VPC 网络。
 
 **Request Parameters**
+
+| Parameter name   | Type   | Description          | Required |
+| ---------------- | ------ | -------------------- | -------- |
+| source_router_id | String | 源 VPC 网络 ID       | Yes      |
+| dest_router_id   | String | 目的 VPC  网络 ID    | Yes      |
+| dest_zone        | String | 目的区域 ID          | Yes      |
+| router-statics   | Array  | VPC 网络规则 ID 列表 | No       |
+| static-type      | Array  | VPC 网络规则类型列表 | No       |
 
 [_公共参数_](../../get_api/parameters/)
 
