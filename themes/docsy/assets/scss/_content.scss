@@ -97,7 +97,15 @@
         list-style: disc;
         margin-left: 1em;
     }
-    
+
+    li ul li {
+        list-style: square;
+    }
+
+    li ol li {
+        list-style: lower-alpha;
+    }
+
     ul li {
         list-style: disc;
         margin-left: 1em;
