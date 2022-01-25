@@ -42,7 +42,7 @@
         background-color: #263546;
         border-radius:3px;
         padding: $spacer;
-     
+        // overflow: auto;
 
         > code {
             padding: 0;
@@ -52,6 +52,11 @@
             white-space: pre;
             border: 0;
             color: #fff;
+            overflow: auto;
+        }
+
+        span {
+            overflow: auto;
         }
     }
 
