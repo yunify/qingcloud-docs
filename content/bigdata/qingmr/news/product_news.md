@@ -7,9 +7,17 @@ collapsible: false
 draft: false
 
 product:
+    - time: 2022-01-21
+      title: QingMR 2.6.1 – Core 版本上线
+      content: QingMR 2.6.1 – Core 版本基于 QingMR 2.6.0 - Core 版本，做了如下修改：<br>- 修复 Apache Log4j2 漏洞，提升 QingMR 服务的安全性。<br>- 新增“节点服务状态”告警，当节点服务状态异常时，将会告警。
+      url: ../../manual/metrics_alarm/set_alarm_rules/
+      tags:
+      - 体验优化
+      zone: 全部
+         
     - time: 2021-10-20
       title: QingMR 2.6.0 – Core 版本上线
-      content: QingMR 2.6.0 – Core 版本全新上线。<br>- 升级 Hadoop、Spark、Hive、Flink 至新版本；<br>- 新增 Ranger 组件，支持 Ranger hive 插件对 Hive 的权限控制。
+      content: QingMR 2.6.0 – Core 版本全新上线。<br>- 升级 Hadoop、Spark、Hive、Flink 至新版本。<br>- 新增 Ranger 组件，支持 Ranger hive 插件对 Hive 的权限控制。
       url: ../../intro/version/
       tags:
       - 新功能

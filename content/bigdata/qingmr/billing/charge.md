@@ -14,7 +14,7 @@ draft: false
 > **注意**
 > 
 > 按需计费相比包年/包月单价更高，建议您提前对集群进行续费。
-> QingMR 集群目前支持手动续费，详细操作请参见[续费集群](../../manual/mgt_cluster/renew_manual)。
+> QingMR 集群支持手动续费和自动续费，详细操作请参见[续费](../../manual/mgt_cluster/renewal)。
 
 ## 欠费说明
 
