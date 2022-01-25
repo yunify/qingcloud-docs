@@ -1,7 +1,7 @@
 ---
 title: "连接数据库"
 description: 本小节主要介绍如何快速访问 ClickHouse 集群。 
-keyword: ClickHouse 实例, 访问集群
+keyword: ClickHouse 实例, 访问集群,数据仓库,ClickHouse
 weight: 20
 collapsible: false
 draft: false

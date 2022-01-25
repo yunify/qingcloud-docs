@@ -1,7 +1,7 @@
 ---
 title: "删除备份"
 description: 本小节主要如何删除 ClickHouse 备份。 
-keyword: ClickHouse 删除备份；
+keyword: 删除备份,数据仓库,ClickHouse
 weight: 30
 collapsible: false
 draft: false

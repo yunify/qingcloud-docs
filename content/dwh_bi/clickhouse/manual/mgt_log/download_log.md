@@ -1,7 +1,7 @@
 ---
 title: "预览和下载日志"
 description: 本小节主要介绍如何下载日志。 
-keyword: ClickHouse 下载日志
+keyword: 下载日志,数据仓库,ClickHouse
 weight: 20
 collapsible: false
 draft: false

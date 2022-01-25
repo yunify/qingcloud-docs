@@ -1,7 +1,7 @@
 ---
 title: "产品规格"
 description: 本小节主要介绍 ChronusDB 规格。 
-keyword: ChronusDB, 产品规格
+keyword: 产品规格,时序数据库,ChronusDB,数据库
 weight: 25
 collapsible: false
 draft: false

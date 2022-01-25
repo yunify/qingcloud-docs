@@ -1,7 +1,7 @@
 ---
 title: "开启日志服务"
 description: 本小节主要介绍如何开启 ClickHouse 日志服务。 
-keyword: ClickHouse 开启日志服务；
+keyword: 开启日志服务,数据仓库,ClickHouse
 weight: 10
 collapsible: false
 draft: false

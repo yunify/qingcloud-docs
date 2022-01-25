@@ -1,7 +1,7 @@
 ---
 title: "关闭日志服务"
 description: 本小节主要介绍如何关闭 ClickHouse 日志服务。 
-keyword: ClickHouse关闭日志服务
+keyword: 关闭日志服务,数据仓库,ClickHouse
 weight: 30
 collapsible: false
 draft: false

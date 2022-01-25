@@ -1,7 +1,7 @@
 ---
 title: "删除账号"
 description: 本小节主要介绍如何删除 ClickHouse 数据库账号。 
-keyword: ClickHouse 删除账号；
+keyword: 删除账号,数据仓库,ClickHouse
 weight: 15
 collapsible: false
 draft: false

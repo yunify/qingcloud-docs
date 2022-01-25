@@ -1,7 +1,7 @@
 ---
 title: "删除对象存储策略"
 description: 本小节主要介绍如何删除 ClickHouse 对象存储策略。 
-keyword: ClickHouse 删除对象存储策略，删除策略
+keyword: 删除对象存储策略,删除策略,数据仓库,ClickHouse
 weight: 40
 collapsible: false
 draft: false

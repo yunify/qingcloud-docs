@@ -1,7 +1,7 @@
 ---
 title: "版本升级"
 description: 本小节主要介绍如何升级 ClickHouse 集群。 
-keyword: ClickHouse 升级集群；
+keyword: 升级集群,数据仓库,ClickHouse
 weight: 15
 collapsible: false
 draft: false

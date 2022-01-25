@@ -1,7 +1,7 @@
 ---
 title: "扩容节点"
 description: 本小节主要介绍如何扩容 ClickHouse 集群。 
-keyword: ClickHouse 扩容节点；
+keyword: 扩容节点,数据仓库,ClickHouse
 weight: 05
 collapsible: false
 draft: false

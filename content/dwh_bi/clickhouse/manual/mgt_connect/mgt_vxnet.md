@@ -1,7 +1,7 @@
 ---
 title: "切换私有网络"
 description: 本小节主要介绍如何切换 ClickHouse 集群私有网络。 
-keyword: ClickHouse 私有网络,
+keyword: 私有网络,数据仓库,ClickHouse
 weight: 20
 collapsible: false
 draft: false

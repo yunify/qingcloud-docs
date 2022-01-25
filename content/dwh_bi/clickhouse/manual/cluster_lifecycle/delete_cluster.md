@@ -1,7 +1,7 @@
 ---
 title: "删除集群"
 description: 本小节主要介绍如何删除 ClickHouse 集群。 
-keyword: ClickHouse 删除集群
+keyword: 删除集群,数据仓库,ClickHouse
 weight: 90
 collapsible: false
 draft: false

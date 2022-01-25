@@ -1,7 +1,7 @@
 ---
 title: "启停集群"
 description: 本小节主要介绍如何开启和关闭 ClickHouse 集群。 
-keyword: ClickHouse 开启；关闭
+keyword: 开启,关闭,数据仓库,ClickHouse
 weight: 20
 collapsible: false
 draft: false

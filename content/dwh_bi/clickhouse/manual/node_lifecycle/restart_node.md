@@ -1,7 +1,7 @@
 ---
 title: "重启节点"
 description: 本小节主要介绍如何重启节点。 
-keyword: ClickHouse 重启节点
+keyword: 重启节点,数据仓库,ClickHouse
 weight: 20
 collapsible: false
 draft: false

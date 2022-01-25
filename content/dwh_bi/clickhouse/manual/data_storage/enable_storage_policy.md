@@ -1,7 +1,7 @@
 ---
 title: "开启对象存储策略"
 description: 本小节主要介绍如何开启对象存储策略。 
-keyword: ClickHouse 开启对象存储策略；冷热存储，多磁盘数据存储
+keyword: 开启对象存储策略,冷热存储,多磁盘数据存储,数据仓库,ClickHouse
 weight: 10
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "回收站"
 description: 本小节主要介绍如何恢复已删除的 ClickHouse 集群。 
-keyword: ClickHouse 恢复集群
+keyword: 恢复集群,数据仓库,ClickHouse
 weight: 100
 collapsible: false
 draft: false

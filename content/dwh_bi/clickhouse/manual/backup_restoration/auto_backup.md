@@ -1,7 +1,7 @@
 ---
 title: "开启自动备份"
 description: 本小节主要如何开启 ClickHouse 数据自动备份。 
-keyword: ClickHouse 数据自动备份；
+keyword: 数据自动备份,数据仓库,ClickHouse
 weight: 20
 collapsible: false
 draft: false

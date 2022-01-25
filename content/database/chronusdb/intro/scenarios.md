@@ -1,7 +1,7 @@
 ---
 title: "应用场景"
 description: 本小节主要介绍 ChronusDB 应用场景。 
-keyword: ChronusDB 应用场景 
+keyword: 应用场景,时序数据库,ChronusDB,数据库 
 weight: 16
 collapsible: false
 draft: false
