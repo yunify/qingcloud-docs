@@ -11,13 +11,13 @@ draft: false
 
 对实时数据有加工处理需求的场景（例如：IOT 终端实时数据分析、实时用户日志分析、实时运营数据分析、实时风控等），通过大数据工作台中全托管 Flink 计算集群管理和可视化开发，您可以轻松创建和运维实时计算作业。
 
-<img src="../../_images/intro_scenes_05.png" alt="实时计算场景" style="zoom:50%;" />
+<img src="../../_images/intro_scenes_01.png" alt="实时计算场景" style="zoom:50%;" />
 
 ## 企业精细化运营分析场景
 
 随着企业数字化转型，需要大数据来支撑业务应用，如用户画像、增长分析、数据大屏等。构建企业大数据应用，离不开企业级大数据工作台，通过数据集成、数据开发等步骤，缩短数据价值洞悉周期，提升数据决策效能，助力企业业务增长。
 
-<img src="../../_images/inrto_scenes.png" alt="企业精细化运营分析场景" style="zoom:50%;" />
+<img src="../../_images/inrto_scenes_02.png" alt="企业精细化运营分析场景" style="zoom:50%;" />
 
 ## 可视化开发与运维场景
 
@@ -25,7 +25,7 @@ draft: false
 
 当任务较多时，您可以通过大数据工作台对大数据任务进行统一调度和运维，提升开发、运维效率。
 
-<img src="../../_images/intro_scenes_01.png" alt="可视化开发与运维场景" style="zoom:50%;" />
+<img src="../../_images/intro_scenes_03.png" alt="可视化开发与运维场景" style="zoom:50%;" />
 
 ## 企业构建数仓场景
 
@@ -36,3 +36,5 @@ draft: false
 - 通过离线、实时作业管理对数仓的数据流作业进行创建。
 
 相比传统数仓的构建，大数据工作台提供可视化、一站式的构建体验。可以显著提高数据开发效率，缩短数据价值洞悉周期，提升数据决策效能，助力企业业务增长。
+
+<img src="../../_images/intro_scenes_04.png" alt="企业构建数仓场景" style="zoom:50%;" />
