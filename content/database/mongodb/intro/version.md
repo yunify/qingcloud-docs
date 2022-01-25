@@ -11,6 +11,20 @@ draft: false
 
 ## 版本历程
 
+### MongoDB 3.6.8 - v1.0.1
+
+MongoDB 3.6.8 - v1.0.1 基于 MongoDB 3.6.8 内核版本构建，操作系统升级为 Ubuntu 20.04。  
+集成 mongo-shake v2.6.5、mongodb_exporter v0.20.9、node_exporter v1.2.2、zabbix_agent2 v5.4.8、caddy v2.4.6 组件。
+
+- 新增 MongoShake 配置参数，支持 MongoDB 集群间数据迁移和同步，提供集群灾备和多活功能。
+- 新增 Mongodb Exporter 配置参数，支持对接 Prometheus ，提供基于 Exporter 方式的 MongoDB 服务运行状态监控功能。
+- 新增 Node Exporter 配置参数，支持对接 Prometheus，提供基于 Exporter 方式的资源状态监控功能。
+- 新增 “Replica Node” 配置参数，支持副本节点性能参数管理。
+- 新增“游标数量”、“网络流量”、“事务”等 15 项服务监控指标，丰富服务监控信息。
+- 新增集群续费功能，支持手动设置续费时长。
+- 更新 Zabbix 和 Caddy 组件版本。
+- 更多功能优化，包括底层健康检查逻辑等。
+
 ### MongoDB 4.0.3 - v1.0.0
 
 MongoDB 4.0.3 - v1.0.0 基于 MongoDB 4.0.3 内核版本构建，操作系统升级为 Ubuntu 20.04。  
@@ -21,19 +35,7 @@ MongoDB 4.0.3 - v1.0.0 基于 MongoDB 4.0.3 内核版本构建，操作系统升
 - 新增 Node Exporter 配置参数，支持对接 Prometheus，提供基于 Exporter 方式的资源状态监控功能。
 - 新增 “Replica Node” 配置参数，支持副本节点性能参数管理。
 - 新增“游标数量”、“网络流量”、“事务”等 15 项服务监控指标，丰富服务监控信息。
-- 更新 Zabbix 和 Caddy 组件版本。
-- 更多功能优化，包括底层健康检查逻辑等。
-
-### MongoDB 3.6.8 - v1.0.0
-
-MongoDB 3.6.8 - v1.0.0 基于 MongoDB 3.6.8 内核版本构建，操作系统升级为 Ubuntu 20.04。  
-集成 mongo-shake v2.6.5、mongodb_exporter v0.20.9、node_exporter v1.2.2、zabbix_agent2 v5.4.8、caddy v2.4.6 组件。
-
-- 新增 MongoShake 配置参数，支持 MongoDB 集群间数据迁移和同步，提供集群灾备和多活功能。
-- 新增 Mongodb Exporter 配置参数，支持对接 Prometheus ，提供基于 Exporter 方式的 MongoDB 服务运行状态监控功能。
-- 新增 Node Exporter 配置参数，支持对接 Prometheus，提供基于 Exporter 方式的资源状态监控功能。
-- 新增 “Replica Node” 配置参数，支持副本节点性能参数管理。
-- 新增“游标数量”、“网络流量”、“事务”等 15 项服务监控指标，丰富服务监控信息。
+- 新增集群续费功能，支持手动设置续费时长。
 - 更新 Zabbix 和 Caddy 组件版本。
 - 更多功能优化，包括底层健康检查逻辑等。
 
