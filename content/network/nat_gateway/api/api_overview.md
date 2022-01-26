@@ -32,7 +32,7 @@ NAT 网关提供以下 API 接口供您使用。
 
 | API                                               | 说明             |
 | :------------------------------------------------ | :--------------- |
-| [AddSnatRule](../snat/add_snat_rules/)            | 新增 SNAT 规则。 |
+| [AddSnatRule](../snat/add_snat_rule/)             | 新增 SNAT 规则。 |
 | [DescribeSnatRules](../snat/describe_snat_rules/) | 查询 SNAT 规则。 |
 | [UpdateSnatRule](../snat/update_snat_rule/)       | 更新 SNAT 规则。 |
 | [DeleteSnatRules](../snat/delete_snat_rules/)     | 删除 SNAT 规则。 |
@@ -43,7 +43,7 @@ NAT 网关提供以下 API 接口供您使用。
 
 | API                                               | 说明             |
 | :------------------------------------------------ | :--------------- |
-| [AddDnatRule](../dnat/add_dnat_rules/)            | 新增 DNAT 规则。 |
+| [AddDnatRule](../dnat/add_dnat_rule/)             | 新增 DNAT 规则。 |
 | [DescribeDnatRules](../dnat/describe_dnat_rules/) | 查询 DNAT 规则。 |
 | [UpdateDnatRule](../dnat/update_dnat_rule/)       | 更新 DNAT 规则。 |
 | [DeleteDnatRules](../dnat/delete_dnat_rules/)     | 删除 DNAT 规则。 |
