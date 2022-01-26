@@ -14,7 +14,7 @@ draft: false
 > **注意**
 > 
 > 按需计费相比包年/包月单价更高，建议您提前对集群进行续费。
-> QingMR 集群目前支持手动续费，详细操作请参见[续费集群](../../manual/mgt_cluster/renew_manual)。
+> QingMR 集群支持手动续费和自动续费，详细操作请参见[续费](../../manual/mgt_cluster/renewal)。
 
 ## 欠费说明
 
@@ -26,7 +26,7 @@ draft: false
 
 ## 费用充值
 
-帐户余额不足时，请及时充值，以保障资源的正常使用。    
+账号余额不足时，请及时充值，以保障资源的正常使用。    
 青云账号支持多种充值途径：支付宝、网上银行、微信支付、线下银行转账。可在[充值页面](https://console.qingcloud.com/finance/wallet/)选择。    
 如果需要发票，请到[发票管理](https://console.qingcloud.com/finance/invoices/)提出申请。
 

@@ -39,7 +39,7 @@ draft: false
 |<span style="display:inline-block;width:100px">源计费模式</span> |<span style="display:inline-block;width:100px">目标计费模式</span>|<span style="display:inline-block;width:330px">操作说明</span>|
 |:----|:----|:----|
 |   按需计费     | 包年/包月  |  执行[修改计费模式](../../manual/mgt_cluster/switch_billing_mode)操作，变更立即生效，您需一次性支付包年/包月的费用。  |
-|   包年/包月    | 按需计费   |  <li>执行[修改计费模式](../../manual/mgt_cluster/switch_billing_mode)操作，服务到期后，集群将按照按需计费模式进行收费。<li>执行[退订合约](../../manual/mgt_cluster/unsubscribe)操作，选择**是否销毁资源**为`否`，操作成功后，系统将费用退订至您的账户中，集群立即按照按需计费模式进行收费。 |
+|   包年/包月    | 按需计费   |  <li>执行[修改计费模式](../../manual/mgt_cluster/switch_billing_mode)操作，服务到期后，集群将按照按需计费模式进行收费。<li>执行[退订](../../manual/mgt_cluster/unsubscribe)操作，选择**是否销毁资源**为`否`，操作成功后，系统将费用退订至您的账户中，集群立即按照按需计费模式进行收费。 |
 
 
 

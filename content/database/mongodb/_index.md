@@ -26,15 +26,23 @@ Section2:
 
     - title: 快速入门
       content: 快速入门
-      url: "quickstart/create_mongodb_cluster/"
+      url: "quickstart/create_cluster/"
 
     - title: 操作指南
-      content: 学习上手如何管理 MongoDB 集群，以及如何使用 MongoDB 提供的相关服务等。
-      url: "manual/service/"
+      content: 学习上手管理和使用 MongoDB 集群。
+      url: "manual/cluster_lifecycle/check_cluster/"
 
     - title: 最佳实践
       content: MongoDB 的最佳实践
-      url: "best-practices/data_import_and_export/"
+      url: "best-practices/oplog_size/"
+
+    - title: 性能白皮书
+      content: MongoDB 的版本性能
+      url: "perfwp/test_method/"
+
+    - title: 常见问题
+      content: MongoDB 的常见问题
+      url: "faq/kernel_version/"
 
 section3:
   title: 开发者指南
@@ -65,10 +73,10 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 创建 MongoDB
-          url: "quickstart/create_mongodb_cluster/"
+          url: "quickstart/create_cluster/"
 
-        - title: MongoDB 服务功能
-          url: "manual/service/"
+        - title: MongoDB 集群管理
+          url: "manual/cluster_lifecycle/check_cluster/"
 ---
 
 

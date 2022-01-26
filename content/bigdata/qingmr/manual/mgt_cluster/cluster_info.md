@@ -9,7 +9,7 @@ draft: false
 
 ## 查看集群详情
 
-![查看服务详情](../../../_images/cluster_detail.png)
+![查看集群详情](../../../_images/cluster_detail.png)
 
 创建成功后，点击集群列表页面相应集群可查看集群详情。
 
