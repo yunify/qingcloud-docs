@@ -11,7 +11,7 @@ keyword: 云计算, 青云, QingCloud, 文件存储, Virtual NAS, vNAS
 
 **访问Samba共享存储目标**
 
-Windows 系统上默认安装了 Samba 客户端，在 Windows 地址栏中输入地址：\ <vNAS 服务器地址> \ <共享目录> ，在弹出登陆框中输入用户名和密码，即可访问 Samba 的共享数据。
+Windows 系统上默认安装了 Samba 客户端，在 Windows 地址栏中输入地址：\ <vNAS 服务器地址> \ <共享目录> ，在弹出登录框中输入用户名和密码，即可访问 Samba 的共享数据。
 
 **访问 NFS 共享存储目标**
 

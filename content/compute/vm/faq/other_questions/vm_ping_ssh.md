@@ -1,6 +1,6 @@
 ---
 title: "云服务器绑定了公网 IP 之后，为什么我无法通过 IP SSH 登录，也不能 ping 通该 IP？ "
-description: 云服务器绑定公网IP如何登陆和ping
+description: 云服务器绑定公网IP如何登录和ping
 draft: false
 weight: 40
 keyword: 云计算, 青云, QingCloud, 云服务器，公网IP，SSH
