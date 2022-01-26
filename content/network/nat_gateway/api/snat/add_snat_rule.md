@@ -17,6 +17,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, SNAT
 | target_id | String | 主机 ID 或者 VXNET ID | Yes |
 | target_type | Integer | 目标类型：0 VXNET, 1 主机 | Yes |
 | eip_ids.n | String | 一个或多个要被绑定的公网 IP 地址 | Yes |
+| enable | Integer | 是否启用。 | No |
 
 [_公共参数_](../../get_api/parameters/)
 
@@ -39,6 +40,7 @@ https://api.qingcloud.com/iaas/?action=AddSnatRules
 &target_id=vxnet-xxxxcccc
 &target_type=1
 &eip_ids.1=eip-9m3skybb
+&enable=1
 &COMMON_PARAMS
 ```
 

@@ -43,7 +43,7 @@ NAT 网关提供以下 API 接口供您使用。
 
 | API                                               | 说明             |
 | :------------------------------------------------ | :--------------- |
-| [AddDnatRules](../dnat/add_dnat_rules/)           | 新增 DNAT 规则。 |
+| [AddDnatRule](../dnat/add_dnat_rules/)            | 新增 DNAT 规则。 |
 | [DescribeDnatRules](../dnat/describe_dnat_rules/) | 查询 DNAT 规则。 |
 | [UpdateDnatRule](../dnat/update_dnat_rule/)       | 更新 DNAT 规则。 |
 | [DeleteDnatRules](../dnat/delete_dnat_rules/)     | 删除 DNAT 规则。 |
