@@ -1,5 +1,5 @@
 ---
-title: "AddSnatRules"
+title: "AddSnatRule"
 description: 新增 SNAT 规则
 draft: false
 weight: 21
