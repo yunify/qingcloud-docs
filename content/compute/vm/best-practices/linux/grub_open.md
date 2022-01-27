@@ -11,7 +11,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，Linux，启动
 
 ## CentOS 6.8
 
-先正常登陆云服务器，修改/etc/grub.conf，修改timeout参数为30，并将hiddenmenu参数注释，保存退出。如下图所示：
+先正常登录云服务器，修改/etc/grub.conf，修改timeout参数为30，并将hiddenmenu参数注释，保存退出。如下图所示：
 
 ![gurb](../../_images/grub_1.png)
 
@@ -32,7 +32,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，Linux，启动
 
 ## CentOS 7.9
 
-先正常登陆云服务器，修改/etc/default/grub，修改timeout =30，保存退出。
+先正常登录云服务器，修改/etc/default/grub，修改timeout =30，保存退出。
 修改/boot/grub2/grub.cfg，修改两处set timeout=30，保存退出。
 
 ```

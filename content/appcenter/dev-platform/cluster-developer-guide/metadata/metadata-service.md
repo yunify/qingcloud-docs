@@ -301,7 +301,7 @@ vertical-scaling-roles |表示当前正在进行纵向扩容的角色节点名�
 
 ## 测试
 
-在创建好一个集群后，登陆到任意一个节点，在文件 /etc/confd/confd.toml 里找到 nodes 这一行(这个文件是青云调度系统在用户创建集群的时候自动生成的)，这一行定义的是 metadata server 的 IP 地址，任取一个 IP，运行下面命令即可看到所有信息。注明：同一 VPC 里所有集群这个文件内容相同。
+在创建好一个集群后，登录到任意一个节点，在文件 /etc/confd/confd.toml 里找到 nodes 这一行(这个文件是青云调度系统在用户创建集群的时候自动生成的)，这一行定义的是 metadata server 的 IP 地址，任取一个 IP，运行下面命令即可看到所有信息。注明：同一 VPC 里所有集群这个文件内容相同。
 
 `curl http://[IP]/self`
 

@@ -2,7 +2,7 @@
 title: "合同管理"
 weight: 20
 description: 本章节介绍合同管理相关内容
-draft: true
+draft: false
 keyword: 合同管理, 合同申请, 青云, QingCloud, 用户服务
 ---
 
@@ -16,7 +16,7 @@ keyword: 合同管理, 合同申请, 青云, QingCloud, 用户服务
 
 合同申请仅针对已完成实名认证的客户。
 
-甲方名称必须与实名认证保持一致，如需修改甲方名称，请先修改实名认证，详细操作请参见[修改实名认证信息](/authorization/account/manual/user_verify/#修改实名认证信息)。
+甲方名称必须与实名认证保持一致，如需修改甲方名称，请先修改实名认证，详细操作请参见[修改实名认证](/authorization/account/manual/account_aut/modify_account/)。
 
 ## 合同类型
 
@@ -24,11 +24,11 @@ keyword: 合同管理, 合同申请, 青云, QingCloud, 用户服务
 
   QingCloud 服务协议：是由 QingCloud 云计算服务网站（https://www.qingcloud.com/）的所有及运营方北京青云科技股份有限公司（下称“QingCloud”）与用户就 QingCloud 提供且用户使用的“QingCloud 云计算服务”而签订的对双方具有约束力的协议。
 
-- 消费合同
-
-  附带消费记录的协议，适用于消费后报销。
-
 - 充值合同
+
+  附带充值记录的协议，适用于充值后报销。
+
+- 消费合同
 
   附带消费记录的协议，适用于消费后报销。
 
@@ -90,7 +90,7 @@ keyword: 合同管理, 合同申请, 青云, QingCloud, 用户服务
 
    您也可以根据需要修改甲方的地址、联系人、联系电话或电子邮箱等。
 
-   甲方名称必须与您在青云实名认证的信息保持一致。若需要修改甲方名称，请先修改实名认证信息。详细操作请参见[修改实名认证信息](/authorization/account/manual/user_verify/#修改实名认证信息)。
+   甲方名称必须与您在青云实名认证的信息保持一致。若需要修改甲方名称，请先修改实名认证信息。详细操作请参见[修改实名认证](/authorization/account/manual/account_aut/modify_account/)。
 
 3. 确认并勾选**请确认以上甲方信息真实有效**。
 
@@ -134,7 +134,7 @@ keyword: 合同管理, 合同申请, 青云, QingCloud, 用户服务
 
    您也可以根据需要修改甲方的地址、联系人、联系电话或电子邮箱等。
 
-   甲方名称必须与您在青云实名认证的信息保持一致。若需要修改甲方名称，请先修改实名认证信息。详细操作请参见[修改实名认证信息](/authorization/account/manual/user_verify/#修改实名认证信息)。
+   甲方名称必须与您在青云实名认证的信息保持一致。若需要修改甲方名称，请先修改实名认证信息。详细操作请参见[修改实名认证](/authorization/account/manual/account_aut/modify_account/)。
 
 6. 点击**保存合同草稿**，生成草稿合同。
 
@@ -176,7 +176,7 @@ keyword: 合同管理, 合同申请, 青云, QingCloud, 用户服务
 
    您也可以根据需要修改甲方的地址、联系人、联系电话或电子邮箱等。
 
-   甲方名称必须与您在青云实名认证的信息保持一致。若需要修改甲方名称，请先修改实名认证信息。详细操作请参见[修改实名认证信息](/authorization/account/manual/user_verify/#修改实名认证信息)。
+   甲方名称必须与您在青云实名认证的信息保持一致。若需要修改甲方名称，请先修改实名认证信息。详细操作请参见[修改实名认证](/authorization/account/manual/account_aut/modify_account/)。
 
 6. 点击**保存合同草稿**，生成草稿合同。
 
