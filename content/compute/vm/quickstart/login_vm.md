@@ -3,7 +3,7 @@ title: "步骤三：登录云服务器"
 description: 本章节介绍如何登录云服务器
 draft: false
 weight: 30
-keyword: 云计算, 青云, QingCloud, 云服务器，创建云服务器
+keyword: 云计算, 青云, QingCloud, 云服务器，登录云服务器
 ---
 
 本章节介绍如何快速登录云服务器。
