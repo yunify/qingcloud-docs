@@ -18,6 +18,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, DNAT
 | private_port | String | 内网端口号 1-65535, 端口号或者范围, 如 8080 或者 8080-8085。 | No |
 | private_ip| String | 内网 IP 地址 | No |
 | protocol| String | 协议类型, tcp 或者 udp | No |
+| enable | Integer | 是否启用。 | No |
 
 [_公共参数_](../../get_api/parameters/)
 
@@ -42,6 +43,7 @@ https://api.qingcloud.com/iaas/?action=UpdateDnatRule
 &private_ip=172.17.0.2
 &protocol=tcp
 &eip_id=eip-9m3skybb
+&enable=1
 &COMMON_PARAMS
 ```
 
