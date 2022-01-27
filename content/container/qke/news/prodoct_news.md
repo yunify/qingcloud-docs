@@ -5,7 +5,7 @@ weight: 5
 
 product:
     - time: 2022-01-25
-      title: KubeSphere on QingCloud v3.2.1 正式上线，集群可观测性加强、存储运维更便捷
+      title: KubeSphere on QingCloud v3.2.1 正式上线，新增 GPU 资源管理，并强化可观测性和运维能力
       content: 1.Kubernetes 升级到 v1.21.5。 <br>2.KubeSphere 升级到 v3.2.1。<br>3.Docker 升级到 v20.10.8。<br>4.新增 GPU 资源调度管理功能，支持可视化创建 GPU 工作负载、调度 GPU 资源任务等。<br>5.自定义监控支持 Grafana，强化可观测性。<br>6.新增存储卷克隆、快照和扩展等功能，提供更方便的持久化存储运维。<br>7.原有`按月`、`按年`计费方式变更为`包年包月`计费方式。
       url: https://log.qingcloud.com/archives/8736
       tags:
