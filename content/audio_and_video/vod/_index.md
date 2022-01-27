@@ -1,13 +1,13 @@
 ---
-title: "实时音视频 RTC"
-linkTitle: "实时音视频 RTC"
+title: "云点播"
+linkTitle: "云点播"
 weight: 1
 collapsible: true
 type: "product"
 
 section1:
   title: 实时音视频 RTC
-  vice_title: 实时音视频 RTC 是为用户提供全球低延时互动直播、多人音视频的服务，包含低延时直播、屏幕共享、基础美颜、水印、实时录屏、自定义视频源等功能，支持用户快速搭建在线会议、互动课堂、语音电台、互动连麦等服务场景。
+  vice_title: 云点播产品提供一站式点播场景服务，通过视频上传、批量转码、播放加速、通用播放器SDK等功能为客户提供高品质的产品体验。
 
 section2:
   title: 用户指南
@@ -17,23 +17,23 @@ section2:
       url: "/audio_and_video/vod/news/product_news"
 
     - title: 产品简介
-      content: 本节介绍什么是实时音视频 RTC。
+      content: 本节介绍什么是云点播。
       url: "/audio_and_video/vod/intro/10_vod"
 
     - title: 计费指南
-      content: 本节介绍实时音视频 RTC 如何计费。
+      content: 本节介绍云点播如何计费。
       url: "/audio_and_video/vod/Bp/10_new_billing"  
   
     - title: 快速入门
-      content: 本节介绍如何快速使用音视频 RTC。
+      content: 本节介绍如何快速使用云点播。
       url: "/audio_and_video/vod/qs/10_qs_vod"
 
     - title: 操作指南
-      content: 本节介绍实时音视频 RTC 的详细功能及使用。
+      content: 本节介绍云点播的详细功能及使用。
       url: "/audio_and_video/vod/um/10_purchase"
     
     - title: 常见问题
-      content: 本节解答您在使用实时音视频 RTC 时遇到的常见问题。
+      content: 本节解答您在使用云点播时遇到的常见问题。
       url: "/audio_and_video/vod/faq/10_faq_vod"
 
 section3:
@@ -56,7 +56,7 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品简介
-          url: "intro/10_rtc"
+          url: "intro/10_vod"
 
         - title: 产品功能
           url: "intro/20_functions"
