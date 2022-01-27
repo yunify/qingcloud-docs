@@ -28,11 +28,11 @@ Section2:
 
     - title: 操作指南
       content: 学习上手管理和使用 Redis Standalone 集群
-      url: "manual/cluster_info/"
+      url: "manual/cluster_lifecycle/check_cluster/"
 
     - title: 最佳实践
       content: Redis Standalone 的最佳实践
-      url: "best-practices/data_transfer/"
+      url: "best-practices/disaster_recovery/"
 
 section3:
   title: 开发者指南
@@ -66,10 +66,7 @@ section4:
           url: "quickstart/create_cluster/"
 
         - title: Redis Standalone 集群信息
-          url: "manual/cluster_info/"
-
-        - title: Redis Standalone 服务功能
-          url: "manual/service/"
+          url: "manual/cluster_lifecycle/check_cluster/"
 ---
 
 
