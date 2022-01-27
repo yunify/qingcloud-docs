@@ -3,7 +3,7 @@ title: "连接云服务器"
 description: 本章节介绍如何连接云服务器
 draft: false
 keyword: 云计算, 青云, QingCloud, 云服务器，连接云服务器
-weight: 40
+weight: 20
 ---
 
 

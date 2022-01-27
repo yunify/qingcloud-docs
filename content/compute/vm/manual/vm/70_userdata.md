@@ -1,8 +1,9 @@
 ---
 title: "自定义数据"
 description: 自定义数据介绍
-draft: false
 keyword: 云计算, 青云, QingCloud, 云服务器，自定义数据
+draft: false
+weight: 60
 ---
 
 # User Data 指南
@@ -93,25 +94,25 @@ User Data 为用户自定义的任何格式、任何内容的配置文本或脚�
 
 想要创建有 User Data 功能的云服务器，首先和创建普通云服务器一样点击“新建”按钮，并选择镜像和云服务器配置。若第二步“选择类型”中选择了挂载硬盘，则硬盘 ID 会反映在 MetaData 的字段中。
 
-<img src="../_images/userdata01.png" style="zoom:25%;" />
+<img src="../../_images/userdata01.png" style="zoom:25%;" />
 
 若想使用 User Data 功能，需在新建云服务器的第四步“基本设置”中选择“显示高级选项”。
 
-<img src="../_images/userdata02.png" style="zoom:25%;" />
+<img src="../../_images/userdata02.png" style="zoom:25%;" />
 
 在随后显示的 User Data 设置中，若选择“无”，则不使用 User Data 功能。若选择“文本”，则可以手动输入文本或从一个文本文件中读取。
 
-<img src="../_images/userdata03.png" style="zoom:30%;" />
+<img src="../../_images/userdata03.png" style="zoom:30%;" />
 
 默认的，metadata 和 userdata.string 文件都会放在 /etc/qingcloud/userdata 目录下。用户可以通过输入自定义路径更改其位置。只需在输入文本或上传压缩包时同时指定路径即可。 若路径不合法，则依然使用默认路径。
 
 若选择“执行文件”，则需填入脚本代码。
 
-<img src="../_images/userdata04.png" style="zoom:50%;" />
+<img src="../../_images/userdata04.png" style="zoom:50%;" />
 
 若选择“压缩包”，则需上传一个压缩包。
 
-<img src="../_images/userdata05.png" style="zoom:40%;" />
+<img src="../../_images/userdata05.png" style="zoom:40%;" />
 
 最后点击“创建”，就可以创建带有 MetaData 和 User Data 的云服务器。
 
