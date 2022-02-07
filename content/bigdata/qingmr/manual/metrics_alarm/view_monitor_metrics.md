@@ -1,5 +1,5 @@
 ---
-title: "查看资源和服务监控"
+title: "查看资源和服务原生监控"
 description: 本小节主要介绍如何查看 QingMR 监控信息。 
 keyword: QingMR 监控告警
 weight: 40
