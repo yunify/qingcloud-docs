@@ -15,7 +15,7 @@ draft: false
 
 ## 使用范围
 
-elasicsearch upsert、append 写数据。
+Elasticsearch upsert、append 写数据。
 
 ## DDL 定义
 

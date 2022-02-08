@@ -85,7 +85,7 @@ CREATE TEMPORARY TABLE mysql_sink(
     name VARCHAR,
     age INT
 ) WITH (
-    'connector' = 'mysql'
+    'connector' = 'jdbc'
     'url' = 'jdbc://mysql://localhost:3306/mydb',
     'table-name' = 'students',
     'username' = 'root',

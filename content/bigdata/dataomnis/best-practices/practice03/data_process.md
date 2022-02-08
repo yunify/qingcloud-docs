@@ -33,7 +33,7 @@ flink-demo.jar 路径为：/product-demo/src/main/resources/flink-demo.jar。
 
 ### 上传程序包
 
-1. 在目标工作空间点击**数据开发** > **资源管理**，进入资源管理页面。
+1. 在目标工作空间选择**数据开发** > **资源管理**，进入资源管理页面。
 2. 点击**上传程序包**，进入上传程序包页面。
    
    <img src="/bigdata/dataomnis/_images/upload_procedure.png" alt="上传程序包" style="zoom:50%;" />

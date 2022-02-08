@@ -13,14 +13,12 @@ draft: false
 
 | 数据源名称           | 作为流数据源              | 作为数据目的                                       |
 | :------------- | ------------------------------ | ------------------------------ |
-| PostgreSQL       | 支持 | 支持 |
-| FTP       | 支持 | 支持 |
-| HDFS       | 支持 | 支持 |
-|  |  |  |
+| Kafka | 支持 | 支持 |
+| Upsert Kafka | 支持 | 支持 |
+| MySQL | - | 支持 |
+| MySQL CDC | 支持 | - |
+| PostgreSQL | - | 支持 |
+| HBase | - | 支持 |
 | ClickHouse | 支持 | 支持 |
 | Elasticsearch | - | 支持 |
-| MySQL CDC | 支持 | - |
-| Upsert Kafka | 支持 | 支持 |
-| HBase | - | 支持 |
-| MySQL | - | 支持 |
-| Kafka | 支持 | 支持 |
+
