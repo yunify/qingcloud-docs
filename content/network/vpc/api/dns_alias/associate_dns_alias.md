@@ -1,16 +1,16 @@
 ---
 title: "AssociateDNSAlias"
-description: 
+description: 绑定内网域名别名到资源
+keyword: QingCloud, 青云, 云计算, API, 内网域名别名
+weight: 10
 draft: false
 ---
 
+绑定内网域名别名到资源，资源可以是处于基础网络的云服务器或路由器。
 
-
-绑定内网域名别名到资源，资源可以是处于基础网络的云服务器，以及路由器。
-
-警告
-
-一个内网域名只能绑定到一台资源上，同一个资源可绑多个不同的域名
+> **说明**
+>
+> 一个内网域名只能绑定到一台资源上，同一个资源可绑多个不同的域名。
 
 **Request Parameters**
 
@@ -21,7 +21,7 @@ draft: false
 | dns_alias_name | String | 域名别名名称 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

@@ -1,12 +1,14 @@
 ---
 title: "GetDNSLabel"
-description: 
+description: 获取内网域名标记和域名名称。
+keyword: QingCloud, 青云, 云计算, API, 内网域名别名
+weight: 1
 draft: false
 ---
 
+获取内网域名标记 (Label) 和域名名称 (Domain Name)。
 
-
-获取内网域名标记(label) 和域名名称(domain name)。当给资源绑定内网域名时，此标记会与 prefix 一起组成内网域名，即： 内网域名 ＝ prefix + domain name
+当给资源绑定内网域名时，此标记会与 prefix 一起组成内网域名，即： 内网域名 ＝ prefix + domain name。
 
 **Request Parameters**
 
@@ -14,7 +16,7 @@ draft: false
 | --- | --- | --- | --- |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

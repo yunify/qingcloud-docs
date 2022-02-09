@@ -3,7 +3,7 @@ title: "VPN 服务"
 keyword: QingCloud, 青云, 云计算, VPC, VPN, OpenVPN, PPTP, L2TP
 description: VPN 使用指导
 draft: false
-weight: 35
+weight: 40
 ---
 
 目前青云支持 OpenVPN / PPTP / L2TP-IPsec 协议。
