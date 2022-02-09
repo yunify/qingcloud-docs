@@ -53,14 +53,5 @@ product:
 ---
 
 <!-- 设置上述参数可生成产品动态页  
-    - time: 2022-02-20
-      title: ClickHouse 1.1.8 版本正式上线
-      content: ClickHouse 1.1.8 新上线。<br>- 默认开启 Prometheus 监控配置，提供基于 `system.asynchronous_metrics`、`system.metrics`、`system.events` 表的 ClickHouse 监控服务。<br>- 集群添加节点，新支持分片权重自动均衡。<br>- 新开放 `max_partitions_per_insert_block` 参数，支持修改最大分区数。
-      url: ../../intro/version/
-      tags:
-      - 新功能
-      - 体验优化
-      zone: 全区域
-
 
 -->
