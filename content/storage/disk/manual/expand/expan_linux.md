@@ -10,7 +10,7 @@ keyword:  云计算, 青云, QingCloud, 云硬盘, linux, 扩容,数据盘
 
 ## 前提条件
 
-在对数据盘进行扩容之前，请先确认硬盘内容已进行备份，以防止数据丢失。备份操作详见[备份硬盘](/storage/disk/manual/create_snapshot)
+在对数据盘进行扩容之前，请先确认硬盘内容是否已进行备份，以防止数据丢失。备份操作详见[备份硬盘](/storage/disk/manual/create_snapshot)
 
 ## 扩容步骤
 
@@ -95,54 +95,56 @@ Linux 系统下的数据盘扩容主要包括两部分：
    > 
    > /mnt/data1：为磁盘挂载的系统目录，需根据实际情况进行修改。
 
-3. 执行如下命令后，键入 `p`，按 `Enter` 键，查看磁盘分区的信息。
-    ```
+3. 执行如下命令，进入 parted 分区工具。
+   ```
    # parted /dev/vdd
+   GNU Parted 3.3
+   Using /dev/vdd
+   Welcome to GNU Parted! Type 'help' to view a list of commands.
+   (parted)
    ```
    > **说明：**  
    > /dev/vdd：为待扩容磁盘的盘符，需根据实际情况进行修改。  
+4. 键入 `p`，按 `Enter` 键，查看磁盘分区的信息。
 
    ![expan_linux_8](/storage/disk/_images/expan_linux_8.png)
 
-4. 输入 `unit s` ，按 `Enter` 键，设置磁盘的计量单位为磁柱。
+5. 输入 `unit s` ，按 `Enter` 键，设置磁盘的计量单位为磁柱。
 
 
-5. 输入 `p`，按 `Enter` 键，查看并记录分区的 Start 值。
+6. 输入 `p`，按 `Enter` 键，查看并记录分区的 Start 值。
    ![expan_linux_9](/storage/disk/_images/expan_linux_9.png)
 
-6. 执行如下命令，删除原有分区。
+7. 执行如下命令，删除原有分区。
    ```
    # rm 1
    ```
    > **说明：**  
-   > 命令中指定的 1 ，其为步骤 5 返回结果中 Number 参数所对应的值。 
+   > 命令中指定的 1 ，其为步骤 6 返回结果中 Number 参数所对应的值。 
 
    ![expan_linux_10](/storage/disk/_images/expan_linux_10.png)
 
-7. 执行如下命令，新建一个主分区，其中起始磁柱值（ Start 值）与原来保持一致，截止磁柱值为 100%。
+8. 执行如下命令，新建一个主分区，其中起始磁柱值（ Start 值）与原来保持一致，截止磁柱值为 100%。
    ```
    # mkpart primary 2048s 100%
    ```
    
    > **注意：**  
-   > primary：为磁盘分区名称，需根据实际情况进行修改。
    >
-   > 2048s：为起始磁柱值（ Start 值），此处必须与步骤5返回结果保持不变，否则将会引起数据丢失。
+   > 2048s：为起始磁柱值（ Start 值），此处必须与步骤 6 返回结果保持一致，否则将会引起数据丢失。
+   >
+   > 100%：为磁盘截止磁柱值。
    
    如果出现如下图所示的状态，请输入 `Ignore`。
 
    ![expan_linux_11](/storage/disk/_images/expan_linux_11.png)
 
-8. 输入 `p` 查看现有分区信息。
+9. 输入 `p` 查看现有分区信息。
 
    ![expan_linux_12](/storage/disk/_images/expan_linux_12.png)
 
-9. 输入 `q` 退出 parted 分区工具。
+10. 输入 `q` 退出 parted 分区工具。
 
-10. 执行如下命令将分区表同步至文件系统。
-    ```
-    # partprobe 
-    ```
 11. 执行以下命令，检查文件系统状态。
     ```
     # e2fsck -f /dev/vdd1
@@ -224,56 +226,57 @@ Linux 系统下的数据盘扩容主要包括两部分：
    >
    > /mnt/data2：为磁盘挂载的系统目录，需根据实际情况进行修改。
 
-3. 执行如下命令后，键入 `p`，按 `Enter` 键，查看磁盘分区的信息。
+3. 执行如下命令，进入 parted 分区工具。
    ```
    # parted /dev/vde
+   GNU Parted 3.3
+   Using /dev/vde
+   Welcome to GNU Parted! Type 'help' to view a list of commands.
+   (parted)
    ```
    > **说明：**  
    > /dev/vde：为待扩容磁盘的盘符，需根据实际情况进行修改。
 
+4. 键入 `p`，按 `Enter` 键，查看磁盘分区的信息。
+
     ![expan_linux_21](/storage/disk/_images/expan_linux_21.png)
 
-4. 输入 `unit s`，按 `Enter`，设置磁盘的计量单位为磁柱。
+5. 输入 `unit s`，按 `Enter`，设置磁盘的计量单位为磁柱。
 
-5. 输入 `p`，按 `Enter` 键，查看并记录分区的 Start 值。
+6. 输入 `p`，按 `Enter` 键，查看并记录分区的 Start 值。
 
    ![expan_linux_22](/storage/disk/_images/expan_linux_22.png)
 
-6. 执行如下命令，删除原有分区。
+7. 执行如下命令，删除原有分区。
    ```
    # rm 1
    ```
    > **说明：**  
-   > 命令中指定的 1 ，其为步骤 5 返回结果中 Number 参数所对应的值。 
+   > 命令中指定的 1 ，其为步骤 6 返回结果中 Number 参数所对应的值。 
 
    ![expan_linux_23](/storage/disk/_images/expan_linux_23.png)
 
-7. 执行如下命令，新建一个主分区，其中起始磁柱值（ Start 值）与原来保持一致，截止磁柱值为 100%。
+8. 执行如下命令，新建一个主分区，其中起始磁柱值（ Start 值）与原来保持一致，截止磁柱值为 100%。
    ```
    # mkpart primary 2048s 100%
    ```
    
    > **注意：**  
-   > primary：为磁盘分区名称，需根据实际情况进行修改。
    >
-   > 2048s：为起始磁柱值（ Start 值），此处必须与步骤5返回结果保持不变，否则将会引起数据丢失。
+   > 2048s：为起始磁柱值（ Start 值），此处必须与步骤 6 返回结果保持一致，否则将会引起数据丢失。
+   >
+   > 100%：为磁盘截止磁柱值。
 
    如果出现如下图所示的状态，请输入 `Ignore`。
 
    ![expan_linux_24](/storage/disk/_images/expan_linux_24.png)
 
-8. 输入 `p` 查看现有分区信息。
+9. 输入 `p` 查看现有分区信息。
 
    ![expan_linux_25](/storage/disk/_images/expan_linux_25.png)
 
-9. 输入 `q` 退出 parted 分区工具。
-
-10. 执行如下命令将分区表同步至文件系统。
-    
-    ```
-    # partprobe 
-    ```
-
+10. 输入 `q` 退出 parted 分区工具。
+ 
 11. 执行以下命令，检查磁盘的文件系统，若输出结果为 0 ，则表示正常。
     ```
     # xfs_ncheck /dev/vde; echo $?
