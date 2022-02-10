@@ -62,12 +62,12 @@ $ cd /opt/kafka/current/bin
 
 ```shell
 cd /opt/kafka/current/bin
-./kafka-console-consumer.sh --broker-list {连接地址} --topic {Topic 名称} --from-beginning
+./kafka-console-consumer.sh --bootstrap-server {连接地址} --topic {Topic 名称} --from-beginning
 ```
 
 - 连接地址：与发送消息的连接地址相同。
 - Topic 名称：与发送消息的 Topic 名称相同。
-- from-beginning 表示按顺序开始消费，若没有使用 –from-beginning ， 则从最新的开始消费。
+- from-beginning 表示按顺序开始消费，若没有使用 –from-beginning，则从最新的开始消费。
 
 **示例**       
 ```shell
