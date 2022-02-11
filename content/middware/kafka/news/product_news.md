@@ -7,7 +7,7 @@ product:
 
     - time: 2022-01-19
   
-      title: Kafka 1.1.1 - QingCloud 1.6.0 版本正式上线
+      title: Kafka 1.1.1 - v1.6.0 版本正式上线
       content: 为了提升产品性能，增强用户体验，该版本做了如下改动： <br>- 修改健康检查逻辑，解决健康监测引起的性能占用问题。<br>- 提升了高负载场景下 Kafka 的稳定性。<br>- 最大文件打开数 Max Open Files 增加到 500000。<br>- 优化 replica 同步相关参数。    
       url: /middware/kafka/manual/config_para/config_para_info/ 
       tags:
@@ -17,7 +17,7 @@ product:
 
     - time: 2021-11-23
   
-      title: Kafka 2.3.1 - QingCloud 2.0.2 版本正式上线
+      title: Kafka 2.3.1 - v2.0.2 版本正式上线
       content: 为了提升产品性能，增强用户体验，该版本做了如下改动： <br>- 支持 e3 类型计算实例。<br>- 优化 Kafka 健康检查逻辑。<br>- 提升了高负载场景下 Kafka 的稳定性。<br>- 支持在线查看 Kafka Manager 日志。    
       url: /middware/kafka/manual/view_log/  
       tags:
