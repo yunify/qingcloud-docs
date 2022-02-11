@@ -8,6 +8,5 @@
   "zone":{{- .zone | jsonify -}},
   "qingCloudZhiUrl":{{- .qingCloudZhiUrl | jsonify -}},
   "videoUrl":{{- .videoUrl | jsonify -}},
-  "category":["{{- $Page.FirstSection.Title -}}", 
-  "{{- $Page.Parent.Parent.CurrentSection.Title -}}"]}, 
+  "category":["{{- $Page.FirstSection.Title -}}","{{- $Page.Parent.Parent.CurrentSection.Title -}}"]}, 
 {{ end }} {{ end }}{{ end }}]
