@@ -24,8 +24,8 @@ draft: false
 
     > **说明**
     > 
-    >  - Kafka 2.3.1 -QingCloud 2.0.1（包含）之前版本：客户端节点用户名为`ubuntu`，初始密码为`kafka`。
-    >  - Kafka 2.3.1 -QingCloud 2.0.1 之后版本：客户端节点用户名为`client`，初始密码为`client`。
+    >  - Kafka 2.3.1 - v2.0.1（包含）之前版本：客户端节点用户名为`ubuntu`，初始密码为`kafka`。
+    >  - Kafka 2.3.1 - v2.0.1 之后版本：客户端节点用户名为`client`，初始密码为`client`。
    
    <img src="../../_images/login_client.png" alt="登录 Client 节点" style="zoom:50%;" />
 

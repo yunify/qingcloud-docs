@@ -86,8 +86,8 @@ CPU、内存、节点数量、节点类型和存储容量根据自己实际需�
 
 > **说明**
 > 
-> + Kafka 2.3.1 -QingCloud 2.0.1（包含）之前版本：客户端节点用户名为 ubuntu，初始密码为 kafka。
-> + Kafka 2.3.1 -QingCloud 2.0.1之后版本：客户端节点用户名为 client，初始密码为 client。
+> - Kafka 2.3.1 - v2.0.1（包含）之前版本：客户端节点用户名为 `ubuntu`，初始密码为 `kafka`。
+> - Kafka 2.3.1 - v2.0.1 之后版本：客户端节点用户名为 `client`，初始密码为 `client`。
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
