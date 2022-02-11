@@ -13,7 +13,8 @@ draft: false
 在客户端节点执行以下命令，向 Topic 发送消息。
 
 ```shell
-kafka-console-producer.sh --broker-list {连接地址} --topic {Topic 名称}
+$ cd /opt/kafka/current/bin
+./kafka-console-producer.sh --broker-list {连接地址} --topic {Topic 名称}
 ```
 
 - 连接地址：所连接的 Kafka 集群的地址，格式为 host_ip1:port,host_ip2:port,host_ip3:port。    
@@ -27,7 +28,8 @@ kafka-console-producer.sh --broker-list {连接地址} --topic {Topic 名称}
 **示例**   
 
 ```shell
-$ kafka-console-producer.sh --broker-list 192.168.0.1:9092,192.168.0.2:9092,192.168.0.3:9092 --topic test
+$ cd /opt/kafka/current/bin
+./kafka-console-producer.sh --broker-list 192.168.0.1:9092,192.168.0.2:9092,192.168.0.3:9092 --topic test
 >hi
 >hello world
 >how are you
@@ -38,7 +40,8 @@ $ kafka-console-producer.sh --broker-list 192.168.0.1:9092,192.168.0.2:9092,192.
 在客户端执行以下命令，消费 Topic 消息。   
 
 ```shell
-kafka-console-consumer.sh --broker-list {连接地址} --topic {Topic 名称} --from-beginning
+cd /opt/kafka/current/bin
+./kafka-console-consumer.sh --broker-list {连接地址} --topic {Topic 名称} --from-beginning
 ```
 
 - 连接地址：与发送消息的连接地址相同。
@@ -47,7 +50,8 @@ kafka-console-consumer.sh --broker-list {连接地址} --topic {Topic 名称} --
 
 **示例**       
 ```shell
-$ kafka-console-consumer.sh --bootstrap-server 192.168.0.1:9092,192.168.0.2:9092,192.168.0.3:9092 --topic test --from-beginning
+$ cd /opt/kafka/current/bin
+./kafka-console-consumer.sh --bootstrap-server 192.168.0.1:9092,192.168.0.2:9092,192.168.0.3:9092 --topic test --from-beginning
 hi
 hello world
 how are you
@@ -58,7 +62,8 @@ how are you
 查看 test 消息分布情况
 
 ```shell
-$ kafka-topics.sh --describe --zookeeper 192.168.0.6:2181,192.168.0.8:2181,192.168.0.7:2181/kafka/cl-zom1un35 --topic test
+$ cd /opt/kafka/current/bin
+./kafka-topics.sh --describe --zookeeper 192.168.0.6:2181,192.168.0.8:2181,192.168.0.7:2181/kafka/cl-zom1un35 --topic test
 Topic:test	  PartitionCount:3	  ReplicationFactor:1	  Configs:
 Topic: test	Partition: 0	Leader: -1	Replicas: 1	Isr: 1
 Topic: test	Partition: 1	Leader: -1	Replicas: 2	Isr: 2
@@ -70,7 +75,8 @@ Topic: test	Partition: 2	Leader: 3	Replicas: 3	Isr: 3
 检查 topic 消费者消费情况
 
 ```shell
-$ kafka-consumer-groups.sh --bootstrap-server 192.168.0.3:9092,192.168.0.4:9092,192.168.0.9:9092 --describe --group my-group
+$ cd /opt/kafka/current/bin
+./kafka-consumer-groups.sh --bootstrap-server 192.168.0.3:9092,192.168.0.4:9092,192.168.0.9:9092 --describe --group my-group
 Note: This will not show information about old Zookeeper-based consumers.
 
 TOPIC                          PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG        CONSUMER-ID                                       HOST                           CLIENT-ID
@@ -79,8 +85,10 @@ test                          1          7               7               0      
 ```
 
 >**提示**
-> kafka 0.9.0.0 以前的版本使用 kafka-consumer-offset-checker.sh 查看消费者消费情况
+> 
+> kafka 0.9.0.0 以前的版本使用 kafka-consumer-offset-checker.sh 查看消费者消费情况。
 >
 >```shell
->$ kafka-consumer-offset-checker.sh  --zookeeper 192.168.0.6:2181,192.168.0.8:2181,192.168.0.7:2181/kafka/cl-zom1un35 --topic test --group my-group
+>$ cd /opt/kafka/current/bin
+>./kafka-consumer-offset-checker.sh  --zookeeper 192.168.0.6:2181,192.168.0.8:2181,192.168.0.7:2181/kafka/cl-zom1un35 --topic test --group my-group
 >```

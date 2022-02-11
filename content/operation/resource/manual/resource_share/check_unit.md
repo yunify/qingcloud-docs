@@ -3,6 +3,7 @@ title: "查看共享给我的资源"
 description: test
 weight: 15
 draft: false
+keyword: 查看共享给我的资源, QingCloud, 青云, 云计算
 ---
 
 资源使用者查看自己参与的资源共享详情。

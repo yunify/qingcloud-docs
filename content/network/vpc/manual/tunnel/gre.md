@@ -1,7 +1,7 @@
 ---
 title: "GRE 隧道"
 description: 介绍 GRE 隧道的使用操作。
-keyword: 青云, QingCloud, VPC, VPC 网络, GRE 隧道
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, GRE 隧道
 draft: false
 weight: 1
 ---

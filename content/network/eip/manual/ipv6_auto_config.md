@@ -1,7 +1,7 @@
 ---
 title: "开启云服务器 IPv6 自动化配置"
 description: 介绍如何开启云服务器 IPv6 自动化配置。
-keyword: QingCLoud, 青云, 公网IP, IPv6
+keyword: QingCloud, 青云, 云计算, 公网IP, IPv6
 weight: 40
 draft: false
 ---

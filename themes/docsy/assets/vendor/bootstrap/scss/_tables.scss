@@ -2,7 +2,7 @@
 // Basic Bootstrap table
 //
 
-.table, ol li table {
+.table, ol li table, li table {
   margin-bottom: $spacer;
   width: 100%;
   // max-width: 65em; 
@@ -82,7 +82,7 @@
 //
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 
-.table-striped, ol li {
+.table-striped, ol li, li {
   tbody tr:nth-of-type(1) {
     // background-color: $table-accent-bg;
   }

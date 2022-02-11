@@ -11,19 +11,19 @@ draft: false
 
 | 版本 | Hadoop | Spark | Hive | Flink | Ranger |
 | :------ | :------ | :------ | :------ | :------ | :------ |
-| QingMR - Core 2.6.0 | 3.1.3 | 2.4.8 | 3.1.2 | 1.13.1 | 2.0.0 |
+| QingMR - Core 2.6.1 | 3.1.3 | 2.4.8 | 3.1.2 | 1.13.1 | 2.0.0 |
 | QingMR - Core 2.5.2 | 2.9.2 | 2.2.3 | 2.3.5 | 1.9.0 | - |
-| QingMR - Core 2.0.0 | 2.9.2 | 2.2.3 | 2.3.5 | - | - |
 | QingMR - Core 1.3.0 | 2.7.3 | 2.2.0 | 2.3.4 | - | - |
 | QingMR - Core 1.2.1 | 2.7.3 | 2.2.0 | 1.2.2 | - | - |
 
-> **说明**
->
-> Kyligence Enterprise 作为 Kylin 的企业版也是构建在 QingMR 之上。
+## v2.6.1
+
+- 修复 Apache Log4j2 漏洞。
+- 新增`节点服务状态`告警，当节点服务状态为异常时会告警。详细说明请参见[设置监控告警](../../manual//metrics_alarm/set_alarm_rules)。
 
 ## v2.6.0
 
-- 升级 Hadoop、Spark、Hive、Flink 至新版本，升级说明请参见 [版本升级](../../manual/upgrade)。
+- 升级 Hadoop、Spark、Hive、Flink 至新版本，升级说明请参见 [版本升级](../../manual/mgt_cluster/upgrade)。
 
 - 新增 Ranger 组件，支持 Ranger hive 插件，通过 Ranger 对 Hive 的权限控制，详细说明请参见 [Ranger 组件](../../developer_manual/ranger/ranger_info)。
 <!-- 

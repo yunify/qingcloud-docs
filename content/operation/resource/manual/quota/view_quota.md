@@ -3,7 +3,7 @@ title: "查看我的配额"
 description: test
 weight: 2
 draft: false
-keyword: 配额管理, QingCloud
+keyword: QingCloud, 查看我的配额, 青云, 云计算
 ---
 
 登 录 QingCloud 管理控制台后，在主页顶部的导航栏，点击**资源**，然后在下拉菜单中，选择**我的配额**，即可查看当前账户下的资源配额。您可以查看全局以及各分区的资源配额使用情况。

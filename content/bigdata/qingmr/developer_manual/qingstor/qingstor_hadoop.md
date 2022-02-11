@@ -7,11 +7,6 @@ collapsible: false
 draft: false
 ---
 
-
-
-
-
-
 ## 本地文件与对象存储之间的上传下载
 
 从 Client 主机本地上传文件到 QingStor 对象存储。

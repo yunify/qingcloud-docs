@@ -1,7 +1,7 @@
 ---
 title: "连接私有网络"
 description: 介绍如何给VPC 网络添加多个私有网络来划分子网。
-keyword: 青云, QingCloud, VPC, VPC 网络
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络
 draft: false
 weight: 15
 ---

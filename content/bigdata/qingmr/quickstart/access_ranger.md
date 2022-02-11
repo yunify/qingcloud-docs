@@ -13,7 +13,7 @@ QingMR 支持通过 HiveServer2 方式访问 Hive，并支持将 Hive 组件集�
 
 ## 前提条件
 
-- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 QingMR 集群，且集群状态为**活跃**。
 - 已打通集群网络，使集群云服务器能面向互联网提供服务。例如使用端口转发或 VPN 等方式打通网络，详细操作请参见[访问组件 Web 页面](../../manual/access_method)。
 
@@ -96,7 +96,7 @@ Hive 的 Hive Metastore 和 HiveServer2 服务已经在主节点配置完成（�
    
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
-|   Policy Name    |  自定义策略名词。  |
+|   Policy Name    |  自定义策略名称。  |
 |   database   |  添加 Hive 中数据库，例如 test。  |
 |   table    |  添加数据库中表，例如 test。  |
 |   Hive Column   |  添加列名。<br> `*` 表示表示所有列。  |
@@ -109,4 +109,3 @@ Hive 的 Hive Metastore 和 HiveServer2 服务已经在主节点配置完成（�
 4. 点击 **Add**，确认创建权限策略。
 
    添加、删除或修改 Policy 后，需要等待几十秒，策略授权才生效。
-

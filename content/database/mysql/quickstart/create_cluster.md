@@ -1,7 +1,7 @@
 ---
 title: "步骤一：创建集群"
 description: 本小节主要介绍如何快速创建 MySQL Plus 数据库。 
-keyword: mysql plus 实例创建,集群创建
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,实例创建,集群创建
 weight: 10
 collapsible: false
 draft: false
@@ -53,9 +53,9 @@ draft: false
 |   内核 |  选择集群 MySQL 内核版本，根据所选系列和版本不同，可选内核不同。已兼容版本包括 MySQL 5.6、5.7和8.0。| 
 |   计费方式 |  选择集群计费方式，可选择按**小时**或按**合约**计费。<li>合约有效期 ：选择按**合约**计费后，需选择合约可用周期。<li>（可选）自动续约 ：选择按**合约**计费后，在账户余额充足时，可选择周期自动续费，保障业务流畅。| 
 |   自动备份时间 |  `基础版`集群需手动选择自动备份，可选择在每天指定时间段创建备份，默认自动备份为`关闭`。| 
-|   部署方式 |  `高可用版`和`金融版`集群可选择`多可用区部署`和`单可用区部署`。`基础版`默认为`单可用区部署`。<li>多可用区部署 ：将节点分散部署在当前区域的不同可用区，可用性高。<li>单可用区部署 ：将节点部署在当前区域同一个可用区，网络延迟最低。可指定节点所在当前区域的可用区。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b>:只有选择部署在**区域**时，才可以选择部署方式。目前可选择区域有`上海1区`、`广州2区`、`北京3区`。</li></span> | 
+|   部署方式 |  `高可用版`和`金融版`集群可选择`多可用区部署`和`单可用区部署`。`基础版`默认为`单可用区部署`。<li>多可用区部署 ：将节点分散部署在当前区域的不同可用区，可用性高。<li>单可用区部署 ：将节点部署在当前区域同一个可用区，网络延迟最低。可指定节点所在当前区域的可用区。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b>:只有选择部署在**区域**时，才可以选择部署方式。目前仅`北京3区`支持配置`多可用区部署`。</li></span> | 
 
-![基本参数配置](../../_images/base_step_1.png)
+<img src="../../_images/base_step_1.png" alt="基本参数配置" style="zoom:50%;" />
 
 ### 主实例设置
 
@@ -68,7 +68,7 @@ draft: false
 |   磁盘类型  |  选择集群数据和日志存储磁盘类型。<li>`基础版` 磁盘类型默认为`基础型`。<li>`高可用版` 和`金融版` 磁盘类型可选择 `SSD 企业级`和`企业级分布式 SAN (NeonSAN)`。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b>:只有选择部署在**区域**时，才可以选择`企业级分布式 SAN (NeonSAN)`。目前可选择区域有`上海1区`、`广州2区`、`北京3区`。</li></span>    |
 |   磁盘大小 |  配置集群数据和日志存储磁盘大小。磁盘大小决定了数据库最大容量以及 IOPS 能力，请根据业务量，可滑动设置或输入数字配置集群磁盘大小。| 
 
-![主实例配置](../../_images/base_step_2.png)
+<img src="../../_images/base_step_2.png" alt="主实例配置" style="zoom:50%;" />
 
 ### 网络设置
 
@@ -76,7 +76,7 @@ draft: false
 
 |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
 |:----|:----|
-|   私有网络     |  选择私有网络。<li>默认适配同区域已有私有网络。可在下拉框选择已有私有网络。<li>若无可选网络，可点击**创建**，创建依赖网络资源。  |
+|   私有网络     |  选择私有网络。<li>默认适配同区域已有私有网络。可在下拉框选择已有私有网络。<li>若无可选网络，可点击**创建**，创建依赖网络资源。 <span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b>: **免费型**私有网络不支持用于集群网络环境。</li></span>    |
 |   节点 IP   |  配置节点 IP 地址。<li>默认为`自动分配`。<li> 选择`手动配置`需为各节点配置 IP。  |
 |   预留 IP      |   配置集群预留高可用 IP 地址。<li>默认为`自动分配`。<li>选择`手动配置`需为集群配置高可用写 IP。   |
 
@@ -84,16 +84,24 @@ draft: false
 > 
 > 配置的**私有网络部署方式**与***集群部署方式**必须一致，即选择的集群部署方式为`多可用区部署`，则该集群仅能选择`多可用区部署`的私有网络。
 
-![网络配置](../../_images/base_step_3.png)
+<img src="../../_images/base_step_3.png" alt="网络配置" style="zoom:50%;" />
 
 ### 服务环境参数设置
 
 数据库的环境参数配置。
 
-![参数配置](../../_images/base_step_4.png)
+- （必选）配置 **启动对象存储服务** 参数：可选择 `true` 或 `false`。设置为 `true` 需同时设置 **Bucket_name** 和 **Access_key_id** 参数。
+
+   > **注意**
+   >
+   > 支持**逻辑备份**的集群，必须启动对象存储服务，并配置桶和 API 密钥参数，才能使用集群备份功能。详细说明，请参见[设置存储策略](../../manual/backup_restoration/logical_backup_storage)。
+
+- 其他参数配置说明，可在创建集群后，在集群**配置参数**页面修改，详细说明请参见[配置参数管理](../../manual/config_para/modify_para)。
+
+<img src="../../_images/base_step_4.png" alt="参数配置" style="zoom:50%;" />
 
 ### 用户协议
 
 阅读**云平台 AppCenter 用户协议**，并勾选用户协议。
 
-![用户协议](../../_images/base_step_5.png)
+<img src="../../_images/base_step_5.png" alt="用户协议" style="zoom:50%;" />

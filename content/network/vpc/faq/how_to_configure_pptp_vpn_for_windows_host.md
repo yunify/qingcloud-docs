@@ -1,6 +1,6 @@
 ---
 title: "在 Windows 云服务器中配置 PPTP-VPN 客户端"
-keyword: 青云, QingCloud, VPC, VPC 网络, PPTP, VPN
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, PPTP, VPN
 description: 介绍如何在Windows云服务器中配置PPTP VPN客户端。
 draft: false
 weight: 1

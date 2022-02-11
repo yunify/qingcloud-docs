@@ -1,6 +1,6 @@
 ---
 title: "公网 DNS 转发如何使用"
-keyword: 青云, QingCloud, VPC, VPC 网络, DNS 转发
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, DNS 转发
 description: 介绍如何配置公网 DNS 转发。
 draft: false
 weight: 1

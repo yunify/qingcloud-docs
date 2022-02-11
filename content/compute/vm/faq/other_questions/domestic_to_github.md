@@ -6,7 +6,7 @@ weight: 10
 keyword: 云计算, 青云, QingCloud, 云服务器，GitHub
 ---
 
-由于Github的部署环境，国内访问GitHub 会异常缓慢，在clone仓库时经常会非常慢，甚至会出现GitHub 的web界面因为无法登陆。
+由于Github的部署环境，国内访问GitHub 会异常缓慢，在clone仓库时经常会非常慢，甚至会出现GitHub 的web界面因为无法登录。
 
 下面我们通过修改系统hosts文件的办法，直接访问GitHub的CDN节点，从而达到加速的目的。
 

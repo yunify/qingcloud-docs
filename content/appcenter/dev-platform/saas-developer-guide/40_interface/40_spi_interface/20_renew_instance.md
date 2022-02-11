@@ -30,27 +30,27 @@ weight: 20
 ### 示例说明
 
 ```
-参数：  
+// 参数：
 {
-  ``"period"``: ``"1_day"``,
-  ``"instance_id"``: ``"a0ec8245-d3f4-11eb-b8c6-acde48001122"``,
-  ``"signature"``: ``"/nKR9+6PqJKkdJAoqvEeYhhQm8u2KhdwKnJ8LOf0rSg="``,
-  ``"action"``: ``"RenewAppInstance"``,
-  ``"time_stamp"``: ``"2021-06-23T07:28:39Z"``,
-  ``"order_id"``: ``"appor-xxxxx",
-  ``"spec"``: ``"5aWX6aSQ5ZCN56ewMQ=="
+    "period": "1_day",
+    "instance_id": "a0ec8245-d3f4-11eb-b8c6-acde48001122",
+    "signature": "/nKR9+6PqJKkdJAoqvEeYhhQm8u2KhdwKnJ8LOf0rSg=",
+    "action": "RenewAppInstance",
+    "time_stamp": "2021-06-23T07:28:39Z",
+    "order_id": "appor-xxxxx",
+     "spec": "5aWX6aSQ5ZCN56ewMQ=="
 }
 ```
 
 ```
 GET请求： 
-http:``//127.0.0.1/test/spi?period=1_day&instance_id=a0ec8245-d3f4-11eb-b8c6-acde48001122&signature=%2FnKR9%2B6PqJKkdJAoqvEeYhhQm8u2KhdwKnJ8LOf0rSg%3D&action=RenewAppInstance&time_stamp=2021-06-23T07%3A28%3A39Z&spec=5aWX6aSQ5ZCN56ewMQ%3D%3D  
+http://127.0.0.1/test/spi?period=1_day&instance_id=a0ec8245-d3f4-11eb-b8c6-acde48001122&signature=%2FnKR9%2B6PqJKkdJAoqvEeYhhQm8u2KhdwKnJ8LOf0rSg%3D&action=RenewAppInstance&time_stamp=2021-06-23T07%3A28%3A39Z&spec=5aWX6aSQ5ZCN56ewMQ%3D%3D  
 ```
 
 ```
-响应：
+// 响应：
 {
- ``"success"``: ``true
+  "success": true
 }
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "在 Linux 客户端中配置 OpenVPN"
 description: 介绍如何在 Linux 云服务器部署 OpenVPN 客户端。
-keyword: 青云, QingCloud, VPC, VPC 网络, Linux, OpenVPN
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, Linux, OpenVPN
 draft: false
 weight: 20
 ---

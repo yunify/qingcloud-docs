@@ -1,7 +1,8 @@
 ---
 title: "如何查看日志"
 draft: false
-enableToc: false
+description: 如何查看 Harbor 镜像日志。
+keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库, 镜像仓库, 日志
 weight: 2
 ---
 

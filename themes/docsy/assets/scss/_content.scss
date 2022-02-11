@@ -5,7 +5,9 @@
 .td-content {
     order: 1;
 
-    p, li, td {
+    p,
+    li,
+    td {
         font-weight: normal;
         font-size: 14px;
         color: #324558;
@@ -26,10 +28,13 @@
     }
 
     > h2 + h3 {
-         margin-top: 1rem;
+        margin-top: 1rem;
     }
 
-    > h3, > h4, > h5, > h6 {
+    > h3,
+    > h4,
+    > h5,
+    > h6 {
         margin-bottom: 1rem;
         margin-top: 2rem;
     }
@@ -51,7 +56,7 @@
         margin-bottom: $spacer;
         color: $gray-600;
         border-radius: 4px;
-        background-color: #D8ECDE;
+        background-color: #d8ecde;
         border-left: 3px solid #00a971;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
@@ -60,16 +65,17 @@
             font-size: 14px;
             color: #939ea9;
             line-height: 1.71;
-            margin-bottom:0;
+            margin-bottom: 0;
         }
         // 补充有序列表中无序转变成有序样式的问题
-		> ul li {
-			list-style: initial;
-		}
+        > ul li {
+            list-style: initial;
+        }
     }
 
-    > ul li, > ol li {
-        margin-bottom: .25rem;
+    > ul li,
+    > ol li {
+        margin-bottom: 0.25rem;
         list-style: decimal;
         margin-left: 1em;
         > blockquote {
@@ -86,7 +92,7 @@
                 font-size: 14px;
                 color: #a1a6ab;
                 line-height: 1.71;
-                margin-bottom:0;
+                margin-bottom: 0;
             }
         }
     }
@@ -94,13 +100,38 @@
     > ul li {
         list-style: disc;
         margin-left: 1em;
-
     }
+
+
+    ul li ul li {
+        list-style: square;
+    }
+
+    li ol li {
+        list-style: lower-alpha;
+    }
+
+    ul li {
+        list-style: disc;
+        margin-left: 1em;
+    }
+
     strong {
         font-weight: $font-weight-bold;
     }
 
-    > pre, > .highlight, > .lead, > h1, > h2, > ul, > ol, > p, > blockquote, > dl dd, .footnotes, > .alert {
+    > pre,
+    > .highlight,
+    > .lead,
+    > h1,
+    > h2,
+    > ul,
+    > ol,
+    > p,
+    > blockquote,
+    > dl dd,
+    .footnotes,
+    > .alert {
         @extend .td-max-width-on-larger-screens;
     }
 
@@ -113,13 +144,13 @@
         margin-bottom: 1.5rem;
     }
 
-    details{
+    details {
         line-height: 2;
-        > p{
+        > p {
             margin-left: 23px;
             line-height: 1.8;
         }
-        > summary > p{
+        > summary > p {
             display: contents;
         }
     }
@@ -127,7 +158,7 @@
 
 .td-title {
     margin-top: 1rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 
     @include media-breakpoint-up(sm) {
         font-size: 3rem;

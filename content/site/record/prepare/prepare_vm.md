@@ -2,6 +2,7 @@
 title: "准备备案云服务器"
 description: test
 weight: 6
+keyword: 准备备案云服务器, QingCloud, 青云, 备案
 ---
 
 

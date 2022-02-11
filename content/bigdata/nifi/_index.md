@@ -4,6 +4,7 @@ linkTitle: "Nifi"
 weight: 30
 collapsible: true
 type: "product"
+draft: true
 
 section1:
   title: Nifi
