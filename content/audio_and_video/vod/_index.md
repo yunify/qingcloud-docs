@@ -6,7 +6,7 @@ collapsible: true
 type: "product"
 
 section1:
-  title: 实时音视频 RTC
+  title: 云点播
   vice_title: 云点播产品提供一站式点播场景服务，通过视频上传、批量转码、播放加速、通用播放器SDK等功能为客户提供高品质的产品体验。
 
 section2:
@@ -22,7 +22,7 @@ section2:
 
     - title: 计费指南
       content: 本节介绍云点播如何计费。
-      url: "/audio_and_video/vod/Bp/10_new_billing"  
+      url: "/audio_and_video/vod/nb/10_new_billing"  
   
     - title: 快速入门
       content: 本节介绍如何快速使用云点播。
@@ -64,7 +64,7 @@ section4:
         - title: 行业解决方案
           url: "intro/40_solutions"
 
-    - title: 上手：创建应用
+    - title: 上手：添加域名
       content: 应用管理用于获取项目的 App ID、App证书和临时 Token 以及配置应用的其他参数，以便开启 RTC 服务。
       vice_title: 上手的第一步
       children:
