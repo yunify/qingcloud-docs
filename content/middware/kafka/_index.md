@@ -14,7 +14,7 @@ Section2:
   children:
     - title: 产品动态
       content: 产品动态
-      url: "news/prodoct_news/"
+      url: "news/product_news/"
 
     - title: 产品简介
       content: 产品简介
