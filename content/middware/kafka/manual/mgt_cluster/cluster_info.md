@@ -19,7 +19,7 @@ draft: false
    
    可查看当前区域集群列表，以及集群基本信息。
 
-    ![](../../../_images/cluster_list.png)
+    ![](../../../_images/kafka_cluster_list.png)
 
 3. 选择目标集群，点击**集群 ID**，进入集群详情页面。
    

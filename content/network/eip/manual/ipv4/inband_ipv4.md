@@ -12,7 +12,7 @@ draft: false
 
 需要先申请一个内部绑定的公网 IP 并分配给云服务器，然后手动配置网卡 IP 地址及相关路由，以实现云服务器的公网访问。
 
->**说明**：
+>**说明**
 >
 >目前内部绑定仅支持网络 2.0 区域（北京 3 区、上海 1 区和广东 2 区、亚太2区 -A 、雅加达区），并且只允许绑定到云服务器，不允许绑定到路由器与负载均衡器。
 
@@ -38,7 +38,7 @@ draft: false
    - 备案： ICP 备案。若您打算做公开的网站，在中国大陆需要备案。
    - 数量：输入所需要的 IP 个数。
 
-   > **说明**：
+   > **说明**
    >
    > 带宽上限是指云服务器互联网访问的带宽，云服务器与云服务器之间的内网带宽与云服务器规格有关，云服务器规格越高，内网带宽越高，详情请参阅 [云服务器](/compute/vm/intro/instance/)。
    >
@@ -52,7 +52,7 @@ draft: false
 
 2. 点击**提交**即可将申请到的公网 IP 绑定给相应云服务器。
 
-   > **说明**：
+   > **说明**
    >
    > 内部绑定的公网 IP 目前只允许绑定到主网卡，并且不能与其他绑定到主网卡的公网 IP 同时存在。
 
@@ -62,55 +62,98 @@ draft: false
 
 ![绑定公网IP至网卡](../../../_images/inbind_eip_nic.png)
 
-在以内部绑定方式绑定公网 IP 后，还需要手动为云服务器内的公网网卡进行网络配置，主要包括 IP 地址配置及路由配置。这里仅以 Ubuntu 为例来进行说明，其他系统的配置原理与此类似。
+在以内部绑定方式绑定公网 IP 后，还需要手动为云服务器内的公网网卡进行网络配置，主要包括 IP 地址配置及路由配置。
 
 #### 网络地址配置
 
-假设刚才绑定的公网 IP 地址为 202.120.111.159 ，在配置文件 /etc/network/interfaces 中添加如下配置来将公网 IP 地址分配到 eth1 ：
+假设刚才绑定的公网 IP 地址为 139.198.190.188。
 
-```
-auto eth1
-iface eth1 inet static
-  address 202.120.111.159
-  netmask 255.255.255.0
-```
+- **Ubuntu 系统**
 
-将配置文件保存之后，使用如下命令将配置应用到网卡 eth1 ：
+  1. 在配置文件 /etc/network/interfaces 中添加如下配置来将公网 IP 地址分配到 eth1。
 
-```
-#sudo ifup eth1
-```
+     ```
+     auto eth1
+     iface eth1 inet static
+       address 139.198.190.188
+       netmask 255.255.255.0
+     ```
 
->**说明**：
->
->如果云服务器中运行了NetworkManager服务，需要在进行上述配置后重启NetworkManager服务，以避免 eth1 的网络配置被擦除。
+  2. 将配置文件保存之后，使用如下命令将配置应用到网卡 eth1 。
+
+     ```
+     sudo ifup eth1
+     ```
+
+     >**说明**
+     >
+     >如果云服务器中运行了 NetworkManager 服务，需要在进行上述配置后重启 NetworkManager 服务，以避免 eth1 的网络配置被擦除。
+
+- **CentOS 系统**
+
+  1. 在配置文件 /etc/sysconfig/network-scripts/ifcfg-eth1 中添加如下配置来将公网 IP 地址分配到 eth1。
+
+     ```
+     DEVICE=eth1
+     BOOTPROTO=static
+     ONBOOT=yes
+     IPADDR=139.198.190.188
+     NETMASK=255.255.255.0
+     GATEWAY=139.198.190.1
+     DNS1=8.8.8.8
+     DNS2=114.114.114.114
+     ```
+
+  2. 将配置文件保存之后，使用如下命令将配置应用到网卡 eth1。
+
+     ```
+     ifdown eth1
+     ifup eth1
+     ```
 
 #### 路由配置
 
-为了让 eth1 可以正常访问公网，还需要进行路由配置。同样在配置文件 /etc/network/interfaces 中添加路由信息，使用 eth1 的网关做为默认路由，网关地址通常为该网段的第一个 IP 地址，添加路由信息后的完整配置如下：
+为了让 eth1 可以正常访问公网，还需要进行路由配置，使用 eth1 的网关做为默认路由，网关地址通常为该网段的第一个 IP 地址。
 
-```
-auto eth1
-iface eth1 inet static
-  address 202.120.111.159
-  netmask 255.255.255.0
-  post-up ip route replace default via 202.120.111.1 dev eth1
-```
+- **Ubuntu 系统**
 
-此时在云服务器中可以访问公网，但是对私有网络及基础网络的访问会出现问题，因此还需要在 eth0 上配置到私有网络及基础网络的路由。
+  1. 在配置文件 /etc/network/interfaces 中添加如下配置进行默认路由配置。
 
-系统中的基础网络地址为 10.0.0.0/8 ，并且假设用户创建的 VPC 网络地址为 192.168.0.0/16 。在配置文件中添加如下配置，将对这些网络的访问的下一跳设置成 eth0 所在网络的网关（默认 IP 地址为 192.168.0.1 ）：
+     ```
+     auto eth1
+     iface eth1 inet static
+       address 202.120.111.159
+       netmask 255.255.255.0
+       post-up ip route replace default via 202.120.111.1 dev eth1
+     ```
 
-```
-auto eth0
-iface eth0 inet dhcp
-  post-up ip route replace 192.168.0.0/16 via 192.168.0.1 dev eth0
-  post-up ip route replace 10.0.0.0/8 via 192.168.0.1 dev eth0
-```
+  2. 执行如上路由配置后，云服务器即可访问公网。但对私有网络及基础网络的访问会出现问题，因此还需要在 eth0 上配置到私有网络及基础网络的路由。将云服务器对基础网络和私有网络的访问的下一跳设置成 eth0 所在网络的网关（默认 IP 地址为 192.168.0.1 ）。
 
->**说明**：
->
->如需在 Ubuntu Server 16.04.2 LTS 版本中进行网络配置，还需要在 /etc/network/interfaces 文件中将以下语句进行注释:` source /etc/network/interfaces.d/*`。
+     假设云服务器基础网络地址为 10.0.0.0/8 ， VPC 网络地址为 192.168.0.0/16 ，则需要在配置文件  /etc/network/interfaces 中添加如下配置：
+
+     ```
+     auto eth0
+     iface eth0 inet dhcp
+       post-up ip route replace 192.168.0.0/16 via 192.168.0.1 dev eth0
+       post-up ip route replace 10.0.0.0/8 via 192.168.0.1 dev eth0
+     ```
+
+- **CentOS 系统**
+
+  1. 执行如下命令配置默认路由。
+
+     ```
+     route add default gw 139.198.190.1 dev eth1
+     ```
+
+  2. 执行如上路由配置后，云服务器即可访问公网。但对私有网络及基础网络的访问会出现问题，因此还需要在 eth0 上配置到私有网络及基础网络的路由。将云服务器对基础网络和私有网络的访问的下一跳设置成 eth0 所在网络的网关（默认 IP 地址为 192.168.0.1 ）。
+
+     假设云服务器基础网络地址为 10.0.0.0/8 ， VPC 网络地址为 192.168.0.0/16 ，则执行如下配置命令：
+
+     ```
+     route add -net 10.0.0.0/8 gw 192.168.0.1 dev eth0
+     route add -net 192.168.0.0/16 gw 192.168.0.1 dev eth0
+     ```
 
 #### 内网 DNS 路由配置
 
