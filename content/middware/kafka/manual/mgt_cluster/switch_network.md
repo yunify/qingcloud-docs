@@ -10,8 +10,8 @@ draft: false
 
 由于 Kafka 集群与依赖的 ZooKeeper 集群需要在同一个 VPC 中：
 
-- [**同 VPC 下切换私有网络**](#同-vpc-下切换私有网络)：仅切换 Kafka 私有网络后即可立即访问 Kafka 服务，无需切换 ZooKeeper 私有网络。
-- [**跨 VPC 切换私有网络**](#跨-vpc-切换私有网络)：当 Kafka 集群跨 VPC 切换私有网络后，依赖的 Zookeeper 集群的网络需要同步切换，否则 Kafka 集群节点的服务状态将会`不正常`，无法提供服务。
+- [同 VPC 下切换私有网络](#同-vpc-下切换私有网络)：仅切换 Kafka 私有网络后即可立即访问 Kafka 服务，无需切换 ZooKeeper 私有网络。
+- [跨 VPC 切换私有网络](#跨-vpc-切换私有网络)：当 Kafka 集群跨 VPC 切换私有网络后，依赖的 Zookeeper 集群的网络需要同步切换，否则 Kafka 集群节点的服务状态将会`不正常`，无法提供服务。
 
 本小节主要介绍如何切换 Kafka 集群私有网络。
 
