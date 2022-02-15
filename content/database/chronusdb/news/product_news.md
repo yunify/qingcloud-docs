@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 
 product:
-    - time: 2022-02-10
+    - time: 2022-03-02
       title: ChronusDB 1.0.9 版本正式上线
       content: 时序数据库 ChronusDB 1.0.9 新上线。<br>- 默认开启 Prometheus 监控配置，提供基于 `system.asynchronous_metrics`、`system.metrics`、`system.events` 表的 ChronusDB 监控服务。<br>- 集群添加节点，新支持分片权重自动均衡。<br>- 新开放 `max_partitions_per_insert_block` 参数，支持修改最大分区数。
       url: ../../intro/version/
@@ -68,13 +68,6 @@ product:
 ---
 
 <!-- 设置上述参数可生成产品动态页  
-    - time: 2022-02-20
-      title: ChronusDB 1.0.9 版本正式上线
-      content: 时序数据库 ChronusDB 1.0.9 新上线。<br>- 默认开启 Prometheus 监控配置，提供基于 `system.asynchronous_metrics`、`system.metrics`、`system.events` 表的 ChronusDB 监控服务。<br>- 集群添加节点，新支持分片权重自动均衡。<br>- 新开放 `max_partitions_per_insert_block` 参数，支持修改最大分区数。
-      url: ../../intro/version/
-      tags:
-      - 新功能
-      - 体验优化
-      zone: 全区域
+
 
 -->
