@@ -23,9 +23,9 @@ ClickHouse（简称 CH 或 CK）是面向联机分析处理的列式数据库，
 
 - 数据实时更新。
 
-## ClickHouse on QingCloud
+## ClickHouse 服务
 
-ClickHouse on QingCloud 完美继承 ClickHouse 优良特性，主要功能特点如下：
+ClickHouse 服务完美继承 ClickHouse 优良特性，主要功能特点如下：
 
 - 兼容目前 ClickHouse 所有支持的数据引擎；
 

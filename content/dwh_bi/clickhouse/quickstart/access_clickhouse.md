@@ -8,7 +8,7 @@ draft: false
 ---
 
 
-ClickHouse on QingCloud 与原生 ClickHouse 高度兼容，可直接使用 ClickHouse 的连接方式。
+ClickHouse 服务与原生 ClickHouse 高度兼容，可直接使用 ClickHouse 的连接方式。
 
 可选用 Docker 、客户端、curl 等方式连接集群和导入数据。
 

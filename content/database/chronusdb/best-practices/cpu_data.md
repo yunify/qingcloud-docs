@@ -1,6 +1,6 @@
 ---
 title: "基础设施 CPU 数据收集分析"
-description: 本小节主要介绍 QingCloud ChronuDB 在基础设施 CPU 数据收集和分析的应用。 
+description: 本小节主要介绍 ChronuDB 在基础设施 CPU 数据收集和分析的应用。 
 keyword: chronusdb 数据收集,数据分析,cpu 数据 
 weight: 20
 collapsible: false

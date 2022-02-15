@@ -8,7 +8,7 @@ draft: false
 ---
 
 
-时序数据库 ChronusDB 基于 ClickHouse 定制，并根据QingCloud AppCenter 功能特点定制`基础版`和`企业版`两个功能系列。
+时序数据库 ChronusDB 基于 ClickHouse 定制，并根据 AppCenter 功能特点定制`基础版`和`企业版`两个功能系列。
 
 ## 版本规格
 

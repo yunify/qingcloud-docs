@@ -47,7 +47,7 @@ product:
 
     - time: 2019-06-06
       title: ClickHouse 正式上线 AppCenter
-      content: 分布式实时分析型列式存储数据库 ClickHouse On QingCloud 正式发布。ClickHouse 是一款高性能的、面向联机分析处理(OLAP)的、开源的、列式数据库。
+      content: 分布式实时分析型列式存储数据库 ClickHouse 服务正式发布。ClickHouse 是一款高性能的、面向联机分析处理(OLAP)的、开源的、列式数据库。
       url: ../../intro/introduction/
 
 ---
