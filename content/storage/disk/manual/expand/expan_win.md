@@ -9,7 +9,7 @@ keyword: 云计算, 青云, QingCloud, 云硬盘, Windows, 扩容,数据盘
 
 ## 前提条件
 
-在对数据盘进行扩容之前，请先确认硬盘内容已进行备份，以防止数据丢失。备份操作详见[备份硬盘](/storage/disk/manual/create_snapshot)
+在对数据盘进行扩容之前，请先确认硬盘内容是否已进行备份，以防止数据丢失。备份操作详见[备份硬盘](/storage/disk/manual/create_snapshot)
 
 ## 扩容步骤
 

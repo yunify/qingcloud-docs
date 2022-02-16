@@ -26,10 +26,9 @@ product:
       content: 青云 QingCloud Harbor 镜像仓库 1.1.1 版本正式上线，支持选择对象存储地址。
       url: ../version/
 
-    - time: 更早时间
+    - time: 2018-06-23
       title: Harbor 1.1.1 - QingCloud 1.0 版本正式上线
       content: 青云 QingCloud Harbor 镜像仓库 1.1.1 版本新上线，基于 Harbor 1.1.1 版本构建，镜像存储集成 QingStor 对象存储服务，支持一键式安装、一键清理镜像、应用节点横向和纵向扩容等功能。
       url: ../version/
-
 ---
 

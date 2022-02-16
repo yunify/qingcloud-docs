@@ -1,5 +1,5 @@
 ---
-title: "AddDnatRules"
+title: "AddDnatRule"
 description: 新增 DNAT 规则
 draft: false
 weight: 22
@@ -19,6 +19,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, DNAT
 | private_ip| String | 内网 IP 地址。 | Yes |
 | protocol| String | 协议类型, tcp 或者 udp。 | Yes |
 | eip_id| String | 公网 IP 的 ID。 | Yes |
+| enable | Integer | 是否启用。 | No |
 
 [_公共参数_](../../get_api/parameters/)
 
@@ -43,6 +44,7 @@ https://api.qingcloud.com/iaas/?action=AddDnatRules
 &private_ip=172.17.0.2
 &protocol=tcp
 &eip_id=eip-9m3skybb
+&enable=1
 &COMMON_PARAMS
 ```
 
