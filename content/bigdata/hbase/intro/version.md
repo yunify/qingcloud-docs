@@ -17,6 +17,5 @@ HBase on QingCloud AppCenter 集群服务包含 HBase 数据库服务、HDFS 分
 
 | 版本   | HBase | Hadoop | Phoenix |
 | :------ | :------ | :------| :------ |
-| QingCloud 1.1 - HBase 1.2.6 | 1.2.6 | 2.7.3 | 4.11.0 |
-| QingCloud 2.0.1 - HBase 2.0.6 | 2.0.6 | 2.7.7 | 5.0.0 |
-| QingCloud 2.1.0 - HBase 2.0.6 | 2.0.6 | 2.7.7 | 5.0.0 |
+| HBase 1.2.6 - v1.1.0 | 1.2.6 | 2.7.3 | 4.11.0 |
+| HBase 2.0.6 - v2.1.0 | 2.0.6 | 2.7.7 | 5.0.0 |
