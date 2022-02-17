@@ -9,7 +9,7 @@ draft: false
 
 账号是您访问青云的责任主体，有关账号的详细介绍请参见[账号中心](/authorization/account/intro/introduction/)。
 
-本小节为您介绍如何注册青云账号并进行实名认证。若您已有青云账号，可以直接[创建工作空间](../create_workspace)。
+本小节为您介绍如何注册青云账号并进行实名认证。若您已有青云账号，可以直接[开通大数据工作台](../subscribe)。
 
 ## 注册账号
 
