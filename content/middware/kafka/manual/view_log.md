@@ -23,7 +23,7 @@ draft: false
 
    > **说明**  
    > 
-   > Kafka 1.0.0 - QingCloud 1.1.6 及后续新版本：Kafka Manager 安装在客户端节点上，此处**节点 IP** 为**客户端节点 IP 地址**。
+   > Kafka 1.0.0 - v1.1.6 及后续新版本：Kafka Manager 安装在客户端节点上，此处**节点 IP** 为**客户端节点 IP 地址**。
 
    <img src="../../_images/file_viewer_1.png" alt="Kafka Manager 节点日志列表" style="zoom:50%;" /> 
 

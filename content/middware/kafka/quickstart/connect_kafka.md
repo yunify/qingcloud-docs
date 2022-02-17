@@ -24,8 +24,8 @@ draft: false
 
     > **说明**
     > 
-    >  - Kafka 2.3.1 -QingCloud 2.0.1（包含）之前版本：客户端节点用户名为`ubuntu`，初始密码为`kafka`。
-    >  - Kafka 2.3.1 -QingCloud 2.0.1 之后版本：客户端节点用户名为`client`，初始密码为`client`。
+    >  - Kafka 2.3.1 - v2.0.1（包含）之前版本：客户端节点用户名为`ubuntu`，初始密码为`kafka`。
+    >  - Kafka 2.3.1 - v2.0.1 之后版本：客户端节点用户名为`client`，初始密码为`client`。
    
    <img src="../../_images/login_client.png" alt="登录 Client 节点" style="zoom:50%;" />
 
@@ -62,12 +62,12 @@ $ cd /opt/kafka/current/bin
 
 ```shell
 cd /opt/kafka/current/bin
-./kafka-console-consumer.sh --broker-list {连接地址} --topic {Topic 名称} --from-beginning
+./kafka-console-consumer.sh --bootstrap-server {连接地址} --topic {Topic 名称} --from-beginning
 ```
 
 - 连接地址：与发送消息的连接地址相同。
 - Topic 名称：与发送消息的 Topic 名称相同。
-- from-beginning 表示按顺序开始消费，若没有使用 –from-beginning ， 则从最新的开始消费。
+- from-beginning 表示按顺序开始消费，若没有使用 –from-beginning，则从最新的开始消费。
 
 **示例**       
 ```shell
