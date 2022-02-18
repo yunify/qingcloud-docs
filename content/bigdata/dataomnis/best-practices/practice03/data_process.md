@@ -50,15 +50,11 @@ flink-demo.jar 路径为：/product-demo/src/main/resources/flink-demo.jar。
    <img src="/bigdata/dataomnis/_images/job_jar_edit.png" alt="配置 Jar 作业" style="zoom:50%;" />
 
    - 引用 Jar 包：选择已上传到资源管理的 Jar 程序包。
-   - 入口类：配置运行函数的路径。一次只能配置一个函数。    
-     本示例中包括如下函数：
-     - PvFuntion：入口类为`com.gxlevi.functions.PvFuntion`。
-     - UjFunction：入口类为`com.gxlevi.functions.UjFunction`。
-     - UvFunction：入口类为`com.gxlevi.functions.UvFunction`。
-     - FilterUserFunction：入口类为`FilterUserFunction`。
-   - 程序参数：配置 Kafka 的连接信息。   
-     请根据实际情况进行填写，例如：--kafka.brokers 172.16.10.27:9092,172.16.10.28:9092,172.16.10.30:9092 --kafka.topics demo02 --kafka.group.id test01。
-
+   - 入口类：配置运行函数的路径。本示例填写 `com.gxlevi.VsApp`。
+   - 程序参数：配置数据源的连接信息。   
+     请根据实际情况进行填写，本示例需要填写 --kafka.brokers <Kafka 连接地址> --kafka.topics <Kafka Topic名称> --kafka.group.id <Kafka Group ID> --clickhouse.url <ClickHouse的连接地址> --clickhouse.username <ClickHouse 用户名> --clickhouse.password <ClickHouse 密码> --use.sql true。
+     例如：--brokers localhost:9092 --clickhouse-url jdbc:clickhouse://localhost:8123/default --password 123456 --clickhouse.url jdbc:clickhouse://172.16.10.246:8123/pk --clickhouse.username default --clickhouse.password default --use.sql true
+   
 4. 配置完成后，点击**保存**保存配置。
 
 ## 配置作业调度
