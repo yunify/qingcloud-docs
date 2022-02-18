@@ -157,7 +157,7 @@ draft: false
 3. 依赖资源。
 
    - **依赖包**、**函数包**：本示例无需选择依赖包和函数包。
-   - **内置 Connector**：选择如下内置 Connector。
+   - **内置 Connector**：本示例选择如下内置 Connector。
    
    <img src="/bigdata/dataomnis/_images/bp_enviroment_sql_4.png" alt="依赖资源" style="zoom:50%;" />
 

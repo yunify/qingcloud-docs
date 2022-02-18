@@ -41,7 +41,7 @@ flink-demo.jar 路径为：/product-demo/src/main/resources/flink-demo.jar。
 3. 输入程序包显示名称和描述信息后，点击**添加程序包**，选择 flink-demo.jar 文件。
 4. 点击**上传**，开始上传程序包。
 
-### 配置程序包
+### 配置程序运行参数
 
 1. 在目标工作空间选择**数据开发** > **实时计算**，进入实时计算页面。
 2. 点击作业名称，进入开发面板。
@@ -50,8 +50,14 @@ flink-demo.jar 路径为：/product-demo/src/main/resources/flink-demo.jar。
    <img src="/bigdata/dataomnis/_images/job_jar_edit.png" alt="配置 Jar 作业" style="zoom:50%;" />
 
    - 引用 Jar 包：选择已上传到资源管理的 Jar 程序包。
-   - 运行函数入口：运行主类。
-   - 运行参数：Kafka 的连接信息。
+   - 入口类：配置运行函数的路径。一次只能配置一个函数。    
+     本示例中包括如下函数：
+     - PvFuntion：入口类为`com.gxlevi.functions.PvFuntion`。
+     - UjFunction：入口类为`com.gxlevi.functions.UjFunction`。
+     - UvFunction：入口类为`com.gxlevi.functions.UvFunction`。
+     - FilterUserFunction：入口类为`FilterUserFunction`。
+   - 程序参数：配置 Kafka 的连接信息。   
+     请根据实际情况进行填写，例如：--kafka.brokers 172.16.10.27:9092,172.16.10.28:9092,172.16.10.30:9092 --kafka.topics demo02 --kafka.group.id test01。
 
 4. 配置完成后，点击**保存**保存配置。
 
@@ -62,7 +68,7 @@ flink-demo.jar 路径为：/product-demo/src/main/resources/flink-demo.jar。
    
    本实践选择**执行一次**，**发布后立即执行**。若您需要配置为其他调度策略，请参见[配置作业调度](../../../manual/data_development/job/scheduling_job)。
 
-   <img src="/bigdata/dataomnis/_images/bp_schedule_sql.png" alt="配置作业调度" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/bp_schedule_jar.png" alt="配置作业调度" style="zoom:50%;" />
 
 3. 设置完成后，点击**确定**。
 
@@ -80,7 +86,7 @@ flink-demo.jar 路径为：/product-demo/src/main/resources/flink-demo.jar。
 3. 依赖资源。
 
    - **依赖包**、**函数包**：本示例无需选择依赖包和函数包。
-   - **内置 Connector**：选择如下内置 Connector。
+   - **内置 Connector**：本示例选择如下内置 Connector。
    
    <img src="/bigdata/dataomnis/_images/bp_enviroment_jar_2.png" alt="依赖资源" style="zoom:50%;" />
 

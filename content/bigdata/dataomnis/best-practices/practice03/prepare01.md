@@ -7,6 +7,10 @@ collapsible: false
 draft: false
 ---
 
+## 准备 Kafka 环境
+
+本实践以 QingCloud Kafka 为例，详细操作请参见：[创建 Kafka 集群](/middware/kafka/quick-start/create_cluster/)。
+
 ## 准备 ClickHouse 环境
 
 本实践以 QingCloud ClickHouse 为例。

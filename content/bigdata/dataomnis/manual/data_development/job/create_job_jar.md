@@ -50,10 +50,10 @@ draft: false
 
    <img src="/bigdata/dataomnis/_images/job_content_jar.png" alt="编辑和运行 Jar 作业" style="zoom:50%;" />
 
-3. 根据实际情况填写**函数入口**和**运行参数**。
+3. 根据实际情况填写**入口类**和**程序参数**。
 
-   - 函数入口：运行函数的入口，请输入入口类（EntryClass）。
-   - 运行参数：运行函数的参数，请输入程序参数（Program Arruments）。
+   - 入口类（EntryClass）：配置运行函数的路径。例如 com.gxlevi.functions.PvFuntion。
+   - 程序参数（Program Arruments）：配置运行函数的参数。例如 --kafka.brokers 172.16.10.27:9092,172.16.10.28:9092,172.16.10.30:9092 --kafka.topics demo02 --kafka.group.id test01 --clickhouse.url jdbc:clickhouse://172.16.10.246:8123/pk --clickhouse.username default --clickhouse.password default --use.sql true。
 
 4. 点击**保存**，保存修改。
 
