@@ -8,7 +8,7 @@ product:
       title: 大数据工作台正式发布上线，为您带来xxx
       tags: 
       - 新产品
-      zone: 上海1区、广东2区、北京3区
+      zone: 北京3区
       content: 大数据工作台是xxx，支持xxx，为您带来xxx。
       url: ../../intro/introduction/
       qingCloudZhiUrl:
