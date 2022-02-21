@@ -1,7 +1,7 @@
 ---
 title: "版本升级"
 description: 本小节主要介绍如何升级 OpenSearch 集群。 
-keyword: OpenSearch 升级集群；
+keyword: 升级集群,OpenSearch,搜索引擎,大数据
 weight: 15
 collapsible: false
 draft: true

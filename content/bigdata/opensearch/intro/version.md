@@ -1,7 +1,7 @@
 ---
 title: "产品版本"
 description: 本小节主要介绍 OpenSearch 主要系列和版本。 
-keyword: OpenSearch 版本介绍,系列介绍 
+keyword: 版本介绍,系列介绍,OpenSearch,搜索引擎,大数据
 weight: 25
 collapsible: false
 draft: false
