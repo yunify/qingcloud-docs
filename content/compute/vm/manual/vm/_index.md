@@ -1,6 +1,6 @@
 ---
-title: "云服务器"
-linkTitle: "云服务器"
+title: "基本功能"
+linkTitle: "基本功能"
 _build:
  render: false 
 weight: 10
