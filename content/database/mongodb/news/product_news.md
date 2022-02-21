@@ -61,7 +61,7 @@ product:
       url: ../../intro/version/
 
     - time: 2017-07-25
-      title: QingCloud MongoDB 正式上线
+      title: MongoDB 服务正式上线
       content: MongoDB 新上线，基于 MongoDB v3.4.5 版本和 WiredTiger 引擎构建，提供自动备份、在线扩容、横向伸缩等功能。
       url: ../../intro/introduction/
 

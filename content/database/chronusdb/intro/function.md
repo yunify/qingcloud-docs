@@ -1,7 +1,7 @@
 ---
 title: "功能特性"
 description: 本小节主要介绍 ChronusDB 简要主要功能特性。 
-keyword: chronusdb 功能特性, 
+keyword: 功能特性,时序数据库,ChronusDB,数据库
 weight: 15
 collapsible: false
 draft: false
@@ -51,7 +51,9 @@ ChronusDB 提供分钟级别的集群异常资源告警并支持设置告警指�
 
 ## 弹性扩容伸缩
 
-ChronusDB  提供对集群 CPU、内存弹性扩容收缩，扩容磁盘的功能。
+ChronusDB 支持纵向伸缩，提供对集群 CPU、内存弹性扩容收缩，扩容磁盘的功能。
+
+ChronusDB 支持横向添加节点，并支持分片权重自动均衡。
 
 ## 备份恢复
   

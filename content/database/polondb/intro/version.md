@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-分布式数据库 PolonDB 根据 QingCloud AppCenter 功能特点定制`基础版`和`企业版`两个功能系列。
+分布式数据库 PolonDB 根据 AppCenter 功能特点定制`基础版`和`企业版`两个功能系列。
 
 ## 版本历程
 

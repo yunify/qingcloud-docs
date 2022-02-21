@@ -1,7 +1,7 @@
 ---
 title: "创建集群"
 description: 本小节主要介绍如何快速创建 ClickHouse 集群实例。 
-keyword: ClickHouse 实例, 创建集群,创建实例
+keyword: ClickHouse 实例, 创建集群,创建实例,数据仓库,ClickHouse
 weight: 10
 collapsible: false
 draft: false
@@ -11,12 +11,12 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且账号已实名认证。
+- 已获取管理控制台登录账号和密码，且账号已实名认证。
 - 已获取  ClickHouse 集群列表操作权限。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据仓库与 BI** > **ClickHouse**，进入 ClickHouse 集群列表页。
 3. 点击**立即部署**，进入应用部署页面。
 4. 选择**区域**。

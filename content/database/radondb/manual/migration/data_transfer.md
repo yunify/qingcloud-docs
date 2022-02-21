@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-QingCloud RadonDB 的 MySQL 版本为 5.7.29 ，且开启了 GTID 复制模式。若远端 MySQL 内核低于 5.7 版本，可导出数据，通过 RadonDB 支持的数据导入方式，实现 RadonDB 跨版本的数据迁移。
+RadonDB 的 MySQL 版本为 5.7.29 ，且开启了 GTID 复制模式。若远端 MySQL 内核低于 5.7 版本，可导出数据，通过 RadonDB 支持的数据导入方式，实现 RadonDB 跨版本的数据迁移。
 
 > **注意**
 > 
@@ -17,7 +17,7 @@ QingCloud RadonDB 的 MySQL 版本为 5.7.29 ，且开启了 GTID 复制模式�
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - RadonDB 集群状态为**活跃**。
 - 已获取远端 MySQL 数据库信息。
 

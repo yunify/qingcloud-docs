@@ -1,6 +1,6 @@
 ---
 title: "性能指标"
-description: 本小节主要介绍 QingCloud PolonDB 的性能指标。 
+description: 本小节主要介绍 PolonDB 的性能指标。 
 keyword: polondb 性能指标,TPC-C,TPC-B
 weight: 40
 collapsible: false
@@ -11,7 +11,7 @@ draft: false
 
 ## TPC-C 标准性能
 
-测试环境：qingcloud 公有云[北京三区]
+测试环境：公有云北京三区
 
 测试规格：企业型 e2
 
@@ -46,7 +46,7 @@ TPMC：每分钟事务处理数
 
 ## TPC-B 标准性能
 
-测试环境：qingcloud 公有云[北京三区]
+测试环境：公有云北京三区
 
 测试规格：企业型 e2
 

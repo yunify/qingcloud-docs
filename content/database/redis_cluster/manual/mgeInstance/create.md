@@ -10,11 +10,11 @@ keyword: QingCloud，Redis Cluster，redis 集群，创建 redis 集群
 
 ## 前提条件
 
-已注册 QingCloud 青云账号并完成实名认证。
+已注册云平台账号并完成实名认证。
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**。
 
@@ -98,21 +98,11 @@ keyword: QingCloud，Redis Cluster，redis 集群，创建 redis 集群
 
 ![服务环境参数设置](../../../_images/step4.png)
 
-- 控制台管理 ACL：选择是否由控制台管理 ACL 服务。
-
-- 禁用 FLUSH 命令：为兼容 Redis 5.0.3 - QingCloud 1.2.1 之前的版本，自 Redis 5.0.3 - QingCloud 1.2.1 起添加了此项，默认为**否**，表示不禁用。
-
-  > **注意**
-  >
-  > 此参数在集群创建后不可修改。
-  >
-  > 由于该命令的误操作会导致对数据造成不可恢复的丢失，因此我们强烈建议您在生产环境下禁用该命令。
-
-- 其他参数：点击**更多服务环境参数**，页面展示所有可配置的服务环境参数。详细参数说明请参见[参数支持](../../../intro/para_list/)，请根据页面提示和实际需求设置。
-
-> **说明**
->
-> 提交配置之前可点击页面底部的**校验表单参数**来检测输入的参数是否有效。
+|<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
+|:----|:----|
+|   禁用 FLUSH 命令     |  选择是否禁用 FLUSHALL 及 FLUSHDB 命令。<br>- 默认为 `否`，表示不禁用。 <span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b>: <li>此参数在集群创建后不可修改。</li><li>由于该命令的误操作会导致对数据造成不可恢复的丢失，因此强烈建议在生产环境下禁用该命令。</li><li>Redis 5.0.10 版本开始支持该参数。</li></span>    |
+|   控制台管理 ACL    |  选择是否由控制台管理 ACL 服务。<br>- 默认为 `是`，表示开启控制台管理 ACL 服务，禁止通过命令创建 ACL 帐号。 <br>- `否`表示关闭控制台管理 ACL 服务，支持通过命令创建 ACL 帐号。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b>: <li>Redis 6.2.5 版本开始支持该参数。</li></span>    |
+|   更多服务环境参数     |   点击展开参数列，可配置更多数据库参数。<li> 可配置参数与数据库性能相关，部分参数修改会导致数据库服务重启，具体可见[参数说明](../../manual/config_para/config_para_info)。|
 
 ### 第5步：用户协议确认
 

@@ -1,7 +1,7 @@
 ---
 title: "开启对象存储策略"
 description: 本小节主要介绍如何开启对象存储策略。 
-keyword: ClickHouse 开启对象存储策略；冷热存储，多磁盘数据存储
+keyword: 开启对象存储策略,冷热存储,多磁盘数据存储,数据仓库,ClickHouse
 weight: 10
 collapsible: false
 draft: false
@@ -40,7 +40,7 @@ ClickHouse 通过配置对象存储策略，并在创建表时添加语句指定
 
 ## 步骤 1：开启对象存储策略
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据仓库与 BI** > **ClickHouse**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**基本属性**模块，点击集群操作下拉菜单。
