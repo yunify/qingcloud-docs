@@ -1,7 +1,7 @@
 ---
 title: "配置冷热存储策略"
 description: 本小节主要介绍如何配置冷热存储策略。 
-keyword: ChronusDB TTL 存储规则，TTL，冷热存储策略
+keyword: TTL 存储规则，TTL，冷热存储策略,时序数据库,ChronusDB,数据库 
 weight: 20
 collapsible: false
 draft: false

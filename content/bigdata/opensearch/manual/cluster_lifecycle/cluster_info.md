@@ -1,7 +1,7 @@
 ---
 title: "集群概述"
 description: 本小节主要介绍 OpenSearch 集群基本信息。 
-keyword: OpenSearch 集群信息；
+keyword: 集群信息,OpenSearch,搜索引擎,大数据
 weight: 05
 collapsible: false
 draft: false

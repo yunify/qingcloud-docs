@@ -1,7 +1,7 @@
 ---
 title: "专用主节点数最佳配置"
 description: 本小节主要介绍 OpenSearch 专用主节点数。 
-keyword: OpenSearch 专用主节点数, 最佳应用配置
+keyword: 专用主节点数,最佳应用配置,OpenSearch,搜索引擎,大数据
 weight: 10
 collapsible: false
 draft: false

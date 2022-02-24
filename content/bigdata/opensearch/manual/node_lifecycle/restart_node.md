@@ -1,7 +1,7 @@
 ---
 title: "重启节点"
 description: 本小节主要介绍如何重启节点。 
-keyword: OpenSearch 重启节点
+keyword: 重启节点,OpenSearch,搜索引擎,大数据
 weight: 20
 collapsible: false
 draft: false

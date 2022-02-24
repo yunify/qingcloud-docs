@@ -1,7 +1,7 @@
 ---
 title: "集群组件"
 description: 本小节主要介绍 OpenSearch 主要集群组件。 
-keyword: OpenSearch 集群组件, 
+keyword: 集群组件,OpenSearch,搜索引擎,大数据 
 weight: 30
 collapsible: false
 draft: false

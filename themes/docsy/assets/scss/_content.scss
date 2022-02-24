@@ -70,6 +70,11 @@
         // 补充有序列表中无序转变成有序样式的问题
         > ul li {
             list-style: initial;
+            color: $gray-600;
+        }
+      
+        > li {
+            color: $gray-600;
         }
     }
 
@@ -101,7 +106,6 @@
         list-style: disc;
         margin-left: 1em;
     }
-
 
     ul li ul li {
         list-style: square;
