@@ -21,11 +21,11 @@ section2:
     content: 介绍 QKE 集群
     url: "intro/introduction/"
   - title: 快速入门
-    content: 介绍如何创建及访问 QKE 集群
-    url: "quickstart/create_qke/"
+    content: 介绍如何快速创建 QKE 集群及容器应用
+    url: "quickstart/create_hosting_cluster/"
   - title: 操作指南
     content: 介绍如何管理和使用 QKE 集群
-    url: "manual/qke/paras_cfg/"
+    url: "manual/mgt_cluster/cluster_overview/"
   - title: 最佳实践
     content: QKE 最佳实践
     url: "best-practice/docker_deployment/"
@@ -41,19 +41,19 @@ section4:
     vice_title: 了解的第一步
     children:
     - title: 产品简介
-      url: "/intro/main/"
-    - title: 产品主页
-      url: "https://www.qingcloud.com/products/kubesphereqke/"
+      url: "intro/introduction/"
+    - title: 产品优势
+      url: "intro/advantage/"
 
   - title: 上手：使用 QKE
-    content: 通过易用的 KubeSphere 浏览器界面进行容器创建与管理。
+    content: 通过 QKE 控制台管理集群及容器应用。
     vice_title: 上手的第一步
     children:
-    - title: 创建 QKE 集群
-      url: "quickstart/create_qke/"
-    - title: 连接 QKE 集群
-      url: "quickstart/create_qke/"
-    - title: 访问 KubeSphere
-      url: "manual/ks/access_ks/"
+    - title: 创建集群
+      url: "quickstart/create_hosting_cluster/"
+    - title: 管理集群
+      url: "manual/mgt_cluster/cluster_overview/"
+    - title: 使用可视化控制台
+      url: "manual/console/console_intro/"
 ---
 
