@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-UDTF 函数适用于一进多出的业务场景，即函数的输入与输出是一对多的关系，输入一行数据，输出多个值。更多详细信息请参见[官方文档](https://nightlies.apache.org/flink/flink-docs-release-1.11/zh/dev/table/functions/udfs.html#%E8%A1%A8%E5%80%BC%E5%87%BD%E6%95%B0)。
+UDTF 函数适用于一进多出的业务场景，即函数的输入与输出是一对多的关系，输入一行数据，输出多个值。更多详细信息请参见[官方文档](https://nightlies.apache.org/flink/flink-docs-release-1.12/zh/dev/table/functions/udfs.html#%E8%A1%A8%E5%80%BC%E5%87%BD%E6%95%B0)。
 
 您可以通过 Java、Python、Scala 语言编写代码创建 UDTF 函数。
 

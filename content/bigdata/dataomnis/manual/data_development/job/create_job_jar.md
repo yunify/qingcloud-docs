@@ -15,6 +15,7 @@ draft: false
 
 - 已获取管理控制台登录账号和密码，且账号已实名认证。
 - 已创建工作空间。
+- 已创建计算集群。
 - 已上传程序包资源。
 
 ## 创建 Jar 作业
@@ -36,7 +37,7 @@ draft: false
    | <span style="display:inline-block;width:140px">参数</span>  | <span style="display:inline-block;width:520px">参数说明</span>  |
    | :------------- | ------------------------------------------------------------ |
    | 作业名称 |  创建的作业名称，您可以自定义。              |
-   | 计算集群    |  点击**选择集群**，在弹出的对话框中选择已创建好的计算集群；也可以在对话框中点击**新建计算集群**，创建新的计算集群。 <span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b><br>创建作业时该参数为可选项，您可以在作业创建成功后，在配置作业的运行参数时选择或修改计算集群。</span> |
+   | 计算集群    |  点击**选择集群**，在弹出的对话框中选择已创建好的计算集群；也可以在对话框中点击**新建计算集群**，创建新的计算集群。 <span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b><li>创建作业时该参数为可选项，您可以在作业创建成功后，在配置作业的运行参数时选择或修改计算集群。<li>计算集群需与数据源网络互通，具体请参见[网络连通方案](/bigdata/dataomnis/manual/data_up_cloud/connect/)。</span> |
    | 描述    |  作业的描述信息，您可以自定义。 |
  
 8. 点击**确定**，开始创建作业。

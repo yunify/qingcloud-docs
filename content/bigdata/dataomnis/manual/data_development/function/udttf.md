@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-UDTTF 函数是自定义时态表函数，通过一个时间属性来确定表数据的版本。更多详细信息请参见[官方文档](https://nightlies.apache.org/flink/flink-docs-release-1.11/zh/dev/table/streaming/temporal_tables.html)。
+UDTTF 函数是自定义时态表函数，通过一个时间属性来确定表数据的版本。更多详细信息请参见[官方文档](https://nightlies.apache.org/flink/flink-docs-release-1.12/zh/dev/table/streaming/versioned_tables.html)。
 
 您可以通过 Java、Scala 语言编写代码创建 UDTTF 函数。
 

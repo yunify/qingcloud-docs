@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-UDF 函数适用于一进一出的业务场景，即函数的输入与输出是一对一的关系，输入一行数据，输出一个值。更多详细信息请参见[官方文档](https://nightlies.apache.org/flink/flink-docs-release-1.11/zh/dev/table/functions/udfs.html#%E6%A0%87%E9%87%8F%E5%87%BD%E6%95%B0)。
+UDF 函数适用于一进一出的业务场景，即函数的输入与输出是一对一的关系，输入一行数据，输出一个值。更多详细信息请参见[官方文档](https://nightlies.apache.org/flink/flink-docs-release-1.12/zh/dev/table/functions/udfs.html#%E6%A0%87%E9%87%8F%E5%87%BD%E6%95%B0)。
 
 您可以通过 Java、Python、Scala 语言编写代码创建 UDF 函数。
 

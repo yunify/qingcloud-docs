@@ -11,15 +11,12 @@ section1:
       time_duration: 09:17
       # poster: "https://s6.jpg.cm/2021/11/0K1qV.png"
       url: "https://bigdata-doc.pek3b.qingstor.com/dataomnis/01_sql_job.mp4"
-      description: 本视频为您介绍如何通过大数据工作台的 SQL 作业进行 “网站热点词频统计”。
+      description: 通过大数据工作台的 SQL 作业进行 “网站热点词频统计”。
 
     - title: Jar 作业开发及实践
       time_duration: 08:05
       url: "https://bigdata-doc.pek3b.qingstor.com/dataomnis/02_jar_job.mp4"
-      description: 本视频为您介绍如何通过大数据工作台的 Jar 作业进行 “用户消费TOPN统计”。
-
-
-      
+      description: 通过大数据工作台的 Jar 作业进行 “用户消费TOPN统计”。
 ---
 
 <!-- section2: -->
