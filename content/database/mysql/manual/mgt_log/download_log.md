@@ -1,7 +1,7 @@
 ---
 title: "预览和下载日志"
 description: 本小节主要介绍如何下载日志。 
-keywords: mysql plus 下载日志
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,下载日志
 weight: 20
 collapsible: false
 draft: false
@@ -29,7 +29,7 @@ draft: false
 
 1. 获取日志服务地址。
    
-   1. 登录 QingCloud 管理控制台。
+   1. 登录管理控制台。
    2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 MySQL Plus**，进入集群管理页面。
    3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
    4. 点击**服务地址**页签，进入日志服务地址页面，即可查看日志服务地址。

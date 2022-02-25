@@ -1,5 +1,7 @@
 ---
 title: "图片裁剪"
+description: 本小节主要介绍图片裁剪接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, 图片裁剪
 ---
 
 用户可以调用该 API 接口对图片进行裁剪。

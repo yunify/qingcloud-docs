@@ -2,7 +2,7 @@
 title: "域名解析问题"
 description: Test description
 weight: 6
-keyword: 域名解析问题, 域名注册, QingCloud
+keyword: 域名解析问题, 域名注册, QingCloud, 域名
 ---
 
 

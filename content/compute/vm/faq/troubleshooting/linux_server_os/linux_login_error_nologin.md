@@ -1,11 +1,10 @@
 ---
 
 title: "使用 SSH 命令登录 Linux 系统时出现报错"
-description: Test description
+description: 解决 SSH 登录 Linux 报错问题
 weight: 40
 draft: false
-enableToc: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，SSH
 ---
 
 ## 问题描述

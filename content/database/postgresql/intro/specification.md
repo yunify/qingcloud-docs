@@ -1,14 +1,14 @@
 ---
 title: "性能规格"
 description: 本小节主要介绍 PostgreSQL 性能规格。 
-keywords: PostgreSQL, QingCloud, 性能规格
+keyword: 性能规格,PostgreSQL,关系型数据库,数据库
 weight: 40
 collapsible: false
 draft: false
 ---
 
 
-QingCloud PostgreSQL 根据QingCloud AppCenter 功能特点，定制`基础版`、`增强版`和`专业版`三个资源类型，您也可以选择`自定义`配置资源规格。
+PostgreSQL 根据 AppCenter 功能特点，定制`基础版`、`增强版`和`专业版`三个资源类型，您也可以选择`自定义`配置资源规格。
 
 ## 资源类型规格
 

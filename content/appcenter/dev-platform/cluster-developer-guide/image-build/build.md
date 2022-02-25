@@ -1,6 +1,7 @@
 ---
 title: "镜像制作"
-date: 2020-11-11T00:00:00+09:00
+description: 介绍如何制作应用镜像。
+keyword: QingCloud, 青云, AppCenter, 云应用开发,  应用, 镜像
 draft: false
 collapsible: false
 weight: 3
@@ -14,7 +15,7 @@ weight: 3
 
 ## 制作 KVM 镜像
 
-<table><tr style="background-color:rgb(240,240,240);color:red"><td><b>除了允许用户登陆的节点(配置文件里定义 user_access 为 true) 之外，其它类型节点如果有持久化数据必须用挂盘，不能保存到系统盘，切记！且在云服务器里不要操作资源比如 halt 云服务器，青云会负责资源调度，用户只需要关注应用即可。</b></td></tr></table>
+<table><tr style="background-color:rgb(240,240,240);color:red"><td><b>除了允许用户登录的节点(配置文件里定义 user_access 为 true) 之外，其它类型节点如果有持久化数据必须用挂盘，不能保存到系统盘，切记！且在云服务器里不要操作资源比如 halt 云服务器，青云会负责资源调度，用户只需要关注应用即可。</b></td></tr></table>
 
 所谓持久化数据是指跟具体用户有关的数据，如 session、用户自己的数据等，比如说数据库应用，数据库应用程序本身不是持久化数据，因为它可以无差别的重复部署而不影响服务，但用户的数据库信息、用户设置的参数、日志等是持久化数据。
 
@@ -36,7 +37,7 @@ weight: 3
 
 ### 安装 agent
 
-下载青云提供的 app agent [Linux 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent-linux-amd64.tar.gz), 
+下载青云提供的 app agent [Linux 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent.tar.gz), 
 [Windows 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent-windows-386.zip)，
 解压后运行 ./install.sh (Windows 下双击 install.bat)。此 agent 中包含了自动配置文件程序 confd，
 该程序是在开源 [confd](https://github.com/kelseyhightower/confd/blob/master/docs/quick-start-guide.md) 

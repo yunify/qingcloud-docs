@@ -1,7 +1,8 @@
 ---
 title: "Windows 云服务器配置 NFS 服务"
-description: Test description
+description: 如何在 Windows 云服务器上配置 NFS 服务
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，NFS
 ---
 
 

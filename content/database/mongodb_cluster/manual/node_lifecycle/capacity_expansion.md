@@ -1,7 +1,7 @@
 ---
 title: "扩容节点"
 description: 本小节主要介绍如何扩容 MongoDB Cluster 集群。 
-keywords: MongoDB Cluster 扩容节点；
+keyword: MongoDB Cluster 扩容节点；
 weight: 05
 collapsible: false
 draft: false
@@ -56,7 +56,7 @@ MongoDB Cluster 支持对运行中的数据库服务进行在线扩容，调整 
 
 自动扩容指当集群磁盘使用率超过一定限制，触发扩容条件，系统将自动扩容集群磁盘大小，不影响集群正常使用。
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **运维与管理** > **自动伸缩**，进入自动伸缩策略管理页面。
 3. 点击**创建**，弹出策略基本信息配置窗口。
    

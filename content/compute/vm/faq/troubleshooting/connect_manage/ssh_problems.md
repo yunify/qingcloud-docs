@@ -1,10 +1,10 @@
 ---
 title: "ssh连接基本问题排查"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: ssh连接问题
 weight: 20
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，SSH
 ---
 
 ## 背景信息

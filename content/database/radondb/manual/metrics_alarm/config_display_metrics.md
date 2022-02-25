@@ -1,7 +1,7 @@
 ---
 title: "监控指标"
 description: 本小节主要介绍 RadonDB 主要支持哪些监控指标。 
-keywords: RadonDB 监控指标
+keyword: RadonDB 监控指标
 weight: 10
 collapsible: false
 draft: false
@@ -30,7 +30,7 @@ RadonDB 提供集群服务和资源性能监控指标和告警信息。
 
 > **说明**
 >
-> 以上为 QingCloud 控制台在线可监控的服务指标。更多服务监控指标通过采集，可在第三方 Grafana 平台可视化面板查看。
+> 以上为控制台在线可监控的服务指标。更多服务监控指标通过采集，可在第三方 Grafana 平台可视化面板查看。
 
 ## 支持的资源监控指标
 

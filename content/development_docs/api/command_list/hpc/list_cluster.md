@@ -17,19 +17,19 @@ weight: 1
 
 **Request Parameters**
 
-| Parameter name | Type | Description | Required |
+| Parameter name | Type | Description                | Required |
 | --- | --- | --- | --- |
-| cluster_id | string | false       | hpc集群的集群id            |
-| cluster_type | string | false | hpc集群的类型 |
-| limit | int | false | 集合的限制 |
-| offset | int | false | 集合偏移量 |
-| reverse | int | false | 排序操作 0：ASC 1:DESC |
-| run_user | string | false | 运行作业用户 |
-| search_word | string | false | 模糊查询 支持 keys：[name] |
-| shared_status | string | false | 集群的共享状态 |
-| sort_key | string | false | 排序键 默认为集群创建时间 |
-| status | string | false | 集群节点状态 |
-| timestamp | string | true | 使用当前api的时间戳 |
+| cluster_id | string | hpc集群的集群id            | false       |
+| cluster_type | string | hpc集群的类型 | false |
+| limit | int | 集合的限制 | false |
+| offset | int | 集合偏移量 | false |
+| reverse | int | 排序操作 0：ASC 1:DESC | false |
+| run_user | string | 运行作业用户 | false |
+| search_word | string | 模糊查询 支持 keys：[name] | false |
+| shared_status | string | 集群的共享状态 | false |
+| sort_key | string | 排序键 默认为集群创建时间 | false |
+| status | string | 集群节点状态 | false |
+| timestamp | string | 使用当前api的时间戳 | true |
 
 [_公共参数_](../../../parameters/)
 

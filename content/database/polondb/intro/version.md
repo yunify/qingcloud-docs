@@ -1,13 +1,13 @@
 ---
 title: "产品版本"
 description: 本小节主要介绍 PolonDB 主要产品版本。 
-keywords: polondb 版本介绍,系列介绍 
+keyword: polondb 版本介绍,系列介绍 
 weight: 25
 collapsible: false
 draft: false
 ---
 
-分布式数据库 PolonDB 根据 QingCloud AppCenter 功能特点定制`基础版`和`企业版`两个功能系列。
+分布式数据库 PolonDB 根据 AppCenter 功能特点定制`基础版`和`企业版`两个功能系列。
 
 ## 版本历程
 

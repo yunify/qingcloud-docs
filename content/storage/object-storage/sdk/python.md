@@ -1,7 +1,8 @@
 ---
 title: "Python SDK"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: 本小节主要介绍 Python SDK 快速指南相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 collapsible: false
 draft: false
 weight: 2
@@ -17,6 +18,10 @@ Python SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，各接
 使用 SDK 之前请先在 [管理控制台](https://console.qingcloud.com/access_keys/) 申请 Access key。
 
 ## 安装
+qingstor-sdk 自 v2.3.0 后，仅支持 python v3.6 及以上的版本。
+
+故，安装 qingstor-sdk 时，需确认当前环境中的 python 版本是否满足要求。若 python 版本低于 v3.6，则在使用该 SDK 的过程中，会出错。
+
 使用 Pip 安装:
 
 ```bash

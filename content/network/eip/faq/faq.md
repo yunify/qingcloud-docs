@@ -2,8 +2,8 @@
 title: "连接问题"
 draft: false
 weight: 10
-enableToc: false
-keyword: QingCLoud, 青云, 公网IP, 弹性EIP, 
+description: 公网 IP 连接问题
+keyword: QingCloud, 青云, 云计算, 公网IP, 弹性EIP
 ---
 
 ## 云服务器绑定了公网 IP 之后，为什么我无法通过 IP SSH 登录，也不能 ping 通该 IP？ {#ip-ip-ssh-ping-ip}

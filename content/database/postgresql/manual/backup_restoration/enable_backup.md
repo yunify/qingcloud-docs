@@ -1,7 +1,7 @@
 ---
 title: "创建备份"
 description: 本小节主要如何创建 PostgreSQL 数据备份。 
-keywords: PostgreSQL 数据备份；
+keyword: 数据备份,PostgreSQL,关系型数据库,数据库
 weight: 10
 collapsible: false
 draft: false
@@ -24,12 +24,12 @@ PostgreSQL 集群硬盘可以创建多条备份链，每条备份链可包括一
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创 PostgreSQL 集群状态为**活跃**。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 PostgreSQL**，进入集群管理页面。
 3. 选择目标集群，鼠标右键展开集群快速操作列表。
 4. 点击**创建备份**或在备份链上新增备份，弹出备份提示窗口。

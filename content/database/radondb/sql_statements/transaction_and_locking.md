@@ -1,7 +1,7 @@
 ---
 title: "Transactional and Locking"
 description: 本小节主要介绍 RadonDB 支持的 Transactional and Locking 语法。 
-keywords: radondb SQL 集,
+keyword: radondb SQL 集,
 weight: 40
 collapsible: false
 draft: false

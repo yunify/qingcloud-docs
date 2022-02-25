@@ -1,9 +1,9 @@
 ---
 title: "云服务器如何连接数据库集群"
-description: Test description
+description: 云服务器如何连接数据库集群
 weight: 50
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，数据库集群
 ---
 
 用户在青云平台购买数据库产品，购买后想要通过公网或内网去连接数据库，本文主要介绍使用青云平台数据库集群如何进行连接。

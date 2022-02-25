@@ -1,16 +1,17 @@
 ---
 title: "开启 Linux 启动项"
 date: 2020-08-19T17:08:56+09:00
-description: test
+description: 开启Linux的启动选项
 weight: 20
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，启动
 ---
 
 有时需要修改内核参数来进行调试或者优化，但是修改不当又容易导致云服务器启动失败，下面举例说明几个操作系统如何在启动的时候进入启动项，临时修改一些内核的参数
 
 ## CentOS 6.8
 
-先正常登陆云服务器，修改/etc/grub.conf，修改timeout参数为30，并将hiddenmenu参数注释，保存退出。如下图所示：
+先正常登录云服务器，修改/etc/grub.conf，修改timeout参数为30，并将hiddenmenu参数注释，保存退出。如下图所示：
 
 ![gurb](../../_images/grub_1.png)
 
@@ -31,7 +32,7 @@ draft: false
 
 ## CentOS 7.9
 
-先正常登陆云服务器，修改/etc/default/grub，修改timeout =30，保存退出。
+先正常登录云服务器，修改/etc/default/grub，修改timeout =30，保存退出。
 修改/boot/grub2/grub.cfg，修改两处set timeout=30，保存退出。
 
 ```

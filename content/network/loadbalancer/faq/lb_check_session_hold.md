@@ -1,9 +1,9 @@
 ---
 title: "如何检查负载均衡器会话保持是否生效"
-description: Test description
+description: 介绍如何检查负载均衡器会话保持是否生效。
+keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 会话保持
 weight: 50
 draft: false
-enableToc: false
 ---
 
 ## 负载均衡器（LB）支持的会话保持类型

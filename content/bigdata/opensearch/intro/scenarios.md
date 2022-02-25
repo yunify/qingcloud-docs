@@ -1,7 +1,7 @@
 ---
 title: "应用场景"
 description: 本小节主要介绍 OpenSearch 应用场景。 
-keywords: OpenSearch 应用场景 
+keyword: 应用场景,OpenSearch,搜索引擎,大数据 
 weight: 16
 collapsible: false
 draft: false

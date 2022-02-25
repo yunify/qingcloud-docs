@@ -1,7 +1,8 @@
 ---
 title: "Linux云服务器配置MySQL"
-description: Test description
+description: Linux配置mysql
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，mySQL
 ---
 
 ## 背景介绍
@@ -245,7 +246,7 @@ netstat -ano | findstr 3306
 
 ### 2. 本地登录MySQL
 
-使用默认密码登陆MySQL。
+使用默认密码登录MySQL。
 
 ```shell
 mysql -u root -p
@@ -288,4 +289,4 @@ mysql> SELECT host,user FROM user;
 
 通过云服务器绑定的公网IPv4进行连接，已正常连接。
 
-![](../mysql_install/mysql_install19.png)
+![](../../_images/mysql_install/mysql_install19.png)

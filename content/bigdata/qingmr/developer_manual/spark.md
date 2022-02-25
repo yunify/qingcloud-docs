@@ -1,23 +1,40 @@
 ---
 title: "Spark 使用指南"
 description: 本小节主要介绍Spark 基本操作使用指南。 
-keywords: qingmr Spark,
+keyword: qingmr Spark,
 weight: 15
 collapsible: false
 draft: false
 ---
 
 
-## 开启/关闭 Spark Standalone 模式
 
-用户可以选择是否开启 Spark Standalone 模式（从 1.1.0 开始默认关闭）。
+## 配置 Spark 模式
 
-- 开启后用户可以以 Spark Standalone 模式提交 Spark 应用。
-- 关闭后用户可以以 Spark on YARN 模式提交 Spark 应用。
-- 如仅以 Spark on YARN 模式提交 Spark 应用或者仅使用 Hadoop 相关功能，则可以选择关闭 Spark Standalone 模式以释放资源。
-- 此选项最好不要和其他配置参数项一起改，单独改动此项然后保存设置是推荐的作法。
+您可以选择是否开启 Spark Standalone 模式（从 1.1.0 开始默认关闭）。
 
-![开启关闭 standalone](../../_images/switch_standalone.png)
+- 开启后您可以以 Spark Standalone 模式提交 Spark 应用；关闭后您可以以 Spark on YARN 模式提交 Spark 应用。
+- 若仅以 Spark on YARN 模式提交 Spark 应用或者仅使用 Hadoop 相关功能，您可以选择关闭 Spark Standalone 模式以释放资源。
+- 此参数建议不要和其他配置参数项一起修改，推荐单独修改此项然后保存设置。
+
+
+1. 登录管理控制台。
+
+2. 选择**产品与服务** > **大数据服务** > **大数据引擎 QingMR**，进入集群管理页面。
+
+3. 选择目标集群，点击目标集群 ID，进入集群详情页面。  
+
+4. 选择**配置参数**页签，点击**修改属性**。
+
+   -设置为 Spark Standalone 模式  
+   设置 **enable_spark_standalone** 参数为 `true`。     
+   ![开启 standalone](../../_images/spark_standalone_true.png)
+
+    -设置为 Spark on YARN 模式  
+   设置 **enable_spark_standalone** 参数为 `false`。  
+   ![关闭 standalone](../../_images/spark_standalone_false.png)
+
+5. 点击**保存**。
 
 ## 以 Spark-shell 模式运行 Spark job
 

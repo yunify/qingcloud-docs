@@ -1,17 +1,41 @@
 ---
 title: "产品动态"
+description: 本小节主要介绍 MySQL Plus 产品动态
+keyword: 数据库，MySQL PLus，关系型数据库，MySQL，产品动态
+weight: 05
 collapsible: false
-weight: 11
+draft: false
 
 product:
+    - time: 2021-12-21
+      title: MySQL Plus 1.1.0 版本正式上线
+      content: MySQL Plus 1.1.0 版本基于 MySQL 5.6、5.7、8.0 内核构建。<br>- 新增逻辑备份和备份回档功能；<br>- 新增分析实例日志查询和下载功能；<br>- 新放开 `Block_encryption_mode`、`Binlog_transaction_dependency_tracking`、`Group_replication_transaction_size_limit`参数；<br>- 支持动态设定 `Max_connections` 参数值；<br>- `Sql_mode` 参数新增 NULL 值选项；<br>- 修复集群自动化运维问题，加强集群高可用稳定性。
+      url: ../../intro/version/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 全部
+
+    - time: 2021-12-21
+      title: MySQL Plus 支持逻辑备份
+      content: MySQL Plus 1.1.0 版本全新支持基于数据库对象级的逻辑备份，并支持恢复集群到指定时间点。
+      url: ../../manual/backup_restoration/backup_info/
+      tags:
+      - 新功能
+      zone: 全部
+
     - time: 2021-07-12
       title: MySQL Plus 支持外网地址连接
       content: MySQL Plus 通过在管理控制台申请外网地址和设置 IP 白名单，支持使用外网地址连接数据库。
       url: ../../manual/mgt_connect/enable_external_network/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 全部
 
     - time: 2021-07-09
       title: MySQL Plus 1.0.9 版本正式上线
-      content: MySQL Plus 1.0.9版本基于 MySQL 5.6、5.7、8.0内核构建。<br>- 新增分析实例节点，支持从主节点同步并分析数据；<br>- 新增重启节点功能，支持重启单个节点服务；<br>- 新增指定 Master 节点功能；<br>- 新增服务地址模块，支持一键查询节点日志服务地址。
+      content: MySQL Plus 1.0.9版本基于 MySQL 5.6、5.7、8.0内核构建。<br>- 新增分析实例节点，支持 HTAP 方案将 ClickHouse 作为 MySQL Plus 的一个分析实例，实现从主节点同步并分析数据；<br>- 新增重启节点功能，支持重启单个节点服务；<br>- 新增指定 Master 节点功能；<br>- 新增服务地址模块，支持一键查询节点日志服务地址。
       url: ../../intro/version/
     
     - time: 2021-01-31
@@ -41,12 +65,12 @@ product:
 
     - time: 2019-07-26
       title: MySQL Plus 全新形态上线
-      content: 青云QingCloud MySQL Plus 为了提高用户使用体验和提供更多的优惠，发布了全新的版本，支持基础版、高可用版、金融版三个产品系列；同时为提高使用性能，新增读写分离和只读实例节点。
+      content: MySQL Plus 为了提高用户使用体验和提供更多的优惠，发布了全新的版本，支持基础版、高可用版、金融版三个产品系列；同时为提高使用性能，新增读写分离和只读实例节点。
       url: ../../intro/list/
 
     - time: 2017-06-29
       title: MySQL Plus 上线 AppCenter
-      content: 青云QingCloud MySQL Plus 通过 AppCenter 管理平台以独立应用方式提供服务。<br>MySQL Plus 是一款具备金融级强一致性、主从秒级切换，集 InnoDB+TokuDB 双存储引擎支持的增强型 MySQL 集群应用。作为 QingCloud 关系型数据库 RDB 的升级版本，QingCloud MySQL Plus 主要面向对数据一致性和高可用性有着强烈需求的高端企业级用户。
+      content: MySQL Plus 通过 AppCenter 管理平台以独立应用方式提供服务。<br>MySQL Plus 是一款具备金融级强一致性、主从秒级切换，集 InnoDB+TokuDB 双存储引擎支持的增强型 MySQL 集群应用。作为关系型数据库 RDB 的升级版本，MySQL Plus 主要面向对数据一致性和高可用性有着强烈需求的高端企业级用户。
       url: ../../intro/introduction/
 
 ---

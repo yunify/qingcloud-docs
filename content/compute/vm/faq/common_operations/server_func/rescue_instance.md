@@ -1,7 +1,8 @@
 ---
 title: "如何使用救援云服务器"
-description: test
+description: 如何使用救援云服务器
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，救援
 ---
 
 救援云服务器（Rescue Instance）可以对一台故障的云服务器进行人工运维。

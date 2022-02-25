@@ -1,9 +1,9 @@
 ---
 title: "Linux 服务器登录缓慢"
-description: Test description
+description: 解决 Linux 登录缓慢问题
 weight: 40
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，登录
 ---
 
 ## 问题描述 

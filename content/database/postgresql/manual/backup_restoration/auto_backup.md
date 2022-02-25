@@ -1,7 +1,7 @@
 ---
 title: "开启自动备份"
 description: 本小节主要如何开启 PostgreSQL 数据自动备份。 
-keywords: PostgreSQL 数据自动备份；
+keyword: 数据自动备份,PostgreSQL,关系型数据库,数据库
 weight: 20
 collapsible: false
 draft: false
@@ -15,13 +15,13 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 PostgreSQL 集群，且集群状态为**活跃**。
 - 已创建集群备份。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 PostgreSQL**，进入集群管理页面。
 3. 选择目标集群，鼠标右键展开集群快速操作列表。
 4. 点击**修改自动备份策略**，弹出自动备份配置窗口。

@@ -19,12 +19,12 @@ weight: 10
 
 **Request Parameters**
 
-| Parameter name | Type | Description | Required |
+| Parameter name | Type | Description             | Required |
 | --- | --- | --- | --- |
-| timestamp      | string | true        | 进行当前api操作的时间戳 |
-| cluster_id     | string | true        | ldap用户所属的集群id    |
-| username       | string | true        | 需要删除用户的名称      |
-| zone           | string | true        | 区域id                  |
+| timestamp      | string | 进行当前api操作的时间戳 | true |
+| cluster_id     | string | ldap用户所属的集群id    | true |
+| username       | string | 需要删除用户的名称      | true  |
+| zone           | string | 区域id                  | true              |
 
 [_公共参数_](../../../parameters/)
 

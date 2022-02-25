@@ -1,7 +1,7 @@
 ---
 title: "创建集群"
 description: 本小节主要介绍如何快速创建 MongoDB Cluster 数据库。 
-keywords: MongoDB Cluster 实例创建,集群创建
+keyword: MongoDB Cluster 实例创建,集群创建
 weight: 10
 collapsible: false
 draft: false

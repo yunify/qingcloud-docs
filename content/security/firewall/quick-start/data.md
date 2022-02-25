@@ -2,9 +2,10 @@
 title: "业务系统资产"
 linkTitle: "业务系统资产"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: 如何查看业务系统资产
 draft: false
 weight: 2
+keyword: 云服务器, QingCloud，安全，云防火墙，业务系统资产
 ---
 
 登录到管理控制台，点击云防火墙，转到云防火墙控制台，将展示下图内容：

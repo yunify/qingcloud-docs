@@ -1,8 +1,9 @@
 ---
 title: "Windows云服务器蓝屏"
-description: test
+description: Windows 云服务器蓝屏解决方法
 weight: 16
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，蓝屏
 ---
 
 Windows云服务器使用过程中出现蓝屏，Windows 10 1903包括这个之前的系统都有这个漏洞
@@ -15,7 +16,7 @@ Windows云服务器使用过程中出现蓝屏，Windows 10 1903包括这个之�
 
    ![bluescreen_2](/compute/vm/_images/bluescreen_2.png)
 
-2. 查看系统事件查看器有频繁的登陆审核日志，且系统错误日志附近可能会有temdd相关的日志。
+2. 查看系统事件查看器有频繁的登录审核日志，且系统错误日志附近可能会有temdd相关的日志。
 
    ![bluescreen_3](/compute/vm/_images/bluescreen_3.png)
 

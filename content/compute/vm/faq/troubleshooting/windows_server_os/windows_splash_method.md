@@ -2,7 +2,7 @@
 title: "Windows  配置多用户登录后，登录出现闪屏怎么办？"
 weight: 23
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，闪屏
 ---
 ## 概述
 

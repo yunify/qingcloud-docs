@@ -1,14 +1,14 @@
 ---
 title: "产品版本"
 description: 本小节主要介绍 RadonDB 版本规格。 
-keywords: RadonDBL, QingCloud, 版本规格
+keyword: RadonDBL, QingCloud, 版本规格
 weight: 30
 collapsible: false
 draft: false
 ---
 
 
-QingCloud RadonDB 基于 MySQL 5.7版本构建 Radon 内核，并自研 Xenon 集群高可用工具。
+RadonDB 基于 MySQL 5.7版本构建 Radon 内核，并自研 Xenon 集群高可用工具。
 
 ## 版本历程
 

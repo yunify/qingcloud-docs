@@ -1,7 +1,8 @@
 ---
 title: "Delete Bucket CORS"
 date: 2020-11-26T10:08:56+09:00
-description:
+description: 本小节主要介绍 Delete Bucket CORS 接口相关操作。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 collapsible: false
 draft: false
 weight: 3
@@ -38,7 +39,7 @@ Authorization: <authorization-string>
 
 | 错误码 | 错误描述 | HTTP 状态码 |
 | --- | --- | --- |
-| OK | 成功获取 CORS | 204 |
+| OK | 成功删除 CORS | 204 |
 
 其他错误码可参考 [错误码列表](/storage/object-storage/api/error_code/#错误码列表)。
 

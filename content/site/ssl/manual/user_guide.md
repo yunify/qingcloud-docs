@@ -1,18 +1,15 @@
 ---
 title: "购买指南"
-description: manual
+description: 如何购买ssl证书
 draft: false
 weight: 1
+keyword: 云计算, 青云, QingCloud,SSL，购买指南
 ---
 
 
 ## 购买流程 {#id5}
 
 **第一步：创建订单**
-
-注解
-
-免费证书仅限使用在 QingCloud 的负载均衡中，禁止用户下载，公司和姓名信息仅支持中文，仅限国内企业用户购买。
 
 点击控制台左侧的安全 - SSL 证书服务，进入如下界面：
 

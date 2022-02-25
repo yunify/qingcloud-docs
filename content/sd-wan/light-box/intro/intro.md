@@ -1,7 +1,8 @@
 ---
 title: "光盒简介"
 linkTitle: "光盒简介"
-description:
+keyword: 云计算, 青云, QingCloud,SD-WAN,光盒
+description: 本章节介绍什么是光盒。
 draft: false
 weight: 1
 ---

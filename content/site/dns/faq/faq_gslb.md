@@ -1,9 +1,8 @@
 ---
 title: "GSLB 常见问题"
 description: 本小节主要介绍 GSLB 常见问题。 
-keywords: gslb faq 
+keyword: QingCloud, 青云, DNS, GSLB, FAQ 
 weight: 20
-collapsible: false
 draft: false
 ---
 

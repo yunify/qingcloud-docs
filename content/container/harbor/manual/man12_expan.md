@@ -1,7 +1,8 @@
 ---
 title: "扩容集群"
 draft: false
-enableToc: false
+description: 介绍如何扩容 Harbor 集群。
+keyword: 青云, QingCloud, 云计算, Harbor, 镜像仓库, 扩容集群
 weight: 12
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: "步骤一：部署 Deep Learning 应用"
-description: 本小节主要介绍如何快速部署 Deep Learning 应用。 
-keywords: 
+title: "部署 Deep Learning 应用"
+description: 本小节主要介绍 Deep Learning 部署应用
+keyword: 人工智能，深度学习，Deep Learning，部署服务，部署集群，部署应用
 weight: 10
 collapsible: false
 draft: false
@@ -9,14 +9,11 @@ draft: false
 
 通过 AppCenter 集群管理控制台，您可以快速部署 Deep Learning 应用。本小节主要介绍如何快速部署 Deep Learning 应用。
 
-<video src="https://appcenter-docs.pek3a.qingstor.com/developer-guide/docs/videos/AppCenter2.0_Training_Fix.mp4" controls="controls">
-您的浏览器不支持 video 标签。
-</video>
 
 ## 前提条件
 
 - 已获取 QingCloud 管理控制台登录账号和密码。
-- 已创建 [VPC 网络](https://docsv3.qingcloud.com/network/vpc/manual/vpcnet/10_create_vpc/)和[私有网络](https://docsv3.qingcloud.com/network/vpc/manual/vxnet/05_create_vxnet/)，且私有网络已加入 VPC 网络。
+- 已创建 [VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)和[私有网络](/network/vpc/manual/vxnet/05_create_vxnet/)，且私有网络已加入 VPC 网络。
 
 ## 操作步骤
 

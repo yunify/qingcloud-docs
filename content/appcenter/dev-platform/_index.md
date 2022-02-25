@@ -14,15 +14,15 @@ section2:
   children:
     - title: 云应用开发
       content: 如何开发云应用
-      url: "/appcenter/dev-platform/quick-start/cluster"
+      url: "/appcenter/dev-platform/quick-start/cluster/"
 
     - title: SaaS 应用开发
       content: 如何开发 SaaS 应用
-      url: "/appcenter/dev-platform/quick-start/quick_start_saas"
+      url: "/appcenter/dev-platform/quick-start/quick_start_saas/"
 
     - title: License 应用发布
       content: License 应用如何发布
-      url: "/appcenter/dev-platform/license-guide/release"
+      url: "/appcenter/dev-platform/license-guide/release/"
 
     - title: 平台管理
       content: 开发者财务管理、工单管理、通知管理、用户订单管理
@@ -69,7 +69,7 @@ section4:
       vice_title: 开发 SaaS 应用快速入门
       children: 
         - title: SaaS 应用与平台账户对接
-          url: "/appcenter/dev-platform/saas-developer-guide/account/"
+          url: "/appcenter/dev-platform/saas-developer-guide/20_account/10_get_flow/"
 
         - title: 创建应用
           url: "/appcenter/dev-platform/saas-developer-guide/release/#创建应用"

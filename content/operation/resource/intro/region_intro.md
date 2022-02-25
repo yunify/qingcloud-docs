@@ -3,7 +3,7 @@ title: "什么是区域及可用区"
 description: Test description
 draft: false
 weight: 2
-keyword: 消息中心, QingCloud
+keyword: 区域及可用区, QingCloud, 青云, 云计算
 ---
 
 ### 区域

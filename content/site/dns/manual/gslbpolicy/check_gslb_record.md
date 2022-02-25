@@ -1,6 +1,7 @@
 ---
 title: "查看告警日志"
-description: 负载均衡告警、告警日志
+description: 介绍何查看 GSLB 实例告警日志。
+keyword: QingCloud, 青云, DNS, GSLB 实例, 告警日志
 weight: 5
 draft: false
 ---
@@ -12,7 +13,7 @@ draft: false
 ## 操作步骤
 
 1. 登录 QingCloud 管理控制台。
-2. 选择**产品与服务** > **网络服务** > **云解析 DNS**，进入域名列表页。
+2. 选择**产品与服务** > **域名与网站** > **云解析 DNS**，进入域名列表页。
 3. 在左侧导航栏选择**全局负载均衡**，进入实例列表页面。
    
    ![GSLB 策略列表](../_image/gslb_policy_list.png)

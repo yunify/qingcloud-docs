@@ -17,13 +17,13 @@ weight: 20
 
 **Request Parameters**
 
-| Parameter name | Type | Description | Required |
+| Parameter name | Type | Description | **Required** |
 | --- | --- | --- | --- |
-| timestamp      | string | true        | 执行当前api时间戳    |
-| cluster_id     | string | true        | ladp用户所属的集群id |
-| password       | string | true        | 设置新增用户密码     |
-| username       | string | true        | 设置新增用户名称     |
-| zone           | string | true        | 区域id               |
+| timestamp      | string | 执行当前api时间戳    | true |
+| cluster_id     | string | ladp用户所属的集群id | true |
+| password       | string | 设置新增用户密码     | true |
+| username       | string | 设置新增用户名称     | true |
+| zone           | string | 区域id               | true           |
 
 [_公共参数_](../../../parameters/)
 
@@ -39,7 +39,7 @@ weight: 20
 _Example Request_:
 
 ```
-https://hpc.api.shanhe.com:443/api//user/addUser
+https://hpc.api.shanhe.com:443/api/user/addUser
 ```
 
 _Example Response_:

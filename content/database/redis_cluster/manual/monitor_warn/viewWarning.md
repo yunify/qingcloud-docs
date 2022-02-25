@@ -1,7 +1,7 @@
 ---
 title: "查看指标告警"
 description: 本小节介绍如何查看指标告警状态。 
-keywords: QingCloud，Redis Cluster，数据库，监控，告警，指标
+keyword: QingCloud，Redis Cluster，数据库，监控，告警，指标
 weight: 4
 draft: false
 ---
@@ -14,7 +14,7 @@ draft: false
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 

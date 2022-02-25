@@ -1,9 +1,9 @@
 ---
 title: "关闭Windows云服务器内部防火墙"
 date: 2020-03-07T00:38:25+09:00
-description: Test description
+description: 如何关闭Windows云服务器的内部防火墙
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，内部防火墙
 ---
 
 > 本文以Windows Server 2019为例进行操作，其他版本的Windows云服务器内部防火墙关闭位置相同。

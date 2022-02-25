@@ -1,6 +1,7 @@
 ---
 title: "用户管理"
-description: 
+description: 介绍 IAM 用户管理流程。
+keyword: 青云, IAM , 用户管理, 访问方式
 draft: false
 weight: 40
 ---
@@ -35,9 +36,8 @@ weight: 40
     >
     >创建成功后可以进行批量赋予权限。
     >
-    >
+    
 
-    ## 
 
 ## 编辑用户
 
@@ -133,7 +133,7 @@ weight: 40
 
 您可以管理用户的访问方式，进行密码修改，创建新的 access key 等。
 
-### 控制台登陆设置
+### 控制台登录设置
 
 1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **访问鉴权管理** > **用户**，进入域名列表页。
 

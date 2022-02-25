@@ -2,10 +2,10 @@
 
 title: "如何通过ssh密钥方式访问云服务器"
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 如何通过ssh密钥登录云服务器
 weight: 20
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，SSH
 ---
 
 ## 前提条件

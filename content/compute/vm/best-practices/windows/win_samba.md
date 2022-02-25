@@ -1,7 +1,8 @@
 ---
 title: "Windows 云服务器配置 samba 服务"
-description: Test description
+description: 如何在Windows 云服务器上配置 samba 服务
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，samba
 ---
 
 本文以 Windows Server 2016系统配置 samba 服务为例，Windows Server 2016 默认已安装 samba 客户端，

@@ -1,6 +1,7 @@
 ---
 title: "配置域名解析记录"
-description: test
+description: 介绍如何快速域名配置解析记录。
+keyword: QingCloud, 青云, DNS, 域名解析
 weight: 1
 draft: false
 ---
@@ -12,7 +13,7 @@ draft: false
 ## 步骤一：添加域名
 
 1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
-2. 选择**产品与服务** > **网络服务** > **云解析 DNS**，进入域名列表页。
+2. 选择**产品与服务** > **域名与网站** > **云解析 DNS**，进入域名列表页。
 
    ![DNS域名列表](../_images/create_domain_1.png)
    

@@ -1,7 +1,7 @@
 ---
 title: "配置 GSLB 实例"
 description: 本小节主要介绍如何快速创建 GSLB 实例。 
-keywords: gslb 实例,创建实例
+keyword: QingCloud, 青云, DNS, gslb 实例, 创建实例
 weight: 2
 collapsible: false
 draft: false
@@ -13,7 +13,7 @@ draft: false
 ## 操作步骤
 
 1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
-2. 选择**产品与服务** > **网络服务** > **云解析 DNS**，进入域名列表页。
+2. 选择**产品与服务** > **域名与网站** > **云解析 DNS**，进入域名列表页。
 3. 在左侧导航栏选择**全局负载均衡**，进入实例列表页面。
    
    ![](../_images/gslb_policy_list_new.png)

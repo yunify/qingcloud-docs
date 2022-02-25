@@ -2,6 +2,7 @@
 title: "新疆管局要求"
 description: test
 weight: 37
+keyword: 新疆管局要求, QingCloud, 青云, 备案
 ---
 
 

@@ -4,7 +4,7 @@ description: 本小节介绍如何
 weight: 5
 collapsible: false
 draft: false
-keywords: QingCloud，Redis Cluster，数据库，多可用区
+keyword: QingCloud，Redis Cluster，数据库，多可用区
 ---
 
 若您需要提高容灾能力时，您可以将单可用区部署的集群升级为多可用区部署。
@@ -21,7 +21,7 @@ keywords: QingCloud，Redis Cluster，数据库，多可用区
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 

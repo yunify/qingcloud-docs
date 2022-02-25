@@ -1,7 +1,7 @@
 ---
 title: "创建 Nifi 流程"
 description: 本小节主要介绍 Nifi 节本创建流程。 
-keywords:  Nifi 基本创建流程
+keyword:  Nifi 基本创建流程
 weight: 10
 collapsible: false
 draft: false

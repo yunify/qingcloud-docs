@@ -1,7 +1,7 @@
 ---
 title: "查看日志及数据文件"
-date: 2021-11-01T00:40:25+09:00
-description: 在线查看日志、文件
+description: 在线查看 Kafka 日志、文件
+keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,查看日志
 weight: 70
 draft: false
 ---
@@ -21,9 +21,9 @@ draft: false
  
    在本地浏览器输入`http://节点 IP`，进入日志查看页面。
 
-   > **说明：**  
+   > **说明**  
    > 
-   > Kafka 1.0.0-QingCloud1.1.6 及后续新版本：Kafka-manager 安装在客户端节点上，此处**节点 IP** 为**客户端节点 IP 地址**。
+   > Kafka 1.0.0 - v1.1.6 及后续新版本：Kafka Manager 安装在客户端节点上，此处**节点 IP** 为**客户端节点 IP 地址**。
 
    <img src="../../_images/file_viewer_1.png" alt="Kafka Manager 节点日志列表" style="zoom:50%;" /> 
 
@@ -35,12 +35,12 @@ draft: false
 
    在本地浏览器输入`http://节点 IP`，可查看全部 Kafka 节点的日志文件。
   
-   > **说明：**  
+   > **说明**  
    > 
    > 此处**节点 IP** 为其中一个 Kafka 节点 IP 地址。
    
    <img src="../../_images/file_viewer_2.png" alt="Kafka 节点文件列表" style="zoom:50%;" />  
 
-   进入 logs 文件夹，点击对应路径，即可查看 kafka 节点的日志文件。
+   进入 logs 文件夹，点击对应路径，即可查看 Kafka 节点的日志文件。
 
    <img src="../../_images/kafka_log.png" alt="Kafka 日志" style="zoom:50%;" />  

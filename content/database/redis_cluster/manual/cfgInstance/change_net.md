@@ -4,7 +4,7 @@ description: 本小节介绍如何变更集群部署的私有网络。
 weight: 10
 collapsible: false
 draft: false
-keywords: QingCloud，Redis Cluster，私有网络
+keyword: QingCloud，Redis Cluster，私有网络
 ---
 
 Redis Cluster 支持更换 VPC 网络或私有网络，例如通过该功能将 Redis Cluster 实例的私有网络变更至云服务器实例所属的私有网络，实现云服务器实例与 Redis Cluster 实例间的互连。
@@ -21,7 +21,7 @@ Redis Cluster 支持更换 VPC 网络或私有网络，例如通过该功能将 
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 

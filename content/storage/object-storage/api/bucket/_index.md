@@ -1,7 +1,8 @@
 ---
 title: "Bucket API"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: 本小节主要介绍 Bucket API 相关内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 draft: false
 weight: 5
 collapsible: true

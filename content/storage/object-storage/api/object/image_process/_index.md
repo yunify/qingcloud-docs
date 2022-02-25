@@ -1,5 +1,7 @@
 ---
 title: "图片处理"
+description: 本小节主要介绍图片处理相关 API 内容。
+keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 ---
 
 用户可以调用该 API 接口对存储于 QingStor 对象存储上的图片进行各种基本处理。
@@ -40,7 +42,7 @@ Authorization: <authorization-string>
 | 名称 | 类型 | 说明 | 是否必选 |
 | --- | --- | --- | --- |
 | action   | String  | 对图片的一组操作。 | 是 |
-| operation | String | 对图片的基本操作。详情请参考 [图片操作](#操作类型)。<br>- 每个 `operation` 可以有多个键值对作为参数，多个键值对之间使用分隔符 `,` 隔开；<br>- 多个 `operation` 之间使用分隔符 `｜` 隔开。 | 是      
+| operation | String | 对图片的基本操作。详情请参考前文内容。<br>- 每个 `operation` 可以有多个键值对作为参数，多个键值对之间使用分隔符 `,` 隔开；<br>- 多个 `operation` 之间使用分隔符 `｜` 隔开。 | 是      
 | k | Char | `operation` 的参数名 | 是      |
 | v | Integer | `operation` 的参数值 | 是      |
 

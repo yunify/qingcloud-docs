@@ -5,6 +5,7 @@ date: 2020-02-28T10:08:56+09:00
 description:
 draft: false
 weight: 2
+keyword: CloudSat, QingCloud, 青云, 自定义监控数据
 ---
 
 ## 上传自定义监控数据代码示例

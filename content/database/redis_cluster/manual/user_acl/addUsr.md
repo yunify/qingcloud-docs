@@ -3,7 +3,7 @@ title: "新增用户"
 description: 本小节介绍如何修改 ACL 用户密码。 
 weight: 2
 draft: false
-keywords: redis cluster，访问控制，用户管理 ACL
+keyword: redis cluster，访问控制，用户管理 ACL
 ---
 
 介绍如何新增用户。
@@ -19,7 +19,7 @@ Redis Cluster 实例需要为 Redis 6.* 或以上版本。
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 

@@ -1,7 +1,7 @@
 ---
 title: "回迁业务至源集群"
 description: 本小节主要介绍如何回迁业务至源集群。 
-keywords: mysql plus 回迁业务至源集群
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,回迁业务至源集群
 weight: 25
 collapsible: false
 draft: false
@@ -11,7 +11,7 @@ draft: false
 
 > **注意**
 > 
-> -提升灾备后，**灾备集群**将不再从**源集群**同步数据。
+> -提升灾备后，**灾备集群**将不再从**源集群**同步数据和用户帐号等信息。
 > 
 > -提升灾备后，**灾备集群**集群高可用主从切换、重启和配置参数功能自动生效或恢复。
 
@@ -23,13 +23,13 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已**源集群**和**灾备集群**集群状态均为**活跃**。
 - **源集群**与**灾备集群**均修改如下配置参数为目标值：`connect_timeout=30` 、`max_allowed_packets=1G` 、`slave_pending_jobs_size_max=1G` 、 `interactive_timeout=3600` 、 `wait_timeout=3600` 、 `net_read_timeout=1800`、`net_write_timeout=1800`
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 MySQL Plus**，进入集群管理页面。
 

@@ -1,7 +1,7 @@
 ---
 title: "签名认证"
 description: 本小节主要介绍如何进行 MySQL Plus 集群 api 签名方式。 
-keywords: mysql plus 签名方式；api 签名方式
+keyword: mysql plus 签名方式；api 签名方式
 draft: false
 weight: 10
 collapsible: false
@@ -196,7 +196,7 @@ https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=RunIns
 
 您需要先到 IAM 控制面板创建一个基于特定信任载体类型的身份，并将身份绑定到 API 执行设备上。
 
-假设 API 执行设备为 QingCloud 广东 2 区 id 为 i-7lchv5u3 的云服务器。
+假设 API 执行设备为广东 2 区 id 为 i-7lchv5u3 的云服务器。
 
 ### 步骤 1: 获取临时凭证
 

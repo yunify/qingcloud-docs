@@ -1,10 +1,10 @@
 ---
 title: "如何为 Linux 云服务器配置静态 IP 地址？ "
 date: 2020-01-30T00:38:25+09:00
-description: Test description
+description: 如何给 Linux 云服务器配置静态 IP
 draft: false
-enableToc: false
 weight: 80
+keyword: 云计算, 青云, QingCloud, 云服务器，Linux，静态IP
 ---
 
 请注意，只有当云服务器位于自管私有网络之中，或者受管私有网络的路由器关闭了 DHCP 时，您才需要自行配置 IP 地址。

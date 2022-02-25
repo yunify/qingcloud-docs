@@ -3,6 +3,7 @@ title: "迁移备案（即将上线）"
 description: test
 weight: 17
 draft: true
+keyword: 迁移备案, QingCloud, 青云, 备案
 ---
 
 目前支持备案迁移的省份有：上海、广东、安徽、河南、福建，浙江。

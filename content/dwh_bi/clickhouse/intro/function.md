@@ -1,7 +1,7 @@
 ---
 title: "功能特性"
 description: 本小节主要介绍 Clickhouse 功能特性。 
-keywords: Clickhouse 功能特性,
+keyword: 功能特性,数据仓库,ClickHouse
 weight: 15
 collapsible: false
 draft: false
@@ -23,11 +23,21 @@ ClickHouse（简称 CH 或 CK）是面向联机分析处理的列式数据库，
 
 - 数据实时更新。
 
-## ClickHouse on QingCloud
+## ClickHouse 服务
 
-ClickHouse on QingCloud 完美继承 ClickHouse 优良特性，主要功能特点如下：
+ClickHouse 服务完美继承 ClickHouse 优良特性，主要功能特点如下：
 
 - 兼容目前 ClickHouse 所有支持的数据引擎；
+
+- 数据分层存储
+
+  - 冷热数据分层存储
+
+    ClickHouse 内核使用 MergeTree 系列表引擎，支持将数据存储到多个对象存储中，提供数据冷热分层存储的功能，可大大降低冷数据存储的成本。
+
+  - 数据多磁盘存储
+
+    Clickhouse 内核使用 MergeTree 系列表引擎，支持根据磁盘容量和存储时间配置存储策略，将数据存储到多个对象存储中，提供数据多磁盘存储功能，可大大降低海量数据存储的成本。
 
 - 一键安装部署
   
@@ -35,15 +45,15 @@ ClickHouse on QingCloud 完美继承 ClickHouse 优良特性，主要功能特�
 
 - 监控告警
   
-  免去复杂的手动安装、部署运维，一键部署，开箱即用。
+  提供集群节点的 CPU、内存、I/O 等丰富的监控指标。
+
+  提供分钟级别的集群异常资源告警，并支持设置告警指标和告警阈值。
 
 - 弹性扩容伸缩
   
-  提供对集群CPU、内存弹性扩容收缩，扩容磁盘的功能。
+  提供对集群 CPU、内存弹性扩容收缩，扩容磁盘的功能。
 
-- 自由扩展
-  
-  提供对集群CPU、内存弹性扩容收缩，扩容磁盘的功能。
+  提供对集群节点数量弹性添加功能，并支持分片权重自动均衡。
 
 - 备份恢复
   

@@ -1,6 +1,7 @@
 ---
 title: "开发模板规范 - 完整版"
-date: 2020-11-11T00:00:00+09:00
+description: 介绍 AppCenter 云应用开发的模板及规范。
+keyword: QingCloud, 青云, AppCenter, 云应用开发, 模板, 规范
 draft: false
 collapsible: false
 weight: 6
@@ -727,7 +728,7 @@ class|数据盘类型，支持 0、2、3、5、6、100、200 其中 0 表示性�
 
 是否允许用户访问，true 表示该角色节点允许用户通过 vnc 登录，默认值为 false，
 该镜像的初始用户名和密码需要在“版本描述”中写清楚以便告知用户。
-允许用户登陆的节点在集群非活跃状态如关闭时不会销毁云服务器，所以用户可以往这类云服务器写入数据。
+允许用户登录的节点在集群非活跃状态如关闭时不会销毁云服务器，所以用户可以往这类云服务器写入数据。
 而其它云服务器是不会持久化数据，必须在挂盘上持久化数据，
 参见[制作 KVM 镜像](/appcenter/dev-platform/cluster-developer-guide/image-build/build/#制作-kvm-镜像)。
 

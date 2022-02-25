@@ -2,9 +2,10 @@
 title: "功能特性"
 linkTitle: "功能特性"
 date: 2020-02-28T10:08:56+09:00
-description:
+description: 云防火墙功能特性
 draft: false
 weight: 2
+keyword: 青云, QingCloud, 云计算, 云防火墙功能
 ---
 
 云防火墙提供互联网边界、流量的访问控制、集成威胁情报、并通过内置的入侵防御系统保护用户的云上资产和数据。

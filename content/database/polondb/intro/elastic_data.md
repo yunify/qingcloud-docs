@@ -1,7 +1,7 @@
 ---
 title: "规格限制"
-description: 本小节主要介绍 QingCloud PolonDB 规格限制。 
-keywords: polondb 规格限制
+description: 本小节主要介绍 PolonDB 规格限制。 
+keyword: polondb 规格限制
 weight: 30
 collapsible: false
 draft: false

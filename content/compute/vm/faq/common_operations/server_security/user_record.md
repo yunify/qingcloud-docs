@@ -1,11 +1,10 @@
 ---
 title: "Linux系统下查看系统用户登录记录"
 date: 2021-04-09T21:37:25+09:00
-description: Test description
+description: 如何在Linux系统下查看系统用户登记的记录
 weight: 30
 draft: false
-enableToc: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，用户登记
 ---
 
 ## 背景信息
@@ -55,7 +54,7 @@ btmp begins Thu Apr  1 09:58:34 2021
 
 ```
 [root@i-xxxxxxxx ~]# lastlog
-用户名           端口     来自             最后登陆时间
+用户名           端口     来自             最后登录时间
 root             pts/0    192.168.255.254  六 4月 10 14:07:20 +0800 2021
 bin                                        **从未登录过**
 daemon                                     **从未登录过**

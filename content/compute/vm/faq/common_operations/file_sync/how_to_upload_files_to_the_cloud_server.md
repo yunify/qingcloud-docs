@@ -1,9 +1,9 @@
 ---
  title: "上传文件到云服务器"
-description: Test description
+description: 如何上传文件到云服务器
 weight: 40
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，上传文件
 ---
 
 客户购买了云服务器，希望将将本地文件上传至云服务器中，以下文档会介绍不同操作系统的场景下，如何将文件同步到云服务器中

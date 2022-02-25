@@ -1,8 +1,7 @@
 ---
 title: "删除私有网络"
-linkTitle: "删除私有网络"
-date: 2021-05-20T10:08:56+09:00
-description:
+keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 私有网络
+description: 介绍如何删除私有网络。
 draft: false
 weight: 32
 ---

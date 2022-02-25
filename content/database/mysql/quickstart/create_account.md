@@ -1,7 +1,7 @@
 ---
 title: "步骤二：创建数据库账号"
 description: 本小节主要介绍如何快速创建 MySQL Plus 数据库用户账号。 
-keywords: mysql plus 数据库用户账号创建,
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,数据库用户账号创建,
 weight: 30
 collapsible: false
 draft: false
@@ -20,7 +20,7 @@ MySQL Plus 集群支持创建两种权限类型用户账号：**高级权限**�
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 MySQL Plus 集群，且集群状态为**活跃**。
 
 ## 操作步骤

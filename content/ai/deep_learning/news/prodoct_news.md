@@ -1,7 +1,10 @@
 ---
 title: "产品动态"
+description: 本小节主要介绍 Deep Learning 产品动态
+keyword: 人工智能，深度学习，Deep Learning，产品动态
+weight: 05
 collapsible: false
-weight: 10
+draft: false
 
 product:
 

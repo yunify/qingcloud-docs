@@ -1,5 +1,7 @@
 ---
 title: "启动录制任务"
+keyword: 云计算, 青云, QingCloud, 实时音视频 RTC, 启动录制任务, api 接口
+description: 使用实时音视频 RTC 的 API 接口启用录制任务。
 draft: false
 collapsible: false
 weight: 10
@@ -34,7 +36,7 @@ POST
 | app_id            | String | 是       | 应用 ID                                                      | -      |
 | project_id        | String | 是       | 项目 ID                                                      | -      |
 | channel           | String | 是       | 频道名称                                                     | -      |
-| sign_key          | String | 是       | 项目密钥                                                     | -      |
+| sign_key          | String | 是       | 项目密钥（需base64编码）                                     | -      |
 | isAudioOnly       | int    | 否       | 是否仅录制音频。<br />0：（默认）音视频同时录制。<br />1：仅启用音频录制功能，关闭视频录制。<br />isAudioOnly 和 isVideoOnly 不能同时设置为 1。 | 0      |
 | isVideoOnly       | int    | 否       | 是否仅录制视频。<br />0：（默认）音视频同时录制。 <br />1：仅启用视频录制功能，关闭音频录制。<br />isAudioOnly 和 isVideoOnly 不能同时设置为 1。 | 0      |
 | mixed_video_audio | int    | 否       | 同时录制音视频时的文件混合模式。<br />0：（默认）不混合音频和视频。<br />1：音频和视频混合成一个文件，录制文件格式为 MP4，但播放器支持有限。<br />2：音频和视频混合成一个文件，录制文件格式为 MP4，支持更多播放器。 | 2      |

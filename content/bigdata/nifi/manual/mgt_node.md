@@ -1,7 +1,7 @@
 ---
 title: "节点管理"
 description: 本小节主要介绍如何管理 QingCloud Nifi 集群节点。 
-keywords: Nifi 在线伸缩,节点管理
+keyword: Nifi 在线伸缩,节点管理
 weight: 15
 collapsible: false
 draft: false

@@ -1,7 +1,8 @@
 ---
 title: "使用云服务器搭建一个基于LNMP的Wordpress博客"
-description: test
+description: 如何使用云服务器搭建一个基于LNMP的Wordpress博客
 draft: false
+keyword: 云计算, 青云, QingCloud, 云服务器，LNMP，wordpress
 ---
 
 ## 项目概览
@@ -47,7 +48,7 @@ LNMP就是Linux + Nginx + MySQL + PHP。针对非常小型的网址，可以不�
 
 ![1567414363520](../../_images/Build-Wordpress.assets/1567414363520.png)
 
-计费方式选择按需计费（按需计费可以满足短时间的云服务器使用需求，预留方式则以月来扣费，但价格相对便宜）- 云服务器名称可以随意填写，SSH登陆方式选择密码（熟悉公有云及Linux后建议选择SSH密钥），设定好您自己的密码。
+计费方式选择按需计费（按需计费可以满足短时间的云服务器使用需求，预留方式则以月来扣费，但价格相对便宜）- 云服务器名称可以随意填写，SSH登录方式选择密码（熟悉公有云及Linux后建议选择SSH密钥），设定好您自己的密码。
 
 ![1567415386648](../../_images/Build-Wordpress.assets/1567415386648.png)
 
@@ -186,7 +187,7 @@ LNMP的安装时长视服务器的配置以及网络状态而定，安装完成�
 
 ![1567739635983](../../_images/Build-Wordpress.assets/1567739635983.png)
 
-安装完成后，再次访问`(您的ip)/wordpress`，如`123.123.123.123/wordpress`，就可以成功登陆到wordpress了~
+安装完成后，再次访问`(您的ip)/wordpress`，如`123.123.123.123/wordpress`，就可以成功登录到wordpress了~
 
 ![1567739761788](../../_images/Build-Wordpress.assets/1567739761788.png)
 

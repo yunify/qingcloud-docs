@@ -2,7 +2,7 @@
 title: "Redis Standlone 迁移到 Redis Cluster"
 weight: 2
 draft: false
-keywords: QingCloud，Redis Cluster，数据库，redis 迁移
+keyword: QingCloud，Redis Cluster，数据库，redis 迁移
 ---
 
  Redis 提供了从 Redis Standalone (包括 2.8.17 版本) 迁移数据到 Redis Cluster　的工具 `redis-trib.rb`。
@@ -33,6 +33,3 @@ keywords: QingCloud，Redis Cluster，数据库，redis 迁移
    ```
 
    其中： Redis Standalone 的主节点 IP 为 192.168.100.11，端口为 6379。Redis Cluster 其中一个节点的 IP 为 192.168.100.20，端口为 6379。
-
-##
-

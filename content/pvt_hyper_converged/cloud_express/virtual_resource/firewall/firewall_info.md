@@ -1,7 +1,7 @@
 ---
 title: "防火墙概述"
 description: 本小节主要介绍青立方® 超融合易捷版防火墙。 
-keywords: 青立方® 超融合易捷版，防火墙
+keyword: 青立方® 超融合易捷版，防火墙
 weight: 05
 collapsible: false
 draft: false

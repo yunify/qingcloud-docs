@@ -1,6 +1,7 @@
 ---
 title: "管理监控配置"
-description: gslb监控配置。
+description: 介绍如何管理监控配置，包括查看监控配置、修改监控规则、修改调度策略。
+keyword: QingCloud, 青云, DNS, GSLB 实例, 监控
 weight: 3
 draft: false
 ---
@@ -10,7 +11,7 @@ draft: false
 ## 查看监控配置
 
 1. 登录 QingCloud 管理控制台。
-2. 选择**产品与服务** > **网络服务** > **云解析 DNS**，进入域名列表页。
+2. 选择**产品与服务** > **域名与网站** > **云解析 DNS**，进入域名列表页。
 3. 在左侧导航栏选择**全局负载均衡**，进入实例列表页面。
    
    ![GSLB 实例列表](../_image/gslb_policy_list.png)

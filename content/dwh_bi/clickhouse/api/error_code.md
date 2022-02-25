@@ -1,7 +1,7 @@
 ---
 title: "错误码"
 description: 本小节主要介绍如何进行 ClickHouse 集群 api 错误码。 
-keywords: ClickHouse 错误码；api 错误码
+keyword: ClickHouse 错误码；api 错误码
 draft: false
 collapsible: false
 weight: 200

@@ -1,12 +1,10 @@
 ---
 title: "云服务器被非法域名恶意指向"
 date: 2021-03-08T21:37:25+09:00
-description: Test description
+description: 如何解决云服务器被非法域名恶意指向
 weight: 10
 draft: false
-enableToc: false
-
-
+keyword: 云计算, 青云, QingCloud, 云服务器，非法域名
 ---
 
 ## 背景
@@ -88,7 +86,7 @@ server
 2. 重启Tomcat服务
 
 ### Apache配置方法
-Apache中对于每个VirtualHost，都要求有ServerName或者ServerAlias，而且不能为空，具体可以参考[http://httpd.apache.org/docs/1.3/vhosts/name-based.html](http://httpd.apache.org/docs/1.3/vhosts/name-based.html)
+Apache中对于每个VirtualHost，都要求有ServerName或者ServerAlias，而且不能为空，具体可以参考http://httpd.apache.org/docs/1.3/vhosts/name-based.html。
 
 1. 进入Apache的conf目录，打开httpd.conf文件，找到VirtualHost
 

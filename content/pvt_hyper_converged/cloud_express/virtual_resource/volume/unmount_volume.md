@@ -1,7 +1,7 @@
 ---
 title: "卸载硬盘"
 description: 本小节主要介绍青立方® 超融合易捷版 卸载硬盘。 
-keywords: 青立方® 超融合易捷版，卸载硬盘
+keyword: 青立方® 超融合易捷版，卸载硬盘
 weight: 40
 collapsible: false
 draft: false

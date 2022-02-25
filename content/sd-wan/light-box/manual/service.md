@@ -1,7 +1,8 @@
 ---
 title: "光盒服务"
 linkTitle: "光盒服务"
-description:
+keyword: 云计算, 青云, QingCloud,SD-WAN, 光盒服务
+description: 本章节介绍光盒服务的使用场景。
 draft: false
 weight: 3
 ---

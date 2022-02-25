@@ -1,7 +1,7 @@
 ---
 title: "系列和版本"
 description: 本小节主要介绍 HBase 主要系列和版本。 
-keywords: HBase 版本介绍,系列介绍 
+keyword: HBase 版本介绍,系列介绍 
 weight: 20
 collapsible: false
 draft: false
@@ -17,6 +17,5 @@ HBase on QingCloud AppCenter 集群服务包含 HBase 数据库服务、HDFS 分
 
 | 版本   | HBase | Hadoop | Phoenix |
 | :------ | :------ | :------| :------ |
-| QingCloud 1.1 - HBase 1.2.6 | 1.2.6 | 2.7.3 | 4.11.0 |
-| QingCloud 2.0.1 - HBase 2.0.6 | 2.0.6 | 2.7.7 | 5.0.0 |
-| QingCloud 2.1.0 - HBase 2.0.6 | 2.0.6 | 2.7.7 | 5.0.0 |
+| HBase 1.2.6 - v1.1.0 | 1.2.6 | 2.7.3 | 4.11.0 |
+| HBase 2.0.6 - v2.1.0 | 2.0.6 | 2.7.7 | 5.0.0 |

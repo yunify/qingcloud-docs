@@ -1,7 +1,7 @@
 ---
 title: "基本概念"
 description: 本小节主要介绍 OpenSearch 基本概念。 
-keywords: OpenSearch 基本概念, 
+keyword: 基本概念,OpenSearch,搜索引擎,大数据 
 weight: 100
 collapsible: false
 draft: false

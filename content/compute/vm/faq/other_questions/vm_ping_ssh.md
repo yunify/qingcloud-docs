@@ -1,9 +1,9 @@
 ---
 title: "云服务器绑定了公网 IP 之后，为什么我无法通过 IP SSH 登录，也不能 ping 通该 IP？ "
-description: Test description
+description: 云服务器绑定公网IP如何登录和ping
 draft: false
-enableToc: false
 weight: 40
+keyword: 云计算, 青云, QingCloud, 云服务器，公网IP，SSH
 ---
 
 为了加强位于基础网络 vxnet-0 中的云服务器的安全性， 青云在云服务器之前放置了一个防火墙（Security Group）。 初始状态下，每个防火墙都不包含任何规则，即，全部端口都是封闭的， 您需要建立规则以打开相应的端口。

@@ -1,7 +1,7 @@
 ---
 title: "修改配置参数"
 description: 本小节主要介绍如何修改 HBase 配置参数。 
-keywords: hbase 修改账号；
+keyword: hbase 修改账号；
 weight: 15
 collapsible: false
 draft: false
@@ -31,6 +31,6 @@ draft: false
 6. 参考配置参数取值范围和描述，修改参数值。
 7. 确认参数信息无误后，点击**保存**，返回参数列表页面。
  
-> **说明：**
+> **说明**
 > 
 > 当配置参数值发生变化时，将会重启对应的 HBase 服务。由于在线滚动重启耗时较长，目前版本尚未支持在线滚动重启。

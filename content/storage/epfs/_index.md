@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: 文件存储 EPFS
-  vice_title: 文件存储 EPFS（Elastic Parallel File System） 是云平台提供的并行文件系统，可面向超级计算服务等高性能场景。
+  vice_title: 文件存储 EPFS（Elastic Parallel File System）是云平台提供的并行文件系统服务，用于面向超级计算服务等高性能场景。
 
 Section2:
   title: 用户指南
@@ -38,7 +38,7 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品概述
-          url: "/storage/epfs/intro/efps"
+          url: "/storage/epfs/intro/epfs"
 
 
     - title: 上手：文件存储 EPFS的相关操作
@@ -46,7 +46,7 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 如何创建文件存储 EPFS
-          url: "/storage/epfs/intro/efps"
+          url: "/storage/epfs/manual/epfs"
 
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "CDN 计费"
-description: test
+description: 介绍 CDN 服务的价格。
+keyword: QingCloud, 青云, 云计算, 网络, CDN, 计费, 价格
 draft: false
 ---
 

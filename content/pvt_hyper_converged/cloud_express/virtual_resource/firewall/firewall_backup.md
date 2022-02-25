@@ -1,7 +1,7 @@
 ---
 title: "创建防火墙备份"
 description: 本小节主要介绍青立方® 超融合易捷版 创建防火墙备份。 
-keywords: 青立方® 超融合易捷版创建防火墙备份
+keyword: 青立方® 超融合易捷版创建防火墙备份
 weight: 30
 collapsible: false
 draft: false

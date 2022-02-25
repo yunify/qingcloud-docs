@@ -1,7 +1,7 @@
 ---
 title: "回收站"
-description: 本小节主要介绍如何恢复以删除的 MySQL Plus 集群。 
-keywords: mysql plus 恢复集群
+description: 本小节主要介绍如何恢复已删除的 MySQL Plus 集群。 
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,恢复集群
 weight: 100
 collapsible: false
 draft: false
@@ -11,7 +11,7 @@ draft: false
 
 删除后的集群将被暂时回收到<b>回收站 (Recycle Bin)</b>。若需找回已删除的集群，可将回收站内集群恢复。
 
-本小节主要介绍如何删除集群。
+本小节主要介绍如何恢复已删除的集群。
 
 ## 约束限制
 
@@ -19,11 +19,11 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码。
+- 已获取管理控制台登录账号和密码。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **运维与管理** > **回收站**，进入回收站列表页面。
 
    <img src="../../../_images/recycle_list.png" alt="回收站" style="zoom:50%;" />

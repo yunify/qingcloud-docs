@@ -4,7 +4,7 @@ date: 2020-01-30T00:38:25+09:00
 description: Test description
 weight: 60
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，Windows，FTP
 ---
 
 **ftp server下载地址**
@@ -45,7 +45,7 @@ https://yunify.anybox.qingcloud.com/s/ORyko6fbfylJE5xu8PPjRtw1NN36wneG
 
 ![图片](/compute/vm/_images/image-1568884218566.png)
 
- 4、配置TLS安全认证登陆
+ 4、配置TLS安全认证登录
 
 ![图片](/compute/vm/_images/image-1568884220221.png)
 

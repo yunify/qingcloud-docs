@@ -1,7 +1,8 @@
 ---
 title: "光盒经 VPC 访问第三方网络"
 linkTitle: "光盒经 VPC 访问第三方网络"
-description:
+keyword: 云计算, 青云, QingCloud,SD-WAN,光盒,VPC, 第三方网络
+description: 本章节介绍光盒经 VPC 访问第三方网络。
 draft: false
 weight: 40
 ---
@@ -32,7 +33,7 @@ weight: 40
 第二步：创建 WAN 网。
 
 
-登陆WEB 控制台，在顶部的导航栏里搜索**企业云网**，接着在右边区域点击**创建企业云网**按钮，输入名称即可创建专属 WAN 网。
+登录WEB 控制台，在顶部的导航栏里搜索**企业云网**，接着在右边区域点击**创建企业云网**按钮，输入名称即可创建专属 WAN 网。
 
 ![](../../_images/create_wan_net.png)
 
@@ -60,7 +61,7 @@ weight: 40
 第五步：创建边界路由器。
 
 
-登陆WEB 控制台，在顶部的导航栏里搜索**边界路由器**，进入详情页面后，点击**创建**即可创建边界路由器。详细操作可参考[边界路由器操作指南](../../../../../network/border_router/manual/border_user_guide)。
+登录WEB 控制台，在顶部的导航栏里搜索**边界路由器**，进入详情页面后，点击**创建**即可创建边界路由器。详细操作可参考[边界路由器操作指南](../../../../../network/border_router/manual/border_user_guide)。
 
 
 第六步：将边界路由器绑定 VPC 网络。

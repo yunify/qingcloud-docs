@@ -1,7 +1,7 @@
 ---
 title: "集群概述"
 description: 本小节主要介绍 PostgreSQL 集群基本信息。 
-keywords: PostgreSQL 集群信息；
+keyword: 集群信息,PostgreSQL,关系型数据库,数据库
 weight: 05
 collapsible: false
 draft: false

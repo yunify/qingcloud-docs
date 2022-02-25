@@ -2,7 +2,8 @@
 title: "产品简介"
 linkTitle: "产品简介"
 date: 2021-10-15T10:08:56+09:00
-description:
+description: 产品介绍
+keyword: 云计算, 青云, QingCloud, HPC，产品简介
 draft: false
 weight: 10
 ---
@@ -68,7 +69,6 @@ EHPC 集群由多种类型的节点组成，包括：管控节点、计算节点
 ### 操作日志
 
 对集群、作业等操作均记录操作日志，出现问题时可以结合操作日志进行排查。
-
 
 
 

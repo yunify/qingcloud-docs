@@ -1,7 +1,7 @@
 ---
 title: "DescribeAppVersions"
 description: 本小节主要介绍 ChronusDB 获取集群应用版本的接口。 
-keywords: ChronusDB 集群应用版本，获取集群应用版本
+keyword: ChronusDB 集群应用版本，获取集群应用版本
 weight: 24
 collapsible: false
 draft: false
@@ -78,7 +78,7 @@ https://api.qingcloud.com/iaas/?action=DescribeAppVersions
       "visibility":"public",
       "status_time":"2017-04-21T02:34:24Z",
       "console_id":"qingcloud",
-      "name":"QingCloud 1.0 - ZooKeeper 3.4.9"
+      "name":"v1.0 - ZooKeeper 3.4.9"
     }
   ],
   "ret_code":0

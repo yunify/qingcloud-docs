@@ -1,7 +1,7 @@
 ---
 title: "创建 OpenSearch 集群"
 description: 本小节主要介绍如何快速创建 OpenSearch 集群。 
-keywords: OpenSearch 实例创建,集群创建
+keyword: 大搜索分析,实例创建,集群创建,OpenSearch,搜索引擎,大数据
 weight: 10
 collapsible: false
 draft: false
@@ -149,7 +149,11 @@ draft: false
 
 设置集群环境参数配置。
 
-- 必须配置 OpenSearch Dashboard 的 admin 用户帐号名称和密码。默认用户名 `admin`，默认密码 `admin`。
+- （必须）配置 OpenSearch Dashboard 的 admin 用户帐号名称和密码。
+
+   **opensearch.admin.user** admin 用户名称。默认用户名 `admin`。
+
+   **opensearch.admin.password** admin 用户密码。默认密码 `Change1Pwd`；取值范围 8～32；必须同时包含小写字母（a～z）、大写字母（A～Z）、数字（0～9）、特殊字符（@#%*_+-=）。
 
   > **注意**
   > 
@@ -157,7 +161,7 @@ draft: false
   >
   > -admin 帐号是 OpenSearch Dashboard 平台超级用户帐号，请妥善保管帐号密码。
 
-- 更多参数设置和修改说明，请参见[配置参数](../../manual/config_para/config_para_info).
+- 更多参数设置和修改说明，请参见[配置参数](../../manual/config_para/config_para_info)。
 
 ![参数配置](../../_images/base_step_9.png)
 

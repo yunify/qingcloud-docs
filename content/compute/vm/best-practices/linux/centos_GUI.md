@@ -4,8 +4,7 @@ date: 2021-02-15T21:37:25+09:00
 description: Test description
 weight: 50
 draft: false
-enableToc: false
-
+keyword: 云计算, 青云, QingCloud, 云服务器，centos图形化桌面
 ---
 
 青云 CentOS 7.x 镜像默认为最小化部署，需要自行安装图形化桌面。

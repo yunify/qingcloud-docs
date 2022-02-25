@@ -1,6 +1,7 @@
 ---
 title: "登录 Kafka 客户端"
-description: 登录 Kafka 客户端
+description: 登录 Kafka 客户端。
+keyword: 云计算,大数据,消息队列,中间件,Kafka,client,客户端
 weight: 10
 draft: false
 ---
@@ -9,7 +10,7 @@ draft: false
 
 ## 前提条件
 
-已创建 Kafka 集群，且Kafka 集群状态为**活跃**。
+已创建 Kafka 集群，且 Kafka 集群状态为**活跃**。
 
 ## 操作步骤
 
@@ -20,7 +21,7 @@ draft: false
 
     > **说明**
     > 
-    >  - Kafka 2.3.1 -QingCloud 2.0.1（包含）之前版本：客户端节点用户名为`ubuntu`，初始密码为`kafka`。
-    >  - Kafka 2.3.1 -QingCloud 2.0.1 之后版本：客户端节点用户名为`client`，初始密码为`client`。
+    >  - Kafka 2.3.1 - v2.0.1（包含）之前版本：客户端节点用户名为`ubuntu`，初始密码为`kafka`。
+    >  - Kafka 2.3.1 - v2.0.1 之后版本：客户端节点用户名为`client`，初始密码为`client`。
    
    <img src="../../../_images/login_client.png" alt="登录 Client 节点" style="zoom:50%;" />

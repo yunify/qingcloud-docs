@@ -1,7 +1,7 @@
 ---
 title: "stop_migrate"
 description: 本小节主要介绍 MySQL Plus 停止移接口。 
-keywords: mysql plus 停止迁移,stop_migrate
+keyword: mysql plus 停止迁移,stop_migrate
 weight: 31
 collapsible: false
 draft: false

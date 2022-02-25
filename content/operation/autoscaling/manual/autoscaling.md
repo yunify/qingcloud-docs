@@ -1,9 +1,10 @@
 ---
 title: "自动伸缩"
-description: 
+description: test
 date: 2020-12-10T00:39:25+09:00
 draft: false
 weight: 5
+keyword: 创建自动伸缩, QingCloud, 青云, 云计算
 ---
 
 

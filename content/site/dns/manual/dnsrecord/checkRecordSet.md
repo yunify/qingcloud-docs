@@ -1,7 +1,8 @@
 ---
 title: "验证域名解析是否生效"
 weight: 8
-description: test
+description: 介绍如何验证域名解析是否生效。
+keyword: QingCloud, 青云, DNS, 域名解析
 draft: false
 ---
 

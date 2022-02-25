@@ -1,7 +1,7 @@
 ---
 title: "货车数据采集分析"
-description: 本小节主要介绍 QingCloud ChronusDB 采集和分析货车数据的应用。 
-keywords: chronusdb 货车数据, 
+description: 本小节主要介绍 ChronusDB 采集和分析货车数据的应用。 
+keyword: chronusdb 货车数据, 
 weight: 30
 collapsible: false
 draft: false

@@ -1,8 +1,7 @@
 ---
 title: "搭建 IPv4 VPC 网络"
-linkTitle: "搭建 IPv4 VPC 网络"
-date: 2021-05-31T10:08:56+09:00
-description:
+keyword: QingCloud, 青云, 云计算, VPC, 搭建 VPC 网络
+description: 如何介绍搭建一个具有 IPv4 CIDR 的 VPC 网络。
 draft: false
 weight: 20
 ---

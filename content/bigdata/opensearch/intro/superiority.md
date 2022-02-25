@@ -1,7 +1,7 @@
 ---
 title: "产品优势"
 description: 本小节主要介绍 OpenSearch 产品优势。 
-keywords: OpenSearch 产品优势 
+keyword: 产品优势,OpenSearch,搜索引擎,大数据 
 weight: 20
 collapsible: false
 draft: false

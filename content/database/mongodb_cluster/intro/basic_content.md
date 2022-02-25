@@ -1,7 +1,7 @@
 ---
 title: "基本概念"
 description: 本小节主要介绍 MongoDB Cluster 基本概念。 
-keywords: MongoDB Cluster 基本概念 
+keyword: MongoDB Cluster 基本概念 
 weight: 100
 collapsible: false
 draft: false

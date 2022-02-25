@@ -1,7 +1,7 @@
 ---
 title: "add_users"
 description: 本小节主要介绍 ChronusDB 添加用户接口。 
-keywords: ChronusDB 添加用户,add_user
+keyword: ChronusDB 添加用户,add_user
 weight: 20
 collapsible: false
 draft: false

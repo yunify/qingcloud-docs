@@ -1,6 +1,7 @@
 ---
 title: "管理健康监控"
-description: gslb健康检查。
+description: 本小节主要介绍如何关闭和开启 GSLB 实例健康监控。
+keyword: QingCloud, 青云, DNS, GSLB 实例, 健康监控
 weight: 4
 draft: false
 ---
@@ -12,7 +13,7 @@ draft: false
 ## 关闭健康检查
 
 1. 登录 QingCloud 管理控制台。
-2. 选择**产品与服务** > **网络服务** > **云解析 DNS**，进入域名列表页。
+2. 选择**产品与服务** > **域名与网站** > **云解析 DNS**，进入域名列表页。
 3. 在左侧导航栏选择**全局负载均衡**，进入实例列表页面。
    
    ![GSLB 实例列表](../_image/gslb_policy_list.png)

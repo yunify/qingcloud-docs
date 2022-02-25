@@ -1,7 +1,7 @@
 ---
 title: "数据重分布"
 description: 本小节主要介绍如存储节点数据重分布。 
-keywords: RadonDB 数据重分布
+keyword: RadonDB 数据重分布
 weight: 25
 collapsible: false
 draft: false
@@ -18,11 +18,11 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据库与缓存** > **分布式数据库 RadonDB**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**基本属性**模块，展开下拉菜单。

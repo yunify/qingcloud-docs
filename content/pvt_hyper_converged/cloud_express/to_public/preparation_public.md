@@ -1,7 +1,7 @@
 ---
 title: "准备工作"
 description: 本小节主要介绍青立方® 超融合易捷版公有云连接准备工作。 
-keywords: 青立方® 超融合易捷版，公有云连接，准备工作，前提条件
+keyword: 青立方® 超融合易捷版，公有云连接，准备工作，前提条件
 weight: 10
 collapsible: false
 draft: false

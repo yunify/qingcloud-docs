@@ -2,10 +2,10 @@
 
 title: "远程连接报错：两台计算机无法在分配的时间内连接"
 date: 2020-04-10T00:38:25+09:00
-description: Test description
+description: 远程连接报错：两台计算机无法在分配的时间内连接
 weight: 20
 draft: false
-enableToc: false
+keyword: 云计算, 青云, QingCloud, 云服务器，远程连接
 ---
 
 #### 问题描述

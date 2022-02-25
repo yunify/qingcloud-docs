@@ -1,7 +1,7 @@
 ---
 title: "扩容硬盘"
 description: 本小节主要介绍青立方® 超融合易捷版 扩容硬盘。 
-keywords: 青立方® 超融合易捷版，扩容硬盘
+keyword: 青立方® 超融合易捷版，扩容硬盘
 weight: 20
 collapsible: false
 draft: false

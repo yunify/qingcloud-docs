@@ -1,7 +1,7 @@
 ---
 title: "什么是 OpenSearch"
 description: 本小节主要介绍 OpenSearch 简介。 
-keywords: OpenSearch 产品简介, 
+keyword: 产品简介,OpenSearch,搜索引擎,大数据
 weight: 10
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "备份概述"
 description: 本小节主要介绍青立方® 超融合易捷版备份。 
-keywords: 青立方® 超融合易捷版，备份
+keyword: 青立方® 超融合易捷版，备份
 weight: 05
 collapsible: false
 draft: false
