@@ -53,6 +53,7 @@
 {{ $active = or $active (eq $sectionName1 $sectionName2) }}
 {{ $active = or $active (in (split $currentURL "/") $sectionName1) }}
 
+{{ if not $ctx.Params.not_show }}
 {{ if $ctx.Params.Collapsible }}
 <span class="menu__title--collapse {{ if $active }}active{{ end }} {{ if eq $depth 0 }}display-hide{{ end }}"
   data-depth="{{ $depth }}">
@@ -89,6 +90,7 @@
 <li class="{{ if $active }}active{{ end }}">
   <a data-depth="0" href="{{ $ctx.Permalink }}" class="menu__title {{ if $active }}active{{ end }}">{{ $ctx.Title }}</a>
 </li>
+{{ end }}
 {{ end }}
 {{ end }}
 
