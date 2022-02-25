@@ -1,7 +1,7 @@
 ---
 title: "防火墙"
 description: 
-draft: false
+draft: true
 collapsible: true
 weight: 15
 ---
@@ -11,3 +11,4 @@ weight: 15
 注解
 
 如果你的云服务器使用的是默认防火墙，那么 ping 和 ssh 的端口都是默认打开的，你无需再进行操作。
+
