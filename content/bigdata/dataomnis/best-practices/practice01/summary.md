@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-本实践为您介绍如何将 MySQL 数据实时（upsert 或 append）同步到 Elasticsearch。
+本实践为您介绍如何将 MySQL 数据变化（Insert/Update/Delete）通过 CDC 实时感知并同步到下游 Elasticsearch。
 
 操作流程如下：
 
