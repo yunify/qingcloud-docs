@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: Redis Cluster
-  vice_title: Redis Cluster 是由青云 QingCloud 提供的兼容开源 Redis 协议标准的缓存数据库服务，为您提供即开即用、安全可靠、弹性扩容、便捷易用的在线分布式缓存能力。
+  vice_title: Redis Cluster 是由云平台提供的兼容开源 Redis 协议标准的缓存数据库服务，为您提供即开即用、安全可靠、弹性扩容、便捷易用的在线分布式缓存能力。
 
 Section2:
   title: 用户指南

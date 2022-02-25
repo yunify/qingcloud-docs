@@ -1,7 +1,7 @@
 ---
 title: "节点概述"
 description: 本小节主要介绍 OpenSearch 节点基本信息。 
-keyword: OpenSearch 节点信息；
+keyword: 节点信息,OpenSearch,搜索引擎,大数据
 weight: 01
 collapsible: false
 draft: false

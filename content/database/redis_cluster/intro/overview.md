@@ -4,16 +4,16 @@ description: 介绍什么是 Redis Cluster
 draft: false
 weight: 1
 enableToc: false
-keyword: Redis Cluster, QingCloud,青云, 缓存数据库
+keyword: Redis Cluster,缓存数据库
 ---
 
-Redis Cluster 是由青云 QingCloud 提供的兼容开源 Redis 协议标准的缓存数据库服务，为您提供即开即用、安全可靠、弹性扩容、便捷易用的在线分布式缓存能力。
+Redis Cluster 是由云平台提供的兼容开源 Redis 协议标准的缓存数据库服务，为您提供即开即用、安全可靠、弹性扩容、便捷易用的在线分布式缓存能力。
 
 ## 为什么选择 Redis Cluster
 
-- Redis Cluster 部署在 QingCloud 云端，提供完善的基础设施规划、网络安全保障和系统维护服务，让您只需要专注于业务创新。
+- Redis Cluster 部署在云端，提供完善的基础设施规划、网络安全保障和系统维护服务，让您只需要专注于业务创新。
 
-- 您可以通过青云的 AppCenter 控制台轻松创建、管理和维护 Redis 缓存集群。
+- 您可以通过云平台的 AppCenter 控制台轻松创建、管理和维护 Redis 缓存集群。
 - Redis Cluster 支持一主多从、多主多从架构，可充分满足用户高并发、低延迟及弹性变配的业务需求。
 
 更多详情，请见 [Redis Cluster 产品优势 ](../advantage/) 及 [Redis Cluster 应用场景](../aply_scenarios//)。

@@ -1,14 +1,14 @@
 ---
 title: "连接数据库"
 description: 本小节主要介绍如何快速访问 ClickHouse 集群。 
-keyword: ClickHouse 实例, 访问集群
+keyword: ClickHouse 实例,访问集群,数据仓库,ClickHouse
 weight: 10
 collapsible: false
 draft: false
 ---
 
 
-ClickHouse on QingCloud 与原生 ClickHouse 高度兼容，可直接使用 ClickHouse 的连接方式。
+ClickHouse 服务与原生 ClickHouse 高度兼容，可直接使用 ClickHouse 的连接方式。
 
 可选用 Docker 、客户端、curl 等方式连接集群和导入数据。
 
@@ -33,7 +33,7 @@ ClickHouse on QingCloud 与原生 ClickHouse 高度兼容，可直接使用 Clic
 > 
 > 由于集群采用无主构架，建议直接使用节点 IP 管理集群，以便可以更加灵活的控制集群的负载。
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据仓库与 BI** > **ClickHouse**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**服务端口信息**模块，获取集群高可用 IP。

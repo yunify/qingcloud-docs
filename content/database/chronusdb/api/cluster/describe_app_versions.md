@@ -78,7 +78,7 @@ https://api.qingcloud.com/iaas/?action=DescribeAppVersions
       "visibility":"public",
       "status_time":"2017-04-21T02:34:24Z",
       "console_id":"qingcloud",
-      "name":"QingCloud 1.0 - ZooKeeper 3.4.9"
+      "name":"v1.0 - ZooKeeper 3.4.9"
     }
   ],
   "ret_code":0

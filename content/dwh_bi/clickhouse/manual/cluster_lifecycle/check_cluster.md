@@ -1,7 +1,7 @@
 ---
 title: "查看集群信息"
 description: 本小节主要介绍如何查看 ClickHouse 集群信息。 
-keyword: ClickHouse 集群信息
+keyword: 集群信息,数据仓库,ClickHouse
 weight: 10
 collapsible: false
 draft: false
@@ -14,11 +14,11 @@ ClickHouse 集群创建成功后，可在 AppCenter 查看集群信息，包括�
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群查看权限。
+- 已获取管理控制台登录账号和密码，且已获取集群查看权限。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据仓库与 BI** > **ClickHouse**，进入集群管理页面。
 
    可查看当前区域集群列表，以及集群基本信息。

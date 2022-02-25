@@ -1,7 +1,7 @@
 ---
 title: "删除对象存储策略"
 description: 本小节主要介绍如何删除 ClickHouse 对象存储策略。 
-keyword: ClickHouse 删除对象存储策略，删除策略
+keyword: 删除对象存储策略,删除策略,数据仓库,ClickHouse
 weight: 40
 collapsible: false
 draft: false
@@ -25,7 +25,7 @@ draft: false
 
 ## 删除策略
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据仓库与 BI** > **ClickHouse**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**基本属性**模块，点击集群操作下拉菜单。

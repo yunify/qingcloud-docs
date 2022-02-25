@@ -8,7 +8,7 @@ draft: false
 ---
 
 
-QingCloud RadonDB 基于 MySQL 5.7版本构建 Radon 内核，并自研 Xenon 集群高可用工具。
+RadonDB 基于 MySQL 5.7版本构建 Radon 内核，并自研 Xenon 集群高可用工具。
 
 ## 版本历程
 
