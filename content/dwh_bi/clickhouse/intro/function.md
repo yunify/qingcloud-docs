@@ -1,7 +1,7 @@
 ---
 title: "功能特性"
 description: 本小节主要介绍 Clickhouse 功能特性。 
-keyword: Clickhouse 功能特性,
+keyword: 功能特性,数据仓库,ClickHouse
 weight: 15
 collapsible: false
 draft: false
@@ -23,9 +23,9 @@ ClickHouse（简称 CH 或 CK）是面向联机分析处理的列式数据库，
 
 - 数据实时更新。
 
-## ClickHouse on QingCloud
+## ClickHouse 服务
 
-ClickHouse on QingCloud 完美继承 ClickHouse 优良特性，主要功能特点如下：
+ClickHouse 服务完美继承 ClickHouse 优良特性，主要功能特点如下：
 
 - 兼容目前 ClickHouse 所有支持的数据引擎；
 
@@ -52,6 +52,8 @@ ClickHouse on QingCloud 完美继承 ClickHouse 优良特性，主要功能特�
 - 弹性扩容伸缩
   
   提供对集群 CPU、内存弹性扩容收缩，扩容磁盘的功能。
+
+  提供对集群节点数量弹性添加功能，并支持分片权重自动均衡。
 
 - 备份恢复
   

@@ -18,7 +18,7 @@ Redis Cluster 实例需要为 Redis 6.* 或以上版本。
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 3. 点击集群 ID，进入详情页面。
 4. 在**用户管理ACL**页签的用户列表中，找到需要删除的用户。

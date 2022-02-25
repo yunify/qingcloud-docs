@@ -35,7 +35,7 @@ Redis Cluster 支持变更集群节点的配置，如变更云服务器类型、
 
 #### Redis 6.\* 版本
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 
@@ -53,7 +53,7 @@ Redis Cluster 支持变更集群节点的配置，如变更云服务器类型、
 
 ####  Reids  5.0.\* 版本
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 
@@ -75,7 +75,7 @@ Redis Cluster 支持变更集群节点的配置，如变更云服务器类型、
 >
 > 该功能仅针对 Redis  4.0.* 及 Reids  5.0.* 版本。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 

@@ -21,6 +21,10 @@ draft: false
 - **方式二**：通过 AppCenter 应用中心
 
   登录 [QingCloud 管理控制台](https://console.qingcloud.com/)，选择**产品与服务**> **AppCenter** > **应用中心**，进入**应用中心**，快速查找所需的应用。
+  
+  > **说明**
+  >
+  > API 类商品及人工服务类商品仅可在云市场进行查找购买。
 
 ## 操作步骤
 

@@ -1,7 +1,7 @@
 ---
 title: "概述"
 description: 本小节主要介绍 ClickHouse 数据存储基本信息。 
-keyword: ClickHouse 冷热数据存储；冷热存储；冷热分离；数据存储策略
+keyword: 冷热数据存储,冷热存储,冷热分离,数据存储策略,数据仓库,ClickHouse
 weight: 05
 collapsible: false
 draft: false

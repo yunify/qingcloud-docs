@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: ClickHouse
-  vice_title: QingCloud ClickHouse 是一款深度定制的 ClickHouse 集群应用。
+  vice_title: ClickHouse 服务是一款深度定制的 ClickHouse 集群应用。
   # todo add qingstor introduction video
   # video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
   # video_img: "/images/video.png"

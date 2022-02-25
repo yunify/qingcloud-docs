@@ -1,7 +1,7 @@
 ---
 title: "监控指标"
 description: 本小节主要介绍 ChronusDB 主要支持哪些监控指标。 
-keyword: chronusdb 监控指标
+keyword: 监控指标,时序数据库,ChronusDB,数据库 
 weight: 10
 collapsible: false
 draft: false
@@ -12,7 +12,7 @@ ChronusDB 提供集群服务和资源性能监控指标和告警信息。
 - 服务监控统计了用于性能分析的常用的 Metrics 信息，可用于定位分析数据库的性能
 - 资源监控指标统计了云服务器的资源信息，如 CPU 使用率、硬盘 IOPS 情况等，可用于查看系统性能是否到达瓶颈。
 
-> 注意：
+> **注意**
 > 
 > ChronusDB 集群 Agent 只用于监控集群的服务和资源指标，不会收除集除监控指标外的其它数据。
 

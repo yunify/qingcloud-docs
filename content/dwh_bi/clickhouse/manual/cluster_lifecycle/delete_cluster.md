@@ -1,7 +1,7 @@
 ---
 title: "删除集群"
 description: 本小节主要介绍如何删除 ClickHouse 集群。 
-keyword: ClickHouse 删除集群
+keyword: 删除集群,数据仓库,ClickHouse
 weight: 90
 collapsible: false
 draft: false
@@ -24,11 +24,11 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据仓库与 BI** > **ClickHouse**，进入集群管理页面。
 3. 勾选目标集群，点击操作栏**更多操作** > **删除**，弹出删除集群确认窗口。
 

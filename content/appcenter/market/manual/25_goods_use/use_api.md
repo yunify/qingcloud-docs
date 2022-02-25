@@ -1,5 +1,5 @@
 ---
-title: "API 类商品使用指引"
+title: "使用 API 类商品"
 description: 
 keyword: QingCloud, 青云, 云计算, 云市场, API 商品
 weight: 20

@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-QingCloud MySQL Plus 的 MySQL 版本为 8.0.19 、5.7.29 、5.6.42，且开启了 GTID 复制模式。若远端 MySQL 内核低于5.6版本，可通过离线导出数据，再通过 MySQL Plus 支持的数据导入方式，实现 MySQL 跨版本的数据迁移。
+MySQL Plus 的 MySQL 版本为 8.0.19 、5.7.29 、5.6.42，且开启了 GTID 复制模式。若远端 MySQL 内核低于5.6版本，可通过离线导出数据，再通过 MySQL Plus 支持的数据导入方式，实现 MySQL 跨版本的数据迁移。
 
 > **注意**
 > 
@@ -17,7 +17,7 @@ QingCloud MySQL Plus 的 MySQL 版本为 8.0.19 、5.7.29 、5.6.42，且开启�
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - MySQL Plus 集群状态为**活跃**。
 - 已获取远端 MySQL 数据库信息。
 
