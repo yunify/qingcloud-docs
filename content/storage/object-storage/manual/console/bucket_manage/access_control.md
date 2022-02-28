@@ -51,7 +51,8 @@ Bucket Policy 对于储存于 QingStor 对象存储的资源的访问控制粒�
       - 以 `<bucket-name>/` 为前缀，说明该规则仅对 `<bucket-name>/` 所指定的 Bucket 内相应资源生效；
       - 若需针对指定 Bucket 内所有资源生效，需填写 `<bucket-name>/*`。
    - **响应动作：** 当策略成功匹配用户的请求时，是允许还是拒绝该请求。
-   - **Referer：** 指定请求来源。
+   - **Referer：** 指定请求的 `Referer` 头中，是否匹配该设置。也可指定请求的 `Referer` 头是否为空。
+   - **IP：** 指定请求来源的 IP 地址是否在此 IP 地址范围内。详细设置可参考：[CIDR 的 IP 地址](/storage/object-storage/faq/cidr_ip/)
 
 4. 成功创建的存储空间策略，列表显示：
 
