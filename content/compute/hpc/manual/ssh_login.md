@@ -1,9 +1,8 @@
 ---
 title: "SSH 登录配置"
 linkTitle: "SSH 登录配置"
-date: 2021-11-1T10:08:56+09:00
 description: hpc SSH 登录配置
-keyword: 云计算, 青云, QingCloud, HPC，ssh登录
+keyword: HPC，ssh登录
 draft: false
 weight: 3
 ---
