@@ -1,7 +1,7 @@
 ---
 title: "删除对象存储策略"
 description: 本小节主要介绍如何删除 ChronusDB 对象存储策略。 
-keyword: ChronusDB 关删除对象存储策略，删除策略
+keyword: 关删除对象存储策略，删除策略,时序数据库,ChronusDB,数据库 
 weight: 40
 collapsible: false
 draft: false

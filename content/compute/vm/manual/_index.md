@@ -1,6 +1,6 @@
 ---
-title: "操作指南"
-linkTitle: "操作指南"
+title: "云服务器"
+linkTitle: "云服务器"
 _build:
  render: false 
 weight: 50

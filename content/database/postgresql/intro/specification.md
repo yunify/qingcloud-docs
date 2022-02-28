@@ -8,7 +8,7 @@ draft: false
 ---
 
 
-QingCloud PostgreSQL 根据QingCloud AppCenter 功能特点，定制`基础版`、`增强版`和`专业版`三个资源类型，您也可以选择`自定义`配置资源规格。
+PostgreSQL 根据 AppCenter 功能特点，定制`基础版`、`增强版`和`专业版`三个资源类型，您也可以选择`自定义`配置资源规格。
 
 ## 资源类型规格
 

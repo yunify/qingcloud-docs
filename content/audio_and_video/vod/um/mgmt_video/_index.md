@@ -1,9 +1,9 @@
 ---
-title: "操作指南"
-linkTitle: "操作指南"
+title: "音视频管理"
+linkTitle: "音视频管理"
 _build:
  render: false 
-weight: 50
+weight: 10
 collapsible: true
 ---
 

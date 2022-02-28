@@ -23,7 +23,7 @@ Redis Cluster 兼容 Redis 4.0、5.0 、6.* 版本，您可以在控制台上一
 
 ### 升级到 Redis 6.* 版本
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 
@@ -41,7 +41,7 @@ Redis Cluster 兼容 Redis 4.0、5.0 、6.* 版本，您可以在控制台上一
 
 ### 升级到 Redis 6.* 以下版本
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 

@@ -1,7 +1,7 @@
 ---
 title: "新增节点"
 description: 本小节主要介绍如何新增 OpenSearch 节点实例。 
-keyword: OpenSearch 节点添加；新增节点
+keyword: 节点添加,新增节点,OpenSearch,搜索引擎,大数据
 weight: 10
 collapsible: false
 draft: false

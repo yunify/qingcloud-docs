@@ -1,7 +1,7 @@
 ---
 title: "删除集群"
 description: 本小节主要介绍如何删除 OpenSearch 集群。 
-keyword: OpenSearch 删除集群
+keyword: 删除集群,OpenSearch,搜索引擎,大数据
 weight: 90
 collapsible: false
 draft: false
