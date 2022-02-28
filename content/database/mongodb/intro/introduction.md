@@ -24,7 +24,7 @@ MongoDB 副本集由一组 mongod 进程组成，包含一个 Primary 节点和�
 
 - 副本节点（Secondary）
 
-   Secondary 节点与 Primary 节点数据完全同步。当 Primary 节点 Hang 后，所有 Secondary 节点将同时参与选举，并最终选举出一个新的 Primary 节点。
+   节点定向拉取 Primary 节点的 oplog 保证数据同步。当 Primary 节点上的 mongod 进程意外中止时，剩下有资格竞选为 Primary 节点的 Secondary 成员参与选举，最终投票选举出一个新的 Primary 节点。
 
 文档数据库 MongoDB 选择 `PSS` 架构模式，即 `Primary + Secondary + Secondary` 架构模式，通过 Primary 和 Secondary 搭建 Replica Set。为了在选主投票的时能正常选举出大多数，Replica Set 节点数必须为奇数。
 
