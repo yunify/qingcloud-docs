@@ -26,7 +26,7 @@ weight: 10
 
      ![](/container/qke_plus/_images/w.png)
 
-## 编辑 YAML
+<!-- ## 编辑 YAML
 
 可通过编辑服务的 YAML 文件进行工作负载更新。
 
@@ -46,9 +46,11 @@ weight: 10
 
 7. 在文件编辑窗口中，修改配置。
 
-8. 点击**确认**。
+8. 点击**确认**。 -->
 
 ## 设置负载均衡器访问
+
+### QKE 控制台操作
 
 1. 登录 QingCloud 管理控制台。
 
@@ -63,3 +65,39 @@ weight: 10
 6. 在下拉列表中选择需要使用的负载均衡器，点击**确定**。
 
    ![](/container/qke_plus/_images/w.png)
+
+### 通过 YAML 文件配置
+
+通过 YAML文件中的 Annotation（注解），可以实现丰富的负载均衡功能。
+
+创建一个公网负载均衡器并指定负载均衡器规格，需要配置以下 Annotation（注解）：
+
+- `service.beta.kubernetes.io/qingcloud-load-balancer-eip-ids`
+
+  该 annotation 表示要创建公网类型的负载均衡器，其值为您在青云上创建好的公网 IP ID 号，系统会自动创建负载均衡器并绑定此公网 IP。公网 IP 必须是可用状态。
+
+- `service.beta.kubernetes.io/qingcloud-load-balancer-type`
+
+  表示负载均衡器的规格，其值与 [CreateLoadBalancer](/development_docs/api/command_list/lb/create_loadbalancer/) 接口中的 `loadbalancer_typ` 取值范围相同。
+
+配置示例如下：
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    service.beta.kubernetes.io/qingcloud-load-balancer-eip-ids: "${loadbalancer_eip}"
+    service.beta.kubernetes.io/qingcloud-load-balancer-type: "${loadbalancer_typ}"
+  name: nginx
+  namespace: default
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: nginx
+  type: LoadBalancer
+```
+

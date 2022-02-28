@@ -1,0 +1,22 @@
+---
+title: "节点管理 FAQ"
+description: QKE 集群常见问题
+draft: false
+weight: 10
+keyword: 青云, QingCloud, QKE, 常见问题 
+---
+
+## 如何增删主节点?
+
+托管版 QKE 集群不支持增删主节点，请提前规划好集群用途创建单 master 或者三 master（HA）集群。
+
+## 删除工作节点失败
+
+删除工作节点时，QKE 会首先执行命令 `kubectl drain nodes --ignore-daemonsets --timeout=2h` ，从而确保工作负载都成功迁移到其他节点，然后再执行删除节点的操作。
+
+有时此操作会因为一些原因失败，比如工作负载使用了本地资源（文件系统等），或者其他节点负载较高不足以接纳所有工作负载。此时，建议人工执行 `kubectl drain nodes` 命令查看具体失败原因从而可以采取相应的措施。
+
+> **注意**
+>
+> 请不要人工执行 `kubectl delete nodes` 命令以免造成无法恢复的结果。
+

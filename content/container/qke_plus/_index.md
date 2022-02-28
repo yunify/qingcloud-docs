@@ -16,7 +16,7 @@ section2:
     url: "news/prodoct_news/"
   - title: 计费指南
     content: 介绍 QKE 集群价格
-    url: "pricing/main/"
+    url: "billing/bill_des/"
   - title: 产品简介
     content: 介绍 QKE 集群
     url: "intro/introduction/"
