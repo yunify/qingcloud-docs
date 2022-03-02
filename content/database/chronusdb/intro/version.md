@@ -18,7 +18,7 @@ ChronusDB `企业版-1.0.9` 和 `基础版-1.0.9` 基于 RadonDB ClickHouse 21.1
 - 默认开启 [Prometheus 监控配置](../../manual/metrics_alarm/monitor_prometheus)，提供基于 `system.asynchronous_metrics`、`system.metrics`、`system.events` 表的 ChronusDB 监控服务。
 - 集群[添加节点](../../manual/node_lifecycle/create_node)，新支持分片权重自动均衡。
 - 新开放 `max_partitions_per_insert_block` 参数，支持修改最大分区数。
-- 云服务器升级为**企业型e3**类型，提升数据库查询性能。
+- 云服务器升级为**企业型 e3** 类型，提升数据库查询性能。
 
 ### v1.0.8
 
