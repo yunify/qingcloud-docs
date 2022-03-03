@@ -1,6 +1,6 @@
 ---
 title: "计费说明"
-description: 本小节主要介绍 QingCloud HBase 计费说明。 
+description: 本小节主要介绍 HBase 计费说明。 
 keyword: HBase,计费说明, 
 weight: 10
 collapsible: false

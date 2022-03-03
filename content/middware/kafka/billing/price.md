@@ -1,6 +1,6 @@
 ---
 title: "计费说明"
-description: 本小节主要介绍 QingCloud Kafka 计费说明。 
+description: 本小节主要介绍 Kafka 计费说明。 
 keyword: 云计算,大数据,消息队列,中间件,价格,计费,费用,Kafka,计费说明,
 weight: 10
 draft: false

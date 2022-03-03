@@ -1,7 +1,7 @@
 ---
 title: "访问 Kafka Manager"
 description: 访问 Kafka Manager，通过 Kafka Manager 控制台对 Cluster 和 Topic 进行管理。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,Kafka Manager
+keyword: 云计算,大数据,消息队列,中间件,Kafka,Kafka Manager
 weight: 10
 draft: false
 ---

@@ -7,20 +7,20 @@ collapsible: false
 draft: false
 ---
 
-通过 AppCenter 集群管理控制台，您可以快速创建 QingCloud HBase 集群。
+通过 AppCenter 集群管理控制台，您可以快速创建 HBase 集群。
 
-本小节主要介绍如何快速创建 QingCloud HBase 集群。
+本小节主要介绍如何快速创建 HBase 集群。
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且账号已实名认证。
+- 已获取管理控制台登录账号和密码，且账号已实名认证。
 - 已在网络中创建至少一个 ZooKeeper 集群。
 - 已获取 HBase 集群操作权限。
 
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **大数据服务** > **HBase 服务**，进入 HBase 集群管理页面。
 3. 点击**立即部署**，进入应用部署页面。
 4. 选择**区域**。

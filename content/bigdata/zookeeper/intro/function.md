@@ -1,6 +1,6 @@
 ---
 title: "功能特性"
-description: 本小节主要介绍 QingCloud ZooKeeper  简要主要功能特性。 
+description: 本小节主要介绍 ZooKeeper  简要主要功能特性。 
 keyword: ZooKeeper  功能特性, 
 weight: 15
 collapsible: false
