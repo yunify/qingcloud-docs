@@ -19,7 +19,7 @@ ClickHouse 服务根据 AppCenter 功能特点，定制`基础版`、`企业版`
 - 新增 `prometheus` 配置字段，默认开启 [Prometheus 监控配置](../../manual/metrics_alarm/monitor_prometheus)，提供基于 `system.asynchronous_metrics`、`system.metrics`、`system.events` 表的 ClickHouse 监控服务。
 - 集群[添加节点](../../manual/node_lifecycle/create_node)，新支持分片权重自动均衡。
 - 新开放 `max_partitions_per_insert_block` 参数，支持修改最大分区数。
-- 集群云服务器升级为**企业型e3**类型，提升数据库查询性能。
+- 集群云服务器升级为**企业型 e3** 类型，提升数据库查询性能。
 
 ### v1.1.7
 
