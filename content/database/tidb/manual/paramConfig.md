@@ -1,7 +1,7 @@
 ---
 title: "参数配置"
 description: 本小节主要介绍如何修改参数配置。 
-keyword: QingCloud, 青云, 云计算, TiDB 实例, TiDB 分布式数据库, 参数配置
+keyword:   TiDB 实例, TiDB 分布式数据库, 参数配置
 weight: 30
 collapsible: false
 draft: false

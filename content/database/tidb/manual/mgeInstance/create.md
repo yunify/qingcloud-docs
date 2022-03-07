@@ -1,7 +1,7 @@
 ---
 title: "创建实例"
 description: 本小节主要介绍如何快速创建 TiDB 实例。 
-keyword: QingCloud, 青云, 云计算, TiDB 分布式数据库
+keyword:   TiDB 分布式数据库
 weight: 1
 collapsible: false
 draft: false

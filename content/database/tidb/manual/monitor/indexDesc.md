@@ -1,7 +1,7 @@
 ---
 title: "监控指标说明"
 description: 本小节主要介绍 TiDB 支持的监控指标。 
-keyword: QingCloud, 青云, 云计算, TiDB 实例, 监控指标
+keyword:   TiDB 实例, 监控指标
 weight: 1
 draft: false
 ---

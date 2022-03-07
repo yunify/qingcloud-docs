@@ -1,7 +1,7 @@
 ---
 title: "TiDB 高并发写入场景最佳实践"
 description: 本小节主要介绍 
-keyword: QingCloud, 青云, 云计算, TiDB 最佳实践
+keyword: TiDB,高并发,最佳实践
 weight: 2
 collapsible: false
 draft: false

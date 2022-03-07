@@ -4,7 +4,7 @@ description: TiDB 提供的功能
 draft: false
 weight: 3
 enableToc: false
-keyword: QingCloud, 青云, 云计算, TiDB, 产品功能
+keyword:   TiDB, 产品功能
 ---
 
 ## 一键部署

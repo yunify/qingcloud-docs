@@ -4,7 +4,7 @@ description: TiDB 的优势特点
 draft: false
 weight: 2
 enableToc: false
-keyword: QingCloud, 青云, 云计算, TiDB, QingCloud, 数据库
+keyword:   TiDB, 分布式数据库, 高可用
 ---
 
 ## 高度兼容 MySQL

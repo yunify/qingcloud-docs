@@ -4,7 +4,7 @@ description: TiDB 的版本说明
 draft: true
 weight: 9
 enableToc: false
-keyword: QingCloud, 青云, 云计算, TiDB, 分布式数据库
+keyword:   TiDB, 分布式数据库
 ---
 
 介绍 TiDB 不同版本支持的新特性。

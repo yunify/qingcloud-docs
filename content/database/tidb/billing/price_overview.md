@@ -1,7 +1,7 @@
 ---
 title: "计费概述"
 description: TiDB 计费概述
-keyword: QingCloud, 青云, 云计算, TiDB, 计费,收费,价格
+keyword:   TiDB, 计费,收费,价格
 weight: 1
 draft: false
 ---

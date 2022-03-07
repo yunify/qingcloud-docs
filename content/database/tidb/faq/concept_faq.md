@@ -1,7 +1,7 @@
 ---
 title: "基本概念类 FAQ"
 description: 本小节主要介绍关于 TiDB 概念及原理的常见问题。
-keyword: QingCloud, 青云, 云计算, TiDB, MySQL, 常见问题, FAQ
+keyword:   TiDB, MySQL, 常见问题, FAQ
 draft: false
 weight: 1
 ---

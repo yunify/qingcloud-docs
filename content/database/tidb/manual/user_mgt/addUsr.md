@@ -1,7 +1,7 @@
 ---
 title: "新增用户"
 description: 本小节主要介绍如何新增用户。 
-keyword: QingCloud, 青云, 云计算, TiDB 实例, 用户管理, 新增用户, 创建用户
+keyword:   TiDB 实例, 用户管理, 新增用户, 创建用户
 weight: 2
 draft: false
 ---

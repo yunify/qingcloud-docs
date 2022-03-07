@@ -4,7 +4,7 @@ description: 介绍 TiDB 的产品架构
 draft: false
 weight: 5
 enableToc: false
-keyword: QingCloud, 青云, 云计算, TiDB, QingCloud, 分布式数据库
+keyword:   TiDB,分布式数据库,架构设计
 ---
 
 

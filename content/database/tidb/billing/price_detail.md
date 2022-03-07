@@ -1,7 +1,7 @@
 ---
 title: "产品价格"
 description: 介绍 TiDB 的产品价格。
-keyword: QingCloud, 青云, 云计算, TiDB, 计费,收费,价格
+keyword:   TiDB, 计费,收费,价格
 weight: 5
 draft: false
 ---

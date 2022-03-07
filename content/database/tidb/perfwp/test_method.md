@@ -1,7 +1,7 @@
 ---
 title: "TiDB 性能测试说明"
 description: 本小节主要介绍使用Sysbench 进行 TiDB 性能测试的方法及结果。 
-keyword: QingCloud, 青云, 云计算, TiDB 性能测试
+keyword:   TiDB 性能测试, Sysbench
 weight: 6
 collapsible: false
 draft: false

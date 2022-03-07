@@ -1,7 +1,7 @@
 ---
 title: "设置自动备份"
 description: 本小节主要介绍如何设置 TiDB 数据自动备份。 
-keyword: QingCloud, 青云, 云计算, TiDB 数据自动备份
+keyword:   TiDB 数据自动备份
 weight: 20
 collapsible: false
 draft: false

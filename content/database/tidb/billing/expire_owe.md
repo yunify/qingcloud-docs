@@ -1,7 +1,7 @@
 ---
 title: "到期与欠费"
 description: 介绍 TiDB 实例合约到期及欠费的处理规则。
-keyword: QingCloud, 青云, 云计算, TiDB, 计费, 到期, 欠费
+keyword:   TiDB, 计费, 到期, 欠费
 weight: 40
 draft: false
 ---

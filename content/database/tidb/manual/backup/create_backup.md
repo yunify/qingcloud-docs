@@ -1,7 +1,7 @@
 ---
 title: "创建备份"
 description: 本小节主要介绍如何创建 TiDB 数据备份。 
-keyword: QingCloud, 青云, 云计算, TiDB 数据备份
+keyword:   TiDB 数据备份
 weight: 10
 collapsible: false
 draft: false
