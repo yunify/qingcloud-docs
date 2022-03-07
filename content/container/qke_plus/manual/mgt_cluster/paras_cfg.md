@@ -20,7 +20,7 @@ QKE 支持自定义部分参数的值，您可以根据自己的业务情况对�
 
 4. 在页面右侧的**环境参数**区域，展示了集群当前的参数配置。
 
-   参数包括**kubernetes 配置**、**镜像参数**、**网络参数**及**其他参数**。
+   参数包括**kubernetes 配置**、**网络参数**、**镜像参数**及**其他参数**。
 
    ![参数配置](../../../_images/paras_setting.png)
 
@@ -46,34 +46,33 @@ QKE 支持自定义部分参数的值，您可以根据自己的业务情况对�
 
 | 参数名称          | 参数说明                                                     | 备注                 |
 | ----------------- | ------------------------------------------------------------ | -------------------- |
-| K8s apiserver EIP | 如果希望通过公网访问 K8s apiserver，可在此处填写可用的 EIP，系统将会自动创建一个 LB 并绑定此 EIP。 | 集群创建后无法修改。 |
+| K8s apiserver EIP | 如果希望通过公网访问 K8s apiserver，可在此处填写可用的 EIP，系统将会自动创建一个 LB 并绑定此 EIP。 | -                    |
 | 集群内 DNS 域名   | 集群内的 DNS 域名，用于 Kubernetes Services。                | 集群创建后无法修改。 |
-| NodePort 范围     | 每个节点可分配的 NodePort 范围，例如 ‘30000-32767’。         | 集群创建后无法修改。 |
+| NodePort 范围     | 每个节点可分配的 NodePort 范围，例如 `30000-32767`。<br/>由于 KubeSphere 的对外端口号是 30880，若您需要安装 KubeSphere，请保证 30880 在该范围内。 | 集群创建后无法修改。 |
 | 最大 pod 数量     | 每个节点上可运行的最大 pod 数量，默认为 120。                | -                    |
 
 #### 网络参数
 
 | 参数名称     | 参数说明                                                     | 备注                 |
 | ------------ | ------------------------------------------------------------ | -------------------- |
-| Proxy Mode   | 选择一种 Proxy Mode（ipvs 或 iptables）。                    | 集群创建后无法修改。 |
-| 网卡插件     | 选择网卡插件（calico 或 flannel）。                          | 集群创建后无法修改。 |
-| Pod 网段     | Pod 网段，请按照标准的 CIDR 格式填写。例如：`10.10.0.0/16`。 | 集群创建后无法修改。 |
-| Service 网段 | Service 网段，请按照标准的 CIDR 格式填写。例如：`10.96.0.0/16`。 | 集群创建后无法修改。 |
+| Proxy Mode   | 选择 kube-proxy 的模式：iptables 或 ipvs。<br/>kube-proxy 用于在服务和其后端 Pod 之间进行负载均衡。其详细说明，请参考 [Kubernetes 指南](https://feisky.gitbooks.io/kubernetes/content/components/kube-proxy.html)。 | 集群创建后无法修改。 |
+| 网卡插件     | 选择一种网卡插件：calico 或 flannel。<br/>插件具体说明，可参考[插件支持](/container/qke_plus/intro/plugin/)。 | 集群创建后无法修改。 |
+| Pod 网段     | 设置 Pod 使用的网段。<br/>请按照标准的 CIDR 格式填写，例如：`10.10.0.0/16`。 | 集群创建后无法修改。 |
+| Service 网段 | 设置 Service 使用的网段。<br/>请按照标准的 CIDR 格式填写，例如：`10.96.0.0/16`。 | 集群创建后无法修改。 |
 
 #### 镜像参数
 
-| 参数名称            | 参数说明                                                     | 备注 |
-| ------------------- | ------------------------------------------------------------ | ---- |
-| registry-mirrors    | 完整的 Docker 镜像服务地址，比如 `https://mirror.harbor.local`，多个地址之间用空格隔开。 |      |
-| insecure-registries | 需要通过非安全的 HTTP 或不受信任的 HTTPS 访问的 Docker 仓库，比如 `mirror.harbor.local`，多个地址通过空格切分。 |      |
-
-
+| 参数名称            | 配置说明                                                     |
+| ------------------- | ------------------------------------------------------------ |
+| registry-mirrors    | 填写完整的 Docker 镜像服务地址。 <br/>填写示例：`https://mirror.harbor.local`。多个地址之间使用逗号（,）分隔。 |
+| insecure-registries | 若需要通过非安全的 HTTP 或不受信任的 HTTPS 访问的 Docker 仓库，则在此处填写仓库地址。<br/>填写示例：`mirror.harbor.local`。多个地址之间使用逗号（,）分隔。 |
+| docker-auths        | 填写镜像仓库密钥，以获得访问、拉取、推送镜像得权限。<br/>填写示例：`{"dockerhub.qingcloud.com":{"auth":"YWRtaW46MTIzNDU2"},"index.docker.io":{"auth":"YWRtaW46MTIzNDU2"}}` |
 
 #### 其他参数
 
 | 参数名称 | 参数说明                                                     | 备注                 |
 | -------- | ------------------------------------------------------------ | -------------------- |
-| API 密钥 | QingCloud IaaS API 密钥 (https://console.qingcloud.com/access_keys/)，此密钥将被用来创建云平台的资源，比如负载均衡器、PV 挂盘等。 | 集群创建后无法修改。 |
+| API 密钥 | 此密钥用于创建云平台的资源，比如负载均衡器、PV 挂盘等。<br/>若无可用密钥，请前往 [API 密钥管理](https://console.qingcloud.com/access_keys/)页面进行创建。 | 集群创建后无法修改。 |
 
 
 

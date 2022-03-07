@@ -48,4 +48,6 @@ weight: 10
 
 7. 在文件编辑窗口中，修改配置。
 
+   关于工作负载详细配置介绍，请参考 [kubernetes 官方文档](https://kubernetes.io/zh/docs/concepts/workloads/controllers/)。
+
 8. 点击**确认**。

@@ -1,7 +1,7 @@
 ---
 title: "使用 kubectl 连接集群"
 description: 介绍如何使用 kubectl 工具连接 Kubernetes 集群
-draft: false
+draft: true
 weight: 40
 keyword: 青云, QingCloud, 云计算, kubectl, K8s
 ---
@@ -64,5 +64,4 @@ worker-p001   Ready    worker                 25h   v1.20.6
 worker-p002   Ready    worker                 25h   v1.20.6
 worker-p003   Ready    worker                 25h   v1.20.6
 ```
-
 

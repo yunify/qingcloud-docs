@@ -1,7 +1,7 @@
 ---
 title: "创建集群"
 description: 介绍如何创建 QKE 集群。
-draft: false
+draft: true
 weight: 1
 keyword: 青云, QingCloud, 云计算, QKE, 集群
 ---

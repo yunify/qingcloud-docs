@@ -18,13 +18,15 @@ keyword: 青云, QingCloud, 云计算, 容器, QKE, KubeSphere
   >
   > 可使用 `kubectl get po -n kubesphere-system`	命令查看运行状态。返回信息中，若 **Status** 列均显示`Runing`则表示KubeSphere 后端正常运行。
 
+- 已[绑定 Kubesphere 控制台 EIP](../bind_eip/)。
+
 - 确保用于访问的机器具备访问外网的能力。
 
 ## 背景信息
 
 首次登录 KubeSphere 请使用如下默认管理员账户及密码，登录后需要立即修改密码。
 
-- **用户名**：`admin@kubesphere.io`
+- **用户名**：`admin`
 
 - **密码**：`P@88w0rd`
 
@@ -38,21 +40,7 @@ keyword: 青云, QingCloud, 云计算, 容器, QKE, KubeSphere
 
 4. 在左侧导航栏，点击**可视化控制台**，进入**可视化控制台**页面。
 
-5. 可选：绑定 KubeSphere 控制台 EIP。
-
-   - 若您在创建集群时，已经配置了 **KubeSphere 控制台 EIP** ，则可以在页面看到 KubeSphere 的公网访问地址。请跳过本步骤，执行下一步。
-
-     ![](../../../_images/bind_eip_done.png)·	
-
-   - 若您未绑定 KubeSphere 控制台 EIP，则需要按照以下步骤进行绑定：
-
-     1. 前往**产品与服务** > **网络服务** > **公网 IP** 页面，创建一个外部绑定的公网 IP。
-
-     2. 在**可视化控制台**页面，点击**选择 EIP**。
-
-        ![](../../../_images/select_ks_eip.png)·	
-
-     3. 选择创建好的公网 IP，点击**确定**。
+   ![](../../../_images/access_ks.png)·	
 
 6. 可通过以几种下方式进入 KubeSphere 登录页面。
 

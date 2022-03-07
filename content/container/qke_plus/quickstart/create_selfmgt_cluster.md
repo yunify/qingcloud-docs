@@ -1,7 +1,8 @@
 ---
-title: "创建 QKE 自管版集群 "
+title: "创建 QKE 自管版集群"
 description: 介绍如何创建 QKE 集群
-weight: 10
+draft: true
+weight: 11
 keyword: 青云, QingCloud, 云计算, QKE集群, Kubernetes, 托管
 ---
 

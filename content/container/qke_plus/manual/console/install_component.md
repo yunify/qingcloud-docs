@@ -12,7 +12,7 @@ keyword: 青云, QingCloud, 云计算, 容器, QKE, KubeSphere 组件
 
 KubeSphere 将一些核心功能组件进行解耦。这些组件设计成了可插拔式，您可以在安装 KubeSpahere 时选择需要安装的 KubeSphere 组件，也可以在 KubeSphere 安装后根据需要随时进行组件安装。
 
-各组件的功能详细说明可参考 [KubeSphere 官方文档](https://kubesphere.com.cn/en/docs/pluggable-components/)。
+各组件的功能详细说明可参考 [KubeSphere 官方文档](https://kubesphere.com.cn/docs/pluggable-components/)。
 
 ## 注意事项
 
@@ -34,4 +34,9 @@ KubeSphere 将一些核心功能组件进行解耦。这些组件设计成了可
 
    ![](../../../_images/ks_components_install.png)
 
-5. 点击**安装组件**，开始进行组件安装。（功能未开发完成？）
+5. 点击**安装组件**，系统便会自动安装组件。
+
+   安装过程中，组件显示`安装中`，待组件安装成功后，组件显示`已安装`。
+   ![](../../../_images/ks_components_install_done.png)
+
+   
