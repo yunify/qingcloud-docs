@@ -4,7 +4,6 @@ linkTitle: "TiDB"
 weight: 10
 collapsible: true
 type: "product"
-draft: true
 
 section1:
   title: TiDB
