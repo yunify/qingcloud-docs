@@ -27,5 +27,29 @@ draft: false
 
    <img src="/bigdata/dataomnis/_images/job_instance02.png" alt="查看关联实例" style="zoom:50%;" />
 
+## 终止实例
+
+在操作列点击![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**终止**，进入操作确认页面，单击**终止**。
+
+> **说明**
+> 
+> - 当**实例状态**为`准备资源`、`运行中`、`失败重试`、`已暂停`时，才可以执行终止实例操作。
+> - 实例终止后将取消运行，若要再次运行，您需要再次发布实例。终止操作无法撤回，请谨慎操作。
+
+## 恢复实例
+
+在操作列点击![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**恢复**，进入操作确认页面，单击**恢复**。
+> **说明**
+> 
+> 当**实例状态**为`已暂停`时，才可以执行恢复实例操作。
+
+## 查看作业实例详情
+
+在操作列点击![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**查看详情**，进入实例详情页面，在该页面可以查看作业实例的基本信息和 message。
+
+## 查看作业 Flink UI
+
+在操作列点击 **Flink UI**，进入实例的 Flink UI 页面。
+
 
 

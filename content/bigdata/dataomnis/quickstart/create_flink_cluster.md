@@ -28,7 +28,7 @@ draft: false
 | :------------- | ------------------------------------------------------------ |
 | 名称       | 计算集群的名称，您可以自定义。               |
 | 版本       | 计算集群的版本，通过下拉框进行选择。              |
-| 重启策略    | 重启策略是指在 Flink Task 发生故障时，如何处理作业。包括`No Restarts:不重启`、`Fixed Delay:固定延迟`、`Failure Rate:故障率`，默认为`不重启`。<li>`不重启`：故障发生时不重启计算作业实例。 <li>`固定延迟`：选择该选项后，您还需要配置**尝试重启次数**和**重启时间间隔**。如果重启次数超过了配置的**尝试重启次数**，作业将运行失败。<li>`故障率`：选择该选项后，您还需要配置配置**检查故障率时间间隔**、**时间间隔内最大失败次数**、**重启时间间隔**。当时间间隔内发生故障的次数超过设置的最大失败次数，作业将运行失败。 <span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b> <br>如果您没有配置该参数，则按 Apache Flink 默认的重启策略，即当有 Task 失败时，如果没有开启 Checkpoint，JobManager 进程不会重启。如果开启了 Checkpoint，则 JobManager 进程会重启。 </span>             |
+| 重启策略    | 重启策略是指在 Flink Job 发生故障时，如何处理 Job。包括`No Restarts:不重启`、`Fixed Delay:固定延迟`、`Failure Rate:故障率`，默认为`不重启`。<li>`不重启`：故障发生时不重启 Job。 <li>`固定延迟`：选择该选项后，您还需要配置**尝试重启次数**和**重启时间间隔**。如果重启次数超过了配置的**尝试重启次数**，Job 将运行失败。<li>`故障率`：选择该选项后，您还需要配置配置**检查故障率时间间隔**、**时间间隔内最大失败次数**、**重启时间间隔**。当时间间隔内发生故障的次数超过设置的最大失败次数，Job 将运行失败。 </span>             |
 
 <img src="../../_images/cluster_basic.png" alt="基础属性" style="zoom:50%;" />
 
@@ -53,6 +53,12 @@ draft: false
 ### 日志配置
 
 日志级别支持：`TRACE`、`DEBUG`、`INFO`、`WARN`、`ERROR`，默认为 `INFO`。
+
+- TRACE：追踪级别，打印所有级别的日志。
+- DEBUG：调试级别，打印 DEBUG、INFO、WARN、ERROR 级别的日志。
+- INFO：信息级别，打印 INFO、WARN、ERROR 级别的日志。
+- WARN：警告级别，打印 WARN、ERROR 级别的日志。
+- ERROR：错误级别，仅打印 ERROR 级别的日志。
 
 <img src="../../_images/cluster_log.png" alt="日志配置" style="zoom:50%;" />
 

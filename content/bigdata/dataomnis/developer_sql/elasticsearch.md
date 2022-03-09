@@ -58,6 +58,10 @@ CREATE TABLE es_table(
 | sink.bulk-flush.interval            | 否   | 1s       | Duration   | flush 的间隔。                                               |
 | connection.path-prefix              | 否   | 空       | String     | 要添加到每个 REST 通信中的前缀字符串。                       |
 
+## 内置 Connector
+
+SQL 作业中使用 elasticsearch-7 connector 时，您需要在运行参数中选择 `flink-connector-elasticsearch7` 内置 Connector。
+
 ## 代码示例
 
 ```sql

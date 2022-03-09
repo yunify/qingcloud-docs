@@ -27,8 +27,8 @@ draft: false
    执行以下命令，修改数据库 **demo** 中数据库表 **students** 的数据。
 
     ```sql   
-    update students set score=89 where name=`张三`;
-    delete from students where name=`李四`;
+    update students set score=89 where name='张三';
+    delete from students where name='李四';
     insert into students values(4,'赵六',92);
     ```
 

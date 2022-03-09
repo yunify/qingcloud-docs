@@ -25,6 +25,10 @@ draft: false
 
 1. 在开发面板中输入以下 SQL 代码，数据源相关参数请根据代码中的注释进行修改。
 
+   > **说明**
+   > 
+   > 更多相关参数请参见 [Kafka](/bigdata/dataomnis/developer_sql/kafka) 和 [ClickHouse](/bigdata/dataomnis/developer_sql/clickhouse)。
+
   ```sql
   DROP TABLE IF EXISTS input_web_record;
   CREATE TABLE `input_web_record` (
@@ -36,11 +40,11 @@ draft: false
       `times`          AS create_time,
       WATERMARK FOR times AS times - INTERVAL '1' MINUTE
   ) WITH (
-      'connector' = 'kafka',        -- 可选 'kafka','kafka-0.11'. 注意选择对应的内置  Connector
-      'topic' = 'uvpv-demo112',
+      'connector' = 'kafka',        -- 可以选择 'kafka'、'kafka-0.11'。 注意选择对应的内置 Connector
+      'topic' = 'uvpv-demo112',         -- Kafka Topic 名称
       'scan.startup.mode' = ' earliest-offset',
-      'properties.bootstrap.servers' = '192.168.100.16:9092,192.168.100.17:9092,192.168.100.18:9092',
-      'properties.group.id' = 'record',  -- 必选参数, 一定要指定 Group ID
+      'properties.bootstrap.servers' = '192.168.100.16:9092,192.168.100.17:9092,192.168.100.18:9092',   -- Kafka broker 地址
+      'properties.group.id' = 'record',  -- 必选参数, 一定要指定 Group ID；无需提前创建，您可以在此处自定义
       'format' = 'json',
       'json.ignore-parse-errors' = 'true',       -- 忽略 JSON 结构解析异常
       'json.fail-on-missing-field' = 'false'     -- 如果设置为 true, 则遇到缺失字段会报错 设置为 false 则缺失字段设置为 null
@@ -128,9 +132,9 @@ draft: false
     product_id;
   ```
 
-2. 点击语法检查，对代码进行语法检查。
+2. 点击**语法检查**，对代码进行语法检查。
 
-3. 点击保存，保存修改，防止代码丢失。
+3. 点击**保存**，保存修改，防止代码丢失。
 
 ## 配置作业调度
 
@@ -172,9 +176,9 @@ draft: false
    <img src="/bigdata/dataomnis/_images/publish_job.png" alt="发布作业" style="zoom:50%;" />
 
 2. 填写作业描述信息。
-3. 选择是否**终止当前作业正在运行中的实例**。首次发布作业时无需勾选此项。
+3. 根据实际情况选择是否终止**当前作业正在运行中的实例**。
    
-   如果当前作业有作业实例正在运行，勾选此项，运行中的作业实例会立即被强制终止。
+   如果终止当前作业正在运行中的实例，运行中的作业实例会立即被强制终止。
 
 4. 点击**确定**，发布作业。发布作业时也会对代码进行语法检查，需要一定的时间，请耐心等待。
 

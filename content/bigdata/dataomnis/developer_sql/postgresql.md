@@ -51,6 +51,10 @@ CREATE TABLE pg_table (
 | sink.buffer-flush.interval   | 否   | 1s     | Duration | 清空缓存的时间间隔。<br>表示如果缓存中的数据在等待指定时间后，依然没有达到输出条件，系统会自动输出缓存中的所有数据。 |
 | sink.parallelism             | 否   | 无     | Integer  | 写入的并行度。                                               |
 
+## 内置 Connector
+
+SQL 作业中使用 postgresql 数据源时，您需要在运行参数中选择 `flink-connector-postgresql` 内置 Connector。
+
 ## 类型映射
 
 | PostgreSQL 字段类型                      | Flink 字段类型                     |

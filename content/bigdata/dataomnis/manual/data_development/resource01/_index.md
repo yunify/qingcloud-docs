@@ -1,9 +1,9 @@
 ---
-title: "函数管理"
+title: "资源管理"
 linkTitle: 资源管理
 _build:
  render: false 
-weight: 60
+weight: 50
 collapsible: true
 draft: true
 ---

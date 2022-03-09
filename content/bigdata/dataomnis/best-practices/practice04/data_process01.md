@@ -14,7 +14,7 @@ draft: false
    
    <img src="/bigdata/dataomnis/_images/choose_model_jar.png" alt="选择模式" style="zoom:50%;" />
 
-3. 选择**代码开发-Jar** 模式。
+3. 选择**代码开发-JAR** 模式。
 4. 点击**下一步**，填写作业名称，并选择作业依赖的计算集群。
    
    <img src="/bigdata/dataomnis/_images/job_basic.png" alt="填写信息" style="zoom:50%;" />
@@ -76,9 +76,9 @@ draft: false
    <img src="/bigdata/dataomnis/_images/publish_job.png" alt="发布作业" style="zoom:50%;" />
 
 2. 填写作业描述信息。
-3. 选择是否**终止当前作业正在运行中的实例**。首次发布作业时无需勾选此项。
+3. 根据实际情况选择是否终止**当前作业正在运行中的实例**。
    
-   如果当前作业有作业实例正在运行，勾选此项，运行中的作业实例会立即被强制终止。
+   如果终止当前作业正在运行中的实例，运行中的作业实例会立即被强制终止。
 
 4. 点击**确定**，发布作业。发布作业时也会对代码进行语法检查，需要一定的时间，请耐心等待。
 

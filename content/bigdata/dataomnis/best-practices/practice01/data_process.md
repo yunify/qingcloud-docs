@@ -30,9 +30,15 @@ draft: false
 
 1. 在开发面板中输入以下 SQL 代码，数据源相关参数请根据代码中的注释进行修改。
 
+   > **说明**
+   > 
+   > - 以下 SQL 代码用于建立 flink table 与数据源之间的映射关系；本实践需要提前在 mysql 中创建好 students 表，并且 students 表包含 id、score、name 列。
+   > - 更多相关参数请参见 [MySQL CDC](/bigdata/dataomnis/developer_sql/mysql_cdc) 和 [Elasticsearch](/bigdata/dataomnis/developer_sql/elasticsearch)。
+
+
     ```sql
-    DROP TABLE IF EXISTS students;
-    CREATE TABLE students(
+    DROP TABLE IF EXISTS students;       --删除 flink table 映射
+    CREATE TABLE students(               --建立 flink table 到 mysql table 的映射关系
         id INT,
         name STRING,
         score    INT,
@@ -52,11 +58,11 @@ draft: false
         id INT,
         name STRING,
         score INT,
-        PRIMARY KEY (id) NOT ENFORCED --定义主键规则，开启主键是upsert模式；否则是append模式。本示例使用append模式。
+        PRIMARY KEY (id) NOT ENFORCED --定义主键规则，开启主键是 upsert 模式；否则是 append 模式。本示例使用 append 模式。
     )WITH(
         'connector' = 'elasticsearch-7', --输出到es7
         'hosts' = 'http://192.168.100.19:9200',  --es连接地址
-        'index' = 'stu',                         --es的index名
+        'index' = 'stu',                         --es的index名；无需提前创建，您可以在此处自定义
         'sink.flush-on-checkpoint' = 'true',     --checkpoint时不允许批量写入
         'sink.bulk-flush.max-actions' = '50',    --每批次最多的条数
         'sink.bulk-flush.max-size' = '10mb',     --每批次累计最大大小
@@ -111,9 +117,9 @@ draft: false
    <img src="/bigdata/dataomnis/_images/publish_job.png" alt="发布作业" style="zoom:50%;" />
 
 2. 填写作业描述信息。
-3. 选择是否**终止当前作业正在运行中的实例**。首次发布作业时无需勾选此项。
+3. 根据实际情况选择是否终止**当前作业正在运行中的实例**。
    
-   如果当前作业有作业实例正在运行，勾选此项，运行中的作业实例会立即被强制终止。
+   如果终止当前作业正在运行中的实例，运行中的作业实例会立即被强制终止。
 
 4. 点击**确定**，发布作业。发布作业时也会对代码进行语法检查，需要一定的时间，请耐心等待。
 

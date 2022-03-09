@@ -88,6 +88,10 @@ CREATE TABLE `kafka_source`(
 | sink.transactional-id-prefix | 否       | 无                     | String   | 如果使用 exacctly-once 模式请确保指定唯一的值。              |
 | sink.parallelism             | 否       | 同上游输入节点同平行度 | Integer  | 写入 Kafka 的并行度。                                        |
 
+## 内置 Connector
+
+SQL 作业中使用 kafka connector 时，您需要在运行参数中选择 `flink-connector-kafka` 内置 Connector。
+
 ## 代码示例
 
 ```sql
@@ -131,4 +135,3 @@ FROM transactions t
 JOIN currency_rates FOR SYSTEM_TIME AS OF t.transaction_time AS c
 ON t.currency_code = c.currency_code;
 ```
-

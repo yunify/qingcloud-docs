@@ -73,6 +73,12 @@ draft: false
 
 日志级别支持：`TRACE`、`DEBUG`、`INFO`、`WARN`、`ERROR`，默认为 `INFO`。
 
+- TRACE：追踪级别，打印所有级别的日志。
+- DEBUG：调试级别，打印 DEBUG、INFO、WARN、ERROR 级别的日志。
+- INFO：信息级别，打印 INFO、WARN、ERROR 级别的日志。
+- WARN：警告级别，打印 WARN、ERROR 级别的日志。
+- ERROR：错误级别，仅打印 ERROR 级别的日志。
+
 <img src="../../../../_images/cluster_log.png" alt="日志配置" style="zoom:50%;" />
 
 ### 可选配置

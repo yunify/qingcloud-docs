@@ -23,6 +23,6 @@ draft: false
    
    <img src="../../../../_images/delete_net.png" alt="删除网络" style="zoom:50%;" />
 
-6. 确认提示信息后，点击**确定**，完成删除操作。
+6. 确认提示信息后，点击**删除**，完成删除操作。
 
 

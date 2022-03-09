@@ -59,6 +59,10 @@ CREATE TABLE kafka_upsert_source (
 | value.fields-include         | 否   | ALL    | Enum<li>ALL <li>EXCEPT_KEY | 指定出现在 Value 中的字段。<li>ALL: 默认值，Schema中所有字段，包括主键字段。<li>EXCEPT_KEY：Schema 中所有字段，不包括主键字段。 |
 | properties.*                 | 否   | 无     | String                     | 可以指定 Kafka 的参数，具体参考[官方文档](https://kafka.apache.org/documentation/#configuration)。 |
 
+## 内置 Connector
+
+SQL 作业中使用 kafka upsert connector 时，您需要在运行参数中选择 `flink-connector-kafka` 内置 Connector。
+
 ## 代码示例
 
 ```sql
@@ -98,3 +102,4 @@ SELECT
 FROM pageviews
 GROUP BY region;
 ```
+

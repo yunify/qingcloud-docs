@@ -23,7 +23,7 @@ draft: false
 3. 连接成功后，执行以下命令，创建数据库 **pk**。
 
     ```sql
-    create database if not exists demo;
+    create database if not exists pk;
     ```
 
 4. 执行以下命令，在数据库 **pk** 中创建数据库表 **output_uv**。
