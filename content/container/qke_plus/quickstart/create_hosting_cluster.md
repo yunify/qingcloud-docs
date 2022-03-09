@@ -60,9 +60,9 @@ keyword: 青云, QingCloud, 云计算, QKE集群, Kubernetes, 托管
 
    | 参数                   | 说明                                                         |
    | ---------------------- | :----------------------------------------------------------- |
-   | 集群可视化管理工具     | 选择是否安装扩展的集群可视化管理工具。<br/><ul><li>若选择**安装**，则需要继续选择待安装的工具。安装后，可通过 Web 界面更方便的管控集群及容器应用等。（目前进支持安装 KubeSphere，后续将支持 OpenShift 等更多工具）</li><li>若选择**不安装**，则表示使用当前 QKE 控制台对集群资源及 Pod 进行简单管理。</li></ul> |
-   | KubeSphere  内置组件   | 选择安装 KubeSphere 进行可视化管理时，需要选择您需要的 KubeSphere 内置组件。各组件的功能说明可参考 [KubeSphere 官方文档](https://kubesphere.com.cn/docs/pluggable-components/)。<br/><div style="background-color: #D8ECDE;padding: 10px 24px; margin: 10px 0;border-left:3px solid #00a971;"><b>说明</b><br/>使用 KubeSphere 内置组件将产生额外费用。选择安装 KubeSphere 内置组件，将在集群创建成功后挂载一定数量的云硬盘，云硬盘在使用过程中按小时扣费。您可以在集群的挂载资源界面查看云硬盘的使用和计费详情。  </div> |
-   | KubeSphere  控制台 EIP | 选择安装 KubeSphere 时，如果您希望通过公网 **LoadBalancer** 方式访问 KubeSphere 控制台，可选择一个可用的 EIP，系统将自动创建一个负载均衡器并绑定此 EIP 。<br/><div style="background-color: #D8ECDE;padding: 10px 24px; margin: 10px 0;border-left:3px solid #00a971;"><b>说明</b>：<br/>请保证集群至少有一个工作节点，否则无法通过此方法访问 KubeSphere 控制台。  </div> |
+   | 集群可视化管理工具     | 选择是否安装扩展的集群可视化管理工具。<br/><ul><li>若选择**安装**，则需要继续选择待安装的工具。安装后，可通过 Web 界面更方便的管控集群及容器应用等。（目前仅支持安装 KubeSphere，后续将支持更多工具）</li><li>若选择**不安装**，则表示使用当前 QKE 控制台对集群资源及 Pod 进行简单管理。</li></ul> |
+   | KubeSphere  内置组件   | 选择安装 KubeSphere 进行可视化管理时，需要选择您需要的 KubeSphere 内置组件。各组件的功能说明可参考 [KubeSphere 官方文档](https://kubesphere.com.cn/docs/pluggable-components/)。<br/><div style="background-color: #D8ECDE;padding: 10px 24px; margin: 10px 0;border-left:3px solid #00a971;"><b>说明</b><br/>使用 KubeSphere 内置组件将产生额外费用。选择安装 KubeSphere 内置组件，将在集群创建成功后挂载一定数量的云硬盘，云硬盘在使用过程中按小时扣费。您可以到费用中心查看云硬盘消费情况。  </div> |
+   | KubeSphere  控制台 EIP | 选择安装 KubeSphere 时，如果您希望通过公网 **LoadBalancer** 方式访问 KubeSphere 控制台，可选择一个可用的 EIP，系统将自动创建一个负载均衡器并绑定此 EIP 。 |
 
    **环境参数设置：**
 
@@ -98,5 +98,5 @@ keyword: 青云, QingCloud, 云计算, QKE集群, Kubernetes, 托管
 
 - [配置镜像仓库](../cfg_mirror_repo/)
 
-- [创建应用](../create_app/)
+- [创建工作负载](../create_app/)
 

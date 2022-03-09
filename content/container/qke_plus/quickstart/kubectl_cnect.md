@@ -1,7 +1,7 @@
 ---
 title: "使用 kubectl 连接集群"
 description: 介绍如何使用 kubectl 工具连接 Kubernetes 集群
-draft: true
+draft: false
 weight: 40
 keyword: 青云, QingCloud, 云计算, kubectl, K8s
 ---
@@ -31,13 +31,13 @@ keyword: 青云, QingCloud, 云计算, kubectl, K8s
 
 kubectl 工具默认会从客户端机器的 `$HOME/.kube` 目录下查找名为`config`的文件，该文件用于存储所要管理集群的访问凭证，kubectl 会根据该配置文件连接至集群。
 
-1. 在 **kubeconfig** 标签页中，复制配置文件中的内容。
+1. 在**集群信息**页面，点击 **查看 kubeconfig**，然后点击**复制**，复制 kubeconfig 文件中的内容。
 
    > **注意** 
    >
-   > 请确保`server` 字段值为 `https://K8s apiserver EIP:6443`。
+   > 请确保`server` 字段值为 `https://K8s apiserver EIP:443`。
 
-2. 将复制内容粘贴到 kubectl 客户端机器的 `$HOME/.kube/config` 文件中并保存退出。
+2. 将 kubeconfig 内容拷贝到 kubectl 客户端机器的 `$HOME/.kube/config` 文件中并保存退出。
 
    > **说明**
    >
@@ -56,12 +56,11 @@ kubectl get no --kubeconfig config
 预期输出：
 
 ```
-NAME          STATUS   ROLES                  AGE   VERSION
-master1       Ready    control-plane,master   25h   v1.20.6
-master2       Ready    control-plane,master   25h   v1.20.6
-master3       Ready    control-plane,master   25h   v1.20.6
-worker-p001   Ready    worker                 25h   v1.20.6
-worker-p002   Ready    worker                 25h   v1.20.6
-worker-p003   Ready    worker                 25h   v1.20.6
+NAME          STATUS   ROLES                  AGE     VERSION
+master1       Ready    control-plane,master   10m     v1.21.5
+master2       Ready    control-plane,master   10m     v1.21.5
+master3       Ready    control-plane,master   10m     v1.21.5
+worker-p001   Ready    worker                 9m52s   v1.21.5
+worker-p002   Ready    worker                 9m46s   v1.21.5
 ```
 

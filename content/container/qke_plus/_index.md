@@ -1,11 +1,11 @@
 ---
-title: "QKE Plus"
+title: "容器引擎 QKE"
 weight: 1
 collapsible: true
 type: "product"
 
 section1:
-  title: "QKE Plus"
+  title: "容器引擎 QKE"
   vice_title: 青云容器引擎 (QingCloud Kubernetes Engine，简称 QKE) 是在 QingCloud 云平台上构建的企业级分布式多租户的 Kubernetes 容器服务管理平台，集成了云平台的云服务器、存储、网络等资源，可一键部署高可用、高性能的 Kubernetes 集群，支持CI/CD、多集群管理、微服务治理、应用管理、服务与网络管理等业务场景，让您轻松高效地在云端运行 Kubernetes 容器化应用。
 
 section2:
@@ -31,7 +31,7 @@ section2:
     url: "best-practice/docker_deployment/"
   - title: 常见问题
     content: 介绍 QKE 集群的常见问题与解决办法
-    url: "faq/main"
+    url: "faq/cluster_faq/"
 
 
 section4:
@@ -49,11 +49,11 @@ section4:
     content: 通过 QKE 控制台管理集群及容器应用。
     vice_title: 上手的第一步
     children:
-    - title: 创建集群
+    - title: 创建 QKE 集群
       url: "quickstart/create_hosting_cluster/"
-    - title: 管理集群
+    - title: 使用 QKE 控制台管理集群
       url: "manual/mgt_cluster/cluster_overview/"
-    - title: 使用可视化控制台
+    - title: 使用可视化控制台管理集群
       url: "manual/console/console_intro/"
 ---
 

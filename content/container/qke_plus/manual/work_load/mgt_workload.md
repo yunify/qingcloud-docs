@@ -8,6 +8,10 @@ weight: 10
 
 工作负载创建后，您可以在 QKE 控制台进行查看及更新。
 
+## 创建工作负载
+
+具体操作，请参见[创建工作负载](/container/qke_plus/quickstart/create_app/)。
+
 ## 查看工作负载
 
 1. 登录 QingCloud 管理控制台。
@@ -28,7 +32,7 @@ weight: 10
 
      ![](/container/qke_plus/_images/workload_deployment.png)
 
-## 编辑 YAML
+## 更新工作负载
 
 可通过编辑工作负载的 YAML 文件进行工作负载更新。本文以有守护进程为例说明如何在线编辑 YAML。
 
