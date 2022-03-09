@@ -15,7 +15,7 @@ weight: 50
 | key_id             | string | 密钥名称                                                     | Yes      |
 | key_pair_spec      | string | 密钥算法，默认SYMMETRIC_DEFAULT。可选SYMMETRIC_DEFAULT`, `RSA_2048`, `RSA_3072`, `RSA_4096`, `ECC_P256`, `ECC_P384`, `ECC_P521 | Yes      |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../parameters/)
 
 **Response Elements**
 

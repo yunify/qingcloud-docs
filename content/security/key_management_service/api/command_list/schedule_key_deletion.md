@@ -14,7 +14,7 @@ weight: 80
 | key_id         | string | 密钥ID                      | Yes      |
 | pending_days   | int    | 等待时间。最小7天，最长30天 | No       |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../parameters/)
 
 **Response Elements**
 

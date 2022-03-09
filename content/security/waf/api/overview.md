@@ -26,7 +26,7 @@ keyword: API请求, QingCloud, 青云, API概述, API
 | -------- | ----------------------------------------------------- | ------------------------------------------------------------ |
 | API入口  | API 调用的 webservice 入口                            | 我们的API入口目前统一为：[https://api.qingcloud.com/iaas/](https://api.qingcloud.com/iaas/) |
 | 公共参数 | 每个 API 调用都需要包含公共参数                       | 详情可见 [_公共参数_](../parameters/)                        |
-| 指令名称 | API指令的名称 ( action )，例如 DescribeInstances 等。 | 完整的指令名称列表请参见 [_API指令列表_](../command_list/instance/)。 |
+| 指令名称 | API指令的名称 ( action )，例如 DescribeInstances 等。 | 完整的指令名称列表请参见 [_API指令列表_](/security/waf/api/command_list/add_waf_rules/)。 |
 | 指令参数 | 指令参数请参见每个指令的相关文档。                    |                                                              |
 
 **API 请求样例**

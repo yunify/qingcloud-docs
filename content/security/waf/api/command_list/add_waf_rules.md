@@ -38,7 +38,7 @@ draft: false
 | list_content | String |规则匹配的内容，根据规则类别填写不同的匹配内容<br/>IP黑白名单: IP地址/掩码<br/>URL黑白名单： URL地址<br/>CC防护列表： CC保护的URL地址，完全匹配<br/>接口防刷列表： 接口URL地址，前缀匹配 |
 | val1 | String | 接口防刷列表配置的Referer地址 |
 
-[公共参数](../../../parameters/)
+[公共参数](../../parameters/)
 
 **Response Elements**
 

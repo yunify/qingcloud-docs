@@ -16,7 +16,7 @@ weight: 65
 | limit          | int    | 数据上限，默认10                                             | No       |
 | sort_key       | string | 按key排序，默认是按create_time排序，最上方的数据时间距离现在最近 | No       |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../parameters/)
 
 **Response Elements**
 

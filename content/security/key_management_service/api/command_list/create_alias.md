@@ -15,7 +15,7 @@ weight: 5
 | alias_name | String | 密钥别名 | Yes |
 | description | String | 别名描述 | No |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../parameters/)
 
 **Response Elements**
 

@@ -20,7 +20,7 @@ draft: false
 | instances.n | String | 应用防火墙的云服务器ID。<br/>如果不传任何值，则会将最新规格更新到所有之前已应用此防火墙的云服务器。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../parameters/)
 
 **Response Elements**
 

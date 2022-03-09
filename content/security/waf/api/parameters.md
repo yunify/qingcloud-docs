@@ -18,7 +18,7 @@ keyword: 公共参数, QingCloud, 青云, API
 
 | Name                  | Description                                                  | Notes                                                        |
 | --------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **action**            | 每个 API 都有自己的 action，用来标识所请求指令。例如 RunInstances。 | 完整的指令名称列表请参见 [_API指令列表_](../command_list/instance/)。 |
+| **action**            | 每个 API 都有自己的 action，用来标识所请求指令。例如 RunInstances。 | 完整的指令名称列表请参见 [_API指令列表_](/security/waf/api/command_list/add_waf_rules/)。 |
 | **zone**              | 区域 ID，当 API 请求是需要在某个具体的区域执行时，需要加上该参数。例如 pek3a。 | 目前支持的区域 ID 有：<br/>pek3a：北京3区-A<br/>pek3：北京3区(包括 pek3b/pek3c/pek3d)<br/>sh1a：上海1区-A<br/>gd2：广东2区(包括 gd2a/gd2b)<br/>ap2a：亚太2区-A |
 | **time_stamp**        | 请求串生成时间，格式为 YYYY-MM-DDThh:mm:ssZ，例如”2013-08-27T13:58:35Z”，具体格式可以参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). | 这个时间为 UTC 时间，假设您的本地时间为北京时间 UTC+8 ，您需要将其转化为 UTC+0 的时间。 |
 | **access_key_id**     | 申请的 API密钥ID，例如”QYACCESSKEYIDEXAMPLE”。               |                                                              |
@@ -52,4 +52,3 @@ keyword: 公共参数, QingCloud, 青云, API
 >&zone=pek3a
 >
 >&signature=xMFvKenlbAAc0jGJ0iBHUhzh/wOBu3B8hypk+fTThFY=
->

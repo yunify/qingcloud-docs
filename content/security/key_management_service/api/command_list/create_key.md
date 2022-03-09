@@ -17,7 +17,7 @@ weight: 10
 | key_usage | string | 密钥用途，默认为ENCRYPT_DECRYPT。可选ENCRYPT_DECRYPT`, `SIGN_VERIFY | No |
 | key_spec | string | 密钥算法，默认为SYMMETRIC_DEFAULT。可选SYMMETRIC_DEFAULT`, `RSA_2048`, `RSA_3072`, `RSA_4096`, `ECC_P256`, `ECC_P384`, `ECC_P521 | No |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../parameters/)
 
 **Response Elements**
 

@@ -14,7 +14,7 @@ weight: 15
 | cipher_text        | string | 解密密文    | Yes      |
 | encryption_context | string | 加密上下文  | No       |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../parameters/)
 
 **Response Elements**
 

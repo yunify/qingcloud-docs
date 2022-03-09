@@ -15,7 +15,7 @@ weight: 75
 | name           | string | 密钥名称    | No       |
 | description    | string | 密钥描述    | No       |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../parameters/)
 
 **Response Elements**
 

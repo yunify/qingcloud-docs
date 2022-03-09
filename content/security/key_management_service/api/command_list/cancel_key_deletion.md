@@ -13,7 +13,7 @@ weight: 1
 | --- | --- | --- | --- |
 | key_id         | String | 密钥ID      | Yes      |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../parameters/)
 
 **Response Elements**
 

@@ -13,8 +13,8 @@ draft: false
 *   security_group_rule_name：规则名称
 *   action：操作，分为 accept 接受 和 drop 拒绝
 *   direction：方向，0 表示下行，1 表示上行。
-*   val1：如果协议为 tcp 或 udp，此值表示起始端口。 如果协议为 icmp，此值表示 ICMP 类型。 具体类型可参见 [_ICMP 类型及代码_](../../../common/security_group_rule_icmp_type/)
-*   val2：如果协议为 tcp 或 udp，此值表示结束端口。 如果协议为 icmp，此值表示 ICMP 代码。 具体代码可参见 [_ICMP 类型及代码_](../../../common/security_group_rule_icmp_type/)
+*   val1：如果协议为 tcp 或 udp，此值表示起始端口。 如果协议为 icmp，此值表示 ICMP 类型。 具体类型可参见 [_ICMP 类型及代码_](/development_docs/api/common/security_group_rule_icmp_type/)
+*   val2：如果协议为 tcp 或 udp，此值表示结束端口。 如果协议为 icmp，此值表示 ICMP 代码。 具体代码可参见 [_ICMP 类型及代码_](/development_docs/api/common/security_group_rule_icmp_type/)
 *   val3：源IP
 
 注解
@@ -36,7 +36,7 @@ draft: false
 | rules.n.val3 | String | 目标 IP，如果填写，则这条防火墙规则只对此IP（或IP段）有效。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../parameters/)
 
 **Response Elements**
 

@@ -15,7 +15,7 @@ weight: 60
 | key_id             | string | 密钥名称    | Yes      |
 | key_length         | int    | 密钥长度    | No       |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../parameters/)
 
 **Response Elements**
 

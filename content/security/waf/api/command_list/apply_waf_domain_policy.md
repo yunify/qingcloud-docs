@@ -15,7 +15,7 @@ draft: false
 | domain_policy | String | 要应用修改的策略 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[公共参数](../../../parameters/)
+[公共参数](../../parameters/)
 
 **Response Elements**
 

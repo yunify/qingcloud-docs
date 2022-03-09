@@ -16,7 +16,7 @@ weight: 70
 | status         | string | 密钥状态，Enabled，Disabled，PendingDeletion，Deleted, All | No       |
 | sort_key       | string | 默认按创建时间排序                                         | No       |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../parameters/)
 
 **Response Elements**
 

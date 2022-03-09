@@ -13,7 +13,7 @@ weight: 20
 | --- | --- | --- | --- |
 | AliasName | String | 密钥别名 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../parameters/)
 
 **Response Elements**
 
