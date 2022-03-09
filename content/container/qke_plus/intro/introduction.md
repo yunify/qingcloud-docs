@@ -48,6 +48,6 @@ QKE 集群提供了**托管版**与**自管版**两种形态，您可以根据�
 
 您可以通过以下方式购买 QKE：
 
-- 进入青云官网的 QKE 产品页，点击**立即使用** > **立即部署**进行购买。
+- 进入[青云官网的 QKE 产品页](https://www.qingcloud.com/products/kubesphereqke/)，点击**立即使用** > **立即部署**进行购买。
 - 登录 [QingCloud 管理控制台](https://account.qingcloud.com/login)，选择**产品与服务** > **容器服务** > **容器引擎 QKE**，点击**立即创建**进行购买。
 
