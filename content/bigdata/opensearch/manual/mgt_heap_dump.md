@@ -11,7 +11,6 @@ draft: false
 Heap Dump 文件是一种二进制文件，记录了 JVM 中堆内存运行情况。HeapDump 文件是指定时刻的 Java 堆栈的快照，是一种镜像文件。
 
 - 针对 OpenSearch 节点通过生成 Heap Dump 文件，可帮助定位节点内存情况和性能优化。
-
 - 由于 Heap Dump 文件占用内存空间较大，为充分使用资源空间，在分析 Heap Dump 文件后，可清除文件释放存储空间。
 
 > **注意**
@@ -39,9 +38,9 @@ Heap Dump 文件是一种二进制文件，记录了 JVM 中堆内存运行情�
 
 7. 确认配置信息无误后，点击**提交**，返回节点列表页面。
 
-   -待节点状态切换为`活跃`，则 dump 过程完成。生成文件需数分钟，请耐心等待。
+   - 待节点状态切换为`活跃`，则 dump 过程完成。生成文件需数分钟，请耐心等待。
    
-   -生成 Heap Dump 文件过程，可通过 `http://<OpenSearch_IP>/dump/`，查看文件生成进度。
+   - 生成 Heap Dump 文件过程，可通过 `http://<OpenSearch_IP>/dump/`，查看文件生成进度。
 
 ### 节点参数
 
@@ -62,7 +61,6 @@ Heap Dump 文件是一种二进制文件，记录了 JVM 中堆内存运行情�
    <img src="../../_images/delete_dump.png" alt="清除文件" style="zoom:50%;" />
 
 6. 配置节点信息。
-
 7. 确认配置信息无误后，点击**提交**，返回节点列表页面。
 
-   可通过 `http://<OpenSearch_IP>/dump/`，查看文件是否被清除。
+   可通过 `http://<OpenSearch_IP>/dump/`，可查看文件是否被清除。
