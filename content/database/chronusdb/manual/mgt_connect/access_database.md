@@ -1,14 +1,14 @@
 ---
 title: "连接数据库"
 description: 本小节主要介绍如何快速访问 ChronusDB 数据库。 
-keyword: ChronusDB 实例, 访问数据库
+keyword: 实例, 访问数据库,时序数据库,ChronusDB,数据库 
 weight: 10
 collapsible: false
 draft: false
 ---
 
 
-ChronusDB on QingCloud 可选用 Docker 、客户端、curl 等方式连接集群和导入数据。
+ChronusDB 可选用 Docker 、客户端、curl 等方式连接集群和导入数据。
 
 ## 前提条件
 
@@ -27,7 +27,7 @@ ChronusDB on QingCloud 可选用 Docker 、客户端、curl 等方式连接集�
 > 
 > 由于集群采用无主构架，建议直接使用节点 IP 管理集群，以便可以更加灵活的控制集群的负载。
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据库与缓存** > **时序数据库 ChronusDB**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**服务端口信息**模块，获取集群高可用 IP。

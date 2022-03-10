@@ -1,7 +1,7 @@
 ---
 title: "查看存储数据和空间"
 description: 本小节主要介绍如何查看存储数据和空间。 
-keyword: ClickHouse 查看存储数据，查看存储空间
+keyword: 查看存储数据,查看存储空间,数据仓库,ClickHouse
 weight: 30
 collapsible: false
 draft: false

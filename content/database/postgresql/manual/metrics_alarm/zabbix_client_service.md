@@ -14,7 +14,7 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 PostgreSQL 集群，且集群状态为**活跃**。
 - 已安装 Zabbix 客户端，并下载 [Zabbix Templates](https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/db/postgresql)。
 
@@ -28,7 +28,7 @@ draft: false
 
 1. 开启 zabbix 客户端。
    
-   1. 登录 QingCloud 管理控制台。
+   1. 登录管理控制台。
    2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 PostgreSQL**，进入集群管理页面。
    3. 选择目标集群，点击目标集群 ID，进入集群详情页面。  
    4. 在**基本属性**模块，展开下拉菜单，点击**启动 zabbix 客户端**。
@@ -47,7 +47,7 @@ draft: false
 
 若无需 Zabbix Agent 服务时，可在 AppCenter 确认关闭服务。
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 PostgreSQL**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。  
 4. 在**基本属性**模块，展开下拉菜单，点击**关闭 zabbix 客户端**。

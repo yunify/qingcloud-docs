@@ -1,7 +1,7 @@
 ---
 title: "删除节点"
 description: 本小节主要介绍如何删除 OpenSearch 节点实例。 
-keyword: OpenSearch 节点删除；删除节点
+keyword: 节点删除,删除节点,OpenSearch,搜索引擎,大数据
 weight: 15
 collapsible: false
 draft: false

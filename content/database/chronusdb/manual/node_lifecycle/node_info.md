@@ -1,7 +1,7 @@
 ---
 title: "节点概述"
 description: 本小节主要介绍 ChronusDB 节点基本信息。 
-keyword: ChronusDB 节点信息；
+keyword: 节点信息,时序数据库,ChronusDB,数据库 ；
 weight: 01
 collapsible: false
 draft: false
