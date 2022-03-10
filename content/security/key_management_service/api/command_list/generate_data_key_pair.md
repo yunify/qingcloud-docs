@@ -5,7 +5,7 @@ draft: false
 weight: 50
 ---
 
-使用CMK生成**数据密钥**，不返回明文密钥。
+使用 CMK 生成**数据密钥**，不返回明文密钥。
 
 **Request Parameters**
 

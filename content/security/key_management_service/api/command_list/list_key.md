@@ -5,7 +5,7 @@ draft: false
 weight: 70
 ---
 
-查询所有CMK。
+查询所有 CMK。
 
 **Request Parameters**
 

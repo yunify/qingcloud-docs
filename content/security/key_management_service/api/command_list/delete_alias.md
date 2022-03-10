@@ -5,7 +5,7 @@ draft: false
 weight: 20
 ---
 
-删除CMK的别名。
+删除 CMK 的别名。
 
 **Request Parameters**
 

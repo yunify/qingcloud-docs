@@ -5,7 +5,7 @@ draft: false
 weight: 10
 ---
 
-创建CMK，目前仅支持云管CMK，由云平台其他服务创建，加密材料由KMS生成。
+创建 CMK，目前仅支持云管 CMK，由云平台其他服务创建，加密材料由KMS生成。
 
 **Request Parameters**
 

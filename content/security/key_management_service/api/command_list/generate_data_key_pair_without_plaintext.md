@@ -5,7 +5,7 @@ draft: false
 weight: 55
 ---
 
-使用CMK生成数据密钥，不返回明文密钥。
+使用 CMK 生成数据密钥，不返回明文密钥。
 
 **Request Parameters**
 
@@ -13,7 +13,7 @@ weight: 55
 | --- | --- | --- | --- |
 | encryption_context | string | 加密上下文                                                   | No       |
 | key_id             | string | 密钥名称                                                     | Yes      |
-| key_pair_spec      | string | 密钥算法，默认SYMMETRIC_DEFAULT。可选SYMMETRIC_DEFAULT`, `RSA_2048`, `RSA_3072`, `RSA_4096`, `ECC_P256`, `ECC_P384`, `ECC_P521 | Yes      |
+| key_pair_spec      | string | 密钥算法，默认 SYMMETRIC_DEFAULT。可选SYMMETRIC_DEFAULT`, `RSA_2048`, `RSA_3072`, `RSA_4096`, `ECC_P256`, `ECC_P384`, `ECC_P521 | Yes      |
 
 [_公共参数_](../../parameters/)
 

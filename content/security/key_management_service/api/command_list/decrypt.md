@@ -5,7 +5,7 @@ draft: false
 weight: 15
 ---
 
-使用CMK对密文解密。
+使用 CMK 对密文解密。
 
 **Request Parameters**
 

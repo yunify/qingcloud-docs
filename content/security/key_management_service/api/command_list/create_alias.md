@@ -5,7 +5,7 @@ draft: false
 weight: 5
 ---
 
-创建CMK的别名。
+创建 CMK 的别名。
 
 **Request Parameters**
 

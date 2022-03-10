@@ -5,7 +5,7 @@ draft: false
 weight: 40
 ---
 
-使用CMK KeyId 对明文加密。
+使用 CMK KeyId 对明文加密。
 
 **Request Parameters**
 

@@ -6,7 +6,7 @@ draft: false
 
 
 
-复制IP/端口集合到其他zone（可以复制到当前zone）。
+复制 IP/端口集合到其他 zone（可以复制到当前zone）。
 
 **Request Parameters**
 

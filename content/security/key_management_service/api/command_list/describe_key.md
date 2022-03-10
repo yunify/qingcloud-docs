@@ -5,7 +5,7 @@ draft: false
 weight: 25
 ---
 
-显示指定CMK的详细信息。
+显示指定 CMK 的详细信息。
 
 **Request Parameters**
 
