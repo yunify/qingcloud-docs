@@ -1,23 +1,23 @@
 ---
 title: "ReleaseEips"
-description: 
+description: 释放公网 IP。
 draft: false
+weight: 15
+keyword: 公网 IP API,
 ---
 
+将一个或多个公网 IP 释放回 IP 池，同时相关 IP 的计费也会停止。
 
-
-将一个或多个公网IP释放回IP池，同时相关IP的计费也会停止。
-
-如果公网IP正与其他资源绑定，则需要先解绑，再释放， 保证被释放的IP处于“可用”（ available ）状态。
+被释放的 IP 处于须处于“可用”（ available ）状态。如果公网 IP 正与其他资源绑定，则需要先解绑才能释放。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| eips.n | String | 公网IP的ID | Yes |
+| eips.n | String | 公网 IP 的 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../gei_api/parameters/)
 
 **Response Elements**
 
