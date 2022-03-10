@@ -1,26 +1,26 @@
 ---
 title: "ChangeEipsBillingMode"
-description: 
+description: 变更公网 IP 计费模式。
 draft: false
+weight: 8
+keyword: 公网 IP API, 公网 IP 计费模式
 ---
 
+动态改变一个或多个公网 IP 的计费模式，改变后计费系统会及时更新。
 
-
-动态改变一个或多个公网IP的计费模式，改变后计费系统会及时更新。
-
-警告
-
-计费模式不能频繁改动，每个IP 24小时内只能改动一次
+> **警告**
+>
+> 计费模式不能频繁改动，每个 IP 24 小时内只能改动一次。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| eips.n | String | 公网IP的ID | Yes |
-| billing_mode | String | 公网IP计费模式：bandwidth 按带宽计费，traffic 按流量计费，默认是 bandwidth | Yes |
+| eips.n | String | 公网 IP 的 ID | Yes |
+| billing_mode | String | 公网 IP 计费模式：bandwidth 按带宽计费，traffic 按流量计费，默认是 bandwidth | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../gei_api/parameters/)
 
 **Response Elements**
 

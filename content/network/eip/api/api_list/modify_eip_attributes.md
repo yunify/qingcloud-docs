@@ -1,27 +1,25 @@
 ---
 title: "ModifyEipAttributes"
-description: 
+description: 修改公网 IP 名称及描述。
 draft: false
+weight: 9
+keyword: 公网 IP API,修改公网 IP
 ---
 
+修改一个公网 IP 的名称和描述。
 
-
-修改一个公网IP的名称和描述。
-
-修改时不受公网IP状态限制。
-
-一次只能修改一个公网IP。
+一次只能修改一个公网 IP，修改时不受公网 IP 状态限制。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| eip | String | 公网IP的ID | Yes |
-| eip_name | String | 公网IP名称 | No |
-| description | String | 公网IP描述 | No |
+| eip | String | 公网 IP 的 ID | Yes |
+| eip_name | String | 公网 IP 名称 | No |
+| description | String | 公网 IP 描述 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../gei_api/parameters/)
 
 **Response Elements**
 

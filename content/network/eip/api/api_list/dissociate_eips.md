@@ -1,21 +1,21 @@
 ---
 title: "DissociateEips"
-description: 
+description: 从云资源上解绑公网 IP。
 draft: false
+weight: 5
+keyword: 公网 IP API,解绑公网 IP
 ---
 
-
-
-将一个或多个“绑定中”（ associated ）状态的公网IP解绑， 解绑后会变回“可用”（ available ）状态。
+将一个或多个“绑定中”（ associated ）状态的公网 IP 解绑， 解绑后会变回“可用”（ available ）状态。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| eips.n | String | 公网IP的ID | Yes |
+| eips.n | String | 公网 IP 的 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../gei_api/parameters/)
 
 **Response Elements**
 

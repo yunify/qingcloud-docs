@@ -1,28 +1,28 @@
 ---
 title: "AssociateEip"
-description: 
+description: 绑定公网 IP 到云服务器。
 draft: false
+weight: 3
+keyword: 公网 IP API,云服务器绑定公网 IP
 ---
 
+将一个“可用”（ available ）状态的公网 IP 绑定到云服务器，云服务器便可访问外网。
 
-
-将一个“可用”（ available ）状态的公网IP绑定到云服务器， 绑定后的云服务器才具有访问外网的能力。
-
-不能对已绑定公网IP的云服务器再次绑定，如果需要更改IP， 则要先解绑之前的IP，再绑定新的。如果已绑定公网IP所在的云服务器没有反应,可以使用强制绑定
+不能对已绑定公网IP的云服务器再次绑定，如果需要更改 IP， 则要先解绑之前的 IP，再绑定新  IP。如果已绑定公网 IP 所在的云服务器没有反应,可以使用强制绑定
 将该公网IP绑定到目标资源上。
 
-如果想将公网IP绑定到路由器，请参见 [_ModifyRouterAttributes_](../../router/modify_router_attributes/)
+如果想将公网 IP 绑定到路由器，请参见 [_ModifyRouterAttributes_](/network/vpc/api/vpc_api/modify_router_attributes/)。
 
 **Request Parameters**
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| eip | String | 公网IP的ID | Yes |
+| eip | String | 公网 IP 的ID | Yes |
 | instance | String | 云服务器 ID | Yes |
 | force | Boolean | 是否强制绑定 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../gei_api/parameters/)
 
 **Response Elements**
 
