@@ -1,7 +1,6 @@
 ---
 title: "通用管理"
 linkTitle: "通用管理"
-date: 2020-02-28T10:08:56+09:00
 description: 通用管理介绍
 draft: false
 weight: 6
