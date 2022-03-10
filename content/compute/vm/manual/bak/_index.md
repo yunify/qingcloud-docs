@@ -1,9 +1,9 @@
 ---
-title: "创建备份"
+title: "备份管理"
 linkTitle: "创建备份"
 _build:
  render: false 
 collapsible: true
-draft: true
+draft: false
 weight: 40
 ---
