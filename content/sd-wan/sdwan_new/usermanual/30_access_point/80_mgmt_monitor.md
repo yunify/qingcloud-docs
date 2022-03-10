@@ -11,7 +11,7 @@ weight: 80
 
 1. 登录 QingCloud 管理控制台。
 
-2. 选择**产品与服务** > **SD-WAN** > **SD-WAN**，进入**连接云网**页面。
+2. 选择**产品与服务** > **SD-WAN（新版）** > **SD-WAN（新版）**，进入**连接云网**页面。
 
    <img src="../../../_images/qs_cloud_network.png" style="zoom:50%;" />
 
@@ -45,7 +45,7 @@ weight: 80
 
 5. 点击**监控**，进入**监控**页面。
 
-   <img src="../../../_images/um_monitor_list.png" style="zoom:50%;" />
+   <img src="../../../_images/um_monitor_equip.png" style="zoom:50%;" />
 
 6. 您可以根据监控粒度10秒、1分钟、5分钟查看近1小时、12小时、1天、2周、1个月、6个月的设备监控数据。
 

@@ -13,7 +13,7 @@ SD-WAN 为您提供监控数据的告警服务，您可以通过创建指标告�
 
 1. 登录 QingCloud 管理控制台。
 
-2. 选择**产品与服务** > **SD-WAN** > **SD-WAN**，进入**概览**页面。
+2. 选择**产品与服务** > **SD-WAN（新版）** > **SD-WAN（新版）**，进入**概览**页面。
 
    <img src="../../../_images/qs_cloud_network.png" style="zoom:50%;" />
 

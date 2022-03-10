@@ -7,7 +7,7 @@ weight: 20
 
 SNAT 可以解决私网地址冲突问题。
 
-SNAT 将内部网络地址转换为指定内网 IP 地址，内部网络可以通过转换后的内网 IP 地址访问连接云网内部各接入点间的网络。
+SNAT 可以将内网 IP 转换成特定 IP，用于解决私网地址冲突问题。数据通过光盒 CPE 或软件 vCPE 后，源 IP 转为特定 IP 后隐藏了真实的 IP，数据访问为单向。
 
 ## 注意事项
 
@@ -23,7 +23,7 @@ SNAT 将内部网络地址转换为指定内网 IP 地址，内部网络可以�
 
 1. 登录 QingCloud 管理控制台。
 
-2. 选择**产品与服务** > **SD-WAN** > **SD-WAN**，进入**连接云网**页面。
+2. 选择**产品与服务** > **SD-WAN（新版）** > **SD-WAN（新版）**，进入**连接云网**页面。
 
    <img src="../../../../_images/qs_cloud_network.png" style="zoom:50%;" />
 
@@ -63,7 +63,7 @@ SNAT 将内部网络地址转换为指定内网 IP 地址，内部网络可以�
 
 1. 进入**网络管理** > **SNAT** 页面。
 
-   <img src="../../../../_images/qs_vcpe_bgp_list_modify.png" style="zoom:50%;" />
+   <img src="../../../../_images/um_snat_list.png" style="zoom:50%;" />
 
 2. 在已添加的静态路由所在行的**操作**列中，点击**禁用**。
 
@@ -75,7 +75,7 @@ SNAT 将内部网络地址转换为指定内网 IP 地址，内部网络可以�
 
 1. 进入**网络管理** > **SNAT** 页面。
 
-   <img src="../../../../_images/qs_vcpe_bgp_list_modify.png" style="zoom:50%;" />
+   <img src="../../../../_images/um_snat_list.png" style="zoom:50%;" />
 
 2. 在已添加的静态路由所在行的**操作**列中，点击**修改**，弹出**修改 SNAT 规则**窗口。
 
@@ -91,7 +91,7 @@ SNAT 将内部网络地址转换为指定内网 IP 地址，内部网络可以�
 
 1. 进入**网络管理** > **SNAT** 页面。
 
-   <img src="../../../../_images/qs_vcpe_bgp_list_modify.png" style="zoom:50%;" />
+   <img src="../../../../_images/um_snat_list.png" style="zoom:50%;" />
 
 2. 在已添加的静态路由所在行的**操作**列中，点击**删除**，弹出**删除 SNAT 规则**窗口。
 

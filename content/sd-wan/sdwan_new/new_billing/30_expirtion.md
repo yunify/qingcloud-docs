@@ -5,7 +5,7 @@ collapsible: false
 weight: 30
 ---
 
-本文档主要介绍 SD-WAN 的欠费说明。
+本文档主要介绍 SD-WAN （新版）的欠费说明。
 
 ## 欠费说明
 

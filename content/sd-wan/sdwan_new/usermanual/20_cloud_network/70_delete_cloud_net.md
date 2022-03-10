@@ -17,7 +17,7 @@ weight: 70
 
 ## 操作步骤
 
-1. 选择**产品与服务** > **SD-WAN** > **SD-WAN**，进入**连接云网**页面。
+1. 选择**产品与服务** > **SD-WAN（新版）** > **SD-WAN（新版）**，进入**连接云网**页面。
 
    <img src="../../../_images/qs_cloud_network.png" style="zoom:50%;" />
 

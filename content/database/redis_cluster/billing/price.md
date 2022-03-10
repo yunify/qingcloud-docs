@@ -21,15 +21,15 @@ Redis Cluster 实例的基础资源费用可通过 [价格计算器](https://www
 
 ## 费用充值
 
-青云账号支持多种充值途径：支付宝、网上银行、微信支付、线下银行转账。 可在[充值页面](https://console.qingcloud.com/finance/wallet/)选择。
+云平台账号支持多种充值途径：支付宝、网上银行、微信支付、线下银行转账。 可在[充值页面](https://console.qingcloud.com/finance/wallet/)选择。
 
 如果需要发票，请到[发票管理](https://console.qingcloud.com/finance/invoices/)提出申请。
 
-您随时可以在 QingCloud 管理控制台中通过[消费明细](https://console.qingcloud.com/finance/statistic/)查询消费情况 。
+您随时可以在管理控制台中通过[消费明细](https://console.qingcloud.com/finance/statistic/)查询消费情况 。
 
 ## 余额不足提醒
 
-青云系统会定期检查用户余额和当时名下弹性计费资源的消费预估， 如果检查发现余额即将不足，会提前给用户发送通知。
+云平台系统会定期检查用户余额和当时名下弹性计费资源的消费预估， 如果检查发现余额即将不足，会提前给用户发送通知。
 
 通知策略是：分别在提前 15，7，3，2，1 天时发送提醒。 默认是发送给账号的注册手机号及通知邮箱，如果用户希望自定义接受者列表，可在账户设置的[通知列表](https://console.qingcloud.com/account/profile/notify_map/)中修改**财务通知**对应的通知列表。
 

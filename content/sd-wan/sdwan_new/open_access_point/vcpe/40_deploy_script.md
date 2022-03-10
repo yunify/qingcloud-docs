@@ -25,7 +25,7 @@ weight: 40
 
 vCPE 以自有镜像的模式提供给用户。
 
-用户通过青云QingCloud 管理控制台创建云服务器时，镜像选择为**自有镜像** > **vCPE**，创建镜像为 vCPE 的云服务器作为 vCPE。
+在云平台上选择镜像，基于镜像创建云服务器。镜像选择为**镜像** > **市场** > **SD-WAN vCPE** ，创建镜像为 vCPE 镜像 的云服务器作为 vCPE。
 
 创建成功后，登录到创建的云服务器绑定 License，即可激活 vCPE。
 
@@ -33,21 +33,23 @@ vCPE 以自有镜像的模式提供给用户。
 
 1. 登录 QingCloud 管理控制台。
 
-2. 选择**产品与服务** > **云服务器**，进入**云服务器**页面。
+2. 选择**产品与服务** > **计算** > **镜像**，进入**镜像**页面。
 
-   ![](../../../_images/um_vcpe_ecs_list.png)
+   <img src="/sd-wan/sdwan_new/_images/um_vcpe_image_list.png" style="zoom:50%;" />
 
-3. 点击**创建云服务器**，弹出**创建云服务器**窗口。
+3. 点击**市场**，进入**市场**页面。
 
-   <img src="../../../_images/um_vcpe_ecs_win.png" style="zoom:50%;" />
+   <img src="/sd-wan/sdwan_new/_images/um_vcpe_image_market.png" style="zoom:50%;" />
 
-4. 在**选择镜像**页面，**镜像提供方**选择**自有**，**镜像**选择为 `wan-base-1231`。
+4. 勾选 **SD-WAN vCPE** 镜像，并点击**基于镜像创建云服务器**，进入**购买云服务器**页面。
 
-5. 根据实际需要配置服务器、网络以及基本信息。
+5. 根据提示信息配置云服务器参数。
 
-6. 点击**创建**，完成服务器的创建。
+   可查看到镜像为 **SD-WAN vCPE**。
 
-7. 登录已创建的云服务器。
+   <img src="/sd-wan/sdwan_new/_images/um_vcpe_image_display.png" style="zoom:50%;" />
+
+7. 点击**立即购买**，根据提示完成云服务器购买后，登录已创建的云服务器。
 
 8. 执行以下命令，绑定 License。
 
@@ -66,57 +68,52 @@ vCPE 以自有镜像的模式提供给用户。
 vCPE 镜像的部署脚本提供如下可执行参数，如下所示。
 
 ```
-Usage: install.sh [command] [options]
+Usage: deploy.sh [command] [options]
 
-VCPE install tool 2021.06
+VCPE install tool 2022.02
 Options:
-    -u          run uninstall process
-    -h          print this help message and exit
-    -p          update an existing installation
-    -c          run service state check
-    -l          license, get license from user console platform
-
-Commands:
-    ping        the standard ping command
-    mtr         the standard mtr command
-    check       display main information
+    -l          use license to activate device
 ```
 
-| 参数  | 参数说明                                                     |
-| ----- | ------------------------------------------------------------ |
-| -u    | 卸载 vCPE 镜像。                                             |
-| -h    | 查看脚本的帮助信息。                                         |
-| -p    | 升级 vCPE 镜像。                                             |
-| -c    | 检测宿主机的运行状态。                                       |
-| -l    | vCPE 设备的 License 。                                       |
-| ping  | 网络连通性测试命令。                                         |
-| mtr   | 结合 **ping** 和 **traceroute** 的特性，提供诊断网络连通性的功能。 |
-| check | 获取当前宿主机的部署状态、宿主机的系统信息、vCPE 镜像的版本等信息。 |
+| 参数 | 参数说明               |
+| ---- | ---------------------- |
+| -l   | vCPE 设备的 License 。 |
 
 ### 操作步骤
 
 用户需要登录宿主机，根据提示信息下载 vCPE 脚本并安装 vCPE。
 
-1. 登录宿主机，将脚本下载至宿主机的`/root`目录下。
+1. 登录宿主机。
 
    > **说明：**
    >
-   > 关于如何登录宿主机，请咨询您的宿主机提供商。
+   > 关于如何登录宿主机，请参考[连接 Linux 云服务器](/compute/vm/manual/vm/20_connect_instance/10_third_party/)。
+
+1. 执行以下命令，安装 docker。
+
+   如下命令**以 Ubuntu 操作系统**为例，其他操作系统安装 docker 的命令请参考[官网](https://docs.docker.com/engine/install/
+   )。
+   
+   ```
+   apt-get install docker-ce docker-ce-cli containerd.io
+   ```
+   
+1. 执行以下命令，将脚本下载至宿主机的`/root`目录下。
 
    ```
-   wget -O /root/vcpe_deploy.sh https://wan-dev-sw.pek3b.qingstor.com/vcpe_deploy.sh
+   wget -O /root/deploy.sh https://sd-wan.pek3b.qingstor.com/deploy.sh
    ```
 
 2. 执行以下命令，为脚本赋予可执行权限。
 
    ```
-   chmod +x /root/vcpe_deploy.sh
+   chmod +x /root/deploy.sh
    ```
 
 3. 执行以下命令，安装脚本。
 
    ```
-   /root/vcpe_deploy.sh -l License
+   /root/deploy.sh -l License
    ```
 
 4. 安装脚本时，系统会自动检测部署环境是否满足要求。

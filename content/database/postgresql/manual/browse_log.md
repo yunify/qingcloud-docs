@@ -6,9 +6,9 @@ weight: 90
 collapsible: false
 ---
 
-QingCloud PostgreSQL 的日志默认保存30天，每天会自动保存一个日志文件，超过30天系统自动清理。日志的命名规则为`postgresqllog_xx.csv`，`xx`表示在当月的第多少天。
+PostgreSQL 的日志默认保存30天，每天会自动保存一个日志文件，超过30天系统自动清理。日志的命名规则为`postgresqllog_xx.csv`，`xx`表示在当月的第多少天。
 
-- 为了方便用户获取 PostgreSQL 的运行日志，QingCloud PostgreSQL 默认开启 FTP 服务。用户可以通过 FTP 获取 PostgreSQL 的日志。默认用户名为 `ftp_pg`，默认密码为 `Pa88word`。
+- 为了方便用户获取 PostgreSQL 的运行日志，PostgreSQL 默认开启 FTP 服务。用户可以通过 FTP 获取 PostgreSQL 的日志。默认用户名为 `ftp_pg`，默认密码为 `Pa88word`。
 - 通过 wget 文件下载工具，可下载日志目录和单个文件。
 
 > **注意**

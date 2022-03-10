@@ -21,7 +21,7 @@ weight: 50
 
 1. 登录 QingCloud 管理控制台。
 
-2. 选择**产品与服务** > **SD-WAN** > **SD-WAN**，进入**连接云网**页面。
+2. 选择**产品与服务** > **SD-WAN（新版）** > **SD-WAN（新版）**，进入**连接云网**页面。
 
    <img src="../../../_images/qs_cloud_network.png" style="zoom:50%;" />
 
@@ -35,5 +35,5 @@ weight: 50
 
 5. 在**设备管理** > **设备信息**页面，您可以查看当前接入点下已接入的光盒 CPE。
 
-   ![](../../../_images/um_light_info.png)
+   ![](../../../_images/um_equip_info.png)
 

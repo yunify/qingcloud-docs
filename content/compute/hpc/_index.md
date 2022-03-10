@@ -46,7 +46,7 @@ Section2:
 
     - title: 作业实战
       content: lammps实战
-      url: "work/Lammps"
+      url: "work/lammps"
 
 section3:
   title: 开发者指南

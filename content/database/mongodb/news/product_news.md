@@ -7,18 +7,18 @@ collapsible: false
 draft: false
 
 product:
-    - time: 2022-01-20
-      title: MongoDB 4.0.3 - v1.0.0 版本正式上线
-      content: 文档数据库 MongoDB 全新版本形态上线，基于 MongoDB 4.0.3 内核版本构建。<br>- 新增 MongoShake 配置参数和组件，支持 MongoDB 集群间数据迁移和同步，提供集群灾备和多活功能。<br>- 新增 Mongodb Exporter 配置参数和组件，支持对接 Prometheus，提供基于 Exporter 的 MongoDB 服务状态监控功能。<br>- 新增 Node Exporter 配置参数和组件，支持对接 Prometheus，提供基于 Exporter 的资源状态监控功能。<br>-  新增 “Replica Node” 配置参数，支持副本节点性能参数管理。<br>-  新增“游标数量”、“网络流量”、“事务”等 15 项服务监控指标，丰富服务监控信息。<br>- 更新 Zabbix 和 Caddy 客户端版本。
+    - time: 2022-01-24
+      title: MongoDB 3.6.8 - v1.0.1 版本正式上线
+      content: 文档数据库 MongoDB 全新版本形态上线，基于 MongoDB 3.6.8 内核版本构建。<br>- 新增 MongoShake 配置参数和组件，支持 MongoDB 集群间数据迁移和同步，提供集群灾备和多活功能。<br>- 新增 Mongodb Exporter 配置参数和组件，支持对接 Prometheus，提供基于 Exporter 的 MongoDB 服务状态监控功能。<br>- 新增 Node Exporter 配置参数和组件，支持对接 Prometheus，提供基于 Exporter 的资源状态监控功能。<br>-  新增 “Replica Node” 配置参数，支持副本节点性能参数管理。<br>- 新增“游标数量”、“网络流量”、“事务”等 15 项服务监控指标，丰富服务监控信息。<br>- 新增集群续费功能，支持手动设置续费时长。<br>- 更新 Zabbix 和 Caddy 客户端版本。
       url: ../../intro/version/
       tags:
       - 新功能
       - 性能优化
       zone: 全区域
 
-    - time: 2022-01-20
-      title: MongoDB 3.6.8 - v1.0.0 版本正式上线
-      content: 文档数据库 MongoDB 全新版本形态上线，基于 MongoDB 3.6.8 内核版本构建。<br>- 新增 MongoShake 配置参数和组件，支持 MongoDB 集群间数据迁移和同步，提供集群灾备和多活功能。<br>- 新增 Mongodb Exporter 配置参数和组件，支持对接 Prometheus，提供基于 Exporter 的 MongoDB 服务状态监控功能。<br>- 新增 Node Exporter 配置参数和组件，支持对接 Prometheus，提供基于 Exporter 的资源状态监控功能。<br>-  新增 “Replica Node” 配置参数，支持副本节点性能参数管理。<br>-  新增“游标数量”、“网络流量”、“事务”等 15 项服务监控指标，丰富服务监控信息。<br>- 更新 Zabbix 和 Caddy 客户端版本。
+    - time: 2022-01-21
+      title: MongoDB 4.0.3 - v1.0.0 版本正式上线
+      content: 文档数据库 MongoDB 全新版本形态上线，基于 MongoDB 4.0.3 内核版本构建。<br>- 新增 MongoShake 配置参数和组件，支持 MongoDB 集群间数据迁移和同步，提供集群灾备和多活功能。<br>- 新增 Mongodb Exporter 配置参数和组件，支持对接 Prometheus，提供基于 Exporter 的 MongoDB 服务状态监控功能。<br>- 新增 Node Exporter 配置参数和组件，支持对接 Prometheus，提供基于 Exporter 的资源状态监控功能。<br>-  新增 “Replica Node” 配置参数，支持副本节点性能参数管理。<br>- 新增“游标数量”、“网络流量”、“事务”等 15 项服务监控指标，丰富服务监控信息。<br>- 新增集群续费功能，支持手动设置续费时长。<br>- 更新 Zabbix 和 Caddy 客户端版本。
       url: ../../intro/version/
       tags:
       - 新功能
@@ -61,7 +61,7 @@ product:
       url: ../../intro/version/
 
     - time: 2017-07-25
-      title: QingCloud MongoDB 正式上线
+      title: MongoDB 服务正式上线
       content: MongoDB 新上线，基于 MongoDB v3.4.5 版本和 WiredTiger 引擎构建，提供自动备份、在线扩容、横向伸缩等功能。
       url: ../../intro/introduction/
 

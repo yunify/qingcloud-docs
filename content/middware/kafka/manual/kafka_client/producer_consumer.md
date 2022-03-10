@@ -13,7 +13,7 @@ draft: false
 在客户端节点执行以下命令，向 Topic 发送消息。
 
 ```shell
-$ cd /opt/kafka/current/bin
+cd /opt/kafka/current/bin
 ./kafka-console-producer.sh --broker-list {连接地址} --topic {Topic 名称}
 ```
 
@@ -41,7 +41,7 @@ $ cd /opt/kafka/current/bin
 
 ```shell
 cd /opt/kafka/current/bin
-./kafka-console-consumer.sh --broker-list {连接地址} --topic {Topic 名称} --from-beginning
+./kafka-console-consumer.sh --bootstrap-server {连接地址} --topic {Topic 名称} --from-beginning
 ```
 
 - 连接地址：与发送消息的连接地址相同。

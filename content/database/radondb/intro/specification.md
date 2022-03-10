@@ -1,14 +1,14 @@
 ---
 title: "性能规格"
 description: 本小节主要介绍 RadonDB 性能规格。 
-keyword: RadonDB, QingCloud, 性能规格
+keyword: RadonDB, 性能规格
 weight: 40
 collapsible: false
 draft: false
 ---
 
 
-QingCloud RadonDB 根据QingCloud AppCenter 功能特点，定制`基础型`、`企业型`两个资源类型，您也可以选择`自定义`配置资源规格。
+RadonDB 根据 AppCenter 功能特点，定制`基础型`、`企业型`两个资源类型，您也可以选择`自定义`配置资源规格。
 
 ## 资源类型规格
 

@@ -33,7 +33,7 @@ Redis Cluster 支持通过调整分片节点的数量来达到扩、缩容的目
 >
 > 新增分片时，表示同时新增N个分片及N个分片副本。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 
@@ -53,7 +53,7 @@ Redis Cluster 支持通过调整分片节点的数量来达到扩、缩容的目
 >
 > 新增副本，表示在当前基础上，每个分片将再增加N个副本。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 
@@ -83,7 +83,7 @@ Redis Cluster 支持通过调整分片节点的数量来达到扩、缩容的目
 >
 > ▪︎ 删除后，集群平均内存使用率大于 95% 。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 
@@ -99,7 +99,7 @@ Redis Cluster 支持通过调整分片节点的数量来达到扩、缩容的目
 >
 > 删除副本时，需要在每个分片上删除均等数量的副本。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 

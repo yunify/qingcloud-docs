@@ -19,7 +19,7 @@ weight: 50
 
    <img src="../../../_images/equip_modify_wan.png" style="zoom:50%;" />
 
-3. 点击待修改端口所在行的**修改**，弹出**修改LAN 配置**窗口。
+3. 点击待修改端口所在行的**修改**，弹出**修改 LAN 配置**窗口。
 
    <img src="../../../_images/equip_modify_lan_win.png" style="zoom:50%;" />
 

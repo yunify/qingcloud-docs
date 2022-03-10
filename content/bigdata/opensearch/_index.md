@@ -29,12 +29,16 @@ Section2:
       url: "quickstart/create_cluster/"
 
     - title: 操作指南
-      content: 学习上手管理 OpenSearch 集群和相关服务。
+      content: 学习上手管理和使用 OpenSearch 集群相关服务。
       url: "manual/cluster_lifecycle/cluster_info/"
 
     - title: 最佳实践
       content: OpenSearch 最佳实践
-      url: "best_practices/dedicated_master_node"
+      url: "best_practices/dedicated_master_node/"
+
+    - title: 常见问题
+      content: 常见问题
+      url: "faq/product/"
 
 section3:
   title: 开发者指南

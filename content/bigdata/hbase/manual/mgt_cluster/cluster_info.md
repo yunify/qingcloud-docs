@@ -15,7 +15,7 @@ draft: false
 
 - 当每个节点都启动正常后 HBase 集群显示为`活跃`状态，服务状态由`获取中`变为`活跃`状态，表示可正常使用 HBase 服务。
 
-![创建成功](../../../_images/cluster_info.png)
+![创建成功](../../../_images/cluster_list.png)
 
 ## 服务目录
 
