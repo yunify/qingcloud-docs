@@ -100,6 +100,7 @@ keyword: 青云, QingCloud, 云计算, 创建, QKE 集群, 节点配置
 
 ![](../../_images/create-network-settings.png)
 
+
 1. 选择 QKE 集群部署的 VPC 网络及私有网络。
 
    不同的 QKE 集群可以重复使用相同的 VPC 网络和私有网络，也可以使用不同的 VPC 网络和私有网络。若您已经创建有 VPC 网络和私有网络，可重复使用，不需要多次创建。
@@ -137,8 +138,6 @@ keyword: 青云, QingCloud, 云计算, 创建, QKE 集群, 节点配置
 > **注意**
 >
 > 内置 etcd 会占用 QKE 主节点的资源并无法增删节点；内置 Elasticsearch 会占用 Kubernetes 集群的资源并依赖 kKubernetes 进行管理，在 Kubernetes 集群发生故障期间 Elasticsearch 可能无法正常工作。故生产环境下，建议您独立部署 [etcd 服务](/middware/etcd/) 及  [ELK 服务](/bigdata/elk/)。
-
-
 
 
 ### 服务环境参数设置

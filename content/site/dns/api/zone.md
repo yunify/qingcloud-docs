@@ -25,7 +25,13 @@ keyword: QingCloud，DNS服务，DNS云解析，DNS API，Zone API，可用区
       # zone备注信息
       'remarks': REMARKS
       # 解析线路, 不需要包含默认解析线路,如果使用默认解析线路，可以忽略该参数
-      'zone_views': ' [{"id":0,"name":"*"},{"id":2,"name":"中国电信"},{"id":3,"name":"中国联通"},{"id":4,"name":"中国移动"},{"id":8,"name":"港澳台及海外"}]'
+      'zone_views': ' [
+      		{"id":0,"name":"*"},
+      		{"id":2,"name":"中国电信"},
+      		{"id":3,"name":"中国联通"},
+      		{"id":4,"name":"中国移动"},
+      		{"id":8,"name":"港澳台及海外"}
+      		]'
   }
   ```
 

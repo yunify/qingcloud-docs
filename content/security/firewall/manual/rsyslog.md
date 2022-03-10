@@ -1,9 +1,8 @@
 ---
 title: "配置远端主机"
-linkTitle: "rsyslog 远端配置"
-date: 2020-02-28T10:08:56+09:00
+linkTitle: "配置远端主机"
 description: 如何配置远端主机
-draft: false
+draft: true
 weight: 9
 keyword: 云服务器, QingCloud，安全，远端主机
 ---
