@@ -1,14 +1,14 @@
 ---
 title: "ChangeEipsBandwidth"
-description: 
+description: 变更公网 IP 带宽。
 draft: false
+weight: 7
+keyword: 公网 IP API, 公网带宽
 ---
 
+动态改变一个或多个公网 IP 的带宽，改变后计费系统会同步更新。
 
-
-动态改变一个或多个公网IP的带宽，改变后计费系统会同步更新。
-
-无论公网IP当前处于“可用”（ available ）还是“绑定中” （ associated ）状态，都可以随时改变带宽，并实时生效。
+无论公网 IP 当前处于“可用”（ available ）还是“绑定中” （ associated ）状态，都可以随时改变带宽，并实时生效。
 
 **Request Parameters**
 
@@ -18,7 +18,7 @@ draft: false
 | bandwidth | Integer | 公网IP带宽，单位是 Mbps | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../gei_api/parameters/)
 
 **Response Elements**
 
