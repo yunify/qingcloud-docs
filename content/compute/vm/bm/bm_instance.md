@@ -32,7 +32,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，bms，弹性裸金属云�
 
 ### 选择计费方式
 
-<img src="../_images/bm_1.png" style="zoom:50%;" />
+<img src="/compute/vm/manual/_images/bm_1.png" style="zoom:50%;" />
 
 付费模式影响实例的计费和收费规则，不同付费模式的实例遵循的资源状态变化规则也存在差异。目前支持包年包月和按需计费两种计费方式。
 
@@ -45,17 +45,17 @@ keyword: 云计算, 青云, QingCloud, 云服务器，bms，弹性裸金属云�
 
 bm3 类型云服务器仅支持在北京3区创建，选择北京3区。
 
-<img src="../_images/bm_2.png" style="zoom:50%;" />
+<img src="/compute/vm/manual/_images/bm_2.png" style="zoom:50%;" />
 
 ## 基础配置信息
 
 ### 选择配置规格信息
 
-![](../_images/bm_3.png)
+![](/compute/vm/manual/_images/bm_3.png)
 
 ### 选择镜像
 
-![](../_images/bm_4.png)
+![](/compute/vm/manual/_images/bm_4.png)
 
 > **说明**
 >
@@ -63,7 +63,7 @@ bm3 类型云服务器仅支持在北京3区创建，选择北京3区。
 
 ### 选择硬盘类型
 
-![](../_images/bm5.png)
+![](/compute/vm/manual/_images/bm5.png)
 
 青云 QingCloud 平台为云服务器提供硬盘作为块存储设备，支持多种规格和类型，并可弹性扩展，可满足不同场景的业务需求，并且支持对云服务器和硬盘进行备份。
 
@@ -81,11 +81,11 @@ bm3 类型云服务器仅支持在北京3区创建，选择北京3区。
 
 ### 选择或创建弹性裸金属服务器网络
 
-![](../_images/bm6.png)
+![](/compute/vm/manual/_images/bm6.png)
 
 ## 云服务器基本设置
 
-![](../_images/bm7.png)
+![](/compute/vm/manual/_images/bm7.png)
 
 > **说明**
 >

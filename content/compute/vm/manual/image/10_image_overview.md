@@ -4,7 +4,7 @@ description: 本章节主要介绍镜像的相关概念
 draft: false
 keyword: 镜像, 系统镜像, 自有镜像, 共享, 共享
 weight: 10
-alias:
+aliases: 
   - /compute/image/intro/image/
 ---
 

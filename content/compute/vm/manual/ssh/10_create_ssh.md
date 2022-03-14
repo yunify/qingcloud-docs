@@ -1,43 +1,77 @@
 ---
-title: "快速入门指南"
-description: test
-draft: true
-weight: 5
+title: "创建 SSH 密钥"
+description: 本章节介绍如何创建 SSH 密钥。
+draft: false
+weight: 10
 ---
 
-### 步骤一：创建并绑定 SSH 密钥
+若您使用的是 Linux 云服务器，强烈建议使用 SSH 公钥、私钥（Keypair）进行远程登录身份验证。
 
-若已创建并绑定 SSH 密钥，可跳过此步骤。
+您可以创建一个 SSH 密钥，并立刻下载其私钥。云平台不保存您的私钥，此下载链接将保留10分钟，请保管好私钥。
 
-若您创建云服务器时，没有绑定 SSH 密钥，请参照如下步骤，为云服务器创建并绑定 SSH 密钥。
+## 前提条件
 
-1. 在左侧导航栏中，选择**计算 > SSH 密钥** ， 进入 **SSH 密钥**页面。
+已获取管理控制台的账号和密码。
 
-   ![](/Users/amytan/work/github/qingcloud-docs/content/compute/_images/vm_ssh_list.png)
+## 操作步骤
 
-2. 点击**创建** ，弹出**创建 SSH 密钥**窗口。
+1. 登录管理控制台。
 
-   <img src="/Users/amytan/work/github/qingcloud-docs/content/compute/_images/vm_ssh_win.png" style="zoom:50%;" />
+2. 选择**产品与服务** > **计算** > **云服务器**，进入云服务器页面。
 
-3. 输入 SSH 密钥的名称，选择创建的方式，并选择加密方法。
+3. 在左侧导航栏中，选择 **SSH 密钥** ， 进入 **SSH 密钥**页面。
 
-4. 点击**提交**，弹出**下载 SSH 密钥的私钥**窗口。
+   ![](/compute/vm/_images/vm_ssh_list.png)
 
-   系统会立刻为您创建一对密钥对，您可以点击下载，下载私钥。私钥只能下载一次，请妥善保管。
+4. 点击**创建** ，弹出**创建 SSH 密钥**窗口。
 
-5. 在 SSH 密钥列表页面，勾选已创建的 SSH 密钥，点击**加载到云服务器**。
+   <img src="/compute/vm/_images/vm_ssh_win.png" style="zoom:50%;" />
 
-   ![](/Users/amytan/work/github/qingcloud-docs/content/compute/_images/vm_ssh_bind.png)
+5. 配置 SSH 密钥参数。
 
-6. 在弹出的选择云服务器窗口中，选择创建的云服务器，点击**提交**，完成 SSH 密钥绑定操作。 
+   - 创建新密钥对
 
-   <img src="/Users/amytan/work/github/qingcloud-docs/content/compute/_images/vm_ssh_bind_win.png" style="zoom:50%;" />
+     1. 设置 SSH 密钥名称。
 
-7. 在云服务器详细信息页面的**配置**区域，可查看已绑定的 SSH 密钥。
+     2. 选择**创建新密钥对**。
 
-   ![](../../_images/vm_ssh_bind_site.png)
+     3. 点击**提交**，弹出**下载 SSH 密钥的私钥**窗口。
 
-### 步骤二：开放 TCP 22 端口
+        <img src="/compute/vm/_images/vm_ssh_download.png" style="zoom:50%;" />
+
+     4. 点击**下载**，下载私钥，此下载链接将保留10分钟。
+
+        > **注意**
+        >
+        > 为保证私钥的安全，此下载链接将保留10分钟，请妥善保管。
+
+     5. 关闭下载链接，弹出 SSH 密钥绑定云服务器提示信息。
+
+        <img src="/compute/vm/_images/vm_ssh_bind_prompt.png" style="zoom:50%;" />
+
+     6. 请根据需要确定是否绑定到云服务器。
+
+   - 使用已有公钥
+
+     1. 设置 SSH 密钥名称。
+
+     2. 将已有的公钥拷贝到公钥文本框。
+
+        格式：ssh-rsa AAAAB3NzaC1ycEAAArwtrqwerJAsdfdgjUTEEHh...
+
+     3. 点击**提交**，完成 SSH 密钥的创建操作。
+
+6. 创建完成后，您可以在 SSH 密钥列表中，查看已创建的 SSH 密钥。
+
+   包含 SSH 密钥 ID、名称、加密方法、创建时间等。
+
+## 相关操作
+
+### 绑定 SSH 密钥
+
+ [绑定 SSH 密钥](./20_bind_ssh) 
+
+### 开放 TCP 22 端口
 
 请确认 TCP 22 端口已打开，若未打开，请参照如下步骤打开 TCP 22 端口。
 
@@ -47,13 +81,13 @@ weight: 5
 
 3. 在“绑定资源”区域，可以看到该云服务器正在使用的安全组。
 
-   ![](/Users/amytan/work/github/qingcloud-docs/content/compute/_images/vm_security_group.png)
+   ![](/compute/_images/vm_security_group.png)
 
 4. 点击**安全组**，进入安全组配置页面。
 
 5. 点击**添加规则**，新建一个下行规则。
 
-   ![](/Users/amytan/work/github/qingcloud-docs/content/compute/_images/vm_security_rule.png)
+   ![](/compute/_images/vm_security_rule.png)
 
    需要关注如下参数。
 
