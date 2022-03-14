@@ -9,7 +9,7 @@ draft: false
 
 数据开发的总体流程包括业务数据、数据集成、数据处理、数据存储和数据展现。其中，数据集成、数据处理、数据存储可以在青云大数据工作台完成。
 
-<img src="../../_images/process_development.png" alt="数据开发流程" style="zoom:30%;" />
+<img src="/bigdata/dataomnis/_images/process_development.png" alt="数据开发流程" style="zoom:30%;" />
 
 数据开发的流程如下所示：
 

@@ -2,7 +2,7 @@
 title: "删除程序包"
 description: 
 keywords: 
-weight: 10
+weight: 30
 collapsible: false
 draft: false
 ---
@@ -26,6 +26,6 @@ draft: false
 4. 在目标工作空间选择**数据开发** > **资源管理**，进入资源管理页面。
 5. 勾选需要删除的程序包，点击列表上方的**删除**，或找到需要删除的程序包，点击操作列的![](../../../../_images/icon_more_cluster.png)图标，选择**删除**。
    
-   <img src="../../../../_images/delete_resource.png" alt="删除网络" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/delete_resource.png" alt="删除网络" style="zoom:50%;" />
 
 6. 确认提示信息后，点击**删除**，完成删除操作。

@@ -21,7 +21,7 @@ draft: false
 4. 在目标工作空间选择**数据开发** > **网络配置**，进入网络配置页面。
 5. 勾选需要删除的网络，点击列表上方的**删除**，或找到需要删除的网络，点击操作列的**删除**。
    
-   <img src="../../../../_images/delete_net.png" alt="删除网络" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/delete_net.png" alt="删除网络" style="zoom:50%;" />
 
 6. 确认提示信息后，点击**删除**，完成删除操作。
 

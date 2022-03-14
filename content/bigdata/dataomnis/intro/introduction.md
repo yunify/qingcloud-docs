@@ -14,6 +14,6 @@ draft: false
 
 大数据工作台按照云原生架构模式进行设计，可以基于多种基础设施进行部署。平台内部按照功能模块以微服务形式划分多个组件，彼此间相互隔离，避免互相影响，所有服务都具备高可用和高扩展性的能力。可以在部分节点故障的情况下保障服务的可用性和数据的可靠性。
 
-<img src="../../_images/intro_structure.png" alt="产品架构" style="zoom:50%;" />
+<img src="/bigdata/dataomnis/_images/intro_structure.png" alt="产品架构" style="zoom:50%;" />
 
 

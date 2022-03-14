@@ -42,11 +42,12 @@ draft: false
 2. 点击**创建集群**，进入创建计算集群页面。
 3. 配置集群相关参数。
 
-   **网络配置**选择在[创建网络](#创建网络)中创建的网络。
-   其他参数详细介绍请参见[创建计算集群](../../../manual/data_development/flink_cluster/create_cluster/)。
+   - **网络配置**选择在[创建网络](#创建网络)中创建的网络。
+   - 其他参数详细介绍请参见[创建计算集群](../../../manual/data_development/flink_cluster/create_cluster/)。
 
    <img src="/bigdata/dataomnis/_images/bp_create_flink_cluster.png" alt="创建网络" style="zoom:50%;" />
 
-4. 配置完成后，点击**立即创建**，开始创建计算集群。
+4. 配置完成后，点击**立即创建**，开始创建计算集群。     
+   计算集群创建成功后，即可在计算集群页面查看相应内容。
 
    <img src="/bigdata/dataomnis/_images/flink_cluster_list.png" alt="计算集群列表" style="zoom:50%;" />

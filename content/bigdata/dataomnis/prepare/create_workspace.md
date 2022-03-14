@@ -26,7 +26,7 @@ draft: false
 3. 在左侧导航选择**工作空间**，进入工作空间页面。
 4. 选择相应的区域，点击**创建工作空间**，填写工作空间名称和描述信息。
    
-   <img src="../../_images/create_workspace.png" alt="创建工作空间" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/create_workspace.png" alt="创建工作空间" style="zoom:50%;" />
 
 5. 点击**创建**，开始创建工作空间。   
    工作空间创建完成后，即可在工作空间页面查看相应内容。

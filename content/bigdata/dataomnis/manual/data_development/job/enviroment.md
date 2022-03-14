@@ -17,7 +17,7 @@ draft: false
 4. 在目标工作空间选择**数据开发** > **实时计算**，进入实时计算页面。
 5. 选择已创建好的作业，点击右侧的**运行参数**，进入运行参数配置页面。 
 
-   <img src="../../../../_images/job_enviroment.png" alt="运行参数" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/job_enviroment.png" alt="运行参数" style="zoom:50%;" />
 
 6. 配置运行参数。
    

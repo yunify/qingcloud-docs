@@ -13,7 +13,7 @@ draft: false
 
 在创建网络前，建议先创建好依赖的 VPC 和私有网络。详细操作请参见[创建 VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)。
 
-## 注意事项
+## 使用限制
 
 - 仅支持使用工作空间所在区域的 VPC。
 - 不支持使用免费型 VPC（由于免费型 VPC 不具备公网访问能力，暂时不支持在免费型 VPC 中创建计算集群）。
@@ -26,7 +26,7 @@ draft: false
 4. 在目标工作空间选择**数据开发** > **网络配置**，进入网络配置页面。
 5. 点击**创建网络**，进入创建网络页面。
    
-   <img src="../../_images/create_net.png" alt="创建网络" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/create_net.png" alt="创建网络" style="zoom:50%;" />
 
 6. 配置相关参数。
 

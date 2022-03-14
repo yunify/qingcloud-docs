@@ -4,7 +4,7 @@ description: 本小节主要介绍如何新增数据源。
 keywords: 
 weight: 30
 collapsible: false
-draft: false
+draft: true
 ---
 
 您可以根据实际情况对数据源执行启用、停用操作：

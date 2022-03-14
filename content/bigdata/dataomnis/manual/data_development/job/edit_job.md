@@ -15,7 +15,7 @@ draft: false
 4. 在目标工作空间选择**数据开发** > **实时计算**，进入实时计算页面。
 5. 选择需要修改的作业，点击![](../../../../_images/icon_more_job.png)图标，选择**编辑信息**，弹出修改作业对话框。
 
-    <img src="../../../../_images/edit_job_name.png" alt="修改作业" style="zoom:50%;" />
+    <img src="/bigdata/dataomnis/_images/edit_job_name.png" alt="修改作业" style="zoom:50%;" />
 
 6. 在对话框中修改**作业名称**和作业**描述**。
 7. 点击**确定**，完成修改操作。
@@ -28,11 +28,11 @@ draft: false
 4. 在目标工作空间选择**数据开发** > **实时计算**，进入实时计算页面。
 5. 选择已创建好的作业，点击右侧的**运行参数**，进入运行参数配置页面。 
 
-   <img src="../../../../_images/job_cluster.png" alt="计算集群" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/job_cluster.png" alt="计算集群" style="zoom:50%;" />
 
 6. 在**基础设置**区域，点击计算集群 ID，进入选择计算集群页面。
    
-   <img src="../../../../_images/select_job_cluster.png" alt="选择计算集群" style="zoom:50%;" /> 
+   <img src="/bigdata/dataomnis/_images/select_job_cluster.png" alt="选择计算集群" style="zoom:50%;" /> 
 
 7. 在计算集群页面选择新的计算集群后，点击**确定**，返回运行参数配置页面。
 8. 点击**确定**，完成修改操作。

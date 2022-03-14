@@ -22,7 +22,7 @@ draft: false
 5. 点击**创建集群**，进入创建计算集群页面。
 6. 配置相关参数，配置完成后，点击**立即创建**，开始创建计算集群。
 
-### 基础属性
+### 基础设置
 
 | <span style="display:inline-block;width:140px">参数</span>  | <span style="display:inline-block;width:520px">参数说明</span>  |
 | :------------- | ------------------------------------------------------------ |
@@ -30,7 +30,7 @@ draft: false
 | 版本       | 计算集群的版本，通过下拉框进行选择。              |
 | 重启策略    | 重启策略是指在 Flink Job 发生故障时，如何处理 Job。包括`No Restarts:不重启`、`Fixed Delay:固定延迟`、`Failure Rate:故障率`，默认为`不重启`。<li>`不重启`：故障发生时不重启 Job。 <li>`固定延迟`：选择该选项后，您还需要配置**尝试重启次数**和**重启时间间隔**。如果重启次数超过了配置的**尝试重启次数**，Job 将运行失败。<li>`故障率`：选择该选项后，您还需要配置配置**检查故障率时间间隔**、**时间间隔内最大失败次数**、**重启时间间隔**。当时间间隔内发生故障的次数超过设置的最大失败次数，Job 将运行失败。 </span>             |
 
-<img src="../../_images/cluster_basic.png" alt="基础属性" style="zoom:50%;" />
+<img src="/bigdata/dataomnis/_images/cluster_basic.png" alt="基础属性" style="zoom:50%;" />
 
 ### 资源配置
 
@@ -42,13 +42,13 @@ draft: false
 
 总计算资源 CU=TM 数量 * TM 规格（CU）+ JM 规格（CU）
 
-<img src="../../_images/cluster_resource.png" alt="资源配置" style="zoom:50%;" />
+<img src="/bigdata/dataomnis/_images/cluster_resource.png" alt="资源配置" style="zoom:50%;" />
 
 ### 网络配置
 
 通过下拉框选择已创建好的网络。若无可选网络，可点击**绑定 VPC**，创建新的网络资源。
 
-<img src="../../_images/cluster_net.png" alt="网络配置" style="zoom:50%;" />
+<img src="/bigdata/dataomnis/_images/cluster_net.png" alt="网络配置" style="zoom:50%;" />
 
 ### 日志配置
 
@@ -60,7 +60,7 @@ draft: false
 - WARN：警告级别，打印 WARN、ERROR 级别的日志。
 - ERROR：错误级别，仅打印 ERROR 级别的日志。
 
-<img src="../../_images/cluster_log.png" alt="日志配置" style="zoom:50%;" />
+<img src="/bigdata/dataomnis/_images/cluster_log.png" alt="日志配置" style="zoom:50%;" />
 
 ### 可选配置
 
@@ -71,7 +71,7 @@ Host 别名和 Flink 参数均为可选配置，请根据实际情况进行选�
 | Host 别名       | 配置 IP 地址和 Host 名称。支持批量输入和单条输入。批量输入时，IP 地址和 Host 名称用空格分隔，多条配置换行输入。               |
 | Flink 参数      | 配置 Flink 参数，Yaml 格式。支持批量输入和单条输入。批量输入时，多个参数换行输入。              |
 
-<img src="../../_images/cluster_other.png" alt="可选配置" style="zoom:50%;" />
+<img src="/bigdata/dataomnis/_images/cluster_other.png" alt="可选配置" style="zoom:50%;" />
 
 
 

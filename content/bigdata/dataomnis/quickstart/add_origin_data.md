@@ -22,11 +22,11 @@ draft: true
 4. 在目标工作空间点击**数据源管理**，默认进入数据源列表页面。
 5. 点击**新增数据源**，进入新增数据源页面。
    
-   <img src="../../_images/choose_database.png" alt="选择数据库" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/choose_database.png" alt="选择数据库" style="zoom:50%;" />
 
 6. 选择一个数据库，点击数据库名称，进入所选数据库的配置页面。本文以 MySQL 为例。
 
-   <img src="../../_images/set_database.png" alt="配置数据库" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/set_database.png" alt="配置数据库" style="zoom:50%;" />
 
 7. 配置数据库相关参数，参数详细说明请参见 [MySQL 数据库配置参数](#mysql-数据库配置参数)。
 8. 点击**开始测试**，测试数据源的可用性。

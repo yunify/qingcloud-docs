@@ -4,7 +4,7 @@ description: 本小节主要介绍如何删除数据源。
 keywords: 
 weight: 50
 collapsible: false
-draft: false
+draft: true
 ---
 
 本小节主要介绍如何删除数据源。

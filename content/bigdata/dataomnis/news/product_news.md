@@ -4,8 +4,8 @@ collapsible: false
 weight: 11
 
 product:
-    - time: 2022-03-01
-      title: 大数据工作台V0.8正式发布上线，为您带来数据加工新体验
+    - time: 2022-03-15
+      title: 大数据工作台 V0.8 正式发布上线，为您带来数据加工新体验
       tags: 
       - 新产品
       zone: 北京3区

@@ -22,11 +22,11 @@ draft: false
 1. 登录管理控制台。
 2. 选择**产品与服务** > **大数据服务** > **大数据工作台**，若未开通大数据工作台，出现如下提示信息。
 
-   <img src="../../_images/subscribe01.png" alt="开通大数据工作台" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/subscribe01.png" alt="开通大数据工作台" style="zoom:50%;" />
 
 3. 点击**申请公测**，进入开通大数据工作台页面。
 
-   <img src="../../_images/subscribe02.png" alt="开通大数据工作台" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/subscribe02.png" alt="开通大数据工作台" style="zoom:50%;" />
 
 4. 阅读《QingCloud 服务条款》和《大数据工作台公测规则》后，勾选**已阅读并同意《QingCloud 服务条款》《大数据工作台公测规则》**。
 5. 点击**申请公测**，产品开始初始化配置。

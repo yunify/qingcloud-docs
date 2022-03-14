@@ -17,7 +17,7 @@ draft: false
 4. 在目标工作空间选择**数据开发** > **网络配置**，进入网络配置页面。
 5. 找到需要修改的网络，点击操作列的**修改**，进入修改网络页面。
    
-   <img src="../../../../_images/edit_net.png" alt="修改网络" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/edit_net.png" alt="修改网络" style="zoom:50%;" />
 
 6. 修改相关参数。
 

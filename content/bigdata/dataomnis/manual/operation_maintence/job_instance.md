@@ -7,15 +7,14 @@ collapsible: false
 draft: false
 ---
 
-您可以通过作业实例页面查看作业实例状态。
+您可以通过作业实例页面查看作业实例状态、所属作业/ID、创建时间、更新时间，并对作业实例进行终止操作。
 
 ## 前提条件
 
 - 已获取管理控制台登录账号和密码，且账号已实名认证。
-- 已创建工作空间。
 - 已创建并发布作业。
 
-## 操作步骤
+## 进入作业实例列表
 
 1. 登录管理控制台。
 2. 选择**产品与服务** > **大数据服务** > **大数据工作台**，进入概览页面。
@@ -29,7 +28,7 @@ draft: false
 
 ## 终止实例
 
-在操作列点击![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**终止**，进入操作确认页面，单击**终止**。
+点击操作列的![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**终止**，进入操作确认页面，单击**终止**。
 
 > **说明**
 > 
@@ -38,14 +37,14 @@ draft: false
 
 ## 恢复实例
 
-在操作列点击![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**恢复**，进入操作确认页面，单击**恢复**。
+点击操作列的![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**恢复**，进入操作确认页面，单击**恢复**。
 > **说明**
 > 
 > 当**实例状态**为`已暂停`时，才可以执行恢复实例操作。
 
 ## 查看作业实例详情
 
-在操作列点击![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**查看详情**，进入实例详情页面，在该页面可以查看作业实例的基本信息和 message。
+点击操作列的![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**查看详情**，进入实例详情页面，在该页面可以查看作业实例的基本信息和 message。
 
 ## 查看作业 Flink UI
 

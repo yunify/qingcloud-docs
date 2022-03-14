@@ -17,7 +17,7 @@ draft: false
 
 在大数据工作台的工作空间实现数据开发和运维，主要包含以下步骤：
 
-<img src="../../_images/process_qs.png" alt="入门流程" style="zoom:30%;" />
+<img src="/bigdata/dataomnis/_images/process_qs.png" alt="入门流程" style="zoom:30%;" />
 
 1. [创建网络](../create_net)：创建计算集群需要的网络资源。
 2. [创建计算集群](../create_flink_cluster)：大数据工作台通过**计算集群**进行数据集成和数据开发工作。

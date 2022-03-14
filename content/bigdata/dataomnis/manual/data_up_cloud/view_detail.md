@@ -4,7 +4,7 @@ description: 本小节主要介绍如何查看数据源详情。
 keywords: 
 weight: 25
 collapsible: false
-draft: false
+draft: true
 ---
 
 您可以在数据源列表页面查看已添加的所有数据源，并查看数据源详情。

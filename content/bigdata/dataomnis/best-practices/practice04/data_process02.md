@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-## 创建 Jar 作业
+## 创建 JAR 作业
 
 1. 在目标工作空间选择**数据开发** > **实时计算**，进入实时计算页面。
 2. 点击**创建作业**，进入创建作业页面。
@@ -17,22 +17,22 @@ draft: false
 3. 选择**代码开发-Jar** 模式。
 4. 点击**下一步**，填写作业名称，并选择作业依赖的计算集群。
    
-   <img src="/bigdata/dataomnis/_images/job_basic.png" alt="填写信息" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/bp_job_basic_jar02.png" alt="填写信息" style="zoom:50%;" />
 
 5. 配置完成后，点击**确定**，开始创建作业。
 
-## 开发 Jar 作业
+## 开发 JAR 作业
 
 1. 在目标工作空间选择**数据开发** > **实时计算**，进入实时计算页面。
 2. 点击作业名称，进入开发面板。
-3. 配置 Jar 包作业的程序入口、程序所需要的参数。
+3. 配置 JAR 作业的程序入口、程序所需要的参数。
    
-   <img src="/bigdata/dataomnis/_images/job_jar_edit02.png" alt="配置 Jar 作业" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/bp_job_jar_edit02.png" alt="配置 Jar 作业" style="zoom:50%;" />
 
-   - 引用 Jar 包：选择已上传到资源管理的 Jar 程序包。
+   - JAR（程序包）：选择已上传到资源管理的 JAR 程序包。
    - 入口类：配置运行函数的路径。本示例填写 `examples.app.TopN`。
    - 程序参数：配置数据源的连接信息。   
-     请根据实际情况进行填写，本示例需要填写 --kafka.brokers <Kafka 连接地址> --kafka.topics <Kafka Topic名称> --kafka.group.id <Kafka Group ID> --clickhouse.url <ClickHouse的连接地址> --clickhouse.username <ClickHouse 用户名> --clickhouse.password <ClickHouse 密码> --use.sql true。
+     本实践填写 `--kafka.brokers <Kafka 连接地址> --kafka.topics <Kafka Topic名称> --kafka.group.id <Kafka Group ID> --clickhouse.url <ClickHouse的连接地址> --clickhouse.username <ClickHouse 用户名> --clickhouse.password <ClickHouse 密码> --use.sql true`。    
      例如：--kafka.brokers 172.16.10.58:9092,172.16.10.59:9092,172.16.10.60:9092 --kafka.topics demo001 --kafka.group.id test01 --clickhouse.url jdbc:clickhouse://172.16.10.7:8123/pk --clickhouse.username default --clickhouse.password default --use.sql true
 
 4. 配置完成后，点击**保存**保存配置。
@@ -44,7 +44,7 @@ draft: false
    
    本实践选择**执行一次**，**发布后立即执行**。若您需要配置为其他调度策略，请参见[配置作业调度](../../../manual/data_development/job/scheduling_job)。
 
-   <img src="/bigdata/dataomnis/_images/bp_schedule_jar.png" alt="配置作业调度" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/bp_schedule_jar02.png" alt="配置作业调度" style="zoom:50%;" />
 
 3. 设置完成后，点击**确定**。
 
@@ -52,21 +52,15 @@ draft: false
 
 1. 选择已创建好的作业，点击右侧的**运行参数**，进入运行参数配置页面。 
 
-2. 基础设置。
+   <img src="/bigdata/dataomnis/_images/bp_job_enviroment_jar.png" alt="运行参数" style="zoom:50%;" />
+
+2. 配置运行参数。
    
    - **计算集群**：在该页面可以查看和修改运行作业的计算集群。
    - **并行度**：配置作业的并发数，不能为 `0`，默认为 `1`。
+   - **依赖资源**：选择作业运行所需的函数包以及自定义 Connector 包。本实践无需选择依赖资源。
 
-   <img src="/bigdata/dataomnis/_images/bp_enviroment_jar_1.png" alt="基础设置" style="zoom:50%;" />
-   
-3. 依赖资源。
-
-   - **依赖包**、**函数包**：本示例无需选择依赖包和函数包。
-   - **内置 Connector**：本示例选择如下内置 Connector。
-   
-   <img src="/bigdata/dataomnis/_images/bp_enviroment_jar_2.png" alt="依赖资源" style="zoom:50%;" />
-
-4. 配置完成后，点击**确定**。
+3. 配置完成后，点击**确定**。
 
 ## 发布作业
 
@@ -81,6 +75,6 @@ draft: false
    
    如果终止当前作业正在运行中的实例，运行中的作业实例会立即被强制终止。
 
-4. 点击**确定**，发布作业。发布作业时也会对代码进行语法检查，需要一定的时间，请耐心等待。
+4. 点击**发布**，发布作业。发布作业时也会对代码进行语法检查，需要一定的时间，请耐心等待。
 
    作业发布成功后，您可以前往运维中心查看已发布作业和作业实例。

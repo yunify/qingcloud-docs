@@ -22,7 +22,7 @@ draft: false
 4. 在目标工作空间选择**数据开发** > **实时计算**，进入实时计算页面。
 5. 选择需要删除的作业，点击![](../../../../_images/icon_more_job.png)图标，选择**删除**，弹出删除确认对话框。
 
-   <img src="../../../../_images/delete_job.png" alt="删除作业" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/delete_job.png" alt="删除作业" style="zoom:50%;" />
 
 6. 在对话框中输入 delete，点击**删除**，完成删除操作。
 

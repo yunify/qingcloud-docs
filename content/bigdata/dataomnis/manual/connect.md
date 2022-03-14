@@ -2,14 +2,14 @@
 title: "网络连通方案"
 description: 本小节主要介绍大数据工作台如何保证在数据集成和数据开发工作时，数据源与计算集群的网络连通性。 
 keywords: 
-weight: 90
+weight: 15
 collapsible: false
 draft: false
 ---
 
 大数据工作台通过**计算集群**进行数据集成和数据开发工作。在进行数据集成或数据开发之前，请确保计算集群与来源数据源、目标数据源之前网络互通。
 
-<img src="../../../_images/net_connect.png" alt="网络连通" style="zoom:50%;" />
+<img src="/bigdata/dataomnis/_images/net_connect.png" alt="网络连通" style="zoom:50%;" />
 
 目前在大数据工作台中：
 

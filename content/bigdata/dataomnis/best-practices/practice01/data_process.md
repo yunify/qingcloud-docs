@@ -32,7 +32,7 @@ draft: false
 
    > **说明**
    > 
-   > - 以下 SQL 代码用于建立 flink table 与数据源之间的映射关系；本实践需要提前在 mysql 中创建好 students 表，并且 students 表包含 id、score、name 列。
+   > - 以下 SQL 代码用于建立 flink table 与数据源之间的映射关系；本实践需要提前在 Mysql 中创建好 students 表，并且 students 表包含 id、score、name 列。
    > - 更多相关参数请参见 [MySQL CDC](/bigdata/dataomnis/developer_sql/mysql_cdc) 和 [Elasticsearch](/bigdata/dataomnis/developer_sql/elasticsearch)。
 
 
@@ -92,21 +92,15 @@ draft: false
 
 1. 选择已创建好的作业，点击右侧的**运行参数**，进入运行参数配置页面。 
 
-2. 基础设置。
+   <img src="/bigdata/dataomnis/_images/bp_job_enviroment_sql.png" alt="运行参数" style="zoom:50%;" />
+
+2. 配置运行参数。
    
    - **计算集群**：在该页面可以查看和修改运行作业的计算集群。
    - **并行度**：配置作业的并发数，不能为 `0`，默认为 `1`。
+   - **依赖资源**：选择作业运行所需的函数包以及自定义 Connector 包。本实践无需选择依赖资源。
 
-   <img src="/bigdata/dataomnis/_images/bp_enviroment_sql_1.png" alt="基础设置" style="zoom:50%;" />
-   
-3. 依赖资源。
-
-   - **依赖包**、**函数包**：本示例无需选择依赖包和函数包。
-   - **内置 Connector**：本示例选择如下内置 Connector。
-   
-   <img src="/bigdata/dataomnis/_images/bp_enviroment_sql_2.png" alt="依赖资源" style="zoom:50%;" />
-
-4. 配置完成后，点击**确定**。
+3. 配置完成后，点击**确定**。
 
 ## 发布作业
 
@@ -121,7 +115,7 @@ draft: false
    
    如果终止当前作业正在运行中的实例，运行中的作业实例会立即被强制终止。
 
-4. 点击**确定**，发布作业。发布作业时也会对代码进行语法检查，需要一定的时间，请耐心等待。
+4. 点击**发布**，发布作业。发布作业时也会对代码进行语法检查，需要一定的时间，请耐心等待。
 
    作业发布成功后，您可以前往运维中心查看已发布作业和作业实例。
 

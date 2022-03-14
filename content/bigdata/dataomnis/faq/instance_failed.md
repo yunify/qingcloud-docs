@@ -11,13 +11,12 @@ draft: false
 
 ## 可能原因
 
-- MySQL 账号权限不够。
+- 数据库账号权限不够。
 - 作业中数据源连接信息填写错误。
-- 作业未配置依赖资源或依赖资源配置不全。
 
-## 排查 MySQL 账号权限
+## 排查数据库账号权限
 
-MySQL 数据库账号需要拥有 SELECT, REPLICATION SLAVE, REPLICATION CLIENT 权限。
+数据库账号需要拥有 SELECT, REPLICATION SLAVE, REPLICATION CLIENT 权限。
 - 您可以直接使用高级权限账号。
 - 若您使用普通权限账号，需要使用高级权限账号执行命令 `GRANT SELECT, REPLICATION SLAVE, REPLICATION CLIENT ON . TO 'username'@'%';`，为普通权限账号授权。
 
@@ -34,11 +33,3 @@ MySQL 数据库账号需要拥有 SELECT, REPLICATION SLAVE, REPLICATION CLIENT 
 | 在本地 IDC 机房，或其他云环境     | 通过 [VPN](/network/vpc/manual/vpn/) 或[边界路由器](/network/border_router/manual/border_user_guide/)方式，使计算集群与本地 IDC 或其他云环境网络互通。  |
 
 网络连通后，请正确配置数据源的连接信息，包括 IP 地址、用户名、密码等信息。
-
-## 排查作业运行参数
-
-SQL 作业中用到的数据源，需要在运行参数中配置相应的依赖资源。
-
-例如您的 SQL 作业中用到了 MySQL CDC 数据源和 Elasticsearch 数据源，则需要选择如下依赖资源。
-
-<img src="../../_images/faq_para_set.png" alt="选择内置 Connector" style="zoom:50%;" />

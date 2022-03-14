@@ -37,7 +37,7 @@ draft: false
    | <span style="display:inline-block;width:140px">参数</span>  | <span style="display:inline-block;width:520px">参数说明</span>  |
    | :------------- | ------------------------------------------------------------ |
    | 作业名称 |  创建的作业名称，您可以自定义。              |
-   | 计算集群    |  点击**选择集群**，在弹出的对话框中选择已创建好的计算集群；也可以在对话框中点击**新建计算集群**，创建新的计算集群。 <span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b><br>- 创建作业时该参数为可选项，您可以在作业创建成功后，在配置作业的运行参数时选择或修改计算集群。<br>- 计算集群需与数据源网络互通，具体请参见[网络连通方案](/bigdata/dataomnis/manual/data_up_cloud/connect/)。</span> |
+   | 计算集群    |  点击**选择集群**，在弹出的对话框中选择已创建好的计算集群；也可以在对话框中点击**新建计算集群**，创建新的计算集群。 <span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b><br>- 创建作业时该参数为可选项，您可以在作业创建成功后，在配置作业的运行参数时选择或修改计算集群。<br>- 计算集群需与数据源网络互通，具体请参见[网络连通方案](/bigdata/dataomnis/manual/connect/)。</span> |
    | 描述    |  作业的描述信息，您可以自定义。 |
  
 8. 点击**确定**，开始创建作业。
@@ -45,9 +45,9 @@ draft: false
 ## 开发作业
 
 1. 点击作业名称，进入开发面板。
-2. 在**引用 Jar 包**处选择已上传的 Jar 程序包。     
+2. 在 **JAR（程序包）**处选择已上传的 JAR 程序包。     
    
-   如果没有您需要的 Jar 包，请点击**上传资源**，上传新的程序包。
+   如果没有您需要的 JAR 包，请点击**上传资源**，上传新的程序包。
 
    <img src="/bigdata/dataomnis/_images/job_content_jar.png" alt="编辑和运行 Jar 作业" style="zoom:50%;" />
 
@@ -79,8 +79,7 @@ draft: false
    <img src="/bigdata/dataomnis/_images/publish_job.png" alt="发布作业" style="zoom:50%;" />
 
 2. 您可以根据实际情况选择是否终止**当前作业正在运行中的实例**，如果终止当前作业正在运行中的实例，运行中的作业实例会立即被强制终止。
-3. 点击**发布**，发布作业。发布作业时也会对代码进行语法检查，需要一定的时间，请耐心等待。
-
+3. 点击**发布**，发布作业。发布作业时也会对代码进行语法检查，需要一定的时间，请耐心等待。   
    作业发布成功后，您可以前往运维中心查看已发布作业和作业实例。
 
 
