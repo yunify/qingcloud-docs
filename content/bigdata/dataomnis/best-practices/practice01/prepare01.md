@@ -1,7 +1,7 @@
 ---
 title: "环境准备"
-description:  
-keywords: 
+description: 本小节主要介绍如何准备 MySQL 数据源和 Elasticsearch 环境。 
+keywords: 大数据工作台,最佳实践,SQL 作业
 weight: 10
 collapsible: false
 draft: false

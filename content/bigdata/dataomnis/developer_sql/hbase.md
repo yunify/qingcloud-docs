@@ -1,7 +1,7 @@
 ---
 title: "数据库 HBase"
-description: 本小节主要介绍如何。 
-keywords: 
+description: 本小节主要介绍数据库 HBase 内置 Connector。 
+keywords: 大数据工作台,内置 Connector,HBase
 weight: 50
 collapsible: false
 draft: false

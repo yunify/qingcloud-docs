@@ -1,7 +1,7 @@
 ---
 title: "消息队列 Upsert Kafka"
-description: 本小节主要介绍如何。 
-keywords: 
+description: 本小节主要介绍消息队列 Upsert Kafka 内置 Connector。 
+keywords: 大数据工作台,内置 Connector,Upsert Kafka
 weight: 20
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "数据开发"
-description:  
-keywords: 
+description: 本小节主要介绍如何在大数据工作上进行 SQL 作业开发。
+keywords: 大数据工作台,最佳实践,SQL 作业
 weight: 30
 collapsible: false
 draft: false

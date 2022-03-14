@@ -1,7 +1,7 @@
 ---
 title: "支持的数据源"
-description: 本小节主要介绍。 
-keywords: 
+description: 本小节主要介绍大数据工作台支持的数据源。 
+keywords: 大数据工作台,操作指南,数据源
 weight: 10
 collapsible: false
 draft: false

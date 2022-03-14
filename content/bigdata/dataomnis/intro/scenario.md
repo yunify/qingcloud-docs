@@ -1,7 +1,7 @@
 ---
 title: "应用场景"
 description: 本小节主要介绍大数据工作台的应用场景。 
-keywords:  
+keywords: 大数据工作台,应用场景
 weight: 30
 collapsible: false
 draft: false

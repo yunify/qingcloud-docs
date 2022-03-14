@@ -1,7 +1,7 @@
 ---
 title: "入门概述"
 description: 本小节主要介绍大数据工作台快速入门流程。 
-keywords: 
+keywords: 大数据工作台,快速入门
 weight: 1
 collapsible: false
 draft: false

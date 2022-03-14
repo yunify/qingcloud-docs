@@ -1,7 +1,7 @@
 ---
 title: "删除程序包"
-description: 
-keywords: 
+description: 本小节主要介绍如何删除程序包。
+keywords: 大数据工作台,操作指南,数据开发,资源管理,删除程序包
 weight: 30
 collapsible: false
 draft: false

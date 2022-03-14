@@ -1,7 +1,7 @@
 ---
 title: "创建计算集群"
 description: 本小节主要介绍如何创建计算集群。 
-keywords: 
+keywords: 大数据工作台,数据开发,创建计算集群
 weight: 10
 collapsible: false
 draft: false

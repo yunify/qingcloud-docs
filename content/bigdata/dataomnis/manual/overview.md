@@ -1,7 +1,7 @@
 ---
 title: "概览"
-description:  
-keywords: 
+description: 您可以通过概览页面进入相应工作空间的数据源管理、数据开发、运维中心页面开发业务，也可以在该页面快速查看产品的相关文档，比如最佳实践、常见问题等。 
+keywords: 大数据工作台,操作指南,概览
 weight: 5
 collapsible: false
 draft: false

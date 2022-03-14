@@ -1,7 +1,7 @@
 ---
 title: "创建网络"
 description: 本小节主要介绍如何创建网络。 
-keywords: 
+keywords: 大数据工作台,创建网络
 weight: 14
 collapsible: false
 draft: false

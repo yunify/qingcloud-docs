@@ -1,7 +1,7 @@
 ---
 title: "查看计算集群详情"
-description: 本小节主要介绍如何。 
-keywords: 
+description: 本小节主要介绍如何查看计算集群详情。 
+keywords: 大数据工作台,数据开发,查看计算集群
 weight: 20
 collapsible: false
 draft: false

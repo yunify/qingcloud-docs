@@ -1,7 +1,7 @@
 ---
 title: "作业运维"
-description: 本小节主要介绍。 
-keywords: 
+description: 本小节主要介绍如何查看已发布作业及作业实例。 
+keywords: 大数据工作台,已发布作业,作业实例
 weight: 50
 collapsible: false
 draft: false

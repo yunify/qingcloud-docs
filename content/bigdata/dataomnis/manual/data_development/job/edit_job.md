@@ -1,7 +1,7 @@
 ---
 title: "修改作业"
-description: 本小节主要介绍如何对作业的生命周期进行管理。 
-keywords: 作业
+description: 本小节主要介绍如何修改作业。 
+keywords: 大数据工作台,数据开发,实时计算,作业
 weight: 70
 collapsible: false
 draft: false

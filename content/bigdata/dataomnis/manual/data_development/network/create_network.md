@@ -1,7 +1,7 @@
 ---
 title: "创建网络"
-description:  
-keywords: 
+description: 您可以在网络配置页面创建网络，查看该工作空间下所有的网络，并对网络进行修改、删除操作。 
+keywords: 大数据工作台,数据开发,网络配置,创建网络
 weight: 5
 collapsible: false
 draft: false

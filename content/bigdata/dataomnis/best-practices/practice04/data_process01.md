@@ -1,7 +1,7 @@
 ---
 title: "向 Kafka 写入随机数据"
-description: 本小节主要介绍。 
-keywords: 
+description: 本小节主要介绍如何在大数据工作上进行 SQL 作业开发。
+keywords: 大数据工作台,最佳实践,JAR 作业
 weight: 35
 collapsible: false
 draft: false

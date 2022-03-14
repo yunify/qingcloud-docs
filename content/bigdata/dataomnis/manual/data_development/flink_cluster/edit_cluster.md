@@ -1,7 +1,7 @@
 ---
 title: "修改计算集群"
-description: 本小节主要介绍如何。 
-keywords: 
+description: 本小节主要介绍如何修改计算集群。 
+keywords: 大数据工作台,数据开发,修改计算集群
 weight: 40
 collapsible: false
 draft: false

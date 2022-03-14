@@ -1,7 +1,7 @@
 ---
 title: "场景介绍"
-description:  
-keywords: 
+description: 本实践为您介绍如何将 MySQL 数据变化（Insert/Update/Delete）通过 CDC 实时感知并同步到下游 Elasticsearch。
+keywords: 大数据工作台,最佳实践,SQL 作业
 weight: 5
 collapsible: false
 draft: false

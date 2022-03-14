@@ -1,7 +1,7 @@
 ---
 title: "配置作业依赖/调度"
-description: 本小节主要介绍。 
-keywords: 
+description: 本小节主要介绍如何配置作业的运行参数和作业调度。 
+keywords: 大数据工作台,运行参数,调度设置
 weight: 40
 collapsible: false
 draft: false

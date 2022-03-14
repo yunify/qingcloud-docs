@@ -1,7 +1,7 @@
 ---
 title: "修改程序包"
-description: 
-keywords: 
+description: 您可以修改程序包的显示名称、描述信息，以及程序包的内容。
+keywords: 大数据工作台,操作指南,数据开发,资源管理,修改程序包
 weight: 20
 collapsible: false
 draft: false

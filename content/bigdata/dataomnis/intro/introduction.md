@@ -1,7 +1,7 @@
 ---
 title: "什么是大数据工作台？"
-description: 本小节主要介绍大数据工作台
-keyword: 大数据工作台, QingCloud
+description: 本小节主要介绍什么是大数据工作台。
+keyword: 大数据工作台
 weight: 10
 collapsible: false
 draft: false

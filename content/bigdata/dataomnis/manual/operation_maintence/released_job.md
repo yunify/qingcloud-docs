@@ -1,7 +1,7 @@
 ---
 title: "已发布作业"
-description: 本小节主要介绍如何管理已发布作业。 
-keywords: 
+description: 本小节主要介绍如何管理大数据供走台已发布作业。 
+keywords: 大数据工作台,操作指南,运维中心,已发布作业
 weight: 10
 collapsible: false
 draft: false

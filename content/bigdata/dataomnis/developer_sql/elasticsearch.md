@@ -1,7 +1,7 @@
 ---
 title: "数据分析引擎 Elasticsearch"
-description: 本小节主要介绍如何。 
-keywords: 
+description: 本小节主要介绍数据分析引擎 Elasticsearch 内置 Connector。 
+keywords: 大数据工作台,内置 Connector,Elasticsearch
 weight: 70
 collapsible: false
 draft: false

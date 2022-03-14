@@ -1,7 +1,7 @@
 ---
 title: "验证结果"
-description:  
-keywords: 
+description: 本小节主要介绍如何验证 JAR 作业最佳实践结果。
+keywords: 大数据工作台,最佳实践,JAR 作业
 weight: 40
 collapsible: false
 draft: false

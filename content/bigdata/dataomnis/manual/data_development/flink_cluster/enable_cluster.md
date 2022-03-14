@@ -1,7 +1,7 @@
 ---
 title: "启动计算集群"
-description: 本小节主要介绍如何。 
-keywords: 
+description: 本小节主要介绍如何启动计算集群。 
+keywords: 大数据工作台,数据开发,启动计算集群
 weight: 30
 collapsible: false
 draft: false

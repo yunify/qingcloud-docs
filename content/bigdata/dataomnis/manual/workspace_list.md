@@ -1,7 +1,7 @@
 ---
 title: "工作空间列表"
-description:  
-keywords: 
+description: 工作空间是管理任务的基本单元，您可在工作空间开发和调度任务。工作空间资源互相隔离、数据互相独立，您可在不同的工作空间管理不同的任务。 
+keywords: 大数据工作台,操作指南,工作空间
 weight: 10
 collapsible: false
 draft: false

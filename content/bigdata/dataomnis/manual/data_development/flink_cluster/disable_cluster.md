@@ -1,7 +1,7 @@
 ---
 title: "停用计算集群"
 description: 本小节主要介绍如何停用计算集群。 
-keywords: 
+keywords: 大数据工作台,数据开发,停用计算集群
 weight: 31
 collapsible: false
 draft: false

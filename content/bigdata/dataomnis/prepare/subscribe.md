@@ -1,7 +1,7 @@
 ---
 title: "开通大数据工作台"
 description: 本小节主要介绍如何开通大数据工作台。 
-keywords: 开通,大数据工作台
+keywords: 大数据工作台,开通
 weight: 20
 collapsible: false
 draft: false

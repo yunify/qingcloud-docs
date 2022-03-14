@@ -1,7 +1,7 @@
 ---
 title: "修改网络"
-description:  
-keywords: 
+description: 创建网络后，您可以随时对网络进行修改。 
+keywords: 大数据工作台,数据开发,网络配置,修改网络
 weight: 10
 collapsible: false
 draft: false

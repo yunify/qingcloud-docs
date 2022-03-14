@@ -1,7 +1,7 @@
 ---
 title: "场景介绍"
-description:  
-keywords: 
+description: 本实践为您介绍如何通过如何通过大数据工作台的 Jar 作业进行 “用户消费 TopN 统计”。
+keywords: 大数据工作台,最佳实践,JAR 作业
 weight: 5
 collapsible: false
 draft: false

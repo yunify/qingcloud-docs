@@ -1,7 +1,7 @@
 ---
 title: "如何停用/删除计算集群"
 description: 本小节主要介绍如何停用/删除计算集群。 
-keywords: 
+keywords: 大数据工作台,常见问题,计算集群
 weight: 20
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "删除网络"
-description:  
-keywords: 
+description: 如果您不再需要使用已创建的网络，可以删除网络。 
+keywords: 大数据工作台,数据开发,网络配置,删除网络
 weight: 15
 collapsible: false
 draft: false

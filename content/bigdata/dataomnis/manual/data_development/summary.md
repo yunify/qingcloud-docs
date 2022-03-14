@@ -1,7 +1,7 @@
 ---
 title: "数据开发概述"
-description: 本小节主要介绍数据开发。 
-keywords: 
+description: 本小节主要介绍数据开发流程、作业依赖的网络资源、支持开发的作业模式、开发过程中的资源管理和使用说明等。 
+keywords: 大数据工作台,操作指南,数据开发
 weight: 10
 collapsible: false
 draft: false

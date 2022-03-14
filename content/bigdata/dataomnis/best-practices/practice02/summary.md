@@ -1,7 +1,7 @@
 ---
 title: "场景介绍"
-description:  
-keywords: 
+description: 本实践为您介绍如何通过 SQL 作业对接网站的点击流数据，并对点击流数据进行实时分析，计算出独立访客数（uv）、页面访问数（pv）、转化率等指标。
+keywords: 大数据工作台,最佳实践,SQL 作业
 weight: 5
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "准备青云账号"
 description: 本小节主要介绍如何注册青云账号。 
-keywords: 青云账号
+keywords: 大数据工作台,准备账号,青云账号
 weight: 10
 collapsible: false
 draft: false

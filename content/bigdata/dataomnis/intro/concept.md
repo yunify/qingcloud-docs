@@ -1,7 +1,7 @@
 ---
 title: "基本概念"
 description: 本小节主要介绍大数据工作台的基本概念。 
-keywords: 基本概念 
+keywords: 大数据工作台,基本概念
 weight: 15
 collapsible: false
 draft: false

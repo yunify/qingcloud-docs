@@ -1,7 +1,7 @@
 ---
 title: "产品优势"
-description: 本小节主要介绍 大数据工作台 产品优势。 
-keywords: 大数据工作台 产品优势 
+description: 本小节主要介绍大数据工作台产品优势。 
+keywords: 大数据工作台,产品优势 
 weight: 25
 collapsible: false
 draft: false

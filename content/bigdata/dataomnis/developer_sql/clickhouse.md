@@ -1,7 +1,7 @@
 ---
 title: "数据仓库 ClickHouse"
-description: 本小节主要介绍如何。 
-keywords: 
+description: 本小节主要介绍数据仓库 ClickHouse 内置 Connector。 
+keywords: 大数据工作台,内置 Connector,ClickHouse
 weight: 60
 collapsible: false
 draft: false
