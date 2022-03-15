@@ -74,7 +74,7 @@ weight: 20
 
    | 参数         | 示例                                                         |
    | ------------ | ------------------------------------------------------------ |
-   | 接入点名称   | CPE 01                                                       |
+   | 接入点名称   | CPE 02                                                       |
    | 接入点类型   | 光盒 2 号                                                    |
    | 部署方式     | 双机                                                         |
    | 序列号       | 输入光盒 CPE 的序列号                                        |
@@ -91,9 +91,29 @@ weight: 20
 
 <img src="/sd-wan/sdwan_new/_images/qs_equip_active.png" style="zoom:50%;" />
 
-## 步骤4：验证网络连通性
+## 步骤4：查看是否学习到对端路由
 
-打开电脑 CMD，ping PC 02 的 IP 地址，查看是否能 ping 通。
+查看 CPE 01 和 CPE 02 是否学习到对端路由。
+
+1. 在 CPE01 上查看路由信息，若学习到 CPE 02，则显示 CPE02 LAN 网段 172.17.0.0/24 信息。
+
+   > **说明**
+   >
+   > 光盒上线需要几分钟时间，请耐心等待。
+
+   <img src="/sd-wan/sdwan_new/_images/qs_cpe_display01.png" style="zoom:50%;" />
+
+2. 在 CPE02 上查看路由信息，若学习到 CPE 01，则显示 CPE01 LAN 网段 192.168.200.0/24 信息。
+
+   <img src="/sd-wan/sdwan_new/_images/qs_cpe_display02.png" style="zoom:50%;" />
+
+## 步骤5：验证网络连通性
+
+使用 PC 01 ping PC 02 的 IP 地址，查看是否能 ping 通。
+
+> **说明**
+>
+> 请确保两台电脑防火墙已关闭，并且都没有连接 WiFi 和 VPN。
 
 ```
 ping 172.17.0.3

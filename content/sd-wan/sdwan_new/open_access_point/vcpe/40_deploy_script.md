@@ -18,7 +18,7 @@ weight: 40
 ## 前提条件
 
 - 已获取控制台的账号和密码。
-- 已创建 vCPE 接入点并获取接入点 License。
+- 已创建 vCPE 接入点。
 - 请确保宿主机满足环境要求，更多信息请参见[环境要求](../10_vcpe_overview/#环境要求)。
 
 ## vCPE 虚拟机部署
@@ -45,11 +45,23 @@ vCPE 以自有镜像的模式提供给用户。
 
 5. 根据提示信息配置云服务器参数。
 
-   可查看到镜像为 **SD-WAN vCPE**。
+   - **镜像**： **SD-WAN vCPE**。
+   - **网络**：部署 vCPE 的云服务器与业务所在云服务器在同一 VPC、同一 Vxnet。
+   - **弹性公网 IP**：部署 vCPE 的云服务器需要访问公网。请根据实际需要为该云服务器或者云服务器所在 VPC 绑定公网 IP。
 
    <img src="/sd-wan/sdwan_new/_images/um_vcpe_image_display.png" style="zoom:50%;" />
 
-7. 点击**立即购买**，根据提示完成云服务器购买后，登录已创建的云服务器。
+7. 点击**立即购买**，根据提示完成云服务器购买。
+
+8. 获取 vCPE 虚拟机接入点的 License。
+
+   <img src="/sd-wan/sdwan_new/_images/vm_vcpe_copy_license.png" style="zoom:50%;" />
+   
+8. 登录已购买的基于 **SD-WAN vCPE 镜像**的云服务器。
+
+   > **说明**
+   >
+   > 关于如何登录云服务器，请参见[连接 Linux 云服务器](/compute/vm/manual/vm/20_connect_instance/10_third_party/)。
 
 8. 执行以下命令，绑定 License。
 
@@ -57,7 +69,7 @@ vCPE 以自有镜像的模式提供给用户。
    wagent join -l License
    ```
 
-   若回显信息如下所示，则说明绑定 License 成功。您只需要登录设备控制台绑定 License，即可激活设备。
+   若回显信息如下所示，则说明绑定 License 成功。
 
    <img src="../../../_images/um_bind_image_license.png" style="zoom:50%;" />
 
