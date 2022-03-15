@@ -55,11 +55,6 @@ CREATE TABLE mysqlcdc_source (
 | debezium.min.row.count.to.stream.results | 否       | 1000    | Integer  | 当表的条数大于该值，则使用分批读取模式。<li>全量读取：直接将整个表的数据读取到内存中，速度快，但是消耗过大内存可能会造成 OOM。<li>分批读取：分多次读取，每次读取一定数量的行数，知道读取完所有数据，没有 OOM 风险，但是读取速度相对较慢。 |
 | connect.timeout                          | 否       | 30s     | Duration | 在尝试连接 MySQL 数据服务器之后，连接器在超时之前应该等待的最大时间。 |
 
-
-## 内置 Connector
-
-SQL 作业中使用 mysql-cdc connector 时，您需要在运行参数中选择 `flink-connector-mysql-cdc` 内置 Connector。
-
 ## 代码示例
 
 ```sql

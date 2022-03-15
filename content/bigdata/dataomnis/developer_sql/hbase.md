@@ -47,11 +47,6 @@ CREATE TABLE hTable (
 | sink.buffer-flush.interval | 否   | 1s     | Duration   | 将缓存数据周期性写入到 HBase 的间隔，可以控制写入 HBase 的延迟。 |
 | sink.parallelism           | 否   | 无     | Integer    | 写入 HBase 的 operator 的并行度。                            |
 
-
-## 内置 Connector
-
-SQL 作业中使用 hbase connector 时，您需要在运行参数中选择 `flink-connector-hbase` 内置 Connector。
-
 ## 类型映射
 
 | HBase 字段类型                                               | Flink 字段类型            |

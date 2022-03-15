@@ -46,10 +46,6 @@ CREATE TABLE clickhouse_table(
 | table-name | 是   | 无     | String   | ClickHouse 服务的表名。                             |
 | format     | 是   | 无     | String   | 消息的反序列化格式，支持如下格式：csv、json、avro。 |
 
-## 内置 Connector
-
-SQL 作业中使用 ClickHouse connector 时，您需要在运行参数中选择 `flink-connector-clickhouse` 内置 Connector。
-
 ## 代码示例
 
 ```sql
