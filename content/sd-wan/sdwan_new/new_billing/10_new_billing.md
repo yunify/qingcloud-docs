@@ -15,7 +15,7 @@ weight: 10
 
 ## 计费项
 
-SD-WAN 的费用由**实例订阅服务费**和**SD-WAN 接入带宽费**组成，实例分为**光盒 2 号**、**vCPE 虚拟机**和 **vCPE 容器**。
+SD-WAN 的费用由**实例订阅服务费**和**SD-WAN 接入带宽费**组成，实例分为**光盒 2 号**、**VCPE 虚拟机**和 **VCPE 容器**。
 
 若您需要**提升带宽上限**，计费会根据您提升后的带宽进行按需计费。
 
@@ -34,10 +34,10 @@ SD-WAN 的费用由**实例订阅服务费**和**SD-WAN 接入带宽费**组成�
     <td>光盒 2 号 </td>
   </tr>
 	<tr>
-    <td>vCPE 虚拟机</td>
+    <td>VCPE 虚拟机</td>
   </tr>
   <tr>
-    <td>vCPE 容器</td>
+    <td>VCPE 容器</td>
   </tr>
   <tr>
     <td>SD-WAN 接入带宽费</td>
@@ -45,7 +45,7 @@ SD-WAN 的费用由**实例订阅服务费**和**SD-WAN 接入带宽费**组成�
   </tr>
       <tr>
     	<td>云服务器（可选）</td>
-        <td>软件 vCPE 依赖云服务器，若将软件 vCPE 部署在云服务器上，则云服务器产生的费用将另行计算。<br/>青云QingCloud 云服务器价格详情请参见<a href="/compute/vm/billing/reserved_contract/">云服务器计费说明</a>。<br/>其他云厂商的云服务器价格，请查看该云厂商云服务器的价格表。</td>
+        <td>软件 VCPE 依赖云服务器，若将软件 VCPE 部署在云服务器上，则云服务器产生的费用将另行计算。<br/>青云QingCloud 云服务器价格详情请参见<a href="/compute/vm/billing/reserved_contract/">云服务器计费说明</a>。<br/>其他云厂商的云服务器价格，请查看该云厂商云服务器的价格表。</td>
   </tr> 
 </table>
 

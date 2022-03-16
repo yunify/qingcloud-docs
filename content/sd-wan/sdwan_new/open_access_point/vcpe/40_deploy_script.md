@@ -1,33 +1,33 @@
 ---
-title: "部署软件 vCPE"
+title: "部署软件 VCPE"
 draft: false
 collapsible: false
 weight: 40
 ---
 
-在创建云服务器后，您需要通过 SD-WAN（新版）提供了 vCPE 虚拟机、vCPE 容器两种部署方式。您可以根据需要选择合适方式部署 vCPE。
+在创建云服务器后，您需要通过 SD-WAN（新版）提供了 VCPE 虚拟机、VCPE 容器两种部署方式。您可以根据需要选择合适方式部署 VCPE。
 
-- vCPE 虚拟机
+- VCPE 虚拟机
   
-  在青云QingCloud 创建云服务器时，选择自有镜像的方式，部署云服务器并绑定 License，即可成功部署 vCPE。
+  在青云QingCloud 创建云服务器时，选择自有镜像的方式，部署云服务器并绑定 License，即可成功部署 VCPE。
 
-- vCPE 容器
+- VCPE 容器
 
-  在虚拟机中运行脚本，脚本会帮助您完成容器创建的一系列操作，并完成在容器中部署 vCPE。
+  在虚拟机中运行脚本，脚本会帮助您完成容器创建的一系列操作，并完成在容器中部署 VCPE。
 
 ## 前提条件
 
 - 已获取控制台的账号和密码。
-- 已创建 vCPE 接入点。
+- 已创建 VCPE 接入点。
 - 请确保宿主机满足环境要求，更多信息请参见[环境要求](../10_vcpe_overview/#环境要求)。
 
-## vCPE 虚拟机部署
+## VCPE 虚拟机部署
 
-vCPE 以自有镜像的模式提供给用户。
+VCPE 以自有镜像的模式提供给用户。
 
-在云平台上选择镜像，基于镜像创建云服务器。镜像选择为**镜像** > **市场** > **SD-WAN vCPE** ，创建镜像为 vCPE 镜像 的云服务器作为 vCPE。
+在云平台上选择镜像，基于镜像创建云服务器。镜像选择为**镜像** > **市场** > **SD-WAN VCPE** ，创建镜像为 VCPE 镜像 的云服务器作为 VCPE。
 
-创建成功后，登录到创建的云服务器绑定 License，即可激活 vCPE。
+创建成功后，登录到创建的云服务器绑定 License，即可激活 VCPE。
 
 操作步骤，如下所示。
 
@@ -41,23 +41,28 @@ vCPE 以自有镜像的模式提供给用户。
 
    <img src="/sd-wan/sdwan_new/_images/um_vcpe_image_market.png" style="zoom:50%;" />
 
-4. 勾选 **SD-WAN vCPE** 镜像，并点击**基于镜像创建云服务器**，进入**购买云服务器**页面。
+4. 勾选 **SD-WAN VCPE** 镜像，并点击**基于镜像创建云服务器**，进入**购买云服务器**页面。
 
 5. 根据提示信息配置云服务器参数。
 
-   - **镜像**： **SD-WAN vCPE**。
-   - **网络**：部署 vCPE 的云服务器与业务所在云服务器在同一 VPC、同一 Vxnet。
-   - **弹性公网 IP**：部署 vCPE 的云服务器需要访问公网。请根据实际需要为该云服务器或者云服务器所在 VPC 绑定公网 IP。
-
    <img src="/sd-wan/sdwan_new/_images/um_vcpe_image_display.png" style="zoom:50%;" />
+
+   参数说明，如下表所示。
+
+   | 参数        | 参数说明                                                     |
+   | ----------- | ------------------------------------------------------------ |
+   | 镜像        | SD-WAN VCPE                                                  |
+   | 网络        | 部署 VCPE 的云服务器与业务所在云服务器在同一 VPC、同一 Vxnet。 |
+   | 弹性公网 IP | 部署 VCPE 的云服务器需要访问公网。请根据实际需要为该云服务器或者云服务器所在 VPC 绑定公网 IP。 |
+   | 其他参数    | 请根据实际情况配置。                                         |
 
 7. 点击**立即购买**，根据提示完成云服务器购买。
 
-8. 获取 vCPE 虚拟机接入点的 License。
+8. <span id ="jump"></span>在 VCPE 接入点详情页面，获取 VCPE 虚拟机接入点的序列号。
 
    <img src="/sd-wan/sdwan_new/_images/vm_vcpe_copy_license.png" style="zoom:50%;" />
    
-8. 登录已购买的基于 **SD-WAN vCPE 镜像**的云服务器。
+8. 登录已购买的基于 **SD-WAN VCPE 镜像**的云服务器。
 
    > **说明**
    >
@@ -65,19 +70,23 @@ vCPE 以自有镜像的模式提供给用户。
 
 8. 执行以下命令，绑定 License。
 
+   > **说明**
+   >
+   > License 为步骤 <a href ="#jump">7</a> 获取的 VCPE 接入点的序列号。
+
    ```
    wagent join -l License
    ```
-
+   
    若回显信息如下所示，则说明绑定 License 成功。
-
+   
    <img src="../../../_images/um_bind_image_license.png" style="zoom:50%;" />
 
-## vCPE 容器部署
+## VCPE 容器部署
 
 ### 脚本参数说明
 
-vCPE 镜像的部署脚本提供如下可执行参数，如下所示。
+VCPE 镜像的部署脚本提供如下可执行参数，如下所示。
 
 ```
 Usage: deploy.sh [command] [options]
@@ -89,11 +98,11 @@ Options:
 
 | 参数 | 参数说明               |
 | ---- | ---------------------- |
-| -l   | vCPE 设备的 License 。 |
+| -l   | VCPE 设备的 License 。 |
 
 ### 操作步骤
 
-用户需要登录宿主机，根据提示信息下载 vCPE 脚本并安装 vCPE。
+用户需要登录宿主机，根据提示信息下载 VCPE 脚本并安装 VCPE。
 
 1. 登录宿主机。
 
@@ -122,7 +131,11 @@ Options:
    chmod +x /root/deploy.sh
    ```
 
-3. 执行以下命令，安装脚本。
+5. 执行以下命令，安装脚本。
+
+   > **说明**
+   >
+   > License 为 VCPE 接入点的序列号。
 
    ```
    /root/deploy.sh -l License
@@ -130,17 +143,15 @@ Options:
 
 4. 安装脚本时，系统会自动检测部署环境是否满足要求。
 
-   若部署环境相关的组件不完整，系统会出现如下提示信息。请输入：yes，系统将自动为您安装相关组件。
+   - 若部署环境相关的组件不完整，系统会出现如下提示信息。请输入：yes，系统将自动为您安装相关组件。
 
-   <img src="../../../_images/um_deploy_vcpe_misscomponent.png" style="zoom:50%;" />
+     <img src="../../../_images/um_deploy_vcpe_misscomponent.png" style="zoom:50%;" />
 
-   若部署环境满足要求，则会直接开始部署 vCPE 镜像。镜像部署完成后，系统会出现如下提示信息。
-
-   <img src="../../../_images/um_deploy_vcpe_complet.png" style="zoom:50%;" />
+   - 若部署环境满足要求，则会直接开始部署 VCPE 镜像。
 
 5. 查看部署结果。
 
-   部署完成后，若回显信息如下所示，则说明 vCPE 部署成功。若部署失败，请提交工单至 SD-WAN 团队进行处理。
+   部署完成后，若回显信息如下所示，则说明 VCPE 部署成功。若部署失败，请提交工单至 SD-WAN 团队进行处理。
 
    <img src="../../../_images/um_deploy_vcpe_success.png" style="zoom:50%;" />
 

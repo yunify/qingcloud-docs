@@ -32,8 +32,8 @@ section2:
       content: 光盒的申请和使用说明。
       url: "lightbox/10_intro/"
 
-    - title: vCPE 使用指南
-      content: vCPE 使用说明。
+    - title: VCPE 使用指南
+      content: VCPE 使用说明。
       url: "vcpe/10_vcpe_overview/"
 
     - title: 操作指南

@@ -1,12 +1,12 @@
 ---
-title: "网关配置（软件vCPE）"
+title: "网关配置（软件VCPE）"
 description: 本章节介绍如何进行网关配置
 draft: false
 collapsible: false
 weight: 30
 ---
 
-使用软件 vCPE 时，需要配置网关配置。
+使用软件 VCPE 时，需要配置网关配置。
 
 本章节介绍如何修改网关配置。
 
@@ -14,7 +14,7 @@ weight: 30
 
 - 已获取管理控制台的账号和密码。
 - 已创建连接云网。
-- 已创建软件 vCPE 接入点。
+- 已创建软件 VCPE 接入点。
 
 ## 修改网关配置
 
