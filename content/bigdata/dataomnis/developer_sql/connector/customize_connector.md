@@ -27,10 +27,10 @@ draft: false
 ## 使用 Connector
 
 1. 上传程序包   
-    在资源管理界面，上传自定义 Connector 的 JAR 程序包。   
+    在资源管理界面，上传自定义 Connector 的 JAR 程序包。详细操作请参见[上传程序包](/bigdata/dataomnis/manual/data_development/resource/upload)。   
 2. 作业引用程序包   
     根据自定义 Connector 中定义的 Source 和 Sink 结构，在 SQL 作业开发面板中进行相应配置。
 3. 选择依赖资源   
     在作业的运行参数界面，选择已上传的 JAR 程序包。
-4. 保存并发布作业
+
 
