@@ -1,11 +1,11 @@
 ---
-title: "修改 LAN 信息"
+title: "修改 WAN 信息"
 collapsible: false
-draft: true
+draft: false
 weight: 40
 ---
 
-本章节指导您如何修改 LAN 信息。
+本章节介绍如何修改 WAN 信息。
 
 ## 前提条件
 
@@ -13,23 +13,46 @@ weight: 40
 
 ## 操作步骤
 
-1. 登录设备管理控制台。
+1. 登录设备控制台。
 
 2. 进入设备管理页面，找到端口信息区域。
 
-3. 点击待修改端口所在行的修改，弹出**修改 WAN 配置**窗口。
+   <img src="/sd-wan/sdwan_new/_images/equip_modify_wan.png" style="zoom:50%;" />
 
-   <img src="../../../_images/equip_modify_wan.png" style="zoom:40%;" />
+3. 点击待修改端口所在行的**修改**，弹出**修改 WAN 配置**窗口。
+
+   <img src="/sd-wan/sdwan_new/_images/equip_modify_lan_win.png" style="zoom:50%;" />
 
 4. 修改相关参数。
 
-   <img src="../../../_images/equip_modify_dynamic_ip.png" style="zoom:40%;" />
+   - **动态IP**
 
-   | 参数 | 参数说明                                                     |
-   | ---- | ------------------------------------------------------------ |
-   | 端口 | 端口。                                                       |
-   | 网段 | 设置 LAN 的网段。                                            |
-   | 网关 | 可选，设置网关地址。                                         |
-   | DHCP | 开启 DHCP 服务。<br />DHCP 起始地址：DHCP 起始地址。<br />DHCP 结束地址：DHCP 结束地址。 |
+     <img src="/sd-wan/sdwan_new/_images/equip_modify_lan_win.png" style="zoom:50%;" />
 
-5. 修改完成后，点击**确定修改**，完成 LAN 的修改。
+     | 参数     | 参数说明            |
+     | -------- | ------------------- |
+     | 高级设置 | MTU：最大传输单元。 |
+
+   - **静态 IP**
+
+     <img src="/sd-wan/sdwan_new/_images/equip_modify_bgp_win.png" style="zoom:50%;" />
+
+     | 参数     | 参数说明                   |
+     | -------- | -------------------------- |
+     | 连接类型 | 连接类型选择 **静态 IP**。 |
+     | 网段     | 设置设备网段。             |
+     | 网关     | 设置网关地址。             |
+     | 高级设置 | MTU：最大传输单元。        |
+
+   - **PPPOE**
+
+     <img src="/sd-wan/sdwan_new/_images/equip_modify_pppoe_win.png" style="zoom:50%;" />
+
+     | 参数         | 参数说明                 |
+     | ------------ | ------------------------ |
+     | 连接类型     | 连接类型选择 **PPPOE**。 |
+     | 账号         | 带宽的账号。             |
+     | 密码         | 带宽的密码。             |
+     | **高级设置** | MTU：最大传输单元。      |
+
+5. 修改完成后，点击**确定修改**，完成端口信息的修改。

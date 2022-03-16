@@ -13,9 +13,9 @@ weight: 50
 
 一个序列号对应一台光盒 CPE 设备。
 
-## 软件 vCPE License
+## 软件 VCPE License
 
-若需要启用高可用，可将一个软件 vCPE License 可绑定在两个设备上，分别作为主设备和备用设备。
+若需要启用高可用，可将一个软件 VCPE License 可绑定在两个设备上，分别作为主设备和备用设备。
 
 
 

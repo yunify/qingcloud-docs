@@ -12,9 +12,6 @@ section1:
 section2:
   title: 用户指南
   children:
-    - title: 动态与公告
-      content: 产品相关动态
-      url: "news/product_news" 
 
     - title: 产品简介
       content: 功能特性、产品优势、应用场景等
@@ -32,8 +29,8 @@ section2:
       content: 光盒的申请和使用说明。
       url: "lightbox/10_intro/"
 
-    - title: vCPE 使用指南
-      content: vCPE 使用说明。
+    - title: VCPE 使用指南
+      content: VCPE 使用说明。
       url: "vcpe/10_vcpe_overview/"
 
     - title: 操作指南
@@ -64,10 +61,10 @@ section4:
       vice_title: 上手的第一步
       children:
       - title: 创建连接云网
-        url: "usermanual/20_cloud_network/10_create_cloud_net"
+        url: "/sd-wan/sdwan_new/qs/10_qs_2vxnet_access/#步骤1创建连接云网"
 
       - title: 创建接入点
-        url: "usermanual/30_access_point/10_create_access_point"
+        url: "/sd-wan/sdwan_new/qs/10_qs_2vxnet_access/#步骤2创建接入点"
 ---
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->

@@ -1,6 +1,6 @@
 ---
-title: "开通接入点（软件 vCPE）"
-linkTitle: "开通接入点（软件 vCPE）"
+title: "开通接入点（软件 VCPE）"
+linkTitle: "开通接入点（软件 VCPE）"
 _build:
  render: false 
 weight: 20
