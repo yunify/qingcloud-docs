@@ -75,8 +75,8 @@ section4:
         - title: 创建工作空间
           url: "prepare/create_workspace/"
 
-        - title: 新增数据源
-          url: "quickstart/add_origin_data/"
+        - title: 创建计算集群
+          url: "quickstart/create_flink_cluster/"
 
         - title: 创建作业
           url: "quickstart/create_job/"

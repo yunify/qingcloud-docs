@@ -33,7 +33,7 @@ draft: false
    > **说明**
    > 
    > - 以下 SQL 代码用于建立 flink table 与数据源之间的映射关系；本实践需要提前在 Mysql 中创建好 students 表，并且 students 表包含 id、score、name 列。
-   > - 更多相关参数请参见 [MySQL CDC](/bigdata/dataomnis/developer_sql/mysql_cdc) 和 [Elasticsearch](/bigdata/dataomnis/developer_sql/elasticsearch)。
+   > - 更多相关参数请参见 [MySQL CDC](/bigdata/dataomnis/developer_sql/connector/mysql_cdc) 和 [Elasticsearch](/bigdata/dataomnis/developer_sql/connector/elasticsearch)。
 
 
     ```sql

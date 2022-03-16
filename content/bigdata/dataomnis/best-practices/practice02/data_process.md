@@ -31,7 +31,7 @@ draft: false
 
    > **说明**
    > 
-   > 更多相关参数请参见 [Kafka](/bigdata/dataomnis/developer_sql/kafka) 和 [ClickHouse](/bigdata/dataomnis/developer_sql/clickhouse)。
+   > 更多相关参数请参见 [Kafka](/bigdata/dataomnis/developer_sql/connector/kafka) 和 [ClickHouse](/bigdata/dataomnis/developer_sql/connector/clickhouse)。
 
    ```sql
    DROP TABLE IF EXISTS input_web_record;
