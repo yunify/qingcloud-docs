@@ -41,6 +41,7 @@ draft: false
     ```
 
 6. 数据库表创建成功后，执行以下命令，写入如下三条数据。    
+
     ```sql    
     insert into students values(1,'张三',99);
     insert into students values(2,'李四',71);

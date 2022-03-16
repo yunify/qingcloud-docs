@@ -1,5 +1,5 @@
 ---
-title: "概述"
+title: "支持的上下游存储"
 description: 本小节主要介绍大数据工作台支持的 Flink 内置 Connector。 
 keywords: 大数据工作台,内置 Connector
 weight: 1

@@ -2,7 +2,7 @@
 title: "自定义函数"
 description: 本小节主要介绍自定义函数的概念、及如何创建自定义函数。 
 keywords: 大数据工作台,自定义函数,UDF,UDTF,UDAF
-weight: 10
+weight: 20
 collapsible: false
 draft: false
 ---
@@ -13,10 +13,14 @@ draft: false
 
 大数据工作台支持如下自定义函数：
 
-- 标量函数（Scalar Function，UDF）：其输入与输出是一对一的关系，即读入一行数据，写出一条输出值。例如系统内置的 SUBSTRING、REPLACE 等字符串操作函数，都属于标量函数。
-- 表函数（Table Function，UDTF）：调用一次函数输出多行或多列数据，这样可以在 JOIN 操作中作为右表。
-- 聚合函数（Aggregate Function，UDAGG）：其输入与输出是多对一的关系，即将多条输入记录聚合成一条输出值。例如系统内置的 MAX、MIN、AVG 等都属于聚合函数。
-- 表聚合函数（Table Aggregate Function）：表聚合函数的作用是将多行数据的一组值，聚合为新的多行数据（多对多）。
+- 标量函数（Scalar Function，UDF）   
+    其输入与输出是一对一的关系，即读入一行数据，写出一条输出值。例如系统内置的 SUBSTRING、REPLACE 等字符串操作函数，都属于标量函数。
+- 表函数（Table Function，UDTF）   
+    调用一次函数输出多行或多列数据，这样可以在 JOIN 操作中作为右表。
+- 聚合函数（Aggregate Function，UDAGG）   
+    其输入与输出是多对一的关系，即将多条输入记录聚合成一条输出值。例如系统内置的 MAX、MIN、AVG 等都属于聚合函数。
+- 表聚合函数（Table Aggregate Function）   
+    表聚合函数的作用是将多行数据的一组值，聚合为新的多行数据（多对多）。
 
 更多详细信息请参见 [Flink 官方文档](https://nightlies.apache.org/flink/flink-docs-release-1.12/zh/dev/table/functions/udfs.html#%E6%A0%87%E9%87%8F%E5%87%BD%E6%95%B0)。
 
