@@ -1,7 +1,7 @@
 ---
 title: "创建 etcd 集群"
 description: 本小节主要介绍如何创建 etcd 集群。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,etcd,创建集群 
+keyword: 云计算,大数据,消息队列,中间件,etcd,创建集群 
 weight: 10
 draft: false
 ---
@@ -10,7 +10,7 @@ draft: false
 
 ## 创建 etcd 集群
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 2. 在顶部菜单栏中，选择**产品与服务** > **消息队列与中间件** > **etcd 服务**。
 
 3. 点击**立即部署**，进入 etcd 服务的部署页面。
