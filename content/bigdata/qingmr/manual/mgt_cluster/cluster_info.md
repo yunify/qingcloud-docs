@@ -1,6 +1,6 @@
 ---
 title: "集群信息"
-description: 本小节主要介绍如何查看 QingCloud QingMR 集群信息。 
+description: 本小节主要介绍如何查看QingMR 集群信息。 
 keyword: QingMR 集群信息
 weight: 10
 collapsible: false

@@ -1,7 +1,7 @@
 ---
 title: "修改配置参数"
 description: 本小节主要介绍如何修改 Kafka 配置参数。 
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka 修改参数,Kafka
+keyword: 云计算,大数据,消息队列,中间件,Kafka 修改参数,Kafka
 weight: 15
 collapsible: false
 draft: false
@@ -15,12 +15,12 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 Kafka 集群，且集群状态为**活跃**。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **消息队列与中间件** > **Kafka 服务**，进入 Kafka 集群列表页面。
 3. 点击目标集群 ID，进入集群详情页面。
 4. 点击**配置参数**页签，进入集群配置参数管理页面。

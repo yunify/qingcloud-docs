@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-QingCloud ZooKeeper 基于原生 ZooKeeper版本构建，适配全新 AppCenter 框架，将开源 ZooKeeper 封装成应用，提供高可用的分布式数据管理与系统协调软件服务。
+ZooKeeper 基于原生 ZooKeeper版本构建，适配全新 AppCenter 框架，将开源 ZooKeeper 封装成应用，提供高可用的分布式数据管理与系统协调软件服务。
 
 ## ZooKeeper 3.4.14 - v2.0.0
 

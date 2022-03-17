@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: "Kafka"
-  vice_title: QingCloud Kafka 是 QingCloud 基于原生 Apache Kafka 构建的一个分布式、可分区、多副本的消息队列集群服务，具有高吞吐量、低延迟等优点，同时提供灵活的网络配置、在线伸缩、监控和告警等功能助您更好地管理集群。
+  vice_title: Kafka服务 是 基于原生 Apache Kafka 构建的一个分布式、可分区、多副本的消息队列集群服务，具有高吞吐量、低延迟等优点，同时提供灵活的网络配置、在线伸缩、监控和告警等功能助您更好地管理集群。
 
 Section2:
   title: 用户指南
