@@ -1,6 +1,6 @@
 ---
 title: "费用变更"
-description: 本小节主要介绍 QingCloud HBase 费用变更说明。 
+description: 本小节主要介绍 HBase 费用变更说明。 
 keyword: 云计算,大数据,HBase,费用变更
 weight: 20
 collapsible: false

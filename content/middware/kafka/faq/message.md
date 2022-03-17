@@ -1,7 +1,7 @@
 ---
 title: "消息问题"
 description: Kafka 收发消息常见问题。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,收发消息,常见问题
+keyword: 云计算,大数据,消息队列,中间件,Kafka,收发消息,常见问题
 weight: 30
 draft: false
 ---

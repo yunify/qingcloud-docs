@@ -1,6 +1,6 @@
 ---
 title: "数据迁移"
-description: 本小节主要介绍如何迁移 QingCloud HBase 数据。 
+description: 本小节主要介绍如何迁移 HBase 数据。 
 keyword: hbase 数据迁移
 weight: 05
 collapsible: false

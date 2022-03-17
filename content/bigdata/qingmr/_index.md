@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: QingMR
-  vice_title: QingMR 是青云QingCloud 新一代云端大数据服务，能够提供计算、存储、分析、查询一站式全方位的大数据服务。
+  vice_title: QingMR 是新一代云端大数据服务，能够提供计算、存储、分析、查询一站式全方位的大数据服务。
 
 Section2:
   title: 用户指南

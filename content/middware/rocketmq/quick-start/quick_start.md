@@ -1,7 +1,7 @@
 ---
 title: "创建 RocketMQ 集群"
 description: 本小节主要介绍如何创建 RocketMQ 集群。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,RocketMQ,rocketMQ,创建集群,快速入门
+keyword: 云计算,大数据,消息队列,中间件,RocketMQ,rocketMQ,创建集群,快速入门
 weight: 10
 draft: false
 ---
@@ -39,4 +39,4 @@ draft: false
 
 ## 第四步：用户协议
 
-阅读并同意青云 AppCenter 用户协议之后，点击**提交**，即可开始部署应用。
+阅读并同意 AppCenter 用户协议之后，点击**提交**，即可开始部署应用。

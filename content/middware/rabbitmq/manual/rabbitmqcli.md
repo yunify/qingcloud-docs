@@ -1,7 +1,7 @@
 ---
 title: "rabbitmqcli 使用示例"
 description: 本小节主要介绍如何使用 rabbitmqcli。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,RabbitMQ,rabbitmq,消息队列服务,消息中间件,rabbitmqcli
+keyword: 云计算,大数据,消息队列,中间件,RabbitMQ,rabbitmq,消息队列服务,消息中间件,rabbitmqcli
 weight: 16
 draft: false
 ---

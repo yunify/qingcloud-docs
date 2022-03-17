@@ -1,7 +1,7 @@
 ---
 title: "集群使用"
 description: 本小节主要介绍 什么是 RocketMQ 集群的使用，包括扩容集群、删除节点等。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,RocketMQ,rocketMQ,扩容集群,删除节点
+keyword: 云计算,大数据,消息队列,中间件,RocketMQ,rocketMQ,扩容集群,删除节点
 weight: 8
 draft: false
 ---
