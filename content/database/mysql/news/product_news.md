@@ -65,12 +65,12 @@ product:
 
     - time: 2019-07-26
       title: MySQL Plus 全新形态上线
-      content: 青云QingCloud MySQL Plus 为了提高用户使用体验和提供更多的优惠，发布了全新的版本，支持基础版、高可用版、金融版三个产品系列；同时为提高使用性能，新增读写分离和只读实例节点。
+      content: MySQL Plus 为了提高用户使用体验和提供更多的优惠，发布了全新的版本，支持基础版、高可用版、金融版三个产品系列；同时为提高使用性能，新增读写分离和只读实例节点。
       url: ../../intro/list/
 
     - time: 2017-06-29
       title: MySQL Plus 上线 AppCenter
-      content: 青云QingCloud MySQL Plus 通过 AppCenter 管理平台以独立应用方式提供服务。<br>MySQL Plus 是一款具备金融级强一致性、主从秒级切换，集 InnoDB+TokuDB 双存储引擎支持的增强型 MySQL 集群应用。作为 QingCloud 关系型数据库 RDB 的升级版本，QingCloud MySQL Plus 主要面向对数据一致性和高可用性有着强烈需求的高端企业级用户。
+      content: MySQL Plus 通过 AppCenter 管理平台以独立应用方式提供服务。<br>MySQL Plus 是一款具备金融级强一致性、主从秒级切换，集 InnoDB+TokuDB 双存储引擎支持的增强型 MySQL 集群应用。作为关系型数据库 RDB 的升级版本，MySQL Plus 主要面向对数据一致性和高可用性有着强烈需求的高端企业级用户。
       url: ../../intro/introduction/
 
 ---

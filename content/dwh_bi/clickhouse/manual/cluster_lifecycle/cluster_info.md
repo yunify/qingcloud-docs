@@ -1,7 +1,7 @@
 ---
 title: "集群概述"
 description: 本小节主要介绍 ClickHouse 集群基本信息。 
-keyword: ClickHouse 集群信息；
+keyword: 集群信息,数据仓库,ClickHouse
 weight: 05
 collapsible: false
 draft: false

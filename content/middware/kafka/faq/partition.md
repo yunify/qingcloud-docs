@@ -1,7 +1,7 @@
 ---
 title: "分区问题"
 description: Kafka 分区问题。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,分区问题,常见问题
+keyword: 云计算,大数据,消息队列,中间件,Kafka,分区问题,常见问题
 weight: 20
 draft: true
 ---

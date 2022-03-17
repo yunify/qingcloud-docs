@@ -1,7 +1,7 @@
 ---
 title: "使用默认接入点收发消息"
 description: 以 Java SDK 为例介绍如何使用 SDK 接入 Kafka 并收发消息。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,开发指南,SDK,默认接入点,demo
+keyword: 云计算,大数据,消息队列,中间件,Kafka,开发指南,SDK,默认接入点,demo
 weight: 10
 draft: false
 ---

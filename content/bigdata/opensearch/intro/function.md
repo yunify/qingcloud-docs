@@ -1,7 +1,7 @@
 ---
 title: "功能特性"
 description: 本小节主要介绍 OpenSearch 简要主要功能特性。 
-keyword: OpenSearch 功能特性, 
+keyword: 功能特性,OpenSearch,搜索引擎,大数据
 weight: 15
 collapsible: false
 draft: false

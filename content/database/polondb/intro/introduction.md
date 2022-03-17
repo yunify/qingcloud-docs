@@ -1,6 +1,6 @@
 ---
 title: "什么是 PolonDB"
-description: 本小节主要介绍 QingCloud PolonDB 简要介绍。 
+description: 本小节主要介绍 PolonDB 简要介绍。 
 keyword: polondb 架构图,产品简介
 weight: 10
 collapsible: false
@@ -9,7 +9,7 @@ draft: false
 
 
 
-QingCloud PolonDB 基于 PostgreSQL 和 Citus 构建，是一款能够具备无限水平扩展能力，性能随容量扩容而线性提升，能够按需扩展集群，可以支撑 PB 级别的  HTAP 分布式数据库。
+PolonDB 基于 PostgreSQL 和 Citus 构建，是一款能够具备无限水平扩展能力，性能随容量扩容而线性提升，能够按需扩展集群，可以支撑 PB 级别的  HTAP 分布式数据库。
 
 <!--基于 Citus 构建，同时支持在线事务处理（OLTP）及在线分析处理（OLAP）场景。完美适配海量数据实时分析、海量事务处理等应用场景，有着众多独特优势。-->
 

@@ -1,7 +1,7 @@
 ---
 title: "监控指标"
 description: 本小节主要介绍 ClickHouse 主要支持哪些监控指标。 
-keyword: ClickHouse 监控指标
+keyword: 监控指标,数据仓库,ClickHouse
 weight: 10
 collapsible: false
 draft: false

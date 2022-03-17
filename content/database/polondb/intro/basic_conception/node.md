@@ -1,6 +1,6 @@
 ---
 title: "节点"
-description: 本小节主要介绍 QingCloud PolonDB 的节点类型。 
+description: 本小节主要介绍 PolonDB 的节点类型。 
 keyword: polondb 节点类型,协调器节点,高性能节点,高性能只读节点
 weight: 4
 collapsible: false

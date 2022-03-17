@@ -227,9 +227,17 @@ keyword: QingCloud，DNS服务，DNS云解析，DNS API，Record API，解析线
 - 响应数据体：
 
   ```
-  
+   "record":
+   				"[
+   						{
+   								"weight": 0, 
+   								"values": [
+   									{"value": "1.1.1.4", "status": 1}
+   									]
+   						}
+   					]"
   ```
-
+  
   
 
 ## DeleteRecord

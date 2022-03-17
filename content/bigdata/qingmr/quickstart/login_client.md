@@ -1,7 +1,7 @@
 ---
 title: "登录 Client"
 description: 本小节主要介绍如何登录 Client。 
-keyword: 云计算,大数据,青云,QingCloud,QingMR,QingMR 实例,QingMR Client,快速入门
+keyword: 云计算,大数据,QingMR,QingMR 实例,QingMR Client,快速入门
 weight: 12
 collapsible: false
 draft: false

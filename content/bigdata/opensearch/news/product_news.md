@@ -1,7 +1,7 @@
 ---
 title: "产品动态"
 description: 本小节主要介绍 OpenSearch 产品动态
-keyword: 大数据，OpenSearch，产品动态
+keyword: 产品动态,OpenSearch,搜索引擎,大数据
 weight: 05
 collapsible: false
 draft: false

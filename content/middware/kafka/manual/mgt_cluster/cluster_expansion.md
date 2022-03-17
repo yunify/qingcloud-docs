@@ -1,7 +1,7 @@
 ---
 title: "集群扩容"
 description: 在集群性能不足时，可通过集群扩容功能来提高集群配置。Kafka 集群支持在线调整 CPU、内存、磁盘空间大小。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,集群扩容
+keyword: 云计算,大数据,消息队列,中间件,Kafka,集群扩容
 weight: 20
 draft: false
 ---
