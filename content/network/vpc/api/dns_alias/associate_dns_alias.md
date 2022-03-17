@@ -1,7 +1,7 @@
 ---
 title: "AssociateDNSAlias"
 description: 绑定内网域名别名到资源
-keyword: QingCloud, 青云, 云计算, API, 内网域名别名
+keyword: API, 内网域名别名
 weight: 10
 draft: false
 ---

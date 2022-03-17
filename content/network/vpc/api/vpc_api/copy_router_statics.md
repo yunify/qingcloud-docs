@@ -1,7 +1,7 @@
 ---
 title: "CopyRouterStatics"
 description: 把源 VPC 网络的路由规则复制给目的 VPC 网络。
-keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络, 路由规则
+keyword: VPC,  VPC 网络, 路由规则
 weight: 23
 draft: false
 ---

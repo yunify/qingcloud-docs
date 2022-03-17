@@ -1,6 +1,6 @@
 ---
 title: "在私有网络中创建资源"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 私有网络
+keyword: VPC, VPC 网络, 私有网络
 description: 介绍如何在私有网络中创建云服务器、共享存储等资源。
 draft: false
 weight: 20
@@ -16,7 +16,7 @@ weight: 20
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 

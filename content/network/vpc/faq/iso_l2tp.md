@@ -1,7 +1,7 @@
 ---
 title: "IOS 客户端如何连接 L2TP-IPsecVPN"
 description: 介绍 IOS 客户端如何连接 L2TP-IPsecVPN
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, iOS, L2TP-IPsecVPN
+keyword: VPC, VPC 网络, iOS, L2TP-IPsecVPN
 weight: 50
 draft: false
 ---

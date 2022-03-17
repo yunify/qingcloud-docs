@@ -1,7 +1,7 @@
 ---
 
 title: "VPC 图形化操作"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 私有网络, 图形化
+keyword: VPC, VPC 网络, 私有网络, 图形化
 description: 介绍 VPC 网络支持的图形化管理功能。
 draft: false
 weight: 30
@@ -13,7 +13,7 @@ weight: 30
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 3. 点击需要查看或操作的 VPC 网络，默认进入到该 VPC 的私有网络管理页面。
 4. 点击**图形化**页签，进入图形化管理页面。

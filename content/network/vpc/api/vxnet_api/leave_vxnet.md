@@ -1,7 +1,7 @@
 ---
 title: "LeaveVxnet"
 description: 将云服务器从私有网络中断开。
-keyword: QingCloud, 青云, 云计算, VPC, 私有网络
+keyword: VPC, 私有网络
 weight: 4
 draft: false
 ---

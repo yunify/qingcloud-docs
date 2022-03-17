@@ -1,6 +1,6 @@
 ---
 title: "使用虚拟 IP"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 虚拟 IP
+keyword: VPC, VPC 网络, 虚拟 IP
 description: 介绍如何使用虚拟 IP 搭建高可用主备集群。
 draft: false
 weight: 50
@@ -10,7 +10,7 @@ weight: 50
 
 ## 创建虚拟 IP
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 

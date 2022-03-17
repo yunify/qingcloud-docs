@@ -1,7 +1,7 @@
 ---
 title: "公共参数"
 description: api 请求公共参数。 
-keyword: QingCloud, 青云, 云计算, VPC, API 调用, 请求参数, 共参参数
+keyword: VPC, API 调用, 请求参数, 共参参数
 draft: false
 weight: 20
 ---

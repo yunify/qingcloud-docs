@@ -1,7 +1,7 @@
 ---
 title: "GetDNSLabel"
 description: 获取内网域名标记和域名名称。
-keyword: QingCloud, 青云, 云计算, API, 内网域名别名
+keyword: API, 内网域名别名
 weight: 1
 draft: false
 ---

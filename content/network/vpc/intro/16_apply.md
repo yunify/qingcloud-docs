@@ -1,7 +1,7 @@
 ---
 title: "应用场景"
-description: 介绍青云 VPC 网络的应用场景。
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 私有网络
+description: 介绍 VPC 网络的应用场景。
+keyword: VPC, VPC 网络, 私有网络
 draft: false
 weight: 16
 ---

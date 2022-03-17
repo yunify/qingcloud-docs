@@ -2,7 +2,7 @@
 title: "创建 VPC 网络"
 linkTitle: "创建 VPC 网络"
 description: 介绍如何创建 VPC 网络。
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络
+keyword: VPC, VPC 网络
 draft: false
 weight: 10
 ---
@@ -15,7 +15,7 @@ weight: 10
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 

@@ -1,6 +1,6 @@
 ---
 title: "虚拟 IP 概述"
-keyword: QingCloud, 青云, 云计算, VPC, 云服务器, 虚拟IP
+keyword: VPC, 云服务器, 虚拟IP
 description: 路由表包括默认路由表及自定义路由表。
 draft: false
 weight: 1

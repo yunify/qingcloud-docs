@@ -1,7 +1,7 @@
 ---
 title: "产品优势"
-description: 介绍青云 VPC 网络的优势。
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 私有网络
+description: 介绍 VPC 网络的优势。
+keyword: VPC, VPC 网络, 私有网络
 draft: false
 weight: 15
 ---
@@ -23,7 +23,7 @@ VPC 网络采用分布式路由器和虚拟二层链路技术，采用智能网�
 
 ## 轻松构建混合云
 
-- VPC 网络内网互通，通过高速通道可以实现不同区域、不同用户的 VPC 内网互联，满足用户网络在青云上的互联。
+- VPC 网络内网互通，通过高速通道可以实现不同区域、不同用户的 VPC 内网互联，满足用户网络在云平台上的互联。
 - 通过专线/VPN/GRE/IPSec 等连接方式实现云上 VPC 与传统 IDC 的互联，轻松构建混合云。
 
 ## 简单易用

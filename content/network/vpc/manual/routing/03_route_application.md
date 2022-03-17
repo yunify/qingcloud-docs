@@ -1,6 +1,6 @@
 ---
 title: "路由表应用示例"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 路由表
+keyword: VPC, VPC 网络, 路由表
 description: 私有网络路由表及负载均衡器路由表应用示例。
 draft: false
 weight: 3

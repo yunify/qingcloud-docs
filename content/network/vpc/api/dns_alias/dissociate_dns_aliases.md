@@ -1,7 +1,7 @@
 ---
 title: "DissociateDNSAliases"
 description: 从资源上解绑一个或多个内网域名。
-keyword: QingCloud, 青云, 云计算, API, 内网域名别名
+keyword: API, 内网域名别名
 weight: 15
 draft: false
 ---

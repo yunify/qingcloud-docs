@@ -1,7 +1,7 @@
 ---
 title: "DescribeDNSAliases"
 description: 取内网域名别名列表。
-keyword: QingCloud, 青云, 云计算, API, 内网域名别名
+keyword: API, 内网域名别名
 weight: 5
 draft: false
 ---

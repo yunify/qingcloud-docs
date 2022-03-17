@@ -1,12 +1,12 @@
 ---
 title: "VPN 服务"
-keyword: QingCloud, 青云, 云计算, VPC, VPN, OpenVPN, PPTP, L2TP
+keyword: VPC, VPN, OpenVPN, PPTP, L2TP
 description: VPN 使用指导
 draft: false
 weight: 40
 ---
 
-目前青云支持 OpenVPN / PPTP / L2TP-IPsec 协议。
+目前云平台支持 OpenVPN / PPTP / L2TP-IPsec 协议。
 
 ## 操作场景
 
@@ -24,7 +24,7 @@ weight: 40
 
 ### 启动 OpenVPN 服务
 
-1. 登录 QingCloud 管理控制台，选择**产品与服务** > **网络服务** > **VPC 网络**，进入 VPC 列表页面。
+1. 登录管理控制台，选择**产品与服务** > **网络服务** > **VPC 网络**，进入 VPC 列表页面。
 
 2. 找到您的 VPC 网络，点击 VPC 网络名称，进入详情页。
 
@@ -215,7 +215,7 @@ password.txt 文件样例如下，用户名和密码分为两行存放。
 
 ### 启动 PPTP 服务
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **网络服务** > **VPC 网络**，进入 VPC 列表页面。
+1. 登录管理控制台，选择**产品与服务** > **网络服务** > **VPC 网络**，进入 VPC 列表页面。
 
 2. 找到您的 VPC 网络，点击 VPC 网络名称，进入详情页。
 3. 切换至**管理配置**页签，然后在左侧点击 **VPN 服务**。
@@ -391,7 +391,7 @@ password.txt 文件样例如下，用户名和密码分为两行存放。
 
 ### 启用 L2TP 服务
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **网络服务** > **VPC 网络**，进入 VPC 列表页面。
+1. 登录管理控制台，选择**产品与服务** > **网络服务** > **VPC 网络**，进入 VPC 列表页面。
 
 2. 找到您的 VPC 网络，点击 VPC 网络名称，进入详情页。
 

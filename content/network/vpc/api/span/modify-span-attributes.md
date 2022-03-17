@@ -1,7 +1,7 @@
 ---
 title: "ModifySpanAttributes"
 description: 修改SPAN属性。
-keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
+keyword: SPAN, 网络流量镜像
 weight: 5
 draft: false
 ---
