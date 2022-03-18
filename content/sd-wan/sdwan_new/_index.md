@@ -27,15 +27,15 @@ section2:
 
     - title: 光盒使用指南
       content: 光盒的申请和使用说明。
-      url: "lightbox/10_intro/"
+      url: "/sd-wan/sdwan_new/open_access_point/lightbox/10_lightbox_overview/"
 
     - title: VCPE 使用指南
       content: VCPE 使用说明。
-      url: "vcpe/10_vcpe_overview/"
+      url: "/sd-wan/sdwan_new/open_access_point/vcpe/10_vcpe_overview/"
 
     - title: 操作指南
       content: SD-WAN 详细功能说明及使用方法
-      url: "usermanual/20_cloud_network/10_create_cloud_net/"
+      url: "/sd-wan/sdwan_new/usermanual/20_cloud_network/20_view_cloud_net/"
 
     - title: 常见问题
       content: 使用 SD-WAN 时遇到的常见问题
