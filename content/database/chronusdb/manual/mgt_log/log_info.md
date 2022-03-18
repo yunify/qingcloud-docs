@@ -1,7 +1,7 @@
 ---
 title: "日志概述"
 description: 本小节主要介绍 ChronusDB 日志基本信息。 
-keyword: ChronusDB 日志信息；
+keyword: 日志信息,时序数据库,ChronusDB,数据库 
 weight: 05
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "参数介绍"
 description: 本小节主要介绍 Kafka 常用配置项。 
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka 常用配置项,Kafka,参数含义
+keyword: 云计算,大数据,消息队列,中间件,Kafka 常用配置项,Kafka,参数含义
 weight: 10
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "关闭日志服务"
 description: 本小节主要介绍如何关闭 ChronusDB 日志服务。 
-keyword: ChronusDB关闭日志服务
+keyword: 关闭日志服务,时序数据库,ChronusDB,数据库 
 weight: 30
 collapsible: false
 draft: false
@@ -19,7 +19,7 @@ draft: false
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据库与缓存** > **时序数据库 ChronusDB**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**基本属性**模块，点击集群操作下拉菜单。

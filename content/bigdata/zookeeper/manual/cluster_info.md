@@ -1,6 +1,6 @@
 ---
 title: "集群信息"
-description: 本小节主要介绍如何查看 QingCloud ZooKeeper 集群信息。 
+description: 本小节主要介绍如何查看 ZooKeeper 集群信息。 
 keyword: ZooKeeper 集群信息
 weight: 10
 collapsible: false
@@ -15,11 +15,11 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群查看权限。
+- 已获取管理控制台登录账号和密码，且已获取集群查看权限。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **大数据服务** > **ZooKeeper 服务**，进入集群管理页面。
 
    可查看当前区域集群列表，以及集群基本信息。

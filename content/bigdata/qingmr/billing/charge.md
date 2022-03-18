@@ -1,7 +1,7 @@
 ---
 title: "到期与欠费"
-description: 本小节主要介绍 QingCloud QingMR 到期与欠费说明。 
-keyword: 云计算,大数据,青云,QingCloud,QingMR,到期,欠费 
+description: 本小节主要介绍 QingMR 到期与欠费说明。 
+keyword: 云计算,大数据,QingMR,到期,欠费 
 weight: 30
 collapsible: false
 draft: false
@@ -27,12 +27,12 @@ draft: false
 ## 费用充值
 
 账号余额不足时，请及时充值，以保障资源的正常使用。    
-青云账号支持多种充值途径：支付宝、网上银行、微信支付、线下银行转账。可在[充值页面](https://console.qingcloud.com/finance/wallet/)选择。    
+账号支持多种充值途径：支付宝、网上银行、微信支付、线下银行转账。可在[充值页面](https://console.qingcloud.com/finance/wallet/)选择。    
 如果需要发票，请到[发票管理](https://console.qingcloud.com/finance/invoices/)提出申请。
 
 ## 余额不足提醒
 
-青云系统会定期检查用户余额和当时名下计费资源的消费预估，如果检查发现余额即将不足，会提前给用户发送通知。
+系统会定期检查用户余额和当时名下计费资源的消费预估，如果检查发现余额即将不足，会提前给用户发送通知。
 
 通知策略是：分别在提前 30，15，7，3，1 天时发送提醒。 
 

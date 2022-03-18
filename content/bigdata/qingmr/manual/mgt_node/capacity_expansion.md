@@ -1,7 +1,7 @@
 ---
 title: "扩容节点"
 description: 本小节主要介绍如何扩容 QingMR 集群。 
-keyword: 云计算,大数据,青云,QingCloud,QingMR,QingMR 扩容节点,QingMR 在线伸缩
+keyword: 云计算,大数据,QingMR,QingMR 扩容节点,QingMR 在线伸缩
 weight: 05
 collapsible: false
 draft: false
@@ -16,12 +16,12 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 QingMR 集群，且集群状态为**活跃**。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **大数据服务** > **大数据引擎 QingMR**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**基本属性**模块，点击集群操作下拉菜单。

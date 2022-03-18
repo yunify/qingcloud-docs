@@ -9,7 +9,7 @@ draft: false
 
 
 
-Radon 是 QingCloud 自研内核，具备以下 SQL 语法形式和使用规范。
+Radon 是一款自研 SQL 内核，具备以下 SQL 语法形式和使用规范。
 
 ## RADON ATTACH
 

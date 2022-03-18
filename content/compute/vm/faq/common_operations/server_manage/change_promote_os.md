@@ -1,6 +1,5 @@
 ---
 title: "更换云服务器操作系统"
-date: 2021-03-07T10:08:56+09:00
 description: 如何更换云服务器操作系统
 draft: false
 weight: 39
@@ -9,70 +8,46 @@ keyword: 云计算, 青云, QingCloud, 云服务器，操作系统
 
 ## 问题背景
 
-用户购买云服务器后，发现操作系统并不是自己所需要的，目前无法直接更换操作系统。需要删除当前云服务器，并创建需要的操作系统云服务器，如果云服务器中有重要数据，需要自行拷贝下，谢谢。
+用户购买云服务器后，发现操作系统并不是自己所需要的，您可以将云服务器关机，执行更换系统操作。
+
+1. 更换系统后原系统盘的数据将被清除，如果您仍需要这部分数据，请确保已通过备份或镜像的方式做好备份。
+2. 如果您不需要相关备份数据，请去备份管理中删除！
+3. 更换系统后原数据盘的数据不会被清除，但需要手动挂载才能使用。
+
+## 前提条件
+
+- 已获取管理控制台的账号和密码。
+- 已创建云服务器。
+- 云服务器状态处于“已关机”。
+
+## 约束限制
+
+当云服务器的规格为“网络增强型”，该云服务器的镜像仅支持更换为支持 RDMA 网卡驱动的系统镜像。
+
+因此，当网络增强型云服务器更换系统时，界面仅会展示支持此规格网卡驱动的系统镜像。
 
 ## 操作步骤
 
-如果云服务器是预留合约云服务器，可以按照下面的步骤操作下：
+1. 登录管理控制台。
 
-### Windows云服务器，删除后创建Linux云服务器
+2. 选择**产品与服务** > **计算** > **云服务器**，进入**云服务器列表**页面。
 
-1. Windows云服务器：i-jsndqhie；云服务器合约：rc-E5aHQ75r
+   ![](/compute/vm/_images/vm_server_list.png)
 
-   ![change-promote-os-1](/compute/vm/_images/change-promote-os-1.png)
+3. 点击鼠标右键，弹出菜单窗口。
 
-2. 将云服务器与合约解绑
+   <img src="/compute/vm/_images/vm_modify_sys.png" style="zoom:50%;" />
 
-   ![change-promote-os-2](/compute/vm/_images/change-promote-os-2.png)
+4. 点击**更换系统**，弹出更换系统提示信息。
 
-3. 升级Windows云服务器合约为Linux云服务器合约，会退还差价
+   <img src="/compute/vm/_images/vm_modify_sys_prompt.png" style="zoom:50%;" />
 
-   ![change-promote-os-3](/compute/vm/_images/change-promote-os-3.png)
+5. 确保已知晓提示信息后，点击确定，弹出**更换操作系统**窗口。
 
-   ![change-promote-os-4](/compute/vm/_images/change-promote-os-4.png)
+   <img src="/compute/vm/_images/vm_modify_sys_win.png" style="zoom:50%;" />
 
-   ![change-promote-os-5](/compute/vm/_images/change-promote-os-5.png)
+6. 根据需要选择需要更换的操作系统。
 
-   ![change-promote-os-19](/compute/vm/_images/change-promote-os-19.png)
+7. 点击**立即更换**，进入云服务器列表页面。
 
-4. 创建Linux云服务器
-
-   ![change-promote-os-6](/compute/vm/_images/change-promote-os-6.png)
-
-   ![change-promote-os-7](/compute/vm/_images/change-promote-os-7.png)
-
-   ![change-promote-os-8](/compute/vm/_images/change-promote-os-8.png)
-
-### Linux云服务器，删除后创建Windows云服务器
-
-1. Linux云服务器：i-ilqtvuh2；云服务器合约：rc-E5aHQ75r
-
-   ![change-promote-os-9](/compute/vm/_images/change-promote-os-9.png)
-
-2. 将云服务器与合约解绑
-
-   ![change-promote-os-10](/compute/vm/_images/change-promote-os-10.png)
-
-3. 升级Linux云服务器合约为Windows云服务器合约
-
-   注意：Linux云服务器合约升级为Windows云服务器合约需要补差价
-
-   ![change-promote-os-11](/compute/vm/_images/change-promote-os-11.png)
-
-   ![change-promote-os-12](/compute/vm/_images/change-promote-os-12.png)
-
-   ![change-promote-os-13](/compute/vm/_images/change-promote-os-13.png)
-
-   ![change-promote-os-14](/compute/vm/_images/change-promote-os-14.png)
-
-   ![change-promote-os-15](/compute/vm/_images/change-promote-os-15.png)
-
-4. 创建Windows云服务器
-
-   ![change-promote-os-16](/compute/vm/_images/change-promote-os-16.png)
-
-   ![change-promote-os-17](/compute/vm/_images/change-promote-os-17.png)
-
-   ![change-promote-os-18](/compute/vm/_images/change-promote-os-18.png)
-
-   注意：也可以通过计算-云服务器界面创建与合约配置完全匹配的云服务器，然后手动绑定；直接在合约界面创建云服务器会自动绑定。
+   云服务器状态处于重置中，重置完成后，服务器恢复为更换系统前的状态。

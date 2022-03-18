@@ -1,6 +1,6 @@
 ---
 title: "退款说明"
-description: 本小节主要介绍 QingCloud HBase 退款说明。 
+description: 本小节主要介绍 HBase 退款说明。 
 keyword: 云计算,大数据,HBase,退款,退订
 weight: 40
 collapsible: false

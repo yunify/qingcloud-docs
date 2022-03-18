@@ -1,7 +1,7 @@
 ---
 title: "Kafka Manager 升级说明"
 description: Kafka 集群由老版本升级时，Kafka Manager 的管理界面数据可能没有及时更新。这是由于 Kafka 实际版本已经更新，而 Zookeeper 中的注册数据未刷新，这不影响正常使用。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,升级,Kafka Manager
+keyword: 云计算,大数据,消息队列,中间件,Kafka,升级,Kafka Manager
 weight: 40
 draft: false
 ---

@@ -1,17 +1,19 @@
 ---
-title: "访问 OpenSearch Dashboards"
+title: "访问 OpenSearch（Dashboards 方式）"
 description: 本小节主要介绍如何访问 Dashboard。 
-keyword: OpenSearch 可视化工具,访问 Dashboard，可视化平台
+keyword: 搜索分析,可视化工具,访问 Dashboard，可视化平台,OpenSearch,搜索引擎,大数据
 weight: 20
 collapsible: false
 draft: false
 ---
 
+在通过 OpenSearch 实例进行业务查询前，您需要先访问实例。
+
 Dashboard 是 OpenSearch 的可视化工具，提供面向用户的 OpenSearch 插件管理服务，包括安全性、警报、索引状态管理、 SQL 管理等插件。
 
 更多 Dashboard 使用和功能介绍，请参见 [OpenSearch Dashboards](https://opensearch.org/docs/latest/dashboards/index/)。
 
-本小节主要介绍如何访问 OpenSearch Dashboards。
+本小节主要介绍如何通过 Dashboards 访问 OpenSearch。
 
 ## 前提条件
 

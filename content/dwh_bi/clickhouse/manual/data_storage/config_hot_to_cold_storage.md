@@ -1,7 +1,7 @@
 ---
 title: "配置冷热存储策略"
 description: 本小节主要介绍如何配置冷热存储策略。 
-keyword: ClickHouse TTL 存储策略，TTL，冷热存储策略
+keyword: TTL 存储策略,TTL,冷热存储策略,数据仓库,ClickHouse
 weight: 20
 collapsible: false
 draft: false
