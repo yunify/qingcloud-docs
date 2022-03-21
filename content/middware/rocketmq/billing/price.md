@@ -1,7 +1,7 @@
 ---
 title: "计费说明"
 description: 本小节主要介绍 RocketMQ 的计费说明。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,价格,计费,费用,RocketMQ,rocketMQ,
+keyword: 云计算,大数据,消息队列,中间件,价格,计费,费用,RocketMQ,rocketMQ,
 weight: 10
 draft: false
 ---
@@ -24,6 +24,3 @@ RocketMQ创建页面上的**费用预览**计费仅包括集群基础资源（CP
 | SSD企业级 | IOPS范围参考：2000 – 30000；IO吞吐范围参考：128MB/s - 320MB/s | 节点类型为企业型e2时默认采用此类型磁盘 |
 
 
-## 价格计算
-
-可以通过 [价格计算器](https://www.qingcloud.com/pricing#/Kafka) 获取价格详情。

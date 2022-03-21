@@ -1,7 +1,7 @@
 ---
 title: "步骤三：生产消费消息"
 description: 在命令行模式下连接 Kafka，并通过 Kafka 生产消费消息。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,生产消息,消费消息,快速入门
+keyword: 云计算,大数据,消息队列,中间件,Kafka,生产消息,消费消息,快速入门
 weight: 30
 draft: false
 ---

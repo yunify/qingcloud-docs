@@ -1,7 +1,7 @@
 ---
 title: "API 概览"
 description: 本小节主要介绍 VPC 网络所提供的 API。 
-keyword: QingCloud, 青云, 云计算, VPC, API 概览
+keyword: VPC, API 概览
 draft: false
 weight: 06
 ---
@@ -73,3 +73,11 @@ VPC 网络提供以下 API 接口供您使用。
 | [UpdateSpan](../span/update-span/)                      | 修改 SPAN 属性后，应用变更到所有云服务器。           |
 | [DeleteSpans](../span/delete_spans/)                    | 删除一个或多个 SPAN。                                |
 
+## 内网域名别名
+
+| API                                                          | 说明                         |
+| :----------------------------------------------------------- | :--------------------------- |
+| [GetDNSLabel](../dns_alias/get_dns_label/)                   | 获取内网域名标记及域名名称。 |
+| [DescribeDNSAliases](../dns_alias/describe_dns_aliases/)     | 获取内网域名别名列表。       |
+| [AssociateDNSAlias](../dns_alias/associate_dns_alias/)       | 绑定内网域名别名到资源。     |
+| [DissociateDNSAliases](../dns_alias/dissociate_dns_aliases/) | 从资源上解绑内网域名。       |

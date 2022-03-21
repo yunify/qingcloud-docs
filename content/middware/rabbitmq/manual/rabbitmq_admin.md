@@ -1,7 +1,7 @@
 ---
 title: "rabbitmqadmin 使用示例"
 description: 本小节主要介绍如何使用 rabbitmqadmin。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,QingCloud,RabbitMQ,rabbitmq,消息队列服务,消息中间件,操作指南,rabbitmqadmin
+keyword: 云计算,大数据,消息队列,中间件,RabbitMQ,rabbitmq,消息队列服务,消息中间件,操作指南,rabbitmqadmin
 weight: 20
 draft: false
 ---

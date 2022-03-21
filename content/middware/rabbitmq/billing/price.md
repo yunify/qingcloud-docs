@@ -1,7 +1,7 @@
 ---
 title: "计费说明"
 description: 本小节主要介绍 RabbitMQ 的计费说明。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,价格,计费,费用,RabbitMQ,rabbitmq,消息队列服务,消息中间件
+keyword: 云计算,大数据,消息队列,中间件,价格,计费,费用,RabbitMQ,rabbitmq,消息队列服务,消息中间件
 weight: 10
 draft: false
 ---

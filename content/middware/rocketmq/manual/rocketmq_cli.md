@@ -1,7 +1,7 @@
 ---
 title: "RocketMQ CLI命令示例"
 description: 本小节主要介绍如何使用RocketMQ CLI命令。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,RocketMQ,rocketMQ,CLI,topic
+keyword: 云计算,大数据,消息队列,中间件,RocketMQ,rocketMQ,CLI,topic
 weight: 16
 draft: false
 ---

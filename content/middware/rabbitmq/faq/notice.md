@@ -1,7 +1,7 @@
 ---
 title: "消息数据如何持久化"
 description: RabbitMQ 支持消息的持久化，也就是数据写在磁盘上，为了数据安全考虑，大多数用户可能都会选择持久化。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,常见问题,消息持久化,RabbitMQ,rabbitmq,消息队列服务,消息中间件
+keyword: 云计算,大数据,消息队列,中间件,常见问题,消息持久化,RabbitMQ,rabbitmq,消息队列服务,消息中间件
 weight: 27
 draft: false
 ---

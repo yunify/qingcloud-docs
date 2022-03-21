@@ -1,7 +1,7 @@
 ---
 title: "提交 Flink job"
 description: 本小节主要介绍如何快速使用Flink组件。 
-keyword: 云计算,大数据,青云,QingCloud,QingMR,QingMR 实例,Flink组件,Flink作业,快速入门,Flink job
+keyword: 云计算,大数据,QingMR,QingMR 实例,Flink组件,Flink作业,快速入门,Flink job
 weight: 30
 collapsible: false
 draft: false
@@ -11,7 +11,7 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 QingMR 集群，且集群状态为**活跃**。
 - 已打通集群网络，使集群云服务器能面向互联网提供服务。例如使用端口转发或 VPN 等方式打通网络，详细操作请参见[访问组件 Web 页面](../../manual/access_method)。
 

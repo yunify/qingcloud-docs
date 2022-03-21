@@ -1,7 +1,7 @@
 ---
 title: "CreateRouteTable"
 description: 创建一个路由表。
-keyword: QingCloud, 青云, 云计算, VPC, 路由表
+keyword: VPC, 路由表
 weight: 1
 draft: false
 ---

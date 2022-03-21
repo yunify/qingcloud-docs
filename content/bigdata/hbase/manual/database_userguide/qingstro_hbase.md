@@ -95,8 +95,8 @@ QingStor 对象存储为用户提供可无限扩展的通用数据存储服务�
 | 参数 | 描述 |
 | :--- | :--- |
 | zone | QingStor 对象存储可用区，目前开放了 pek3b、pek3c、pek3d、sh1a、gd2a、gd2b 区。 |
-| access_key | QingCloud API 密钥 ID，**API 密钥 **。|
-| secret_key | QingCloud API 密钥私钥。|
+| access_key | API 密钥 ID，**API 密钥 **。|
+| secret_key | API 密钥私钥。|
 
 ## 上传下载
 

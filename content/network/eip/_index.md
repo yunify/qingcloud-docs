@@ -43,7 +43,7 @@ section3:
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/development_docs/api/"
+      url: "api/api_overview/"
 
     - title: SDK 文档
       content: 如何使用 SDK 文档

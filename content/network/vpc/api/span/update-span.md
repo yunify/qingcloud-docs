@@ -1,7 +1,7 @@
 ---
 title: "UpdateSpan"
 description: SPAN 变更应用到所有云服务器。
-keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
+keyword: SPAN, 网络流量镜像
 weight: 10
 draft: false
 ---

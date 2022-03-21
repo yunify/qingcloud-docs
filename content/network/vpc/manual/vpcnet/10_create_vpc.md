@@ -2,7 +2,7 @@
 title: "创建 VPC 网络"
 linkTitle: "创建 VPC 网络"
 description: 介绍如何创建 VPC 网络。
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络
+keyword: VPC, VPC 网络
 draft: false
 weight: 10
 ---
@@ -15,7 +15,7 @@ weight: 10
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 
@@ -98,6 +98,10 @@ weight: 10
       </div></td>
   </tr>
 	<tr>
+  </tr>
+<tr>
+  	<td>关联路由表</td>
+  	<td>表示私有网络关联的路由表。默认情况下，VPC 中所有私有网络均关联默认路由表，若需更换路由表，请在创建 VPC 网络后，解绑该路由表并重新绑定。</td>
   </tr>
 	<tr>
   	<td>网络 ACL</td>

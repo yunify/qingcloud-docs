@@ -1,6 +1,6 @@
 ---
 title: "删除 VPC 网络"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络
+keyword: VPC, VPC 网络
 description: 介绍如何删除 VPC 网络。
 draft: false
 weight: 35
@@ -16,7 +16,7 @@ weight: 35
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC网络**，进入**VPC网络**页面。
 3. 找到需要删除的 VPC 网络，点击**更多操作** > **删除**。
 

@@ -1,7 +1,6 @@
 ---
 title: "流量控制策略"
 linkTitle: "流量控制策略"
-date: 2020-02-28T10:08:56+09:00
 description: 流量控制策略介绍
 draft: false
 weight: 4

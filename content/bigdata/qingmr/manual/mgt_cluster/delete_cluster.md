@@ -1,7 +1,7 @@
 ---
 title: "删除集群"
 description: 本小节主要介绍如何删除 QingMR 集群。 
-keyword: 云计算,大数据,青云,QingCloud,QingMR,删除集群
+keyword: 云计算,大数据,QingMR,删除集群
 weight: 90
 collapsible: false
 draft: false
@@ -20,11 +20,11 @@ draft: false
 
 ## 前提条件
 
-已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+已获取管理控制台登录账号和密码，且已获取集群操作权限。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **大数据服务** > **大数据引擎 QingMR**，进入集群管理页面。
 3. 勾选目标集群，点击**更多操作** > **删除**，弹出删除集群确认窗口。
 

@@ -1,7 +1,7 @@
 ---
 title: "访问组件 Web 页面"
 description: 本小节主要介绍组件 Web 站点访问方式。 
-keyword: 云计算,大数据,青云,QingCloud,QingMR,连接方式,访问方式,Web 地址
+keyword: 云计算,大数据,QingMR,连接方式,访问方式,Web 地址
 weight: 21
 collapsible: false
 draft: false
