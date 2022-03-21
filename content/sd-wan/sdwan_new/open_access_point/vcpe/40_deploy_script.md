@@ -181,7 +181,11 @@ Options:
 
    部署完成后，若回显信息如下所示，则说明 VCPE 部署成功。若部署失败，请提交工单至 SD-WAN 团队进行处理。
 
-   <img src="../../../_images/um_deploy_vcpe_success.png" style="zoom:30%;" />
+   ```
+   INFO: Install complete
+   ```
+   
+   <img src="../../../_images/um_deploy_vcpe_success.png" style="zoom:40%;" />
 
 
 
