@@ -99,23 +99,23 @@ CREATE TABLE mysql_table (
 
 ## 类型映射
 
-| MySQL 字段类型                              | Flink SQL 字段类型                     |
-| :------------------------------------------ | :--------------------------------- |
-| TINYINT                                     | TINYINT                            |
-| SMALLINT<br/>TINYINT<br/>UNSIGNED           | SMALLINT                           |
-| INT<br/>MEDIUMINT<br/>SMALLINT<br/>UNSIGNED | INT                                |
-| BIGINT<br/>INT UNSIGNED                     | BIGINT                             |
-| BIGINT<br/>UNSIGNED                         | DECIMAL(20, 0)                     |
-| BIGINT                                      | BIGINT                             |
-| FLOAT                                       | FLOAT                              |
-| DOUBLE<br/>DOUBLE PRECISION                 | DOUBLE                             |
-| NUMERIC(p, s)<br/>DECIMAL(p, s)             | DECIMAL(p, s)                      |
-| BOOLEAN<br/>TINYINT(1)                      | BOOLEAN                            |
-| DATE                                        | DATE                               |
-| TIME [(p)]                                  | TIME [(p)] [WITHOUT TIMEZONE]      |
-| DATETIME [(p)]                              | TIMESTAMP [(p)] [WITHOUT TIMEZONE] |
-| CHAR(n)<br/>VARCHAR(n)<br/>TEXT             | STRING                             |
-| BINARY<br/>VARBINARY<br/>BLOB               | BYTES                              |
+| MySQL 字段类型                          | Flink SQL 字段类型                 |
+| :-------------------------------------- | :--------------------------------- |
+| TINYINT                                 | TINYINT                            |
+| SMALLINT<br/>TINYINT UNSIGNED           | SMALLINT                           |
+| INT<br/>MEDIUMINT<br/>SMALLINT UNSIGNED | INT                                |
+| BIGINT<br/>INT UNSIGNED                 | BIGINT                             |
+| BIGINT<br/>UNSIGNED                     | DECIMAL(20, 0)                     |
+| BIGINT                                  | BIGINT                             |
+| FLOAT                                   | FLOAT                              |
+| DOUBLE<br/>DOUBLE PRECISION             | DOUBLE                             |
+| NUMERIC(p, s)<br/>DECIMAL(p, s)         | DECIMAL(p, s)                      |
+| BOOLEAN<br/>TINYINT(1)                  | BOOLEAN                            |
+| DATE                                    | DATE                               |
+| TIME [(p)]                              | TIME [(p)] [WITHOUT TIMEZONE]      |
+| DATETIME [(p)]                          | TIMESTAMP [(p)] [WITHOUT TIMEZONE] |
+| CHAR(n)<br/>VARCHAR(n)<br/>TEXT         | STRING                             |
+| BINARY<br/>VARBINARY<br/>BLOB           | BYTES                              |
 
 ## 代码示例
 
@@ -135,6 +135,17 @@ CREATE TABLE MyUserTable (
    'table-name' = 'users'
 );
  
+CREATE TABLE MY_DIM (
+    key BIGINT,
+    desc STRING,
+    rt AS PROCTIME(),
+    PRIMARY KEY (key) NOT ENFORCED
+) WITH (
+    'connector' = 'jdbc',
+    'url' = 'jdbc:mysql://localhost:3306/mydatabase',
+    'table-name' = 'user_extr'
+);
+
 -- 从另一张表 T 迁移数据到 MyUserTable 表
 INSERT INTO MyUserTable
 SELECT id, name, age, status FROM T;
@@ -143,9 +154,8 @@ SELECT id, name, age, status FROM T;
 SELECT id, name, age, status FROM MyUserTable;
  
 -- 将 MyUserTable 作为维表与其他流式数据源进行 temporal join
-SELECT * FROM myTopic
-LEFT JOIN MyUserTable FOR SYSTEM_TIME AS OF myTopic.proctime
-ON myTopic.key = MyUserTable.id;
+SELECT * FROM MyUserTable LEFT JOIN MY_DIM FOR SYSTEM_TIME AS OF MY_DIM.rt
+ON MY_DIM.key = MyUserTable.id;
 ```
 
 ### 示例二

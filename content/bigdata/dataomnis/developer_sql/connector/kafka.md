@@ -17,7 +17,7 @@ Kafka 支持同一个 Topic 多分区读写，数据可以从多个分区读入�
 
 ## 使用范围
 
-Kafka 支持作为数据源表（Source）,也可以作为目的表（Sink）。
+Kafka 支持作为数据源表（Source），也可以作为目的表（Sink）。
 
 ## DDL 定义
 
@@ -44,8 +44,8 @@ CREATE TABLE KafkaTable (
 ## 元数据字段
 
 以下元数据可以作为表定义中的元数据字段进行访问。    
-读/写 列定义元数据字段是否可读 (R) 或可写 (W) 或 可读写 (R/W) 。    
-只读列 (R) 必须声明为 VIRTUAL。
+**读/写**列定义元数据字段是否`可读（R）`或`可写（W）`或`可读写（R/W）`。   
+只读列（R）必须声明为 VIRTUAL。
 
 | Key | 数据类型 | 说明   | 读/写 |
 | :-------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ----- |
@@ -57,28 +57,28 @@ CREATE TABLE KafkaTable (
 | timestamp                                                 | TIMESTAMP(3) WITH LOCAL TIME ZONE NOT NULL                   | Kafka 消息的时间戳。                                         | R/W   |
 | timestamp-type                                            | STRING NOT NULL                                              | Kafka 消息的时间戳类型。<li>NoTimestampType：消息中没有定义时间戳。<li>CreateTime：消息产生的时间。<li>LogAppendTime：消息被添加到 Kafka Broker 的时间。 | R     |
 
-## 源表 WITH 参数
+## Kafka 源表 WITH 参数
 
-| 参数值                                  | 必填 | 默认值       | 数据类型 | 描述                                                         |
-| :-------------------------------------- | :--- | :----------- | :------- | :----------------------------------------------------------- |
-| connector                               | 是   | 无           | String   | 固定值为 `kafka`。                                           |
-| topic                                   | 否   | 无           | String   | Kafka Topic 名称。<br>多个 Topic 以（;）分隔，例如 `topic-1;topic-2`。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b><br>topic 和 topic-pattern 两个选项只能指定其中一个。</span> |
-| topic-pattern                           | 否   | 无           | String   | 匹配读取 Topic 名称的正则表达式。<br>所有匹配该正则表达式的 Topic 在作业运行时均会被订阅。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b><br/>topic 和 topic-pattern 两个选项只能指定其中一个。</span> |
-| properties.bootstrap.servers            | 是   | 无           | String   | Kafka Broker 地址列表，以（,）分隔，格式为 `host:port,host:port,host:port`。 |
-| properties.group.id                     | 是   | 无           | String   | Kafka 消费组 ID。                                            |
-| properties.*                            | 否   | 无           | String   | 后缀名称必须是 [Kafka 配置文档](https://kafka.apache.org/documentation/#configuration) 中定义的配置项。Flink 会将 properties. 前缀移除，并将剩余的键和值传递给 Kafka 客户端。<br>例如可以通过 `'properties.allow.auto.create.topics' = 'false'` 来禁用自动创建 Topic。<br>但是有一些配置不支持，例如 `key.deserializer` 和 `value.deserializer`，因为 Flink 会覆盖它们。 |
-| format                                  | 是   | 无           | String   | 在反序列化来自 Kafka 的消息 value 部分时使用的格式。<br>取值如下：<li>csv<li>json<li>avro<li>avro-confluent<li>debezium-json<li>canal-json<li>Maxwell-json<li>raw<br>有关更多详细信息，请参考官方文档[格式](https://ci.apache.org/projects/flink/flink-docs-release-1.12/dev/table/connectors/formats/)。 |
-| value.format                            | 是   | 无           | String   | 与 format 同样含义，只能配置其中一个。                       |
-| key.format                              | 否   | 无           | String   | 在反序列化来自 Kafka 的消息 value 部分时使用的格式。<br/>取值如下：<li>csv<li>json<li>avro<li>avro-confluent<li>debezium-json<li>canal-json<li>Maxwell-json<li>raw<br/>有关更多详细信息，请参考官方文档[格式](https://ci.apache.org/projects/flink/flink-docs-release-1.12/dev/table/connectors/formats/)。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b><br/>如果指定了 key.format 参数，则也必须指定 key.fields 参数。</span> |
-| key.fields                              | 否   | 无           | String   | 消息键解析出来的数据存放的字段。<br/>多个字段名以`;`分隔，例如：`field1;field2`。<br>默认不配置该参数，key 数据将被丢弃。 |
-| key.fields-prefix                       | 否   | 无           | String   | 为所有消息键指定自定义前缀，以避免与消息体格式字段重名，默认前缀为空。<br>如果定义了自定义前缀，表 schema 和配置项 key.fields 请使用带前缀的名称。<br/>当构建消息 key 数据类型时，前缀会被移除，将使用无前缀的名称。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b><br/>该配置项要求必须将 value.fields-include 配置为 EXCEPT_KEY。</span> |
-| value.fields-include                    | 否   | ALL          | String   | 控制哪些字段应该出现在消息 value 解析出来的数据中。可取值：<li>ALL：消息 value 解析出来的数据将包含 schema 中所有的字段，包括定义为 key.fields 的字段。<li>EXCEPT_KEY：除去 key.fields 定义字段，剩余 schema 定义字段可以用来存放消息 value 解析出来的数据。 |
-| scan.startup.mode                       | 否   | group-offset | String   | Kafka consumer 的启动模式。包括：lastest-offset、earliest-offset、specific-offset、group-offset、timestamp。详细信息请参考：[启动模式](https://nightlies.apache.org/flink/flink-docs-release-1.12/dev/table/connectors/kafka.html#start-reading-position)。 |
-| scan.startup.specific-offsets           | 否   | 无           | Sring    | scan.startup.mode 选择 specific-offsets 时填写，指定各个分区 offset 的位置。<br>例如：`partition:0,offset:42;partition:1,offset:300`。 |
-| scan.startup.timestamp-millis           | 否   | 无           | Long     | scan.startup.mode 选择 timestamp 时填写，指定启动的时间戳，单位为毫秒。<br>例如：`1639979252461`。 |
-| scan.topic-partition-discovery.interval | 否   | 无           | Duration | Kafka consumer 定期发现动态创建的 Kafka topic 和分区的时间间隔。<br/>例如：`100s` |
+| 参数值                                  | 是否必填 | 默认值       | 数据类型 | 描述                                                         |
+| :-------------------------------------- | :------- | :----------- | :------- | :----------------------------------------------------------- |
+| connector                               | 是       | 无           | String   | 固定值为 `kafka`。                                           |
+| topic                                   | 否       | 无           | String   | Kafka Topic 名称。<br>多个 Topic 以 `;` 分隔，例如 `topic-1;topic-2`。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b><br>topic 和 topic-pattern 两个选项只能指定其中一个。</span> |
+| topic-pattern                           | 否       | 无           | String   | 匹配读取 Topic 名称的正则表达式。<br>所有匹配该正则表达式的 Topic 在作业运行时均会被订阅。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b><br/>topic 和 topic-pattern 两个选项只能指定其中一个。</span> |
+| properties.bootstrap.servers            | 是       | 无           | String   | Kafka Broker 地址列表，以 `,` 分隔，格式为 `host:port,host:port,host:port`。 |
+| properties.group.id                     | 是       | 无           | String   | Kafka 消费组 ID。                                            |
+| properties.*                            | 否       | 无           | String   | 后缀名称必须是 [Kafka 配置文档](https://kafka.apache.org/documentation/#configuration) 中定义的配置项。Flink 会将 properties. 前缀移除，并将剩余的键和值传递给 Kafka 客户端。<br>例如可以通过 `'properties.allow.auto.create.topics' = 'false'` 来禁用自动创建 Topic。<br>但是有一些配置不支持，例如 `key.deserializer` 和 `value.deserializer`，因为 Flink 会覆盖它们。 |
+| format                                  | 是       | 无           | String   | 在反序列化来自 Kafka 的消息 value 部分时使用的格式。<br>取值如下：<li>csv<li>json<li>avro<li>avro-confluent<li>debezium-json<li>canal-json<li>Maxwell-json<li>raw<br>有关更多详细信息，请参考官方文档[格式](https://ci.apache.org/projects/flink/flink-docs-release-1.12/dev/table/connectors/formats/)。 |
+| value.format                            | 是       | 无           | String   | 与 format 同样含义，只能配置其中一个。                       |
+| key.format                              | 否       | 无           | String   | 在反序列化来自 Kafka 的消息 value 部分时使用的格式。<br/>取值如下：<li>csv<li>json<li>avro<li>avro-confluent<li>debezium-json<li>canal-json<li>Maxwell-json<li>raw<br/>有关更多详细信息，请参考官方文档[格式](https://ci.apache.org/projects/flink/flink-docs-release-1.12/dev/table/connectors/formats/)。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b><br/>如果指定了 key.format 参数，则也必须指定 key.fields 参数。</span> |
+| key.fields                              | 否       | 无           | String   | 消息键解析出来的数据存放的字段。<br/>多个字段名以`;`分隔，例如：`field1;field2`。<br>默认不配置该参数，key 数据将被丢弃。 |
+| key.fields-prefix                       | 否       | 无           | String   | 为所有消息键指定自定义前缀，以避免与消息体格式字段重名，默认前缀为空。<br>如果定义了自定义前缀，表 schema 和配置项 key.fields 请使用带前缀的名称。<br/>当构建消息 key 数据类型时，前缀会被移除，将使用无前缀的名称。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b><br/>该配置项要求必须将 value.fields-include 配置为 EXCEPT_KEY。</span> |
+| value.fields-include                    | 否       | ALL          | String   | 控制哪些字段应该出现在消息 value 解析出来的数据中。可取值：<li>ALL：消息 value 解析出来的数据将包含 schema 中所有的字段，包括定义为 key.fields 的字段。<li>EXCEPT_KEY：除去 key.fields 定义字段，剩余 schema 定义字段可以用来存放消息 value 解析出来的数据。 |
+| scan.startup.mode                       | 否       | group-offset | String   | Kafka consumer 的启动模式。包括：lastest-offset、earliest-offset、specific-offset、group-offset、timestamp。详细信息请参考：[启动模式](https://nightlies.apache.org/flink/flink-docs-release-1.12/dev/table/connectors/kafka.html#start-reading-position)。 |
+| scan.startup.specific-offsets           | 否       | 无           | Sring    | scan.startup.mode 选择 specific-offsets 时填写，指定各个分区 offset 的位置。<br>例如：`partition:0,offset:42;partition:1,offset:300`。 |
+| scan.startup.timestamp-millis           | 否       | 无           | Long     | scan.startup.mode 选择 timestamp 时填写，指定启动的时间戳，单位为毫秒。<br>例如：`1639979252461`。 |
+| scan.topic-partition-discovery.interval | 否       | 无           | Duration | Kafka consumer 定期发现动态创建的 Kafka topic 和分区的时间间隔。<br/>例如：`100s`。 |
 
-## 结果表 WITH 参数
+## Kafka 结果表 WITH 参数
 
 | 参数                         | 是否必填 | 默认值        | 数据类型 | 描述                                                         |
 | :--------------------------- | :------- | :------------ | :------- | :----------------------------------------------------------- |

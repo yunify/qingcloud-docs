@@ -15,11 +15,17 @@ draft: false
 
 ## 使用范围
 
-HBase 作为结果表写入数据。
+支持读取和写入 HBase 集群。
 
 ## DDL 定义
 
+> **注意**
+>
+> - HBase 表所有列簇需要声明为 ROW 类型，内部定义列名和类型，可定义多组。
+> - 非 ROW 类型的字段会被识别为 rowkey，rowkey 可以定义为任意名字。
+
 ```sql
+-- 在 Flink SQL 里注册 HBase 表 'mytable'
 CREATE TABLE hTable (
  rowkey INT,
  family1 ROW<q1 INT>,
@@ -33,41 +39,69 @@ CREATE TABLE hTable (
 );
 ```
 
-## HBase 结果表参数
+## HBase 源表 WITH 参数
 
-| 参数值                     | 必填 | 默认值 | 数据类型   | 描述                                                         |
-| :------------------------- | :--- | :----- | :--------- | :----------------------------------------------------------- |
-| connector                  | 是   | 无     | String     | 固定值为 `hbase-2.2`。                                       |
-| table-name                 | 是   | 无     | String     | HBase 表名。                                                 |
-| zookeeper.quorum           | 是   | 无     | String     | HBase 的 zookeeper地址。                                     |
-| zookeeper.znode.parent     | 否   | /hbase | String     | HBase 在 zookeeper 中的根目录。                              |
-| null-string-literal        | 否   | 空     | String     | HBase 字段类型为字符串时，如果 Flink 字段数据为 null，则将该字段赋值为 null-string-literal，并写入 HBase。 |
-| sink.buffer-flush.max-size | 否   | 2mb    | MemorySize | 写入 HBase 前，内存中缓存的数据量（字节）大小。调大该值有利于提高 HBase 写入性能，但会增加写入延迟和内存使用。 |
-| sink.buffer-flush.max-rows | 否   | 1000   | Integer    | 写入 HBase 前，内存中缓存的数据条数。调大该值有利于提高HBase写入性能，但会增加写入延迟和内存使用。 |
-| sink.buffer-flush.interval | 否   | 1s     | Duration   | 将缓存数据周期性写入到 HBase 的间隔，可以控制写入 HBase 的延迟。 |
-| sink.parallelism           | 否   | 无     | Integer    | 写入 HBase 的 operator 的并行度。                            |
+| 参数值                 | 是否必填 | 默认值 | 数据类型 | 描述                                                         |
+| ---------------------- | -------- | ------ | -------- | ------------------------------------------------------------ |
+| connector              | 是       | 无     | String   | 连接器，目前支持 `hbase-2.2`。                               |
+| table-name             | 是       | 无     | String   | HBase 表名。                                                 |
+| zookeeper.quorum       | 是       | 无     | String   | HBase 的 zookeeper 地址。                                    |
+| zookeeper.znode.parent | 否       | /hbase | String   | HBase 在 zookeeper 中的根目录。                              |
+| null-string-literal    | 否       | null   | String   | HBase 字段类型为 String 时，遇到空值则将该字段赋值为当前参数值。 |
+
+## HBase 维表 WITH 参数
+
+| 参数值                 | 是否必填 | 默认值 | 数据类型 | 描述                                                         |
+| ---------------------- | -------- | ------ | -------- | ------------------------------------------------------------ |
+| connector              | 是       | 无     | String   | 连接器，目前支持 `hbase-2.2`。                               |
+| table-name             | 是       | 无     | String   | HBase 表名。                                                 |
+| zookeeper.quorum       | 是       | 无     | String   | HBase 的 zookeeper 地址。                                    |
+| zookeeper.znode.parent | 否       | /hbase | String   | HBase 在 zookeeper 中的根目录。                              |
+| null-string-literal    | 否       | null   | String   | HBase 字段类型为 String 时，遇到空值则将该字段赋值为当前参数值。 |
+
+## HBase 结果表 WITH 参数
+
+| 参数值                     | 是否必填 | 默认值 | 数据类型   | 描述                                                         |
+| :------------------------- | :------- | :----- | :--------- | :----------------------------------------------------------- |
+| connector                  | 是       | 无     | String     | 连接器，目前支持 `hbase-2.2`。                               |
+| table-name                 | 是       | 无     | String     | HBase 表名。                                                 |
+| zookeeper.quorum           | 是       | 无     | String     | HBase 的 zookeeper 地址。                                    |
+| zookeeper.znode.parent     | 否       | /hbase | String     | HBase 在 zookeeper 中的根目录。                              |
+| null-string-literal        | 否       | null   | String     | HBase 字段类型为 String 时，遇到空值则将该字段赋值为当前参数值。 |
+| sink.buffer-flush.max-size | 否       | 2mb    | MemorySize | 每次写入请求在内存中缓存的数据量。调大该值有利于提高 HBase 写入性能，但会增加写入延迟。设置为 `0` 禁用。 |
+| sink.buffer-flush.max-rows | 否       | 1000   | Integer    | 每次写入请求在内存中缓存的数据行数。调大该值有利于提高 HBase 写入性能，但会增加写入延迟。设置为 `0` 禁用。 |
+| sink.buffer-flush.interval | 否       | 1s     | Duration   | 周期性 flush 缓存数据到 HBase 的时间间隔。可以提高 HBase 写入性能，但会增加写入延迟。设置为 `0`' 禁用。 |
+| sink.parallelism           | 否       | 无     | Integer    | HBase sink 算子的并行度，默认情况下，框架使用上游算 子相同的平行度。 |
 
 ## 类型映射
 
-| HBase 字段类型                                               | Flink 字段类型            |
-| :----------------------------------------------------------- | :------------------------ |
-| byte[] toBytes(String s) <br>String toString(byte[] b)       | CHAR<br>VARCHAR<br>STRING |
-| byte[] toBytes(boolean b)                                    | BOOLEAN                   |
-| byte[]                                                       | BINARY<br/>VARBINARY      |
-| byte[] toBytes(BigDecimal v)                                 | DECIMAL                   |
-| new byte[] { val }                                           | TINYINT                   |
-| byte[] toBytes(short val)                                    | SMALLINT                  |
-| byte[] toBytes(int val)                                      | INT                       |
-| byte[] toBytes(long val)                                     | BIGINT                    |
-| byte[] toBytes(float val)                                    | FLOAT                     |
-| byte[] toBytes(double val)                                   | DOUBLE                    |
-| 将日期转换成自 1970.01.01 以来的天数，用 int 表示，并通过 byte[] toBytes(int val) 转换成字节数组。 | DATE                      |
-| 将时间转换成自 00:00:00 以来的毫秒数，用 int 表示，并通过 byte[] toBytes(int val) 转换成字节数组。 | TIME                      |
-| 将时间戳转换成自 1970-01-01 00:00:00 以来的毫秒数，用 long 表示，并通过 byte[] toBytes(long val) 转换成字节数组。 | TIMESTAMP                 |
+HBase 将所有数据存储为字节数组。
+
+
+| Flink 字段类型          | HBase 字段类型                                               |
+| :---------------------- | ------------------------------------------------------------ |
+| CHAR / VARCHAR / STRING | byte[] toBytes(String s) <br>String toString(byte[] b)       |
+| BOOLEAN                 | byte[] toBytes(boolean b)<br>boolean toBoolean(byte[] b)     |
+| BINARY / VARBINARY      | byte[] 按原样返回。                                          |
+| DECIMAL                 | byte[] toBytes(BigDecimal v)<br>BigDecimal toBigDecimal(byte[] b) |
+| TINYINT                 | new byte[] { val }<br>bytes[0] // returns first and only byte from bytes |
+| SMALLINT                | byte[] toBytes(short val)<br/>short toShort(byte[] bytes)    |
+| INT                     | byte[] toBytes(int val)<br/>int toInt(byte[] bytes)          |
+| BIGINT                  | byte[] toBytes(long val)<br/>long toLong(byte[] bytes)       |
+| FLOAT                   | byte[] toBytes(float val)<br/>float toFloat(byte[] bytes)    |
+| DOUBLE                  | byte[] toBytes(double val)<br/>double toDouble(byte[] bytes) |
+| DATE                    | 将日期转换成自 1970.01.01 以来的天数，用 int 表示。          |
+| TIME                    | 将时间转换成自 00:00:00 以来的毫秒数，用 int 表示。          |
+| TIMESTAMP               | 将时间戳转换成自 1970-01-01 00:00:00 以来的毫秒数，用 long 表示。 |
+| ARRAY                   | 不支持                                                       |
+| MAP / ULTISET           | 不支持                                                       |
+| ROW                     | 不支持                                                       |
+
 
 ## 代码示例
 
 ```sql
+-- 使用 datagen 连接器生成随机数据
 CREATE TEMPORARY TABLE datagen_source (
   rowkey INT,
   f1q1 INT,
@@ -79,7 +113,8 @@ CREATE TEMPORARY TABLE datagen_source (
 ) with (
   'connector'='datagen'
 );
- 
+
+-- 在 Flink SQL 里注册 HBase 表 'demo'
 CREATE TEMPORARY TABLE hbase_sink (
   rowkey INT,
   family1 ROW<q1 INT>,
@@ -91,7 +126,8 @@ CREATE TEMPORARY TABLE hbase_sink (
   'table-name'='demo',
   'zookeeper.quorum'='localhost:2181'
 );
-  
+
+-- 从 datagen_source 中读取数据并写入 hbase_sink 中
 INSERT INTO hbase_sink
 SELECT rowkey, ROW(f1q1), ROW(f2q1, f2q2), ROW(f3q1, f3q2, f3q3) FROM datagen_source;
 ```
