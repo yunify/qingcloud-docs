@@ -5,15 +5,15 @@ collapsible: false
 weight: 40
 ---
 
-在创建云服务器后，您需要通过 SD-WAN（新版）提供了 VCPE 虚拟机、VCPE 容器两种部署方式。您可以根据需要选择合适方式部署 VCPE。
+在创建云服务器后，请根据需要选择 VCPE 虚拟机部署方式或者 VCPE 容器部署方式部署 VCPE。
 
 - VCPE 虚拟机
   
-  在青云QingCloud 创建云服务器时，选择自有镜像的方式，部署云服务器并绑定 License，即可成功部署 VCPE。
+  在青云QingCloud 创建云服务器时，基于 SD-WAN vCPE 镜像，部署云服务器并绑定 License，即可成功部署 VCPE。
 
 - VCPE 容器
 
-  在虚拟机中运行脚本，脚本会帮助您完成容器创建的一系列操作，并完成在容器中部署 VCPE。
+  在虚拟机中运行脚本，完成在容器中部署 VCPE。
 
 ## 前提条件
 
