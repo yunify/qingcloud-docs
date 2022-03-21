@@ -24,6 +24,8 @@ draft: false
 2. 构建 Connector 包   
     建议参考现有的 Connector 项目构建 JAR 程序包。
 
+    示例：[自定义 Redis connector](../redis)。
+
 ## 使用 Connector
 
 1. 上传程序包   
@@ -32,5 +34,3 @@ draft: false
     根据自定义 Connector 中定义的 Source 和 Sink 结构，在 SQL 作业开发面板中进行相应配置。
 3. 选择依赖资源   
     在作业的运行参数界面，选择已上传的 JAR 程序包。
-
-
