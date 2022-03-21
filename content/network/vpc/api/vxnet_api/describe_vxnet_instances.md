@@ -1,7 +1,7 @@
 ---
 title: "DescribeVxnetInstances"
 description: 获取私有网络中的云服务器。
-keyword: QingCloud, 青云, 云计算, VPC, 私有网络
+keyword: VPC, 私有网络
 weight: 6
 draft: false
 ---

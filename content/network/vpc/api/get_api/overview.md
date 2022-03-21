@@ -1,14 +1,14 @@
 ---
 title: "使用前必读"
 description: VPC API 调用概述。 
-keyword: QingCloud, 青云, 云计算, VPC, 请求, API 调用, 概述
+keyword: VPC, 请求, API 调用, 概述
 draft: false
 weight: 1
 ---
 
 ## API 密钥
 
-在调用 API 前，需要先[申请 API 密钥](https://console.qingcloud.com/access_keys/)，获取 API 密钥 ID ( access_key_id ) 和 API 密钥私钥 ( secret_access_key )。
+在调用 API 前，需要先申请 API 密钥，获取 API 密钥 ID ( access_key_id ) 和 API 密钥私钥 ( secret_access_key )。
 
 - **密钥 ID** 将作为参数包含在每一个请求中发送。
 - **密钥私钥**负责生成请求串的签名进行鉴权。

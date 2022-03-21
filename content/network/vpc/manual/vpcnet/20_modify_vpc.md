@@ -1,7 +1,7 @@
 ---
 title: "修改 VPC 基本信息"
 description: 介绍如何修改 VPC 网络的名称、描述、标签及所属项目。
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络
+keyword: VPC, VPC 网络
 draft: false
 weight: 20
 ---
@@ -12,7 +12,7 @@ weight: 20
 
 ## 修改名称及描述
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC网络**，进入**VPC网络**页面。
 
@@ -26,7 +26,7 @@ weight: 20
 
 ## 绑定及解绑标签
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC网络**，进入**VPC网络**页面。
 3. 找到需要修改的 VPC 网络，在 VPC 的**基础属性**区域，将鼠标移到**标签**处。
 4. 根据需要执行：
@@ -35,7 +35,7 @@ weight: 20
 
 ## 加入及移出项目
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC网络**，进入**VPC网络**页面。
 

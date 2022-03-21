@@ -1,7 +1,7 @@
 ---
 title: "OpenVPN 添加虚拟网卡"
 description: 如何创建多块虚拟网卡来访问多个OpenVPN server。
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, OpenVPN, 虚拟网卡
+keyword: VPC, VPC 网络, OpenVPN, 虚拟网卡
 draft: false
 weight: 20
 ---

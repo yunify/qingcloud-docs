@@ -1,6 +1,6 @@
 ---
 title: "使用路由表"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 路由表
+keyword: VPC, VPC 网络, 路由表
 description: 介绍如何管理自定义路由表以及路由规则。
 draft: false
 weight: 2
@@ -10,7 +10,7 @@ weight: 2
 
 ## 创建路由表
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的菜单栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 
@@ -44,7 +44,7 @@ weight: 2
 
 您可以在 VPC 网络的私有网络管理页面绑定路由表，具体操作请参见[绑定路由表](../../vxnet/30_bind_route/)。您也可以在路由表详情页面进行绑定，操作如下：
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的菜单栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 
@@ -78,7 +78,7 @@ weight: 2
 >
 > 添加路由规则前，需要先将路由表绑定到私有网络或负载均衡器。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的菜单栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 

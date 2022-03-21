@@ -1,6 +1,6 @@
 ---
 title: "VPC 中云服务器之间网络不通"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 网络
+keyword: VPC, VPC 网络, 网络
 description: 如何排查 VPC 中云服务器之间网络不通的问题。
 draft: false
 weight: 5

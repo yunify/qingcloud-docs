@@ -1,7 +1,7 @@
 ---
 title: "JoinVxnet"
 description: 将云服务器加入到私有网络。
-keyword: QingCloud, 青云, 云计算, VPC, 私有网络
+keyword: VPC, 私有网络
 weight: 3
 draft: false
 ---

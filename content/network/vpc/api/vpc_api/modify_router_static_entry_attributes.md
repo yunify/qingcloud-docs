@@ -1,7 +1,7 @@
 ---
 title: "ModifyRouterStaticEntryAttributes"
 description: 修改 VPC 网络规则中的某条条目属性。
-keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络
+keyword: VPC,  VPC 网络
 weight: 28
 draft: false
 ---
