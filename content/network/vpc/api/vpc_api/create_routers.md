@@ -1,7 +1,7 @@
 ---
 title: "CreateRouters"
 description: 创建一个或多个 VPC 网络。
-keyword: QingCloud, 青云, 云计算, VPC 网络, 私有网络
+keyword: VPC 网络, 私有网络
 weight: 1
 draft: false
 ---

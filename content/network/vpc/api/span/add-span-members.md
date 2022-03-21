@@ -1,7 +1,7 @@
 ---
 title: "AddSpanMembers"
 description: 给SPAN添加成员。
-keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
+keyword: SPAN, 网络流量镜像
 weight: 6
 draft: false
 ---

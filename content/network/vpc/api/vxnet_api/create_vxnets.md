@@ -1,18 +1,17 @@
 ---
 title: "CreateVxnets"
 description: 创建新的私有网络。
-keyword: QingCloud, 青云, 云计算, VPC, 私有网络
+keyword: VPC, 私有网络
 weight: 1
 draft: false
 ---
 
 
-
 创建新的私有网络。
 
-青云私有网络有两种类型： 受管私有网络 ( vxnet_type=1 ) 和 自管私有网络 ( vxnet_type=0 ) ，
+云平台私有网络有两种类型： 受管私有网络 ( vxnet_type=1 ) 和 自管私有网络 ( vxnet_type=0 ) ，
 
-*   受管私有网络可以使用青云路由器来配置和管理其网络，使得网络搭建更方便快捷。
+*   受管私有网络可以使用路由器来配置和管理其网络，使得网络搭建更方便快捷。
 *   自管私有网络需要您自行配置和管理网络，适用于对底层网络有特殊需求的用户。
 
 **Request Parameters**

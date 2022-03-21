@@ -1,7 +1,7 @@
 ---
 title: "DescribeRoutes"
 description: 获取一个或者多个路由表的配置信息。
-keyword: QingCloud, 青云, 云计算, VPC, 路由表
+keyword: VPC, 路由表
 weight: 22
 draft: false
 ---

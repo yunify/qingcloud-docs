@@ -1,7 +1,7 @@
 ---
 title: "CreateSpan"
 description: 创建一个SPAN。
-keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
+keyword: SPAN, 网络流量镜像
 weight: 1
 draft: false
 ---

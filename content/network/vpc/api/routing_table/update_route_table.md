@@ -1,7 +1,7 @@
 ---
 title: "UpdateRouteTable"
 description: 使路由表的修改生效。
-keyword: QingCloud, 青云, 云计算, VPC, 路由表
+keyword: VPC, 路由表
 weight: 10
 draft: false
 ---

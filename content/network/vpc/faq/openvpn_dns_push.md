@@ -1,7 +1,7 @@
 ---
 title: "OpenVPN 客户端启用服务端推送的 DNS 配置"
 description: 介绍如何让 OpenVPN 客户端启用服务端推送的 DNS 配置。
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, DNS
+keyword: VPC, VPC 网络, DNS
 draft: false
 weight: 20
 ---

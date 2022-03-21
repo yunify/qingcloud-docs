@@ -1,7 +1,7 @@
 ---
 title: "ModifyVxnetAttributes"
 description: 修改私有网络的名称和描述。
-keyword: QingCloud, 青云, 云计算, VPC, 私有网络
+keyword: VPC, 私有网络
 weight: 8
 draft: false
 ---

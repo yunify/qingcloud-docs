@@ -1,7 +1,7 @@
 ---
 title: "ModifyRouteAttributes"
 description: 修改一条路由表规则。
-keyword: QingCloud, 青云, 云计算, VPC, 路由表
+keyword: VPC, 路由表
 weight: 24
 draft: false
 ---

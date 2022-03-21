@@ -1,7 +1,7 @@
 ---
 title: "DescribeVxnets"
 description: 获取私有网络列表。
-keyword: QingCloud, 青云, 云计算, VPC, 私有网络
+keyword: VPC, 私有网络
 weight: 2
 draft: false
 ---

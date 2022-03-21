@@ -1,6 +1,6 @@
 ---
 title: "绑定公网 IP"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络
+keyword: VPC, VPC 网络
 description: 介绍如何为 VPC 网络绑定公网 IP。
 draft: false
 weight: 26
@@ -16,7 +16,7 @@ weight: 26
 
 ## 操作步骤
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC网络**，进入**VPC网络**页面。
 
