@@ -1,14 +1,14 @@
 ---
 title: "在 Windows 客户端中配置 OpenVPN"
 description: 介绍如何在 Windows 云服务器中部署 OpenVPN 客户端。
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, Windows, OpenVPN 
+keyword: VPC, VPC 网络, Windows, OpenVPN 
 draft: false
 weight: 20
 ---
 
 ## 需求背景
 
-客户希望自己在办公或者家庭网络能拨入到青云vpc的私有网络，以实现内网访问云上部署的业务，因为vpn隧道是加密通讯的，安全性比较可靠，另外使用起来比较方便；以下介绍的是如何在windows云服务器部署openvpn客户端。
+客户希望自己在办公或者家庭网络能拨入到云平台 VPC 的私有网络，以实现内网访问云上部署的业务，因为vpn隧道是加密通讯的，安全性比较可靠，另外使用起来比较方便；以下介绍的是如何在windows云服务器部署openvpn客户端。
 
 ### 1、下载openvpn客户端windows版本
 

@@ -1,6 +1,6 @@
 ---
 title: "离开 VPC 网络"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 私有网络
+keyword: VPC, VPC 网络, 私有网络
 description: 介绍如何解绑私有网络。
 draft: false
 weight: 31
@@ -20,7 +20,7 @@ weight: 31
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **私有网络**，进入**私有网络**页面。
 3. 点击待操作的私有网络，选择**离开 VPC 网络**，弹出确认框。
 4. 点击**确认**。

@@ -1,10 +1,10 @@
 ---
 title: "DissociateDNSAliases"
-description: 
+description: 从资源上解绑一个或多个内网域名。
+keyword: API, 内网域名别名
+weight: 15
 draft: false
 ---
-
-
 
 从资源上解绑一个或多个内网域名。
 
@@ -15,7 +15,7 @@ draft: false
 | dns_aliases | Array | 内网域名别名 ID 列表 | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 

@@ -1,7 +1,7 @@
 ---
 title: "DeleteRouteTables"
 description: 删除一个或者多个路由表。
-keyword: QingCloud, 青云, 云计算, VPC, 路由表
+keyword: VPC, 路由表
 weight: 15
 draft: false
 ---

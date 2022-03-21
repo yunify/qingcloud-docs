@@ -1,7 +1,7 @@
 ---
 title: "DescribeRouterStaticEntries"
 description: 获取 VPC 网络规则的条目。
-keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络,  VPC 网络规则
+keyword: VPC,  VPC 网络,  VPC 网络规则
 weight: 25
 draft: false
 ---

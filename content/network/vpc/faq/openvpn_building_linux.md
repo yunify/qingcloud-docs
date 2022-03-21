@@ -1,14 +1,14 @@
 ---
 title: "在 Linux 客户端中配置 OpenVPN"
 description: 介绍如何在 Linux 云服务器部署 OpenVPN 客户端。
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, Linux, OpenVPN
+keyword: VPC, VPC 网络, Linux, OpenVPN
 draft: false
 weight: 20
 ---
 
 ## 需求背景
 
-客户希望自己在办公或者家庭网络能拨入到青云vpc的私有网络，以实现内网访问云上部署的业务，因为vpn隧道是加密通讯的，安全性比较可靠，另外使用起来比较方便。以下介绍的是如何在Linux云服务器部署OpenVPN客户端，以Cent OS镜像为例。
+客户希望自己在办公或者家庭网络能拨入到云平台的私有网络，以实现内网访问云上部署的业务，因为vpn隧道是加密通讯的，安全性比较可靠，另外使用起来比较方便。以下介绍的是如何在Linux云服务器部署OpenVPN客户端，以Cent OS镜像为例。
 
 ## 操作步骤
 

@@ -1,7 +1,7 @@
 ---
 title: "LeaveRouter"
 description: 将一个或多个受管私有网络从一台 VPC 网络上断开。
-keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络
+keyword: VPC,  VPC 网络
 weight: 11
 draft: false
 ---

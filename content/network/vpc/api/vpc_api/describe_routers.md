@@ -1,7 +1,7 @@
 ---
 title: "DescribeRouters"
 description: 获取一个或多个 VPC 网络。
-keyword: QingCloud, 青云, 云计算, VPC, 创建
+keyword: VPC, 创建
 weight: 2
 draft: false
 ---
