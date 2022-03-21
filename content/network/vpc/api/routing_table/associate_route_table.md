@@ -1,7 +1,7 @@
 ---
 title: "AssociateRouteTable"
 description: 将路由表绑定到某个资源。
-keyword: QingCloud, 青云, 云计算, VPC, 路由表
+keyword: VPC, 路由表
 weight: 5
 draft: false
 ---

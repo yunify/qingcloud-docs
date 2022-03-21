@@ -1,6 +1,8 @@
 ---
 title: "DescribeDNSAliases"
-description: 
+description: 取内网域名别名列表。
+keyword: API, 内网域名别名
+weight: 5
 draft: false
 ---
 
@@ -19,14 +21,14 @@ draft: false
 | limit | Integer | 返回数据长度，默认为20，最大100 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 **Response Elements**
 
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| dns_alias_set | Array | JSON 格式的内网域名别名数据列表，每项数据可见下面 [ResponseItemType](#responseitemtype) |
+| dns_alias_set | Array | JSON 格式的内网域名别名数据列表，每项数据可见下面 **ResponseItemType** |
 | total_count | Integer | 根据过滤条件得到的内网域名别名总数 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 

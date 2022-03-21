@@ -1,7 +1,7 @@
 ---
 title: "DeleteSpans"
 description: 删除一个或多个SPAN
-keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
+keyword: SPAN, 网络流量镜像
 weight: 12
 draft: false
 ---

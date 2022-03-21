@@ -1,7 +1,7 @@
 ---
 title: "ModifyRouterAttributes"
 description: 修改一台 VPC 网络的配置。
-keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络
+keyword: VPC,  VPC 网络
 weight: 5
 draft: false
 ---

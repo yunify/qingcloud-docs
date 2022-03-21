@@ -1,7 +1,7 @@
 ---
 title: "DeleteVxnets"
 description: 删除私有网络。
-keyword: QingCloud, 青云, 云计算, VPC, 私有网络
+keyword: VPC, 私有网络
 weight: 10
 draft: false
 ---

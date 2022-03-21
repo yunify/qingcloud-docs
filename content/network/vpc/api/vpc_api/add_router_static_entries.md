@@ -1,7 +1,7 @@
 ---
 title: "AddRouterStaticEntries"
 description: 增加一条 VPC 网络规则条目。
-keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络, 路由规则
+keyword: VPC,  VPC 网络, 路由规则
 weight: 22
 draft: false
 ---

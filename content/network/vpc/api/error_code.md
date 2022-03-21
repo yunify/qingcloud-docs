@@ -1,7 +1,7 @@
 ---
 title: "错误码"
 description: 介绍 API 错误码说明。 
-keyword: QingCloud, 青云, 云计算, VPC, API 错误码
+keyword: VPC, API 错误码
 draft: false
 weight: 200
 ---
