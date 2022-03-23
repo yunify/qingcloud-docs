@@ -31,6 +31,6 @@ draft: false
 2. 选择**产品与服务** > **消息队列与中间件** > **RocketMQ 服务**，进入 RocketMQ 服务管理页面。
 3. 勾选目标集群，点击操作栏**更多操作** > **删除**，弹出删除集群确认窗口。
 
-   <img src="../../../_images/delete_cluster.png" alt="删除集群" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/delete_cluster.png" alt="删除集群" style="zoom:50%;" />
 
 4. 确认信息无误后，点击**确认**，返回集群列表页面。

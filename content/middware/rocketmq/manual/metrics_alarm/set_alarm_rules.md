@@ -7,42 +7,19 @@ collapsible: false
 draft: false
 ---
 
-RocketMQ 监控告警是通过 QingCloud 云监控告警服务为集群资源和服务提供监控管理。当集群监控项超过阈值时触发告警，并通过短信、邮件等形式发送告警通知。
-
-- 支持针对`CPU 利用率`、`内存使用率`、`磁盘使用量`重要指标，[设置独立通知策略](#设置独立通知策略)。
+RocketMQ 监控告警是通过云监控告警服务为集群资源和服务提供监控管理。当集群监控项超过阈值时触发告警，并通过短信、邮件等形式发送告警通知。
 
 - 支持[绑定指标告警策略](#绑定指标告警策略)，自定义告警规则和监控项，及时监控 RocketMQ 各项指标状态。
   
-     - 可自定义监控项：`CPU利用率`、`内存使用率`、`磁盘使用量`、`节点服务状态`、`每秒生产的消息数`、`每秒查到消息的请求数`、`每秒消费的消息数`、`每秒查询消息的总请求数`、`每秒未查到消息的总请求数`。
-     - 可自定义监控周期：`1分钟`、`5分钟`
+   - 可自定义监控项：`CPU利用率`、`内存使用率`、`磁盘使用量`、`节点服务状态`、`每秒生产的消息数`、`每秒查到消息的请求数`、`每秒消费的消息数`、`每秒查询消息的总请求数`、`每秒未查到消息的总请求数`。
+   - 可自定义监控周期：`1分钟`、`5分钟`
+
+- 通过[设置统一通知策略](#设置统一通知策略)，可将告警统一发送至配置的通知列表。
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 RocketMQ 集群，且集群状态为**活跃**。
-
-## 设置独立通知策略
-
-设置独立通知策略，当集群产生告警，将统一发送至独立配置的通知列表。
-
-> **注意**
-> 
-> 设置独立通知策略后，节点绑定的**指标告警策略**所关联的通知列表，将无法收到告警通知，请注意运维业务分配情况。
-
-1. 登录管理控制台。
-2. 选择**产品与服务** > **消息队列与中间件** > **RocketMQ 服务**，进入 RocketMQ 服务管理页面。
-3. 点击集群 ID，进入集群详情页面。
-4. 在**告警**页签，点击**通知策略**模块下的**设置**。
-
-    <img src="../../../_images/alarm.png" alt="告警" style="zoom:50%;" />
-
-5. 在弹出的通知策略配置窗口，选择通知策略，并点击**提交**。
-   
-   <img src="../../../_images/single_notice.png" alt="配置通知策略" style="zoom:50%;" />
-
-6. 返回**告警**页签，查看配置的独立通知策略。
-
-   <img src="../../../_images/check_notice.png" alt="查看通知策略" style="zoom:50%;" />   
 
 ## 绑定指标告警策略
 
@@ -50,22 +27,22 @@ RocketMQ 支持对每个缓存节点配置指标告警策略。当业务发生�
 
 1. 登录管理控制台。
 2. 选择**产品与服务** > **消息队列与中间件** > **RocketMQ 服务**，进入 RocketMQ 服务管理页面。
-2. 点击集群 ID，进入集群详情页面。
-3. 在**告警**页签，选择节点，并点击列表上方**绑定指标告警策略**。
+3. 点击集群 ID，进入集群详情页面。
+4. 在**告警**页签，选择节点，并点击列表上方**绑定指标告警策略**。
 
-    <img src="../../../_images/bind_metrics_strategy.png" alt="绑定指标告警策略" style="zoom:50%;" />
+    <img src="/middware/rocketmq/_images/bind_metrics_strategy.png" alt="绑定指标告警策略" style="zoom:50%;" />
 
-4. 在弹出的指标告警策略配置窗口，选择指标告警策略，并点击**提交**。
+5. 在弹出的指标告警策略配置窗口，选择指标告警策略，并点击**提交**。
 
    > **说明**
    >
    > 若无可选指标告警策略，请参考[创建指标告警策略](#创建指标告警策略)。
    
-   <img src="../../../_images/metrics_alarm.png" alt="配置指标告警策略" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/metrics_alarm.png" alt="配置指标告警策略" style="zoom:50%;" />
 
-5. 返回**告警**页签，选中已绑定指标告警策略节点，可查看配置的指标和告警历史。
+6. 返回**告警**页签，选中已绑定指标告警策略节点，可查看配置的指标和告警历史。
 
-   <img src="../../../_images/check_alarm.png" alt="查看通知策略" style="zoom:50%;" />  
+   <img src="/middware/rocketmq/_images/check_alarm.png" alt="查看通知策略" style="zoom:50%;" />  
 
 ## 创建指标告警策略
 
@@ -88,7 +65,7 @@ RocketMQ 支持对每个缓存节点配置指标告警策略。当业务发生�
    > 
    > 有多条指标规则时，任何一条规则满足条件都会触发告警。
 
-   <img src="../../../_images/manual_set_alarm_rule.png" alt="配置告警规则" style="zoom:50%;" />  
+   <img src="/middware/rocketmq/_images/manual_set_alarm_rule.png" alt="配置告警规则" style="zoom:50%;" />  
 
 4. 点击**下一步**，配置告警行为。  
    
@@ -97,7 +74,7 @@ RocketMQ 支持对每个缓存节点配置指标告警策略。当业务发生�
    - **告警次数** ：当资源持续处于**告警**状态时，连续发送通知的次数。最多为 100 次。
    - **通知列表** ：选择告警通知列表。
    
-   <img src="../../../_images/manual_set_alarm_behavior.png" alt="配置告警行为" style="zoom:50%;" />  
+   <img src="/middware/rocketmq/_images/manual_set_alarm_behavior.png" alt="配置告警行为" style="zoom:50%;" />  
    
 5. 确认配置无误后，点击**提交**，返回指标告警策略配置窗口，即可选择新创建的告警策略。
 
@@ -105,4 +82,27 @@ RocketMQ 支持对每个缓存节点配置指标告警策略。当业务发生�
    >
    > 更多告警策略管理说明，请参见**云监控 CloudSat** [告警服务](../../../../../monitor_service/cloudsat/manual/alarm_service)。
 
-   <img src="../../../_images/manual_new_alarm_policy.png" alt="配置新告警策略" style="zoom:50%;" />  
+   <img src="/middware/rocketmq/_images/manual_new_alarm_policy.png" alt="配置新告警策略" style="zoom:50%;" />  
+
+## 设置统一通知策略
+
+设置统一通知策略后，当集群产生告警，将统一发送至配置的通知列表。
+
+> **注意**
+> 
+> 设置统一通知策略后，节点绑定的**指标告警策略**所关联的通知列表，将无法收到告警通知，请注意运维业务分配情况。
+
+1. 登录管理控制台。
+2. 选择**产品与服务** > **消息队列与中间件** > **RocketMQ 服务**，进入 RocketMQ 服务管理页面。
+3. 点击集群 ID，进入集群详情页面。
+4. 在**告警**页签，点击**通知策略**模块下的**设置**。
+
+    <img src="/middware/rocketmq/_images/alarm.png" alt="告警" style="zoom:50%;" />
+
+5. 在弹出的通知策略配置窗口，选择通知策略，并点击**提交**。
+   
+   <img src="/middware/rocketmq/_images/single_notice.png" alt="配置通知策略" style="zoom:50%;" />
+
+6. 返回**告警**页签，查看配置的独立通知策略。
+
+   <img src="/middware/rocketmq/_images/check_notice.png" alt="查看通知策略" style="zoom:50%;" />   

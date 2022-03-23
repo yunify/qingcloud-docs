@@ -3,7 +3,7 @@ title: "步骤三：生产消费消息"
 description: 在命令行模式下连接 RocketMQ，并通过 RocketMQ 生产消费消息。
 keyword: 云计算,大数据,消息队列,中间件,Kafka,生产消息,消费消息,快速入门
 weight: 30
-draft: false
+draft: true
 ---
 
 本小节主要介绍如何在命令行模式下连接 RocketMQ，并通过 RocketMQ 生产消费消息。

@@ -24,10 +24,10 @@ draft: false
 1. 登录管理控制台。
 2. 选择**产品与服务** > **运维与管理** > **回收站**，进入回收站列表页面。
 
-   <img src="../../../_images/recycle_list.png" alt="回收站" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/recycle_list.png" alt="回收站" style="zoom:50%;" />
 
-3. 勾选目标集群，点击操作栏**恢复**，弹出资源恢复确认窗口。
+3. 勾选目标集群，点击列表上方的**恢复**，弹出资源恢复确认窗口。
 
-   <img src="../../../_images/recycle_cluster.png" alt="恢复集群" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/recycle_cluster.png" alt="恢复集群" style="zoom:50%;" />
 
 4. 确认信息无误后，点击**提交**，返回收站列表页面。

@@ -21,7 +21,7 @@ draft: false
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**节点**页签，点击**新增节点**，弹出新增节点配置窗口。
    
-   <img src="../../../_images/add_node.png" alt="新增节点" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/add_node.png" alt="新增节点" style="zoom:50%;" />
 
 5. 配置节点信息，详细参数请参见[节点参数](#节点参数)。
 6. 确认配置信息无误后，点击**提交**，返回节点列表页面。

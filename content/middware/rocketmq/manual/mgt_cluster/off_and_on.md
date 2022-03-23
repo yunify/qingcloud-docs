@@ -19,7 +19,7 @@ draft: false
 2. 选择**产品与服务** > **消息队列与中间件** > **RocketMQ 服务**，进入 RocketMQ 服务管理页面。
 3. 勾选目标集群，点击操作栏**启动**，弹出启动集群确认窗口。
 
-   <img src="../../../_images/running_cluster.png" alt="开启集群" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/running_cluster.png" alt="开启集群" style="zoom:50%;" />
 
 4. 确认信息无误后，点击**确认**，返回集群列表页面。
 
@@ -31,7 +31,7 @@ draft: false
 2. 选择**产品与服务** > **消息队列与中间件** > **RocketMQ 服务**，进入 RocketMQ 服务管理页面。
 3. 勾选目标集群，点击操作栏**关闭**，弹出关闭集群确认窗口。
 
-   <img src="../../../_images/off_cluster.png" alt="关闭集群" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/off_cluster.png" alt="关闭集群" style="zoom:50%;" />
 
 4. 确认信息无误后，点击**确认**，返回集群列表页面。
 
@@ -47,7 +47,7 @@ draft: false
    2. 配置定时器**类型**、**周期**、**时间**、**通知事件**等信息。
    3. 点击**提交**，返回定时器列表页面。
 
-    <img src="../../../_images/timer.png" alt="配置定时器" style="zoom:50%;" />
+    <img src="/middware/rocketmq/_images/timer.png" alt="配置定时器" style="zoom:50%;" />
 
 4. 创建定时任务。
    
@@ -55,16 +55,16 @@ draft: false
    2. 点击**创建**，弹出任务配置窗口。
    3. 配置定时任务信息。
    
-      任务**类型**选择`开启集群`或`关闭集群，**资源**选择目标集群。
+      任务**类型**选择`启动集群`或`关闭集群`，**资源**选择目标集群。
 
    4. 点击**提交**，返回定时器任务列表页面。
    
-   <img src="../../../_images/timer_task.png" alt="配置定时任务" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/timer_task.png" alt="配置定时任务" style="zoom:50%;" />
 
 5. 配置完成后，集群即将在定时器指定时间点启动或关闭集群。
 
    任务完成后，可在定时器**历史记录**中查看历史任务记录。
  
-   <img src="../../../_images/timer_task_list.png" alt="查看定时任务" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/timer_task_list.png" alt="查看定时任务" style="zoom:50%;" />
 
 更多定时器任务介绍，请参见[定时器](../../../../../operation/tools/manual/scheduler/)。

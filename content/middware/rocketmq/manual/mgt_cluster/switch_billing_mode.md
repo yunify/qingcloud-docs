@@ -26,10 +26,10 @@ RocketMQ 集群创建成功后，可以修改计费模式：
 5. 展开下拉菜单，点击**修改计费模式**，弹出修改计费模式窗口。
    
    **从按小时计费修改为包年/包月**   
-   <img src="../../../_images/switch_billing_mode.png" alt="修改计费模式" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/switch_billing_mode.png" alt="修改计费模式" style="zoom:45%;" />
 
    **从包年/包月修改为按需计费**   
-   <img src="../../../_images/switch_billing_mode01.png" alt="修改计费模式" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/switch_billing_mode01.png" alt="修改计费模式" style="zoom:50%;" />
 
 6. 选择计费模式，确认价格。
 7. 点击**修改**，返回节点列表页面。

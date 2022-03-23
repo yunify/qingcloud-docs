@@ -27,7 +27,7 @@ draft: false
 4. 在**基本属性**模块，点击集群操作下拉菜单。
 5. 展开下拉菜单，点击**扩容集群**。
    
-   <img src="../../../_images/expansion.png" alt="创建扩容" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/expansion.png" alt="创建扩容" style="zoom:50%;" />
 
 6. 配置扩容信息。
 

@@ -39,7 +39,7 @@ QingCloud 提供的云监控 CloudSat，可对 RocketMQ 的运行状态进行日
 
    节点列表下方展示所选节点的监控信息。
 
-   <img src="../../../_images/view_node_monitor.png" alt="节点监控" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/view_node_monitor.png" alt="节点监控" style="zoom:50%;" />
 
    - 通过切换**服务**或**资源**，可分别查看对应节点服务和资源监控指标状态。
      

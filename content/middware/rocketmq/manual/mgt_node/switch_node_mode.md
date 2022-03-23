@@ -2,7 +2,7 @@
 title: "更改服务器类型"
 description: 本小节主要介绍如何更改 RocketMQ 集群的服务器类型。 
 keyword: 云计算,大数据,消息队列,中间件,RocketMQ,RocketMQ 集群更改服务器类型
-weight: 50
+weight: 04
 collapsible: false
 draft: false
 ---
@@ -24,7 +24,7 @@ RocketMQ 集群创建成功后，可以更改集群的云服务类型。
 4. 在**基本属性**模块，点击集群操作下拉菜单。
 5. 展开下拉菜单，点击**更改云服务器类型**，弹出更改集群云服务器类型窗口。
    
-   <img src="../../../_images/switch_node_mode.png" alt="更改集群云服务器类型" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/switch_node_mode.png" alt="更改集群云服务器类型" style="zoom:50%;" />
 
 6. 选择目标类型。
 7. 点击**提交**，返回节点列表页面。

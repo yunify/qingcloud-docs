@@ -27,7 +27,7 @@ draft: false
 
 ## 更改云服务器类型
 
-[更改云服务器类型](../../manual/mgt_cluster/switch_node_mode)仅支持从低配主机类型升级为高配主机类型，系统会根据调整之后的主机类型收取相应的费用。
+[更改云服务器类型](/middware/rocketmq/manual/mgt_node/switch_node_mode)仅支持从低配主机类型升级为高配主机类型，系统会根据调整之后的主机类型收取相应的费用。
 
 ## 变更计费模式
 

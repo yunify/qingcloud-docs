@@ -31,7 +31,7 @@ draft: false
 4. 在**节点**页签，勾选目标节点。
 5. 点击**删除**，弹出节点删除确认窗口。
 
-    <img src="../../../_images/delete_node.png" alt="删除节点" style="zoom:50%;" />
+    <img src="/middware/rocketmq/_images/delete_node.png" alt="删除节点" style="zoom:50%;" />
 
 6. 确认配置信息无误后，点击**确认**，返回节点列表页面。
 

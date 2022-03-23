@@ -1,31 +1,27 @@
 ---
-title: "Console 使用指南"
-description: 通过 Kafka Manager 管理和修改 Topic 配置。
-keyword: 云计算,大数据,消息队列,中间件,Kafka,Topic,Kafka Manager,平衡分区leader
+title: "Topic 管理"
+description: 通过 RocketMQ 控制台管理对 Topic 进行管理。
+keyword: 云计算,大数据,消息队列,中间件,RocketMQ,Topic
 weight: 30
 draft: false
 ---
 
 下面列举几个常见操作，详情可参见[官方使用文档](https://github.com/apache/rocketmq-dashboard/blob/master/docs/1_0_0/UserGuide_CN.md)。
 
-> **注意**
-> 
-> 通过此控制台可以对集群中的实际数据进行增删改，请谨慎操作。
+## 注意事项
 
-## 创建一个Topic
+通过 RocketMQ 控制台可以对集群中的实际数据进行增删改，请谨慎操作。
 
-创建一个 Topic，指定 Topic 所在的 broker。
+## 创建 Topic
 
-![](../../_images/create_topic.png)
+1. [登录 RocketMQ 控制台](../access)。
+2. 选择 **Topic**，进入 Topic 页面。
+3. 点击 **ADD/UPDATE**，进入 Topic Change 页面。
 
-## 发送消息
+   指定 Topic 所在的集群、broker、Topic 名称。
 
-在指定的 Topic 后面，点击**发送消息**，填写消息内容进行发送。
+   <img src="/middware/rocketmq/_images/add_topic.png" alt="create topic" style="zoom:50%;" />  
 
-![](../../_images/send_message.png)
+4. 点击 COMMIT，开始创建 Topic。创建完成后，即可在 Topic 页面该 Topic。
 
-##  查询消息
-
-查询消息，在“消息”选项卡页面，选择 Topic 和时间范围进行查询，同时可以在查询结果后面查看消息详情。
-
-![](../../_images/search_messages.png)
+   <img src="/middware/rocketmq/_images/rocketmq_console_topiclist.png" alt="create topic" style="zoom:50%;" />  

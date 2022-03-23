@@ -24,7 +24,7 @@ RocketMQ 集群目前支持手动续费和自动续费。
 4. 在**基本属性**模块，点击集群操作下拉菜单。
 5. 展开下拉菜单，点击**手动续费**，弹出手动续费窗口。
    
-   <img src="../../../_images/renewal_manual.png" alt="手动续费" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/renewal_manual.png" alt="手动续费" style="zoom:50%;" />
 
 6. 选择续费时长，确认续费价格。
 7. 点击**提交**，立即为集群续费。 
@@ -37,11 +37,11 @@ RocketMQ 开启自动续费后，在账户余额充足时，系统将根据设�
 2. 选择**费用** > **续费管理**，进入续费管理页面。
 3. 选择**到期不续费**页签，找到目标集群。
 
-   <img src="../../../_images/renewal_list.png" alt="续费列表" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/renewal_list.png" alt="续费列表" style="zoom:50%;" />
 
 4. 点击**设置自动续费**，弹出自动续费配置窗口。
 
-   <img src="../../../_images/renewal_auto.png" alt="自动续费" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/renewal_auto.png" alt="自动续费" style="zoom:50%;" />
 
 5. 选择`开启`自动续费，并选择续费时长，确认续费价格。
 6. 点击提交，开启集群自动续费。

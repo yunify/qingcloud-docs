@@ -26,11 +26,11 @@ draft: false
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 点击**配置参数**页签，进入集群配置参数管理页面。
 
-   <img src="../../../_images/para_list.png" alt="配置参数列表" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/para_list.png" alt="配置参数列表" style="zoom:50%;" />
 
 5. 在参数列表上方的下拉框选择修改的参数类型，点击**修改属性**，对应参数的**值**进入可编辑状态。
    
-   <img src="../../../_images/modify_para.png" alt="修改配置参数" style="zoom:50%;" />
+   <img src="/middware/rocketmq/_images/modify_para.png" alt="修改配置参数" style="zoom:50%;" />
 
 6. 参考配置参数取值范围和描述，修改参数值。
 7. 确认参数信息无误后，点击**保存**，弹出提示框。
