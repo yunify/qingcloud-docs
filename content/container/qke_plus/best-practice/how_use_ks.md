@@ -48,7 +48,7 @@ QKE 可以帮助您在创建 QKE 集群时，轻松快速的安装好 KubeSphere
 
 1. 在**可视化控制台**页面，点击 **KubeSphere** 字样下方的公网 IP 地址或点击 **前往控制台**，进入到 KubeSphere 登录页面。
 
-   ![](../../../_images/access_ks.png)·	
+   ![](../../_images/access_ks.png)·	
 
 2. 输入用户名及密码，点击**登录**。
 
@@ -56,4 +56,4 @@ QKE 可以帮助您在创建 QKE 集群时，轻松快速的安装好 KubeSphere
    >
    > 默认管理员账户及密码：admin/P@88w0rd，登录后需要立即修改密码。
 
-   ![](../../../_images/kubesphere_login.png)·	
+   ![](../../_images/kubesphere_login.png)·	
