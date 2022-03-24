@@ -23,7 +23,7 @@ QKE 支持的集群类型如下：
 
 QKE 集群包含以下节点：
 
-- 主节点（Master）：Kubernetes 集群的管理者，运行着的服务包括 kube-apiserver、kube-scheduler、kube-controller-manager、etcd 组件，以及容器网络相关的组件。
+- 主节点（Master）：Kubernetes 集群的管理者，运行着的服务包括 kube-apiserver、kube-scheduler、kube-controller-manager、etcd 组件等。
 
 - 工作节点（Worker）：Kubernetes 集群中承担工作负载的节点，可以是虚拟机也可以是物理机。工作节点承担实际的 Pod 调度以及与控制节点的通信等。
 
@@ -35,7 +35,7 @@ QKE 集群包含以下节点：
 
 ### 容器组（Pod）
 
-Pod 是 Kubernetes 部署应用或服务的最小的基本单位。一个 Pod 封装多个应用容器（也可以只有一个容器）、存储资源、一个独立的网络 IP 以及管理控制容器运行方式的策略选项。
+Pod 是 Kubernetes 部署应用或服务的最小的基本单位。一个 Pod 封装多个应用容器（也可以只有一个容器），这些容器共享相同的网络。
 
 ### 镜像（Image）
 
@@ -83,7 +83,7 @@ Ingress 是允许访问集群内服务的规则集合，通过配置转发规则
 
 ### 注解（Annotation）
 
- 注解与标签类似，也使用k ey/value 键值对的形式进行定义。
+ 注解与标签类似，也使用 key/value 键值对的形式进行定义。
 
 标签定义的是 Kubernetes 对象的元数据（Metadata），用于选择器对资源对象的识别；注解则是用户任意定义的“附加”信息，便于外部工具进行查找。
 
