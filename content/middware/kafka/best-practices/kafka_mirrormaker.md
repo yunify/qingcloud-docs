@@ -21,8 +21,9 @@ Kafka MirrorMaker 是 Kafka 官方提供的跨数据中心的流数据同步方�
 
 ## 操作步骤
 
-1. 登录集群 A 的客户端节点。
-2. 创建消费配置文件 consumer.config，并配置消费者参数。
+登录集群 A 的客户端节点，执行以下操作。
+
+1. 创建消费配置文件 consumer.config，并配置消费者参数。
 
     ```
     // A 集群的 broker 列表
@@ -44,14 +45,14 @@ Kafka MirrorMaker 是 Kafka 官方提供的跨数据中心的流数据同步方�
     auto.offset.reset=latest
     ```
 
-3. 创建生产者配置文件 producer.config，并配置生产者参数。
+2. 创建生产者配置文件 producer.config，并配置生产者参数。
 
     ```
     // B 集群的 broker 列表
     bootstrap.servers=ip:port,ip:port,ip:port
     ```
 
-4. 执行以下命令，运行 kafka-mirror-maker.sh 脚本文件进行数据迁移。
+3. 执行以下命令，运行 kafka-mirror-maker.sh 脚本文件进行数据迁移。
 
     ```
     /opt/kafka/current/bin/kafka-mirror-maker.sh --consumer.config consumer.config --producer.config producer.config --whitelist ".*"        
