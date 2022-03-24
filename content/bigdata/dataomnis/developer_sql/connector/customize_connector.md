@@ -20,11 +20,11 @@ draft: false
     - Apache Bahir 第三方包   
         [Apache Bahir](https://github.com/apache/bahir-flink) 为 Flink 提供了常见的数据源和数据目的的扩展包。   
     - 自行编程实现   
-        自定义 source、sink，详细请参见 [Flink API](https://ci.apache.org/projects/flink/flink-docs-release-1.13/zh/docs/dev/table/sourcessinks/)。
+        自定义 source、sink，详细请参见 [Flink API](https://ci.apache.org/projects/flink/flink-docs-release-1.13/zh/docs/dev/table/sourcessinks/)。    
+        示例：[自定义 Redis connector](../redis)。
+
 2. 构建 Connector 包   
     建议参考现有的 Connector 项目构建 JAR 程序包。
-
-    示例：[自定义 Redis connector](../redis)。
 
 ## 使用 Connector
 

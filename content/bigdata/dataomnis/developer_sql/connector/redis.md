@@ -9,10 +9,6 @@ draft: false
 
 Flink 内置的 Connector 中没有 Redis Connector，本小节以自定义 Redis Connector 为例进行介绍如何开发自定义 Connector。
 
-## 下载自定义 Redis Connector 代码
-
-下载路径：。
-
 ## 自定义 Redis Connector 代码说明
 
 ### RedisOutputFormat.java
