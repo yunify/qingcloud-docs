@@ -3,7 +3,7 @@ title: "忘记云服务器密码怎么办 ？ "
 description: 如何解决忘记云服务器密码
 draft: false
 weight: 130
-keyword: 云计算, 青云, QingCloud, 云服务器，密码
+keyword: 云服务器，密码
 ---
 
 ## Linux 云服务器
