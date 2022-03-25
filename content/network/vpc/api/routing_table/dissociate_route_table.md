@@ -1,7 +1,7 @@
 ---
 title: "DissociateRouteTable"
 description: 将路由表和资源解绑。
-keyword: QingCloud, 青云, 云计算, VPC, 路由表
+keyword: VPC, 路由表
 weight: 6
 draft: false
 ---

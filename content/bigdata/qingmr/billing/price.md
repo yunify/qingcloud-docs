@@ -1,6 +1,6 @@
 ---
 title: "计费说明"
-description: 本小节主要介绍 QingCloud QingMR  计费说明。 
+description: 本小节主要介绍 QingMR  计费说明。 
 keyword: QingMR,计费说明, 
 weight: 10
 collapsible: false

@@ -1,7 +1,7 @@
 ---
 title: "续费"
 description: 本小节主要介绍如何续费 QingMR 集群。 
-keyword: 云计算,大数据,青云,QingCloud,QingMR,手动续费,自动续费
+keyword: 云计算,大数据,QingMR,手动续费,自动续费
 weight: 60
 collapsible: false
 draft: false

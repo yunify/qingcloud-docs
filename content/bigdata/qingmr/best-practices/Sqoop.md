@@ -1,7 +1,7 @@
 ---
 title: "配置 Sqoop"
 description: 本小节主要介绍如何配置 Sqoop。 
-keyword: 云计算, 大数据, 青云, QingCloud, QingMR, Sqoop
+keyword: 云计算,大数据,QingMR,Sqoop
 weight: 05
 collapsible: false
 draft: true

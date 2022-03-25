@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: VPC 网络
-  vice_title: VPC 网络是 QingCloud 环境内用户专属的大型网络空间。在 VPC 网络内，您可以自定义 IP 地址范围、创建子网，并在子网内创建云服务器/数据库/大数据等各种云资源。
+  vice_title: VPC 网络是用户在云上的专属私有网络空间，为用户在云上创建的云资源提供隔离的虚拟网络环境。在 VPC 网络内，您可以自定义 IP 地址范围、创建子网，并在子网内创建云服务器、数据库、大数据等各种云资源。
   # todo add qingstor introduction video
   video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_vpc_0723.mp4"
   video_img: "/images/video.png"
@@ -61,7 +61,7 @@ section3:
 section4:
   children:
     - title: 了解：什么是 VPC 网络
-      content: VPC 网络是 QingCloud 环境内用户专属的大型网络空间。在 VPC 网络内，您可以自定义 IP 地址范围、创建子网，并在子网内创建云服务器/数据库/大数据等各种云资源。
+      content: VPC 网络是云平台上用户专属的大型网络空间。在 VPC 网络内，您可以自定义 IP 地址范围、创建子网，并在子网内创建云服务器/数据库/大数据等各种云资源。
       vice_title: 了解的第一步
       children:
         - title: 产品简介

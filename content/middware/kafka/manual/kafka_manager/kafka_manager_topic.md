@@ -1,7 +1,7 @@
 ---
 title: "Topic 管理"
 description: 通过 Kafka Manager 管理和修改 Topic 配置。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,Kafka,Topic,Kafka Manager,平衡分区leader
+keyword: 云计算,大数据,消息队列,中间件,Kafka,Topic,Kafka Manager,平衡分区leader
 weight: 30
 draft: false
 ---

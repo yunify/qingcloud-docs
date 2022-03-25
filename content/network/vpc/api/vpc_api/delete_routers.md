@@ -1,7 +1,7 @@
 ---
 title: "DeleteRouters"
 description: 删除一台或多台 VPC 网络。
-keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络
+keyword: VPC,  VPC 网络
 weight: 15
 draft: false
 ---

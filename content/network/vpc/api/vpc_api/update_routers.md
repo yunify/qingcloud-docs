@@ -1,7 +1,7 @@
 ---
 title: "UpdateRouters"
 description: 更新一台或多台 VPC 网络的配置信息。
-keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络
+keyword: VPC,  VPC 网络
 weight: 7
 draft: false
 ---

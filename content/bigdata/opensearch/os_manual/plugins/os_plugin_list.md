@@ -9,6 +9,7 @@ draft: false
 
 本小节主要介绍 OpenSearch 集成插件列表。
 
+- opensearch-analysis-ik
 - analysis-icu
 - analysis-kuromoji
 - analysis-nori

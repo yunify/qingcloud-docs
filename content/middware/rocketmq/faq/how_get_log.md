@@ -1,7 +1,7 @@
 ---
 title: "如何自助获取日志？"
 description: 自助获取 RocketMQ 日志。
-keyword: 云计算,大数据,青云,QingCloud,消息队列,中间件,RocketMQ,rocketMQ,自动获取日志
+keyword: 云计算,大数据,消息队列,中间件,RocketMQ,rocketMQ,自动获取日志
 weight: 10
 draft: false
 ---
