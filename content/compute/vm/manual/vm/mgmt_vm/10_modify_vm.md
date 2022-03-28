@@ -48,5 +48,3 @@ Weight: 10
    <img src="/compute/vm/_images/vm_modify_name_win.png" style="zoom:50%;" />
 
 5. 输入云服务器的名称和描述信息，点击**提交**，完成云服务器属性修改操作。
-
-重置云服务器的登录密码

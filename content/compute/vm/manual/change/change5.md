@@ -1,16 +1,16 @@
 ---
-title: "到期转按需"
-linktitle: "到期转按需"
-description: 本章节介绍如何设置自动续费
+title: "退订"
+linktitle: "退订"
+description: 本章节介绍如何退订
 draft: false
 weight: 50
 ---
 
-本章节介绍如何设置自动续费。
+本章节介绍如何退订。
 
 > **说明**
 >
-> 当前仅包年包月的云服务器支持到期转按需。
+> 当前仅包年包月的云服务器支持退订。
 
 ## 前提条件
 
@@ -26,14 +26,20 @@ weight: 50
 
 3. 在计费模式为**包年包月**的云服务器所在行，点击**鼠标右键**，弹出菜单窗口。
 
-   <img src="/compute/vm/_images/vm_expiry_demand.png" style="zoom:50%;" />
+   ![](/compute/vm/_images/vm_auto_revewal.png)
    
-4. 点击**到期转按需**，弹出**到期转按需**窗口。
+4. 点击**退订**，弹出**退订**窗口。
 
-   <img src="/compute/vm/_images/vm_expiry_demand_win.png" style="zoom:50%;" />
+   <img src="/compute/vm/_images/vm_unsubcribe_win.png" style="zoom:50%;" />
    
-5. 点击**到期转按需**，完成到期转按需操作。
+5. 阅读并勾选**我已阅读并同意《合约退订规则》**。
 
-   在云服务器列表页面，您可以查看该云服务器所在的计费模式所在列，显示**到期后更改为小时计费**。
+6. 点击**立即退订**，弹出确认删除资源窗口。
 
-   您可以查看按需计费的生效时间。若计划有变，您可以撤销修改计费模式。
+   <img src="/compute/vm/_images/vm_unsubcribe_del.png" style="zoom:40%;" />
+
+7. 点击**删除**，删除资源后完成退订。
+
+   退款将退回至您的账户余额，请在钱包页面查看。
+
+   在云服务器列表中，可查看该云服务器已被删除。
