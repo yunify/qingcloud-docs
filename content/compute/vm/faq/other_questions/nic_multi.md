@@ -18,7 +18,9 @@ keyword: 云计算, 青云, QingCloud, 云服务器，网卡多队列
 
 ## 操作方法
 
-为了方便使用，我们提供了[网卡队列配置脚本](/compute/vm/faq/other_questions/nic_mq.sh/)配置这些参数，请把脚本放到/etc/rc.local中，开机自动配置。 详情请参考 [linux network scaling](https://www.kernel.org/doc/Documentation/networking/scaling.txt)
+为了方便使用，我们提供了 [网卡队列配置脚本](/compute/vm/faq/other_questions/nic_mq.sh) 配置这些参数，请把脚本放到`/etc/rc.local` 中，开机自动配置。
+
+详情请参考 [linux network scaling](https://www.kernel.org/doc/Documentation/networking/scaling.txt)。
 
 ## 系统要求
 
