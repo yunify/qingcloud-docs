@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "步骤四：创建并挂载硬盘（可选）"
 description: 本章节介绍如何挂载硬盘
 draft: false
@@ -69,12 +68,3 @@ keyword: 云计算, 青云, QingCloud, 云服务器，挂载硬盘
 3. 点击**提交**，磁盘即可挂载到云服务器。
 
    硬盘的状态变更为使用中，则说明硬盘挂载云服务器成功。
-=======
-title: "步骤三：创建并挂载硬盘"
-description: 本章节介绍如何挂载硬盘
-draft: false
-weight: 30
-keyword: 云计算, 青云, QingCloud, 云服务器，挂载硬盘
----
-
->>>>>>> 6f786060 (vm:qs)
