@@ -1,12 +1,16 @@
 ---
-title: "退订"
-linktitle: "设置自动续费"
+title: "到期转按需"
+linktitle: "到期转按需"
 description: 本章节介绍如何设置自动续费
 draft: false
-weight: 40
+weight: 50
 ---
 
 本章节介绍如何设置自动续费。
+
+> **说明**
+>
+> 当前仅包年包月的云服务器支持到期转按需。
 
 ## 前提条件
 
@@ -16,18 +20,20 @@ weight: 40
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 选择**产品与服务** > **计算** > **云服务器**，进入**云服务器**页面。
 
-3. 点击鼠标右键，弹出菜单窗口。
+3. 在计费模式为**包年包月**的云服务器所在行，点击**鼠标右键**，弹出菜单窗口。
 
-   ![](/compute/vm/_images/vm_auto_revewal.png)
+   <img src="/compute/vm/_images/vm_expiry_demand.png" style="zoom:50%;" />
    
-4. 点击**设置自动续费**，弹出**修改自动续费**窗口。
+4. 点击**到期转按需**，弹出**到期转按需**窗口。
 
-   <img src="/compute/vm/_images/vm_auto_revewal_win.png" style="zoom:50%;" />
+   <img src="/compute/vm/_images/vm_expiry_demand_win.png" style="zoom:50%;" />
    
-5. 您可以根据需要设置自动续费周期。
+5. 点击**到期转按需**，完成到期转按需操作。
 
-6. 点击**立即设置**，完成自动续费设置操作。
+   在云服务器列表页面，您可以查看该云服务器所在的计费模式所在列，显示**到期后更改为小时计费**。
+
+   您可以查看按需计费的生效时间。若计划有变，您可以撤销修改计费模式。
