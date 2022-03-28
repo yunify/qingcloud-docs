@@ -84,12 +84,11 @@ GET /_snapshot/elk-opensearch
 POST _snapshot/elk-opensearch/s001/_restore
 {
   "indices": "mytest",
-  "ignore_unavailable": ture,
+  "ignore_unavailable": true,
   "include_global_state": false,
   "rename_pattern": "mytest",
   "rename_replacement": "restore_mytest",
   "include_aliases": false
-  }
 }
 ```
 
