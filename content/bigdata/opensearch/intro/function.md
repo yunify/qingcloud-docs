@@ -23,8 +23,8 @@ OpenSearch 集群服务具备以下功能特点：
 - Dashboard 节点集成 OpenSearch 反向代理和负载均衡，支持在 OpenSearch 节点失效时的故障转移能力
 - 所有节点内置日志查看工具，支持通过浏览器直接访问日志文件，方便定位
 - 支持集群关键指标监控
-- 集成了 IK Analysis 中文分词插件，支持强大的分词功能
-    
+- 集成 IK Analysis 中文分词插件，支持强大的分词功能
+
 ## 稳定性
 
 - 支持多区域和可用区资源配置
@@ -49,6 +49,6 @@ OpenSearch 集群服务具备以下功能特点：
 
 ## 与热门服务的集成
 
-- 支持 OpenSearch Dashboard 数据可视化（原 Kibana）
-- 支持与云监控 CloudSat 集成，提供 OpenSearch 服务与资源的监控告警
-- 支持与 QingStor 数据集成，将流数据加载到 OpenSearch
+- 支持 OpenSearch Dashboard 和 Cerebro 可视化管理
+- 支持云监控 CloudSat 和 Prometheus 监控服务，提供 OpenSearch 服务与资源的监控告警
+- 支持与 QingStor 对象存储数据集成，提供强大的备份后端

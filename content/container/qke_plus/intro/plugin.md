@@ -29,7 +29,7 @@ keyword: 云计算, QKE, Kubernetes, 插件
     <td>云平台插件</td><td>cloud-controller-manager</td><td><a href="https://github.com/yunify/qingcloud-cloud-controller-manager">cloud-controller-manager</a> 是青云自主研发的负载均衡器插件，自动集成于 QKE 中。<br/>支持将 Kubernetes 内部服务和 QingCloud 负载均衡器关联起来，可自动创建负载均衡器、公网 IP，通过负载均衡器将服务暴露给集群外部调用。</td>
   </tr>
     <tr>
-    <td>DNS 插件</td><td>coredns</td><td><a href="https://github.com/coredns/coredns">CoreDNS</a> 是 Kubernetes 默认的 DNS 服务，用于为集群提供命名服务。<br/>CoreDNS 是一个非常灵活的 DNS 服务器，几乎把所有的核心功能实现都外包给了插件。 </td>
+    <td>DNS 插件</td><td>coredns</td><td><a href="https://github.com/coredns/coredns">CoreDNS</a> 是 Kubernetes 默认的 DNS 服务，用于为集群提供命名服务。<br/></td>
   </tr>
   <tr>
     <td>控制台插件</td><td>ks-console</td><td><a href="https://github.com/kubesphere/console">ks-console</a> 提供了 KubeSphere 控制台的 Web 界面，能够更简单方便的管理集群及容器应用。</td> 
