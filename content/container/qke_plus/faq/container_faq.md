@@ -8,7 +8,9 @@ keyword: QKE, 容器, 应用, 镜像
 
 ## 如何配置镜像仓库？
 
+
 支持在 QKE 控制台的**集群信息** > **环境参数**页面中通过`registry-mirrors`参数配置您的镜像仓库服务地址。
+
 
 具体操作请参见[配置镜像仓库](/container/qke_plus/quickstart/cfg_mirror_repo/)。
 

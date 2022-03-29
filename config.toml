@@ -174,3 +174,6 @@ enable = false
 
 [frontmatter]
    lastmod = ["lastmod", ":fileModTime", "publishDate"]
+   
+[sitemap]
+  changefreq = 'daily'

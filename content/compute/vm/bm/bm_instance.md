@@ -23,10 +23,13 @@ keyword: 云计算, 青云, QingCloud, 云服务器，bms，弹性裸金属云�
 
 ## 前提条件
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入**云服务器**页签。
-2. 在**云服务器**页签中，点击**创建**进入购买界面。
+1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
 
-<img src="../../quickstart/_images/vm_1.png" style="zoom: 33%;" />
+2. 选择**产品与服务** > **计算** > **云服务器**，进入**云服务器**页签。
+
+3. 在**云服务器**页签中，点击**创建**进入购买界面。
+
+   <img src="../../quickstart/_images/vm_1.png" style="zoom: 33%;" />
 
 ## 购买方式
 
@@ -69,13 +72,13 @@ bm3 类型云服务器仅支持在北京3区创建，选择北京3区。
 
 硬盘可以用作系统盘和数据盘，更多信息，请参见[硬盘简介](/storage/disk/intro/introduction/)。
 
-1.  **选择系统盘**
+1. **选择系统盘**
 
-​			默认选择企业SSD型硬盘。
+   默认选择企业SSD型硬盘。
 
 2. **可选：选择数据盘**
 
-​			数据盘（硬盘）用来存储数据，可以同云服务器一起购买，会自动将数据盘挂载到云服务器。也可以之后单独购买，需要用户手动挂载到云服务器。根据存储介质和软件技术不同，我们提供4种类型数据盘，包括基础型、SSD企业型、企业级分布式SAN及容量型。具体性能参数请参见[云硬盘简介文档](/storage/disk/intro/introduction/#产品类型)。
+   数据盘（硬盘）用来存储数据，可以同云服务器一起购买，会自动将数据盘挂载到云服务器。也可以之后单独购买，需要用户手动挂载到云服务器。根据存储介质和软件技术不同，我们提供4种类型数据盘，包括基础型、SSD企业型、企业级分布式SAN及容量型。具体性能参数请参见[云硬盘简介文档](/storage/disk/intro/introduction/#产品类型)。
 
 ## 网络和安全组配置
 
@@ -136,7 +139,7 @@ bm3 类型云服务器仅支持在北京3区创建，选择北京3区。
 
 ### 创建弹性裸金属服务器
 
-请参考：[弹性裸金属服务器](https://docsv3.qingcloud.com/compute/vm/manual/bm_instance)
+请参考：[弹性裸金属服务器](/compute/vm/bm/bm_instance/#购买方式)
 
 ### 创建 NeonSAN 硬盘
 
@@ -200,66 +203,66 @@ bm3 类型云服务器仅支持在北京3区创建，选择北京3区。
 
 - 启动 ubuntu16.04云服务器，安装 multipath：
 
-```
-apt-get install multipath-tools
-```
+  ```
+  apt-get install multipath-tools
+  ```
 
 - 关闭服务：
 
-```
-service multipath-tools stop
-```
+  ```
+  service multipath-tools stop
+  ```
 
 - 增加/修改配置
-修改 ```/etc/multipath.conf```
 
-配置内容如下:
+  修改 ```/etc/multipath.conf```
 
-```
-blacklist{
-devnode "^vd"
-}
-defaults {
-user_friendly_names yes
-path_grouping_policy multibus
-failback immediate
-no_path_retry queue
-}
-devices {
-device {
-vendor "LIO-ORG"
-path_selector "queue-length 0"
-path_checker "tur"
-hardware_handler "1 alua"
-prio "alua"
-prio_args "exclusive_pref_bit"
-fast_io_fail_tmo 25
-}
-}
+  配置内容如下：
 
-```
+  ```
+  blacklist{
+  devnode "^vd"
+  }
+  defaults {
+  user_friendly_names yes
+  path_grouping_policy multibus
+  failback immediate
+  no_path_retry queue
+  }
+  devices {
+  device {
+  vendor "LIO-ORG"
+  path_selector "queue-length 0"
+  path_checker "tur"
+  hardware_handler "1 alua"
+  prio "alua"
+  prio_args "exclusive_pref_bit"
+  fast_io_fail_tmo 25
+  }
+  }
+  ```
 
 
 - 登录 iSCSI 目标
 
-```
-#!/bin/bash
-mkdir -p /etc/multipath; touch /etc/multipath/wwids;
-for IP in ip1 ip2 ip3(这里输入VSAN各节点IP地址); do
-for IQN in `iscsiadm -m discovery -t st -p ${IP}:3260 | awk '{print $2}'`; do
-iscsiadm -m node -T ${IQN} -p ${IP}:3260 -l
-done
-done
-```
+  ```
+  #!/bin/bash
+  mkdir -p /etc/multipath; touch /etc/multipath/wwids;
+  for IP in ip1 ip2 ip3(这里输入VSAN各节点IP地址); do
+  for IQN in `iscsiadm -m discovery -t st -p ${IP}:3260 | awk '{print $2}'`; do
+  iscsiadm -m node -T ${IQN} -p ${IP}:3260 -l
+  done
+  done
+  ```
 
 - 启动服务
 
-```
-service multipath-tools start
-```
+  ```
+  service multipath-tools start
+  ```
 
-```multipath -ll```  可以看到 mpath 信息。
+  ```multipath -ll```  可以看到 mpath 信息。
 
-```ls /dev/mapper/```  可以看到对应的盘符. 后续可以格式化等操作，开始使用。
+  ```ls /dev/mapper/```  可以看到对应的盘符，后续可以格式化等操作，开始使用。
 
-**配置 Linux iSCSI 客户端，请参考文档 [Virtual SAN（vSAN）](https://docsv3.qingcloud.com/storage/share/manual/vsan)**
+  **配置 Linux iSCSI 客户端，请参考文档 [Virtual SAN（vSAN）](https://docsv3.qingcloud.com/storage/share/manual/vsan)**
