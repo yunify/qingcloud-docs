@@ -7,9 +7,6 @@ enableToc: false
 draft: false
 ---
 
-[Apache RocketMQ](https://rocketmq.apache.org/)是一个基于[Apache 2.0 协议](https://github.com/apache/rocketmq/blob/master/LICENSE)开源的分布式消息和流数据平台，具有低延时、高吞吐、可审计、可几乎无限水平扩展等优点。
+[Apache RocketMQ](https://rocketmq.apache.org/) 是一个基于 [Apache 2.0 协议](https://github.com/apache/rocketmq/blob/master/LICENSE)开源的分布式消息和流数据平台，具有低延时、高吞吐、可审计、可几乎无限水平扩展等优点。
 
-RocketMQ和其他流行的消息系统之间的对比，请查阅[RocketMQ官网](https://rocketmq.apache.org/docs/motivation/#rocketmq-vs-activemq-vs-kafka)。
-
-## 产品架构
-
+RocketMQ 和其他流行的消息系统之间的对比，请查阅 [RocketMQ官网](https://rocketmq.apache.org/docs/motivation/#rocketmq-vs-activemq-vs-kafka)。

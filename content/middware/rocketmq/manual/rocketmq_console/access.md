@@ -16,11 +16,11 @@ draft: false
 
 ## 操作步骤
 
-1. 在本地浏览器中输入 `http://控制台节点IP:端口`，进入 RocketMQ 控制台登录页面。
+1. 在本地浏览器中输入 `http://网页控制台节点IP:端口`，进入 RocketMQ 控制台登录页面。
 
    > **说明**
    > 
-   > **端口**默认为 `8080`。例如：控制台节点的 IP 地址为 `192.168.0.63`，则在浏览器输入 `http://192.168.0.63:8080/`。
+   > **端口**默认为 `8080`。例如：网页控制台节点的 IP 地址为 `192.168.0.63`，则在浏览器输入 `http://192.168.0.63:8080/`。
 
    <img src="/middware/rocketmq/_images/rocketmq_console_login.png" alt="RocketMQ Console" style="zoom:50%;" />  
 

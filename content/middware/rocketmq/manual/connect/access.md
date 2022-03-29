@@ -21,6 +21,16 @@ draft: false
    
 <img src="../../../_images/check_protocol_port.png" alt="连接信息" style="zoom:50%;" />
 
+- nameserver 端口：名称服务器的访问端口，默认为 `9876`。
+- broker 端口：Broker remotingServer 服务端口，默认为 `10911`。
+- brokervip 端口：Broker fastRemotingServer 服务端口，默认为 `10909`。
+
+> **说明**
+> 
+> Broker 对外服务的监听端口包括：remotingServer 服务端口和 fastRemotingServer 服务端口。
+> - remotingServer 可以处理客户端所有请求，如：生产者发送消息的请求，消费者拉取消息的请求。Broker 在向 NameServer 注册时，只会上报 remotingServer 监听的 listenPort 端口。
+> - fastRemotingServer 不可以处理消费者拉取消息的请求，其他与 remotingServer 相同。
+
 ## 节点 IP
 
 选择**节点**页签，查看各节点的 IP 地址。

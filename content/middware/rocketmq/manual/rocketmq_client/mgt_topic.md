@@ -44,5 +44,5 @@ $ /opt/apache-rocketmq/current/bin/mqadmin deleteTopic -c DefaultCluster -n 192.
 ## 参数说明
 
 - `-c` 参数后面指定集群名称。（集群名称可在[配置参数](/middware/rocketmq/manual/config_para/modify_para)页面进行设置。默认为 `DefaultCluster`。）
-- `-b` 参数后面指定 Broker 地址。
-- `-n` 参数后面指定名称服务器地址。
+- `-b` 参数后面指定 Broker 地址。若集群有多个 Broker 节点，任意指定一个节点即可。（注意：不能是副本节点。）
+- `-n` 参数后面指定名称服务器地址。若集群有多个名称服务器节点，使用英文分号（;）进行分隔。

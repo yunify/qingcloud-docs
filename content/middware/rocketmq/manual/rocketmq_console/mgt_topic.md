@@ -18,7 +18,7 @@ draft: false
 2. 选择 **Topic**，进入 Topic 页面。
 3. 点击 **ADD/UPDATE**，进入 Topic Change 页面。
 
-   指定 Topic 所在的集群、broker、Topic 名称。
+   指定 Topic 所在的集群、Broker、Topic 名称。
 
    <img src="/middware/rocketmq/_images/add_topic.png" alt="create topic" style="zoom:50%;" />  
 

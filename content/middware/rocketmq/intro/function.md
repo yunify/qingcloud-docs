@@ -8,14 +8,12 @@ draft: false
 ---
 
 
-`RocketMQ on AppCenter`将 RocketMQ 通过云应用的形式在AppCenter部署，具有如下特性:
+`RocketMQ on AppCenter` 将 RocketMQ 通过云应用的形式部署在 AppCenter，支持如下功能:
 
 - 开箱即用
 - 支持横向与纵向在线伸缩
 - 支持高可用部署，无单点失败
 - 系统自动运维，降低企业使用成本
-- 提供了[监控告警](https://docs.qingcloud.com/product/operation/alarm)功能更好的管理集群
-- 可通过网页控制台[RocketMQ Console](https://github.com/apache/rocketmq-dashboard)对集群进行可视化管理
-- 自`RocketMQ 4.7.1 - v1.1.0`版本开始，新增日志自助获取机制，详情请查阅**文末[FAQ](/middware/rocketmq/faq/how_get_log/)部分**
-
-
+- 提供了[监控告警](/middware/rocketmq/manual/metrics_alarm/metrics)功能，从而更好地管理集群。
+- 可通过网页控制台 [RocketMQ Console](https://github.com/apache/rocketmq-dashboard) 对集群进行可视化管理。
+- 自 `RocketMQ 4.7.1 - v1.1.0` 版本开始，新增日志自助获取机制，详细信息请参见[查看日志及数据文件](/middware/rocketmq/manual/file_console/get_log)。

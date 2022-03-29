@@ -28,7 +28,7 @@ draft: false
 
    <img src="/middware/rocketmq/_images/para_list.png" alt="配置参数列表" style="zoom:50%;" />
 
-5. 在参数列表上方的下拉框选择修改的参数类型，点击**修改属性**，对应参数的**值**进入可编辑状态。
+5. 在参数列表上方的下拉框选择修改的角色，点击**修改属性**，对应角色的参数**值**进入可编辑状态。
    
    <img src="/middware/rocketmq/_images/modify_para.png" alt="修改配置参数" style="zoom:50%;" />
 

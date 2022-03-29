@@ -10,7 +10,7 @@ draft: false
 
 ## 前提条件
 
-- [开启文件管理控制台](../enable)。
+- [开启文件管理控制台](/middware/rocketmq/manual/file_console/enable)。
 - 配置 [VPN](/network/vpc/manual/vpn/)，确保本地可以访问集群网络。即可在本地浏览器里查看日志或下载相应节点的日志文件。
 
 ## 获取节点 IP
