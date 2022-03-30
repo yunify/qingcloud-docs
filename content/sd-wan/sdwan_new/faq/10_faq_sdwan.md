@@ -23,7 +23,7 @@ weight: 10
 
 ### 光盒 CPE 首次本地登录，怎么做？
 
-电脑接入光盒 CPE LAN 口 获取 IP 地址，打开浏览器输`http://电脑网关IP：9099`，用户名：admin，密码：sdwan。
+电脑接入光盒 CPE LAN 口 获取电脑网关 IP 地址，打开浏览器输入 `http://电脑网关 IP：9099`，用户名：admin，密码：sdwan。
 
 ### 环境是静态地址或 PPPOE，如何修改 WAN 口配置？
 

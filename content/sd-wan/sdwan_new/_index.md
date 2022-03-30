@@ -43,8 +43,8 @@ section2:
 
 section4:
   children:
-    - title: 了解：什么是 SD-WAN ?
-      content: RTN 是 SD-WAN 的全新自研产品，以全软件化形式提供应用即组网。
+    - title: 了解：什么是 SD-WAN（新版）?
+      content: SD-WAN （新版）是基于 SDN 技术对广域网链路进行优化并打造自服务平台，控制器纳管部署的资源组成虚拟广域网。
       vice_title: 了解的第一步
       children:
         - title: 产品简介
@@ -57,7 +57,7 @@ section4:
           url: "intro/40_scenario"
 
     - title: 上手：创建连接云网
-      content: 应用管理用于获取项目的 App ID、App证书和临时 Token 以及配置应用的其他参数，以便开启 RTC 服务。
+      content: 创建连接云网成功后，可实现云网下的接入点互通，满足分支组网、多云互联等业务场景。
       vice_title: 上手的第一步
       children:
       - title: 创建连接云网

@@ -44,11 +44,36 @@ keyword: 青云, QingCloud, 云计算, QKE, 容器, 镜像仓库
 
    所需配置的参数如下：
 
-   | 参数名称            | 配置说明                                                     |
-   | ------------------- | ------------------------------------------------------------ |
-   | registry-mirrors    | 填写完整的 Docker 镜像服务地址。 <br/>填写示例：`https://mirror.harbor.local`。多个地址之间使用逗号（,）分隔。 |
-   | insecure-registries | 若需要通过非安全的 HTTP 或不受信任的 HTTPS 访问的 Docker 仓库，则在此处填写仓库地址。<br/>填写示例：`mirror.harbor.local`。多个地址之间使用逗号（,）分隔。 |
-   | docker-auths        | 填写镜像仓库密钥，以获得访问、拉取、推送镜像得权限。<br/>填写示例：`{"dockerhub.qingcloud.com":{"auth":"YWRtaW46MTIzNDU2"},"index.docker.io":{"auth":"YWRtaW46MTIzNDU2"}}` |
+   - **registry-mirrors**
+   
+     填写完整的 Docker 镜像服务地址。
+   
+     填写示例：`https://mirror.harbor.local`。如果有多个地址，使用使用逗号（,）进行分隔。
+   
+   - **insecure-registries**
+   
+     若需要通过非安全的 HTTP 或不受信任的 HTTPS 访问的 Docker 仓库，则在此处填写仓库地址。
+   
+     填写示例：`mirror.harbor.local`或`139.198.xx.xx`。如果有多个地址，使用使用逗号（,）进行分隔。
+   
+   - **docker-auths**
+   
+     填写镜像仓库的认证信息，以获得访问、拉取、推送镜像的权限。目前仅支持“用户名 + 密码”的认证方式。
+   
+     docker_auth 配置必须为正确的 json 格式，填写示例：
+   
+     ```
+     {
+     	"dockerhub.qingcloud.com":{                # "dockerhub.qingcloud.com"为仓库地址
+     		"auth":"YWRtaW46SGFyYm9yMTIzNDU="   # "YWRtaW46SGFyYm9yMTIzNDU=" 为 “用户名:密码” 进行 base64 编码后的字符串,用户名及密码不能有中文字符
+     		},
+     		"index.docker.io":{                 #可配置多个仓库的认证信息
+     		"auth":"YWRtaW46MTIzNDU2="
+     		}
+     }
+     ```
+   
+     
 
 
 4. 配置完成后，点击**确认修改**进行保存。

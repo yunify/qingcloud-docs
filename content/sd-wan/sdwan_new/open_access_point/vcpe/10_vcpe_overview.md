@@ -23,7 +23,7 @@ VCPE 是 SD-WAN（新版）软件版本，包含 **VCPE 虚拟机**和 **VCPE �
   
 - VCPE 容器
 
-  对操作系统没有限制。
+  推荐使用 Ubuntu Server 20.04。
 
 - 宿主机可连接公网。
 

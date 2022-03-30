@@ -66,13 +66,13 @@ QKE 支持自定义部分参数的值，您可以根据自己的业务情况对�
 | ------------------- | ------------------------------------------------------------ |
 | registry-mirrors    | 填写完整的 Docker 镜像服务地址。 <br/>填写示例：`https://mirror.harbor.local`。多个地址之间使用逗号（,）分隔。 |
 | insecure-registries | 若需要通过非安全的 HTTP 或不受信任的 HTTPS 访问的 Docker 仓库，则在此处填写仓库地址。<br/>填写示例：`mirror.harbor.local`。多个地址之间使用逗号（,）分隔。 |
-| docker-auths        | 填写镜像仓库密钥，以获得访问、拉取、推送镜像得权限。<br/>填写示例：`{"dockerhub.qingcloud.com":{"auth":"YWRtaW46MTIzNDU2"},"index.docker.io":{"auth":"YWRtaW46MTIzNDU2"}}` |
+| docker-auths        | 填写镜像仓库密钥，以获得访问、拉取、推送镜像得权限。<br/>填写示例：`{"dockerhub.qingcloud.com":{"auth":"YWRtaW46MTIzNDU2"},"index.docker.io":{"auth":"YWRtaW46MTIzNDU2"}}`。<br/>具体配置说明请参见[配置镜像仓库信息](/container/qke_plus/quickstart/cfg_mirror_repo/#步骤二配置镜像仓库信息)。 |
 
 #### 其他参数
 
-| 参数名称 | 参数说明                                                     | 备注                 |
-| -------- | ------------------------------------------------------------ | -------------------- |
-| API 密钥 | 此密钥用于创建云平台的资源，比如负载均衡器、PV 挂盘等。<br/>若无可用密钥，请前往 [API 密钥管理](https://console.qingcloud.com/access_keys/)页面进行创建。 | 集群创建后无法修改。 |
+| 参数名称    | 参数说明                                                     | 备注                 |
+| ----------- | ------------------------------------------------------------ | -------------------- |
+| API 密钥 ID | 此密钥用于创建云平台的资源，比如负载均衡器、PV 挂盘等。<br/>若无可用密钥，请前往 [API 密钥管理](https://console.qingcloud.com/access_keys/)页面进行创建。 | 集群创建后无法修改。 |
 
 
 

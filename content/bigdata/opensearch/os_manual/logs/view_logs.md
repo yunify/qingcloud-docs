@@ -12,22 +12,6 @@ OpenSearch 节点通过内置 Caddy Server 日志管理工具，支持通过节�
 
 本小节主要介绍如何查看 OpenSearch 节点日志。
 
-
-
-
 可直接通过浏览器访问任意 OpenSearch 节点的 80 端口 http://$ES_IP/logs/ 查看所有 OpenSearch 节点的日志，如下图所示。
 
 ![es-logs](../../images/es-logs.png)
-
-## 旧版操作步骤
-
-`ELK 5.6.16 - QingCloud 1.5.0` 之前的版本请按下面的步骤操作。
-
-1. 在集群列表页面，在 ELK 集群上点击右键选择 **自定义服务** > **收集ES日志**，然后选择 **OpenSearch节点** 点击提交。
-
-   ![collect_es_logs](../../images/collect_es_logs.png)
-
-2. 任务执行成功后可通过浏览器访问`http://< Logstash 节点IP>/logs/`查看对应 ES 节点的日志。
-
-   > **说明**
-   > 如存在多个 Logstash 节点请在集群详情页面切换到参数配置界面，配置 OpenSearch 节点的 `logstash_node_ip` 配置项。

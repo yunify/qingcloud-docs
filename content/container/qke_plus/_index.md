@@ -28,7 +28,7 @@ section2:
     url: "manual/mgt_cluster/cluster_overview/"
   - title: 最佳实践
     content: QKE 最佳实践
-    url: "best-practice/docker_deployment/"
+    url: "best-practice/how_use_ks/"
   - title: 常见问题
     content: 介绍 QKE 集群的常见问题与解决办法
     url: "faq/cluster_faq/"
