@@ -22,4 +22,5 @@ Kubernetes 允许在您创建服务时，指定你所需要的服务类型。类
 | NodePort     | 在每个节点的 IP 上开放一个静态端口，通过静态端口对外暴露服务。`NodePort` 服务会路由到自动创建的 `ClusterIP` 服务。通过请求 `<节点 IP>:<节点端口>`，你可以从集群的外部访问一个 `NodePort` 服务。<br/><div style="background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b><br/>除了测试以及非生产环境以外，不推荐在生产环境中直接通过集群节点对外甚至公网提供服务。从安全上考虑，使用该类型会直接暴露集群节点，容易受到攻击。</div> |
 | LoadBalancer | 使用云提供商的负载均衡器向外部暴露服务。 外部负载均衡器可以将流量路由到自动创建的 `NodePort` 服务和 `ClusterIP` 服务上。<br/> `LoadBalancer`服务一般为需要暴露到公网的服务。 |
 | externalName | 通过返回 `CNAME` 和对应值，可以将服务映射到 `externalName` 字段的内容（例如，`foo.bar.example.com`）。 无需创建任何类型代理。<div style="background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b><br/>需要使用 kube-dns 1.7 及以上版本或者 CoreDNS 0.0.8 及以上版本才能使用 `ExternalName` 类型。</div> |
+| Headless     | Headless 服务即不需要 Cluster IP 的服务，即在创建服务的时候指定 `spec.clusterIP=None`。<br/>Headless 服务包括两种类型：<ul><li>不指定 Selectors，但设置 externalName，通过 CNAME 记录处理</li><li>指定 Selectors，通过 DNS A 记录设置后端 endpoint 列表</li></ul> |
 
