@@ -1,7 +1,7 @@
 ---
 title: "RemoveRoutes"
 description: 删除一条或者多条路由表规则。
-keyword: QingCloud, 青云, 云计算, VPC, 路由表
+keyword: VPC, 路由表
 weight:  25
 draft: false
 ---

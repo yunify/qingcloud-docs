@@ -1,7 +1,7 @@
 ---
 title: "使用内网 DNS 功能"
 description: 介绍如何配置 VPC 网络内部的 DNS 服务。
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 内网 DNS
+keyword: VPC, VPC 网络, 内网 DNS
 draft: false
 weight: 20
 ---

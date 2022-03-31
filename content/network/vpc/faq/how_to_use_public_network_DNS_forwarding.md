@@ -1,6 +1,6 @@
 ---
 title: "公网 DNS 转发如何使用"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, DNS 转发
+keyword: VPC, VPC 网络, DNS 转发
 description: 介绍如何配置公网 DNS 转发。
 draft: false
 weight: 1
@@ -44,7 +44,7 @@ nameserver 192.168.255.254		#指定VPC网段最后一个IP地址
 
 ## 4、移除公网 DNS 转发
 
-1、可以删除指定的公网 DNS 服务器地址，使用青云默认配置。
+1、可以删除指定的公网 DNS 服务器地址，使用默认配置。
 ![image-20210517190209536](../_images/how_to_use_public_network_DNS_forwarding.assets/image-20210517190209536.png)
 
 2、关闭 DNS 服务

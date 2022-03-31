@@ -1,7 +1,7 @@
 ---
 title: "DeleteRouterStatics"
 description: 删除一条或多条 VPC 网络规则。
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络规则
+keyword: VPC, VPC 网络规则
 weight: 30
 draft: false
 ---

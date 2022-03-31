@@ -39,4 +39,6 @@ Section1:
     - title: 键值数据库 Memcached
       url: "/database/memcached/intro/introduction"
 
+    # - title: 分布式数据库 TiDB
+    #   url: "/database/tidb/intro/overview"
 ---

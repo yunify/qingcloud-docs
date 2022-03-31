@@ -1,7 +1,7 @@
 ---
 title: "使用端口转发功能"
 description: 如何使用 VPC 的端口转发功能。
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 端口转发
+keyword: VPC, VPC 网络, 端口转发
 draft: false
 weight: 20
 ---

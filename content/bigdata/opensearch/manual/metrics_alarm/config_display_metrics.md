@@ -1,7 +1,7 @@
 ---
 title: "监控指标"
 description: 本小节主要介绍 OpenSearch 主要支持哪些监控指标。 
-keyword: 监控指标,OpenSearch,搜索引擎,大数据
+keyword: 监控指标,OpenSearch,搜索引擎
 weight: 10
 collapsible: false
 draft: false
@@ -12,7 +12,7 @@ OpenSearch 提供集群服务和资源性能监控指标和告警信息。
 - 服务监控指标统计了集群和服务的健康状态信息，可用于定位分析服务的性能。
 - 资源监控指标统计了云服务器的资源信息，如 CPU 使用率、硬盘 IOPS 情况等，可用于查看系统性能是否到达瓶颈。
 
-> 注意：
+> **注意**
 > 
 > OpenSearch 集群只用于监控集群的服务和资源指标，不会收除集除监控指标外的其它数据。
 
@@ -31,6 +31,8 @@ OpenSearch 提供集群服务和资源性能监控指标和告警信息。
 | 执行中的 FETCH 数| 5分钟 | counts | 统计还未完成的 FETCH 数。<br>以个为单位。 |
 | 任务在队列中的最大等待时间 | 5分钟 | ms | 统计队列中未被执行的任务的最大等待时间。<br>以毫秒为单位。 |
 | 活跃分片百分比 | 5分钟 | % | 统计队列中未被执行的任务的最大等待时间。<br>以%为单位。 |
+| 索引压力 | 5分钟 | MByte | 统计索引操作消耗的 JVM 内存大小。<br>- `node_indexing_pr_coordinating` 表示 coordinating 操作消耗的 JVM 内存大小。<br>- `node_indexing_pr_primary` 表示 primary 操作消耗的 JVM 内存大小。<br>- `node_indexing_pr_replica` 表示 replica 操作消耗的 JVM 内存大小。<br>-  `node_indexing_pr_all` 表示所有索引操作消耗的 JVM 内存大小。<br>- `node_indexing_pr_limit` 表示执行索引操作的 JVM 内存限制。|
+| 索引压力百分比 | 5分钟 | % | 统计索引操作消耗的 JVM 内存百分比。<br>- `索引压力百分比（coordinating, primary）`，表示 coordinating 与 primary 操作消耗 JVM 内存百分比（以“执行索引操作的 JVM 内存限制”为总量计算）。<br>- `索引压力百分比（all）`表示所有索引操作消耗 JVM 内存百分比（以“执行索引操作的jvm内存限制”为总量计算）。 |
 
 ## 支持的资源监控指标
 

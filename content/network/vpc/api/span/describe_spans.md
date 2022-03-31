@@ -1,7 +1,7 @@
 ---
 title: "DescribeSpans"
 description: 获取一个或多个 SPAN 的配置。
-keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
+keyword: SPAN, 网络流量镜像
 weight: 2
 draft: false
 ---

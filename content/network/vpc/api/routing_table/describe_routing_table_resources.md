@@ -1,7 +1,7 @@
 ---
 title: "DescribeRoutingTableResources"
 description: 获取路由表以及资源的对应关系。
-keyword: QingCloud, 青云, 云计算, VPC, 路由表
+keyword: VPC, 路由表
 weight: 7
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: "OpenVPN Mac 客户端使用方法"
 description: 介绍如何在 MAC 客户端以证书的方式连接 OpenVPN。
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, MAC, OpenVPN
+keyword: VPC, VPC 网络, MAC, OpenVPN
 weight: 50
 draft: false
 ---

@@ -17,7 +17,7 @@ Caddy 运行在集群节点的 80 端口，用户可通过 `http://<节点 IP>/l
 
 ## HAProxy 组件
 
-[HAProxy](http://www.haproxy.org/) 是一个高性能的负载均衡软件，部署在 Dashboard 节点上，为我们提供 OpenSearch 的负载均衡和故障转移功能。
+[HAProxy](http://www.haproxy.org/) 是一个高性能的负载均衡软件，部署在 Dashboard 节点上，提供 OpenSearch 的负载均衡和故障转移功能。
 
 **建议**通过集群的高可用 IP（绑定在 Dashboard 节点上）访问 OpenSearch 服务 `http://<VIP>:9200/`。
 

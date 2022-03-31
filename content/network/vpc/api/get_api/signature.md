@@ -1,7 +1,7 @@
 ---
 title: "签名认证"
 description: 介绍 API 签名方法。 
-keyword: QingCloud, 青云, 云计算, VPC, API 调用, 签名
+keyword: VPC, API 调用, 签名
 draft: false
 weight: 30
 ---
@@ -195,7 +195,7 @@ https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=RunIns
 
 您需要先到 IAM 控制面板创建一个基于特定信任载体类型的身份，并将身份绑定到 API 执行设备上。
 
-假设 API 执行设备为 QingCloud 广东 2 区 id 为 i-7lchv5u3 的云服务器。
+假设 API 执行设备为广东 2 区 id 为 i-7lchv5u3 的云服务器。
 
 ### 步骤 1: 获取临时凭证
 

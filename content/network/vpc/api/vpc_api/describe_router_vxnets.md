@@ -1,7 +1,7 @@
 ---
 title: "DescribeRouterVxnets"
 description: 获取 VPC 网络管理的私有网络列表。
-keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络, 私有网络
+keyword: VPC,  VPC 网络, 私有网络
 weight: 12
 draft: false
 ---
