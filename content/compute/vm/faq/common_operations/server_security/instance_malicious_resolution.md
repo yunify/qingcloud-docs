@@ -29,19 +29,11 @@ enableToc: false
 
 ### IIS配置方法
 
-<<<<<<< HEAD
-1、查看是否绑定主机头，如以下截图主机名为空，则表示未绑定主机名。  
-
- ![](../../../_images/instance_malicious_resolution_1.png)
-
-2、配置IIS网站绑定主机名。  
-=======
 1. 查看是否绑定主机头，如以下截图主机名为空，则表示未绑定主机名。
 
  ![](../../../_images/instance_malicious_resolution_1.png)
 
 2. 配置IIS网站绑定主机名
->>>>>>> 6418c84541d18994fefbcac994f77ce7e6826837
 
  ![](../../../_images/instance_malicious_resolution_2.png)
 
@@ -73,16 +65,9 @@ server
 	include location.conf;                           #调用其他规则，也可去除
 }
 ```
-<<<<<<< HEAD
 4、重启nginx服务器，验证访问效果。
 使用IP访问效果  
  ![](../../../_images/instance_malicious_resolution_3.png)
-=======
-4. 重启nginx服务器，验证访问效果。
-   使用IP访问效果
-    ![](../../../_images/instance_malicious_resolution_3.png)
->>>>>>> 6418c84541d18994fefbcac994f77ce7e6826837
-
 ### Tomcat配置方法
 1. 修改$TOMCAT_HOME/conf目录下的server.xml文件
 
