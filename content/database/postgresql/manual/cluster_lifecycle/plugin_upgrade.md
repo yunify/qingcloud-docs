@@ -37,8 +37,15 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
    如果您正在使用psql，请与-X标志连接，以防止任何命令在.psqlrc会话启动时加载以前的 TimescaleDB 版本，示例如下：
 
    ```sql
-   psql -U <用户名> -h <ip> -p <port> -d <数据库名> -X
+   psql -U <userName> -h <ip> -p <port> -d <serverName> -X
    ```
+
+| <span style="display:inline-block;width:80px">选项</span> | <span style="display:inline-block;width:240px">说明</span>   | <span style="display:inline-block;width:280px">示例</span> |
+| :-------------------------------------------------------- | :----------------------------------------------------------- | :--------------------------------------------------------- |
+| -U                                                        | 数据库用户账号名。<br>- 新建数据库默认账号名 `pguser`。<br>- 获取更多用户信息，请参见[用户管理](../../mgt_account/user_account)。 | pguser                                                     |
+| -h                                                        | 数据库节点的 IP 或者双节点集群的 VIP。这里指**高可用写IP**   | 192.168.100.0                                              |
+| -p                                                        | 端口号                                                       | -                                                          |
+| -d                                                        | 数据库名称。 <br>新建数据库默认名称 `qingcloud`。            | qingcloud                                                  |
 
 5. 执行如下 SQL 语句更新 timescaleDB 版本至 1.7.3：
 
