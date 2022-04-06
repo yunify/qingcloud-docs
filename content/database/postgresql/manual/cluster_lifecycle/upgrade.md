@@ -32,71 +32,30 @@ draft: false
 
 ## 操作步骤
 
+> 升级集群前，请备份当前集群，再在当前集群上进行升级，备份详情请参见[创建备份](/database/postgresql/manual/backup_restoration/enable_backup/)。
+
 1. 登录管理控制台。
+
 2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 PostgreSQL**，进入集群管理页面。
 
-### 1）备份集群并验证更新版本影响
+3. 点击目标集群 ID，进入集群详情页面。
 
-#### 步骤一：console 备份原集群
+4. 在集群页面**基本属性**模块，点击集群操作下拉菜单。
 
-1. 点击原集群 ID，进入集群详情页面。
-2. 备份原集群，详细操作请参见[创建备份](/database/postgresql/manual/backup_restoration/enable_backup/)。
-
-#### 步骤二：升级备份集群
-
-可参照[升级集群版本](#2更新集群版本)操作在备份集群上升级，并验证数据信息是否正常：
-
-- 若升级后数据库内容与备份数据库内容存在差异，甚至影响使用，请尝试使用pg_restore恢复数据库。如能正常恢复可执行以下操作升级目标集群，若不能正常恢复，请联系技术支持。
-- 若升级后数据内容页与备份数据库内容无差异，请执行以下操作升级目标集群。
-
-### 2）升级集群版本
-
-1. 确认集群的**节点状态**为活跃，**节点服务状态**为正常。
-
-   > 升级集群前，请备份当前集群，再在当前集群上进行升级，备份详情请参见[创建备份](/database/postgresql/manual/backup_restoration/enable_backup/)。
-
-#### 步骤一：备份数据库并保存备份文件
-
-> <b>注：</b>
->
-> 由于 timescaleDB 1.6.1 版本 release note 说明，`For this release only, you need to restart the database after upgrade before restoring a backup.`因此，升级前需要使用 pg_dump 进行数据库的备份工作。
->
-> timescaleDB release notes：https://docs.timescale.com/timescaledb/latest/overview/release-notes/#main-content
-
-<img src="../../../_images/upgrade_09.png" alt="版本说明" style="zoom:50%;" />
-
-1. 连接集群的数据库，详细操作请[参见连接数据库](/database/postgresql/manual/mgt_connect/access_pg/)。
-2. 使用**pg_dump**备份数据库。
-
-3. 备份数据库之后退出数据库。
-
-#### 步骤二：在console升级集群
-
-1. 在集群页面**基本属性**模块，点击集群操作下拉菜单。
-
-2. 展开下拉菜单，点击**关闭**，关闭集群，等待任务执行完成。
+5. 展开下拉菜单，点击**关闭**，关闭集群，等待任务执行完成。
 
    <img src="../../../_images/upgrade_10.png" alt="关闭集群" style="zoom:50%;" />
 
-2. 展开下拉菜单，点击**升级**。
+6. 展开下拉菜单，点击**升级**。
 
-   <img src="../../../_images/upgrade_11.png" alt="升级集群" style="zoom:50%;" />
+<img src="../../../_images/upgrade_11.png" alt="升级集群" style="zoom:50%;" />
 
-3. 确认升级版本并点击**升级**。
+7. 确认升级版本并点击**升级**。
 
-   <img src="../../../_images/upgrade_12.png" alt="确认版本" style="zoom:50%;" />
+<img src="../../../_images/upgrade_12.png" alt="确认版本" style="zoom:50%;" />
 
-4. 等待升级完成系统自动启动集群后，确认版本已升级到最新版本。
+8. 等待升级完成系统自动启动集群后，确认版本已升级到最新版本。
 
-   <img src="../../../_images/upgrade_13.png" alt="确认版本" style="zoom:50%;" />
+<img src="../../../_images/upgrade_13.png" alt="确认版本" style="zoom:50%;" />
 
-#### 步骤三：更新 timescaleDB 插件
-
-PostgreSQL升级到`PG11-高可用版-1.0.9`及以上版本时，需要将 timescaleDB 插件升级到 `timescaleDB 1.7.3 `及以上版本，才可正常使用，升级 timescaleDB 插件，详细操作请参见[升级 timescaleDB插件](/database/postgresql/manual/plugin_mgt/plugin_upgrade/)。
-
-#### 步骤四：连接数据库并验证数据
-
-1. 连接集群的数据库，详细操作请参见[连接数据库](http://localhost:1313/database/postgresql/manual/mgt_connect/access_pg/)。
-2. 验证数据。
-   - 若数据无误，则升级完成。
-   - 若数据异常，请使用 pg_restore 从备份文件中恢复数据库。
+> PostgreSQL升级到`PG11-高可用版-1.0.9`及以上版本时，需要将 timescaleDB 插件升级到 `timescaleDB 1.7.3 `及以上版本，才可正常使用，升级 timescaleDB 插件，详细操作请参见[升级 timescaleDB插件](/database/postgresql/manual/plugin_mgt/plugin_upgrade/)。

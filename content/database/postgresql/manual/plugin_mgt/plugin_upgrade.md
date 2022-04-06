@@ -25,12 +25,27 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
 ## 操作步骤
 
 1. 登录管理控制台。
-
 2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 PostgreSQL**，进入集群管理页面。
-
 3. 点击目标集群 ID，进入集群详情页面。
 
-4. 使用数据库连接软件（PgAdmin、DBeaver 或直接使用 psql）通过 root 账户连接数据库**高可用写IP**。
+###  备份数据库并保存备份文件
+
+> <b>注：</b>
+>
+> 由于 timescaleDB 1.6.1 版本 release note 说明，`For this release only, you need to restart the database after upgrade before restoring a backup.`因此，升级前需要使用 pg_dump 进行数据库的备份工作。
+>
+> timescaleDB release notes：https://docs.timescale.com/timescaledb/latest/overview/release-notes/#main-content
+
+<img src="../../../_images/upgrade_09.png" alt="版本说明" style="zoom:50%;" />
+
+1. 连接集群的数据库，详细操作请[参见连接数据库](/database/postgresql/manual/mgt_connect/access_pg/)。
+2. 使用**pg_dump**备份数据库。
+
+3. 备份数据库之后退出数据库。
+
+### 升级插件
+
+1. 使用数据库连接软件（PgAdmin、DBeaver 或直接使用 psql）通过 root 账户连接数据库**高可用写IP**。
 
    <img src="../../../_images/upgrade_14.png" alt="连接数据库" style="zoom:50%;" />
 
@@ -56,3 +71,10 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
    <b> `注意：需要将更新语句作为连接数据库后的第一条命令执行，否则执行会报如下错误：`</b>
 
    <img src="../../../_images/upgrade_15.png" alt="连接数据库" style="zoom:50%;" />
+
+### 连接数据库并验证数据
+
+1. 连接集群的数据库，详细操作请参见[连接数据库](http://localhost:1313/database/postgresql/manual/mgt_connect/access_pg/)。
+2. 验证数据。
+   - 若数据无误，则升级完成。
+   - 若数据异常，请使用 pg_restore 从备份文件中恢复数据库。
