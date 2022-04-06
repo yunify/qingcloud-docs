@@ -53,6 +53,8 @@ draft: false
 
 1. 确认集群的**节点状态**为活跃，**节点服务状态**为正常。
 
+   > 升级集群前，请备份当前集群，再在当前集群上进行升级，备份详情请参见[创建备份](/database/postgresql/manual/backup_restoration/enable_backup/)。
+
 #### 步骤一：备份数据库并保存备份文件
 
 > <b>注：</b>
@@ -90,7 +92,7 @@ draft: false
 
 #### 步骤三：更新 timescaleDB 插件
 
-PostgreSQL升级到`PG11-高可用版-1.0.9`及以上版本时，需要将 timescaleDB 插件升级到 `timescaleDB 1.7.3 `及以上版本，才可正常使用，升级 timescaleDB 插件，详细操作请参见[升级 timescaleDB插件](/database/postgresql/manual/cluster_lifecycle/plugin_upgrade/)。
+PostgreSQL升级到`PG11-高可用版-1.0.9`及以上版本时，需要将 timescaleDB 插件升级到 `timescaleDB 1.7.3 `及以上版本，才可正常使用，升级 timescaleDB 插件，详细操作请参见[升级 timescaleDB插件](/database/postgresql/manual/plugin_mgt/plugin_upgrade/)。
 
 #### 步骤四：连接数据库并验证数据
 
