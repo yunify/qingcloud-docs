@@ -124,7 +124,11 @@ draft: false
 
 1. 使用数据库连接软件（PgAdmin、DBeaver 或直接使用 psql）通过 root 账户连接数据库**高可用写IP**。
 
-   如果您正在使用psql，请与-X标志连接。这可以防止任何命令在.psqlrc会话启动时加载以前的 TimescaleDB 版本
+   如果您正在使用psql，请与-X标志连接，以防止任何命令在.psqlrc会话启动时加载以前的 TimescaleDB 版本，示例如下：
+
+   ```sql
+   psql -u postgres -h <ip> -p <port> -x
+   ```
 
    <img src="../../../_images/upgrade_14.png" alt="连接数据库" style="zoom:50%;" />
 
