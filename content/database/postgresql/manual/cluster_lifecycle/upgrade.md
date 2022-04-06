@@ -32,7 +32,7 @@ draft: false
 
 ## 操作步骤
 
-> 升级集群前，请备份当前集群，再在当前集群上进行升级，备份详情请参见[创建备份](/database/postgresql/manual/backup_restoration/enable_backup/)。
+> 升级集群前，建议备份当前集群，再在当前集群上进行升级，以避免操作过程中出现异常。备份详情请参见[创建备份](/database/postgresql/manual/backup_restoration/enable_backup/)。
 
 1. 登录管理控制台。
 
@@ -58,4 +58,4 @@ draft: false
 
 <img src="../../../_images/upgrade_13.png" alt="确认版本" style="zoom:50%;" />
 
-> PostgreSQL升级到`PG11-高可用版-1.0.9`及以上版本时，需要将 timescaleDB 插件升级到 `timescaleDB 1.7.3 `及以上版本，才可正常使用，升级 timescaleDB 插件，详细操作请参见[升级 timescaleDB插件](/database/postgresql/manual/plugin_mgt/plugin_upgrade/)。
+> PostgreSQL升级到`PG11-高可用版-1.0.9`及以上版本时，提示可更新 timescaleDB 插件版本到1.7.3，可根据实际需要决定是否升级。升级 timescaleDB 插件，详细操作请参见[升级 timescaleDB插件](/database/postgresql/manual/plugin_mgt/plugin_upgrade/)。
