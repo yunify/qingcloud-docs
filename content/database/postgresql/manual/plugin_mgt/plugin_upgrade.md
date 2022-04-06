@@ -30,18 +30,11 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
 
 ###  备份数据库并保存备份文件
 
-> <b>注：</b>
->
-> 由于 timescaleDB 1.6.1 版本 release note 说明，`For this release only, you need to restart the database after upgrade before restoring a backup.`因此，升级前需要使用 pg_dump 进行数据库的备份工作。
->
-> timescaleDB release notes：https://docs.timescale.com/timescaledb/latest/overview/release-notes/#main-content
+由于 timescaleDB 1.6.1 版本 release note 说明，`For this release only, you need to restart the database after upgrade before restoring a backup.`因此，升级前需要使用` pg_dump `进行数据库的备份工作。
 
-<img src="../../../_images/upgrade_09.png" alt="版本说明" style="zoom:50%;" />
+<!--timescaleDB release notes：[https://docs.timescale.com/timescaledb/latest/overview/release-notes/#main-content](https://docs.timescale.com/timescaledb/latest/overview/release-notes/#main-content)-->
 
-1. 连接集群的数据库，详细操作请[参见连接数据库](/database/postgresql/manual/mgt_connect/access_pg/)。
-2. 使用**pg_dump**备份数据库。
-
-3. 备份数据库之后退出数据库。
+<!--<img src="../../../_images/upgrade_09.png" alt="版本说明" style="zoom:50%;" />-->
 
 ### 升级插件
 
@@ -55,14 +48,15 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
    psql -U <userName> -h <ip> -p <port> -d <serverName> -X
    ```
 
-| <span style="display:inline-block;width:80px">选项</span> | <span style="display:inline-block;width:240px">说明</span>   | <span style="display:inline-block;width:280px">示例</span> |
-| :-------------------------------------------------------- | :----------------------------------------------------------- | :--------------------------------------------------------- |
-| -U                                                        | 数据库用户账号名。<br>- 新建数据库默认账号名 `pguser`。<br>- 获取更多用户信息，请参见[用户管理](../../mgt_account/user_account)。 | pguser                                                     |
-| -h                                                        | 数据库节点的 IP 或者双节点集群的 VIP。这里指**高可用写IP**   | 192.168.100.0                                              |
-| -p                                                        | 端口号                                                       | -                                                          |
-| -d                                                        | 数据库名称。 <br>新建数据库默认名称 `qingcloud`。            | qingcloud                                                  |
+   | <span style="display:inline-block;width:80px">选项</span> | <span style="display:inline-block;width:240px">说明</span>   | <span style="display:inline-block;width:280px">示例</span> |
+   | :-------------------------------------------------------- | :----------------------------------------------------------- | :--------------------------------------------------------- |
+   | -U                                                        | 数据库用户账号名。<br>- 新建数据库默认账号名 `pguser`。<br>- 获取更多用户信息，请参见[用户管理](../../mgt_account/user_account)。 | pguser                                                     |
+   | -h                                                        | 数据库节点 IP 或集群的高可用写 IP                            | 192.168.100.0                                              |
+   | -p                                                        | 端口号                                                       | -                                                          |
+   | -d                                                        | 数据库名称。 <br>新建数据库默认名称 `qingcloud`。            | qingcloud                                                  |
+   | -X                                                        | psql在连接数据库之前，首先会读取并执行改文件中的命令，然后连接到数据库，如果加上-X参数，则跳过该文件。通过该文件可以设置客户端或者是服务端的风格。 | -                                                          |
 
-5. 执行如下 SQL 语句更新 timescaleDB 版本至 1.7.3：
+2. 执行如下 SQL 语句更新 timescaleDB 版本至 1.7.3：
 
    ```sql
    ALTER EXTENSION timescaledb UPDATE TO '1.7.3';
@@ -70,11 +64,9 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
 
    <b> `注意：需要将更新语句作为连接数据库后的第一条命令执行，否则执行会报如下错误：`</b>
 
-   <img src="../../../_images/upgrade_15.png" alt="连接数据库" style="zoom:50%;" />
+   ​		<img src="../../../_images/upgrade_15.png" alt="连接数据库" style="zoom:50%;" />
 
-### 连接数据库并验证数据
+3. 验证数据。
 
-1. 连接集群的数据库，详细操作请参见[连接数据库](http://localhost:1313/database/postgresql/manual/mgt_connect/access_pg/)。
-2. 验证数据。
    - 若数据无误，则升级完成。
    - 若数据异常，请使用 pg_restore 从备份文件中恢复数据库。
