@@ -2,7 +2,7 @@
 title: "升级 timescaleDB 插件"
 description: 本小节主要介绍如何升级 timescaleDB 插件。 
 keyword: 升级集群,PostgreSQL,关系型数据库,数据库
-weight: 17
+weight: 2
 collapsible: false
 draft: false
 
