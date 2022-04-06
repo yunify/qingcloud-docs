@@ -27,7 +27,6 @@ draft: false
 
 - 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 PostgreSQL 集群，且集群状态为**关闭**。
-- 升级生产环境之前，请执行[验证更新版本影响](#1备份集群并验证更新版本影响)操作。
 - **节点状态**活跃，**节点服务状态**正常。
 
 ## 操作步骤
@@ -58,4 +57,4 @@ draft: false
 
 <img src="../../../_images/upgrade_13.png" alt="确认版本" style="zoom:50%;" />
 
-> PostgreSQL升级到`PG11-高可用版-1.0.9`及以上版本时，提示可更新 timescaleDB 插件版本到1.7.3，可根据实际需要决定是否升级。升级 timescaleDB 插件，详细操作请参见[升级 timescaleDB插件](/database/postgresql/manual/plugin_mgt/plugin_upgrade/)。
+> PostgreSQL升级到`PG11-高可用版-1.0.9`及以上版本时，提示“更新 timescaleDB 插件版本到1.7.3”，可根据实际需要决定是否升级。升级 timescaleDB 插件，详细操作请参见[升级 timescaleDB插件](/database/postgresql/manual/plugin_mgt/plugin_upgrade/)。
