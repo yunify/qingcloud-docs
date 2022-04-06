@@ -48,7 +48,7 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
 
    <!--<img src="../../../_images/upgrade_09.png" alt="版本说明" style="zoom:50%;" />-->
 
-4. 升级备份集群的 timescaleDB 插件
+4. 升级备份集群的 timescaleDB 插件。
 
    a. 使用数据库连接软件（PgAdmin、DBeaver 或直接使用 psql）通过 root 账户连接数据库**高可用写IP**。
 
