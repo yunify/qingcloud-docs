@@ -15,30 +15,42 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
 ## 约束限制
 
 - 仅支持升级到`PG11-高可用版-1.0.9`及以上版本的集群。
+- 仅支持升级到更高版本。
+- 仅支持集群版本升级到`PG11-高可用版-1.0.9`及以上的集群。
 
 ## 前提条件
 
 - 已获取管理控制台登录账号和密码，且已获取集群操作权限。
-- 已更新集群版本到`PG11-高可用版-1.0.9`及以上版本。
+- 更新集群版本到`PG11-高可用版-1.0.9`及以上版本。
+- 升级插件前，请执行验证更新版本影响操作。
 - **节点状态**活跃，**节点服务状态**正常。
 
 ## 操作步骤
 
 1. 登录管理控制台。
 2. 选择**产品与服务** > **数据库与缓存** > **关系型数据库 PostgreSQL**，进入集群管理页面。
-3. 点击目标集群 ID，进入集群详情页面。
+3. 点击目标集群 ID，进入集群详情页面。 
 
-###  备份数据库并保存备份文件
+### 备份集群并验证更新版本影响
 
-由于 timescaleDB 1.6.1 版本 release note 说明，`For this release only, you need to restart the database after upgrade before restoring a backup.`因此，升级前需要使用` pg_dump `进行数据库的备份工作。
+1. 备份集群，详细操作请参见[创建备份](/database/postgresql/manual/backup_restoration/enable_backup/)。
 
-<!--timescaleDB release notes：[https://docs.timescale.com/timescaledb/latest/overview/release-notes/#main-content](https://docs.timescale.com/timescaledb/latest/overview/release-notes/#main-content)-->
+2. 判断当前备份集群版本是否为`PG11-高可用版-1.0.9`版本。
 
-<!--<img src="../../../_images/upgrade_09.png" alt="版本说明" style="zoom:50%;" />-->
+   - 是，执行下一步。
+   - 否，请升级该集群版本到`PG11-高可用版-1.0.9`版本，详细操作请参见[升级版本](/database/postgresql/manual/cluster_lifecycle/upgrade/)。
 
-### 升级插件
+3. 备份数据库并保存备份文件。
 
-1. 使用数据库连接软件（PgAdmin、DBeaver 或直接使用 psql）通过 root 账户连接数据库**高可用写IP**。
+   由于 timescaleDB 1.6.1 版本 release note 说明，`For this release only, you need to restart the database after upgrade before restoring a backup.`因此，升级前需要使用` pg_dump `进行数据库的备份工作。
+
+   <!--timescaleDB release notes：[https://docs.timescale.com/timescaledb/latest/overview/release-notes/#main-content](https://docs.timescale.com/timescaledb/latest/overview/release-notes/#main-content)-->
+
+   <!--<img src="../../../_images/upgrade_09.png" alt="版本说明" style="zoom:50%;" />-->
+
+4. 升级备份集群的 timescaleDB 插件
+
+   a. 使用数据库连接软件（PgAdmin、DBeaver 或直接使用 psql）通过 root 账户连接数据库**高可用写IP**。
 
    <img src="../../../_images/upgrade_14.png" alt="连接数据库" style="zoom:50%;" />
 
@@ -56,7 +68,7 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
    | -d                                                        | 数据库名称。 <br>新建数据库默认名称 `qingcloud`。            | qingcloud                                                  |
    | -X                                                        | psql在连接数据库之前，首先会读取并执行改文件中的命令，然后连接到数据库，如果加上-X参数，则跳过该文件。通过该文件可以设置客户端或者是服务端的风格。 | -                                                          |
 
-2. 执行如下 SQL 语句更新 timescaleDB 版本至 1.7.3：
+   b. 执行如下 SQL 语句更新 timescaleDB 版本至 1.7.3：
 
    ```sql
    ALTER EXTENSION timescaledb UPDATE TO '1.7.3';
@@ -66,7 +78,55 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
 
    ​		<img src="../../../_images/upgrade_15.png" alt="连接数据库" style="zoom:50%;" />
 
-3. 验证数据。
+5. 验证数据。
 
-   - 若数据无误，则升级完成。
-   - 若数据异常，请使用 pg_restore 从备份文件中恢复数据库。
+   - 若数据无误，则升级完成，可升级原集群 timescaleDB 插件。
+   - 若数据异常，请使用 pg_restore 从备份文件中恢复数据库。若能正常恢复，可升级原集群 timescaleDB 插件；否则，请联系技术支持。
+
+### 升级原集群插件
+
+1. 判断原集群版本是否为`PG11-高可用版-1.0.9`版本。
+
+   > 执行该操作前，建议备份集群，详细操作请参见[创建备份](/database/postgresql/manual/backup_restoration/enable_backup/)。
+
+   - 是，执行下一步。
+   - 否，请升级该集群版本到`PG11-高可用版-1.0.9`版本，详细操作请参见[升级版本](/database/postgresql/manual/cluster_lifecycle/upgrade/)。
+
+2. 备份数据库并保存备份文件。
+
+   由于 timescaleDB 1.6.1 版本 release note 说明，`For this release only, you need to restart the database after upgrade before restoring a backup.`因此，升级前需要使用` pg_dump `进行数据库的备份工作。
+
+3. 升级原集群的 timescaleDB 插件
+
+   a. 使用数据库连接软件（PgAdmin、DBeaver 或直接使用 psql）通过 root 账户连接数据库**高可用写IP**。
+
+   <img src="../../../_images/upgrade_14.png" alt="连接数据库" style="zoom:50%;" />
+
+   如果您正在使用psql，请与-X标志连接，以防止任何命令在.psqlrc会话启动时加载以前的 TimescaleDB 版本，示例如下：
+
+   ```sql
+   psql -U <userName> -h <ip> -p <port> -d <serverName> -X
+   ```
+
+   | <span style="display:inline-block;width:80px">选项</span> | <span style="display:inline-block;width:240px">说明</span>   | <span style="display:inline-block;width:280px">示例</span> |
+   | :-------------------------------------------------------- | :----------------------------------------------------------- | :--------------------------------------------------------- |
+   | -U                                                        | 数据库用户账号名。<br>- 新建数据库默认账号名 `pguser`。<br>- 获取更多用户信息，请参见[用户管理](../../mgt_account/user_account)。 | pguser                                                     |
+   | -h                                                        | 数据库节点 IP 或集群的高可用写 IP                            | 192.168.100.0                                              |
+   | -p                                                        | 端口号                                                       | -                                                          |
+   | -d                                                        | 数据库名称。 <br>新建数据库默认名称 `qingcloud`。            | qingcloud                                                  |
+   | -X                                                        | psql在连接数据库之前，首先会读取并执行改文件中的命令，然后连接到数据库，如果加上-X参数，则跳过该文件。通过该文件可以设置客户端或者是服务端的风格。 | -                                                          |
+
+   b. 执行如下 SQL 语句更新 timescaleDB 版本至 1.7.3：
+
+   ```sql
+   ALTER EXTENSION timescaledb UPDATE TO '1.7.3';
+   ```
+
+   <b> `注意：需要将更新语句作为连接数据库后的第一条命令执行，否则执行会报如下错误：`</b>
+
+   ​		<img src="../../../_images/upgrade_15.png" alt="连接数据库" style="zoom:50%;" />
+
+4. 验证数据。
+
+   - 若数据无误，则插件升级完成。
+   - 若数据异常，请使用 pg_restore 从备份文件中恢复数据库。若不能正常恢复，请联系技术支持。
