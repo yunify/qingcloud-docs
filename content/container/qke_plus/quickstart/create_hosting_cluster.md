@@ -9,7 +9,7 @@ keyword: 青云, QingCloud, 云计算, QKE集群, Kubernetes, 托管
 
 ## 前提条件
 
-- 已注册青云 QingCloud 账号，并完成[实名认证](/authorization/account/manual/user_verify/)。
+- 已注册青云QingCloud 账号，并完成[实名认证](/authorization/account/manual/account_aut/account_intro/)。
 - 集群创建过程中将使用云服务器、硬盘、负载均衡器等多种资源，若资源配额不足，将无法成功创建集群。创建集群所需要的资源请参考[集群计费项](/container/qke_plus/billing/bill_des/)。若需提高配额，请[提交工单](https://console.qingcloud.com/tickets/)申请。
 
 ## 操作步骤
