@@ -112,7 +112,7 @@ Options:
    >
    > - 关于如何登录宿主机，请参考[连接 Linux 云服务器](/compute/vm/manual/vm/20_connect_instance/10_third_party/)。
 
-1. 依次执行如下命令，安装 docker （如下命令**以 Ubuntu 操作系统**为例）。
+1. 依次执行如下命令，安装 docker （如下命令**以 Ubuntu Server 20.04 操作系统**为例）。
 
    其他操作系统安装 docker 的命令，请参考[官网](https://docs.docker.com/engine/install/
    )。

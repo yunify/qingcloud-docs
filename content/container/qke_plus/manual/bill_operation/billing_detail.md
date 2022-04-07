@@ -26,7 +26,7 @@ keyword: 青云, QingCloud, 云计算, QKE, 集群, 计费
 
    <img src="../../../_images/cluster_billing_info.png" />
 
-6. 点击**详情**，查看集群计费详情，包括扣费时间、费用、价格等信息。(还需替换图)
+6. 点击**详情**，查看集群计费详情，包括扣费时间、费用、价格等信息。
 
    <img src="../../../_images/cluster_billing_info_detail.png" />
 

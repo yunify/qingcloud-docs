@@ -104,19 +104,19 @@ CREATE TABLE KafkaTable (
 
 ```sql
 CREATE TABLE user_behavior (
- ``user_id BIGINT,
- ``item_id BIGINT,
- ``category_id BIGINT,
- ``behavior STRING,
- ``ts TIMESTAMP(``3``)
+  user_id BIGINT,
+  item_id BIGINT,
+  category_id BIGINT,
+  behavior STRING,
+  ts TIMESTAMP(3)
 ) WITH (
- ``'connector'` `= ``'kafka'``,
- ``'topic'` `= ``'user_behavior'``,
- ``'properties.bootstrap.servers'` `= ``'<yourKafkaBrokers>'``,
- ``'properties.group.id'` `= ``'testGroup'``,
- ``'format'` `= ``'csv'``,
- ``'csv.ignore-parse-errors'` `= ``'true'``,
- ``'csv.allow-comments'` `= ``'true'
+ 'connector' = 'kafka',
+ 'topic' = 'user_behavior',
+ 'properties.bootstrap.servers' = '<yourKafkaBrokers>',
+ 'properties.group.id' = 'testGroup',
+ 'format' = 'csv',
+ 'csv.ignore-parse-errors' = 'true',
+ 'csv.allow-comments' = 'true'
 )
 ```
 
@@ -177,17 +177,17 @@ CREATE TABLE user_behavior (
 
 ```sql
 CREATE TABLE user_behavior (
- ``user_id BIGINT,
- ``item_id BIGINT,
- ``category_id BIGINT,
- ``behavior STRING,
- ``ts TIMESTAMP(``3``)
+  user_id BIGINT,
+  item_id BIGINT,
+  category_id BIGINT,
+  behavior STRING,
+  ts TIMESTAMP(3)
 ) WITH (
- ``'connector'` `= ``'kafka'``,
- ``'topic'` `= ``'user_behavior'``,
- ``'properties.bootstrap.servers'` `= ``'<yourKafkaBrokers>'``,
- ``'properties.group.id'` `= ``'testGroup'``,
- ``'format'` `= ``'avro'
+ 'connector' = 'kafka',
+ 'topic' = 'user_behavior',
+ 'properties.bootstrap.servers' = '<yourKafkaBrokers>',
+ 'properties.group.id' = 'testGroup',
+ 'format' = 'avro'
 )
 ```
 
@@ -223,13 +223,13 @@ Raw 格式允许将原始（基于字节的）值作为单列进行读写。详�
 
 ```sql
 CREATE TABLE nginx_log (
- ``log STRING
+  log STRING
 ) WITH (
- ``'connector'` `= ``'kafka'``,
- ``'topic'` `= ``'nginx_log'``,
- ``'properties.bootstrap.servers'` `= ``'<yourKafkaBrokers>'``,
- ``'properties.group.id'` `= ``'testGroup'``,
- ``'format'` `= ``'raw'
+  'connector' = 'kafka',
+  'topic' = 'nginx_log',
+  'properties.bootstrap.servers' = '<yourKafkaBrokers>',
+  'properties.group.id' = 'testGroup',
+  'format' = 'raw'
 )
 ```
 

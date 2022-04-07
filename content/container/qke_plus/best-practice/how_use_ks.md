@@ -28,8 +28,6 @@ QKE 可以帮助您在创建 QKE 集群时，轻松快速的安装好 KubeSphere
 >
 > 若您在创建集群时已设置 KubeSphere 控制台 EIP，可跳过本步骤。
 
-您可以在**可视化控制台**页面配置 KubeSphere 控制台 EIP。
-
 1. 点击集群名称，进入进入**集群概览**页面。
 
 2. 可通过如下两种方式设置 KubeSphere 控制台 EIP。
