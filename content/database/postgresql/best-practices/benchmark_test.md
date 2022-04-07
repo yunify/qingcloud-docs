@@ -6,17 +6,15 @@ weight: 05
 collapsible: false
 ---
 
-<!--测试模型：TPC-C-->
-
-<!--采用满足 TPC-C 基准测试规范的 PostgreSQL 测试工具 BenchmarkSQL 进行基准测试。--> 
-
 <!--在2核4G规格的数据库下，5个仓库，每个仓库10个销售端，tpmC 测试结果为19888，详情见下图：-->
 
 <!--![benchmarksqlTestResult](../../_images/benchmarksql1.png)-->
 
 作为关系型数据库，Postgresql 具有所有关系型数据库的特征。
 
-本小节主要介绍如何安装 BenchmarkSQL 并使用其进行 PostgreSQL 的基准测试。
+测试模型：TPC-C
+
+本小节主要介绍如何创建 benchmark 数据库，并使用满足 TPC-C 基准测试规范的 PostgreSQL 测试工具 BenchmarkSQL 进行基准测试。
 
 ## 测试方法
 
@@ -74,7 +72,7 @@ collapsible: false
 
 <img src="../../_images/bhm_05.png"/>
 
-步骤四：执行测试
+### 步骤四：执行测试
 
 执行以下命令测试 benchmark 内置脚本：
 
