@@ -22,6 +22,8 @@ keyword: 云计算, 青云, QingCloud, 云服务器，非法域名
 > Nginx  
 > Tomcat  
 > Apache  
+> Docker  
+> 负载均衡器
 
 ### IIS配置方法
 
@@ -61,10 +63,9 @@ server
 	include location.conf;                           #调用其他规则，也可去除
 }
 ```
-4. 重启nginx服务器，验证访问效果。
-   使用IP访问效果
-    ![](../../../_images/instance_malicious_resolution_3.png)
-
+4、重启nginx服务器，验证访问效果。
+使用IP访问效果  
+ ![](../../../_images/instance_malicious_resolution_3.png)
 ### Tomcat配置方法
 1. 修改$TOMCAT_HOME/conf目录下的server.xml文件
 
@@ -98,3 +99,28 @@ Apache中对于每个VirtualHost，都要求有ServerName或者ServerAlias，而
 ```
 2. 重启Apache服务
 
+### Docker 配置方法
+由于部分 Docker 镜像不支持 vim 命令，可通过以下三种方式进行修改（根据 Web 服务类型修改对应的配置文件）。  
+方式一、 在容器内安装 vim 命令，安装之后直接修改容器内配置文件  
+```
+apt-get install vim
+```
+方式二、通过 docker cp 的方式将配置文件复制到本地修改后，再复制到容器内部  
+```
+1、docker cp 容器id或名称:容器配置文件路径 宿主机目录
+2、docker cp 宿主机目录 容器id或名称:容器配置文件路径
+例：docker cp 8be6cc4ascf6:/etc/nginx/nginx.conf /home
+```
+方式三、映射挂载，启动容器时将宿主机里面的配置文件挂载到容器配置文件路径下  
+```
+docker run --name 容器名 -p 宿主机端口:容器端口 -v 本地配置文件路径:容器配置文件路径
+例：docker run --name nginx -p 8080:80 -v /etc/nginx/nginx.conf:/etc/nginx/nginx.conf
+```
+
+### 负载均衡器配置方法
+
+给监听器后端绑定匹配域名的转发规则，只有匹配通过的域名请求才能正常被转发。添加匹配域名时需要添加强制匹配的正则符号。如需了解更多转发规则配置可参考[自定义转发策略](https://docsv3.qingcloud.com/network/loadbalancer/manual/lb_user_guide/#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%BD%AC%E5%8F%91%E7%AD%96%E7%95%A5)  
+1、新增转发规则：  
+![](../../../_images/instance_malicious_resolution_4.png)  
+2、监听器后端绑定规则：  
+![](../../../_images/instance_malicious_resolution_5.png)  
