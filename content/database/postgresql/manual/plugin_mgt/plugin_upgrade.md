@@ -31,20 +31,20 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
 
 ### 备份集群并验证更新版本影响
 
-1. 备份集群，详细操作请参见[创建备份](/database/postgresql/manual/backup_restoration/enable_backup/)。
+1. 备份原集群，详细操作请参见[创建备份](/database/postgresql/manual/backup_restoration/enable_backup/)。
 
-2. 判断当前备份集群版本是否为`PG11-高可用版-1.0.9`版本。
-
-   - 是，执行下一步。
-   - 否，请升级该集群版本到`PG11-高可用版-1.0.9`版本，详细操作请参见[升级版本](/database/postgresql/manual/cluster_lifecycle/upgrade/)。
-
-3. 备份数据库并保存备份文件。
+2. 备份数据库并保存备份文件。
 
    由于 timescaleDB 1.6.1 版本 release note 说明，`For this release only, you need to restart the database after upgrade before restoring a backup.`因此，升级前需要使用` pg_dump `进行数据库的备份工作。
 
    <!--timescaleDB release notes：[https://docs.timescale.com/timescaledb/latest/overview/release-notes/#main-content](https://docs.timescale.com/timescaledb/latest/overview/release-notes/#main-content)-->
 
    <!--<img src="../../../_images/upgrade_09.png" alt="版本说明" style="zoom:50%;" />-->
+
+3. 判断当前备份集群版本是否为`PG11-高可用版-1.0.9`版本。
+
+   - 是，执行下一步。
+   - 否，请升级该集群版本到`PG11-高可用版-1.0.9`版本，详细操作请参见[升级版本](/database/postgresql/manual/cluster_lifecycle/upgrade/)。
 
 4. 升级备份集群的 timescaleDB 插件。
 
@@ -55,12 +55,12 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
    如果您正在使用psql，请与-X标志连接，以防止任何命令在.psqlrc会话启动时加载以前的 TimescaleDB 版本，示例如下：
 
    ```sql
-   psql -U <userName> -h <ip> -p <port> -d <serverName> -X
+   psql -U <root> -h <ip> -p <port> -d <serverName> -X
    ```
 
    | <span style="display:inline-block;width:80px">选项</span> | <span style="display:inline-block;width:240px">说明</span>   | <span style="display:inline-block;width:280px">示例</span> |
    | :-------------------------------------------------------- | :----------------------------------------------------------- | :--------------------------------------------------------- |
-   | -U                                                        | 数据库用户账号名。<br>- 新建数据库默认账号名 `pguser`。<br>- 获取更多用户信息，请参见[用户管理](../../mgt_account/user_account)。 | pguser                                                     |
+   | -U                                                        | 数据库超级管理员账号名。                                     | root                                                       |
    | -h                                                        | 数据库节点 IP 或集群的高可用写 IP                            | 192.168.100.0                                              |
    | -p                                                        | 端口号                                                       | -                                                          |
    | -d                                                        | 数据库名称。 <br>新建数据库默认名称 `qingcloud`。            | qingcloud                                                  |
@@ -83,16 +83,16 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
 
 ### 升级原集群插件
 
-1. 判断原集群版本是否为`PG11-高可用版-1.0.9`版本。
+1. 备份数据库并保存备份文件。
+
+   由于 timescaleDB 1.6.1 版本 release note 说明，`For this release only, you need to restart the database after upgrade before restoring a backup.`因此，升级前需要使用` pg_dump `进行数据库的备份工作。
+
+2. 判断原集群版本是否为`PG11-高可用版-1.0.9`版本。
 
    > 执行该操作前，建议备份集群，详细操作请参见[创建备份](/database/postgresql/manual/backup_restoration/enable_backup/)。
 
    - 是，执行下一步。
    - 否，请升级该集群版本到`PG11-高可用版-1.0.9`版本，详细操作请参见[升级版本](/database/postgresql/manual/cluster_lifecycle/upgrade/)。
-
-2. 备份数据库并保存备份文件。
-
-   由于 timescaleDB 1.6.1 版本 release note 说明，`For this release only, you need to restart the database after upgrade before restoring a backup.`因此，升级前需要使用` pg_dump `进行数据库的备份工作。
 
 3. 升级原集群的 timescaleDB 插件
 
@@ -103,12 +103,12 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
    如果您正在使用psql，请与-X标志连接，以防止任何命令在.psqlrc会话启动时加载以前的 TimescaleDB 版本，示例如下：
 
    ```sql
-   psql -U <userName> -h <ip> -p <port> -d <serverName> -X
+   psql -U <root> -h <ip> -p <port> -d <serverName> -X
    ```
 
    | <span style="display:inline-block;width:80px">选项</span> | <span style="display:inline-block;width:240px">说明</span>   | <span style="display:inline-block;width:280px">示例</span> |
    | :-------------------------------------------------------- | :----------------------------------------------------------- | :--------------------------------------------------------- |
-   | -U                                                        | 数据库用户账号名。<br>- 新建数据库默认账号名 `pguser`。<br>- 获取更多用户信息，请参见[用户管理](../../mgt_account/user_account)。 | pguser                                                     |
+   | -U                                                        | 数据库超级管理员账号名。                                     | root                                                       |
    | -h                                                        | 数据库节点 IP 或集群的高可用写 IP                            | 192.168.100.0                                              |
    | -p                                                        | 端口号                                                       | -                                                          |
    | -d                                                        | 数据库名称。 <br>新建数据库默认名称 `qingcloud`。            | qingcloud                                                  |
