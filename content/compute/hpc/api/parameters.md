@@ -3,7 +3,7 @@ title: "公共参数"
 description: 本小节主要介绍如何进行 MySQL Plus 集群 api 公共参数。 
 keyword: mysql plus 公共参数；api 公共参数
 draft: false
-weight: 20
+weight: 30
 collapsible: false
 ---
 
