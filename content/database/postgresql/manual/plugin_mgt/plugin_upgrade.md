@@ -31,22 +31,22 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
 
 ### 备份集群并验证更新版本影响
 
-1. 备份原集群，详细操作请参见[创建备份](/database/postgresql/manual/backup_restoration/enable_backup/)。
+1. 备份**原集群**，详细操作请参见[创建备份](/database/postgresql/manual/backup_restoration/enable_backup/)。
 
 2. 备份数据库并保存备份文件。
 
    由于 timescaleDB 1.6.1 版本 release note 说明，`For this release only, you need to restart the database after upgrade before restoring a backup.`因此，升级前需要使用` pg_dump `进行数据库的备份工作。
 
-   <!--timescaleDB release notes：[https://docs.timescale.com/timescaledb/latest/overview/release-notes/#main-content](https://docs.timescale.com/timescaledb/latest/overview/release-notes/#main-content)-->
+   timescaleDB release notes：[https://docs.timescale.com/timescaledb/latest/overview/release-notes/#main-content](https://docs.timescale.com/timescaledb/latest/overview/release-notes/#main-content)
 
-   <!--<img src="../../../_images/upgrade_09.png" alt="版本说明" style="zoom:50%;" />-->
+   <img src="../../../_images/upgrade_09.png" alt="版本说明" style="zoom:50%;" />
 
-3. 判断当前备份集群版本是否为`PG11-高可用版-1.0.9`版本。
+3. 判断当前**备份集群**版本是否为`PG11-高可用版-1.0.9`版本。
 
    - 是，执行下一步。
    - 否，请升级该集群版本到`PG11-高可用版-1.0.9`版本，详细操作请参见[升级版本](/database/postgresql/manual/cluster_lifecycle/upgrade/)。
 
-4. 升级备份集群的 timescaleDB 插件。
+4. 升级**备份集群**的 timescaleDB 插件。
 
    a. 使用数据库连接软件（PgAdmin、DBeaver 或直接使用 psql）通过 root 账户连接数据库**高可用写IP**。
 
@@ -87,14 +87,14 @@ TimescaleDB 是一个旨在使 SQL 可扩展以适用于时间序列数据的开
 
    由于 timescaleDB 1.6.1 版本 release note 说明，`For this release only, you need to restart the database after upgrade before restoring a backup.`因此，升级前需要使用` pg_dump `进行数据库的备份工作。
 
-2. 判断原集群版本是否为`PG11-高可用版-1.0.9`版本。
+2. 判断**原集群**版本是否为`PG11-高可用版-1.0.9`版本。
 
    > 执行该操作前，建议备份集群，详细操作请参见[创建备份](/database/postgresql/manual/backup_restoration/enable_backup/)。
 
    - 是，执行下一步。
    - 否，请升级该集群版本到`PG11-高可用版-1.0.9`版本，详细操作请参见[升级版本](/database/postgresql/manual/cluster_lifecycle/upgrade/)。
 
-3. 升级原集群的 timescaleDB 插件
+3. 升级**原集群**的 timescaleDB 插件
 
    a. 使用数据库连接软件（PgAdmin、DBeaver 或直接使用 psql）通过 root 账户连接数据库**高可用写IP**。
 
