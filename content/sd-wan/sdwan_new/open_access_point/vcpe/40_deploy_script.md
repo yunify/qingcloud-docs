@@ -88,13 +88,9 @@ VCPE 容器部署方式可以帮助您实现业务跨云互通。
 
 VCPE 镜像的部署脚本提供如下可执行参数，如下所示。
 
-```
-Usage: deploy.sh [command] [options]
+<img src="/sd-wan/sdwan_new/_images/script.png" style="zoom:50%;" />
 
-VCPE install tool 2022.02
-Options:
-    -l          use license to activate device
-```
+参数说明，如下表所示。
 
 | 参数 | 参数说明               |
 | ---- | ---------------------- |
