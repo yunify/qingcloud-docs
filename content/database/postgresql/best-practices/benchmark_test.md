@@ -104,7 +104,7 @@ draft: false
 
 ### 步骤四：执行测试
 
-执行以下命令测试 benchmark 内置脚本：
+执行以下命令用 benchmark 内置脚本测试：
 
 ```sql
 ./runBenchmark.sh props.pg
