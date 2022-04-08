@@ -1,8 +1,8 @@
 ---
-title: "resizeCluster"
+title: "addQueues"
 description: 本小节主要介绍弹性高性能计算 EHPC 扩容、缩容接口。 
 keyword: EHPC 扩容,缩容接口
-weight: 100
+weight: 60
 collapsible: false
 draft: false
 ---
