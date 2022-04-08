@@ -47,14 +47,14 @@ draft: false
 
 6. 展开下拉菜单，点击**升级**。
 
-<img src="../../../_images/upgrade_11.png" alt="升级集群" style="zoom:50%;" />
+   <img src="../../../_images/upgrade_11.png" alt="升级集群" style="zoom:50%;" />
 
 7. 确认升级版本并点击**升级**。
 
-<img src="../../../_images/upgrade_12.png" alt="确认版本" style="zoom:50%;" />
+   <img src="../../../_images/upgrade_12.png" alt="确认版本" style="zoom:50%;" />
 
 8. 等待升级完成系统自动启动集群后，确认版本已升级到最新版本。
 
-<img src="../../../_images/upgrade_13.png" alt="确认版本" style="zoom:50%;" />
+   <img src="../../../_images/upgrade_13.png" alt="确认版本" style="zoom:50%;" />
 
 > PostgreSQL升级到`PG11-高可用版-1.0.9`及以上版本时，提示“更新 timescaleDB 插件版本到1.7.3”，可根据实际需要决定是否升级。升级 timescaleDB 插件，详细操作请参见[升级 timescaleDB插件](/database/postgresql/manual/plugin_mgt/plugin_upgrade/)。
