@@ -22,7 +22,7 @@ OpenSearch 目前支持原生 OpenSearch 和传统 Elasticsearch OSS 版本如�
 > 若现有域使用的是较旧的 Elasticsearch 版本，您可以选择保留该域或迁移您的数据。
 
 ## 版本历程
-<!--
+
 ### 1.2.4 - v1.0.0
 
 OpenSearch 1.2.4 - v1.0.0 基于原生 OpenSearch 1.2.4 内核版本构建。集成 opensearch_exporter v1.2.4、node_exporter v0.18.1、Cerebro v0.9.4 组件。
@@ -33,7 +33,7 @@ OpenSearch 1.2.4 - v1.0.0 基于原生 OpenSearch 1.2.4 内核版本构建。集
 - 新增 IK 分词插件，支持结巴分词的词库、自定义词典。
 - 新增 Cerebro 配置参数，支持 Cerebro 第三方可视化管理工具。
 - 集群节点新增 `企业型 e3`云服务器类型。
--->
+
 ### 1.1.0 - v1.0.0
 
 OpenSearch 1.1.0 - v1.0.0 基于原生 OpenSearch 1.1.0 内核版本构建。集成 opensearch_exporter 组件。

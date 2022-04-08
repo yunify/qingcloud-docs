@@ -4,7 +4,7 @@ description: 本小节主要介绍如何开启或关闭 Node Exporter 监控服�
 keyword: Node Exporter监控,Prometheus Server,开启 Node Exporter,OpenSearch,搜索引擎
 weight: 60
 collapsible: false
-draft: true
+draft: false
 ---
 
 
