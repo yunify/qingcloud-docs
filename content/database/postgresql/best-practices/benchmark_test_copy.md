@@ -4,7 +4,7 @@ description: 本小节主要介绍如何进行 PostgreSQL 集群基准测试。
 keyword: 基准测试,PostgreSQL,关系型数据库,数据库
 weight: 05
 collapsible: false
-draft: true
+draft: false
 ---
 
 <!--在2核4G规格的数据库下，5个仓库，每个仓库10个销售端，tpmC 测试结果为19888，详情见下图：-->
