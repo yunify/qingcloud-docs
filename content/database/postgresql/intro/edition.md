@@ -21,12 +21,19 @@ PostgreSQL 定制`基础版`、`高可用版`两个功能系列。
 
 基于 PostgreSQL 11.1 、10.1、9.6.3内核版本分别构建了 PG11 高可用版，PG10 高可用版和基础版、PG9.6 高可用版和基础版。
 
-|<span style="display:inline-block;width:140px">版本</span> |<span style="display:inline-block;width:300px">内核版本</span>|<span style="display:inline-block;width:240px">应用版本</span> |
-|:----|:----|:----|
-|高可用版 |<li>PostgreSQL 9.6.3 ，PostGIS 2.3 <li>PostgreSQL 10.1 ，PostGIS 2.4  <li>PostgreSQL 11.1 ，PostGIS 2.5 |<li>PG11-高可用版-V1.0.8 <li>PG10-高可用版-V1.1.6<li> PG9.6-高可用版-V1.1.6 <li>PG11-高可用版-V1.0.7 <li>PG10-高可用版-V1.1.5<li> PG9.6-高可用版-V1.1.5 <li>PG11-高可用版-V1.0.6 <li>PG10-高可用版-V1.1.4<li> PG9.6-高可用版-V1.1.4 <li>PG10-高可用版-V1.1.1<li> PG9.6-高可用版-V1.1.1 |
-|基础版   |<li>PostgreSQL 9.6.3 ，PostGIS 2.3 <li>PostgreSQL 10.1 ，PostGIS 2.4 |<li>PG10-基础版-V1.1.0 <li> PG9.6-基础版-V1.1.0 | 
+| <span style="display:inline-block;width:140px">版本</span> | <span style="display:inline-block;width:300px">内核版本</span> | <span style="display:inline-block;width:240px">应用版本</span> |
+| :--------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| 高可用版                                                   | <li>PostgreSQL 9.6.3 ，PostGIS 2.3 <li>PostgreSQL 10.1 ，PostGIS 2.4  <li>PostgreSQL 11.1 ，PostGIS 2.5 | <li>PG11-高可用版-V1.0.9<li>PG11-高可用版-V1.0.8 <li>PG10-高可用版-V1.1.6<li> PG9.6-高可用版-V1.1.6 <li>PG11-高可用版-V1.0.7 <li>PG10-高可用版-V1.1.5<li> PG9.6-高可用版-V1.1.5 <li>PG11-高可用版-V1.0.6 <li>PG10-高可用版-V1.1.4<li> PG9.6-高可用版-V1.1.4 <li>PG10-高可用版-V1.1.1<li> PG9.6-高可用版-V1.1.1 |
+| 基础版                                                     | <li>PostgreSQL 9.6.3 ，PostGIS 2.3 <li>PostgreSQL 10.1 ，PostGIS 2.4 | <li>PG10-基础版-V1.1.0 <li> PG9.6-基础版-V1.1.0              |
 
 ## 应用版本历程
+
+### PG11-高可用版-V1.0.9
+
+基于 PostgreSQL 11.1 内核版本分别构建的高可用版。
+
+- [更新 timescaleDB 插件](/database/postgresql/manual/plugin_mgt/plugin_upgrade/)版本到 1.7.3。
+- 优化[监控项字段](../../manual/metrics_alarm/config_display_metrics)，提升用户体验。
 
 ### PG11-高可用版-V1.0.8
 

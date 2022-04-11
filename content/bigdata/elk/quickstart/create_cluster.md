@@ -65,7 +65,7 @@ draft: false
 
 <img src="../../_images/base_step_2.png" alt="Elasticsearch 热节点配置" style="zoom:50%;" />
 
-### Elasticsearch 专用主节点设置（可选）
+### Elasticsearch 专有主节点设置（可选）
 
 集群 Elasticsearch 专有主节点的资源配置，包括云服务器规格、磁盘大小等。
 
