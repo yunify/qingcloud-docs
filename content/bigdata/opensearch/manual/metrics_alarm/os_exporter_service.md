@@ -4,7 +4,7 @@ description: 本小节主要介绍如何使用 OpenSearch Exporter 监控服务�
 keyword: OpenSearch Exporter 监控服务,监控服务
 weight: 50
 collapsible: false
-draft: true
+draft: false
 ---
 
 
@@ -32,7 +32,7 @@ Prometheus 是一套开源的监控系统，以较低的系统资源要求，可
 
 ## 启用 OpenSearch Exporter 服务
 
-OpenSearch 服务默认开启 OpenSearch Exporter 服务，可通过访问 `http://<your-opensearch-host>:9200/_prometheus/metrics` 查看监控数据。
+OpenSearch 服务默认开启 OpenSearch Exporter 服务，可通过访问 `http://<os_hot_node_IP>:9200/_prometheus/metrics` 查看监控数据。
 
 您也可以通过在 Prometheus 添加 OpenSearch 热节点为数据源，成功添加数据源后，即可在可视化查看节点资源监控信息。
 

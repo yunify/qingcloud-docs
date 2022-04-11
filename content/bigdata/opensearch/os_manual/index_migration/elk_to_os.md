@@ -25,7 +25,7 @@ OpenSearch 服务支持通过 [repository-s3](https://opensearch.org/docs/latest
    
    ```bash
    GET _cat/indices
- 
+    
    PUT _snapshot/elk-opensearch
    {
      "type": "s3",
@@ -36,13 +36,13 @@ OpenSearch 服务支持通过 [repository-s3](https://opensearch.org/docs/latest
        "bucket": "test"
      }
    }
- 
+    
    GET /_snapshot/elk-opensearch
- 
+    
    POST /_snapshot/elk-opensearch/_verify
- 
+    
    PUT /_snapshot/elk-opensearch/s001
- 
+    
    GET /_snapshot/elk-opensearch/_all
    ```
 
@@ -84,12 +84,11 @@ GET /_snapshot/elk-opensearch
 POST _snapshot/elk-opensearch/s001/_restore
 {
   "indices": "mytest",
-  "ignore_unavailable": ture,
+  "ignore_unavailable": true,
   "include_global_state": false,
   "rename_pattern": "mytest",
   "rename_replacement": "restore_mytest",
   "include_aliases": false
-  }
 }
 ```
 

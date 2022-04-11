@@ -32,7 +32,7 @@ PostgreSQL 定制`基础版`、`高可用版`两个功能系列。
 
 基于 PostgreSQL 11.1 内核版本分别构建的高可用版。
 
-- [更新 timescaleDB 插件](/database/postgresql/manual/cluster_lifecycle/plugin_upgrade/)版本到 1.7.3。
+- [更新 timescaleDB 插件](/database/postgresql/manual/plugin_mgt/plugin_upgrade/)版本到 1.7.3。
 - 优化[监控项字段](../../manual/metrics_alarm/config_display_metrics)，提升用户体验。
 
 ### PG11-高可用版-V1.0.8

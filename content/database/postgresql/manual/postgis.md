@@ -58,10 +58,11 @@ PostGIS 是关系型数据库 PostgreSQL 的一种插件，PostGIS 提供空间�
 ## 查看 PostGIS 版本信息
 
 1. 连接新建 PostGis 数据库 `demo`。
+
 2. 执行以下 `sql` 命令，查看版本信息。
 
    ```sql
    select postgis_full_version();
    ```
-
-![](../../_images/postgis_full_version.png)
+   
+   ![](../../_images/postgis_full_version.png)
