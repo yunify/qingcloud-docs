@@ -30,7 +30,7 @@ draft: false
    <img src="/bigdata/dataomnis/_images/bp_job_jar_edit02.png" alt="配置 Jar 作业" style="zoom:50%;" />
 
    - JAR（程序包）：选择已上传到资源管理的 JAR 程序包。
-   - 入口类：配置运行函数的路径。本示例填写 `examples.app.TopN`。
+   - 入口类：配置运行函数的路径。本示例填写 `com.dataomnis.example.app.TopN`。
    - 程序参数：配置数据源的连接信息。   
      本实践填写 `--kafka.brokers <Kafka 连接地址> --kafka.topics <Kafka Topic名称> --kafka.group.id <Kafka Group ID> --clickhouse.url <ClickHouse的连接地址> --clickhouse.username <ClickHouse 用户名> --clickhouse.password <ClickHouse 密码> --use.sql true`。    
      例如：--kafka.brokers 172.16.10.58:9092,172.16.10.59:9092,172.16.10.60:9092 --kafka.topics demo001 --kafka.group.id test01 --clickhouse.url jdbc:clickhouse://172.16.10.7:8123/pk --clickhouse.username default --clickhouse.password default --use.sql true
