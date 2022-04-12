@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-解绑HPC集群已绑定的专属队列。若专属队列付费类型为包年包月，若未到整月，则会退还相应费用。
+解绑 HPC 集群已绑定的专属队列。若专属队列付费类型为包年包月，若未到整月，则会退还相应费用。
 
 ## Action
 
@@ -19,11 +19,11 @@ POST
 
 ## 请求参数
 
-| 参数      | 类型      | 是否必要 | 描述                     |
-| :-------- | :-------- | :------- | :----------------------- |
-| timestamp | date-time | true     | 时间戳                   |
-| ids       | array     | true     | 需要接触绑定的专属队列id |
-| zone      | string    | true     | zone id                  |
+| 参数      | 类型      | 是否必要 | 描述                      |
+| :-------- | :-------- | :------- | :------------------------ |
+| timestamp | date-time | true     | 时间戳                    |
+| ids       | array     | true     | 需要接触绑定的专属队列 id |
+| zone      | string    | true     | zone id                   |
 
 ## 响应消息
 
@@ -38,6 +38,10 @@ POST
 
 ```url
 https://hpc-api.qingcloud.com/api/queue/unbindPrivateQueue
+&COMMON_PARAMS
+requests_body = {'cluster_id': ['ehpc-gk3wfc7e'],
+                     'ids': ['hpcq-xoruchni'],
+                     'zone': 'jn1a'}
 ```
 
 ### 响应示例

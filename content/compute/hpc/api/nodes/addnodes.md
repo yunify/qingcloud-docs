@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-添加集群节点，可以添加1-99个节点。
+添加集群节点，可以添加 1-99 个节点。
 
 ## Action
 
@@ -19,16 +19,16 @@ POST
 
 ## 请求参数
 
-| 参数          | 类型      | 是否必要 | 描述                 |
-| :------------ | :-------- | :------- | :------------------- |
-| timestamp     | date-time | true     | 时间戳               |
-| cluster_id    | string    | true     | hpc集群的id          |
-| zone          | string    | true     | zone id              |
-| node_count    | string    | false    | 集群节点数           |
-| node_name     | string    | false    | 需要添加的节点集群id |
-| node_role     | string    | false    | 集群节点角色类型     |
-| private_ips   | array     | false    | 私有ips              |
-| resource_conf | string    | false    | 集群节点角色资源配置 |
+| 参数          | 类型      | 是否必要 | 描述                                                         |
+| :------------ | :-------- | :------- | :----------------------------------------------------------- |
+| timestamp     | date-time | true     | 时间戳                                                       |
+| cluster_id    | string    | true     | hpc 集群的 id                                                |
+| node_role     | string    | false    | 集群节点角色类型，HPC 集群可添加登录节点，EHPC 集群可添加登录、计算节点。<ul><li>login</li><li>compute</li></ul> |
+| node_count    | string    | false    | 集群节点数，最小 1，最大 99                                  |
+| zone          | string    | true     | zone id                                                      |
+| node_name     | string    | false    | 需要添加的节点集群 id                                        |
+| private_ips   | array     | false    | 私有 ips                                                     |
+| resource_conf | string    | false    | 集群节点角色资源配置                                         |
 
 ## 响应消息
 
@@ -46,6 +46,11 @@ POST
 
 ```url
 https://hpc-api.qingcloud.com/api/cluster/addNodes
+&COMMON_PARAMS
+requests_body = {'cluster_id': 'ehpc-8jqdq0mz',
+                     'node_role': 'login',
+                     'node_count': '1',
+                     'zone': 'jn1a'}
 ```
 
 ### 响应示例

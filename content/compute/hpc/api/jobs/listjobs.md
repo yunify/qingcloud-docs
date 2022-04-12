@@ -19,19 +19,19 @@ GET
 
 ## 请求参数
 
-| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述                                |
-| :--------------------------------------------------------- | :--------------------------------------------------------- | :------- | :---------------------------------- |
-| cluster_id                                                 | string                                                     | true     | 需要获取作业列表的集群id            |
-| jobs_status                                                | string                                                     | false    | 作业状态                            |
-| limit                                                      | int                                                        | false    | 页面显示数据个数，默认为10，最大100 |
-| offset                                                     | int                                                        | false    | 集合偏移量                          |
-| queue_name                                                 | string                                                     | false    | 要过滤的队列名称                    |
-| reverse                                                    | int                                                        | false    | 是否按排序键反转进行排序            |
-| run_user                                                   | string                                                     | false    | 运行作业的用户                      |
-| search_word                                                | string                                                     | false    | 搜索关键词                          |
-| sort_key                                                   | string                                                     | false    | 排序键排序                          |
-| timestamp                                                  | date-time                                                  | true     | 时间戳                              |
-| zone                                                       | string                                                     | true     | 所属区域id                          |
+| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述                                                         |
+| :--------------------------------------------------------- | :--------------------------------------------------------- | :------- | :----------------------------------------------------------- |
+| timestamp                                                  | date-time                                                  | true     | 时间戳                                                       |
+| zone                                                       | string                                                     | true     | 所属区域 id                                                  |
+| cluster_id                                                 | string                                                     | true     | 需要获取作业列表的集群 id                                    |
+| jobs_status                                                | string                                                     | false    | 作业状态<ul><li>pending 排队中</li><li>finished 运行完成</li><li>running 运行中</li><li>exited 失败</li><li>cancelled 取消</li></ul> |
+| limit                                                      | int                                                        | false    | 页面显示数据个数，默认为10，最大100                          |
+| offset                                                     | int                                                        | false    | 集合偏移量                                                   |
+| queue_name                                                 | string                                                     | false    | 要过滤的队列名称                                             |
+| reverse                                                    | int                                                        | false    | 是否按排序键反转进行排序                                     |
+| run_user                                                   | string                                                     | false    | 运行作业的用户                                               |
+| search_word                                                | string                                                     | false    | 搜索关键词                                                   |
+| sort_key                                                   | string                                                     | false    | 排序键排序                                                   |
 
 ## 响应消息
 
@@ -77,6 +77,8 @@ GET
 
 ```url
 https://hpc-api.qingcloud.com/api/job/list
+&cluster_id=ehpc-qmmvigwe
+&COMMON_PARAMS
 ```
 
 ### 响应示例

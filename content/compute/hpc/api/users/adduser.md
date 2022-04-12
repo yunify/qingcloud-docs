@@ -19,14 +19,14 @@ POST
 
 ## 请求参数
 
-| 参数       | 类型      | 是否必要 | 描述                            |
-| :--------- | :-------- | :------- | :------------------------------ |
-| timestamp  | date-time | true     | 时间戳                          |
-| cluster_id | string    | true     | ladp用户所属的集群id            |
-| password   | string    | true     | 设置新增用户密码                |
-| username   | string    | true     | 设置新增用户名称                |
-| mod        | string    | false    | 设置用户目录权限（例如：“700”） |
-| zone       | string    | true     | 区域 id                         |
+| 参数       | 类型      | 是否必要 | 描述                                                         |
+| :--------- | :-------- | :------- | :----------------------------------------------------------- |
+| timestamp  | date-time | true     | 时间戳                                                       |
+| cluster_id | string    | true     | ladp 用户所属的集群 id                                       |
+| password   | string    | true     | 设置新增用户密码，12-30个字符，包括大小写字母、数字和部分字符（包括：!@#%^&()*） |
+| username   | string    | true     | 设置新增用户名称，1-8个字符，可包含字母，数字，下划线        |
+| mod        | string    | false    | 设置用户目录权限（例如：“700”）                              |
+| zone       | string    | true     | 区域 id                                                      |
 
 ## 响应消息
 
@@ -42,6 +42,11 @@ POST
 
 ```url
 https://hpc-api.qingcloud.com/api/user/addUser
+&COMMON_PARAMS
+requests_body = {'cluster_id': 'ehpc-8jqdq0mz',
+                     'password': 'kUISjs@kkkkkk!',
+                     'username': 'isabel',
+                     'zone': 'jn1a'}
 ```
 
 ### 响应示例

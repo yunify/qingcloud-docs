@@ -21,20 +21,20 @@ POST
 
 ## 请求参数
 
-| 参数         | 类型      | 是否必要 | 描述           |
-| :----------- | :-------- | :------- | :------------- |
-| timestamp    | date-time | true     | 时间戳         |
-| cluster_id   | string    | true     | 用户所在集群id |
-| new_password | string    | true     | 新密码         |
-| username     | string    | true     | 用户名         |
-| zone         | string    | true     | zone id        |
+| 参数         | 类型      | 是否必要 | 描述            |
+| :----------- | :-------- | :------- | :-------------- |
+| timestamp    | date-time | true     | 时间戳          |
+| cluster_id   | string    | true     | 用户所在集群 id |
+| new_password | string    | true     | 新密码          |
+| username     | string    | true     | 用户名          |
+| zone         | string    | true     | zone id         |
 
 ## 响应消息
 
-| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 描述                                      | 取值样例                  |
-| :--------------------------------------------------------- | :--------------------------------------------------------- | ----------------------------------------- | :------------------------ |
-| action                                                     | string                                                     | 响应动作                                  | HpcUserModifyUserResponse |
-| ret_code                                                   | int                                                        | 执行成功与否，成功为0，其他值则为错误代码 | 0                         |
+| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 描述                                       | 取值样例                  |
+| :--------------------------------------------------------- | :--------------------------------------------------------- | ------------------------------------------ | :------------------------ |
+| action                                                     | string                                                     | 响应动作                                   | HpcUserModifyUserResponse |
+| ret_code                                                   | int                                                        | 执行成功与否，成功为 0，其他值则为错误代码 | 0                         |
 
 ## 示例
 
@@ -42,6 +42,11 @@ POST
 
 ```url
 https://hpc-api.qingcloud.com/api/user/modifyUser
+&COMMON_PARAMS
+requests_body = {'cluster_id': 'ehpc-8jqdq0mz',
+                     'new_password': '%e^S5kW1*&fR',
+                     'username': 'isabel',
+                     'zone': 'jn1a'}
 ```
 
 ### 响应示例

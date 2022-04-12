@@ -11,32 +11,33 @@ collapsible: false
 
 ## API 密钥签名
 
-您需要先在控制台创建[API密钥](https://console.qingcloud.com/access_keys/)，获取 accesss_key_id 和 secret_access_key。
+您需要先在控制台创建 [API 密钥](https://console.qingcloud.com/access_keys/)，获取 accesss_key_id 和 secret_access_key。
 
-例如请求参数如下:
+假设 access_key_id 和 secret_access_key 如下所示。
+
+```
+access_key_id = 'QYACCESSKEYIDEXAMPLE'
+secret_access_key = 'SECRETACCESSKEY'
+```
+
+请求参数如下:
 
 ```test
-{
-  "count":1,
-  "vxnets.1":"vxnet-0",
-  "zone":"pek3a",
-  "instance_type":"small_b",
-  "signature_version":1,
-  "signature_method":"HmacSHA256",
-  "instance_name":"demo",
-  "image_id":"centos64x86a",
-  "login_mode":"passwd",
-  "login_passwd":"QingCloud20210712",
-  "version":1,
-  "access_key_id":"QYACCESSKEYIDEXAMPLE",
-  "action":"RunInstances",
-  "time_stamp":"2021-08-27T14:30:10Z"
+param = {
+'access_key_id': 'QYACCESSKEYIDEXAMPLE',
+"zone":"jinan1a",
+"signature_method": "HmacSHA256",
+"signature_version": "1",
+"version":"1",
+"timestamp": '2021-08-19T16:44:40Z',
 }
 ```
 
-> **注解**
+> **说明**
 >
-> 使用上述的 AccessKey 和 Request 调试你的代码， 当得到跟后面一致的签名结果后(即表示你的代码是正确的)， 可再换为你自己的 AccessKey 和其他 API 请求。
+> 使用上述的 AccessKey 和 Request 调试您的代码， 当得到跟后面一致的签名结果后(即表示你的代码是正确的)， 可再换为您自己的 AccessKey 和其他 API 请求。
+>
+> 这里以请求集群列表为例，若最后计算的结果和示例中一样，只需要换成自己的 access_key_id 和 secret_access_key 以及请求的path即可。
 
 ### 步骤 1: 参数排序
 
@@ -44,20 +45,12 @@ collapsible: false
 
 ```
 {
-  "access_key_id":"QYACCESSKEYIDEXAMPLE",
-  "action":"RunInstances",
-  "count":1,
-  "image_id":"centos64x86a",
-  "instance_name":"demo",
-  "instance_type":"small_b",
-  "login_mode":"passwd",
-  "login_passwd":"QingCloud20130712",
-  "signature_method":"HmacSHA256",
-  "signature_version":1,
-  "time_stamp":"2013-08-27T14:30:10Z",
-  "version":1,
-  "vxnets.1":"vxnet-0",
-  "zone":"pek3a"
+'access_key_id': 'QYACCESSKEYIDEXAMPLE'
+'signature_method': 'HmacSHA256',
+'signature_version': '1',
+'timestamp': '2021-08-19T16:44:40Z',
+'version': '1',
+'zone': 'jinan1a'
 }
 ```
 
@@ -67,189 +60,179 @@ collapsible: false
 
 ```text
 {
-  "access_key_id":"QYACCESSKEYIDEXAMPLE",
-  "action":"RunInstances",
-  "count":1,
-  "image_id":"centos64x86a",
-  "instance_name":"demo",
-  "instance_type":"small_b",
-  "login_mode":"passwd",
-  "login_passwd":"QingCloud20130712",
-  "signature_method":"HmacSHA256",
-  "signature_version":1,
-  "time_stamp":"2013-08-27T14%3A30%3A10Z",
-  "version":1,
-  "vxnets.1":"vxnet-0",
-  "zone":"pek3a"
+'access_key_id': 'QYACCESSKEYIDEXAMPLE'
+'signature_method': 'HmacSHA256',
+'signature_version': '1',
+'timestamp': '2021-08-19T16%3A44%3A40Z',
+'version': '1',
+'zone': 'jinan1a'
 }
 ```
 
 > **注意**
 > 
-> -编码时空格要转换成 “%20” , 而不是 “+”。
+> - 编码时空格要转换成 “%20” , 而不是 “+”。
 > 
-> -转码部分的字符要用大写，如 ”:” 应转成 “%3A”，而不是 “%3a”。
+> - 转码部分的字符要用大写，如 ”:” 应转成 “%3A”，而不是 “%3a”。
 
 ### 步骤 3: 构造 URL 请求
 
 参数名和参数值之间用 “=” 号连接，参数和参数之间用 “＆” 号连接。构造后的URL请求如下示例：
 
 ```text
-access_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=QingCloud20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a
+access_key_id=QYACCESSKEYIDEXAMPLE&signature_method=HmacSHA256&signature_version=1&timestamp=2021-08-19T16%3A44%3A40Z&version=1&zone=jinan1a
 ```
 
 ### 步骤 4: 构造被签名串
 
-被签名串的构造规则为: 被签名串 = HTTP请求方式 + “\n” + uri + “\n” + url 请求串。
+被签名串的构造规则为: 被签名串 = HTTP请求方式 + “\n” + uri + “\n” + url 请求串 + “\n” + md5(requests_body)
 
-> **注意**
-> 
-> “\n” 是换行符，不要将 “\” 转义。即不使用 “\\n” 。
-> 
->  php、ruby 等语言，请用 “\n” , 而不是 ‘\n’。
-
-假设 HTTP 请求方法为 GET 请求的uri路径为 “/iaas/” 。则被签名串示例如下：
+以请求集群列表为例：
 
 ```test
-GET\n/iaas/\naccess_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=QingCloud20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a
+methed : GET
+ 
+url :/api/cluster/list/
+ 
+requests_param:
+access_key_id=QYACCESSKEYIDEXAMPLE&signature_method=HmacSHA256&signature_version=1&timestamp=2021-08-19T16%3A44%3A40Z&version=1&zone=jinan1a
+ 
+md5(requests_body):请求体的md5值，如果是get请求requests_body为空字符串’’，注意中间没有空格，计算出的md5值固定为：
+d41d8cd98f00b204e9800998ecf8427e
+ 
+如果是post请求，requests_body是请求body的json字符串的MD5值
+string_to_sign  = methed + "\n" + url + "\n"+ requests_param + "\n" + MD5(requests_body)
 ```
 
 ### 步骤 5: 计算签名
 
 计算被签名串的签名 signature。
 
-- 将API密钥的私钥 ( secret_access_key ) 作为key，生成被签名串的 HMAC-SHA256 或者 HMAC-SHA1 签名，更多信息可参见 [RFC2104](http://www.ietf.org/rfc/rfc2104.txt)。
+- 将 API 密钥的私钥 ( secret_access_key ) 作为key，生成被签名串的 HMAC-SHA256 或者 HMAC-SHA1 签名，更多信息可参见 [RFC2104](http://www.ietf.org/rfc/rfc2104.txt)。
 
 - 将签名进行 Base64 编码
 
 - 将 Base64 编码后的结果进行 URL 编码
 
-> **注意**
-> 
-> 当 Base64 编码后存在空格时，不要对空格进行 URL 编码，而要直接将空格转为 “+”。
-
-以 Python (版本 2.7) 代码为例 (其他语言类似，需要使用 sha256 + base64 编码，最后需要再进行 URL 编码，URL 编码时需要将原有的空格 ” ” 转为 “+”)。
-
 ```url
-import base64
-import hmac
-import urllib
-from hashlib import sha256
-
-# 前面生成的被签名串
-string_to_sign = 'GET\n/iaas/\naccess_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=QingCloud20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a'
-h = hmac.new(secret_access_key, digestmod=sha256)
-h.update(string_to_sign)
-sign = base64.b64encode(h.digest()).strip()
-signature = urllib.quote_plus(sign)
+string_to_sign: = GET\n/api/cluster/list/\naccess_key_id=QYACCESSKEYIDEXAMPLE&signature_method=HmacSHA256&signature_version=1&timestamp=2021-08-19T16%3A44%3A40Z&version=1&zone=jinan1a\nd41d8cd98f00b204e9800998ecf8427e
 ```
 
-### 步骤 6: 添加签名
+**python3生成签名代码示例**
+
+```
+h = hmac.new(sk.encode(encoding="utf-8"), digestmod=sha256)
+h.update(string_to_sign.encode(encoding="utf-8"))
+sign = base64.b64encode(h.digest()).strip()
+signature = parse.quote_plus(sign.decode())
+signature = parse.quote_plus(signature)
+requests_param = requests_param + "&signature=%s"%signature
+```
+
+**最终生成待签名的字符串**
+
+```
+GET\n/api/cluster/list/\naccess_key_id=QYACCESSKEYIDEXAMPLE&signature_method=HmacSHA256&signature_version=1&timestamp=2021-08-19T16%3A44%3A40Z&version=1&zone=jinan1a\nd41d8cd98f00b204e9800998ecf8427e
+```
+
+**使用上面的签名串得到的signature为：**
+
+```
+W68niby0THV%252BXsKcRxuGblFm2a4XbTdto129JkSH2%252FM%253D
+```
+
+**将得到的签名signature参数附在原有的请求串的最后面：**
+
+```
+access_key_id=QYACCESSKEYIDEXAMPLE&signature_method=HmacSHA256&signature_version=1&timestamp=2021-08-19T16%3A44%3A40Z&version=1&zone=jinan1a&signature=W68niby0THV%252BXsKcRxuGblFm2a4XbTdto129JkSH2%252FM%253D
+```
+
+假如请求的host是 https://hpc-api.qingcloud.com:443，将生成的最终签名结果的URL加到请求的路径下
+
+https://hpc-api.qingcloud.com:443/api/cluster/list，中间用？连接。
+
+最终得到的完整的URL请求如下：
+
+```
+https://hpc.api.qingcloud.com:443/api/cluster/list?access_key_id=QYACCESSKEYIDEXAMPLE&signature_method=HmacSHA256&signature_version=1&timestamp=2021-08-19T16%3A44%3A40Z&version=1&zone=jinan1a&signature=W68niby0THV%252BXsKcRxuGblFm2a4XbTdto129JkSH2%252FM%253D
+```
+
+### 测试代码
 
 将签名参数附在原有请求串的最后面。最终的 HTTP 请求串示例如下(为了查看方便，可将参数之间用回车分隔开)。
 
 ```url
-access_key_id=QYACCESSKEYIDEXAMPLE
-&action=RunInstances
-&count=1
-&image_id=centos64x86a
-&instance_name=demo
-&instance_type=small_b
-&login_mode=passwd
-&login_passwd=QingCloud20130712
-&signature_method=HmacSHA256
-&signature_version=1
-&time_stamp=2013-08-27T14%3A30%3A10Z
-&version=1
-&vxnets.1=vxnet-0
-&zone=pek3a
-&signature=byjccvWIvAftaq%2BoublemagH3bYAlDWxxLFAzAsyslw%3D
+# !/usr/bin/python3
+ 
+import requests,json,time,datetime
+from urllib import parse
+from hashlib import sha256
+import hashlib
+import hmac
+import base64,json
+import collections
+ 
+ 
+def hex_encode_md5_hash(data):
+    if not data:
+        data = "".encode("utf-8")
+    else:
+        data = data.encode("utf-8")
+    md5 = hashlib.md5()
+    md5.update(data)
+    return md5.hexdigest()
+ 
+def get_signature(url="",ak="",sk="",params="",requests_body=""):
+     
+    params["access_key_id"] = ak
+    keys = sorted(params.keys())
+    print(keys)
+ 
+    # sorted_param = {key:params[key] for key in keys}
+    # print(sorted_param)
+    sorted_param = collections.OrderedDict()
+    for key in keys:
+        sorted_param[key] = params[key]
+ 
+    requests_param = parse.urlencode(sorted_param)
+    print(requests_param)
+     
+    if requests_body:
+        method = "POST"
+        body = hex_encode_md5_hash(json.dumps(requests_body))
+    else:
+        method = "GET"
+        body = hex_encode_md5_hash("")
+    string_to_sign  = method + "\n" + url + "\n"+ requests_param + "\n" + body
+    print(string_to_sign)
+    # string_to_sign  = "GET" + "\n" + url + "\n"+ requests_param + "\n"
+    h = hmac.new(sk.encode(encoding="utf-8"), digestmod=sha256)
+    h.update(string_to_sign.encode(encoding="utf-8"))
+    sign = base64.b64encode(h.digest()).strip()
+    signature = parse.quote_plus(sign.decode())
+    signature = parse.quote_plus(signature)
+    requests_param = requests_param + "&signature=%s"%signature
+    return requests_param
+ 
+def list_cluster():
+    secret_access_key = "SECRETACCESSKEYSECRETACCESSKEY"
+    access_key_id = "QYACCESSKEYIDEXAMPLE"
+ 
+    url = 'https://test.hpc.qingcloud.com/api/cluster/list'
+    param = {
+        "zone":"jinan1a",
+        "signature_method": "HmacSHA256",
+        "signature_version": "1",
+        "version":"1",
+        "timestamp":datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+    }
+    signature = get_signature(url="/api/cluster/list/",ak=access_key_id,sk=secret_access_key,params=param)
+    url = url + "?" + signature
+    print(url)
+    headers={'Content-Type': 'application/json','User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+    r = requests.get(url)
+    print(r.text)
+ 
+list_cluster()
 ```
 
-完整的请求 URL 示例如下：
-
-```url
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
-&action=RunInstances
-&count=1
-&image_id=centos64x86a
-&instance_name=demo
-&instance_type=small_b
-&login_mode=passwd
-&login_passwd=QingCloud20130712
-&signature_method=HmacSHA256
-&signature_version=1
-&time_stamp=2013-08-27T14%3A30%3A10Z
-&version=1
-&vxnets.1=vxnet-0
-&zone=pek3a
-&signature=byjccvWIvAftaq%2BoublemagH3bYAlDWxxLFAzAsyslw%3D
-```
-
-实际 URL 如下：
-
-```url
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=QingCloud20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a&signature=byjccvWIvAftaq%2BoublemagH3bYAlDWxxLFAzAsyslw%3D
-```
-
-## IAM 身份签名
-
-您需要先到 IAM 控制面板创建一个基于特定信任载体类型的身份，并将身份绑定到 API 执行设备上。
-
-假设 API 执行设备为广东 2 区 id 为 i-7lchv5u3 的云服务器。
-
-### 步骤 1: 获取临时凭证
-
-在云服务器中执行如下命令，即可取得 IAM 身份的临时凭证：
-
-```curl
-curl -i -H "Accept: application/json" http://169.254.169.254/latest/meta-data/security-credentials
-```
-
-返回信息：
-
-```json
-"{\"jti\":\"0z7dO3oN03byx1CepBDTyl\",\"id_token\":\"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY3IiOiIxIiwiYXVkIjoiaWFtIiwiYXpwIjoiaWFtIiwiY29ucyI6ImFkbWluIiwiY3VpZCI6ImlhbXItejU3dm42anIiLCJlaXNrIjoieUxjcFViRXZVOWZQZmJSQTA2eUFQMUtMS21keVpoX1JueDJmNmRmeFZZZz0iLCJleHAiOjE1OTAzMTk1MjMsImlhdCI6MTU5MDMxNTkyMywiaXNzIjoic3RzIiwianRpIjoiMHo3ZE8zb04wM2J5eDFDZXBCRFR5bCIsIm5iZiI6MCwib3JnaSI6ImFwcC0xMjM0NTY3OCIsIm93dXIiOiJ1c3ItQ29qOGFIZ24iLCJwcmVmIjoicXJuOnFpbmdjbG91ZDppYW06Iiwicm91ciI6InVzci1Db2o4YUhnbiIsInJ0eXAiOiJyb2xlIiwic3ViIjoic3RzIiwidHlwIjoiSUQifQ.YrCnvySApej2zHsn9cfn3D7tgOahDzeTP1TRBVMZ_3TyToo-H7hB2_mx_J_Qy1NY5K-WykYE4NFxqVN7PqsnAmskqAnRM2D7Gza_PffO7ajEJhtVF7Fo7nsmPKs7y1kryQ2Rvj3ABBJThHjQDtYVsk_pLUio5P0Nl9zb1sSswN4\",\"access_key\":\"0z7dO3oN03byx1CepBDTyl\",\"secret_key\":\"5qlKnUc3esKJp3G\",\"expiration\":1590319523}"
-```
-
-为了查看方便，将参数之间用回车分隔开如下：
-
-```json
-"jti":"0z7dO3oN03byx1CepBDTyl",
-"id_token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY3IiOiIxIiwiYXVkIjoiaWFtIiwiYXpwIjoiaWFtIiwiY29ucyI6ImFkbWluIiwiY3VpZCI6ImlhbXItejU3dm42anIiLCJlaXNrIjoieUxjcFViRXZVOWZQZmJSQTA2eUFQMUtMS21keVpoX1JueDJmNmRmeFZZZz0iLCJleHAiOjE1OTAzMTk1MjMsImlhdCI6MTU5MDMxNTkyMywiaXNzIjoic3RzIiwianRpIjoiMHo3ZE8zb04wM2J5eDFDZXBCRFR5bCIsIm5iZiI6MCwib3JnaSI6ImFwcC0xMjM0NTY3OCIsIm93dXIiOiJ1c3ItQ29qOGFIZ24iLCJwcmVmIjoicXJuOnFpbmdjbG91ZDppYW06Iiwicm91ciI6InVzci1Db2o4YUhnbiIsInJ0eXAiOiJyb2xlIiwic3ViIjoic3RzIiwidHlwIjoiSUQifQ.YrCnvySApej2zHsn9cfn3D7tgOahDzeTP1TRBVMZ_3TyToo-H7hB2_mx_J_Qy1NY5K-WykYE4NFxqVN7PqsnAmskqAnRM2D7Gza_PffO7ajEJhtVF7Fo7nsmPKs7y1kryQ2Rvj3ABBJThHjQDtYVsk_pLUio5P0Nl9zb1sSswN4",
-"access_key":"0z7dO3oN03byx1CepBDTyl",
-"secret_key":"5qlKnUc3esKJp3G",
-"expiration":1590319523
-```
-
-### 步骤 2: 计算签名
-
-将身份临时凭证中的 **access_key** 和 **secret_key** ，进行签名计算。详细操作参见 [API 密钥签名计算](#步骤-5-计算签名)。
-
-### 步骤 3: 添加签名
-
-将请求的 URI 路径改为 “/iam/”，最后在请求中附上 token 参数（参数值为临时凭证中的 id_token ）。
-
-以 DescribeInstances 为例，最后请求的 URL 为（将参数之间用回车分隔开）:
-
-```url
-https://api.qingcloud.com/iam/?access_key_id=0z7dO3oN03byx1CepBDTyl
-&action=DescribeInstances
-&req_id=35430c022b694133a6a758b62e21067b
-&signature_method=HmacSHA256
-&signature_version=2
-&status.1=running
-&status.2=stopped
-&time_stamp=2020-05-25T07%3A20%3A28Z
-&token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY3IiOiIxIiwiYXVkIjoiaWFtIiwiYXpwIjoiaWFtIiwiY29ucyI6ImFkbWluIiwiY3VpZCI6ImlhbXItejU3dm42anIiLCJlaXNrIjoieUxjcFViRXZVOWZQZmJSQTA2eUFQMUtMS21keVpoX1JueDJmNmRmeFZZZz0iLCJleHAiOjE1OTAzMTk1MjMsImlhdCI6MTU5MDMxNTkyMywiaXNzIjoic3RzIiwianRpIjoiMHo3ZE8zb04wM2J5eDFDZXBCRFR5bCIsIm5iZiI6MCwib3JnaSI6ImFwcC0xMjM0NTY3OCIsIm93dXIiOiJ1c3ItQ29qOGFIZ24iLCJwcmVmIjoicXJuOnFpbmdjbG91ZDppYW06Iiwicm91ciI6InVzci1Db2o4YUhnbiIsInJ0eXAiOiJyb2xlIiwic3ViIjoic3RzIiwidHlwIjoiSUQifQ.YrCnvySApej2zHsn9cfn3D7tgOahDzeTP1TRBVMZ_3TyToo-H7hB2_mx_J_Qy1NY5K-WykYE4NFxqVN7PqsnAmskqAnRM2D7Gza_PffO7ajEJhtVF7Fo7nsmPKs7y1kryQ2Rvj3ABBJThHjQDtYVsk_pLUio5P0Nl9zb1sSswN4
-&verbose=0
-&version=1
-&zone=pekt3
-&signature=o8TW8DUQ3wyHz5YSkpMd9fSj4pJ24U7%2Buf7CeWKMoQw%3D
-```
-
-实际 URL 为：
-
-```url
-https://api.qingcloud.com/iam/?access_key_id=0z7dO3oN03byx1CepBDTyl&action=DescribeInstances&req_id=35430c022b694133a6a758b62e21067b&signature_method=HmacSHA256&signature_version=2&status.1=running&status.2=stopped&time_stamp=2020-05-25T07%3A20%3A28Z&token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY3IiOiIxIiwiYXVkIjoiaWFtIiwiYXpwIjoiaWFtIiwiY29ucyI6ImFkbWluIiwiY3VpZCI6ImlhbXItejU3dm42anIiLCJlaXNrIjoieUxjcFViRXZVOWZQZmJSQTA2eUFQMUtMS21keVpoX1JueDJmNmRmeFZZZz0iLCJleHAiOjE1OTAzMTk1MjMsImlhdCI6MTU5MDMxNTkyMywiaXNzIjoic3RzIiwianRpIjoiMHo3ZE8zb04wM2J5eDFDZXBCRFR5bCIsIm5iZiI6MCwib3JnaSI6ImFwcC0xMjM0NTY3OCIsIm93dXIiOiJ1c3ItQ29qOGFIZ24iLCJwcmVmIjoicXJuOnFpbmdjbG91ZDppYW06Iiwicm91ciI6InVzci1Db2o4YUhnbiIsInJ0eXAiOiJyb2xlIiwic3ViIjoic3RzIiwidHlwIjoiSUQifQ.YrCnvySApej2zHsn9cfn3D7tgOahDzeTP1TRBVMZ_3TyToo-H7hB2_mx_J_Qy1NY5K-WykYE4NFxqVN7PqsnAmskqAnRM2D7Gza_PffO7ajEJhtVF7Fo7nsmPKs7y1kryQ2Rvj3ABBJThHjQDtYVsk_pLUio5P0Nl9zb1sSswN4&verbose=0&version=1&zone=pekt3&signature=o8TW8DUQ3wyHz5YSkpMd9fSj4pJ24U7%2Buf7CeWKMoQw%3D
-```

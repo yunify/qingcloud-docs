@@ -19,18 +19,18 @@ GET
 
 ## 请求参数
 
-| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述                       |
-| :--------------------------------------------------------- | :--------------------------------------------------------- | :------- | :------------------------- |
-| timestamp                                                  | string                                                     | true     | 使用获取节点api时间戳      |
-| zone                                                       | string                                                     | true     | 所属区域id                 |
-| cluster_id                                                 | string                                                     | false    | 需要查询节点的集群id       |
-| limit                                                      | int                                                        | false    | 页面显示的数据个数，默认10 |
-| offset                                                     | int                                                        | false    | 集群偏移量                 |
-| reverse                                                    | int                                                        | false    | 排序 0：ASC 1:EDSC         |
-| search_word                                                | string                                                     | false    | 模糊查询 支持 keys:[name]  |
-| sort_key                                                   | string                                                     | false    | 可为节点角色               |
-| status                                                     | string                                                     | false    | 集群节点的状态             |
-| verbose                                                    | int                                                        | false    | 集群节点的详细操作工作     |
+| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述                                          |
+| :--------------------------------------------------------- | :--------------------------------------------------------- | :------- | :-------------------------------------------- |
+| timestamp                                                  | string                                                     | true     | 使用获取节点api时间戳                         |
+| zone                                                       | string                                                     | true     | 所属区域id                                    |
+| cluster_id                                                 | string                                                     | false    | 需要查询节点的集群id                          |
+| search_word                                                | string                                                     | false    | 模糊查询 支持 keys:[name]                     |
+| sort_key                                                   | string                                                     | false    | 可为节点角色                                  |
+| status                                                     | string                                                     | false    | 集群节点的状态                                |
+| limit                                                      | int                                                        | false    | 页面显示的数据个数，默认10                    |
+| offset                                                     | int                                                        | false    | 集群偏移量                                    |
+| reverse                                                    | int                                                        | false    | 排序<ul><li>0：ASC</li><li>1：EDSC </li></ul> |
+| verbose                                                    | int                                                        | false    | 集群节点的详细操作工作                        |
 
 ## 响应消息
 
@@ -39,7 +39,7 @@ GET
 | <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 描述                                                         | 取值样例                          |
 | :--------------------------------------------------------- | :--------------------------------------------------------- | ------------------------------------------------------------ | :-------------------------------- |
 | action                                                     | string                                                     | api 相应动作名称                                             | HpcClusterGetClusterNodesResponse |
-| total_count                                                | int                                                        | 集群中节点个数<br />创建集群后默认有一个登录节点<br />如果用户有再新增节点，对应值就>1<br />可增加节点类型为：登陆节点、计算节点、管控节点 | 1                                 |
+| total_count                                                | int                                                        | 集群中节点个数<br />创建集群后默认有一个登录节点<br />如果用户有再新增节点，对应值就 > 1<br />可增加节点类型为：登陆节点、计算节点、管控节点 | 1                                 |
 | ret_code                                                   | int                                                        | api 执行是否成功，成功为0，其他值均为错误代码                | 0                                 |
 
 **response item**
@@ -48,7 +48,7 @@ GET
 | :--------------------------------------------------------- | :--------------------------------------------------------- | ------------------------------------------------------------ | :----------------------------- |
 | hpc_app_nodes_set                                          | list                                                       | 集群节点列表信息显示                                         | -                              |
 | acl_id                                                     | string                                                     | -                                                            | zccmu5y5m                      |
-| advanced_actions                                           | string                                                     | 额外操作<br />可能值<ul><li>scale_horizontal 水平缩放</li><li>associate 绑定eip</li></ul> | scale_horizontal,associate_eip |
+| advanced_actions                                           | string                                                     | 额外操作<br />可能值<ul><li>scale_horizontal 水平缩放</li><li>associate 绑定 eip</li></ul> | scale_horizontal,associate_eip |
 | agent_insatlled                                            | bool                                                       | 是否已经代理安装<br />可能值<ul><li>true 已代理安装节点</li><li>flase 未代理安装节点</li></ul> | true                           |
 | alarm_status                                               | string                                                     | 警报状态<br />集群出现故障                                   |                                |
 | app_id                                                     | string                                                     | 集群所拥有的应用程序 id<br />根据集群所有的应用程序不同，获取到的app_id也不同 | app-w3rfs72o                   |
@@ -117,6 +117,8 @@ GET
 
 ```url
 https://hpc-api.qingcloud.com/api/cluster/listNodes
+&cluster_id=ehpc-qmmvigwe
+&COMMON_PARAMS
 ```
 
 ### 响应示例
