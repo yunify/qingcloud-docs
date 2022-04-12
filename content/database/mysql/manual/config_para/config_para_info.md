@@ -20,7 +20,7 @@ MySQL Plus 支持对常用配置参数的管理。
 |   启用对象存储服务   |       false 或 true  |  表示是否启用对象存储服务。默认为 false。 <span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br>集群备份功能需要先启用对象存储服务。</span>  |
 |   Bucket_name      |  -       |   表示对象存储服务 Bucket 名称。可选择已创建桶。  |
 |   Access_key_id    |    -  |  表示集群备份 API 密钥 ID。可选择已创建密钥。  |
-| Logical_backup_exec_timeout | 7200~43200 | 表示逻辑备份超时时间：单位秒。<br><span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>配置逻辑备份最大执行时间（比如5小时），当超过该时间，终止对应备份进程，以此保证不影响客户高峰期业务。</li><li>仅适用于**高可用版** MySQL Plus 。</li></span> |
+| Logical_backup_exec_timeout | 7200~43200 | 表示逻辑备份超时时间：单位秒。<br><span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>配置逻辑备份最大执行时间（比如5小时），当超过该时间，终止对应备份进程，以此保证不影响客户高峰期业务。</li><li>适用于**金融版** MySQL Plus 和高可用版** MySQL Plus 。</li></span> |
 
 ## 高可用参数
 
