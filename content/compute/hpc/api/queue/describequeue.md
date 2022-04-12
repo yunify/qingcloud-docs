@@ -19,12 +19,12 @@ GET
 
 ## 请求参数
 
-| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述                    |
-| :--------------------------------------------------------- | :--------------------------------------------------------- | :------- | :---------------------- |
-| cluster_id                                                 | string                                                     | true     | 当前集群id              |
-| id                                                         | string                                                     | true     | 队列专属id              |
-| timestamp                                                  | date-time                                                  | true     | 进行当前api操作的时间戳 |
-| zone                                                       | string                                                     | true     | 所属区域id              |
+| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述                      |
+| :--------------------------------------------------------- | :--------------------------------------------------------- | :------- | :------------------------ |
+| timestamp                                                  | date-time                                                  | true     | 进行当前 api 操作的时间戳 |
+| cluster_id                                                 | string                                                     | true     | 需要查看的队列所属集群 id |
+| id                                                         | string                                                     | true     | 队列专属 id               |
+| zone                                                       | string                                                     | true     | 所属区域 id               |
 
 ## 响应消息
 
@@ -32,8 +32,8 @@ GET
 
 | <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 描述                                                         | 取值样例                      |
 | :--------------------------------------------------------- | :--------------------------------------------------------- | ------------------------------------------------------------ | :---------------------------- |
-| action                                                     | string                                                     | Api 响应动作名称                                             | HpcQueueDescribeQueueResponse |
-| ret_code                                                   | int                                                        | 操作是否执行成功可能值<ul><li>0 操作执行成功</li><li>5000 执行错误，会返回一个错误提示</li></ul> | 0                             |
+| action                                                     | string                                                     | api 响应动作名称                                             | HpcQueueDescribeQueueResponse |
+| ret_code                                                   | int                                                        | 操作是否执行成功可能值<ul><li>0：操作执行成功</li><li>5000：执行错误，会返回一个错误提示</li></ul> | 0                             |
 
 **response item**
 
@@ -70,6 +70,9 @@ GET
 
 ```url
 https://hpc-api.qingcloud.com/api/queue/describeQueue
+&cluster_id=ehpc-cch2t15o
+&id=ehpcq-rdvf195w
+&COMMON_PARAMS
 ```
 
 ### 响应示例

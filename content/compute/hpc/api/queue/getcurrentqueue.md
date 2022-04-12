@@ -1,7 +1,7 @@
 ---
 title: "getCurrentQueue"
 description: 本小节主要介绍 HPC 队列列表接口。 
-keyword: mysql plus 新增节点
+keyword: hpc 队列列表
 weight: 20
 collapsible: false
 draft: false
@@ -73,7 +73,7 @@ GET
 | gpu_num                                                    | int    | gpu 数量                                                     | 0                    |
 | hcpqueue_type_id                                           | string | hpc 队列类型 id                                              | hpcqt-k2i40mpi       |
 | node_list                                                  | string | 节点列表                                                     | null                 |
-| craete_time                                                | string | 创建时间                                                     | 2020-11-12T20:01:04Z |
+| create_time                                                | string | 创建时间                                                     | 2020-11-12T20:01:04Z |
 | node_num                                                   | int    | 节点数量                                                     | 5                    |
 | unit_cpu_num                                               | int    | 单位 cpu 数量                                                | 0                    |
 
@@ -83,6 +83,8 @@ GET
 
 ```url
 https://hpc-api.qingcloud.com/api/queue/getCurrentQueue
+&cluster_id=hpc-n2yopbte
+&COMMON_PARAMS
 ```
 
 ### 响应示例

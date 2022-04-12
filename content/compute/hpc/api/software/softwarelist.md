@@ -21,15 +21,15 @@ GET
 
 | 参数        | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述                                                         |
 | :---------- | :--------------------------------------------------------- | :------- | :----------------------------------------------------------- |
-| timestamp   | string                                                     | true     | 时间戳                                                       |
-| deploy_mode | int                                                        | false    | HPC 软件部署方式。<ul><li>1：预装</li><li>2：按需部署</li></ul> |
-| platform    | int                                                        | false    | HPC软件支持平台。<ul><li>1：HPC</li><li> 2：EHPC </li><li> 3：HPC 和 EHPC </li></ul> |
+| zone        | string                                                     | true     | zone id                                                      |
+| timestamp   | date-time                                                  | true     | 时间戳                                                       |
 | user_id     | string                                                     | false    | 用户 id                                                      |
 | class_id    | string                                                     | false    | 软件类 id                                                    |
 | search_word | string                                                     | false    | 关键词搜索                                                   |
+| deploy_mode | int                                                        | false    | HPC 软件部署方式。<ul><li>1：预装</li><li>2：按需部署</li></ul> |
+| platform    | int                                                        | false    | HPC软件支持平台。<ul><li>1：HPC</li><li> 2：EHPC </li><li> 3：HPC 和 EHPC </li></ul> |
 | offset      | int                                                        | false    | 数据偏移量                                                   |
 | limit       | int                                                        | false    | 页面个数限制                                                 |
-| zone        | string                                                     | true     | zone id                                                      |
 
 ## 响应消息
 
@@ -46,6 +46,7 @@ GET
 
 ```url
 https://hpc-api.qingcloud.com/api/software/list
+&COMMON_PARAMS
 ```
 
 ### 响应示例
