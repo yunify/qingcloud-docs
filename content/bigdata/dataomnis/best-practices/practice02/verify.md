@@ -29,7 +29,7 @@ draft: false
 
 ## 验证结果
 
-1. 通过[ClickHouse连接工具](http://ui.tabix.io/#!/login)登录 ClickHouse。
+1. 通过 [ClickHouse 连接工具](http://ui.tabix.io/#!/login)登录 ClickHouse。
 2. 执行以下命令，清空表数据。
 
     ```sql
