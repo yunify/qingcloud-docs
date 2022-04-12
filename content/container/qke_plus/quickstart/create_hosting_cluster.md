@@ -9,7 +9,7 @@ keyword: 青云, QingCloud, 云计算, QKE集群, Kubernetes, 托管
 
 ## 前提条件
 
-- 已注册青云 QingCloud 账号，并完成[实名认证](/authorization/account/manual/user_verify/)。
+- 已注册青云QingCloud 账号，并完成[实名认证](/authorization/account/manual/account_aut/account_intro/)。
 - 集群创建过程中将使用云服务器、硬盘、负载均衡器等多种资源，若资源配额不足，将无法成功创建集群。创建集群所需要的资源请参考[集群计费项](/container/qke_plus/billing/bill_des/)。若需提高配额，请[提交工单](https://console.qingcloud.com/tickets/)申请。
 
 ## 操作步骤
@@ -45,7 +45,7 @@ keyword: 青云, QingCloud, 云计算, QKE集群, Kubernetes, 托管
    | <span style="display:inline-block;width:70px">参数</span> | 说明                                                         |
    | --------------------------------------------------------- | ------------------------------------------------------------ |
    | 集群版本                                                  | QKE 集群版本。                                               |
-   | 节点规格                                                  | <li>若您需要安装 KubeSphere，工作节点数量需至少为 3 个。  </li><ul><li>**快速配置**：</br>预置`基础型试用环境`和`企业型生产环境`两种配置类型，请根据实际需求进行选择。<br/>基础型试用环境：提供面向个人及中小团队用户的入门型实例资源，适用于开发测试环境。<br/>企业型生产环境：提供面向企业级用户的高性能高可靠计算实例资源，适用于正式生产应用环境。</li><li>**自定义**：<br/>根据需要自定义节点类型、节点数量、节点规格及硬盘大小。可添加不同类型的节点。<br/><div style="background-color: #D8ECDE;padding: 10px 24px; margin: 10px 0;border-left:3px solid #00a971;"><b>说明</b><br/><ul><li>基础型节点支持基础型 s1 机型；企业型节点支持企业型 e3 机型。云服务器类型说明，请参考[云服务介绍](/compute/vm/intro/instance/)。</li><li>若您需要安装 KubeSphere，工作节点数量需至少为 3 个。  </li></div><br/></li></ul> |
+   | 节点规格                                                  | <ul><li>**快速配置**：</br>预置`基础型试用环境`和`企业型生产环境`两种配置类型，请根据实际需求进行选择。<br/>基础型试用环境：提供面向个人及中小团队用户的入门型实例资源，适用于开发测试环境。<br/>企业型生产环境：提供面向企业级用户的高性能高可靠计算实例资源，适用于正式生产应用环境。</li><li>**自定义**：<br/>根据需要自定义节点类型、节点数量、节点规格及硬盘大小。可添加不同类型的节点。<br/>基础型节点支持基础型 s1 机型；企业型节点支持企业型 e3 机型。<br/>云服务器类型说明，请参考[云服务介绍](/compute/vm/intro/instance/)。</li></ul> |
 
    
 

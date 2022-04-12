@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: OpenSearch
-  vice_title: OpenSearch 是一种托管服务，支持在 AppCenter 管理并升级。为用户提供实时日志处理、全文搜索和数据分析等基础能力。
+  vice_title: OpenSearch 服务是一种搜索引擎托管服务，支持在 AppCenter 管理并升级。为用户提供实时日志处理、全文搜索和数据分析等基础能力。
 
 Section2:
   title: 用户指南

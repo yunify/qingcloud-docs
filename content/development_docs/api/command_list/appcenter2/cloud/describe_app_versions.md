@@ -4,8 +4,6 @@ description:
 draft: false
 ---
 
-
-
 获取一个或多个应用版本的信息
 
 可根据应用版本ID，状态，应用ID，标签等作为过滤条件，来获取应用信息。
@@ -85,5 +83,4 @@ _Example Response_:
   "ret_code":0
 }
 ```
-
 

@@ -24,6 +24,7 @@ draft: false
 
 |<span style="display:inline-block;width:80px">参数</span> |<span style="display:inline-block;width:120px">取值范围</span>|<span style="display:inline-block;width:420px">参数说明</span>|
 |:----|:----|:----|
+|   prometheus.node.exporter    |  <li>true<li>false      |   表示是否对接 Prometheus 开启 Node Exporter 监控服务。 <li>默认值为 `true`。 开启后监控端口默认为 9100. |
 |   thread_pool.write .queue_size    |  200~10240     |   表示 queue_size 允许控制没有线程执行它们的待处理请求队列的大小。 <li>默认值 1024。  |
 |   thread_pool.search .queue_size      |  1000~10240   |   表示 queue_size 允许控制没有线程来执行它们的待处理请求队列的初始大小。 <li>默认值 1024。  |
 |   action.destructive _requires_name      | <li>true<li>false   |   表示是否允许在删除索引时使用通配符或_all。<li>默认值 `true`，表示允许使删除只限于特定名称指向的数据。<li>取值 `false`，表示允许在删除索引时使用通配符或_all，推荐配置。  |
@@ -39,6 +40,8 @@ draft: false
 |   script.allowed_types      |  -   |   表示在 opensearch.yml 文件中指定允许的脚本类型。  |
 |   script.allowed_contexts      |   -   |   表示在 opensearch.yml 文件中指定允许的文本类型。   |
 |   reindex.remote.whitelist     |  -   |   表示允许 Reindex 的远程集群白名单。  |
+|   remote_exe_dict     |  -   |   表示用户自定义字典的可访问 URL，例如 `http://<Logstash_IP>/dicts/mydict.dic`。  |
+|   remote_exe_stopwords     |  -   |   表示用户停止词字典的可访问 URL，例如 `http://<Logstash_IP>/dicts/mydict.dic`。 |
 |   path.repo      |  -   |   表示共享文件系统仓库的路径。  |
 |   repositories.url .allowed_urls      |  -   |   表示只读 URL 仓库的路径。  |
 |   os_additional_line1      |   -   |   表示在 opensearch.yml 文件中附加配置。   |
@@ -72,6 +75,7 @@ draft: false
 
 |<span style="display:inline-block;width:80px">参数</span> |<span style="display:inline-block;width:120px">取值范围</span>|<span style="display:inline-block;width:420px">参数说明</span>|
 |:----|:----|:----|
+|  enable_cerebro     |  <li>true<li>false |   表示是否开启 Cerebro  第三方管理工具。<li>默认值为 `true`，表示开启 Cerebro。 |
 |   OS 代理负载均衡策略     |  <li>轮询<li>static-rr<li>最少连接<li>first<li>源地址 |   表示 Dashboard 节点代理负载均衡策略类型。详细策略类型说明，请参见 [HAProxy Configuration](https://cbonte.github.io/haproxy-dconv/1.8/configuration.html#4-balance) 。 |
 |   OS 代理连接超时时间      |  - |   表示 HAProxy 连接后端 OpenSearch 服务的超时时间。<li>单位可设置 ms（毫秒）、s（秒）、m（分）或者 h（小时）。<li>默认值 5秒。 |
 |   OS 代理超时时间      |   - |   表示 HAProxy 等待后端 OpenSearch 服务返回响应的超时时间。<li>单位可设置 ms（毫秒）、s（秒）、m（分）或者 h（小时）。<li>默认值 60秒。 |

@@ -5,15 +5,15 @@ collapsible: false
 weight: 40
 ---
 
-在创建云服务器后，您需要通过 SD-WAN（新版）提供了 VCPE 虚拟机、VCPE 容器两种部署方式。您可以根据需要选择合适方式部署 VCPE。
+在创建云服务器后，请根据需要选择 VCPE 虚拟机部署方式或者 VCPE 容器部署方式部署 VCPE。
 
 - VCPE 虚拟机
   
-  在青云QingCloud 创建云服务器时，选择自有镜像的方式，部署云服务器并绑定 License，即可成功部署 VCPE。
+  在青云QingCloud 创建云服务器时，基于 SD-WAN vCPE 镜像，部署云服务器并绑定 License，即可成功部署 VCPE。
 
 - VCPE 容器
 
-  在虚拟机中运行脚本，脚本会帮助您完成容器创建的一系列操作，并完成在容器中部署 VCPE。
+  在虚拟机中运行脚本，完成在容器中部署 VCPE。
 
 ## 前提条件
 
@@ -82,17 +82,15 @@ VCPE 以镜像的模式提供给用户。您需要在云平台上基于 **SD-WAN
 
 ## VCPE 容器部署
 
+VCPE 容器部署方式可以帮助您实现业务跨云互通。
+
 ### 脚本参数说明
 
 VCPE 镜像的部署脚本提供如下可执行参数，如下所示。
 
-```
-Usage: deploy.sh [command] [options]
+<img src="/sd-wan/sdwan_new/_images/script.png" style="zoom:50%;" />
 
-VCPE install tool 2022.02
-Options:
-    -l          use license to activate device
-```
+参数说明，如下表所示。
 
 | 参数 | 参数说明               |
 | ---- | ---------------------- |
@@ -106,22 +104,54 @@ Options:
 
    > **说明：**
    >
-   > 关于如何登录宿主机，请参考[连接 Linux 云服务器](/compute/vm/manual/vm/20_connect_instance/10_third_party/)。
+   > - 宿主机可连接公网。
+   >
+   > - 关于如何登录宿主机，请参考[连接 Linux 云服务器](/compute/vm/manual/vm/20_connect_instance/10_third_party/)。
 
-1. 执行以下命令，安装 docker。
+1. 依次执行如下命令，安装 docker （如下命令**以 Ubuntu Server 20.04 操作系统**为例）。
 
-   如下命令**以 Ubuntu 操作系统**为例，其他操作系统安装 docker 的命令请参考[官网](https://docs.docker.com/engine/install/
+   其他操作系统安装 docker 的命令，请参考[官网](https://docs.docker.com/engine/install/
    )。
    
    ```
-   sudo apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
-   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-   sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-   sudo apt update
-   sudo apt install docker-ce docker-ce-cli containerd.io
+   sudo apt-get install \
+       apt-transport-https \
+       ca-certificates \
+       curl \
+       gnupg-agent \
+       software-properties-common
    ```
    
-1. 执行以下命令，将脚本下载至宿主机的 `/root `目录下。
+   ```
+   curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
+   ```
+   
+   ```
+   sudo add-apt-repository \
+      "deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/ \
+     $(lsb_release -cs) \
+     stable"
+   ```
+   
+   ```
+   sudo apt-get update
+   ```
+   
+   ```
+   sudo apt-get install docker-ce docker-ce-cli containerd.io
+   ```
+   
+3. 执行以下命令，切换为 `root` 用户。
+
+   > **说明**
+   >
+   > 若已是 `root` 用户，则跳过此步骤。
+
+   ```
+   sudo su
+   ```
+
+1. 执行以下命令，将脚本下载至宿主机的 `/root ` 目录下。
 
    ```
    wget -O /root/deploy.sh https://sd-wan.pek3b.qingstor.com/deploy.sh
@@ -147,7 +177,11 @@ Options:
 
    部署完成后，若回显信息如下所示，则说明 VCPE 部署成功。若部署失败，请提交工单至 SD-WAN 团队进行处理。
 
-   <img src="../../../_images/um_deploy_vcpe_success.png" style="zoom:30%;" />
+   ```
+   INFO: Install complete
+   ```
+   
+   <img src="../../../_images/um_deploy_vcpe_success.png" style="zoom:40%;" />
 
 
 

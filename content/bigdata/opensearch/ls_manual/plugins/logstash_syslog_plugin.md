@@ -1,5 +1,5 @@
 ---
-title: "配置和使用 logstash-input-syslog 插件"
+title: "使用 logstash-input-syslog 插件"
 description: 本小节主要介绍 logstash-input-syslog 插件使用说明。
 keyword: 搜索分析,Logstash-input-syslog,插件使用说明
 weight: 55
