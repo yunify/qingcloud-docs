@@ -21,12 +21,12 @@ POST
 
 ## 请求参数
 
-| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述                  |
-| :--------------------------------------------------------- | :--------------------------------------------------------- | :------- | :-------------------- |
-| timestamp                                                  | date-time                                                  | true     | 时间戳                |
-| cluster_id                                                 | string                                                     | true     | ldap用户所属的集群 id |
-| username                                                   | string                                                     | true     | 需要删除用户的名称    |
-| zone                                                       | string                                                     | true     | 区域 id               |
+| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述                    |
+| :--------------------------------------------------------- | :--------------------------------------------------------- | :------- | :---------------------- |
+| timestamp                                                  | date-time                                                  | true     | 时间戳                  |
+| cluster_id                                                 | string                                                     | true     | ldap 用户所属的集群  id |
+| username                                                   | string                                                     | true     | 需要删除用户的名称      |
+| zone                                                       | string                                                     | true     | 区域 id                 |
 
 ## 响应消息
 
@@ -42,6 +42,10 @@ POST
 
 ```url
 https://hpc-api.qingcloud.com/api/user/deleteUser
+&COMMON_PARAMS
+requests_body = {'cluster_id': 'ehpc-8jqdq0mz',
+                     'username': 'isabel',
+                     'zone': 'jn1a'}
 ```
 
 ### 响应示例

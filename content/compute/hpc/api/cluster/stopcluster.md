@@ -19,19 +19,19 @@ POST
 
 ## 请求参数
 
-| 参数        | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述             |
-| :---------- | :--------------------------------------------------------- | :------- | :--------------- |
-| timestamp   | string                                                     | true     | 时间戳           |
-| cluster_ids | array                                                      | true     | 所要关机的集群id |
-| zone        | string                                                     | true     | zone id          |
+| 参数        | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述              |
+| :---------- | :--------------------------------------------------------- | :------- | :---------------- |
+| timestamp   | string                                                     | true     | 时间戳            |
+| cluster_ids | array                                                      | true     | 所要关机的集群 id |
+| zone        | string                                                     | true     | zone id           |
 
 ## 响应消息
 
-| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 描述                                      | 取值样例                      |
-| :--------------------------------------------------------- | :--------------------------------------------------------- | ----------------------------------------- | :---------------------------- |
-| action                                                     | string                                                     | 响应动作                                  | HpcClusterStopClusterResponse |
-| job_ids                                                    | string                                                     | 执行成功返回的job id                      | j-xxxxxxx                     |
-| ret_code                                                   | int                                                        | 执行成功与否，成功为0，其他值则为错误代码 | 0                             |
+| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 描述                                       | 取值样例                      |
+| :--------------------------------------------------------- | :--------------------------------------------------------- | ------------------------------------------ | :---------------------------- |
+| action                                                     | string                                                     | 响应动作                                   | HpcClusterStopClusterResponse |
+| job_ids                                                    | string                                                     | 执行成功返回的 job id                      | j-xxxxxxx                     |
+| ret_code                                                   | int                                                        | 执行成功与否，成功为 0，其他值则为错误代码 | 0                             |
 
 ## 示例
 

@@ -99,7 +99,9 @@ GET
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/job/jobdetail/{job_uuid}
+https://hpc-api.qingcloud.com/api/job/jobdetail/hpcjob-cz8ngntp
+&cluster_id=ehpc-2i6bsme6
+&COMMON_PARAMS
 ```
 
 ### 响应示例

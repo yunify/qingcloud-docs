@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-取消作业，HPC集群作业取消则自动结束计费。
+取消作业，HPC 集群作业取消则自动结束计费。
 
 ## Action
 
@@ -23,8 +23,8 @@ POST
 | :--------- | :--------------------------------------------------------- | :------- | :--------------------- |
 | timestamp  | string                                                     | true     | 时间戳                 |
 | cluster_id | string                                                     | true     | 需取消作业所在的集群id |
-| job_ids    | list                                                       | true     | 被取消作业的job id     |
 | zone       | string                                                     | true     | zone id                |
+| job_ids    | list                                                       | true     | 被取消作业的job id     |
 
 ## 响应消息
 
@@ -40,6 +40,10 @@ POST
 
 ```url
 https://hpc-api.qingcloud.com/api/job/stopJobs
+&COMMON_PARAMS
+requests_body = {'cluster_id': 'ehpc-8jqdq0mz',
+                     'job_ids': ['hpcjob-bp6rj09f'],
+                     'zone': 'jn1a'}
 ```
 
 ### 响应示例

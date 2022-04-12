@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-删除ehpc队列，但前提是所删除的队列没有节点。有节点的队列若要删除，需要先移除队列节点后，再删除。
+删除 ehpc 队列，但前提是所删除的队列没有节点。有节点的队列若要删除，需要先移除队列节点后，再删除。
 
 ## Action
 
@@ -19,12 +19,12 @@ POST
 
 ## 请求参数
 
-| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述             |
-| :--------------------------------------------------------- | :--------------------------------------------------------- | :------- | :--------------- |
-| timestamp                                                  | date-time                                                  | true     | 时间戳           |
-| cluster_id                                                 | string                                                     | true     | 队列所在集群id   |
-| queue_ids                                                  | array                                                      | true     | 需要删除的队列id |
-| zone                                                       | string                                                     | true     | zone id          |
+| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述              |
+| :--------------------------------------------------------- | :--------------------------------------------------------- | :------- | :---------------- |
+| timestamp                                                  | date-time                                                  | true     | 时间戳            |
+| cluster_id                                                 | string                                                     | true     | 队列所在集群 id   |
+| queue_ids                                                  | array                                                      | true     | 需要删除的队列 id |
+| zone                                                       | string                                                     | true     | zone id           |
 
 ## 响应消息
 

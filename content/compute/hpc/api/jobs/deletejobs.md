@@ -23,8 +23,8 @@ POST
 | :--------------------------------------------------------- | :--------------------------------------------------------- | -------- | :--------------- |
 | timestamp                                                  | date-time                                                  | true     | 时间戳           |
 | cluster_id                                                 | string                                                     | true     | 集群id           |
-| job_ids                                                    | array                                                      | true     | 需要删除的作业id |
 | zone                                                       | string                                                     | true     | zone id          |
+| job_ids                                                    | array                                                      | true     | 需要删除的作业id |
 
 ## 响应消息
 
@@ -39,6 +39,10 @@ POST
 
 ```url
 https://hpc-api.qingcloud.com/api/job/deleteJobs
+&COMMON_PARAMS
+requests_body = {'cluster_id': 'ehpc-8jqdq0mz',
+                     'job_ids': ['hpcjob-bp6rj09f'],
+                     'zone': 'jn1a'}
 ```
 
 ### 响应示例

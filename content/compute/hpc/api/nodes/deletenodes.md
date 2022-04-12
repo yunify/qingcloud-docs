@@ -1,7 +1,7 @@
 ---
 title: "deleteNodes"
-description: 本小节主要介绍弹性高性能计算 EHPC 的删除集群接口。 
-keyword: ehpc,删除集群
+description: 本小节主要介绍弹性高性能计算 EHPC 的删除集群节点接口。 
+keyword: ehpc,删除集群节点
 weight: 40
 collapsible: false
 draft: false
@@ -19,12 +19,12 @@ POST
 
 ## 请求参数
 
-| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述            |
-| :--------------------------------------------------------- | :--------------------------------------------------------- | :------- | :-------------- |
-| timestamp                                                  | date-time                                                  | true     | 时间戳          |
-| cluster_id                                                 | string                                                     | true     | hpc集群的集群id |
-| zone                                                       | string                                                     | true     | 所属区域id      |
-| node_list                                                  | list                                                       | true     | 节点id列表      |
+| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述              |
+| :--------------------------------------------------------- | :--------------------------------------------------------- | :------- | :---------------- |
+| timestamp                                                  | date-time                                                  | true     | 时间戳            |
+| cluster_id                                                 | string                                                     | true     | hpc 集群的集群 id |
+| zone                                                       | string                                                     | true     | 所属区域 id       |
+| node_list                                                  | list                                                       | true     | 节点 id 列表      |
 
 ## 响应消息
 
@@ -40,6 +40,10 @@ POST
 
 ```url
 https://hpc-api.qingcloud.com/api/cluster/deleteNodes
+&COMMON_PARAMS
+requests_body = {'cluster_id': 'ehpc-8jqdq0mz',
+                     'node_ids': ['cln-hzzvbtnh'],
+                     'zone': 'jn1a'}
 ```
 
 ### 响应示例

@@ -35,11 +35,11 @@ POST
 
 **response parameters**
 
-| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 描述                                      | 取值样例                        |
-| :--------------------------------------------------------- | :--------------------------------------------------------- | ----------------------------------------- | :------------------------------ |
-| action                                                     | string                                                     | job id                                    | HpcClusterResizeClusterResponse |
-| job_id                                                     | string                                                     | 响应动作                                  | j-mf0edjt0ji4                   |
-| ret_code                                                   | int                                                        | 执行成功与否，成功为0，其他值则为错误代码 | 0                               |
+| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 描述                                       | 取值样例                        |
+| :--------------------------------------------------------- | :--------------------------------------------------------- | ------------------------------------------ | :------------------------------ |
+| action                                                     | string                                                     | job id                                     | HpcClusterResizeClusterResponse |
+| job_id                                                     | string                                                     | 响应动作                                   | j-mf0edjt0ji4                   |
+| ret_code                                                   | int                                                        | 执行成功与否，成功为 0，其他值则为错误代码 | 0                               |
 
 **response item**
 

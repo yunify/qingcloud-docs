@@ -7,6 +7,14 @@ weight: 20
 collapsible: false
 ---
 
+## API 密钥
+
+调用 API 之前，必须在控制台创建密钥，获得 API 密钥ID（access_key_id）和 API 密钥私钥（secret_access_key）。
+密钥 ID 将作为参数包含在每一个请求中发送，密钥私钥将生成请求的签名串。请妥善保管密钥私钥，请勿外传。
+
+## 请求方法
+
+HPC API 通过HTTPS GET/POST方式进行调用。
 
 ## 请求类型
 
@@ -34,33 +42,31 @@ API 请求主要分为 **延迟请求** 和 **实时请求** 两种。
 
 ## 请求结构
 
-|<span style="display:inline-block;width:100px">参数</span> |<span style="display:inline-block;width:380px">描述</span>|<span style="display:inline-block;width:200px">说明</span>|
-| :--- | :--- | :--- | 
-| API 入口 | API 调用的 webservice 入口。| 统一为 [https://api.qingcloud.com/iaas/](https://api.qingcloud.com/iaas/) |
-| 公共参数 | 每个 API 调用都需要包含公共参数 。| 详情可见 [公共参数](../../parameters) |
-| 指令名称 | API **action** 指令的名称，例如 `DescribeInstances` 。 | - |
-| 指令参数 | 指令相关配置参数。 |  - |
+请求 URL 由如下部分组成，如下所示。
 
-### 请求示例
+| 参数     | 描述                                        | 说明                                   |
+| -------- | ------------------------------------------- | -------------------------------------- |
+| API 入口 | API 调用的 webservice 入口。                | 统一为：https://hpc-api.qingcloud/api/ |
+| 公共参数 | 每个 API 调用都需要包含公共参数。           | 详情                                   |
+| 指令名称 | API **action** 指令名称，例如：cluster/list | -                                      |
+| 指令参数 | 指令相关配置参数                            | -                                      |
 
-一个典型的 API 请求如下所示，这是一个 `DescribeInstances` 的 API 请求：
+## 请求示例
 
-```url
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=DescribeInstances&expires=2013-08-29T07%3A42%3A25Z&limit=20&signature_method=HmacSHA256&signature_version=1&status.1=running&time_stamp=2013-08-29T06%3A42%3A25Z&version=1&zone=pek3b&signature=ihPnXFgsg5yyqhDN2IejJ2%2Bbo89ABQ1UqFkyOdzRITY%3D
+典型的 API 请求如下所示，这是一个 /cluster/list 的 API 请求。
+
+```
+https://hpc.api.qingcloud.com/api/cluster/list?access_key_id=XLSIICQIGCNVEVURUYVN&signature_method=HmacSHA256&signature_version=1×tamp=2022-04-11T15%3A00%3A13Z&version=1&zone=jinan1a&signature=MU1miP6YRr%252B%252FFRQoQjDeDwK6SW6Eqz4DJZiK0vh6KxE%253D
 ```
 
-方便查阅模式：
+转换成便于查看的模式，如下所示。
 
-```url
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
-&action=DescribeInstances
-&expires=2013-08-29T07%3A42%3A25Z
-&limit=20
+```
+https://hpc.api.qingcloud.com/api/cluster/list?access_key_id=XLSIICQIGCNVEVURUYVN
 &signature_method=HmacSHA256
-&signature_version=1
-&status.1=running
-&time_stamp=2013-08-29T06%3A42%3A25Z
+&signature_version=1×tamp=2022-04-11T15%3A00%3A13Z
 &version=1
-&zone=pek3b
-&signature=ihPnXFgsg5yyqhDN2IejJ2%2Bbo89ABQ1UqFkyOdzRITY%3D
+&zone=jinan1a
+&signature=MU1miP6YRr%252B%252FFRQoQjDeDwK6SW6Eqz4DJZiK0vh6KxE%253D
 ```
+

@@ -22,18 +22,19 @@ GET
 | 参数          | 类型      | 是否必要 | 描述                                                         |
 | :------------ | :-------- | :------- | :----------------------------------------------------------- |
 | timestamp     | date-time | true     | 时间戳                                                       |
-| zone          | string    | true     | 所属区域id                                                   |
-| cluster_id    | string    | false    | hpc集群的集群id                                              |
-| cluster_type  | string    | false    | hpc集群的类型hpcehpc                                         |
-| limit         | int       | false    | 页面显示记录的个数，默认10，最大100                          |
-| offset        | int       | false    | 集合偏移量                                                   |
-| reverse       | int       | false    | 排序操作 0：ASC 1:DESC                                       |
+| zone          | string    | true     | 所属区域 id                                                  |
+| owner         | string    | true     | owner                                                        |
+| cluster_id    | string    | false    | hpc 集群的集群 id，若加上此参数则会精确查找集群。            |
+| cluster_type  | string    | false    | hpc集群的类型，若请求时不增加此参数，则会获取当前用户下的活跃、关机、暂停、创建中的集群，请求时加上此参数，则会根据集群类型区分请求。<ul><li>hpc</li><li>ehpc</li></ul> |
 | run_user      | string    | false    | 运行作业用户                                                 |
-| search_word   | string    | false    | 模糊查询 支持 keys：[name]                                   |
+| search_word   | string    | false    | 模糊查询，支持 keys：[name]                                  |
 | shared_status | string    | false    | 集群的共享状态                                               |
 | sort_key      | string    | false    | 排序键 默认为集群创建时间                                    |
 | status        | string    | false    | 查询集群的状态["pending"、"active"、"stopped"、”suspended"]  |
-| verbose       | int       | false    | 是否获取appcent相关的集群信息<br /><ul><li>1</li><li>0</li></ul> |
+| limit         | int       | false    | 页面显示记录的个数，默认 10，最大 100                        |
+| offset        | int       | false    | 集合偏移量                                                   |
+| reverse       | int       | false    | 排序操作 <ul><li>0：ASC</li><li>1：DESC</li></ul>            |
+| verbose       | int       | false    | 是否获取 appcent 相关的集群信息<br /><ul><li>1</li><li>0</li></ul> |
 
 ## 响应消息
 
@@ -54,24 +55,24 @@ GET
 | app_cluster_id                                             | string                                                     | 集群 appcent_id                                              | cl-zog7clgi                        |
 | cluster_id                                                 | string                                                     | 获取到的集群id                                               | ehpc-ut2ua3b0                      |
 | cluster_name                                               | string                                                     | 集群名称                                                     | test-hpc-kk                        |
-| cluster_type                                               | string                                                     | 集群类型可能值ehpc hpc                                       | hpc                                |
+| cluster_type                                               | string                                                     | 集群类型可能值<ul><li>ehpc</li><li>hpc</li></ul>             | hpc                                |
 | create_time                                                | string                                                     | 集群创建时间                                                 | 2021-8-18T13：11：45Z              |
-| description                                                | string                                                     | 集群描述可能值创建集群时增加过描述，就会显示描述“ ”这种情况说明在创建集群时未增加描述 | -                                  |
+| description                                                | string                                                     | 集群描述可能值<ul><li>创建集群时增加过描述，就会显示描述</li><li>“ ”这种情况说明在创建集群时未增加描述</li></ul> | -                                  |
 | nas_id                                                     | string                                                     | nas id                                                       |                                    |
 | nas_mout_point                                             | string                                                     | 获取该集群文件存储的挂载点路径根据每个集群挂点点不同，获取到的挂载点也不同 | /pubilc/shanhe/0704                |
-| nas_path                                                   | string                                                     | nas路径 根据每个集群所选择的nas路径不同，获取到的nas路径不同 | 10.0.0.8@03ib:/lustrefs/shane/0704 |
+| nas_path                                                   | string                                                     | nas路径。根据每个集群所选择的nas路径不同，获取到的nas路径不同 | 10.0.0.8@03ib:/lustrefs/shane/0704 |
 | nas_shared_path                                            | string                                                     | nas共享路径与nas路径一致                                     | /0704                              |
-| paid_type                                                  | string                                                     | 集群费用支付类可能值PayForUsedReserved                       | PayForUsed                         |
-| schedule_type                                              | string                                                     | 调度程序类型slurm                                            | slurm                              |
-| toatl_node_count                                           | int                                                        | 集群所拥有的节点数根据集群所拥有的节点数不同，获取到的值也不同。节点包括登陆节点、管控节点、计算节点 | 1                                  |
+| paid_type                                                  | string                                                     | 集群费用支付类可能值<ul><li>PayForUsed</li><li>Reserved</li></ul> | PayForUsed                         |
+| schedule_type                                              | string                                                     | 调度程序类型：slurm                                          | slurm                              |
+| toatl_node_count                                           | int                                                        | 集群所拥有的节点数。<br />根据集群所拥有的节点数不同，获取到的值也不同。<br />节点包括登录节点、管控节点、计算节点。 | 1                                  |
 | cluster_sw                                                 | list                                                       | 集群所拥有的软件列表                                         | -                                  |
-| description                                                | string                                                     | 对应集群软件描述 集群软件不同对应描述也不同可能值vasplammp<br />更多软件信息请点击“软件中心“。 | lammps 20200721 with mpich         |
-| hpcsw_id                                                   | string                                                     | hpc软件id软件不同id也不一致                                  | hpcsw_lammps                       |
+| description                                                | string                                                     | 对应集群软件描述<br />集群软件不同对应描述也不同，可能值<ul><li>vasp</li><li>lammp</li></ul>更多软件信息请点击“软件中心“。 | lammps 20200721 with mpich         |
+| hpcsw_id                                                   | string                                                     | hpc 软件 id <br />软件不同 id 也不相同                       | hpcsw_lammps                       |
 | sw_name                                                    | string                                                     | 软件名称                                                     | lammps-mpich                       |
 | sw_ver                                                     | string                                                     | 软件版本                                                     | 2020                               |
 | project_info                                               | list                                                       | 集群项目信息                                                 | -                                  |
 | projet_role                                                | string                                                     | 项目角色                                                     | none                               |
-| shared_status                                              | string                                                     | 项目共享状态<br />可能值<br />shared：共享状态<br />not_shared：未共享 | not_shared                         |
+| shared_status                                              | string                                                     | 项目共享状态，可能值<ul><li>shared：共享状态</li><li>not_shared：未共享</li></ul> | not_shared                         |
 
 ## 示例
 
@@ -79,6 +80,10 @@ GET
 
 ```url
 https://hpc-api.qingcloud.com/api/cluster/list
+&owner=usr-vceaHsJu
+&verbose=1
+&cluster_type=hpc
+&COMMON_PARAMS
 ```
 
 ### 响应示例

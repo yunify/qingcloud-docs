@@ -1,7 +1,7 @@
 ---
 title: "startCluster"
-description: 本小节主要介绍高性能计算 EHPC 的启动集群接口。 
-keyword: mysql plus 新增节点
+description: 本小节主要介绍启动已暂停的集群接口。 
+keyword: 启动集群, ehpc
 weight: 50
 collapsible: false
 draft: false
@@ -19,11 +19,11 @@ POST
 
 ## 请求参数
 
-| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述           |
-| :--------------------------------------------------------- | :--------------------------------------------------------- | :------- | :------------- |
-| timestamp                                                  | string                                                     | true     | 时间戳         |
-| cluster_ids                                                | array                                                      | true     | 所启动的集群id |
-| zone                                                       | string                                                     | true     | zone id        |
+| <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 是否必选 | 描述            |
+| :--------------------------------------------------------- | :--------------------------------------------------------- | :------- | :-------------- |
+| timestamp                                                  | string                                                     | true     | 时间戳          |
+| cluster_ids                                                | array                                                      | true     | 所启动的集群 id |
+| zone                                                       | string                                                     | true     | zone id         |
 
 ## 响应消息
 
