@@ -1,7 +1,7 @@
 ---
 title: "添加账号"
 description: 本小节主要介绍如何添加 MySQL Plus 数据库账号。 
-keyword: 数据库,MySQL PLus,关系型数据库,MySQL,账号添加；创建账号
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,账号添加,创建账号
 weight: 10
 collapsible: false
 draft: false
