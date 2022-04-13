@@ -14,7 +14,6 @@ weight: 21
 
 ## 约束限制
 
-
 若使用 4G/5G SIM 卡，安装 4G/5G SIM 卡后，需要将光盒 CPE 断电重启，系统才能正常识别。
 
 ## 操作步骤
@@ -26,7 +25,6 @@ weight: 21
    > **注意**
    >
    > - 若使用 4G/5G SIM 卡，则需要安装 4G/5G 天线。4G/5G 天线及 SIM 卡安装位置，请参见[设备说明](/sd-wan/sdwan_new/open_access_point/lightbox/10_lightbox_overview/#设备说明)。
-
    > - 安装 4G/5G SIM 卡后，需要将光盒 CPE 断电重启，系统才能正常识别。
    
    <img src="/sd-wan/sdwan_new/_images/cpe_wifi.png" style="zoom:50%;" />
