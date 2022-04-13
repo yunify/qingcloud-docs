@@ -1,5 +1,5 @@
 ---
-title: "视频专区"
+title: "快速上手"
 description: Test description
 draft: false
 type: "videoMain"
@@ -7,16 +7,16 @@ type: "videoMain"
 section1:
   title: 
   children:
-    - title: SQL 作业开发及实践
-      time_duration: 09:17
+    - title: 通过 QKE 部署应用
+      time_duration: 10:49
       # poster: "https://s6.jpg.cm/2021/11/0K1qV.png"
-      url: "https://bigdata-doc.pek3b.qingstor.com/dataomnis/01_sql_job.mp4"
-      description: 通过大数据工作台的 SQL 作业进行 “网站热点词频统计”。
+      url: "https://yunify-qingcloud-docs.pek3b.qingstor.com/video/qke_qs_01_deploy_wordpress.mp4"
+      description: 通过 QKE 部署 WordPress 容器网站。
 
-    - title: JAR 作业开发及实践
-      time_duration: 08:05
-      url: "https://bigdata-doc.pek3b.qingstor.com/dataomnis/02_jar_job.mp4"
-      description: 通过大数据工作台的 JAR 作业进行 “用户消费 TOPN 统计”。
+  #  - title: JAR 作业开发及实践
+  #    time_duration: 08:05
+  #    url: "https://bigdata-doc.pek3b.qingstor.com/dataomnis/02_jar_job.mp4"
+  #    description: 通过大数据工作台的 JAR 作业进行 “用户消费 TOPN 统计”。
 ---
 
 <!-- section2: -->
