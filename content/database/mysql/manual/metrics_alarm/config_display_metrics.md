@@ -38,10 +38,17 @@ MySQL Plus 提供集群服务和资源性能监控指标和告警信息。
 
 ## 支持的资源监控指标
 
-| 监控项 | <span style="display:inline-block;width:80px">监控周期</span> | <span style="display:inline-block;width:60px">单位</span> | 指标含义 |
+| <span style="display:inline-block;width:200px">监控项</span> | <span style="display:inline-block;width:80px"><span style="display:inline-block;width:80px">监控周期</span> | <span style="display:inline-block;width:60px">单位</span> | <span style="display:inline-block;width:320px">指标含义</span> |
 |:--- |:--- |:--- |:--- |
 | CPU | 5分钟 | % | 统计当前资源 CPU 使用率。<br>以 % 为单位。 |
 | 内存 | 5分钟 | % | 统计当前资源内存使用率。<br>以 % 为单位。 |
 | 硬盘使用率 | 5分钟 | % | 统计当前资源硬盘使用率。<br>以 % 为单位。 |
 | 硬盘 IOPS | 5分钟 | counts/s | 统计每秒资源硬盘 IOPS 读取或写入次数，可分别查看读取或写入监控指标。<br>以次每秒为单位。 |
 | 硬盘吞吐量 | 5分钟 | MByte/s | 统计每秒资源硬盘读取或写入速率，可分表获取读取或写入速率。<br>以 MByte 每秒为单位。 |
+
+## 支持的服务状态
+
+| <span style="display:inline-block;width:200px">监控项</span> | <span style="display:inline-block;width:80px">监控周期</span> | <span style="display:inline-block;width:60px">参数值</span> | <span style="display:inline-block;width:320px">指标含义</span> |
+| :----------------------------------------------------------- | :----------------------------------------------------------- | :---------------------------------------------------------- | :----------------------------------------------------------- |
+| 集群切换状态                                                 | 5分钟                                                        | 0~                                                          | 集群所有节点都绑定该告警策略，当节点主从状态切换时，上报监控数据为大于0的任意值，产生告警。当状态无变化时，上报监控数据为0，不产生告警。<br>若只绑定单个节点，主节点变为从节点产生告警，从节点更换为主节点时不会产生告警。告警策略无效。<br>建议集群所有节点都绑定该告警策略。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>:<li>仅适用于**高可用版** MySQL Plus 。</li></span> |
+| 节点服务状态                                                 | 5分钟                                                        | 异常                                                        | 当节点状态为异常时，产生告警。                               |
