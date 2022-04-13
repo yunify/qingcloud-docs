@@ -1,7 +1,7 @@
 ---
 title: "批量添加集群账号"
 description: 本小节主要介绍如何使用脚本针对多个 MySQL Plus 集群批量添加数据库账号。 
-keyword: 数据库,MySQL PLus,关系型数据库,MySQL,账号添加；创建账号
+keyword: 数据库,MySQL PLus,关系型数据库,MySQL,账号添加,创建账号
 weight: 12
 collapsible: false
 draft: false
@@ -41,7 +41,7 @@ draft: false
 
    <img src="../../../_images/create_multi_accounts.png" zoom="100%;" />
 
-   - 在` users.cnf`文件中的第一行和第二行填写步骤2获取的access_key_id和secret_access_key。
+   - 在` users.cnf`文件中的第一行和第二行填写步骤2获取的 access_key_id 和 secret_access_key。
    - 在` users.cnf`文件中的第三行填写步骤3获取的集群信息，添加多个账号可直接换行填写多个账号信息。
 
    ### 账号参数
@@ -77,10 +77,10 @@ draft: false
 
    > <b>说明：</b>
    >
-   > 第一行表示API请求的url地址。
+   > 第一行表示 API 请求的 url 地址。
    >
-   > 第二行表示执行这个API之后的返回结果，ret_code为0代表API执行成功。
+   > 第二行表示执行这个 API 之后的返回结果，ret_code 为0代表 API 执行成功。
    >
-   > 后续内容表示添加账号的执行状态，successful代表添加账号成功。若授权主机相同的情况下添加了相同的用户、密码不合法、用户名不合法等会提示响应报错。
+   > 后续内容表示添加账号的执行状态，successful 代表添加账号成功。若授权主机相同的情况下添加了相同的用户、密码不合法、用户名不合法等会提示响应报错。
 
 ​	
