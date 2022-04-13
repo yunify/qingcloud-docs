@@ -9,56 +9,6 @@ draft: false
 
 Flink 内置的 Connector 中没有 Redis Connector，本小节以自定义 Redis Connector 为例进行介绍如何开发自定义 Connector。
 
-## 下载自定义 Redis Connector 代码
-
-[下载自定义 Redis Connector 代码](https://github.com/QingCloudAppcenter/Flink-Example/tree/main/connector-demo)。
-
-## 构建 JAR 程序包
-
-将下载的 Connector 代码构建成一个 JAR 包，例如 [flink_connector_redis.jar](https://bigdata-doc.pek3b.qingstor.com/dataomnis/doc/flink-connector-redis-0.8.1.jar) 文件。
-
-## 使用自定义 Redis Connector
-
-1. 上传程序包   
-    在资源管理界面，上传已构建的 JAR 程序包（例如 `flink_connector_redis.jar`）。详细操作请参见[上传程序包](/bigdata/dataomnis/manual/data_development/resource/upload)。   
-2. 作业引用程序包   
-    根据自定义 Redis Connector 中定义的 Source 和 Sink 结构，在 SQL 作业开发面板中进行相应配置。
-
-    Flink SQL 代码示例如下：
-
-    ```sql
-    DROP TABLE IF EXISTS redis_dim;
-    CREATE TABLE redis_dim
-    (
-        sex  STRING,
-        desc STRING,
-        rt AS PROCTIME()
-    ) WITH (
-        'connector' = 'redis',
-        'hostname' = 'localhost',
-        'port' = '6379',
-        'password' = '123456'
-        );
-
-    DROP TABLE IF EXISTS redis;
-    CREATE TABLE redis
-    (
-        id   STRING,
-        name STRING,
-        sex  STRING,
-        PRIMARY KEY (id) NOT ENFORCED
-    ) WITH (
-        'connector' = 'redis',
-        'hostname' = 'localhost',   
-        'port' = '6379',
-        'password' = '123456',  --redis 密码
-        'ttl' = '60' -- second
-        );
-    ```
-
-3. 选择依赖资源   
-    在作业的运行参数界面，**资源引用**选择已上传的 JAR 程序包。
-
 ## 自定义 Redis Connector 代码说明
 
 ### RedisOutputFormat.java
@@ -393,3 +343,49 @@ public class RedisDynamicTableFactory implements DynamicTableSourceFactory, Dyna
     }
 }
 ```
+
+## 构建 JAR 程序包
+
+将下载的 Connector 代码构建成一个 JAR 包，例如 `flink_connector_redis.jar`。
+
+## 使用自定义 Redis Connector
+
+1. 上传程序包   
+    在资源管理界面，上传已构建的 JAR 程序包（例如 `flink_connector_redis.jar`）。详细操作请参见[上传程序包](/bigdata/dataomnis/manual/data_development/resource/upload)。   
+2. 作业引用程序包   
+    根据自定义 Redis Connector 中定义的 Source 和 Sink 结构，在 SQL 作业开发面板中进行相应配置。
+
+    Flink SQL 代码示例如下：
+
+    ```sql
+    DROP TABLE IF EXISTS redis_dim;
+    CREATE TABLE redis_dim
+    (
+        sex  STRING,
+        desc STRING,
+        rt AS PROCTIME()
+    ) WITH (
+        'connector' = 'redis',
+        'hostname' = 'localhost',
+        'port' = '6379',
+        'password' = '123456'
+        );
+
+    DROP TABLE IF EXISTS redis;
+    CREATE TABLE redis
+    (
+        id   STRING,
+        name STRING,
+        sex  STRING,
+        PRIMARY KEY (id) NOT ENFORCED
+    ) WITH (
+        'connector' = 'redis',
+        'hostname' = 'localhost',   
+        'port' = '6379',
+        'password' = '123456',  --redis 密码
+        'ttl' = '60' -- second
+        );
+    ```
+
+3. 选择依赖资源   
+    在作业的运行参数界面，**资源引用**选择已上传的 JAR 程序包。
