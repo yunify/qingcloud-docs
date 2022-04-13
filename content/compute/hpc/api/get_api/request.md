@@ -22,13 +22,11 @@ API 请求主要分为 **延迟请求** 和 **实时请求** 两种。
 
 - 延迟请求
   
-  对于耗时请求，无法实时返回执行结果。这些请求将以任务形式提交给后台执行，并会在 API 请求返回中返回任务 ID ( job_id )。这种情况下，用户可以通过查看资源状态来判断任务是否执行完成。
+  耗时请求，无法实时返回执行结果。存在的这种情况的请求将以任务形式提交到后台执行，会在 API 请求返回中返回任务ID（job_id）。用户可根据查看资源状态来判断任务是否执行成功。
   
-  例如，在提交 `RunInstances` 操作之后，用户可以通过 `DescribeInstances` 查看 Instance 的状态确认 Instance 是否创建成功。
-
 - 实时请求
   
-  对于非耗时请求，会直接返回操作结果。
+  实时请求，会直接返回操作结果。
 
 ## 请求限制
 
@@ -47,13 +45,13 @@ API 请求主要分为 **延迟请求** 和 **实时请求** 两种。
 | 参数     | 描述                                        | 说明                                   |
 | -------- | ------------------------------------------- | -------------------------------------- |
 | API 入口 | API 调用的 webservice 入口。                | 统一为：https://hpc-api.qingcloud/api/ |
-| 公共参数 | 每个 API 调用都需要包含公共参数。           | 详情                                   |
+| 公共参数 | 每个 API 调用都需要包含公共参数。           | 详情见 [公共参数](../../parameters/)。 |
 | 指令名称 | API **action** 指令名称，例如：cluster/list | -                                      |
 | 指令参数 | 指令相关配置参数                            | -                                      |
 
 ## 请求示例
 
-典型的 API 请求如下所示，这是一个 /cluster/list 的 API 请求。
+典型的 API 请求如下所示，这是一个 `/cluster/list` 的 API 请求。
 
 ```
 https://hpc.api.qingcloud.com/api/cluster/list?access_key_id=XLSIICQIGCNVEVURUYVN&signature_method=HmacSHA256&signature_version=1×tamp=2022-04-11T15%3A00%3A13Z&version=1&zone=jinan1a&signature=MU1miP6YRr%252B%252FFRQoQjDeDwK6SW6Eqz4DJZiK0vh6KxE%253D
