@@ -54,7 +54,7 @@ POST
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/job/submitJob
+https://hpc.api.qingcloud.com/api/job/submitJob
 &COMMON_PARAMS
 requests_body = {'cluster_id': 'ehpc-8jqdq0mz',
                      'run_user': 'usr-IuZxPyn2',

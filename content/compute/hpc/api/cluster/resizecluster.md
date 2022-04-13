@@ -59,7 +59,13 @@ POST
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/cluster/resizeCluster
+https://hpc.api.qingcloud.com/api/cluster/resizeCluster
+&COMMON_PARAMS
+requests_body = {'cluster_id': 'ehpc-gk3wfc7e',
+                     'cpu': '4',
+                     'memory': '12288',
+                     'node_role': 'compute',
+                     'zone': 'jn1a'}
 ```
 
 ### 响应示例

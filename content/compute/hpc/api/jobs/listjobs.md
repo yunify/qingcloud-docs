@@ -76,7 +76,7 @@ GET
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/job/list
+https://hpc.api.qingcloud.com/api/job/list
 &cluster_id=ehpc-qmmvigwe
 &COMMON_PARAMS
 ```

@@ -45,7 +45,7 @@ POST
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/deleteCluster
+https://hpc.api.qingcloud.com/api/deleteCluster
 &COMMON_PARAMS
 quests_body = {'cluster_ids': ['hpc-6o2qc9tl'],
                      'run_user': 'usr-IuZxPyn2',

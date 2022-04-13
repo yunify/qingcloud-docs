@@ -39,7 +39,7 @@ POST
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/job/stopJobs
+https://hpc.api.qingcloud.com/api/job/stopJobs
 &COMMON_PARAMS
 requests_body = {'cluster_id': 'ehpc-8jqdq0mz',
                      'job_ids': ['hpcjob-bp6rj09f'],

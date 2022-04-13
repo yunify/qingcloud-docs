@@ -67,7 +67,7 @@ POST
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/queue/ehpc/getQueueList
+https://hpc.api.qingcloud.com/api/queue/ehpc/getQueueList
 &cluster_id=ehpc-qmmvigwe
 &COMMON_PARAMS
 ```

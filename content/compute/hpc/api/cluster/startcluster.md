@@ -38,7 +38,7 @@ POST
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/cluster/startCluster
+https://hpc.api.qingcloud.com/api/cluster/startCluster
 ```
 
 ### 响应示例

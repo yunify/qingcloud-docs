@@ -30,7 +30,7 @@ GET
 | limit                                                      | int                                                        | false    | 页面显示的数据个数，默认10                    |
 | offset                                                     | int                                                        | false    | 集群偏移量                                    |
 | reverse                                                    | int                                                        | false    | 排序<ul><li>0：ASC</li><li>1：EDSC </li></ul> |
-| verbose                                                    | int                                                        | false    | 集群节点的详细操作工作                        |
+| verbose                                                    | int                                                        | false    | 集群节点的详细操作                            |
 
 ## 响应消息
 
@@ -39,7 +39,7 @@ GET
 | <span style="display:inline-block;width:100px">参数</span> | <span style="display:inline-block;width:100px">类型</span> | 描述                                                         | 取值样例                          |
 | :--------------------------------------------------------- | :--------------------------------------------------------- | ------------------------------------------------------------ | :-------------------------------- |
 | action                                                     | string                                                     | api 相应动作名称                                             | HpcClusterGetClusterNodesResponse |
-| total_count                                                | int                                                        | 集群中节点个数<br />创建集群后默认有一个登录节点<br />如果用户有再新增节点，对应值就 > 1<br />可增加节点类型为：登陆节点、计算节点、管控节点 | 1                                 |
+| total_count                                                | int                                                        | 集群中节点个数<br />创建集群后默认有一个登录节点<br />如果用户有再新增节点，对应值就 > 1<br />可增加节点类型为：登录节点、计算节点、管控节点 | 1                                 |
 | ret_code                                                   | int                                                        | api 执行是否成功，成功为0，其他值均为错误代码                | 0                                 |
 
 **response item**
@@ -116,7 +116,7 @@ GET
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/cluster/listNodes
+https://hpc.api.qingcloud.com/api/cluster/listNodes
 &cluster_id=ehpc-qmmvigwe
 &COMMON_PARAMS
 ```

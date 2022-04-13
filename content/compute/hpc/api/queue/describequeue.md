@@ -69,7 +69,7 @@ GET
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/queue/describeQueue
+https://hpc.api.qingcloud.com/api/queue/describeQueue
 &cluster_id=ehpc-cch2t15o
 &id=ehpcq-rdvf195w
 &COMMON_PARAMS

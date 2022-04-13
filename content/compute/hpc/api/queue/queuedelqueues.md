@@ -39,7 +39,11 @@ POST
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/queue/ehpc/delQueues
+https://hpc.api.qingcloud.com/api/queue/ehpc/delQueues
+&COMMON_PARAMS
+requests_body = {'cluster_id': 'ehpc-gk3wfc7e',
+                     'queue_ids': ['ehpcq-vftkh7ro'],
+                     'zone': 'jn1a'}
 ```
 
 ### 响应示例

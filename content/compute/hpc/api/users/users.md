@@ -61,7 +61,7 @@ GET
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/user
+https://hpc.api.qingcloud.com/api/user
 &cluster_id=hpc-qing9xu97
 &COMMON_PARAMS
 ```

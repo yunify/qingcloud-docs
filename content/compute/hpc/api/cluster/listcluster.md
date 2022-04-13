@@ -57,11 +57,11 @@ GET
 | cluster_name                                               | string                                                     | 集群名称                                                     | test-hpc-kk                        |
 | cluster_type                                               | string                                                     | 集群类型可能值<ul><li>ehpc</li><li>hpc</li></ul>             | hpc                                |
 | create_time                                                | string                                                     | 集群创建时间                                                 | 2021-8-18T13：11：45Z              |
-| description                                                | string                                                     | 集群描述可能值<ul><li>创建集群时增加过描述，就会显示描述</li><li>“ ”这种情况说明在创建集群时未增加描述</li></ul> | -                                  |
+| description                                                | string                                                     | 集群描述，可能值<ul><li>创建集群时增加过描述，就会显示描述</li><li>“ ”这种情况说明在创建集群时未增加描述</li></ul> | -                                  |
 | nas_id                                                     | string                                                     | nas id                                                       |                                    |
-| nas_mout_point                                             | string                                                     | 获取该集群文件存储的挂载点路径根据每个集群挂点点不同，获取到的挂载点也不同 | /pubilc/shanhe/0704                |
+| nas_mout_point                                             | string                                                     | 获取该集群文件存储的挂载点路径<br />根据每个集群挂点点不同，获取到的挂载点也不同 | /pubilc/shanhe/0704                |
 | nas_path                                                   | string                                                     | nas路径。根据每个集群所选择的nas路径不同，获取到的nas路径不同 | 10.0.0.8@03ib:/lustrefs/shane/0704 |
-| nas_shared_path                                            | string                                                     | nas共享路径与nas路径一致                                     | /0704                              |
+| nas_shared_path                                            | string                                                     | nas 共享路径与 nas路径一致                                   | /0704                              |
 | paid_type                                                  | string                                                     | 集群费用支付类可能值<ul><li>PayForUsed</li><li>Reserved</li></ul> | PayForUsed                         |
 | schedule_type                                              | string                                                     | 调度程序类型：slurm                                          | slurm                              |
 | toatl_node_count                                           | int                                                        | 集群所拥有的节点数。<br />根据集群所拥有的节点数不同，获取到的值也不同。<br />节点包括登录节点、管控节点、计算节点。 | 1                                  |
@@ -79,7 +79,7 @@ GET
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/cluster/list
+https://hpc.api.qingcloud.com/api/cluster/list
 &owner=usr-vceaHsJu
 &verbose=1
 &cluster_type=hpc

@@ -40,7 +40,7 @@ POST
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/queue/ehpc/addNodes
+https://hpc.api.qingcloud.com/api/queue/ehpc/addNodes
 &COMMON_PARAMS
 requests_body = {'cluster_id': 'ehpc-gk3wfc7e',
                      'hpcqueue_id': 'ehpcq-m7qglynz',

@@ -82,7 +82,7 @@ GET
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/queue/getCurrentQueue
+https://hpc.api.qingcloud.com/api/queue/getCurrentQueue
 &cluster_id=hpc-n2yopbte
 &COMMON_PARAMS
 ```

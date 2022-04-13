@@ -45,7 +45,7 @@ GET
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/software/list
+https://hpc.api.qingcloud.com/api/software/list
 &COMMON_PARAMS
 ```
 

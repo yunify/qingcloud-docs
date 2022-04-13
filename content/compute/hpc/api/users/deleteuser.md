@@ -41,7 +41,7 @@ POST
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/user/deleteUser
+https://hpc.api.qingcloud.com/api/user/deleteUser
 &COMMON_PARAMS
 requests_body = {'cluster_id': 'ehpc-8jqdq0mz',
                      'username': 'isabel',

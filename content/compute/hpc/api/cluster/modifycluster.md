@@ -39,7 +39,7 @@ POST
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/cluster/modifyCluster
+https://hpc.api.qingcloud.com/api/cluster/modifyCluster
 &COMMON_PARAMS
 requests_body = {'cluster_id': 'ehpc-h15dp0b1', 'zone': 'jn1a', 'description': '123'}
 ```

@@ -39,7 +39,7 @@ collapsible: false
 | <span style="display:inline-block;width:240px">参数</span> | <span style="display:inline-block;width:320px">描述</span> |
 | :--------------------------------------------------------- | :--------------------------------------------------------- |
 | [deleteuser](../users/deleteuser/)                         | 删除集群用户                                               |
-| [user](../users/user/)                                     | 集群用户列表                                               |
+| [users](../users/users/)                                   | 集群用户列表                                               |
 | [adduser](../users/adduser/)                               | 新增集群用户                                               |
 | [modifyuser](../users/modifyuser/)                         | 修改集群用户                                               |
 
@@ -50,7 +50,7 @@ collapsible: false
 | [listnodes](../nodes/listnodes/)                           | 节点列表                                                   |
 | [addnodes](../nodes/addnodes/)                             | 新增节点                                                   |
 | [deletenodes](../nodes/deletenodes/)                       | 删除节点                                                   |
-| [resartnodes](../nodes/resartnodes/)                       | 重启节点                                                   |
+| [restartnodes](../nodes/restartnodes/)                     | 重启节点                                                   |
 
 ## 作业接口
 

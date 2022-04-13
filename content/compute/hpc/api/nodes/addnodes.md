@@ -45,7 +45,7 @@ POST
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/cluster/addNodes
+https://hpc.api.qingcloud.com/api/cluster/addNodes
 &COMMON_PARAMS
 requests_body = {'cluster_id': 'ehpc-8jqdq0mz',
                      'node_role': 'login',

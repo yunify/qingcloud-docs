@@ -39,7 +39,7 @@ POST
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/cluster/restartNodes
+https://hpc.api.qingcloud.com/api/cluster/restartNodes
 &COMMON_PARAMS
 requests_body = {'cluster_id': 'ehpc-8jqdq0mz',
                      'node_ids': ['cln-hzzvbtnh'],  

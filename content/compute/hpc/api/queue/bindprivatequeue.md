@@ -45,7 +45,7 @@ POST
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/queue/bindPrivateQueue
+https://hpc.api.qingcloud.com/api/queue/bindPrivateQueue
 &COMMON_PARAMS
 requests_body = {'cluster_id': 'ehpc-gk3wfc7e',
                      'name': 'kk',

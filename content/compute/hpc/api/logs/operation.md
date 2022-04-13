@@ -70,7 +70,7 @@ GET
 ### 请求示例
 
 ```url
-https://hpc-api.qingcloud.com/api/operation
+https://hpc.api.qingcloud.com/api/operation
 &COMMON_PARAMS
 ```
 
