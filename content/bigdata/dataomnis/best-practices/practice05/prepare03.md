@@ -7,11 +7,11 @@ collapsible: false
 draft: false
 ---
 
-### 开发 Java 代码
+### 开发 UDF 函数
 
-本实践以 demo 为例，下载 [topN-demo.jar](https://bigdata-doc.pek3b.qingstor.com/dataomnis/doc/topN-demo.jar) 文件。
+本实践以 demo 为例，下载 [udf.jar](https://bigdata-doc.pek3b.qingstor.com/dataomnis/doc/udf.jar) 文件。
 
-您也可以下载 [demo 示例代码](https://github.com/QingCloudAppcenter/Flink-Example/tree/main/jar-demo)，然后自行构建 JAR 包。
+您也可以下载 [demo 示例代码](https://github.com/QingCloudAppcenter/Flink-Example/tree/main/udf-demo)，然后自行构建 JAR 包。
 
 ### 上传程序包
 
@@ -20,7 +20,7 @@ draft: false
    
    <img src="/bigdata/dataomnis/_images/upload_procedure.png" alt="上传程序包" style="zoom:50%;" />
 
-3. 输入程序包显示名称和描述信息后，点击**添加程序包**，选择 topN-demo.jar 文件。
+3. 输入程序包显示名称和描述信息后，点击**添加程序包**，选择 udf.jar 文件。
 
    > **说明**
    >

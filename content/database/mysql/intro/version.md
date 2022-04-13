@@ -11,6 +11,16 @@ draft: false
 
 ## 新形态版本
 
+### 1.1.1版本
+
+兼容 MySQL 8.0、5.7、5.6内核，其中**金融版**产品系列仅支持 MySQL 8.0、5.7内核。
+
+| <span style="display:inline-block;width:140px">版本</span> | <span style="display:inline-block;width:520px">版本说明</span> |
+| :--------------------------------------------------------- | :----------------------------------------------------------- |
+| 金融版-1.1.1                                               | <li>支持在线预览慢日志。<li>新开放 `Logical_backup_exec_timeout`、 `Log_slave_updates`参数。 |
+| 高可用版-1.1.1                                             | <li>支持在线预览慢日志。<li>新开放 `Logical_backup_exec_timeout`、 `Log_slave_updates`参数。<li>新开放<b>集群状态切换</b>监控项。<li>修复旧形态1.6.1等版本升级到1.1.0版本失败问题。 |
+| 基础版-1.1.1                                               | <li>支持在线预览慢日志。<li>新开放 `Log_slave_updates`参数。 |
+
 ### 1.1.0版本
 
 兼容 MySQL 8.0、5.7、5.6内核，其中**金融版**产品系列仅支持 MySQL 8.0、5.7内核。
