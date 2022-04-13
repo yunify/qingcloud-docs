@@ -37,11 +37,12 @@ draft: false
 
    记录待创建账号的集群ID。
 
-4. 打开` users.cnf`并在文件中的第一行和第二行修改access_key_id和secret_access_key。
-
-5. 在` users.cnf`文件中依次添加以下信息：
+4. 打开` users.cnf`并在文件中依次添加以下信息。
 
    <img src="../../../_images/create_multi_accounts.png" zoom="100%;" />
+
+   - 在` users.cnf`文件中的第一行和第二行填写步骤2获取的access_key_id和secret_access_key。
+   - 在` users.cnf`文件中的第三行填写步骤3获取的集群信息，添加多个账号可直接换行填写多个账号信息。
 
    ### 账号参数
 
