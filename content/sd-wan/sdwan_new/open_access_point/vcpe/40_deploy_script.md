@@ -114,7 +114,12 @@ VCPE 镜像的部署脚本提供如下可执行参数，如下所示。
    )。
    
    ```
-   sudo apt-get install  apt-transport-https ca-certificates  curl gnupg-agent software-properties-common
+   sudo apt-get install 
+       apt-transport-https 
+       ca-certificates 
+       curl 
+       gnupg-agent 
+       software-properties-common
    ```
    
    ```
@@ -123,7 +128,9 @@ VCPE 镜像的部署脚本提供如下可执行参数，如下所示。
    
    ```
    sudo add-apt-repository 
-   "deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/ $(lsb_release -cs) stable"
+      "deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/ 
+     $(lsb_release -cs) 
+     stable"
    ```
    
    ```
