@@ -69,7 +69,7 @@ weight: 10
 
 ### 绑定 SSH 密钥
 
- [绑定 SSH 密钥](./20_bind_ssh) 
+ [绑定 SSH 密钥](../20_bind_ssh) 
 
 ### 开放 TCP 22 端口
 
@@ -81,13 +81,13 @@ weight: 10
 
 3. 在“绑定资源”区域，可以看到该云服务器正在使用的安全组。
 
-   ![](/compute/_images/vm_security_group.png)
+   ![](/compute/vm/_images/vm_security_group.png)
 
 4. 点击**安全组**，进入安全组配置页面。
 
 5. 点击**添加规则**，新建一个下行规则。
 
-   ![](/compute/_images/vm_security_rule.png)
+   ![](/compute/vm/_images/vm_security_rule.png)
 
    需要关注如下参数。
 
