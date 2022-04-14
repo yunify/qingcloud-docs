@@ -7,7 +7,7 @@ product:
     - time: 2021-10-28
       title: 北京3区-B开放弹性裸金属服务器3.0
       content: QingCloud 弹性裸金属服务器(Bare Metal)，提供高性能、资源独享、安全隔离的专属弹性裸金属服务器，同时具备云资源的敏捷性、灵活性与高可用。满足各类应用对高性能及稳定性的需求，同时提供完整的设备管理权限及运维服务。弹性裸金属BM3提供超强算力，兼具弹性体验，应用场景丰富，支持承载企业核心业务、大规模数据分析，构建高性能专属容器云、物理与虚拟化混合架构。
-      url: /compute/vm/manual/vm_instance/
+      url: /compute/vm/bm/bm_instance/
       tags:
       - 新产品
       - 新规格
@@ -16,7 +16,7 @@ product:
     - time: 2021-10-08
       title: 部分区域上架e3类型云服务器
       content: e3云服务器搭载第三代英特尔®至强®可扩展处理器（Ice Lake），计算、存储、网络性能全面提升。采用独享 CPU 模式，提供 96C384G 高规格配置。超低存储和网络时延，满足数据库、缓存在高并发场景需求，并且性价比极高，助力企业以更低成本上云。
-      url: /compute/vm/manual/vm_instance/
+      url: /compute/vm/bm/bm_instance/
       tags:
       - 新产品
       - 新规格
@@ -43,7 +43,6 @@ product:
     - time: 2021-9-6
       title: VNC支持软重启功能
       content: VNC上线软重启Restart功能，在VNC左侧按键操作中加入了Restart，通过软重启，用户可以更方便的进行主机调试，可监控开机过程或者进入安全模式，便于解决操作系统内部问题。
-      url: /compute/vm/manual/connect_instance
       tags:
       - 体验优化
       - 新功能
@@ -52,7 +51,6 @@ product:
     - time: 2021-7-15
       title: 新主机创建流程上线
       content: 新主机创建流程提供了快捷的主机创建方式，创建主机的同时可以创建并绑定EIP、数据盘、备份策略、安全组等主机相关资源，实现一站式资源交付。同时，增加快速创建流程，只需要简单选择主机规格和操作系统，其他配置均可采用系统默认。新增场景化规格选择，根据用户不同场景需求为用户提供推荐配置及相关产品。
-      url: /compute/vm/manual/vm_instance
       tags:
       - 体验优化
       - 新功能
@@ -70,7 +68,6 @@ product:
     - time: 2020-12-25
       title: Web终端新增粘贴板功能
       content: 一直以来，由于VNC功能限制，基于VNC的Web终端不支持粘贴功能，命令行需要手工输入，某些场景下极大降低了我们的工作效率。针对这一问题，主机Web终端新上线了粘贴板功能，支持复制内容的快捷输入，入口请见Web终端右上方。
-      url: /compute/vm/manual/connect_instance
       tags:
       - 体验优化
       - 新功能
@@ -106,7 +103,6 @@ product:
     - time: 2019-10-24
       title: 支持创建 GPU 云服务器
       content: 为了满足用户对高性能计算、视频处理或图形渲染的需求，青云特推出GPU云服务器给有需求的用户使用，用户可以在青云控制台上进行GPU云服务器的创建和使用。
-      url: /compute/vm/manual/gpu_instance
       tags:
       - 新功能
       - 体验优化
@@ -115,7 +111,6 @@ product:
     - time: 2019-10-24
       title: 支持创建弹性裸金属服务器
       content: 青云 QingCloud 弹性裸金属服务器服务，提供高性能、资源独享、安全隔离的专属弹性裸金属服务器群组，满足各类核心应用对高性能及稳定性的需求，同时提供完整的设备管理权限及运维服务。 用户可以像使用其他云资源一样，快速、灵活的部署及管理弹性裸金属服务器，并可按需弹性购买。
-      url: /compute/vm/manual/bm_instance
       tags:
       - 新功能
       - 体验优化

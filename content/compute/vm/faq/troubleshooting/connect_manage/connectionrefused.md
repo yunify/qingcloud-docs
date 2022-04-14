@@ -25,7 +25,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，端口连接
 
 ### 未发现80端口处于监听状态，http服务未启动，需先将http服务启动
 
-![](/compute/vm/_images/starthttpd.png)
+![](/compute/vm/best-practices/_images/starthttpd.png)
 
 启动完成后再次通过netstat进行验证
 

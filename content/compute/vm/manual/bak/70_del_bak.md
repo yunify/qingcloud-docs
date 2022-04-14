@@ -35,7 +35,7 @@ weight: 70
 
      ![](/compute/vm/_images/vm_bak_del.png)
 
-   - 点击<img src="/content/compute/vm/_images/icon_win.png" style="zoom:50%;" />，并在弹出的菜单窗口中，点击**删除**。
+   - 点击 “ … ”，并在弹出的菜单窗口中，点击**删除**。
 
      ![](/compute/vm/_images/vm_bak_del_menu.png)
 
@@ -59,7 +59,7 @@ weight: 70
 
    ![](/compute/vm/_images/vm_bak_list.png)
 
-5. 点击<img src="/content/compute/vm/_images/icon_win.png" style="zoom:50%;" />，弹出菜单窗口。
+5. 点击 “ … ”，弹出菜单窗口。
 
    ![](/compute/vm/_images/vm_bak_del_one.png)
 
