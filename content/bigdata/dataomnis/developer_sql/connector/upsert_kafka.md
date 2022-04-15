@@ -20,7 +20,7 @@ Key 对应的 value 为 null，会被视作 DELETE 操作。
 
 ## 使用范围
 
-Upsert Kafka 连接器支持以 UPSERT 方式对 Kafka 进行读写操作。
+Upsert Kafka 连接器支持以 UPSERT 方式对 Kafka Topic 进行读写操作。
 
 ## DDL 定义
 
