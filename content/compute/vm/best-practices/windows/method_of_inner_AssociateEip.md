@@ -88,7 +88,7 @@ route -p add 0.0.0.0 mask 0.0.0.0 10.140.84.1 metric 100 if 12
 
 <img src="../../_images/homer/window_nic14.png" width="60%" height="60%">
 
-<img src=".../../_images/homer/window_nic15.png" width="60%" height="60%">
+<img src="../../_images/homer/window_nic15.png" width="60%" height="60%">
 
 #### 查看路由表及网络情况如下
 

@@ -75,7 +75,7 @@ draft: false
 
 |<span style="display:inline-block;width:80px">参数</span> |<span style="display:inline-block;width:120px">取值范围</span>|<span style="display:inline-block;width:420px">参数说明</span>|
 |:----|:----|:----|
-｜  enable_cerebro     |  <li>true<li>false |   表示是否开启 Cerebro  第三方管理工具。<li>默认值为 `true`，表示开启 Cerebro。 |
+|  enable_cerebro     |  <li>true<li>false |   表示是否开启 Cerebro  第三方管理工具。<li>默认值为 `true`，表示开启 Cerebro。 |
 |   OS 代理负载均衡策略     |  <li>轮询<li>static-rr<li>最少连接<li>first<li>源地址 |   表示 Dashboard 节点代理负载均衡策略类型。详细策略类型说明，请参见 [HAProxy Configuration](https://cbonte.github.io/haproxy-dconv/1.8/configuration.html#4-balance) 。 |
 |   OS 代理连接超时时间      |  - |   表示 HAProxy 连接后端 OpenSearch 服务的超时时间。<li>单位可设置 ms（毫秒）、s（秒）、m（分）或者 h（小时）。<li>默认值 5秒。 |
 |   OS 代理超时时间      |   - |   表示 HAProxy 等待后端 OpenSearch 服务返回响应的超时时间。<li>单位可设置 ms（毫秒）、s（秒）、m（分）或者 h（小时）。<li>默认值 60秒。 |

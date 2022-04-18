@@ -4,7 +4,7 @@ description: 本小节主要介绍 使用 IK Analysis 插件和自定义字典�
 keyword: 搜索分析,IK 分词,IK Analysis,自定义分词,中文分词,OpenSearch,搜索引擎
 weight: 20
 collapsible: false
-draft: true
+draft: false
 ---
 
 为了在 OpenSearch 中获取更好的中文分词效果，OpenSearch 服务集成了 IK 分词插件，并为该插件提供了结巴分词的词库和 IK 自带的词库，同时还支持用户上传自定义词典。
