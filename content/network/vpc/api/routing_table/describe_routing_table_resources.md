@@ -8,7 +8,7 @@ draft: false
 
 获取路由表以及资源的对应关系。
 
-**Request Parameters**
+## 请求参数
 
 | Parameter Name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -18,7 +18,7 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -27,9 +27,9 @@ draft: false
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 | total_count | Integer | 获取到的路由表和资源的对应关系的列表的长度 |
 
-**Example**
+## 示例
 
-_Example Request_
+**请求示例:**
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeRoutingTableResources

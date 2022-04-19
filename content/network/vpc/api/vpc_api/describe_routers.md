@@ -10,7 +10,7 @@ draft: false
 
 可根据 VPC 网络ID，状态， VPC 网络名称作过滤条件，来获取 VPC 网络列表。 如果不指定任何过滤条件，默认返回你所拥有的所有 VPC 网络。 如果指定不存在的 VPC 网络ID，或非法状态值，则会返回错误信息。
 
-**Request Parameters**
+## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -26,7 +26,7 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -53,9 +53,9 @@ draft: false
 | eip | Dict |  VPC 网络的公网IP信息<br/>eip_id： 公网IP的ID<br/>eip_name： 公网IP名称<br/>eip_addr： 公网IP地址 |
 | vxnets | Array |  VPC 网络连接的私有网络信息<br/>vxnet_id： 私有网络ID<br/>nic_id： 网卡ID<br/>只有在请求参数 verbose=1 时才会返回此信息。 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例:**:
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeRouters

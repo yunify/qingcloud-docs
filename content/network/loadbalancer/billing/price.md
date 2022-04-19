@@ -1,6 +1,6 @@
 ---
 title: "计费指南"
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 计费, 价格
+keyword: 负载均衡器, 计费, 价格
 description: 介绍负载均衡器的计费方式与价格。
 draft: false
 weight: 2

@@ -10,7 +10,7 @@ draft: false
 
 可根据 VPC 网络规则 ID 作为过滤条件，来获取 VPC 网络规则中的条目列表。
 
-**Request Parameters**
+## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -22,7 +22,7 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -41,9 +41,9 @@ draft: false
 | val1 | String | 根据规则类型的不同，代表不同含义：<br/>PPTP 账户信息：val1 表示账户名<br/>三层 GRE 隧道：val1 表示目标网络<br/>三层 IPsec 隧道：val1 表示本地网络 |
 | val2 | String | 根据规则类型的不同，代表不同含义：<br/>PPTP 账户信息：val2 表示密码<br/>三层 IPsec 隧道：val2 表示目标网络 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例:**:
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeRouterStaticEntries

@@ -14,7 +14,7 @@ draft: false
 
 如果需要配置端口转发规则或打开VPN 隧道服务，请查看 [_AddRouterStatics_](../add_router_statics/) 和 [_UpdateRouters_](../update_routers/)。
 
-**Request Parameters**
+## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -28,7 +28,7 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -37,9 +37,9 @@ draft: false
 | routers | Array | 新创建的 VPC 网络 ID 列表 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例:**:
 
 ```
 https://api.qingcloud.com/iaas/?action=CreateRouters

@@ -12,7 +12,7 @@ keyword: 公网 IP API,申请公网 IP,创建公网 IP
 >
 >无论公网 IP 是否与其他资源绑定，一旦分配成功，此 IP 的计费就会开始。
 
-**Request Parameters**
+## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -27,7 +27,7 @@ keyword: 公网 IP API,申请公网 IP,创建公网 IP
 
 [_公共参数_](../../gei_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -35,9 +35,9 @@ keyword: 公网 IP API,申请公网 IP,创建公网 IP
 | eips | Array | 分配成功的公网 IP 列表 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例:**:
 
 ```
 https://api.qingcloud.com/iaas/?action=AllocateEips

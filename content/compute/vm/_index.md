@@ -28,7 +28,7 @@ Section2:
 
     - title: 操作指南
       content: 云服务器操作指南
-      url: "/compute/vm/manual/connect_instance"
+      url: "/compute/vm/manual/vm/10_view_list"
     
 
     - title: 最佳实践
@@ -66,10 +66,7 @@ section4:
       vice_title: 上手的第一步
       children: 
         - title: 云服务器操作
-          url: "/compute/vm/manual/vm_instance"
-
-        - title: 连接实例
-          url: "/compute/vm/manual/connect_instance"
+          url: "/compute/vm/manual/vm/10_view_list"
 
         - title: 基于云服务器搭建博客
           url: "/compute/vm/best-practices/linux/wordpress"
