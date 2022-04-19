@@ -26,5 +26,6 @@ draft: false
 | [数据分析引擎 Elasticsearch](../elasticsearch) | - | - | - | 支持 | 支持 |
 | [分布式文件存储 HDFS](../hdfs) | - | - | - | 支持 | - |
 | [数据生成器 DataGen](../datagen) | 支持 | 支持 | - | - | - |
+| [数据生成器 Faker](../faker) | 支持 | - | - | - | - |
 | [标准输出 Print](../print) | - | - | - | 支持 | - |
 
