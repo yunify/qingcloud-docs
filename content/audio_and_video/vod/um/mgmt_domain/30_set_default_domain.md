@@ -1,6 +1,6 @@
 ---
 title: "设置默认域名"
-keyword: 云计算, 青云, QingCloud, 设置默认域名
+keyword: 视频点播, 设置默认域名
 description: 本章节指导您如何设置默认域名。
 draft: false
 collapsible: false

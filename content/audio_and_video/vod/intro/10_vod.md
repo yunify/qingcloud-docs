@@ -1,6 +1,6 @@
 ---
 title: "什么是云点播"
-keyword: 云计算, 青云, QingCloud, 云点播
+keyword: 视频点播, 云点播
 description: 本章节介绍什么是云点播。
 draft: false
 collapsible: false

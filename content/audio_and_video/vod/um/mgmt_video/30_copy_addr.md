@@ -1,7 +1,7 @@
 ---
 title: "复制播放地址"
 linkTitle: "复制播放地址"
-keyword: 云点播, 复制播放地址
+keyword: 云点播,视频点播, 复制播放地址
 description: 本章节介绍如何复制播放地址。
 draft: false
 collapsible: false

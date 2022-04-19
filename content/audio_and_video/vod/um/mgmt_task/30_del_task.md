@@ -1,6 +1,6 @@
 ---
 title: "删除任务流"
-keyword: 云点播, 音视频
+keyword: 云点播,视频点播, 音视频
 description: 本章节介绍如何删除任务流。
 draft: false
 collapsible: false

@@ -1,6 +1,6 @@
 ---
 title: "用量统计"
-keyword: 云点播, 流量用量, 存储用量, 转码用量, 用量统计
+keyword: 云点播,视频点播, 流量用量, 存储用量, 转码用量, 用量统计
 description: 本章节介绍实时音视频 RTC 的用量统计。
 draft: false
 collapsible: false

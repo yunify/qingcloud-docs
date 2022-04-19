@@ -1,6 +1,6 @@
 ---
 title: "欠费说明"
-keyword: 云计算, 青云, QingCloud, 云点播
+keyword: 视频点播, 云点播
 description: 本章节介绍云点播的欠费说明。
 draft: false
 collapsible: false

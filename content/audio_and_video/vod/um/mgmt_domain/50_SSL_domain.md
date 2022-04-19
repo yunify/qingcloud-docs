@@ -1,6 +1,6 @@
 ---
 title: "证书管理"
-keyword: 云点播, 证书管理
+keyword: 云点播,视频点播, 证书管理
 description: 本章节指导您如何配置证书。
 draft: false
 collapsible: false

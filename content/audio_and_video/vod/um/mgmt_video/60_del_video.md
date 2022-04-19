@@ -1,6 +1,6 @@
 ---
 title: "删除音视频"
-keyword: 云点播, 删除原音视频
+keyword: 云点播,视频点播, 删除原音视频
 description: 本章节介绍如何删除源音视频。
 draft: false
 collapsible: false

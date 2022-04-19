@@ -1,6 +1,6 @@
 ---
 title: "应用场景"
-keyword: 云计算, 青云, QingCloud, 云点播
+keyword: 视频点播, 云点播
 description: 本章节介绍云点播的应用场景。
 draft: false
 collapsible: false

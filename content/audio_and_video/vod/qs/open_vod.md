@@ -1,6 +1,6 @@
 ---
 title: "入门指引"
-keyword: 云点播, 快速开始, 开通云点播
+keyword: 云点播,视频点播, 快速开始, 开通云点播
 description: 本章节指导您如何快速使用云点播。
 draft: false
 collapsible: false

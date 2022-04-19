@@ -1,6 +1,6 @@
 ---
 title: "产品动态"
-keyword: 云计算, 青云, QingCloud, 云点播, 最新动态
+keyword: 视频点播, 云点播, 最新动态
 description: 本章节介绍云点播的最新动态。
 collapsible: false
 

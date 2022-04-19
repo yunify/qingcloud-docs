@@ -1,6 +1,6 @@
 ---
 title: "功能特性"
-keyword: 云计算, 青云, QingCloud, VOD, 视频点播
+keyword: 视频点播, VOD, 视频点播
 description: 本章节介绍云点播的功能特性。
 draft: false
 collapsible: false

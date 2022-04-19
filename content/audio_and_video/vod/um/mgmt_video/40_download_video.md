@@ -1,6 +1,6 @@
 ---
 title: "下载音视频"
-keyword: 云点播, 下载源音视频
+keyword: 云点播,视频点播, 下载源音视频
 description: 本章节介绍如何下载源音视频。
 draft: false
 collapsible: false

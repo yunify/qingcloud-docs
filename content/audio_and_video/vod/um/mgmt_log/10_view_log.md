@@ -1,6 +1,6 @@
 ---
 title: "下载日志"
-keyword: 云点播, 查看日志
+keyword: 云点播,视频点播, 查看日志
 description: 本章节介绍如何下载云点播日志。
 draft: false
 collapsible: false

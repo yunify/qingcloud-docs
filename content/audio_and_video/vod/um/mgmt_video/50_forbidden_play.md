@@ -1,6 +1,6 @@
 ---
 title: "禁播音视频"
-keyword: 云点播, 音视频
+keyword: 云点播,视频点播, 音视频
 description: 本章节介绍如何禁播音视频。
 draft: false
 collapsible: false

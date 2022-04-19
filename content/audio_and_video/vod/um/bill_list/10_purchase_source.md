@@ -1,6 +1,6 @@
 ---
 title: "购买资源包"
-keyword: 云点播, 购买资源包
+keyword: 云点播,视频点播, 购买资源包
 description: 本章节指导您如何购买资源包。
 draft: false
 collapsible: false

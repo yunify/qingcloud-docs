@@ -1,6 +1,6 @@
 ---
 title: "常见问题"
-keyword: 云计算, 青云, QingCloud, 云点播, 常见问题
+keyword: 视频点播, 云点播, 常见问题
 description: 本章节介绍使用云点播遇到的常见问题。
 draft: false
 collapsible: false

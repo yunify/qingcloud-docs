@@ -1,6 +1,6 @@
 ---
 title: "回调设置"
-keyword: 云点播, 回调设置
+keyword: 云点播,视频点播, 回调设置
 description: 本章节指导您如何进行回调设置。
 draft: false
 collapsible: false

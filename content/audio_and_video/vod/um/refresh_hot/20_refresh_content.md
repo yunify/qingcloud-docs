@@ -1,6 +1,6 @@
 ---
 title: "内容刷新"
-keyword: 云点播, 内容刷新, ID 刷新, URL 刷新
+keyword: 云点播,视频点播, 内容刷新, ID 刷新, URL 刷新
 description: 本章节介绍如何进行内容刷新
 draft: false
 collapsible: false
