@@ -27,7 +27,7 @@ keyword: 公网 IP API,解绑公网 IP
 
 ## 示例
 
-**请求示例:**:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=DissociateEips
@@ -36,7 +36,7 @@ https://api.qingcloud.com/iaas/?action=DissociateEips
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

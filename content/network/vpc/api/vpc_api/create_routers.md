@@ -39,7 +39,7 @@ draft: false
 
 ## 示例
 
-**请求示例:**:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=CreateRouters
@@ -48,7 +48,7 @@ https://api.qingcloud.com/iaas/?action=CreateRouters
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

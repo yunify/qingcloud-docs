@@ -32,7 +32,7 @@ draft: false
 
 ## 示例
 
-**请求示例:**
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=ModifyLoadBalancerPolicyAttributes
@@ -41,7 +41,7 @@ https://api.qingcloud.com/iaas/?action=ModifyLoadBalancerPolicyAttributes
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

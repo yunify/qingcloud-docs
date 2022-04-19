@@ -31,7 +31,7 @@ draft: false
 
 ## 示例
 
-**请求示例:**
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=AddRoutes
