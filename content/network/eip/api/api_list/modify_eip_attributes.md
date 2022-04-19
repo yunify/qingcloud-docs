@@ -30,7 +30,7 @@ keyword: 公网 IP API,修改公网 IP
 
 ## 示例
 
-**请求示例:**:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=ModifyEipAttributes
@@ -40,7 +40,7 @@ https://api.qingcloud.com/iaas/?action=ModifyEipAttributes
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

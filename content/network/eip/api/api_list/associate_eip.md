@@ -34,7 +34,7 @@ keyword: 公网 IP API,云服务器绑定公网 IP
 
 ## 示例
 
-**请求示例:**:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=AssociateEip
@@ -44,7 +44,7 @@ https://api.qingcloud.com/iaas/?action=AssociateEip
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

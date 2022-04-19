@@ -30,7 +30,7 @@ keyword: 公网 IP API, 公网带宽
 
 ## 示例
 
-**请求示例:**:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=ChangeEipsBandwidth
@@ -40,7 +40,7 @@ https://api.qingcloud.com/iaas/?action=ChangeEipsBandwidth
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

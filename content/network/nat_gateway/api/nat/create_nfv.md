@@ -50,7 +50,7 @@ https://api.qingcloud.com/iaas/?action=CreateNFV
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

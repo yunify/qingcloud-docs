@@ -56,14 +56,14 @@ keyword: 公网 IP API,获取公网 IP 信息
 
 ## 示例
 
-**请求示例:**:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeEips
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {
