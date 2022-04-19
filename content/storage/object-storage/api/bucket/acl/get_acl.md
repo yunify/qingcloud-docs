@@ -4,7 +4,7 @@ description: 本小节主要介绍 GET Bucket ACL 接口相关操作。
 keyword: 云计算, 青云, QingCloud, 对象存储, GET Bucket ACL, QingStor
 ---
 
-该接口用于获取 Bucket 的访问控制列表 (ACL：Access Control List)。
+该接口用于获取 Bucket 的存储空间访问控制 (ACL：Access Control List)。
 
 QingStor 对象存储定义 ACL 为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
 

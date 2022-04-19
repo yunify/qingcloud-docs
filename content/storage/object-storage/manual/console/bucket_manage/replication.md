@@ -30,7 +30,7 @@ weight: 9
 
  ![](/storage/object-storage/_images/set_bucket_replication2.png)
 
-3. 在弹出的 **添加规则** 对话框内，根据页面提示信息，填写相关参数后，点击 **提交** 按钮：
+3. 在弹出的对话框内，根据页面提示信息，填写相关参数后，点击 **提交** 按钮：
 
  ![](/storage/object-storage/_images/set_bucket_replication3.png)
 
@@ -43,7 +43,7 @@ weight: 9
    - **同步删除操作：** 在源 Bucket 删除文件时，目标 Bucket 文件也会被删除。默认为 `否`。开启后请谨慎操作，防止将文件删除后无法恢复。
    - **同步历史数据：** 将跨区域复制功能开启前就存在的文件也复制到目标 Bucket 上，默认为 `否`。
 
-4. 成功创建对跨域复制规则，列表显示：
+4. 成功创建的跨源复制规则，列表显示：
 
  ![](/storage/object-storage/_images/set_bucket_replication4.png)
 
