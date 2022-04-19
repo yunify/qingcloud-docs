@@ -10,7 +10,7 @@ draft: false
 
 可通过云服务器ID，镜像ID，云服务器配置类型，云服务器状态作为过滤条件进行筛选。
 
-**Request Parameters**
+## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -53,9 +53,9 @@ draft: false
 | dhcp_options | Dict | 私有网络中针对该云服务器的 DHCP 配置。 |
 | private_ip | String | 云服务器的位于该私有网络的IP。 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例:**:
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeVxnetInstances

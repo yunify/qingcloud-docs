@@ -8,7 +8,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, SNAT
 
 查询 SNAT 规则。
 
-**Request Parameters**
+## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -23,7 +23,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, SNAT
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -32,9 +32,9 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, SNAT
 | snat_set | list | 每个 SNAT 对应的具体信息 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_
+**请求示例:**
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeSnatRules

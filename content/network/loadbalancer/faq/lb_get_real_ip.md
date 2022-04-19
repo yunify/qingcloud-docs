@@ -1,7 +1,7 @@
 ---
 title: "获取来访者的真实 IP"
 description: 介绍如何获取来访者的真实 IP 的两种方法。
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 真实 IP
+keyword: 负载均衡器, 真实 IP
 draft: false
 ---
 

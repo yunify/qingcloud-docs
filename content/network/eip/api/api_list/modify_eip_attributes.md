@@ -10,7 +10,7 @@ keyword: 公网 IP API,修改公网 IP
 
 一次只能修改一个公网 IP，修改时不受公网 IP 状态限制。
 
-**Request Parameters**
+## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -21,16 +21,16 @@ keyword: 公网 IP API,修改公网 IP
 
 [_公共参数_](../../gei_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例:**:
 
 ```
 https://api.qingcloud.com/iaas/?action=ModifyEipAttributes
