@@ -26,7 +26,7 @@ QingStor 对象存储是面向海量非结构化数据的通用数据存储平�
 
 **安全：**
   - 多租户间 100% 网络隔离，使用性能优异的防火墙及 DDoS 防护为用户提供全方位的防护服务。
-  - 完善的访问控制；支持客户端及服务端数据加密；数据传输支持 SSL 协议，使您在团队协作中依旧能保持数据不泄露，不被轻易篡改。
+  - 完善的数据访问权限控制；支持客户端及服务端数据加密；数据传输支持 SSL 协议，使您在团队协作中依旧能保持数据不泄露，不被轻易篡改。
 
 **灵活易用：**
   - QingStor 对象存储可存储任意类型、任意数量、任意大小的文件。
@@ -42,7 +42,7 @@ QingStor 对象存储是面向海量非结构化数据的通用数据存储平�
 对象名称。其格式为：`<bucket_name>/<dir_name>/<object_name>`。如：`test_bucekt/test.mp3`，`test_bucekt/personal/test.mp3`。
 
 ### Bucket
-用户创建的存储桶。用于存储用户上传的各种对象。
+用户创建的存储空间。用于存储用户上传的各种对象。
 
 ### Global
 QingStor 对象存储服务的全局管理服务。
@@ -59,7 +59,7 @@ QingStor 对象存储服务的全局管理服务。
 | 雅加达区   | ap3     | ap3.qingstor.com | https://mybucket5.ap3.qingstor.com/myobject   |
 
 ### Service
-QingStor 对象存储的顶层命令空间。在该命名空间下，每一个用户可以创建多个 Bucket。
+QingStor 对象存储的顶层命名空间。在该命名空间下，每一个用户可以创建多个 Bucket。
 
 ### Endpoint
 

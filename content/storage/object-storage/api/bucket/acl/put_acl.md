@@ -4,7 +4,7 @@ description: 本小节主要介绍 PUT Bucket ACL 接口相关操作。
 keyword: 云计算, 青云, QingCloud, 对象存储, PUT Bucket ACL, QingStor
 ---
 
-该接口用于设置或修改 Bucket 的访问控制列表 (ACL：Access Control List)。
+该接口用于设置或修改 Bucket 的存储空间访问控制 (ACL：Access Control List)。
 
 QingStor 对象存储定义 ACL 为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
 
@@ -50,7 +50,7 @@ Authorization: <authorization-string>
 
 | 名称 | 类型 | 说明 |
 | --- | --- | --- |
-| acl | List | 访问控制列表。 支持设置同时设置或修改多个被授权者|
+| acl | List | 存储空间访问控制。 支持设置同时设置或修改多个被授权者|
 | grantee | Dict | 权限赋予的对象 |
 | type | String | 支持 `user` 与 `group` 两种类型 |
 | id | String | 用户 ID。当 `type` 设置为 `user` 时，该参数有效 |

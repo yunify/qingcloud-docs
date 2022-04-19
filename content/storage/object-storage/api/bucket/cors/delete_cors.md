@@ -1,7 +1,7 @@
 ---
-title: "Delete Bucket CORS"
+title: "Delete CORS"
 date: 2020-11-26T10:08:56+09:00
-description: 本小节主要介绍 Delete Bucket CORS 接口相关操作。
+description: 本小节主要介绍 Delete CORS 接口相关操作。
 keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 collapsible: false
 draft: false
