@@ -41,7 +41,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 
 ## 示例
 
-**请求示例:**
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=CreateNFV
@@ -50,7 +50,7 @@ https://api.qingcloud.com/iaas/?action=CreateNFV
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

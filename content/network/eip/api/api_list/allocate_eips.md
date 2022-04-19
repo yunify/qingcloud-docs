@@ -37,7 +37,7 @@ keyword: 公网 IP API,申请公网 IP,创建公网 IP
 
 ## 示例
 
-**请求示例:**:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=AllocateEips
@@ -48,7 +48,7 @@ https://api.qingcloud.com/iaas/?action=AllocateEips
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

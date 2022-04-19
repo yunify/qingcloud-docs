@@ -32,7 +32,7 @@ keyword: 公网 IP API, 公网 IP 计费模式
 
 ## 示例
 
-**请求示例:**:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=ChangeEipsBillingMode
@@ -42,7 +42,7 @@ https://api.qingcloud.com/iaas/?action=ChangeEipsBillingMode
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

@@ -30,7 +30,7 @@ draft: false
 
 ## 示例
 
-**请求示例:**
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=RemoveSpanMembers
@@ -39,7 +39,7 @@ https://api.qingcloud.com/iaas/?action=RemoveSpanMembers
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

@@ -29,7 +29,7 @@ keyword: 公网 IP API,
 
 ## 示例
 
-**请求示例:**:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=ReleaseEips
@@ -38,7 +38,7 @@ https://api.qingcloud.com/iaas/?action=ReleaseEips
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {
