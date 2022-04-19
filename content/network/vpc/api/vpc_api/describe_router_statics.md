@@ -10,7 +10,7 @@ draft: false
 
 可根据 VPC 网络规则ID， VPC 网络ID，规则类型等作为过滤条件，来获取 VPC 网络规则列表。 如果不指定任何过滤条件，默认返回你所拥有的所有 VPC 网络规则。
 
-**Request Parameters**
+## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -25,7 +25,7 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -34,9 +34,9 @@ draft: false
 | total_count | Integer | 根据过滤条件得到的 VPC 网络规则总数 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例:**:
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeRouterStatics

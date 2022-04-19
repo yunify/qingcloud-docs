@@ -8,7 +8,7 @@ draft: false
 
 可根据私有网络ID作过滤条件，获取私有网络列表。 如果不指定任何过滤条件，默认返回你所拥有的所有私有网络。
 
-**Request Parameters**
+## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -23,7 +23,7 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -60,9 +60,9 @@ draft: false
 
  |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例:**:
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeVxnets
@@ -98,7 +98,7 @@ _Example Response_:
 }
 ```
 
-_Example Request_:
+**请求示例:**:
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeVxnets

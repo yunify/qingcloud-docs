@@ -10,7 +10,7 @@ keyword: 公网 IP API,获取公网 IP 信息
 
 可根据公网 IP 的 ID，状态，名称，分配的云服务器 ID 作过滤条件，来获取公网 IP 列表。如果不指定任何过滤条件，默认返回你所拥有的所有公网 IP。如果指定不存在的公网 IP，或非法状态值，则会返回错误信息。
 
-**Request Parameters**
+## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -26,7 +26,7 @@ keyword: 公网 IP API,获取公网 IP 信息
 
 [_公共参数_](../../gei_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -54,9 +54,9 @@ keyword: 公网 IP API,获取公网 IP 信息
 | eip_group | Dict | 公网 IP 的分组信息，数据格式为:<br/>{<br/>  "eip_group_id":"eipg-1nv8hobz",<br/>  "eip_group_name":"192.168.93.*"<br/>} |
 | eip_addr | String | 公网 IP 地址 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例:**:
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeEips
