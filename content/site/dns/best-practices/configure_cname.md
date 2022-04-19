@@ -1,6 +1,6 @@
 ---
 title: "配置 CNAME"
-keyword: 云计算, 青云, QingCloud, 视频直播, 配置 CNAME
+keyword: 云计算, 青云, QingCloud, 云解析DNS, 配置 CNAME
 description: 本章节介绍如何配置 CNAME。
 draft: false
 collapsible: false
