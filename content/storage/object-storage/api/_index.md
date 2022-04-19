@@ -11,7 +11,7 @@ weight: 8
 - [概述](./overview)
 - [公共字段](./common_header)
 - [错误信息](./error_code)
-- [访问控制](./error_code)
+- [数据访问权限](./error_code)
 - [Bucket 相关操作](../api/bucket/)
 - [Object 相关操作](../api/object/)
 - [Service 相关操作](../api/service/)
