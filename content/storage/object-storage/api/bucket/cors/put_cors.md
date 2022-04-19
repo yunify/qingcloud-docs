@@ -1,7 +1,7 @@
 ---
-title: "PUT Bucket CORS"
+title: "PUT CORS"
 date: 2020-11-26T10:08:56+09:00
-description: 本小节主要介绍 Put Bucket CORS 接口相关操作。
+description: 本小节主要介绍 Put CORS 接口相关操作。
 keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 collapsible: false
 draft: false
@@ -52,7 +52,7 @@ Authorization: <authorization-string>
 
 | 名称 | 类型 | 说明 | 是否必须 |
 | --- | --- | --- | --- |
-| cors_rules | Array | 跨源的规则配置。 | 是 |
+| cors_rules | Array | 跨源资源共享的规则配置。 | 是 |
 | allowed_origin | String | 用户所期望的跨源请求来源，可以用 `*` 来进行通配。 | 是 |
 | allowed_methods | Array | 设置源所允许的 HTTP 方法。规则如下：<br>- 可指定的方法为：GET，PUT，POST，DELETE 与 HEAD； <br>- 可以单独指定以上方法，也可以组合指定以上方法的 <br>- 可以使用 `*` 来进行通配 | 是 |
 | allowed_headers | Array | 设置源所允许的 HTTP 头，可以用 `*` 来进行通配。 | 是 |

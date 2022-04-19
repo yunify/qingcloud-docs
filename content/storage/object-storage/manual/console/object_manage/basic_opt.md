@@ -27,7 +27,7 @@ Bucket 的文件和文件夹按字母序混合排列。控制台可查看文件�
 
  ![](/storage/object-storage/_images/object_create_dir1.png)
 
-3. 弹出 **新文件夹** 对话框，根据提示信息，输入新建文件夹名称，点击 **提交**：
+3. 弹出对话框，根据提示信息，输入新建文件夹名称，点击 **提交**：
 
  ![](/storage/object-storage/_images/object_create_dir2.png)
 
@@ -50,7 +50,7 @@ Bucket 的文件和文件夹按字母序混合排列。控制台可查看文件�
 
  ![](/storage/object-storage/_images/object_upload_file1.png)
 
-3. 弹出 **上传文件** 对话框内，根据提示信息，上传文件，上传完成后，点击右上角，关闭对话框：
+3. 弹出对话框内，根据提示信息，上传文件，上传完成后，点击右上角，关闭对话框：
 
  ![](/storage/object-storage/_images/object_upload_file2.png)
 
@@ -91,7 +91,7 @@ Bucket 的文件和文件夹按字母序混合排列。控制台可查看文件�
 
  ![](/storage/object-storage/_images/object_file_info1.png)
 
-3. 弹出 **文件详情** 对话框，详细内容如下图：
+3. 弹出对话框，详细内容如下图：
 
  ![](/storage/object-storage/_images/object_file_info2.png)
 
@@ -153,7 +153,7 @@ QingStor 对象存储，支持的文件操作包括：另存为，复制剪切�
 
  ![](/storage/object-storage/_images/object_file_del2.png)
 
-4. 弹出 **删除文件** 对话框，确认操作无误后，点击 **删除** 按钮：
+4. 弹出对话框，确认操作无误后，点击 **删除** 按钮：
 
  ![](/storage/object-storage/_images/object_file_del3.png)
 
@@ -177,7 +177,7 @@ QingStor 对象存储，支持的文件操作包括：另存为，复制剪切�
 
  ![](/storage/object-storage/_images/object_dir_del2.png)
 
-4. 弹出 **删除文件** 对话框，确认操作无误后，点击 **删除** 按钮：
+4. 弹出对话框，确认操作无误后，点击 **删除** 按钮：
 
  ![](/storage/object-storage/_images/object_dir_del3.png)
 

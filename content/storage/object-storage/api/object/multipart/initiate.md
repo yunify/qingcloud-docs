@@ -65,7 +65,7 @@ Authorization: <authorization-string>
 
 | 名称 | 类型 | 说明 |
 | --- | --- | --- |
-| bucket | String | 存储桶名名称 |
+| bucket | String | 存储空间名称 |
 | key | String | 对象名称 |
 | upload_id | String | 分段上传 ID。用于唯一标识该分段上传过程，作为后续上传分段的参数。|
 
