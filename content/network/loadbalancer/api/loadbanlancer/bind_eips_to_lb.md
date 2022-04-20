@@ -1,24 +1,22 @@
 ---
 title: "AssociateEipsToLoadBalancer"
-description: 
-keyword: 
-weight: 
+description: 介绍如何将公网 IP 绑定到负载均衡器。
+keyword: 负载均衡器API,绑定公网IP
+weight: 5
 draft: false
 ---
 
-
-
-将一个或多个“可用”（ available ）状态的公网IP绑定到负载均衡器。
+将一个或多个“可用”（ available ）状态的公网 IP 绑定到负载均衡器。
 
 ## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| eips.n | String | 公网IP的ID | Yes |
+| eips.n | String | 公网 IP 的 ID | Yes |
 | loadbalancer | String | 负载均衡器 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../gei_api/parameters/)
 
 ## 返回数据
 

@@ -1,52 +1,50 @@
 ---
 title: "DescribeLoadBalancerBackends"
-description: 
-keyword: 
-weight: 
+description: 获取负载均衡器后端服务列表。
+keyword: 负载均衡器API,后端服务,查询过滤
+weight: 2
 draft: false
 ---
 
-
-
 获取负载均衡器后端服务列表。
 
-可根据负载均衡器ID，监听器ID 或 后端服务ID 作为过滤条件获取后端服务列表。 如果不指定任何过滤条件，默认返回你拥有的负载均衡器下面监听器的所有后端服务。
+可根据负载均衡器 ID，监听器 ID 或 后端服务 ID 作为过滤条件获取后端服务列表。 如果不指定任何过滤条件，默认返回你拥有的负载均衡器下面监听器的所有后端服务。
 
 ## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| loadbalancer_backends.n | String | 后端服务ID | No |
-| loadbalancer_listener | String | 监听器ID | No |
-| loadbalancer | String | 负载均衡器ID | No |
-| verbose | Integer | 是否返回冗长的信息, 若为1, 则返回监听器下的后端服务信息。 | No |
-| offset | Integer | 数据偏移量, 默认为0 | No |
-| limit | Integer | 返回数据长度，默认为20，最大100 | No |
-| zone | String | 区域 ID，注意要小写 | Yes |
+| loadbalancer_backends.n | String | 后端服务 ID。 | No |
+| loadbalancer_listener | String | 监听器 ID。 | No |
+| loadbalancer | String | 负载均衡器 ID。 | No |
+| verbose | Integer | 是否返回冗长的信息，若为 1，则返回监听器下的后端服务信息。 | No |
+| offset | Integer | 数据偏移量，默认为 0。 | No |
+| limit | Integer | 返回数据长度。默认为 20，最大 100。 | No |
+| zone | String | 区域 ID，注意要小写。 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../gei_api/parameters/)
 
 ## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
-| action | String | 响应动作 |
-| loadbalancer_backend_set | Array | JSON 格式的后端服务数据列表, 每项参数可见下面 [Response Item](#response-item) |
-| total_count | Integer | 根据过滤条件得到的后端服务总数 |
+| action | String | 响应动作。 |
+| loadbalancer_backend_set | Array | JSON 格式的后端服务数据列表, 每项参数可见 [Response Item](#response-item)。 |
+| total_count | Integer | 根据过滤条件得到的后端服务总数。 |
 
-**Response Item**
+#### Response Item
 
 | Name | Type | Description |
 | --- | --- | --- |
-| loadbalancer_backend_id | String | 后端服务ID |
-| loadbalancer_backend_name | String | 后端服务名称 |
-| loadbalancer_listener_id | String | 所属监听器ID |
-| loadbalancer_id | String | 所属负载均衡器ID |
-| port | Integer | 后端服务端口 |
-| weight | Integer | 后端服务权重 |
-| resource_id | String | 后端服务资源ID |
-| status | String | 后端服务状态，分为: up（可用）, down（不可用）和 abnormal（异常） |
-| create_time | String | 创建时间 |
+| loadbalancer_backend_id | String | 后端服务 ID。 |
+| loadbalancer_backend_name | String | 后端服务名称。 |
+| loadbalancer_listener_id | String | 所属监听器 ID。 |
+| loadbalancer_id | String | 所属负载均衡器 ID。 |
+| port | Integer | 后端服务端口。 |
+| weight | Integer | 后端服务权重。 |
+| resource_id | String | 后端服务资源 ID。 |
+| status | String | 后端服务状态，分为: up（可用）, down（不可用）和 abnormal（异常）。 |
+| create_time | String | 创建时间。 |
 
 ## 示例
 

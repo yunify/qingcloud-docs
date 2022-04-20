@@ -23,7 +23,7 @@ draft: false
 | limit | Integer | 返回数据长度，默认为 20，最大 100。 | No |
 | zone | String | 区域 ID，注意要小写。 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../gei_api/parameters/)
 
 ## 返回数据
 

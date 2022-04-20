@@ -1,32 +1,30 @@
 ---
 title: "DissociateEipsFromLoadBalancer"
-description: 
-keyword: 
-weight: 
+description: 介绍如何将公网 IP 从负载均衡器解绑。
+keyword: 负载均衡器API,解绑公网IP
+weight: 6
 draft: false
 ---
 
-
-
-将一个或多个“绑定中”（ associated ）状态的公网IP从负载均衡器中解绑， 解绑后会变回“可用”（ available ）状态。
+将一个或多个“绑定中”（ associated ）状态的公网 IP 从负载均衡器中解绑， 解绑后公网 IP 变回“可用”（ available ）状态。
 
 ## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| eips.n | String | 公网IP的ID | Yes |
-| loadbalancer | String | 负载均衡器 ID | Yes |
-| zone | String | 区域 ID，注意要小写 | Yes |
+| eips.n | String | 公网 IP 的 ID。 | Yes |
+| loadbalancer | String | 负载均衡器 ID。 | Yes |
+| zone | String | 区域 ID，注意要小写。 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../gei_api/parameters/)
 
 ## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
-| action | String | 响应动作 |
-| job_id | String | 执行任务的 Job ID |
-| ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
+| action | String | 响应动作。 |
+| job_id | String | 执行任务的 Job ID。 |
+| ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码。 |
 
 ## 示例
 

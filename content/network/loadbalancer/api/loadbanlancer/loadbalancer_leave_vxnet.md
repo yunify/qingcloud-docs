@@ -1,14 +1,12 @@
 ---
 title: "LoadBalancerLeaveVxnet"
-description: 
-keyword: 
-weight: 
+description: 负载均衡器集群离开私有网络的 API 接口说明。
+keyword: 负载均衡器API,离开私有网络
+weight: 11
 draft: false
 ---
 
-
-
-若负载均衡器集群已加入到私有网络，该 api 可以使负载均衡器集群离开私有网络。
+若负载均衡器集群已加入到私有网络，该 API 可以使负载均衡器集群离开私有网络。
 
 
 ## 请求参数
@@ -19,7 +17,7 @@ draft: false
 | loadbalancer | String | 离开网络的负载均衡器 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../gei_api/parameters/)
 
 ## 返回数据
 

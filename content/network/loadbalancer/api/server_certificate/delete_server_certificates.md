@@ -1,12 +1,10 @@
 ---
 title: "DeleteServerCertificates"
-description: 
-keyword: 
-weight: 
+description: 删除服务器证书的 API 接口说明。
+keyword: 负载均衡器API,服务器证书,删除
+weight: 5
 draft: false
 ---
-
-
 
 删除一个或多个服务器证书。
 
@@ -14,18 +12,18 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| server_certificates.n | String | 服务器证书ID | Yes |
-| zone | String | 区域 ID，注意要小写 | Yes |
+| server_certificates.n | String | 服务器证书 ID。 | Yes |
+| zone | String | 区域 ID，注意要小写。 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../gei_api/parameters/)
 
 ## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
-| action | String | 响应动作 |
-| job_id | String | 执行任务的 Job ID |
-| ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
+| action | String | 响应动作。 |
+| job_id | String | 执行任务的 Job ID。 |
+| ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码。 |
 
 ## 示例
 
