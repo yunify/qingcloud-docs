@@ -1,7 +1,7 @@
 ---
 title: "负载均衡器如何支持多证书"
 description: 指导用户通过 HTTPS 和 SSL 监听器绑定多个 SSL 证书。
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器,证书
+keyword: 负载均衡器,证书
 weight: 50
 draft: false
 ---

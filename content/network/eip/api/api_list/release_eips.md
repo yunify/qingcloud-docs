@@ -10,7 +10,7 @@ keyword: 公网 IP API,
 
 被释放的 IP 处于须处于“可用”（ available ）状态。如果公网 IP 正与其他资源绑定，则需要先解绑才能释放。
 
-**Request Parameters**
+## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -19,7 +19,7 @@ keyword: 公网 IP API,
 
 [_公共参数_](../../gei_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -27,9 +27,9 @@ keyword: 公网 IP API,
 | job_id | String | 执行任务的 Job ID |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=ReleaseEips
@@ -38,7 +38,7 @@ https://api.qingcloud.com/iaas/?action=ReleaseEips
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

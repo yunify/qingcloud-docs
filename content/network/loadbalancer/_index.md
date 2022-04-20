@@ -1,14 +1,14 @@
 ---
-title: "负载均衡"
-linkTitle: "负载均衡"
+title: "负载均衡器"
+linkTitle: "负载均衡器"
 weight: 50
 collapsible: true
 type: "product"
 
 
 section1:
-  title: 负载均衡
-  vice_title: 负载均衡是将来自多个公网地址的访问流量分发到多台云服务器上的流量分发控制服务，并支持自动检测并隔离不可用的云服务器，从而提高业务的服务能力和可用性。
+  title: 负载均衡器
+  vice_title: 负载均衡器是将来自多个公网地址的访问流量分发到多台云服务器上的流量分发控制服务，并支持自动检测并隔离不可用的云服务器，从而提高业务的服务能力和可用性。
   # todo add qingstor introduction video
   video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_lb.mp4"
   video_img: "/images/video.png"
@@ -45,7 +45,7 @@ section3:
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/development_docs/api/"
+      url: "api/api_overview/"
 
     - title: SDK 文档
       content: 如何使用 SDK 文档
