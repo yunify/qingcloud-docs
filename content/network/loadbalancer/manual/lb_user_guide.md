@@ -1,7 +1,7 @@
 ---
 title: "操作指南"
 description: 介绍如何搭建常见的四种负载均衡。
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 监听器
+keyword: 负载均衡器, 监听器
 draft: false
 ---
 

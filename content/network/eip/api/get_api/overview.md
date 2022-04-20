@@ -8,14 +8,14 @@ weight: 1
 
 ## API 密钥
 
-在调用 API 前，需要先申请 API 密钥，获取 API 密钥 ID ( access_key_id ) 和 API 密钥私钥 ( secret_access_key )。
+在调用 API 前，需要先在管理控制台[申请 API 密钥](https://console.qingcloud.com/access_keys/)，获取 API 密钥 ID ( access_key_id ) 和 API 密钥私钥 ( secret_access_key )。
 
 - **密钥 ID** 将作为参数包含在每一个请求中发送。
 - **密钥私钥**负责生成请求串的签名进行鉴权。
 
 ## 请求方法
 
-VPC 网络开放的所有资源操作相关的 API，均支持通过 HTTPS GET 方式进行调用。
+公网 IP 开放的所有资源操作相关的 API，均支持通过 HTTPS GET 方式进行调用。
 
 ## 请求类型
 

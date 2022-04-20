@@ -1,6 +1,6 @@
 ---
 title: "常见问题"
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 常见问题
+keyword: 负载均衡器, 常见问题
 description: 介绍负载均衡器的常见问题解决办法。
 draft: false
 ---

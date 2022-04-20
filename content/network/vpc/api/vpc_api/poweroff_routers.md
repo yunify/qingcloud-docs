@@ -12,7 +12,7 @@ draft: true
 
 注解：关闭 VPC 网络之后， VPC 网络将不再收费。
 
-**Request Parameters**
+## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -21,7 +21,7 @@ draft: true
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -29,9 +29,9 @@ draft: true
 | job_id | String | 执行任务的 Job ID |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=PowerOffRouters
@@ -40,7 +40,7 @@ https://api.qingcloud.com/iaas/?action=PowerOffRouters
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {
