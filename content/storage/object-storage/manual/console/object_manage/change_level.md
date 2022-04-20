@@ -22,7 +22,7 @@ weight: 3
 
  ![](/storage/object-storage/_images/object_file_level1.png)
 
-3. 弹出 **变更存储级别** 对话框，用户根据实际情况以及提示信息，选择相应的存储级别后，点击 **提交** 按钮即可：
+3. 弹出对话框，用户根据实际情况以及提示信息，选择相应的存储级别后，点击 **提交** 按钮即可：
 
  ![](/storage/object-storage/_images/object_file_level2.png)
 

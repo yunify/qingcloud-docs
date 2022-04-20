@@ -26,7 +26,7 @@ QingStor 对象存储支持修改的对象元数据包括部分标准 HTTP 头�
 
  ![](/storage/object-storage/_images/object_modify_meta1.png)
 
-3. 弹出 **修改对象元数据** 对话框，用户根据实际需求，选择待修改的 **键**，并给定相应的值后，点击 **添加** 按钮即可：
+3. 弹出对话框，用户根据实际需求，选择待修改的 **键**，并给定相应的值后，点击 **添加** 按钮即可：
 
  ![](/storage/object-storage/_images/object_modify_meta2.png)
 

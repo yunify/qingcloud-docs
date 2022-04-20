@@ -34,13 +34,13 @@ keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 
 | AWS S3 接口 | 请求兼容描述 | 响应兼容描述 |
 | --- | --- | --- |
-| PUT Object | 未支持请求头 `x-amz-storage-class`, `x-amz-website-redirect-location`, `x-amz-acl`, `x-amz-grant-*`, `x-amz-server-side-encryption-*` | 兼容 |
+| PUT Object | 未支持请求头 `x-amz-website-redirect-location`, `x-amz-acl`, `x-amz-grant-*`, `x-amz-server-side-encryption-*` | 兼容 |
 | PUT Object - Copy | 兼容 | 兼容 |
 | GET Object | 兼容 | 兼容 |
 | DELETE Object | 未支持请求头 `x-amz-mfa` | 兼容 |
 | DELETE Multiple Objects | 未支持请求头 `x-amz-mfa` | 兼容 |
 | HEAD Object | 未支持请求头 `x-amz-server-side​-encryption​-customer-*` | 兼容 |
-| Initiate Multipart Upload | 未支持请求头 `x-amz-storage-class`, `x-amz-website-redirect-location`, `x-amz-acl`, `x-amz-grant-*`, `x-amz-server-side-encryption-*` | 兼容 |
+| Initiate Multipart Upload | 未支持请求头 `x-amz-website-redirect-location`, `x-amz-acl`, `x-amz-grant-*`, `x-amz-server-side-encryption-*` | 兼容 |
 | Upload Part | 未支持 `x-amz-server-side-encryption-customer-*` | 兼容 |
 | Copy Part | 兼容 | 兼容 |
 | List Parts | 未支持请求参数 `encoding-type` | 兼容 |
