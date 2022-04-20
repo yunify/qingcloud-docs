@@ -1,7 +1,7 @@
 ---
 title: "构造请求"
 description: 本小节主要介绍如何构造 API 请求。 
-keyword: 公网IP, API 请求, 构造请求
+keyword: 负载均衡器, API 请求, 构造请求
 draft: false
 weight: 10
 collapsible: false

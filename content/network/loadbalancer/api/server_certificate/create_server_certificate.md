@@ -1,33 +1,33 @@
 ---
 title: "CreateServerCertificate"
-description: 
-keyword: 
-weight: 
+description: 创建服务器证书的 API 接口说明。
+keyword: 负载均衡器API,服务器证书,创建
+weight: 1
 draft: false
 ---
 
+创建一个服务器证书。
 
-
-此 API 需使用 POST 方法, 创建一个服务器证书。创建时需指定与此服务器证书关联的证书内容和私钥.
+此 API 需使用 POST 方法，创建时需指定与此服务器证书关联的证书内容和私钥.
 
 ## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| server_certificate_name | String | 服务器证书名称 | No |
-| certificate_content | String | 服务器证书内容 | Yes |
-| private_key | String | 服务器证书私钥 | Yes |
-| zone | String | 区域 ID，注意要小写 | Yes |
+| server_certificate_name | String | 服务器证书名称。 | No |
+| certificate_content | String | 服务器证书内容。 | Yes |
+| private_key | String | 服务器证书私钥。 | Yes |
+| zone | String | 区域 ID，注意要小写。 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../gei_api/parameters/)
 
 ## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
-| action | String | 响应动作 |
-| server_certificate_id | String | 创建的服务器证书ID |
-| ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
+| action | String | 响应动作。 |
+| server_certificate_id | String | 创建的服务器证书 ID。 |
+| ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码。 |
 
 ## 示例
 

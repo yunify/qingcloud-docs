@@ -1,12 +1,10 @@
 ---
 title: "DescribeServerCertificates"
 description: 
-keyword: 
-weight: 
+keyword: 负载均衡器API,
+weight: 2
 draft: false
 ---
-
-
 
 获取一个或多个服务器证书。
 
@@ -16,33 +14,33 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| server_certificates | String | 服务器证书ID | No |
-| search_word | String | 搜索关键词，支持服务器证书ID，服务器证书名称 | No |
-| verbose | Integer | 是否返回冗长的信息，若为1，则返回服务器证书相关其他资源的详细数据。 | No |
-| offset | Integer | 数据偏移量，默认为0 | No |
-| limit | Integer | 返回数据长度，默认为20，最大100 | No |
-| zone | String | 区域 ID，注意要小写 | Yes |
+| server_certificates | String | 服务器证书 ID。 | No |
+| search_word | String | 搜索关键词，支持服务器证书 ID，服务器证书名称。 | No |
+| verbose | Integer | 是否返回冗长的信息，若为 1，则返回服务器证书相关其他资源的详细数据。 | No |
+| offset | Integer | 数据偏移量，默认为 0。 | No |
+| limit | Integer | 返回数据长度。默认为 20，最大 100 | No |
+| zone | String | 区域 ID，注意要小写。 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../gei_api/parameters/)
 
 ## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
-| action | String | 响应动作 |
-| server_certificate_set | Array | JSON 格式的服务器证书数据列表，每项参数可见下面 [Response Item](#response-item) |
-| total_count | Integer | 根据过滤条件得到的服务器证书总数 |
+| action | String | 响应动作。 |
+| server_certificate_set | Array | JSON 格式的服务器证书数据列表，每项参数可见 [Response Item](#response-item)。 |
+| total_count | Integer | 根据过滤条件得到的服务器证书总数。 |
 
-**Response Item**
+#### Response Item
 
 | Name | Type | Description |
 | --- | --- | --- |
-| server_certificate_id | String | 服务器证书ID |
-| server_certificate_name | String | 服务器证书名称 |
-| private_key | String | 私钥 |
-| certificate_content | String | 证书内容 |
-| description | String | 证书描述 |
-| create_time | TimeStamp | 服务器证书创建时间, 为UTC时间, 格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
+| server_certificate_id | String | 服务器证书 ID。 |
+| server_certificate_name | String | 服务器证书名称。 |
+| private_key | String | 私钥。 |
+| certificate_content | String | 证书内容。 |
+| description | String | 证书描述。 |
+| create_time | TimeStamp | 服务器证书创建时间, 为UTC时间, 格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime)。 |
 
 ## 示例
 

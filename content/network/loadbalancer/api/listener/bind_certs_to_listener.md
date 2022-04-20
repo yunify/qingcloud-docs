@@ -1,13 +1,10 @@
 ---
-
 title: "AssociateServerCertsToLBListener"
-description: 
-keyword: 
-weight: 
+description: 绑定服务器证书到负载均衡监听器上的 API 接口说明。
+keyword: 负载均衡器API,监听器,绑定服务器证书
+weight: 10
 draft: false
 ---
-
-
 
 绑定服务器证书到负载均衡监听器上。
 
@@ -15,18 +12,18 @@ draft: false
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
-| server_certificates.n | String | 服务器证书ID | Yes |
-| loadbalancer_listener | String | 负载均衡监听器ID | Yes |
-| zone | String | 区域 ID，注意要小写 | Yes |
+| server_certificates.n | String | 服务器证书 ID。 | Yes |
+| loadbalancer_listener | String | 负载均衡监听器 ID。 | Yes |
+| zone | String | 区域 ID，注意要小写。 | Yes |
 
-[_公共参数_](../../../parameters/)
+[_公共参数_](../../gei_api/parameters/)
 
 ## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
-| action | String | 响应动作 |
-| ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
+| action | String | 响应动作。 |
+| ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码。 |
 
 ## 示例
 
