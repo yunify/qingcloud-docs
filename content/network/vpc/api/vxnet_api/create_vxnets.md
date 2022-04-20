@@ -14,7 +14,7 @@ draft: false
 *   受管私有网络可以使用路由器来配置和管理其网络，使得网络搭建更方便快捷。
 *   自管私有网络需要您自行配置和管理网络，适用于对底层网络有特殊需求的用户。
 
-**Request Parameters**
+## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -26,7 +26,7 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -34,9 +34,9 @@ draft: false
 | vxnets | Array | 创建成功的私有网络ID列表 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=CreateVxnets
@@ -46,7 +46,7 @@ https://api.qingcloud.com/iaas/?action=CreateVxnets
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

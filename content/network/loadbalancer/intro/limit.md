@@ -1,7 +1,7 @@
 ---
 title: "产品限制"
 description: 介绍如负载均衡器的使用限制。
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 限制, 配额
+keyword: 负载均衡器, 限制, 配额
 weight: 40
 draft: false
 ---

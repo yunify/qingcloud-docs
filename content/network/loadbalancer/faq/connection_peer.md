@@ -1,7 +1,7 @@
 ---
 title: "业务日志中出现“Connection reset by peer”的错误"
 description: 介绍如何处理负载均衡器 Connection reset by peer。
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 报错
+keyword: 负载均衡器, 报错
 draft: false
 ---
 
