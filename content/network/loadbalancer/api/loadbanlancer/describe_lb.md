@@ -42,12 +42,12 @@ draft: false
 | description | String | 负载均衡器描述。 |
 | listeners | Array | <br/>负载均衡器的监听器列表，每项数据格式为:<br/>{<br/>  "listener_port": "80",<br/>  "listener_protocol": "http",<br/>  "backend_protocol": "http",<br/>  "balance_mode": "roundrobin",<br/>  "forwardfor": "0",<br/>  "loadbalancer_id": "lb-1234abcd",<br/>  "loadbalancer_listener_id": "lbl-1234abcd",<br/>  "loadbalancer_listener_name": "test listener",<br/>  "create-time": "2014-02-14T00:58:43Z",<br/>  "healthy_check_method": "tcp",<br/>  "healthy_check_option": "10\|5\|2\|5",<br/>  "session_sticky": ""<br/>}<br/>只有在请求参数 verbose=1 时才会返回此信息。 |
 | is_applied | Integer | 是否已更新配置，1 为已更新，0 为还未更新。 |
-| status | String | 负载均衡器状态, 有效值为pending, active, stopped, suspended, deleted, ceased。<br/>pending： 等待被创建<br/>active： 运行中<br/>stopped： 已关机<br/>suspended： 由于欠费, 已被暂停使用<br/>deleted： 已被删除, 但处于此状态的负载均衡器在2小时之内仍可以被恢复为 active 状态<br/>ceased： 已被彻底删除, 处于此状态的负载均衡器无法恢复 |
-| transition_status | String | 负载均衡器过渡状态, 有效值为creating, starting, stopping, updating, suspending, resuming, deleting。<br/>creating： 创建中, 由 pending 状态变成 active 状态<br/>starting： 启动中, 由 stopped 状态变成 active 状态<br/>stopping： 关闭中, 由 active 状态变成 stopped 状态<br/>updating： 更新中<br/>suspending： 欠费暂停中, 由 active/stopped 状态变成 suspended 状态<br/>resuming： 恢复中, 由 suspended 状态变成 active 状态<br/>deleting： 删除中, 由 active/stopped/suspended 状态变成 deleted 状态 |
+| status | String | 负载均衡器状态, 有效值为pending、active、 stopped、suspended、deleted、ceased。<br/>pending： 等待被创建<br/>active： 运行中<br/>stopped： 已关机<br/>suspended： 由于欠费, 已被暂停使用<br/>deleted： 已被删除, 但处于此状态的负载均衡器在2小时之内仍可以被恢复为 active 状态<br/>ceased： 已被彻底删除, 处于此状态的负载均衡器无法恢复 |
+| transition_status | String | 负载均衡器状态, 有效值为 creatin、starting、stopping、updating、suspending、resuming、deleting。<br/>creating： 创建中, 由 pending 状态变成 active 状态<br/>starting： 启动中, 由 stopped 状态变成 active 状态<br/>stopping： 关闭中, 由 active 状态变成 stopped 状态<br/>updating： 更新中<br/>suspending： 欠费暂停中, 由 active/stopped 状态变成 suspended 状态<br/>resuming： 恢复中, 由 suspended 状态变成 active 状态<br/>deleting： 删除中, 由 active/stopped/suspended 状态变成 deleted 状态 |
 | eips | Array | 与负载均衡器绑定的公网IP列表，其中每项数据格式为:<br/>{<br/>  "eip_id": "eip-1234abcd",<br/>  "eip_name": "api test",<br/>  "eip_addr": "x.x.x.x"<br/>} |
 | create_time | TimeStamp | 负载均衡器创建时间, 为UTC时间, 格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime)。 |
 | status_time | TimeStamp | 负载均衡器最近一次状态变更时间, 为UTC时间, 格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime)。 |
-| security_group_id | String | 负载均衡器所用的防火墙ID。 |
+| security_group_id | String | 负载均衡器所用的安全组 ID。 |
 
 ## 示例
 
