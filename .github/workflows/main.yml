@@ -23,7 +23,12 @@ jobs:
       # Runs a single command using the runners shell
       - name: Check out Git repository
         uses: actions/checkout@v2
-      - name: build dovs
-        run: cd $GITHUB_ACTION_PATH && hugo -v -D
-      - name: deploy docs
-        run: rsync -r $GITHUB_ACTION_PATH/public /opt/public && chown -R apache:apache /opt/public
+      - name: test
+        run: |
+            pwd
+            echo $GITHUB_ACTION_PATH
+            echo ${{ github.action_path }}
+#       - name: build docs
+#         run: cd $GITHUB_ACTION_PATH && hugo -v -D
+#       - name: deploy docs
+#         run: rsync -r $GITHUB_ACTION_PATH/public /opt/public && chown -R apache:apache /opt/public
