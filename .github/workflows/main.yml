@@ -21,5 +21,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Runs a single command using the runners shell
-      - name: deploy docs
-        run: /opt/script_renew/update.sh
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+#       - name: build dovs
+#         run: /
+#       - name: deploy docs
+#         run: /opt/script_renew/update.sh
