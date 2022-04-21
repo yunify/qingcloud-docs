@@ -1,7 +1,7 @@
 ---
 title: "什么是CDN"
 description: 介绍 CDN 服务的工作原理及应用场景。
-keyword: QingCloud, 青云, 云计算, 网络, CDN 服务
+keyword: CDN 服务,什么是CDN,内容分发
 draft: false
 weight: 1
 ---
