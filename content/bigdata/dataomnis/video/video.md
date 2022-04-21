@@ -1,5 +1,5 @@
 ---
-title: "视频专区"
+title: "快速上手"
 description: Test description
 draft: false
 type: "videoMain"
@@ -8,7 +8,7 @@ section1:
   title: 
   children:
     - title: SQL 作业开发及实践
-      time_duration: 09:17
+      time_duration: 08:13
       # poster: "https://s6.jpg.cm/2021/11/0K1qV.png"
       url: "https://bigdata-doc.pek3b.qingstor.com/dataomnis/01_sql_job.mp4"
       description: 通过大数据工作台的 SQL 作业进行 “网站热点词频统计”。
