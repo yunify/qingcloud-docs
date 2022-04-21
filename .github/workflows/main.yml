@@ -31,6 +31,6 @@ jobs:
           git reset --hard HEAD
           git pull
       - name: build docs
-        run: cd $WORKSPACES/ && hugo -v -D
+        run: cd $WORKSPACES/ && hugo -v -D --enableGitInfo=false
       - name: deploy docs
         run: rsync -r $WORKSPACES/public /opt/public && chown -R apache:apache /opt/public
