@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
   
 env:
-  WORKSPACES: '/opt/'
+  WORKSPACES: '/opt/qingcloud-docs'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -25,15 +25,11 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: Check out Git repository
-        uses: actions/checkout@v3
-        with:
-          clean: false
-          path: $WORKSPACES
-      - name: test
+        # uses: actions/checkout@v3
         run: |
-            pwd
-            echo "$GITHUB_ACTION_PATH"
-            echo "${{ github.action_path }}"
+          cd $WORKSPACES/
+          git clean -ffdx && git reset --hard HEAD
+          git pull
 #       - name: build docs
 #         run: cd $GITHUB_ACTION_PATH && hugo -v -D
 #       - name: deploy docs
