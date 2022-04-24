@@ -14,38 +14,38 @@ section2:
   children:
     - title: 动态与公告
       content: 产品动态
-      url: "/audio_and_video/vod/news/product_news"
+      url: "news/product_news"
 
     - title: 产品简介
       content: 本节介绍什么是云点播。
-      url: "/audio_and_video/vod/intro/10_vod"
+      url: "intro/10_vod"
 
     - title: 计费指南
       content: 本节介绍云点播如何计费。
-      url: "/audio_and_video/vod/nb/10_new_billing"  
+      url: "nb/10_new_billing"  
   
     - title: 快速入门
       content: 本节介绍如何快速使用云点播。
-      url: "/audio_and_video/vod/qs/10_qs_vod"
+      url: "qs/10_qs_vod"
 
     - title: 操作指南
       content: 本节介绍云点播的详细功能及使用。
-      url: "/audio_and_video/vod/um/10_purchase"
+      url: "um/10_purchase"
     
     - title: 常见问题
       content: 本节解答您在使用云点播时遇到的常见问题。
-      url: "/audio_and_video/vod/faq/10_faq_vod"
+      url: "faq/10_faq_vod"
 
 section3:
   title: 开发者指南
   children:
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: "/audio_and_video/vod/sdk/10_sdk"
+      url: "sdk/10_sdk"
 
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/audio_and_video/vod/api/10_api_overview"
+      url: "api/10_api_overview"
 
 
 
