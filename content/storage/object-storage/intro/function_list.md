@@ -122,12 +122,10 @@ QingStor 对象存储提供的日志服务，可以将指定 Bucket 的访问日
 QingStor 对象存储支持图片处理与鉴黄。
 - 图片处理：对存储于 QingStor 对象存储中的图片执行不同的操作，如格式转换，裁剪，翻转，水印等。
 - 图普科技鉴黄服务：帮助用户判断存储在 QingStor 对象存储中的图片是否为色情。
-- 媒体转码服务：对存储在 QingStor 对象存储中的音视频进行转码计算，并将结果保存至 Bucket 中。
 
 **参考操作**：
   - [图片处理](/storage/object-storage/manual/console/data_process/image_process/)
   - [图普科技鉴黄服务](/storage/object-storage/manual/console/data_process/tupu_porn/)
-  - [媒体转码](/storage/object-storage/manual/console/data_process/transfer/)
 
 ## 静态网站托管
 QingStor 对象存储面向静态网页内容提供托管服务，对静态网站的文件存储、访问权限控制、 CDN 分发加速，以及安全保障等一站式解决方案。
