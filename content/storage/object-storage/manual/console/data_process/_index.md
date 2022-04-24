@@ -12,7 +12,6 @@ collapsible: true
 
 - [图普科技鉴黄服务](tupu_porn/)
 - [图片处理](image_process/)
-- [媒体转码](transfer/)
 
 
 

@@ -10,7 +10,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 私�
 
 一个网络组件解绑一个或多个私有网络。
 
-**Request Parameters**
+## 请求参数
 
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -20,7 +20,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 私�
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -28,9 +28,9 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 私�
 | job_id | String | 网络组件解绑私有网络的 job ID 号 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=NFVLeaveVxnets
@@ -40,7 +40,7 @@ https://api.qingcloud.com/iaas/?action=NFVLeaveVxnets
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

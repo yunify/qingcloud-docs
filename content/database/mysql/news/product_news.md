@@ -7,6 +7,15 @@ collapsible: false
 draft: false
 
 product:
+    - time: 2022-04-12
+      title: MySQL Plus 1.1.1 版本正式上线
+      content: MySQL Plus 1.1.1 版本基于 MySQL 5.6、5.7、8.0 内核构建。<br>- 新增慢日志预览功能；<br>- 新放开 `Logical_backup_exec_timeout`、`Log_slave_updates`参数；<br>- 新增<b>集群状态切换</b>监控项；<br>- 修复旧形态1.6.1等版本升级到1.1.0版本失败问题；<br>- 修复集群自动化运维问题，加强集群服务稳定性。
+      url: ../../intro/version/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 全部
+
     - time: 2021-12-21
       title: MySQL Plus 1.1.0 版本正式上线
       content: MySQL Plus 1.1.0 版本基于 MySQL 5.6、5.7、8.0 内核构建。<br>- 新增逻辑备份和备份回档功能；<br>- 新增分析实例日志查询和下载功能；<br>- 新放开 `Block_encryption_mode`、`Binlog_transaction_dependency_tracking`、`Group_replication_transaction_size_limit`参数；<br>- 支持动态设定 `Max_connections` 参数值；<br>- `Sql_mode` 参数新增 NULL 值选项；<br>- 修复集群自动化运维问题，加强集群高可用稳定性。

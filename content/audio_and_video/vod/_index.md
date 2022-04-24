@@ -35,7 +35,6 @@ section2:
     - title: 常见问题
       content: 本节解答您在使用云点播时遇到的常见问题。
       url: "faq/10_faq_vod"
-
 section3:
   title: 开发者指南
   children:
@@ -46,7 +45,6 @@ section3:
     - title: API 文档
       content: 如何使用 API 文档
       url: "api/10_api_overview"
-
 
 
 section4:

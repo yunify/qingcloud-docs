@@ -16,7 +16,7 @@ product:
 
     - time: 2020-02-23
       title: 新增 Append Object 接口
-      content: 用于以追加写的方式上传对象到存储桶，通过 Append Object 接口创建的对象类型为 appendable。
+      content: 用于以追加写的方式上传对象到存储空间，通过 Append Object 接口创建的对象类型为 appendable。
       url: /storage/object-storage/api/object/append/
 
     - time: 2019-09-04
@@ -42,11 +42,11 @@ product:
     - time: 2017-12-08
       title: 兼容 AWS S3 v2/v4 参数签名
       content: 为了使众多基于 AWS S3 开发的应用程序、SDK、及第三方服务在不修改代码的前提下，更容易的接入到 QingStor，QingStor 兼容了 AWS S3 的接口。
-      url: /storage/object-storage/s3
+      url: /storage/object-storage/s3/compatible_apis/
 
     - time: 2017-12-08
       title: 兼容 S3 Multipart Copy 接口
-      url: /storage/object-storage/s3
+      url: /storage/object-storage/s3/compatible_apis/
 
     - time: 2017-12-03
       title: 新增自定义元数据功能
@@ -59,7 +59,7 @@ product:
 
     - time: 2017-08-28
       title: 兼容 S3 Get Bucket Location 接口
-      url: /storage/object-storage/s3
+      url: /storage/object-storage/s3/compatible_apis/
 
     - time: 2017-07-19
       title: 新增图片处理功能
@@ -127,7 +127,7 @@ product:
       url: /storage/object-storage/api/bucket/policy/
 
     - time: 2016-08-04
-      title: 新增跨域访问控制 (CORS) 接口，支持用户自定义设置 CORS 策略
+      title: 新增跨源资源共享 (CORS) 接口，支持用户自定义设置 CORS 策略
       url: /storage/object-storage/api/bucket/cors
 
     - time: 2016-08-04

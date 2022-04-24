@@ -39,9 +39,9 @@ Weight: 10
 
 2. 点击服务器 ID，进入服务器详情页面。
 
-   <img src="/compute/vm/_images/vm_modify_name_details.png" style="zoom:50%;" />
+3. 在基本属性区域，点击右上角按钮，弹出菜单窗口。
 
-3. 在基本属性区域，点击<img src="../../../_images/icon_more.png" style="zoom:35%;" />，弹出菜单窗口。
+   <img src="/compute/vm/_images/vm_modify_name_details.png" style="zoom:50%;" />
 
 4. 点击**修改**，弹出修改云服务器属性窗口。
 

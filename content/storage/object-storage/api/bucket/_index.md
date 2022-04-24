@@ -9,12 +9,12 @@ collapsible: true
 ---
 
 - [基础操作](./basic_opt)
-- [权限控制（ACL）](./acl)
+- [存储空间访问控制（ACL）](./acl)
 - [生命周期（Lifecycle）](./lifecycle)
 - [外部镜像（External Mirror）](./external_mirror)
-- [跨域资源共享（CORS）](./cors)
+- [跨源资源共享（CORS）](./cors)
 - [日志管理（Logging）](./logging)
 - [跨区域复制（Replication）](./replication)
 - [事件通知（Notification）](./notification)
 - [自定义域名（CNAME）](./cname)
-- [Bucket 策略（Policy）](./cname)
+- [存储空间策略（Policy）](./cname)
