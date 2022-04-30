@@ -1,5 +1,5 @@
 ---
-title: "HPC 用户指南"
+title: "用户指南"
 linkTitle: "HPC 用户指南"
 _build:
  render: false 
