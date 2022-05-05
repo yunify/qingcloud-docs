@@ -1,18 +1,22 @@
 ---
-title: "服务交付"
-description: 介绍服务商如何管理商品订单。
+title: "交付人工服务商品"
+description: 介绍人工服务商品的交付流程及操作。
 keyword: QingCloud, 青云, 云计算, 云市场, 人工服务, 交付
-weight: 40
+weight: 10
 draft: false
 ---
 
-服务商可通过交付中心快速完成服务交付，同时进行服务监管，保证服务交付的质量。
+本文介绍服务商品如何进行人工服务商品的交付。
 
-## 服务交付流程
+## 操作场景
 
-使用交付中心进行服务监管前，请先了解服务的整体交付流程，如下：
+用户购买人工服务商品后，服务商可以通过**交付中心**完成服务交付，同时进行服务监管，保证服务交付的质量。
 
-![](../../_images/delivery_process.svg)
+## 交付流程
+
+人工服务商品的整体交付流程如下：
+
+![](/appcenter/market/_images/delivery_process.svg)
 
 ## 操作说明
 
@@ -24,19 +28,19 @@ draft: false
 
    交付中心列表展示了所有服务类商品的交付信息，包括商品规格、交付方式、交付状态、创建时间等。
 
-   ![](../../_images/delivery_center_list.png)
+   ![](/appcenter/market/_images/delivery_center_list.png)
 
 ### 查看流程详情
 
 1. 在**交付中心**页面，点击列表中**操作**列的**流程详情**，进入**项目详情**页面。
 
-   ![](../../_images/service_project_detail.png)
+   ![](/appcenter/market/_images/service_project_detail.png)
 
 2. 在**交付流程详情**页面，可查看**交付流程详情**、**商品基本信息**及**用户信息**。
 
 3. 在**交付流程详情**区域，可通过以下操作详细查看流程详情：
    - 点击**流程日志**，进入**流程日志**页面，可查看到当前服务所有（包括用户及服务商）已执行过的流程。
-   - 点击 <img src="../../_images/chevron_down.png" style="zoom:50%;" /> 图标，在开展区域中，可查看该流程环节的执行详情。
+   - 点击 <img src="/appcenter/market/_images/chevron_down.png" style="zoom:50%;" /> 图标，在开展区域中，可查看该流程环节的执行详情。
 
 ### 确认需求
 
@@ -48,7 +52,7 @@ draft: false
 
 3. 根据需求实际情况，在**确认需求**环节确认需求。
 
-   ![](../../_images/confirm_requirment.png)
+   ![](/appcenter/market/_images/confirm_requirment.png)
 
    - 与用户核对无误后，若接受用户需求，则填写需求确认的相关信息并上传相关附件（若有），然后点击**提交确认**。
 
@@ -67,7 +71,7 @@ draft: false
 
 2. 在**需求实施**环节，填写需求实施详情并上传相关附件（若有），然后点击**提交验收**。
 
-   ![](../../_images/commit_check.png)
+   ![](/appcenter/market/_images/commit_check.png)
 
 4. 在弹出的确认框中，点击**提交**。
 
