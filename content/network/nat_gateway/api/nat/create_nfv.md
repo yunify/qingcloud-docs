@@ -12,7 +12,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | nfv_type | Integer | 网络组件的类型，值为 1 时代表创建 NAT 网关 | Yes |
 | nfv_spec | Integer | 网络组件的规格，可以是 1-3 ：<br/> 1 - 流量转发能力 1Mpps  <br/> 2 - 流量转发能力 2Mpps <br/> 3 - 流量转发能力 4Mpps | Yes |
@@ -32,7 +32,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | nfv_id | String | 创建的网络组件ID |
