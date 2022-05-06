@@ -1,0 +1,58 @@
+---
+title: "字符串函数"
+description:  
+keywords: 大数据工作台,系统内置函数
+weight: 20
+collapsible: false
+draft: false
+---
+
+
+
+| 函数                                                         | 返回类型 | 功能描述                                                     |
+| :----------------------------------------------------------- | -------- | :----------------------------------------------------------- |
+| string1 \|\| string2                                         | VARCHAR  | 拼接两个字符串，返回两个字符串串联的结果。string1 \|\| string2 与 CONCAT(string1, string2) 返回的结果相同。 |
+| CHAR_LENGTH(string)<br>CHARACTER_LENGTH(string)              | INT      | 返回 string 中的字符数量。                                   |
+| UPPER(string)                                                |          | 返回 string 的全大写字母形式。                               |
+| LOWER(string)                                                |          | 返回 string 的全小写字母形式。                               |
+| POSITION(string1 IN string2)                                 |          | 获取 string1 在 string2 中第一次出现的位置（**位置从1开始计数**）。当 string1 在 string2 中找不到时，返回0。 |
+| TRIM({BOTH \|LEADING \|TRAILING }string1 FROM string2 )      |          | 从 string2 中除去字符串首尾/首位/末尾的 string1。默认情况下，首尾的空格都被删除。 |
+| LTRIM(string)                                                |          | 去掉 string 字符串最左边的所有空格。例如 LTRIM(' Hello') 会返回 'Hello'。 |
+| RTRIM(string)                                                |          | 去掉 string 字符串最右边的所有空格。例如 RTRIM(' World ') 会返回 ' World'。 |
+| REPEAT(string, integer)                                      |          | 将 string 字符串重复 integer 次。例如 REPEAT('Meow', 3) 会返回 'MeowMeowMeow'。 |
+| REGEXP_REPLACE(string1, string2, string3)                    |          | 对 string1 字符串以 string2 表示的正则表达式进行替换，替换内容是 string3。例如 REGEXP_REPLACE('banana', 'a\|n', 'A') 返回 'bAAAAA'。 |
+| REPLACE(string1, string2, string3)                           |          | 将 string1 字符串中所有的 string2 替换为 string3。例如 REPLACE('banana', 'a', 'A') 返回 'bAnAnA'。 |
+| OVERLAY(string1 PLACING string2 FROM start_pos [ FOR length ]) |          | 将 string1 从第 start_pos 位（**start_pos 从1开始计数**）开始的子串替换为 string2。可以指定替换的长度。 |
+| SUBSTRING(string from pos [ FOR length])                     |          | 获取从 pos 位开始的子串，默认行为是直到源字符串的最后，可以使用 FOR 来指定子串的长度。其中字符串**起始 pos 从1开始计数**，而不是0。 |
+| REGEXP_EXTRACT(string1, string2[, integer])                  |          | 从 string1 中提取正则分组，正则表达式为 string2，第一个括号为第一组，以此类推。可通过第三个参数 integer 来指定所需的分组号（从1开始）。如果不指定分组号或者分组号为0，则表示返回整个正则表达式匹配到的字符串。例如，`REGEXP_EXTRACT('foothebar', 'foo(.*?)(bar)', 2)` 返回 'bar'。 |
+| INITCAP(string)                                              |          | 将 string 中的单词，转为以大写字母开头，其他是小写字母（首字母大写）的形式。例如 INITCAP('i have a dream') 返回 'I Have A Dream'。 |
+| CONCAT(string1, string2 …)                                   |          | 连接多个字符串。若任意字符串为 NULL，则结果为 NULL。         |
+| CONCAT_WS(separator, string1, string2, …)                    |          | 使用指定的分隔符 separator 连接多个字符串。如果 separator 为 NULL，则结果为 NULL。如果某个字符串为 NULL，则跳过它；但是不会跳过空字符串。例如 `CONCAT_WS('~', 'AA','BB', '', 'CC')` 会返回 `AA~BB~~CC`。 |
+| LPAD(text, length, padding)                                  |          | 使用 padding 指定的字符串从左侧填充 text 字符串到指定长度 length。如果 text 比 length 更长，则会截断到 length 的长度。 |
+| RPAD(text, length, padding)                                  |          | 使用 padding 指定的字符串从右侧填充 text 字符串到指定长度 length。如果 text 比 length 更长，则会截断到 length 的长度。 |
+| FROM_BASE64(string)                                          |          | 将 Base64 编码的 string 字符串解码为字符串。如果 string 为 NULL，则返回 NULL。 |
+| TO_BASE64(string)                                            |          | 将 string 表示的字符串编码为 Base64 字符串。                 |
+| ASCII(string)                                                |          | 返回 string 字符串中第一个字符的 ASCII 码。如果 string 为 NULL，则返回 NULL。例如 ASCII('an apple') 返回97，因为首字母 'a' 的 ASCII 编码是97。 |
+| CHR(integer)                                                 |          | 返回编码为 integer 的 ASCII 字符。例如 CHR(97) 返回 'a'。    |
+| ENCODE(string, charset)                                      |          | 将 string 字符串转码为 charset 指定的字符集编码的 BINARY 类型，例如 ENCODE(hello, 'GBK')。 |
+| DECODE(binary, charset)                                      |          | 将 binary 表示的 BINARY 类型以 charset 指定的字符集解码，例如 DECODE(binary_field, 'UTF-16LE')。 |
+| INSTR(string1, string2)                                      |          | 返回 string2 在 string1 字符串中首次出现的位置。如果任意参数为 NULL，结果为 NULL。 |
+| LEFT(string, n)                                              |          | 返回 string 从左起前 n 个字符。如果 n 为负数，则返回空字符串。如果任意参数为 NULL，结果为 NULL。 |
+| RIGHT(string, n)                                             |          | 返回 string 从右起后 n 个字符。如果 n 为负数，则返回空字符串。如果任意参数为 NULL，结果为 NULL。 |
+| LOCATE(string1, string2[, integer])                          |          | 返回跳过 integer 个字符后，string1 在 string2 中首次出现的位置（**参数顺序与 INSTR 函数相反**）。如果未找到，则返回0。如果任意参数为 NULL，结果为 NULL。 |
+| REGEXP(string, regex)                                        |          | 如果 regex 表示的正则表达式可以匹配 string 中的字符串的任意子串，那么返回 TRUE，否则返回 FALSE。如果任意参数为 NULL，结果为 NULL。 |
+| REVERSE(string)                                              |          | 反转 string 字符串。如果任意参数为 NULL，结果为 NULL。       |
+| SPLIT_INDEX(string, separator, index)                        |          | 将 string 表示的字符串以 separator 指定的分隔符拆分，并获取第 index 项，返回值为字符串 VARCHAR 类型。其中 **index 从0开始计数**。 |
+| SPLIT(string, separator)                                     |          | 将 string 表示的字符串以 separator 指定的分隔符拆分，并返回一个 Row 类型的对象。 |
+| STR_TO_MAP(string1[, string2, string3])                      |          | 将 string1 字符串用 string2 提供的数据分隔符（默认为半角逗号 `,`）和 string3 提供的键值间分隔符（默认为半角等号 `=`）进行拆分，结果为键值对 `MAP` 类型。例如 STR_TO_MAP('k1=v1,k2=v2,k3=v3') 返回键值对（非字符串）{'k1': 'v1', 'k2': 'v2', 'k3': 'v3'}。 |
+| SUBSTR(string[, pos[, length]])                              |          | 返回 string 字符串从 pos 位置开始，长度为 length 的子串。如果不提供 length，则默认到该字符串尾部。 |
+| EXPLODE(inputStr, separator)                                 |          | 将某个字符串分割为一张有多行的临时表。这个函数属于 Table Function，需要使用 LATERAL TABLE ( ) 关键字来引用此动态生成的临时表并作为 JOIN 条件的右表。 |
+| GET_ROW_ARITY(row)                                           |          | 获取某个 Row 类型对象 row 的列数。                           |
+| GET_ROW_FIELD_STR(row, index)                                |          | 获取某个 Row 类型对象 row 的第 index 列的值，**index 从0开始计数**。返回值为字符串 VARCHAR 类型。 |
+| GET_JSON_OBJECT(json_str, path_str)                          |          | 按 path_str 指定的 JSONPath 路径，获取某个 JSON 字符串 json_str 中的元素，可以任意嵌套。支持的 JSONPath 语法：`$`表示根对象，`.`表示子元素，`[]`表示数组索引，`*`为数组索引 [] 的通配符。 |
+| IS_ALPHA(content)                                            |          | 判断字符串是否只包含字母。                                   |
+| IS_DIGITS(content)                                           |          | 判断字符串是否只包含数字。                                   |
+| MD5(string)                                                  |          | 返回字符串的 MD5 值。                                        |
+| POSITION(string1 IN string2)                                 |          | 返回目标字符串 x 在被查询字符串y里第一次出现的位置。如果目标字符串 x 在被查询字符串 y 中不存在，返回值为0。 |
+| SHA1                                                         |          | 返回字符串 expr 的 SHA1 值。                                 |
+| SHA256                                                       |          | 返回字符串 expr 的 SHA256 值。                               |
