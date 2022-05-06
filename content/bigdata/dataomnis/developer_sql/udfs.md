@@ -2,7 +2,7 @@
 title: "自定义函数"
 description: 本小节主要介绍自定义函数的概念、及如何创建自定义函数。 
 keywords: 大数据工作台,自定义函数,UDF,UDTF,UDAF
-weight: 20
+weight: 21
 collapsible: false
 draft: false
 ---
