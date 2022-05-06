@@ -68,8 +68,8 @@ Host 别名和 Flink 参数均为可选配置，请根据实际情况进行选�
 
 | <span style="display:inline-block;width:140px">参数</span>  | <span style="display:inline-block;width:520px">参数说明</span>  |
 | :------------- | ------------------------------------------------------------ |
-| Host 别名       | 配置 IP 地址和 Host 名称。支持批量输入和单条输入。批量输入时，IP 地址和 Host 名称用空格分隔，多条配置换行输入。               |
-| Flink 参数      | 配置 Flink 参数，Yaml 格式。支持批量输入和单条输入。批量输入时，多个参数换行输入。              |
+| Host 别名       | 配置 Hosts 信息，包括 IP 地址和 Host 名称。支持批量输入和单条输入。批量输入时，IP 地址和 Host 名称用空格分隔，多条配置换行输入。<br>当作业中使用了 HBase 数据源时，作业绑定的计算集群需要配置 HBase 从节点的 Hosts 信息。            |
+| Flink 参数      | 配置 Flink 参数信息，Yaml 格式。支持批量输入和单条输入。批量输入时，多个参数换行输入。              |
 
 <img src="/bigdata/dataomnis/_images/cluster_other.png" alt="可选配置" style="zoom:50%;" />
 

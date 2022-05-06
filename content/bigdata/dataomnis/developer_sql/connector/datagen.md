@@ -59,23 +59,23 @@ CREATE TABLE Orders (
 
 | 数据类型                      | 支持的生成器      | 描述                          |
 | :---------------------------- | :---------------- | :---------------------------- |
-| BOOLEAN                       | random            |                               |
-| CHAR                          | random / sequence |                               |
-| VARCHAR                       | random / sequence |                               |
-| STRING                        | random / sequence |                               |
-| DECIMAL                       | random / sequence |                               |
-| TINYINT                       | random / sequence |                               |
-| SMALLINT                      | random / sequence |                               |
-| INT                           | random / sequence |                               |
-| BIGINT                        | random / sequence |                               |
-| FLOAT                         | random / sequence |                               |
-| DOUBLE                        | random / sequence |                               |
+| BOOLEAN                       | random            | -                              |
+| CHAR                          | random / sequence | -                              |
+| VARCHAR                       | random / sequence | -                              |
+| STRING                        | random / sequence | -                              |
+| DECIMAL                       | random / sequence | -                              |
+| TINYINT                       | random / sequence | -                              |
+| SMALLINT                      | random / sequence | -                              |
+| INT                           | random / sequence | -                              |
+| BIGINT                        | random / sequence | -                              |
+| FLOAT                         | random / sequence | -                              |
+| DOUBLE                        | random / sequence | -                              |
 | DATE                          | random            | 当前日期。                    |
 | TIME                          | random            | 当前时间。                    |
 | TIMESTAMP                     | random            | 当前时间戳。                  |
 | TIMESTAMP WITH LOCAL TIMEZONE | random            | 当前时间戳。                  |
-| INTERVAL YEAR TO MONTH        | random            |                               |
-| INTERVAL DAY TO MONTH         | random            |                               |
+| INTERVAL YEAR TO MONTH        | random            | -                              |
+| INTERVAL DAY TO MONTH         | random            | -                             |
 | ROW                           | random            | 生成带有随机子字段的行。      |
 | ARRAY                         | random            | 生成带有随机元素的 array。    |
 | MAP                           | random            | 生成带有随机元素的 map。      |
