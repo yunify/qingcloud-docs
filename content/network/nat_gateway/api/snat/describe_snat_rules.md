@@ -10,7 +10,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, SNAT
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | natgw_ids.n | String | 一个或多个 NAT 网关 ID | Yes |
 | status.n | String | SNAT 状态：0 禁用， 1 启用 | No |
@@ -25,7 +25,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, SNAT
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | total_count | int | 存在的 SNAT 的数量 |

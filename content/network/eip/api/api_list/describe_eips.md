@@ -12,7 +12,7 @@ keyword: 公网 IP API,获取公网 IP 信息
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | eips.n | String | 公网 IP 的 ID | No |
 | instance_id | String | 云服务器 ID，可得到已分配给此云服务器的公网 IP | No |
@@ -24,11 +24,11 @@ keyword: 公网 IP API,获取公网 IP 信息
 | limit | Integer | 返回数据长度，默认为 20，最大 100 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../gei_api/parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | eip_set | Array | JSON 格式的公网IP数据列表，每项参数可见下面 **Response Item** |
@@ -37,7 +37,7 @@ keyword: 公网 IP API,获取公网 IP 信息
 
 **Response Item**
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | eip_id | String | 公网IP唯一标识 ID |
 | eip_name | String | 公网IP名称 |
