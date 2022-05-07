@@ -14,7 +14,7 @@ weight: 1
 
 完成本操作需要以下几个步骤：
 
-![](../../_images/qs_process.svg)
+![](../../_images/qs_process_1.svg)
 
 1. [准备工作](../qs_prepare/)
 
