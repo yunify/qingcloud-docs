@@ -4,13 +4,15 @@ description: 介绍入驻青云云市场的所需要的条件和信息。
 keyword: QingCloud, 青云, AppCenter, 云市场, 入驻
 weight: 10
 draft: false
+aliases:
+  - /appcenter/market/serviceprovider/10_prerequisite/
 ---
 
 若您需要在**青云云市场**发布应用，需要[申请入驻](https://appcenter.qingcloud.com/apply)青云云市场。
 
 入驻青云云市场需要满足[企业入驻条件](#企业条件)。在应用上架之前，需要完成[企业资质](#企业资质)的审核和[相关合约](#相关合约)的签署。
 
-<img src="../../_images/um_appserver_apply.png" style="zoom:60%;" />
+<img src="../../../_images/um_appserver_apply.png" style="zoom:60%;" />
 
 ## 企业条件
 
@@ -50,7 +52,7 @@ draft: false
 
 ### 企业注册证件
 
-> **注意：**
+> **注意**
 >
 > <li>请服务商正确上传对应的扫描件并确保清晰。</li>
 >
@@ -85,7 +87,7 @@ draft: false
 - 签署《青云Qingcloud 云市场服务商专属条款》
 - 签署应用相关的《服务商产品清单》
 
-> **注意：**
+> **注意**
 >
 > 合约当中会涉及**保证金**和**基础服务费**。
 >
