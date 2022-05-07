@@ -2,7 +2,7 @@
 title: "查看监控视图"
 description: 高防IP操作方式
 draft: false
-weight: 30
+weight: 50
 keyword: 高防IP, 高防IP实例, 添加转发策略
 
 ---
@@ -22,3 +22,4 @@ keyword: 高防IP, 高防IP实例, 添加转发策略
 回源监控统计当前经过高防 IP 清洗过的流量流入您的业务的宽带和流量的情况。
 
 ![](../../_images/09.png)
+
