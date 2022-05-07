@@ -20,7 +20,7 @@ keyword: 高防IP, 高防IP实例, 添加转发策略
 
 请根据业务需求按照以下步骤进行业务接入。
 
-> 同一个高防IP可同时进行域名接入和端口接入，总计最多不超过五十个。
+> 同一个高防IP可同时进行域名接入和端口接入，总计最多不超过50个。
 
 ### 域名接入
 
@@ -70,7 +70,7 @@ keyword: 高防IP, 高防IP实例, 添加转发策略
 
 8. 模拟客户端，配置本地 host 解析到高防 IP。
 
-   以 Windows 10为例，在C:\Windows\System32\drivers\etc中打开HOSTS文件。
+   以 Windows 10为例，在 C:\Windows\System32\drivers\etc 中打开 HOSTS 文件。
 
    增加一条如下内容，并保存。
 
@@ -121,7 +121,7 @@ keyword: 高防IP, 高防IP实例, 添加转发策略
 
 #### 放行回源 IP
 
-> 为避免源站拦截 DDoS 高防 IP 的回源 IP 而影响业务，建议您在源站的防火墙、Web应用防火墙、IPS入侵防护系统、流量管理等设备上设置白名单策略，设置放行DDoS高防回源 IP。
+> 为避免源站拦截 DDoS 高防 IP 的回源 IP 而影响业务，建议您在源站的防火墙、Web应用防火墙、IPS 入侵防护系统、流量管理等设备上设置白名单策略，设置放行 DDoS 高防回源 IP。
 
 4. 以青云云防火墙为例，创建云防火墙访问控制策略，详细操作请参见[访问控制策略](/security/firewall/manual/cfw/)。
 
@@ -129,7 +129,7 @@ keyword: 高防IP, 高防IP实例, 添加转发策略
 
 5. 模拟客户端，配置本地 host 解析到高防 IP。
 
-   以 Windows 10为例，在C:\Windows\System32\drivers\etc中打开HOSTS文件。
+   以 Windows 10为例，在 C:\Windows\System32\drivers\etc 中打开 HOSTS 文件。
 
    增加一条如下内容，并保存。
 
@@ -151,7 +151,7 @@ keyword: 高防IP, 高防IP实例, 添加转发策略
 
 > 通过 DDoS 高防域名接入添加网站业务后，您需要更新域名的 DNS 解析，将网站业务流量牵引到 DDoS 高防 IP。如果是非域名的方式，则需要将服务端的 IP 指定为高防 IP。完成切换后，网站的访问流量都会先经过 DDoS 高防清洗，再转发到源站服务器。
 
-7. 如果您使用了青云的 DNS 服务，则参考青云DNS配置子域名进行配置，详情请参见[管理子域名](/site/dns/manual/dnsrecord/subzone/)。
+7. 如果您使用了青云的 DNS 服务，则参考青云 DNS 配置子域名进行配置，详情请参见[管理子域名](/site/dns/manual/dnsrecord/subzone/)。
 
    ![](../../_images/06.png)
 
