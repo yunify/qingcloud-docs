@@ -1,5 +1,5 @@
 ---
-title: "创建负载均衡器实例"
+title: "创建监听器"
 description: 介绍如何创建负载均衡器。
 keyword: 负载均衡器,实例,创建
 draft: false
@@ -10,11 +10,7 @@ weight: 1
 
 ## 前提条件
 
-已创建私有网络或公网 IP。具体操作请参见[创建 VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)及[创建公网 IP](/network/eip/manual/ipv4/outband_ipv4/#申请外部绑定的-ipv4-公网-ip)。
-
-> **说明**
->
-> 创建公网负载均衡器需要绑定公网 IP，创建私有网络负载均衡器需要绑定私有网络，创建公网+私网负载均衡器则需要同时绑定公网 IP 及私有网络。
+已[创建负载均衡器](/network/loadbalancer/manual/lb/cfg_rsyslog/)。
 
 ## 操作步骤
 
