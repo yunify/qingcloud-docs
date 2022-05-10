@@ -1,9 +1,9 @@
 ---
 title: "添加 TCP 监听器"
 description: 介绍如何创建TCP监听器。
-keyword: 负载均衡器,实例,创建
+keyword: 负载均衡器,监听器,TCP
 draft: false
-weight: 10
+weight: 20
 ---
 
 您可以在负载均衡实例上添加一个 TCP 监听器转发来自客户端的 TCP 协议请求。

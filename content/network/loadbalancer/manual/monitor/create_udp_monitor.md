@@ -1,9 +1,9 @@
 ---
 title: "添加 UDP 监听器"
 description: 介绍如何创建UDP监听器。
-keyword: 负载均衡器,实例,创建
+keyword: 负载均衡器,监听器,UDP
 draft: false
-weight: 10
+weight: 21
 ---
 
 您可以在负载均衡器实例上添加一个 UDP 监听器转发来自客户端的 UDP 协议请求。
