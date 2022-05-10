@@ -1,6 +1,6 @@
 ---
 title: "发票管理"
-weight: 12
+weight: 15
 description: 介绍如何申请开具发票。
 draft: false
 keyword: QingCloud, 青云, 云计算, 费用中心,发票管理, 发票申请发票

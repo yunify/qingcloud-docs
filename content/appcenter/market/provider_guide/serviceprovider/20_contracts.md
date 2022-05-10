@@ -4,6 +4,8 @@ description: 介绍入驻云市场的流程。
 keyword: QingCloud, 青云, AppCenter, 云市场,入驻
 weight: 30
 draft: false
+aliases:
+  - /appcenter/market/serviceprovider/20_contracts/
 ---
 
 合作伙伴在青云云市场上给用户提供服务之前，请按照如下步骤申请入驻。
@@ -11,9 +13,9 @@ draft: false
 1. [注册](https://console.qingcloud.com/signup) 成为青云QingCloud 用户，完成企业认证。
 2. [申请](https://appcenter.qingcloud.com/apply) 成为青云QingCloud 云市场服务商。
 
-关于入驻需要的企业资质以及需要签署的相关合约，请参见 [入驻须知](../10_prerequisite)。
+关于入驻需要的企业资质以及需要签署的相关合约，请参见[入驻须知](../10_prerequisite)。
 
-> **注意：**
+> **注意**
 >
 > 青云云市场对所有青云用户开放，可以不用申请成为青云云市场服务商也能使用。
 >
