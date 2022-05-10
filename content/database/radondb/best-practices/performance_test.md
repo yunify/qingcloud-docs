@@ -36,7 +36,7 @@ sysbench: 16 表, 512 线程，随机写，5000 万条数据。
 | Item                       | Transaction Per Second (TPS) | Response Time(ms) |
 | :------------------------- | ---------------------------: | :---------------: |
 | RadonDB (4 组存储节点)     |                        26589 |        20         |
-| 单机 MySQL (QingCloud RDB) |                         9346 |        73         |
+| 单机 MySQL (RDB) |                         9346 |        73         |
 
 结果显示 RadonDB 的延迟是单机 MySQL 的 1/3，但性能几乎是单机的 3 倍，这要得益于 RadonDB 对大表进行切分后，用户的写操作在这些小表上可并发式执行。
 

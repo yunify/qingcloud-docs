@@ -1,7 +1,7 @@
 ---
 title: "修改配置参数"
 description: 本小节主要介绍如何修改 OpenSearch 配置参数。 
-keyword: OpenSearch 修改账号；
+keyword: 修改账号,OpenSearch,搜索引擎,大数据
 weight: 15
 collapsible: false
 draft: false
@@ -14,6 +14,8 @@ draft: false
 > **注意**
 > 
 > 各参数的值设置需根据云服务器、存储磁盘配置情况，以及数据库其他参数情况进行调整。
+> 
+> 参数调整后可能导致集群重启，请在业务低峰期进行。
 
 本小节主要介绍如何修改 OpenSearch 集群的配置参数。
 

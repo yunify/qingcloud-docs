@@ -28,7 +28,7 @@ weight: 10
 
  ![](/storage/object-storage/_images/set_bucket_notification2.png)
 
-3. 在弹出的 **添加通知** 对话框内，根据页面提示信息，填写相关参数后，点击 **提交** 按钮：
+3. 在弹出的对话框内，根据页面提示信息，填写相关参数后，点击 **提交** 按钮：
 
  ![](/storage/object-storage/_images/set_bucket_notification3.png)
 
@@ -38,13 +38,11 @@ weight: 10
    - **处理方式**： 可选值为 `推送通知` 与 `图片处理`。
    - **通知 URL**：接收 `推送通知` 或 `图片处理` 结果的 URL。
    - **事件类型**： 
-
       - 当 **处理方式** 设置为 `推送通知` 时，可选 **事件类型** 有 `创建对象完成`，`删除对象完成`，`终止分段上传`，`完成分段上传`；
       - 当 **处理方式** 设置为 `图片处理` 时，可选 **事件类型** 有 `创建对象完成`，`完成分段上传`。
-
    - **自定义参数**：当 **处理方式** 设置为 `图片处理` 时，该参数设置有效。用于设置图片处理的相关参数，以及处理后的结果存储 Bucket 以及相应的对象名。
 
-4. 成功创建对跨域复制规则，列表显示：
+4. 成功创建对跨源复制规则，列表显示：
 
  ![](/storage/object-storage/_images/set_bucket_notification4.png)
 
@@ -52,7 +50,7 @@ weight: 10
 
  ![](/storage/object-storage/_images/set_bucket_notification5.png)
 
-6. 弹出 **提示** 对话框，确认无误后，点击 **确认** 按钮：
+6. 弹出对话框，确认无误后，点击 **确认** 按钮：
 
  ![](/storage/object-storage/_images/set_bucket_notification6.png)
 

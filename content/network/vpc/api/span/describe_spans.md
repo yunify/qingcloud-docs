@@ -1,7 +1,7 @@
 ---
 title: "DescribeSpans"
 description: 获取一个或多个 SPAN 的配置。
-keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
+keyword: SPAN, 网络流量镜像
 weight: 2
 draft: false
 ---
@@ -10,9 +10,9 @@ draft: false
 
 可根据 SPAN ID，名称， IP 地址作过滤条件，来获取 SPAN 列表。 如果不指定任何过滤条件，默认返回你的所有 SPAN。
 
-**Request Parameters**
+## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | spans.n | String | SPAN ID | No |
 | span_name | String | SPAN名称 | No |
@@ -24,9 +24,9 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | span_set | Array | JSON 格式的SPAN列表，每项参数可见下面 [Response Item](#response-item) |
@@ -34,9 +34,9 @@ draft: false
 
 **Response Item**
 
-**Example**
+## 示例
 
-_Example Request_
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeSpans
@@ -44,7 +44,7 @@ https://api.qingcloud.com/iaas/?action=DescribeSpans
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

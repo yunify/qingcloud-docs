@@ -13,7 +13,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，80端口
 
 >**说明**
 >
->以下文档是基于用户已经在青云完成备案操作，关于未完成备案导致80端口无法访问，可以查看文档[为什么80端口被禁用](https://docsv3.qingcloud.com/compute/vm/faq/high_requency_problem/port_80_disabled/)。
+>以下文档是基于用户已经在青云完成备案操作，关于未完成备案导致80端口无法访问，可以查看文档[为什么80端口被禁用](/compute/vm/faq/common_operations/os_func_manage/port_80_disabled/)。
 
 ## 排查思路
 

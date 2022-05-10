@@ -81,7 +81,7 @@ draft: false
 | auto_scale_step | Dict | 集群各角色各项配置参数的自动伸缩步长值。<br>格式为`{"master": {"count": 1}, "slave": {"volume_size": 20}}`。<li>`count`表示该角色每次自动伸缩的节点数量。<li>`volume_size`表示该角色每次自动伸缩的磁盘大小。 |
 | backup_policy| String | 集群备份的策略。 |
 | endpoints | Dict | 集群的 endpoints 设置。 |
-| app_version_info | Dict | 集群所属的应用版本信息。<li>格式为 `{ "status_time":"2017-04-21T02:34:24Z", "upgrade_policy":[], "resource_kit":"ca-nx8rerlv", "version_id":"appv-70gegwmp", "name":"QingCloud 1.0 - ZooKeeper 3.4.9" } `|
+| app_version_info | Dict | 集群所属的应用版本信息。<li>格式为 `{ "status_time":"2017-04-21T02:34:24Z", "upgrade_policy":[], "resource_kit":"ca-nx8rerlv", "version_id":"appv-70gegwmp", "name":"v1.0 - ZooKeeper 3.4.9" } `|
 
 ## 示例 
 
@@ -178,7 +178,7 @@ https://api.qingcloud.com/iaas/?action=DescribeClusters
         "upgrade_policy":[],
         "resource_kit":"ca-nx8rerlv",
         "version_id":"appv-70gegwmp",
-        "name":"QingCloud 1.0 - ZooKeeper 3.4.9"
+        "name":"v1.0 - ZooKeeper 3.4.9"
       }
     }
   ],

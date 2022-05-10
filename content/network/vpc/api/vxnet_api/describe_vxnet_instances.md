@@ -1,7 +1,7 @@
 ---
 title: "DescribeVxnetInstances"
 description: 获取私有网络中的云服务器。
-keyword: QingCloud, 青云, 云计算, VPC, 私有网络
+keyword: VPC, 私有网络
 weight: 6
 draft: false
 ---
@@ -10,9 +10,9 @@ draft: false
 
 可通过云服务器ID，镜像ID，云服务器配置类型，云服务器状态作为过滤条件进行筛选。
 
-**Request Parameters**
+## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | vxnet | String | 私有网络ID | Yes |
 | instances.n | String | 云服务器ID | No |
@@ -25,9 +25,9 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | instance_set | Array | JSON 格式的私有网络的云服务器列表，每项数据可见下面 [ResponseItemType](#responseitemtype) |
@@ -36,7 +36,7 @@ draft: false
 
 **ResponseItemType**
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | vxnet_id | String | 私有网络 ID |
 | instance_id | String | 云服务器ID |
@@ -53,9 +53,9 @@ draft: false
 | dhcp_options | Dict | 私有网络中针对该云服务器的 DHCP 配置。 |
 | private_ip | String | 云服务器的位于该私有网络的IP。 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeVxnetInstances
@@ -65,7 +65,7 @@ https://api.qingcloud.com/iaas/?action=DescribeVxnetInstances
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

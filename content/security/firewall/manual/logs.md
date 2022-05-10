@@ -1,9 +1,8 @@
 ---
 title: "日志审计"
 linkTitle: "日志审计"
-date: 2020-02-28T10:08:56+09:00
 description: 如何进行日志审计操作
-draft: false
+draft: true
 weight: 7
 keyword: 云服务器, QingCloud，安全，日志审计
 ---

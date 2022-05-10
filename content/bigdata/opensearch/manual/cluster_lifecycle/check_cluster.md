@@ -1,7 +1,7 @@
 ---
 title: "查看集群信息"
 description: 本小节主要介绍如何查看 OpenSearch 集群信息。 
-keyword: OpenSearch 集群信息
+keyword: 集群信息,OpenSearch,搜索引擎,大数据
 weight: 10
 collapsible: false
 draft: false

@@ -11,7 +11,7 @@ QingStor 对象存储是面向海量非结构化数据的通用数据存储平�
 
 在使用 QingStor 对象存储之前，建议用户对 Bucket、Object、Zone、访问域名等基本概念先进行了解，以便更好的理解与使用 QingStor 对象存储的功能。详情可参考 [基本概念](/storage/object-storage/intro/object-storage/#基本概念)。
 
-QingStor 对象存储支持以下功能：
+QingStor 对象存储支持但不限于以下功能：
 
 ## 上传文件
 用户在上传文件至 QingStor 对象存储之前，需在青云 QingCloud 任一区域创建一个 Bucket。Bucket 成功创建后，用户可上传任意文件至该 Bucket。
@@ -45,21 +45,21 @@ QingStor 对象存储支持生命周期管理。用户可根据需求，设置�
 
 用户可以对生命周期很明确的对象配置相应的规则，来管理 Bucket，以达到节约存储成本的目的。举例来说：
   - 比如国家规定留存相关网络日志不少于 6 个月，用户可以对这些日志文件定义一个规则，6 个月以后，将这些文件自动删除。
-  - 一般对于互联网应用，新数据过一段时间后，访问量会从高频到低频下降，数据由热变冷，用户可以配置规则将这些对象，过一段时间以后转换到低频存储。
+  - 一般对于互联网应用，新数据过一段时间后，访问量会从高频到低频下降，数据由热变冷。用户可以配置规则将这些对象，经过指定时间以后转换到低频存储。
 
 **参考操作**：
   - [生命周期管理](/storage/object-storage/manual/console/bucket_manage/lifecycle/)
 
-## 访问控制
-QingStor 对象存储提供多种安全功能用于维护数据的完整性，并有助于确保目标用户可以访问相应的资源。用户可通过如下方式控制资源的访问权限：
-- Bucket ACL：Bucket 访问控制列表。Bucket 的拥有者默认具备所有权限，用户根据需求，可配置公开读或公开写（即不附带认证信息的匿名访问），也可以针对特定青云用户来配置读写权限。
-- Bucket Policy：Bucket 策略。用户可通过设置 Bucket 策略，赋予其他用户相应 Bucket 及其 Object 的访问权限。Bucket 策略可以通过细致地指定 API 级别的控制，实现 Bucket ACL 和 Object ACL 所不能实现的一些功能，比如防盗链。
-- Bucket CORS：Bucket 的跨域资源共享策略。当用户利用 JavaScript AJAX 向 QingStor 对象存储发起的请求属于跨源请求时，默认情况下浏览器出于安全考虑，不允许调用不同域名下的资源，这种情况下需要为 Bucket 配置 CORS 规则。
+## 数据访问权限
+QingStor 对象存储提供多种安全功能用于维护数据的完整性，并有助于确保目标用户可以访问相应的资源。用户可通过如下方式设置资源的访问权限：
+- Bucket ACL：存储空间访问控制。用户根据需求，可将该存储空间配置为公开可读或公开可写（即不附带认证信息的匿名访问），也可以针对特定青云用户来配置读写权限。
+- Bucket Policy：存储空间策略。用户可通过设置存储空间策略，赋予其他用户相应 Bucket 及其 Object 的访问权限。存储空间策略可以通过细致地指定针对 API 级别的控制，来实现 Bucket ACL 和 Object ACL 所不能实现的一些功能，比如防盗链。
+- CORS：跨源资源共享。当用户利用 JavaScript AJAX 向 QingStor 对象存储发起的请求属于跨源请求时，默认情况下浏览器出于安全考虑，不允许调用不同域名下的资源，这种情况下需要为 Bucket 配置 CORS 规则。
 
 **参考操作**：
-  - [设置 Bucket ACL](/storage/object-storage/manual/console/bucket_manage/access_control/#存储空间访问控制列表bucket-acl)
+  - [设置 Bucket ACL](/storage/object-storage/manual/console/bucket_manage/access_control/#存储空间访问控制bucket-acl)
   - [设置 Bucket Policy](/storage/object-storage/manual/console/bucket_manage/access_control/#存储空间策略bucket-policy)
-  - [设置 Bucket CORS](/storage/object-storage/manual/console/bucket_manage/access_control/#存储空间的跨域资源共享策略bucket-cors)
+  - [设置 CORS](/storage/object-storage/manual/console/bucket_manage/access_control/#跨源资源共享cors)
   - [设置防盗链](/storage/object-storage/beat-practices/policy/)
 
 ## 数据加密
@@ -122,15 +122,13 @@ QingStor 对象存储提供的日志服务，可以将指定 Bucket 的访问日
 QingStor 对象存储支持图片处理与鉴黄。
 - 图片处理：对存储于 QingStor 对象存储中的图片执行不同的操作，如格式转换，裁剪，翻转，水印等。
 - 图普科技鉴黄服务：帮助用户判断存储在 QingStor 对象存储中的图片是否为色情。
-- 媒体转码服务：对存储在 QingStor 对象存储中的音视频进行转码计算，并将结果保存至 Bucket 中。
 
 **参考操作**：
   - [图片处理](/storage/object-storage/manual/console/data_process/image_process/)
   - [图普科技鉴黄服务](/storage/object-storage/manual/console/data_process/tupu_porn/)
-  - [媒体转码](/storage/object-storage/manual/console/data_process/transfer/)
 
 ## 静态网站托管
-QingStor 对象存储面向静态网页内容提供托管服务，对静态网站的文件存储、访问控制、 CDN 分发加速，以及安全保障等一站式解决方案。
+QingStor 对象存储面向静态网页内容提供托管服务，对静态网站的文件存储、访问权限控制、 CDN 分发加速，以及安全保障等一站式解决方案。
 
 **参考操作**：
   - [静态网站托管方案](/storage/object-storage/beat-practices/web_hosting/)

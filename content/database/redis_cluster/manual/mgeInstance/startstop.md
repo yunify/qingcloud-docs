@@ -19,7 +19,7 @@ keyword: QingCloud，Redis Cluster，数据库，redis 集群，启动集群，�
 
 ## 启动集群
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 
@@ -33,7 +33,7 @@ keyword: QingCloud，Redis Cluster，数据库，redis 集群，启动集群，�
 
 ## 关闭集群
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **数据库与缓存** > **键值数据库 Redis**，进入 Redis Cluster 管理页面。
 
@@ -49,7 +49,7 @@ keyword: QingCloud，Redis Cluster，数据库，redis 集群，启动集群，�
 
 您可以通过定时器功能，创建定时任务，实现定时启动或关闭集群的功能。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台](https://console.qingcloud.com/login)。
 
 2. 选择**产品与服务** > **运维与管理** > **定时器**，进入定时器列表页面。
 

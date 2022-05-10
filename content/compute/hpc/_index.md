@@ -1,14 +1,14 @@
 ---
-title: "高性能计算 EHPC"
-linkTitle: "高性能计算 EHPC"
+title: "高性能计算"
+linkTitle: "高性能计算"
 weight: 2
 draft: false
 collapsible: true
 type: "product"
 
 section1:
-  title: 高性能计算 EHPC 
-  vice_title: HPC高性能计算是青云QingCloud推出的一站式超算平台，提供弹性和可扩展的HPC计算资源，是传统HPC技术与云计算技术的融合升级。提供丰富多样的使用模式适配多种应用场景，统一的管理系统提供最优的使用体验，工程师、研究人员可以突破本地 HPC 基础设施限制，快速开始设计创新。
+  title: 高性能计算 
+  vice_title: HPC 高性能计算是青云QingCloud 推出的一站式超算平台，提供弹性和可扩展的 HPC 计算资源，是传统 HPC 技术与云计算技术的融合升级。提供丰富多样的使用模式适配多种应用场景，统一的管理系统提供最优的使用体验，工程师、研究人员可以突破本地 HPC 基础设施限制，快速开始设计创新。
   # todo add qingstor introduction video
   # video: "https://pek3a.qingstor.com/workshop/webhosting%20feb.16%20v3.mp4"
   # video_img: "/images/video.png"
@@ -30,7 +30,7 @@ Section2:
 
     - title: 快速入门
       content: 快速入门
-      url: "quick-start/base"
+      url: "quick-start/open_hpc"
 
     - title: 操作指南
       content: 操作指南
@@ -46,7 +46,7 @@ Section2:
 
     - title: 作业实战
       content: lammps实战
-      url: "work/Lammps"
+      url: "work/lammps"
 
 section3:
   title: 开发者指南
@@ -65,8 +65,8 @@ section3:
 
 section4:
   children:
-    - title: 了解：什么是HPC
-      content: HPC提供丰富多样的使用模式适配多种应用场景，统一的管理系统提供最优的使用体验，工程师、研究人员可以突破本地 HPC 基础设施限制，快速开始设计创新。
+    - title: 了解：什么是高性能计算
+      content: 高性能计算提供丰富多样的使用模式适配多种应用场景，统一的管理系统提供最优的使用体验，工程师、研究人员可以突破本地 HPC 基础设施限制，快速开始设计创新。
       vice_title: 了解的第一步
       children:
         - title: 产品简介

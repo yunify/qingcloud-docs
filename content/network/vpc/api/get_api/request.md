@@ -1,7 +1,7 @@
 ---
 title: "构造请求"
 description: 本小节主要介绍如何构造 VPC 网络相关的 API 请求。 
-keyword: QingCloud, 青云, 云计算, VPC, 请求, api 请求, 构造请求
+keyword: VPC, 请求, api 请求, 构造请求
 draft: false
 weight: 10
 collapsible: false

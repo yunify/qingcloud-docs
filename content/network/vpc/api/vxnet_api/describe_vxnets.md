@@ -1,16 +1,16 @@
 ---
 title: "DescribeVxnets"
 description: 获取私有网络列表。
-keyword: QingCloud, 青云, 云计算, VPC, 私有网络
+keyword: VPC, 私有网络
 weight: 2
 draft: false
 ---
 
 可根据私有网络ID作过滤条件，获取私有网络列表。 如果不指定任何过滤条件，默认返回你所拥有的所有私有网络。
 
-**Request Parameters**
+## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | vxnets.n | String | 私有网络ID | No |
 | vxnet_type | Integer | 私有网络类型，分为 1 - 受管私有网络，0 - 自管私有网络。 | No |
@@ -23,9 +23,9 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | vxnet_set | Array | JSON 格式的私有网络数据列表，每项数据可见下面 [ResponseItemType](#responseitemtype) |
@@ -34,7 +34,7 @@ draft: false
 
 **ResponseItemType**
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | vxnet_type | Integer | 私有网络类型，分为 1 - 受管私有网络，0 - 自管私有网络。 |
 | vxnet_id | String | 私有网络 ID |
@@ -60,9 +60,9 @@ draft: false
 
  |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeVxnets
@@ -70,7 +70,7 @@ https://api.qingcloud.com/iaas/?action=DescribeVxnets
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {
@@ -98,7 +98,7 @@ _Example Response_:
 }
 ```
 
-_Example Request_:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeVxnets
@@ -107,7 +107,7 @@ https://api.qingcloud.com/iaas/?action=DescribeVxnets
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

@@ -1,16 +1,16 @@
 ---
 title: "DescribeRoutingTableResources"
 description: 获取路由表以及资源的对应关系。
-keyword: QingCloud, 青云, 云计算, VPC, 路由表
+keyword: VPC, 路由表
 weight: 7
 draft: false
 ---
 
 获取路由表以及资源的对应关系。
 
-**Request Parameters**
+## 请求参数
 
-| Parameter Name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | action | String | 请求动作，可选值：DescribeRoutingTableResources | Yes |
 | rtables.n | String | 一个或多个路由表的ID | No |
@@ -18,18 +18,18 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | resource_user_group_set | Array | 获取到的路由表和资源的对应关系的列表 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 | total_count | Integer | 获取到的路由表和资源的对应关系的列表的长度 |
 
-**Example**
+## 示例
 
-_Example Request_
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeRoutingTableResources

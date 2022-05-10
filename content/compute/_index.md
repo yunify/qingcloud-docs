@@ -12,11 +12,11 @@ Section1:
     - title: 云服务器
       url: "/compute/vm/intro/instance/"
 
+    - title: 高性能计算 HPC
+      url: "/compute/hpc/intro/intro/"
+
     - title: 镜像
       url: "/compute/image/intro/image/"
-
-    - title: 高性能计算 EHPC
-      url: "/compute/hpc/intro/intro/"
 
     - title: SSH 密钥
       url: "/compute/ssh/intro/ssh/"

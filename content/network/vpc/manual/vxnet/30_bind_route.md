@@ -1,7 +1,7 @@
 ---
 
 title: "绑定路由表"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, 私有网络, 路由表
+keyword: VPC, VPC 网络, 私有网络, 路由表
 description: 介绍如何为私有网络绑定或解绑路由表。
 draft: false
 weight: 30
@@ -17,7 +17,7 @@ weight: 30
 
 ## 操作步骤
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入 **VPC 网络**页面。
 

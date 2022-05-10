@@ -1,7 +1,7 @@
 ---
 title: "什么是 ChronusDB"
 description: 本小节主要介绍 ChronuDB 简要功能特性。 
-keyword: chronusdb 功能特性, 
+keyword: 产品简介,时序数据库,ChronusDB,数据库 
 weight: 10
 collapsible: false
 draft: false

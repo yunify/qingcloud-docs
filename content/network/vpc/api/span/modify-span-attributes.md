@@ -1,16 +1,16 @@
 ---
 title: "ModifySpanAttributes"
 description: 修改SPAN属性。
-keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
+keyword: SPAN, 网络流量镜像
 weight: 5
 draft: false
 ---
 
 修改 SPAN 属性， 包括ip地址，流量类型。
 
-**Request Parameters**
+## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | span_id | String | SPAN ID | Yes |
 | span_name | String | SPAN名称 | No |
@@ -22,16 +22,16 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=ModifySpanAttributes
@@ -39,7 +39,7 @@ https://api.qingcloud.com/iaas/?action=ModifySpanAttributes
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

@@ -1,7 +1,7 @@
 ---
 title: "基本概念"
 description: 本小节主要介绍 OpenSearch 基本概念。 
-keyword: OpenSearch 基本概念, 
+keyword: 基本概念,OpenSearch,搜索引擎,大数据 
 weight: 100
 collapsible: false
 draft: false
@@ -23,17 +23,9 @@ draft: false
 
 ## 索引（index）
 
-索引是一个拥有相似特征的文档的集合，相当于关系型数据库中的一个数据库。例如，您可以拥有一个客户数据的索引，一个商品目录的索引，以及一个订单数据的索引。
+索引是一个拥有相似特征的文档的集合，例如，您可以拥有一个客户数据的索引，一个商品目录的索引，以及一个订单数据的索引。
 
 一个索引通常使用一个名称（所有字母必须小写）来标识，当针对这个索引的文档执行索引、搜索、更新和删除操作的时候，这个名称被用来指向索引。
-
-|<span style="display:inline-block;width:330px">OpenSearch</span> |<span style="display:inline-block;width:330px">关系型数据库</span>|
-|:----|:----|
-|   索引（index）     |  数据库（database）  |
-|   文档类型（type）    |  表（table）  |
-|   文档（document）  |  一行数据（row）   |
-|   字段（field） |  一列数据（column）| 
-|   映射（mapping） |  数据库的组织和结构（schema）| 
 
 ## 类型（type）
 
@@ -76,24 +68,3 @@ OpenSearch 把一个完整的索引分成多个分片，可以把一个大的索
   -提高系统的容错性，当某个节点某个分片损坏或丢失时可以从副本中恢复。
 
   -提高 OpenSearch 的查询效率，OpenSearch 会自动对搜索请求进行负载均衡。
-
-<!--## recovery
-
-recovery 是指数据恢复或数据重新分布，OpenSearch 在有节点加入或退出时会根据机器的负载对索引分片进行重新分配，宕机的节点重新启动时也会进行数据恢复。
-
-## gateway
-
-gateway 是指 OpenSearch 索引快照的存储方式，OpenSearch 默认优先将索引存放到内存中，当内存满时再将这些索引持久化存储至本地硬盘。
-
-gateway 对索引快照进行存储，当 OpenSearch 集群关闭再重新启动时就会从 gateway 中读取索引备份数据。OpenSearch 支持多种类型的 gateway，有本地文件系统（默认）、分布式文件系统、Hadoop 的 HDFS 和 QingStor。
-
-## discovery.zen
-
-discovery.zen 是指 OpenSearch 的自动发现节点机制，OpenSearch 是一个基于 p2p 的系统，一般先经过广播寻找存在的节点，再经多播协议进行节点之间的通信，同时也支持点对点的交互。
-
-## Transport
-
-Transport 是指 OpenSearch 内部节点或集群与客户端的交互方式，默认使用 TCP 协议进行交互。
-
-此外，通过插件的方式集成，也支持使用 HTTP 协议（JSON 格式）、thrift、servlet、memcached、zeroMQ 等传输协议进行交互。
--->

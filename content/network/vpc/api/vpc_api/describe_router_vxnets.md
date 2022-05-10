@@ -1,7 +1,7 @@
 ---
 title: "DescribeRouterVxnets"
 description: 获取 VPC 网络管理的私有网络列表。
-keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络, 私有网络
+keyword: VPC,  VPC 网络, 私有网络
 weight: 12
 draft: false
 ---
@@ -10,9 +10,9 @@ draft: false
 
 可根据 VPC 网络ID，私有网络ID，等作为过滤条件，来获取私有网络列表。
 
-**Request Parameters**
+## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | router | String |  VPC 网络ID, “*” 表示显示所有 VPC 网络 | Yes |
 | vxnet | String | 私有网络ID | No |
@@ -23,9 +23,9 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | router_vxnet_set | Array | JSON 格式的私有网络列表，每项参数可见下面 [ResponseItemType](#responseitemtype) |
@@ -34,7 +34,7 @@ draft: false
 
 **ResponseItemType**
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | router_id | String |  VPC 网络ID |
 | vxnet_id | String | 私有网络ID |
@@ -45,9 +45,9 @@ draft: false
 | features | Integer | 私有网络开启的功能标记位<br/> “0” 表示不开启 DHCP 和内网 DNS 功能。<br/> “1” 表示只开启 DHCP 地址分配功能。<br/> “2” 表示只开启内网 DNS 功能。<br/> “3” 表示同时开启 DHCP 地址分配和内网 DNS 功能。 |
 | create_time | TimeStamp | 私有网络连接 VPC 网络的创建时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeRouterVxnets
@@ -55,7 +55,7 @@ https://api.qingcloud.com/iaas/?action=DescribeRouterVxnets
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

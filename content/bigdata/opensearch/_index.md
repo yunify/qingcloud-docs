@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: OpenSearch
-  vice_title: OpenSearch 是一种托管服务，支持在 AppCenter 管理并升级。为用户提供实时日志处理、全文搜索和数据分析等基础能力。
+  vice_title: OpenSearch 服务是一种搜索引擎托管服务，支持在 AppCenter 管理并升级。为用户提供实时日志处理、全文搜索和数据分析等基础能力。
 
 Section2:
   title: 用户指南
@@ -29,12 +29,16 @@ Section2:
       url: "quickstart/create_cluster/"
 
     - title: 操作指南
-      content: 学习上手管理 OpenSearch 集群和相关服务。
+      content: 学习上手管理和使用 OpenSearch 集群相关服务。
       url: "manual/cluster_lifecycle/cluster_info/"
 
     - title: 最佳实践
       content: OpenSearch 最佳实践
-      url: "best_practices/dedicated_master_node"
+      url: "best_practices/dedicated_master_node/"
+
+    - title: 常见问题
+      content: 常见问题
+      url: "faq/product/"
 
 section3:
   title: 开发者指南

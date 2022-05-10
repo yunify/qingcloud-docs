@@ -7,6 +7,14 @@ collapsible: false
 draft: false
 
 product:
+    - time: 2022-04-07
+      title: PG11-高可用版-V1.0.9 版本正式上线
+      content: PostgreSQL PG11-高可用版-V1.0.9 新上线。<br>- 更新 timescaleDB 插件版本到 1.7.3。<br>- 优化监控项字段，提升用户体验。
+      url: ../../intro/edition/
+      tags:
+      - 新功能
+      zone: 全区域
+
     - time: 2021-12-30
       title: PG11-高可用版-V1.0.8 版本正式上线
       content: PostgreSQL PG11-高可用版-V1.0.8 新上线。<br>- 新增灾备管理功能，支持集群异地灾备。<br>- 新增账号管理功能，支持在线创建、修改、查看和删除数据库用户账号。<br>- 优化监控项字段，提升用户体验。
@@ -89,7 +97,7 @@ product:
 
     - time: 2017-10-10
       title: PostgreSQL 上线 AppCenter
-      content: PostgreSQL 通过 AppCenter 管理平台以独立应用方式提供服务。QingCloud PostgreSQL 提供多个版本服务，分别满足开发测试和生产环境下的数据库服务需求。
+      content: PostgreSQL 通过 AppCenter 管理平台以独立应用方式提供服务。PostgreSQL 提供多个版本服务，分别满足开发测试和生产环境下的数据库服务需求。
       url: ../../intro/introduction/
 
     - time: 2015-03-23
@@ -99,7 +107,7 @@ product:
 
     - time: 2015-02-10
       title: RDS for PostgreSQL 首上云端
-      content: QingCloud 推出国内首款云端 PostgreSQL 数据库服务，基于 PostgreSQL 9.3 架构，支持主从节点、在线扩容、自动备份和监控报警等功能，并且运行于100%二层隔离的私有网络中，结合QingCloud提供的高性能硬盘和实时副本，最大限度地保护用户数据的安全性。
+      content: 国内首款云端 PostgreSQL 数据库服务，基于 PostgreSQL 9.3 架构，支持主从节点、在线扩容、自动备份和监控报警等功能，并且运行于100%二层隔离的私有网络中，结合QingCloud提供的高性能硬盘和实时副本，最大限度地保护用户数据的安全性。
       url: ../../intro/introduction/
 
 ---

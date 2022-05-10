@@ -1,7 +1,7 @@
 ---
 title: "JoinVxnet"
 description: 将云服务器加入到私有网络。
-keyword: QingCloud, 青云, 云计算, VPC, 私有网络
+keyword: VPC, 私有网络
 weight: 3
 draft: false
 ---
@@ -14,9 +14,9 @@ draft: false
 
 
 
-**Request Parameters**
+## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | vxnet | String | 私有网络 ID (如果要指定 ip 地址，格式为'私有网络 ID\|IP 地址') | Yes |
 | instances.n | String | 加入到网络的云服务器 ID | Yes |
@@ -24,17 +24,17 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | job_id | String | 执行任务的 Job ID |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=JoinVxnet
@@ -45,7 +45,7 @@ https://api.qingcloud.com/iaas/?action=JoinVxnet
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

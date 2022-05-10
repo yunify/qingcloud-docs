@@ -1,23 +1,22 @@
 ---
 title: "CreateVxnets"
 description: 创建新的私有网络。
-keyword: QingCloud, 青云, 云计算, VPC, 私有网络
+keyword: VPC, 私有网络
 weight: 1
 draft: false
 ---
 
 
-
 创建新的私有网络。
 
-青云私有网络有两种类型： 受管私有网络 ( vxnet_type=1 ) 和 自管私有网络 ( vxnet_type=0 ) ，
+云平台私有网络有两种类型： 受管私有网络 ( vxnet_type=1 ) 和 自管私有网络 ( vxnet_type=0 ) ，
 
-*   受管私有网络可以使用青云路由器来配置和管理其网络，使得网络搭建更方便快捷。
+*   受管私有网络可以使用路由器来配置和管理其网络，使得网络搭建更方便快捷。
 *   自管私有网络需要您自行配置和管理网络，适用于对底层网络有特殊需求的用户。
 
-**Request Parameters**
+## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | vxnet_name | String | 私有网络名称 | No |
 | vxnet_type | Integer | 私有网络类型，1 - 受管私有网络，0 - 自管私有网络。 | Yes |
@@ -27,17 +26,17 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | vxnets | Array | 创建成功的私有网络ID列表 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=CreateVxnets
@@ -47,7 +46,7 @@ https://api.qingcloud.com/iaas/?action=CreateVxnets
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

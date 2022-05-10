@@ -1,7 +1,7 @@
 ---
 title: "公共参数"
 description: api 请求公共参数。 
-keyword: QingCloud, 青云, 云计算, VPC, API 调用, 请求参数, 共参参数
+keyword: VPC, API 调用, 请求参数, 共参参数
 draft: false
 weight: 20
 ---
@@ -12,7 +12,7 @@ weight: 20
 
 | <span style="display:inline-block;width:120px">参数</span> | 描述                                                         | 说明                                                         |
 | :--------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| action                                                     | 每个 API 都有自己的 action，用来标识所请求指令。例如 `RunInstances`。 | 完整的指令名称列表请参见 API指令列表。                       |
+| action                                                     | 每个 API 都有自己的 action，用来标识所请求指令。例如 `RunInstances`。 | 完整的指令名称列表请参见 [API 指令列表](../../vpc_api/create_routers/)。 |
 | zone                                                       | 区域 ID，当 API 请求是需要在某个具体的区域执行时，需要加上该参数。例如 `pek3a`。 | 目前支持的区域 ID 有：<br/>pek3a：北京3区-A<br/>pek3：北京3区(包括 pek3b/pek3c/pek3d)<br/>sh1a：上海1区-A<br/>gd2：广东2区(包括 gd2a/gd2b)<br/>ap2a：亚太2区-A |
 | time_stamp                                                 | 请求串生成时间，格式为 `YYYY-MM-DDThh:mm:ssZ`，例如 `”2013-08-27T13:58:35Z”`，具体格式可以参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime)。 | 这个时间为 UTC 时间，假设您的本地时间为北京时间 `UTC+8` ，您需要将其转化为 `UTC+0` 的时间。 |
 | access_key_id                                              | 申请的 API 密钥 ID，例如 `QYACCESSKEYIDEXAMPLE`。            | -                                                            |

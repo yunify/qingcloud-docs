@@ -1,7 +1,7 @@
 ---
 title: "回收站"
 description: 本小节主要介绍如何恢复以删除的 OpenSearch 集群。 
-keyword: OpenSearch 恢复集群
+keyword: 恢复集群,OpenSearch,搜索引擎,大数据
 weight: 100
 collapsible: false
 draft: false
@@ -19,11 +19,11 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码。
+- 已获取管理控制台登录账号和密码。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **运维与管理** > **回收站**，进入回收站列表页面。
 3. 勾选目标集群，点击操作栏**恢复**，弹出资源恢复确认窗口。
 4. 确认信息无误后，点击**提交**，返回收站列表页面。

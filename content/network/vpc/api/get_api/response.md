@@ -1,7 +1,7 @@
 ---
 title: "返回结构"
 description: API 返回结构。 
-keyword: QingCloud, 青云, 云计算, VPC, API 返回结构
+keyword: VPC, API 返回结构
 draft: false
 weight: 40
 ---

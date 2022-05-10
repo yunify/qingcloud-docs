@@ -1,6 +1,6 @@
 ---
 title: "修改 VPC 规格类型"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络
+keyword: VPC, VPC 网络
 description: 介绍如何修改 VPC 的规格类型。
 draft: false
 weight: 25
@@ -15,11 +15,11 @@ weight: 25
 - 免费型 VPC 不支持直接升级到其他规格。
 - 若您当前使用的非免费型 VPC 网络绑定了公网 IP 或告警策略，降为免费型 VPC 过程中，将自动进行解绑，且降级后无法恢复。
 - 若您当前使用的非免费型 VPC 网络中运行着弹性容器实例（QCI）、AppCenter 集群、边界路由器等需要访问外网的业务，降为免费型 VPC 后将无法访问外网。
-- 若因误操作导致部署在 VPC 网络中的业务无法访问外网或无法被外网访问，您可以 [提交工单](https://console.qingcloud.com/tickets/) 向青云技术支持寻求帮助。
+- 若因误操作导致部署在 VPC 网络中的业务无法访问外网或无法被外网访问，您可以提交工单向技术支持寻求帮助。
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC网络**，进入**VPC网络**页面。
 

@@ -1,7 +1,7 @@
 ---
 title: "CreateSpan"
 description: 创建一个SPAN。
-keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
+keyword: SPAN, 网络流量镜像
 weight: 1
 draft: false
 ---
@@ -10,9 +10,9 @@ draft: false
 
 创建一个 SPAN。
 
-**Request Parameters**
+## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | span_name | String | SPAN名称 | No |
 | flag | Integer | 镜像流量的类型： 入流量: 1; 出流量: 2, 出入流量: 3（默认值） | No |
@@ -23,17 +23,17 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | CreateSpanResponse |
 | span_id | String | 创建的SPAN ID |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=CreateSpan
@@ -41,7 +41,7 @@ https://api.qingcloud.com/iaas/?action=CreateSpan
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

@@ -7,6 +7,15 @@ collapsible: false
 draft: false
 
 product:
+    - time: 2022-04-12
+      title: MySQL Plus 1.1.1 版本正式上线
+      content: MySQL Plus 1.1.1 版本基于 MySQL 5.6、5.7、8.0 内核构建。<br>- 新增慢日志预览功能；<br>- 新放开 `Logical_backup_exec_timeout`、`Log_slave_updates`参数；<br>- 新增<b>集群状态切换</b>监控项；<br>- 修复旧形态1.6.1等版本升级到1.1.0版本失败问题；<br>- 修复集群自动化运维问题，加强集群服务稳定性。
+      url: ../../intro/version/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 全部
+
     - time: 2021-12-21
       title: MySQL Plus 1.1.0 版本正式上线
       content: MySQL Plus 1.1.0 版本基于 MySQL 5.6、5.7、8.0 内核构建。<br>- 新增逻辑备份和备份回档功能；<br>- 新增分析实例日志查询和下载功能；<br>- 新放开 `Block_encryption_mode`、`Binlog_transaction_dependency_tracking`、`Group_replication_transaction_size_limit`参数；<br>- 支持动态设定 `Max_connections` 参数值；<br>- `Sql_mode` 参数新增 NULL 值选项；<br>- 修复集群自动化运维问题，加强集群高可用稳定性。
@@ -65,12 +74,12 @@ product:
 
     - time: 2019-07-26
       title: MySQL Plus 全新形态上线
-      content: 青云QingCloud MySQL Plus 为了提高用户使用体验和提供更多的优惠，发布了全新的版本，支持基础版、高可用版、金融版三个产品系列；同时为提高使用性能，新增读写分离和只读实例节点。
+      content: MySQL Plus 为了提高用户使用体验和提供更多的优惠，发布了全新的版本，支持基础版、高可用版、金融版三个产品系列；同时为提高使用性能，新增读写分离和只读实例节点。
       url: ../../intro/list/
 
     - time: 2017-06-29
       title: MySQL Plus 上线 AppCenter
-      content: 青云QingCloud MySQL Plus 通过 AppCenter 管理平台以独立应用方式提供服务。<br>MySQL Plus 是一款具备金融级强一致性、主从秒级切换，集 InnoDB+TokuDB 双存储引擎支持的增强型 MySQL 集群应用。作为 QingCloud 关系型数据库 RDB 的升级版本，QingCloud MySQL Plus 主要面向对数据一致性和高可用性有着强烈需求的高端企业级用户。
+      content: MySQL Plus 通过 AppCenter 管理平台以独立应用方式提供服务。<br>MySQL Plus 是一款具备金融级强一致性、主从秒级切换，集 InnoDB+TokuDB 双存储引擎支持的增强型 MySQL 集群应用。作为关系型数据库 RDB 的升级版本，MySQL Plus 主要面向对数据一致性和高可用性有着强烈需求的高端企业级用户。
       url: ../../intro/introduction/
 
 ---

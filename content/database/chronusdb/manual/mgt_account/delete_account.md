@@ -1,7 +1,7 @@
 ---
 title: "删除账号"
 description: 本小节主要介绍如何删除 ChronusDB 数据库账号。 
-keyword: chronusdb 删除账号；
+keyword: 删除账号,时序数据库,ChronusDB,数据库 
 weight: 20
 collapsible: false
 draft: false
@@ -21,12 +21,12 @@ draft: false
 
 ## 前提条件
 
-- 已获取 QingCloud 管理控制台登录账号和密码，且已获取集群操作权限。
+- 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 ChronusDB 集群，且集群状态为**活跃**。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 2. 选择**产品与服务** > **数据库与缓存** > **时序数据库 ChronusDB**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**基本属性**区域，展开集群基本属性管理栏。

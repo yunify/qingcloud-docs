@@ -1,7 +1,7 @@
 ---
 title: "集群概述"
 description: 本小节主要介绍 ChronusDB 集群基本信息。 
-keyword: ChronusDB 集群信息；
+keyword: 集群信息,时序数据库,ChronusDB,数据库 
 weight: 05
 collapsible: false
 draft: false

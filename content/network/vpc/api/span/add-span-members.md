@@ -1,7 +1,7 @@
 ---
 title: "AddSpanMembers"
 description: 给SPAN添加成员。
-keyword: QingCloud, 青云, 云计算, SPAN, 网络流量镜像
+keyword: SPAN, 网络流量镜像
 weight: 6
 draft: false
 ---
@@ -10,9 +10,9 @@ draft: false
 
 给SPAN添加成员，成员可以是instance id或vxnet id。
 
-**Request Parameters**
+## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | span | String | SPAN ID | Yes |
 | resources.n | String | SPAN成员，可以是instance id或vxnet id | Yes |
@@ -20,17 +20,17 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | job_id | String | 执行任务的 Job ID |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=AddSpanMembers
@@ -39,7 +39,7 @@ https://api.qingcloud.com/iaas/?action=AddSpanMembers
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

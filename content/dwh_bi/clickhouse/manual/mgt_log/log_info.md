@@ -1,7 +1,7 @@
 ---
 title: "日志概述"
 description: 本小节主要介绍 ClickHouse 日志基本信息。 
-keyword: ClickHouse 日志信息；
+keyword: 日志信息,数据仓库,ClickHouse
 weight: 05
 collapsible: false
 draft: false

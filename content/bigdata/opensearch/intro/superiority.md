@@ -1,7 +1,7 @@
 ---
 title: "产品优势"
 description: 本小节主要介绍 OpenSearch 产品优势。 
-keyword: OpenSearch 产品优势 
+keyword: 产品优势,OpenSearch,搜索引擎,大数据 
 weight: 20
 collapsible: false
 draft: false
@@ -13,9 +13,9 @@ draft: false
 
 更多说明，请参见 [Hot-Warm” Architecture in Elasticsearch 5.x](https://www.elastic.co/blog/hot-warm-architecture-in-elasticsearch-5-x)。
 
-## 高可用专用主节点
+## 高可用专有主节点
 
-通过专用主节点，可提高集群稳定性。专用主节点执行群集管理任务，但不保留数据也不响应数据上传请求。此群集管理任务的卸载可增加您的域的稳定性。
+通过专有主节点，可提高集群稳定性。专有主节点执行群集管理任务，但不保留数据也不响应数据上传请求。此群集管理任务的卸载可增加您的域的稳定性。
 
 ## Logstash 与 QingStor 对象存储集成
 

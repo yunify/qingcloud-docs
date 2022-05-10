@@ -1,7 +1,7 @@
 ---
 title: "DeleteRouterStaticEntries"
 description: 删除一条或多条 VPC 网络规则条目。
-keyword: QingCloud, 青云, 云计算, VPC,  VPC 网络, 路由规则
+keyword: VPC,  VPC 网络, 路由规则
 weight: 31
 draft: false
 ---
@@ -10,26 +10,26 @@ draft: false
 
 删除一条或多条 VPC 网络规则条目。在删除 VPC 网络规则条目之后，你需要执行 [_UpdateRouters_](../update_routers/) 来使规则删除生效。
 
-**Request Parameters**
+## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | router_static_entries.n | String |  VPC 网络规则条目ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 | router_static_entries | Array | 删掉的 VPC 网络规则条目ID列表 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=DeleteRouterStaticEntries
@@ -39,7 +39,7 @@ https://api.qingcloud.com/iaas/?action=DeleteRouterStaticEntries
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

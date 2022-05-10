@@ -1,7 +1,7 @@
 ---
 title: "DescribeRouters"
 description: 获取一个或多个 VPC 网络。
-keyword: QingCloud, 青云, 云计算, VPC, 创建
+keyword: VPC, 创建
 weight: 2
 draft: false
 ---
@@ -10,9 +10,9 @@ draft: false
 
 可根据 VPC 网络ID，状态， VPC 网络名称作过滤条件，来获取 VPC 网络列表。 如果不指定任何过滤条件，默认返回你所拥有的所有 VPC 网络。 如果指定不存在的 VPC 网络ID，或非法状态值，则会返回错误信息。
 
-**Request Parameters**
+## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | routers.n | String |  VPC 网络ID | No |
 | vxnet | String | 私用网络ID | No |
@@ -26,9 +26,9 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | router_set | Array | JSON 格式的 VPC 网络数据列表，每项参数可见下面 [ResponseItemType](#responseitemtype) |
@@ -37,7 +37,7 @@ draft: false
 
 **ResponseItemType**
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | router_id | String |  VPC 网络ID |
 | router_name | String |  VPC 网络名称 |
@@ -53,9 +53,9 @@ draft: false
 | eip | Dict |  VPC 网络的公网IP信息<br/>eip_id： 公网IP的ID<br/>eip_name： 公网IP名称<br/>eip_addr： 公网IP地址 |
 | vxnets | Array |  VPC 网络连接的私有网络信息<br/>vxnet_id： 私有网络ID<br/>nic_id： 网卡ID<br/>只有在请求参数 verbose=1 时才会返回此信息。 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeRouters
@@ -64,7 +64,7 @@ https://api.qingcloud.com/iaas/?action=DescribeRouters
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

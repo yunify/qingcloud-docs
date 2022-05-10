@@ -1,6 +1,6 @@
 ---
 title: "网关过滤控制(ACL)"
-keyword: QingCloud, 青云, 云计算, VPC, 网关过滤控制, ACL
+keyword: VPC, 网关过滤控制, ACL
 description: 介绍如何使用网关过滤控制功能。
 draft: false
 weight: 70
@@ -8,9 +8,9 @@ weight: 70
 ---
 
 
-在VPC 网络的详情页面，管理配置页签中，可以看到“网关过滤控制（ACL）”功能。 
+在 VPC 网络的详情页面，管理配置页签中，可以看到**网关过滤控制（ACL）**功能。 
 
-网关过滤控制(ACL)用于配置 隧道/VPN/NAT 的 ACL 过滤规则，以完成VPC的网络流量在通过 隧道/VPN/NAT 与其他网络互通时的访问控制
+网关过滤控制(ACL) 用于配置 隧道/VPN/NAT 的 ACL 过滤规则，以完成 VPC 的网络流量在通过 隧道/VPN/NAT 与其他网络互通时的访问控制。
 
 以GRE隧道为例，假设现有两个VPC 网络的GRE隧道配置如下：
 

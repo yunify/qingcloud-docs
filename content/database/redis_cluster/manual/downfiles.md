@@ -6,7 +6,10 @@ weight: 50
 draft: false
 ---
 
-从`Redis 5.0.5 - QingCloud 2.0.0` 版本开始，**配置参数**页面添加了开启 WebConsole 服务的参数，开启WebConsole 后，您可以通过该服务下载日志、RDB 数据文件和 AOF 文件。
+Redis Cluster 通过集成 Caddy 组件，提供 WebConsole 服务，支持在线查看和下载日志、RDB 数据、 AOF 等文件的服务。
+
+- 通过浏览器地址 `http://<Redis_IP>:80` 访问服务页面，支持在线查看和下载文件。
+- 通过安装 wget 等工具，支持使用命令直接下载文件。
 
 ## 前提条件
 

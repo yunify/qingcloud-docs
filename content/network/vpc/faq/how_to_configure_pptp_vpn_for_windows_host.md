@@ -1,6 +1,6 @@
 ---
 title: "在 Windows 云服务器中配置 PPTP-VPN 客户端"
-keyword: QingCloud, 青云, 云计算, VPC, VPC 网络, PPTP, VPN
+keyword: VPC, VPC 网络, PPTP, VPN
 description: 介绍如何在Windows云服务器中配置PPTP VPN客户端。
 draft: false
 weight: 1
@@ -8,7 +8,9 @@ weight: 1
 
 ## 项目介绍
 
-客户希望自己在办公或者家庭网络能拨入到青云VPC的私有网络，以实现内网访问云上部署的业务，因为VPN隧道是加密通讯的，安全性比较可靠，另外使用起来比较方便；以下介绍的是如何在Windows云服务器部署PPTP客户端。
+客户希望自己在办公或者家庭网络能拨入到云平台 VPC 的私有网络，以实现内网访问云上部署的业务，因为VPN隧道是加密通讯的，安全性比较可靠，另外使用起来比较方便；以下介绍的是如何在Windows云服务器部署PPTP客户端。
+
+## 操作步骤
 
 ### 1.通过以下步骤找到VPN服务端开启入口
 
@@ -18,7 +20,7 @@ weight: 1
 
 <img src="../homer/pptp_01.png" width="60%" height="100%">
 
-### 2.放行防火墙下行GRE协议以及TCP 1723端口协议，并应用修改防火墙，如图
+### 2.放行防火墙下行GRE协议以及TCP 1723端口协议，并应用修改防火墙
 
 <img src="../homer/pptp_02.png" width="60%" height="100%">
 
@@ -34,8 +36,6 @@ weight: 1
 - 用户名：填写自己配置的用户名
 - 密码：填写自己设置的密码
 
-
-
 可以参考以下截图 
 
 <img src="../homer/pptp_03.png" width="60%" height="100%">
@@ -46,7 +46,7 @@ weight: 1
 
 <img src="../homer/pptp_05.png" width="60%" height="100%">
 
-​                                      <img src="../homer/pptp_06.png" width="60%" height="100%">
+<img src="../homer/pptp_06.png" width="60%" height="100%">
 
 ### 5.使用以下命令检查本地是否拨入成功
 
@@ -56,7 +56,7 @@ weight: 1
 ipconfig /all 
 ```
 
-### 6.本地测试是否可以与青云的VPC内网互通
+### 6.本地测试是否可以与 VPC 内网互通
 
 
 
