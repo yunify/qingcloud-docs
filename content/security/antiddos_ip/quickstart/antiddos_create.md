@@ -44,5 +44,5 @@ keyword: 高防IP, 高防IP实例, 添加转发策略
 
    ![](../../_images/03.png)
 
-   开通完成后，进入实例列表界面。高防IP需正常使用，还需要进行业务接入，详情请参见[业务接入](/security/antiddos_ip/manual/antiddos_access/)。
+   开通完成后，进入实例列表界面。高防IP需正常使用，还需要进行业务接入，详情请参见[业务接入](/security/antiddos_ip/quickstart/antiddos_access/)。
 
