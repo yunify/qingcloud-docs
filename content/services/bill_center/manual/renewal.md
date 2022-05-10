@@ -1,15 +1,14 @@
 ---
 title: "续费管理"
-weight: 7
+weight: 12
 description: 介绍如何进行续费项查询及续费操作。
 draft: false
 keyword: QingCloud, 青云, 云计算, 续费管理, 续费查询, 费用
+aliases:
+  - /service/bill_center/manual/order/renewal/
 ---
 
-
 **续费管理**支持查看即将到期的合约以及进行包年包月产品的续约操作。
-
-
 
 支持续费的产品有：
 
@@ -19,7 +18,7 @@ keyword: QingCloud, 青云, 云计算, 续费管理, 续费查询, 费用
 - 存储：硬盘
 - AppCenter：数据库与中间件、大数据、容器、研发与运维、安全管理、企业管理、物联网 (IoT)、人工智能 (AI）、区块链 (BlockChain)、CDN与视频、行业增值
 
-![续费管理](../../../_images/continue_order.png)
+![续费管理](../../_images/continue_order.png)
 
 - **续费查询**
 
@@ -36,5 +35,4 @@ keyword: QingCloud, 青云, 云计算, 续费管理, 续费查询, 费用
 - **设置自动续费**
 
   您可以在列表中的**操作**列，点击**设置自动续费**，设置为自动续费该产品。
-
 
