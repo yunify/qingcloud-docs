@@ -4,7 +4,7 @@
     {{ partial "head.html" . }}
   </head>
   <body class="td-{{ .Kind }}">
-    <header {{if eq .Site.Params.IsConsole true}} style="display:none;"  {{end}}>
+    <header>
       {{ partial "navbar.html" . }}
     </header> 
 <main role="main" class="td-main">

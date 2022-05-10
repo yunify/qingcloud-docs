@@ -28,6 +28,95 @@
 @import "pageinfo";
 @import "styles_project";
 
+header {
+  position: sticky;
+  top: 0px;
+  padding-top: 20px;
+  z-index: 999;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.ins-search {
+  // position: relative;
+  margin: auto;
+  z-index: 99;
+  .input {
+    height: 40px;
+    background-color: #fff;
+    font-size: 12px;
+  }
+  .icon {
+    width: 24px !important;
+    padding-left: 3px;
+    height: 40px !important;
+  }
+  .search-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    width: 64px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 12px;
+    background: #15a675;
+  }
+  .ins-section-container {
+      position: absolute;
+      display: none;
+      right: 0;
+      top: 80px;
+      width: 100vw;
+      cursor: pointer;
+      min-height: 275px;
+      overflow-y: auto;
+      padding: 12px 0;
+      z-index: 999;
+      max-height: calc(100vh - 140px);
+      background-color: rgb(255, 255, 255);
+      transition: all 0.2s ease-in-out 0s;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 5px 20px 0 rgba(76, 94, 112, 0.05);
+      .ins-search-item {
+          padding: 6px 18px;
+          &:hover {
+              background-color: rgba(230, 237, 244, 0.92);
+          }
+          .fa-file {
+              margin-right: 8px;
+          }
+          a {
+              color: rgb(20, 31, 41);
+              font-weight: 500;
+              line-height: 2;
+          }
+          .ins-search-preview {
+              color: rgb(63, 82, 100);
+              font-size: 12px;
+              line-height: 2;
+          }
+      }
+      .ins-section-header {
+          margin-bottom: 0px;
+          padding-left: 20px;
+          color: rgb(29, 44, 57);
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 32px;
+      }
+      .highlight {
+          color: #00a971 !important;
+          padding: 0.2em 0.4rem;
+          border-radius: 2px;
+          background-color: #dff7f0;
+      }
+  }
+  .show {
+      display: block;
+  }
+}
+
 footer {
     min-height: 150px;
 
@@ -44,6 +133,13 @@ footer {
         top: -4rem;
         visibility: hidden;
     }
+}
+
+
+@media (min-width: 1024px){
+  .console-search-block {
+    display: none !important;
+  }
 }
 
 @import "console/common";

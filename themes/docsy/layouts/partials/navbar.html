@@ -1,4 +1,23 @@
 <div class="nav-wrapper {{ if eq .Params.LinkTitle "Document" }} nav-wrapper-index {{ end }}">
+  {{if eq .Site.Params.IsConsole true}}
+  <nav id="head-block" class="console-search-block" >
+    <div class="ins-search media-content column is-centered is-3 search-mobile">
+      <div class="ins-search-mask"></div>
+      <div class="ins-search-container">
+            <div class="ins-input-wrapper control has-icons-left docs-search-input"> 
+                <input type="text" class="ins-search-input input" id="search-query" name="s" type="search" placeholder="描述你所遇到的问题"/> 
+                <span class="icon is-left" id="mobile-search">
+                  <img src="/images/icons/search.svg">
+                </span>
+                <div class="search-button" id="console-search-btn">搜索</div>
+            </div>
+            <div class="ins-section-wrapper"> 
+                <div class="ins-section-container" id="ins-section-container"></div>
+            </div>
+      </div>
+    </div>
+  </nav>
+  {{end}}
   <nav class="navbar navmenu" {{if eq .Site.Params.IsConsole true}} style="display:none;" {{end}}>
     <div class="container nav-container with-no-position {{ if and (ne .Params.LinkTitle "Document" ) (ne .Params.type "product")}}doc-container-width {{ end }}">
       <div class="navbar-brand" id="search-mobile-logo">
@@ -42,8 +61,19 @@
     </div>
   </nav>
   {{ if ne .Params.LinkTitle "Document"}}
-  <nav class="navbar navmenu navbar-index">
+  <nav class="navbar navmenu navbar-index" {{if eq .Params.type "product"}} style="display: none; z-index:0;" {{end}}> 
     {{ partial "breadcrumb.html" . }}
   </nav>
   {{ end }}
+
+  <script> (function (window) {
+    var INSIGHT_CONFIG = { 
+        TRANSLATION: { POSTS: '文章', TAGS: '便签', }, 
+        ROOT_URL: '',
+        CONTENT_URL: '/index.json', };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG; 
+    })
+    (window);
+  </script>
+  <script src="/js/insightSearch.js"></script>
 </div>
