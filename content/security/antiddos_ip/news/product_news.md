@@ -1,10 +1,9 @@
 ---
 title: "产品动态"
-date: 2020-02-28T10:08:56+09:00
 collapsible: false
 
 product:
-    - time: 2022-5-08 11:50:47
+    - time: 2022-5-12 11:50:47
       title: 全新 QingCloud DDoS 攻击防护 高防 IP 服务上线
       content: 全新QingCloud DDoS 攻击防护 高防 IP 服务上线。<br>- 全新控制台，提供更优的用户体验。<br>- 提供 Global 化服务、域名接入及端口接入两种业务接入方式和多维度监控视图。
       url: /security/antiddos_ip/intro/introduction
