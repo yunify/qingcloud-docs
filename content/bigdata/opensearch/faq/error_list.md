@@ -8,9 +8,9 @@ draft: false
 
 ---
 
-## 断路器异常，报 circuit_breaking_exception 错误，怎么办？
+## 如何处理断路器异常，报 circuit_breaking_exception 错误的问题？
 
-**问题现象**
+### 问题现象
 
 因断路器异常导致节点或集群错误，业务无法正常运行。
 
@@ -22,7 +22,7 @@ draft: false
 
 <img src="../../_images/error_02.png" style="zoom:100%;" />
 
-**可能原因**
+### 可能原因
 
 业务请求并发量过高，断路器参数值达到峰值或超过峰值，断路器触发熔断机制，JVM heap 不足。
 
@@ -40,7 +40,7 @@ draft: false
 | script compilation circuit breaker       | -      | 是               | 内联脚本编译，限制速率，即每秒或每分编译脚本的次数。         |
 | regex circuit breaker                    | -      | 否               | 正则表达式的复杂度限制，由复杂度因子控制。                   |
 
-**解决办法**
+### 解决办法
 
 扩容节点内存，建议使节点的 CPU 和内存比例达到 **1:4**。扩容节点详细操作请参见[扩容节点](/bigdata/opensearch/manual/node_lifecycle/capacity_expansion/)。
 
