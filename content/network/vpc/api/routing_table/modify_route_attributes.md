@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter Name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | action | String | 请求动作，可选值：ModifyRouteAttributes | Yes |
 | disable | Integer | 是否禁用，取值如下 <br> 0 - 启用 <br> 1 - 禁用 | No |
@@ -23,7 +23,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |

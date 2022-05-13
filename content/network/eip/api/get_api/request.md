@@ -22,24 +22,19 @@ collapsible: false
 
 ## 请求示例
 
-一个典型的 API 请求如下所示，这是一个 `DescribeInstances` 的 API 请求：
+一个典型的 API 请求如下所示，这是一个 `AllocateEips` 的 API 请求：
 
 ```url
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=DescribeInstances&expires=2020-08-29T07%3A42%3A25Z&limit=20&signature_method=HmacSHA256&signature_version=1&status.1=running&time_stamp=2020-08-29T06%3A42%3A25Z&version=1&zone=pek3b&signature=ihPnXFgsg5yyqhDN2IejJ2%2Bbo89ABQ1UqFkyOdzRITY%3D
+https://api.qingcloud.com/iaas/?action=AllocateEips&bandwidth=2&billing_mode=bandwidth&eip_name=dev&zone=pek3a&COMMON_PARAMS
 ```
 
 转换为便于查阅的模式，如下：
 
 ```url
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
-&action=DescribeInstances
-&expires=2020-08-29T07%3A42%3A25Z
-&limit=20
-&signature_method=HmacSHA256
-&signature_version=1
-&status.1=running
-&time_stamp=2020-08-29T06%3A42%3A25Z
-&version=1
-&zone=pek3b
-&signature=ihPnXFgsg5yyqhDN2IejJ2%2Bbo89ABQ1UqFkyOdzRITY%3D
+https://api.qingcloud.com/iaas/?action=AllocateEips
+&bandwidth=2
+&billing_mode=bandwidth
+&eip_name=dev
+&zone=pek3a
+&COMMON_PARAMS
 ```

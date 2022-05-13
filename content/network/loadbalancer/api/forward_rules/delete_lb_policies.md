@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | loadbalancer_policies.n | String | 要删除的转发策略 ID。 | Yes |
 | zone | String | 区域 ID，注意要小写。 | Yes |
@@ -19,7 +19,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | loadbalancer_policies | Array | 删除的转发策略ID列表。 |
