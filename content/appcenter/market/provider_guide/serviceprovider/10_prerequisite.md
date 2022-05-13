@@ -8,11 +8,9 @@ aliases:
   - /appcenter/market/serviceprovider/10_prerequisite/
 ---
 
-若您需要在**青云云市场**发布应用，需要[申请入驻](https://appcenter.qingcloud.com/apply)青云云市场。
+若您需要在**青云云市场**发布商品，需要[申请入驻](/appcenter/market/provider_guide/serviceprovider/05_contracts/)青云云市场。
 
-入驻青云云市场需要满足[企业入驻条件](#企业条件)。在应用上架之前，需要完成[企业资质](#企业资质)的审核和[相关合约](#相关合约)的签署。
-
-<img src="../../../_images/um_appserver_apply.png" style="zoom:60%;" />
+入驻青云云市场需要满足[企业入驻条件](#企业条件)，并完成[企业资质](#企业资质)的审核和[相关合约](#相关合约)的签署。
 
 ## 企业条件
 
