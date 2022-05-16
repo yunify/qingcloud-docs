@@ -12,7 +12,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | spans.n | String | SPAN ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
@@ -21,7 +21,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |

@@ -14,7 +14,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | prefix | String | 域名别名前缀，此前缀会跟 [_GetDNSLabel_](../get_dns_label/) 一起组成内网域名 | Yes |
 | resource | String | 资源 ID | Yes |
@@ -25,7 +25,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | dns_alias_id | String | 内网域名别名 ID |

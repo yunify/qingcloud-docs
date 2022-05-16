@@ -12,7 +12,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | router_static_entry_id | String |  VPC 网络规则条目ID | No |
 | router_static | String |  VPC 网络规则ID | No |
@@ -24,7 +24,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | router_static_entry_set | Array | JSON 格式的 VPC 网络数据列表，每项参数可见下面 [ResponseItemType](#responseitemtype) |
@@ -33,7 +33,7 @@ draft: false
 
 **ResponseItemType**
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | router_id | String |  VPC 网络ID |
 | router_static_entry_name | String |  VPC 网络规则条目名称 |

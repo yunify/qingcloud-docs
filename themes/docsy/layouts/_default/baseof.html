@@ -8,7 +8,7 @@
       {{ partial "navbar.html" . }}
     </header>
     <div class="container td-outer doc-container-width container-min-height">
-      <div class="td-main">
+      <div class="td-main" {{ if ne .Site.Params.IsConsole true}} style="margin-top: 50px" {{end}}>
 		{{ if .Site.Params.IsConsole }}
 			<h1 class="console-tree-title">{{ .CurrentSection.LinkTitle }}</h1>
 		{{ end }}

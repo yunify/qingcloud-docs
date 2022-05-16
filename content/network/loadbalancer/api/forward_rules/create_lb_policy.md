@@ -20,7 +20,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | loadbalancer_poicy_id | String | 创建的转发策略 ID。 |
