@@ -10,7 +10,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | nfvs.n | String | 一个或多个网络组件的 ID | No |
 | nfv_type | Integer | 网络组件的类型，值为 1 时表示过滤 NAT 网关 | No |
@@ -30,7 +30,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | total_count | int | 存在的 NFV 的数量 |

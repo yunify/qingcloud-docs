@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | router_static_entry | String | 需要修改的 VPC 网络规则条目 ID | Yes |
 | router_static_entry_name | String | 规则条目名称 | No |
@@ -22,7 +22,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | router_static_entry | String | 修改的 VPC 网络规则条目ID |

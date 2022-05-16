@@ -15,18 +15,18 @@ keyword: 公网 IP API,云服务器绑定公网 IP
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | eip | String | 公网 IP 的ID | Yes |
 | instance | String | 云服务器 ID | Yes |
 | force | Boolean | 是否强制绑定 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../gei_api/parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | job_id | String | 执行任务的 Job ID |

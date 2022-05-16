@@ -88,15 +88,6 @@ x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
             ],
             "id": "notificaion-1",
             "notify_url": "http://tupu_porn_notify_url"
-        },
-        {
-            "cloudfunc": "video-trans",
-            "event_types": [
-                "create_object",
-                "complete_multipart"
-            ],
-            "id": "notificaion-2",
-            "notify_url": "http://transcode_notify_url"
         }
     ]
 }

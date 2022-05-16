@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter Name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | action | String | 请求动作，可选值：DeleteRouteTables | Yes |
 | routing_tables.n | String | 一个或者多个路由表的ID | Yes |
@@ -19,7 +19,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | routing_tables | Array | 已刪除的路由表的ID列表 |
