@@ -1,7 +1,7 @@
 ---
 title: "CDN 操作指南"
 description: 介绍如何创建和使用 CDN。
-keyword: QingCloud, 青云, 云计算, 网络, CDN 服务, 域名, 缓存
+keyword: CDN 服务, 域名, 缓存
 draft: false
 weight: 2
 ---
