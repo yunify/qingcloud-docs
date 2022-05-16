@@ -2,10 +2,17 @@
 title: "产品动态"
 collapsible: false
 description: 介绍 CDN 服务产品动态。
-keyword: QingCloud, 青云, 云计算, 网络, CDN 服务,产品动态
+keyword:  网络, CDN 服务,产品动态
 weight: 10
 
 product:
+    - time: 2022-04-30
+      title: CDN 计费调整,本次调整不影响已申请折扣的用户
+      content: CDN 服务针对用量 50TB 以上的计费区间进行调整。本次价格调整不影响已经特殊申请折扣的用户。
+      tags:
+      - 价格调整
+      zone: 北京3区，上海1区，广东2区
+      url: /network/cdn/billing/price/
 
     - time: 2016-09-13
       title: CDN 加速服务正式上线
