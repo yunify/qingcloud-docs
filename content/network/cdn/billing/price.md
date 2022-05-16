@@ -1,20 +1,26 @@
 ---
 title: "CDN 计费"
 description: 介绍 CDN 服务的价格。
-keyword: QingCloud, 青云, 云计算, 网络, CDN, 计费, 价格
+keyword: 网络, CDN, 计费, 价格
 draft: false
 ---
 
+## 计费方式
 
-CDN 目前使用按流量实行阶梯价格，累计统计每月初清零，每天计算并扣除前一天的费用。 具体价格参照下表:
+CDN 服务按流量实行阶梯价格，流量按月累计并在每月初清零。
 
-| 流量阶梯 | HTTP/HTTPS 价格 |
-| --- | --- |
-| 0-3TB | 0.23元/GB |
-| 3-10TB | 0.22元/GB |
-| 10-50TB | 0.21元/GB |
-| 50-100TB | 0.19元/GB |
-| 100-1000TB | 0.17元/GB |
-| >1000TB | 0.15元/GB |
+服务费用按天扣除，即：每天进行计算并扣除前一天的费用。 
 
+## 产品价格
 
+具体价格请参照下表。
+
+<table>
+  <thead><tr><th>中国大陆</th><th>流量阶梯</th><th>价格（元/GB）</th></tr></thead>
+  <tr><td rowspan="6">北京3区<br/>广东2区<br/>上海1区</td><td>[0GB,3TB) </td><td>0.23</td></tr>
+  <tr><td>[3TB,10TB)</td><td>0.22</td></tr>
+  <tr><td>[10TB,50TB)</td><td>0.21</td></tr>
+  <tr><td>[50TB,200TB)</td><td>0.20</td></tr>
+  <tr><td>[200TB,500TB)</td><td>0.18</td></tr>
+  <tr><td>[500TB,+∞)</td><td>0.15</td></tr>
+</table>
