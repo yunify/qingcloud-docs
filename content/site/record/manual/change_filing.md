@@ -2,7 +2,7 @@
 title: "变更备案（即将上线）"
 description: test
 weight: 4
-draft: true
+draft: false
 keyword: 变更备案, QingCloud, 青云, 备案
 ---
 
