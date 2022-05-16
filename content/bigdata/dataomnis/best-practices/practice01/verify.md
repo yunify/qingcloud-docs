@@ -9,7 +9,7 @@ draft: false
 
 ## 验证数据同步结果
 
-1. 进入 Kibana 页面，详细操作可参见[访问 Kibana](/bigdata/elk/manual/cluster_info/#kibana-基本用法)。
+1. 进入 Kibana 页面，详细操作可参见[访问 Kibana](/bigdata/elk/quickstart/access_kibana/)。
 2. 执行以下命令，在 Kibana 界面查看数据同步结果。
     
     ```
