@@ -3,7 +3,7 @@ title: "变更备案"
 description: test
 weight: 4
 draft: false
-keyword: 变更备案, QingCloud, 青云, 备案
+keyword: 变更备案, 青云, 备案
 ---
 
 依据《非经营性互联网信息服务备案管理办法》第十四条、第二十三条规定，如备案信息不真实，将关闭网站并注销备案。若您的备案信息发生变更，请您提前三十日申请变更备案。
