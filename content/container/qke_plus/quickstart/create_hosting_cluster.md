@@ -45,7 +45,7 @@ keyword: 青云, QingCloud, 云计算, QKE集群, Kubernetes, 托管
    | <span style="display:inline-block;width:70px">参数</span> | 说明                                                         |
    | --------------------------------------------------------- | ------------------------------------------------------------ |
    | 集群版本                                                  | QKE 集群版本。                                               |
-   | 节点规格                                                  | <ul><li>**快速配置**：</br>预置`基础型试用环境`和`企业型生产环境`两种配置类型，请根据实际需求进行选择。<br/>基础型试用环境：提供面向个人及中小团队用户的入门型实例资源，适用于开发测试环境。<br/>企业型生产环境：提供面向企业级用户的高性能高可靠计算实例资源，适用于正式生产应用环境。</li><li>**自定义**：<br/>根据需要自定义节点类型、节点数量、节点规格及硬盘大小。可添加不同类型的节点。<div style="background-color: #D8ECDE;padding: 10px 24px; margin: 10px 0;border-left:3px solid #00a971;"><b>说明</b><br/><ul><li>基础型节点支持基础型 s1 机型；企业型节点支持企业型 e3 机型。云服务器类型说明，请参考[云服务介绍](/compute/vm/intro/instance/)。</li>  <li>若您需要安装 KubeSphere，工作节点数量应至少为 3 个。</li> </div></li></ul> |
+   | 节点规格                                                  | <ul><li>**快速配置**：</br>预置`基础型试用环境`和`企业型生产环境`两种配置类型，请根据实际需求进行选择。<br/>基础型试用环境：提供面向个人及中小团队用户的入门级实例资源，适用于开发测试环境。<br/>企业型生产环境：提供面向企业级用户的高性能高可靠计算实例资源，适用于正式生产应用环境。</li><li>**自定义**：<br/>根据需要自定义工作节点的节点类型、节点数量、节点规格及硬盘大小。可添加不同类型的节点。<div style="background-color: #D8ECDE;padding: 10px 24px; margin: 10px 0;border-left:3px solid #00a971;"><b>说明</b><br/><ul><li>基础型节点支持基础型 s1 机型；企业型节点支持企业型 e3 机型。云服务器类型说明，请参考[云服务器介绍](/compute/vm/intro/instance/)。</li>  <li>工作节点应至少有2个。若您需要安装 KubeSphere，则工作节点至少为3个。</li> </div></li></ul> |
 
    
 
@@ -60,6 +60,7 @@ keyword: 青云, QingCloud, 云计算, QKE集群, Kubernetes, 托管
    | <span style="display:inline-block;width:70px">参数</span> | 说明                                                         |
    | --------------------------------------------------------- | ------------------------------------------------------------ |
    | etcd 服务                                                 | QKE 集群使用 etcd 存储集群数据。<br/>为获得更好的性能，推荐选择单独部署的 Etcd 集群，否则将使用集群内自带的 etcd 服务。点击**创建 etcd 服务**即可[创建 etcd 集群](/middware/etcd/quickstart/qs10_deploy_etcd/)。etcd 集群和 QKE 集群需部署在同一 VPC 下。 |
+   | ELK 服务                                                  | 添加依赖的 ELK 集群用于存储 QKE 集群日志数据。<br/>为了便于扩容，推荐选择单独部署的 ELK 集群，否则将使用集群内自带 [Elasticsearch ](https://github.com/elastic/elasticsearch) 服务。点击**创建 ELK服务**即可[创建 ELK 集群](/bigdata/elk/quickstart/create_cluster/)。ELK 集群和 QKE 集群需部署在同一 VPC 下。 |
 
    
 
@@ -68,7 +69,7 @@ keyword: 青云, QingCloud, 云计算, QKE集群, Kubernetes, 托管
    | 参数                   | 说明                                                         |
    | ---------------------- | :----------------------------------------------------------- |
    | 集群可视化管理工具     | 选择是否安装扩展的集群可视化管理工具。<br/><ul><li>若选择**安装**，则需要继续选择待安装的工具。安装后，可通过 Web 界面更方便的管控集群及容器应用等。（目前仅支持安装 KubeSphere，后续将支持更多工具）</li><li>若选择**不安装**，则表示使用当前 QKE 控制台对集群资源及 Pod 进行简单管理。</li></ul> |
-   | KubeSphere  内置组件   | 选择安装 KubeSphere 进行可视化管理时，需要选择您需要的 KubeSphere 内置组件。各组件的功能说明可参考 [KubeSphere 官方文档](https://kubesphere.com.cn/docs/pluggable-components/)。<br/><div style="background-color: #D8ECDE;padding: 10px 24px; margin: 10px 0;border-left:3px solid #00a971;"><b>说明</b><br/>使用 KubeSphere 内置组件将产生额外费用。选择安装 KubeSphere 内置组件，将在集群创建成功后挂载一定数量的云硬盘，云硬盘在使用过程中按小时扣费。您可以到费用中心查看云硬盘消费情况。  </div> |
+   | 选装组件               | 选择安装可视化管理工具时，可以选择安装您在业务中需要使用的组件。KubeSphere 各组件的功能说明可参考 [KubeSphere 官方文档](https://kubesphere.com.cn/docs/pluggable-components/)。<br/><div style="background-color: #D8ECDE;padding: 10px 24px; margin: 10px 0;border-left:3px solid #00a971;"><b>说明</b><br/>使用 KubeSphere 内置组件将产生额外费用。选择安装 KubeSphere 内置组件，将在集群创建成功后挂载一定数量的云硬盘，云硬盘在使用过程中按小时扣费。您可以到费用中心查看云硬盘消费情况。  </div> |
    | KubeSphere  控制台 EIP | 选择安装 KubeSphere 时，如果您希望通过公网 **LoadBalancer** 方式访问 KubeSphere 控制台，可选择一个可用的 EIP，系统将自动创建一个负载均衡器并绑定此 EIP 。 |
 
    **环境参数设置：**
@@ -88,8 +89,6 @@ keyword: 青云, QingCloud, 云计算, QKE集群, Kubernetes, 托管
 5. 选择购买时长（仅当集群为包年包月计费时需要设置）。
 
 6. 点击**确认配置**，弹出**我的配置**窗口，查看资源配置及价格。
-
-   ![](../../_images/create_myconfig.png)
 
 7. 确认无误后，点击**创建集群**，返回集群列表页面。
 
