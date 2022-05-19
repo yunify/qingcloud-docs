@@ -31,11 +31,11 @@ aliases:
 
 3. 进入[服务商入驻页面](https://appcenter.qingcloud.com/partnership)，点击**申请认证**，申请服务商认证。
 
-   <img src="../../../_images/serviceprovider_certificate.png" style="zoom:80%;" />
+   <img src="../../../_images/serviceprovider_certificate.png" style="zoom:40%;" />
 
 4. 根据界面提示，填写认证信息，提交入驻申请。
 
-   <img src="../../../_images/serviceprovider_certificate_fill.png" style="zoom:50%;" />
+   <img src="../../../_images/serviceprovider_certificate_fill.png" style="zoom:80%;" />
    
    提交成功后，青云云市场将进行审核，审核结果将通过邮件及短信的形式通知到入驻信息中填写的邮箱及联系人手机中，请耐心等待并注意查收。
 
