@@ -2,7 +2,7 @@
 title: "数据迁移"
 description: 本小节主要介绍 PostgreSQL 离线数据迁移。 
 keyword: 离线数据迁移,PostgreSQL,关系型数据库,数据库
-weight: 01
+weight: 02
 collapsible: false
 ---
 
@@ -67,7 +67,7 @@ psql -d qingcloud -U root -h 192.168.100.6 -f /tmp/pgdatabk.sql
 ### 在线导入数据
 
 根据`pg_dump` 和 `psql` 读写管道的能力，可将数据直接从一个服务器转储数据库到另一个服务器。
-  
+
 ```shell
 pg_dump -U <远端数据库账号> -h <远端数据库 IP> <远端数据库名> -w | psql -d <目标数据库名> -U <目标数据库账号> -h <目标数据库 IP > -W
 ```

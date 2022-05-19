@@ -15,7 +15,7 @@ draft: false
 
 ## 使用范围
 
-读取写入 ClickHouse，ClickHouse 支持作为数据源表（Source）,也可以作为目的表（Sink）。
+ClickHouse 仅支持作为目的表（Sink）。
 
 ## DDL 定义
 

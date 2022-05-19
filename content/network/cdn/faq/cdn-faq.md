@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 description: 介绍 CDN 服务的常见问题及解决办法。
-keyword: QingCloud, 青云, 云计算, 网络, CDN, 常见问题
+keyword: 网络, CDN, 常见问题
 draft: false
 weight: 81
 ---

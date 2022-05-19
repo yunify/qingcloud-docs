@@ -1,7 +1,7 @@
 ---
 title: "产品动态"
 description: 青云 QingCloud 负载均衡的产品动态。
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 产品动态
+keyword: 负载均衡器, 产品动态
 collapsible: false
 weight: 10
 

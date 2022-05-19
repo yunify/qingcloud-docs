@@ -17,13 +17,9 @@ Section2:
       content: 什么是云市场
       url: "intro/10_introduction/"
 
-    - title: 服务商入驻
-      content: 服务商入驻
-      url: "serviceprovider/10_prerequisite/"
-
     - title: 服务商操作指南
       content: 服务商操作指南
-      url: "provider_guide/publish_api_goods/"
+      url: "provider_guide/serviceprovider/10_prerequisite/"
 
     - title: 买家操作指南
       content: 买家操作指南
@@ -46,7 +42,7 @@ section4:
         - title: 接入商品
           url: "provider_guide/release_goods/api/"
         - title: 购买商品
-          url: "manual/20_purchase_app/10_purchase_app/"
+          url: "manual/20_purchase_app/"
         - title: 使用商品
           url: "manual/25_goods_use/use_api/"
 ---

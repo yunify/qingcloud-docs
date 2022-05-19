@@ -1,5 +1,5 @@
 ---
-title: "安装和使用 logstash-input-s3 插件 "
+title: "使用 logstash-input-s3 插件 "
 description: 本小节主要介绍 Logstash 插件安装使用方法。
 keyword: 搜索分析,Logstash 安装插件,logstash-input-s3,
 weight: 26
@@ -67,7 +67,7 @@ draft: false
 3. 重启 Logstash 节点，启动插件服务。
    
    在基本属性区域展开操作栏，点击**重启**并选择 **Logstash 节点**，重启 Logstash 节点。
-
+<!--
 ## 步骤 3: 开启桶日志归档
 
 对象存储日志归档功能，可以将 Bucket 的访问日志以 Object 的形式存储至 Bucket 下的指定目录。
@@ -78,8 +78,9 @@ draft: false
 2. 在**日志**页签，配置**目标 Bucket** 和**日志文件前缀**，并应用修改，即开启桶日志归档功能。
 
 ![开启日志归档](../../../_images/logstash_log_s3.png)
+-->
 
-## 步骤 4: 安装验证
+## 步骤 3: 安装验证
 
 1. 登录 QingStor 管理控制台，选择目标桶，进入桶详情页面。
    

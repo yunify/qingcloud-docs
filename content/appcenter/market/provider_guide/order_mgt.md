@@ -10,7 +10,7 @@ draft: false
 
 > **说明**
 >
-> 目前，订单管理中仅展示了云市场 API 类及人工服务类商品的订单信息，其余商品订单详情需要前往 AppCenter 控制台中[应用管理](https://console.qingcloud.com/app_mgmt)页面进行查看。
+> 目前，订单管理中仅展示了通过云市场购买的订单信息，通过 AppCenter 应用中心购买的应用需要前往 AppCenter 控制台中[应用管理](https://console.qingcloud.com/app_mgmt)页面进行查看。
 
 ## 操作步骤
 

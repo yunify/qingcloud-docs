@@ -1,7 +1,7 @@
 ---
 title: "应用场景"
 description: 介绍如负载均衡器的应用场景。
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器应用场景
+keyword: 负载均衡器应用场景
 weight: 30
 draft: false
 ---

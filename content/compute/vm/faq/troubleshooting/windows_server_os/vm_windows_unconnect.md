@@ -23,7 +23,7 @@ keyword: 云计算, 青云, QingCloud, 云服务器，远程桌面
 
 1. 打开本机的远程桌面连接时，按照下图所示勾选要远程使用的资源。
 
-![](../../_images/windows_rdp.jpg)
+![](/compute/vm/faq/_images/windows_rdp.jpg)
 
 2. 在服务器上打开任务管理器，查看进程，看是否有 rdpclip.exe 进程。 通常，只要存在该进程，就可以在本机和远程服务器之间粘贴文本了。 如果没有此进程则需要手动启动，开始->运行->rdpclip.exe
 

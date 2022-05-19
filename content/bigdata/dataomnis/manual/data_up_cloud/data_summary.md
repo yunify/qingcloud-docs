@@ -5,6 +5,8 @@ keywords: 大数据工作台,操作指南,数据源
 weight: 10
 collapsible: false
 draft: false
+aliases:
+    - /bigdata/dataomnis/manual/data_up_cloud/source_data/data_summary/
 ---
 
 

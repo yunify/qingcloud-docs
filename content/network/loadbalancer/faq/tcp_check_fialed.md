@@ -1,7 +1,7 @@
 ---
 title: "四层（TCP/UDP）健康检查出现异常"
 description: 介绍如何排查四层（TCP/UDP）健康检查出现异常。
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 四层健康检查
+keyword: 负载均衡器, 四层健康检查
 draft: false
 ---
 

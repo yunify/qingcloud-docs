@@ -1,7 +1,7 @@
 ---
 title: "使用负载均衡器实现跨地域的高可用网络服务"
 description: 介绍如何使用负载均衡器实现跨地域的高可用网络服务。
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 高可用
+keyword: 负载均衡器, 高可用
 draft: false
 ---
 
