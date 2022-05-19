@@ -1,6 +1,6 @@
 ---
 title: "创建并开发作业"
-description: 本小节主要介绍如何创建并开发作业。 
+description: 本小节主要介绍如何创建并开发 SQL 作业。 
 keywords: 大数据工作台,实时计算,创建作业
 weight: 30
 collapsible: false
