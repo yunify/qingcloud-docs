@@ -14,7 +14,7 @@ TCP 协议适用于对可靠性和数据准确性要求高、对传输速度要�
 
 ## 前提条件
 
-已[创建负载均衡器实例](/network/loadbalancer/manual/lb/cfg_rsyslog/)。
+已[创建负载均衡器实例](/network/loadbalancer/manual/lb/create_lb/)。
 
 ## 操作步骤
 

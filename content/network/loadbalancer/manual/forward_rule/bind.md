@@ -24,7 +24,9 @@ weight: 20
 
 ## 操作步骤
 
-您可以在添加后端服务器时，为服务器绑定转发策略。
+您可以在添加后端服务器时，为服务器绑定转发策略。详细操作，请参见[添加后端服务器](/network/loadbalancer/manual/backends/manage/#添加后端服务器)。
 
-详细操作，请参见[添加后端服务器](/loadbalancer/manual/backends/manage/#添加后端服务器)。
+<img src="../../../_images/bind_forward_policy.png" style="zoom:40%;" />
+
+
 

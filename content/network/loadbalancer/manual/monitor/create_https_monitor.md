@@ -14,7 +14,8 @@ HTTP 协议适用于需要对请求的内容进行识别的应用，如 Web 应�
 
 ## 前提条件
 
-已[创建负载均衡器实例](/network/loadbalancer/manual/lb/cfg_rsyslog/)。
+- 已[创建负载均衡器实例](/network/loadbalancer/manual/lb/create_lb/)。
+- 已[创建服务器证书](/network/loadbalancer/manual/certificate/create_cert/)。
 
 ## 操作步骤
 

@@ -14,7 +14,7 @@ UDP 协议适用于对传输效率要求高、对准确性要求相对较低的�
 
 ## 前提条件
 
-已[创建负载均衡器实例](/network/loadbalancer/manual/lb/cfg_rsyslog/)。
+已[创建负载均衡器实例](/network/loadbalancer/manual/lb/create_lb/)。
 
 ## 操作步骤
 

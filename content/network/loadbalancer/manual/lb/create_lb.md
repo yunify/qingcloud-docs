@@ -47,9 +47,9 @@ weight: 1
 
 4. 点击**提交**，开始进行创建并返回负载均衡器页面。
 
-## 后续操作
+## 关联操作
 
-创建监听器
+- [添加监听器](/network/loadbalancer/manual/monitor/create_http_monitor/)
 
-添加后端服务
+- [添加后端服务](/network/loadbalancer/manual/backends/manage/)
 
