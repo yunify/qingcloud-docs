@@ -25,4 +25,4 @@ draft: false
 
 账号认证类型包含：个人认证和企业认证。
 
-详细操作请参见[账号认证](/authorization/account/manual/user_verify/)。
+详细操作请参见[账号认证](/authorization/account/manual/account_aut/account_intro/)。
