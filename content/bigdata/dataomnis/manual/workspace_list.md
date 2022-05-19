@@ -35,7 +35,7 @@ draft: false
 > 仅当工作空间状态为`活跃`时，才可以进入各个功能模块。
 
 点击相应工作空间的**数据源管理**、**数据开发**或**运维中心**，即可进入工作空间的对应模块。    
-各服务模块的详细使用请参见[数据源管理](../data_up_cloud/data_summary/)、[数据开发](../data_development/summary/)和[运维中心](../operation_maintence/summary/)。
+各服务模块的详细使用请参见[数据源管理](/bigdata/dataomnis/manual/source_data/summary/)、[数据开发](/bigdata/dataomnis/manual/mgt_job/summary/)和[运维中心](/bigdata/dataomnis/manual/operation_center/summary/)。
 
 ## 修改工作空间
 
