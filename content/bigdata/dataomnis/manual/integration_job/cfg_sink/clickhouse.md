@@ -38,7 +38,7 @@ draft: false
 
 您需要在作业的开发页面进行以下配置：
 
-<img src="/bigdata/dataomnis/_images/cfg_source_clickhouse.png" alt="配置 ClickHouse 数据来源" style="zoom:50%;" />
+<img src="/bigdata/dataomnis/_images/cfg_source_clickhouse.png" alt="配置 ClickHouse 数据目的" style="zoom:50%;" />
 
 | 参数         | 说明                                                         |
 | :----------- | :----------------------------------------------------------- |

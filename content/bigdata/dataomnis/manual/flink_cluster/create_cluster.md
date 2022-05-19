@@ -24,7 +24,7 @@ draft: false
 
 ## 前提条件
 
-- 已完成[准备工作](../../../../prepare/create_account)，准备好账号和工作空间。
+- 已完成[准备工作](/bigdata/dataomnis/prepare/create_account/)，准备好账号和工作空间。
 - 计算集群依赖 VPC 网络资源，在创建计算集群前，建议先[创建网络](../../network/create_network)。
 
 ## 操作步骤

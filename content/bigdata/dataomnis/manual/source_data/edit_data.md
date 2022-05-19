@@ -23,5 +23,5 @@ draft: false
 
    <img src="/bigdata/dataomnis/_images/edit_database.png" alt="修改数据源" style="zoom:50%;" />
 
-6. 修改相关参数，参数说明请参见[新增数据源](/bigdata/dataomnis/manual/source_data/)。
+6. 修改相关参数，参数说明请参见[新增数据源](/bigdata/dataomnis/manual/source_data/add_data/)。
 7. 修改完成后，点击**修改**，完成修改操作。

@@ -24,4 +24,4 @@ draft: false
 
 ## 查看计算集群详情
 
-选择目标集群，点击操作列的![](../../../../_images/icon_more_cluster.png)图标，选择**查看详情**，进入计算集群详情页面。    
+选择目标集群，点击操作列的![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**查看详情**，进入计算集群详情页面。    

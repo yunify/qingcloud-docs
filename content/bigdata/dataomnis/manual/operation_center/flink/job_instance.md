@@ -24,7 +24,7 @@ draft: false
    
    **状态**：包括`准备资源`、`运行中`、`失败重试`、`已暂停`、`已终止`、`运行成功`、`运行超时`、`运行失败`。
 
-   <img src="/bigdata/dataomnis/_images/flink_job_instance01.png" alt="查看关联实例" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/flink_job_instance02.png" alt="查看关联实例" style="zoom:50%;" />
 
 ## 终止实例
 

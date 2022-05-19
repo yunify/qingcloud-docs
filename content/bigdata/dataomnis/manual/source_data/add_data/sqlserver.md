@@ -11,7 +11,7 @@ draft: false
 
 ## 前提条件
 
-数据源需要在网络连通的前提下才能进行数据同步，详情请参见[网络连通方案](../connect/)。
+数据源需要在网络连通的前提下才能进行数据同步，详情请参见[网络连通方案](/bigdata/dataomnis/manual/connect/)。
 
 ## 操作步骤
 
@@ -21,8 +21,6 @@ draft: false
 4. 选择工作空间所在区域后，在目标工作空间点击**数据源管理**，进入数据源管理页面。
 5. 点击**新增数据源**，进入新增数据源页面。
 6. 选择 **SQLServer** 数据源类型，进入配置数据源页面。
-
-   <img src="/bigdata/dataomnis/_images/set_sqlserver.png" alt="配置 SQLServer 数据源" style="zoom:50%;" />
 
    1. 配置数据源基本信息。
 

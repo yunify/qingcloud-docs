@@ -42,7 +42,7 @@ draft: false
 2. 选择**产品与服务** > **大数据服务** > **大数据工作台**，进入大数据工作台概览页面。
 3. 在左侧导航选择**工作空间**，进入工作空间页面。
 4. 在目标工作空间选择**数据开发** > **资源管理**，进入资源管理页面。
-5. 选择目标程序包，点击操作列的![](../../../../_images/icon_more_cluster.png)图标，选择**重新上传**，进入上传程序包页面。
+5. 选择目标程序包，点击操作列的![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**重新上传**，进入上传程序包页面。
 
    <img src="/bigdata/dataomnis/_images/reload_procedure.png" alt="重新上传程序包" style="zoom:50%;" />
 

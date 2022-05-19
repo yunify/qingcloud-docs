@@ -15,7 +15,7 @@ draft: false
 
 ## 前提条件
 
-- 已完成[准备工作](../../../../prepare/create_account)，准备好账号和工作空间。
+- 已完成[准备工作](/bigdata/dataomnis/prepare/create_account/)，准备好账号和工作空间。
 - 在创建网络前，建议先创建好依赖的 VPC 和私有网络。详细操作请参见[创建 VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)。
 
 ## 使用限制
