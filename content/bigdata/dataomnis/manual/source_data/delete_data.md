@@ -23,4 +23,6 @@ draft: false
     - **单个删除**：在需要删除的数据源的操作列，点击![](/bigdata/dataomnis/_images/icon_more.png)图标，选择**删除**。    
     - **批量删除**：勾选需要删除的数据源，点击列表上方的**删除**。
 
+    <img src="/bigdata/dataomnis/_images/delete_database.png" alt="删除数据源" style="zoom:50%;" />
+
 5. 在弹出的确认框中输入 delete 后，点击**删除**，完成删除操作。

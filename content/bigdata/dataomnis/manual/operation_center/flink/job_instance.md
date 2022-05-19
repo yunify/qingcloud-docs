@@ -7,12 +7,12 @@ collapsible: false
 draft: false
 ---
 
-您可以通过作业实例页面查看作业实例状态、所属作业/ID、创建时间、更新时间，并对作业实例进行终止操作。
+您可以通过作业实例页面查看作业实例状态、告警状态、所属作业、开发模式、创建时间、更新时间，并对作业实例进行终止操作。
 
 ## 前提条件
 
 - 已获取管理控制台登录账号和密码，且账号已实名认证。
-- 已创建并发布作业。
+- 已创建并发布实时计算作业。
 
 ## 进入作业实例列表
 
@@ -22,13 +22,13 @@ draft: false
 4. 在目标工作空间选择**运维中心**，进入运维中心页面。
 5. 在左侧导航选择**流式计算运维** > **作业实例**，进入作业实例页面。
    
-   **实例状态**：包括`准备资源`、`运行中`、`失败重试`、`已暂停`、`已终止`、`运行成功`、`运行超时`、`运行失败`。
+   **状态**：包括`准备资源`、`运行中`、`失败重试`、`已暂停`、`已终止`、`运行成功`、`运行超时`、`运行失败`。
 
-   <img src="/bigdata/dataomnis/_images/job_instance02.png" alt="查看关联实例" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/flink_job_instance01.png" alt="查看关联实例" style="zoom:50%;" />
 
 ## 终止实例
 
-点击操作列的![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**终止**，进入操作确认页面，单击**终止**。
+点击操作列的![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**终止**，进入操作确认页面，点击**终止**。
 
 > **说明**
 > 
@@ -37,18 +37,16 @@ draft: false
 
 ## 恢复实例
 
-点击操作列的![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**恢复**，进入操作确认页面，单击**恢复**。
+点击操作列的![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**恢复**，进入操作确认页面，点击**恢复**。
+
 > **说明**
 > 
 > 当**实例状态**为`已暂停`时，才可以执行恢复实例操作。
 
 ## 查看作业实例详情
 
-点击操作列的![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**查看详情**，进入实例详情页面，在该页面可以查看作业实例的基本信息和 message。
+点击操作列的![](/bigdata/dataomnis/_images/icon_more_cluster.png)图标，选择**查看详情**，进入实例详情页面，在该页面可以查看作业实例的基本信息、运行信息、监控告警信息、开发内容、计算集群、调度信息和依赖资源。
 
 ## 查看作业 Flink UI
 
 在操作列点击 **Flink UI**，进入实例的 Flink UI 页面。
-
-
-

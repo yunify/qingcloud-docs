@@ -9,7 +9,7 @@ draft: false
 
 本小节主要介绍如何修改数据源。
 
-## 注意事项
+## 前提条件
 
 数据源状态为`活跃中`时，才支持修改数据源。
 
@@ -23,7 +23,5 @@ draft: false
 
    <img src="/bigdata/dataomnis/_images/edit_database.png" alt="修改数据源" style="zoom:50%;" />
 
-6. 修改相关参数，参数说明请参见[配置数据源参数说明](../add_data/#配置数据源参数说明)。
+6. 修改相关参数，参数说明请参见[新增数据源](/bigdata/dataomnis/manual/source_data/)。
 7. 修改完成后，点击**修改**，完成修改操作。
-
-

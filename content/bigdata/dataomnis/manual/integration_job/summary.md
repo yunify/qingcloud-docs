@@ -11,11 +11,16 @@ draft: false
 
 ## 离线同步
 
-
-
 ### 离线同步支持的数据源类型
 
-| 数据源类型                                                   | 数据来源（Source）                                           | 数据目的（Sink）                                             | 增量同步Source |
+| 数据来源（Source）                                           | 数据目的（Sink）                                             | 增量同步 Source |
+| :----------------------------------------------------------- | :----------------------------------------------------------- | --------------- |
+| [配置 MySQL 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/mysql) | [配置 MySQL 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/mysql) | 支持            |
+| [配置 SQLServer 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/sqlserver) | [配置 SQLServer 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/sqlserver) | 支持            |
+| [配置 PostgreSQL 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/postgresql) | [配置 PostgreSQL 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/postgresql) | 支持            |
+| [配置 ClickHouse 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/clickhouse) | [配置 ClickHouse 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/clickhouse) | 支持            |
+
+<!-- | 数据源类型                                                   | 数据来源（Source）                                           | 数据目的（Sink）                                             | 增量同步Source |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | -------------- |
 | [MySQL](/bigdata/dataomnis/manual/source_data/add_data/mysql) | [配置 MySQL 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/mysql) | [配置 MySQL 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/mysql) |                |
 | [TiDB](/bigdata/dataomnis/manual/source_data/add_data/tidb)  | 不支持                                                       | [配置 TiDB 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/tidb) | 不支持         |
@@ -33,4 +38,4 @@ draft: false
 | [Hive](/bigdata/dataomnis/manual/source_data/add_data/hive)  | 不支持                                                       | [配置 Hive 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/hive) | 不支持         |
 | [HBase](/bigdata/dataomnis/manual/source_data/add_data/hbase) | [配置 HBase 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/hbase) | [配置 HBase 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/hbase) | 不支持         |
 | [Kafka](/bigdata/dataomnis/manual/source_data/add_data/kafka) | 不支持                                                       | [配置 Kafka 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/kafka) | 不支持         |
-
+ -->
