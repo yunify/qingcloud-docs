@@ -29,7 +29,7 @@ draft: false
 
 3. 点击**进入空间**，即可快速进入对应服务模块。   
    
-   各服务模块详细介绍请参见[数据源管理](../data_up_cloud/data_summary/)、[数据开发](../data_development/summary/)和[运维中心](../operation_maintence/summary/)。
+   各服务模块详细介绍请参见[数据源管理](/bigdata/dataomnis/manual/source_data/summary/)、[数据开发](/bigdata/dataomnis/manual/mgt_job/summary/)和[运维中心](/bigdata/dataomnis/manual/operation_center/summary/)。
 
 **平台特性**
 
