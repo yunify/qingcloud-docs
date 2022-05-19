@@ -36,6 +36,7 @@ CREATE TABLE hTable (
  'connector' = 'hbase-2.2',
  'table-name' = 'mytable',
  'zookeeper.quorum' = 'localhost:2181'
+ 'zookeeper.znode.parent' = '/hbase/cl-8wry3tmz'
 );
 ```
 
@@ -46,7 +47,7 @@ CREATE TABLE hTable (
 | connector              | 是       | 无     | String   | 连接器，目前支持 `hbase-2.2`。                               |
 | table-name             | 是       | 无     | String   | HBase 表名。                                                 |
 | zookeeper.quorum       | 是       | 无     | String   | HBase 的 zookeeper 地址。                                    |
-| zookeeper.znode.parent | 否       | /hbase | String   | HBase 在 zookeeper 中的根目录。                              |
+| zookeeper.znode.parent | 是       | /hbase | String   | HBase 在 zookeeper 中的根目录，请根据实际情况进行配置。例如：`/hbase/{集群id}`。                              |
 | null-string-literal    | 否       | null   | String   | HBase 字段类型为 String 时，遇到空值则将该字段赋值为当前参数值。 |
 
 ## HBase 维表 WITH 参数
@@ -56,7 +57,7 @@ CREATE TABLE hTable (
 | connector              | 是       | 无     | String   | 连接器，目前支持 `hbase-2.2`。                               |
 | table-name             | 是       | 无     | String   | HBase 表名。                                                 |
 | zookeeper.quorum       | 是       | 无     | String   | HBase 的 zookeeper 地址。                                    |
-| zookeeper.znode.parent | 否       | /hbase | String   | HBase 在 zookeeper 中的根目录。                              |
+| zookeeper.znode.parent | 是       | /hbase | String   | HBase 在 zookeeper 中的根目录，请根据实际情况进行配置。例如：`/hbase/{集群id}`。                              |
 | null-string-literal    | 否       | null   | String   | HBase 字段类型为 String 时，遇到空值则将该字段赋值为当前参数值。 |
 
 ## HBase 结果表 WITH 参数
@@ -66,7 +67,7 @@ CREATE TABLE hTable (
 | connector                  | 是       | 无     | String     | 连接器，目前支持 `hbase-2.2`。                               |
 | table-name                 | 是       | 无     | String     | HBase 表名。                                                 |
 | zookeeper.quorum           | 是       | 无     | String     | HBase 的 zookeeper 地址。                                    |
-| zookeeper.znode.parent     | 否       | /hbase | String     | HBase 在 zookeeper 中的根目录。                              |
+| zookeeper.znode.parent     | 是       | /hbase | String     | HBase 在 zookeeper 中的根目录，请根据实际情况进行配置。例如：`/hbase/{集群id}`。                             |
 | null-string-literal        | 否       | null   | String     | HBase 字段类型为 String 时，遇到空值则将该字段赋值为当前参数值。 |
 | sink.buffer-flush.max-size | 否       | 2mb    | MemorySize | 每次写入请求在内存中缓存的数据量。调大该值有利于提高 HBase 写入性能，但会增加写入延迟。设置为 `0` 禁用。 |
 | sink.buffer-flush.max-rows | 否       | 1000   | Integer    | 每次写入请求在内存中缓存的数据行数。调大该值有利于提高 HBase 写入性能，但会增加写入延迟。设置为 `0` 禁用。 |
@@ -76,7 +77,6 @@ CREATE TABLE hTable (
 ## 类型映射
 
 HBase 将所有数据存储为字节数组。
-
 
 | Flink 字段类型          | HBase 字段类型                                               |
 | :---------------------- | ------------------------------------------------------------ |
@@ -122,9 +122,10 @@ CREATE TEMPORARY TABLE hbase_sink (
   family3 ROW<q1 DOUBLE, q2 BOOLEAN, q3 STRING>,
   PRIMARY KEY (rowkey) NOT ENFORCE
 ) with (
-  'connector'='cloudhbase',
+  'connector'='hbase-2.2',
   'table-name'='demo',
   'zookeeper.quorum'='localhost:2181'
+  'zookeeper.znode.parent' = '/hbase/cl-8wry3tmz'
 );
 
 -- 从 datagen_source 中读取数据并写入 hbase_sink 中
