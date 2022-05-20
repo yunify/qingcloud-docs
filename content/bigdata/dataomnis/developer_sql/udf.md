@@ -42,7 +42,7 @@ draft: false
 ## 使用自定义函数
 
 1. 上传程序包   
-    在资源管理界面，上传自定义函数的 JAR 程序包。详细操作请参见[上传程序包](/bigdata/dataomnis/manual/resource/upload/)。   
+    在资源管理界面，上传自定义函数的 JAR 程序包。详细操作请参见[上传程序包](/bigdata/dataomnis/manual/data_development/resource/upload)。   
 2. 声明 UDF   
     
     在 SQL 作业中添加 UDF 声明语句，然后就可以像普通函数一样使用了。

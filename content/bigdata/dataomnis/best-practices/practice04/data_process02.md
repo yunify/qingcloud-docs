@@ -42,7 +42,7 @@ draft: false
 1. 选择已创建好的作业，点击右侧的**调度设置**，进入调度配置页面。    
 2. 设置调度策略。   
    
-   本实践选择**执行一次**，**发布后立即执行**。若您需要配置为其他调度策略，请参见[配置作业调度](/bigdata/dataomnis/manual/schedule/time/)。
+   本实践选择**执行一次**，**发布后立即执行**。若您需要配置为其他调度策略，请参见[配置作业调度](../../../manual/data_development/job/scheduling_job)。
 
    <img src="/bigdata/dataomnis/_images/bp_schedule_jar02.png" alt="配置作业调度" style="zoom:50%;" />
 

@@ -33,6 +33,6 @@ draft: false
 
 ## 后续步骤
 
-- 工作空间创建完成后，您就可以从工作空间进入[数据源管理](/bigdata/dataomnis/manual/source_data/summary/)、[数据开发](/bigdata/dataomnis/manual/mgt_job/summary/)和[运维中心](/bigdata/dataomnis/manual/operation_center/summary/)模块，执行相应操作。
+- 工作空间创建完成后，您就可以从工作空间进入[数据源管理](../../manual/data_up_cloud/data_summary/)、[数据开发](../../manual/data_development/summary/)和[运维中心](../../manual/operation_maintence/summary/)模块，执行相应操作。
 - 您也可以先学习[快速入门](../../quickstart/summary)，快速完成一个完整的数据开发操作。
 

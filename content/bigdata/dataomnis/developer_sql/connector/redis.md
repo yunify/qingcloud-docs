@@ -20,7 +20,7 @@ Flink 内置的 Connector 中没有 Redis Connector，本小节以自定义 Redi
 ## 使用自定义 Redis Connector
 
 1. 上传程序包   
-    在资源管理界面，上传已构建的 JAR 程序包（例如 `flink_connector_redis.jar`）。详细操作请参见[上传程序包](/bigdata/dataomnis/manual/resource/upload)。   
+    在资源管理界面，上传已构建的 JAR 程序包（例如 `flink_connector_redis.jar`）。详细操作请参见[上传程序包](/bigdata/dataomnis/manual/data_development/resource/upload)。   
 2. 作业引用程序包   
     根据自定义 Redis Connector 中定义的 Source 和 Sink 结构，在 SQL 作业开发面板中进行相应配置。
 

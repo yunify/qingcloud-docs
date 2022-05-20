@@ -50,7 +50,7 @@ CREATE TABLE Orders (
 | number-of-rows  | 否       | 无                      | Long            | 总发出数据行数，默认无界。                                   |
 | fields.#.kind   | 否       | random                  | String          | 指定 `#` 字段的生成器。可以是 `sequence` 或 `random`。       |
 | fields.#.min    | 否       | (Minimum value of type) | (Type of field) | 'random' 生成器的最小值，适用于**数字**类型。                |
-| fields.#.max    | 否       | (Maximum value of type) | (Type of field) | 'random' 生成器的最大值，适用于**数字**类型。              |
+| fields.#.max    | 否       | (Maximum value of type) | (Type of field) | 'random' 生成器的的最大值，适用于**数字**类型。              |
 | fields.#.length | 否       | 100                     | Integer         | 'random' 生成器生成字符的长度，适用于 char/varchar/string/array/map/multiset 类型。 |
 | fields.#.start  | 否       | 无                      | (Type of field) | 'sequence' 生成器的起始值。                                  |
 | fields.#.end    | 否       | 无                      | (Type of field) | 'sequence' 生成器的结束值。                                  |
