@@ -170,7 +170,7 @@ enable = false
         desc = "Discuss development issues around the project"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "JSON"]
 
 [frontmatter]
    lastmod = ["lastmod", ":fileModTime", "publishDate"]
