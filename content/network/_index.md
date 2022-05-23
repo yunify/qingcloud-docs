@@ -16,7 +16,7 @@ section1:
     - title: 公网 IP
       url: "/network/eip/intro/introduction/"
 
-    - title: 负载均衡
+    - title: 负载均衡器
       url: "/network/loadbalancer/intro/introduction/"
 
     - title: 边界路由器

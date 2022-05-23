@@ -40,7 +40,7 @@ keyword: QingCloud, 云计算, 青云, NAT网关, NAT, 公网
 
 2. 右键点击公网 IP 条目，选择**关联 NAT 网关**。
 
-​	![](../../../_images/bind_eip_4.png)
+   ​	<img src="../../../_images/bind_eip_4.png" style="zoom:50%;" />
 
 3. 选择需要关联的 NAT 网关，点击**提交**。
 
