@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 说明 | 是否必选 |
 | --- | --- | --- | --- |
 | loadbalancer | String | 负载均衡器 ID。 | Yes |
 | listeners.n.listener_port | Integer | 监听端口。 | Yes |
@@ -31,7 +31,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | loadbalancer_listeners | Array | 新建的监听 ID 列表。 |

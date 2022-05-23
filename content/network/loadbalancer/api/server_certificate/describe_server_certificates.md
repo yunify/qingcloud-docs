@@ -12,7 +12,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 说明 | 是否必选 |
 | --- | --- | --- | --- |
 | server_certificates | String | 服务器证书 ID。 | No |
 | search_word | String | 搜索关键词，支持服务器证书 ID，服务器证书名称。 | No |
@@ -25,7 +25,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | server_certificate_set | Array | JSON 格式的服务器证书数据列表，每项参数可见 [Response Item](#response-item)。 |
@@ -33,7 +33,7 @@ draft: false
 
 #### Response Item
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | server_certificate_id | String | 服务器证书 ID。 |
 | server_certificate_name | String | 服务器证书名称。 |
