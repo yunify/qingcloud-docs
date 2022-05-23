@@ -12,7 +12,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 说明 | 是否必选 |
 | --- | --- | --- | --- |
 | loadbalancer_policy | String | 要添加规则的转发策略 ID。 | Yes |
 | rules.n.loadbalancer_policy_rule_name | String | 规则名称。 | No |
@@ -24,7 +24,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | loadbalancer_policy_rules | Array | 新建的规则 ID 列表。 |
