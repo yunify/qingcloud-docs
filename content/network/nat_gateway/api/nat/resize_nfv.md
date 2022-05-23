@@ -12,7 +12,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | nfv | String | 网络组件的 ID | Yes |
 | nfv_spec | Integer | 网络组件的规则，可以是 1-3 | Yes |
@@ -22,7 +22,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | job_id | String | 缩容或者扩容网络组件的 job ID 号 |

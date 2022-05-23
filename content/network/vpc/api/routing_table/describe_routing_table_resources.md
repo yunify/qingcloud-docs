@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter Name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | action | String | 请求动作，可选值：DescribeRoutingTableResources | Yes |
 | rtables.n | String | 一个或多个路由表的ID | No |
@@ -20,7 +20,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | resource_user_group_set | Array | 获取到的路由表和资源的对应关系的列表 |

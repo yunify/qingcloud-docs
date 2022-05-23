@@ -81,6 +81,27 @@ Bucket 的文件和文件夹按字母序混合排列。控制台可查看文件�
 
 3. 下载后的文件，默认保存在浏览器设置的下载保存目录。
 
+## 检索文件
+
+QingStor 对象存储的控制台，支持用户根据文件名对文件进行检索。用户可在检索框内，输入文件全名或文件前缀，满足条件的文件将列表显示。详细操作如下：
+
+1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
+
+ ![](/storage/object-storage/_images/console_main.png)
+
+2. 进入 Bucket 详情页面，在检索框内，输入待检索的对象名前缀后，点击回车：
+
+ ![](/storage/object-storage/_images/object_search1.png)
+
+3. 满足条件的检索结果，列表显示：
+
+ ![](/storage/object-storage/_images/object_search2.png)
+
+4. 也可在检索框内，输入待检索的对象名全名后，点击回车：
+
+ ![](/storage/object-storage/_images/object_search3.png)
+
+
 ## 查看文件详情
 
 1. 进入 QingStor 对象存储的主页面，点击对应的 Bucket 名：
@@ -116,6 +137,7 @@ Bucket 的文件和文件夹按字母序混合排列。控制台可查看文件�
    - 过期时长默认为 5 分钟，用户可根据需求进行修改，最长为 1 周。
 
 4. 用户可根据需求，将已复制的 URL 链接分享给其他人。
+
 
 ## 更多操作
 

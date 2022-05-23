@@ -16,7 +16,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | vxnet | String | 私有网络 ID (如果要指定 ip 地址，格式为'私有网络 ID\|IP 地址') | Yes |
 | instances.n | String | 加入到网络的云服务器 ID | Yes |
@@ -26,7 +26,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | job_id | String | 执行任务的 Job ID |
