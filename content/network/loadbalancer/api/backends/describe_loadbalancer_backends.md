@@ -12,7 +12,7 @@ draft: false
 
 ## 请求参数
 
-| 参数 | 参数类型 | 描述 | 是否必选 |
+| Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | loadbalancer_backends.n | String | 后端服务 ID。 | No |
 | loadbalancer_listener | String | 监听器 ID。 | No |
@@ -26,7 +26,7 @@ draft: false
 
 ## 返回数据
 
-| 参数 | 参数类型 | 描述 |
+| Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | loadbalancer_backend_set | Array | JSON 格式的后端服务数据列表, 每项参数可见 [Response Item](#response-item)。 |
@@ -34,7 +34,7 @@ draft: false
 
 #### Response Item
 
-| 参数 | 参数类型 | 描述 |
+| Name | Type | Description |
 | --- | --- | --- |
 | loadbalancer_backend_id | String | 后端服务 ID。 |
 | loadbalancer_backend_name | String | 后端服务名称。 |
