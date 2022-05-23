@@ -7,33 +7,33 @@ type: "product"
 
 section1:
   title: 弹性容器实例
-  vice_title: 弹性容器实例集成了云平台云服务器，存储以及网络等资源，在云平台上只需要完成指定容器镜像，指定存储卷，配置网络和指定基本信息四步，便可快速地创建弹性容器实例 ，以容器为单位支持容器自动巡检和修复。
+  vice_title: 弹性容器实例（QCI）集成了云平台云服务器、存储以及网络等资源，您无需创建和管理服务器集群即可直接创建弹性容器实例，运行容器，并支持容器自动巡检和修复。
 
 Section2:
   title: 用户指南
   children:
     - title: 产品简介
-      content: 产品简介
+      content: 了解弹性容器实例的应用场景、使用限制等。
       url: "/container/qci/intro/introduction"
 
     - title: 计费指南
-      content: 计费指南
+      content: 了解弹性容器实例如何计费
       url: "/container/qci/billing/price"
 
     - title: 快速入门
-      content: 快速入门
+      content: 快速上手使用弹性容器实例
       url: "/container/qci/quickstart/quick_start"
 
     - title: 操作指南
-      content: 操作指南
+      content: 弹性容器实例生命周期管理
       url: "/container/qci/manual/operation"
 
     - title: 最佳实践
-      content: 最佳实践
+      content: 使用 QCI 搭建一个 Jenkins 服务器
       url: "/container/qci/best-practices/jenkins"
 
     - title: 常见问题
-      content: 常见问题
+      content: 使用 QCI 的常见问题及解决办法
       url: "/container/qci/faq/faq"
 
 section4:
@@ -42,11 +42,11 @@ section4:
       content: 弹性容器实例为用户提供开箱即用的容器化部署环境。
       vice_title: 了解的第一步
       children:
-        - title: 产品概述（从这里进入示例目录）
+        - title: 产品概述
           url: "/container/qci/intro/introduction"
 
     - title: 上手：创建弹性实例与部署应用
-      content: 弹性容器实例为用户提供灵活的Serverless 容器运行服务。
+      content: 弹性容器实例为用户提供灵活的 Serverless 容器运行服务。
       vice_title: 上手的第一步
       children: 
         - title: 使用青云弹性容器 (QCI) 实例搭建一个Jenkins服务器
