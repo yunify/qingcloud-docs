@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| 参数 | 参数类型 | 描述 | 是否必选 |
+| Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | server_certificate | String | 服务器证书 ID。 | Yes |
 | server_certificate_name | String | 新的服务器证书名称。 | No |
@@ -21,7 +21,7 @@ draft: false
 
 ## 返回数据
 
-| 参数 | 参数类型 | 描述 |
+| Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码。 |

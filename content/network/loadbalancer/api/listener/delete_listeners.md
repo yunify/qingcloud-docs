@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| 参数 | 参数类型 | 描述 | 是否必选 |
+| Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | loadbalancer_listeners.n | String | 要删除的监听器 ID。 | Yes |
 | zone | String | 区域 ID，注意要小写。 | Yes |
@@ -19,7 +19,7 @@ draft: false
 
 ## 返回数据
 
-| 参数 | 参数类型 | 描述 |
+| Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | loadbalancer_listeners | Array | 删除的监听器 ID 列表。 |

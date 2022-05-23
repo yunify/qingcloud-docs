@@ -12,7 +12,7 @@ draft: false
 
 ## 请求参数
 
-| 参数 | 参数类型 | 描述 | 是否必选 |
+| Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | server_certificate_name | String | 服务器证书名称。 | No |
 | certificate_content | String | 服务器证书内容。 | Yes |
@@ -23,7 +23,7 @@ draft: false
 
 ## 返回数据
 
-| 参数 | 参数类型 | 描述 |
+| Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | server_certificate_id | String | 创建的服务器证书 ID。 |
