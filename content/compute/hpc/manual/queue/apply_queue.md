@@ -21,9 +21,9 @@ weight: 20
 
 1. 登录 QingCloud 管理控制台。
 
-2. 选择**产品与服务** > **计算** > **弹性高性能计算 HPC**，进入**弹性高性能计算 HPC** 的**集群管理**页面。
+2. 选择**产品与服务** > **计算** > **高性能计算 HPC**，进入**高性能计算 HPC** 的**集群管理**页面。
 
-   ![apply_queue_1](../../../_images/apply_queue_1.png)
+   ![cluster_manage](../../../_images/cluster_manage.png)
 
 3. 点击 EHPC 集群 ID，进入集群详情页面，选择**队列管理**页签。
 
