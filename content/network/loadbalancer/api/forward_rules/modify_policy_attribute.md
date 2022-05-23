@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| 参数 | 参数类型 | 描述 | 是否必选 |
+| 参数 | 参数类型 | 说明 | 是否必选 |
 | --- | --- | --- | --- |
 | loadbalancer_policy | String | 要修改属性的转发策略 ID。 | Yes |
 | loadbalancer_policy_name | String | 转发策略名称。 | No |
@@ -23,7 +23,7 @@ draft: false
 
 ## 返回数据
 
-| 参数 | 参数类型 | 描述 |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码。 |

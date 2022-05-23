@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| 参数 | 参数类型 | 描述 | 是否必选 |
+| 参数 | 参数类型 | 说明 | 是否必选 |
 | --- | --- | --- | --- |
 | loadbalancer_listener | String | 要添加后端服务的监听器 ID。 | Yes |
 | backends.n.resource_id | String | 后端服务资源 ID。 | Yes |
@@ -24,7 +24,7 @@ draft: false
 
 ## 返回数据
 
-| 参数 | 参数类型 | 描述 |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | loadbalancer_backends | Array | 新建的后端服务 ID 列表。 |

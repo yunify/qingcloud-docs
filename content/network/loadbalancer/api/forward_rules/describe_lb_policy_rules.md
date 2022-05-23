@@ -12,7 +12,7 @@ draft: false
 
 ## 请求参数
 
-| 参数 | 参数类型 | 描述 | 是否必选 |
+| 参数 | 参数类型 | 说明 | 是否必选 |
 | --- | --- | --- | --- |
 | loadbalancer_policy_rules.n | String | 转发策略规则 ID。 | No |
 | loadbalancer_policy | String | 转发策略 ID。 | No |
@@ -24,7 +24,7 @@ draft: false
 
 ## 返回数据
 
-| 参数 | 参数类型 | 描述 |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | loadbalancer_policy_rule_set | Array | JSON 格式的转发策略规则数据列表, 每项参数可见 [Response Item](#response-item)。 |
@@ -32,7 +32,7 @@ draft: false
 
 #### Response Item
 
-| 参数 | 参数类型 | 描述 |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | loadbalancer_policy_rule_id | String | 转发策略规则 ID。 |
 | loadbalancer_policy_rule_name | String | 转发策略规则名称。 |

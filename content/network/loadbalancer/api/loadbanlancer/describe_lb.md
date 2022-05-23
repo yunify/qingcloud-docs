@@ -12,7 +12,7 @@ draft: false
 
 ## 请求参数
 
-| 参数 | 参数类型 | 描述 | 是否必选 |
+| 参数 | 参数类型 | 说明 | 是否必选 |
 | --- | --- | --- | --- |
 | loadbalancers.n | String | 负载均衡器 ID。 | No |
 | status.n | String | 负载均衡器状态: pending，active，stopped，suspended，deleted，ceased。 | No |
@@ -27,7 +27,7 @@ draft: false
 
 ## 返回数据
 
-| 参数 | 参数类型 | 描述 |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | loadbalancer_set | Array | JSON 格式的负载均衡器数据列表，每项参数可见下面 [Response Item](#response-item)。 |
@@ -35,7 +35,7 @@ draft: false
 
 #### Response Item
 
-| 参数 | 参数类型 | 描述 |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | loadbalancer_id | String | 负载均衡器 ID。 |
 | loadbalancer_name | String | 负载均衡器名称。 |
