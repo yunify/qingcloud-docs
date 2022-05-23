@@ -20,9 +20,13 @@ Section2:
       content: 高防IP产品计费模式文档
       url: "/security/antiddos_ip/billing/price"
 
+    - title: 快速入门
+      content: 高防 IP 快速入门
+      url: "/security/antiddos_ip/quickstart/antiddos_create/"
+
     - title: 操作指南
       content: 高防IP操作文档
-      url: "/security/antiddos_ip/manual/antiddos_user_guide/"
+      url: "/security/antiddos_ip/manual/antiddos_upgrade/"
 
 
 section4:
@@ -33,6 +37,16 @@ section4:
       children:
         - title: 产品描述
           url: "/security/antiddos_ip/intro/introduction"
+
+    - title: 上手：高防 IP 的常用操作
+      content: 高防 IP 帮助用户有效抵御大流量 DDoS 攻击及CC攻击。
+      vice_title: 上手的第一步
+      children: 
+        - title: 创建高防 IP 实例
+          url: "/security/antiddos_ip/quickstart/antiddos_create/"
+       
+        - title: 业务接入
+          url: "/security/antiddos_ip/quickstart/antiddos_access/"
 
 ---
 
