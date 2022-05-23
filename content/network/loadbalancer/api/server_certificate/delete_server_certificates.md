@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| 参数 | 参数类型 | 描述 | 是否必选 |
+| Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | server_certificates.n | String | 服务器证书 ID。 | Yes |
 | zone | String | 区域 ID，注意要小写。 | Yes |
@@ -19,7 +19,7 @@ draft: false
 
 ## 返回数据
 
-| 参数 | 参数类型 | 描述 |
+| Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | job_id | String | 执行任务的 Job ID。 |

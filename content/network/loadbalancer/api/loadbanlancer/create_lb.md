@@ -12,7 +12,7 @@ draft: false
 
 ## 请求参数
 
-| 参数 | 参数类型 | 描述 | 是否必选 |
+| Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | eips.n | String | 公网 IP 的 ID。<br/>一个 “公网” 类型的负载均衡器可绑定 4 个公网 IP。 | No |
 | vxnet | String | 要加入的私网 ID。 | No |
@@ -28,7 +28,7 @@ draft: false
 
 ## 返回数据
 
-| 参数 | 参数类型 | 描述 |
+| Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | loadbalancer_id | String | 创建的负载均衡器 ID。 |
