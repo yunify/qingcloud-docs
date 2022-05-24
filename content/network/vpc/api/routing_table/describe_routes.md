@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter Name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | action | String | 请求动作，可选值：DescribeRoutes | Yes |
 | nexthop | String | 路由表规则的下一跳，可以是路由器ID，也可以是IP地址，取决于nexthop_type | No |
@@ -22,7 +22,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | routing_table_rule_set | Array | 获取到的路由表规则信息列表 |
