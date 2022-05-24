@@ -12,7 +12,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 说明 | 是否必选 |
 | --- | --- | --- | --- |
 | loadbalancers.n | String | 负载均衡器 ID。 | Yes |
 | loadbalancer_type | Integer | 负载均衡器类型。<br/>有效值 0、1、2、3：<br/>0 – 最大连接数 5000<br/>1 – 最大连接数 20,000<br/>2 – 最大连接数 40,000<br/>3 – 最大连接数 100,000 | Yes |
@@ -22,7 +22,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | job_id | String | 执行任务的 Job ID。 |

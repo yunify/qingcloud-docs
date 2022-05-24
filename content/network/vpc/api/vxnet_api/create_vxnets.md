@@ -16,7 +16,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | vxnet_name | String | 私有网络名称 | No |
 | vxnet_type | Integer | 私有网络类型，1 - 受管私有网络，0 - 自管私有网络。 | Yes |
@@ -28,7 +28,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | vxnets | Array | 创建成功的私有网络ID列表 |

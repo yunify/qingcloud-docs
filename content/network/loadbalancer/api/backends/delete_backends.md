@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 说明 | 是否必选 |
 | --- | --- | --- | --- |
 | loadbalancer_backends.n | String | 后端服务 ID。 | Yes |
 | zone | String | 区域 ID，注意要小写。 | Yes |
@@ -19,7 +19,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | loadbalancer_backends | Array | 删除的后端服务 ID 列表。 |

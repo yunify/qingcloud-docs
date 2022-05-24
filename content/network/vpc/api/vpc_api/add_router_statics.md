@@ -12,7 +12,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | router | String | 需要增加规则的 VPC 网络ID | Yes |
 | statics.n.router_static_name | String | 规则名称 | No |
@@ -30,7 +30,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | router_statics | Array | 新增加的 VPC 网络规则ID列表 |

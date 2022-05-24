@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | span_id | String | SPAN ID | Yes |
 | span_name | String | SPAN名称 | No |
@@ -24,7 +24,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |

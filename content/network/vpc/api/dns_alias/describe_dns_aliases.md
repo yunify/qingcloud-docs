@@ -12,7 +12,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | dns_aliases.n | String | 内网域名别名 ID | No |
 | resource_id | String | 按资源 ID 过滤 | No |
@@ -25,7 +25,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | dns_alias_set | Array | JSON 格式的内网域名别名数据列表，每项数据可见下面 **ResponseItemType** |
@@ -34,7 +34,7 @@ draft: false
 
 **ResponseItemType**
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | status | String | 内网域名别名状态 |
 | dns_alias_id | String | 内网域名别名 ID |

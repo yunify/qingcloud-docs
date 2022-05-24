@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | vxnets.n | String | 私有网络ID | No |
 | vxnet_type | Integer | 私有网络类型，分为 1 - 受管私有网络，0 - 自管私有网络。 | No |
@@ -25,7 +25,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | vxnet_set | Array | JSON 格式的私有网络数据列表，每项数据可见下面 [ResponseItemType](#responseitemtype) |
@@ -34,7 +34,7 @@ draft: false
 
 **ResponseItemType**
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | vxnet_type | Integer | 私有网络类型，分为 1 - 受管私有网络，0 - 自管私有网络。 |
 | vxnet_id | String | 私有网络 ID |
