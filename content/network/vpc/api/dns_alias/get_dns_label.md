@@ -6,13 +6,13 @@ weight: 1
 draft: false
 ---
 
-获取内网域名标记 (Label) 和域名名称 (Domain Name)。
+获取内网域名标记 (Label) 和域名名称 (Domain 参数)。
 
 当给资源绑定内网域名时，此标记会与 prefix 一起组成内网域名，即： 内网域名 ＝ prefix + domain name。
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
@@ -20,7 +20,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | dns_label | String | 内网域名标记 |
