@@ -14,7 +14,7 @@ keyword: 公网 IP API,申请公网 IP,创建公网 IP
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | bandwidth | Integer | 公网 IP 带宽上限，单位为 Mbps | Yes |
 | billing_mode | String | 公网 IP 计费模式：bandwidth 按带宽计费，traffic 按流量计费，默认是 bandwidth | No |
@@ -25,11 +25,11 @@ keyword: 公网 IP API,申请公网 IP,创建公网 IP
 | target_user | String | 目标用户 ID ，可用于主账号为其子账号创建资源。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../gei_api/parameters/)
+[_公共参数_](../../get_api/parameters/)
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | eips | Array | 分配成功的公网 IP 列表 |

@@ -12,7 +12,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | router | String |  VPC 网络ID, “*” 表示显示所有 VPC 网络 | Yes |
 | vxnet | String | 私有网络ID | No |
@@ -25,7 +25,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | router_vxnet_set | Array | JSON 格式的私有网络列表，每项参数可见下面 [ResponseItemType](#responseitemtype) |
@@ -34,7 +34,7 @@ draft: false
 
 **ResponseItemType**
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | router_id | String |  VPC 网络ID |
 | vxnet_id | String | 私有网络ID |

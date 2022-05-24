@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter Name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | action | String | 请求动作，可选值：AssociateRouteTable | Yes |
 | resource | String | 资源ID, 可以是负载均衡器ID，也可以是私有网络ID <br> 资源类型必须和创建路由表时指定的资源的资源，比如创建路由表时绑定的是负载均衡器，那么这里的资源类型也必须是负载均衡器 | Yes |
@@ -20,7 +20,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | job_id | String | 执行任务的 Job ID |
