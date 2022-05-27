@@ -119,7 +119,7 @@ keyword: 高防IP, 高防IP实例, 添加转发策略
 
    系统自动保存当前填写信息，并配置策略，添加成功后，根据页面提示执行后续相应配置。
 
-   <img src="../../_images/07.png" style="zoom:50%;" />
+   <img src="../../_images/07_ac.png" style="zoom:50%;" />
 
 
 #### 第一步：放行回源地址
