@@ -10,8 +10,9 @@ draft: false
 
 ## 请求参数
 
-| loadbalancer_policy_name | String | 转发策略名称 | No |
+| 参数                     | 参数类型 | 说明                                                         | 是否必选 |
 | --- | --- | --- | --- |
+| loadbalancer_policy_name | String | 转发策略名称 | No |
 | operator | String | 转发策略规则间的逻辑关系。<ul><li>and：与</li><li>or：或</li></ul>默认是 “or”。 | No |
 | balance_mode | String | 绑定相应转发策略的后端逻辑组之间的均衡算法。<ul><li>roundrobin ：轮询</li><li>leastconn：最小连接</li><li>source ：源地址 </li></ul>不指定的话默认使用的是监听器均衡算法 | No |
 | zone | String | 区域 ID，注意要小写。 | Yes |
@@ -20,7 +21,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | loadbalancer_poicy_id | String | 创建的转发策略 ID。 |

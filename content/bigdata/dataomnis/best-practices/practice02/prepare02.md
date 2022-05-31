@@ -45,7 +45,7 @@ draft: false
 3. 配置集群相关参数。
 
    - **网络配置**选择在[创建网络](#创建网络)中创建的网络。
-   - 其他参数详细介绍请参见[创建计算集群](../../../manual/data_development/flink_cluster/create_cluster/)。
+   - 其他参数详细介绍请参见[创建计算集群](/bigdata/dataomnis/manual/flink_cluster/create_cluster/)。
 
    <img src="/bigdata/dataomnis/_images/bp_create_flink_cluster.png" alt="创建网络" style="zoom:50%;" />
 
