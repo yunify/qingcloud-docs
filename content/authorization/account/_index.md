@@ -20,7 +20,7 @@ Section2:
 
     - title: 操作指南
       content: 如何管理账号
-      url: "manual/user_verify/"
+      url: "manual/user_signup/"
     - title: 常见问题
       content: 账户常见问题
       url: "faq/faq/"
