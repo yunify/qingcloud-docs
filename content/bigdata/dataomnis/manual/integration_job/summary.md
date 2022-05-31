@@ -19,12 +19,12 @@ draft: false
 
 ### 离线同步支持的数据源类型
 
-| 数据来源（Source）                                           | 数据目的（Sink）                                             | 增量同步 Source |
-| :----------------------------------------------------------- | :----------------------------------------------------------- | --------------- |
-| [配置 MySQL 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/mysql) | [配置 MySQL 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/mysql) | 支持            |
-| [配置 SQLServer 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/sqlserver) | [配置 SQLServer 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/sqlserver) | 支持            |
-| [配置 PostgreSQL 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/postgresql) | [配置 PostgreSQL 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/postgresql) | 支持            |
-| [配置 ClickHouse 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/clickhouse) | [配置 ClickHouse 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/clickhouse) | 支持            |
+| 数据来源（Source）                                           | 数据目的（Sink）                                             |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
+| [配置 MySQL 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/mysql) | [配置 MySQL 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/mysql) |
+| [配置 SQLServer 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/sqlserver) | [配置 SQLServer 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/sqlserver) |
+| [配置 PostgreSQL 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/postgresql) | [配置 PostgreSQL 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/postgresql) |
+| [配置 ClickHouse 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/clickhouse) | [配置 ClickHouse 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/clickhouse) |
 
 <!-- | 数据源类型                                                   | 数据来源（Source）                                           | 数据目的（Sink）                                             | 增量同步Source |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | -------------- |

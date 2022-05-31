@@ -5,6 +5,7 @@ keywords:
 weight: 2
 collapsible: false
 draft: true
+not_show: true
 ---
 
 本文为您介绍 TiDB 作为数据目的时，需要配置的参数及配置示例。

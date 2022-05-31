@@ -101,4 +101,104 @@ draft: false
 
 2. 您可以根据实际情况选择是否终止**当前作业正在运行中的实例**，如果终止当前作业正在运行中的实例，运行中的作业实例会立即被强制终止。
 3. 点击**发布**，发布作业。发布作业时也会对代码进行语法检查，需要一定的时间，请耐心等待。   
-   作业发布成功后，您可以前往运维
+   作业发布成功后，您可以前往运维中心查看已发布作业和作业实例。
+
+## 脚本示例
+
+```json
+{
+  "job": {
+    "content": [
+      {
+        "reader": {
+          "name": "mysqlreader",
+          "parameter": {
+            "column": [
+              {
+                "name": "comm",
+                "type": "DOUBLE"
+              },
+              {
+                "name": "deptno",
+                "type": "INT"
+              },
+              {
+                "name": "empno",
+                "type": "INT"
+              },
+              {
+                "name": "ename",
+                "type": "VARCHAR"
+              },
+              {
+                "name": "hiredate",
+                "type": "DATE"
+              }
+            ],
+            "connection": [
+              {
+                "jdbcUrl": [
+                  "jdbc:mysql://139.198.32.39:3306/dataomnis?useSSL=false"
+                ],
+                "table": [
+                  "emp"
+                ]
+              }
+            ],
+            "password": "pa88w0rd",
+            "username": "root"
+          }
+        },
+        "writer": {
+          "name": "postgresqlwriter",
+          "parameter": {
+            "column": [
+              {
+                "name": "comm",
+                "type": "REAL"
+              },
+              {
+                "name": "deptno",
+                "type": "INTEGER"
+              },
+              {
+                "name": "empno",
+                "type": "INTEGER"
+              },
+              {
+                "name": "ename",
+                "type": "CHARACTER"
+              },
+              {
+                "name": "hiredate",
+                "type": "DATE"
+              }
+            ],
+            "connection": [
+              {
+                "jdbcUrl": "jdbc:postgresql://139.198.28.41:5432/dataomnis?useSSL=false",
+                "table": [
+                  "public.emp"
+                ]
+              }
+            ],
+            "mode": "insert",
+            "password": "postgres",
+            "semantic": "exactly-once",
+            "username": "postgres"
+          }
+        },
+        "transformer": {
+          "transformSql": ""
+        }
+      }
+    ],
+    "setting": {
+      "speed": {
+        "bytes": 0,
+        "channel": 1
+      }
+    }
+  }
+}
+```
