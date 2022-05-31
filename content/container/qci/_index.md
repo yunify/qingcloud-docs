@@ -22,11 +22,11 @@ Section2:
 
     - title: 快速入门
       content: 快速上手使用弹性容器实例
-      url: "/container/qci/quickstart/quick_start"
+      url: "/container/qci/quickstart/qs_process/"
 
     - title: 操作指南
       content: 弹性容器实例生命周期管理
-      url: "/container/qci/manual/operation"
+      url: "/container/qci/manual/qci_instance/intro/"
 
     - title: 最佳实践
       content: 使用 QCI 搭建一个 Jenkins 服务器
@@ -34,7 +34,7 @@ Section2:
 
     - title: 常见问题
       content: 使用 QCI 的常见问题及解决办法
-      url: "/container/qci/faq/faq"
+      url: "/container/qci/faq/"
 
 section4:
   children:

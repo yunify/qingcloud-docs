@@ -2,7 +2,7 @@
 title: "弹性容器实例 (QCI) 的使用"
 description: 介绍如何使用弹性容器实例 QCI。 
 keyword: 青云, QingCloud, 云计算, QCI, 容器
-draft: false
+not_show: true
 weight: 10
 ---
 

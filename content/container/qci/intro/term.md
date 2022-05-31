@@ -1,7 +1,7 @@
 ---
 title: "基本概念"
-description: 
-keyword: QCI, 容器, 弹性容器实例
+description: 弹性容器实例QCI相关术语及概念。
+keyword: QCI,弹性容器实例,镜像
 weight: 60
 ---
 
