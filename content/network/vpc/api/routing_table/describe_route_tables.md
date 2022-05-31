@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter Name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | action | String | 请求动作，可选值：DescribeRouteTables | Yes |
 | routing_tables.n | String | 一个或者多个路由表的ID | No |
@@ -22,7 +22,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | routing_table_set | Array | 获取到的路由表信息列表 |
