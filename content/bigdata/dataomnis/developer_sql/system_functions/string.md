@@ -47,7 +47,6 @@ draft: false
 | STR_TO_MAP(string1[, string2, string3])                      | 将 string1 用 string2 提供的数据分隔符（默认为“,”）和 string3 提供的键值间分隔符（默认为"="）进行拆分，结果为键值对 `MAP` 类型。例如 STR_TO_MAP('k1=v1,k2=v2,k3=v3') 返回键值对（非字符串）{'k1': 'v1', 'k2': 'v2', 'k3': 'v3'}。 |
 | SUBSTR(string[, integer1[, integer2]])                       | 返回 string 字符串从 integer1 位置开始，长度为 integer2 的子字符串。如果不提供 integer2，则默认到 string 的末尾。 |
 
-
 ## 常用函数示例
 
 ### ||

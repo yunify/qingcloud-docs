@@ -44,6 +44,18 @@ draft: false
 <!-- | 数据源类型                                                   | 全量同步 Source | 全量同步 Sink | 增量同步 Source | 增量同步 Sink |
 | :----------------------------------------------------------- | --------------- | :------------ | --------------- | ------------- |
 | [MySQL](/bigdata/dataomnis/manual/source_data/add_data/mysql) | 支持            | 支持          | 支持            | 支持          |
+| [SQLServer](/bigdata/dataomnis/manual/source_data/add_data/sqlserver) | 支持            | 支持          | 支持            | 支持          |
+| [PostgreSQL](/bigdata/dataomnis/manual/source_data/add_data/postgresql) | 支持            | 支持          | 支持            | 支持          |
+| [ClickHouse](/bigdata/dataomnis/manual/source_data/add_data/clickhouse) | 支持            | 支持          | 支持            | 支持          |
+| [MongoDB](/bigdata/dataomnis/manual/source_data/add_data/mongodb) | 支持            | 支持          | 支持            | 支持          |
+| [ElasticSearch](/bigdata/dataomnis/manual/source_data/add_data/elasticsearch) | 支持            | 支持          | 不支持          | 支持          |
+| [HDFS](/bigdata/dataomnis/manual/source_data/add_data/hdfs)  | 支持            | 支持          | 不支持          | 支持          |
+| [HBase](/bigdata/dataomnis/manual/source_data/add_data/hbase) | 支持            | 支持          | 不支持          | 支持          |
+| [Kafka](/bigdata/dataomnis/manual/source_data/add_data/kafka) | 不支持          | 支持          | 不支持          | 支持          |
+
+<!-- | 数据源类型                                                   | 全量同步 Source | 全量同步 Sink | 增量同步 Source | 全量同步 Sink |
+| :----------------------------------------------------------- | --------------- | :------------ | --------------- | ------------- |
+| [MySQL](/bigdata/dataomnis/manual/source_data/add_data/mysql) | 支持            | 支持          | 支持            | 支持          |
 | [Oracle](/bigdata/dataomnis/manual/source_data/add_data/oracle) | 支持            | 支持          | 支持            | 支持          |
 | [SQLServer](/bigdata/dataomnis/manual/source_data/add_data/sqlserver) | 支持            | 支持          | 支持            | 支持          |
 | [PostgreSQL](/bigdata/dataomnis/manual/source_data/add_data/postgresql) | 支持            | 支持          | 支持            | 支持          |
