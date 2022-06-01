@@ -29,7 +29,7 @@ draft: false
 
 全量同步与增量同步支持的数据源类型如下：
 
-| 数据源类型                                                   | 全量同步 Source | 全量同步 Sink | 增量同步 Source | 全量同步 Sink |
+| 数据源类型                                                   | 全量同步 Source | 全量同步 Sink | 增量同步 Source | 增量同步 Sink |
 | :----------------------------------------------------------- | --------------- | :------------ | --------------- | ------------- |
 | [MySQL](/bigdata/dataomnis/manual/source_data/add_data/mysql) | 支持            | 支持          | 支持            | 支持          |
 | [SQLServer](/bigdata/dataomnis/manual/source_data/add_data/sqlserver) | 支持            | 支持          | 支持            | 支持          |
@@ -41,7 +41,7 @@ draft: false
 | [HBase](/bigdata/dataomnis/manual/source_data/add_data/hbase) | 支持            | 支持          | 不支持          | 支持          |
 | [Kafka](/bigdata/dataomnis/manual/source_data/add_data/kafka) | 不支持          | 支持          | 不支持          | 支持          |
 
-<!-- | 数据源类型                                                   | 全量同步 Source | 全量同步 Sink | 增量同步 Source | 全量同步 Sink |
+<!-- | 数据源类型                                                   | 全量同步 Source | 全量同步 Sink | 增量同步 Source | 增量同步 Sink |
 | :----------------------------------------------------------- | --------------- | :------------ | --------------- | ------------- |
 | [MySQL](/bigdata/dataomnis/manual/source_data/add_data/mysql) | 支持            | 支持          | 支持            | 支持          |
 | [Oracle](/bigdata/dataomnis/manual/source_data/add_data/oracle) | 支持            | 支持          | 支持            | 支持          |

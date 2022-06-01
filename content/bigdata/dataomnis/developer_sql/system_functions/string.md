@@ -48,7 +48,7 @@ draft: false
 | SUBSTR(string[, integer1[, integer2]])                       | 返回 string 字符串从 integer1 位置开始，长度为 integer2 的子字符串。如果不提供 integer2，则默认到 string 的末尾。 |
 
 
-## 常用字函数示例
+## 常用函数示例
 
 ### ||
 

@@ -12,7 +12,7 @@ draft: false
 ## 注意事项
 
 - 被比较的两个数据类型必须是相同的数据类型或者是可以进行转换的类型。
-- double、real 和 float 值存在一定的精度差，因此不建议直接使用`=`对两个 double 类型的数据进行比较。
+- double、real 和 float 值存在一定的精度差，因此在 Flink SQL 中不建议直接使用`=`对两个 double 或两个 float 类型的数据进行比较。
 
 ## 函数列表
 
