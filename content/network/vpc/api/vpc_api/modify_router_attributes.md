@@ -12,7 +12,7 @@ draft: false
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | router | String |  VPC 网络ID | Yes |
 | eip | String |  VPC 网络的公网IP，如果值为 "" ，表示将公网IP从 VPC 网络上解绑。<br/>修改这个参数之后，需要执行 [_UpdateRouters_](../update_routers) 指令才能使得修改生效。 | No |
@@ -29,7 +29,7 @@ draft: false
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |

@@ -12,7 +12,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 公�
 
 ## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | nfv | String | 网络组件的 ID | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
@@ -22,7 +22,7 @@ keyword: 青云, QingCloud, 云计算, API, NFV, NAT 网关, 网络组件, 公�
 
 ## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | job_id | String | 从一个网络组件解绑一个或多个公网IP job ID 号 |
