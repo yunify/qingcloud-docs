@@ -76,6 +76,10 @@ weight: 10
       
       **- 已有硬盘**：硬盘需提前创建，写入硬盘的数据可以在 QCI 销毁时依然保留，适用于 MySQL 、Redis 等场景。
       
+      > **说明**
+      >
+      > 硬盘类型需要与 QCI 云服务器类型匹配，具体规则可以参考 [QCI 云服务器类型与硬盘类型匹配策略](/container/qci/faq/#qci-云服务器类型与硬盘类型的匹配策略) 。
+      
       <!--<table>
         <thead><tr><td>挂载方式</td><td>参数名称</td><td>说明</td></tr></thead>
         <tr><td rowspan="4">配置文件</td><td>名称</td><td></td></tr>
