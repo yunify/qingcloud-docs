@@ -49,10 +49,9 @@ section4:
       content: 弹性容器实例为用户提供灵活的 Serverless 容器运行服务。
       vice_title: 上手的第一步
       children: 
-        - title: 使用青云弹性容器 (QCI) 实例搭建一个Jenkins服务器
-          url: "/container/qci/best-practices/jenkins"
+        - title: 使用 QCI 实例搭建一个 nginx 服务
+          url: "/container/qci/quickstart/qs_create_qci/"
 ---
-
 
 <!-- type: "product" 这个参数表明这是一个产品index页面 -->
 <!-- section1 为产品index页面 主标题 副标题 video  video_img为视频图片  -->
