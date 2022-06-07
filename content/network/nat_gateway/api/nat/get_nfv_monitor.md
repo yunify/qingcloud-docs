@@ -49,9 +49,7 @@ https://api.qingcloud.com/iaas/?action=GetNFVMonitor
 **返回示例：**
 
 ```
-{
-  "action":"GetNFVMonitorResponse",
-  "ret_code":0,
-  "job_id":"j-1234abcd"
-}
+{action: "GetNFVMonitorResponse",…}
+action: "GetNFVMonitorResponse"
+meter_set: [{data_set: [{eip_id: "eip-qzcu5swq",…}], meter_id: "snat_connection", zone_id: "pek3a"},…]
 ```
