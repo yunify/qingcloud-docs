@@ -15,7 +15,7 @@ draft: false
 
 ## 类型转换列表
 
-| 分类    | 支持的 SQLServer 数据类型   |
+| 分类    | 支持的 ClickHouse 数据类型   |
 | :------ | :----- |
 | 整数类    | TINYINT、SMALLINT、INT、BIGINT |
 | 浮点类    | FLOAT、DOUBLE、DECIMAL |
