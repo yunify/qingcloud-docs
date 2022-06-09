@@ -20,7 +20,7 @@ ChronusDB `企业版-1.1.0` 和 `基础版-1.1.0` 基于 RadonDB ClickHouse 22.3
 - DDL 性能优化，自动清理过期 DDL。
 - 引入 clickhouse-keeper ，function 等新特性。
 -  csv 导入支持多分隔符。
-- os 升级 ubuntu 20.4 ，充分发挥 **e3** 性能
+- os 升级至 ubuntu 20.4版本 ，充分发挥 **e3** 性能
 
 ### v1.0.9
 
