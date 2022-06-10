@@ -5,6 +5,7 @@ keyword: 负载均衡器,实例,
 draft: false
 weight: 35
 aliases:
+  - /network/loadbalancer/manual/lb_user_guide/
   - /network/loadbalancer/manual/lb_user_guide/#rsyslog-远端云服务器/
 ---
 
@@ -65,3 +66,6 @@ aliases:
 
 7. 勾选负载均衡器，然后选择**更多操作** > **应用修改**，使配置生效。
 
+## 常见问题
+
+[如何分析 rsyslog 日志？](/network/loadbalancer/faq/haproxy_log/)
