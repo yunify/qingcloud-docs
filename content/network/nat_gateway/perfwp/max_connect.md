@@ -43,7 +43,7 @@ keyword: QingCloud, 云计算, 青云, NAT网关, 性能测试, 最大连接数
 
 7. 点击**应用修改**更新 NAT 网关。
 
-8. 登录一个 webservice 节点，将[测试脚本 natgw.py](/network/nat_gateway/attach/natgw.py/) 上传到节点，然后运行如下命令执行启动测试脚本。
+8. 登录一个 webservice 节点，将[测试脚本 natgw.py](/network/nat_gateway/attach/natgw.py) 上传到节点，然后运行如下命令执行启动测试脚本。
 
    ```
    python natgw.py -c tag-6ldhogun -s tag-sb0te7z9
@@ -55,7 +55,7 @@ keyword: QingCloud, 云计算, 青云, NAT网关, 性能测试, 最大连接数
    >
    > 1.每个 client 脚本中固定可以新建 25,000 个长连接，如果需要增大测试连接数，需要增加 client 数量。
    >
-   > 2.一次测试结束之后需要等 server 连接全部销毁，才能启动下一次测试，要不然服务端会起不来，具体可以登录到服务端执行 `netstat -anp | grep 8080 | wc -l`, 知道输出为0即可开始下一轮测试
+   > 2.一次测试结束之后需要等 server 连接全部销毁，才能启动下一次测试，要不然服务端会起不来，具体可以登录到服务端执行 `netstat -anp | grep 8080 | wc -l`, 知道输出为0即可开始下一轮测试。
    >
    > 3.每轮测试持续时间大概 20-30 分钟，需要人工执行 stop 命令结束。
 
@@ -67,7 +67,7 @@ keyword: QingCloud, 云计算, 青云, NAT网关, 性能测试, 最大连接数
 
    
 
-10. 将[连接数统计脚本 cal.py](/network/nat_gateway/attach/cal.py/) 上传到节点，然后运行如下命令统计当前连接数。
+10. 将[连接数统计脚本 cal.py](/network/nat_gateway/attach/cal.py) 上传到节点，然后运行如下命令统计当前连接数。
 
     ```
     python cal.py -n nfv-r1fiaiqz
