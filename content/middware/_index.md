@@ -16,7 +16,7 @@ Section1:
       url: "/middware/rabbitmq/intro/intro"
 
     - title: RocketMQ 服务
-      url: "/middware/rocketmq/intro/intro"
+      url: "/middware/rocketmq/intro/introduction"
 
     - title: Etcd 服务
       url: "/middware/etcd/intro/introduction"
