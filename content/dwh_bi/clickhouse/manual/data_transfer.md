@@ -1,26 +1,25 @@
 ---
 title: "数据迁移"
 description: 本小节主要介绍如何迁移数据。 
-keyword: 实例, 访问数据库,时序数据库,ChronusDB,数据库 
+keyword: 实例, 访问数据库,时序数据库,ClickHouse,数据库 
 weight: 1
 collapsible: false
 draft: false
 
+
 ---
 
-
-ChronusDB 数据迁移服务基于 `clickhouse-copier` 实现 ChronusDB 数据库集群间的数据迁移，支持 MergeTree, ReplicatedMergeTree, log family 引擎的数据迁移。
-
+ClickHouse 数据迁移服务基于 `clickhouse-copier` 实现 ChronusDB 数据库集群间的数据迁移，支持 MergeTree, ReplicatedMergeTree, log family 引擎的数据迁移。
 
 > **注意**
 >
 > 为避免数据丢失，建议在业务低峰期执行。
 
-本小节主要介绍如何在控制台迁移 ChronusDB 数据库数据。
+本小节主要介绍如何在控制台迁移 ClickHouse 数据库数据。
 
 ## 约束限制
 
-- 仅 ChronusDB v1.1.0 及以上版本有数据迁移功能。
+- 仅 ClickHouse v1.1.9 及以上版本有数据迁移功能。
 - 不支持从高版本迁移至低版本。
 - 当前迁移任务没有结束，不能重复开启迁移任务。
 - 迁移过程中，禁止向源集群或本集群做关闭、重启操作或执行 DDL 语句。
@@ -29,14 +28,14 @@ ChronusDB 数据迁移服务基于 `clickhouse-copier` 实现 ChronusDB 数据�
 ## 前提条件
 
 - 已获取管理控制台登录账号和密码，且已获取集群操作权限。
-- ChronusDB 集群状态为**活跃**。
+- ClickHouse 集群状态为**活跃**。
 - 已获取源集群数据库的管理员账号和密码。
 
 ## 操作步骤
 
 1. 登录管理控制台。
 
-2. 选择**产品与服务** > **数据库与缓存** > **时序数据库 ChronusDB**，进入集群管理页面。
+2. 选择**产品与服务** > **数据仓库与 BI** > **ClickHouse**，进入集群管理页面。
 
 3. 启动在线迁移。
 
@@ -52,13 +51,13 @@ ChronusDB 数据迁移服务基于 `clickhouse-copier` 实现 ChronusDB 数据�
 
    5. 确认信息无误后，点击**提交**，返回集群详情页面，开启迁移。
 
-4. 数据迁移完成后，ChronusDB 集群将获取源 ChronusDB 数据库全量数据。
+4. 数据迁移完成后， 集群将获取源 ClickHouse 数据库全量数据。
 
    > **说明**
    >
    > 若**增量迁移**设置为 **NO**，数据迁移过程，建议暂停数据写操作以保障数据一致性。
    >
-   > 若**增量迁移**设置为 **YES**，数据迁移完成后，ChronusDB 集群将与源数据库建立主从关系，实时同步迁移源数据库增量数据。
+   > 若**增量迁移**设置为 **YES**，数据迁移完成后，ClickHouse 集群将与源数据库建立主从关系，实时同步迁移源数据库增量数据。
    >
    > 迁移期间，可在**迁移状态**页签查看迁移状态和进度。
 
@@ -71,7 +70,7 @@ ChronusDB 数据迁移服务基于 `clickhouse-copier` 实现 ChronusDB 数据�
    3. 在当前集群详情页**基本属性**模块，展开下拉菜单，点击**结束数据迁移**。
 
       ![结束数据迁移](../../_images/migration_02.png)
-      
+
    4. 将业务连接地址修改为当前集群的**高可用 IP**，则业务迁移完毕。
 
       可在**迁移状态**页签查看状态和进度。
