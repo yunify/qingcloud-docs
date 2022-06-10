@@ -2,7 +2,7 @@
 title: "自定义函数"
 description: 本小节主要介绍自定义函数的概念、及如何创建自定义函数。 
 keywords: 大数据工作台,自定义函数,UDF,UDTF,UDAF
-weight: 20
+weight: 21
 collapsible: false
 draft: false
 ---
@@ -42,7 +42,7 @@ draft: false
 ## 使用自定义函数
 
 1. 上传程序包   
-    在资源管理界面，上传自定义函数的 JAR 程序包。详细操作请参见[上传程序包](/bigdata/dataomnis/manual/data_development/resource/upload)。   
+    在资源管理界面，上传自定义函数的 JAR 程序包。详细操作请参见[上传程序包](/bigdata/dataomnis/manual/resource/upload)。   
 2. 声明 UDF   
     
     在 SQL 作业中添加 UDF 声明语句，然后就可以像普通函数一样使用了。
