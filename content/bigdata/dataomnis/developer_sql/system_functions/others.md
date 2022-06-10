@@ -53,31 +53,30 @@ draft: false
 
 ### MD5(string)
 
-**功能描述：**返回字符串的 MD5 值。
-**测试语句：**SELECT MD5(content) AS res FROM Test;
-**测试数据和结果：**
+**功能描述**：返回字符串 string 的 MD5 值。   
+**测试语句**：SELECT MD5(content) AS result FROM TableTest;   
+**测试数据和结果**：
 
-| 测试数据（VARCHAR content） | 测试结果（VARCHAR res）          |
+| 测试数据（VARCHAR content） | 测试结果（VARCHAR result）          |
 | :-------------------------- | :------------------------------- |
 | abc                         | 900150983cd24fb0d6963f7d28e17f72 |
 
 ### SHA1(string)
 
-**功能描述：**返回字符串 expr 的 SHA1 值。
-**测试语句：**SELECT SHA1(expr) AS res FROM Test;
-**测试数据和结果：**
+**功能描述**：返回字符串 string 的 SHA1 值。   
+**测试语句**：SELECT SHA1(content) AS result FROM TableTest;   
+**测试数据和结果**：
 
-| 测试数据（VARCHAR expr） | 测试结果（VARCHAR res）                  |
+| 测试数据（VARCHAR content） | 测试结果（VARCHAR result）                  |
 | :----------------------- | :--------------------------------------- |
 | abc                      | a9993e364706816aba3e25717850c26c9cd0d89d |
 
 ### SHA256(string)
 
-**功能描述：**返回字符串 expr 的 SHA256 值。
-**测试语句：**SELECT SHA256(expr) FROM Test;
-**测试数据和结果：**
+**功能描述**：返回字符串 string 的 SHA256 值。   
+**测试语句**：SELECT SHA256(content) AS result FROM TableTest;   
+**测试数据和结果**：
 
-| 测试数据（VARCHAR expr） | 测试结果（VARCHAR res）                                      |
+| 测试数据（VARCHAR content） | 测试结果（VARCHAR result）                                      |
 | :----------------------- | :----------------------------------------------------------- |
 | abc                      | ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad |
-
