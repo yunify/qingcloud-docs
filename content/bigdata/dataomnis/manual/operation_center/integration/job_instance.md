@@ -24,7 +24,7 @@ draft: false
    
    **状态**：包括`准备资源`、`运行中`、`失败重试`、`已暂停`、`已终止`、`运行成功`、`运行超时`、`运行失败`。
 
-   <img src="/bigdata/dataomnis/_images/integragion_job_instance01.png" alt="数据集成作业实例列表" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/integration_job_instance01.png" alt="数据集成作业实例列表" style="zoom:50%;" />
 
 ## 终止实例
 

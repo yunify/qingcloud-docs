@@ -24,8 +24,7 @@ draft: false
 
 ## 前提条件
 
-- 已完成[准备工作](/bigdata/dataomnis/prepare/create_account/)，准备好账号和工作空间。
-- 计算集群依赖 VPC 网络资源，在创建计算集群前，建议先[创建网络](../../network/create_network)。
+已完成[准备工作](/bigdata/dataomnis/prepare/create_account/)，准备好账号和工作空间。
 
 ## 操作步骤
 
@@ -34,7 +33,7 @@ draft: false
 3. 在左侧导航选择**工作空间**，进入工作空间页面。
 4. 在目标工作空间选择**数据开发** > **计算集群**，进入计算集群列表页面。
 5. 点击**创建集群**，进入创建计算集群页面。
-6. 配置相关参数，包括：[基础设置](#基础设置)、[资源配置](#资源配置)、[网络配置](#网络配置)、[日志配置](#日志配置)、[可选配置](#可选配置)。
+6. 配置相关参数，包括：[基础设置](#基础设置)、[资源配置](#资源配置)、[日志配置](#日志配置)、[可选配置](#可选配置)。
 7. 配置完成后，点击**立即创建**，开始创建计算集群。
 
 ### 基础设置
@@ -64,12 +63,6 @@ draft: false
 
 <img src="/bigdata/dataomnis/_images/cluster_resource.png" alt="资源配置" style="zoom:50%;" />
 
-### 网络配置
-
-通过下拉框选择已创建好的网络。若无可选网络，可点击**绑定 VPC**，创建新的网络资源。 
-
-<img src="/bigdata/dataomnis/_images/cluster_net.png" alt="网络配置" style="zoom:50%;" />
-
 ### 日志配置
 
 日志级别支持：`TRACE`、`DEBUG`、`INFO`、`WARN`、`ERROR`，默认为 `INFO`。
@@ -92,4 +85,3 @@ Host 别名和 Flink 参数均为可选配置，请根据实际情况进行选�
 | Flink 参数      | 配置 Flink 参数信息，Yaml 格式。支持批量输入和单条输入。批量输入时，多个参数换行输入。              |
 
 <img src="/bigdata/dataomnis/_images/cluster_other.png" alt="可选配置" style="zoom:50%;" />
-

@@ -77,15 +77,13 @@ draft: false
 
 ### 选择计算集群
 
-1. 选择计算集群：点击**选择集群**，在弹出的对话框中选择已创建好的计算集群；也可以在对话框中点击**计算集群列表**，进入计算集群页面，创建新的计算集群。 
+点击**选择集群**，在弹出的对话框中选择已创建好的计算集群；也可以在对话框中点击**计算集群列表**，进入计算集群页面，创建新的计算集群。 
 
-    > **注意**
-    >  
-    > 若您没有提前创建计算集群，点击**计算集群列表**后，已配置的数据源信息将会丢失。
+> **注意**
+>  
+> 若您没有提前创建计算集群，点击**计算集群列表**后，已配置的数据源信息将会丢失。
 
-   <img src="/bigdata/dataomnis/_images/integration_job_offline_2_flink-cluster.png" alt="计算集群" style="zoom:50%;" />
-
-2. 测试连通性：点击**连通性测试**，测试计算集群与数据源的网络连通性。计算集群需与数据源网络互通，具体请参见[网络连通方案](/bigdata/dataomnis/manual/connect/)。
+<img src="/bigdata/dataomnis/_images/integration_job_offline_2_flink-cluster.png" alt="计算集群" style="zoom:50%;" />
 
 ## 配置作业调度
 
