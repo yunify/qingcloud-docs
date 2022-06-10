@@ -5,7 +5,7 @@ keyword: 负载均衡器,实例,
 draft: false
 weight: 35
 aliases:
-  - /network/loadbalancer/manual/lb_user_guide/#rsyslog-远端云服务器
+  - /network/loadbalancer/manual/lb_user_guide/#rsyslog-远端云服务器/
 ---
 
 本文介绍如何配置 rsyslog 远端云服务器。
