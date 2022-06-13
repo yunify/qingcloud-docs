@@ -17,7 +17,7 @@ weight: 1
 
 ### 2. app agent 是什么？如何安装 app agent 程序？   
 
-下载青云提供的 app agent [Linux 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent-linux-amd64.tar.gz), 
+下载青云提供的 app agent  [Linux 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent.tar.gz), 
 [Windows 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent-windows-386.zip)，
 解压后运行 ./install.sh (Windows 下双击 install.bat)。    
 此 agent 中包含了自动配置文件程序 confd，该程序是在开源 confd 的基础上修改了一些 bug 并且增加了一些算术功能，
