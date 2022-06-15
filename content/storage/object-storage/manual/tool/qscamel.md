@@ -347,7 +347,13 @@ options:
   access_key_id: example_access_key_id
   secret_access_key: example_secret_access_key
   storage_class: STANDARD
-  multipart_boundary_size: 2147483648
+  disable_uri_cleaning: false
+  timeout_config: 
+    connect_timeout: 30
+    read_timeout: 30
+    write_timeout: 30
+
+multipart_boundary_size: 2147483648
 ```
 
 **说明**
@@ -359,6 +365,11 @@ options:
 - `access_key_id` QingStor 对象存储的 access_key_id。无默认值，须手动配置。
 - `secret_access_key` QingStor 对象存储的 secret_access_key。无默认值，须手动配置。
 - `storage_class` 标识 QingStor 对象存储所使用的存储级别。可选值: STANDARD, STANDARD_IA；默认值: STANDARD。
+- `disable_uri_cleaning` 是否自动清理 url，默认为 `false`，即转换 `abc//bcd` 为 `abc/bcd`。
+- `timeout_config` 请求过期时间.
+  - `connect_timeout` 连接过期时间，默认30秒。
+  - `read_timeout` 读过期时间，默认30秒。
+  - `write_timeout` 写过期时间，默认30秒。
 - `multipart_boundary_size` 用于控制 QingStor 对象存储何时使用分段上传，单位为 Byte，当文件大于该数值时，将会使用分段上传。可选值: 1 ~ 5368709120 (5G)。默认值: 2147483648 (2G)。
 - 综上，除 `bucket_name`，`access_key_id` 与 `secret_access_key` 以外，均有默认值，故除此三个参数外，其他参数均为可选参数。
 
@@ -402,16 +413,25 @@ options:
   secret_access_key: example_secret_access_key
   disable_ssl: false
   use_accelerate: false
+  path_style: false
+  enable_list_object_v2: false
+  enable_signatrue_v2: false
+  disable_uri_cleaning: false
 ```
 
 **说明**
-- `bucket_name` S3 的 Bucket 名称。
+- `bucket_name` S3 的 Bucket 名称。无默认值，须手动配置。
 - `endpoint` S3 的接口端点地址。
 - `region` S3 bucket 所在的区域。
-- `access_key_id` 访问 S3 的 access_key_id。
-- `secret_access_key` 访问 S3 的 secret_access_key。
-- `disable_ssl` 是否禁用 SSL。
-- `use_accelerate` 是否启用加速。
+- `access_key_id` 访问 S3 的 access_key_id。无默认值，须手动配置。
+- `secret_access_key` 访问 S3 的 secret_access_key。无默认值，须手动配置。
+- `disable_ssl` 是否禁用 SSL。可选值：false，true；默认值：false。
+- `use_accelerate` 是否启用加速。可选值：false，true；默认值：false。
+- `path_style` 是否强制请求使用路径样式寻址，即 `http://s3.amazonaws.com/BUCKET/KEY`。默认为 `false`，即使用 `http://s3.amazonaws.com/BUCKET/KEY`。
+- `enable_list_object_v2` 是否使用 `ListObjectsV2`。默认为 `false`，即使用 `ListObjects`。
+- `enable_signature_v2` 是否强制客户端使用 `v2.SignRequestHandler`。默认为 `false`，即使用 `v4.SignRequestHandler`。
+- `disable_uri_cleaning` 是否自动清理 url，默认为 `false`，即转换 `abc//bcd` 为 `abc/bcd`。
+
 
 
 ### Endpoint upyun
@@ -431,3 +451,137 @@ options:
 - `bucket_name` upyun 的 bucket 名称。
 - `operator` upyun 的 operator。
 - `password` upyun 的 password。
+
+## 使用示例
+
+### 将数据从 QingStor 迁移到 s3
+
+1. [安装](#安装) qscamel 工具。
+
+2. 更新 qscamel [配置](#配置)。
+
+3. 根据如下内容创建任务文件，并保存为 `example-task.yaml`：
+```yaml
+type: copy
+
+source:
+  type: qingstor
+  path: /path/to/source
+  options:
+    protocol: https
+    host: qingstor.com
+    port: 443
+    zone: zone_id
+    bucket_name: example_bucket
+    access_key_id: example_access_key_id
+    secret_access_key: example_secret_access_key
+    storage_class: STANDARD
+    disable_uri_cleaning: false
+    timeout_config: 
+      connect_timeout: 30
+      read_timeout: 30
+      write_timeout: 30
+
+multipart_boundary_size: 2147483648
+
+destination:
+  type: s3
+  path: /path/to/destination
+  options:
+    bucket_name: example_bucket
+    endpoint: example_endpoint
+    region: example_region
+    access_key_id: example_access_key_id
+    secret_access_key: example_secret_access_key
+    disable_ssl: false
+    use_accelerate: false
+    path_style: false
+    enable_list_object_v2: false
+    enable_signatrue_v2: false
+    disable_uri_cleaning: false
+
+```
+
+**说明**
+- 该任务即为：将 QingStor 对象存储的 `example_bucket` 下 `/path/to/source` 下的文件 copy 至 s3 的 `example_bucket` 下的 `/path/to/destination` 目录。
+- `options` 标识后续字段为可选字段。详情可参考 [Endpoint qingstor](#endpoint-qingstor)及 [Endpoint s3](#endpoint-s3)。
+- `access_key_id` 与 `secret_access_key` 可参考 [获取 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
+
+
+4. 执行如下命令，创建数据迁移任务：
+
+```bash
+qscamel run example-task -t example-task.yaml -c /path/to/config/file
+```
+
+5. 执行如下命令，查看数据迁移任务的状态：
+
+```bash
+qscamel status
+```
+
+### 将数据从 s3 迁移到 QingStor
+
+1. [安装](#安装) qscamel 工具。
+
+2. 更新 qscamel [配置](#配置)。
+
+3. 根据如下内容创建任务文件，并保存为 `example-task.yaml`：
+```yaml
+type: copy
+
+source:
+  type: s3
+  path: /path/to/source
+  options:
+    bucket_name: example_bucket
+    endpoint: example_endpoint
+    region: example_region
+    access_key_id: example_access_key_id
+    secret_access_key: example_secret_access_key
+    disable_ssl: false
+    use_accelerate: false
+    path_style: false
+    enable_list_object_v2: false
+    enable_signatrue_v2: false
+    disable_uri_cleaning: false
+
+destination:
+  type: qingstor
+  path: /path/to/destination
+  options:
+    protocol: https
+    host: qingstor.com
+    port: 443
+    zone: zone_id
+    bucket_name: example_bucket
+    access_key_id: example_access_key_id
+    secret_access_key: example_secret_access_key
+    storage_class: STANDARD
+    disable_uri_cleaning: false
+    timeout_config: 
+      connect_timeout: 30
+      read_timeout: 30
+      write_timeout: 30
+
+multipart_boundary_size: 2147483648
+
+```
+
+**说明**
+- 该任务即为：将 s3 的 `example_bucket` 下 `/path/to/source` 下的文件 copy 至 QingStor 对象存储的 `example_bucket` 下的 `/path/to/destination` 目录。
+- `options` 标识后续字段为可选字段。详情可参考 [Endpoint s3](#endpoint-s3) 及 [Endpoint qingstor](#endpoint-qingstor)。 
+- `access_key_id` 与 `secret_access_key` 可参考 [获取 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
+
+
+4. 执行如下命令，创建数据迁移任务：
+
+```bash
+qscamel run example-task -t example-task.yaml -c /path/to/config/file
+```
+
+5. 执行如下命令，查看数据迁移任务的状态：
+
+```bash
+qscamel status
+```
