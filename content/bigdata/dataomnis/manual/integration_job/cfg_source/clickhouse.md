@@ -63,10 +63,10 @@ draft: false
 | **结束条件** | 配置过滤的结束条件。 |
 | **生成条件参数**   | 根据上述配置信息自动生成条件参数表达式。 |
 
-<img src="/bigdata/dataomnis/_images/cfg_source_clickhouse_01.png" alt="可视化方式" style="zoom:50%;" />
+<img src="/bigdata/dataomnis/_images/cfg_source_condition_01.png" alt="可视化方式" style="zoom:50%;" />
 
 **表达式方式**
 
 条件参数配置默认使用可视化方式，您可以根据使用习惯切换为表达式方式。
 
-<img src="/bigdata/dataomnis/_images/cfg_source_clickhouse_02.png" alt="表达式方式" style="zoom:50%;" />
+<img src="/bigdata/dataomnis/_images/cfg_source_condition_02.png" alt="表达式方式" style="zoom:50%;" />
