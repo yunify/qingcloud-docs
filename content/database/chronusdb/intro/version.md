@@ -15,8 +15,8 @@ draft: false
 
 ChronusDB `企业版-1.1.0` 和 `基础版-1.1.0` 基于 RadonDB ClickHouse 22.3.6.5 内核开发。
 
-- 支持在线数据迁移.
-- 内核版本升级到 ClickHouse 22.3.6.5。
+- 支持在线数据迁移。
+- 内核版本升级到 ClickHouse-22.3.6.5。
 - DDL 性能优化，自动清理过期 DDL。
 - 引入 clickhouse-keeper ，function 等新特性。
 -  csv 导入支持多分隔符。

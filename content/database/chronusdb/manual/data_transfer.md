@@ -8,7 +8,9 @@ draft: false
 
 ---
 
-ChronusDB 数据迁移服务基于 `clickhouse-copier` 实现 ChronusDB 数据库集群间的数据迁移，支持 MergeTree, ReplicatedMergeTree, log family 数据迁移引擎。
+
+ChronusDB 数据迁移服务基于 `clickhouse-copier` 实现 ChronusDB 数据库集群间的数据迁移，支持 MergeTree, ReplicatedMergeTree, log family 引擎的数据迁移。
+
 
 > **注意**
 >
