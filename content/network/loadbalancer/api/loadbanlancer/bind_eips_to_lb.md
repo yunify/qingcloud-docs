@@ -10,7 +10,7 @@ draft: false
 
 ## 请求参数
 
-| 参数 | 参数类型 | 描述 | 是否必选 |
+| 参数 | 参数类型 | 说明 | 是否必选 |
 | --- | --- | --- | --- |
 | eips.n | String | 公网 IP 的 ID | Yes |
 | loadbalancer | String | 负载均衡器 ID | Yes |
@@ -20,7 +20,7 @@ draft: false
 
 ## 返回数据
 
-| 参数 | 参数类型 | 描述 |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | job_id | String | 执行任务的 Job ID |

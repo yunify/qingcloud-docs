@@ -12,7 +12,7 @@ draft: false
 
 ## 请求参数
 
-| 参数 | 参数类型 | 描述 | 是否必选 |
+| 参数 | 参数类型 | 说明 | 是否必选 |
 | --- | --- | --- | --- |
 | loadbalancer_listeners.n | String | 监听器 ID。 | No |
 | loadbalancer | String | 负载均衡器 ID。 | No |
@@ -25,7 +25,7 @@ draft: false
 
 ## 返回数据
 
-| 参数 | 参数类型 | 描述 |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | action | String | 响应动作。 |
 | loadbalancer_listener_set | Array | JSON 格式的监听器数据列表，每项参数可见 [Response Item](#response-item)。 |
@@ -33,7 +33,7 @@ draft: false
 
 #### Response Item
 
-| 参数 | 参数类型 | 描述 |
+| 参数 | 参数类型 | 说明 |
 | --- | --- | --- |
 | loadbalancer_listener_id | String | 监听器 ID。 |
 | loadbalancer_listener_name | String | 监听器名称。 |
