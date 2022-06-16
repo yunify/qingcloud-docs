@@ -10,7 +10,7 @@ draft: false
 
 ## 创建 SQL 作业
 
-1. 在目标工作空间选择**数据开发** > **实时计算**，进入实时计算页面。
+1. 在目标工作空间选择**数据开发** > **作业开发**，进入作业开发页面。
 2. 点击**创建作业**，进入创建作业页面。
    
    <img src="/bigdata/dataomnis/_images/choose_model_sql.png" alt="选择模式" style="zoom:50%;" />

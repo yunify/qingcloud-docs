@@ -9,10 +9,6 @@ draft: false
 
 本小节主要介绍如何创建计算集群。
 
-## 前提条件
-
-计算集群需要运行在 VPC 私有网络中，在创建计算集群前，建议先创建好依赖的网络。
-
 ## 操作步骤
 
 1. 登录管理控制台。
@@ -43,12 +39,6 @@ draft: false
 总计算资源 CU=TM 数量 * TM 规格（CU）+ JM 规格（CU）
 
 <img src="/bigdata/dataomnis/_images/cluster_resource.png" alt="资源配置" style="zoom:50%;" />
-
-### 网络配置
-
-通过下拉框选择已创建好的网络。若无可选网络，可点击**绑定 VPC**，创建新的网络资源。
-
-<img src="/bigdata/dataomnis/_images/cluster_net.png" alt="网络配置" style="zoom:50%;" />
 
 ### 日志配置
 

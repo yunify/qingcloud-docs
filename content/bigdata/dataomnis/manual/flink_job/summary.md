@@ -1,7 +1,7 @@
 ---
 title: "概述"
 description: 本小节主要介绍流式开发功能。 
-keywords: 大数据工作台,数据开发,数据集成
+keywords: 大数据工作台,数据开发
 weight: 1
 collapsible: false
 draft: false

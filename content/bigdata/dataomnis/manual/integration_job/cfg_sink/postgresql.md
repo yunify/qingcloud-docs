@@ -13,26 +13,28 @@ draft: false
 
 开始配置 PostgreSQL 数据源前，请先添加数据源，详细操作请参见[新增 PostgreSQL 数据源](/bigdata/dataomnis/manual/source_data/add_data/postgresql)。
 
+## 类型转换列表
+
+| 分类    | 支持的 PostgreSQL 数据类型   |
+| :------ | :----- |
+| 整数类    | SMALLINT、INT2、INT、INTEGER、INT4、BIGINT、INT8、SMALLSERIAL、SERIAL、BIGSERIAL、OID |
+| 浮点类    | REAL、FLOAT4、FLOAT、DOUBLE、PRECISION、FLOAT8、NUMERIC |
+| 字符串类    | CHARACTER VARYING、VARCHAR、CHARACTER、CHAR、TEXT、NAME、BPCHAR |
+| 日期时间类    | TIMESTAMP、TIMESTAMPTZ、DATE、TIME、TIMETZ |
+| 布尔型    | BOOLEAN、BOOL |
+| 二进制类    | BYTEA |
+
 ## 参数说明
 
-| 参数      | 名称              | 类型   | 默认值        | 范围                              | 是否必填 | 描述                                                         |
-| :-------- | :---------------- | :----- | :------------ | :-------------------------------- | :------- | :----------------------------------------------------------- |
-| table     | 表                | string | -             | 长度 2~300                        | 是       | 请选择表名。                                                 |
-| preSql    | 写入前 SQL 语句组 | list   | -             | 长度 0~1000                       | 否       | 请输入写入数据到目的表前执行的一组标准 SQL 语句。            |
-| postSql   | 写入后 SQL 语句组 | list   | -             | 长度 0~1000                       | 否       | 请输入写入数据到目的表后执行的一组标准 SQL 语句。            |
-| writeMode | 写入模式          | string | insert        | <li>insert<li>replace<li>update   | 是       | 选择写入模式：<li>insert：insert into，当主键/唯一性索引冲突时会写不进去冲突的行，以脏数据的形式体现。<li>update：on duplicate key update，没有遇到主键/唯一性索引冲突时，与`insert into` 行为一致。冲突时会用新行替换已经指定的字段的语句。<li>replace：replace into：没有遇到主键/唯一性索引冲突时，与`insert into`行为一致。冲突时会先删除原有行，再插入新行。即新行会替换原有行的所有字段。 |
-| semantic  | 写入一致性语义    | string | at-least-once | <li>exactly-once<li>at-least-once | 是       | <li>exacly-once 意味着写入数据确保正好一次，是需要开启两阶段提交后能达到的效果。<li>默认值是 at-least-once，也就是数据至少写入一次，意味着不开启两阶段提交。 |
-| batchSize | 批量写入条数      | int    | 1024          | 1~65535                           | 是       | 批量写入的条数，该值可减少网络交互次数，过大会造成 OOM。     |
-| column    | 字段列表          | list   | -             | 长度 0~65535                      | 是       | 详细请参见 [column参数说明](#column参数说明)。               |
-
-
-
-### column 参数说明
-
-| 参数       | 名称   | 类型   | 范围                                                         | 是否必填 | 描述                 |
-| :--------- | :----- | :----- | :----------------------------------------------------------- | :------- | :------------------- |
-| columnName | 列名   | string | 长度 0~300                                                   |          | 自动加载，不可修改。 |
-| columnType | 列类型 | string | 支持类型：SMALLINT、SMALLSERIAL、INT2、INT、INTEGER、SERIAL、INT4、BIGINT、BIGSERIAL、OID、INT8、REAL、FLOAT4、FLOAT、DOUBLE PRECISION、FLOAT8、DECIMAL、NUMERIC、 CHARACTER VARYING、VARCHAR、CHARACTER、CHAR、TEXT、NAME、BPCHAR、BYTEA、TIMESTAMP、TIMESTAMPTZ、DATE、TIME、TIMETZ、 BOOLEAN、BOOL |          | 自动加载，可以修改。 |
+| 参数      | 类型   | 是否必填 | 描述                                                         |
+| :-------- | :----- | :------- | :----------------------------------------------------------- |
+| table     | string | 是       | 请选择表名。                                                 |
+| preSql    | list   | 否       | 请输入写入数据到目的表前执行的一组标准 SQL 语句。            |
+| postSql   | list   | 否       | 请输入写入数据到目的表后执行的一组标准 SQL 语句。            |
+| writeMode | string | 是       | 选择写入模式：默认值为 insert。<li>insert：insert into，当主键/唯一性索引冲突时会写不进去冲突的行，以脏数据的形式体现。<li>update：on duplicate key update，没有遇到主键/唯一性索引冲突时，与`insert into` 行为一致。冲突时会用新行替换已经指定的字段的语句。<li>replace：replace into：没有遇到主键/唯一性索引冲突时，与`insert into`行为一致。冲突时会先删除原有行，再插入新行。即新行会替换原有行的所有字段。 |
+| semantic  | string | 是       | <li>exacly-once 意味着写入数据确保正好一次，是需要开启两阶段提交后能达到的效果。<li>默认值是 at-least-once，也就是数据至少写入一次，意味着不开启两阶段提交。 |
+| batchSize | int    | 是       | 批量写入的条数，该值可减少网络交互次数，过大会造成 OOM。默认值为 1024。 |
+| column    | list   | 是       | 目标表需要写入数据的列名。               |
 
 ## 向导模式开发介绍
 
@@ -40,12 +42,14 @@ draft: false
 
 您需要在作业的开发页面进行以下配置：
 
-<img src="/bigdata/dataomnis/_images/cfg_source_postgresql.png" alt="配置 PosrgreSQL 数据目的" style="zoom:50%;" />
+<img src="/bigdata/dataomnis/_images/cfg_sink_postgresql.png" alt="配置 PosrgreSQL 数据目的" style="zoom:50%;" />
 
-| 参数         | 说明                                                         |
-| :----------- | :----------------------------------------------------------- |
-| **数据源**   | 选择已添加的数据源。 |
-| **数据源表**       | 即上述参数说明中的 **table**。                                |
-| **条件参数配置** | 配置需要同步数据的过滤条件。 |
-| **切分键**   | 建议使用主键作为切分键，仅支持类型为整型的字段。读取数据时，根据配置的字段进行数据分片，实现并发读取，可以提升数据同步效率。**说明** 切分键与数据同步中的选择来源有关，配置数据来源时才显示切分键配置项。 |
-
+| 参数              | 说明                               |
+| :---------------- | :--------------------------------- |
+| 数据源            | 选择已添加的数据源。               |
+| 数据源表          | 即上述参数说明中的 **table**。     |
+| 写入模式          | 即上述参数说明中的 **writeMode**。 |
+| 写入一致性语义    | 即上述参数说明中的 **semantic**。  |
+| 批量写入条数      | 即上述参数说明中的 **batchSize**。  |
+| 写入前 SQL 语句组 | 即上述参数说明中的 **preSql**。    |
+| 写入后 SQL 语句组 | 即上述参数说明中的 **postSql**。   |
