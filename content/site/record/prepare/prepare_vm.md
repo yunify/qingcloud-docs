@@ -28,5 +28,5 @@ keyword: 准备备案云服务器, QingCloud, 青云, 备案
 若 EIP 没有直接关联云服务器，而是通过负载均衡器、VPC等资源备案，需要您先将负载均衡器、VPC等资源绑定到备案云服务器，绑定的云服务器需要满足备案条件。
 
 - 负载均衡器绑定云服务器请参见[负载均衡快速入门](/network/loadbalancer/quickstart/qs_process/)。
-- VPC 网络绑定到云服务器请参见[搭建 IPv4 VPC 网络](/network/vpc/quick-start/20_qs_ipv4/#步骤3申请公网-ip-并绑定到云服务器)。
+- VPC 网络绑定到云服务器请参见[搭建 IPv4 VPC 网络](/network/vpc/quick-start/20_qs_ipv4/#步骤2在私有网络中创建云服务器)。
 - 需使用满足条件的云服务器，详情请参见[备案云服务器](/site/record/prepare/prepare_vm/#备案云服务器)。
