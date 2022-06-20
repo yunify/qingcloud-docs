@@ -2,8 +2,8 @@
 title: "弹性容器实例 (QCI) "
 description: 弹性容器实例 QCI 的创建、配置与使用。
 keyword: 青云, QingCloud, 云计算, QCI, 容器, 弹性容器实例
-draft: false
-weight: 10
+not_show: true
+weight: 80
 ---
 
 青云弹性容器实例 (QingCloud Elastic Container Instance) 集成了云平台云服务器，存储以及网络等资源，在云平台上只需要完成指定容器镜像，指定存储卷，配置网络和指定基本信息四步，便可快速地创建 QCI ，以容器为单位支持容器自动巡检和修复。
