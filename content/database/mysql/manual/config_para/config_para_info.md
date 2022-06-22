@@ -55,7 +55,8 @@ MySQL Plus 支持对常用配置参数的管理。
 |   Default_time _zone      |  -    |   表示默认工作时区。<li> 默认为东八区。  |
 |   Default_storage _engine    |  <li> InnoDB <li> TokuDB  |  表示默认存储引擎。默认为 InnoDB 。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>该参数修改后，数据库将重启。</li><li> 仅 MySQL 5.7 支持 TokuDB 存储引擎。</li></span>|
 |  Innodb_buffer _pool_size      |  -1~       | 无论设置的值多少，最终都会上调到 innodb_buffer_pool_chunk_size * innodb_buffer_pool_instances 的整数倍。<br>- 若该值为-1，则将该参数设置为内存的60%。<br>- 若该值过大，最多只取内存的80% 。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br>该参数修改后，数据库将重启。</span> |
-|   Character_set_server  |   - |  表示服务器安装时指定的默认字符集设定。  |
+|   Character_set_server  | <li>utf8mb4<li>latin1<li>utf8<li>utf16<li>utf32 |  表示服务器安装时指定的默认字符集设定，默认值为 utf8mb4。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br/>该参数修改后，数据库将重启。</span>  |
+| Collation_server | <li>general_ci<li>bin | 表示服务器的默认排序规则。<br/>该参数仅展示后缀，实际值为Character_set_server值与后缀通过“_”拼接。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br/>该参数修改后，数据库将重启。</span> |
 |   Interactive_timeout      |  1~2147483      |   表示服务器关闭交互式连接前等待的时间，单位为秒。<li> 默认为 3600s。  |
 |   Back_log    |   50~4096  |  表示 MySQL 缓存的尚未处理的连接数量。默认为 2048。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b>: <br>该参数修改后，数据库将重启。</span>  |
 |   Ft_min_word_len  |  1~4 | 表示最小索引长度。默认为 4。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br>该参数修改后，数据库将重启。</span> |
