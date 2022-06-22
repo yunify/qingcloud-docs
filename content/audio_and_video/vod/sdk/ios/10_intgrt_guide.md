@@ -31,7 +31,7 @@ weight: 10
 
 ### 手动下载 SDK
 
-1. 下载 QCPlayer.framework 到本地。
+1. 下载 [QCPlayer.framework](https://vod-sdk.pek3b.qingstor.com/QCPlayer.framework.zip) 到本地。
 2. 导入 QCPlayer.framework 到工程中，并勾选 **Do Not Embed**。
 
 ## 使用播放器
