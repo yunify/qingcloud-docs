@@ -81,11 +81,11 @@ Wed, 10 Dec 2014 17:20:31 GMT\n
 **添加 HTTP 请求头：**
 
 ```
-Authorization: QC-HMAC-SHA256 <access_key_id>:<signature>
+Authorization: QVOD-HMAC-SHA256 <access_key_id>:<signature>
 ```
 
 **请求头示例：**
 
 ```
-Authorization: QC-HMAC-SHA256 PLLZOBTTZXGBNOWUFHZZ:tuXu/KcggHWPAfEmraUHDwEUdiIPSXVRsO+T2rxomBQ=
+Authorization: QVOD-HMAC-SHA256 PLLZOBTTZXGBNOWUFHZZ:tuXu/KcggHWPAfEmraUHDwEUdiIPSXVRsO+T2rxomBQ=
 ```
