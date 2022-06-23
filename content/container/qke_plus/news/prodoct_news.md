@@ -5,8 +5,8 @@ weight: 5
 
 product:
     - time: 2022-06-15
-      title: QKE v1.2.0 发布，新增重启集群节点功能，节点异常可快速修复
-      content: QKE v1.2.0 版上线。<br/>- 重启集群节点功能，提供节点异常快速修复办法。<br/>- qingcloud-csi 部署调整，修复多可用区部署时磁盘挂载问题。<br/>- 修复了一些 bug，如集群 PVC 用量更正等。<br/>
+      title: QKE v1.2.2 发布，新增重启集群节点功能，节点异常可快速修复
+      content: QKE v1.2.2 版上线。<br/>- 新增集群节点重启功能，提供节点异常快速修复办法。<br/>- qingcloud-csi 部署调整，修复多可用区部署时磁盘挂载问题。<br/>- 修复了一些 bug，如集群 PVC 用量更正等。<br/>
 
       url: ../../manual/mgt_cluster/create_cluster/
       tags:
