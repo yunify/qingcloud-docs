@@ -10,7 +10,7 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  
+
 env:
   WORKSPACES: '/opt/qingcloud-docs'
 
@@ -31,4 +31,6 @@ jobs:
           git reset --hard HEAD
           git pull
       - name: build docs
-        run: cd $WORKSPACES/ && hugo -v -D --enableGitInfo=false && chown -R apache:apache ./public
+        run: cd $WORKSPACES/ && hugo -v -D --enableGitInfo=false
+      - name: update /opt/public
+        run: rm -rf /opt/public && mv /opt/qingcloud-docs/public /opt/public && chown -R apache:apache /opt/public
