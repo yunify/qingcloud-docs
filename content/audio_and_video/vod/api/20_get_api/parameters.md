@@ -1,38 +1,28 @@
 ---
 title: "公共参数"
 description: api 请求公共参数。 
-keyword: 公网IP, API 调用, 请求参数, 公共参数
+keyword: 云点播, API 调用, 请求参数, 公共参数
 draft: false
 weight: 20
 ---
 
-公共参数是指所有接口调用都需要用到的请求参数。
+公共参数是所有 API 请求都必需的参数，这里列出公共的 HTTP 头字段。
 
-## 请求参数
+## 请求头字段(Request Header)
 
-| <span style="display:inline-block;width:120px">参数</span> | 描述                                                         | 说明                                                         |
-| :--------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| action                                                     | 每个 API 都有自己的 action，用来标识所请求指令。例如 `RunInstances`。 | 完整的指令名称列表请参见 API指令列表。                       |
-| zone                                                       | 区域 ID，当 API 请求是需要在某个具体的区域执行时，需要加上该参数。例如 `pek3a`。 | 目前支持的区域 ID 有：<br/>pek3a：北京3区-A<br/>pek3：北京3区(包括 pek3b/pek3c/pek3d)<br/>sh1a：上海1区-A<br/>gd2：广东2区(包括 gd2a/gd2b)<br/>ap2a：亚太2区-A |
-| time_stamp                                                 | 请求串生成时间，格式为 `YYYY-MM-DDThh:mm:ssZ`，例如 `”2013-08-27T13:58:35Z”`，具体格式可以参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime)。 | 这个时间为 UTC 时间，假设您的本地时间为北京时间 `UTC+8` ，您需要将其转化为 `UTC+0` 的时间。 |
-| access_key_id                                              | 申请的 API 密钥 ID，例如 `QYACCESSKEYIDEXAMPLE`。            | -                                                            |
-| version                                                    | API的版本号，目前只支持版本号为 `1`。                        |                                                              |
-| signature_method                                           | 签名所用哈希算法，目前支持 `HmacSHA256` 和 `HmacSHA1`。      | -                                                            |
-| signature_version                                          | 签名函数的版本号，目前只支持版本号为 `1`。                   | -                                                            |
-| signature                                                  | 请求消息的签名，请参见签名方法。                             | -                                                            |
+| 名称          | 描述                                                         |
+| :------------ | :----------------------------------------------------------- |
+| Host          | 指定所请求资源的云服务器名及端口。<br/>在 HTTP/1.1 中为必填字段，可以为空值。HTTP/1.0 中为可选字段。详情可参考 [RFC 文档](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.23)。 |
+| Date          | 客户端请求发送的时间。ISO 8601 标准格式以 UTC 时间指定日期，20130613T203622Z。<br/>格式由 RFC 822 定义，如：`Date: Tue, 15 Nov 1994 08:12:31 GMT`。详情可参考 [RFC 文档](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.18)。 |
+| Authorization | 认证所需信息。详情可参考 [RFC 文档](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.8)。 |
+| Content-Type  | 请求实体的 MIME 类型。<br/>仅支持 `application/json` 格式。详情可参考 [RFC 文档](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.17)。 |
 
-## 请求示例
+## 响应头字段(Response Header)
 
-```url
-[https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE](https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE)
-&action=RunInstances
-&count=1
-&time_stamp=2013-08-27T13%3A58%3A35Z
-&image_id=centos64x64
-&instance_type=small_b
-&signature_method=HmacSHA256
-&signature_version=1
-&version=1
-&zone=pek3a
-&signature=xMFvKenlbAAc0jGJ0iBHUhzh/wOBu3B8hypk+fTThFY=
-```
+| 名称              | 描述                                                         |
+| :---------------- | :----------------------------------------------------------- |
+| Content-Type      | 服务端返回的消息实体的 MIME 类型。仅支持 `application/json` 格式。详情可参考 [RFC 文档](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.17)。 |
+| x-qvod-request-id | 服务端会为每个请求生成并返回一个唯一标示。用户提交工单时如果能附带此 ID 将有助于青云云点播的研发团队定位问题。 |
+
+
+

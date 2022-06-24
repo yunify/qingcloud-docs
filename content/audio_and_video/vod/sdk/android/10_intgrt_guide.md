@@ -16,7 +16,7 @@ weight: 10
 
 ## 集成 SDK
 
-您可以通过 Gradle 自动加载或 手动下载  AAR 两种方式来使用青云云点播播放器SDK。
+您可以通过 Gradle 自动加载或手动下载  AAR 两种方式来使用播放器 SDK。
 
 ### Gradle 自动加载
 
@@ -40,14 +40,14 @@ weight: 10
 
 ### 手动下载 AAR
 
-1. 下载 `QCPlayer_xxx.aar`（其中xxx为版本号）到本地。
+1. 下载 [QCPlayer.zip ](https://vod-sdk.pek3b.qingstor.com/QCPlayer.zip) 到本地。
 
-2. 将 `QCPlayer_xxx.aar` 导入到 app下面的 libs 文件夹中。
+2. 将文件解压后里面的所有 aar 导入到 app下面的 libs 文件夹中；
 
 3. 更改 app 工程的 `build.gradle`文件，在 dependencies 中添加 QCPlayer 的依赖。
 
    ```
-   compile(name:'QCPlayer_xxx', ext:'aar')
+   compile(name:'QCPlayer', ext:'aar')
    ```
 
 4. 在项目的 `build.gradle` 中添加如下代码。
