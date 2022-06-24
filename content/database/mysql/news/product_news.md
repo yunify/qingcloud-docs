@@ -9,7 +9,7 @@ draft: false
 product:
     - time: 2022-06-29
       title: MySQL Plus 1.1.2 版本正式上线
-      content: MySQL Plus 1.1.2 版本基于 MySQL 5.6、5.7、8.0 内核构建。<br>- 新增慢日志预览功能；<br>- 新放开 `Logical_backup_exec_timeout`、`Log_slave_updates`参数；<br>- 新增<b>集群状态切换</b>监控项；<br>- 修复旧形态1.6.1等版本升级到1.1.0版本失败问题；<br>- 修复集群自动化运维问题，加强集群服务稳定性。
+      content: MySQL Plus 1.1.2 版本基于 MySQL 5.6、5.7、8.0 内核构建。<br>- MySQL 5.6 内核版本升级到 5.6.51，MySQL 5.7 内核版本升级到5.7.35，MySQL 8.0 引擎支持 InnoDB 和 RocksDB(MyRocks)；<br>- 新增备份失败的消息提示；<br>- 调整 IaaS 层物理机相关参数值，提升了集群的高并发能力；<br>- 修复创建集群或重启集群时启动失败的问题，增强了集群创建的稳定性；<br>- 支持 e3 主机，并针对用户扫描出的关键漏洞进行系统层库版本升级；<br>- 规避`Lower_case_table_names`参数值修改导致集群故障的问题，支持创建时修改生效；<br>- 新增`Character_set_server`下拉选择框和`Collation_server`配置参数；<br>- 新增<b>数据在线迁移</b>和<b>灾备</b>时不能进行逻辑备份的限制；<br>- 升级ProxySQL版本至 2.3.2，新增使用caching_sha2_password 密码插件账户检查，系统可动态修改ProxySQL客户端参数，使ProxySQL 自适应端MySQL参数和客户端参数与后端保持一致，提升了集群的稳定性和可用性；<br>- 新增<b>启动秒数</b>、<b>客户端未正确关闭连接次数</b>等十项监控项；<br>- 针对原有修复维护灾备状态的灾备集群新增极端场景，使灾备集群所有主机都在重启后可自动修复灾备端状态，增强灾备端的稳定性。
       url: ../../intro/version/
       tags:
       - 新功能
