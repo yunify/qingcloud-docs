@@ -2,7 +2,7 @@
 title: "配置远端主机"
 linkTitle: "配置远端主机"
 description: 如何配置远端主机
-draft: true
+draft: false
 weight: 9
 keyword: 云服务器, QingCloud，安全，远端主机
 ---
