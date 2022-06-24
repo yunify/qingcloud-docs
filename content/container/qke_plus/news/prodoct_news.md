@@ -4,6 +4,15 @@ collapsible: false
 weight: 5
 
 product:
+    - time: 2022-06-15
+      title: QKE v1.2.2 发布，新增重启集群节点功能，节点异常可快速修复
+      content: QKE v1.2.2 版上线。<br/>- 新增集群节点重启功能，提供节点异常快速修复办法。<br/>- qingcloud-csi 部署调整，修复多可用区部署时磁盘挂载问题。<br/>- 修复了一些 bug，如集群 PVC 用量更正等。<br/>
+
+      url: ../../manual/mgt_cluster/create_cluster/
+      tags:
+      - 新功能
+      zone: 北京3区，上海1区，广东2区
+
     - time: 2022-05-10
       title: QKE v1.1.0 发布，新增自管版集群形态
       content: QKE v1.1.0 版上线。<br/>- 新增自管版集群形态，可创建 Master 节点自行管理的自管版 QKE 集群。<br/>- 新增集群内节点级别的监控功能，可对 Worker 节点 CPU、内存等进行监控，掌握计算资源实时负载。<br/>- 支持对接独立部署的 ELK 集群存储集群日志，保障高可用服务。<br/>- 修复了一些 bug，提升集群稳定性。
