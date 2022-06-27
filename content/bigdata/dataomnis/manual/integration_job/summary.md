@@ -11,11 +11,11 @@ draft: false
 
 ## 离线同步
 
-**数据集成**支持向导模式和脚本模式。
+**数据集成**有向导模式和脚本模式，目前仅支持向导模式。
 - [向导模式](/bigdata/dataomnis/manual/integration_job/create_job_offline_1)     
     可视化数据集成，通过向导模式指引用户，降低开发人员使用门槛。   
-- [脚本模式](/bigdata/dataomnis/manual/integration_job/create_job_offline_2)   
-    脚本模式支持更多功能，适合需要较复杂的场景。  
+<!-- - [脚本模式](/bigdata/dataomnis/manual/integration_job/create_job_offline_2)    -->
+<!-- 脚本模式支持更多功能，适合需要较复杂的场景。   -->
 
 ### 离线同步支持的数据源类型
 
