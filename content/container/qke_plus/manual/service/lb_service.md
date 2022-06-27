@@ -5,8 +5,8 @@ draft: false
 keyword: 青云, QingCloud, 云计算, QKE, 工作负载
 weight: 20
 aliases: 
-  - /container/qke_plus/manual/service/mgt_service
-  - /container/qke_plus/manual/service/mgt_service/#将服务暴露给外网
+  - /container/qke_plus/manual/service/mg_service/
+  - /container/qke_plus/manual/service/mg_service/#将服务暴露给外网/
 ---
 
 通过为服务资源绑定一个“公网”类型的负载均衡器，使该服务对应的容器应用能够通过外部网络进行访问。
