@@ -21,11 +21,21 @@ draft: false
 
 ## 创建工作空间
 
-1. 选择相应的区域，点击**创建工作空间**，填写工作空间名称和描述信息。
+1. 选择相应的区域，点击**创建工作空间**，进入创建工作空间页面。
+2. 配置基本信息，包括工作空间名称和描述信息。
    
    <img src="/bigdata/dataomnis/_images/create_workspace.png" alt="创建工作空间" style="zoom:50%;" />
 
-2. 点击**创建**，开始创建工作空间。    
+3. 配置网络信息，包括 VPC 网络和私有网络。
+
+   <img src="/bigdata/dataomnis/_images/create_net.png" alt="创建网络" style="zoom:50%;" />
+
+   | <span style="display:inline-block;width:140px">参数</span>  | <span style="display:inline-block;width:520px">参数说明</span>  |
+   | :------------- | ------------------------------------------------------------ |
+   | VPC 网络    |  选择 VPC 网络。<br>- 默认适配同区域已有的 VPC 网络。可在下拉框选择已有 VPC 网络。<br>- 若无可选 VPC 网络，可点击**新建 VPC 网络**，创建依赖网络资源。  |
+   | 私有网络    |  选择私有网络。<br>- 默认适配同区域已有的私有网络。可在下拉框选择已有私有网络。<br>- 若无可选私有网络，可点击**新建私有网络**，创建依赖网络资源。   | 
+
+4. 点击**创建**，开始创建工作空间。    
    工作空间创建完成后，即可在工作空间页面查看相应内容。
 
 ## 进入功能模块
@@ -35,7 +45,7 @@ draft: false
 > 仅当工作空间状态为`活跃`时，才可以进入各个功能模块。
 
 点击相应工作空间的**数据源管理**、**数据开发**或**运维中心**，即可进入工作空间的对应模块。    
-各服务模块的详细使用请参见[数据源管理](../data_up_cloud/data_summary/)、[数据开发](../data_development/summary/)和[运维中心](../operation_maintence/summary/)。
+各服务模块的详细使用请参见[数据源管理](/bigdata/dataomnis/manual/source_data/summary/)、[数据开发](/bigdata/dataomnis/manual/mgt_job/summary/)和[运维中心](/bigdata/dataomnis/manual/operation_center/summary/)。
 
 ## 修改工作空间
 
