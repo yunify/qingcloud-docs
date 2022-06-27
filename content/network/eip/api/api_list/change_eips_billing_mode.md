@@ -12,27 +12,27 @@ keyword: 公网 IP API, 公网 IP 计费模式
 >
 > 计费模式不能频繁改动，每个 IP 24 小时内只能改动一次。
 
-**Request Parameters**
+## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | eips.n | String | 公网 IP 的 ID | Yes |
 | billing_mode | String | 公网 IP 计费模式：bandwidth 按带宽计费，traffic 按流量计费，默认是 bandwidth | Yes |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../gei_api/parameters/)
+[_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | job_id | String | 执行任务的 Job ID |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=ChangeEipsBillingMode
@@ -42,7 +42,7 @@ https://api.qingcloud.com/iaas/?action=ChangeEipsBillingMode
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

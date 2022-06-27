@@ -11,9 +11,10 @@ section1:
   children:
 
     - title: 容器引擎 QKE
-      url: "/container/qke_plus/intro//introduction/"
+      url: "/container/qke_plus/intro/introduction/"
 
-    - title: 弹性容器实例
+
+    - title: 弹性容器实例 QCI
       url: "/container/qci/intro/introduction/"
 
     #- title: QKE

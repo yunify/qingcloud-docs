@@ -360,9 +360,9 @@ keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
     }
 ```
 
-### 获取 Bucket 的访问控制列表
+### 获取存储空间访问控制
 
-QingStor 对象存储支持 Bucket ACL，是 Bucket 级别的访问控制，用户可将 Bucket 的读、写、或读写权限开放给单个或多个青云 QingCloud 用户。下面我们将演示如何通过 API 接口来获取和设置 Bucket ACL。
+QingStor 对象存储支持 Bucket ACL，是 Bucket 级别的访问权限控制。用户可将 Bucket 的读、写、或读写权限开放给单个或多个青云 QingCloud 用户。下面我们将演示如何通过 API 接口来获取和设置 Bucket ACL。
 
 ``` c
     GetBucketACLInput input;
@@ -386,7 +386,7 @@ QingStor 对象存储支持 Bucket ACL，是 Bucket 级别的访问控制，用�
     }
 ```
 
-### 设置 Bucket 的访问控制列表
+### 设置存储空间访问控制
 
 ``` c
     PutBucketACLInput input;

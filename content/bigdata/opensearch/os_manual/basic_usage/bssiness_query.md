@@ -17,7 +17,7 @@ draft: false
 - 已创建 OpenSearch 集群，且集群状态为`活跃`。
 - 若需通过外网访问 OpenSearch 集群，请先通过设置[边界路由器](/network/border_router/)或 [VPN](/network/vpc/manual/vpn/) 等方式打通网络。
 
-## 快速管理
+## 快速管理索引
 
 - 创建索引
 

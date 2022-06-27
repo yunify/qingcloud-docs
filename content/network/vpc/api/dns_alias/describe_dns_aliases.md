@@ -10,9 +10,9 @@ draft: false
 
 可根据资源 ID 作过滤条件，获取内网域名别名列表。 如果不指定任何过滤条件，默认返回你所拥有的所有内网域名别名。
 
-**Request Parameters**
+## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | dns_aliases.n | String | 内网域名别名 ID | No |
 | resource_id | String | 按资源 ID 过滤 | No |
@@ -23,9 +23,9 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | dns_alias_set | Array | JSON 格式的内网域名别名数据列表，每项数据可见下面 **ResponseItemType** |
@@ -34,7 +34,7 @@ draft: false
 
 **ResponseItemType**
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | status | String | 内网域名别名状态 |
 | dns_alias_id | String | 内网域名别名 ID |
@@ -42,9 +42,9 @@ draft: false
 | dns_alias_name | String | 内网域名别名名称 |
 | create_time | TimeStamp | 创建时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=DescribeDNSAliases
@@ -52,7 +52,7 @@ https://api.qingcloud.com/iaas/?action=DescribeDNSAliases
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

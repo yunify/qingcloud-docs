@@ -8,9 +8,7 @@ keyword: QKE, 容器, 应用, 镜像
 
 ## 如何配置镜像仓库？
 
-
 支持在 QKE 控制台的**集群信息** > **环境参数**页面中通过`registry-mirrors`参数配置您的镜像仓库服务地址。
-
 
 具体操作请参见[配置镜像仓库](/container/qke_plus/quickstart/cfg_mirror_repo/)。
 
@@ -25,7 +23,8 @@ Kubernetes 上的工作负载需要拉取 Docker 镜像，请确保集群所在�
 
   > **注意**
   >
-  > 如果 Harbor 后端使用的是 QingStor 对象存储，还要确保 QKE 所有节点可以访问到 QingStor 对象存储。
+  > - 使用 Harbor 镜像仓库时，请确保拉取镜像所使用的用户为仓库所属项目的成员，拥有该项目的访问权限。使用当前仓库所属项目外的用户拉取镜像将失败。
+  > - 如果 Harbor 后端使用的是 QingStor 对象存储，还要确保 QKE 所有节点可以访问到 QingStor 对象存储。
 
 ## 如何配置镜像仓库加速？
 

@@ -12,9 +12,9 @@ draft: false
 >
 > 一个内网域名只能绑定到一台资源上，同一个资源可绑多个不同的域名。
 
-**Request Parameters**
+## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | prefix | String | 域名别名前缀，此前缀会跟 [_GetDNSLabel_](../get_dns_label/) 一起组成内网域名 | Yes |
 | resource | String | 资源 ID | Yes |
@@ -23,9 +23,9 @@ draft: false
 
 [_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | dns_alias_id | String | 内网域名别名 ID |
@@ -33,9 +33,9 @@ draft: false
 | job_id | String | 操作日志 ID |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=AssociateDNSAlias
@@ -45,7 +45,7 @@ https://api.qingcloud.com/iaas/?action=AssociateDNSAlias
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

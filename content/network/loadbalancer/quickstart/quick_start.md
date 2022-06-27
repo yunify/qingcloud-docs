@@ -1,8 +1,8 @@
 ---
 title: "快速搭建负载均衡器"
 description: 介绍如何搭建常见的四种负载均衡。
-keyword: QingCloud, 青云, 云计算, 网络, 负载均衡器, 监听器
-draft: false
+keyword: 负载均衡器, 监听器
+draft: true
 ---
 
 快速入门部分将会介绍如何搭建常见的四种负载均衡。
@@ -11,10 +11,6 @@ draft: false
 * 基于HTTPS 协议的负载均衡
 * 基于TCP 协议的负载均衡
 * 基于UDP 协议的负载均衡
-
-
-
-
 
 ## 搭建基于HTTP协议的负载均衡
 

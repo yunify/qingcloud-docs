@@ -1,9 +1,9 @@
 ---
-title: "SPACK 用户指南"
-linkTitle: "spack 用户指南"
+title: "公共软件库"
+linkTitle: "公共软件库"
 _build:
  render: false 
-weight: 6
+weight: 60
 collapsible: true
 ---
 

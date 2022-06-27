@@ -13,6 +13,12 @@ OpenSearch 是一种托管服务，支持在 AppCenter 管理并升级，为用�
 - OpenSearch 是一个全面开源搜索和分析引擎，用例包括日志分析、实时应用程序监控、点击流分析等，更多说明请参考[原生 OpenSearch](https://opensearch.org/docs/)。
 
 - OpenSearch 提供集群管理功能。支持在线管理 OpenSearch 集群节点、监控集群和节点信息，以及管理节点配置参数。
+<!--
+
+---需开发完善架构说明
+
+典型部署架构，1主+多个数据节点+kibana+logstash，可部署多种类型的数据节点，支持灵活的热、温、冷架构，如热，热+温，热+冷，热+温+冷
+
 
 ## 热-温-冷数据架构
 
@@ -28,6 +34,6 @@ OpenSearch 是一种托管服务，支持在 AppCenter 管理并升级，为用�
 
 - 温/冷数据节点
   
-  负责处理只读索引，会接收少量的查询请求。温/冷数据节点可以配置一般性能的资源，通常配备通用本地磁盘。
+  负责处理只读索引，会接收少量的查询请求。温/冷数据节点可以配置一般性能的资源，通常配备通用本地磁盘。-->
 
-![hot-warm-cold](../../_images/hot_warm_cold_arch.png)
+<!--![hot-warm-cold](../../_images/hot_warm_cold_arch.png)-->

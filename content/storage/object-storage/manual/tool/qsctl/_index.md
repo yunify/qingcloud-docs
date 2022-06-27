@@ -11,13 +11,13 @@ weight: 1
 
 qsctl 是 QingStor 对象存储提供的客户端高级命令行工具，用于管理 QingStor 对象存储资源。qsctl 提供了强大的类 UNIX 命令，所有的 qsctl 命令均支持批量操作。
 
-目前 qsctl 已更新至 v2.4.3 版本，若您仍需查看 qsctl v1.x 版本的相关文档，请点击 [qsctl v1 文档](v1)。
+QingStor 对象存储建议用户下载使用最新版本的 qsctl，若您仍需查看 qsctl v1.x 版本的相关文档，请点击 [qsctl v1 文档](v1)。
 
 
 ## 安装
 
 ### 下载安装
-1. 直接[点击此处](https://releases.qingstor.dev/#qsctl)，根据客户端操作系统版本，下载相应安装包。当前 qsctl 最新版本为 v2.4.3，若无特殊要求，建议下载最新版本。
+1. 直接[点击此处](https://releases.qingstor.dev/#qsctl)，根据客户端操作系统版本，下载相应安装包。若无特殊要求，QingStor 对象存储建议下载最新版本。
 
  ![](/storage/object-storage/_images/qsctl_install1.png)
 
@@ -86,7 +86,7 @@ protocol: 'https'
 
 ### 升级指南
 
-QingStor 对象存储建议您升级至 qsctl v2.4.3 版本。详细操作步骤如下：
+QingStor 对象存储建议您升级至 qsctl 最新版本。详细操作步骤如下：
 
 1. 执行如下命令行，删除历史版本的 qsctl ：
 
@@ -109,7 +109,7 @@ access_key_id：
 secret_access_key：
 ```
 
-- qsctl v2.4.3 不再从如下路径读取配置文件：
+- qsctl 自 v2.4.3 不再从如下路径读取配置文件：
 ```bash
 ~/.qingcloud/config.yaml
 ```
@@ -277,6 +277,7 @@ qsctl ls qs://mybucket -lRh
 qsctl stat qs://mybucket
 ```
  **输出结果：**
+
  ![](/storage/object-storage/_images/qsctl_stat1.png)
 
 
@@ -285,6 +286,7 @@ qsctl stat qs://mybucket
 qsctl stat qs://mybucket/dir/to/test
 ```
  **输出结果：**
+
  ![](/storage/object-storage/_images/qsctl_stat2.png)
 
 
@@ -293,6 +295,7 @@ qsctl stat qs://mybucket/dir/to/test
 qsctl stat qs://mybucket/dir/to/test --format="name:%n, size:%s"
 ```
  **输出结果：**
+
  ![](/storage/object-storage/_images/qsctl_stat3.png)
 
  **说明：**`format` 参数用于传入格式化输出字符串。其中可用的有:

@@ -9,7 +9,7 @@ draft: false
 
 ## 创建 SQL 作业
 
-1. 在目标工作空间选择**数据开发** > **实时计算**，进入实时计算页面。
+1. 在目标工作空间选择**数据开发** > **作业开发**，进入作业开发页面。
 2. 点击**创建作业**，进入创建作业页面。
    
    <img src="/bigdata/dataomnis/_images/choose_model_sql.png" alt="选择模式" style="zoom:50%;" />
@@ -144,7 +144,7 @@ draft: false
 1. 选择已创建好的作业，点击右侧的**调度设置**，进入调度配置页面。    
 2. 设置调度策略。   
    
-   本实践选择**执行一次**，**发布后立即执行**。若您需要配置为其他调度策略，请参见[配置作业调度](../../../manual/data_development/job/scheduling_job)。
+   本实践选择**执行一次**，**发布后立即执行**。若您需要配置为其他调度策略，请参见[配置作业调度](/bigdata/dataomnis/manual/schedule/time/)。
 
    <img src="/bigdata/dataomnis/_images/bp_schedule_sql.png" alt="配置作业调度" style="zoom:50%;" />
 

@@ -13,28 +13,28 @@ keyword: 公网 IP API,云服务器绑定公网 IP
 
 如果想将公网 IP 绑定到路由器，请参见 [_ModifyRouterAttributes_](/network/vpc/api/vpc_api/modify_router_attributes/)。
 
-**Request Parameters**
+## 请求参数
 
-| Parameter name | Type | Description | Required |
+| 参数 | 参数类型 | 描述 | 是否必选 |
 | --- | --- | --- | --- |
 | eip | String | 公网 IP 的ID | Yes |
 | instance | String | 云服务器 ID | Yes |
 | force | Boolean | 是否强制绑定 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
-[_公共参数_](../../gei_api/parameters/)
+[_公共参数_](../../get_api/parameters/)
 
-**Response Elements**
+## 返回数据
 
-| Name | Type | Description |
+| 参数 | 参数类型 | 描述 |
 | --- | --- | --- |
 | action | String | 响应动作 |
 | job_id | String | 执行任务的 Job ID |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
-**Example**
+## 示例
 
-_Example Request_:
+**请求示例：**
 
 ```
 https://api.qingcloud.com/iaas/?action=AssociateEip
@@ -44,7 +44,7 @@ https://api.qingcloud.com/iaas/?action=AssociateEip
 &COMMON_PARAMS
 ```
 
-_Example Response_:
+**返回示例：**
 
 ```
 {

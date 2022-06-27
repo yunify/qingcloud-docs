@@ -6,6 +6,13 @@ keyword: QingCloud, 青云, AppCenter, 云市场, 产品动态
 weight: 10
 
 product:
+    - time: 2022-05-15
+      title: 支持 License 商品接入
+      content: 云市场新增 License 类商品接入。<br/>1. 服务商可以在<b>卖家中心</b> > <b>商品管理</b>发布 License 类商品。<br/>2. 用户可以在云市场选购 License 类商品，通过获取 License 来使用商品。
+      url: ../../provider_guide/release_goods/license/
+      tags: 
+      - 新功能
+
     - time: 2022-02-20
       title: 支持人工服务类商品接入
       content: 云市场新增人工服务类型商品接入。<br/>1. 服务商可以在<b>卖家中心</b> > <b>商品管理</b>发布人工服务类型商品，并使用交付中心进行服务交付。<br/>2. 用户可以在云市场选购人工服务商品，并使用交付中心提交服务需求及验收服务。

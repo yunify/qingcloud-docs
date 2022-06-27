@@ -9,7 +9,7 @@ draft: false
 
 ## 创建 JAR 作业
 
-1. 在目标工作空间选择**数据开发** > **实时计算**，进入实时计算页面。
+1. 在目标工作空间选择**数据开发** > **作业开发**，进入作业开发页面。
 2. 点击**创建作业**，进入创建作业页面。
    
    <img src="/bigdata/dataomnis/_images/choose_model_jar.png" alt="选择模式" style="zoom:50%;" />
@@ -23,14 +23,14 @@ draft: false
 
 ## 开发 JAR 作业
 
-1. 在目标工作空间选择**数据开发** > **实时计算**，进入实时计算页面。
+1. 在目标工作空间选择**数据开发** > **作业开发**，进入作业开发页面。
 2. 点击作业名称，进入开发面板。
 3. 配置 JAR 作业的程序入口、程序所需要的参数。
    
    <img src="/bigdata/dataomnis/_images/bp_job_jar_edit01.png" alt="配置 Jar 作业" style="zoom:50%;" />
 
    - **JAR（程序包）**：选择已上传到资源管理的 JAR 程序包。
-   - **入口类（EntryClass）**：配置运行函数的路径。本实践填写 `examples.app.MockData`。
+   - **入口类（EntryClass）**：配置运行函数的路径。本实践填写 `com.dataomnis.example.app.MockData`。
    - **程序参数（Program Arruments）**：配置数据源的连接信息。    
       本实践填写 `--kafka.brokers <Kafka 连接地址> --kafka.topics <Kafka Topic名称>`。     
       例如：--kafka.brokers 172.16.10.58:9092,172.16.10.59:9092,172.16.10.60:9092 --kafka.topics demo001
@@ -42,7 +42,7 @@ draft: false
 1. 选择已创建好的作业，点击右侧的**调度设置**，进入调度配置页面。    
 2. 设置调度策略。   
    
-   本实践选择**执行一次**，**发布后立即执行**。若您需要配置为其他调度策略，请参见[配置作业调度](../../../manual/data_development/job/scheduling_job)。
+   本实践选择**执行一次**，**发布后立即执行**。若您需要配置为其他调度策略，请参见[配置作业调度](/bigdata/dataomnis/manual/schedule/time/)。
 
    <img src="/bigdata/dataomnis/_images/bp_schedule_jar01.png" alt="配置作业调度" style="zoom:50%;" />
 

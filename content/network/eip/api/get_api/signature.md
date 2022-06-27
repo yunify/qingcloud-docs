@@ -10,7 +10,7 @@ weight: 30
 
 ## API 密钥签名
 
-您需要先在控制台**API 密钥**页面创建 API 密钥，获取 accesss_key_id 和 secret_access_key。
+您需要先在控制台**API 密钥**页面[申请 API 密钥](https://console.qingcloud.com/access_keys/)，获取 accesss_key_id 和 secret_access_key。
 
 例如请求参数如下:
 

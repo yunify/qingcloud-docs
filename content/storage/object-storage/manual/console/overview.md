@@ -16,7 +16,7 @@ weight: 1
 ## 相关概念
 以下是本文档涉及的主要概念：
 
-- **Bucket**： 对象存储的容器单位，每个 Bucket 是权限控制、监控和计费的独立单元。用户可以创建的 Bucket 数量有配额限制。
+- **Bucket**： 对象存储的容器单位，每个 Bucket 是访问权限、监控和计费的独立单元。用户可以创建的 Bucket 数量有配额限制。
 - **文件**： 即 API 文档中的 Object，是存储在 Bucket 内的实际内容单元，对应上传和下载的文件。
 - **文件夹**： 特殊的 Object，控制台中用以给文件分组的单元。
 - 其他内容，可参考 [QingStor 对象存储基本概念](/storage/object-storage/intro/object-storage/#基本概念)

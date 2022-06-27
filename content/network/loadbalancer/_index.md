@@ -1,14 +1,14 @@
 ---
-title: "负载均衡"
-linkTitle: "负载均衡"
+title: "负载均衡器"
+linkTitle: "负载均衡器"
 weight: 50
 collapsible: true
 type: "product"
 
 
 section1:
-  title: 负载均衡
-  vice_title: 负载均衡是将来自多个公网地址的访问流量分发到多台云服务器上的流量分发控制服务，并支持自动检测并隔离不可用的云服务器，从而提高业务的服务能力和可用性。
+  title: 负载均衡器
+  vice_title: 负载均衡器是将来自多个公网地址的访问流量分发到多台云服务器上的流量分发控制服务，并支持自动检测并隔离不可用的云服务器，从而提高业务的服务能力和可用性。
   # todo add qingstor introduction video
   video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_lb.mp4"
   video_img: "/images/video.png"
@@ -26,26 +26,26 @@ Section2:
 
     - title: 快速入门
       content: 快速入门
-      url: "/network/loadbalancer/quickstart/quick_start"
+      url: "/network/loadbalancer/quickstart/qs_process/"
 
     - title: 操作指南
       content: 操作指南
-      url: "/network/loadbalancer/manual/lb_user_guide"
+      url: "/network/loadbalancer/manual/lb/create_lb/"
 
     - title: 最佳实践
       content: 最佳实践
-      url: "/network/loadbalancer/best-practices/lb_border"
+      url: "/network/loadbalancer/best-practices/lb_across_internet/"
 
     - title: 常见问题
       content: 常见问题
-      url: "/network/loadbalancer/faq/lb_faq"
+      url: "/network/loadbalancer/faq/"
 
 section3:
   title: 开发者指南
   children:
     - title: API 文档
       content: 如何使用 API 文档
-      url: "/development_docs/api/"
+      url: "api/api_overview/"
 
     - title: SDK 文档
       content: 如何使用 SDK 文档
@@ -72,11 +72,11 @@ section4:
           url: "/network/loadbalancer/intro/senario"
 
     - title: 上手：搭建负载均衡
-      content: 搭建基于各个协议的负载均衡。
+      content: 创建一个公网类型的负载均衡实例，将来自客户端的访问请求分发到两台云服务器上。
       vice_title: 上手的第一步
       children:
         - title: 搭建负载均衡
-          url: "/network/loadbalancer/quickstart/quick_start"       
+          url: "/network/loadbalancer/quickstart/qs_process/"       
 ---
 
 

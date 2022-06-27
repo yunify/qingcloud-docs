@@ -22,5 +22,5 @@ NAT 网关创建后，支持随时对 NAT 网关的规格进行变更。
 
 3. 选定修改后的规格类型，点击**提交**。
 
-   <img src="../../../_images/mdy_nat_type.png" style="zoom:50%;" />
+   <img src="../../../_images/mdy_nat_type.png" />
 

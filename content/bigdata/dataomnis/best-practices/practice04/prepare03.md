@@ -9,9 +9,9 @@ draft: false
 
 ### 开发 Java 代码
 
-本实践以 demo 为例。
+本实践以 demo 为例，下载 [topN-demo.jar](https://bigdata-doc.pek3b.qingstor.com/dataomnis/doc/topN-demo.jar) 文件。
 
-下载 [topN-demo.jar](https://github.com/QingCloudAppcenter/Flink-Example/tree/main/examples/jar) 文件。
+您也可以下载 [demo 示例代码](https://github.com/QingCloudAppcenter/Flink-Example/tree/main/jar-demo)，然后自行构建 JAR 包。
 
 ### 上传程序包
 
@@ -27,4 +27,3 @@ draft: false
    > 程序包显示名会自动显示 JAR 包的名称，若 JAR 包名称不符合程序包显示名规则，则上传程序包后需要您对显示名称进行修改。
 
 4. 点击**上传**，开始上传程序包。
-
