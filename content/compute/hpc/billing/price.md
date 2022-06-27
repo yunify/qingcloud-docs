@@ -79,11 +79,22 @@ weight: 10
 >
 > 折扣只针对包年包月，按需付费无折扣更多商务合作信息请联系我们。
 
-| 折扣对象 | 折扣说明 |
-| -------- | -------- |
-| 集群     | 1年8.5折 |
-| -        | 3年5.5折 |
-| -        | 5年3.8折 |
+<table>
+  <tr>
+    <th style="width:30%;background-color:#F5F5F5">折扣对象</th> 
+    <th style="width:70%;background-color:#F5F5F5">折扣说明</th>
+  </tr>
+  <tr>
+    <td rowspan="3">集群</td>
+    <td>1年8.5折</td>
+  </tr>
+  <tr>
+    <td> 3年5.5折</td>
+  <tr>
+    <td>5年3.8折</td>
+  </tr>
+  </table>
+
 
 ## 共享集群-收费示例
 
