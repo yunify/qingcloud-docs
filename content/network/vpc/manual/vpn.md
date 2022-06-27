@@ -59,7 +59,9 @@ weight: 40
 
 #### Windows
 
-1. 下载 OpenVPN Windows 安装包，并安装它。缺省情况下，OpenVPN 将被安装到 ``C:\Program Files\OpenVPN`` 目录中。（按照默认选项安装即可。如非必要，请勿自主勾选选项） 推荐使用OpenVPN官方客户端2.3.6和以上版本. 下载地址在： [https://openvpn.net/get-open-vpn/](https://openvpn.net/get-open-vpn/) 安装程序包括服务器和客户端。安装时选择”OpenVPN GUI”模块即可安装客户端。
+1. 下载 OpenVPN Windows 安装包，并安装它。
+
+   缺省情况下，OpenVPN 将被安装到 ``C:\Program Files\OpenVPN`` 目录中。（按照默认选项安装即可。如非必要，请勿自主勾选选项） 推荐使用 OpenVPN 官方客户端2.3.6和以上版本。[点击前往官网下载](https://openvpn.net/community-downloads/) 。安装程序包括服务器和客户端。安装时选择”OpenVPN GUI”模块即可安装客户端。
 
 2. 将前面 zip 包中的配置文件放入  ``C:\Program Files\OpenVPN\config`` 目录中。
 
@@ -84,12 +86,12 @@ weight: 40
    ```
 
    
-   
+
    > **说明**：
    >
    > 请将以上文件中的``<xxx>`` 部分替换成您的配置。如:
    > ``remote <your-router-eip> 1194`` 替换为 ``remote 117.121.XXX.XXX 1194``。可参考 zip 包里带的 windows sample 配置样例。
-   
+
    至此，您可以连接 VPN 了。
 
 #### Linux
