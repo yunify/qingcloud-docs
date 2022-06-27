@@ -1,7 +1,7 @@
 ---
 title: "Ranger 概述"
 description: 本小节主要介绍如 Ranger 插件简要说明。 
-keyword: qingmr  Ranger
+keyword: qingmr,Ranger
 weight: 10
 collapsible: false
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "退款说明"
-description: 本小节主要介绍 QingCloud RocketMQ 退款说明。 
-keyword: 云计算,大数据,消息队列,中间件,RocketMQ,退款,退订
+description: 本小节主要介绍 RocketMQ 退款说明。 
+keyword: 云计算,消息队列,中间件,RocketMQ,退款,退订
 weight: 40
 collapsible: false
 draft: false

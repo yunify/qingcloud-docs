@@ -1,7 +1,7 @@
 ---
 title: "基本概念"
-description: 本小节主要介绍 QingCloud RocketMQ 到期与欠费说明。 
-keyword: 云计算,大数据,RocketMQ,到期,欠费 
+description: 本小节主要介绍 RocketMQ 到期与欠费说明。 
+keyword: 云计算,消息队列,中间件,RocketMQ,到期,欠费 
 weight: 11
 collapsible: false
 draft: false

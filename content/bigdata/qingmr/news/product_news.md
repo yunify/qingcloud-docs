@@ -1,7 +1,7 @@
 ---
 title: "产品动态"
 description: 本小节主要介绍 QingMR 产品动态
-keyword: 大数据，QingMR，产品动态
+keyword: 大数据,QingMR,产品动态
 weight: 05
 collapsible: false
 draft: false

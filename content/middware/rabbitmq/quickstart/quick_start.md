@@ -1,7 +1,7 @@
 ---
 title: "创建 RabbitMQ 集群"
 description: 本文指导您如何快速创建 RabbitMQ 集群。
-keyword: 云计算,大数据,消息队列,中间件,RabbitMQ,rabbitmq,消息队列服务,消息中间件,创建集群
+keyword: 云计算,消息队列,中间件,RabbitMQ,rabbitmq,消息队列服务,消息中间件,创建集群
 weight: 10
 draft: false
 ---

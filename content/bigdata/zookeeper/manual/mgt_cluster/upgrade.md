@@ -1,7 +1,7 @@
 ---
 title: "版本升级"
 description: 本小节主要介绍如何升级 ZooKeeper 集群。 
-keyword: ZooKeeper 升级集群；
+keyword: ZooKeeper 升级集群,
 weight: 20
 collapsible: false
 draft: false

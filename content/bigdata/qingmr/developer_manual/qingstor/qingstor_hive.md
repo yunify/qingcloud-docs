@@ -1,7 +1,7 @@
 ---
 title: "Hive 与 QingStor 集成"
 description: 本小节主要介绍如何Hive 与 QingStor 集成。 
-keyword: qingmr， Hive 与 QingStor ,
+keyword: qingmr,Hive 与 QingStor,
 weight: 50
 collapsible: false
 draft: false

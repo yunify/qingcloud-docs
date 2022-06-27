@@ -1,6 +1,6 @@
 ---
 title: "概述"
-description: 本小节主要介绍如何快速使用 Storm 集群。 
+description: 本小节主要介绍 Storm 示例。 
 keyword: Storm
 weight: 01
 collapsible: false

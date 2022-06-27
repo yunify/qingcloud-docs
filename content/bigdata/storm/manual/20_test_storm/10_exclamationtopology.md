@@ -1,7 +1,7 @@
 ---
 title: "ExclamationTopology"
-description: 本小节主要介绍如何快速使用 Storm 集群。 
-keyword: Storm
+description: 本小节主要介绍 ExclamationTopology 示例。 
+keyword: Storm,ExclamationTopology
 weight: 10
 collapsible: false
 draft: false

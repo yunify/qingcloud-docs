@@ -1,7 +1,7 @@
 ---
 title: "TridentWordCount"
-description: 本小节主要介绍如何快速使用 Storm 集群。 
-keyword: Storm
+description: 本小节主要介绍 TridentWordCount 示例。 
+keyword: Storm,TridentWordCount
 weight: 40
 collapsible: false
 draft: false
