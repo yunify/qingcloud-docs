@@ -1,23 +1,21 @@
 ---
 title: "修改配置参数"
 description: 本小节主要介绍如何修改 ZooKeeper 配置参数。 
-keyword: ZooKeeper 修改账号；
+keyword: ZooKeeper,修改配置参数
 weight: 15
 collapsible: false
 draft: false
 ---
 
-
-
 在 AppCenter 集群管理控制台，ZooKeeper 提供了多个配置参数，可以通过**配置参数**来定制个性化的 ZooKeeper 服务并进行调优。
 
-更新配置后所有 ZooKeeper 服务会依次自动重启使配置生效，重启所需时间与机器配置有关，每个节点一般在1分钟之内可以完成。
+更新配置后所有 ZooKeeper 服务会依次自动重启使配置生效，重启所需时间与机器配置有关，每个节点一般在 1 分钟之内可以完成。
 
 本小节主要介绍如何修改 ZooKeeper 集群的配置参数。
 
 ## 约束限制
 
-- 1.0 版本暂不支持修改配置参数。
+ZooKeeper 3.4.9 - v1.0.0 版本暂不支持修改配置参数。
 
 ## 前提条件
 
@@ -32,7 +30,7 @@ draft: false
 4. 点击**配置参数**页签，进入集群配置参数管理页面。
 5. 点击**修改属性**，公共参数**值**进入可编辑状态。
 
-   ![修改配置参数](../../../_images/modify_para.png)
+   ![修改配置参数](/bigdata/zookeeper/_images/modify_para.png)
 
 6. 参考配置参数取值范围和描述，修改参数值。
 7. 确认参数信息无误后，点击**保存**，返回参数列表页面。

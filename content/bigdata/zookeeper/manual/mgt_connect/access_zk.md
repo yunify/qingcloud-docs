@@ -1,23 +1,21 @@
 ---
 title: "连接集群"
-description: 本小节主要介绍如何连接 ZooKeeper 数据库。 
-keyword: ZooKeeper 访问,访问数据库
+description: 本小节主要介绍如何连接 ZooKeeper。 
+keyword: ZooKeeper 访问,
 weight: 05
 collapsible: false
 draft: false
 ---
 
-
-
 ZooKeeper 支持通过节点内网 IP 地址连接，确保数据传输速率的同时兼顾数据安全。
 
-本小节主要介绍如何连接 ZooKeeper 数据库，以终端命令行方式连接数据库。
+本小节主要介绍如何连接 ZooKeeper ，以终端命令行方式连接 ZooKeeper。
 
 ## 前提条件
 
 - 已获取管理工作台登录账号和密码，且已获取集群操作权限。
-- 已创建 ZooKeeper 集群，且集群状态为**活跃**。
-- 已在同`VxNet` 网络的服务器中安装 [ZooKeeper](http://zookeeper.apache.org/releases.html) 客户端。
+- 已创建 ZooKeeper 集群，且集群状态为`活跃`。
+- 已在同 VxNet 网络的服务器中安装 [ZooKeeper 客户端](http://zookeeper.apache.org/releases.html)。
 
 ## 操作步骤
 
@@ -27,15 +25,17 @@ ZooKeeper 支持通过节点内网 IP 地址连接，确保数据传输速率的
 ### 获取连接信息
 
 1. 登录管理控制台。
-2. 选择**产品与服务** > **大数据服务** > **ZooKeeper 服务**，进入集群管理页面。
+2. 选择**产品与服务** > **大数据服务** > **ZooKeeper 服务**，进入集群列表页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**节点**页签，获取节点 IP 地址。
 
-   <img src="../../_images/check_access_info.png" alt="登录地址" style="zoom:50%;" />
+   <img src="/bigdata/zookeeper/_images/node_ip.png" alt="获取节点 IP" style="zoom:50%;" />
 
 ### 访问 ZooKeeper
 
-假设客户端和 ZooKeeper 在同一私有网络，ZooKeeper 集群有三个节点，IP 地址分别为192.168.100.10,192.168.100.11,192.168.100.12， 您可以通过如下命令连接 ZooKeeper。
+假设客户端和 ZooKeeper 在同一私有网络，ZooKeeper 集群有三个节点，IP 地址分别为 192.168.100.10,192.168.100.11,192.168.100.12。
+
+您可以通过如下命令连接 ZooKeeper。
 
 ```shell
 bin/zkCli.sh|zkCli.cmd -server 192.168.100.10:2181,192.168.100.11:2181,192.168.100.12:2181
