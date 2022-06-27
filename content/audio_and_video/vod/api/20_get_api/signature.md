@@ -32,38 +32,36 @@ weight: 30
 
 ```
 string_to_sign = Verb + "\n"
+              + Content-MD5 + "\n"
               + Content-Type + "\n"
               + Date + "\n"
               + Canonicalized Resource
 ```
 
 - Verb：HTTP 请求方法，包括 POST、GET、PUT、DELETE 等。
-- Content-Type：请求内容的类型，和请求头里的字段值保持一致，若请求头没有这个参数，保留空白行。
-- Date： 表示此次请求的时间，需要符合 HTTP 规定的 GMT 格式。
-- Canonicalized Resource：请求访问的资源。
+- `Content-MD5`：请求内容数据的 MD5 值，和请求头里的字段值保持一致，若请求头没有这个参数，保留空白行。
+- `Content-Type`：请求内容的类型，和请求头里的字段值保持一致，若请求头没有这个参数，保留空白行。
+- `Date`：此次请求的时间，需要符合 HTTP 规定的 GMT 格式。
+- `Canonicalized Resource`：请求访问的资源。构建方式参考[构建 Canonicalized Resource](/storage/object-storage/api/practices/signature/#构建-canonicalized-resource)。
 
 **签名串示例：**
 
 ```
-GET\n
-application/json\n
-Wed, 10 Dec 2014 17:20:31 GMT\n
-/v1/media HTTP/1.1
+POST
+4gJE4saaMU4BqNR0kLY+lw==
+application/json Wed, 10 Dec 2014 17:20:31 GMT /v1/media/12345678 
 ```
-
- **构建 Canonicalized Resource：**
-
-- 默认为请求的资源。
-- 如果请求包含查询字符串（query string）则将查询参数 key 按照字母顺序排列，并用 & 连接，拼接到字符串的最后。
 
 ## 3. 计算签名 Signature
 
-1. 将API密钥的私钥 (secret_access_key) 作为 key，生成被签名串的 HMAC-SHA256 签名。
+假设经过前文步骤得到的签名串为 `string_to_sign`，接下来的步骤是对签名串进行签名。
+
+1. 将 API 密钥的私钥 (secret_access_key) 作为 key，使用 Hmac sha256 算法给签名串生成签名：。
 
    ```
    import hmac
    from hashlib import sha256
-      
+   
    h = hmac.new(secret_access_key, digestmod=sha256)
    h.update(string_to_sign)
    ```
@@ -81,11 +79,11 @@ Wed, 10 Dec 2014 17:20:31 GMT\n
 **添加 HTTP 请求头：**
 
 ```
-Authorization: QVOD-HMAC-SHA256 <access_key_id>:<signature>
+Authorization: QVOD <access_key_id>:<signature>
 ```
 
 **请求头示例：**
 
 ```
-Authorization: QVOD-HMAC-SHA256 PLLZOBTTZXGBNOWUFHZZ:tuXu/KcggHWPAfEmraUHDwEUdiIPSXVRsO+T2rxomBQ=
+Authorization: QVOD PLLZOBTTZXGBNOWUFHZZ:tuXu/KcggHWPAfEmraUHDwEUdiIPSXVRsO+T2rxomBQ=
 ```
