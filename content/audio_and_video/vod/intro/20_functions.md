@@ -27,7 +27,7 @@ weight: 20
 
 | 类型         | 输入格式                                                     | 输出格式                                                     |
 | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 封装格式     | WMV、RM、MOV、MPEG、MP4、3GP、FLV、AVI、RMVB、TS、ASF、MPG、WEBM、MKV 、M3U8、WM、ASX、RAM、MPE、VOB、DAT、MP4V、M4V、F4V、MXF、QT、OGG | <ul><li>视频：FLV、MP4、HLS（m3u8+ts）</li><li>音频：MP3、OGG、FLAC、m4a</li></ul> |
+| 封装格式     | WMV、RM、MOV、MPEG、MP4、3GP、FLV、AVI、RMVB、TS、ASF、MPG、WEBM、MKV 、M3U8、WM、ASX、RAM、MPE、VOB、DAT、MP4V、M4V、F4V、MXF、QT、OGV | <ul><li>视频：FLV、MP4、HLS（m3u8+ts）</li><li>音频：MP3、OGG、FLAC、m4a</li></ul> |
 | 视频编码格式 | <!--AV1、AVS2、-->H.264/AVC、H.263、 H.263+、H.265、MPEG-1、MPEG-2、MPEG-4、MJPEG、VP8、VP9、Quicktime、RealVideo、Windows Media Video | H.264/AVC、 H.265/HEVC                                       |
 | 音频编码格式 | AAC、ADPCM、AMR、DSD、MP1、MP2、MP3、PCM、RealAudio、Windows Media Audio、VORBIS | MP3、AAC、FLAC                                               |
 
