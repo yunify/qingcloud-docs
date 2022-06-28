@@ -22,7 +22,7 @@ POST
 | 参数      | 类型      | 是否必要 | 描述                      |
 | :-------- | :-------- | :------- | :------------------------ |
 | timestamp | date-time | true     | 时间戳                    |
-| ids       | array     | true     | 需要接触绑定的专属队列 id |
+| ids       | array     | true     | 需要解除绑定的专属队列 id |
 | zone      | string    | true     | zone id                   |
 
 ## 响应消息
