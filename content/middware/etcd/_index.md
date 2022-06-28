@@ -26,8 +26,7 @@ section2:
     url: "/middware/etcd/quickstart/qs10_deploy_etcd"
   - title: 操作指南
     content: etcd 集群操作指导
-    url: "/middware/etcd/manual/man05_main_operation"
-
+    url: "/middware/etcd/manual/mgt_cluster/cluster_info"
 
 section3:
   title: 开发者指南
