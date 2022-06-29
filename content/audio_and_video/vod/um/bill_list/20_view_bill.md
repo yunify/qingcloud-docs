@@ -2,7 +2,7 @@
 title: "查看消费明细"
 keyword: 云点播,视频点播, 查看消费明细
 description: 本章节介绍如何查看消费明细。
-draft: false
+not_show: true
 collapsible: false
 weight: 20
 ---

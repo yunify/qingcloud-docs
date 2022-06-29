@@ -13,11 +13,11 @@ weight: 20
 
 - 已获取 QingCloud 管理控制台的账号和密码。
 
-- 已开通云点播服务且添加自有域名。
+- 已开通云点播服务且[添加自有域名](../10_add_domain/)。
 
 ## 操作步骤
 
-如下**以在青云的云解析 DNS 服务中配置 CNAME 值为例**说明，更多关于 DNS 解析记录的配置，请参见[配置解析记录](/site/dns/quickstart/creatrecordset/)。
+如下**以在青云的云解析 DNS 服务中配置 CNAME 值为例**进行 CNAME 配置说明。
 
 1. 登录 QingCloud 管理控制台。
 

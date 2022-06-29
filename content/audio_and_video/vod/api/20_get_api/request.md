@@ -1,45 +1,37 @@
 ---
-title: "构造请求"
+title: "请求结构"
 description: 本小节主要介绍如何构造 API 请求。 
-keyword: 公网IP, API 请求, 构造请求
+keyword: 青云云点播, API 请求, 构造请求
 draft: false
 weight: 10
-collapsible: false
 ---
 
 本文介绍 API 请求的组成及示例说明。
 
-## 请求结构
+## 服务器地址
 
-请求 URL 由如下部分组成：
+青云云点播 API 的接入域名为： `api.vod.frontwize.com`。
 
-| <span style="display:inline-block;width:100px">参数</span> | 描述                                                   | 说明                                      |
-| :--------------------------------------------------------- | :----------------------------------------------------- | :---------------------------------------- |
-| API 入口                                                   | API 调用的 webservice 入口。                           | 统一为：`https://api.qingcloud.com/iaas/` |
-| 公共参数                                                   | 每个 API 调用都需要包含公共参数 。                     | 详见 [公共参数](../parameters)            |
-| 指令名称                                                   | API **action** 指令的名称，例如 `DescribeInstances` 。 | -                                         |
-| 指令参数                                                   | 指令相关配置参数。                                     | -                                         |
+## 通信协议
 
-## 请求示例
+青云云点播 API 的所有接口均通过 **HTTPS** 进行通信，提供高安全性的通信通道。
 
-一个典型的 API 请求如下所示，这是一个 `DescribeInstances` 的 API 请求：
+## 请求方法
 
-```url
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=DescribeInstances&expires=2020-08-29T07%3A42%3A25Z&limit=20&signature_method=HmacSHA256&signature_version=1&status.1=running&time_stamp=2020-08-29T06%3A42%3A25Z&version=1&zone=pek3b&signature=ihPnXFgsg5yyqhDN2IejJ2%2Bbo89ABQ1UqFkyOdzRITY%3D
-```
+HTTP请求方法告诉服务你正在请求什么类型的操作。
 
-转换为便于查阅的模式，如下：
+青云云点播 API 支持的 HTTP 请求方法如下：
 
-```url
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
-&action=DescribeInstances
-&expires=2020-08-29T07%3A42%3A25Z
-&limit=20
-&signature_method=HmacSHA256
-&signature_version=1
-&status.1=running
-&time_stamp=2020-08-29T06%3A42%3A25Z
-&version=1
-&zone=pek3b
-&signature=ihPnXFgsg5yyqhDN2IejJ2%2Bbo89ABQ1UqFkyOdzRITY%3D
-```
+| 方法   | 说明                               |
+| ------ | ---------------------------------- |
+| POST   | 请求服务器新增资源或执行特殊操作。 |
+| GET    | 请求服务器返回指定资源。           |
+| PUT    | 请求服务器更新指定资源。           |
+| DELETE | 请求服务器删除指定资源。           |
+
+## 字符编码
+
+请求及返回结果都使用`UTF-8`字符集进行编码。
+
+
+

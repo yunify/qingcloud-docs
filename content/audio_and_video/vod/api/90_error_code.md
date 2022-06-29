@@ -1,8 +1,8 @@
 ---
 title: "错误码"
 description: 介绍 API 错误码说明。 
-keyword: 公网 IP, API 错误码
-draft: false
+keyword: 云点播, API 错误码
+not_show: true
 weight: 90
 ---
 

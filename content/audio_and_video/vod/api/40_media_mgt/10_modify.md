@@ -2,7 +2,7 @@
 title: "修改媒资"
 description: 本节介绍如何调用修改媒资的 API 接口。
 keyword: 云点播,API 参考,修改媒资
-draft: false
+not_show: true
 weight: 10
 ---
 

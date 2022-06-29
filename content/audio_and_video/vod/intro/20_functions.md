@@ -13,7 +13,7 @@ weight: 20
 
 | <span style="display:inline-block;width:100px">功能</span> | 功能说明                                                     |
 | ---------------------------------------------------------- | ------------------------------------------------------------ |
-| 音视频上传                                                 | <ul><li>云点播支持多种方式上传，可通过控制台本地批量上传，也可以通过 SDK 上传。</li><li>单个上传文件最大支持 5GB，超出该大小可提交工单申请。</li><li>支持的上传格式：</li><ul><li>视频：WMV、RM、MOV、MPEG、MP4、3GP、FLV、AVI、RMVB、TS、ASF、MPG、WEBM、MKV 、M3U8、WM、ASX、RAM、MPE、VOB、DAT、MP4V、M4V、F4V、MXF、QT、OGG。<li>音频：MP3、M4A、FLAC、OGG、WAV、RA、AAC、AMR。</li></ul></ul> |
+| 音视频上传                                                 | <ul><li>云点播支持多种方式上传，可通过控制台本地批量上传，也可以通过 SDK 上传。</li><li>单个上传文件最大支持 5GB，超出该大小可提交工单申请。</li><li>支持的上传格式：</li><ul><li>视频：WMV、RM、MOV、MPEG、MP4、3GP、FLV、AVI、RMVB、TS、ASF、MPG、WEBM、MKV 、M3U8、WM、ASX、RAM、MPE、VOB、DAT、MP4V、M4V、F4V、MXF、QT、OGV。<li>音频：MP3、M4A、FLAC、OGG、WAV、RA、AAC、AMR。</li></ul></ul> |
 | 音视频存储                                                 | <ul><li>音视频支持无限水平扩展，对存储空间与文件数量均无限制。</li><li>提供可靠的存储，数据持久性达 99.999999999%，服务可用性达 99.99%。</li></ul> |
 | 媒资管理                                                   | 支持针对媒资进行结构化管理，包含编辑媒资元数据信息、下载、播放URL查看等功能。<ul><li>批量启动音视频处理，转码、水印、截取等。</li><li>一键禁播与解禁音视频播放。</li><li>多维度媒资筛选。</li></ul> |
 

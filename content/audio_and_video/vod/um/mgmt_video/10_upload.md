@@ -51,5 +51,5 @@ weight: 10
 
    - 您也可以点击**查看上传任务**，查看上传任务情况。
 
-     <img src="/audio_and_video/vod/_images/um_view_upload_task.png" style="zoom:50%;" />
+     <img src="/audio_and_video/vod/_images/um_view_upload_task.png"  />
 

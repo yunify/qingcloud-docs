@@ -55,14 +55,15 @@ MySQL Plus 支持对常用配置参数的管理。
 |   Default_time _zone      |  -    |   表示默认工作时区。<li> 默认为东八区。  |
 |   Default_storage _engine    |  <li> InnoDB <li> TokuDB  |  表示默认存储引擎。默认为 InnoDB 。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>该参数修改后，数据库将重启。</li><li> 仅 MySQL 5.7 支持 TokuDB 存储引擎。</li></span>|
 |  Innodb_buffer _pool_size      |  -1~       | 无论设置的值多少，最终都会上调到 innodb_buffer_pool_chunk_size * innodb_buffer_pool_instances 的整数倍。<br>- 若该值为-1，则将该参数设置为内存的60%。<br>- 若该值过大，最多只取内存的80% 。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br>该参数修改后，数据库将重启。</span> |
-|   Character_set_server  |   - |  表示服务器安装时指定的默认字符集设定。  |
+|   Character_set_server  | <li>utf8mb4<li>latin1<li>utf8<li>utf16<li>utf32 |  表示服务器安装时指定的默认字符集设定，默认值为 utf8mb4。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br/>该参数修改后，数据库将重启。</span>  |
+| Collation_server | <li>general_ci<li>bin | 表示服务器的默认排序规则。<br/>该参数仅展示后缀，实际值为Character_set_server值与后缀通过“_”拼接。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br/>该参数修改后，数据库将重启。</span> |
 |   Interactive_timeout      |  1~2147483      |   表示服务器关闭交互式连接前等待的时间，单位为秒。<li> 默认为 3600s。  |
 |   Back_log    |   50~4096  |  表示 MySQL 缓存的尚未处理的连接数量。默认为 2048。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>注意</b>: <br>该参数修改后，数据库将重启。</span>  |
 |   Ft_min_word_len  |  1~4 | 表示最小索引长度。默认为 4。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br>该参数修改后，数据库将重启。</span> |
 |   Key_buffer_size      |  1～1310720       |   表示指定索引缓冲区的大小。 默认为 33554432。 |
 |   Log_bin_trust _function_creators    |   0～1  |  表示控制是否可以信任存储函数创建者，不会创建写入二进制日志引起不安全事件的存储函数。 只有当二进制日志启用后才会起作用。<li> 若设置为0（默认值），用户不得创建或修改存储函数，除非用户同时具有 `CREATE ROUTINE或ALTER ROUTINE` 特权加`SUPER` 权限）。 设置为 0 还强制使用 `DETERMINISTIC` 特性或 `READS SQL DATA` 或 `NO SQL` 特性声明函数的限制。<li> 若设置为1，MySQL不会对创建存储函数实施限制。|
 |  Long_query_time      | 0~300        |   表示慢查询日志时间，单位为秒。<li> 默认值为 3s。  |
-|   Lower_case_ table_names  |  0～1 |  表示大小写敏感参数。默认为 0。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>该参数修改后，数据库将重启。</li><li>对于 MySQL 8.0 内核，勿修改该参数值。</li></span>|
+|   Lower_case_ table_names  |  0～1 | 表示大小写敏感参数。默认为 0。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br>仅在创建集群时可修改该参数。集群创建完成后，修改该参数不生效。</span> |
 |   Max_connections      |  <li>0<li>1024~16384      |   表示同时处理请求的最大数量。 <br>- 默认值为0，表示根据集群初始化内存规格动态设定最大请求数。 <br>- 1G/2G/4G 内存规格默认最大连接数为 1024；<br>- 8G/16G/32G 内存规格默认最大连接数为 2048；<br>- 64G/128G/256G 内存规格默认最大连接数为 4096。|
 |   Max_connect_errors  |   1~ 4294967295 |  表示最大连接错误次数。该参数是 MySQL 中与安全有关的计数器值，负责阻止过多尝试失败的客户端以防止暴力破解密码。 <li> 默认为 655360。 |
 |   Query_cache_size      |  	0~    |   表示查询返回缓存空间大小。<li> 默认为 0。 |

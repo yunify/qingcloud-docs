@@ -1,62 +1,38 @@
 ---
-title: "返回结构"
+title: "返回结果"
 description: 介绍 API 返回结构。 
 keyword: 公网 IP API, 返回结构
 draft: false
 weight: 40
 ---
 
-本文介绍 API 返回结构组成及返回示例。
+本文介绍 API 返回结构组成及含义。
 
-## 返回结构
+## 正确返回结果
 
-| <span style="display:inline-block;width:80px">参数</span> | 描述                                                         | 说明                                                         |
-| :-------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| 指令名称                                                  | API 返回的指令名称 ( action )，例如 `DescribeInstancesResponse` 。 | API 返回的指令名称一般以 “API 请求指令名称” + “Response” 来表示。 |
-| 返回码                                                    | 返回码 ( ret_code ) 用来表示API请求的返回值。`ret_code = 0` 表示 API 请求正常；`ret_code != 0` 表示 API 请求错误。 | 详情可见 [错误码](../../error_code)                          |
-| 返回参数                                                  | 返回参数响应消息。                                           | -                                                            |
-
-## 返回示例
-
-API 的返回结果为 JSON 结构，这是一个 `DescribeInstances` 的 API 请求返回：
+Http状态码为200时调用成功，其可能的返回如下为：
 
 ```
 {
-  "action":"DescribeInstancesResponse",
-  "instance_set":[
-    {
-      "vcpus_current":1,
-      "instance_id":"i-ogbndull",
-      "vxnets":[
-        {
-          "vxnet_name":"primary vxnet",
-          "vxnet_type":1,
-          "vxnet_id":"vxnet-0",
-          "nic_id":"52:54:ef:0c:ed:66",
-          "private_ip":"10.50.13.54"
-        }
-      ],
-      "memory_current":1024,
-      "sub_code":0,
-      "transition_status":"",
-      "instance_name":"",
-      "instance_type":"c1m1",
-      "create_time":"2021-08-28T14:26:03Z",
-      "status":"running",
-      "status_time":"2021-08-28T14:26:03Z",
-      "image":{
-        "processor_type":"64bit",
-        "platform":"linux",
-        "image_size":20,
-        "image_name":"CentOS 6.4 64bit",
-        "image_id":"centos64x64",
-        "os_family":"centos",
-        "provider":"system"
-      },
-      "description":null
-    }
-  ],
-  "ret_code":0,
-  "total_count":1
+    "data": {}
 }
 ```
+
+- `data` 内为具体接口定义的字段，不同的接口所返回的字段参见接口文档中的定义。
+- API 请求的唯一标识 requestid 可以从请求的 Response Header 中查找，字段名为`x-qvod-request-id`，如果 API 出现异常，可[提交工单](https://console.qingcloud.com/tickets/create)并提供该 ID 来解决问题。
+
+## 错误返回结果
+
+若 HTTP 状态码大于400 时，接口调用失败，其返回值示例格式如下：
+
+```
+{
+  "code": "String",
+  "message": "String"
+}
+```
+
+- `code` 表示具体出错的错误码。当请求出错时，可以先根据公共错误码和当前接口对应的错误码列表里查找对应原因和解决方案。
+- `Message` 显示出了这个错误发生的具体原因。随着业务发展或体验优化，此文本可能会进行变更或更新，故该描述仅作为参考，用户不应依赖这个返回值。
+- API 请求的唯一标识 requestid 可以从请求的 Response Header 中查找，字段名为`x-qvod-request-id`，如果 API 出现异常，可[提交工单](https://console.qingcloud.com/tickets/create)并提供该 ID 来解决问题。
+
