@@ -14,7 +14,7 @@ Storm 集群的客户端节点已自动完成相关配置，您可以通过客�
 ## 前提条件
 
 - 已创建 Storm 集群，且 Storm 集群状态为**活跃**。
-- Storm 集群已有客户端节点。若创建集群时未创建 Client 节点，可通过[新增节点](/bigdata/storm/manual/30_mgt_node/add_node)功能进行添加。
+- Storm 集群已有客户端节点。若创建集群时未创建 Client 节点，可通过[新增节点](/bigdata/storm/manual/mgt_node/add_node)功能进行添加。
 
 ## 操作步骤
 

@@ -20,7 +20,7 @@ section2:
     url: "/middware/etcd/intro/introduction"
   - title: 计费指南
     content: etcd 集群计费说明
-    url: "/middware/etcd/billing/main"
+    url: "/middware/etcd/billing/price"
   - title: 快速入门
     content: 快速创建 etcd 集群 
     url: "/middware/etcd/quickstart/qs10_deploy_etcd"
