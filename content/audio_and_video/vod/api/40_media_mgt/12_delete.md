@@ -13,7 +13,7 @@ weight: 12
 ## 请求语法
 
 ```
-DELETE /v1/media/<MediaId> HTTP/1.1
+DELETE /api/v1/media/<MediaId> HTTP/1.1
 Host: api.vod.frontwize.com
 Date: <date>
 Authorization: <authorization-string>
@@ -36,7 +36,7 @@ Authorization: <authorization-string>
 ## 请求示例
 
 ```
-DELETE /v1/media/47261147421741056 HTTP/1.1
+DELETE /api/v1/media/47261147421741056 HTTP/1.1
 Accept: application/json, text/plain, */*
 Accept-Encoding: gzip, deflate
 Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7

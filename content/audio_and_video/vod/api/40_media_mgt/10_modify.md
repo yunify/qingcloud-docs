@@ -10,7 +10,7 @@ weight: 10
 
 ## 请求路径
 
-/v1/media/\<MediaId>
+/api/v1/media/\<MediaId>
 
 ## 请求方法
 

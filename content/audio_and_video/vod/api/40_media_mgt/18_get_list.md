@@ -10,7 +10,7 @@ weight: 18
 
 ## 请求路径
 
-/v1/media/list
+/api/v1/media/list
 
 ## 请求方法
 

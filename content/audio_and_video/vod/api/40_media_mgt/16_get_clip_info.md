@@ -13,7 +13,7 @@ weight: 16
 ## 请求语法
 
 ```
-GET   /v1/media/<MediaId>/clip HTTP/1.1
+GET   /api/v1/media/<MediaId>/clip HTTP/1.1
 Host: api.vod.frontwize.com
 Date: <date>
 Authorization: <authorization-string>
@@ -46,7 +46,7 @@ N/A
 ## 请求示例
 
 ```
-GET   /v1/media/50591129875255296/clip HTTP/1.1
+GET   /api/v1/media/50591129875255296/clip HTTP/1.1
 Accept: application/json, text/plain, */*
 Accept-Encoding: gzip, deflate
 Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7

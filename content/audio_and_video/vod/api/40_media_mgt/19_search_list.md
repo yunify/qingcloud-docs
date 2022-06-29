@@ -12,7 +12,7 @@ weight: 19
 ## 请求语法
 
 ```
-GET   /v1/media/search HTTP/1.1
+GET   /api/v1/media/search HTTP/1.1
 Host: api.vod.frontwize.com
 Date: <date>
 Authorization: <authorization-string>
@@ -46,7 +46,7 @@ Authorization: <authorization-string>
 ## 请求示例
 
 ```
-GET   /v1/media/search?Offset=&Limit=10&Name=%22%22&LastId=0 HTTP/1.1
+GET   /api/v1/media/search?Offset=&Limit=10&Name=%22%22&LastId=0 HTTP/1.1
 Accept: application/json, text/plain, */*
 Accept-Encoding: gzip, deflate
 Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
