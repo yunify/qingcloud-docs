@@ -4,7 +4,7 @@ description: 本小节主要介绍如何配置 SPA HANA 数据来源。
 keywords: 
 weight: 30
 collapsible: false
-draft: false
+draft: true
 ---
 
 数据源是大数据工作台用于数据处理的出入口。本小节主要介绍如何新增数据源。

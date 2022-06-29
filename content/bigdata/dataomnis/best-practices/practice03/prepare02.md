@@ -21,21 +21,6 @@ draft: false
 
    <img src="/bigdata/dataomnis/_images/workspace_list.png" alt="工作空间列表" style="zoom:50%;" />
 
-## 创建网络
-
-1. 在目标工作空间选择**数据开发** > **网络配置**，进入网络配置页面。
-2. 点击**创建网络**，进入创建网络页面。
-   
-   <img src="/bigdata/dataomnis/_images/create_net.png" alt="创建网络" style="zoom:50%;" />
-
-3. 填写网络名称，选择 VPC 网络和私有网络。
-
-   VPC 网络建议与所创建的 MySQL 集群与 ELK 集群一致。
-
-4. 点击**创建**，开始创建网络。
-
-   <img src="/bigdata/dataomnis/_images/net_list.png" alt="网络列表" style="zoom:50%;" />
-
 ## 创建计算集群
 
 1. 在目标工作空间选择**数据开发** > **计算集群**，进入计算集群列表页面。

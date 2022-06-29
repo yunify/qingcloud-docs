@@ -1,7 +1,7 @@
 ---
 title: "参数介绍"
 description: 本小节主要介绍 HBase 常用配置项。 
-keyword: HBase 常用配置项；
+keyword: HBase 常用配置项,
 weight: 10
 collapsible: false
 draft: false
@@ -50,5 +50,5 @@ draft: false
 |   hbase.security.authorization  |   - |  表示是否开启安全认证机制。  |
 |   qingcloud.hbase.major.compact.hour      |  -1～24       |   表示设置每天手动 Major Compaction 的整点时间，设为-1则取消手动 Compaction。  |
 |   qingcloud.phoenix.on.hbase.enable  |   - |  表示是否开启 Phoenix 查询引擎功能。  |
-|   phoenix.functions.allowUserDefinedFunctions  |   - |  表示是是否开启 Phoenix UDF。  |
+|   phoenix.functions.allowUserDefinedFunctions  |   - |  表示是否开启 Phoenix UDF。  |
 |   phoenix.transactions.enabled  |   - |  表示是否开启 Phoenix ACID 事务。  |
