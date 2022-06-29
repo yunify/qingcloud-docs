@@ -11,11 +11,11 @@ draft: false
 
 您可以根据业务实际需求与使用场景，选择合适的作业类型开发作业。
 
-- **数据集成**：支持向导模式和脚本模式。
+- **数据集成**有向导模式和脚本模式，目前仅支持向导模式。
     - [向导模式](/bigdata/dataomnis/manual/integration_job/create_job_offline_1)     
         可视化数据集成，通过向导模式指引用户，降低开发人员使用门槛。   
-    - [脚本模式](/bigdata/dataomnis/manual/integration_job/create_job_offline_2)   
-        脚本模式支持更多功能，适合需要较复杂的场景。  
+    <!-- - [脚本模式](/bigdata/dataomnis/manual/integration_job/create_job_offline_2)   
+        脚本模式支持更多功能，适合需要较复杂的场景。   -->
 - **实时计算**：支持 SQL 模式和代码开发（JAR）模式。    
     - [SQL 模式](/bigdata/dataomnis/manual/flink_job/create_job_sql)    
         原生 Flink SQL 支持，包含更多特性和功能，比算子编排更为强大。    

@@ -19,7 +19,7 @@ draft: false
 ### 基本设置
 
 1. 设置 etcd 服务的基本信息，包括集群名称、描述、版本、快速配置、计费方式、自动备份时间及部署方式。
-   ![basic_info](/middware/etcd/images/basic1.png)
+   ![basic_info](/middware/etcd/_images/basic1.png)
    - 快速配置：若选择**开发测试**或**正式生产**，系统将自动完成节点配置；若选择**自定义**，则需要手动进行[etcd节点配置](#)[及代理节点设置](#代理节点配置)。
    - 部署方式：**多可用区部署**指节点分散部署在不同可用区，具备更高可用性；**单可用区部署**指节点部署在同一个可用区（可自行指定），节点间网络延迟低。请根据您的业务特点及需求选择。
 
@@ -29,19 +29,19 @@ draft: false
 >
 > 仅选择自定义部署时才需要配置。
 
-![etcd_node1](/middware/etcd/images/etcd_node1.png)
+![etcd_node1](/middware/etcd/_images/etcd_node1.png)
 
 设置 etcd 节点的 CPU 、内存、数量、实例类型及硬盘容量。
 
 ### 代理节点设置
 
-![proxyconf](/middware/etcd/images/proxyconf1.png)
+![proxyconf](/middware/etcd/_images/proxyconf1.png)
 
 设置代理节点的 CPU 、内存、数量及实例类型。
 
 ### 网络设置
 
-![net](/middware/etcd/images/netconf.png)
+![net](/middware/etcd/_images/netconf.png)
 
 选择VPC 网络、私有网络、安全组及节点 IP。
 
@@ -51,7 +51,7 @@ draft: false
 
 ### 服务环境参数设置
 
-![envconf](/middware/etcd/images/envconf1.png)
+![envconf](/middware/etcd/_images/envconf1.png)
 
 - **etcd autocompact**：表示自动清理历史数据的时间间隔，单位是小时，比如 1 表示每隔一小时清理一次数据；默认为 0 表示不自动清除。
 
@@ -73,7 +73,7 @@ etcd 创建完成之后，您可以查看每个节点的运行状态。当节点
 
 选择**产品与服务** > **安全** > **安全组**，进入安全组页面，找到节点所属安全组，添加安全组规则。
 
-  ![firewall1](/middware/etcd/images/firewall1.png)
+  ![firewall1](/middware/etcd/_images/firewall1.png)
 
   起始端口设置为目标端口，协议根据需求选择（UDP/TCP)。
 
@@ -85,7 +85,7 @@ etcd 创建完成之后，您可以查看每个节点的运行状态。当节点
 
 选择**产品与服务** > **网络** > **VPC 网络**，进入VPC 网络管理页面，找到节点所属 VPC，在 VPC 详情页，点击**管理配置** > **端口转发** > **添加规则**， 添加端口转发规则。
 
-  ![portforward](/middware/etcd/images/portforward.png)
+  ![portforward](/middware/etcd/_images/portforward.png)
 
 源端口选择协议，端口，然后填入私网 IP 的地址，协议和端口。
 

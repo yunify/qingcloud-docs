@@ -1,10 +1,9 @@
 ---
-title: "工作空间管理"
-linkTitle: 工作空间管理
+title: "空间管理"
+linkTitle: 空间管理
 _build:
  render: false 
-weight: 70
+weight: 110
 collapsible: true
-draft: true
-not_show: true
+draft: false
 ---

@@ -19,8 +19,8 @@ collapsible: true
 - [配置 MySQL 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/mysql)
 <!-- - [配置 TiDB 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/tidb) -->
 <!-- - [配置 Oracle 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/oracle) -->
-- [配置 SQLServer 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/sqlserver)
 - [配置 PostgreSQL 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/postgresql)
+- [配置 SQLServer 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/sqlserver)
 <!-- - [配置 DB2 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/db2) -->
 - [配置 ClickHouse 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/clickhouse)
 <!-- - [配置 MongoDB 数据目的](/bigdata/dataomnis/manual/integration_job/cfg_sink/mongodb)

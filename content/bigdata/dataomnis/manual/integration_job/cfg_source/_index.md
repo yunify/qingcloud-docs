@@ -18,8 +18,8 @@ collapsible: true
 
 - [配置 MySQL 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/mysql)
 <!-- - [配置 Oracle 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/oracle) -->
-- [配置 SQLServer 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/sqlserver)
 - [配置 PostgreSQL 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/postgresql)
+- [配置 SQLServer 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/sqlserver)
 <!-- - [配置 DB2 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/db2) -->
 - [配置 ClickHouse 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/clickhouse)
 <!-- - [配置 MongoDB 数据来源](/bigdata/dataomnis/manual/integration_job/cfg_source/mongodb)

@@ -4,7 +4,7 @@ description: 本小节主要介绍如何创建离线-批量同步作业。
 keywords: 大数据工作台,数据开发,数据集成,离线-批量同步作业
 weight: 21
 collapsible: false
-draft: false
+draft: true
 ---
 
 数据集成作业支持向导模式和脚本模式。本小节主要介绍脚本模式。
@@ -34,7 +34,7 @@ draft: false
 1. 登录管理控制台。
 2. 选择**产品与服务** > **大数据服务** > **大数据工作台**，进入大数据工作台概览页面。
 3. 在左侧导航选择**工作空间**，进入工作空间页面。
-4. 在目标工作空间选择**数据加工** > **数据开发**，进入数据开发页面。
+4. 在目标工作空间选择**数据开发** > **作业开发**，进入作业开发页面。
 5. 点击**创建作业**，进入创建作业页面。
 
    <img src="/bigdata/dataomnis/_images/integration_job_offline_choose_model.png" alt="离线-批量同步作业" style="zoom:50%;" />
@@ -77,15 +77,13 @@ draft: false
 
 ### 选择计算集群
 
-1. 选择计算集群：点击**选择集群**，在弹出的对话框中选择已创建好的计算集群；也可以在对话框中点击**计算集群列表**，进入计算集群页面，创建新的计算集群。 
+点击**选择集群**，在弹出的对话框中选择已创建好的计算集群；也可以在对话框中点击**计算集群列表**，进入计算集群页面，创建新的计算集群。 
 
-    > **注意**
-    >  
-    > 若您没有提前创建计算集群，点击**计算集群列表**后，已配置的数据源信息将会丢失。
+> **注意**
+>  
+> 若您没有提前创建计算集群，点击**计算集群列表**后，已配置的数据源信息将会丢失。
 
-   <img src="/bigdata/dataomnis/_images/integration_job_offline_2_flink-cluster.png" alt="计算集群" style="zoom:50%;" />
-
-2. 测试连通性：点击**连通性测试**，测试计算集群与数据源的网络连通性。计算集群需与数据源网络互通，具体请参见[网络连通方案](/bigdata/dataomnis/manual/connect/)。
+<img src="/bigdata/dataomnis/_images/integration_job_offline_2_flink-cluster.png" alt="计算集群" style="zoom:50%;" />
 
 ## 配置作业调度
 
