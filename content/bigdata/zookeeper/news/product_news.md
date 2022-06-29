@@ -1,7 +1,7 @@
 ---
 title: "产品动态"
 description: 本小节主要介绍 ZooKeeper 产品动态
-keyword: 大数据，ZooKeeper，产品动态
+keyword: 大数据,ZooKeeper,产品动态
 weight: 05
 collapsible: false
 draft: false
@@ -9,17 +9,17 @@ draft: false
 product:
     - time: 2020-05-19
       title: ZooKeeper 2.0.0 版本上线
-      content: ZooKeeper 2.0.0版本基于 ZooKeeper 3.4.14 构建。<br>- 新增支持集群数据备份和恢复功能；<br>- 新增支持自助查看和下载日志等文件；<br>- 新增支持自助开启或关闭 REST 服务；<br>- 禁止删除主节点，以防止极端情况下数据丢失；<br>- 修复部分功能体验问题。
-      url: ../../intro/version/
+      content: ZooKeeper 2.0.0 版本基于 ZooKeeper 3.4.14 构建。<br>- 新增支持集群数据备份和恢复功能。<br>- 新增支持自助查看和下载日志等文件。<br>- 新增支持自助开启或关闭 REST 服务。<br>- 禁止删除主节点，以防止极端情况下数据丢失。<br>- 修复部分功能体验问题。
+      url: /bigdata/zookeeper/manual/backup_restoration/create_backup/
 
     - time: 2019-03-30
       title: ZooKeeper 支持 Region 多可用区部署
-      content: ZooKeeper 1.3.1版本新增 Region 跨区部署功能，实现同城多活，增强业务容灾能力。
-      url: ../../intro/version/
+      content: 新增 Region 跨区部署功能，实现同城多活，增强业务容灾能力。
+      url: /bigdata/zookeeper/quickstart/create_cluster/
 
     - time: 2017-04-21
       title: ZooKeeper 全新呈现
-      content: ZooKeeper 1.0 基于原生 Apache ZooKeeper 3.4.9 构建，同时提供 ZooKeeper REST 服务。适配全新 AppCenter 框架，将开源 ZooKeeper 封装成应用，提供高可用的分布式数据管理与系统协调软件服务。
+      content: ZooKeeper 1.0.0 基于原生 Apache ZooKeeper 3.4.9 构建，同时提供 ZooKeeper REST 服务。适配全新 AppCenter 框架，将开源 ZooKeeper 封装成应用，提供高可用的分布式数据管理与系统协调软件服务。
       url: ../../intro/introduction/
 
 ---

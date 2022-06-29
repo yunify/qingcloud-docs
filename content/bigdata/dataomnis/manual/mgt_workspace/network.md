@@ -4,24 +4,34 @@ description: 您可以在网络管理页面配置工作空间的网络。
 keywords: 大数据工作台,数据开发,网络管理
 weight: 5
 collapsible: false
-draft: true
+draft: false
 ---
    
 大数据工作台中每个工作空间绑定一个`VPC 网络`和该 VPC 下的一个`私有网络`，为计算集群提供网络资源，并用于与数据源进行网络连接。
 
-本小节主要介绍如何更换 VPC 和解绑 VPC。
+本小节主要介绍如何查看工作空间绑定的网络资源。
+<!-- 本小节主要介绍如何更换 VPC 和解绑 VPC。 -->
 
 ## 前提条件
 
-- 已完成[准备工作](/bigdata/dataomnis/prepare/create_workspace/)，准备好账号和工作空间。
-- 在更换网络前，建议先创建好依赖的 VPC 和私有网络。详细操作请参见[创建 VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)。
+已完成[准备工作](/bigdata/dataomnis/prepare/create_workspace/)，准备好账号和工作空间。
+<!-- - 在更换网络前，建议先创建好依赖的 VPC 和私有网络。详细操作请参见[创建 VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)。
 
 ## 使用限制
 
 - 仅支持使用工作空间所在区域的 VPC。
-- 不支持使用免费型 VPC（由于免费型 VPC 不具备公网访问能力，暂时不支持在免费型 VPC 中创建计算集群）。
+- 不支持使用免费型 VPC（由于免费型 VPC 不具备公网访问能力，暂时不支持在免费型 VPC 中创建计算集群）。 -->
 
-## 更换 VPC
+## 查看网络信息
+
+1. 登录管理控制台。
+2. 在左侧导航选择**工作空间**，进入工作空间页面。
+3. 在目标工作空间选择**空间管理** > **网络管理**，进入网络管理页面。
+4. 在该页面可以查看工作空间绑定的网络资源。
+   
+   <img src="/bigdata/dataomnis/_images/net_detail.png" alt="网络信息" style="zoom:50%;" />
+
+<!-- ## 更换 VPC
 
 > **说明**
 > 
@@ -35,7 +45,7 @@ draft: true
    <img src="/bigdata/dataomnis/_images/change_net.png" alt="更换 VPC" style="zoom:50%;" />
 
 5. 在 VPC 网络下拉框选择适配的同区域已有的 VPC 网络。若无可选 VPC 网络，可点击**新建 VPC 网络**，创建一个新的 VPC。
-6. 点击**更换**，开始更换网络。
+6. 点击**更换**，开始更换网络。 -->
 
 ## 解绑 VPC
 
