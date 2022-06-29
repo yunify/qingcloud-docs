@@ -7,9 +7,7 @@ collapsible: false
 draft: false
 ---
 
-
-
-在 AppCenter 集群管理控制台，支持对 ZooKeeper 常用配置参数的管理。更多相关配置参数的说明和用法，可参考 [ZooKeeper 官方文档](https://zookeeper.apache.org/doc/r3.4.13/zookeeperAdmin.html#sc_configuration)。
+在 AppCenter 集群管理控制台，支持对 ZooKeeper 常用配置参数的管理。更多相关配置参数的说明和用法，可参考 [ZooKeeper 官方文档](https://zookeeper.apache.org/doc/r3.4.13/zookeeperAdmin.html#sc_configuration)。
 
 本小节主要介绍 AppCenter 中各 ZooKeeper 配置参数的含义。
 

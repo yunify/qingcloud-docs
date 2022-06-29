@@ -1,6 +1,6 @@
 ---
 title: "创建并开发作业"
-description: 本小节主要介绍如何创建并开发作业。 
+description: 本小节主要介绍如何创建并开发 SQL 作业。 
 keywords: 大数据工作台,实时计算,创建作业
 weight: 30
 collapsible: false
@@ -14,7 +14,7 @@ draft: false
 1. 登录管理控制台。
 2. 选择**产品与服务** > **大数据服务** > **大数据工作台**，进入大数据工作台概览页面。
 3. 在左侧导航选择**工作空间**，进入工作空间页面。
-4. 在目标工作空间选择**数据开发** > **实时计算**，进入实时计算页面。
+4. 在目标工作空间选择**数据开发** > **作业开发**，进入作业开发页面。
 5. 点击**创建作业**，进入选择模式页面。
    
    <img src="/bigdata/dataomnis/_images/choose_model_sql.png" alt="选择模式" style="zoom:50%;" />
@@ -28,7 +28,7 @@ draft: false
    | 计算集群    |  点击**选择集群**，在弹出的对话框中选择已创建好的计算集群；也可以在对话框中点击**新建计算集群**，创建新的计算集群。  |
    | 描述    |  作业的描述信息，您可以自定义。 |
    
-   <img src="/bigdata/dataomnis/_images/job_basic.png" alt="填写信息" style="zoom:50%;" />
+   <img src="/bigdata/dataomnis/_images/qs_job_basic.png" alt="填写信息" style="zoom:50%;" />
 
 8. 配置完成后，点击**确定**，开始创建作业。
 
