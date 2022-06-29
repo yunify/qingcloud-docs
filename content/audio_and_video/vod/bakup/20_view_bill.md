@@ -3,9 +3,12 @@ title: "查看消费明细"
 keyword: 云点播,视频点播, 查看消费明细
 description: 本章节介绍如何查看消费明细。
 not_show: true
+draft: true
 collapsible: false
 weight: 20
 ---
+
+<!-- 费用账单模块的子功能，一期产品暂不上线-->
 
 您可以使用消费明细查看日结用户的云点播资源明细，并支持多维度条件筛选。
 

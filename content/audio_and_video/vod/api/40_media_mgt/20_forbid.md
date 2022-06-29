@@ -13,7 +13,7 @@ weight: 20
 ## 请求语法
 
 ```
-POST /v1/media/<MediaId>/forbid HTTP/1.1
+POST /api/v1/media/<MediaId>/forbid HTTP/1.1
 Host:  api.vod.frontwize.com
 Content-Type: application/json
 Date: <date>
@@ -39,7 +39,7 @@ N/A
 ## 请求示例
 
 ```
-POST /v1/media/49799015096651776/forbid HTTP/1.1
+POST /api/v1/media/49799015096651776/forbid HTTP/1.1
 Accept: application/json, text/plain, */*
 Accept-Encoding: gzip, deflate
 Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7

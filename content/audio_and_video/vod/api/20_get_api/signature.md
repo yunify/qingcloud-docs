@@ -49,7 +49,7 @@ string_to_sign = Verb + "\n"
 ```
 POST
 4gJE4saaMU4BqNR0kLY+lw==
-application/json Wed, 10 Dec 2014 17:20:31 GMT /v1/media/12345678 
+application/json Wed, 10 Dec 2014 17:20:31 GMT /api/v1/media/12345678 
 ```
 
 ## 3. 计算签名 Signature
