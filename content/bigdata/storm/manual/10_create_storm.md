@@ -101,7 +101,7 @@ draft: false
 
 ## 步骤七：配置 Zookeeper 
 
-选择 Storm 集群所依赖的 Zookeeper 服务，集群将创建于 ZooKeeper 所在的私有网络中。
+选择 Storm 集群所依赖的 Zookeeper 服务，集群将创建于 Storm 所在的私有网络中。
 
 <img src="../../_images/create_storm_7.png" style="zoom:50%;" />
 

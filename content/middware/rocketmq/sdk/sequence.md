@@ -1,7 +1,7 @@
 ---
 title: "收发顺序消息"
-description: 使用 Spring Cloud 框架接入 Kafka 并收发消息。
-keyword: 云计算,大数据,消息队列,中间件,Kafka,开发指南,spring cloud,demo,SDK
+description: 收发顺序消息。
+keyword: 云计算,消息队列,中间件,RocketMQ,开发指南,SDK
 weight: 20
 draft: false
 ---

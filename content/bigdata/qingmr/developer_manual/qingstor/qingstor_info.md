@@ -1,7 +1,7 @@
 ---
 title: "QingStor 概述"
 description: 本小节主要介绍如何与 QingStor 对象存储集成。 
-keyword: qingmr ，qingstro 存储,
+keyword: qingmr,qingstro 存储,
 weight: 10
 collapsible: false
 draft: false
