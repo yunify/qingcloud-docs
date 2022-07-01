@@ -221,7 +221,7 @@ qscamel status
 
 ### Endpoint qingstor
 
-QingStor 是[青云](https://www.qingcloud.com/products/qingstor)提供的对象存储服务。能够用做 qscamel 数据迁移任务中的 **source** 与 **destination** 端点。
+[QingStor](https://www.qingcloud.com/products/qingstor) 是青云提供的对象存储服务。能够用做 qscamel 数据迁移任务中的 **source** 与 **destination** 端点。
 
 使用 qingstor 作为端点时，可添加如下配置内容:
 
@@ -243,7 +243,7 @@ options:
 - `protocol` 用于控制访问 QingStor 对象存储的协议类型。可选值: https, http；默认值: https。
 - `host` 标识访问 QingStor 对象存储的云服务器名。默认值: qingstor.com。
 - `port` 标识访问 QingStor 对象存储的端口号。默认值: 443。
-- `zone` 标识访问 QingStor 对象存储的区域.自动检测，无需手动配置。
+- `zone` 标识访问 QingStor 对象存储的区域。自动检测，无需手动配置。
 - `bucket_name` 标识操作的 QingStor 对象存储的 Bucket 名称。无默认值，须手动配置。
 - `access_key_id` QingStor 对象存储的 access_key_id。无默认值，须手动配置。
 - `secret_access_key` QingStor 对象存储的 secret_access_key。无默认值，须手动配置。
@@ -255,7 +255,7 @@ options:
 
 ### Endpoint s3
 
-S3 是 [AWS](https://amazonaws-china.com/cn/s3) 提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 和 **destination** 端点。
+[S3](https://amazonaws-china.com/cn/s3) 是 AWS 提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 和 **destination** 端点。
 
 使用 s3 作为端点，可添加如下配置内容:
 
@@ -282,7 +282,7 @@ options:
 
 ### Endpoint aliyun
 
-Aliyun 是 [阿里云](https://www.aliyun.com/product/oss) 提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
+[Aliyun](https://www.aliyun.com/product/oss) 是阿里云提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
 
 Aliyun 作为 **source** 端点时，须添加如下配置内容：
 
@@ -314,7 +314,7 @@ options:
 
 ### Endpoint azblob
 
-Azure Blob 是 [Microsoft](https://azure.microsoft.com/zh-cn/services/storage/) 提供的存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
+[Azure Blob](https://azure.microsoft.com/zh-cn/services/storage/) 是 Microsoft 提供的存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
 
 azblob 作为 **source** 端点时，须添加如下配置内容：
 
@@ -334,7 +334,7 @@ options:
 
 ### Endpoint cos
 
-Tencent COS 是 [Tencent](https://cloud.tencent.com/product/cos) 提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
+[Tencent COS](https://cloud.tencent.com/product/cos) 是 Tencent 提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
 
 COS 作为 **source** 端点时，须添加如下配置内容：
 
@@ -364,7 +364,7 @@ options:
 
 ### Endpoint gcs
 
-GCS(Google Cloud Storage) 是 [Google](https://cloud.google.com/storage/) 提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
+GCS(Google Cloud Storage) 是 Google 提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
 
 使用 gcs 作为 **source** 端点时，须添加如下配置项，
 
@@ -394,7 +394,7 @@ options:
 
 ### Endpoint qiniu
 
-Qiniu 是 [Qiniu](https://www.qiniu.com/) 提供的对象存储服务。可用作 qscamel 数据迁移任务中的 **source** 端点。
+Qiniu 是 Qiniu 提供的对象存储服务。可用作 qscamel 数据迁移任务中的 **source** 端点。
 
 使用 qiniu 作为 **source** 端点，须添加如下配置内容:
 
