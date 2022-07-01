@@ -1,5 +1,5 @@
 ---
-title: "修改 NTA 网关安全组"
+title: "修改 NAT 网关安全组"
 descriptipn: 如何修改 NAT 网关的安全组。
 draft: false
 weight: 22
