@@ -77,7 +77,7 @@ ignore_existing: last_modified
 - `destination` 标识后续字段为任务的目标端点，即 destination 端点信息。
 - `type` 当前端点的类型。可选值: aliyun，azblob，cos，fs，filelist，gcs，hdfs，qingstor，qiniu，s3，upyun。
 - `path` 当前端点的路径。须为目录名。
-- `options` 标识后续字段为可选字段。不同端点的可选字段，会有区别，详情可参考 [端点信息](#端点信息)
+- `options` 标识后续字段为可选字段。不同端点的可选字段，会有区别，详情可参考 [端点信息](#端点信息)。
 - `ignore_existing` 用于控制是否跳过已经存在的文件，为空或未配置时将会禁用该配置，即总是覆盖。可选值为：last_modified 与 md5sum。<br>last_modified 将会检查目标的 LastModified 是否比源站要大；<br>md5sum 将会对文件做完整的 MD5 计算，当 MD5 相同时会跳过。
 
 
@@ -346,6 +346,7 @@ options:
   bucket_name: example_bucket
   access_key_id: example_access_key_id
   secret_access_key: example_secret_access_key
+  user_define_meta: true
   storage_class: STANDARD
   multipart_boundary_size: 2147483648
 ```
@@ -358,6 +359,7 @@ options:
 - `bucket_name` 标识操作的 QingStor 对象存储的 Bucket 名称。无默认值，须手动配置。
 - `access_key_id` QingStor 对象存储的 access_key_id。无默认值，须手动配置。
 - `secret_access_key` QingStor 对象存储的 secret_access_key。无默认值，须手动配置。
+- `user_define_meta` 用于控制 QingStor 对象存储在迁移数据时是否同步迁移自定义元数据。源端点与目标端点均配置为 `true` 时，表示是。v2.0.21及以后版本支持。
 - `storage_class` 标识 QingStor 对象存储所使用的存储级别。可选值: STANDARD, STANDARD_IA；默认值: STANDARD。
 - `multipart_boundary_size` 用于控制 QingStor 对象存储何时使用分段上传，单位为 Byte，当文件大于该数值时，将会使用分段上传。可选值: 1 ~ 5368709120 (5G)。默认值: 2147483648 (2G)。
 - 综上，除 `bucket_name`，`access_key_id` 与 `secret_access_key` 以外，均有默认值，故除此三个参数外，其他参数均为可选参数。
