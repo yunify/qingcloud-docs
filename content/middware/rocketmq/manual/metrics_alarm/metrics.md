@@ -1,7 +1,7 @@
 ---
 title: "监控指标"
 description: 本小节主要介绍 RocketMQ 主要支持哪些监控指标。 
-keyword: 数据库,MySQL PLus,关系型数据库,MySQL,监控指标
+keyword: 云计算,消息队列,中间件,RocketMQ,监控指标
 weight: 10
 collapsible: false
 draft: false
