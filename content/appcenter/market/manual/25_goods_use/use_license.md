@@ -1,6 +1,6 @@
 ---
 title: "License 类商品使用"
-description: 
+description: 介绍如何使用已购买的 License 商品。
 keyword: QingCloud, 青云, 云计算, 云市场, 商品, License
 weight: 30
 draft: false
