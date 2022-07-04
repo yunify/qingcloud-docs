@@ -1,6 +1,6 @@
 ---
 title: "云应用类商品接入"
-description: 
+description: 介绍服务商在云市场发布云应用商品的步骤。
 keyword: QingCloud, 青云, 云计算, 云市场, 商品接入
 weight: 20
 draft: false

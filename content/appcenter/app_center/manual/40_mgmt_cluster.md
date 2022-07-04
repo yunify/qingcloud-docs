@@ -1,8 +1,8 @@
 ---
-title: "集群管理"
+title: "管理集群"
 description: 介绍如何进行集群管理操作。
-keyword: QingCloud, 青云, AppCenter, 集群
-weight: 30
+keyword: 云平台AppCenter, 集群
+weight: 40
 draft: false
 ---
 
@@ -10,11 +10,9 @@ draft: false
 
 ## 管理集群
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/)。
+1. 登录管理控制台。
 
 2. 选择**产品与服务** > **AppCenter** > **应用中心**，进入**应用中心**页面。
-
-   <img src="../../_images/um_appcenter.png" style="zoom:50%;" />
 
 3. 在左侧导航栏中，点击**集群管理**，进入**集群管理**页面。
 
@@ -36,11 +34,9 @@ draft: false
 
 ### 基本属性
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/)。
+1. 登录管理控制台。
 
 2. 选择**产品与服务** > **AppCenter** > **应用中心**，进入**应用中心**页面。
-
-   <img src="../../_images/um_appcenter.png" style="zoom:50%;" />
 
 3. 在左侧导航栏中，点击**集群管理**，进入**集群管理**页面。
 
@@ -90,7 +86,7 @@ draft: false
 
 ### 新增节点
 
-> **注意：**
+> **注意**
 >
 > 扩容集群可能会导致服务中断, 请在业务低峰时进行。
 
@@ -100,7 +96,7 @@ draft: false
 
 ### 删除节点
 
-> 注意：
+> **注意**
 >
 > 被删除的节点不可恢复。
 
@@ -124,7 +120,7 @@ draft: false
 
 当集群有参数配置时，可在右侧的**配置参数**中对参数进行修改。
 
-> **注意：**
+> **注意**
 >
 > 修改配置参数会重启集群，请谨慎操作。
 
@@ -146,7 +142,7 @@ draft: false
 
 3. 在**通知列表**下拉列表中，选择通知发送联系人列表。
 
-   > **说明：**
+   > **说明**
    >
    > 若您需要新建通知列表，可点击**新列表**，配置新的联系人列表。
 
@@ -166,9 +162,9 @@ draft: false
 
 3. 选择待绑定的指标告警策略。
 
-   > **说明：**
+   > **说明**
    >
-   > 若您没有创建指标告警策略，点击**创建指标告警策略**，创建新的指标告警策略，详细操作请参见[告警服务](https://docsv3.qingcloud.com/monitor_service/cloudsat/manual/alarm_service/)。
+   > 若您没有创建指标告警策略，点击**创建指标告警策略**，创建新的指标告警策略，详细操作请参见[告警服务](/monitor_service/cloudsat/manual/alarm_service/)。
 
    ![](../../_images/choose_mark_alarm.png)
 
@@ -192,7 +188,7 @@ draft: false
 
 2. 点击**创建备份**，弹出**提示**信息。
 
-   > **注意：**
+   > **注意**
    >
    > a. 备份只能捕获在备份任务开始时已经写入磁盘的数据，不包括当时位于缓存里的数据。
    >

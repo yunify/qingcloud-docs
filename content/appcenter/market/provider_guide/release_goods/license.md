@@ -1,6 +1,6 @@
 ---
 title: "License 类商品接入"
-description: 
+description: 介绍服务商在云市场发布 License 类商品的步骤。
 keyword: 云市场,License,商品接入
 weight: 40
 draft: false
