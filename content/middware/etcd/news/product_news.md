@@ -7,7 +7,7 @@ product:
     - time: 2021-04-14
       title: etcd 3.2.24 - 2.0.1 版本正式上线
       content: 新增配额管理参数 quota-backend-bytes。
-      url: /middware/etcd/manual/man05_main_operation/
+      url: /middware/etcd/manual/mgt_cluster/cluster_info/
 
     - time: 2019-02-14
       title: etcd 3.2.24 - 2.0.0 版本正式上线

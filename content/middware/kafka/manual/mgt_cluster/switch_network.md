@@ -43,5 +43,5 @@ draft: false
 ## 跨 VPC 切换私有网络
 
 1. 参照[同 VPC 下切换私有网络](#同-vpc-下切换私有网络)切换 Kafka 集群私有网络到目标 VPC 的 vxnet。
-2. 切换依赖的 ZooKeeper 集群私有网络到与 Kafka 集群同一 VPC 的 vxnet。详细操作请参见[切换 ZooKeeper 私有网络](/bigdata/zookeeper/manual/mgt_vxnet/)。
+2. 切换依赖的 ZooKeeper 集群私有网络到与 Kafka 集群同一 VPC 的 vxnet。详细操作请参见[切换 ZooKeeper 私有网络](/bigdata/zookeeper/manual/mgt_connect/mgt_vxnet/)。
 

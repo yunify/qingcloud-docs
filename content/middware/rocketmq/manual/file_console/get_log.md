@@ -1,7 +1,7 @@
 ---
 title: "查看日志及数据文件"
-description: 通过 RocketMQ 控制台管理对 Topic 进行管理。
-keyword: 云计算,大数据,消息队列,中间件,RocketMQ,Topic
+description: 通过 RocketMQ 控制台查看日志及数据文件。
+keyword: 云计算,消息队列,中间件,RocketMQ,查看日志及数据文件
 weight: 20
 draft: false
 ---

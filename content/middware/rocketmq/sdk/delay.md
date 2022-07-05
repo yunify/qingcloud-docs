@@ -1,7 +1,7 @@
 ---
 title: "收发延时消息"
-description: 发送同步消息、异步消、单向消息，消息消息。
-keyword: 云计算,大数据,消息队列,中间件,RocketMQ,开发指南,SDK
+description: 发送延时消息。
+keyword: 云计算,消息队列,中间件,RocketMQ,开发指南,SDK
 weight: 30
 draft: false
 ---

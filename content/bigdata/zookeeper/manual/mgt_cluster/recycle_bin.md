@@ -1,7 +1,7 @@
 ---
 title: "回收站"
 description: 本小节主要介绍如何恢复已删除的 ZooKeeper 集群。 
-keyword: 云计算,大数据,消息队列,中间件,ZooKeeper,恢复集群
+keyword: 云计算,大数据,ZooKeeper,恢复集群
 weight: 100
 collapsible: false
 draft: false
