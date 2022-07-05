@@ -1,7 +1,7 @@
 ---
 title: "SaaS 商品接入调试"
 description: 介绍服务商如何进行 SaaS 类商品的接入测试。
-keyword: QingCloud, 青云, 云计算, 云市场, 商品接入
+keyword:  云市场, 商品接入
 weight: 30
 draft: false
 

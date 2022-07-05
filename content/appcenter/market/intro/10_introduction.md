@@ -2,7 +2,7 @@
 title: "云市场简介"
 description: 云市场简介
 draft: false
-keyword: QingCloud, 青云, AppCenter, 云市场
+keyword:  AppCenter, 云市场
 weight: 10
 ---
 

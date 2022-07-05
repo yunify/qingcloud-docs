@@ -1,7 +1,7 @@
 ---
 title: "SaaS 类商品发布"
 description: 介绍服务商在云市场发布 SaaS 类商品的步骤。
-keyword: QingCloud, 青云, 云计算, 云市场, 商品接入
+keyword:  云市场, 商品接入
 weight: 10
 draft: false
 ---

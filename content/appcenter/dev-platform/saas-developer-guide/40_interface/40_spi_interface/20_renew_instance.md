@@ -1,7 +1,7 @@
 ---
 title: "续费实例"
 description: 介绍续费实例的请求参数、响应参数和示例说明。
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台, SaaS
+keyword:  AppCenter, 云应用开发平台, SaaS
 draft: false
 weight: 20
 ---

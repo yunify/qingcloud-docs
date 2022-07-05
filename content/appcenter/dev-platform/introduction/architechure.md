@@ -1,7 +1,7 @@
 ---
 title: "系统架构"
 description: 介绍 AppCenter 云应用开发框架。
-keyword: QingCloud, 青云, AppCenter, 云应用开发
+keyword:  AppCenter, 云应用开发
 draft: false
 collapsible: false
 weight: 2
