@@ -92,7 +92,7 @@ draft: false
 
 点击**新增节点**，进入新增节点界面，选择对应的相关配置，提交后可查看新增的节点。
 
-<img src="../../_images/un_app_add_node.png" style="zoom:50%;" />
+<img src="../../_images/um_app_add_node.png" style="zoom:50%;" />
 
 ### 删除节点
 

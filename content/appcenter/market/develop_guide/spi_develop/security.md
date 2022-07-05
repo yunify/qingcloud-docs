@@ -10,7 +10,7 @@ draft: false
 
 ## 安全方案
 
-云市场每次发起请求时，都会在请求参数（Query-Params）中携带 signature 和 timestamp ，服务商可根据这两个参数校验请求的合法性。
+云市场每次发起请求时，都会在请求参数（Query-Params）中携带 `signature` 和 `timestamp` ，服务商可根据这两个参数校验请求的合法性。
 
 ### signature
 
@@ -56,5 +56,4 @@ def validate_request(query_params: dict):
         raise ValueError('Signature is invalid.')
 
 ```
-
 

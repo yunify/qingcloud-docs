@@ -1,7 +1,7 @@
 ---
 title: "开发模板规范 - 完整版"
 description: 介绍 AppCenter 云应用开发的模板及规范。
-keyword: QingCloud, 青云, AppCenter, 云应用开发, 模板, 规范
+keyword:  AppCenter, 云应用开发, 模板, 规范
 draft: false
 collapsible: false
 weight: 6

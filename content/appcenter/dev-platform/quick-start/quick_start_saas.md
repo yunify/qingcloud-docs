@@ -1,7 +1,7 @@
 ---
 title: "SaaS 应用"
 description: 创建 SaaS 应用的主要流程。
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台
+keyword:  AppCenter, 云应用开发平台
 draft: false
 ---
 

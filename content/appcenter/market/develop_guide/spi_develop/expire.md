@@ -20,7 +20,7 @@ draft: false
 | signature   | 签名。                                                       |
 | timestamp   | UNIX 时间戳。单位：秒。                                      |
 | instance_id | 实例 ID。                                                    |
-| debug       | 是否为调试模式。<br/>取值：<ul><li>是：1</li><li>否：0</li></ul>调试模式下可不实际进行实例相关的操作。 |
+| debug       | 是否为调试模式。<br/>取值：<ul><li>1：调试模式</li><li>0：非调试模式</li></ul>实际生产场景调用时，云市场会先采用调试模式调用一次，成功后再进行非调试模式下的调用。调试模式下服务商只需进行数据及资源校验，不需要进行实例相关的操作。 |
 
 
 
@@ -39,12 +39,12 @@ draft: false
 #### Url 示例
 
 ```
-https://{spi/interface}?action=ExpireInstance&debug=1&instance_id=i-ascggds&signature=UjG4djRlJbdFEyI6JgsiA6FOh8tHNCfEWmi8abl8wX8%3D&timestamp=1652254417  
+https://{url}?action=ExpireInstance&debug=1&instance_id=i-ascggds&signature=UjG4djRlJbdFEyI6JgsiA6FOh8tHNCfEWmi8abl8wX8%3D&timestamp=1652254417  
 ```
 
 > **说明**
 >
-> 请求示例里的 `{spi/interface} `需替换为服务商发货地址。
+> 请求示例里的 `{url} `需替换为服务商发货地址。
 
 ## 响应参数
 

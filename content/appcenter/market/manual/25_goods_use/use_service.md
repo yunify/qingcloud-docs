@@ -1,7 +1,7 @@
 ---
 title: "人工服务类商品使用"
 description: 介绍如何使用已购买的人工服务类商品。
-keyword: QingCloud, 青云, 云计算, 云市场, 商品, 人工服务
+keyword:  云市场, 商品, 人工服务
 weight: 20
 draft: false
 ---

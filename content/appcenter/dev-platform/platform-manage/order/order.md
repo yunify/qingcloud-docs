@@ -1,7 +1,7 @@
 ---
 title: "订单管理"
 description: 介绍如何管理云应用订单。
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台
+keyword:  AppCenter, 云应用开发平台
 draft: false
 collapsible: false
 weight: 3
