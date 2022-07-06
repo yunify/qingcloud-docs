@@ -26,11 +26,11 @@ section2:
   
     - title: 快速入门
       content: 本节介绍如何快速使用云点播。
-      url: "qs/10_qs_vod"
+      url: "qs/open_vod/"
 
     - title: 操作指南
       content: 本节介绍云点播的详细功能及使用。
-      url: "um/10_purchase"
+      url: "um/mgmt_video/10_upload/"
     
     - title: 常见问题
       content: 本节解答您在使用云点播时遇到的常见问题。
@@ -59,18 +59,18 @@ section4:
         - title: 产品功能
           url: "intro/20_functions"
 
-        - title: 行业解决方案
+        - title: 应用场景
           url: "intro/40_solutions"
 
-    - title: 上手：添加域名
-      content: 应用管理用于获取项目的 App ID、App证书和临时 Token 以及配置应用的其他参数，以便开启 RTC 服务。
+    - title: 上手：使用云点播服务
+      content: 。
       vice_title: 上手的第一步
       children:
-        - title: 创建应用
-          url: "um/20_mgmt_app"
+        - title: 快速使用云点播服务
+          url: "qs/open_vod/"
 
-        - title: 开启云录制
-          url: "um/30_enable_cloudlive"
+        - title: 音视频管理
+          url: "um/mgmt_video/10_upload/"
 
 ---
 
