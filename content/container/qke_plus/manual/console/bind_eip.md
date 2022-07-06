@@ -3,7 +3,7 @@ title: "设置 KubeSphere EIP"
 description: 介绍 QKE 支持的可视化控制台。
 draft: false
 weight: 1
-keyword: 青云, QingCloud, 云计算, 容器, QKE, 控制台
+keyword: 容器, QKE, 控制台
 ---
 
 ## 操作场景

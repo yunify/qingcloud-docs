@@ -3,7 +3,7 @@ title: "云服务器部署 Docker"
 description: 介绍如何在 Linux 云服务器上部署 Docker。
 draft: true
 weight: 10
-keyword: 青云, QingCloud, 云计算, QKE, 云服务器, Docker
+keyword: QKE, 云服务器, Docker
 ---
 
 本文介绍了如何在 Linux 云服务器实例中部署 Docker。

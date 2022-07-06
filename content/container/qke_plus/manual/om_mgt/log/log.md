@@ -2,7 +2,7 @@
 title: "查看集群日志"
 description: 
 draft: false
-keyword: 青云, QingCloud, 云计算, QKE,集群,日志
+keyword: QKE,集群,日志
 weight: 10
 ---
 

@@ -3,7 +3,7 @@ title: "产品优势"
 description: QKE 产品优势
 draft: false
 weight: 5
-keyword: 青云, QingCloud, 云计算, QKE, Kubernetes, 容器
+keyword: QKE, Kubernetes, 容器
 ---
 
 容器引擎 QKE 相对于自建 Kubernetes 集群，在易用性、可靠性、性能、可扩展性、成本投入以及可维护性等多方面都具备独特的优势，能最大限度满足企业构建容器服务的各种需求。
