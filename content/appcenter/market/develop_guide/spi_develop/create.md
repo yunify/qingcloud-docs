@@ -54,7 +54,7 @@ https://{url}?action=CreateInstance&debug=1&duration=1_year&order_id=mord-m80iai
 
 > **说明**
 >
-> 请求示例里的 `{url `需替换为服务商发货地址。
+> 请求示例里的`{url}`需替换为服务商发货地址。
 
 ## 响应参数
 

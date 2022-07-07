@@ -44,7 +44,7 @@ https://{url}?action=DeleteInstance&debug=1&instance_id=i-ascggds&signature=FB5W
 
 > **说明**
 >
-> 请求示例里的 `{url}`需替换为服务商发货地址。
+> 请求示例里的`{url}`需替换为服务商发货地址。
 
 ## 响应参数
 
