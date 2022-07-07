@@ -1,7 +1,7 @@
 ---
 title: "购买人工服务类商品"
 description: 介绍如何在云市场购买人工服务类商品。
-keyword: QingCloud, 青云, AppCenter, 云市场, 购买商品, 人工服务
+keyword:  AppCenter, 云市场, 购买商品, 人工服务
 weight: 50
 draft: false
 ---

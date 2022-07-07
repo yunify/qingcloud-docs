@@ -1,7 +1,7 @@
 ---
 title: "实例管理"
 description: 介绍实例管理操作。
-keyword: QingCloud, 青云, AppCenter, 集群, 实例
+keyword:  AppCenter, 集群, 实例
 draft: false
 collapsible: false
 weight: 9

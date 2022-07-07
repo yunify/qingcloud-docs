@@ -1,7 +1,7 @@
 ---
 title: "购买 License 商品"
 description: 介绍如何购买 License 类商品。
-keyword: QingCloud, 青云, AppCenter, 云市场, License 应用
+keyword:  AppCenter, 云市场, License 应用
 weight: 30
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: "实例删除"
 description: 介绍实例删除的请求参数和响应参数。
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台, SaaS
+keyword:  AppCenter, 云应用开发平台, SaaS
 draft: false
 weight: 50
 ---
