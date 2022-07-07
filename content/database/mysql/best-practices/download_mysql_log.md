@@ -59,7 +59,7 @@ MySQL Plus 支持通过 HTTP 服务预览和下载日志，HTTP 服务端口为 
 - 下载所有目录
 
   ```
-   wget -r http://192.168.8.6/:18801 --http-user=Admin --http-password=Admin123@ --reject="index.html*"
+   wget -r http://192.168.8.6:18801 --http-user=Admin --http-password=Admin123@ --reject="index.html*"
   ```
 
 - 下载单个目录
