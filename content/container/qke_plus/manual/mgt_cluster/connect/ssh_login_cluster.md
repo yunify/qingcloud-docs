@@ -28,7 +28,7 @@ weight: 20
 
 6. 点击**SSH 登录集群**后的开关按钮，开启 SSH 登录集群功能。
 
-   ![](/container/qke_plus/_images/enable_ssh_login_1.png)
+   ![](/container/qke_plus/_images/enable_ssh_login.png)
 
 7. 选择一种认证方式，支持通过 SSH 密钥或用户名/密码登录。
 
