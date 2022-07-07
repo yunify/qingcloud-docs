@@ -1,7 +1,7 @@
 ---
 title: "人工服务类商品接入"
-description: 
-keyword: QingCloud, 青云, 云计算, 云市场, 商品接入, 人工服务
+description: 介绍服务商在云市场发布人工服务类商品的步骤。
+keyword:  云市场, 商品接入, 人工服务
 weight: 50
 draft: false
 ---

@@ -29,13 +29,13 @@ keyword: QKE, Kubernetes, 容器, 集群，镜像
 | 节点端口       | NodePort              |
 | 负载均衡器     | LoadBalancer          |
 | 标签           | Label                 |
-| 选择器         | LabelSelector         |
+| 择器           | LabelSelector         |
 | 注解           | Annotation            |
 | 配置项         | Configmap             |
 | 密钥           | Secret                |
 | 卷             | Volume                |
 | 存储卷         | PersistentVolume      |
-| 存储卷声明     | PersistentVolumeClaim |
+| 存储卷         | PersistentVolumeClaim |
 | 弹性伸缩       | HPA                   |
 | 节点亲和性     | NodeAffinity          |
 | 应用亲和性     | PodAffinity           |
