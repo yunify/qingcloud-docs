@@ -1,7 +1,7 @@
 ---
 title: "Hadoop 与 QingStor 集成"
 description: 本小节主要介绍如何 Hadoop 与 QingStor 对象存储集成。 
-keyword: qingmr ，Hadoop 与 QingStor ，Hadoop 对象存储集成,
+keyword: qingmr,Hadoop 与 QingStor,Hadoop 对象存储集成,
 weight: 40
 collapsible: false
 draft: false

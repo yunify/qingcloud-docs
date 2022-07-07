@@ -1,7 +1,7 @@
 ---
 title: "扩容集群"
 description: 本小节主要介绍如何扩容 RocketMQ 集群。
-keyword: 云计算,大数据,消息队列,中间件,RocketMQ,rocketMQ,扩容集群,删除节点
+keyword: 云计算,消息队列,中间件,RocketMQ,rocketMQ,扩容集群
 weight: 16
 draft: false
 ---

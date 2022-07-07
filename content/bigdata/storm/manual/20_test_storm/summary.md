@@ -1,6 +1,6 @@
 ---
 title: "概述"
-description: 本小节主要介绍如何快速使用 Storm 集群。 
+description: 本小节主要介绍 Storm 示例。 
 keyword: Storm
 weight: 01
 collapsible: false
@@ -25,4 +25,4 @@ Storm 创建完成之后可以测试其可用性。
 
 ## 前提条件
 
-Storm 集群已有客户端节点。若创建集群时未创建 Client 节点，可通过[新增节点](/bigdata/storm/manual/30_mgt_node/add_node)功能进行添加。
+Storm 集群已有客户端节点。若创建集群时未创建 Client 节点，可通过[新增节点](/bigdata/storm/manual/mgt_node/add_node)功能进行添加。

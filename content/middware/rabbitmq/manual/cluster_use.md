@@ -19,40 +19,8 @@ draft: false
 
 - RabbitMQ client 节点登录帐号：**client**，密码：**client**。
 
-## 查看集群信息
-
-在集群创建完毕后，在控制台顶部菜单栏中，选择**产品与服务** > **AppCenter** > **集群管理**，便看到已经创建的集群：
-
-![](../../_images/cluster_list.png)
-
-点击**集群 ID**可以查看该集群的详细信息。
-
-![](../../_images/cluster_info.png)
-
-集群基础监控信息：
-
-![](../../_images/resource_monitor.png)
-
-点击**磁盘节点**的**监控**选项框，查看集群节点监控信息。
-
-![](../../_images/node_monitor.png)
-
-推荐使用RabbitMQ自带的web管理工具监控RabbitMQ集群：
-
-![](../../_images/rabbimq_web_manage.png)
-
-Haproxy节点监控管理：
-
-![](../../_images/haproxy_monitor.png)
-
 ## 修改配置参数
 
 点击**配置参数**，可修改 Haproxy 参数及 RabbitMQ 参数。
 
 ![](../../_images/config_paras.png)
-
-## 扩容集群
-
-点击集群**基本属性**右侧按钮里的**扩容集群**，在集群性能不足时提高集群的配置。
-
-![](../../_images/resize_cluster.png)

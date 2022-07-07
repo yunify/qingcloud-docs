@@ -77,7 +77,7 @@ ignore_existing: last_modified
 - `destination` 标识后续字段为任务的目标端点，即 destination 端点信息。
 - `type` 当前端点的类型。可选值: aliyun，azblob，cos，fs，filelist，gcs，hdfs，qingstor，qiniu，s3，upyun。
 - `path` 当前端点的路径。须为目录名。
-- `options` 标识后续字段为可选字段。不同端点的可选字段，会有区别，详情可参考 [端点信息](#端点信息)
+- `options` 标识后续字段为可选字段。不同端点的可选字段，会有区别，详情可参考 [端点信息](#端点信息)。
 - `ignore_existing` 用于控制是否跳过已经存在的文件，为空或未配置时将会禁用该配置，即总是覆盖。可选值为：last_modified 与 md5sum。<br>last_modified 将会检查目标的 LastModified 是否比源站要大；<br>md5sum 将会对文件做完整的 MD5 计算，当 MD5 相同时会跳过。
 
 
@@ -219,9 +219,70 @@ qscamel status
 
 ## 端点信息
 
+### Endpoint qingstor
+
+[QingStor](https://www.qingcloud.com/products/qingstor) 是青云提供的对象存储服务。能够用做 qscamel 数据迁移任务中的 **source** 与 **destination** 端点。
+
+使用 qingstor 作为端点时，可添加如下配置内容:
+
+```yaml
+options:
+  protocol: https
+  host: qingstor.com
+  port: 443
+  zone: pek3b
+  bucket_name: example_bucket
+  access_key_id: example_access_key_id
+  secret_access_key: example_secret_access_key
+  user_define_meta: true
+  storage_class: STANDARD
+  multipart_boundary_size: 2147483648
+```
+
+**说明**
+- `protocol` 用于控制访问 QingStor 对象存储的协议类型。可选值: https, http；默认值: https。
+- `host` 标识访问 QingStor 对象存储的云服务器名。默认值: qingstor.com。
+- `port` 标识访问 QingStor 对象存储的端口号。默认值: 443。
+- `zone` 标识访问 QingStor 对象存储的区域。自动检测，无需手动配置。
+- `bucket_name` 标识操作的 QingStor 对象存储的 Bucket 名称。无默认值，须手动配置。
+- `access_key_id` QingStor 对象存储的 access_key_id。无默认值，须手动配置。
+- `secret_access_key` QingStor 对象存储的 secret_access_key。无默认值，须手动配置。
+- `user_define_meta` 用于控制 QingStor 对象存储在迁移数据时是否同步迁移自定义元数据。源端点与目标端点均配置为 `true` 时，表示是。v2.0.21及以后版本支持。
+- `storage_class` 标识 QingStor 对象存储所使用的存储级别。可选值: STANDARD, STANDARD_IA；默认值: STANDARD。
+- `multipart_boundary_size` 用于控制 QingStor 对象存储何时使用分段上传，单位为 Byte，当文件大于该数值时，将会使用分段上传。可选值: 1 ~ 5368709120 (5G)。默认值: 2147483648 (2G)。
+- 综上，除 `bucket_name`，`access_key_id` 与 `secret_access_key` 以外，均有默认值，故除此三个参数外，其他参数均为可选参数。
+
+
+### Endpoint s3
+
+[S3](https://amazonaws-china.com/cn/s3) 是 AWS 提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 和 **destination** 端点。
+
+使用 s3 作为端点，可添加如下配置内容:
+
+```yaml
+options:
+  bucket_name: example_bucket
+  endpoint: example_endpoint
+  region: example_region
+  access_key_id: example_access_key_id
+  secret_access_key: example_secret_access_key
+  disable_ssl: false
+  use_accelerate: false
+```
+
+**说明**
+- `bucket_name` S3 的 Bucket 名称。
+- `endpoint` S3 的接口端点地址。
+- `region` S3 bucket 所在的区域。
+- `access_key_id` 访问 S3 的 access_key_id。
+- `secret_access_key` 访问 S3 的 secret_access_key。
+- `disable_ssl` 是否禁用 SSL。
+- `use_accelerate` 是否启用加速。
+
+
 ### Endpoint aliyun
 
-Aliyun 是 [阿里云](https://www.aliyun.com/product/oss) 提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
+[Aliyun](https://www.aliyun.com/product/oss) 是阿里云提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
 
 Aliyun 作为 **source** 端点时，须添加如下配置内容：
 
@@ -239,10 +300,21 @@ options:
 - `access_key_id` Aliyun 的 access_key_id。无默认值，须手动配置。
 - `secret_access_key` Aliyun 的 secret_access_key。无默认值，须手动配置。
 
+### Endpoint fs
+
+fs 是指符合 POSIX 标准的文件系统 (local fs, nfs, s3fs 等)。可作为 qscamel 数据迁移任务中的 **source** 端点与 **destination** 端点。
+
+fs 作为端点有着如下配置内容，用于控制遇到软连接时，是否上传指向的文件。默认值为 false:
+
+```yaml
+options:
+  enable_link_follow: false
+```
+
 
 ### Endpoint azblob
 
-Azure Blob 是 [Microsoft](https://azure.microsoft.com/zh-cn/services/storage/) 提供的存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
+[Azure Blob](https://azure.microsoft.com/zh-cn/services/storage/) 是 Microsoft 提供的存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
 
 azblob 作为 **source** 端点时，须添加如下配置内容：
 
@@ -262,7 +334,7 @@ options:
 
 ### Endpoint cos
 
-Tencent COS 是 [Tencent](https://cloud.tencent.com/product/cos) 提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
+[Tencent COS](https://cloud.tencent.com/product/cos) 是 Tencent 提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
 
 COS 作为 **source** 端点时，须添加如下配置内容：
 
@@ -279,17 +351,6 @@ options:
 - `secret_key` 访问 Tencent COS 的 secret_key。无默认值，须手动配置。
 
 
-### Endpoint fs
-
-fs 是指符合 POSIX 标准的文件系统 (local fs, nfs, s3fs 等)。可作为 qscamel 数据迁移任务中的 **source** 端点与 **destination** 端点。
-
-fs 作为端点有着如下配置内容，用于控制遇到软连接时，是否上传指向的文件。默认值为 false:
-
-```yaml
-options:
-  enable_link_follow: false
-```
-
 ### Endpoint filelist
 
 filelist 是本地文件列表。可作为 qscamel 数据迁移任务中的 **source** 端点。
@@ -303,7 +364,7 @@ options:
 
 ### Endpoint gcs
 
-GCS(Google Cloud Storage) 是 [Google](https://cloud.google.com/storage/) 提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
+GCS(Google Cloud Storage) 是 Google 提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 端点。
 
 使用 gcs 作为 **source** 端点时，须添加如下配置项，
 
@@ -331,41 +392,9 @@ options:
   address: example_address
 ```
 
-### Endpoint qingstor
-
-QingStor 是[青云](https://www.qingcloud.com/products/qingstor)提供的对象存储服务。能够用做 qscamel 数据迁移任务中的 **source** 与 **destination** 端点。
-
-使用 qingstor 作为端点时，可添加如下配置内容:
-
-```yaml
-options:
-  protocol: https
-  host: qingstor.com
-  port: 443
-  zone: pek3b
-  bucket_name: example_bucket
-  access_key_id: example_access_key_id
-  secret_access_key: example_secret_access_key
-  storage_class: STANDARD
-  multipart_boundary_size: 2147483648
-```
-
-**说明**
-- `protocol` 用于控制访问 QingStor 对象存储的协议类型。可选值: https, http；默认值: https。
-- `host` 标识访问 QingStor 对象存储的云服务器名。默认值: qingstor.com。
-- `port` 标识访问 QingStor 对象存储的端口号。默认值: 443。
-- `zone` 标识访问 QingStor 对象存储的区域.自动检测，无需手动配置。
-- `bucket_name` 标识操作的 QingStor 对象存储的 Bucket 名称。无默认值，须手动配置。
-- `access_key_id` QingStor 对象存储的 access_key_id。无默认值，须手动配置。
-- `secret_access_key` QingStor 对象存储的 secret_access_key。无默认值，须手动配置。
-- `storage_class` 标识 QingStor 对象存储所使用的存储级别。可选值: STANDARD, STANDARD_IA；默认值: STANDARD。
-- `multipart_boundary_size` 用于控制 QingStor 对象存储何时使用分段上传，单位为 Byte，当文件大于该数值时，将会使用分段上传。可选值: 1 ~ 5368709120 (5G)。默认值: 2147483648 (2G)。
-- 综上，除 `bucket_name`，`access_key_id` 与 `secret_access_key` 以外，均有默认值，故除此三个参数外，其他参数均为可选参数。
-
-
 ### Endpoint qiniu
 
-Qiniu 是 [Qiniu](https://www.qiniu.com/) 提供的对象存储服务。可用作 qscamel 数据迁移任务中的 **source** 端点。
+Qiniu 是 Qiniu 提供的对象存储服务。可用作 qscamel 数据迁移任务中的 **source** 端点。
 
 使用 qiniu 作为 **source** 端点，须添加如下配置内容:
 
@@ -386,33 +415,6 @@ options:
 - `domain` 标识用于访问 qiniu bucket 的域名。
 - `use_https` 控制是否使用 https 来访问 qiniu。默认值： false。
 - `use_cdn_domains` 控制是否使用 CDN 加速域名来访问 qiniu。默认值： false。
-
-### Endpoint s3
-
-S3 是 [AWS](https://amazonaws-china.com/cn/s3) 提供的对象存储服务。可作为 qscamel 数据迁移任务中的 **source** 和 **destination** 端点。
-
-使用 s3 作为端点，可添加如下配置内容:
-
-```yaml
-options:
-  bucket_name: example_bucket
-  endpoint: example_endpoint
-  region: example_region
-  access_key_id: example_access_key_id
-  secret_access_key: example_secret_access_key
-  disable_ssl: false
-  use_accelerate: false
-```
-
-**说明**
-- `bucket_name` S3 的 Bucket 名称。
-- `endpoint` S3 的接口端点地址。
-- `region` S3 bucket 所在的区域。
-- `access_key_id` 访问 S3 的 access_key_id。
-- `secret_access_key` 访问 S3 的 secret_access_key。
-- `disable_ssl` 是否禁用 SSL。
-- `use_accelerate` 是否启用加速。
-
 
 ### Endpoint upyun
 

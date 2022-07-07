@@ -1,7 +1,7 @@
 ---
 title: "获取连接信息"
 description: 本小节主要介绍如何获取 RocketMQ 连接信息。 
-keyword: 云计算,大数据,消息队列,中间件,RocketMQ,连接信息
+keyword: 云计算,消息队列,中间件,RocketMQ,连接信息
 weight: 10
 collapsible: false
 draft: false

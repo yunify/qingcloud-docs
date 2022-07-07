@@ -1,7 +1,7 @@
 ---
 title: "SlidingWindowTopology"
-description: 本小节主要介绍如何快速使用 Storm 集群。 
-keyword: Storm
+description: 本小节主要介绍 SlidingWindowTopology 示例。 
+keyword: Storm,SlidingWindowTopology
 weight: 50
 collapsible: false
 draft: false
