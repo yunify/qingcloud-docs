@@ -26,7 +26,7 @@ keyword: 云计算, QKE, Kubernetes, 插件
     <td>存储插件</td><td>csi-qingcloud-controller</td><td><a href="https://github.com/yunify/qingcloud-csi">csi-qingcloud-controller</a> 是青云自主研发的存储插件，自动集成于 QKE 中。<br/>支持动态创建基于 QingCloud 云硬盘的 PVC，并挂载到 Pod。同时支持硬盘的自动扩容和自动迁移。当 Pod 迁移时，硬盘会自动随着 Pod 迁移到其他云服务器上。</td>
   </tr>
   <tr>
-    <td>云平台插件</td><td>cloud-controller-manager</td><td><a href="https://github.com/yunify/qingcloud-cloud-controller-manager">cloud-controller-manager</a> 是青云自主研发的负载均衡器插件，自动集成于 QKE 中。<br/>支持将 Kubernetes 内部服务和 QingCloud 负载均衡器关联起来，可自动创建负载均衡器、公网 IP，通过负载均衡器将服务暴露给集群外部调用。<br/>配置操作说明请参见<a href="/container/qke_plus/manual/service/ccm_config/">负载均衡器插件配置</a>。</td>
+    <td>云平台插件</td><td>cloud-controller-manager</td><td><a href="https://github.com/yunify/qingcloud-cloud-controller-manager">cloud-controller-manager</a> 是青云自主研发的负载均衡器插件，自动集成于 QKE 中。<br/>支持将 Kubernetes 内部服务和 QingCloud 负载均衡器关联起来，可自动创建负载均衡器、公网 IP，通过负载均衡器将服务暴露给集群外部调用。</td>
   </tr>
     <tr>
     <td>DNS 插件</td><td>coredns</td><td><a href="https://github.com/coredns/coredns">CoreDNS</a> 是 Kubernetes 默认的 DNS 服务，用于为集群提供命名服务。<br/></td>

@@ -1,7 +1,7 @@
 ---
 title: "接口约定"
 description: SPI 接口约定
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台, SaaS 
+keyword:  AppCenter, 云应用开发平台, SaaS 
 draft: false
 weight: 20
 ---

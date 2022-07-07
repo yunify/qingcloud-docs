@@ -1,7 +1,7 @@
 ---
 title: "应用管理"
 description: 介绍如何创建、发布、管理、删除应用。
-keyword: QingCloud, 青云, AppCenter, 云应用
+keyword:  AppCenter, 云应用
 draft: false
 collapsible: false
 weight: 1

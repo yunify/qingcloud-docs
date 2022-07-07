@@ -11,6 +11,17 @@ draft: false
 
 ## 版本历程
 
+### v1.1.0
+
+ChronusDB `企业版-1.1.0` 和 `基础版-1.1.0` 基于 RadonDB ClickHouse 22.3.6.5 内核开发。
+
+- 支持在线数据迁移。
+- 内核版本升级到 ClickHouse-22.3.6.5。
+- DDL 性能优化，自动清理过期 DDL。
+- 引入 clickhouse-keeper ，function 等新特性。
+-  csv 导入支持多分隔符。
+- os 升级至 ubuntu 20.4版本 ，充分发挥 **e3** 性能
+
 ### v1.0.9
 
 ChronusDB `企业版-1.0.9` 和 `基础版-1.0.9` 基于 RadonDB ClickHouse 21.1.3.32 内核开发。

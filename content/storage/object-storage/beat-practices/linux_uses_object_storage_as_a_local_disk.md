@@ -28,10 +28,8 @@ cd ~
 vim .aws/credentials
 
 [default]
-#API密钥ID
-aws_access_key_id = qy_access_key_id
-#API密钥密码
-aws_secret_access_key = qy_secret_access_key
+aws_access_key_id = qy_access_key_id							#API密钥ID
+aws_secret_access_key = qy_secret_access_key					#API密钥密码
 ```
 ```bash
 goofys --endpoint https://s3.<zone>.qingstor.com <bucket_name> <mount_point>

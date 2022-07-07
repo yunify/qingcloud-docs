@@ -1,7 +1,7 @@
 ---
 title: "应用版本管理"
 description: 介绍如何管理应用的版本。
-keyword: QingCloud, 青云, AppCenter, 云应用开发, 应用版本
+keyword:  AppCenter, 云应用开发, 应用版本
 draft: false
 collapsible: false
 weight: 2

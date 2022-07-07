@@ -1,7 +1,7 @@
 ---
 title: "财务管理"
 description: 介绍 AppCenter 云应用的财务相关操作及信息。
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台
+keyword:  AppCenter, 云应用开发平台
 draft: false
 collapsible: false
 weight: 1

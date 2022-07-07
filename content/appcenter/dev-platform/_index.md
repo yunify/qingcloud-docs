@@ -1,7 +1,7 @@
 ---
 title: "应用开发平台"
 linkTitle: "应用开发平台"
-weight: 2
+weight: 10
 collapsible: true
 type: "product"
 

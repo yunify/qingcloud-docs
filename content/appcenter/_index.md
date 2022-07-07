@@ -12,6 +12,9 @@ section1:
     - title: 云市场
       url: "/appcenter/market/intro/10_introduction/"
 
+    - title: 应用市场
+      url: "/appcenter/app_center/intro/10_introduction/"
+
     - title: 应用开发平台
       url: "/appcenter/dev-platform/introduction/introduction/"
 

@@ -1,7 +1,7 @@
 ---
 title: "镜像制作"
 description: 介绍如何制作应用镜像。
-keyword: QingCloud, 青云, AppCenter, 云应用开发,  应用, 镜像
+keyword:  AppCenter, 云应用开发,  应用, 镜像
 draft: false
 collapsible: false
 weight: 3

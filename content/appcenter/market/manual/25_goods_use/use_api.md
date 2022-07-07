@@ -1,7 +1,7 @@
 ---
 title: "API 类商品使用"
-description: 
-keyword: QingCloud, 青云, 云计算, 云市场, API 商品
+description: 介绍如何使用已购买的 API 商品。
+keyword:  云市场, API 商品
 weight: 20
 draft: false
 ---
