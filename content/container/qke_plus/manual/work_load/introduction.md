@@ -2,7 +2,7 @@
 title: "工作负载概述"
 description: 介绍工作负载相关概念及功能。
 draft: false
-keyword: 青云, QingCloud, 云计算, QKE, 工作负载
+keyword: QKE, 工作负载
 weight: 1
 ---
 

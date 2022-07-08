@@ -3,7 +3,7 @@ title: "对接 NFS 服务端"
 description: 
 draft: true
 weight: 40
-keyword: 青云, QingCloud, 云计算, 容器, QKE
+keyword: 容器, QKE
 ---
 
 本小节介绍如何使用 NFS 动态分配器来对接 NFS 服务端。

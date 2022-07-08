@@ -3,7 +3,7 @@ title: "应用场景"
 description: QKE 的应用场景
 draft: false
 weight: 10
-keyword: 青云, QingCloud, 云计算, QKE, Kubernetes, 容器
+keyword: QKE, Kubernetes, 容器
 ---
 
 本文主要为您介绍容器引擎 QKE 的常见应用场景。

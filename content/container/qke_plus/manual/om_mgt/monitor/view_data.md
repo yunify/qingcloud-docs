@@ -2,7 +2,7 @@
 title: "查看监控数据"
 description: 介绍如何查看 QKE 的监控数据。
 draft: false
-keyword: 青云, QingCloud, 云计算, QKE,集群,日志
+keyword: QKE,集群,日志
 weight: 5
 ---
 
