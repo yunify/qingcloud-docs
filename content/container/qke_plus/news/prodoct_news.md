@@ -6,9 +6,9 @@ weight: 5
 product:
     - time: 2022-07-01
       title: QKE v2.0.0 发布，新增 GPU 类型工作节点，提高集群图像处理能力
-      content: QKE v2.0.0 上线。<br/>- 支持选用 honstnic 网卡插件，实现容器网络隧道直通等能力。<br/>- 新增 GPU 类型工作节点，提高集群图像处理能力。<br/>- 可集成 kubesphere v3.3 版本，使用 GitOps 工具提升研发效率。<br/>
+      content: QKE v2.0.0 上线。<br/>- 支持选用 honstnic 网卡插件，实现容器网络隧道直通等能力。<br/>- 新增 GPU 类型工作节点，提高集群图像处理能力。
 
-      url: /container/qke_plus/manual/mgt_node/restart_node/
+      url: /container/qke_plus/manual/mgt_node/node_amount/
       tags:
       - 新功能
       zone: 北京3区，上海1区，广东2区
