@@ -11,11 +11,12 @@ draft: false
 
 ## 操作场景
 
-云市场在卖家中心搭建了商品接入调试页面。服务商上架 SaaS 商品后，可以在**商品接入调试**页面进行 SaaS 类商品的接入测试，支持新购、升级、续费、删除等操作的测试。
+云市场在卖家中心搭建了商品接入调试页面。服务商提交 SaaS 商品发布申请后，可以在**商品接入调试**页面进行 SaaS 类商品的接入测试，支持新购、升级、续费、删除等操作的测试。
 
 ## 前提条件
 
-已参照 [SaaS 类商品 SPI 开发指南](/appcenter/market/develop_guide/spi_develop/overview/)完成相关通知接口的开发。
+- 已参照 [SaaS 类商品 SPI 开发指南](/appcenter/market/develop_guide/spi_develop/overview/)完成相关通知接口的开发。
+- 待测商品已提交发布审核。
 
 ## 操作步骤
 
