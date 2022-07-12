@@ -16,5 +16,5 @@ RocketMQ 集群默认有两个资源控制组：`测试环境`、`生产环境`�
 
 | <span style="display:inline-block;width:120px">资源控制组</span> | <span style="display:inline-block;width:540px">资源说明</span> |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| 测试环境                                                     | <li>2核2G Broker及slave节点 x 1<li>1核1G客户端节点 x 1<li>1核1G名称服务器节点 x 1<li>1核1G网页控制台节点 x 1 |
-| 生产环境                                                     | <li>4核8G Broker及slave节点 x 3<li>1核1G客户端节点 x 1<li>2核4G名称服务器节点 x 2<li>2核2G网页控制台节点 x 1 |
+| 测试环境                                                     | <ul><li>2核2G Broker及slave节点 x 1</li><li>1核1G客户端节点 x 1</li><li>1核1G名称服务器节点 x 1</li><li>1核1G网页控制台节点 x 1</li></ul> |
+| 生产环境                                                     | <ul><li>4核8G Broker及slave节点 x 3</li><li>1核1G客户端节点 x 1</li><li>2核4G名称服务器节点 x 2</li><li>2核2G网页控制台节点 x 1</li></ul> |
