@@ -1,7 +1,7 @@
 ---
 title: "发送事务消息"
-description: 发送同步消息、异步消、单向消息，消息消息。
-keyword: 云计算,大数据,消息队列,中间件,RocketMQ,开发指南,SDK
+description: 发送事务消息。
+keyword: 云计算,消息队列,中间件,RocketMQ,开发指南,SDK
 weight: 40
 draft: false
 ---

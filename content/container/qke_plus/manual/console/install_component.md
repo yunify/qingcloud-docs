@@ -3,7 +3,7 @@ title: "安装 KubeSphere 内置组件"
 description: 介绍如何安装 KubeSphere 组件。
 draft: false
 weight: 20
-keyword: 青云, QingCloud, 云计算, 容器, QKE, KubeSphere 组件
+keyword: 容器, QKE, KubeSphere 组件
 ---
 
 本文介绍如何在集群创建后安装 KubeSphere 内置组件。

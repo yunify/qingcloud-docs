@@ -3,7 +3,7 @@ title: "查看计费详情"
 description: 介绍如何查看集群计费详情。
 draft: false
 weight: 1
-keyword: 青云, QingCloud, 云计算, QKE, 集群, 计费
+keyword: QKE, 集群, 计费
 ---
 
 集群创建后，您可以在集群信息页面查看集群计费详情。

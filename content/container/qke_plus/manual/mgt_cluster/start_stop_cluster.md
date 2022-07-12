@@ -3,7 +3,7 @@ title: "启停集群"
 description: 介绍如何启动及关闭 QKE 集群。
 draft: false
 enableToc: false
-keyword: 青云, QingCloud, 云计算, 启动集群, 关闭集群, QKE 
+keyword: 启动集群, 关闭集群, QKE 
 weight: 15
 ---
 

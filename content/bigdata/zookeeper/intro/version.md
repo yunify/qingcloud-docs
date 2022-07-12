@@ -18,7 +18,7 @@ ZooKeeper 基于原生 ZooKeeper版本构建，适配全新 AppCenter 框架，�
 - 新增支持自助开启或关闭 REST 服务。
 - 禁止删除主节点，以防止极端情况下数据丢失。
 
-## ZooKeeper 3.4.13 - v1.3.1
+<!-- ## ZooKeeper 3.4.13 - v1.3.1
 
 基于原生 Apache ZooKeeper 3.4.13 构建，同时提供 ZooKeeper REST 服务。
 
@@ -30,7 +30,7 @@ ZooKeeper 基于原生 ZooKeeper版本构建，适配全新 AppCenter 框架，�
 
 - 新增了开启管理员帐号来允许管理访问权限。
 - 开放了 tickTime 等常用的配置项供用户开发测试使用。
-- 对 HealthCheck 和监控做了一些优化。
+- 对 HealthCheck 和监控做了一些优化。 -->
 
 ## ZooKeeper 3.4.9 - v1.0.0
 
