@@ -1,7 +1,7 @@
 ---
 title: "配置参数"
 description: 本小节主要介绍如何配置参数。 
-keyword: Storm，配置参数
+keyword: Storm,配置参数
 weight: 40
 collapsible: false
 draft: false
@@ -9,11 +9,11 @@ draft: false
 
 配置参数是在部署应用时填写，成为集群配置项的变量。有的配置项是公共的，有的作用于其中的一个或多个角色。您可以在这里修改参数，以更新集群配置。
 
-> **注意：**
+> **注意**
 >
 > 当配置发生变化时，将会重启对应的 Storm 服务。
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 选择**产品与服务** > **大数据服务** > **Storm 服务**，进入 **Storm** 页面。
 

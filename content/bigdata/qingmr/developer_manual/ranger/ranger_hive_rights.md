@@ -1,7 +1,7 @@
 ---
 title: "配置 Hive 权限策略"
 description: 本小节主要介绍如何配置 Hive 权限。 
-keyword: qingmr 配置 Hive 权限
+keyword: qingmr,配置 Hive 权限
 weight: 30
 collapsible: false
 draft: false

@@ -2,7 +2,7 @@
 title: "退订合约"
 description: 介绍包年包月集群如何进行合约退订。
 draft: true
-keyword: 青云, QingCloud, 云计算, QKE, 价格, 计费
+keyword: QKE, 价格, 计费
 weight: 40
 ---
 

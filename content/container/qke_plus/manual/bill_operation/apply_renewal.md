@@ -3,7 +3,7 @@ title: "手动续费"
 description: 介绍申请包年包月集群续费。
 draft: false
 weight: 10
-keyword: 青云, QingCloud, 云计算, QKE, 集群,续费
+keyword: QKE, 集群,续费
 ---
 
 本文介绍如何为包年包月集群续费。

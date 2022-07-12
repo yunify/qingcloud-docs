@@ -2,7 +2,7 @@
 title: "集群扩缩容"
 description: 介绍如何删除 QKE 集群。
 draft: false
-keyword: 青云, QingCloud, 云计算, QKE, 删除集群
+keyword: QKE, 删除集群
 weight: 14
 ---
 

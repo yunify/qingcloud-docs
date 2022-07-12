@@ -3,7 +3,7 @@ title: "配置负载均衡器访问服务"
 description: 介绍如何为服务配置负载均衡器访问方式。
 draft: true
 weight: 20
-keyword: 青云, QingCloud, 云计算, 容器, QKE
+keyword: 容器, QKE
 ---
 
 您可以为您部署在集群的服务指定通过负载均衡器的方式提供外网访问。

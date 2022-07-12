@@ -1,7 +1,7 @@
 ---
 title: "修改配置参数"
 description: 本小节主要介绍如何修改 RocketMQ 配置参数。 
-keyword: 数据库,MySQL PLus,关系型数据库,MySQL,修改账号,
+keyword: 云计算,消息队列,中间件,RocketMQ,修改配置参数,
 weight: 15
 collapsible: false
 draft: false
@@ -11,7 +11,7 @@ draft: false
 
 ## 注意事项
 
-各参数的值设置需根据云服务器、存储磁盘配置情况，以及数据库其他参数情况进行调整。
+各参数的值设置需根据云服务器、存储磁盘配置情况，以及其他参数情况进行调整。
 当 Broker 参数值发生变化时，可能会重启整个集群，可能会造成部分消息发送失败（发送失败的消息建议重试发送），建议在业务低峰时修改 Broker 配置参数。
 
 ## 前提条件

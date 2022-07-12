@@ -22,8 +22,8 @@ draft: false
 | rule_action | String | 行为：accept 表示接受，drop 为拒绝 | No |
 | direction | Integer | 方向，0 表示下行，1 表示上行。 | No |
 | protocol | String | 协议，目前支持 tcp, udp, icmp, gre, esp, ah, ipip | No |
-| val1 | String | 如果协议为 tcp 或 udp，此值表示起始端口。 如果协议为 icmp，此值表示 ICMP 类型， 具体类型可参见 [_ICMP 类型及代码_](../../../common/security_group_rule_icmp_type/) 。 其他协议无需此值。 | No |
-| val2 | String | 如果协议为 tcp 或 udp，此值表示结束端口。 如果协议为 icmp，此值表示 ICMP 代码， 具体代码可参见 [_ICMP 类型及代码_](../../../common/security_group_rule_icmp_type/) 。 其他协议无需此值。 | No |
+| val1 | String | 如果协议为 tcp 或 udp，此值表示起始端口。 如果协议为 icmp，此值表示 ICMP 类型， 具体类型可参见 [_ICMP 类型及代码_](/development_docs/api/common/security_group_rule_icmp_type/) 。 其他协议无需此值。 | No |
+| val2 | String | 如果协议为 tcp 或 udp，此值表示结束端口。 如果协议为 icmp，此值表示 ICMP 代码， 具体代码可参见 [_ICMP 类型及代码_](/development_docs/api/common/security_group_rule_icmp_type/) 。 其他协议无需此值。 | No |
 | val3 | String | 目标 IP，如果填写，则这条防火墙规则只对此IP（或IP段）有效。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 

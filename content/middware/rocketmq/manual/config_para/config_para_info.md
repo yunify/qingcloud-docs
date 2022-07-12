@@ -1,7 +1,7 @@
 ---
 title: "参数介绍"
 description: 本小节主要介绍 RocketMQ 常用配置项。 
-keyword: 数据库,RocketMQ,关系型数据库,RocketMQ,常用配置项,
+keyword: 云计算,消息队列,中间件,RocketMQ,常用配置项,
 weight: 10
 collapsible: false
 draft: false

@@ -2,7 +2,7 @@
 title: "管理工作负载"
 description: 介绍如何管理已创建的工作负载。
 draft: false
-keyword: 青云, QingCloud, 云计算, QKE, 工作负载
+keyword: QKE, 工作负载
 weight: 10
 ---
 

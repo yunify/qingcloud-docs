@@ -62,7 +62,7 @@ GPU云服务器 g3 包括的实例规格和性能指标如下：（内网带宽�
 | g3na100.2xlarge.g1  | 8核  | 60G  | 1*NVIDIA A100 | 4 Gbps   |
 | g3na100.4xlarge.g2  | 16核 | 120G | 2*NVIDIA A100 | 8 Gbps   |
 | g3na100.8xlarge.g4  | 32核 | 240G | 4*NVIDIA A100 | 16 Gbps  |
-| g3na100.16xlarge.g8 | 62核 | 480G | 8*NVIDIA A100 | 50 Gbps  |
+| g3na100.16xlarge.g8 | 62核 | 460G | 8*NVIDIA A100 | 50 Gbps  |
 
 ## 弹性裸金属云服务器 bm3
 

@@ -3,7 +3,7 @@ title: "查看集群信息"
 description: 介绍如何查看集群信息。
 draft: false
 weight: 5
-keyword: 青云, QingCloud, 云计算, QKE, 集群
+keyword: QKE, 集群
 ---
 
 集群创建成功后，可查看集群信息。

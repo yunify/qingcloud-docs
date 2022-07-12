@@ -2,7 +2,7 @@
 title: "费用变更"
 description: 集群费用更新场景及具体价格变更说明。
 draft: false
-keyword: 青云, QingCloud, 云计算, QKE, 价格, 计费
+keyword: QKE, 价格, 计费
 weight: 20
 ---
 
