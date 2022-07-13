@@ -3,7 +3,7 @@ title: "SaaS 类商品使用"
 description: 介绍如何使用已购买的 SaaS 商品。
 keyword:  云市场, 商品, License
 weight: 10
-draft: false
+draft: true
 ---
 
 本文介绍如何使用在云市场购买的 SaaS 类型商品。
