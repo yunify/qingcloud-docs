@@ -1,7 +1,7 @@
 ---
 title: "购买云应用"
 description: 如何如何在云市场购买云应用。
-keyword: QingCloud, 青云, AppCenter, 云市场, 购买云应用
+keyword:  AppCenter, 云市场, 购买云应用
 weight: 10
 draft: false
 ---

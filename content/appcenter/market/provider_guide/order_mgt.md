@@ -1,7 +1,7 @@
 ---
 title: "管理订单"
 description: 介绍服务商如何管理商品订单。
-keyword: QingCloud, 青云, 云计算, 云市场, 订单管理 
+keyword:  云市场, 订单管理 
 weight: 30
 draft: false
 ---

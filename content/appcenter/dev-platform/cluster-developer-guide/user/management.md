@@ -1,7 +1,7 @@
 ---
 title: "用户管理"
 description: 介绍如何查看云应用的用户及其管理的集群信息。
-keyword: QingCloud, 青云, AppCenter, 云应用, 用户
+keyword:  AppCenter, 云应用, 用户
 draft: false
 collapsible: false
 weight: 8

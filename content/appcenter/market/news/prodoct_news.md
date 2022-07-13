@@ -2,7 +2,7 @@
 title: "产品动态"
 collapsible: false
 description: 介绍云市场的产品动态。
-keyword: QingCloud, 青云, AppCenter, 云市场, 产品动态
+keyword:  AppCenter, 云市场, 产品动态
 weight: 10
 
 product:

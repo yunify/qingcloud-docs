@@ -1,7 +1,7 @@
 ---
 title: "云应用入门指南"
 description: 云应用入门
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台
+keyword:  AppCenter, 云应用开发平台
 draft: false
 collapsible: false
 weight: 2

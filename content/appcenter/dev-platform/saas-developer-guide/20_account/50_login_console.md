@@ -1,7 +1,7 @@
 ---
 title: "免密登录控制台"
 description: 免费登录控制台的工作流
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台, SaaS
+keyword:  AppCenter, 云应用开发平台, SaaS
 draft: false
 weight: 50
 ---
