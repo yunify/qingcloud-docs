@@ -3,7 +3,7 @@ title: "配置镜像仓库"
 description: 介绍如何登录 QKE 集群节点
 draft: false
 weight: 20
-keyword: 青云, QingCloud, 云计算, QKE, 容器, 镜像仓库
+keyword: QKE, 容器, 镜像仓库
 ---
 
 镜像仓库用于托管及分发容器镜像，本文介绍如何部署及配置应用所需的镜像仓库。

@@ -3,7 +3,7 @@ title: "节点概述"
 description: 介绍节点相关概念及功能。
 draft: false
 enableToc: false
-keyword: 青云, QingCloud, 云计算, QKE, 节点
+keyword: QKE, 节点
 weight: 1
 ---
 

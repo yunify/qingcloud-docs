@@ -3,7 +3,7 @@ title: "更改节点配置"
 description: 介绍如何更改 QKE 集群节点配置
 draft: false
 weight: 30
-keyword: 青云, QingCloud, 云计算, QKE, 节点, 扩容
+keyword: QKE, 节点, 扩容
 ---
 
 您可以随时根据实际需求增强节点配置来进行集群扩容。

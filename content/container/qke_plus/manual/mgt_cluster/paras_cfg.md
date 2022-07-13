@@ -3,7 +3,7 @@ title: "配置集群参数"
 description: 介绍如何修改 QKE 集群参数。
 draft: false
 weight: 10
-keyword: 青云, QingCloud, 云计算, QKE 参数
+keyword: QKE 参数
 ---
 
 QKE 支持自定义部分参数的值，您可以根据自己的业务情况对集群运行参数进行调整。
@@ -46,19 +46,22 @@ QKE 支持自定义部分参数的值，您可以根据自己的业务情况对�
 
 | 参数名称          | 参数说明                                                     | 备注                 |
 | ----------------- | ------------------------------------------------------------ | -------------------- |
-| K8s apiserver EIP | 如果希望通过公网访问 K8s apiserver，可在此处填写可用的 EIP，系统将会自动创建一个 LB 并绑定此 EIP。<br/>**SSH 登录集群**：自管版集群支持设置是否开启 SSH 登录集群功能。开启时，需要设置密钥或者用户密码（二选一）。开启后，用户可以通过 SSH 的方式登录集群。 | -                    |
+| K8s apiserver EIP | 如果希望通过公网访问 K8s apiserver，可在此处填写可用的 EIP，系统将会自动创建一个 LB 并绑定此 EIP。<br/>**SSH 登录集群**：自管版集群支持设置是否开启 SSH 登录集群功能。开启后，用户可以通过 SSH 的方式登录集群。详细说明，请参见[通过 SSH 登录自管版集群](/container/qke_plus/manual/mgt_cluster/connect/ssh_login_cluster/)。 | -                    |
 | 集群内 DNS 域名   | 集群内的 DNS 域名，用于 Kubernetes Services。                | 集群创建后无法修改。 |
 | NodePort 范围     | 每个节点可分配的 NodePort 范围，例如 `30000-32767`。<br/>由于 KubeSphere 的对外端口号是 30880，若您需要安装 KubeSphere，请保证 30880 在该范围内。 | 集群创建后无法修改。 |
 | 最大 pod 数量     | 每个节点上可运行的最大 pod 数量，默认为 120。                | -                    |
 
 #### 网络参数
 
-| 参数名称     | 参数说明                                                     | 备注                 |
-| ------------ | ------------------------------------------------------------ | -------------------- |
-| Proxy Mode   | 选择 kube-proxy 的模式：iptables 或 ipvs。<br/>kube-proxy 用于在服务和其后端 Pod 之间进行负载均衡。其详细说明，请参考 [Kubernetes 指南](https://feisky.gitbooks.io/kubernetes/content/components/kube-proxy.html)。 | 集群创建后无法修改。 |
-| 网卡插件     | 选择一种网卡插件：calico 或 flannel。<br/>插件具体说明，可参考[插件支持](/container/qke_plus/intro/plugin/)。 | 集群创建后无法修改。 |
-| Pod 网段     | 设置 Pod 使用的网段。<br/>请按照标准的 CIDR 格式填写，例如：`10.10.0.0/16`。 | 集群创建后无法修改。 |
-| Service 网段 | 设置 Service 使用的网段。<br/>请按照标准的 CIDR 格式填写，例如：`10.96.0.0/16`。 | 集群创建后无法修改。 |
+| 参数名称             | 参数说明                                                     | 备注                 |
+| -------------------- | ------------------------------------------------------------ | -------------------- |
+| Proxy Mode           | 选择 kube-proxy 的模式：iptables 或 ipvs。<br/>kube-proxy 用于在服务和其后端 Pod 之间进行负载均衡。其详细说明，请参考 [Kubernetes 指南](https://feisky.gitbooks.io/kubernetes/content/components/kube-proxy.html)。 | 集群创建后无法修改。 |
+| 网卡插件             | 选择一种网卡插件：calico 、 flannel、hostnic。<br/>插件具体说明，可参考[插件支持](/container/qke_plus/intro/plugin/)。 | 集群创建后无法修改。 |
+| Pod 网段             | 网卡插件选择 calico 或 flannel 时需要设置。<br/>设置 Pod 使用的网段。<br/>请按照标准的 CIDR 格式填写，例如：`10.10.0.0/16`。 | 集群创建后无法修改。 |
+| hostnic 子网大小     | 网卡插件选择 hostnic 时需要设置。<br/>IPAM 模块会依据子网大小进行私有网络的切割。比如私有网络网段是 172.16.0.0/24，指定子网大小为 26 后，会将私有网络切割为4个子网，用户可以通过 hostnic IPAM 配置 namespace 与 subnet 的映射关系。 |                      |
+| hostnic 私有网络     | 网卡插件选择 hostnic 时需要设置。<br/>可填写与当前 QKE 集群同属一个 VPC 下的多个私有网络 ID（以 `vxnet-` 开头），多个配置用到好分隔。建议准备未被使用的私有网络专供此 QKE 集群使用，并至少填两个私有网络，避免容器组无法分配到足够的网卡而无法启动。 |                      |
+| hostnic IPAM    配置 | 网卡插件选择 hostnic 时需要设置。<br/>默认开启自动映射。IPAM 模块会根据私有网络自动创建对应的 ippool，并将 ippool 依据子网大小切割为 subnet，实现 namespace 与 subnet 的映射，相关 Pod 的 IP 会在对应的 subnet 中进行分配。 |                      |
+| Service 网段         | 设置 Service 使用的网段。<br/>请按照标准的 CIDR 格式填写，例如：`10.96.0.0/16`。 | 集群创建后无法修改。 |
 
 #### 镜像参数
 

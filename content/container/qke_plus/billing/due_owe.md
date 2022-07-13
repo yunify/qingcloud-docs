@@ -2,7 +2,7 @@
 title: "到期与欠费"
 description: 合约到期及欠费处理说明。
 draft: false
-keyword: 青云, QingCloud, 云计算, QKE, 价格, 计费
+keyword: QKE, 价格, 计费
 weight: 30
 ---
 

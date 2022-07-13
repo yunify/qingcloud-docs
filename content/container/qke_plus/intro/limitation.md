@@ -3,7 +3,7 @@ title: "限制说明"
 description: QKE 使用及操作限制说明。
 draft: false
 weight: 25
-keyword: 青云, QingCloud, 云计算, QKE, Kubernetes, 容器
+keyword: QKE, Kubernetes, 容器
 ---
 
 QKE 集群在创建或运行后将会被限制某些操作，建议您在使用 QKE 之前，提前认真阅读并了解以下使用限制与说明。

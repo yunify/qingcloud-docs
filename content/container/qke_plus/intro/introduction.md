@@ -1,7 +1,7 @@
 ---
 title: "什么是 QKE"
 description: 介绍 QKE 服务功能及版本
-keyword: 青云, QingCloud, 云计算, QKE, Kubernetes, 容器
+keyword: QKE, Kubernetes, 容器
 weight: 1
 ---
 

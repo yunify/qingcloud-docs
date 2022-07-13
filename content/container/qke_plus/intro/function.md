@@ -2,7 +2,7 @@
 title: "产品功能"
 description: 介绍 QKE 服务支持的功能。
 draft: false
-keyword: 青云, QingCloud, 云计算, QKE, Kubernetes, 容器
+keyword: QKE, Kubernetes, 容器
 weight: 15
 ---
 
@@ -37,7 +37,7 @@ weight: 15
 
 | <span style="display:inline-block;width:80px">功能模块</span> | 功能点                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 网络插件                                                     | <ul><li>⽀持容器网络部署使⽤ Calico 模式或 Flannel 模式。</li><li>提供容器⽹络直通、⼦⽹划分能⼒，可⾃动挂载 QingCloud 云平台负载均衡器，实现容器服务的外网访问。</li></ul><!--<li>⽀持 Hostnic、Calico、Flannel ⽹络插件，可以使⽤ Hostnic ⽹络插件、Qingcloud Cloud Controller 插件提供 SDN ⽹卡直连（Pod 直接绑定私有⽹卡）以及负载均衡。</li>--> |
+| 网络插件                                                     | <ul><li>⽀持 Hostnic、Calico、Flannel ⽹络插件，可以使⽤ Hostnic ⽹络插件、Qingcloud Cloud Controller 插件提供 SDN ⽹卡直连（Pod 直接绑定私有⽹卡）以及负载均衡。</li><li>⽀持容器网络部署使⽤ Calico 模式或 Flannel 模式。</li><li>提供容器⽹络直通、⼦⽹划分能⼒，可⾃动挂载 QingCloud 云平台负载均衡器，实现容器服务的外网访问。</li></ul> |
 | 网络策略                                                     | ⽀持 NetworkPolicy。                                         |
 | 网络配置                                                     | ⽀持定义 Service 和 Pod 的 CIDR。                            |
 

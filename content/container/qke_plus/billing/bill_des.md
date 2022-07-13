@@ -3,7 +3,7 @@ title: "计费说明"
 description: QKE 集群计费说明
 draft: false
 enableToc: false
-keyword: 青云, QingCloud, 云计算, QKE, 价格, 计费
+keyword: QKE, 价格, 计费
 weight: 10
 ---
 
