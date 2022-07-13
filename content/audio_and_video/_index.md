@@ -14,8 +14,8 @@ Section1:
     - title: 视频直播
       url: "/audio_and_video/live_cdn/intro/10_livecdn/"
 
-   # - title: 云点播
-   #   url: "/audio_and_video/vod/intro/10_vod/"
+    - title: 云点播
+      url: "/audio_and_video/vod/intro/10_vod/"
 ---
 
 
