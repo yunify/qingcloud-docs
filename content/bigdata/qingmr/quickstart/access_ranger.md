@@ -61,14 +61,14 @@ Hive 的 Hive Metastore 和 HiveServer2 服务已经在主节点配置完成（�
 
 2. 在 **Access Manager** > **Service Manager** 页面，添加 Hive Service，配置服务参数。
    
-|<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
-|:----|:----|
-|   Service Name    |  自定义，例如 `hive`。  |
-|   Username    |  首次添加 Service 时，请使用 `admin` 用户；之后即可使用其他用户，例如 `ubuntu`。  |
-|   Password    |  对应 Username 的密码。  |
-|   jdbc.driverClassName   |  默认值 `org.apache.hive.jdbc.HiveDriver`。<br>无需修改。  |
-|   jdbc.url    |  jdbc:hive2://<主节点 IP>:10000/。  |
-|   Add New Configurations   |  可选配置。  |
+   |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
+   |:----|:----|
+   |   Service Name    |  自定义，例如 `hive`。  |
+   |   Username    |  首次添加 Service 时，请使用 `admin` 用户；之后即可使用其他用户，例如 `ubuntu`。  |
+   |   Password    |  对应 Username 的密码。  |
+   |   jdbc.driverClassName   |  默认值 `org.apache.hive.jdbc.HiveDriver`。<br>无需修改。</br>  |
+   |   jdbc.url    |  jdbc:hive2://<主节点 IP>:10000/。  |
+   |   Add New Configurations   |  可选配置。  |
 
    <img src="../../_images/service_para.png" alt="Service 参数" style="zoom:50%;" />
 
@@ -94,15 +94,15 @@ Hive 的 Hive Metastore 和 HiveServer2 服务已经在主节点配置完成（�
 2. 点击已添加的 hive 服务，进入组件管理页面。
 3. 点击 **Add New Policy**，打开权限配置页面，配置权限策略参数.
    
-|<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
-|:----|:----|
-|   Policy Name    |  自定义策略名称。  |
-|   database   |  添加 Hive 中数据库，例如 test。  |
-|   table    |  添加数据库中表，例如 test。  |
-|   Hive Column   |  添加列名。<br> `*` 表示表示所有列。  |
-|   Select Group   |  指定添加此策略的用户组。  |
-|   Select User   |  指定添加此策略的用户。  |
-|   Permissions   |  选择授予的权限。  |
+   |<span style="display:inline-block;width:140px">参数</span> |<span style="display:inline-block;width:520px">参数说明</span>|
+   |:----|:----|
+   |   Policy Name    |  自定义策略名称。  |
+   |   database   |  添加 Hive 中数据库，例如 test。  |
+   |   table    |  添加数据库中表，例如 test。  |
+   |   Hive Column   |  添加列名。<br> `*` 表示所有列。</br>  |
+   |   Select Group   |  指定添加此策略的用户组。  |
+   |   Select User   |  指定添加此策略的用户。  |
+   |   Permissions   |  选择授予的权限。  |
 
    <img src="../../_images/ranger_hive_policy.png" alt="权限策略参数" style="zoom:50%;" />
 

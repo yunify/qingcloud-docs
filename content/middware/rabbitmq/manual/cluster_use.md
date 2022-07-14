@@ -7,20 +7,35 @@ draft: false
 
 ---
 
-## 使用 rabbitmq_management 和 Haproxy web 监控管理工具管理集群
+集群创建成功后，您可以使用 rabbitmq_management 和 Haproxy web 监控管理工具管理集群。
 
-- RabbitMQ 每个节点都安装了rabbitmq_management 插件，登录方式：`http://节点IP:15672`，如果创建了负载均衡器节点，则建议使用 `http://vip:15672` 或者 `http://haproxy节点ip:15672` 进行登录，登录帐号：**guest**，密码：**guest**， 该用户为超级管理员。
+## rabbitmq_management
 
-  > **注意**
-  >
-  > 云平台创建了一个 **monitor** 用户用于监控集群节点，请勿删除与修改该用户。
+RabbitMQ 每个节点都安装了 rabbitmq_management 插件。
 
-- Haproxy+Keepalived 节点创建后，监控管理界面默认端口为8100，登录方式：`http://vip:8100` 或 `http://haproxy 节点ip:8100`， 登录帐号：**haproxy**，密码：**haproxy**。您也可以通过**配置参数**修改端口和用户。
+- 登录方式：`http://节点IP:15672`。
+  
+   如果创建了负载均衡器节点，则建议使用 `http://vip:15672` 或者 `http://haproxy节点ip:15672` 进行登录。
 
-- RabbitMQ client 节点登录帐号：**client**，密码：**client**。
+- 登录帐号：用户名为 **guest**，默认密码为 **guest**，该用户为超级管理员。
 
-## 修改配置参数
+   > **注意**
+   >
+   > 云平台创建了一个 **monitor** 用户用于监控集群节点，请勿删除与修改该用户。
 
-点击**配置参数**，可修改 Haproxy 参数及 RabbitMQ 参数。
+## Haproxy web 监控管理工具
 
-![](../../_images/config_paras.png)
+Haproxy+Keepalived 节点创建后，监控管理界面默认端口为 8100。
+
+- 登录方式：`http://vip:8100` 或 `http://haproxy 节点ip:8100`。
+- 登录帐号：用户名为 **haproxy**，默认密码为 **haproxy**。
+
+> **说明**
+>
+> 您也可以通过**配置参数**修改端口和用户。
+
+## RabbitMQ client
+
+RabbitMQ client 节点登录帐号：
+- RabbitMQ 3.8.19 - v1.6.0（包含）之后版本：用户名为 **client**，默认密码为 **client**。
+- RabbitMQ 3.8.19 - v1.6.0 之前版本：用户名为 **root**，默认密码为 **rabbitmq**。
