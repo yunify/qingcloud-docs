@@ -2,7 +2,7 @@
 title: "产品功能"
 description: 介绍 QKE 服务支持的功能。
 draft: false
-keyword: 青云, QingCloud, 云计算, QKE, Kubernetes, 容器
+keyword: QKE, Kubernetes, 容器
 weight: 15
 ---
 
@@ -37,7 +37,7 @@ weight: 15
 
 | <span style="display:inline-block;width:80px">功能模块</span> | 功能点                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 网络插件                                                     | <ul><li>⽀持容器网络部署使⽤ Calico 模式或 Flannel 模式。</li><li>提供容器⽹络直通、⼦⽹划分能⼒，可⾃动挂载 QingCloud 云平台负载均衡器，实现容器服务的外网访问。</li></ul><!--<li>⽀持 Hostnic、Calico、Flannel ⽹络插件，可以使⽤ Hostnic ⽹络插件、Qingcloud Cloud Controller 插件提供 SDN ⽹卡直连（Pod 直接绑定私有⽹卡）以及负载均衡。</li>--> |
+| 网络插件                                                     | <ul><li>⽀持 Hostnic、Calico、Flannel ⽹络插件，可以使⽤ Hostnic ⽹络插件、Qingcloud Cloud Controller 插件提供 SDN ⽹卡直连（Pod 直接绑定私有⽹卡）以及负载均衡。</li><li>⽀持容器网络部署使⽤ Calico 模式或 Flannel 模式。</li><li>提供容器⽹络直通、⼦⽹划分能⼒，可⾃动挂载 QingCloud 云平台负载均衡器，实现容器服务的外网访问。</li></ul> |
 | 网络策略                                                     | ⽀持 NetworkPolicy。                                         |
 | 网络配置                                                     | ⽀持定义 Service 和 Pod 的 CIDR。                            |
 
@@ -76,7 +76,7 @@ weight: 15
 | <span style="display:inline-block;width:80px">功能模块</span> | 功能点                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | CI/CD                                                        | <ul><li>⽀持可视化 CI/CD 流⽔线, 提供从仓库(svn/git)、代码编译、镜像制作、镜像安全、推送到仓库、应⽤版本到定时构建的端到端流⽔线设置。</li><li>提供代码安全静态扫描。</li><li>⽀持 S2I&B2I，可⾃动基于模板从代码构建容器镜像，并完成推送、部署等⼯作 。</li></ul> |
-| 微服务治理                                                   | <ul><li>内置 istio，可提供可视化的微服务治理功。</li><li>基于原⽣ API，对 Kubernetes 中的服务、负载均衡器以及 istio 中的微服务治理、熔断、灰度发布、限流、智能路由等功能提供可视化管理界⾯。</li></ul> |
+| 微服务治理                                                   | <ul><li>内置 istio，可提供可视化的微服务治理功能。</li><li>基于原⽣ API，对 Kubernetes 中的服务、负载均衡器以及 istio 中的微服务治理、熔断、灰度发布、限流、智能路由等功能提供可视化管理界⾯。</li></ul> |
 
 
 

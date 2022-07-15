@@ -1,7 +1,7 @@
 ---
 title: "通知中心"
 description: 介绍如何查看和发送通知。
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台
+keyword:  AppCenter, 云应用开发平台
 draft: false
 collapsible: false
 weight: 4

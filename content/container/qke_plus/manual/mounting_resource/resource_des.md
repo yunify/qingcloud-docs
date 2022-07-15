@@ -3,7 +3,7 @@ title: "挂载资源说明"
 description: 集群挂载资源说明
 draft: false
 weight: 20
-keyword: 青云, QingCloud, 云计算, QKE, 挂载资源
+keyword: QKE, 挂载资源
 ---
 
 挂载资源包括集群运行、内置插件及功能运行所需的网络、存储等资源。

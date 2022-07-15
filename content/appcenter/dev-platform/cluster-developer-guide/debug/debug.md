@@ -1,7 +1,7 @@
 ---
 title: "调试管理"
 description: 介绍如何调试应用。
-keyword: QingCloud, 青云, AppCenter, 云应用开发,  应用调试
+keyword:  AppCenter, 云应用开发,  应用调试
 draft: false
 collapsible: false
 weight: 11

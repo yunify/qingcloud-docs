@@ -3,7 +3,7 @@ title: "查看挂载资源"
 description: 介绍如何更改 QKE 集群节点配置
 draft: false
 weight: 20
-keyword: 青云, QingCloud, 云计算, QKE, 挂载资源
+keyword: QKE, 挂载资源
 ---
 
 本文介绍如何查看集群所挂载的云资源。

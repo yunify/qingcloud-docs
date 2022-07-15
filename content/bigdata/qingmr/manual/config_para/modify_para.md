@@ -1,7 +1,7 @@
 ---
 title: "修改配置参数"
 description: 本小节主要介绍如何修改 QingMR 配置参数。 
-keyword: QingMR 修改账号；
+keyword: QingMR 修改账号,
 weight: 15
 collapsible: false
 draft: false

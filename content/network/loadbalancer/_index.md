@@ -26,19 +26,19 @@ Section2:
 
     - title: 快速入门
       content: 快速入门
-      url: "/network/loadbalancer/quickstart/quick_start"
+      url: "/network/loadbalancer/quickstart/qs_process/"
 
     - title: 操作指南
       content: 操作指南
-      url: "/network/loadbalancer/manual/lb_user_guide"
+      url: "/network/loadbalancer/manual/lb/create_lb/"
 
     - title: 最佳实践
       content: 最佳实践
-      url: "/network/loadbalancer/best-practices/lb_border"
+      url: "/network/loadbalancer/best-practices/lb_across_internet/"
 
     - title: 常见问题
       content: 常见问题
-      url: "/network/loadbalancer/faq/lb_faq"
+      url: "/network/loadbalancer/faq/"
 
 section3:
   title: 开发者指南
@@ -72,11 +72,11 @@ section4:
           url: "/network/loadbalancer/intro/senario"
 
     - title: 上手：搭建负载均衡
-      content: 搭建基于各个协议的负载均衡。
+      content: 创建一个公网类型的负载均衡实例，将来自客户端的访问请求分发到两台云服务器上。
       vice_title: 上手的第一步
       children:
         - title: 搭建负载均衡
-          url: "/network/loadbalancer/quickstart/quick_start"       
+          url: "/network/loadbalancer/quickstart/qs_process/"       
 ---
 
 

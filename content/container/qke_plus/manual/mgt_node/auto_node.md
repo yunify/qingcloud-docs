@@ -3,7 +3,7 @@ title: "节点弹性伸缩"
 description: 介绍如何配置集群节点自动增加及减少。
 draft: false
 enableToc: false
-keyword: 青云, QingCloud, 云计算, QKE, 节点，自动伸缩
+keyword: QKE, 节点，自动伸缩
 weight: 20
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "配置 Hive 权限策略"
 description: 本小节主要介绍如何配置 Hive 权限。 
-keyword: qingmr 配置 Hive 权限
+keyword: qingmr,配置 Hive 权限
 weight: 30
 collapsible: false
 draft: false
@@ -39,7 +39,7 @@ Ranger 中对 Hive 的表或列级别的权限控制，即针对 HiveServer2 的
 |   Policy Name    |  自定义策略名词。  |
 |   database   |  添加 Hive 中数据库，例如 test。  |
 |   table    |  添加数据库中表，例如 test。  |
-|   Hive Column   |  添加列名。<br> `*` 表示表示所有列。  |
+|   Hive Column   |  添加列名。<br> `*` 表示所有列。</br>  |
 |   Select Group   |  指定添加此策略的用户组。  |
 |   Select User   |  指定添加此策略的用户。  |
 |   Permissions   |  选择授予的权限。  |

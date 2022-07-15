@@ -1,7 +1,7 @@
 ---
 title: "云应用常见问题"
 description: 介绍 AppCenter 云应用开发的常见问题。
-keyword: QingCloud, 青云, AppCenter, 云应用开发
+keyword:  AppCenter, 云应用开发
 draft: false
 collapsible: false
 weight: 1

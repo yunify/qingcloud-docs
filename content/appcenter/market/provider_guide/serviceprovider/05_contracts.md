@@ -1,7 +1,7 @@
 ---
 title: "入驻流程"
 description: 介绍入驻云市场的流程。
-keyword: QingCloud, 青云, AppCenter, 云市场,入驻
+keyword:  AppCenter, 云市场,入驻
 weight: 5
 draft: false
 aliases:

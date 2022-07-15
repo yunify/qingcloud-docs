@@ -3,7 +3,7 @@ title: "修改计费模式"
 description: 介绍如何修改集群计费模式。
 draft: false
 weight: 5
-keyword: 青云, QingCloud, 云计算, QKE, 集群
+keyword: QKE, 集群
 ---
 
 本文介绍如何修改 QKE 集群计费模式。

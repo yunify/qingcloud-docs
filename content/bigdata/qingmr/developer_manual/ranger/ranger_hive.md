@@ -1,7 +1,7 @@
 ---
 title: "Ranger 集成 Hive"
 description: 本小节主要介绍如何通过 Ranger 集成 Hive。 
-keyword: qingmr 通过 Ranger 集成 Hive
+keyword: qingmr,通过 Ranger 集成 Hive
 weight: 20
 collapsible: false
 draft: false
@@ -68,7 +68,7 @@ Ranger 中对 Hive 的表或列级别的权限控制，即针对 HiveServer2 的
 |   Service Name    |  固定值 `hive`。  |
 |   Username    |  自定义，例如 ubuntu。  |
 |   Password    |  自定义。  |
-|   jdbc.driverClassName   |  默认值 `org.apache.hive.jdbc.HiveDriver`。<br>无需修改。  |
+|   jdbc.driverClassName   |  默认值 `org.apache.hive.jdbc.HiveDriver`。<br>无需修改。</br>  |
 |   jdbc.url    |  jdbc:hive2://<主节点 IP>:10000/。  |
 |   Add New Configurations   |  可选配置。  |
 

@@ -1,7 +1,7 @@
 ---
 title: "应用上架"
 description: 介绍如何创建应用、设置应用信息、设置应用权限、应用价格，以及将应用上架。
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台，应用上架
+keyword:  AppCenter, 云应用开发平台，应用上架
 draft: false
 weight: 3
 ---

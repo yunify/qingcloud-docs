@@ -12,9 +12,9 @@ draft: false
 
 | 节点角色       | 数量       | 规格     | 系统     |
 | :--------- | :------- | :------- | :------- |
-| Name Server  | 1  | <li>2CPU<li>4G内存<li>性能型           | Ubuntu Server 16.04.5 LTS 64bit |
-| Broker       | 2  | <li>2CPU<li>4G内存<li>50G硬盘<li>性能型 | Ubuntu Server 16.04.5 LTS 64bit |
-| 客户端        | 2  | <li>4CPU<li>8G内存<li>性能型           | Ubuntu Server 16.04.5 LTS 64bit |
+| Name Server  | 1  | <ul><li>2CPU</li><li>4G内存</li><li>性能型</li></ul>           | Ubuntu Server 16.04.5 LTS 64bit |
+| Broker       | 2  | <ul><li>2CPU</li><li>4G内存</li><li>50G硬盘</li><li>性能型</li></ul> | Ubuntu Server 16.04.5 LTS 64bit |
+| 客户端        | 2  | <ul><li>4CPU</li><li>8G内存</li><li>性能型</li></ul>           | Ubuntu Server 16.04.5 LTS 64bit |
 
 <img src="/middware/rocketmq/_images/benchmark_cluster_nodes.png" alt="测试环境" style="zoom:50%;" />
 

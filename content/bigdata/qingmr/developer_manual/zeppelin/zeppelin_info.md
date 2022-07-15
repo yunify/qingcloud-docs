@@ -1,7 +1,7 @@
 ---
 title: "Zeppelin 概述"
 description: 本小节主要介绍如 Zeppelin 插件简要说明。 
-keyword: qingmr  Zeppelin
+keyword: qingmr,Zeppelin
 weight: 10
 collapsible: false
 draft: true

@@ -1,7 +1,7 @@
 ---
 title: "校验 access_token"
 description: 校验 access_token 接口说明
-keyword: QingCloud, 青云, AppCenter, 云应用开发平台, SaaS
+keyword:  AppCenter, 云应用开发平台, SaaS
 draft: false
 weight: 40
 ---

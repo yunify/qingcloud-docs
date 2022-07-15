@@ -1,7 +1,7 @@
 ---
 title: "管理订单"
 description: 介绍云市场买家用户如何查看已支付订单。
-keyword: QingCloud, 青云, AppCenter, 云市场, 订单管理
+keyword:  AppCenter, 云市场, 订单管理
 weight: 27
 draft: false
 ---

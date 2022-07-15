@@ -1,7 +1,7 @@
 ---
 title: "交付人工服务商品"
 description: 介绍人工服务商品的交付流程及操作。
-keyword: QingCloud, 青云, 云计算, 云市场, 人工服务, 交付
+keyword:  云市场, 人工服务, 交付
 weight: 10
 draft: false
 ---

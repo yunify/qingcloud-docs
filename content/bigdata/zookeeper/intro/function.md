@@ -1,12 +1,11 @@
 ---
 title: "功能特性"
 description: 本小节主要介绍 ZooKeeper  简要主要功能特性。 
-keyword: ZooKeeper  功能特性, 
+keyword: ZooKeeper 功能特性, 
 weight: 15
 collapsible: false
 draft: false
 ---
-
 
 ZooKeeper 是一个高可用的分布式数据管理与系统协调软件服务，它可以为分布式应用提供状态同步、配置管理、名称服务、群组服务、分布式锁及队列、以及 Leader 选举等服务。
 
@@ -18,7 +17,6 @@ ZooKeeper 是一个高可用的分布式数据管理与系统协调软件服务�
 ## 监控服务
 
 - 提供了详细的监控信息，既有对每个节点的资源监控，如内存使用率等
-
 - 对每个节点提供了 ZooKeeper 服务监控，包括节点角色、响应延迟时间等。
 
 ## 告警服务

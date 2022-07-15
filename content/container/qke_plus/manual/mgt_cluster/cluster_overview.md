@@ -2,8 +2,8 @@
 title: "查看集群概览"
 description: 介绍如何查看集群概览信息。
 draft: false
-weight: 2
-keyword: 青云, QingCloud, 云计算, QKE, 集群
+weight: 4
+keyword: QKE, 集群
 ---
 
 本文介绍如何查看集群概览信息。

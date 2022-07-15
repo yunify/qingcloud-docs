@@ -1,7 +1,7 @@
 ---
 title: "参数介绍"
 description: 本小节主要介绍 HBase 常用配置项。 
-keyword: HBase 常用配置项；
+keyword: HBase 常用配置项,
 weight: 10
 collapsible: false
 draft: false
@@ -31,14 +31,14 @@ draft: false
 |   hbase.hregion.majorcompaction      |  0~2419200000       |   表示两次自动 Major Compaction 的时间间隔，设为0则禁用自动 Compaction。  |
 |   hbase.hstore.blockingStoreFiles    |   1～1000000  |  表示当一个 Store 中的 StoreFiles 达到该值时，会 block 写入，进行 Compaction。  |
 |   hbase.regionserver.optionalcacheflushinterval      |  0~86400000        |   表示一个 edit 版本在内存中 cache 的最长时间，超过该时间则自动 flush 到磁盘，设为0则禁用自动 flush。  |
-|   hfile.block.cache.size   |   0～0.8 |  表示读缓存 BlockCache 占用的堆内存比例，读多于写可适当增大该值。<li>`hbase.regionserver.global.memstore.size` +` hfile.block.cache.size` <= 0.8  |
-|   hbase.regionserver.global.memstore.size      |  0~0.8       |   表示一台 RegionServer 上所有 MemStores 占用的堆内存比例， 写多于读可适当增大该值。<li>`hbase.regionserver.global.memstore.size` + `hfile.block.cache.size` <= 0.8  |
+|   hfile.block.cache.size   |   0～0.8 |  表示读缓存 BlockCache 占用的堆内存比例，读多于写可适当增大该值。<br>`hbase.regionserver.global.memstore.size` +` hfile.block.cache.size` <= 0.8</br>  |
+|   hbase.regionserver.global.memstore.size      |  0~0.8       |   表示一台 RegionServer 上所有 MemStores 占用的堆内存比例， 写多于读可适当增大该值。<br>`hbase.regionserver.global.memstore.size` + `hfile.block.cache.size` <= 0.8</br>  |
 |   hfile.index.block.max.size    |   1～13107200  |  表示 HFile 索引块大小。索引块越小，需要的索引块越多，索引的层级越深；索引块过大，对索引块本身的扫描时间会显著的增加。  |
 |   hbase.hregion.max.filesize      |  1~107374182400        |   表示一Region split 触发阈值。当一个 Region 里的所有 HFile 大小超过该值，region 自动 split。  |
 |   hbase.master.logcleaner.ttl  |   1～86400000 |  表示预写 log（WAL）过期时间，超过这个时间 Master 会将该 WAL 删除。  |
 |   hbase.ipc.server.callqueue.handler.factor      |  0~1       |   表示调用队列个数因子，设为0表示所有的handler共用一个队列，设为1表示每个handler拥有自己的队列。  |
-|   hbase.ipc.server.callqueue.read.ratio    |   0～1  |  表示调用 read 请求队列个数因子。<li>设为0表示不去分读写请求的队列，小于0.5表示读请求队列少于写请求队列。<li>设为1表示只有1个写请求队，其他都是读请求。  |
-|  hbase.ipc.server.callqueue.scan.ratio      |  0~1        |   表示调用 scan 请求队列个数因子。<li>设为0和1表示在读请求队列中不区分 long-read 和 small-read。<li>小于0.5表示 long-read 数小于 small-read 数。  |
+|   hbase.ipc.server.callqueue.read.ratio    |   0～1  |  表示调用 read 请求队列个数因子。<ul><li>设为0表示不去分读写请求的队列，小于0.5表示读请求队列少于写请求队列。</li><li>设为1表示只有1个写请求队，其他都是读请求。</li></ul>  |
+|  hbase.ipc.server.callqueue.scan.ratio      |  0~1        |   表示调用 scan 请求队列个数因子。<ul><li>设为0和1表示在读请求队列中不区分 long-read 和 small-read。</li><li>小于0.5表示 long-read 数小于 small-read 数。</li></ul>  |
 |   hbase.regionserver.msginterval  |   1000～20000 |  表示 ResionServer 给 Master 发送消息的时间间隔，心跳间隔。  |
 |   hbase.regionserver.logroll.period      |  60000～86400000       |   表示 HBase 预写log（WAL） roll 的时间间隔，便于后期删除过期 log。  |
 |   hbase.regionserver.regionSplitLimit    |   1～2000  |  表示一个 RegionServer 上的 region 数达到这个 limit 后不再 split。  |
@@ -50,5 +50,5 @@ draft: false
 |   hbase.security.authorization  |   - |  表示是否开启安全认证机制。  |
 |   qingcloud.hbase.major.compact.hour      |  -1～24       |   表示设置每天手动 Major Compaction 的整点时间，设为-1则取消手动 Compaction。  |
 |   qingcloud.phoenix.on.hbase.enable  |   - |  表示是否开启 Phoenix 查询引擎功能。  |
-|   phoenix.functions.allowUserDefinedFunctions  |   - |  表示是是否开启 Phoenix UDF。  |
+|   phoenix.functions.allowUserDefinedFunctions  |   - |  表示是否开启 Phoenix UDF。  |
 |   phoenix.transactions.enabled  |   - |  表示是否开启 Phoenix ACID 事务。  |

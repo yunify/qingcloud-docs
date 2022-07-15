@@ -38,7 +38,7 @@ Section2:
 
     - title: 最佳实践
       content: 最佳实践
-      url: "best-practices/clusternet"
+      url: "best-practices/epfs"
 
     - title: 常见问题
       content: 常见问题

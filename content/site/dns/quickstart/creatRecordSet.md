@@ -39,7 +39,7 @@ draft: false
 
    也可以在对应的云服务器名中右键**添加记录**。
 
-   ![右键创建记录](../_images/right_menus_create.png)
+   ![创建记录](../_images/right_menus_create.png)
 
 3. 按对话框指引，填写云服务器名和记录值，选择线路、记录类型、模式和 TTL 后提交即可。
 
