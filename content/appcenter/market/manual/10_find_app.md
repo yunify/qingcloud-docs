@@ -1,7 +1,7 @@
 ---
 title: "查找商品"
 description: 介绍如何在云市场查找商品。
-keyword: QingCloud, 青云, AppCenter 应用中心, 云市场, 商品, 查找商品
+keyword:  AppCenter 应用中心, 云市场, 商品, 查找商品
 weight: 10
 draft: false
 ---

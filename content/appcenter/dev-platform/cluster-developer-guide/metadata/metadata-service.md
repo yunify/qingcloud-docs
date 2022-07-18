@@ -1,7 +1,7 @@
 ---
 title: "Metadata 服务"
 description: 介绍 AppCenter 的 metadata 服务。
-keyword: QingCloud, 青云, AppCenter, metadata
+keyword:  AppCenter, metadata
 draft: false
 collapsible: false
 weight: 4

@@ -1,7 +1,7 @@
 ---
 title: "简介"
 description: AppCenter 云应用开发平台简介。
-keyword: QingCloud, 青云, AppCenter, 云应用开发
+keyword:  AppCenter, 云应用开发
 draft: false
 collapsible: false
 weight: 1

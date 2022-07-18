@@ -1,7 +1,7 @@
 ---
 title: "入驻须知"
 description: 介绍入驻青云云市场的所需要的条件和信息。
-keyword: QingCloud, 青云, AppCenter, 云市场, 入驻
+keyword:  AppCenter, 云市场, 入驻
 weight: 10
 draft: false
 aliases:

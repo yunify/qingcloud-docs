@@ -1,7 +1,7 @@
 ---
 title: "应用上架"
 description: 介绍如何上架云应用。
-keyword: QingCloud, 青云, AppCenter, 云应用开发, 上架
+keyword:  AppCenter, 云应用开发, 上架
 draft: false
 weight: 4
 ---

@@ -1,7 +1,7 @@
 ---
 title: "购买 SaaS 应用"
 description: 介绍如何在青云上开通 SaaS 应用。
-keyword: QingCloud, 青云, AppCenter, 云市场, SaaS 应用
+keyword:  AppCenter, 云市场, SaaS 应用
 weight: 20
 draft: false
 ---
