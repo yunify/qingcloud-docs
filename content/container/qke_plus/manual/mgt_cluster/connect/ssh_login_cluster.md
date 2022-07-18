@@ -32,12 +32,13 @@ weight: 20
 
 7. 选择一种认证方式，支持通过 SSH 密钥或用户名/密码登录。
 
-   - SSH 密钥：选择已创建好的 SSH 密钥。若未创建，点击**新建密钥**前往**SSH 密钥**页面进行创建。
+   - SSH 密钥：选择已创建好的 SSH 密钥。若未创建，点击**新建密钥**前往 **SSH 密钥**页面进行创建。
+
    - 密码：根据密码规则设置 SSH 登录密码。默认用户为**ubuntu**。
 
-   > **说明**
-   >
-   > 创建 SSH 密钥时，请及时下载私钥文件。
+     > **说明**
+     >
+     > 创建 SSH 密钥时，请及时下载私钥文件。
 
 7. 点击**确认修改**，保存配置。
 
@@ -46,8 +47,8 @@ weight: 20
 在命令行终端中执行如下命令进行登录。
 
 ```
-# chmod 600 /path/to/kp-1234abcd
-# ssh -i /path/to/kp-1234abcd root@{k8s_apiserver_eip}
+chmod 600 /path/to/kp-1234abcd
+ssh -i /path/to/kp-1234abcd root@{k8s_apiserver_eip}
 ```
 
 - `/path/to/kp-1234abcd`需要替换为保存在您本地的私钥文件路径。

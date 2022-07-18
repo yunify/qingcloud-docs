@@ -8,8 +8,7 @@ keyword: 容器, QKE, 控制台
 
 QKE 除了自身的控制界面，还可扩展安装其他可视化集群管理控制台，以更好的管理您的容器及应用。
 
-QKE 支持在创建集群时或创建集群后一键安装 KubeSphere 控制台。
-
+QKE 支持在创建集群时或创建集群后一键[安装 KubeSphere 控制台](../install_ks/)。
 > **说明**
 >
 > [KubeSphere](https://kubesphere.io/) 是在 [Kubernetes](https://kubernetes.io/) （简称 K8s，开源容器调度平台）之上构建的企业级分布式多租户容器管理平台，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。是 CNCF 会员，已通过 Kubernetes 一致性验证。
