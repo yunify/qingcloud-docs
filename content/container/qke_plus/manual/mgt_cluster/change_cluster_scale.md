@@ -2,7 +2,7 @@
 title: "集群扩缩容"
 description: 介绍如何删除 QKE 集群。
 draft: false
-keyword: 青云, QingCloud, 云计算, QKE, 删除集群
+keyword: QKE, 删除集群
 weight: 14
 ---
 
@@ -20,7 +20,7 @@ QKE 集群支持手动及自动的横向伸缩及纵向扩容。
 
 ### 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **容器引擎 QKE**，进入 QKE 集群管理页面。
 

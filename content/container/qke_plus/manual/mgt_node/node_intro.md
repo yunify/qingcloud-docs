@@ -3,7 +3,7 @@ title: "节点概述"
 description: 介绍节点相关概念及功能。
 draft: false
 enableToc: false
-keyword: 青云, QingCloud, 云计算, QKE, 节点
+keyword: QKE, 节点
 weight: 1
 ---
 
@@ -19,10 +19,11 @@ QKE 集群包含以下类型节点：
 
 - 工作节点（Worker）：Kubernetes 集群中承担工作负载的节点，负责实际的 Pod 调度以及与控制节点的通信等。
 
-  其中，工作节点分为**工作节点-基础型**及**工作节点-企业型**：
+  其中，工作节点分为**工作节点-基础型**、**工作节点-企业型**及**工作节点-GPU**：
 
-  - 工作节点-基础型：可选择所有 [基础型 s1](/compute/vm/intro/basic/) 机型（除2c/4g）。
-  - 工作节点-企业型：可选择所有 e3 机型，包括[计算型 ec3](/compute/vm/intro/enterprise/#计算型-ec3)、[通用型 eg3](/compute/vm/intro/enterprise/#通用型-eg3) 及[内存型 er3](/compute/vm/intro/enterprise/#内存型-er3)。
+  - 工作节点-基础型：可选择[基础型 s1](/compute/vm/intro/basic/) 机型（除2c/4g）。
+  - 工作节点-企业型：可选择[计算型 ec3](/compute/vm/intro/enterprise/#计算型-ec3) 机型。
+  - 工作节点-GPU：可选择所有[GPU加速型 g2ntp100](/compute/vm/intro/professional/#gpu云服务器-g2) 机型。
 
 ## 节点管理
 

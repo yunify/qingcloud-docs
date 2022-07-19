@@ -3,7 +3,7 @@ title: "手动续费"
 description: 介绍申请包年包月集群续费。
 draft: false
 weight: 10
-keyword: 青云, QingCloud, 云计算, QKE, 集群,续费
+keyword: QKE, 集群,续费
 ---
 
 本文介绍如何为包年包月集群续费。
@@ -14,7 +14,7 @@ keyword: 青云, QingCloud, 云计算, QKE, 集群,续费
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **容器引擎 QKE**，进入 QKE 集群列表页面。
 

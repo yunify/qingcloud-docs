@@ -3,7 +3,7 @@ title: "登录 KubeSphere"
 description: 本小节介绍如何在本地通过公网访问 KubeSphere。
 draft: false
 weight: 10
-keyword: 青云, QingCloud, 云计算, 容器, QKE, KubeSphere
+keyword: 容器, QKE, KubeSphere
 ---
 
 如果您安装了 KubeSphere，则可以使用浏览器登录 KubeSphere 控制台。
@@ -32,7 +32,7 @@ keyword: 青云, QingCloud, 云计算, 容器, QKE, KubeSphere
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **容器引擎 QKE**，进入 QKE 集群列表页面。
 

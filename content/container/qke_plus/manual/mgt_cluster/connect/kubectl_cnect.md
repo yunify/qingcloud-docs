@@ -2,15 +2,16 @@
 title: "使用 kubectl 连接集群"
 description: 介绍如何使用 kubectl 工具连接 Kubernetes 集群
 draft: false
-weight: 40
-keyword: 青云, QingCloud, 云计算, kubectl, K8s
+weight: 10
+keyword: kubectl, K8s
 ---
 
 本小节将指导您如何在本地使用 kubectl 工具连接到集群。
 
 > **说明**
 >
-> kubectl 是标准的 Kubernetes 命令行管理工具，您可以通过 Kubectl 来管理和控制 QKE 集群。
+> - kubectl 是标准的 Kubernetes 命令行管理工具，您可以通过 Kubectl 来管理和控制 QKE 集群。
+> - 您可以通过 kubectl 连接托管版和自管版集群。对于自管版集群，您还可以[通过 SSH 方式登录集群](/container/qke_plus/manual/mgt_cluster/connect/ssh_login_cluster/)。
 
 ## 前提条件
 
@@ -63,4 +64,6 @@ master3       Ready    control-plane,master   10m     v1.21.5
 worker-p001   Ready    worker                 9m52s   v1.21.5
 worker-p002   Ready    worker                 9m46s   v1.21.5
 ```
+
+
 

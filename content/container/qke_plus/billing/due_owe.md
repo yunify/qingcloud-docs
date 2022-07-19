@@ -2,7 +2,7 @@
 title: "到期与欠费"
 description: 合约到期及欠费处理说明。
 draft: false
-keyword: 青云, QingCloud, 云计算, QKE, 价格, 计费
+keyword: QKE, 价格, 计费
 weight: 30
 ---
 
@@ -12,7 +12,7 @@ weight: 30
 
 >**说明**
 >
->您可以到费用中心的[续费管理](https://console.qingcloud.com/finance/renewal_management)修改续费方式。
+>续费详细操作，请参见[手动续费](/container/qke_plus/manual/bill_operation/apply_renewal/)及[自动续费](/container/qke_plus/manual/bill_operation/auto_renewal/)。
 
 ## 欠费说明
 
@@ -37,4 +37,3 @@ weight: 30
 青云系统会定期检查用户余额和当时名下计费资源的消费预估，如果检查发现余额即将不足，会提前给用户发送通知。通知策略是：分别在提前 30, 15，7，3，1 天时发送提醒。
 
 默认是发送给账号的注册手机号及通知邮箱，如果用户希望自定义接受者列表，可在消息中心的[消息接收配置页面](https://console.qingcloud.com/notify/receiveConfig)中修改“财务消息”对应的消息接收人。
-

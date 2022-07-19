@@ -2,7 +2,7 @@
 title: "服务概述"
 description: 介绍服务相关概念。
 draft: false
-keyword: 青云, QingCloud, 云计算, QKE, 服务
+keyword: QKE, 服务
 weight: 1
 ---
 
