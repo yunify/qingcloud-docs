@@ -3,7 +3,7 @@ title: "启停集群"
 description: 介绍如何启动及关闭 QKE 集群。
 draft: false
 enableToc: false
-keyword: 青云, QingCloud, 云计算, 启动集群, 关闭集群, QKE 
+keyword: 启动集群, 关闭集群, QKE 
 weight: 15
 ---
 
@@ -19,7 +19,7 @@ weight: 15
 
 ## 关闭集群
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **容器引擎 QKE**，进入 QKE 集群列表页面。
 
@@ -33,7 +33,7 @@ weight: 15
 
 ## 启动集群
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **容器引擎 QKE**，进入 QKE 集群列表页面。
 

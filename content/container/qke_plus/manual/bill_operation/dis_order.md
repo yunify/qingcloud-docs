@@ -2,7 +2,7 @@
 title: "退订合约"
 description: 介绍包年包月集群如何进行合约退订。
 draft: true
-keyword: 青云, QingCloud, 云计算, QKE, 价格, 计费
+keyword: QKE, 价格, 计费
 weight: 40
 ---
 
@@ -34,7 +34,7 @@ weight: 40
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **容器引擎 QKE**，进入 QKE 集群列表页面。
 

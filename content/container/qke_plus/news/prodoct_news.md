@@ -4,9 +4,34 @@ collapsible: false
 weight: 5
 
 product:
+    - time: 2022-07-15
+      title: QKE v2.1.0 发布，集成 KubeSphere v3.3.0
+      content: QKE v2.1.0 上线。<br/>- 支持 KubeSphere v3.3.0 版本，支持 Argo CD、存储卷声明自动扩容等新特性，可从低版本升级至最新版。<br/>- Kubernetes 版本升级至 1.22.10，可在创建集群时选用该版本。<br/>- 支持集群升级， 可从低版本 QKE 与 Kubernetets 同步升级至最新版本。<br/>- Service 支持使用负载均衡器的七层能力，支持 HTTP/HTTPS 协议的负载均衡。
+      url: /container/qke_plus/manual/console/upgrade_ks/
+      tags:
+      - 新功能
+      zone: 北京3区，上海1区，广东2区
+
+    - time: 2022-07-01
+      title: QKE v2.0.0 发布，新增 GPU 类型工作节点，提高集群图像处理能力
+      content: QKE v2.0.0 上线。<br/>- 支持选用 honstnic 网卡插件，实现容器网络隧道直通等能力。<br/>- 新增 GPU 类型工作节点，提高集群图像处理能力。
+      url: /container/qke_plus/manual/mgt_node/node_amount/
+      tags:
+      - 新功能
+      zone: 北京3区，上海1区，广东2区
+
+    - time: 2022-06-15
+      title: QKE v1.2.2 发布，新增重启集群节点功能，节点异常可快速修复
+      content: QKE v1.2.2 上线。<br/>- 新增集群节点重启功能，提供节点异常快速修复办法。<br/>- qingcloud-csi 部署调整，修复多可用区部署时磁盘挂载问题。<br/>- 修复了一些 bug，如集群 PVC 用量更正等。<br/>
+
+      url: /container/qke_plus/manual/mgt_node/restart_node/
+      tags:
+      - 新功能
+      zone: 北京3区，上海1区，广东2区
+
     - time: 2022-05-10
       title: QKE v1.1.0 发布，新增自管版集群形态
-      content: QKE v1.1.0 版上线。<br/>- 新增自管版集群形态，可创建 Master 节点自行管理的自管版 QKE 集群。<br/>- 新增集群内节点级别的监控功能，可对 Worker 节点 CPU、内存等进行监控，掌握计算资源实时负载。<br/>- 支持对接独立部署的 ELK 集群存储集群日志，保障高可用服务。<br/>- 修复了一些 bug，提升集群稳定性。
+      content: QKE v1.1.0 上线。<br/>- 新增自管版集群形态，可创建 Master 节点自行管理的自管版 QKE 集群。<br/>- 新增集群内节点级别的监控功能，可对 Worker 节点 CPU、内存等进行监控，掌握计算资源实时负载。<br/>- 支持对接独立部署的 ELK 集群存储集群日志，保障高可用服务。<br/>- 修复了一些 bug，提升集群稳定性。
 
       url: ../../manual/mgt_cluster/create_cluster/
       tags:

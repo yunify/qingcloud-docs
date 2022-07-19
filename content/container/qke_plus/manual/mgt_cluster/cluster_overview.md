@@ -2,15 +2,15 @@
 title: "查看集群概览"
 description: 介绍如何查看集群概览信息。
 draft: false
-weight: 2
-keyword: 青云, QingCloud, 云计算, QKE, 集群
+weight: 4
+keyword: QKE, 集群
 ---
 
 本文介绍如何查看集群概览信息。
 
 ## 进入集群概览页面
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **容器引擎 QKE**，进入 QKE 集群列表页面。
 
