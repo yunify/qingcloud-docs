@@ -10,10 +10,9 @@ keyword: 青云, QingCloud, QKE, 常见问题
 
 <!--QKE 支持创建单节点集群（只创建一个主节点），方便用户快速测试使用。用户可以随时增加工作节点对集群进行扩容，但无法增加主节点。-->
 
-
 ## 集群创建后能否安装 KubeSphere？
 
-能，但需要手动安装。如果您需要安装 KubeSphere，可以在创建集群时选择安装。若在创建时未进行安装，则只能[参考文档](https://kubesphere.com.cn/docs/quick-start/minimal-kubesphere-on-k8s/)进行手动安装。
+能。如果您需要安装 KubeSphere，可以在创建集群时选择安装，也可以在集群创建后安装。具体操作，请参见[安装 KubeSphere 可视化控制台](/container/qke_plus/manual/console/install_ks/)。
 
 ## 删除集群会自动删除关联的负载均衡器、硬盘吗?
 
