@@ -2,7 +2,8 @@
 title: "VPN 服务"
 keyword: VPC, VPN, OpenVPN, PPTP, L2TP
 description: VPN 使用指导
-draft: false
+draft: true
+not_show: true
 weight: 40
 ---
 
@@ -18,7 +19,7 @@ weight: 40
 >
 > 因为涉及到网络间互联，所以各个网络必须使用不同的网络地址， 否则地址就冲突了。如果存在地址冲突，您可以将私有网络与路由器断开、再重新连接至路由器， 在对话框中重新指定一个网络地址给您的私有网络。
 
-![](../_images/hybrid_network_diagram.gif)
+![](/network/vpc/_images/hybrid_network_diagram.gif)
 
 ## OpenVPN 服务
 
@@ -34,7 +35,7 @@ weight: 40
 
 5. 配置 OpenVPN 参数，点击**提交**。
 
-   <img src="../_images/webconsole_open_vpn.png" alt="VPN参数配置" style="zoom:50%;" />
+   <img src="/network/vpc/_images/webconsole_open_vpn.png" alt="VPN参数配置" style="zoom:50%;" />
 
    多数情况下，直接使用缺省配置即可，但建议您点开高级选项检查一下各项配置，尤其是 VPN 网络地址不能跟您的本地网络存在冲突。
 
@@ -87,7 +88,7 @@ weight: 40
 
    
 
-   > **说明**：
+   > **说明**
    >
    > 请将以上文件中的``<xxx>`` 部分替换成您的配置。如:
    > ``remote <your-router-eip> 1194`` 替换为 ``remote 117.121.XXX.XXX 1194``。可参考 zip 包里带的 windows sample 配置样例。
@@ -128,7 +129,7 @@ weight: 40
    mssfix 1400
    ```
 
-   > **说明**：
+   > **说明**
    >
    > - 请将以上文件中的``<xxx>`` 部分替换成您的配置。如:
    >   ``remote <your-router-eip> 1194`` 替换为 ``remote 117.121.XXX.XXX 1194``。可参考 zip 包里带的 windows sample 配置样例。
@@ -143,7 +144,7 @@ weight: 40
 
    
 
-### Mac
+#### Mac
 
 1. 客户端以 [Tunnelblick](https://code.google.com/p/tunnelblick/) 为例， 先下载安装 Tunnelblick 。
 
@@ -169,7 +170,7 @@ weight: 40
    mssfix 1400
    ```
    
-   > **说明**：
+   > **说明**
    >
    > - user / group 可查询您本地系统的 ``/etc/passwd`` 和 ``/etc/group`` 文件。
    >
@@ -182,7 +183,7 @@ weight: 40
 
 如果您的 OpenVPN 开启了 “用户名/密码” 登录方式，你需要在连接的时候提供用户名和密码输入，如果希望通过配置文件来解决， 您可以修改客户端的配置文件中的 “auth-user-pass password.txt” ，通过一个独立的文件，例如 “password.txt” 来保持用户名/密码信息。
 
-> **说明**：
+> **说明**
 >
 > 如果是 Mac 系统，不需要 password.txt 文件，配置中 auth-user-pass 后面也不需要写文件名，只保留 “auth-user-pass” ，会在连接 VPN 时提示输入账号密码，并支持保存到 Mac 系统的 Keychain 中。
 
@@ -225,7 +226,7 @@ password.txt 文件样例如下，用户名和密码分为两行存放。
 
 5. 配置 VPN 用户名和密码，点开高级选项检查一下各项配置，注意 VPN 网络地址不能跟您的本地网络存在冲突。
 
-   <img src="../_images/webconsole_open_pptp.png" alt="打开PPTP服务" style="zoom:50%;" />
+   <img src="/network/vpc/_images/webconsole_open_pptp.png" alt="打开PPTP服务" style="zoom:50%;" />
 
 6. 点击**提交**，然后点击页面上方的**应用修改**， 以更新配置。
 
@@ -320,7 +321,7 @@ password.txt 文件样例如下，用户名和密码分为两行存放。
    <user_name>   pptpd   <password>        *
    ```
    
-   > **说明**：
+   > **说明**
    >
    > 请将以上文件中的 ``<xxx>`` 替换成您的配置。如:
    > ``<user_name>   pptpd   <password>   *`` 替换为 ``guest   pptpd   passw0rd   *``。
@@ -338,7 +339,7 @@ password.txt 文件样例如下，用户名和密码分为两行存放。
 
    
 
-   > **说明**：
+   > **说明**
    > 请将以上文件中的 ``<xxx>`` 部分替换成您的配置。释义如下：
    >
    > - ``<vpn_server_ip>`` ：路由器的公网IP；
@@ -351,7 +352,7 @@ password.txt 文件样例如下，用户名和密码分为两行存放。
    $ pon <tunnel> persist
    ```
 
-   > **说明**：
+   > **说明**
    >
    > 请将以上命令行中的``<tunnel>`` 替换成你定义的隧道名称，在本例中是 vpn。
 
@@ -363,7 +364,7 @@ password.txt 文件样例如下，用户名和密码分为两行存放。
      $ ip route add 192.168.10.0/24 dev ppp0
      ```
 
-     > **说明**：
+     > **说明**
      >
      > 命令中的 ppp0 为客户端连接的设备名，如果你只有一个 VPN 客户端正在运行，那默认设备一般都是 ppp0，
      > 如果不是，你可以通过 ifconfig 命令来进行查看。
@@ -381,13 +382,13 @@ password.txt 文件样例如下，用户名和密码分为两行存放。
    $ poff <tunnel>
    ```
 
-   > **说明**：
+   > **说明**
    >
    > 请将以上命令行中的 ``<tunnel>`` 替换成你定义的隧道名称，在本例中是 vpn。
 
 ## L2TP 服务
 
-> **说明**：
+> **说明**
 >
 > 由于苹果的系统 Mac OS 已不再支持 PPTP 隧道服务和客户端等配置项，若您使用的设备系统是 Mac OS，建议您参考本节内容，使用 L2TP 的方式使用 VPN 服务 。
 
@@ -403,7 +404,7 @@ password.txt 文件样例如下，用户名和密码分为两行存放。
 
 5. 配置 VPN 用户名、密码、PSK，点击高级选项检查一下各项配置，注意 VPN 网络地址不能跟您的本地网络存在冲突。
 
-   <img src="../_images/webconsole_open_l2tp.png" alt="打开L2TP服务" style="zoom:50%;" />
+   <img src="/network/vpc/_images/webconsole_open_l2tp.png" alt="打开L2TP服务" style="zoom:50%;" />
 
 6. 点击**提交**，然后点击页面上方的**应用修改**， 以更新配置。
 
@@ -469,7 +470,7 @@ password.txt 文件样例如下，用户名和密码分为两行存放。
 
    
 
-   > **说明**：
+   > **说明**
    > 请将以上文件中的 ``<xxx>`` 连部分替换成您的配置，释义如下:
    >
    > - ``<l2tp_server_ip>`` ：路由器的公网IP；
@@ -481,7 +482,7 @@ password.txt 文件样例如下，用户名和密码分为两行存放。
    %any <l2tp_server_ip>: PSK "<psk>"
    ```
 
-   > **说明**：
+   > **说明**
    > 请将以上文件中的 ``<xxx>`` 部分替换成您的配置，释义如下:
    >
    > - ``<l2tp_server_ip>`` ：路由器的公网IP；
@@ -493,7 +494,7 @@ password.txt 文件样例如下，用户名和密码分为两行存放。
    $ sudo service ipsec restart
    ```
 
-   > **说明**：
+   > **说明**
    >
    > 使用命令 ``ipsec auto status`` 检查连接是否正常建立。
 
@@ -545,7 +546,7 @@ password.txt 文件样例如下，用户名和密码分为两行存放。
 
    
 
-   > **说明**：
+   > **说明**
    > 请将以上文件中的 ``<xxx>`` 部分替换成您的配置。释义如下:
    >
    > - ``<user_name>`` ：用户名；
@@ -568,7 +569,7 @@ password.txt 文件样例如下，用户名和密码分为两行存放。
 
    
 
-   > **说明**：
+   > **说明**
    > 关闭连接使用: ``$ sudo echo “d <lac_name>” > /var/run/xl2tpd/l2tp-control``。
    >
    > 请将以上命令中的 ``<lac_name>`` 替换成第二步的<lac_name>的命名。
@@ -581,7 +582,7 @@ password.txt 文件样例如下，用户名和密码分为两行存放。
 
    
 
-   > **说明**：
+   > **说明**
    > 请将以上命令中的 ``<xxx>`` 部分替换成您的配置。释义如下:
    >
    > - ``<ip_network>`` ：路由器下的私有网络地址段;
