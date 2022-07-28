@@ -56,8 +56,6 @@ QingStor 对象存储服务的全局管理服务。
 | 上海1区  | sh1a    | sh1a.qingstor.com | https://mybucket2.sh1a.qingstor.com/myobject  |
 | 北京3区  | pek3b   | pek3b.qingstor.com | https://mybucket3.pek3b.qingstor.com/myobject |
 | 广东2区    | gd2     | gd2.qingstor.com | https://mybucket4.gd2.qingstor.com/myobject  |
-| 雅加达区   | ap3     | ap3.qingstor.com | https://mybucket5.ap3.qingstor.com/myobject   |
-
 ### Service
 QingStor 对象存储的顶层命名空间。在该命名空间下，每一个用户可以创建多个 Bucket。
 

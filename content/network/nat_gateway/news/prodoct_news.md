@@ -12,7 +12,7 @@ product:
       qingCloudZhiUrl: https://log.qingcloud.com/archives/8636
       tags:
        - 新功能
-      zone: 北京三区、上海1区、广东2区、亚太2区-A、雅加达区
+      zone: 北京三区、上海1区、广东2区、亚太2区-A
 
     - time: 2020-02-09
       title: NAT 网关功能升级
