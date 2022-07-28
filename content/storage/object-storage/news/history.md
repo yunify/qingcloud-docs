@@ -10,9 +10,6 @@ product:
       content: 新增对于跨区域复制功能的支持；新增对上传对象元数据的键值解析。<a target="_blank" href="https://github.com/qingstor/qingstor-sdk-ruby#v240---2021-01-05">更多变更日志</a>
       url: /storage/object-storage/sdk/ruby/
       
-    #- time: 2020-05-15
-    #  title: 开放雅加达（ap3）区
-    #  content: 青云QingCloud 雅加达区日前正式开放对象存储服务。此次对象存储服务在雅加达区的开放，将为出海及海外企业提供面向海量非结构化数据的通用数据平台，提供安全可靠、低成本的云存储服务，进一步满足中国企业国际化业务的开展、国际化企业全球市场的开拓，以及海外本地企业对云能力的需求。这是青云QingCloud 自 2019 年 12 月正式开放雅加达区提供公有云服务以来，又一次重要的能力输出。<a target="_blank" href="https://log.qingcloud.com/archives/7013">更多详细内容</a>
 
     - time: 2020-02-23
       title: 新增 Append Object 接口
