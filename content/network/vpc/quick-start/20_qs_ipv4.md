@@ -119,7 +119,7 @@ weight: 20
 
 2. 执行`ping`命令验证是否可公网通信。 如 `ping www.qingcloud.com` 测试公网连通性。
 
-   <img src="/network/vpc_2.0/_images/4020_ping.png" alt="ping" style="zoom:50%;" />
+   <img src="/network/vpc/_images/4020_ping.png" alt="ping" style="zoom:50%;" />
 
 
 
