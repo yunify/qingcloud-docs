@@ -20,9 +20,9 @@ weight: 15
 
    页面下方默认展示**私有网络**页签。
 
-4. 点击<img src="/network/vpc_2.0/_images/501030_bind_vxnet_2.png" alt="bind_vxnet_2" style="zoom:50%;" />，弹出**创建/连接私有网络**页面。
+4. 点击<img src="/network/vpc/_images/501030_bind_vxnet_2.png" alt="bind_vxnet_2" style="zoom:50%;" />，弹出**创建/连接私有网络**页面。
 
-   <img src="/network/vpc_2.0/_images/501030_bind_vxnet_3.png" alt="bind_vxnet_3" style="zoom:50%;" />
+   <img src="/network/vpc/_images/501030_bind_vxnet_3.png" alt="bind_vxnet_3" style="zoom:50%;" />
 
 5. 配置私有网络信息，包括名称、部署方式、IPv4 网络地址、网络 ACL 及其他高级选项。
    - 部署方式：**多可用区部署**即网络中的云服务器可部署在多个可用区，**单可用区部署**即网络的云服务器部署在同一个可用区。若需要做跨可用区容灾，建议选择**多可用区部署**。
@@ -41,11 +41,11 @@ weight: 15
 
    页面下方默认展示**私有网络**页签。
 
-4. 点击<img src="/network/vpc_2.0/_images/501030_bind_vxnet_2.png" alt="bind_vxnet_2" style="zoom:50%;" />，弹出**创建/连接私有网络**页面。
+4. 点击<img src="/network/vpc/_images/501030_bind_vxnet_2.png" alt="bind_vxnet_2" style="zoom:50%;" />，弹出**创建/连接私有网络**页面。
 
 5. 点击**连接已有私有网络**。
 
-   <img src="/network/vpc_2.0/_images/501030_bind_vxnet_4.png" alt="bind_vxnet_4" style="zoom:50%;" />
+   <img src="/network/vpc/_images/501030_bind_vxnet_4.png" alt="bind_vxnet_4" style="zoom:50%;" />
 
 6. 点击**选择要加入的私有网络**，选择一个私有网络，并设置 IPv4 地址、网络ACL及其他高级选项。
    - IPv4 网络地址：私有网络的地址范围，需要在 VPC 网络的地址范围内。
