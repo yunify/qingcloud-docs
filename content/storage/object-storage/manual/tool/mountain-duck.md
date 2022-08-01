@@ -27,6 +27,8 @@ QingStor 对象存储推荐用户使用 Mountain Duck 来挂载由 QingStor 对�
 
 通过 Mountain Duck 成功挂载 QingStor 对象存储中的 Bucket 后，用户即可像操作本地磁盘一样对 QingStor 对象存储 Bucket 中的文件进行读写、存取等操作，同时可通过托盘菜单对缓存设置、版本更新、帐户信息等进行查看或操作。
 
+### Windows 平台
+
 详细操作步骤如下：
 
 1. 点击 **Mountain Duck -- > 新建链接**，如下图所示：
@@ -55,6 +57,28 @@ QingStor 对象存储推荐用户使用 Mountain Duck 来挂载由 QingStor 对�
 4. Mountain Duck 挂载成功后，用户可通过设置菜单对该工具进行相关操作设置。设置菜单如下图所示：
 
 ![](/storage/object-storage/_images/mountain-duck4.png)
+
+### MAC 平台
+
+详细操作步骤如下：
+
+1. 点击 **Mountain Duck > Open Connection**，如下图所示：
+
+   <img src="/storage/object-storage/_images/mountain-duck5.png" style="zoom:50%;" />
+
+2. 弹出新建链接对话框，根据提示信息输入相关字段，点击 **连接** 即可：
+
+   <img src="/storage/object-storage/_images/mountain-duck6.png" style="zoom:50%;" />
+
+   > **说明：**
+   > - 协议下拉框里，选择 `Amazon S3`，如上图所示。
+   > - `服务器名`，填写 QingStor 对象存储的域名，格式为：`s3.<zone_id>.qingstor.com`。其中 `zone_id` 须根据实际情况进行修改。公有云环境，可参考 [公有云开放区域](/storage/object-storage/intro/object-storage/#zone)。
+   > - `访问密钥 ID` 与 `访问私钥`，即 AK/SK 须根据实际情况进行填写。具体可参考[获取 Access Key](/storage/object-storage/api/practices/signature/#获取-access-key)。
+
+3. 成功挂载后，本地可直接查看 QingStor 对象存储的 Bucket，如下图所示：
+
+   <img src="/storage/object-storage/_images/mountain-duck7.png" style="zoom:30%;" />
+
 
 
 ## 升级
