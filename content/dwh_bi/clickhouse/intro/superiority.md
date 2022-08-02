@@ -1,6 +1,6 @@
 ---
 title: "产品优势"
-description: 本小节主要介绍 ChronusDB 产品优势。 
+description: 本小节主要介绍 ClickHouse 产品优势。 
 keyword: 产品优势,数据仓库,ClickHouse 
 weight: 20
 collapsible: false
