@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 
 product:
-    - time: 2022-08-01
+    - time: 2022-08-04
       title: ChronusDB 1.1.0 版本正式上线
       content: 时序数据库 ChronusDB 1.1.0 新上线。<br>- 支持在线数据迁移。<br>- 内核版本升级到 ClickHouse-22.3.6.5。<br>- DDL 性能优化，自动清理过期 DDL。<br>- 引入 clickhouse-keeper ，function 等新特性。<br>- csv 导入支持多分隔符。<br>- os 升级至 ubuntu 20.4版本 ，充分发挥 <b>e3</b> 性能。
       url: ../../intro/version/
