@@ -74,6 +74,10 @@ QKE 平台支持 GPU 资源调度管理 与 GPU 使用监控，所有计算节�
 - 高性能：相比于物理 GPU，DCE-AI 本地 vGPU 性能损耗几乎为零，远程 vGPU 性能损耗＜2%
 - 高隔离性：vGPU 资源隔离，并行用户资源无干扰。
 
+<video src="https://yunify-qingcloud-docs.pek3b.qingstor.com/video/qke_qs_02_deploy_ai.mp4" controls="controls">
+您的浏览器不支持 video 标签。
+</video>
+
 ## CI/CD 应用场景
 
 当前 IT 行业发展日益快速，面对海量需求必须具备快速集成的能力。通过持续集成与持续交付，极大提高软件发布效率，才能保证不间断的补全用户体验，提升服务质量，为业务创新提供源源不断的动力。
