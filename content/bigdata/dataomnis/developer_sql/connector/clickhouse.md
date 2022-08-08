@@ -49,7 +49,7 @@ CREATE TABLE t_user (
 | url                     | 是       | 无       | String   | ClickHouse 服务的URL地址，clickhouse://{ip}:{port}。         |
 | username                | 是       | 无       | String   | ClickHouse 服务的用户名。                                    |
 | password                | 是       | 无       | String   | ClickHouse 服务的密码。                                      |
-| database-name           | 否       | default  | Sting    | ClickHouse 数据库名称。                                      |
+| database-name           | 否       | default  | String    | ClickHouse 数据库名称。                                      |
 | table-name              | 是       | 无       | String   | ClickHouse 服务的表名。                                      |
 | sink.batch-size         | 否       | 1000     | Integer  | 刷新频率，数据量超过该大小会刷新写入数据。                   |
 | sink.flush-interval     | 否       | 1s       | Duration | 刷新频率，超过这个刷新间隔 异步线程会刷新写入数据。          |
