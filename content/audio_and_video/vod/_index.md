@@ -34,13 +34,13 @@ section2:
     
     - title: 常见问题
       content: 本节解答您在使用云点播时遇到的常见问题。
-      url: "faq/10_faq_vod"
+      url: "faq/"
 section3:
   title: 开发者指南
   children:
     - title: SDK 文档
       content: 如何使用 SDK 文档
-      url: "sdk/10_sdk"
+      url: "sdk/10_sdk_intro/"
 
     - title: API 文档
       content: 如何使用 API 文档
@@ -73,7 +73,6 @@ section4:
           url: "um/mgmt_video/10_upload/"
 
 ---
-
 
 
 

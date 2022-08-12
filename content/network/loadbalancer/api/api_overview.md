@@ -13,7 +13,7 @@ weight: 10
 | API                                                          | 说明                       |
 | :----------------------------------------------------------- | :------------------------- |
 | [CreateLoadBalancer](/network/loadbalancer/api/loadbanlancer/create_lb/) | 创建负载均衡器。           |
-| [DescribeLoadBalancers](network/loadbalancer/api/loadbanlancer/describe_lb/) | 查询负载均衡器。           |
+| [DescribeLoadBalancers](/network/loadbalancer/api/loadbanlancer/describe_lb/) | 查询负载均衡器。           |
 | [AssociateEipsToLoadBalancer](/network/loadbalancer/api/loadbanlancer/bind_eips_to_lb/) | 绑定公网 IP 到负载均衡器。 |
 | [DissociateEipsFromLoadBalancer](/network/loadbalancer/api/loadbanlancer/dissociate_eips_lb/) | 从负载均衡器解绑公网 IP。  |
 | [LoadBalancerJoinVxnet](/network/loadbalancer/api/loadbanlancer/loadbalancer_join_vxnet/) | 负载均衡器加入私有网络。   |

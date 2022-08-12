@@ -10,7 +10,7 @@ draft: false
 
 ## 背景信息
 
-负载均衡器支持源 IP 地址、负载均衡器 Cookie 、植入 Cookie 前缀、重写 Cookie 、后端 Cookie 实现会话保持，详见[会话保持](/network/loadbalancer/faq/lb_session_hold/)。
+负载均衡器支持源 IP 地址、负载均衡器 Cookie 、植入 Cookie 前缀、重写 Cookie 、后端 Cookie 实现会话保持，详见[会话保持](/network/loadbalancer/manual/monitor/lb_session_hold/)。
 
 ## 准备工作
 

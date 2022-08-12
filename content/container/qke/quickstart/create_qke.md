@@ -144,7 +144,7 @@ keyword: 青云, QingCloud, 云计算, 创建, QKE 集群, 节点配置
 
 根据实际需求，设置集群参数，部分参数在集群创建后不可修改，请提前做好规划。
 
-参数详细说明请参见[配置集群参数](../../manual/qke/paras_cfg/#参数说明)。
+参数详细说明请参见[配置集群参数](/container/qke/manual/mgt_cluster/paras_cfg/#参数说明)。
 
 ### 用户协议
 

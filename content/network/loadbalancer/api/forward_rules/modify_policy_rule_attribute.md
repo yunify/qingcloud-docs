@@ -8,7 +8,7 @@ draft: false
 
 修改负载均衡器转发策略规则的属性。
 
-**注意**：修改之后，为了让新规则生效，需要执行 [_ApplyLoadBalancerPolicy_](../apply_loadbalancer_policy/) 指令。
+**注意**：修改之后，为了让新规则生效，需要执行 [_ApplyLoadBalancerPolicy_](../apply_lb_policy/) 指令。
 
 ## 请求参数
 

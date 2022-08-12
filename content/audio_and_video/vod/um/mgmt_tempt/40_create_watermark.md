@@ -31,7 +31,7 @@ weight: 40
 
 4. 点击**创建水印模板**，进入**创建水印模板**页面。
 
-   <img src="/audio_and_video/vod/_images/um_water_list.png" style="zoom:50%;" />
+   <img src="/audio_and_video/vod/_images/um_watermark_win.png" style="zoom:50%;" />
 
 5. 根据需要配置视频转码模板。
 

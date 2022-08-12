@@ -8,7 +8,7 @@ draft: false
 
 修改一台 VPC 网络的配置。
 
-在修改配置之后，为了让配置生效，你可能需要执行 [_UpdateRouters_](../update_routers/) 或者 [_ApplySecurityGroup_](../../sg/apply_security_group/) 指令。
+在修改配置之后，为了让配置生效，你可能需要执行 [_UpdateRouters_](../update_routers/) 或者 [_ApplySecurityGroup_](/security/firewall/api/command_list/apply_security_group/) 指令。
 
 ## 请求参数
 
@@ -16,7 +16,7 @@ draft: false
 | --- | --- | --- | --- |
 | router | String |  VPC 网络ID | Yes |
 | eip | String |  VPC 网络的公网IP，如果值为 "" ，表示将公网IP从 VPC 网络上解绑。<br/>修改这个参数之后，需要执行 [_UpdateRouters_](../update_routers) 指令才能使得修改生效。 | No |
-| security_group | String |  VPC 网络的防火墙ID。<br/>修改这个参数之后，需要执行 [_ApplySecurityGroup_](../../sg/apply_security_group) 指令才能使得修改生效。 | No |
+| security_group | String | VPC 网络的防火墙ID。<br/>修改这个参数之后，需要执行 [_ApplySecurityGroup_](/security/firewall/api/command_list/apply_security_group/) 指令才能使得修改生效。 | No |
 | router_name | String |  VPC 网络的名称。 | No |
 | description | String |  VPC 网络的描述。 | No |
 | features | Integer |  VPC 网络功能项，目前包括 DHCP 和 DNS 。<br/>“1”: 开启 DHCP，开启时还需同时传参数 vxnet, dyn_ip_start, dyn_ip_end (私有网络连接 VPC 网络后默认即开启 DHCP)<br/>“2”: 开启私网内 DNS | No |
