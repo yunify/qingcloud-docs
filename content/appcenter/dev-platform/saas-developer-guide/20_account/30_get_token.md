@@ -26,7 +26,7 @@ POST
 | code           | string | 授权码                                                       | Yes      |
 | client_id      | string | 客户端 ID（app_id）                                          | Yes      |
 | client_secret  | string | 客户端密钥                                                   | Yes      |
-| Token_issuer   | string | 参数可选值：app、app_dev<br />app：已上架的 app 使用。<br />app_dev：处于测试阶段的 app 使用 | Yes      |
+| token_issuer   | string | 参数可选值：app、app_dev<br />app：已上架的 app 使用。<br />app_dev：处于测试阶段的 app 使用 | Yes      |
 
 ### 响应参数
 
