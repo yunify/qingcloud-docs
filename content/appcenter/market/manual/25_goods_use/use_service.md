@@ -10,7 +10,7 @@ draft: false
 
 ## 前提条件
 
-已在云市场购买人工服务商品并支付成功。具体操作请参考[购买商品](./appcenter/market/manual/20_purchase_app/)。
+已在云市场购买人工服务商品并支付成功。具体操作请参考[购买商品](/appcenter/market/manual/20_purchase_app/)。
 
 ## 服务交付流程
 

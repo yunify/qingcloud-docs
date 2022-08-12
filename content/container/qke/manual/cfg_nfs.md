@@ -73,4 +73,4 @@ nfs-client   cluster.local/ks-nfs-client-provisioner   26m
 
 现在可以通过动态创建 NFS 存储卷和工作负载挂载 NFS 存储卷了。
 
-创建和挂载存储卷请参见[挂载云平台存储](../mount_storage/)。
+创建和挂载存储卷请参见[挂载云平台存储](../ks/mount_storage/)。

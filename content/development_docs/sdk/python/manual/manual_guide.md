@@ -133,7 +133,7 @@ u'available'
 >>> ret = conn.attach_volumes(volumes=[volume_id], instance='instance-id')
 ```
 
-硬盘加载成功后，需要到加载的云服务器上进一步手动操作，具体可参考 [_FAQ_](../../faq/index.html#faq) 。
+硬盘加载成功后，需要到加载的云服务器上进一步手动操作，具体可参考 [_硬盘初始化及分区_](/storage/disk/quickstart/init/init_start/) 。
 
 ## 函数列表 {#id3}
 

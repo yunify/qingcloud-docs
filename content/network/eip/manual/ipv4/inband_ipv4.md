@@ -171,7 +171,7 @@ post-up ip route replace 100.3.3.3/32 via 192.168.0.1 dev eth0
 
 公网 IP 切换绑定功能适用于绑定已经处于绑定状态的公网 IP 到新的虚拟机上。工作原理是: 从源节点上解绑公网 IP，同时在目标节点上进行绑定。
 
-公网 IP 绑定功能可以使用在高可用环境中。一旦绑定公网 IP 的主节点出现宕机或者服务无法使用，可以在从节点中发起切换绑定的请求，这样从节点上会绑定之前主节点使用的公网 IP 。这样的使用可以保证服务不宕机。具体的 api 使用方法可以参考 [_AssociateEip_](/development_docs/api/command_list/eip/associate_eip/)。
+公网 IP 绑定功能可以使用在高可用环境中。一旦绑定公网 IP 的主节点出现宕机或者服务无法使用，可以在从节点中发起切换绑定的请求，这样从节点上会绑定之前主节点使用的公网 IP 。这样的使用可以保证服务不宕机。具体的 api 使用方法可以参考 [_AssociateEip_](/network/eip/api/api_list/associate_eip/)。
 
 1. 在同一个 VPC 中创建两台虚拟机, VPC 绑定公网 IP A, 另外对外服务的虚拟机绑定公网 IP B。在防火墙中放行 VRRP 协议。
 

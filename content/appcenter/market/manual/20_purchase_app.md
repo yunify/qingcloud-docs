@@ -14,7 +14,7 @@ draft: false
 
 1. 登录[云市场](https://marketplace.qingcloud.com/)首页，找到需要购买的商品。
 
-   具体操作可参见[查找商品](../../10_find_app/)。
+   具体操作可参见[查找商品](../10_find_app/)。
 
 2. 点击待购买的商品，进入商品详情页。
 
