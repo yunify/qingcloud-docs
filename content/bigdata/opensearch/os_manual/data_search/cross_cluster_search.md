@@ -11,7 +11,7 @@ draft: false
 
 **跨集群搜索**工作原理是在本地集群中配置一个或多个远程集群，并且仅连接到远程集群中有限数量的节点。每个远程集群都由一个名称和一个 `seed nodes`（种子节点）的列表引用。 这些 `seed nodes`（种子节点）用于发现远程集群中作为 `gateway nodes`（网关节点）的节点。本地集群中配置远程集群的每个节点都连接到一个或多个 `gateway nodes`（网关节点），并使用它们将搜索请求发送到远程集群。
 
-更多**跨集群搜索**使用方法和说明，请参见 [Search across clusters](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-cross-cluster-search.html/)。
+更多**跨集群搜索**使用方法和说明，请参见 [Search across clusters](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-cross-cluster-search.html)。
 
 本小节主要介绍在多个集群间如何跨集群搜索。
 

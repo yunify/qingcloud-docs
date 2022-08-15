@@ -24,7 +24,7 @@ Harbor 提供的代理缓存功能允许您使用 Harbor 来代理和缓存来�
 >
 > 本操作中截图以 Harbor v2.2.1 为例，仅供参考，请以您部署的 Harbor 实际版本为准。
 
-1. [登录 Harbor Web界面](http://localhost:1313/container/harbor/quickstart/qs18_access_harbor/#浏览器登录)。
+1. [登录 Harbor Web界面](/container/harbor/quickstart/qs18_access_harbor/#浏览器登录)。
 
 2. 创建目标仓库。
 
