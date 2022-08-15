@@ -76,7 +76,7 @@ GRE 隧道是一个很灵活的技术，可以用来组建各种网络拓扑，�
 
 3. 在弹出的对话框里，填写以下项目:
 
-   <img src="../../_images/gre_l3_add_static_2.png" alt="添加隧道规则" style="zoom:50%;" />
+   <img src="../../_images/gre_l3_add_static_2.png" alt="添加隧道规则"  />
 
    * 名称: tun39
    * 远端路由器 IP: 9.9.9.9
