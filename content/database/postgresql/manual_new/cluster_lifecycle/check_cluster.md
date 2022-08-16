@@ -23,7 +23,7 @@ PostgreSQL 集群创建成功后，可在 AppCenter 查看集群信息，包括�
 
    可查看当前区域集群列表，以及集群基本信息。
 
-    <img src="../../../_images/cluster.png" alt="集群列表" style="zoom:100%;" />
+    <img src="../../_images/cluster1.png" alt="集群列表" style="zoom:100%;" />
 
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 

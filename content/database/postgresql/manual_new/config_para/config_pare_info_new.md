@@ -18,6 +18,7 @@ draft: false
 | :-------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | readonly_vip_include_standby                              | 默认为true。<ul><li>true</li><li>false</li></ul>             | 只读主实例，默认值 **true**。                                |
 | synchronous_readonly                                      | <ul><li>先写入内存，后写入硬盘</li><li>同步写入内存和硬盘</li></ul> | 表示设置只读实例同步模式。 'async' 是流式传输的异步模式。 'sync' 是同步模式。 |
+| console_log                                               | <ul><li>log</li><li>calls</li><li>mean_time</li><li>total_time</li><li>max_time</li></ul> | 主实例日志。                                                 |
 | 端口                                                      | 1025 ~ 65534                                                 | 表示PostgreSQL 端口号，默认值为 **5432**。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br>该参数修改后，将重启 pgpool。</span> |
 | fsync                                                     | <ul><li>true</li><li>false</li></ul>                         | 表示强制将更新同步到磁盘，默认值为 **true**。                |
 | full_page_writes                                          | <ul><li>true</li>                                            | 表示在检查点后第一次修改时将整页写入 WAL，默认值为 **true**。 |

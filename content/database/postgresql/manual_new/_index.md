@@ -1,5 +1,5 @@
 ---
-title: "操作指南（PG 12及以上）"
+title: "操作指南（PG V2.0 及以上）"
 linkTitle: "操作指南"
 _build:
  render: false 
