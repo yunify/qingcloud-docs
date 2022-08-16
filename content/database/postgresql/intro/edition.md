@@ -19,12 +19,12 @@ PostgreSQL 定制`基础版`、`高可用版`两个功能系列。
 
 ## 应用版本
 
-基于 PostgreSQL 12.9 、13.7、14.4内核版本分别构建了 PG12 高可用版和基础版，PG13 高可用版和基础版、PG4 高可用版和基础版。
+基于 PostgreSQL 12.9 、13.7、14.4内核版本分别构建了 PostgreSQL V2.0.0 高可用版和基础版。
 
 | <span style="display:inline-block;width:140px">版本</span> | <span style="display:inline-block;width:300px">内核版本</span> | <span style="display:inline-block;width:240px">应用版本</span> |
 | :--------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| 高可用版                                                   | <ul><li>PostgreSQL 12.9</li><li>PostgreSQL 13.7</li>  <li>PostgreSQL 14.4</li></ul> | <ul><li>PG12-高可用版-V1.1.0</li><li>PG13-高可用版-V1.1.0</li><li> PG14-高可用版-V1.1.0</li></ul> |
-| 基础版                                                     | <ul><li>PostgreSQL 12.9</li><li>PostgreSQL 13.7</li>  <li>PostgreSQL 14.4</li></ul> | <ul><li>PG12-基础版-V1.1.0</li><li>PG13-基础版-V1.1.0</li><li> PG14-基础版-V1.1.0</li></ul> |
+| 高可用版                                                   | <ul><li>PostgreSQL 12.9</li><li>PostgreSQL 13.7</li>  <li>PostgreSQL 14.4</li></ul> | PostgreSQL 高可用版 -V2.0.0                                  |
+| 基础版                                                     | <ul><li>PostgreSQL 12.9</li><li>PostgreSQL 13.7</li>  <li>PostgreSQL 14.4</li></ul> | PostgreSQL 基础版 -V2.0.0                                    |
 
 基于 PostgreSQL 11.1 、10.1、9.6.3内核版本分别构建了 PG11 高可用版，PG10 高可用版和基础版、PG9.6 高可用版和基础版。
 
@@ -35,7 +35,7 @@ PostgreSQL 定制`基础版`、`高可用版`两个功能系列。
 
 ## 应用版本历程
 
-### PG12/PG13/PG14-高可用版-V1.1.0、PG12/PG13/PG14-基础版-V1.1.0
+### PostgreSQL 高可用版/基础版 -V2.0.0
 
 基于 PostgreSQL 12.9 、13.7、14.4内核版本分别构建的高可用版和基础版。
 

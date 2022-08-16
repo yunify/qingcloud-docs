@@ -10,7 +10,7 @@ draft: false
 
 PostgreSQL 一个集群可包含多个节点，一个节点即一个数据库计算基本计量单位，对应一台虚拟机和一台存储磁盘。
 
-PostgreSQL 节点目前支持`主实例`、`只读实例`、`Proxy 实例`三种类型。
+PostgreSQL 节点目前支持`主实例`、`只读实例`两种类型。
 
 | <span style="display:inline-block;width:80px">节点类型</span> | <span style="display:inline-block;width:240px">说明</span> | <span style="display:inline-block;width:280px">使用范围</span> |
 | :----------------------------------------------------------- | :--------------------------------------------------------- | :----------------------------------------------------------- |

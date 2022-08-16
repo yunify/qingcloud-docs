@@ -40,13 +40,13 @@ PostgreSQL 可通过 psql 命令行客户端直接连接，还可以使用图形
    ```bash
    psql -U <userName> -h <port> -d <serverName> 
    ```
-
-|<span style="display:inline-block;width:80px">选项</span> |<span style="display:inline-block;width:240px">说明</span>|<span style="display:inline-block;width:280px">示例</span> |
-|:----|:----|:----|
-|-U           |数据库用户账号名。<br>- 新建数据库默认账号名 `pguser`。<br>- 获取更多用户信息，请参见[用户管理](../../manual/mgt_account/user_account)。           | pguser |
-|-h          |数据库节点的 IP 或者双节点集群的 VIP。                 |192.168.100.0|
-|-d          |数据库名称。 <br>新建数据库默认名称 `qingcloud`。            | qingcloud |
-|密码          |数据库用户密码。<br>新建数据库默认账号密码 `qingcloud1234`              | qingcloud1234 |
+   
+   | <span style="display:inline-block;width:80px">选项</span> | <span style="display:inline-block;width:240px">说明</span>   | <span style="display:inline-block;width:280px">示例</span> |
+   | :-------------------------------------------------------- | :----------------------------------------------------------- | :--------------------------------------------------------- |
+   | -U                                                        | 数据库用户账号名。<br>- 新建数据库默认账号名 `pguser`。<br>- 获取更多用户信息，请参见[用户管理](../../manual/mgt_account/user_account)。 | pguser                                                     |
+   | -h                                                        | 数据库节点的 IP 或者双节点集群的 VIP。                       | 192.168.100.0                                              |
+   | -d                                                        | 数据库名称。 <br>新建数据库默认名称 `qingcloud`。            | qingcloud                                                  |
+   | 密码                                                      | 数据库用户密码。<br>新建数据库默认账号密码 `qingcloud1234`   | qingcloud1234                                              |
 
 ## 连接数据库示例
 
@@ -58,7 +58,6 @@ PostgreSQL 可通过 psql 命令行客户端直接连接，还可以使用图形
 
 2. 执行命令`\l`，查看当前 PostgreSQL 数据库信息。
 
-回显如下：
+   回显如下：
 
-![访问 PG 数据库](../../_images/pglogin.png)  
-  
+   ![访问 PG 数据库](../../_images/pglogin.png)  
