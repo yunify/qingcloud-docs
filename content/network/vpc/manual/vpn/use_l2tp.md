@@ -47,7 +47,7 @@ weight: 20
 
 8. 开启 L2TP 服务后，需要前往 VPC 网络使用的安全组规则中放行 UDP 下行 500 和 4500 端口以及 ESP 协议，以确保 VPN 端口流量可以通过，否则从外网无法接入您的 VPN 服务。
 
-   <img src="/network/vpc/_images/l2tp_sg_rule.png" style="zoom:50%;" />
+   <img src="/network/vpc/_images/l2tp_sg_rule.png" style="zoom:90%;" />
 
 ## 配置 L2TP 客户端
 
