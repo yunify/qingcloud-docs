@@ -54,9 +54,9 @@ keyword: 容器, QKE, KubeSphere
 
    - 在浏览器地址栏中，输入 KubeSphere 控制台绑定的公网 IP 并按下回车，进入到 KubeSphere 登录页面。
 
-     
+6. 输入用户及密码，点击**登录**。
 
-7. 输入用户及密码，点击**登录**。
+   <img src="/container/qke_plus/_images/kubesphere_login.png" style="zoom:50%;" />
 
-   ​	<img src="/container/qke_plus/_images/kubesphere_login.png" style="zoom:50%;" />
+
 
