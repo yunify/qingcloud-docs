@@ -4,6 +4,15 @@ collapsible: false
 weight: 5
 
 product:
+
+    - time: 2022-08-11
+      title: QKE v2.2.1 发布，新增持久卷名称信息展示
+      content: QKE v2.2.1 上线。<br/>- 新增持久卷名称信息展示，便于掌握 Pod 挂载持久卷信息。<br/>- 优化可视化控制台信息展示，便于查看控制台版本及初始账号信息。<br/>- 修复若干已知问题，提升了集群可用性。
+      url: /container/qke_plus/manual/mounting_resource/view_resource/
+      tags:
+      - 新功能
+      zone: 北京3区，上海1区，广东2区
+
     - time: 2022-07-29
       title: QKE v2.2.0 发布，新增集群告警管理
       content: QKE v2.2.0 上线。<br/>- 新增集群告警管理，支持为集群节点绑定或解绑告警策略。<br/>- 优化集群参数修改功能，提升用户体验。<br/>- 修复了一些已知问题，提升集群响应速度等。
