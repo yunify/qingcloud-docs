@@ -40,7 +40,7 @@ keyword: 容器, QKE, KubeSphere
 
 4. 在左侧导航栏，点击**可视化控制台**，进入**可视化控制台**页面。
 
-   ![](../../../_images/access_ks.png)·	
+   ![](../../../_images/bind_eip_done.png)
 
 6. 可通过以几种下方式进入 KubeSphere 登录页面。
 
@@ -52,6 +52,10 @@ keyword: 容器, QKE, KubeSphere
 
 7. 输入用户及密码，点击**登录**。
 
+   在**可视化控制台**页面，点击**初始账号及密码**可查看及复制账号密码。
+   
+   ​	![](../../../_images/init_user_pass.png)·	
+   
    > **说明**
    >
    > 为保障系统安全，首次登录后，请立即修改密码。
