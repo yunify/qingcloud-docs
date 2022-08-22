@@ -38,7 +38,7 @@ draft: false
 
 1. 在**交付中心**页面，点击列表中**操作**列的**流程详情**，进入**项目详情**页面。
 
-   ![](/appcenter/market/_images/service_project_detail_1.png)
+   ![](/appcenter/market/_images/license_project_detail_1.png)
 
 2. 在**交付流程详情**页面，可查看**交付流程详情**、**商品基本信息**及**服务商信息**。
 
@@ -61,7 +61,7 @@ draft: false
 
 3. 根 据License 使用情况，在**确认收货**环节完成收货确认。
 
-   ![](/appcenter/market/_images/acceptance_requirment.png)
+   ![](/appcenter/market/_images/license_confirm_acceptance.png)
 
    - 若确认 License 有效无误，然后点击**确认收货**。
    - 若 License 不可用或对 License 有疑义，填写您的问题，然后点击**驳回**。

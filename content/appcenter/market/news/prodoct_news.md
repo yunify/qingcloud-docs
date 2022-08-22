@@ -6,6 +6,14 @@ keyword:  AppCenter, 云市场, 产品动态
 weight: 10
 
 product:
+
+    - time: 2022-08-25
+      title: 支持硬件商品接入
+      content: 云市场新增硬件类商品接入。<br/>1. 服务商可以在<b>卖家中心</b> > <b>商品管理</b>发布硬件类商品。<br/>2. 用户可以在云市场选购硬件类商品，并使用交付中心验收商品。<br/>3. License 商品改用交付中心进行交付，提升服务体验。
+      url: ../../provider_guide/release_goods/hardware/
+      tags: 
+      - 新功能
+
     - time: 2022-07-13
       title: 支持 SaaS 商品接入
       content: 云市场新增 SaaS 类商品接入。<br/>1. 服务商可以在<b>卖家中心</b> > <b>商品管理</b>发布和调测 SaaS 类商品。<br/>2. 用户可以在云市场选购 SaaS 类商品，通过服务商提供的服务地址、账号、密码等信息来使用商品。
