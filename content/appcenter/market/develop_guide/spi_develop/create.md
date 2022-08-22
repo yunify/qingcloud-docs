@@ -8,7 +8,7 @@ draft: false
 
 ## 接口描述
 
-接口名称： CreateInstance  
+接口名称： CreateInstance。
 
 接口功能： 用户购买商品并支付后，云市场将通过实例创建通知接口发送信息至服务商的发货 URL。
 
@@ -16,7 +16,7 @@ draft: false
 
 | 参数          | 描述                                                         |
 | ------------- | ------------------------------------------------------------ |
-| action        | CreateInstance                                               |
+| action        | 固定值：CreateInstance。                                     |
 | signature     | 签名。                                                       |
 | timestamp     | UNIX 时间戳。单位：秒。                                      |
 | order_id      | 订单ID                                                       |
@@ -54,7 +54,7 @@ https://{url}?action=CreateInstance&debug=1&duration=1_year&order_id=mord-m80iai
 
 > **说明**
 >
-> 请求示例里的 `{url} `需替换为服务商发货地址。
+> 请求示例里的`{url}`需替换为服务商发货地址。
 
 ## 响应参数
 

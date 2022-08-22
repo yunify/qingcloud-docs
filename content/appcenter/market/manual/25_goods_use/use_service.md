@@ -10,13 +10,13 @@ draft: false
 
 ## 前提条件
 
-已在云市场购买人工服务商品并支付成功。具体操作请参考[购买商品](./appcenter/market/manual/20_purchase_app/)。
+已在云市场购买人工服务商品并支付成功。具体操作请参考[购买商品](/appcenter/market/manual/20_purchase_app/)。
 
 ## 服务交付流程
 
-使用人工服务类商品前，请先了解服务的整体交付流程，如下：
+使用人工服务类商品前，请先了解人工服务的整体交付流程，如下：
 
-![](../../../_images/delivery_process.svg)
+![](../../../_images/service_delivery_process.svg)
 
 ## 进入交付中心
 
@@ -24,7 +24,11 @@ draft: false
 
 2. 在左侧导航栏中，点击**交付中心**，进入**交付中心**页面。
 
-   ![](../../../_images/buyer_delivery_center_list.png)
+   交付中心列表展示了所有待交付或已交付商品的交付信息，包括商品规格、交付方式、交付状态、创建时间等。
+
+   ![](/appcenter/market_images/buyer_delivery_center_list.png)
+
+3. 在**交付方式**选项卡中，选择**人工服务**，则列表只展示人工服务类商品的交付信息。
 
 ## 查看流程详情
 

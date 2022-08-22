@@ -44,7 +44,7 @@ https://{url}?action=ExpireInstance&debug=1&instance_id=i-ascggds&signature=UjG4
 
 > **说明**
 >
-> 请求示例里的 `{url} `需替换为服务商发货地址。
+> 请求示例里的`{url}`需替换为服务商发货地址。
 
 ## 响应参数
 

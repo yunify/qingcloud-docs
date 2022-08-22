@@ -6,6 +6,21 @@ keyword:  AppCenter, 云市场, 产品动态
 weight: 10
 
 product:
+
+    - time: 2022-08-25
+      title: 支持硬件商品接入
+      content: 云市场新增硬件类商品接入。<br/>1. 服务商可以在<b>卖家中心</b> > <b>商品管理</b>发布硬件类商品。<br/>2. 用户可以在云市场选购硬件类商品，并使用交付中心验收商品。<br/>3. License 商品改用交付中心进行交付，提升服务体验。
+      url: ../../provider_guide/release_goods/hardware/
+      tags: 
+      - 新功能
+
+    - time: 2022-07-13
+      title: 支持 SaaS 商品接入
+      content: 云市场新增 SaaS 类商品接入。<br/>1. 服务商可以在<b>卖家中心</b> > <b>商品管理</b>发布和调测 SaaS 类商品。<br/>2. 用户可以在云市场选购 SaaS 类商品，通过服务商提供的服务地址、账号、密码等信息来使用商品。
+      url: ../../provider_guide/release_goods/saas/saas/
+      tags: 
+      - 新功能
+
     - time: 2022-05-15
       title: 支持 License 商品接入
       content: 云市场新增 License 类商品接入。<br/>1. 服务商可以在<b>卖家中心</b> > <b>商品管理</b>发布 License 类商品。<br/>2. 用户可以在云市场选购 License 类商品，通过获取 License 来使用商品。
@@ -32,17 +47,7 @@ product:
       content: 云市场为原 AppCenter 应用中心升级，致力于为大中小微企业以及个人开发者提供软件应用及产品服务的交易和交付平台。让用户可以轻松查找、测试、购买与部署所需的应用和服务。
       url: ../../intro/10_introduction/
       tags: 
-      - 新功能
-
-    - time: 2020-08-28
-      title: 支持一键创建集群及其依赖的资源
-      content: 为提升用户体验，AppCenter 2.0 开发框架上线支持支持一键部署应用。用户可以一键创建集群及 VPC，并将集群加入到 VPC 中的 Vxnet。
-      url: ../../manual/30_mgmt_cluster
-
-    - time: 2018-09-19
-      title: 支持应用滚动升级等新功能
-      content: 1.支持应用的滚动升级。<br/>2.允许包年包月计费的应用纵向扩容，并根据扩容配置，重新计算包年包月模式计费。
-      url: ../../manual/30_mgmt_cluster
+      - 新产品
 
 ---
 

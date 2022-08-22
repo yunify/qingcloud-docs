@@ -42,7 +42,7 @@ https://{url}?action=TestConnection&debug=1&timestamp=1652328684&signature=6Op7O
 
 > **说明**
 >
-> 请求示例里的` {url} `需替换为服务商发货地址。
+> 请求示例里的`{url}`需替换为服务商发货地址。
 
 ## 响应参数
 

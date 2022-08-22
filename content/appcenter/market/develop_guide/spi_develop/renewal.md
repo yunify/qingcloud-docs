@@ -54,7 +54,7 @@ https://{url}?action=RenewInstance&debug=1&duration=1_year&instance_id=i-ascggds
 
 > **说明**
 >
-> 请求示例里的 `{url} `需替换为服务商发货地址。
+> 请求示例里的`{url}`需替换为服务商发货地址。
 
 ## 响应参数
 
@@ -65,7 +65,7 @@ https://{url}?action=RenewInstance&debug=1&duration=1_year&instance_id=i-ascggds
 
 
 
-### 响应示例
+## 响应示例
 
 ```
 {

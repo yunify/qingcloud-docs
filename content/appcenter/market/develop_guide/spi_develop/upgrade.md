@@ -50,7 +50,7 @@ https://{url}?action=UpgradeInstance&debug=1&duration=1_year&instance_id=i-ascgg
 
 > **说明**
 >
-> 请求示例里的 `{url} `需替换为服务商发货地址。
+> 请求示例里的`{url}`需替换为服务商发货地址。
 
 ## 响应参数
 
