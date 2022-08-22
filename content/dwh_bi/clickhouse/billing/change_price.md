@@ -1,6 +1,6 @@
 ---
 title: "费用变更"
-description: 本小节主要介绍 C li c k H ou se 费用变更说明。 
+description: 本小节主要介绍 ClickHouse 费用变更说明。 
 keyword: 费用变更,数据仓库,ClickHouse
 weight: 20
 collapsible: false
@@ -11,7 +11,7 @@ draft: false
 
 - 变更配置：包括增加节点、删除节点、扩容节点规格、缩容节点规格。
 - 更改云服务器类型：ClickHouse 集群支持将集群节点类型从低配主机类型升级为高配主机类型。
-- 变更计费模式：从**按需计费**变更为**合约**，或从**合约**变更为**按需计费**。
+- 变更计费模式：从按**小时**计费变更为**包年包月**，或从**包年包月**变更为按**小时**计费。
 
 ## 变更配置
 
@@ -24,17 +24,17 @@ draft: false
 > 
 > - 不支持缩容节点容量。
 > 
-> - 对于合约的集群：变更配置不会改变集群到期时间。变更配置后，增加/退回的费用为 **从当前时间到集群到期时间之间的费用**。
+> - 对于包年包月的集群：变更配置不会改变集群到期时间。变更配置后，增加/退回的费用为 **从当前时间到集群到期时间之间的费用**。
 
 ## 变更计费模式
 
 变更计费模式有如下两种场景：
 
-- 从按需计费变更为合约：合约模式可以享受更大的价格优惠。
+- 从按**小时**计费变更为**包年包月**：包年包月模式可以享受更大的价格优惠。
 
-- 从合约变更为按需计费：按需计费相比合约单价更高，但使用更灵活。  
+- 从**包年包月**变更为按**小时**计费：按小时计费相比包年包月单价更高，但使用更灵活。  
 
-|<span style="display:inline-block;width:100px">源计费模式</span> |<span style="display:inline-block;width:100px">目标计费模式</span>|<span style="display:inline-block;width:330px">操作说明</span>|
-|:----|:----|:----|
-|   按需计费     | 合约  |  执行[修改计费模式](../../manual/cluster_lifecycle/switch_billing_mode)操作，变更立即生效，您需一次性支付包年/包月的费用。  |
-|   合约   | 按需计费   |  <li>执行[修改计费模式](../../manual/cluster_lifecycle/switch_billing_mode)操作，服务到期后，集群将按照按需计费模式进行收费。<li>执行[退订](../../manual/cluster_lifecycle/unsubscribe)操作，选择**是否销毁资源**为`否`，操作成功后，系统将费用退订至您的账户中，集群立即按照按需计费模式进行收费。 |
+| <span style="display:inline-block;width:100px">源计费模式</span> | <span style="display:inline-block;width:100px">目标计费模式</span> | <span style="display:inline-block;width:330px">操作说明</span> |
+| :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| 按小时计费                                                   | 包年包月                                                     | 执行[修改计费模式](../../manual/cluster_lifecycle/switch_billing_mode)操作，变更立即生效，您需一次性支付包年包月的费用。 |
+| 包年包月                                                     | 按小时计费                                                   | <li>执行[修改计费模式](../../manual/cluster_lifecycle/switch_billing_mode)操作，服务到期后，集群将按照按小时计费模式进行收费。<li>执行[退订](../../manual/cluster_lifecycle/unsubscribe)操作，选择**是否销毁资源**为`否`，操作成功后，系统将费用退订至您的账户中，集群立即按照按小时计费模式进行收费。 |

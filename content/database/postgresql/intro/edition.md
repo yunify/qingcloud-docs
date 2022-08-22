@@ -19,6 +19,13 @@ PostgreSQL 定制`基础版`、`高可用版`两个功能系列。
 
 ## 应用版本
 
+基于 PostgreSQL 12.9 、13.7、14.4内核版本分别构建了 PostgreSQL V2.0.0 高可用版和基础版。
+
+| <span style="display:inline-block;width:140px">版本</span> | <span style="display:inline-block;width:300px">内核版本</span> | <span style="display:inline-block;width:240px">应用版本</span> |
+| :--------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| 高可用版                                                   | <ul><li>PostgreSQL 12.9</li><li>PostgreSQL 13.7</li>  <li>PostgreSQL 14.4</li></ul> | PostgreSQL 高可用版 -V2.0.0                                  |
+| 基础版                                                     | <ul><li>PostgreSQL 12.9</li><li>PostgreSQL 13.7</li>  <li>PostgreSQL 14.4</li></ul> | PostgreSQL 基础版 -V2.0.0                                    |
+
 基于 PostgreSQL 11.1 、10.1、9.6.3内核版本分别构建了 PG11 高可用版，PG10 高可用版和基础版、PG9.6 高可用版和基础版。
 
 | <span style="display:inline-block;width:140px">版本</span> | <span style="display:inline-block;width:300px">内核版本</span> | <span style="display:inline-block;width:240px">应用版本</span> |
@@ -27,6 +34,13 @@ PostgreSQL 定制`基础版`、`高可用版`两个功能系列。
 | 基础版                                                     | <li>PostgreSQL 9.6.3 ，PostGIS 2.3 <li>PostgreSQL 10.1 ，PostGIS 2.4 | <li>PG10-基础版-V1.1.0 <li> PG9.6-基础版-V1.1.0              |
 
 ## 应用版本历程
+
+### PostgreSQL 高可用版/基础版 -V2.0.0
+
+基于 PostgreSQL 12.9 、13.7、14.4内核版本分别构建的高可用版和基础版。
+
+- 全新升级操作界面。
+- 优化配置参数项。
 
 ### PG11-高可用版-V1.0.9
 
@@ -59,7 +73,6 @@ PostgreSQL 定制`基础版`、`高可用版`两个功能系列。
 - 优化从库重建方式，从根据**节点IP**修改为根据**节点ID**方式。
 - 修复不合理的 CPU 内存组合问题。
 - 修复**节点详情**页面，角色描述异常问题。
-  
 ### PG9.6/PG10-高可用版-V1.1.5
 
 基于 PostgreSQL 10.1、9.6.3内核版本分别构建的高可用版。
