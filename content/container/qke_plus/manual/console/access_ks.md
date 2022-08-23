@@ -40,19 +40,23 @@ keyword: 容器, QKE, KubeSphere
 
 4. 在左侧导航栏，点击**可视化控制台**，进入**可视化控制台**页面。
 
-   ![](../../../_images/access_ks.png)·	
+   ![](../../../_images/bind_eip_done.png)
 
-6. 可通过以几种下方式进入 KubeSphere 登录页面。
+   点击**初始账号及密码**可查看及复制账号密码。
 
-   -  点击 **KubeSphere** 字样下方的公网 IP 地址，进入到 KubeSphere 登录页面。
-   - 点击 **前往控制台**，进入到 KubeSphere 登录页面。
+   ![](../../../_images/init_user_pass.png)
+
+5. 可通过以几种下方式进入 KubeSphere 登录页面。
+
+   - 点击 **KubeSphere** 字样下方的公网 IP 地址，进入到 KubeSphere 登录页面。
+
+   - 点击**前往控制台**，进入到 KubeSphere 登录页面。
+
    - 在浏览器地址栏中，输入 KubeSphere 控制台绑定的公网 IP 并按下回车，进入到 KubeSphere 登录页面。
 
-   ​	![](../../../_images/kubesphere_login.png)·	
+6. 输入用户及密码，点击**登录**。
 
-7. 输入用户及密码，点击**登录**。
+   <img src="/container/qke_plus/_images/kubesphere_login.png" style="zoom:50%;" />
 
-   > **说明**
-   >
-   > 为保障系统安全，首次登录后，请立即修改密码。
+
 
