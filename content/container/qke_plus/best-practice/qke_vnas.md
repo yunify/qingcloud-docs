@@ -147,9 +147,9 @@ keyword: QKE,vNAS,NFS,共享存储
 
    mountPath：vNAS 在容器中挂载的位置。
 
-   claimName：PVC 的名称，用于绑定 PVC。本例中为 **pvc-nfs-dynamic**。
+   claimName：PVC 的名称，用于绑定 PVC。本例中为“pvc-nfs-dynamic”。
 
-2. 执行以下命令便可以创建名为 deployment-vnas 应用。
+2. 执行以下命令便可以创建名为 deployment-nginx 的应用。
 
    ```
    kubectl create -f deployment.yaml 
