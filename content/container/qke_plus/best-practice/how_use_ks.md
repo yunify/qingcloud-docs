@@ -44,9 +44,9 @@ QKE 可以帮助您在创建 QKE 集群时，轻松快速的安装好 KubeSphere
 
 ### 步骤三：登录 KubeSphere
 
-1. 在**可视化控制台**页面，点击 **KubeSphere** 字样下方的公网 IP 地址或点击 **前往控制台**，进入到 KubeSphere 登录页面。
+1. 在**可视化控制台**页面，点击 **KubeSphere** 字样下方的公网 IP 地址或点击**前往控制台**，进入到 KubeSphere 登录页面。
 
-   ![](../../_images/access_ks.png)·	
+   ![](/container/qke_plus/_images/bind_eip_done.png)
 
 2. 输入用户名及密码，点击**登录**。
 
