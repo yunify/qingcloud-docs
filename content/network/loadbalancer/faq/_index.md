@@ -16,7 +16,7 @@ weight: 90
 - [如何获取来访者真实 IP？](/network/loadbalancer/faq/lb_get_real_ip/)
 - [如何检查负载均衡器会话保持是否生效？](/network/loadbalancer/faq/lb_check_session_hold/)
 - [如何排查负载均衡器会话保持不生效问题？](/network/loadbalancer/faq/resolve_check_session_hold/)
-- [负载均衡器支持什么类型的会话保持？](/network/loadbalancer/faq/long_cnet_session_hold/)
+- [负载均衡器支持什么类型的会话保持？](/network/loadbalancer/faq/seesion_support_type/)
 - [长连接和会话保持有什么关系？](/network/loadbalancer/faq/long_cnet_session_hold/)
 - [如何启用 WebSocket 支持？](/network/loadbalancer/faq/enable_websocket/)
 - [负载均衡器如何支持多证书？](/network/loadbalancer/faq/lb_bind_multi_cert/)
