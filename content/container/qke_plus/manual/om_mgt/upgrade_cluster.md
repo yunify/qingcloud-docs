@@ -3,7 +3,7 @@ title: "升级集群"
 description: 介绍如何进行集群升级。
 draft: false
 keyword: QKE,集群,升级
-weight: 30
+weight: 50
 ---
 
 当 QKE 集群有新版本时，您可以在控制台上一键升级，从而体验更丰富的功能。

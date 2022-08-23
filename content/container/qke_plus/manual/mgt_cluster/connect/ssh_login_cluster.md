@@ -22,13 +22,13 @@ weight: 20
 
 3. 在左侧导航栏，点击**集群信息**，进入**集群信息**页面。
 
-4. 在**环境参数**区域，点击**修改参数**。
+4. 在**环境参数**区域，找到 **K8s apiserver EIP** 参数，点击![参数配置](/container/qke_plus/_images/edit_icon.png)图标，参数值变为可编辑状态。
 
-5. 找到 **K8s apiserver EIP** 参数，若未配置，请先选择一个可用的公网 IP 进行配置。若无可用的公网 IP，点击**新建 K8s apiserver EIP** 进行创建。
+5. 选择一个可用的公网 IP 进行配置。若无可用的公网 IP，点击**新建 K8s apiserver EIP** 进行创建。
+
+   <img src="/container/qke_plus/_images/enable_ssh_login.png" style="zoom:50%">
 
 6. 点击**SSH 登录集群**后的开关按钮，开启 SSH 登录集群功能。
-
-   ![](/container/qke_plus/_images/enable_ssh_login.png)
 
 7. 选择一种认证方式，支持通过 SSH 密钥或用户名/密码登录。
 
@@ -40,7 +40,7 @@ weight: 20
      >
      > 创建 SSH 密钥时，请及时下载私钥文件。
 
-7. 点击**确认修改**，保存配置。
+8. 点击**确定**，保存配置。
 
 ## 通过 SSH 密钥登录
 
