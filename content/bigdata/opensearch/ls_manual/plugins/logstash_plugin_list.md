@@ -9,110 +9,121 @@ draft: false
 
 本小节主要列举了 Logstash 已集成插件列表。
 
-- logstash-output-elasticsearch
-- logstash-codec-avro
-- logstash-codec-cef
-- logstash-codec-collectd
-- logstash-codec-dots
-- logstash-codec-edn
-- logstash-codec-edn_lines
-- logstash-codec-es_bulk
-- logstash-codec-fluent
-- logstash-codec-graphite
-- logstash-codec-json
-- logstash-codec-json_lines
-- logstash-codec-line
-- logstash-codec-msgpack
-- logstash-codec-multiline
-- logstash-codec-netflow
-- logstash-codec-plain
-- logstash-codec-rubydebug
-- logstash-filter-aggregate
-- logstash-filter-anonymize
-- logstash-filter-cidr
-- logstash-filter-clone
-- logstash-filter-csv
-- logstash-filter-date
-- logstash-filter-de_dot
-- logstash-filter-dissect
-- logstash-filter-dns
-- logstash-filter-drop
-- logstash-filter-elasticsearch
-- logstash-filter-fingerprint
-- logstash-filter-geoip
-- logstash-filter-grok
-- logstash-filter-http
-- logstash-integration-jdbc
-- logstash-filter-json
-- logstash-filter-kv
-- logstash-filter-memcached
-- logstash-filter-metrics
-- logstash-filter-mutate
-- logstash-filter-prune
-- logstash-filter-ruby
-- logstash-filter-sleep
-- logstash-filter-split
-- logstash-filter-syslog_pri
-- logstash-filter-throttle
-- logstash-filter-translate
-- logstash-filter-truncate
-- logstash-filter-urldecode
-- logstash-filter-useragent
-- logstash-filter-uuid
-- logstash-filter-xml
-- logstash-input-azure_event_hubs
-- logstash-input-beats
-- logstash-input-couchdb_changes
-- logstash-input-dead_letter_queue
-- logstash-input-elasticsearch
-- logstash-input-exec
-- logstash-input-file
-- logstash-input-ganglia
-- logstash-input-gelf
-- logstash-input-generator
-- logstash-input-graphite
-- logstash-input-heartbeat
-- logstash-input-http
-- logstash-input-http_poller
-- logstash-input-imap
-- logstash-input-jms
-- logstash-input-pipe
-- logstash-input-redis
-- logstash-input-s3
-- logstash-input-snmp
-- logstash-input-snmptrap
-- logstash-input-sqs
-- logstash-input-stdin
-- logstash-input-syslog
-- logstash-input-tcp
-- logstash-input-twitter
-- logstash-input-udp
-- logstash-input-unix
-- logstash-integration-kafka
-- logstash-integration-rabbitmq
-- logstash-output-cloudwatch
-- logstash-output-csv
-- logstash-output-elastic_app_search
-- logstash-output-email
-- logstash-output-file
-- logstash-output-graphite
-- logstash-output-http
-- logstash-output-lumberjack
-- logstash-output-nagios
-- logstash-output-null
-- logstash-output-pipe
-- logstash-output-redis
-- logstash-output-s3
-- logstash-output-sns
-- logstash-output-sqs
-- logstash-output-stdout
-- logstash-output-tcp
-- logstash-output-udp
-- logstash-output-webhdfs
-- logstash-input-irc
-- logstash-input-log4j
-- logstash-input-xmpp
-- logstash-output-irc
-- logstash-output-statsd
-- logstash-output-xmpp
-- logstash-output-opensearch
+* logstash]()-codec-avro (3.3.1)
+* logstash-codec-cef (6.2.3)
+* logstash-codec-collectd (3.1.0)
+* logstash-codec-dots (3.0.6)
+* logstash-codec-edn (3.1.0)
+* logstash-codec-edn_lines (3.1.0)
+* logstash-codec-es_bulk (3.1.0)
+* logstash-codec-fluent (3.4.1)
+* logstash-codec-graphite (3.0.6)
+* logstash-codec-json (3.1.0)
+* logstash-codec-json_lines (3.1.0)
+* logstash-codec-line (3.1.1)
+* logstash-codec-msgpack (3.1.0)
+* logstash-codec-multiline (3.1.1)
+* logstash-codec-netflow (4.2.2)
+* logstash-codec-plain (3.1.0)
+* logstash-codec-rubydebug (3.1.0)
+* logstash-filter-aggregate (2.10.0)
+* logstash-filter-anonymize (3.0.6)
+* logstash-filter-cidr (3.1.3)
+* logstash-filter-clone (4.1.1)
+* logstash-filter-csv (3.1.1)
+* logstash-filter-date (3.1.14)
+* logstash-filter-de_dot (1.0.4)
+* logstash-filter-dissect (1.2.4)
+* logstash-filter-dns (3.1.4)
+* logstash-filter-drop (3.0.5)
+* logstash-filter-elasticsearch (3.11.0)
+* logstash-filter-fingerprint (3.3.2)
+* logstash-filter-geoip (7.2.9)
+* logstash-filter-grok (4.4.1)
+* logstash-filter-http (1.0.2)
+* logstash-filter-json (3.2.0)
+* logstash-filter-kv (4.5.0)
+* logstash-filter-memcached (1.1.0)
+* logstash-filter-metrics (4.0.7)
+* logstash-filter-mutate (3.5.6)
+* logstash-filter-prune (3.0.4)
+* logstash-filter-ruby (3.1.7)
+* logstash-filter-sleep (3.0.7)
+* logstash-filter-split (3.1.8)
+* logstash-filter-syslog_pri (3.1.1)
+* logstash-filter-throttle (4.0.4)
+* logstash-filter-translate (3.3.0)
+* logstash-filter-truncate (1.0.4)
+* logstash-filter-urldecode (3.0.6)
+* logstash-filter-useragent (3.3.2)
+* logstash-filter-uuid (3.0.5)
+* logstash-filter-xml (4.1.3)
+* logstash-input-azure_event_hubs (1.4.3)
+* logstash-input-beats (6.2.5)
+  * logstash-input-elastic_agent (alias)
+* logstash-input-couchdb_changes (3.1.6)
+* logstash-input-dead_letter_queue (1.1.8)
+* logstash-input-elasticsearch (4.12.1)
+* logstash-input-exec (3.3.3)
+* logstash-input-file (4.4.0)
+* logstash-input-ganglia (3.1.4)
+* logstash-input-gelf (3.3.0)
+* logstash-input-generator (3.0.6)
+* logstash-input-graphite (3.0.6)
+* logstash-input-heartbeat (3.1.1)
+* logstash-input-http (3.4.5)
+* logstash-input-http_poller (5.1.0)
+* logstash-input-imap (3.1.0)
+* logstash-input-irc (3.0.7)
+* logstash-input-jms (3.1.2)
+* logstash-input-log4j (3.1.3)
+* logstash-input-pipe (3.0.7)
+* logstash-input-redis (3.7.0)
+* logstash-input-s3 (3.8.1)
+* logstash-input-snmp (1.2.8)
+* logstash-input-snmptrap (3.0.6)
+* logstash-input-sqs (3.1.3)
+* logstash-input-stdin (3.4.0)
+* logstash-input-syslog (3.5.0)
+* logstash-input-tcp (6.2.6)
+* logstash-input-twitter (4.0.3)
+* logstash-input-udp (3.5.0)
+* logstash-input-unix (3.0.7)
+* logstash-input-xmpp (3.1.7)
+* logstash-integration-elastic_enterprise_search (2.1.2)
+  * logstash-output-elastic_app_search
+  * logstash-output-elastic_workplace_search
+* logstash-integration-jdbc (5.1.8)
+  * logstash-input-jdbc
+  * logstash-filter-jdbc_streaming
+  * logstash-filter-jdbc_static
+* logstash-integration-kafka (10.8.2)
+  * logstash-input-kafka
+  * logstash-output-kafka
+* logstash-integration-rabbitmq (7.3.0)
+  * logstash-input-rabbitmq
+  * logstash-output-rabbitmq
+* logstash-output-cloudwatch (3.0.9)
+* logstash-output-csv (3.0.8)
+* logstash-output-elasticsearch (11.2.3)
+* logstash-output-email (4.1.1)
+* logstash-output-file (4.3.0)
+* logstash-output-graphite (3.1.6)
+* logstash-output-http (5.2.5)
+* logstash-output-irc (3.0.6)
+* logstash-output-lumberjack (3.1.9)
+* logstash-output-nagios (3.0.6)
+* logstash-output-null (3.0.5)
+* logstash-output-opensearch (1.2.0)
+* logstash-output-pipe (3.0.6)
+* logstash-output-redis (5.0.0)
+* logstash-output-s3 (4.3.5)
+* logstash-output-sns (4.0.8)
+* logstash-output-sqs (6.0.0)
+* logstash-output-statsd (3.2.0)
+* logstash-output-stdout (3.1.4)
+* logstash-output-tcp (6.0.0)
+* logstash-output-udp (3.2.0)
+* logstash-output-webhdfs (3.0.6)
+* logstash-output-xmpp (3.0.8)
+* logstash-patterns-core (4.3.1)
