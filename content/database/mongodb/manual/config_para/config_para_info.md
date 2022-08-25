@@ -15,22 +15,24 @@ draft: false
 
 ## 公共参数
 
-|<span style="display:inline-block;width:80px">参数</span> |<span style="display:inline-block;width:120px">取值范围</span>|<span style="display:inline-block;width:420px">参数说明</span>|
-|:----|:----|:----|
-| mongod 的监听端口   |   1025～65535  |  表示 mongod 服务监听端口。默认为 `27017`。|
-| root 用户密码   |       -  |  表示数据库 root 用户帐号密码。默认为 `Change1Pwd`。|
-| qc_monitor 用户密码  |       -  |  表示监控服务 qc_monitor 用户帐号密码，用于 Zabbix 和 Mongodb Exporter 监控。默认为 `Change1Pwd`。|
-|   存储引擎      |  -       |   表示 MongoDB 的存储引擎。 <span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>集群创建后，不支持修改。</li></span>   |
+| <span style="display:inline-block;width:80px">参数</span> | <span style="display:inline-block;width:120px">取值范围</span> | <span style="display:inline-block;width:420px">参数说明</span> |
+| :-------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| mongod 的监听端口                                         | 1025～65535                                                  | 表示 mongod 服务监听端口。默认为 `27017`。                   |
+| root 用户密码                                             | -                                                            | 表示数据库 root 用户帐号密码。默认为 `Change1Pwd`。          |
+| qc_monitor 用户密码                                       | -                                                            | 表示监控服务 qc_monitor 用户帐号密码，用于 Zabbix 和 Mongodb Exporter 监控。默认为 `Change1Pwd`。 |
+| 存储引擎                                                  | -                                                            | 表示 MongoDB 的存储引擎。 <span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>集群创建后，不支持修改。</li></span> |
+| wiredTigerCacheSize                                       | （RAM - 1G）* 50%                                            | 表示 wiredTiger 内存大小。默认为（RAM - 1G）* 50%。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <ul><li>集群创建后，不支持修改。</li><li>为避免文件系统缓存内存较小，有潜在的 OOM 风险，因此调整为官方推荐的配置 （RAM - 1G）* 50%。</li></ui></span> |
 
 ## Replica Node 参数
 
-|<span style="display:inline-block;width:80px">参数</span> |<span style="display:inline-block;width:120px">取值范围</span>|<span style="display:inline-block;width:420px">参数说明</span>|
-|:----|:----|:----|
-| setParameter. cursorTimeoutMillis   |       -  |  表示当 MongoDB 删除闲置游标的时间阈值。<li>单位为毫秒。 <li>默认为 600000ms。 |
-|   operationPro filing.mode    |   off，slowOp，all |  表示是否开启慢查询检测。<li>默认为 `关闭`，表示关闭满查询检测。<li> `slowOp` 表示根据 **slowOpThresholdMs** 参数进行慢查询检测。 <li> `all` 表示开启全局慢查询检测。  |
-|   operationProfiling. slowOpThresholdMs    |   - |  表示慢日志查询任务最大延迟时间。 <li>单位是毫秒。 <li>默认为 100ms。  |
-|   replication. oplogSizeMB    |   990~51200 |  表示 oplog 最大存储容量。 <li>单位是 MB。 <li>默认为20480MB。  |
-|   replication.enable MajorityReadConcern    |  true，false |   表示是否开启读控制。<li>默认为`true`，表示只能读取到成功写入到大多数节点的数据。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>修改后，将重启集群。</li></span>  |
+| <span style="display:inline-block;width:80px">参数</span> | <span style="display:inline-block;width:120px">取值范围</span> | <span style="display:inline-block;width:420px">参数说明</span> |
+| :-------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| cursorTimeoutMillis                                       | 600000                                                       | 表示游标超时时间。<li>单位为毫秒。<li>默认为 600000ms。      |
+| setParameter. cursorTimeoutMillis                         | -                                                            | 表示当 MongoDB 删除闲置游标的时间阈值。<li>单位为毫秒。 <li>默认为 600000ms。 |
+| operationPro filing.mode                                  | off，slowOp，all                                             | 表示是否开启慢查询检测。<li>默认为 `关闭`，表示关闭满查询检测，不会收集如何性能数据。<li> `slowOp` 表示根据 **slowOpThresholdMs** 参数进行慢查询检测。 <li> `all` 表示开启全局慢查询检测。 |
+| operationProfiling. slowOpThresholdMs                     | -                                                            | 表示慢日志查询任务最大延迟时间。 <li>单位是毫秒。 <li>默认为 100ms。 |
+| replication. oplogSizeMB                                  | 990~51200                                                    | 表示 oplog 最大存储容量。 <li>单位是 MB。 <li>默认为20480MB。 |
+| replication.enable MajorityReadConcern                    | true，false                                                  | 表示是否开启读控制。<br>默认为`true`，表示只能读取到成功写入到大多数节点的数据，开启此选项后，可以在 read 操作中使用“majority”，避免读到脏数据。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br>修改后，将重启集群。</li></span> |
 <!--3.6.8-v1.0.0 版本开始支持该参数-->
 
 ## 数据同步参数

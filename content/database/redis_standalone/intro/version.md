@@ -20,6 +20,7 @@ Redis Standalone 6.2.5 - v1.0.0 内核版本升级，基于 Redis 6.2.5 版本�
 - 新增 [ACL 管理](../../manual/mgt_user/user_info)功能，可针对不同用户授予不同的命令及数据权限。
 - 新增 [Redis Exporter](../../manual/metrics_alarm/redis_exporter_service) 配置参数和组件，支持对接 Prometheus，提供基于 Exporter 的 Redis 服务状态监控功能。
 - 新增 [Node Exporter](../../manual/metrics_alarm/node_exporter_service) 配置参数和组件，支持对接 Prometheus，提供基于 Exporter 的资源状态监控功能。
+- 新增 zabbix-agint2 ，支持 Zabbix 监控所需服务。
 
 ### Redis 5.0.11 - QingCloud 3.1.1
 
