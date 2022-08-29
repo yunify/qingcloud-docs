@@ -19,30 +19,30 @@ Redis Standalone 提供集群服务和资源性能监控指标和告警信息。
 
 ## 支持的服务监控指标
 
-|  <span style="display:inline-block;width:200px">监控项</span> | <span style="display:inline-block;width:80px">监控周期</span> | <span style="display:inline-block;width:60px">单位</span> |  <span style="display:inline-block;width:320px">指标含义</span>  |
-|:--- |:--- |:--- |:--- |
-| 节点角色           | 5分钟    | -       | 统计节点实际角色变化情况。<li>`master` 表示主节点。<li>`slave` 表示从节点/副本。 |
-| 副本节点状态       | 5分钟    | -       | 统计副本节点是否指向预期的主节点。<li>`true` 表示正确指向。<li>`flase` 表示未正确指向。<li>若当前节点为主节点，则统计值应永远为 `true`。 |
-| 主从复制落后字节数 | 5分钟    | Byte    | 统计副本复制主节点数据过程中，比主节点落后的字节数。         |
-| REDIS内存使用率    | 5分钟    | %       | 统计节点内存使用率，包括内存使用率最大值、内存使用率最小值和内存使用率平均值。 |
-| 操作数             | 5分钟    | counts  | 使用 Get 操作、Set 操作、Key 类型及 String 类型相关命令的次数。 |
-| 操作数 II          | 5分钟    | counts  | 使用 Set 类型 、Sorted Set 类型、List 类型和 Hash 类型相关命令的次数。 |
-| 客户端连接数       | 5分钟    | counts  | 统计客户端连接数最大值、最小值及平均值。                     |
-| 连接数             | 5分钟    | counts  | 统计总计连接数。                                             |
-| 键的数量           | 5分钟    | counts  | 统计被拒绝的 Key 个数、过期的 Key 个数及 Key 的总数。        |
-| 查询命中数         | 5分钟    | counts  | 统计查询命中次数及查询未命中次数。                           |
-| 命中率             | 5分钟    | %       | 统计命中率最大值、最小值及平均值。                           |
-| QPS                | 5分钟    | count/s | 每秒访问数。                                                     |
-| KEYS 监控组        | 5分钟    | counts  | Keys 命令族各命令操作次数。  <li>仅 Redis 6.* 版本支持该监控项。|
-| STRINGS 监控组     | 5分钟    | counts  | Strings 命令族各命令操作次数。 <li>仅 Redis 6.* 版本支持该监控项。|
-| HASHES 监控组      | 5分钟    | counts  | Hashes 命令族各命令操作次数。  <li>仅 Redis 6.* 版本支持该监控项。|
-| LISTS 监控组       | 5分钟    | counts  | Lists 命令族各命令操作次数。    <li>仅 Redis 6.* 版本支持该监控项。|
-| SET 监控组         | 5分钟    | counts  | Sets 命令族各命令操作次数。      <li>仅 Redis 6.* 版本支持该监控项。|
-| ZSET 监控组        | 5分钟    | counts  | Sorted Sets 命令族各命令操作次数。 <li>仅 Redis 6.* 版本支持该监控项。 |
-| HYPERLOG 监控组    | 5分钟    | counts  | HyperLogLog 命令族各命令操作次数。 <li>仅 Redis 6.* 版本支持该监控项。 |
-| PUBSUB 监控组      | 5分钟    | counts  | Pub 及 Sub 命令族各命令操作次数。   <li>仅 Redis 6.* 版本支持该监控项。 |
-| TRANSACTION 监控组 | 5分钟    | counts  | Transaction 命令族各命令操作次数。  <li>仅 Redis 6.* 版本支持该监控项。|
-| SCRIPT 监控组      | 5分钟    | counts  | Sripting 命令族各命令操作次数。      <li>仅 Redis 6.* 版本支持该监控项。 |
+| <span style="display:inline-block;width:200px">监控项</span> | <span style="display:inline-block;width:80px">监控周期</span> | <span style="display:inline-block;width:60px">单位</span> | <span style="display:inline-block;width:320px">指标含义</span> |
+| :----------------------------------------------------------- | :----------------------------------------------------------- | :-------------------------------------------------------- | :----------------------------------------------------------- |
+| 节点角色                                                     | 5分钟                                                        | -                                                         | 统计节点实际角色变化情况。<li>`master` 表示主节点。<li>`slave` 表示从节点/副本。 |
+| 副本节点状态                                                 | 5分钟                                                        | -                                                         | 统计副本节点是否指向预期的主节点。<li>`true` 表示正确指向。<li>`flase` 表示未正确指向。<li>若当前节点为主节点，则统计值应永远为 `true`。 |
+| 主从复制落后字节数                                           | 5分钟                                                        | Byte                                                      | 统计副本复制主节点数据过程中，比主节点落后的字节数。         |
+| REDIS内存使用率                                              | 5分钟                                                        | %                                                         | 统计节点内存使用率，包括内存使用率最大值、内存使用率最小值和内存使用率平均值。 |
+| 操作数                                                       | 5分钟                                                        | counts                                                    | 使用 Get 操作、Set 操作、Key 类型及 String 类型相关命令的次数。 |
+| 操作数 II                                                    | 5分钟                                                        | counts                                                    | 使用 Set 类型 、Sorted Set 类型、List 类型和 Hash 类型相关命令的次数。 |
+| 客户端连接数                                                 | 5分钟                                                        | counts                                                    | 统计客户端连接数最大值、最小值及平均值。                     |
+| 连接数                                                       | 5分钟                                                        | counts                                                    | 统计总计连接数。                                             |
+| 键的数量                                                     | 5分钟                                                        | counts                                                    | 统计被拒绝的 Key 个数、过期的 Key 个数及 Key 的总数。        |
+| 查询命中数                                                   | 5分钟                                                        | counts                                                    | 统计查询命中次数及查询未命中次数。                           |
+| 命中率                                                       | 5分钟                                                        | %                                                         | 统计命中率最大值、最小值及平均值。                           |
+| QPS                                                          | 5分钟                                                        | count/s                                                   | 每秒访问数。                                                 |
+| KEYS 监控组                                                  | 5分钟                                                        | counts                                                    | Keys 命令族各命令操作次数。  <li>仅 Redis 6.* 版本支持该监控项。<br>redis-cli INFO Commandstats 命令中包含 del, dump, exists, expire, expireat, move, persist, pexpire, pexpireat, pttl, randomkey, rename, renamenx, restore, sort, ttl, type, scan 共18项监控的 calls 值。 |
+| STRINGS 监控组                                               | 5分钟                                                        | counts                                                    | Strings 命令族各命令操作次数。 <li>仅 Redis 6.* 版本支持该监控项。<br/>redis-cli INFO Commandstats 命令中包含 append, bitcount, bitop, decr, decrby, get, getbit, getrange, getset, incr, incrby, incrbyfloat, mget, mset, msetnx, psetex, set, setbit, setex, setnx, setrange, strlen 共22项监控的 calls 值。 |
+| HASHES 监控组                                                | 5分钟                                                        | counts                                                    | Hashes 命令族各命令操作次数。  <li>仅 Redis 6.* 版本支持该监控项。<br/>redis-cli INFO Commandstats 命令中包含 hdel, hexists, hget, hgetall, hincrby, hincrbyfloat, hkeys, hlen, hmget, hmset, hset, hsetnx, hvals, hscan 共14项监控的 calls 值。 |
+| LISTS 监控组                                                 | 5分钟                                                        | counts                                                    | Lists 命令族各命令操作次数。    <li>仅 Redis 6.* 版本支持该监控项。<br/>redis-cli INFO Commandstats 命令中包含 blpop, brpop, brpoplpush, lindex, linsert, llen, lpop, lpush, lpushx, lrange, lrem, lset, ltrim, rpop, rpoplpush, rpush, rpushx 共17项监控的 calls 值。 |
+| SET 监控组                                                   | 5分钟                                                        | counts                                                    | Sets 命令族各命令操作次数。      <li>仅 Redis 6.* 版本支持该监控项。<br/>redis-cli INFO Commandstats 命令中包含 sadd, scard, sdiff, sdiffstore, sinter, sinterstore, sismember, smembers, smove, spop, srandmember, srem, sunion, sunionstore, sscan 共15项监控的 calls 值。 |
+| ZSET 监控组                                                  | 5分钟                                                        | counts                                                    | Sorted Sets 命令族各命令操作次数。 <li>仅 Redis 6.* 版本支持该监控项。<br/>redis-cli INFO Commandstats 命令中包含 zadd, zcard, zcount, zincrby, zrange, zrangebyscore, zrank, zrem, zremrangebyrank, zremrangebyscore, zrevrange, zrevrangebyscore, zrevrank, zscore, zunionstore, zinterstore, zscan, zrangebylex, zlexcount, zremrangebylex 共20项监控的 calls 值。 |
+| HYPERLOG 监控组                                              | 5分钟                                                        | counts                                                    | HyperLogLog 命令族各命令操作次数。 <li>仅 Redis 6.* 版本支持该监控项。<br/>redis-cli INFO Commandstats 命令中包含 pfadd, pfcount, pfmerge 共3项监控的 calls 值。 |
+| PUBSUB 监控组                                                | 5分钟                                                        | counts                                                    | Pub 及 Sub 命令族各命令操作次数。   <li>仅 Redis 6.* 版本支持该监控项。<br/>redis-cli INFO Commandstats 命令中包含 psubscribe, publish, pubsub, punsubscribe, subscribe, unsubscribe 共6项监控的 calls 值。 |
+| TRANSACTION 监控组                                           | 5分钟                                                        | counts                                                    | Transaction 命令族各命令操作次数。  <li>仅 Redis 6.* 版本支持该监控项。<br/>redis-cli INFO Commandstats 命令中包含 discard, exec, multi, unwatch, watch 共5项监控的 calls 值。 |
+| SCRIPT 监控组                                                | 5分钟                                                        | counts                                                    | Sripting 命令族各命令操作次数。      <li>仅 Redis 6.* 版本支持该监控项。<br/>redis-cli INFO Commandstats 命令中包含 eval, evalsha, script 共3项监控的 calls 值。 |
 
 ## 支持的资源监控指标
 
