@@ -11,10 +11,10 @@ draft: false
 mtools 是由 MongoDB 官方实现的一套工具集，具有快速日志查询分析、统计功能，是一组非常好用的 MongoDB 日志分析工具。mtools 包括以下组件：
 
 - **mlaunch**：支持快速搭建本地测试环境，可以是单机、副本集、分片集群。
-- mloginfo：获取一个日志文件并报告有关该日志文件的 Default Information。
-- **mlogfilter**：日志过滤组件，支持按时间检索慢查询、全表扫描操作，支持通过多个属性进行信息过滤，支持输出为JSON格式。
+- **mloginfo**：获取一个日志文件并报告有关该日志文件的 Default Information。
+- **mlogfilter**：日志过滤组件，支持按时间检索慢查询、全表扫描操作，支持通过多个属性进行信息过滤，支持输出为 JSON 格式。
 - **mplotqueries**：支持将日志分析结果转换为图表形式。
-- **mlogvis**：支持将日志分析结果转换为一个独立的HTML页面，实现与mplotqueries同样的功能。
+- **mlogvis**：支持将日志分析结果转换为一个独立的 HTML 页面，实现与 mplotqueries 同样的功能。
 
 下面主要介绍 mloginfo 和 mlogfilter 两种组件的基本使用方法。
 
@@ -114,9 +114,9 @@ mlogfilter 可灵活的设置日期条件，包括指定起始、结束时间以
   
   ```
 
-* 查看慢扫描操作
+* 查看慢扫描操作。
 
-  慢扫描是指该操作需要扫描过多的记录（超过 1w 行），且返回数量不足扫描数量的1/100，该操作通常对 CPU 消耗很高，也比较低效
+  慢扫描是指该操作需要扫描过多的记录（超过 1w 行），且返回数量不足扫描数量的1/100，该操作通常对 CPU 消耗很高，也比较低效。
 
   ```shell
   # mlogfilter mongo.log --scan --shorten 200
@@ -149,7 +149,7 @@ mlogfilter 可灵活的设置日期条件，包括指定起始、结束时间以
   2018-05-18T21:51:00.433+0800 I COMMAND [conn44] command dmspace.DeviceInfo command: insert { inser...tadata: { acquireCount: { w: 16 } }, oplog: { acquireCount: { w: 16 } } } protocol:op_command 252ms
   ```
 
-* 根据操作类型过滤
+* 根据操作类型过滤。
 
   ```shell
   # mlogfilter mongo.log --operation update

@@ -1,5 +1,5 @@
 ---
-title: "配置并验证 logstash-kafka 插件"
+title: "配置并验证 logstash-kafka 系列插件"
 description: 本小节主要介绍 logstash-kafka 插件验证。
 keyword: Logstash-kafka,插件使用说明
 weight: 65
@@ -9,7 +9,7 @@ draft: false
 
 ---
 
-本小节为您介绍如何配置和验证 logstash-kafka 插件。
+本小节为您介绍如何配置和验证 logstash-kafka 相关插件。
 
 ## 前提条件
 
@@ -33,7 +33,7 @@ draft: false
 
 2. 创建测试用 Topic。
 
-   浏览器登录 kafka Manager 界面并创建以下两个 topic，详细操作请参见[创建 Topic](/middware/kafka/quickstart/create_resource/)。
+   浏览器登录 Kafka Manager 界面并创建以下两个 topic，详细操作请参见[创建 Topic](/middware/kafka/quickstart/create_resource/)。
 
    * es-output-topic：用于测试 logstash-output-kafka
    * es-test-topic：用于测试 logstash-input-kafka
@@ -55,7 +55,7 @@ draft: false
 
 ## 步骤 3：验证 logstash-output-kafka
 
-1. 配置 logstash。
+1. 配置 Logstash。
 
    将 Logstash 节点的`output_conf_content`参数设置为以下内容，详细操作请参见[修改配置参数](/bigdata/opensearch/manual/config_para/modify_para/)。
 
@@ -84,7 +84,7 @@ draft: false
    curl -d "msg 5" 172.22.2.48:9700
    ```
 
-5. 登录 kafka 客户端节点，详细操作请参见[登录 Kafka 客户端](/middware/kafka/manual/kafka_client/login_kafka_client/)。
+5. 登录 Kafka 客户端节点，详细操作请参见[登录 Kafka 客户端](/middware/kafka/manual/kafka_client/login_kafka_client/)。
 
 6. 执行以下命令，查看消息接收情况。
 
@@ -96,7 +96,7 @@ draft: false
 
 ## 步骤 4：验证 logstash-input-kafka
 
-1. 配置 logstash。
+1. 配置 Logstash。
 
    将 Logstash 节点的`input_conf_content`参数设置为以下内容，详细操作请参见[修改配置参数](/bigdata/opensearch/manual/config_para/modify_para/)。
 
@@ -113,7 +113,7 @@ draft: false
 
    <img src="../../../_images/logstash_kafka_05.png" style="zoom:100%;" />
 
-3. 登录 kafka 客户端节点，详细操作请参见[登录 Kafka 客户端](/middware/kafka/manual/kafka_client/login_kafka_client/)。
+3. 登录 Kafka 客户端节点，详细操作请参见[登录 Kafka 客户端](/middware/kafka/manual/kafka_client/login_kafka_client/)。
 
 4. 执行以下命令，查看消息接收情况。
 
@@ -137,11 +137,11 @@ draft: false
    GET _cat/indices
    ```
 
-   使用 logstash-input-kafka 插件，从 topic 消费的消息被写入opensearch集群，索引名称 logstash-yyyy.MM.dd。
+   使用 logstash-input-kafka 插件，从 topic 消费的消息被写入 Opensearch 集群，索引名称 logstash-yyyy.MM.dd。
 
    <img src="../../../_images/logstash_kafka_09.png" style="zoom:100%;" />
 
-5. 执行以下命令，查看索引中的内容，包含前述在topic中写入的消息。
+5. 执行以下命令，查看索引中的内容，包含前述在 topic 中写入的消息。
 
    ```shell
    GET /logstash-2022.08.16/_search

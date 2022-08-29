@@ -40,7 +40,7 @@ Redis Cluster 支持部分参数的配置与修改，不同版本支持的参数
 | TLS-Protocols             |  -  | 表示指定要支持的 TLS 版本。         | **✕**       | **✓**     |
 | TLS-Ciphers               | -  | 表示配置允许的 TLS 加密算法，该配置仅适用于 <= TLSv1.2。       | **✕**       | **✓**     |
 | TLS-Ciphersuites          | -  | 表示配置允许的 TLSv1.3 加密算法。       | **✕**       | **✓**     |
-| TLS-Prefer-Server -Ciphers | <li>是  <li>否   | 表示密码规则以服务器为准。<li>取值`是` 表示以服务器为准。<li>取值`否` 表示以服务端为准。 | **✕**       | **✓**     |
+| TLS-Prefer-Server-Ciphers | <li>是  <li>否   | 表示密码规则以服务器为准。<li>取值`是` 表示以服务器为准。<li>取值`否` 表示以服务端为准。 | **✕**       | **✓**     |
 | tls-session-caching       | <li>是  <li>否   | 表示是否开启 TLS 会话缓存。<li>取值`是` 表示启用。<li>取值`否` 表示不启用。  | **✕**       | **✓**     |
 | TLS-Session-Cache-Size    | -  | 表示 TLS 会话缓存大小。默认大小为 20480。    | **✕**       | **✓**     |
 | TLS-Session-Cache-Timeout | -  | 表示 TLS 会话的默认超时时间。<li>默认值为 300 ，单位为秒（s）。  | **✕**       | **✓**     |
@@ -70,27 +70,27 @@ Redis Cluster 支持部分参数的配置与修改，不同版本支持的参数
 | min-slaves-to-write       |  0～ | 表示当一个主节点有小于 N 个从节点并且每个从节点的延迟最大不超过 M 秒的时候，停止接受写操作。 <li>默认值为 0，单位为秒（s）。  | **✓**       | **✓**     |
 | no-appendfsync-on -rewrite |   <li>是  <li>否 | 表示当有 BGSAVE 或 BGREWRITEAOF 正在执行的时候，阻止 fsync() 的调用。<li>是：阻止</li><li>否：不阻止</li>     | **✓**       | **✓**     |
 | notify-keyspace-events    |  -  | 表示指定 Redis 会发送哪些类型的通知。<li>  `K`：键空间通知，所有通知以__keyspace@<db>__为前缀。</li><li>`E`：键事件通知，所有通知以__keyevent@<db>__为前缀。</li><li>`g`：DEL、EXPIRE、RENAME 等类型无关的通用命令的通知。</li><li>`$`：字符串命令的通知。</li> <li>`l`：列表命令的通知。</li><li>`s`：集合命令的通知。</li><li>`h`：哈希命令的通知。</li><li>`z`：有序集合命令的通知。</li><li>`x`：过期事件，每当有过期键被删除时发送。</li><li> `e`：驱逐（evict）事件，每当有键因为 maxmemory 策略而被删除时发送。</li><li> `A`：参数 g$lshzxe 的别名。</li><div style="background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;">  <b>说明</b><br/>- 开启键空间通知将消耗 CPU 计算资源，故该通知默认关闭。</br>- 如果定义服务器发送某些通知，输入参数需必选 `K` 或 `E`；如订阅键事件中驱逐事件相关的通知，参数填写为“Ee”；如订阅发送所有类型的通知，参数填写为“AKE”。</div>   | **✓**       | **✓**     |
-| repl-backlog -size         | 16384~  | 表示主节点保存 repl_backlog 的大小。<li>默认值 `1048576`，单位为字节（Byte）。       | **✓**       | **✓**     |
+| repl-backlog-size         | 16384~  | 表示主节点保存 repl_backlog 的大小。<li>默认值 `1048576`，单位为字节（Byte）。       | **✓**       | **✓**     |
 | repl-backlog-ttl          |  0～  | 表示所有 slaves 不可用时，主节点保留 repl_backlog 多长时间。<li>默认值 `3600`，单位为秒（s）。    | **✓**       | **✓**     |
 | repl-timeout              | 0～  | 表示主从复制超时时间。<li>默认值 `60`，单位为秒（s）。  | **✓**       | **✓**     |
-| set-max-intset -entries    |  0～ | 表示当 Set 集合内的数据符合以下条件时，在多少个节点之前使用 intset 来编码。<li>  当集合内所有数据都是字符对象。</li><li> 都是基数为 10 的整数，范围为 64 位有符号整数。</li>    | **✓**       | **✓**     |
+| set-max-intset-entries    |  0～ | 表示当 Set 集合内的数据符合以下条件时，在多少个节点之前使用 intset 来编码。<li>  当集合内所有数据都是字符对象。</li><li> 都是基数为 10 的整数，范围为 64 位有符号整数。</li>    | **✓**       | **✓**     |
 | slowlog-log-slower -than   |  -1~60000  | 表示当某项操作的执行时间超过设定的值后会被记录到慢日志。单位为微秒（μs）。<br/><div style="background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;">  <b>说明</b><br/>   负数会禁用慢日志，而零值会强制记录每个命令。</div>  | **✓**       | **✓**     |
 | slowlog-max-len           |  0~1000  | 表示服务器最多保存多少条慢查询日志。     | **✓**       | **✓**     |
 | tcp-keepalive             |  	0~2147483647 | 表示定时向客户端发送 tcp_ack 包来探测客户端是否存活。单位为秒（s）。默认为 0，表示不探测。  | **✓**       | **✓**     |
 | 超时              |  0～  | 表示当客户端连接闲置时间达到该指定值时，将关闭连接。单位为秒（s）。  | **✓**       | **✓**     |
-| zset-max-ziplist -entries  |  0～  | 表示当链表对象同时满足以下两个条件时，链表对象将使用 ziplist 编码，以节省内存空间：<li>排序集合对象的每个元素的字符串长度的字节数，均小于 zset-max-ziplist-value 指定值。</li><li>排序集合对象的元素数量，均小于 zset-max-ziplist-entries 指定值。</li>  | **✓**       | **✓**     |
-| zset-max-ziplist -value    |  0～  | 表示当链表对象同时满足以下两个条件时，链表对象将使用 ziplist 编码，以节省内存空间：<li>排序集合对象的每个元素的字符串长度的字节数，均小于 zset-max-ziplist-value 指定值。</li><li>排序集合对象的元素数量，均小于 zset-max-ziplist-entries 指定值。</li> | **✓**       | **✓**     |
+| zset-max-ziplist-entries  |  0～  | 表示当链表对象同时满足以下两个条件时，链表对象将使用 ziplist 编码，以节省内存空间：<li>排序集合对象的每个元素的字符串长度的字节数，均小于 zset-max-ziplist-value 指定值。</li><li>排序集合对象的元素数量，均小于 zset-max-ziplist-entries 指定值。</li>  | **✓**       | **✓**     |
+| zset-max-ziplist-value    |  0～  | 表示当链表对象同时满足以下两个条件时，链表对象将使用 ziplist 编码，以节省内存空间：<li>排序集合对象的每个元素的字符串长度的字节数，均小于 zset-max-ziplist-value 指定值。</li><li>排序集合对象的元素数量，均小于 zset-max-ziplist-entries 指定值。</li> | **✓**       | **✓**     |
 | lua-time-limit            |  0～  | 表示 Lua 脚本的执行超时时间(单位ms)。<br/>0 或负值表示没有限制。  | **✓**       | **✓**     |
 
 ## ziplist 编码参数
 
 | 参数        | 取值范围   |  参数说明                          |  Redis 5.x | Redis 6.x |
 | :----------| :--------  | :------------------------ | :----------- | :----------- |
-| hash-max-ziplist -entries  |  0~512  | 表示当哈希对象可以同时满足以下两个条件时，哈希对象使用 ziplist 编码：<li>哈希对象保存的所有键值对的键和值的字符串长度字节数，都小于 hash-max-ziplist-value 的值。</li><li>哈希对象保存的键值对数量，小于 hash-max-ziplist-entries 的值。</li> | **✓**       | **✓**     |
-| hash-max-ziplist -value    |  0~64  | 表示当哈希对象可以同时满足以下两个条件时，哈希对象使用 ziplist 编码：<li>哈希对象保存的所有键值对的键和值的字符串长度字节数，都小于 hash-max-ziplist-value 的值。</li><li>哈希对象保存的键值对数量，小于 hash-max-ziplist-entries 的值。</li> |  **✓**       | **✓**     |
+| hash-max-ziplist-entries  |  0~512  | 表示当哈希对象可以同时满足以下两个条件时，哈希对象使用 ziplist 编码：<li>哈希对象保存的所有键值对的键和值的字符串长度字节数，都小于 hash-max-ziplist-value 的值。</li><li>哈希对象保存的键值对数量，小于 hash-max-ziplist-entries 的值。</li> | **✓**       | **✓**     |
+| hash-max-ziplist-value    |  0~64  | 表示当哈希对象可以同时满足以下两个条件时，哈希对象使用 ziplist 编码：<li>哈希对象保存的所有键值对的键和值的字符串长度字节数，都小于 hash-max-ziplist-value 的值。</li><li>哈希对象保存的键值对数量，小于 hash-max-ziplist-entries 的值。</li> |  **✓**       | **✓**     |
 | latency-monitor-threshold | 0~600000 | 表示当有操作耗时超过设定的时间后会被记录下来。单位为毫秒（ms）。0表示禁用这个功能。  | **✓**       | **✓**     |
-| list-max-ziplist -entries  |  0~512 | 表示当链表对象同时满足以下两个条件时，链表对象将使用 ziplist 编码：<li>链表对象保存的每个元素的字符串长度的字节数，均小于 list-max-ziplist-value 指定值。list中元素的数量和单个元素的大小在不超过设定的值时使用ziplist编码。</li><li>链表集合对象保存的元素数量，均小于 list-max-ziplist-entries 指定值。</li>     | **✓**       | **✓**     |
-| list-max-ziplist -value    |  0~64  | 表示当链表对象同时满足以下两个条件时，链表对象将使用 ziplist 编码：<li>链表对象保存的每个元素的字符串长度的字节数，均小于 list-max-ziplist-value 指定值。list中元素的数量和单个元素的大小在不超过设定的值时使用ziplist编码。</li><li>链表集合对象保存的元素数量，均小于 list-max-ziplist-entries 指定值。</li>     | **✓**       | **✓**     |
+| list-max-ziplist-entries  |  0~512 | 表示当链表对象同时满足以下两个条件时，链表对象将使用 ziplist 编码：<li>链表对象保存的每个元素的字符串长度的字节数，均小于 list-max-ziplist-value 指定值。list中元素的数量和单个元素的大小在不超过设定的值时使用ziplist编码。</li><li>链表集合对象保存的元素数量，均小于 list-max-ziplist-entries 指定值。</li>     | **✓**       | **✓**     |
+| list-max-ziplist-value    |  0~64  | 表示当链表对象同时满足以下两个条件时，链表对象将使用 ziplist 编码：<li>链表对象保存的每个元素的字符串长度的字节数，均小于 list-max-ziplist-value 指定值。list中元素的数量和单个元素的大小在不超过设定的值时使用ziplist编码。</li><li>链表集合对象保存的元素数量，均小于 list-max-ziplist-entries 指定值。</li>     | **✓**       | **✓**     |
 
 ## 监控服务参数
 

@@ -6,6 +6,7 @@ weight: 50
 collapsible: false
 draft: false
 
+
 ---
 
 默认情况下，修改 Logstash 配置不会立即生效，本小节主要介绍如何使修改 Logstash 的配置生效。
@@ -21,7 +22,7 @@ draft: false
 
 1. 登录控制台。
 
-2. 选择**产品与服务** > **大数据服务** > **ELK 服务**，进入集群管理页面。
+2. 选择**产品与服务** > **大数据服务** > **OpenSearch 服务**，进入集群管理页面。
 
 3. 点击目标集群 ID，进入集群详情页面。
 
@@ -29,11 +30,11 @@ draft: false
 
 5. 展开下拉菜单，点击**重启**。
 
-   ![重启](../../_images/restart_logstash.png)
+   ![重启](../../../_images/restart_logstash.png)
 
 6. 选择一个集群角色，这里勾选 `Logstash 节点`。
 
-   ![选择节点](../../_images/restart_logstash_node.png)
+   ![选择节点](../../../_images/restart_logstash_node.png)
 
    重启完成后，则配置生效。
 
@@ -41,7 +42,7 @@ draft: false
 
 1. 登录管理控制台。
 
-2. 选择**产品与服务** > **大数据服务** > **ELK 服务**，进入集群管理页面。
+2. 选择**产品与服务** > **大数据服务** > **OpenSearch 服务**，进入集群管理页面。
 
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 
@@ -53,8 +54,8 @@ draft: false
 
 7. 将 logstash 的 `config.reload.automatic` 参数值修改为 `true`。
 
-   ![修改参数](../../_images/ls_change_config.png)
+   ![修改参数](../../../_images/ls_change_config.png)
 
-8. 重启 logstash 服务，详细操作请参见[方法一](/bigdata/elk/ls_manual/ls_change_config/#方法一重启-logstash-服务)。
+8. 重启 logstash 服务，详细操作请参见[方法一](/bigdata/opensearch/ls_manual/basic_usage/ls_change_config/#方法一重启-logstash-服务)。
 
    重启完成后，若再修改 Logstash 的 input、filter、output 配置，将会立即生效，不需要重启 logstash 服务。

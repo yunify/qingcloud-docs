@@ -18,7 +18,7 @@ Redis 提供了 List、Hash、Zset 等复杂类型的数据结构，在使用 Re
 
 - 已有与 Redis Standalone 实例可以互通的云服务器。
 
-- 云服务器中已安装 Redis 客户端。安装步骤可参见[redis-cli 连接](/database/redis_standalone/manual/mgt_connect/access_redis_cli/)中的步骤1。
+- 云服务器中已安装 Redis 客户端。安装步骤可参见 [redis-cli 连接](/database/redis_standalone/manual/mgt_connect/access_redis_cli/)中的步骤1。
 
   > **说明**：
   >
