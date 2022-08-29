@@ -13,7 +13,7 @@ draft: false
 
 >**注意**
 >
->因为许可限制，APP 在热-温-冷部署架构中，使用 node.attr.data : host/warm/cold 来区分热、温、冷节点，而不是新引入的 data tiers。
+>APP 在热-温-冷部署架构中，使用 node.attr.data : host/warm/cold 来区分热、温、冷节点，而不是新引入的 data tiers。
 
 ## 操作步骤
 

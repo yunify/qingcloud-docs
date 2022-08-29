@@ -6,10 +6,11 @@ weight: 15
 collapsible: false
 draft: false
 
-
 ---
 
-在使用 opensearch 接收并保存日志型数据时，超过半年或1年以上的日志可能已经过时，不再使用。可运用 opensearch 提供的 **Index Management** 功能，自动清理旧索引。
+## 背景介绍
+
+在使用 OpenSearch 接收并保存日志型数据时，超过半年或1年以上的日志可能已经过时，不再使用。可运用 OpenSearch 提供的 **Index Management** 功能，自动清理旧索引。
 
 **Index Management** 功能是管理集群的索引、数据流和索引模板的简便方法。运用合理的索引策略，可实现索引的自动清理、数据热-温-冷自动迁移、自动备份、force merge、rollover、rollup、close、open、delete 等功能，以确保您的数据以尽可能最具成本效益的方式正确存储。
 
@@ -21,7 +22,7 @@ draft: false
 
 ## 步骤 1：准备实验环境
 
-在 AppCenter 按照以下规格创建一个 opensearch 集群，快速配置中选择**预生产环境**，详细操作请参见[创建 OpenSearch 集群](/bigdata/opensearch/quickstart/create_cluster/)。
+在 AppCenter 按照以下规格创建一个 OpenSearch 集群，快速配置中选择**预生产环境**，详细操作请参见[创建 OpenSearch 集群](/bigdata/opensearch/quickstart/create_cluster/)。
 
 | 节点角色      | 节点规格  | 节点数量 |
 | :------------ | :-------- | :------- |

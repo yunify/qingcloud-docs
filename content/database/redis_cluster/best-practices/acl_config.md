@@ -28,7 +28,7 @@ keyword: QingCloud, Redis Cluster,  数据库，acl
 
 ## 约束与限制
 
-- Redis Cluster 6.2.5-v1.0.0 及其以上版本
+- Redis Cluster 6.2.5-v1.0.0 及其以上版本。
 
 ## 操作步骤
 

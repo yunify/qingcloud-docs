@@ -10,14 +10,18 @@ draft: false
 
 本小节为您介绍如何在线上进行集群之间数据同步和迁移。
 
->迁移过程会给源集群带来额外开销，若在无法保证资源充足的情况下进行数据迁移，可能会导致 OOM。请谨慎操作。
+>**注意**
+>
+>* 迁移过程会给源集群带来额外开销，若在无法保证资源充足的情况下进行数据迁移，可能会导致 OOM，请谨慎操作。
+>* 若集群磁盘使用已超过 500 G 的情况下，不建议执行此操作。
 
 ## 前提条件
 
 * 已有源集群和已创建目标集群。
 
-  >* 源集群 A ：172.22.112.7(Primary)、172.22.112.8（Secondary）、172.22.112.10（Hidden）
-  >* 目标集群 B ：172.22.112.5(Primary)、172.22.112.6（Secondary）、172.22.112.11（Hidden）
+  >* 源集群 A ：172.22.112.7（Primary）、172.22.112.8（Secondary）、172.22.112.10（Hidden）
+  >* 目标集群 B ：172.22.112.5（Primary）、172.22.112.6（Secondary）、172.22.112.11（Hidden）
+  >* 源集群版本 <= 目标集群版本。例如：当前目标集群版本为 MongoDB 3.6.8 v1.0.1 ，则源集群版本可以为 MongoDB 3.6.8 v1.0.1或以下版本。
 
 * 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 
@@ -48,14 +52,14 @@ draft: false
 
 6. 在集群 A 的详情页面，选择**配置参数**页签，选择**公共参数**，点击**修改属性**。
 
-7. 找到并设置**Mongoshake**相关参数。
+7. 找到并设置 **Mongoshake** 相关参数。
 
-   >MongoShake 是基于mongodb oplog的集群复制工具，可以满足迁移和同步的需求，进一步实现灾备和多活功能。
+   >MongoShake 是基于 mongodb oplog 的集群复制工具，可以满足迁移和同步的需求，进一步实现灾备和多活功能。
 
    * 设置 **MongoShake：是否开启**参数为`是`，开启 MongoShake 数据同步功能。
    * 设置 **MongoShake：同步方式**参数为`all`，全量+增量同步数据。
-   * 设置**MongoShake：源地址** 为 hidden 节点 IP 地址。以减少生产环境为对业务的影响，此处建议使用 hidden 节点做数据迁移。
-   * 设置**MongoShake：目标 MongoDB 地址**为目标集群 B ：172.22.112.5(Primary)、172.22.112.6（Secondary）、172.22.112.11（Hidden）。
+   * 设置 **MongoShake：源地址**为 hidden 节点 IP 地址。以减少生产环境为对业务的影响，此处建议使用 hidden 节点做数据迁移。
+   * 设置 **MongoShake：目标 MongoDB 地址**为目标集群 B ：172.22.112.5(Primary)、172.22.112.6（Secondary）、172.22.112.11（Hidden）。
 
    更多相关参数说明，请参见 [MongoShake 参数](/database/mongodb/manual/migration/mongo_shake/#mongoshake-参数)。
 
@@ -79,5 +83,5 @@ draft: false
 
     <img src="../../_images/migration_online_04.png">
 
-    > 待所有增量数据插入完毕后，关闭 mongoshake 通道并关闭集群 A，数据迁移完成。
+    > 待所有增量数据插入完毕后，关闭 MongoShake 通道并关闭集群 A，数据迁移完成。
 
