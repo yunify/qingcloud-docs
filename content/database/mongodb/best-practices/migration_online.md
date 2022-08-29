@@ -1,5 +1,5 @@
 ---
-title: "线上集群之间数据同步和迁移"
+title: "线上集群之间数据同步和迁移最佳实践"
 description: 本小节主要介绍如何线上集群之间数据同步和迁移。 
 keyword: MongoDB,文档数据库,数据库
 weight: 35
@@ -16,36 +16,68 @@ draft: false
 
 * 已有源集群和已创建目标集群。
 
-  >* 源集群A ：172.22.112.7(Primary)、172.22.112.8（Secondary）、172.22.112.10（Hidden）
-  >* 目标集群B ：172.22.112.5(Primary)、172.22.112.6（Secondary）、172.22.112.11（Hidden）
+  >* 源集群 A ：172.22.112.7(Primary)、172.22.112.8（Secondary）、172.22.112.10（Hidden）
+  >* 目标集群 B ：172.22.112.5(Primary)、172.22.112.6（Secondary）、172.22.112.11（Hidden）
 
 * 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 
 * 已创建 MongoDB 集群，且集群状态为**活跃**。
 
-* 已安装 MongoShake
-
-  > MongoShake 是基于mongodb oplog的集群复制工具，可以满足迁移和同步的需求，进一步实现灾备和多活功能。
 
 ## 操作步骤
 
-1. 往集群A的primary节点不断插入数据，间隔1秒（初始时集群A、B都没有数据）
+1. 登录管理控制台。
+
+2. 选择**产品与服务** > **数据库与缓存** > **文档数据库 MongoDB**，进入集群管理页面。
+
+3. 选择源集群 A，点击源集群 A 的 ID，进入集群详情页面。
+
+   记录 primary 节点的 IP 地址。
+
+4. 通过mongo shell连接到集群 A 的 primary 节点。
+
+   详细操作请参见[通过 Mongo Shell 连接](/database/mongodb/manual/mgt_connect/access_mongodb/#通过-mongo-shell-连接)。
+
+5. 在集群 A 的 primary 节点每隔 1 秒插入数据。
+
+   > 初始时集群 A 和集群 B 的数据都为空。
 
    <img src="../../_images/migration_online_01.png">
 
    <img src="../../_images/migration_online_02.png">
 
-2. 集群管理--配置参数--公共参数 ，设置mongoshake通道
+6. 在集群 A 的详情页面，选择**配置参数**页签，选择**公共参数**，点击**修改属性**。
 
-   - 同步方式：此处使用的同步方式是【全量+增量】
-   - 源地址：生产环境为减少对业务的影响，建议使用hidden节点做数据迁移
+7. 找到并设置**Mongoshake**相关参数。
+
+   >MongoShake 是基于mongodb oplog的集群复制工具，可以满足迁移和同步的需求，进一步实现灾备和多活功能。
+
+   * 设置 **MongoShake：是否开启**参数为`是`，开启 MongoShake 数据同步功能。
+   * 设置 **MongoShake：同步方式**参数为`all`，全量+增量同步数据。
+   * 设置**MongoShake：源地址** 为 hidden 节点 IP 地址。以减少生产环境为对业务的影响，此处建议使用 hidden 节点做数据迁移。
+   * 设置**MongoShake：目标 MongoDB 地址**为目标集群 B ：172.22.112.5(Primary)、172.22.112.6（Secondary）、172.22.112.11（Hidden）。
+
+   更多相关参数说明，请参见 [MongoShake 参数](/database/mongodb/manual/migration/mongo_shake/#mongoshake-参数)。
 
    <img src="../../_images/migration_online_03.png">
 
-3. 进入集群B里 验证数据是否迁移成功（包括新插入的增量数据）。
+8. 点击**保存**，确认启用 MongoShake 数据同步服务。
 
-   <img src="../../_images/migration_online_04.png">
+9. 选择**产品与服务** > **数据库与缓存** > **文档数据库 MongoDB**，进入集群管理页面。
 
-   可以看到集群A的数据（包括新插入的增量数据）成功同步到了集群B，经测试，两边的数据延迟不超过2秒。
+10. 选择目标集群 B，点击目标集群 B 的 ID，进入集群详情页面。
 
-   待所有增量数据插入完毕后，关闭集群A，关闭 mongoshake 通道，整个数据迁移过程结束。
+    记录 primary 节点的 IP 地址。
+
+11. 通过 mongo shell 连接到集群 B 的 primary 节点。
+
+    详细操作请参见[通过 Mongo Shell 连接](/database/mongodb/manual/mgt_connect/access_mongodb/#通过-mongo-shell-连接)。
+
+12. 验证数据是否迁移成功（包括新插入的增量数据）。
+
+    如图所示，可以看到集群 A 的数据（包括新插入的增量数据）已成功同步到了集群 B，且两边的数据延迟不超过 2 秒。
+
+    <img src="../../_images/migration_online_04.png">
+
+    > 待所有增量数据插入完毕后，关闭 mongoshake 通道并关闭集群 A，数据迁移完成。
+
