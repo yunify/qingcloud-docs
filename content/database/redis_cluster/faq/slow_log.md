@@ -24,8 +24,6 @@ Redis 慢日志记录是将命令执行时间超过指定值的（通过参数 *
 | slowlog-log-slower-than | 设置慢查询阈值，执行时间超过阈值后会被记录到慢日志。单位为微秒（μs）。<div style="background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;">  <b>说明</b>：<br/>负数会禁用慢日志，而零值会强制记录每个命令。</div> | 不要设置过大，通常设置1ms      |
 | slowlog-max-len         | 设置慢日志的长度。当记录新命令并且慢速日志已达到其最大长度时，最旧的命令将从记录的命令队列中删除以腾出空间。 | 不要设置过小，通常设置1000左右 |
 
-
-
 参数设置方法请参见[配置集群参数](../../manual/cfginstance/paramconfig/)。
 
 ## 查看慢日志
