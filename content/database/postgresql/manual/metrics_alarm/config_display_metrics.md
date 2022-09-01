@@ -19,13 +19,13 @@ PostgreSQL 提供集群服务和资源性能监控指标和告警信息。
 
 ## 支持的服务监控指标
 
-|  <span style="display:inline-block;width:200px">监控项</span> | <span style="display:inline-block;width:80px">监控周期</span> | <span style="display:inline-block;width:60px">单位</span> |  <span style="display:inline-block;width:320px">指标含义</span>  |
-|:--- |:--- |:--- |:--- |
-| 从节点复制落后主节点秒数 | 5分钟 | s | 统计从节点复制落后主节点秒数。<br>以秒为单位。<br>  -1表示节点异常。 |
-| 连接数 | 5分钟 | counts | 统计当前连接到 PostgreSQL 的总连接数。<br>以个为单位。 |
-| 事务总数 | 5分钟 | counts | 统计当前 PostgreSQL 的事务总数。<br>以次为单位。 |
-| 等待事务数 | 5分钟 | counts| 统计当前 PostgreSQL 的等待事务总数。<br>以次为单位。 |
-| 死锁数 | 5分钟 | counts | 统计当 PostgreSQL 的死锁总数。<br>以个为单位。 |
+| <span style="display:inline-block;width:200px">监控项</span> | <span style="display:inline-block;width:80px">监控周期</span> | <span style="display:inline-block;width:60px">单位</span> | <span style="display:inline-block;width:320px">指标含义</span> |
+| :----------------------------------------------------------- | :----------------------------------------------------------- | :-------------------------------------------------------- | :----------------------------------------------------------- |
+| 从节点复制落后主节点秒数                                     | 5分钟                                                        | s                                                         | 统计从节点复制落后主节点秒数。<br>以秒为单位。<br>  -1 表示节点异常。 |
+| 连接数                                                       | 5分钟                                                        | counts                                                    | 统计当前连接到 PostgreSQL 的总连接数。<br>以个为单位。       |
+| 事务总数                                                     | 5分钟                                                        | counts                                                    | 统计当前 PostgreSQL 的事务总数。<br>以次为单位。             |
+| 等待事务数                                                   | 5分钟                                                        | counts                                                    | 统计当前 PostgreSQL 的等待事务总数。<br>以次为单位。         |
+| 死锁数                                                       | 5分钟                                                        | counts                                                    | 统计当 PostgreSQL 的死锁总数。<br>以个为单位。               |
 
 ## 支持的资源监控指标
 
