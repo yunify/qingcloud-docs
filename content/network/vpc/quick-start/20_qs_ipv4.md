@@ -71,7 +71,7 @@ weight: 20
 
    > **说明**：
    >
-   > 本操作中，云服务器的网络配置使用默认配置，即云服务器使用我们在[步骤1](#步骤1创建-vpc-网络及私有网络)中所创建的私有网络“Vxnet-test”进行通信。其他配置说明请参见[创建云服务器](/compute/vm/manual/vm_instance/#创建云服务器)。
+   > 本操作中，云服务器的网络配置使用默认配置，即云服务器使用我们在[步骤1](#步骤1创建-vpc-网络及私有网络)中所创建的私有网络“Vxnet-test”进行通信。其他配置说明请参见[创建云服务器](/compute/vm/quickstart/create_vm/)。
 
 6. 点击**创建**。
 
@@ -119,7 +119,7 @@ weight: 20
 
 2. 执行`ping`命令验证是否可公网通信。 如 `ping www.qingcloud.com` 测试公网连通性。
 
-   <img src="/network/vpc_2.0/_images/4020_ping.png" alt="ping" style="zoom:50%;" />
+   <img src="/network/vpc/_images/4020_ping.png" alt="ping" style="zoom:50%;" />
 
 
 

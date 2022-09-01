@@ -4,10 +4,34 @@ collapsible: false
 weight: 5
 
 product:
+
+    - time: 2022-08-11
+      title: QKE v2.2.1 发布，新增持久卷名称信息展示
+      content: QKE v2.2.1 上线。<br/>- 新增持久卷名称信息展示，便于掌握 Pod 挂载持久卷信息。<br/>- 优化可视化控制台信息展示，便于查看控制台版本及初始账号信息。<br/>- 修复若干已知问题，提升了集群可用性。
+      url: /container/qke_plus/manual/mounting_resource/view_resource/
+      tags:
+      - 新功能
+      zone: 北京3区，上海1区，广东2区
+
+    - time: 2022-07-29
+      title: QKE v2.2.0 发布，新增集群告警管理
+      content: QKE v2.2.0 上线。<br/>- 新增集群告警管理，支持为集群节点绑定或解绑告警策略。<br/>- 优化集群参数修改功能，提升用户体验。<br/>- 修复了一些已知问题，提升集群响应速度等。
+      url: /container/qke_plus/manual/om_mgt/alarm/alarm_index/
+      tags:
+      - 新功能
+      zone: 北京3区，上海1区，广东2区
+
+    - time: 2022-07-15
+      title: QKE v2.1.0 发布，集成 KubeSphere v3.3.0
+      content: QKE v2.1.0 上线。<br/>- 支持 KubeSphere v3.3.0 版本，支持 Argo CD、存储卷声明自动扩容等新特性，可从低版本升级至最新版。<br/>- Kubernetes 版本升级至 1.22.10，可在创建集群时选用该版本。<br/>- 支持集群升级， 可从低版本 QKE 与 Kubernetets 同步升级至最新版本。<br/>- Service 支持使用负载均衡器的七层能力，支持 HTTP/HTTPS 协议的负载均衡。
+      url: /container/qke_plus/manual/console/upgrade_ks/
+      tags:
+      - 新功能
+      zone: 北京3区，上海1区，广东2区
+
     - time: 2022-07-01
       title: QKE v2.0.0 发布，新增 GPU 类型工作节点，提高集群图像处理能力
       content: QKE v2.0.0 上线。<br/>- 支持选用 honstnic 网卡插件，实现容器网络隧道直通等能力。<br/>- 新增 GPU 类型工作节点，提高集群图像处理能力。
-
       url: /container/qke_plus/manual/mgt_node/node_amount/
       tags:
       - 新功能

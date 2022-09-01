@@ -32,11 +32,11 @@ draft: false
 
 5. 选择**设备管理** > **LAN 配置**，进入**LAN 配置**页面。
 
-   <img src="../../../../_images/um_lan_config.png" style="zoom:50%;" />
+   <img src="../../../../_images/um_lan_config.png" style="zoom:100%;" />
 
 6. 点击目标端口号所在行的**修改**，弹出**修改 LAN 配置**窗口。
 
-   <img src="../../../../_images/um_lan_config_details.png" style="zoom:50%;" />
+   <img src="../../../../_images/um_lan_config_details.png" style="zoom:100%;" />
 
 7. 修改 LAN 配置信息，如下表所示。
 
@@ -49,8 +49,8 @@ draft: false
 
 8. 配置完成后，点击**确定修改**。
 
-   页面弹出**编辑成功**提示信息，则说明修改网关配置信息成功。
-   
+   页面弹出**编辑成功**提示信息，则说明 LAN 配置信息修改成功。
+
 9. 点击**应用修改**，使修改生效。
 
 ## 添加 vlan 配置

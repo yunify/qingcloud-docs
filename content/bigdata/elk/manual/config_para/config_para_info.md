@@ -15,42 +15,43 @@ draft: false
 
 ## Elasticsearch 节点（热）
 
-|<span style="display:inline-block;width:80px">参数</span> |<span style="display:inline-block;width:120px">取值范围</span>|<span style="display:inline-block;width:420px">参数说明</span>|
-|:----|:----|:----|
-|   prometheus.node .exporter    |  <li>true<li>false      |   表示是否开启 Prometheus 导出器用于由 *NIX 内核公开的硬件和操作系统指标，带有可插入的指标收集器。 <li>默认值 `true`。  |
-|   thread_pool.write .queue_size    |  200~10240     |   表示 queue_size 允许控制没有线程执行它们的待处理请求队列的大小。 <li>默认值 1024。  |
-|   thread_pool.search .queue_size      |  1000~10240   |   表示 queue_size 允许控制没有线程来执行它们的待处理请求队列的初始大小。 <li>默认值 1024。  |
-|   action.destructive _requires_name      | <li>true<li>false   |   表示是否允许在删除索引时使用通配符或_all。<li>默认值 `true`，表示允许使删除只限于特定名称指向的数据。<li>取值 `false`，表示允许在删除索引时使用通配符或_all，推荐配置。  |
-|   discovery.zen.no_master_block      |  <li>全部<li>写  |   表示控制当节点没有活跃的主节点时哪些操作应该被拒绝。  |
-|  gateway.recover_after_time     |  -   |   表示如果未达到期望的节点数，recovery 过程将在配置的时间后开始 recover 操作。<li>默认值 5 分钟。  |
-|   http.cors.enabled      |  <li>true<li>false   |   表示是否支持跨区域资源共享，例如另一区域的服务器向 Elasticsearch 执行请求。  |
-|   http.cors.allow-origin      |  -   |   表示允许跨域资源共享的域。详细配置说明，请参见[Elatsticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.10/modules-http.html)。  |
-|   indices.fielddata .cache.size      |  -   |   表示 field 缓存数据所能使用的堆内存的最大值。 <li>默认值 90%。  |
-|   indices.memory.index _buffer_size      |  -   |   表示总堆用于索引缓存被所有分片共享的内存大小。<li>可配置百分比值或字节值。 <li>默认值 10%，表示总堆内存的10%将被用于索引缓存被所有分片共享。  |
-|   indices.queries .cache.size      |  -   |   表示控制 filter 缓存的内存大小。<li>默认值 10%。<li>可配置百分比值或字节值。  |
-|   indices.requests .cache.size      |  -   |   表示分片级的请求缓存对每一个分片做本地缓存，这个缓存在节点级进行管理。<li>默认堆内存的 1%。  |
-|   node.attr.data（热）      |  hot   |   表示 Elasticsearch 节点自定义标签（node.attr.data），可用作热-温-冷架构配置。  |
-|   script.allowed_types      |  -   |   表示在 elasticsearch.yml 文件中指定允许的脚本类型。  |
-|   script.allowed_contexts      |   -   |   表示在 elasticsearch.yml 文件中指定允许的文本类型。   |
-|   reindex.remote.whitelist     |  -   |   表示允许 Reindex 的远程集群白名单。  |
-|   remote_ext_dict     |   -   |   表示扩展字典的远程位置。   |
-|   remote_ext_stopwords     |  -   |   表示允扩展停止词字典的远程位置。  |
-|   path.repo      |  -   |   表示共享文件系统仓库的路径。  |
-|   repositories.url .allowed_urls      |  -   |   表示只读 URL 仓库的路径。  |
-|   es_additional_line1      |   -   |   表示在 elasticsearch.yml 文件中附加配置。   |
-|   es_additional_line2     |   -   |   表示在 elasticsearch.yml 文件中附加配置。   |
-|   es_additional_line3      |   -   |   表示在 elasticsearch.yml 文件中附加配置。   |
-|   logger.action.level     | <li>info<li>trace<li>debug<li>warn<li>error   |   表示日志配置文件 log4j2.properties 中的 logger.action.level 配置项。 <li>默认值 `info`。 |
-|   rootLogger.level  | <li>info<li>trace<li>debug<li>warn<li>error   |   表示日志配置文件 log4j2.properties 中的 rootLogger.level 配置项。 <li>默认值 `info`。  |
-|   logger.deprecation .level     | <li>info<li>trace<li>debug<li>warn<li>error   |   表示日志配置文件 log4j2.properties 中的 logger.deprecation.level 配置项。  <li>默认值 `warn`。 |
-|   logger.index_search _slowlog_rolling.level     | <li>info<li>trace<li>debug<li>warn<li>error   |   表示日志配置文件 log4j2.properties 中的 logger.index_search_slowlog_rolling.level 配置项。  <li>默认值 `trace`。 |
-|   logger.index_indexing _slowlog.level     | <li>info<li>trace<li>debug<li>warn<li>error   |   表示日志配置文件 log4j2.properties 中的 logger.index_indexing_slowlog.level 配置项。  <li>默认值 `trace`。 |
-|   enable_heap_dump    | <li>true<li>false   |   表示是否允许启用自动 Heap Dump。  <li>默认值 `false`。 |
-|   heap_dump_path     | -   |   表示 Heap Dump 文件的存储路径。  <li>默认值 `/data/elasticsearch/dump`。 |
-|   clean_logs_older _than_n_days     | 0～   |   表示 Elasticsearch 节点日志保留天数。  <li>默认值 7 天。 |
-|   tcp_keepalive_intvl    | 0～   |   表示 TCP keepalive 探活的时间间隔。  <li>默认值 75。 |
-|   tcp_keepalive_probes     | 0～   |   表示在通知应用层连接断开之前，允许尝试发送未应答的（unacknowledged）探活请求的数量。  <li>默认值 9。 |
-|   tcp_keepalive_time     | 0～   |   表示最后一次发送数据包之后，到发送第一个 keepalive 保活请求之间的时间间隔。  <li>默认值 7200 秒。 |
+| <span style="display:inline-block;width:80px">参数</span> | <span style="display:inline-block;width:120px">取值范围</span> | <span style="display:inline-block;width:420px">参数说明</span> |
+| :-------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| prometheus.node.exporter                                  | <li>true<li>false                                            | 表示是否开启 Prometheus 导出器用于由 *NIX 内核公开的硬件和操作系统指标，带有可插入的指标收集器。 <li>默认值 `true`。</li><span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br/>用于 *nix 内核的 prometheus 导出器开关，安装在 elasticsearch 节点上。true 开启，false 关闭。导出器使用端口 9100。</span> |
+| prometheus.elasticsearch.exporter                         | <li>true<li>false                                            | 表示是否是否开启 elasticsearch exporter。<li>默认值 true</li><span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br/>用于 elasticserch 集群的 prometheus 导出器开关，安装在 kibana 节点上。true 开启，false 关闭。导出器使用端口 9108。</span> |
+| thread_pool.write.queue_size                              | 200~10240                                                    | 表示 queue_size 允许控制没有线程执行它们的待处理请求队列的大小，负责 index/delete/update 操作。 <li>默认值 1024。</li><span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br/>当出现大量索引写入的操作时，若超过节点处理速度，则会把这些写请求存放在写线程池队列中；如果写线程池队列充满，则新的写请求会被丢弃，造成数据丢失。请根据实际的数据写入压力对写线程池队列做调整。</span> |
+| thread_pool.search.queue_size                             | 1000~10240                                                   | 表示 queue_size 允许控制没有线程来执行它们的待处理请求队列的初始大小，负责 count/search/suggest 操作。 <li>默认值 1024。</li><span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br/>如果查询线程池充满，则新的查询请求会被丢弃，使查询失败。请根据实际的查询压力对查询线程池队列做调整。</span> |
+| action.destructive_requires_name                          | <li>true<li>false                                            | 表示是否允许在删除索引时使用通配符或<code>_all</code>。<ul><li>默认值 `true`，表示允许使删除只限于特定名称指向的数</li>据。<li>取值 `false`，表示允许在删除索引时使用通配符或<code>_all</code>，推荐配置。</li></ul> |
+| discovery.zen.no_master_block                             | <li>全部<li>写                                               | 表示控制当节点没有活跃的主节点时哪些操作应该被拒绝。         |
+| gateway.recover_after_time                                | -                                                            | 表示如果未达到期望的节点数，recovery 过程将在配置的时间后开始 recover 操作。<li>默认值 5 分钟。 |
+| http.cors.enabled                                         | <li>true<li>false                                            | 表示是否支持跨区域资源共享，例如另一区域的服务器向 Elasticsearch 执行请求。 |
+| http.cors.allow-origin                                    | -                                                            | 表示允许跨域资源共享的域。详细配置说明，请参见[Elatsticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.10/modules-http.html)。 |
+| indices.fielddata.cache.size                              | -                                                            | 表示 field 缓存数据所能使用的堆内存的最大值。 <li>默认值 90%。 |
+| indices.memory.index_buffer_size                          | -                                                            | 表示总堆用于索引缓存被所有分片共享的内存大小。<li>可配置百分比值或字节值。 <li>默认值 10%，表示总堆内存的10%将被用于索引缓存被所有分片共享。 |
+| indices.queries.cache.size                                | -                                                            | 表示控制 filter 缓存的内存大小。<li>默认值 10%。<li>可配置百分比值或字节值。 |
+| indices.requests.cache.size                               | -                                                            | 表示分片级的请求缓存对每一个分片做本地缓存，这个缓存在节点级进行管理。<li>默认堆内存的 1%。 |
+| node.attr.data（热）                                      | hot                                                          | 表示 Elasticsearch 节点自定义标签（node.attr.data），可用作热-温-冷架构配置。 |
+| script.allowed_types                                      | -                                                            | 表示在 elasticsearch.yml 文件中指定允许的脚本类型。          |
+| script.allowed_contexts                                   | -                                                            | 表示在 elasticsearch.yml 文件中指定允许的文本类型。          |
+| reindex.remote.whitelist                                  | -                                                            | 表示允许 Reindex 的远程集群白名单。                          |
+| remote_ext_dict                                           | -                                                            | 表示扩展字典的远程位置。                                     |
+| remote_ext_stopwords                                      | -                                                            | 表示允扩展停止词字典的远程位置。                             |
+| path.repo                                                 | -                                                            | 表示共享文件系统仓库的路径。                                 |
+| repositories.url.allowed_urls                             | -                                                            | 表示只读 URL 仓库的路径。                                    |
+| es_additional_line1                                       | -                                                            | 表示在 elasticsearch.yml 文件中附加配置。                    |
+| es_additional_line2                                       | -                                                            | 表示在 elasticsearch.yml 文件中附加配置。                    |
+| es_additional_line3                                       | -                                                            | 表示在 elasticsearch.yml 文件中附加配置。                    |
+| logger.action.level                                       | <li>info<li>trace<li>debug<li>warn<li>error                  | 表示日志配置文件 log4j2.properties 中的 logger.action.level 配置项。 <li>默认值 `info`。 |
+| rootLogger.level                                          | <li>info<li>trace<li>debug<li>warn<li>error                  | 表示日志配置文件 log4j2.properties 中的 rootLogger.level 配置项。 <li>默认值 `info`。 |
+| logger.deprecation.level                                  | <li>info<li>trace<li>debug<li>warn<li>error                  | 表示日志配置文件 log4j2.properties 中的 logger.deprecation.level 配置项。  <li>默认值 `warn`。 |
+| logger.index_search _slowlog_rolling.level                | <li>info<li>trace<li>debug<li>warn<li>error                  | 表示日志配置文件 log4j2.properties 中的 logger.index_search_slowlog_rolling.level 配置项。  <li>默认值 `trace`。 |
+| logger.index_indexing _slowlog.level                      | <li>info<li>trace<li>debug<li>warn<li>error                  | 表示日志配置文件 log4j2.properties 中的 logger.index_indexing_slowlog.level 配置项。  <li>默认值 `trace`。 |
+| enable_heap_dump                                          | <li>true<li>false                                            | 表示是否允许启用自动 Heap Dump。  <li>默认值 `false`。       |
+| heap_dump_path                                            | -                                                            | 表示 Heap Dump 文件的存储路径。  <li>默认值 `/data/elasticsearch/dump`。 |
+| clean_logs_older_than_n_days                              | 0～                                                          | 表示 Elasticsearch 节点日志保留天数。  <li>默认值 7 天。     |
+| tcp_keepalive_intvl                                       | 0～                                                          | 表示 TCP keepalive 探活的时间间隔。  <li>默认值 75。         |
+| tcp_keepalive_probes                                      | 0～                                                          | 表示在通知应用层连接断开之前，允许尝试发送未应答的（unacknowledged）探活请求的数量。  <li>默认值 9。 |
+| tcp_keepalive_time                                        | 0～                                                          | 表示最后一次发送数据包之后，到发送第一个 keepalive 保活请求之间的时间间隔。  <li>默认值 7200 秒。 |
 
 ## Elasticsearch 节点（温）
 

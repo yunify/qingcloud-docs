@@ -66,7 +66,7 @@ LB 插件具体用法请参考[文档](https://github.com/yunify/qingcloud-cloud
 
    - `service.beta.kubernetes.io/qingcloud-load-balancer-type`
 
-     表示负载均衡器的承载能力类型。与 [CreateLoadBalancer](/development_docs/api/command_list/lb/create_loadbalancer/) 接口中的 `loadbalancer_typ` 取值范围相同。
+     表示负载均衡器的承载能力类型。与 [CreateLoadBalancer](/network/loadbalancer/api/loadbanlancer/create_lb/) 接口中的 `loadbalancer_typ` 取值范围相同。
 
 8. 点击**创建**。
 

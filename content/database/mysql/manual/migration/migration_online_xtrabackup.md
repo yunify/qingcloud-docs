@@ -71,7 +71,7 @@ draft: false
 
    > **注意**
    >
-   > -若远端 MySQL 数据库与 MySQL Plus 集群同版本同私有网络，可通过[交换预留 IP](../../mgt_connect/exchange_reservedip) 快速切换业务。
+   > -若远端 MySQL 数据库与 MySQL Plus 集群同版本同私有网络，可通过[交换预留 IP](/database/mysql/manual/migration/exchange_reservedip/) 快速切换业务。
    >
    > -切换业务时，必须停止远端数据库写操作，保障数据一致性。
    >

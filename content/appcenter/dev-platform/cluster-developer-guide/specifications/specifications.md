@@ -25,8 +25,9 @@ weight: 6
   
   类型替换策略
   
+
 config.json 定义用户在 QingCloud 控制台部署应用时需要填写的表单。控制台支持语言国际化，默认情况下，所有语言都会按配置项中的 label 和 description 展示表单。另外，cluster.json.mustache 文件中的 custom service、监控项等，会使用 key 作为国际化展示。如果您想要适应不同的语言，需要在提交的应用中包含一个 locale 文件夹，并添加对应语言的翻译文件，如：
-  
+
 * locale/en.json
 
   英文翻译文件
@@ -662,7 +663,7 @@ zone|镜像制作时所属区域 (如果是 docker 镜像，则无需填写该�
 
 ##### gpu
 
-每个节点 gpu 个数，可选值范围：0, 1, 2, 4, 8。目前仅在 北京3区-A(pek3a)，北京3区(pek3b，pek3c，pek3d) 和 上海1区(sh1a) 可创建带 gpu 的集群, 具体使用方式参考[GPU 云服务器](/compute/vm/manual/gpu_instance/)
+每个节点 gpu 个数，可选值范围：0, 1, 2, 4, 8。目前仅在 北京3区-A(pek3a)，北京3区(pek3b，pek3c，pek3d) 和 上海1区(sh1a) 可创建带 gpu 的集群, 具体使用方式参考[GPU 云服务器](/compute/vm/gpu/gpu_instance/)
 
 ##### gpu\_class
 

@@ -1,8 +1,7 @@
 ---
 title: "支持的服务类别列表"
-date: 2020-02-28T10:08:56+09:00
 description: 介绍 IAM 支持的服务类别。
-keyword: 青云, IAM , 服务类别
+keyword: IAM , 服务类别
 draft: false
 weight: 44
 ---
@@ -48,7 +47,6 @@ IAM 身份和 QRN 支持的区域及可用区列表：
 | 广东2 | GD2 | 广东2区-A 、广东2区-B |
 | 上海1 | SH1 | 上海1区-A 、上海1区-B |
 | 亚太2 | AP2 | 亚太2区-A |
-| 雅加达 | AP3 | 雅加达区 |
 
 更多详细信息，请参考[区域和可用区指南](https://docs.qingcloud.com/product/region/#区域和可用区指南)。
 

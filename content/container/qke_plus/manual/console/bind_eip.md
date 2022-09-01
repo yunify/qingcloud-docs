@@ -2,7 +2,7 @@
 title: "设置 KubeSphere EIP"
 description: 介绍 QKE 支持的可视化控制台。
 draft: false
-weight: 1
+weight: 6
 keyword: 容器, QKE, 控制台
 ---
 
@@ -13,11 +13,11 @@ keyword: 容器, QKE, 控制台
 ## 前提条件
 
 - 已安装 KubeSphere 控制台。
-- 已创建或已有可用的公网 IP。公网 IP 须为`外部绑定`的公网 IP。
+- 已创建或已有可用的公网 IP。公网 IP 需为`外部绑定`的公网 IP。
 
 ## 操作步骤
 
-1. 登录 QingCloud 管理控制台。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **容器引擎 QKE**，进入 QKE 集群列表页面。
 

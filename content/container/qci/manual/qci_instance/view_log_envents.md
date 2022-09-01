@@ -27,5 +27,5 @@ weight: 20
 
 ## 相关操作
 
-[查看与连接容器](../connect_conta)
+[查看与连接容器](../connect_container/)
 

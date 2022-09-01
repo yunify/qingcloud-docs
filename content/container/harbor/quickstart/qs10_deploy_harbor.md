@@ -26,7 +26,7 @@ weight: 10
 
    创建一个负载均衡器，然后创建一个监听器，用于 Harbor Web 界面的访问入口。
 
-   创建负载均衡器及监听器的详细操作，请参见[创建负载均衡器](/network/loadbalancer/quickstart/quick_start/) 。
+   创建负载均衡器及监听器的详细操作，请参见[负载均衡器操作指南](/network/loadbalancer/manual/lb/create_lb/) 。
 
    > **说明**：
    >
