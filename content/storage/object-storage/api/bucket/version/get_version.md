@@ -1,6 +1,5 @@
 ---
 title: "Get Bucket Version"
-date: 2020-11-25T10:08:56+09:00
 description: 本小节主要介绍 Get Bucket Version 接口相关操作。
 keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 collapsible: false
