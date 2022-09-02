@@ -19,7 +19,7 @@ draft: false
 | log.retention.bytes                                       | -1~1073741824000                                             | topic 每个分区的最大文件大小，单位为字节，超过该大小会触发删除策略。 |
 | log.retention.hours                                       | 1~8760                                                       | 消息保留时间，单位为`小时`。                                 |
 | log.segment.bytes                                         | 1048576~10737418240                                          | 段文件最大值，单位为`字节`。                                 |
-| log.segment.delete.delay.ms                               | 0~                                                           | 段文件在索引中清除后保留的时间。                             |
+| log.segment.delete.delay.ms                               | 0~                                                           | 段文件在索引中清除后保留的时间。 **该参数需要设置一个值，不然最终会导致磁盘空间被写满。**                            |
 | log.roll.hours                                            | 1~876                                                        | 段文件轮滚时间，单位为`小时`。                               |
 | auto.create.topics.enable                                 | <li> true </li><li> false </li>                                        | 是否允许自动创建 Topic。                                     |
 | default.replication.factor                                | 1~10                                                         | 默认副本因子值。                                             |

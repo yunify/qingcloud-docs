@@ -1,6 +1,6 @@
 ---
 title: "Kafka 分区再平衡"
-description: 
+description: 当集群负载很高时，加入了新的 Broker，此时新 Broker 没有任何分区，您需要把已有 Broker 上的部分分区再平衡到新 Broker 上，从而分担负载。
 keyword: 云计算,大数据,消息队列,中间件,Kafka,分区再平衡
 weight: 20
 draft: false

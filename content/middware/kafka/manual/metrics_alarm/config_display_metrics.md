@@ -17,14 +17,14 @@ Kafka 提供集群服务和资源性能监控指标和告警信息。
 
 ## 支持的服务监控指标
 
-|  <span style="display:inline-block;width:200px">监控项</span> | <span style="display:inline-block;width:80px">监控周期</span> | <span style="display:inline-block;width:60px">单位</span> |  <span style="display:inline-block;width:320px">指标含义</span>  |
-|:--- |:--- |:--- |:--- |
-| JVM HEAP 内存使用率| 5分钟 |  |  |
-| 消息吞吐率 | 5分钟 |  |  |
-| 数据吞吐率 | 5分钟 | counts|  |
-| 副本消息滞后量| 5分钟 |  |  |
-| ISR 伸缩速率| 5分钟 | 个/秒 |  |
-| 管理统计| 5分钟 | counts |  |
+| <span style="display:inline-block;width:200px">监控项</span> | <span style="display:inline-block;width:80px">监控周期</span> | <span style="display:inline-block;width:60px">单位</span> | <span style="display:inline-block;width:320px">指标含义</span> |
+| :----------------------------------------------------------- | :----------------------------------------------------------- | :-------------------------------------------------------- | :----------------------------------------------------------- |
+| JVM HEAP 内存使用率                                          | 5分钟                                                        | %                                                         | 监控 JVM 中内存的使用情况。                                  |
+| 消息吞吐率                                                   | 5分钟                                                        | 个/秒                                                     | 监控每秒消息的吞吐情况。                                     |
+| 数据吞吐率                                                   | 5分钟                                                        | bps                                                       | 监控每秒消息的数据大小情况。                                 |
+| 副本消息滞后量                                               | 5分钟                                                        | 个                                                        | 监控副本的最大滞后量。                                       |
+| ISR 伸缩速率                                                 | 5分钟                                                        | 个/秒                                                     | 监控 ISR 伸缩速率。                                          |
+| 管理统计                                                     | 5分钟                                                        | 个                                                        | 统计管理节点数和离线分区数。                                 |
 
 
 ## 支持的资源监控指标
