@@ -26,7 +26,7 @@ MySQL Plus 支持对常用配置参数的管理。
 
 |<span style="display:inline-block;width:80px">参数</span> |<span style="display:inline-block;width:120px">取值范围</span>|参数说明|
 |:----|:----|:----|
-|   Load_read_requests _to_master      |  <li> All <li> All_exclude_master <li> Maininstance_exclude _master <li> Readinstance      |   表示数据库是否将读请求负载到 Master 节点，默认为 `All_exclude_master`，此时读请求只负载到 Follower 节点。 <li> `All`表示读请求负载到所有节点。 <li>`All_exclude_master` 表示负载到除 Master 外的其他节点。 <li>`Maininstance`表示负载到所有主实例。 <li>`Maininstance_ exclude_master`表示负载到除 Master 外的其他主实例。 <li>`Readinstance` 表示负载到所有只读实例。 |
+|   Load_read_requests _to_nodes   |  <li> All <li> All_exclude_master <li> Maininstance_exclude _master <li> Readinstance      | 表示数据库是否将读请求负载到节点，默认为 `All_exclude_master`，此时读请求只负载到 Follower 节点。 <li> `All`表示读请求负载到所有节点。 <li>`All_exclude_master` 表示负载到除 Master 外的其他节点。 <li>`Maininstance`表示负载到所有主实例。 <li>`Maininstance_ exclude_master`表示负载到除 Master 外的其他主实例。 <li>`Readinstance` 表示负载到所有只读实例。 |
 |   Not_load_read _to_much _delay_slave    |       0～172800  |  默认为0，忽略该机制。 <li>若设置大于0，则读 vip 新请求不会分发到延迟秒数大于该值的从节点。 <li>若 **Load_read_requests_to_nodes** 中的所有从节点延迟都满足该条件且剔除了 master，此时忽略该机制。  |
 |   Election-timeout    |   <li>10000<li>20000<li>30000 |  表示高可用组件选举超时时间。 <li>单位为毫秒。 <li>默认为 20000ms。  |
 |   MSemi-sync-timeout -for-two-nodes    |   1000～10000 |  表示半同步超时参数，针对主实例数为2的集群有效。 <li>单位是毫秒。 <li>默认为10000ms。  |
@@ -54,7 +54,7 @@ MySQL Plus 支持对常用配置参数的管理。
 |   Group_concat _max_len  |   4~ 4294967295 |  表示拼接字符串最大长度。<li> 默认为 1024。  |
 |   Default_time _zone      |  -    |   表示默认工作时区。<li> 默认为东八区。  |
 |   Default_storage _engine    |  <li> InnoDB <li> TokuDB  |  表示默认存储引擎。默认为 InnoDB 。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>该参数修改后，数据库将重启。</li><li> 仅 MySQL 5.7 支持 TokuDB 存储引擎。</li></span>|
-|  Innodb_buffer _pool_size      |  -1~       | 无论设置的值多少，最终都会上调到 innodb_buffer_pool_chunk_size * innodb_buffer_pool_instances 的整数倍。<br>- 若该值为-1，则将该参数设置为内存的60%。<br>- 若该值过大，最多只取内存的80% 。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br>该参数修改后，数据库将重启。</span> |
+|  Innodb_buffer _pool_size      |  -1~       | 无论设置的值多少，最终都会上调到 innodb_buffer_pool_chunk_size * innodb_buffer_pool_instances 的整数倍。<br>- 若该值为-1，则将该参数设置为内存的60%。<br>- 若该值过大，最多只取内存的80% 。<br>- 无论设置的值多少，最终都会上调到 innodb_buffer_pool_chunk_size * innodb_buffer_pool_instances 的整数倍。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br>该参数修改后，数据库将重启。</span> |
 |   Character_set_server  | <li>utf8mb4<li>latin1<li>utf8<li>utf16<li>utf32 |  表示服务器安装时指定的默认字符集设定，默认值为 utf8mb4。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br/>该参数修改后，数据库将重启。</span>  |
 | Collation_server | <li>general_ci<li>bin | 表示服务器的默认排序规则。<br/>该参数仅展示后缀，实际值为Character_set_server值与后缀通过“_”拼接。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <br/>该参数修改后，数据库将重启。</span> |
 |   Interactive_timeout      |  1~2147483      |   表示服务器关闭交互式连接前等待的时间，单位为秒。<li> 默认为 3600s。  |
