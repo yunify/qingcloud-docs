@@ -9,7 +9,7 @@ draft: false
 product:
     - time: 2022-04-12
       title: MySQL Plus 1.1.1 版本正式上线
-      content: MySQL Plus 1.1.1 版本基于 MySQL 5.6、5.7、8.0 内核构建。<br>- 新增慢日志预览功能；<br>- 新放开 `Logical_backup_exec_timeout`、`Log_slave_updates`参数；<br>- 新增<b>集群状态切换</b>监控项；<br>- 修复旧形态1.6.1等版本升级到1.1.0版本失败问题；<br>- 修复集群自动化运维问题，加强集群服务稳定性。
+      content: MySQL Plus 1.1.1 版本基于 MySQL 5.6、5.7、8.0 内核构建。<br>- 新增慢日志预览功能；<br>- 新放开 `Logical_backup_exec_timeout`、`Log_slave_updates`参数；<br>- 新增<b>集群状态切换</b>监控项；<br>- 修复旧形态1.6.1等版本升级到1.1.0版本失败问题；<br>- 修复集群自动化运维问题，加强集群服务稳定性。<br>- 支持配置全量逻辑备份超时时间。<br>- 支持全量逻辑备份失败时自动清理对象存储脏数据。<br>- 支持可配置只读实例开关 binlog。<br>- 修复 1.1.0 版本 5.7 内核逻辑备份失败的问题。<br>- 修复旧形态的版本升级到 1.1.0 版本失败的问题。<br>- 修复网卡闪断后可能出现高可用写 IP 丢失的问题。<br>- 修复创建集群时可能出现的拷贝初始数据目录超时的问题。<br>- 修复 LXC 本地盘模式下只读实例全部宕机后无法自动重建的问题。<br>- 修正部分 job 失败时的报错信息。
       url: ../../intro/version/
       tags:
       - 新功能
