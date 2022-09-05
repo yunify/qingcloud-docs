@@ -8,6 +8,11 @@ collapsible: false
 
 PostgreSQL 的日志默认保存30天，每天会自动保存一个日志文件，超过30天系统自动清理。日志的命名规则为`postgresqllog_xx.csv`，`xx`表示在当月的第多少天。
 
+> **说明**
+>
+> * 用户可设置 `log_min_duration_statement` 参数，进行慢日志记录。
+> * 用户可使用 pgaudit 插件开启日志审计，帮助用户了解系统运行状态，及时发现异常行为。
+
 - 为了方便用户获取 PostgreSQL 的运行日志，PostgreSQL 默认开启 FTP 服务。用户可以通过 FTP 获取 PostgreSQL 的日志。默认用户名为 `ftp_pg`，默认密码为 `Pa88word`。
 - 通过 wget 文件下载工具，可下载日志目录和单个文件。
 
@@ -38,5 +43,6 @@ PostgreSQL 的日志默认保存30天，每天会自动保存一个日志文件�
    ```bash
    wget ftp://192.168.100.13/postgresqllog_24.csv --ftp-user=ftp_pg --ftp-password=Pa88word
    ```
+   
+   ![logcheck](../../_images/logcheck.png)
 
-![logcheck](../../_images/logcheck.png)
