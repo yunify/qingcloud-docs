@@ -30,7 +30,7 @@ draft: false
 
 |  <span style="display:inline-block;width:120px">参数</span> | <span style="display:inline-block;width:480px">说明</span>  |
 |:--- |:--- |
-| 节点类型   | 选择节点类型。可选择`名称服务器`、`Broker`、`Broker 副本`、`网页控制台`和`客户端`。<li>新增 `Broker` 节点时，系统将根据当前 `Broker 副本`节点数量自动为新增的 `Broker` 节点新增 `Broker 副本`节点。<li>新增 `Broker 副本`节点时，系统将自动为所有 `Broker` 节点新增相应数量的 `Broker 副本`节点。 |
+| 节点类型   | 选择节点类型。可选择`名称服务器`、`Broker`、`Broker 副本`、`网页控制台`和`客户端`。<ul><li>新增 `Broker` 节点时，系统将根据当前 `Broker 副本`节点数量自动为新增的 `Broker` 节点新增 `Broker 副本`节点。</li><li>新增 `Broker 副本`节点时，系统将自动为所有 `Broker` 节点新增相应数量的 `Broker 副本`节点。</li></ul> |
 | 节点数量   |  输入新增节点数量，根据已有节点数量确定可新增节点数量。|
 | 节点名称   |  输入节点名称。 |
-| 节点 IP   |  配置节点 IP 地址。<li>默认为`自动分配`。<li> 选择`手动配置`需为各节点配置 IP。  |
+| 节点 IP   |  配置节点 IP 地址。<ul><li>默认为`自动分配`。</li><li> 选择`手动配置`需为各节点配置 IP。</li></ul>  |

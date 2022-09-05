@@ -1,6 +1,6 @@
 ---
 title: "查看资源和服务监控"
-description: 本小节主要介绍 RocketMQ 主要支持哪些监控指标。 
+description: RocketMQ 监控告警是通过云监控告警服务为集群服务器的资源和服务提供监控管理。当集群监控项超过阈值时触发告警，并通过短信、邮件等形式发送告警通知。 
 keyword: 云计算,消息队列,中间件,RocketMQ,监控指标
 weight: 40
 collapsible: false
