@@ -21,9 +21,9 @@ QKE 集群包含以下类型节点：
 
   其中，工作节点分为**工作节点-基础型**、**工作节点-企业型**及**工作节点-GPU**：
 
-  - 工作节点-基础型：可选择[基础型 s1](/compute/vm/intro/basic/) 机型（除2c/4g）。
-  - 工作节点-企业型：可选择[计算型 ec3](/compute/vm/intro/enterprise/#计算型-ec3) 机型。
-  - 工作节点-GPU：可选择所有[GPU加速型 g2ntp100](/compute/vm/intro/professional/#gpu云服务器-g2) 机型。
+  - 工作节点-基础型：节点的实例规格类型为[基础型 s1](/compute/vm/intro/basic/)。
+  - 工作节点-企业型：节点的实例规格类型为[计算型 ec3](/compute/vm/intro/enterprise/#计算型-ec3)。
+  - 工作节点-GPU：节点的实例规格类型为 [GPU 加速型 g2/g3](/compute/vm/intro/professional/#gpu云服务器-g2) ，支持多卡 GPU 主机。
 
 ## 节点管理
 
