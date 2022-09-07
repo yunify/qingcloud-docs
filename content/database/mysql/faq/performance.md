@@ -86,3 +86,27 @@ MySQL主从数据复制的机制：
 - 从库上的 IO 线程会将主库的 binlog 复制到从库并写入 relay log。
 
 - 从库上的 SQL 线程会读取 relay log，将 binlog event 应用到从库，应用完一个 relay log 会自动清理掉这个 relay log 文件。
+
+## 如何查看数据库服务是否正常?
+
+* 执 行 `/opt/xenon/xenoncli cluster status` 指令，如果 `IO/SQL_RUNNING` 是 true/true 且 Raft 列有 LEADER，则表明 MySQL 服务正常。
+
+  ![查看数据库服务](../../_images/performance_01.png) 
+
+* 查看 **/data/log/checkservice.log**，若日志最后输出为 `check_service success`，则表明集群健康检查正常。console 节点服务状态要等连续两次 healthcheck 成功后才会恢复正常。
+
+## 如何对比 MySQL Plus 节点数据差异（查看集群GTID） 或如何确认 MySQL Plus 主从复制是否正常？
+
+1. 执行  `/opt/xenon/xenoncli cluster status` 指令，如果 `IO/SQL_RUNNING `是 true/true 且 Raft 列有 LEADER，则服务正常。
+
+2. 执行 `/opt/xenon/xenoncli cluster gtid` 指令，如果 `LEADER的Executed_GTID_Set` 各个 GTID 段的数值都包含所有从节点对应段的数值，且在业务有写入的情况下连续多次执行，所有节点的某个 GTID 段（leader 节点的 **/data/mysql/auto.conf** 中对应的server-uuid 所在的段）都同步变化，即为正常。
+
+   ![查看数据库服务](../../_images/performance_02.png) 
+
+## 如何协调业务中的写入压力？
+
+* 当业务中写入压力较大时，建议 `Load_read_requests_to_nodes` 参数选择不负载到主节点，即 `All_exclude_master`，此时可以在不影响主节点的情况下同时获取较快的读取速度；
+* 当业务写入压力不大时，同时想要获得更快的读取速度时，可将参 `Load_read_requests_to_nodes` 设置为 `All`，此时读请求可以负载到 master 节点上，从而获得最快的读取速度。
+* 当集群中存在只读实例，若想要后端业务读与大数据业务拉取互不影响，可以设置为 `Maininstance_exclude_master`，使用读  VIP 来负载后端业务读，使用只读实例节点IP来拉取数据；以此可以避免大数据业务造成的节点延迟影响后端业务读的一致性。
+* 若大事务无法避免，则建议调大高可用组件选举的超时时间，即调大 `Election-timeout` 至 30000ms，进一步提高集群的稳定性。
+
