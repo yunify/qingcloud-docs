@@ -1,6 +1,5 @@
 ---
 title: "Get Bucket Replication"
-date: 2020-11-25T10:08:56+09:00
 description: 本小节主要介绍 Get Bucket Replication 接口相关操作。
 keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 collapsible: false
@@ -8,7 +7,7 @@ draft: false
 weight: 3
 ---
 
-该接口用于获取 Bucket 的跨区域复制规则列表。QingStor 对象存储定义跨区域复制为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
+该接口用于获取 Bucket 的跨区域复制规则列表。QingStor 对象存储定义只有 Bucket 的所有者才能调用该 API。
 
 ## 请求语法
 

@@ -1,6 +1,5 @@
 ---
 title: "Put Bucket Replication"
-date: 2020-11-25T10:08:56+09:00
 description: 本小节主要介绍 Put Bucket Replication 接口相关操作。
 keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 collapsible: false
@@ -18,7 +17,7 @@ weight: 3
 
 ## 使用说明
 
-- QingStor 对象存储定义跨区域复制规则为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
+- QingStor 对象存储定义只有 Bucket 的所有者才能调用该 API。
 - 跨区域复制采用异步复制机制，故，数据复制至目标 Bucket 需要一定的时间，通常为几分钟到几个小时不等。
 
 ## 请求语法
