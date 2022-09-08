@@ -7,8 +7,12 @@ collapsible: false
 draft: false
 ---
 
-
 为了实现多维监控数据库，MongoDB 支持启用 Zabbix Agent2 服务 (5.4）提供监控服务。
+
+<img src="../../../_images/zabbix_arh.png" alt="zabbix" style="zoom:50%;" />
+
+* Zabbix Server：负责接收 Agent 发送的报告信息的核心组件，所有配置，统计数据及操作数据均由其组织进行；
+* Agent：部署在被监控主机上，负责收集本地数据并发往 Server 端。 
 
 本小节主要介绍如何启动和关闭 Zabbix 监控服务。
 
@@ -41,35 +45,49 @@ draft: false
    <img src="../../../_images/enable_zabbix_agent.png" alt="启动 Zabbix 客户端服务" style="zoom:50%;" />
 
 ### 配置 Zabbix 监控
-   
+
 1. 使用浏览器，登录 Zabbix Server 的 Web 界面。
-2. 添加节点 IP 地址为 Host。  
-   1. 选择 **Configuration** > **Hosts** ，进入 Host 管理页面。
-   2. 点击 **Create Host**，进入 Host 配置页面。
-   3. 配置数据库任意节点为待监控节点。  
-      -**Groups** 选择 `MongoDB` 模版类型  
-      -**Agent** 的 **IP address** 配置为集群 **Zabbix: 服务端地址**，默认为 `127.0.0.1`  
-      -**Agent** 的 **IP address** 选配置为集群 **Zabbix: Agent2 监听端口**，默认为 `10050`
+
+2. 选择 **Configuration** > **Hosts**，进入主机管理页面。
+
+3. 点击 **Create host**，进入主机配置页面。
+
+4. 在 **Hosts** 页签，配置 MongoDB 的 zabbix_agent 为监控主机。
+
+   * **Host name** 自定义主机名称
+
+   * **Groups** 选择 `Zabbix servers` 模版类型
+   * **Interfaces** 参数值后点击 **Add**，并选择 **Agent**
+     * **Interfaces** 的 **IP address** 配置为集群 **zabbix server**参数值
+     * **Interfaces** 的 **Port** 选配置为集群 Zabbix 服务端口，默认为 `10050`
 
    <img src="../../../_images/zabbix_create_host.png" alt="创建 Host" style="zoom:50%;" />
 
-3. 配置 Host 全局变量。主要修改 Macros 配置中如下参数。  
-   1. 选择 **Configuration** > **Hosts** ，进入 Host 管理页面。
-   2. 点击目标 Host 名称，进入 Host 配置管理页面。
-   3. 在 Macros 配置，添加如下配置项。
-   4. 配置数据库任意节点为待监控节点。  
-      -**{$MONGODB.CONNSTRING}** 配置为 `tcp://localhost:27018`  
-      -**{$MONGODB.PASSWORD}** 配置为集群 **qc_monitor 用户密码**，默认为 `Change1Pwd`  
-      -**{$MONGODB.USER}** 配置为集群 Zabbix 服务用户帐号，默认为 `qc_monitor`
+5. 在 **Templates** 页签，选择 `MongoDB node by Zabbix agent 2` 模版。
 
-   <img src="../../../_images/zabbix_modify_para.png" alt="修改 Host 参数" style="zoom:50%;" />
+   <img src="../../../_images/zabbix_temp.png" alt="选择模版" style="zoom:50%;" />
 
-4. 待 Host 采集状态正常后（**status** 为 `Enabled` ，**Availability** 为绿色），查看采集数据和监控图。  
-   更多 Zabbix 的使用用方法，请参见 [Zabbix Agent2](https://www.zabbix.com/documentation/current/manual/concepts/agent2)。
+6. 在 **Macros** 页签，配置**主机宏**参数。
+
+   * **{$MONGODB.CONNSTRING}** 配置为 `tcp://localhost:27018`
+   * **{$MONGODB.PASSWORD}** 配置为集群 **qc_monitor 用户密码**，默认为 `Change1Pwd`
+   * **{$MONGODB.USER}** 配置为集群 Zabbix 服务用户帐号，默认为 `qc_monitor`
+
+   <img src="../../../_images/zabbix_modify_para.png" alt="配置主机宏" style="zoom:50%;" />
+
+7. 点击 **Add**，创建主机。
+
+   待主机的 **Status**为 `Enabled` 且 **Availability** 一栏的 `ZBX` 显示为绿色后表示监控配置成功，即可查看采集的最新数据和监控图。
+
+   <img src="../../../_images/zabbix_status.png" alt="配置成功状态" style="zoom:50%;" />
+
+   更多 Zabbix 的使用方法，请参见 [Zabbix](https://www.zabbix.com/documentation/5.4/zh)。
 
 ## 关闭 Zabbix 服务
 
-若无需 Zabbix Agent 服务时，可在 AppCenter 确认关闭服务。
+若无需 Zabbix 监控服务时，可在 **Configuration** > **Hosts** 页面，勾选主机名称，点击 **Disable** 关闭服务，或点击 **Delete** 删除服务。
+
+也可按照以下操作在集群配置参数中确认关闭服务。
 
 1. 登录管理控制台。
 2. 选择**产品与服务** > **数据库与缓存** > **文档数据库 MongoDB**，进入集群管理页面。
