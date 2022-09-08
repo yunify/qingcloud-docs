@@ -1,6 +1,5 @@
 ---
 title: "Put Bucket Notification"
-date: 2020-11-25T10:08:56+09:00
 description: 本小节主要介绍 Put Bucket Notification 接口相关操作。
 keyword: 云计算, 青云, QingCloud, 对象存储, QingStor, Bucket
 collapsible: false
@@ -12,7 +11,7 @@ weight: 2
 
 **使用说明**
 
-- QingStor 对象存储定义事件通知为 Bucket 的子资源，因此，只有 Bucket 的所有者才能调用该 API。
+- QingStor 对象存储定义只有 Bucket 的所有者才能调用该 API。
 - 若设置多个通知规则，QingStor 对象存储会对每个规则逐一进行检查匹配，将可能触发多个事件。
 
 ## 请求语法
