@@ -11,7 +11,7 @@ keyword: kubectl, K8s
 > **说明**
 >
 > - kubectl 是标准的 Kubernetes 命令行管理工具，您可以通过 Kubectl 来管理和控制 QKE 集群。
-> - 您可以通过 kubectl 连接托管版和自管版集群。对于自管版集群，您还可以[通过 SSH 方式登录集群](/container/qke_plus/manual/mgt_cluster/connect/ssh_login_cluster/)。
+> - 您可以通过 kubectl 连接托管版和自管版集群。对于自管版集群，您还可以[通过 SSH 方式登录集群](../ssh_login_cluster/)。
 
 ## 前提条件
 
