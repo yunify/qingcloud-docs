@@ -144,7 +144,7 @@ QingStor 对象存储仅允许 Bucket 的所有者`启用/暂停` Bucket 的版�
 
 1. 在文件列表页面，点击**显示历史版本**开关，打开历史版本列表。
 
-2. 选择待恢复的版本，即，将该版本作为当前版本，点击**恢复**。
+2. 选择待恢复的版本，点击**恢复**。即将该版本复制一份作为当前版本储存。
 
  ![](/storage/object-storage/_images/bucket_version_restore1.png)
 
