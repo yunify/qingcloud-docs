@@ -1,7 +1,7 @@
 ---
-title: "连接集群"
+title: "集群连接"
 draft: false
-weight: 1
+weight: 5
 keyword: QKE, 集群
 collapsible: true
 ---
