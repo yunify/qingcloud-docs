@@ -1,6 +1,5 @@
 ---
 title: "基础操作"
-date: 2021-07-14T10:08:56+09:00
 description: 本小节主要介绍基础操作相关内容。
 keyword: 云计算, 青云, QingCloud, 对象存储, QingStor
 draft: false
@@ -19,6 +18,7 @@ weight: 1
  ![](/storage/object-storage/_images/create_bucket.png)
 
  **说明：**
+
    - 新建的 Bucket 是私有的，如果想公开这个 Bucket 的权限，可以在创建后对其进行设置。可参考 [修改 Bucket 权限](#修改-bucket-acl)。
    - Bucket 名称在 Qingstor 对象存储中是全局唯一的，并且遵守命名规范的要求。
    - Bucket 的命名规范：由长度为 6 ～ 63 的小写字母、数字、中划线组成的字符串，且以字母或数字开始和结尾。
