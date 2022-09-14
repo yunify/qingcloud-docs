@@ -1,7 +1,7 @@
 ---
 title: "配置 Zabbix Server 监控 MongoDB 集群"
-description: 本小节主要介绍如何开启或关闭 Zabbix 监控服务。 
-keyword: Zabbix 监控,zabbix server,开启 zabbix,MongoDB,文档数据库,数据库
+description: 本小节主要介绍如何配置 Zabbix 监控服务。 
+keyword: Zabbix 监控,zabbix server,MongoDB,文档数据库,数据库
 weight: 50
 collapsible: false
 draft: false
@@ -9,8 +9,6 @@ draft: false
 ---
 
 为了实现多维监控数据库，MongoDB 支持启用 Zabbix Agent 和 Zabbix Agent2 服务提供监控服务。
-
-
 
 <img src="../../_images/zabbix_arh1.png" alt="zabbix" style="zoom:50%;" />
 
@@ -90,7 +88,7 @@ MongoDB 集群默认支持 Zabbix 监控服务，需登录 Zabbix Server 的 Web
 
 7. 点击 **Add**，创建主机。
 
-   待主机的 **Status**为 `Enabled` 且 **Availability** 一栏的 `ZBX` 显示为绿色后表示监控配置成功，即可查看采集的最新数据和监控图。
+   待主机的 **Status**为 `Enabled` 且 **Availability** 一栏的 `ZBX` 显示为**绿色**后表示监控配置成功，即可查看采集的最新数据和监控图。
 
    <img src="../../_images/zabbix_status.png" alt="配置成功状态" style="zoom:50%;" />
 
