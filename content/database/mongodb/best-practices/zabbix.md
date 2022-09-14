@@ -12,13 +12,13 @@ draft: false
 
 
 
-<img src="../../_images/zabbix_arh.png" alt="zabbix" style="zoom:50%;" />
+<img src="../../_images/zabbix_arh1.png" alt="zabbix" style="zoom:50%;" />
 
 * Zabbix Server：负责接收 Agent 发送的报告信息的核心组件，所有配置，统计数据及操作数据均由其组织进行。
 * Host：配置 Host，并设置模板（Templates）和宏（Macros），使 Zabbix Server 与 MongoDB 集群节点建立连接。
 * Zabbix Agent /Zabbix Agent 2：Zabbix Agent 负责收集客户 PAAS 产品端本地各项数据，并发送至 Zabbix Server，Zabbix Server 收到数据后，将数据进行存储并进行分析输出监控结果，用户可在 Zabbix Server 的 WEB 界面看到在前端以图表形式展现的数据。 
 
-本小节主要介绍如何启动和关闭 Zabbix 监控服务。
+本小节主要介绍如何配置 Zabbix Server 监控 MongoDB 集群。
 
 ## 前提条件
 
@@ -78,7 +78,7 @@ MongoDB 集群默认支持 Zabbix 监控服务，需登录 Zabbix Server 的 Web
 
    * **{$MONGODB.PASSWORD}** 配置为集群监控服务账户 **qc_monitor 用户密码**，默认为 `Change1Pwd`
 
-   * **{$MONGODB.USER}** 配置为集群监控服务账户，默认为 `qc_monitor`
+   * **{$MONGODB.USER}** 配置为集群监控服务账户**用户**，默认为 `qc_monitor`
 
      >**注意**
      >
@@ -113,7 +113,7 @@ MongoDB 集群默认支持 Zabbix 监控服务，需登录 Zabbix Server 的 Web
 
 4. 右键点击主机名称，选择 **Graphs**。
 
-   可查看监控图标。
+   可查看监控图表。
 
    <img src="../../_images/zabbix_graphs.png" alt="查看" style="zoom:50%;" />
 

@@ -1,5 +1,5 @@
 ---
-title: "连接数据库"
+title: "连接数据库（PG11 及以下）"
 description: 本小节主要介绍如何快速连接 PostgreSQL 数据库。 
 keyword: 访问集群,访问数据库,PostgreSQL,关系型数据库,数据库
 weight: 20
