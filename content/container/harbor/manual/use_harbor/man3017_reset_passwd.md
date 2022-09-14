@@ -2,8 +2,8 @@
 title: "重置 Harbor 密码"
 draft: false
 description: 介绍如何重置 Harbor 密码。
-keyword: 青云, QingCloud, 云计算, Harbor, 重置密码, 私有镜像仓库, 镜像仓库, 
-weight: 20
+keyword: Harbor, 重置密码, 私有镜像仓库, 镜像仓库, 
+weight: 17
 ---
 
 ## 操作场景
@@ -12,7 +12,7 @@ weight: 20
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **AppCenter** > **集群管理**，进入**集群管理**页面。
 

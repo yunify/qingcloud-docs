@@ -2,7 +2,7 @@
 title: "清理任务日志"
 draft: false
 description: 介绍如何清理任务节点的日志。
-keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库, 镜像仓库, 日志清理
+keyword: Harbor, 私有镜像仓库, 镜像仓库, 日志清理
 weight: 22
 ---
 
@@ -12,7 +12,7 @@ weight: 22
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **AppCenter** > **集群管理**，进入**集群管理**页面。
 

@@ -95,8 +95,6 @@ ssh -i /path/to/kp-1234abcd root@{k8s_apiserver_eip}
 
 ## 登录其他节点
 
-#### 通过 SSH 密钥登录
-
 1. [登录到集群 master1 节点](#登录主节点-master1)。
 
 2. 执行如下命令登录其他节点。
