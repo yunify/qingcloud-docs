@@ -2,7 +2,7 @@
 title: "登录 Harbor 镜像仓库"
 draft: false
 description: 介绍如何登录部署的 Harbor 镜像仓库。
-keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库，镜像仓库
+keyword: Harbor,私有镜像仓库,镜像仓库
 weight: 18
 ---
 
@@ -14,7 +14,7 @@ weight: 18
 
 - 已获取 Harbor 镜像仓库的登录用户名及密码。 
 
-> **说明**：
+> **说明**
 >
 > - Harbor 登录的初始用户名：**admin**，密码：**Harbor12345**。
 >
@@ -24,7 +24,7 @@ weight: 18
 
 1. 打开浏览器，在地址栏输入 Harbor 地址，按下 **Enter** 键，出现 Harbor 登录界面。
 
-   > **说明**：
+   > **说明**
    >
    > Harbor 地址即在部署 Harbor 镜像仓库时，填写的 Harbor 地址，在Habor 集群详情页面的**配置参数**页签中可查看，请根据您的实际情况输入。
 
@@ -60,7 +60,7 @@ docker login -u username -p password yourhub.domain.com
 
 - `username` 及 `password` 表示 Harbor 的登录用户名及密码。
 
-- `yourhub.domain.com` 表示 Harbor 的 IP 地址或 Domain 域名，必须与您在[参数配置页面](/container/harbor/manual/man08_mdy_para/)中的 **Harbor 地址**保持一致。
+- `yourhub.domain.com` 表示 Harbor 的 IP 地址或 Domain 域名，必须与您在[参数配置页面](../../manual/config_para/modify_para/)中的 **Harbor 地址**保持一致。
 
 
 

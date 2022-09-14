@@ -2,7 +2,7 @@
 title: "VNC 登录用户名及密码"
 draft: false
 description: Harbor 日志节点登录方式。
-keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库, 镜像仓库
+keyword: Harbor, 私有镜像仓库, 镜像仓库
 weight: 20
 ---
 
