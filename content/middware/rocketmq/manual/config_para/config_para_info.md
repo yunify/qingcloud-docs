@@ -33,6 +33,6 @@ draft: false
 |<span style="display:inline-block;width:80px">参数</span> |<span style="display:inline-block;width:120px">取值范围</span>|参数说明|
 |:----|:----|:----|
 | 开启文件查看 |  <li>true </li><li>false </li> | 是否开启文件管理控制台。默认为 `false`，即关闭文件管理控制台。 |
-| 文件查看用户名                                            | -                                                            | 文件管理控制台登录用户名，默认`admin`。<br>修改该参数不会重启 Broker。</br> |
-| 文件查看密码                                              | -                                                            | 文件管理控制台登录用户名对应的密码，默认为空表示不需要密码，可以直接访问。<br>修改该参数不会重启 Broker。</br> |
+| 文件查看用户名                                            | -                                                            | 文件管理控制台登录用户名，默认`admin`。<br />修改该参数不会重启 Broker。 |
+| 文件查看密码                                              | -                                                            | 文件管理控制台登录用户名对应的密码，默认为空表示不需要密码，可以直接访问。<br />修改该参数不会重启 Broker。 |
 
