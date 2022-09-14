@@ -2,7 +2,7 @@
 title: "扩容集群"
 draft: false
 description: 介绍如何扩容 Harbor 集群。
-keyword: 青云, QingCloud, 云计算, Harbor, 镜像仓库, 扩容集群
+keyword: Harbor, 镜像仓库, 扩容集群
 weight: 12
 ---
 
@@ -15,9 +15,14 @@ weight: 12
 - 在线扩容：通过调整已有节点的CPU/内存/磁盘空间大小进行扩容。
 - 新增节点：通过新增集群节点（支持新增主服务节点及任务节点）进行扩容。
 
+## 注意事项
+
+- 扩容节点 CPU、内存规格过程，业务将被中断，请在业务低峰期进行。扩容磁盘规格过程，不影响业务正常运行。
+- 不支持降低资源磁盘规格配置。
+
 ## 在线扩容
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **AppCenter** > **集群管理**，进入**集群管理**页面。
 
@@ -31,7 +36,9 @@ weight: 12
 
 ## 新增节点
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+详细说明请参见[新增节点](../../node_mgt/add_node/)。
+
+1. 登录管理控制台。
 
 2. 在控制台顶部的导航菜单中，选择**产品与服务** > **AppCenter** > **集群管理**，进入**集群管理**页面。
 

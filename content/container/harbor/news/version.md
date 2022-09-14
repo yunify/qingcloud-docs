@@ -7,6 +7,7 @@ weight: 12
 
 | <span style="display:inline-block;width:140px">版本</span> | 版本说明                                                     |
 | ---------------------------------------------------------- | ------------------------------------------------------------ |
+| Harbor 2.2.1 - QingCloud 1.6.2                             | <ul><li>新增 s3 存储分块上传参数设置</li><li>修复 harbor redis 组件无密码问题</li></ul> |
 | Harbor 2.2.1 - QingCloud 1.6.0                             | <li>OCI-compatibility：OCI 兼容 </li>   <li>使用 Trivy 作为漏洞扫描插件</li>  <li>提供 proxy cache 功能</li>   <li>提供 prehead 功能</li> |
 | Harbor 1.9.3 - QingCloud 1.5.0                             | <li>升级到 Harbor 1.9.3 </li>  <li>新增镜像安全扫描功能</li>   <li>优化日志节点磁盘占用</li>   <li>修复镜像复制失败的问题</li>  <li>新增支持通过浏览器自助查看日志等文件</li> |
 | Harbor 1.7.6 - QingCloud 1.3.1                             | <li>升级到 Harbor 1.7.6 版本（修复漏洞 [CVE-2019-16097 Detail](https://nvd.nist.gov/vuln/detail/CVE-2019-16097)）</li>  <li>新增支持 Helm Chart 仓库</li>  <li>修复了镜像复制功能的一个 Bug </li> <li>新增支持对接第三方 S3 对象存储</li> <li>修复了系统配置丢失的问题，升级前请手动备份原有配置，详见[升级集群]()</li> |
