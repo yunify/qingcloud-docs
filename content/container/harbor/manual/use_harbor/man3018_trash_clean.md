@@ -2,7 +2,7 @@
 title: "垃圾清理"
 draft: false
 description: Harbor 镜像仓库垃圾清理。
-keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库, 镜像仓库
+keyword: Harbor, 私有镜像仓库, 镜像仓库
 weight: 18
 ---
 
@@ -18,7 +18,7 @@ weight: 18
 
    <img src="/container/harbor/_images/man3018_garbege_clean.png" alt="garbege_clean" style="zoom:50%;" />
 
-   > **说明**：
+   > **说明**
    >
    > 为了避免过于频繁地触发垃圾清理操作，**立即清理垃圾**操作受到限制，每分钟只能运行一次。
 
