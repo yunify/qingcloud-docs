@@ -13,8 +13,14 @@ draft: false
 <img src="../../_images/zabbix_arh1.png" alt="zabbix" style="zoom:100%;" />
 
 * Zabbix Server：负责接收 Agent 发送的报告信息的核心组件，所有配置，统计数据及操作数据均由其组织进行。
+
 * Host：配置 Host，并设置模板（Templates）和宏（Macros），使 Zabbix Server 与 OpenSearch 集群节点建立连接。
+
 * Zabbix Agent /Zabbix Agent 2：Zabbix Agent 负责收集客户 PAAS 产品端本地各项数据，并发送至 Zabbix Server，Zabbix Server 收到数据后，将数据进行存储并进行分析输出监控结果，用户可在 Zabbix Server 的 WEB 界面看到在前端以图表形式展现的数据。 
+
+  >**说明**
+  >
+  >Zabbix Agent 2 是Zabbix Agent 的升级版，Zabbix Agent 2降低了与server之间的TCP连接数，具有更大的检查并发性，易于通过插件进行扩展。Zabbix Agent 2 部分使用 go 语言开发。和 Zabbix Agent 一样支持主动模式和被动模式。两者都可通过配置监控 OpenSearch 集群节点，但 Zabbix Agent 和 Zabbix Agent 2 不能同时运行，相关模板也只能使用一个。
 
 本小节主要介绍如何配置 Zabbix Server 监控 OpenSearch 集群。
 
@@ -58,7 +64,12 @@ OpenSearch 集群默认支持 Zabbix 监控服务，需登录 Zabbix Server 的 
    * **Groups** 选择 `Zabbix servers` 模版类型
    * **Interfaces** 参数值后点击 **Add**，并选择 **Agent**
      * **Interfaces** 的 **IP address** 配置为集群 **zabbix server** 的 IP 地址
-     * **Interfaces** 的 **Port** 选配置为集群 Zabbix 服务端口，默认为 `10050`
+     
+     * **Interfaces** 的 **Port** 选配置以集群 Zabbix 服务端口为例，可输入 `10050`或 `10051`，此处以 `10050`为例
+     
+       >**说明**
+       >
+       >由于 OpenSearch 服务和 Zabbix 之间使用的是 HTTP 协议，所以可以任意选择 `10050`或 `10051`。
 
    <img src="../../_images/zabbix_create_host1.png" alt="创建 Host" style="zoom:50%;" />
 
@@ -72,10 +83,13 @@ OpenSearch 集群默认支持 Zabbix 监控服务，需登录 Zabbix Server 的 
 
 6. 在 **Macros** 页签，配置**主机宏**参数。
 
-   **{$ELASTICSEARCH.IP}** 配置为待监控的 OpenSearch 热节点的 IP 地址。
+   * **{$OPENSEARCH.IP}** 配置为待监控的 OpenSearch 热节点的 IP 地址。
+   * **{$OPENSEARCH.USERNAME}** 配置为集群监控服务账户，由用户自定义设定。
+   * **{$OPENSEARCH.PASSWORD}** 配置为集群监控服务账户 密码，由用户自定义设定。
 
    >**注意**
    >
+   >* 为避免敏感信息或重要信息被监控或泄露，请勿使用集群 root 账户或 admin 账户，建议使用专门用于集群监控服务的账户或者自定义权限的账户。
    >* **Inherited and host macros** 页签中的参数为默认宏函数，您可自行设定和修改。
    >* **Host macros** 页签下为主机宏，可自定义设置，也可使用 **Inherited and host macros** 页签中的宏函数，如果两者存在相同的宏，则主机宏将替代 **Inherited and host macros** 页签中的宏函数。
 

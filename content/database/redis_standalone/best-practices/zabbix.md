@@ -13,8 +13,14 @@ draft: false
 <img src="../../_images/zabbix_arh1.png" alt="zabbix" style="zoom:100%;" />
 
 * Zabbix Server：负责接收 Agent 发送的报告信息的核心组件，所有配置，统计数据及操作数据均由其组织进行。
+
 * Host：配置 Host，并设置模板（Templates）和宏（Macros），使 Zabbix Server 与 Redis Standalone 集群节点建立连接。
+
 * Zabbix Agent /Zabbix Agent 2：Zabbix Agent 负责收集客户 PAAS 产品端本地各项数据，并发送至 Zabbix Server，Zabbix Server 收到数据后，将数据进行存储并进行分析输出监控结果，用户可在 Zabbix Server 的 WEB 界面看到在前端以图表形式展现的数据。 
+
+  >**说明**
+  >
+  >Zabbix Agent 2 是Zabbix Agent 的升级版，Zabbix Agent 2降低了与server之间的TCP连接数，具有更大的检查并发性，易于通过插件进行扩展。Zabbix Agent 2 部分使用 go 语言开发。和 Zabbix Agent 一样支持主动模式和被动模式。两者都可通过配置监控 Redis Standalone 集群节点，但 Zabbix Agent 和 Zabbix Agent 2 不能同时运行，相关模板也只能使用一个。
 
 本小节主要介绍如何配置 Zabbix Server 监控 Redis Standalone 集群。
 
@@ -58,7 +64,7 @@ Redis Standalone 集群默认支持 Zabbix 监控服务，需登录 Zabbix Serve
    * **Groups** 选择 `Zabbix servers` 模版类型
    * **Interfaces** 参数值后点击 **Add**，并选择 **Agent**
      * **Interfaces** 的 **IP address** 配置为集群 **zabbix server** 的 IP 地址
-     * **Interfaces** 的 **Port** 选配置为集群 Zabbix 服务端口，默认为 `10050`
+     * **Interfaces** 的 **Port** 选配置为集群 Zabbix Agent/Zabbix Agent 2 的服务端口，Zabbix Agent 服务端口默认为 `10050`，Zabbix Agent 2 服务端口默认为 `10051`，此处以`10050`为例
 
    <img src="../../_images/zabbix_create_host1.png" alt="创建 Host" style="zoom:50%;" />
 

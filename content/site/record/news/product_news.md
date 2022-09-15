@@ -3,10 +3,28 @@ title: "最新动态"
 collapsible: false
 
 product:
-    - time: 2022-09-16 14:50:47
+    - time: 2022-09-20 14:50:47
       title: 青云正式上线备案整改功能
       content: 新增备案信息核查和备案整改功能。
       url: /site/record/info_check/check_info/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 中国大陆地区
+
+    - time: 2022-08-17 14:50:47
+      title: 青云正式上线、注销主体、注销网站、取消接入网站功能
+      content: 新增注销主体、注销网站、取消接入网站功能。
+      url: /site/record/intro/type/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 中国大陆地区
+
+    - time: 2022-05-17 14:50:47
+      title: 青云正式上线备案变更功能
+      content: 新增备案变更功能。
+      url: /site/record/intro/type/
       tags:
       - 新功能
       - 体验优化
