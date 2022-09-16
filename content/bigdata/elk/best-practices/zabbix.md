@@ -60,20 +60,16 @@ ELK 集群默认支持 Zabbix 监控服务，需登录 Zabbix Server 的 Web 界
 
 4. 在 **Hosts** 页签，配置 ELK 的 zabbix_agent 为监控主机。
 
-   * **Host name** 自定义主机名称
+   * **Host name** 自定义主机名称。
 
-   * **Groups** 选择 `Zabbix servers` 模版类型
-   * **Interfaces** 参数值后点击 **Add**，并选择 **Agent**
-     * **Interfaces** 的 **IP address** 配置为集群 **zabbix server** 的 IP 地址
+   * **Groups** 选择 `Zabbix servers` 模版类型。
+   * **Interfaces** 参数值后点击 **Add**，并选择 **Agent**。
+     * **Interfaces** 的 **IP address** 配置为集群 **zabbix server** 的 IP 地址。
      
-     * **Interfaces** 的 **Port** 选配置以集群 Zabbix 服务端口为例，可输入 `10050`或 `10051`，此处以 `10050`为例
-     
-       >**说明**
-       >
-       >由于 ELK 服务和 Zabbix 之间使用的是 HTTP 协议，所以可以任意选择 `10050`或 `10051`。
-
+     * **Interfaces** 的 **Port** 选配置为集群 Zabbix Agent/Zabbix Agent 2 的服务端口，Zabbix Agent 服务默认端口为 `10050`，Zabbix Agent 2 服务端口默认为 `10051`，可以根据实际环境修改，此处以 Zabbix Agent 2 端口号为`10050`为例。
+   
    <img src="../../_images/zabbix_create_host1.png" alt="创建 Host" style="zoom:50%;" />
-
+   
 5. 在 **Templates** 页签，选择模版。
 
    您可在 **Configuration** > **Templates** 界面自定义模板，详细操作请参见 [Zabbix](https://www.zabbix.com/documentation/5.4/zh)。
@@ -94,6 +90,18 @@ ELK 集群默认支持 Zabbix 监控服务，需登录 Zabbix Server 的 Web 界
    <img src="../../_images/zabbix_modify_para1.png" alt="配置主机宏" style="zoom:50%;" />
 
 7. 点击 **Add**，创建主机。
+
+8. 点击新建主机所在行的 **items**设置参数。
+
+   >**说明**
+   >
+   >主机创建完成后需设置 **item**使**Availability** 一栏的 `ZBX` 显示为**绿色**。
+
+   <img src="../../_images/zabbix_config_items1.png" style="zoom:100%;" />
+
+9. 点击页面右上角的 **Create item**，设置 **name**，**Key** 选择 `agent.ping`，其他参数选择默认，点击 **Add**。
+
+   <img src="../../_images/zabbix_config_items2.png" style="zoom:100%;" />
 
    待主机的 **Status**为 `Enabled` 且 **Availability** 一栏的 `ZBX` 显示为**绿色**后表示监控配置成功，即可查看采集的最新数据和监控图。
 
