@@ -4,7 +4,7 @@ description: 本小节主要介绍如何快速连接 PostgreSQL 数据库。
 keyword: 访问集群,访问数据库,PostgreSQL,关系型数据库,数据库
 weight: 15
 collapsible: false
-draft: false
+draft: true
 
 ---
 

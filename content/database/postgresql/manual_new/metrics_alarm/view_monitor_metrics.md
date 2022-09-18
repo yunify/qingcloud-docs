@@ -47,7 +47,7 @@ PostgreSQL 监控告警是通过云监控告警服务为集群服务器的资源
    
      但最多仅能查询近90天内数据。
    
-   <img src="../../../_images/manual_node_monitor.png" alt="节点监控" style="zoom:50%;" />
+   <img src="../../_images/manual_node_monitor1.png" alt="节点监控" style="zoom:50%;" />
 
 ## 查看实时监控
 
