@@ -7,17 +7,14 @@ collapsible: false
 draft: false
 ---
 
-
-
-创建 PostgreSQL 集群时，可选择创建名为 `pguser` 普通用户账号。集群创建成功后，您可根据业务需要，添加**高级权限**和**普通权限**账号。
+创建 PostgreSQL 集群时，默认不会创建账号。集群创建成功后，您需要手动添加高级权限和普通权限账号。
 
 本小节主要介绍如何创建 PostgreSQL 数据库账号。
 
 ## 约束限制
 
-- 仅支持创建一个**高级权限**账号。
 - 不支持创建同名账号。
-- 不支持创建 `postgis`、`postgres`、`replica`、`zbx_monitor` 、`root` 等账号。
+- 不支持创建 `postgres`、`pgautofailover_replicator`、`pgautofailover_monitor` 等账号。
 
 ## 前提条件
 
@@ -32,7 +29,7 @@ draft: false
 4. 点击**账号**页签，进入数据库账号列表页面。
 5. 点击**添加账号**，弹出添加账号窗口。
    
-   <img src="../../../_images/set_user_info.png" alt="配置账号信息" style="zoom:50%;" />
+   <img src="../../_images/set_user_info1.png" alt="配置账号信息" style="zoom:50%;" />
 
 6. 配置账号信息，详细参数说明请参见[账号参数](#账号参数)。
 
@@ -42,10 +39,9 @@ draft: false
 
 ### 账号参数
 
-|  <span style="display:inline-block;width:120px">参数</span> | <span style="display:inline-block;width:480px">说明</span>  |
-|:--- |:--- |
-| 角色| 默认为主实例。 |
-| 数据库密码 |  输入数据库密码。<li>密码规则：长度为 8～32 位字符数；必须同时包含大写字母（A～Z)、小写字母（a～z）、数字（0～9）和特殊字符（@#%^&*_+-=）。 |
-| 确认数据库密码 |  输入与**数据库密码**相同密码。 |
-| 数据库用户名 |  输入数据库用户账户名。<li>不支持添加`postgis`、`postgres`、`replica`、`zbx_monitor` 、`root`账号。<li>为确保账号名唯一性，不支持添加同名账号。<li>命名规则：长度为 2～26 个字符数；只能由大写字母（A～Z)、小写字母（a～z）、数字（0～9）和特殊字符（_）组成。 |
-| 用户权限 |  选择账号权限类型。<li>可选择`普通权限`或`高级权限`。|
+| <span style="display:inline-block;width:120px">参数</span> | <span style="display:inline-block;width:480px">说明</span>   |
+| :--------------------------------------------------------- | :----------------------------------------------------------- |
+| 角色                                                       | 默认为管理节点。                                             |
+| 账号                                                       | 输入数据库用户账户名。不支持添加 `postgres`、`pgautofailover_replicator`、`pgautofailover_monitor` 等账号。<br>为确保账号名唯一性，不支持添加同名账号。<br>命名规则：长度为 2～26 个字符数；只能由大写字母（A～Z)、小写字母（a～z）、数字（0～9）和特殊字符（_）组成。 |
+| 数据库密码                                                 | 输入数据库密码。密码规则：长度为 8～32 位字符数；必须同时包含大写字母（A～Z)、小写字母（a～z）、数字（0～9）和特殊字符（@#%^&*_+-=）。 |
+| 用户权限                                                   | 选择账号权限类型。<br>可选择`普通权限`或`高级权限`。         |

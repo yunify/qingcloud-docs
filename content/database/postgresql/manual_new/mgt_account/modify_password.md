@@ -17,7 +17,7 @@ draft: false
 
 ## 约束限制
 
-- 不支持修改 `postgis`、`postgres`、`replica`、`zbx_monitor` 、`root` 等账号密码。
+- 不支持修改 `postgres`、`pgautofailover_replicator`、`pgautofailover_monitor` 等账号密码。
 
 ## 前提条件
 
@@ -32,7 +32,7 @@ draft: false
 4. 点击**账号**页签，进入数据库账号列表页面。
 5. 点击**更新账号**，弹出账号信息配置窗口。
    
-   <img src="../../../_images/update_user_psw.png" alt="更新账号密码" style="zoom:50%;" />
+   <img src="../../_images/update_user_psw1.png" alt="更新账号密码" style="zoom:50%;" />
 
 6. 输入新账号密码，并输入用户账号名确认。
 

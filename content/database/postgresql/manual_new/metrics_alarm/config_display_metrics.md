@@ -19,13 +19,89 @@ PostgreSQL 提供集群服务和资源性能监控指标和告警信息。
 
 ## 支持的服务监控指标
 
-|  <span style="display:inline-block;width:200px">监控项</span> | <span style="display:inline-block;width:80px">监控周期</span> | <span style="display:inline-block;width:60px">单位</span> |  <span style="display:inline-block;width:320px">指标含义</span>  |
-|:--- |:--- |:--- |:--- |
-| 从节点复制落后主节点秒数 | 5分钟 | s | 统计从节点复制落后主节点秒数。<br>以秒为单位。<br>  -1表示节点异常。 |
-| 连接数 | 5分钟 | counts | 统计当前连接到 PostgreSQL 的总连接数。<br>以个为单位。 |
-| 事务总数 | 5分钟 | counts | 统计当前 PostgreSQL 的事务总数。<br>以次为单位。 |
-| 等待事务数 | 5分钟 | counts| 统计当前 PostgreSQL 的等待事务总数。<br>以次为单位。 |
-| 死锁数 | 5分钟 | counts | 统计当 PostgreSQL 的死锁总数。<br>以个为单位。 |
+<table>
+  <tr>
+  	<th>监控项</th>
+  	<th>子监控项</th>
+  	<th>监控周期</th>
+  	<th>单位</th>
+  	<th>指标含义</th>
+  </tr>
+  <tr>
+    <td rowspan="2">连接信息</td>
+    <td>连接数</td>
+    <td>5 分钟</td>
+    <td>counts</td>
+    <td>统计当前连接到 PostgreSQL 的总连接数以个为单位。</td>
+  </tr>
+   <tr>
+    <td>未使用连接数</td>
+    <td>5 分钟</td>
+    <td>counts</td>
+    <td>统计当前还能连接到 PostgreSQL 的总连接数以个为单位。</td>
+  </tr>
+    <tr>
+    <td rowspan="2">事务信息</td>
+    <td>事务提交数</td>
+    <td>5 分钟</td>
+    <td>counts</td>
+    <td>统计当前 PostgreSQL 的事务总数，以次为单位。</td>
+  </tr>
+  <tr>
+    <td>事务回滚数</td>
+    <td>5 分钟</td>
+    <td>counts</td>
+    <td>统计当前 PostgreSQL 的回滚事务总数，以次为单位。</td>
+  </tr>
+  <tr>
+    <td rowspan="3">元组信息</td>
+    <td>插入元组数</td>
+    <td>5 分钟</td>
+    <td>counts</td>
+    <td>统计当前 PostgreSQL 的插入元组的数量，以个为单位。</td>
+  </tr>
+  <tr>
+    <td>更新元组数</td>
+    <td>5 分钟</td>
+    <td>counts</td>
+    <td>统计当前 PostgreSQL 的更新元组的数量，以个为单位。</td>
+  </tr>
+  <tr>
+    <td>删除元组数</td>
+    <td>5 分钟</td>
+    <td>counts</td>
+    <td>统计当前 PostgreSQL 的删除元组的数量，以个为单位。</td>
+  </tr>
+  <tr>
+    <td>最大事务持续时间</td>
+    <td>最大事务持续时间</td>
+    <td>5 分钟</td>
+    <td>s</td>
+    <td>统计当前 PostgreSQL 最大事务的持续时间，以秒为单位。</td>
+  </tr>
+  <tr>
+    <td rowspan="2">数据块信息</td>
+    <td>读取缓存块数</td>
+    <td>5 分钟</td>
+    <td>counts</td>
+    <td>统计在数据库内存中读取的数据块数，每个块 8KB。</td>
+  </tr>
+  <tr>
+    <td>读取磁盘块数</td>
+    <td>5 分钟</td>
+    <td>counts</td>
+    <td>统计在磁盘中读取的数据块数，每个块 8KB。</td>
+  </tr>
+  <tr>
+    <td>缓存命中率</td>
+    <td>缓存命中率</td>
+    <td>5 分钟</td>
+		<td>counts</td>
+    <td>统计所有块的数量，命中率 = 缓存块数 /（缓存块数 + 磁盘块数）</td>
+  </tr>
+</table>
+
+
 
 ## 支持的资源监控指标
 
