@@ -25,7 +25,7 @@ PostgreSQL 集群支持将另一区域 PostgreSQL 集群设置为**源集群**�
 
 * 灾备集群与源集群的应用版本需升级到 PG11-高可用版-V1.0.8、PG9.6-高可用版-V1.1.6、PG10-高可用版-V1.1.6，或以上版本。
 
-* 灾备集群与源集群的网络需通畅，可通过[边界路由器](/network/border_router/)或 [VPN](/network/vpc/manual/vpn/) 等方式打通网络。
+* 灾备集群与源集群的网络需通畅，可通过[边界路由器](https://docsv3.qingcloud.com/network/border_router/)或 [VPN](https://docsv3.qingcloud.com/network/vpc/manual/vpn/) 等方式打通网络。
 
 * 灾备集群与源集群的 PostgreSQL 内核版本需一致。
 
