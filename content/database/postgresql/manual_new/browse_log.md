@@ -10,8 +10,7 @@ PostgreSQL 的日志默认保存30天，每天会自动保存一个日志文件�
 
 > **说明**
 >
-> * 用户可设置 `log_min_duration_statement` 参数，进行慢日志记录。
-> * 用户可使用 pgaudit 插件开启日志审计，帮助用户了解系统运行状态，及时发现异常行为。
+> 用户可设置 `log_min_duration_statement` 参数，进行慢日志记录。
 
 本小节主要介绍如何预览 PostgreSQL 运行日志。
 
