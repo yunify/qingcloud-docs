@@ -7,6 +7,14 @@ collapsible: false
 draft: false
 
 product:
+    - time: 2022-08-30
+      title: PG V2.0.0-高可用版/基础版正式上线
+      content: PostgreSQL PG V2.0.0-高可用版/基础版 新上线。<br>- 全新优化操作界面，底层代码重构，高效提升PG性能。<br>- 优化监控项字段，提升用户体验。
+      url: ../../intro/edition/
+      tags:
+      - 新功能
+      zone: 全区域
+
     - time: 2022-04-07
       title: PG11-高可用版-V1.0.9 版本正式上线
       content: PostgreSQL PG11-高可用版-V1.0.9 新上线。<br>- 更新 timescaleDB 插件版本到 1.7.3。<br>- 优化监控项字段，提升用户体验。

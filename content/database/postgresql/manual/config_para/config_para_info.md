@@ -50,39 +50,39 @@ draft: false
 
 ## 性能优化
 
-|<span style="display:inline-block;width:80px">参数</span> |<span style="display:inline-block;width:120px">取值范围</span>|<span style="display:inline-block;width:420px">参数说明</span>|
-|:----|:----|:----|
-|   max_connections      |  <li> auto-optimized-conns <li> 20～     |   表示数据库的最大并发连接数。<br>- 默认值`auto-optimized-conns`，表示根据资源配置自动适配最大连接数。<br>- 若设置为数值，请输入大于20的整数。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>该参数修改后，将重启数据库。</li></span>  |
-|  wal_buffers  | -  |  表示用于还未写入磁盘的 WAL 数据的共享内存大小。<br>- 默认值 8MB。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>该参数修改后，将重启数据库。</li></span>  |
-|   work_mem | - |  表示在写到临时磁盘文件之前被内部排序操作和哈希表使用的内存大小。<li> 默认值 4MB。|
-|   maintenance_work_mem    |   -      |   表示在维护性操作（例如 VACUUM、CREATE INDEX 和 ALTER TABLE ADD FOREIGN KEY）中使用的最大的内存大小。 <li> 默认值 64MB。 |
-|   effective_cache_size      |  -     |   表示规划器对一个单一查询可用的有效磁盘缓冲区容量大小。<li> 默认值 4GB。 |
-|   max_replication_slots  |  6～15|  表示 replication slots 的最大数量。<br>- 默认值10。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: </li><li>该参数修改后，将重启数据库。</li></span> |
-|   checkpoint_timeout     |  -   |   表示自动 WAL 检查点之间的最长时间。<li>默认值 5分钟，以秒计。|
-|  autovacuum | <li> on <li>关闭  |  表示控制服务器是否运行自动清理启动器后台进程。<li>默认值 `on`。 |
-|   vacuum_cost_delay | 0~100 |  表示进程超过代价限制后将休眠的时间。<li> 默认值 0，单位为毫秒。|
-|   autovacuum_naptime   |   -      |   表示自动清理在任意给定数据库上运行的最小延迟时间。 <li> 默认值 1min。 |
-|   vacuum_cost_limit      |  0~10000    |   表示将导致清理进程休眠的累计代价。<li> 默认值 200。 |
-|   bgwriter_delay  |  10~10000|  表示后台写入器活动轮次之间的延迟。<li>默认值 200。|
-|   bgwriter_lru_multiplier      |  0～10     |   表示在每个轮次中，不超过这么多个缓冲区将被后台写入器写出。<li>默认值 2。|
-|  wal_writer_delay  | 1~10000  |  表示WAL 写入器的活动轮次之间的延迟。<li> 默认值 200。 |
-|   fsync | <li> on <li>关闭  |  表示是否开启 PostgreSQL 服务器将尝试确保更新被物理地写入到磁盘。<li> 默认值 `on`。|
-|   commit_delay    |   0~100000     |   表示在一次 WAL 刷写被发起之前，commit_delay 增加的延迟时间。 <li> 默认值 0，单位为微秒。 |
-|   commit_siblings      |  0~1000   |   表示在执行 commit_delay 延迟时，要求的并发活动事务的最小数量。<li> 默认值 5。 |
-|   enable_bitmapscan  |  <li> on <li>关闭 |  表示是否允许查询规划器使用位图扫描计划类型。<li> 默认值 `on`。 |
-|   enable_seqscan     |    <li> on <li>关闭 |  表示是否允许查询规划器使用顺序扫描计划类型。<li> 默认值 `on`。 |
-|  full_page_writes | <li> on <li>关闭  |  表示 PostgreSQL 服务器在一个检查点之后的页面的第一次修改期间，是否将每个页面的全部内容写到 WAL 中。<li>默认值 `on`。 |
-|   log_min_messages | <li> info <li>notice<li>warning <li>error<li>log <li>fetal<li>panic <li>debug 1<li>debug 2<li>debug 3<li>debug 4<li>debug 5 |  表示写入到服务器日志的消息级别。<li> 默认值 `error`。|
-|   deadlock_timeout   |  0~1000   |   表示死锁检测之前在一个锁上等待的总时间。 <li> 默认值 1ms，单位为毫秒。 |
-|   log_lock_waits      |  <li> on <li>关闭   |   表示当一个会话为获得一个锁等到超过 deadlock_timeout 时，是否要产生一个日志消息。<li> 默认值 `关闭`。 |
-|   log_min_duration_statement |  -1~1000000|  表示如果语句运行至少指定的毫秒数，将导致记录每一个这种完成的语句的持续时间。<li>默认值 -1。|
-|   temp_buffers     |  -   |   表示每个数据库会话使用的临时缓冲区的最大容量大小。<li> 默认值 8MB。 |
-|   max_prepared_transactions  |  0~65536 |  表示同时处于 prepared 状态的事务的最大数量。<li> 默认值 256。 |
-|   max_wal_senders     |    0～20 |  表示来自后备服务器或流式基础备份客户端的并发连接的最大数量，即同时运行 WAL 发送进程的最大数量。<br>- 默认值 10。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: </li><li>该参数修改后，将重启数据库。</li></span>  |
-|  bgwriter_lru_maxpages | 0～1000  |  表示在每个轮次中，不超过这么多个缓冲区将被后台写入器写出。<li>默认值 100。 |
-|   log_statement | <li>none <li>ddl<li>mod <li>全部|  表示被记录的 SQL 语句类型。<li> 默认值 `none`。|
-|   shared_preload_libraries | <li>pg_stat_statements <li>pg_pathman<li> passwordcheck <li>timescaledb <li> pgaudit <li>pg_jieba.so<li>plugin_debugger <li>null |  表示预加载到服务器的共享库。<li> 默认选择 `passwordcheck`。<li> 空表示不预加载任何共享库。|
-|   wal_level   | <li> replica <li>logical   |   wal_level 决定有多少信息被写入到 WAL 中。<br>- 默认值是最小的（minimal），其中只写入从崩溃或立即关机中恢复的所需信息。<br>- `replica` 增加 WAL 归档信息，同时包括只读服务器需要的信息。<br>- `logical` 主要用于 logical decoding 场景。 <span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: </li><li>该参数修改后，将重启数据库。</li></span>   |
-|   shared_buffers      |  <li> auto-optimized-sharedbuffers <li>关闭   |   表示服务器使用的共享内存缓冲区的大小。<li> 默认值 `auto-optimized-sharedbuffers`，表示根据资源配置适配大小。<br>- 若设置为数值，单位为 MB。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>该参数修改后，将重启数据库。</li></span>   |
-|   jit      |  <li> on <li>关闭   |   表示是否允许 jit 编译。<li> 默认值 `关闭`。 |
-|   port |  1~65535 |  表示数据库端口。<li>默认值 5432。|
+| <span style="display:inline-block;width:80px">参数</span> | <span style="display:inline-block;width:120px">取值范围</span> | <span style="display:inline-block;width:420px">参数说明</span> |
+| :-------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| max_connections                                           | <li> auto-optimized-conns <li> 20～                          | 表示数据库的最大并发连接数。<br>- 默认值`auto-optimized-conns`，表示根据资源配置自动适配最大连接数。<br>- 若设置为数值，请输入大于20的整数。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>该参数修改后，将重启数据库。</li></span> |
+| wal_buffers                                               | -                                                            | 表示用于还未写入磁盘的 WAL 数据的共享内存大小。<br>- 默认值 8MB。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>该参数修改后，将重启数据库。</li></span> |
+| work_mem                                                  | -                                                            | 表示在写到临时磁盘文件之前被内部排序操作和哈希表使用的内存大小。<li> 默认值 4MB。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <ul><li>内存中的排序比溢出到磁盘的排序快得多，但设置非常高的值可能会导致部署环境出现内存瓶颈。</li><li>该参数是按用户排序操作，如果有多个用户尝试执行排序操作，则系统将为所有用户分配大小为 work_mem *总排序操作数的空间。</li><li>全局设置此参数可能会导致内存使用率过高，建议在会话级别修改此参数值。</li></ul></span> |
+| maintenance_work_mem                                      | -                                                            | 表示在维护性操作（例如VACUUM，RESTORE，CREATE INDEX，ADD FOREIGN KEY和ALTER TABLE等）中使用的最大的内存大小。 <li> 默认值 64MB。 |
+| effective_cache_size                                      | -                                                            | 表示规划器对一个单一查询可用的有效磁盘缓冲区容量大小。<li> 默认值 4GB。 |
+| max_replication_slots                                     | 6～15                                                        | 表示 replication slots 的最大数量。<br>- 默认值10。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: </li><li>该参数修改后，将重启数据库。</li></span> |
+| checkpoint_timeout                                        | -                                                            | 表示自动 WAL 检查点之间的最长时间。<ul><li>默认值 5分钟，以秒计。</li><li>增加该参数的值会增加崩溃恢复所需的时间，不建议修改。</li></ul> |
+| autovacuum                                                | <li> on <li>关闭                                             | 表示控制服务器是否运行自动清理启动器后台进程。<li>默认值 `on`。 |
+| vacuum_cost_delay                                         | 0~100                                                        | 表示进程超过代价限制后将休眠的时间。<li> 默认值 0，单位为毫秒。 |
+| autovacuum_naptime                                        | -                                                            | 表示自动清理在任意给定数据库上运行的最小延迟时间。 <li> 默认值 1min。 |
+| vacuum_cost_limit                                         | 0~10000                                                      | 表示将导致清理进程休眠的累计代价。<li> 默认值 200。          |
+| bgwriter_delay                                            | 10~10000                                                     | 表示后台写入器活动轮次之间的延迟。<li>默认值 200。           |
+| bgwriter_lru_multiplier                                   | 0～10                                                        | 表示在每个轮次中，不超过这么多个缓冲区将被后台写入器写出。<li>默认值 2。 |
+| wal_writer_delay                                          | 1~10000                                                      | 表示WAL 写入器的活动轮次之间的延迟。<li> 默认值 200。        |
+| fsync                                                     | <li> on <li>关闭                                             | 表示是否开启 PostgreSQL 服务器将尝试确保更新被物理地写入到磁盘。<ul><li> 默认值 `on`，表示打开这个参数，PostgreSQL 服务器将尝试确保更新被物理地写入到磁盘。</li><li>修改该值可能得到性能上的提升，但当发生意外情况时，可能会造成不可恢复的数据损坏。不建议用户修改该值。</li></ul> |
+| commit_delay                                              | 0~100000                                                     | 表示在一次 WAL 刷写被发起之前，commit_delay 增加的延迟时间。 <li> 默认值 0，单位为微秒。 |
+| commit_siblings                                           | 0~1000                                                       | 表示在执行 commit_delay 延迟时，要求的并发活动事务的最小数量。<li> 默认值 5。 |
+| enable_bitmapscan                                         | <li> on <li>关闭                                             | 表示是否允许查询规划器使用位图扫描计划类型。<li> 默认值 `on`。 |
+| enable_seqscan                                            | <li> on <li>关闭                                             | 表示是否允许查询规划器使用顺序扫描计划类型。<li> 默认值 `on`。 |
+| full_page_writes                                          | <li> on <li>关闭                                             | 表示 PostgreSQL 服务器在一个检查点之后的页面的第一次修改期间，是否将每个页面的全部内容写到 WAL 中。<li>默认值 `on`。 |
+| log_min_messages                                          | <li> info <li>notice<li>warning <li>error<li>log <li>fetal<li>panic <li>debug 1<li>debug 2<li>debug 3<li>debug 4<li>debug 5 | 表示写入到服务器日志的消息级别。<li> 默认值 `error`。        |
+| deadlock_timeout                                          | 0~1000                                                       | 表示死锁检测之前在一个锁上等待的总时间。 <li> 默认值 1ms，单位为毫秒。 |
+| log_lock_waits                                            | <li> on <li>关闭                                             | 表示当一个会话为获得一个锁等到超过 deadlock_timeout 时，是否要产生一个日志消息。<li> 默认值 `关闭`。 |
+| log_min_duration_statement                                | -1~1000000                                                   | 表示如果语句运行至少指定的毫秒数，将导致记录每一个这种完成的语句的持续时间。<li>默认值 -1，表示不记录。 |
+| temp_buffers                                              | -                                                            | 表示每个数据库会话使用的临时缓冲区的最大容量大小。<li> 默认值 8MB。 |
+| max_prepared_transactions                                 | 0~65536                                                      | 表示同时处于 prepared 状态的事务的最大数量。<li> 默认值 256。 |
+| max_wal_senders                                           | 0～20                                                        | 表示来自后备服务器或流式基础备份客户端的并发连接的最大数量，即同时运行 WAL 发送进程的最大数量。（即同时运行 WAL SENDER进程 的最大数），如果用户有使用逻辑复制、发布/订阅，建议可根据实际需要适当调大。<br>- 默认值 10。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: </li><li>该参数修改后，将重启数据库。</li></span> |
+| bgwriter_lru_maxpages                                     | 0～1000                                                      | 表示在每个轮次中，不超过这么多个缓冲区将被后台写入器写出。<li>默认值 100。 |
+| log_statement                                             | <li>none <li>ddl<li>mod <li>全部                             | 表示被记录的 SQL 语句类型。<li> 默认值 `none`。              |
+| shared_preload_libraries                                  | <li>pg_stat_statements <li>pg_pathman<li> passwordcheck <li>timescaledb <li> pgaudit <li>pg_jieba.so<li>plugin_debugger <li>null | 表示预加载到服务器的共享库。<li> 默认选择 `passwordcheck`。<li> 空表示不预加载任何共享库。 |
+| wal_level                                                 | <li> replica <li>logical                                     | wal_level 决定有多少信息被写入到 WAL 中。<br>- 默认值是最小的（minimal），其中只写入从崩溃或立即关机中恢复的所需信息。<br>- `replica` 增加 WAL 归档信息，同时包括只读服务器需要的信息。<br>- `logical` 主要用于 logical decoding 场景。 <span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>该参数修改后，将重启数据库。</li></span> |
+| shared_buffers                                            | <li> auto-optimized-sharedbuffers <li>关闭                   | 表示服务器使用的共享内存缓冲区的大小。<br> - 默认值 `auto-optimized-sharedbuffers`，表示根据资源配置适配大小。<br>- 若设置为数值，单位为 MB。<span style="display: block; background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b>: <li>该参数修改后，将重启数据库。</li></span> |
+| jit                                                       | <li> on <li>关闭                                             | 表示是否允许 jit 编译。<li> 默认值 `关闭`。                  |
+| port                                                      | 1~65535                                                      | 表示数据库端口。<li>默认值 5432。                            |
