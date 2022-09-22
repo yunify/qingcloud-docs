@@ -2,7 +2,7 @@
 title: "如何配置 SSL 证书"
 draft: false
 description: 介绍如何配置 HTTPS 访问 Harbor。
-keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库, 证书, SSL, HTTPS
+keyword: Harbor, 私有镜像仓库, 证书, SSL, HTTPS
 weight: 5
 ---
 
@@ -14,7 +14,7 @@ weight: 5
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **网络** > **负载均衡器**，进入 **负载均衡器**页面。
+1. 登录管理控制台，选择**产品与服务** > **网络** > **负载均衡器**，进入 **负载均衡器**页面。
 
 2. 点击**服务器证书**页签，然后点击**创建**。
 
@@ -42,7 +42,7 @@ weight: 5
    cp domain.crt /etc/docker/certs.d/yourdomain.com/ca.crt
    ```
 
-   > **说明**：
+   > **说明**
    >
    > 此处 `domain.crt` 为您创建的证书，`yourdomain.com` 为 Harbor 的域名地址。
 

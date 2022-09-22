@@ -23,7 +23,7 @@ section2:
     url: "/container/harbor/quickstart/qs10_deploy_harbor"
   - title: 操作指南
     content: 介绍如何使用 Harbor 镜像仓库
-    url: "/container/harbor/manual/man05_operation_desc"
+    url: "/container/harbor/manual/cluster_mgt/man05_operation_desc/"
   - title: 常见问题
     content: 使用 Harbor 镜像仓库的常见问题与解决办法
     url: "/container/harbor/faq/faq02_log"
