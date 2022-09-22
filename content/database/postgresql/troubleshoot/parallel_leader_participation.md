@@ -25,4 +25,4 @@ draft: false
 
 ## 解决措施
 
-设置 `parallel_leader_participation` 参数为 `off`，关闭并行查询。
+设置 `max_parallel_workers_per_gather ` 参数为 `0`，关闭并行查询。
