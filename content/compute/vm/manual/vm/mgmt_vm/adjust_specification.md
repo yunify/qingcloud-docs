@@ -3,7 +3,7 @@ title: "调整规格"
 description: 本章节主要介绍如何调整规格
 draft: false
 keyword: 云计算, 青云, QingCloud, 云服务器，创建
-weight: 30
+weight: 70
 ---
 
 若当前云服务器的规格不符合您的需要，您可以调整规格。调整规格后，计费会发生变化，请根据需要选择合适的规格。
