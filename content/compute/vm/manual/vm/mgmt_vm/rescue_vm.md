@@ -3,7 +3,7 @@ title: "救援云服务器"
 description: 本章节主要介绍如何救援云服务器
 draft: false
 keyword: 云服务器，救援云服务器
-weight: 60
+weight: 90
 ---
 
 救援云服务器时会创建一台新云服务器(云服务器名为：rescue-i-xxxx)，其挂载着被救援云服务器的根盘。并且其新创建的云服务器会在取消救援时回收。
