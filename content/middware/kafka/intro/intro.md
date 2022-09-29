@@ -15,5 +15,5 @@ draft: false
 - 提供了监控告警功能更好的管理集群
 - 节点上安装了 KafkaManager，可以管理和监控多个 Kafka 集群
 - 提供文件查看器方便排查问题（Kafka 1.1.1 - v1.5.0 起）
-- 提供第三方监控[zabbix](https://www.zabbix.com/)平台接口（kafka 2.3.0 - v2.0.0 起）
+- 提供第三方监控 [zabbix](https://www.zabbix.com/) 平台接口（kafka 2.3.0 - v2.0.0 起）
 - 在线查看日志（Kafka 2.3.1 - v2.0.1 起）
