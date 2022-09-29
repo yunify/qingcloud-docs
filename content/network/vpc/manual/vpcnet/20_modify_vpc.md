@@ -20,7 +20,7 @@ weight: 20
 
 4. 重新输入 VPC 网络的名称及描述。
 
-   <img src="/network/vpc_2.0/_images/501020_mdy_vpc.png" alt="mdy_vpc" style="zoom:50%;" />
+   <img src="/network/vpc/_images/501020_mdy_vpc.png" alt="mdy_vpc" style="zoom:50%;" />
 
 5. 点击**提交**。
 
@@ -30,8 +30,8 @@ weight: 20
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC网络**，进入**VPC网络**页面。
 3. 找到需要修改的 VPC 网络，在 VPC 的**基础属性**区域，将鼠标移到**标签**处。
 4. 根据需要执行：
-   - 绑定标签：点击<img src="/network/vpc_2.0/_images/501020_del_icon.png" alt="del_icon" style="zoom:50%;" />，选择需要绑定的标签，点击**提交**。
-   - 解绑标签：点击<img src="/network/vpc_2.0/_images/501020_add_icon.png" alt="add_icon" style="zoom:50%;" />，选择需要解绑的标签，点击**提交**。
+   - 绑定标签：点击<img src="/network/vpc/_images/501020_del_icon.png" alt="del_icon" style="zoom:50%;" />，选择需要绑定的标签，点击**提交**。
+   - 解绑标签：点击<img src="/network/vpc/_images/501020_add_icon.png" alt="add_icon" style="zoom:50%;" />，选择需要解绑的标签，点击**提交**。
 
 ## 加入及移出项目
 
