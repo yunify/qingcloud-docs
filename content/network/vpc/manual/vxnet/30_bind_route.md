@@ -25,7 +25,7 @@ weight: 30
 
 5. 在私有网络列表点击需要绑定路由表的私有网络，再点击右侧的**路由表**页签。
 
-   <img src="/network/vpc_2.0/_images/502030_bind_route.png" alt="bind_route" style="zoom:50%;" />
+   <img src="/network/vpc/_images/502030_bind_route.png" alt="bind_route" style="zoom:50%;" />
 
 5. 点击**绑定路由表**，选择要绑定的路由表，点击**提交**，完成绑定。
 

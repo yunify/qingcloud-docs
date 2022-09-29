@@ -42,7 +42,7 @@ draft: false
 | instance_id | String | 云服务器ID |
 | instance_name | String | 云服务器名称 |
 | description | String | 云服务器描述 |
-| instance_type | String | 云服务器类型，配置列表请参考 [_Instance Types_](../../../common/instance_type)。 |
+| instance_type | String | 云服务器类型。 |
 | vcpus_current | Integer | 云服务器CPU核心数目。 |
 | memory_current | Integer | 云服务器内存大小，单位为MB。 |
 | status | String | 云服务器状态，有效值为pending, running, stopped, suspended，terminated, ceased。<br/>pending： 等待被创建<br/>running： 运行中<br/>stopped： 已关机<br/>suspended： 由于欠费，已被暂停使用<br/>terminated： 已被删除，但处于此状态的云服务器在2小时之内仍可以被恢复为 running 状态<br/>ceased： 已被彻底删除，处于此状态的云服务器无法恢复 |

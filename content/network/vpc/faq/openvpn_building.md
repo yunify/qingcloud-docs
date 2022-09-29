@@ -2,7 +2,8 @@
 title: "在 Windows 客户端中配置 OpenVPN"
 description: 介绍如何在 Windows 云服务器中部署 OpenVPN 客户端。
 keyword: VPC, VPC 网络, Windows, OpenVPN 
-draft: false
+draft: true
+not_show: true
 weight: 20
 ---
 
@@ -67,12 +68,6 @@ weight: 20
 <img src="../homer/openvpn_building_16.png" width="60%" height="40%">
 
 <img src="../homer/openvpn_building_17.png" width="60%" height="40%">
-
-<img src="../homer/openvpn_building_18.png" width="60%" height="40%">
-
-<img src="../homer/openvpn_building_19.png" width="60%" height="40%">
-
-<img src="../homer/openvpn_building_20.png" width="60%" height="40%">
 
 ### 5、验证网络是否正常
 
