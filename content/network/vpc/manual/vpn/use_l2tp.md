@@ -232,7 +232,7 @@ weight: 20
    - 描述：自定义 VPN 连接名称。
    - 服务器：VPN服务器。输入 VPC 网络公网 IP。
    - 帐户：VPC L2TP 服务中创建的用户。
-   - RSA SecurID： 保持默认不开启即可。
+   - RSA SecurID：保持默认不开启即可。
    - 密码：VPC L2TP 服务中设置的用户密码。
    - 密钥：VPC L2TP 服务中设置的 PSK。
 
