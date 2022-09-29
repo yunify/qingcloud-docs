@@ -15,6 +15,9 @@ Section1:
     - title: 高性能计算 HPC
       url: "/compute/hpc/intro/intro/"
 
+    - title: GPU 云服务器
+      url: "/compute/gpu/intro/intro/"
+
     - title: 镜像
       url: "/compute/image/intro/image/"
 

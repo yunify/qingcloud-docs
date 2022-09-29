@@ -2,7 +2,8 @@
 title: "在 Linux 客户端中配置 OpenVPN"
 description: 介绍如何在 Linux 云服务器部署 OpenVPN 客户端。
 keyword: VPC, VPC 网络, Linux, OpenVPN
-draft: false
+draft: true
+not_show: true
 weight: 20
 ---
 
