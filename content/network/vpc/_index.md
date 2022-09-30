@@ -37,7 +37,7 @@ Section2:
 
     - title: 最佳实践
       content: 最佳实践
-      url: "/network/vpc/best-practices/best_practices"
+      url: "/network/vpc/best-practices/ipsec_star_topology/"
 
     - title: 常见问题
       content: 常见问题
@@ -68,7 +68,7 @@ section4:
           url: "/network/vpc/intro/10_intro"
 
         - title: 产品优势
-          url: "/network/vpc/intro/10_intro/#vpc-产品优势"
+          url: "/network/vpc/intro/15_advantage/"
     - title: 上手：创建和管理 VPC 网络
       content: 创建VPC网络，查看VPC属性，管理配置，图形化页面。
       vice_title: 上手的第一步

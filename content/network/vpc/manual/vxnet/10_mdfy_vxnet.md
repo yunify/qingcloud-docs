@@ -26,7 +26,7 @@ weight: 10
 
 4. 重新输入私有网络的名称及描述。
 
-   <img src="/network/vpc_2.0/_images/502010_mdfy_vxnet_1.png" alt="mdfy_vxnet_1" style="zoom:40%;" />
+   <img src="/network/vpc/_images/502010_mdfy_vxnet_1.png" alt="mdfy_vxnet_1" style="zoom:40%;" />
 
 5. 点击**提交**。
 

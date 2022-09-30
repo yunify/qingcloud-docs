@@ -22,14 +22,14 @@ weight: 26
 
 3. 在 VPC 名称下方的**管理路由器属性**区域，可查看到当前VPC网络的**公网 IPV4**。
 
-   <img src="/network/vpc_2.0/_images/501025_mdy_route_para.png" alt="mdy_route_para" style="zoom:50%;" />
+   <img src="/network/vpc/_images/501025_mdy_route_para.png" alt="mdy_route_para" style="zoom:50%;" />
 
-4. 将鼠标移至公网IPv4，点击<img src="/network/vpc_2.0/_images/501020_add_icon.png" alt="add_icon" style="zoom:50%;" />图标。
+4. 将鼠标移至公网IPv4，点击<img src="/network/vpc/_images/501020_add_icon.png" alt="add_icon" style="zoom:50%;" />图标。
 5. 选择需要绑定的公网 IP，点击**提交**完成绑定。
 
 ## 后续操作
 
-- 修改公网IP：在VPC网络的**管理路由器属性**区域，将鼠标移至**公网 IPv4**，点击<img src="/network/vpc_2.0/_images/501020_mdfy_icon.png" alt="mdfy_icon" style="zoom:50%;" />图标，选择其他公网 IP，点击**提交**完成修改。
+- 修改公网IP：在VPC网络的**管理路由器属性**区域，将鼠标移至**公网 IPv4**，点击<img src="/network/vpc/_images/501020_mdfy_icon.png" alt="mdfy_icon" style="zoom:50%;" />图标，选择其他公网 IP，点击**提交**完成修改。
 
-- 解绑公网IP：在VPC网络的**管理路由器属性**区域，将鼠标移至**公网 IPv4**，点击<img src="/network/vpc_2.0/_images/501020_del_icon.png" alt="del_icon" style="zoom:50%;" />图标，弹出提示框，点击**确认**完成解绑。
+- 解绑公网IP：在VPC网络的**管理路由器属性**区域，将鼠标移至**公网 IPv4**，点击<img src="/network/vpc/_images/501020_del_icon.png" alt="del_icon" style="zoom:50%;" />图标，弹出提示框，点击**确认**完成解绑。
 
