@@ -54,4 +54,4 @@ QKE 可以帮助您在创建 QKE 集群时，轻松快速的安装好 KubeSphere
    >
    > 默认管理员账户及密码：admin/P@88w0rd，登录后需要立即修改密码。
 
-   ![](../../_images/kubesphere_login.png)·	
+   <img src="../../_images/kubesphere_login.png" style="zoom:50%"/>
