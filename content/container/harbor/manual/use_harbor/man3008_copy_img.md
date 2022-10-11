@@ -2,7 +2,7 @@
 title: "配置镜像复制"
 draft: false
 description: 介绍如何配置镜像复制规则。
-keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库, 镜像仓库,镜像复制
+keyword: Harbor, 私有镜像仓库, 镜像仓库,镜像复制
 weight: 8
 ---
 
@@ -22,7 +22,7 @@ Harbor 提供镜像复制功能，允许用户以推送和拉取方式在不同 
 
 详细操作说明，请参见 [Harbor 官方文档](https://goharbor.io/docs/2.2.0/administration/configuring-replication/)，以下为步骤要点。
 
->**说明**：
+>**说明**
 >
 >本操作中截图以 Harbor v2.2.1 为例，仅供参考，请以您部署的 Harbor 实际版本为准。
 

@@ -2,7 +2,7 @@
 title: "推送拉取镜像"
 draft: false
 description: 如何使用 Docker 推送（push）及拉取（pull）镜像。
-keyword: 青云, QingCloud, 云计算, Harbor, Docker, 镜像, 镜像仓库
+keyword: Harbor, Docker, 镜像, 镜像仓库
 weight: 1
 ---
 
@@ -12,7 +12,7 @@ weight: 1
 
 - 已安装 Docker。具体操作，请参见[安装Docker](https://docs.docker.com/get-docker/)。
 
-> 说明：
+> **说明**
 >
 > Docker 支持 Mac OS、Windows及Linux多个平台上安装，请根据您的实际需求下载匹配的安装包进行安装。
 
@@ -28,7 +28,7 @@ docker pull Harbor_address/ProjectName/Repsitory[:Tag]
 
 其中：
 
-- `Harbor_address` 表示您的 Harbor 镜像仓库地址，需要与[参数配置页面](/container/harbor/manual/man08_mdy_para/)中的 **Harbor 地址**保持一致。
+- `Harbor_address` 表示您的 Harbor 镜像仓库地址，需要与[参数配置页面](../../config_para/modify_para/)中的 **Harbor 地址**保持一致。
 - `ProjectName` 表示项目名称。
 - `Repsitory` 表示镜像仓库名称。
 - `Tag` 表示镜像标签，通常表示镜像版本。
