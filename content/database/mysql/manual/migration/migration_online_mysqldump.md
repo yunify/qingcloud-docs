@@ -26,14 +26,14 @@ draft: false
 - 不支持从高版本迁移至低版本。
 - 在线迁移过程中，禁止向远端集群和本集群执行任何操作，包括 DDL 语句、控制台管理等。
 - 在线迁移过程中，仅在**主实例**节点运行。若存在**只读实例**节点，将迁移失败；**Proxy 实例**节点，不影响在线迁移。
-- 不支持迁移远端 MySQL 数据库账号。
+- 不支持迁移远端 MySQL 数据库账号，远端业务账号可在启动**在线迁移**前创建，也可在执行**结束迁移**后创建。
 - 当远端 MySQL 数据库与 MySQL Plus 集群不在同一 VPC 时，需使用[边界路由器](../../../../../network/border_router/)或 [VPN](../../../../../network/vpc/manual/vpn/) 等方式打通网络。
 
 ## 前提条件
 
 - 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - MySQL Plus 集群状态为**活跃**。
-- 已设置远端集群参数 `connect_timeout=30`，且已设置远端集群和本集群参数 `max_allowed_packets=1G`、`slave_pending_jobs_size_max=1G`、`interactive_timeout=3600`、`wait_timeout=3600`、`net_read_timeout=1800`、`net_write_timeout=1800`。
+- 已设置远端集群参数 `connect_timeout=30`，且已设置远端集群和本集群参数 `max_allowed_packets=1G`、`slave_pending_jobs_size_max=1G`、`interactive_timeout=3600`、`wait_timeout=3600`、`net_read_timeout=3600`、`net_write_timeout=3600`。
 - 已获取远端 MySQL 数据库具有 **super** 和**复制**权限的账号，且已开启 GTID 模式。
 
 ## 操作步骤

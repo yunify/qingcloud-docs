@@ -63,7 +63,7 @@ MongoDB 集群默认支持 Zabbix 监控服务，需登录 Zabbix Server 的 Web
 
    * **Groups** 选择模版类型，此处以 `Zabbix servers` 为例。
    * **Interfaces** 参数值后点击 **Add**，并选择 **Agent。**
-     * **Interfaces** 的 **IP address** 配置为集群 **zabbix server** 的 IP 地址。
+     * **Interfaces** 的 **IP address** 配置为集群与 **zabbix server** 互通的 IP 地址。
      * **Interfaces** 的 **Port** 配置为集群 Zabbix Agent/Zabbix Agent 2 的服务端口，Zabbix Agent 服务默认端口为 `10050`，Zabbix Agent 2 服务端口默认为 `10051`，可以根据实际环境修改，此处以 Zabbix Agent 2 端口号为`10050`为例。
 
    <img src="../../_images/zabbix_create_host1.png" alt="创建 Host" style="zoom:50%;" />
