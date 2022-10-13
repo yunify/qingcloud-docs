@@ -88,7 +88,7 @@ x-qvod-request-id: aa08cf7a43f611e5886952542e6ce14b
 }
 ```
 
-**注意**：此请求会返回世纪文件上传的地址，可以根据该地址进行上传，参考示例代码如下。
+**注意**：此请求会返回实际文件上传的地址，可以根据该地址进行上传，参考示例代码如下。
 
 ```
 func httpSendVideo(method string, url string, body string) (map[string]interface{}, error) {

@@ -6,6 +6,12 @@ keyword: 青云, QingCloud, 云计算, Harbor, 私有镜像仓库，镜像仓库
 weight: 10
 
 product:
+
+    - time: 2022-08-22
+      title: Harbor 2.2.1 - QingCloud 1.6.2 版本正式上线
+      content: 功能优化。<br>- 新增 s3 存储分块上传参数设置。<br>- 修复 harbor redis 组件无密码问题。
+      url: ../../manual/config_para/para_info/
+
     - time: 2021-06-05
       title: Harbor 2.2.1 - QingCloud 1.6.0 版本正式上线
       content: 青云 QingCloud Harbor 镜像仓库 2.2.1 版本新上线，基于 Harbor 2.2.1 版本构建，镜像安全扫描插件更换为 trivy。

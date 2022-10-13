@@ -9,7 +9,7 @@ draft: false
 product:
     - time: 2020-05-19
       title: ZooKeeper 2.0.0 版本上线
-      content: ZooKeeper 2.0.0 版本基于 ZooKeeper 3.4.14 构建。<br>- 新增支持集群数据备份和恢复功能。<br>- 新增支持自助查看和下载日志等文件。<br>- 新增支持自助开启或关闭 REST 服务。<br>- 禁止删除主节点，以防止极端情况下数据丢失。<br>- 修复部分功能体验问题。
+      content: ZooKeeper 2.0.0 版本基于 ZooKeeper 3.4.14 构建。<br>- 新增支持集群数据备份和恢复功能。<br>- 新增支持自助查看和下载日志等文件。<br>- 新增支持自助开启或关闭 REST 服务。<br>- 禁止删除主节点，以防止极端情况下数据丢失。<br>- 修复部分功能体验问题。<br>- 修复从单节点扩容到多节点时可能丢失数据的问题。
       url: /bigdata/zookeeper/manual/backup_restoration/create_backup/
 
     - time: 2019-03-30
