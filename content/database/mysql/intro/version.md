@@ -11,6 +11,19 @@ draft: false
 
 ## 新形态版本
 
+### 1.1.2版本
+
+兼容 MySQL 8.0、5.7、5.6内核，其中**金融版**产品系列仅支持 MySQL 8.0、5.7内核。
+
+| <span style="display:inline-block;width:140px">版本</span> | <span style="display:inline-block;width:520px">版本说明</span> |
+| :--------------------------------------------------------- | :----------------------------------------------------------- |
+| 金融版-1.1.2                                               | <ul><li>新增大量服务监控项。</li><li>更新 MySQL 内核，8.0支持 RocksDB，5.7移除 TokuDB，支持升级校验。</li><li>更新 Proxy 实例内核，提升稳定性。</li><li>支持 Proxy 实例自动同步 MySQL 账号和部分参数。</li><li>优化系统网络配置，提升高并发能力。</li><li>支持对象存储为 HTTP 协议时的逻辑备份。</li><li>开放 `collation_server` 参数，并与 `character_set_server` 联动。</li><li>禁止更新 MySQL 8.0 `lower_case_table_names` 参数。</li><li>修复在更新特定 MySQL 参数后可能出现主节点只读的问题。</li><li>修复主动关闭主节点只读功能失效的问题。</li><li>修复若启动时加载数据量过大可能出现超时失败的问题。</li><li>禁止在线迁移时进行逻辑备份。</li></ul> |
+| 高可用版-1.1.2                                             | <ul><li>新增大量服务监控项。</li><li>更新 MySQL 内核，8.0支持 RocksDB，5.7移除 TokuDB，支持升级校验。</li><li>更新 Proxy 实例内核，提升稳定性。</li><li>支持 Proxy 实例自动同步 MySQL 账号和部分参数。</li><li>优化系统网络配置，提升高并发能力。</li><li>支持对象存储为 HTTP 协议时的逻辑备份。</li><li>开放 `collation_server` 参数，并与 `character_set_server` 联动。</li><li>禁止更新 MySQL 8.0 `lower_case_table_names` 参数。</li><li>修复在更新特定 MySQL 参数后可能出现主节点只读的问题。</li><li>修复主动关闭主节点只读功能失效的问题。</li><li>修复若启动时加载数据量过大可能出现超时失败的问题。</li><li>禁止在线迁移或启动灾备时进行逻辑备份。</li><li>提升灾备集群几圈异常时的治愈能力。</li></ul> |
+| 基础版-1.1.2                                               | <ul><li>新增大量服务监控项。</li><li>更新 MySQL 内核，8.0支持 RocksDB，5.7移除 TokuDB，支持升级校验。</li><li>更新 Proxy 实例内核，提升稳定性。</li><li>支持 Proxy 实例自动同步 MySQL 账号和部分参数。</li><li>优化系统网络配置，提升高并发能力。</li><li>支持对象存储为 HTTP 协议时的逻辑备份。</li><li>开放 `collation_server` 参数，并与 `character_set_server` 联动。</li><li>禁止更新 MySQL 8.0 `lower_case_table_names` 参数。</li><li>修复极端情况下在线迁移完成后数据未迁移问题。</li><li>修复若启动时加载数据量过大可能出现超时失败的问题。</li><li>禁止在线迁移时进行逻辑备份。</li></ul> |
+
+
+### 
+
 ### 1.1.1版本
 
 兼容 MySQL 8.0、5.7、5.6内核，其中**金融版**产品系列仅支持 MySQL 8.0、5.7内核。

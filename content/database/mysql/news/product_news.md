@@ -7,6 +7,15 @@ collapsible: false
 draft: false
 
 product:
+    - time: 2022-09-19
+      title: MySQL Plus 1.1.2 版本正式上线
+      content: MySQL Plus 1.1.2 版本基于 MySQL 5.6、5.7、8.0 内核构建。<br>- 新增大量服务监控项。<br>- 更新 MySQL 内核，8.0支持 RocksDB，5.7移除 TokuDB，支持升级校验。<br>- 更新 Proxy 实例内核，提升稳定性。<br>- 支持 Proxy 实例自动同步 MySQL 账号和部分参数。<br>- 优化系统网络配置，提升高并发能力。<br>- 支持对象存储为 HTTP 协议时的逻辑备份。<br>- 开放 `collation_server` 参数，并与 `character_set_server` 联动。<br>- 禁止更新 MySQL 8.0 `lower_case_table_names` 参数。<br>- 修复在更新特定 MySQL 参数后可能出现主节点只读的问题。<br>- 修复自动关闭主节点只读功能失效的问题。<br>- 修复若启动时加载数据量过大可能出现超时失败的问题。<br>- 禁止在线迁移或启动灾备时进行逻辑备份。<br>- 提升灾备集群极端异常时的自愈能力。
+      url: ../../intro/version/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 全部
+
     - time: 2022-04-12
       title: MySQL Plus 1.1.1 版本正式上线
       content: MySQL Plus 1.1.1 版本基于 MySQL 5.6、5.7、8.0 内核构建。<br>- 新增慢日志预览功能；<br>- 新放开 `Logical_backup_exec_timeout`、`Log_slave_updates`参数；<br>- 新增<b>集群状态切换</b>监控项；<br>- 修复旧形态1.6.1等版本升级到1.1.0版本失败问题；<br>- 修复集群自动化运维问题，加强集群服务稳定性。<br>- 支持配置全量逻辑备份超时时间。<br>- 支持全量逻辑备份失败时自动清理对象存储脏数据。<br>- 支持可配置只读实例开关 binlog。<br>- 修复 1.1.0 版本 5.7 内核逻辑备份失败的问题。<br>- 修复旧形态的版本升级到 1.1.0 版本失败的问题。<br>- 修复网卡闪断后可能出现高可用写 IP 丢失的问题。<br>- 修复创建集群时可能出现的拷贝初始数据目录超时的问题。<br>- 修复 LXC 本地盘模式下只读实例全部宕机后无法自动重建的问题。<br>- 修正部分 job 失败时的报错信息。

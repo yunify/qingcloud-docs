@@ -31,7 +31,7 @@ draft: false
 
    > **注意**
    >
-   > 使用的是 tokudb 存储引擎，SQL 需要改为 `show engine tokudb status\G`。
+   > 使用的是 RocksDB 存储引擎，SQL 需要改为 `show engine rocksdb status\G`。
 
 2. 下载慢日志文件`mysql-slow.log`。详细操作请参考[下载日志](../../manual/mgt_log/download_log)。
 
