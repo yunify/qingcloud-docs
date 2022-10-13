@@ -1,25 +1,26 @@
 ---
-title: "创建并配置 opensearch exporter 访问用户"
+title: "如何创建并配置 OpenSearch Exporter 访问用户"
 description: 本小节主要介绍如何创建并配置 opensearch exporter 访问用户。 
 keyword: opensearch exporter,访问用户,OpenSearch,文档数据库,数据库
 weight: 30
 collapsible: false
 draft: false
 
+
 ---
 
 ## 背景介绍
 
-在使用云平台 OpenSearch 1.2.4 - v1.0.x 提供的 opensearch exporter 时，需要指定访问用户。使用者在配置访问用户时，需要为用户配置特定权限，如果权限配置不当，则无法从 opensearch exporter 获取监控数据。
+在使用云平台 OpenSearch 提供的 OpenSearch Exporter 时，需要指定访问用户。使用者在配置访问用户时，需要为用户配置特定权限，如果权限配置不当，则无法从 OpenSearch Exporter 获取监控数据。
 
-本文以一个 opensearch 测试集群为例，介绍 opensearch exporter 访问用户的创建以及用户权限的配置。
+本文以一个 OpenSearch 测试集群为例，介绍 OpenSearch Exporter 访问用户的创建以及用户权限的配置。
 
 ## 前提条件
 
-* 已安装 dashboard。
+* 已安装 Dashboard。
 * 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 
-## 步骤 1：创建 opensearch exporter 的专属用户
+## 步骤 1：创建 OpenSearch Exporter 的专属用户
 
 1. 浏览器登录 Dashboard，详细操作请参见[访问 Dashboard](/bigdata/opensearch/os_manual/dashboard/dashboard_login/)。
 
