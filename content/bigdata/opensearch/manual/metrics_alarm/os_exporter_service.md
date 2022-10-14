@@ -36,6 +36,6 @@ OpenSearch 服务默认开启 OpenSearch Exporter 服务，可通过访问 `http
 
 您也可以通过在 Prometheus 添加 OpenSearch 热节点为数据源，成功添加数据源后，即可在可视化查看节点资源监控信息。
 
-- 详细 Grafana 添加数据源说明，请参见[Add a data source](https://grafana.com/docs/grafana/latest/datasources/add-a-data-source/)。
-
-- 详细 Prometheus 数据源的选项、变量、查询等说明，请参见[Prometheus data source](https://grafana.com/docs/grafana/latest/datasources/prometheus/)。
+- 详细 Grafana 添加数据源说明，请参见 [Add a data source](https://grafana.com/docs/grafana/latest/datasources/add-a-data-source/)。
+- 详细 Prometheus 数据源的选项、变量、查询等说明，请参见 [Prometheus data source](https://grafana.com/docs/grafana/latest/datasources/prometheus/)。
+- OpenSearch Exporter 访问用户请参见[如何创建并配置 OpenSearch Exporter 访问用户](/bigdata/opensearch/faq/opensearch_exporter/)。

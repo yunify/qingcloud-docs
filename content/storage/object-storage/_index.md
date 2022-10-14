@@ -52,7 +52,7 @@ section3:
       
     - title: S3 兼容
       content: S3 兼容说明
-      url: "s3/"
+      url: "/storage/object-storage/s3/intro/"
 
 section4:
   children:
