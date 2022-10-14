@@ -14,7 +14,7 @@ weight: 20
 
   > **说明**
   >
-  > 如果存在地址冲突，您可以将私有网络与 VPC 网络断开，再重新连接至 VPC 网络，并重新指定一个网络地址给您的私有网络。
+  > 如果网络地址存在重叠，您可以将私有网络与 VPC 网络断开，再重新连接至该 VPC 网络，并重新给私有网络指定一个网络地址。
 
 - 客户端能够访问互联网。
 
@@ -28,7 +28,7 @@ weight: 20
 
    <img src="/network/vpc/_images/vpn_service.png" style="zoom:50%;" />
 
-4. 点击 **L2TP** 后面的**打开**，弹出**打开 PPTP 服务**对话框。
+4. 点击 **L2TP** 后面的**打开**，弹出**打开 L2TP 服务**对话框。
 
    <img src="/network/vpc/_images/webconsole_open_l2tp.png" style="zoom:50%;" />
 
@@ -36,7 +36,7 @@ weight: 20
 
    | 参数     | 说明                                                         |
    | -------- | ------------------------------------------------------------ |
-   | 账户     | VPN 连接的认证用户名。<br/>用户名中不能包含特殊字符, 只能包含大小写字母或者数字, 或者[-_.] |
+   | 账户     | VPN 连接的认证用户名。<br/>用户名中不能包含特殊字符，只能包含大小写字母或者数字，或者 “-_.”。 |
    | 密码     | VPN 连接的认证密码。<br/>密码至少 8 位，并包括大小写字母及数字。 |
    | PSK      | 预共享密钥，用于验证 L2TP/IPSec 连接的 Unicode 字符串。<br/>输入任意字符串即可。后续可修改。 |
    | 网络地址 | VPN 网络地址。<div style="background-color: #D8ECDE; padding: 10px 24px; margin: 10px 0; border-left: 3px solid #00a971;"><b>说明</b><br/> VPN 网络地址不能跟您的本地网络存在冲突。</div> |
@@ -104,7 +104,7 @@ weight: 20
    > 请将配置文件中的 `<xxx>`替换成您的配置：
    >
    > - `<l2tp_server_ip>`：VPC 网络的公网 IP。
-   > - `<l2tp_name> `：IPsec 连接名（自定义）。
+   > - `<l2tp_name>`：IPsec 连接名（自定义）。
 
 3. 修改 ``/etc/ipsec.secrets`` 配置。
 
@@ -114,10 +114,10 @@ weight: 20
 
    > **说明**
    >
-   > 请将配置文件中的 ``<xxx>`` 替换成您的配置：
+   > 请将配置文件中的 `<xxx>` 替换成您的配置：
    >
-   > - ``<l2tp_server_ip>`` ：VPC 网络的公网 IP。
-   > - ``<psk> ``：您配置的预共享密钥。
+   > - ``<l2tp_server_ip>``：VPC 网络的公网 IP。
+   > - ``<psk>``：您配置的预共享密钥。
 
 4. 重启服务。
 
@@ -156,9 +156,9 @@ weight: 20
    >
    > 请将配置文件中的 ``<xxx>`` 换成您的配置：
    >
-   > - ``<lac_name>`` ：lac 命名（自定义）。
-   > - ``<l2tp_server_ip>`` ：VPC 网络的公网 IP。
-   > - ``<l2tp_name>`` ：ppp 配置的文件名（自定义）。
+   > - ``<lac_name>``：lac 命名（自定义）。
+   > - ``<l2tp_server_ip>``：VPC 网络的公网 IP。
+   > - ``<l2tp_name>``：ppp 配置的文件名（自定义）。
 
 3. 新建 ``/etc/ppp/<l2tp_name>`` 配置文件，配置如下内容。
 
@@ -181,9 +181,9 @@ weight: 20
    >
    > 请将配置文件中的 ``<xxx>`` 部分替换成您的配置：
    >
-   > - ``<user_name>`` ：VPN 连接用户名。
+   > - ``<user_name>``：VPN 连接用户名。
    >
-   > - ``<password>`` ：VPN 连接密码。
+   > - ``<password>``：VPN 连接密码。
 
 4. 重启服务。
 
@@ -213,10 +213,11 @@ weight: 20
    
 
    > **说明**
+   >
    > 请将配置中的 ``<xxx>`` 替换成您的配置：
    >
-   > - ``<ip_network>`` ：VPC 下的私有网络地址段。
-   > - ``<link_name>`` ：ppp 连接的网卡接口名字，通常以 ppp 开头。
+   > - ``<ip_network>``：VPC 下的私有网络地址段。
+   > - ``<link_name>``：ppp 连接的网卡接口名字，通常以 ppp 开头。
 
 ### iOS 客户端
 
@@ -232,7 +233,7 @@ weight: 20
    - 描述：自定义 VPN 连接名称。
    - 服务器：VPN服务器。输入 VPC 网络公网 IP。
    - 帐户：VPC L2TP 服务中创建的用户。
-   - RSA SecurID： 保持默认不开启即可。
+   - RSA SecurID：保持默认不开启即可。
    - 密码：VPC L2TP 服务中设置的用户密码。
    - 密钥：VPC L2TP 服务中设置的 PSK。
 
