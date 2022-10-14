@@ -1,25 +1,21 @@
 ---
-title: "网关过滤控制(ACL)"
+title: "网关过滤控制"
 keyword: VPC, 网关过滤控制, ACL
 description: 介绍如何使用网关过滤控制功能。
 draft: false
 weight: 70
-
 ---
 
+网关过滤控制（ACL）用于配置隧道、VPN、NAT 网关的 ACL 过滤规则，实现 VPC 的网络流量在通过隧道、VPN 或 NAT 网关与其他网络互通时的访问控制。
 
-在 VPC 网络的详情页面，管理配置页签中，可以看到**网关过滤控制（ACL）**功能。 
+以 GRE 隧道为例，假设现有两个 VPC 网络的 GRE 隧道配置如下：
 
-网关过滤控制(ACL) 用于配置 隧道/VPN/NAT 的 ACL 过滤规则，以完成 VPC 的网络流量在通过 隧道/VPN/NAT 与其他网络互通时的访问控制。
+![](/Users/hedan/Documents/备份/dev/network/vpc/_images/vpc_acl_example1.png)
 
-以GRE隧道为例，假设现有两个VPC 网络的GRE隧道配置如下：
+若需要实现拒绝 192.168.2.2 这个 IP 地址对 192.168.5.0/24 子网内所有 IP，1000~10000 端口范围的访问，则可以添加以下网关过滤控制规则进行：
 
-![](../_images/vpc_acl_example1.png)
+![](/Users/hedan/Documents/备份/dev/network/vpc/_images/vpc_acl_detail.png)
 
-添加网关过滤控制规则：
 
-![](../_images/vpc_acl_detail.png)
-
-通过上述配置，可实现拒绝192.168.2.2这个IP地址对192.168.5.0/24这个子网内IP，1000-10000端口范围的访问。
 
 ​    
