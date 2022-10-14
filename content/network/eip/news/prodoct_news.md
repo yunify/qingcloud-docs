@@ -2,7 +2,7 @@
 title: "产品动态"
 collapsible: false
 description: 公网 IP 产品动态。
-keyword: QingCloud, 青云, 云计算, 公网IP, 产品动态
+keyword:  公网IP, 产品动态
 weight: 10
 
 product:

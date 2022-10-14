@@ -1,7 +1,7 @@
 ---
 title: "搭建 IPv6 网络并开通公网访问"
 description: 介绍如何搭建 IPv6 网络并开通公网访问。
-keyword: QingCloud, 青云, 云计算, 公网IP, IPv6 网络
+keyword:  公网IP, IPv6 网络
 draft: false
 ---
 

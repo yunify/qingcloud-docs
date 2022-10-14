@@ -25,7 +25,7 @@ VPN 服务支持 OpenVPN 、PPTP 及 L2TP-IPsec 三种协议实现客户端与 V
 
 - 如果您追求更好的安全稳定性，建议您使用 OpenVPN。
 - 如果您希望配置简单、易使用，建议您使用 PPTP/L2TP。
-- 由于苹果的系统 Mac OS 已不再支持 PPTP 隧道服务和客户端等配置项，若您使用的设备系统是 Mac OS，则只能使用 OpenVPN/PPTP。
+- 由于苹果的系统 Mac OS 已不再支持 PPTP 隧道服务和客户端等配置项，若您使用的设备系统是 Mac OS，则只能使用 OpenVPN/L2TP。
 
 ## 使用限制
 
