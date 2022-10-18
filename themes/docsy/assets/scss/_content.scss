@@ -111,7 +111,7 @@
         list-style: square;
     }
 
-    li ol li {
+    li ol > li {
         list-style: lower-alpha;
     }
 
