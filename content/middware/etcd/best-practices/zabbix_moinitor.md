@@ -24,7 +24,7 @@ Etcd 版本为 3.0 以上，即 QingCloud Etcd App 版本不低于 `etcd 3.2.25 
 
   > **说明**
   >
-  > 建议 Zabbix 与 Etcd 部署在同一 VPC 下。若安装 Zabbix 的服务器与 Etcd 网络不通，可通过[边界路由器](/network/border_router/)或 [VPN](/network/vpc/manual/vpn/vpn_intro/) 等方式打通网络。不建议通过**端口转发**的方式将服务暴露到公网，以免造成 信息暴露等风险。
+  > 建议 Zabbix 与 Etcd 部署在同一 VPC 下。若安装 Zabbix 的服务器与 Etcd 网络不通，可通过[边界路由器](/network/border_router/)或 [VPN](/network/vpc/manual/vpn/vpn_intro/) 等方式打通网络。不建议通过**端口转发**的方式将服务暴露到公网，以免造成信息暴露等风险。
 
 ## 操作步骤
 
