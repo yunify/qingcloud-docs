@@ -69,7 +69,7 @@ Etcd 版本为 3.0 以上，即 QingCloud Etcd App 版本不低于 `etcd 3.2.25 
    配置如下参数：
 
    - **Host name**：自定义主机名称。
-   - **Templates**：选择监控模板。此处选择[步骤一]()中下载的 Etcd by HTTP 模板。
+   - **Templates**：选择监控模板。此处选择[步骤一](#步骤一下载并导入监控模板)中下载的 Etcd by HTTP 模板。
    - **Host groups**：选择主机所属组。此处可选 `Linux Server`。
    - **Interface**：点击 **Add** > **Agent**，添加需要监控的主机。通过重复点击 **Add**  > **Agent** 添加多个主机。
      - **IP address** 配置为集群与 Zabbix Server 互通的 IP 地址。
