@@ -14,7 +14,7 @@ Eecd 默认提供 HTTP 的监控数据接口 `http://IP:2379/metrics`，供用�
 
 ## 适用范围
 
-Etcd 版本为 3.0 以上，即 QingCloud Etcd App 版本不低于 `etcd 3.2.25 - 2.0.0`。
+Etcd 版本为 3.0 以上，QingCloud Etcd App 版本不低于 `etcd 3.2.25 - 2.0.0`。
 
 ## 前提条件
 
