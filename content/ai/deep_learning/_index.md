@@ -4,6 +4,7 @@ linkTitle: "深度学习平台"
 weight: 1
 collapsible: true
 type: "product"
+not_show: true
 
 section1:
   title: "深度学习平台 Deep Learning on QingCloud "
