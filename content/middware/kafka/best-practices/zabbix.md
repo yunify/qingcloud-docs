@@ -10,12 +10,16 @@ draft: false
 
 为了实现多维监控 Kafka 集群，Kafka 支持启用 Zabbix 提供监控服务。
 
-<img src="../../_images/zabbix_arh_kafka.png" alt="zabbix" style="zoom:50%;" />
+<img src="../../_images/zabbix_arh_kafka.png" alt="zabbix" style="zoom:100%;" />
 
 * Zabbix Server：负责接收 Kafka 集群发送的报告信息的核心组件，所有配置、统计数据及操作数据均由其组织进行。
 * Host：配置 Host，并设置模板（Templates）和宏（Macros），使 Zabbix Server 与 Kafka 集群节点建立连接。
 
 本小节主要介绍如何配置 Zabbix Server 监控 Kafka 集群。
+
+## 约束限制
+
+仅 Kafka 1.0.0 - v1.1.8 及以上版本支持配置 Zabbix 监控。
 
 ## 前提条件
 
