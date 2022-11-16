@@ -22,22 +22,6 @@ keyword: 云计算, 青云, QingCloud, 镜像
 
 ![](/compute/vm/intro/_images/create_instance_choose_image.png)
 
-## 青云提供的内网镜像源代理
-
-为了方便更新Linux操作系统，我们提供了内网镜像代理，可供无法访问公网的云服务器更新系统。代理地址如下：
-
-Ubuntu: `http://mirrors.ks.qingcloud.com`
-支持区域:
-  * 北京3区
-
-使用方法
-
-```
-sudo sed -i s/us.archive.ubuntu.com/mirrors.ks.qingcloud.com/g /etc/apt/sources.list
-sudo sed -i s/cn.archive.ubuntu.com/mirrors.ks.qingcloud.com/g /etc/apt/sources.list
-sudo sed -i s/security.ubuntu.com/mirrors.ks.qingcloud.com/g /etc/apt/sources.list
-sudo apt-get update
-```
 
 ## 青云提供的开源操作系统镜像模板
 
