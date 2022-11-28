@@ -4,7 +4,7 @@ description: 本小节主要介绍如何配置 Zabbix 监控服务。
 keyword: Zabbix 监控,zabbix server,ZooKeeper
 weight: 35
 collapsible: false
-draft: false
+draft: true
 
 ---
 
