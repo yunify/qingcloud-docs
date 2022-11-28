@@ -3,6 +3,15 @@ title: "最新动态"
 collapsible: false
 
 product:
+    - time: 2022-11-03
+      title: 青云正式上线备案转移功能
+      content: 新增备案转移功能。支持将源账号下已备案完成的主体、网站转移到目标账号下，对业务无影响。
+      url: /site/record/manual/switch_filing/
+      tags:
+      - 新功能
+      - 体验优化
+      zone: 中国大陆地区
+
     - time: 2022-09-20 14:50:47
       title: 青云正式上线备案整改功能
       content: 新增备案信息核查和备案整改功能。
