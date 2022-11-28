@@ -21,6 +21,9 @@ Section1:
     - title: 分布式数据库 PolonDB
       url: "/database/polondb/intro/introduction"
 
+    - title: 时序数据库 ChronusDB
+      url: "/database/chronusdb/intro/introduction"
+
     - title: 文档数据库 MongoDB
       url: "/database/mongodb/intro/introduction"
 

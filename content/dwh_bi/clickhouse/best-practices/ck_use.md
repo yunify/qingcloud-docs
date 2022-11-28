@@ -139,7 +139,7 @@ $ echo "CREATE TABLE test.t_local
     CounterID UInt32,
     UserID UInt32
 )
-ENGINE = ReplicatedMergeTree('{namespace}/test/t_local', '{replica}')
+ENGINE = ReplicatedMergeTree('/{namespace}/test/t_local', '{replica}')
 PARTITION BY toYYYYMM(EventDate)
 ORDER BY (CounterID, EventDate, intHash32(UserID))
 SAMPLE BY intHash32(UserID)" | curl 'http://default:ck123@139.198.190.141:8123' --data-binary @-
