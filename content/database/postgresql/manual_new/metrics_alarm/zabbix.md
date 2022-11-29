@@ -1,5 +1,5 @@
 ---
-title: "配置 Zabbix Server 监控"
+title: "配置 Zabbix 监控"
 description: 本小节主要介绍如何配置 Zabbix 监控服务。 
 keyword: PG,PostgreSQL,关系型数据库,数据库,Zabbix 监控,zabbix server
 weight: 50
@@ -16,11 +16,11 @@ draft: false
 
   > **说明**
   >
-  > 若安装 Zabbix agent2 环境与 Redis Cluster 网络不通，可通过[边界路由器](/network/border_router/)或 [VPN](/network/vpc/manual/vpn/) 等方式打通网络。不建议通过**端口转发**的方式将服务暴露到公网，以免造成 PostgreSQL 关键信息暴露等风险。
+  > 若安装 Zabbix agent2 环境与 PostgreSQL 网络不通，可通过[边界路由器](/network/border_router/)或 [VPN](/network/vpc/manual/vpn/) 等方式打通网络。不建议通过**端口转发**的方式将服务暴露到公网，以免造成 PostgreSQL 关键信息暴露等风险。
 
 ## 步骤一：创建用于监控的 zabbix 账号
 
-详细操作请参见[添加账号](../../manual_new/mgt_account/create_account/)。
+详细操作请参见[添加账号](../../mgt_account/create_account/)。
 
 > **说明**
 > 
@@ -38,9 +38,9 @@ draft: false
 
 4. 填写以下关键参数：
 
-    ![img](../../_images/zabbix_image2.png)
+    **Host**：
 
-    Host：
+    ![img](../../_images/zabbix_image2.png)
 
     | 选项        | 说明                       | 示例                         |
     | ----------- | -------------------------- | ---------------------------- |
@@ -49,9 +49,9 @@ draft: false
     | Host groups | Host 所在的组。            | Databases                    |
     | Interfaces  | 添加您的 agent2 的地址。   | agent：127.0.0.1:10050       |
 
-    ![img](../../_images/zabbix_image3.png)
+    **Macros**：
 
-    Macros：
+    ![img](../../_images/zabbix_image3.png)
 
     | 选项           | 说明     | 示例                       |
     | -------------- | -------- | -------------------------- |
