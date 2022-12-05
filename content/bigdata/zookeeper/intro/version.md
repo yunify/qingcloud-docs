@@ -9,6 +9,14 @@ draft: false
 
 ZooKeeper 基于原生 ZooKeeper版本构建，适配全新 AppCenter 框架，将开源 ZooKeeper 封装成应用，提供高可用的分布式数据管理与系统协调软件服务。
 
+## ZooKeeper 3.6.3 - v2.1.0
+
+基于原生 Apache ZooKeeper 3.6.3 构建，同时提供 ZooKeeper REST 服务。
+
+- 支持 zabbix 监控。
+- 支持集群升级、扩容时最后升级、扩容 leader 节点。
+- 修复 Apache ZooKeeper 3.4 版本重启或升级时出现 “Unable to load database on disk” 的问题。
+
 ## ZooKeeper 3.4.14 - v2.0.0
 
 基于原生 Apache ZooKeeper 3.4.14 构建，同时提供 ZooKeeper REST 服务。
