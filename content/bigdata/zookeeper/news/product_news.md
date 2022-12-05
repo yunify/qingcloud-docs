@@ -7,6 +7,14 @@ collapsible: false
 draft: false
 
 product:
+    - time: 2022-12-01
+      title: ZooKeeper 2.1.0 版本上线
+      tags: 
+      - 新功能
+      zone: 北京3区，上海1区，广东2区
+      content: ZooKeeper 2.1.0 版本基于 ZooKeeper 3.6.3 构建。<br>- 支持 zabbix 监控。<br>- 支持集群升级、扩容时最后升级、扩容 leader 节点。<br>- 修复 Apache ZooKeeper 3.4 版本重启或升级时出现 “Unable to load database on disk” 的问题。
+      url: /bigdata/zookeeper/manual/best-practices/zabbix/
+
     - time: 2020-05-19
       title: ZooKeeper 2.0.0 版本上线
       content: ZooKeeper 2.0.0 版本基于 ZooKeeper 3.4.14 构建。<br>- 新增支持集群数据备份和恢复功能。<br>- 新增支持自助查看和下载日志等文件。<br>- 新增支持自助开启或关闭 REST 服务。<br>- 禁止删除主节点，以防止极端情况下数据丢失。<br>- 修复部分功能体验问题。<br>- 修复从单节点扩容到多节点时可能丢失数据的问题。
