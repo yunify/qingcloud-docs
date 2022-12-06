@@ -8,11 +8,15 @@ draft: false
 
 本文介绍如何在 Zabbix Server 上配置 MySQL PLus 集群监控。
 
+## 适用范围
+
+支持 Zabbix Server 3.4～6.2 版本。
+
 ## 前提条件
 
 - 已创建 MySQL PLus 集群，且集群状态为`活跃`。
 - MySQL PLus 集群已启动 Zabbix 客户端服务。
-- 已获取 Zabbix Server 用户和密码。
+- 已获取 Zabbix Server 用户名和密码。
 
   > **说明**
   >
