@@ -7,6 +7,14 @@ collapsible: false
 draft: false
 
 product:
+    - time: 2022-12-13
+      title: PG V2.1.0-高可用版/基础版正式上线
+      content: PostgreSQL PG V2.1.0-高可用版/基础版 新上线。<br>- 支持 PostgreSQL 15。<br>- 增加 Citus 插件，轻松创建分布式数据库集群。<br>- 增加 PostGIS 插件，增强空间数据处理能力。
+      url: ../../manual_new/citus/
+      tags:
+      - 新功能
+      zone: 全区域
+
     - time: 2022-08-30
       title: PG V2.0.0-高可用版/基础版正式上线
       content: PostgreSQL PG V2.0.0-高可用版/基础版 新上线。<br>- 全新优化操作界面，底层代码重构，高效提升PG性能。<br>- 优化监控项字段，提升用户体验。
