@@ -52,20 +52,25 @@ weight: 50
 
 ## 查看 VCPE 设备控制台
 
-- 部署 VCPE 的宿主机可访问公网。
-- 宿主机防火墙安全组规则放通 9099 端口。
-
-1. 放通防火墙 9099 端口。
+1. 在宿主机的安全组规则下放行 9099 端口。
 
    <img src="/sd-wan/sdwan_new/_images/um_rule_9099.png" style="zoom:50%;" />
 
-2. 在浏览器中输入如下地址信息，按 **Enter**，进入设备控制台登录页面。
+2. 可选：如果公网 IP 地址并非直接与宿主机绑定，而是绑定宿主机所在 VPC，需要在 VPC 里添加端口转发规则，将访问流量转发到节点的网关。
 
-   ```
-   http://公网 IP:9099
-   ```
+   <img src="/sd-wan/sdwan_new/_images/um_add_forward_rule.png"  />
 
-3. 您可以查看设备 ID、类型、序列号、版本、管控状态、隧道状态、位置以及端口信息。
+   网关信息查看：
+
+   <img src="/sd-wan/sdwan_new/_images/um_add_forward_rule_2.png"  />
+
+3. 在浏览器中输入访问地址：`http://公网 IP:9099`，按 **Enter**，进入设备控制台登录页面。
+
+4. 输入用户名及密码进行登录。
+
+   默认用户名：**admin**，默认密码：**sdwan**。
+
+5. 您可以查看设备 ID、类型、序列号、版本、管控状态、隧道状态、位置以及端口信息。
 
    <img src="/sd-wan/sdwan_new/_images/um_equip_mgmt_details.png" style="zoom:50%;" />
 
