@@ -1287,6 +1287,12 @@ main.col-12.col-md-7.col-xl-7 {
     flex: 0 0 68.5%;
 }
 
+@media (min-width: 1024px) and (max-width : 1166px) {
+    header {
+        min-height: 177px;
+    }
+}
+
 @media (min-width: 1200px) {
     .doc-container-width {
         max-width: 1920px;
