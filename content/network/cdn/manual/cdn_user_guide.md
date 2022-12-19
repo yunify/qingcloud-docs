@@ -64,7 +64,7 @@ weight: 2
 * 如果要缓存 cdnexample.qingcloud.com 下的所有 mp4 js png jpg html 可以使用 /.*(png|jpg|gif|mp4|js|html)
 * 只允许一个 最多只允许一个 *
 
-缓存策略参数说如下：
+缓存策略参数说明如下：
 
 * **名称**：名称是用帮助记忆该条规则的
 * **路径**： 对哪些路径下的哪些文件应用该缓存规则
