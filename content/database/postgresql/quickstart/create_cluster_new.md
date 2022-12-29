@@ -1,5 +1,5 @@
 ---
-title: "创建集群（PG V2.0.0及以上）"
+title: "创建集群（PG V2.0.0 及以上）"
 description: 本小节主要介绍如何快速创建 PostgreSQL 集群实例。 
 keyword: 实例,创建集群,创建实例,PostgreSQL,关系型数据库,数据库
 weight: 05
