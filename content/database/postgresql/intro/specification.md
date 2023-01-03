@@ -13,7 +13,7 @@ PostgreSQL 根据 AppCenter 功能特点，定制`基础版`、`增强版`和`�
 ## 资源类型规格
 
 * PostgreSQL V2.0.0 及以上版本默认使用 `e3` 云服务器，且不可选择。
-* PostgreSQL 11及以下版本默认资源类型规格如下：
+* PostgreSQL 11 及以下版本默认资源类型规格如下：
 
 |<span style="display:inline-block;width:140px">资源类型</span> |<span style="display:inline-block;width:140px">云服务器规格</span>|<span style="display:inline-block;width:140px">磁盘规格</span>|<span style="display:inline-block;width:240px">适用场景</span>|
 |:----|:----|:----|:----|
@@ -21,7 +21,7 @@ PostgreSQL 根据 AppCenter 功能特点，定制`基础版`、`增强版`和`�
 |   增强版     | 企业型 e2  4核8G |   100GB | <li>适用于企业生产环境，中型企业生产库、互联网、电商零售、物流、游戏等行业场景。  |
 |   基础版     | 基础型  2核4G  |   50GB  | <li>适用于个人学习、小型网站、开发测试等使用场景。   |
 
-## 自定义规格（PostgreSQL V2.0.0及以上版本）
+## 自定义规格（PostgreSQL V2.0.0 及以上版本）
 
 各系列实例可自定规格如下。
 
@@ -32,7 +32,7 @@ PostgreSQL 根据 AppCenter 功能特点，定制`基础版`、`增强版`和`�
 
 
 
-## 自定义规格（PostgreSQL 11及以下版本）
+## 自定义规格（PostgreSQL 11 及以下版本）
 
 各系列实例可自定规格如下。
 | <span style="display:inline-block;width:60px">节点角色</span> | <span style="display:inline-block;width:180px">CPU </span> | <span style="display:inline-block;width:180px">内存</span> | <span style="display:inline-block;width:100px">存储空间</span> | <span style="display:inline-block;width:80px">最大节点数</span> |

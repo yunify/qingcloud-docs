@@ -15,7 +15,13 @@ PostgreSQL 将 PostgreSQL 通过云应用的形式在 AppCenter 部署，目前�
 
 PostgreSQL 服务支持如下应用版本。
 
-- PostgreSQL 9.6.3 版本，PostGIS 插件的版本是 PostGIS 2.3
-- PostgreSQL 10.1 版本，PostGIS 插件的版本是 PostGIS 2.4
-- PostgreSQL 11.1 版本，PostGIS 插件的版本是 PostGIS 2.5
-- PostgreSQL V2.0.0 支持 PG 12、PG 13、PG 14 内核版本，且没有 PostGIS 插件。 通过多层松耦合的架构设计，青云可以以最快时间提供最新版本的 PostgreSQL。
+| 应用版本 | PostGIS 插件版本 | Citus 插件版本 | 
+| :------------ | :------- | :----------- |
+| PostgreSQL 9.6.3  | PostGIS 2.3 | - | 
+| PostgreSQL 10.1  | PostGIS 2.4 | - | 
+| PostgreSQL 11.1  | PostGIS 2.5 | - | 
+| PostgreSQL 12  | PostGIS 3.3.1 | Citus 10.2.8 | 
+| PostgreSQL 13  | PostGIS 3.3.1 | Citus 11.1.3 | 
+| PostgreSQL 14  | PostGIS 3.3.1 | Citus 11.1.3 | 
+| PostgreSQL 15  | PostGIS 3.3.1 | Citus 11.1.3 | 
+
