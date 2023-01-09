@@ -50,7 +50,7 @@ draft: false
 3. 执行以下命令，分析 mysql-slow.log 中的相关慢日志，并输出分析结果（本文以输出到文本文件 A.txt 为例）。
 
    ```
-   /home/ubuntu/percona-toolkit-3.5.0/bin/pt-query-digest/data/mysql-log/mysql-slow/mysql-slow.log > /data/A.txt
+   /home/ubuntu/percona-toolkit-3.5.0/bin/pt-query-digest /data/mysql-log/mysql-slow/mysql-slow.log > /data/A.txt
    ```
    **参数说明**：
    

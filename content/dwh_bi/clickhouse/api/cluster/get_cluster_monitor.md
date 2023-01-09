@@ -31,7 +31,7 @@ draft: false
 | app_id | String | 集群应用 ID。 | No |
 | resource | String | 集群节点 ID。 | Yes |
 | role | String | 节点角色。 | No |
-| step | String | 监控数据时间间隔。例如 1m, 5m, 15m, 30m, 1h, 2h, 1d | Yes |
+| step | String | 监控数据时间间隔。例如 1m, 5m, 15m, 1h, 2h, 1d | Yes |
 | start_time | TimeStamp | 监控数据的开始 UTC 时间，格式为 2011-07-11T11:07:00Z 或 2011-07-11T11:07:00.520Z。 | Yes |
 | end_time | TimeStamp | 监控数据的结束 UTC 时间，格式为 2011-07-11T11:07:00Z 或 2011-07-11T11:07:00.520Z。 | Yes |
 | meters.n | String | 监控数据的类型。<br> `stats` 表示获取开发者定义的监控数据 <br> `cpu` 表示节点 CPU 用率 <br> `memory` 表示节点内存使用率 <br> `disk-us-volume` 表示节点硬盘使用率 <br> `disk-iops-volume` 表示节点硬盘IOPS <br> `disk-volume` 表示节点硬盘吞吐量  | Yes |
