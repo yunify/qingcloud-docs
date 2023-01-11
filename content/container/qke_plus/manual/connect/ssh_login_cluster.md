@@ -29,7 +29,7 @@ weight: 20
 
 1. 在自管版集群创建页面的**环境配置参数**区域，找到 **K8s apiserver EIP** 参数。
 
-   <img src="/container/qke_plus/_images/enable_ssh_login_oncreation.png" style="zoom:50%">
+   <img src="/container/qke_plus/_images/enable_ssh_login_oncreation.png">
 
 2. 选择**绑定已有公网 IP** 或**新建公网 IP**。
 
