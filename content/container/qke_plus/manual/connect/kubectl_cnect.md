@@ -36,7 +36,7 @@ kubectl 工具默认会从客户端机器的 `$HOME/.kube` 目录下查找名为
 
    > **注意** 
    >
-   > 请确保`server` 字段值为 `https://K8s apiserver EIP:443`。
+   > 请确保`server` 字段值为 `https://K8s apiserver EIP:6443`。
 
 2. 将 kubeconfig 内容拷贝到 kubectl 客户端机器的 `$HOME/.kube/config` 文件中并保存退出。
 
