@@ -1,5 +1,5 @@
 var serach_href = '';
-
+var docs_search_host = 'https://docsv4.qingcloud.com';
 $(document).ready(function(){
 
     function renderResult(category, pager){
@@ -97,41 +97,41 @@ $(document).ready(function(){
                     else{
                         $('.directory li.solutions a span').html('')
                     }
-                    
+
                     if(logsCount){
                         $('.directory li.logs a span').html('('+logsCount+')');
                     }
                     else{
                         $('.directory li.logs a span').html('')
                     }
-                    
+
                     if(newsCount){
                         $('.directory li.news a span').html('('+newsCount+')');
                     }
                     else{
                         $('.directory li.news a span').html('');
                     }
-                    
+
                     if(docsCount){
                         $('.directory li.docs a span').html('('+docsCount+')');
                     }
                     else{
                         $('.directory li.docs a span').html('');
                     }
-                    
+
                     if (othersCount){
                         $('.directory li.others a span').html('('+othersCount+')');
                     }
                     else{
                         $('.directory li.others a span').html('');
                     }
-                    
+
                     if (caseCount){
                         $('.directory li.cases a span').html('('+caseCount+')');
                     }
                     else{
                         $('.directory li.cases a span').html('');
-                    }  
+                    }
                 }
                 $.ajax({
                     url: serach_href+'/search.php',
@@ -160,13 +160,13 @@ $(document).ready(function(){
 							//doc_level 层级目录
 							var doc_level = item._source.doc_level;
 							doc_level = doc_level.replace(/has-text-primary/g,'');
-							
+
 							item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + doc_level +'</div>';
 						}
-                        results += 
+                        results +=
                             '<div class="result-item">'+
                                 '<h5 class="result-title">'+
-                                    '<a href=" '+item._source.url+' ">'+title + '</a>'+
+                                    '<a href=" ' + docs_search_host + item._source.url +' ">'+title + '</a>'+
                                 '</h5>'+
                                 '<p class="result-content">'+ content + '</p>'+item_from+
                             '</div>';
@@ -215,10 +215,10 @@ $(document).ready(function(){
 						doc_level = doc_level.replace(/has-text-primary/g,'');
 						item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + doc_level +'</div>';
 					}
-                    results += 
+                    results +=
                         '<div class="result-item">'+
                             '<h5 class="result-title">'+
-                                '<a href=" ' + item._source.url+' ">'+title + '</a>'+
+                                '<a href=" ' + docs_search_host + item._source.url+' ">'+title + '</a>'+
                             '</h5>'+
                             '<p class="result-content">'+ content + '</p>'+item_from+
                         '</div>';
@@ -266,21 +266,21 @@ $(document).ready(function(){
 						item_from = '<div class="result-thumbnail is-size-7"><span class="has-text-grey">来自:</span>' + doc_level +'</div>';
 					}
 
-                    results += 
+                    results +=
                         '<div class="result-item">'+
                             '<h5 class="result-title">'+
-                                '<a href=" ' + item._source.url+' ">'+title + '</a>'+
+                                '<a href=" ' + docs_search_host + item._source.url+' ">'+title + '</a>'+
                             '</h5>'+
                             '<p class="result-content">'+ content + '</p>'+item_from+
                         '</div>';
-                    }); 
+                    });
                 $('.search-result').html(results);
                 $(".search-pagination").html(pagination(data.hits.total, pager));
             }).fail(function(request, error){
 				$("#loading-mask").hide();
-                $('.search-result').html('<div class="no-result">没有找到您期望的内容，请尝试其他搜索词，请拨打我们的咨询电话 4008576886，或发邮件至 contactus@yunify.com。</div>');      
+                $('.search-result').html('<div class="no-result">没有找到您期望的内容，请尝试其他搜索词，请拨打我们的咨询电话 4008576886，或发邮件至 contactus@yunify.com。</div>');
             });
-        }  
+        }
     };
 
     $('.search-btn').on("click", function(){
@@ -342,7 +342,7 @@ $(document).ready(function(){
                         '<a class="pager-item '+ pager_active + '" data-num="' + j + '">' + j + '</a >';
                     }
                 }
-                else if(currentPager<=minPageNum){  
+                else if(currentPager<=minPageNum){
                     if (maxPageNum>totalPager) maxPageNum=totalPager;
                     for (var j=parseInt(currentPager)-4; j<=maxPageNum; j++){
                         let pager_active = '';
@@ -359,8 +359,8 @@ $(document).ready(function(){
                         '<a class="pager-item '+ pager_active + '" data-num="' + j + '">' + j + '</a >';
                     }
                 }
-                
-            }       
+
+            }
             pagerItems += '</div>';
             if(currentPager != totalPager) {
                 var nextPager = parseInt(currentPager)+1;
@@ -370,7 +370,7 @@ $(document).ready(function(){
         }
         return pagerPrev + pagerItems + pagerNext;
     };
-      
+
     $(document).on('click', ".pager-item", function() {
         var pagerNumber = $(this).attr("data-num");
         var currClass = $('.directory li.is-active').attr('class').split(/\s+/)[0];
@@ -400,7 +400,7 @@ $(document).ready(function(){
     //             source: autocompleteTags
     //         });
     //         return;
-    //     })       
+    //     })
     // });
 
     $("#search-bar").focus(function(){
@@ -409,7 +409,7 @@ $(document).ready(function(){
                 $("#loading-mask").show();
                 $('#search-btn').click();
             }
-        })   
+        })
     })
 
     var reg = new RegExp("(^|&)q=([^&]*)(&|$)");
